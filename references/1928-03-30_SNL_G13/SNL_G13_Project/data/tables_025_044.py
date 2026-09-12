@@ -467,7 +467,7 @@ for size,part,price in [('½″','A8406A','.05 P'),('¾″','A8405A','.07 P'),('
 entry(r,'BUSHING, connecting rod piston pin',note='&',ident='8007',plate='18',mfr='8007',ord='LQ136A',qty='12',price='.20')
 for part,text,qty,price in [('D29785','distributor condenser and breaker plate stud','6','.01 P'),('D29630','distributor connector plate screw insulating','4','.02 P'),('D29596','distributor contact arm dismounting stud insulating','6','.08 P')]:
  entry(r,'BUSHING, '+text,note='&',mfr=part,qty=qty,price=price)
-entry(r,'BUSHING, drive sprocket chain collar',note='%X',ord='SH40A1D',qty='50',price='.90')
+entry(r,'BUSHING, drive sprocket chain collar',note='%X',ord='SH40AD',qty='50',price='.90')
 entry(r,'BUSHING, engine oil tank (bottom)',note='&',ord='SH978S',qty='1',price='.08')
 for part,text,qty,price in [('D30136','generator brush arm mounting stud insulating','1','.06 P'),('D30079','generator brush arm mounting stud insulating','1','.04 P'),('D29868','generator brush arm mounting stud insulating','1','.04 P'),('D29849','generator brush arm spring stud','4','.04 P'),('D30140','generator field coil insulating','2','.02 P'),('D30262','generator field coil long stud','1','.02 P')]:
  entry(r,'BUSHING, '+text,note='&',mfr=part,qty=qty,price=price)

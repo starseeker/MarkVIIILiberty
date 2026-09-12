@@ -222,6 +222,10 @@ def notes(page):
   txt('p311-office-reference',46,210,145,'(O. O. 140.2/1741)','Printer imprint',8)
   txt('p311-printing-office',226,630,178,'U. S. GOVERNMENT PRINTING OFFICE : 1928','Government imprint',8)
 
+def artwork_path(page):
+ restored=ROOT/'restoration'/'clean'/f'p{page}-clean.png'
+ return restored if restored.exists() else ROOT/'assets'/f'p{page}-geometry.png'
+
 def figure_artwork(page,transforms):
  cfg=transforms[str(page)]
  iw,ih=cfg['output_size']
@@ -237,7 +241,7 @@ def figure_artwork(page,transforms):
   obj=s.createImage(ly,648-lx,w,h,f'p{page}-plate-artwork')
   s.rotateObjectAbs(90,obj,s.BASEPOINT_TOPLEFT)
   s.moveObjectAbs(ly,648-lx,obj)
- s.loadImage(str(ROOT/'assets'/f'p{page}-geometry.png'),obj)
+ s.loadImage(str(artwork_path(page)),obj)
  s.setScaleImageToFrame(True,True,obj);s.setTextFlowMode(obj,0)
  s.setObjectAttributes([dict(Name='Source and geometry',Type='string',Value=f'p{page}.jpg; '+cfg['method']+'; '+cfg['status'],Parameter='',Relationship='',RelationshipTo='',AutoAddTo='')],obj)
 
@@ -259,7 +263,7 @@ def make_foldout():
  cfg=json.loads((ROOT/'calibration/figure_transforms.json').read_text())['277_foldout']
  iw,ih=cfg['output_size'];factor=min(1248/iw,600/ih);w,h=iw*factor,ih*factor
  obj=s.createImage((1296-w)/2,(648-h)/2,w,h,'p277-foldout-plate-2')
- s.loadImage(str(ROOT/'assets/p277_foldout-geometry.png'),obj);s.setScaleImageToFrame(True,True,obj)
+ s.loadImage(str(artwork_path('277_foldout')),obj);s.setScaleImageToFrame(True,True,obj)
  s.setObjectAttributes([dict(Name='Original insertion',Type='string',Value='Plate 2, Face p. 277. Working reading order after p277; physical imposition unconfirmed.',Parameter='',Relationship='',RelationshipTo='',AutoAddTo='')],obj)
  s.saveDocAs(str(ROOT/'Foldout_Plate_2.sla'));s.closeDoc()
 

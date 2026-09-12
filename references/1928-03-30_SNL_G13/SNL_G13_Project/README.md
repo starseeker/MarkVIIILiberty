@@ -4,16 +4,18 @@ This working project reconstructs **314 unique supplied photographs/leaves** of
 the 1928 **Standard Nomenclature List No. G-13, Tank, Mk. VIII**. Main pages use
 the agreed **6 × 9 inch** estimate. Plate 2 uses a provisional **18 × 9 inch**
 foldout canvas. All Arabic folios 1–311 are now included, plus Roman I/II and the separate
-foldout: 314 electronic pages. Independent transcription proofreading is pending.
+foldout: 314 electronic pages. A targeted cross-book ambiguity audit is complete;
+a fresh independent proofread of all pages remains pending.
 
 ## Open and review
 
 1. Extract the entire project ZIP, retaining its folder structure.
 2. Install the three C059 OpenType fonts in `fonts/`, then restart Scribus.
-3. Open `SNL_G13_Pilot.sla` in Scribus 1.6.x or later. Keep `assets/` beside it.
+3. Open `SNL_G13_Pilot.sla` in Scribus 1.6.x or later. Keep `restoration/` and `assets/` beside it.
 4. Review `SNL_G13_Pilot.pdf`; the fonts are embedded and its bookmarks use
    original folios. `Figure_Geometry_Proof.pdf` compares all 31 artwork assets.
-5. Open `Figure_Refinement_Study.pdf` for the new comparisons and all-plate audit.
+5. Open `Figure_Refinement_Study.pdf` for the comparisons and all-plate geometry audit.
+6. Open `Transcription_Ambiguity_Audit.pdf` for the cross-book resolutions and source comparisons.
 
 The native document contains editable text frames, cell frames, rules and
 leaders. All 275 parts tables use named cell frames rather than Scribus table
@@ -21,14 +23,63 @@ objects. Five notes pages preserve photographed line breaks in separate editable
 frames. Multiline manufacturer and identification cells retain their stacking;
 component-list indentations, continuation lines and price baselines are preserved.
 Long cell text uses limited horizontal scaling to retain source line breaks.
-Substantial rewriting may require moving frames. Figures and their
-internal lettering remain linked raster images made from the original scans.
+Substantial rewriting may require moving frames. Figures use native SVG groups
+or linked raster images; internal lettering remains traced outlines or pixels.
 
 C059 is a Century-style approximation, not an identification of the original
 metal type. Sizes and margins are estimates. Typeset pages use clean black text;
-figure assets retain source paper tone, bleed-through and original line quality.
+the linked figures now use clean grayscale masters. Residual blemishes and source
+sampling limits remain; unmodified source-color references are preserved.
 The font license is included. Neither main-page nor foldout dimensions have been
 confirmed by physical measurement.
+
+## Current figure-restoration checkpoint
+
+All 34 plates have cleaned masters. The book now uses five pure vector SVG groups,
+two hybrid SVG groups and 24 linked clean PNGs. Plate 12 is the user-approved
+aggressive candidate; its earlier conservative master, keep mask and comparison
+are retained in `restoration/aggressive/`. Its remaining variable slant is unchanged.
+
+Scribus imports SVG directly through File → Import → Get Vector File. The native
+book already contains the seven recommended groups. Hybrid shaded regions link
+lossless tone PNGs in `restoration/native/`; keep them beside the document.
+The matching PDF preserves vector artwork and uses lossless raster compression,
+with downsampling disabled. No new geometric correction was applied.
+
+Start with `Figure_Restoration_Comparisons.pdf`, `Restored_Figures.pdf` and
+`FIGURE_RESTORATION.md`. `Plate12_Mirror_Study.pdf` records the earlier paired
+experiment; it is historical, not a comparison of the latest aggressive master.
+`DOCUMENTATION.md` provides the comprehensive README and archival provenance.
+
+`restoration/validation.json` records this release's checks: 314 pages in order,
+25,682 editable text frames, 32,625 unchanged objects outside seven replaced
+artwork frames, original artwork bounds, preserved source files and lossless raster
+pixels. The complete native document contains 125,890 objects, including vector
+contours. All 283 non-figure pages render identically to the previous checkpoint.
+Earlier audit and geometry reports below describe their respective checkpoints.
+
+## Cross-book transcription audit
+
+The 2026-09-12 audit closes 13 prior review entries across 10 distinct findings.
+Three cells were corrected: SH40AD on 43, SH976C on 66, and the first
+transmission-frame rivet length, 1⅛″, on 97. Six existing readings were
+corroborated and the repeated SH599A manifold component was explained by note
+(go). One new discrepancy was recorded: D22920 on 44 versus D29920 on 110.
+The current log contains 113 open and 99 resolved entries; these are log entries,
+including general proofreading flags, rather than a count of uncertain characters.
+
+`Transcription_Ambiguity_Audit.pdf` contains the findings and selected source
+comparisons. `TRANSCRIPTION_AUDIT.md` and `audit/ambiguity_audit.json` retain the
+full evidence trail; `audit/review_before_context_audit.json` preserves the old log.
+All 7,571 structured table records were indexed for cross-references. The audit
+uses the full notes and selected photographs/Plate 16, and is not a new independent
+proofread of every page. Original source inconsistencies remain explicitly flagged.
+
+For scripted re-export, use the bundled C059 OpenType files. A system Type 1 font
+with the same family name can have different metrics; the correction script checks
+font file identity before opening the document. Current audit validation is in
+`audit/context_delivery_validation.json`. Earlier geometry validation files record
+the preceding figure-refinement stage.
 
 ## Page order and source reconciliation
 
@@ -143,8 +194,8 @@ is still needed, particularly for part numbers, fractions, quantities and prices
   in `review.json`. The page 79 printer imprint is editable.
 - Pages 85–104 retain the original engine, fan and exhaust-guard continuation
   breaks. Blank fuze and gage-glass cells remain blank. The elbow listing on 85
-  corroborates the earlier Q51QC reading. NBIB on 93 and the first rivet length
-  on 97 remain flagged. The page 95 printer imprint is editable.
+  corroborates the earlier Q51QC reading. NBIB on 93 remains flagged. The first rivet length
+  on 97 is now resolved as 1⅛″ in the cross-book audit. The page 95 printer imprint is editable.
 - Pages 105–124 retain the camshaft, generator, lever and lubricator assemblies
   across their original page breaks. Page 105 corroborates GB5G on 104 and the
   LQ196A length on 58; the conflicting length on 59 is preserved. The individual
@@ -221,3 +272,10 @@ recorded in `build-status.txt` and `delivery-validation.json`. The complete PDF 
 rendered for visual review, including the 11 new figure pages. The geometry
 comparison PDF now contains all 31 artwork assets. Reproducible page-render intermediates are
 omitted from the ZIP to keep it compact.
+
+## Distribution note
+
+The large `Figure_Restoration_Comparisons.pdf` is a separate companion download;
+it is omitted from the project ZIP to keep the package manageable. The complete
+book PDF, editable Scribus document, all source images and restored masters remain
+in the project ZIP. Place the comparison PDF beside the main document if desired.

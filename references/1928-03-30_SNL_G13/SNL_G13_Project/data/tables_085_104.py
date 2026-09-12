@@ -382,7 +382,7 @@ for text,code,price in [
 r=start(97)
 component(r,'*two M384 transmission frame diaphragm GUSSET, outer (left top and\n                    right bottom) (2)',ord='668',price='1.12')
 component(r,'*two M383 transmission frame diaphragm GUSSET, outer (right top\n                    and left bottom) (2)',ord='668',price='1.12')
-pieces(r,'''four —          RIVET, button head, ½″ x 1½″,
+pieces(r,'''four —          RIVET, button head, ½″ x 1⅛″,
 four —          RIVET, button head, ½″ x 1⅝″,
 twelve —       RIVET, button head, ½″ x 1¾″,
 thirty-two — RIVET, button head, 11/16″ x 1½″,

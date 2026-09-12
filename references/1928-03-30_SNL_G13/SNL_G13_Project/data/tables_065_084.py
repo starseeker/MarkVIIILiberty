@@ -71,7 +71,7 @@ assembly(r,'CLIP, voltage regulator, with contact, assembly','.54 P',note='&',mf
 component(r,'*one D11426 voltage regulator CONTACT,')
 component(r,'*one D29455 voltage regulator terminal CLIP.)')
 entry(r,'CLIP, water pipe',note='&',ident='—',plate='24',ord='SH976A',price='.48')
-entry(r,'CLIP, water pipe connection',note='&',ident='—',plate='24',ord='SH975C',price='.58')
+entry(r,'CLIP, water pipe connection',note='&',ident='—',plate='24',ord='SH976C',price='.58')
 
 r=add(67,'''%(pf) X||||||COCK, drain, ¼″ pipe thread, tee handle. (For tube C8015 (1).)|1|.17 P
 %(pf) X|—|24|||A16484|COCK, drain, ½″, tee handle. (For flange M3311 (1); pipe SH976E (1); pipe~  SH976K (1); pipe SH976V (1).)|5|.21 P
