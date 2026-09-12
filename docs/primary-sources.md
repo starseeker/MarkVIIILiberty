@@ -12,6 +12,7 @@ The second and third Archive.org links originally supplied for the Preliminary H
 | [S. N. L. No. G-13, Tank, Mk. VIII](https://archive.org/details/SNL_G13_TANK_MKVIII) | 1928 U.S. service parts catalog | Nomenclature, part numbers, assembly hierarchy, quantities, and service variants |
 | [The Liberty 12-cylinder aero engine handbook](https://archive.org/details/liberty12cylinde00grea) | 1918 British Ministry of Munitions technical handbook | Base Liberty engine construction, component geometry, and mechanical relationships |
 | [Handbook for the Q. F. Hotchkiss 2.244-inch, 6-pdr., 6-cwt. Mark II Gun with Tank Mounting](https://archive.org/details/HandbookForTheQ.F.Hotchkiss2.244Inch6Pdr.6Cwt.MarkIIGunWithTankMounting) | 1919 U.S. Ordnance handbook | 6-pounder gun, tank mounting, recoil system, sights, controls, and gun/mount interfaces |
+| [Williams-Ellis, *The Tank Corps*](https://archive.org/details/tankcorps00clou) | 1919 near-contemporary British Tank Corps history | Mark VIII/Allied Tank program context, terminology, and provenance |
 
 ## 1. Preliminary Handbook of the Mark VIII Tank
 
@@ -135,13 +136,28 @@ The Mark VIII material is useful for:
 
 Stern's account should be used as corroborating evidence and as a provenance trail for contemporary reports. It should not be treated as the sole authority for exact dimensions, final production configuration, or the condition of every tank described.
 
-## 9. Herbert W. Alden's tank patent
+## 9. Clough Williams-Ellis and A. Williams-Ellis, *The Tank Corps*
+
+The 1919 [*The Tank Corps*](https://archive.org/details/tankcorps00clou), by Clough Williams-Ellis and A. Williams-Ellis, includes an introduction by Major-General H. J. Elles, who commanded the British Tank Corps. It is a near-contemporary institutional and participant account rather than an engineering manual.
+
+Its most important contribution to this project is a passage describing meetings of the “New” Tank Committee in December 1917 and January 1918. The account identifies U.S. Tank Corps officers Majors Drain and Alden as participants, records the decision to manufacture the Mark VIII—or “Allied Tank”—for the British and American armies, and notes that the tank never saw combat.
+
+This makes the volume useful for:
+
+- corroborating the International-tank program's inter-Allied origin;
+- documenting contemporary use of the names **Mark VIII** and **Allied Tank**;
+- establishing the relationship of Drain and Alden to the program; and
+- providing a British Tank Corps perspective on the program's purpose and outcome.
+
+It contributes little direct geometry and should not be used to establish dimensions, component shape, or final American production configuration. Its retrospective institutional narrative should instead be checked against the Preliminary Handbook, SNL G-13, Jordan's Rock Island account, Stern's memoir, and official reports. It is best treated as provenance and program-context evidence supporting the technical source hierarchy.
+
+## 10. Herbert W. Alden's tank patent
 
 [U.S. Patent 1,366,550, “Tank,” by Herbert W. Alden](https://patents.google.com/patent/US1366550A/en) was filed on December 14, 1918, and published on January 25, 1921. The patent describes a pivoting or “disappearing” sponson that normally projects outside the tank but can swing through an opening into the tank, together with closure, securing, hinge, and shell-storage details.
 
 The patent is valuable evidence of design intent and is particularly relevant to a parametric sponson mechanism. Its drawings should not automatically be assumed to be a complete production drawing: patent embodiments can be schematic, and the relationship between the patented design and individual Mark VIII production vehicles still needs to be checked against the Handbook, SNL, Jordan's production account, and surviving tanks.
 
-## 10. Period motion-picture sources
+## 11. Period motion-picture sources
 
 Moving images provide evidence that static drawings cannot: obstacle behavior, clearances, access arrangements, crew positions, and the sequence in which a vehicle's mechanisms operate. They should nevertheless be treated as observational evidence rather than precision measurement sources.
 
@@ -157,7 +173,7 @@ The surviving online copy of [“Tests and Demonstrations of Ordnance Materiel [
 
 This footage is useful for motion, obstacle negotiation, exterior proportions, and the relationship between the vehicle and its crew or observers. Film speed, frame rate, camera perspective, and editing can distort impressions of speed and mechanical behavior, so measurements derived from individual frames should remain weak evidence unless independently calibrated.
 
-## 11. National Archives research leads
+## 12. National Archives research leads
 
 The National Archives' [Record Group 156 guide](https://www.archives.gov/research/guide-fed-records/groups/156.html) identifies several groups of records that are likely to contain primary material not represented by the digitized manuals:
 
@@ -168,7 +184,7 @@ The National Archives' [Record Group 156 guide](https://www.archives.gov/researc
 
 These holdings are the best prospect for original drawing sheets, acceptance or test reports, correspondence about design changes, and documentation of the first American trials. A separate catalog lead associated with a photographed Mark VIII technical drawing is [NARA Identifier 264171262](https://catalog.archives.gov/id/264171262). It should remain a research lead until its item-level description and parent series are verified.
 
-## 12. Sevellon Brown, *The Story of Ordnance in the World War*
+## 13. Sevellon Brown, *The Story of Ordnance in the World War*
 
 The 1920 [*Story of Ordnance in the World War*](https://archive.org/details/storyofordnancei00browrich) is a near-contemporary institutional account. Its Mark VIII material includes an interior photograph and caption around pp. 104–105, useful for crew-compartment visual context and for documenting what the Ordnance establishment believed had been achieved by late 1918.
 
@@ -182,8 +198,9 @@ The expanded source hierarchy is therefore:
 2. **SNL G-13** — name and organize the parts, subassemblies, quantities, and service variants.
 3. **Jordan's production account and official reports** — establish American assembly practice, production reality, testing, and program status.
 4. **Component handbooks and Alden's patent** — refine the Liberty engine, Hotchkiss gun/mount, and sponson design intent.
-5. **Stern's account and period films** — provide participant testimony, test observations, and dynamic evidence.
-6. **Modern surviving-vehicle observations** — test three-dimensional relationships and identify restoration or service-variant differences.
+5. **Stern's account and Williams-Ellis's history** — provide participant and institutional testimony about the International-tank program, its terminology, and its intended role.
+6. **Period films** — provide test observations and dynamic evidence.
+7. **Modern surviving-vehicle observations** — test three-dimensional relationships and identify restoration or service-variant differences.
 
 This is a working hierarchy, not a rule that one source always overrides another. When two official sources disagree, the repository should record the disagreement, identify the configuration and date represented by each source, and preserve both interpretations until the evidence supports a decision.
 
