@@ -29,6 +29,10 @@ The project may include:
 
 The intended modeling standard is **evidence-led reconstruction**. A part may be modeled as confirmed, probable, inferred, or purely illustrative, with the status recorded in the accompanying documentation. When multiple surviving tanks or drawings differ, the model should identify which configuration it represents instead of presenting one vehicle as universally definitive.
 
+The current source strategy separates the intended 1918 design, later American production and service practice, component-specific documentation, and modern observation. The [primary-source index](docs/primary-sources.md) now includes the 1920 Rock Island Arsenal production account, contemporary Ordnance technical articles, official 1920 reports, a participant's account of the International-tank program, Alden's sponson patent, and period test films. The [modern-reference index](docs/modern-reference-sources.md) remains separate so that observations of surviving museum vehicles are not confused with period design evidence.
+
+The likely first CAD baseline is the American Rock Island production tank, but that choice should remain explicit. The 1918 prototype or British/International configuration, the 1919–1920 American production configuration, and later service states represented by the 1928 SNL may differ in fittings, equipment, and details. Those differences should be represented as documented variants rather than silently merged.
+
 ## Possible repository layout
 
 The structure will evolve as the project develops, but a likely arrangement is:
@@ -45,6 +49,8 @@ Large or externally hosted source files may be represented by metadata, checksum
 
 ## Historical references
 
+- [Primary sources and modeling hierarchy](docs/primary-sources.md)
+- [Modern observational sources](docs/modern-reference-sources.md)
 - [The Mark VIII Tank — U.S. Army, *Army History*](https://www.lineofdeparture.army.mil/Journals/Army-History/Archive/Summer-2024-Issue/MarkVIII/)
 - [Mark VIII Tank — Rock Island Arsenal](https://www.aschq.army.mil/About/History/Tours/RIA/Ordnance/)
 - [Mark VIII — The Tank Museum](https://tankmuseum.org/tank_collection/mark-viii?country=all&era=all&tname=&tpage=)

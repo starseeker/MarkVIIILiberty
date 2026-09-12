@@ -90,3 +90,4 @@ Notes: restoration state, missing components, or relevant uncertainty
 
 The source should be treated as especially useful for **visual approximation**, **observed variant**, and **assembly-context** evidence. It should not be used to convert an unverified appearance into a confirmed 1918 dimension.
 
+Period motion-picture sources are cataloged separately in [primary-sources.md](primary-sources.md). In particular, the 1918 Imperial War Museums film and the U.S. Ordnance test footage provide contemporary evidence of prototype trials and movement, whereas this 2022 video documents a surviving American vehicle in a modern museum and transport context.
