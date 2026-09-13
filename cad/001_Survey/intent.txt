@@ -1,0 +1,37 @@
+In the references/ directory, we have collected and cleaned up (as best we can)
+the primary sources we have been able to identify concerning the Mark VIII
+tank.  There is a wealth of information, since two of the documents are what
+are believed to be the primary original official working manual and standard
+parts list for the tank in question,  but in the form found in those manuals
+it is only the starting point inputs for producing a detailed CAD model.
+
+To prepare for actual geometry creation and organization, we need to:
+
+1.  Survey the documents and build up a canonical parts database - both the SNL
+and the handbook have this type of information, and there may be relevant part
+information to be found in others, so we must organize it and identify every
+physical component that will need geometric expression.  The database should
+also track the source for each part's information as well as its relevant
+data (part numbers, sizing info, etc.)  I recommend the first pass be used to
+identify requirements and design a database schema that will hold the
+information we need to save, and then a second pass to populate it.  Ambiguous
+cases where information is contradictory should be noted, with resolutions when
+context allows for a high confidence deduction.
+
+2.  Once we have the parts database, we need to access what additional
+information we need to try and seek out to be able to produce geometric models.
+If standard commercial parts are called out, it may be fruitful to see if there
+are online digitized original documents from the relevant vendors we could
+source more detailed part information or even visuals from.  If we are unable
+to do that, then we must fall back on information available in publication
+figures combined with more general design principles (sheets of metal, types of
+screws, etc. are standard industrial components in many cases and we should be
+able to produce reasonable representations even without vendor specifics by
+bearing in mind the application, time and place - but the more specific we can
+be, the better.  The output of this step should be a summary report of what we
+are fully confident of being able to describe, any available primary source
+information candidates that may warrant the same cleanup-and-archiving
+treatment given to the primary sources, what can be expressed with reasonable
+confidence based on general engineering principles of 1920s construction of
+this type, and parts where we lack sufficient information to represent them.
+Once we have this overview, we can consider our next steps.
