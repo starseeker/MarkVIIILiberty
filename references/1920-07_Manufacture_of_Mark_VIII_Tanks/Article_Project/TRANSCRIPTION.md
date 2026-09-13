@@ -1,6 +1,30 @@
 # Manufacture of Mark VIII Tanks at Rock Island Arsenal
-Harry B. Jordan — Army Ordnance, July–August 1920, pp. 27–33.
+Harry B. Jordan — Army Ordnance, Volume I, No. 1, July–August 1920, pp. 27–33.
 Printed line endings are retained below. Read each left column before its right column. Captions and the inset letter are separated from the main narrative.
+
+## Cover
+
+Original bound-volume title-page wording:
+
+ARMY ORDNANCE
+
+VOLUME I
+
+No. 1 (July-August, 1920) to No. 6 (May-June, 1921) Inclusive
+
+Added article identification:
+
+Manufacture of Mark VIII Tanks
+
+at Rock Island Arsenal
+
+Harry B. Jordan
+
+No. 1  |  July-August 1920  |  Pages 27-33
+
+Editorial note:
+
+Cover adapted from the bound-volume title page. Article identification added for this standalone edition.
 
 ## Printed page 27
 

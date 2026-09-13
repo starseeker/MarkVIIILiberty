@@ -27,3 +27,17 @@ photographs and their scan limitations remain available for checking those label
 The scan comparison is a visual review aid, not evidence that an omitted source
 margin or unrelated article is part of this reconstruction. The second-page
 composite is used exactly once, as page 28.
+
+## Cover added in v02
+
+The supplied `MarkVIII_manufacture000.jpg` is a bound-volume title page, not
+an issue-specific cover. Its publication title, Volume I designation, and full
+range from No. 1 (July-August, 1920) through No. 6 (May-June, 1921) are retained
+in a clean typographic adaptation. The article title, author and exact citation
+are added below a short rule. The small footer identifies the adaptation and
+added article identification. These additions are not represented as original
+1920 cover text. No publisher or location absent from the leaf has been invented.
+
+All seven article pages, their reviewed text and their photographs are unchanged
+from v01. The cover precedes page 27, has no printed folio and uses the same
+page dimensions and bundled serif typefaces as the article.

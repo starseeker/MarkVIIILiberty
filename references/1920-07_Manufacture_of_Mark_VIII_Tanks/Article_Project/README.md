@@ -1,19 +1,19 @@
 # Manufacture of Mark VIII Tanks at Rock Island Arsenal
 
-Harry B. Jordan. *Army Ordnance*, July–August 1920, pp. 27–33.
+Harry B. Jordan. *Army Ordnance*, Volume I, No. 1, July–August 1920, pp. 27–33.
 
-Release: **v01_20260913T172808Z**. Complete seven-page editable reconstruction.
+Release: **v02_20260913T183204Z**. Eight-page editable edition: an unnumbered cover followed by the seven original article pages.
 
 ## Open and read
 
-- **Jordan_MarkVIII_Master_v01_20260913T172808Z.sla**: editable Scribus 1.6.x document.
-- **Jordan_MarkVIII_Master_v01_20260913T172808Z.pdf**: clean seven-page PDF with original folios and bookmarks.
-- **Jordan_MarkVIII_Comparison_v01_20260913T172808Z.pdf**: seven source/reconstruction comparison sheets.
+- **Jordan_MarkVIII_Master_v02_20260913T183204Z.sla**: editable Scribus 1.6.x document.
+- **Jordan_MarkVIII_Master_v02_20260913T183204Z.pdf**: clean eight-page PDF with a publication-context cover, original article folios and bookmarks.
+- **Jordan_MarkVIII_Comparison_v02_20260913T183204Z.pdf**: eight source/reconstruction comparison sheets, beginning with the volume title page and its cover adaptation.
 - **TRANSCRIPTION.md**: text in reading order, with printed line breaks and page/column boundaries retained.
 
 Install the three C059 OpenType fonts in `fonts/` before opening the SLA. Keep
 `assets/` next to it: all six image links are relative. All headings, body text,
-captions, page numbers, the inset letter, and the final workforce list are native
+captions, page numbers, cover text, the inset letter, and the final workforce list are native
 editable text. Printed line endings are retained using separate line frames;
 this is a layout-preserving reconstruction, not a continuous reflowing story.
 The arsenal identification cards within photographs remain original image pixels.
@@ -29,8 +29,12 @@ An extracted seven-page article PDF and the nine supplied JPEGs are in `sources/
 `MarkVIII_manufacture002_composite.jpg` supplies printed page 28, including the
 right-hand material lost from `MarkVIII_manufacture002.jpg`. It is a reconstruction
 of that one page and is not counted twice. Both files are preserved.
-`MarkVIII_manufacture000.jpg` is a bound-volume title leaf, retained as provenance
-but not inserted into the article. The unrelated journal departments below the
+`MarkVIII_manufacture000.jpg` is the bound-volume title leaf used for the new
+cover. Its three publication lines are re-created as editable text, with the
+volume range retained. A separate block adds Jordan’s article title, author,
+issue date and page range. A small cover note identifies this adaptation.
+Library stamps, handwriting, paper damage and discoloration are not reproduced.
+The PDF labels the cover “Cover”; the article keeps folios 27–33. The unrelated journal departments below the
 article ending on page 33 are not transcribed. The comparison sheet shows the full
 source page so that this boundary remains evident.
 
@@ -81,7 +85,7 @@ than accepting raw OCR as final text.
 
 ## Validation
 
-Scribus 1.6.1 reports 586 editable text frames, six linked images and zero text
+Scribus 1.6.1 reports 595 editable text frames (586 article and nine cover frames), six linked images and zero text
 frames overflowing before save or after reopening. PDF text inventories match
 the native frames on every page after whitespace/ligature normalization. All
 image links resolve as relative paths; all output pages were rendered with
@@ -89,6 +93,11 @@ Poppler and visually reviewed. `data/native_validation.json` and
 `data/pdf_validation.json` contain the machine checks. Source SHA-256 hashes are
 in `source_metadata/source_inventory.json`; figure transforms and tonal endpoints
 are in `data/artwork.json`.
+
+The v02 article frame data and image placements exactly match v01. All seven
+article pages have identical pixel renders at 144 dpi; only the cover is new.
+`data/cover_preservation_check.json` records these checks and the baseline hash.
+`data/cover.json` separates the cover’s original wording from added identification.
 
 This is a reviewed reconstruction, not an independent historical or engineering
 verification of Jordan's claims. The numerical statements are reproduced, not
