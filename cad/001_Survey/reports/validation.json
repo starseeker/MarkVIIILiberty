@@ -1,0 +1,160 @@
+{
+  "database_sha256": "6dfd7c413d777601e6e8660cd7d1386e2071aed9cdd0f163f4d1d10d014b8f90",
+  "checks": [
+    {
+      "check": "sqlite_integrity",
+      "passed": true,
+      "detail": "Closed file reopened read-only"
+    },
+    {
+      "check": "foreign_keys",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "all_SNL_rows_preserved",
+      "passed": true,
+      "detail": "7,571 catalogue, component, composition and continuation rows"
+    },
+    {
+      "check": "all_HB_rows_preserved",
+      "passed": true,
+      "detail": "2,082 nomenclature rows and 353 legend rows, including blank-reference rows"
+    },
+    {
+      "check": "all_pdf_pages_indexed",
+      "passed": true,
+      "detail": "10 PDFs; source identifiers and 1-based PDF page numbers"
+    },
+    {
+      "check": "source_json_lossless",
+      "passed": true,
+      "detail": "Every SNL raw row compares equal to the frozen input"
+    },
+    {
+      "check": "every_SNL_physical_row_linked",
+      "passed": true,
+      "detail": "Every parsed catalogue/component row has canonical-part evidence"
+    },
+    {
+      "check": "every_part_has_evidence",
+      "passed": true,
+      "detail": "No unsupported canonical records"
+    },
+    {
+      "check": "composed_of_rows_have_parents",
+      "passed": true,
+      "detail": "Every leading-quantity component is attached to an explicit composition context"
+    },
+    {
+      "check": "no_self_containment",
+      "passed": true,
+      "detail": "No assembly is its own child"
+    },
+    {
+      "check": "no_containment_cycles",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "radiator_tube_quantity",
+      "passed": true,
+      "detail": "Three hundred and three tubes per named core; not three"
+    },
+    {
+      "check": "quantities_not_flattened",
+      "passed": true,
+      "detail": "Catalogue, parent, parenthetical, handbook and spare counts remain distinct"
+    },
+    {
+      "check": "drawing_reference_not_identity",
+      "passed": true,
+      "detail": "679A occurs on distinct pinion and ring parts and has not merged them"
+    },
+    {
+      "check": "numeric_blank_legends_not_parts",
+      "passed": true,
+      "detail": "Blank numeric legend lines remain source records in the review queue"
+    },
+    {
+      "check": "HB_140b_locator",
+      "passed": true,
+      "detail": "Second legend on page 140 has unique row IDs and a correct printed-page locator"
+    },
+    {
+      "check": "inch_conversion",
+      "passed": true,
+      "detail": "410.5 inches \u00d7 25.4 = 10,426.7 mm"
+    },
+    {
+      "check": "scope_of_roller_counts",
+      "passed": true,
+      "detail": "58 lower rollers = 28 spring-equipped + 30 plain"
+    },
+    {
+      "check": "track_shoe_count",
+      "passed": true,
+      "detail": "Production account gives two tracks \u00d7 78 shoes; derived, excludes spares"
+    },
+    {
+      "check": "disputed_wheel_not_numeric",
+      "passed": true,
+      "detail": "HB p. 136 erroneous label is not promoted to an approved wheel diameter"
+    },
+    {
+      "check": "Belleville_conflict_blocked",
+      "passed": true,
+      "detail": "Impossible inside/outside-diameter claim remains blocked"
+    },
+    {
+      "check": "spheres_only_fully_specified",
+      "passed": true,
+      "detail": "Only nominal 1/4-inch and 1-inch steel spheres qualify; no complex assembly certified"
+    },
+    {
+      "check": "figure_index_coverage",
+      "passed": true,
+      "detail": "295 index entries, not 295 unique independent geometric constraints"
+    },
+    {
+      "check": "FTS_population",
+      "passed": true,
+      "detail": "Both normalized records and PDF pages searchable"
+    },
+    {
+      "check": "record_locations_nonempty",
+      "passed": true,
+      "detail": "Every source record has a source path and printed-page locator"
+    },
+    {
+      "check": "research_verification_states",
+      "passed": true,
+      "detail": "Accessible texts, catalog records, archival leads and unsuccessful matches differentiated"
+    },
+    {
+      "check": "configuration_not_flattened",
+      "passed": true,
+      "detail": "Preliminary, production, replacement, future, aircraft, patent, shipping and spare contexts"
+    }
+  ],
+  "all_passed": true,
+  "review_queue": [
+    {
+      "reason": "identifier_collision",
+      "count": 23
+    },
+    {
+      "reason": "missing_source_description",
+      "count": 1
+    },
+    {
+      "reason": "multiple_identifier_matches",
+      "count": 11
+    },
+    {
+      "reason": "unlabelled_numeric_reference",
+      "count": 2
+    }
+  ],
+  "interpretation": "Data and parser checks, not a manufacturing validation or certification of complete geometric coverage."
+}
