@@ -1,0 +1,29 @@
+{
+  "status": "nominal_fit_only_needs_attachment_and_parameter_work",
+  "native_sha256": "207fdda3c1d630a08740553bf166872e8db5a136b556d085ce7be157116a6644",
+  "report_sha256": "7c2dd4ed9df023fc0b4bd5eda3b5d5cea103f533b4e6c573a2e58670d26f135d",
+  "exchange_sha256": "6fff49162d4c8f997653b62df82d2b7fae4bc4c1788d305cb14a57666c94d033",
+  "inspected_raster_hashes": {
+    "frame_case_context.png": "4ba97f9000a0cadabade646332fa0cb8f2d3a07caa2d9d1e12e3f84da93466e9",
+    "frame_supports.png": "c41e5a3c1994fdabc9b6e7b7addbe19cfeb9a0c7e020abe1c36aa7e6a2c223e9",
+    "source_bracket_projection.png": "d9854a16192e995b59921f743195fb567da322987074483475f907458509e2e5",
+    "source_frame_overlay.png": "91276851d04d21788e798851d6d25bbfb81e90cb8200666916ffc338095ea2ad",
+    "transmission_frame_oblique.png": "c35b7fe58436adfbb83b4ed32e7e537ea57783ab32b41ca20a3dd5b981fd9bae"
+  },
+  "findings": [
+    "Inspected all five saved native/source rasters. The frame has separate top and bottom channels, four vertical angles, eight gussets and a central diaphragm. Central bevel transmission, frame hardware and receivers remain incomplete.",
+    "Plate2 overlay broadly follows the channel station and shaft center. The side section constrains planes, not the exact bracket web, channel section or diaphragm form.",
+    "Plate22 overlay distinguishes the actual shaft-height section (blue) from the full projected bracket (gray dashed). The wide source foot is treated as a projection of upper/lower pads; this interpretation remains unresolved.",
+    "The middle diaphragm is an inferred rear panel. Clearance to the absent central bevel case is not qualified.",
+    "Nominal revision clears126 material candidate pairs, with34 contact/gap checks.841 inherited occurrence signatures are unchanged; only four old bracket occurrences changed.860 valid single-solid leaves include eight in-situ lining regions.",
+    "Lower web raised17.784820mm (three source pixels), channel depth reduced160 to148mm, and outside angles moved from bearing stations to the frame ends. These adjustments are inferred within the recorded pick allowances, not printed dimensions.",
+    "The generic controls interpretation still says outside angles at bearing stations; explicit outer_angle_inset=0 and the fit_revision field supersede that wording. Native outer angle station is +/-1145mm.",
+    "Outer bracket/case nominal clearance is only0.236090mm; wall-rivet clearance2.233329mm. R18 corners or removal of the2.5mm aft inset cause overlaps. Expected sensitivity outcomes pass, but the uncertainty envelope is NOT qualified.",
+    "Inner mounting pads stand5.805714mm from the channel face. This is an unresolved attachment gap, not an accepted connection or a measured fiber packer thickness."
+  ],
+  "standard_assembly_modified": false,
+  "historical_fit_qualified": false,
+  "parameter_envelope_qualified": false,
+  "complete_frame_attachment": false,
+  "sensitivity_checks_sha256": "0c17adbfd5bef6862854b7318c6c387572d620af6e77452cce67ca8aa33c4045"
+}

@@ -1,0 +1,69 @@
+{
+  "status": "inspected_mount_packing_sources",
+  "rows": [
+    {
+      "record_id": "SNL:131:010",
+      "source_id": "SNL",
+      "printed_page": "131",
+      "row_no": 10,
+      "record_type": "catalogue_entry",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_125_144.py",
+      "description": "PACKER, transmission frame, fiber (additional)",
+      "raw_json": "{\"brit\": \"M387\", \"ident\": \"\", \"item\": \"PACKER, transmission frame, fiber (additional)\", \"mfr\": \"\", \"note\": \"%X\", \"ord\": \"669\", \"page\": \"131\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_125_144.py\", \"plate\": \"\", \"price\": \".15\", \"qty\": \"4\", \"row\": 10, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_69c957aec18c744d"
+      ]
+    },
+    {
+      "record_id": "SNL:131:011",
+      "source_id": "SNL",
+      "printed_page": "131",
+      "row_no": 11,
+      "record_type": "catalogue_entry",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_125_144.py",
+      "description": "PACKER, transmission frame, fiber (main)",
+      "raw_json": "{\"brit\": \"M386\", \"ident\": \"\", \"item\": \"PACKER, transmission frame, fiber (main)\", \"mfr\": \"\", \"note\": \"%X\", \"ord\": \"669\", \"page\": \"131\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_125_144.py\", \"plate\": \"\", \"price\": \".15\", \"qty\": \"6\", \"row\": 11, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_cb9185cacecfb25f"
+      ]
+    },
+    {
+      "record_id": "HB:nomenclature:209:001",
+      "source_id": "HB",
+      "printed_page": "209",
+      "row_no": 1,
+      "record_type": "nomenclature",
+      "source_path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/tables_batch11.json",
+      "description": "Main packing pieces epicyclic gear frame.",
+      "raw_json": "{\"description\": \"Main packing pieces epicyclic gear frame.\", \"mark\": \"M-386\", \"page\": \"209\", \"path\": \"references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/tables_batch11.json\", \"quantity\": \"8\", \"raw\": {\"lines\": [{\"baseline\": 395.184, \"source_baseline\": 393.5, \"source_box\": [193, 366, 1069, 403], \"source_line_index\": 5, \"text\": \"Main packing pieces epicyclic gear frame.\"}], \"part\": \"M-386\", \"quantity\": \"8\", \"source_line_indices\": [5]}, \"record_type\": \"nomenclature\", \"row\": 1, \"section\": \"EPICYCLIC GEAR\u2014Continued\", \"source\": \"HB\"}",
+      "part_ids": [
+        "P_cb9185cacecfb25f"
+      ]
+    },
+    {
+      "record_id": "HB:nomenclature:209:002",
+      "source_id": "HB",
+      "printed_page": "209",
+      "row_no": 2,
+      "record_type": "nomenclature",
+      "source_path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/tables_batch11.json",
+      "description": "Additional piece epicyclic gear frame.",
+      "raw_json": "{\"description\": \"Additional piece epicyclic gear frame.\", \"mark\": \"M-387\", \"page\": \"209\", \"path\": \"references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/tables_batch11.json\", \"quantity\": \"4\", \"raw\": {\"lines\": [{\"baseline\": 420.092, \"source_baseline\": 419.5, \"source_box\": [192, 391, 1019, 427], \"source_line_index\": 6, \"text\": \"Additional piece epicyclic gear frame.\"}], \"part\": \"M-387\", \"quantity\": \"4\", \"source_line_indices\": [6]}, \"record_type\": \"nomenclature\", \"row\": 2, \"section\": \"EPICYCLIC GEAR\u2014Continued\", \"source\": \"HB\"}",
+      "part_ids": [
+        "P_69c957aec18c744d"
+      ]
+    }
+  ],
+  "inspected_source_hashes": {
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p131.jpg": "baec6ee4026ffe1e177deae1d40c1e273966e4a2f1132ce522073b3badcd59d4",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII105.jpg": "da6b0c9842cb0a9706cf16d258a6d762bf60c6c7260137b9f917d1b5b9a52d84"
+  },
+  "findings": [
+    "SNL131 explicitly identifies M386 main and M387 additional transmission-frame packers as fiber, with totals six and four. Do not label them metal bearing shims or silently equate them with the poured lining.",
+    "HB209 lists main packing pieces M386 eight, additional M387 four. Main quantity conflicts with the SNL six.",
+    "Neither located source specifies thickness, exact contour or receiver assignment. The fixed bracket-to-channel gap does not by itself establish that these packers fill that interface; frame-to-hull packing is another possible interpretation.",
+    "Current inner bracket/channel gap is5.805714mm, resulting from different scaled inside/outside casting mounting planes. It is an unresolved receiver/packing issue, not a source dimension for M386 orM387."
+  ],
+  "geometry_populated": false,
+  "historical_fit_qualified": false
+}

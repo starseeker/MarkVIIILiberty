@@ -1,0 +1,112 @@
+{
+  "analysis_completed": true,
+  "expected_outcomes_passed": true,
+  "native_sha256": "207fdda3c1d630a08740553bf166872e8db5a136b556d085ce7be157116a6644",
+  "nominal_outer_bracket_rebuild_difference_mm3": 0.0,
+  "bearing_interfaces": [
+    {
+      "hand": "Port",
+      "role": "inner",
+      "lining_gaps_mm": [
+        0.14999999999989166,
+        0.1499999687028007
+      ],
+      "cap_split_mm": 0.09999999999990905,
+      "lid_gap_mm": 0.14999999999997726,
+      "passed": true
+    },
+    {
+      "hand": "Port",
+      "role": "outer",
+      "lining_gaps_mm": [
+        0.14999999999990488,
+        0.14999996370381788
+      ],
+      "cap_split_mm": 0.09999999999990905,
+      "lid_gap_mm": 0.14999999999997726,
+      "passed": true
+    },
+    {
+      "hand": "Starboard",
+      "role": "inner",
+      "lining_gaps_mm": [
+        0.14999996870286503,
+        0.14999999999993124
+      ],
+      "cap_split_mm": 0.09999999999990905,
+      "lid_gap_mm": 0.14999999999997726,
+      "passed": true
+    },
+    {
+      "hand": "Starboard",
+      "role": "outer",
+      "lining_gaps_mm": [
+        0.14999996370362056,
+        0.1499999999999046
+      ],
+      "cap_split_mm": 0.09999999999990905,
+      "lid_gap_mm": 0.14999999999997726,
+      "passed": true
+    }
+  ],
+  "stem_variants": [
+    {
+      "parameter": "rear_stem_round_radius",
+      "value": 18,
+      "unit": "mm",
+      "case_overlap_mm3": 121.58908453500366,
+      "rivet_overlap_mm3": 0.0,
+      "minimum_gap_mm": 1.1368683772161603e-13,
+      "geometric_clearance_pass": false,
+      "expected_clearance_pass": false,
+      "expected_outcome_observed": true
+    },
+    {
+      "parameter": "rear_stem_round_radius",
+      "value": 22,
+      "unit": "mm",
+      "case_overlap_mm3": 0.0,
+      "rivet_overlap_mm3": 0.0,
+      "minimum_gap_mm": 0.700040121731449,
+      "geometric_clearance_pass": true,
+      "expected_clearance_pass": true,
+      "expected_outcome_observed": true
+    },
+    {
+      "parameter": "rear_stem_end_inset",
+      "value": 0,
+      "unit": "mm",
+      "case_overlap_mm3": 338.5782281440656,
+      "rivet_overlap_mm3": 2.392474259398086,
+      "minimum_gap_mm": 0.0,
+      "geometric_clearance_pass": false,
+      "expected_clearance_pass": false,
+      "expected_outcome_observed": true
+    }
+  ],
+  "frame_negative_witnesses": [
+    {
+      "parameter": "channel_depth",
+      "value": 160,
+      "unit": "mm",
+      "member": "TopChannel",
+      "receiver": "PortCasingWall_WallRivet10",
+      "overlap_mm3": 2092.7931613787778,
+      "expected_rejection_observed": true
+    },
+    {
+      "parameter": "bottom_web_z",
+      "value": 569.1142314990511,
+      "unit": "mm",
+      "member": "BottomChannel",
+      "receiver": "hull_floor_8",
+      "overlap_mm3": 219840.00000000006,
+      "expected_rejection_observed": true
+    }
+  ],
+  "script_sha256": "3daa0015d2ebbced18f10d9f604021e7b2b044a2d33be69bea54c0e58d56a565",
+  "nominal_report_sha256": "7c2dd4ed9df023fc0b4bd5eda3b5d5cea103f533b4e6c573a2e58670d26f135d",
+  "historical_fit_qualified": false,
+  "parameter_envelope_qualified": false,
+  "conclusion": "Nominal static fit is narrow: nearby unmeasured stem radii/endpoints can collide. These witnesses expose sensitivity; they do not qualify the uncertainty range."
+}

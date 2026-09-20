@@ -11,6 +11,31 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — transmission frame and revised support webs
+
+The isolated [frame candidate](experiments/drive_chains/transmission_frame_clearance_build/TransmissionFrameCandidate.FCStd)
+now contains 860 valid single-solid leaves: fifteen new channel, diaphragm, angle
+and gusset occurrences, plus revised webs on four existing bearing brackets.
+The other 841 occurrences retain their earlier geometry. Nineteen new/changed
+solids survive STEP reopening. At nominal dimensions, 126 material candidate
+pairs have no overlap and all 34 contact/gap checks pass. The first frame trial,
+with nineteen overlaps, is retained separately.
+
+The [frame/support view](experiments/drive_chains/transmission_frame_clearance_build/frame_supports.png)
+and four other native/source views were inspected. Channels follow conditional
+Plate 2 picks; bracket vertical webs and separated mounting pads are inferred.
+The Plate 22 comparison explicitly distinguishes a section from a projection.
+The outer bracket/casing gap is only 0.236 mm. Nearby assumed profiles collide,
+so the sensitivity checks **do not qualify the uncertainty envelope**. The inner
+pads still have a 5.806 mm attachment gap; its receiver/packing is unresolved.
+SNL lists six main fiber packers, while the handbook lists eight; neither source
+establishes that these fill the bracket gap.
+
+Frame fasteners, hull attachment, brake suspension and the central bevel case
+remain absent. Bearing cap hardware and lubrication details are next. This is
+partial candidate geometry, not a promoted standard milestone; standard 011 and
+both of its isometric views remain unchanged.
+
 ## 20 September 2026 — fixed transmission bearing trial
 
 The isolated fixture now has 845 valid native solids. Twelve new catalogue

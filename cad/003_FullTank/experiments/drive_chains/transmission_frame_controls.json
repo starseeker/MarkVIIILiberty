@@ -1,0 +1,145 @@
+{
+  "status": "conditional_transmission_frame_and_revised_bracket_candidate",
+  "controls": {
+    "frame_front_x": {
+      "value": 1598.0817913541819,
+      "unit": "mm",
+      "basis": "conditional_image_scale",
+      "interpretation": "Common channel front face follows the outside bracket rear mounting plane; inside bracket has a5.805714mm unresolved packing gap."
+    },
+    "top_web_z": {
+      "value": 1167.8698292220113,
+      "unit": "mm",
+      "basis": "conditional_image_scale",
+      "interpretation": "Underside of upper channel web, source Plate2 pixel y398."
+    },
+    "bottom_web_z": {
+      "value": 586.8990512333966,
+      "unit": "mm",
+      "basis": "conditional_image_scale",
+      "interpretation": "Top of lower channel web. Raw Plate2 y499 pick adjusted to496 (within retained3px allowance) to clear actual hull floor; adjustment is explicit, not a printed dimension."
+    },
+    "channel_depth": {
+      "value": 148,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Approximate channel depth; reduced from initial160mm to clear installed wall-angle rivet heads. Rear face remains within three pixels of Plate2 rear-face pick1477."
+    },
+    "channel_height": {
+      "value": 50,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Approximate flange depth, matching Plate2 y390..398 and499..508."
+    },
+    "channel_stock": {
+      "value": 8,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Undimensioned channel stock; uniform section, rolled root fillets pending."
+    },
+    "channel_half_span": {
+      "value": 1145,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Extends slightly beyond outer bracket feet; photo HB126 approximate total width."
+    },
+    "angle_leg_x": {
+      "value": 50,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Undimensioned diaphragm-angle section in longitudinal direction."
+    },
+    "angle_leg_y": {
+      "value": 40,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Undimensioned transverse angle leg; inner angle/central diaphragm contact."
+    },
+    "angle_stock": {
+      "value": 8,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Undimensioned angle stock."
+    },
+    "gusset_stock": {
+      "value": 8,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Undimensioned horizontal connection plate stock."
+    },
+    "gusset_width": {
+      "value": 120,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Approximate inward triangular gusset reach."
+    },
+    "diaphragm_stock": {
+      "value": 8,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Undimensioned middle diaphragm sheet at the rear of the frame."
+    },
+    "rear_stem_round_radius": {
+      "value": 20,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated cast rear-stem corner rounding; no printed radius. Check source overlay and casing clearance."
+    },
+    "rear_stem_end_inset": {
+      "value": 2.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Move the approximate aft endpoint2.5mm forward within the retained four-pixel pick allowance. No shaft/bearing center changes."
+    },
+    "interface_witness_shift": {
+      "value": 1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Witness displacement for channel/foot contact tests."
+    },
+    "outer_angle_inset": {
+      "value": 0,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Outer diaphragm angles at the frame ends, consistent with corner-gusset assignment; initial bearing-center placement intersected the bearing rear stems."
+    }
+  },
+  "calibration": {
+    "source": "data/calibrations.json:snl_2",
+    "source_image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277_foldout-geometry.png",
+    "source_image_sha256": "7f08a90732b5adb3a14d73f3438f1803de0230a54f9a4e27364ebdf35c91677b",
+    "top_channel_web_pick_px": [
+      1450,
+      398
+    ],
+    "bottom_channel_web_pick_px": [
+      1450,
+      496
+    ],
+    "channel_rear_face_visual_pick_x_px": 1477,
+    "pick_allowance_px": 3,
+    "frame_front_x_derived_from": "transmission_support_clearance_build/report.json:outer bracket rear mounting face",
+    "front_plane_source_residual_mm": 0.9283231460894967,
+    "bottom_channel_web_raw_pick_px": [
+      1450,
+      499
+    ],
+    "bottom_web_fit_adjustment_mm": 17.784819734345433,
+    "rear_plane_source_residual_mm": 15.657167076725273
+  },
+  "interpretations": [
+    "Two transverse channels with openings facing away from the shaft, as in SNL Plate23.",
+    "Four vertical diaphragm angles at the inside/outside bearing stations; eight horizontal triangular gussets connect their ends to channel webs. Exact joint profiles and fasteners are not established.",
+    "M375 middle diaphragm is interpreted as a rear sheet between the inner angles; its clearance to the as-yet unpopulated central bevel case remains pending.",
+    "Bracket feet are separate upper/lower pads on a continuous narrow tapered vertical web. This replaces the arbitrary short rectangular extrusion. Plate22 establishes the projected footprint; the exact3D cast profile is an inference constrained by the frame and chain passage.",
+    "Outer rear stem retains its axial width and approximately its aft extent, with rounded cast corners; its prior rectangular prism is retained in the rejected candidate."
+  ],
+  "deferred": [
+    "Frame rivets, bracket-to-channel bolts/bevel washers and complete receiving joints",
+    "Packing and M391 feet with unresolved source quantities",
+    "Brake suspension brackets/stops",
+    "Central bevel case and cover clearance",
+    "Historical fit and parameter envelope qualification"
+  ],
+  "fit_revision": "Retain rejected first frame:19 overlaps with floor, wall rivets and own rear bearing stems. Move lower web within source-pick allowance, shorten channel depth within rear-face pick allowance, and place outside corner members at frame ends."
+}

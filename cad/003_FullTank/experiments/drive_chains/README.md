@@ -157,3 +157,23 @@ revision. Source reconciliation, frame attachment and complete axial retention,
 brake bands, lubrication performance and full-model integration/parameter
 qualification remain. Full
 inventory, moving engagement and historical-fit claims remain false.
+
+The subsequent `transmission_frame_probe.py` study adds fifteen separate frame
+members and revises the four bracket webs. The first `transmission_frame_build`
+has nineteen interferences and is retained as rejected evidence. The revised
+[frame candidate](transmission_frame_clearance_build/TransmissionFrameCandidate.FCStd)
+has 860 valid leaves, 126 material pairs without overlap and 34 passing contact/gap
+checks; 841 earlier occurrences are unchanged. Five rasters were inspected.
+The source comparisons distinguish projected mounting pads from the actual
+shaft-height section. Outside angles are now at the frame ends, overriding the
+earlier generic controls wording about bearing stations.
+
+This is only a nominal fit: the outer casing gap is 0.236 mm and nearby assumed
+stem shapes collide. `check_transmission_frame_sensitivity.py` preserves those
+negative witnesses and rechecks four bearing interfaces; its expected outcomes
+pass, but parameter-envelope and historical qualification remain false. The
+5.806-mm inner pad/channel gap still needs an evidenced attachment. Main/additional
+fiber packers are recorded in `transmission_mounting_research.json`; their source
+quantity conflict and unknown receiver prevent treating them as this gap's filler.
+Frame rivets/bolts, hull mounting, brake attachments and central bevel case remain
+pending. Main standard 011 is unchanged.

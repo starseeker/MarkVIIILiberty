@@ -444,3 +444,34 @@ shape and casing clearance together. HB134 documents chain-link cutaways in
 gussets and requires casing installation before the gear, but does not establish
 a bearing-foot hole through the casing wall. Neither such a hole nor a smaller
 source footprint is assumed merely to eliminate the current clashes.
+
+### Transmission frame trial and bracket revision
+
+`transmission_frame_clearance_build` now contains separate M373/M374 channels,
+M375 diaphragm, M376/M377/M378 angles and M380/M382/M383/M384 gussets: fifteen
+occurrences from ten shared definitions. Four existing bearing brackets have
+tapered webs and upper/lower mounting pads; their bearing saddles are unchanged.
+The native file reopens with 860 valid single-solid leaves and unchanged geometry
+for the other 841 prior occurrences. Nineteen new/changed solids pass STEP reopening.
+
+The initial frame intersects the floor, wall rivets and its own rear stems in
+nineteen places. The revision moves the bottom web up three source pixels,
+reduces channel depth from 160 to 148 mm within the rear-face pick allowance, and
+moves outer angles to the frame ends. Now 126 new/changed material pairs have no
+overlap; 34 frame/support contact or explicitly expected gap checks pass. All five
+native/source rasters were inspected and their hashes recorded. Plate 22's broad
+foot is interpreted as projected pads, not falsely shown as shaft-height material.
+That interpretation, cast profiles and the middle diaphragm's form remain uncertain.
+
+The nominal outer bracket/casing clearance is 0.236090 mm. Independent sensitivity
+checks expose collisions at an 18-mm corner radius or with the 2.5-mm rear inset
+removed. Restoring the original channel depth or lower-web pick also collides.
+These expected failures demonstrate sensitivity; they do not qualify the uncertain
+parameter ranges. Four saved bearing interfaces still pass. The inner pads' 5.806-mm
+channel gap is unresolved. SNL131 identifies fiber packers M386/M387, but main
+quantity six conflicts with HB209's eight, and receiver/thickness are unknown.
+
+Frame attachment and central bevel case clearance remain incomplete. Finish cap
+hardware and oil fittings, then reconstruct the central case and actual mounting
+receivers before accepting the complete assembly. No new standard snapshot is
+issued for these isolated partial candidates.
