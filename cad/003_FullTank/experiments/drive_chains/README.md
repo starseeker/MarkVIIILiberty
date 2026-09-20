@@ -264,3 +264,23 @@ the assumed tank centerline. Printed M269 diameter381mm is retained despite a
 larger scaled scan extent. Gears, bearings, brake bands, joint hardware and full
 lubrication remain open. This remains an isolated partial reconstruction; see
 the [central transmission packet](../../packets/I03-transmission-core.md).
+
+`transmission_planet_probe.py` extends that fixture with the paired large
+planetary trains and retention: eighteen new occurrences, five revised case/shaft
+occurrences and 934 unchanged components. The
+[saved native candidate](transmission_planet_build/TransmissionPlanetCandidate.FCStd)
+contains 957 valid solids. All 110 material candidate pairs are clear; 24
+specified interface checks, ten native gear-tooth counts and six planet mesh
+checks pass. All 23 new/changed solids survive STEP roundtrip.
+
+The [gear detail](transmission_planet_build/large_gears_oblique.png),
+[cutaway](transmission_planet_build/transmission_gear_cutaway.png) and
+[source comparison](transmission_planet_build/source_review/source_detail.png)
+were inspected. HB126 supplies 18/27/72 teeth at 4–5 DP; pressure angle, root
+form, backlash, axial details and enlarged case seats remain approximations.
+The comparison records a 5.129 mm axial station discrepancy and a substantial
+sun-outline difference. `check_transmission_planets.py` confirms 28 expected
+local outcomes, including deliberately incorrect tooth phases and axial stops.
+These do not qualify historical fits, full motion or the uncertainty envelope.
+See the [large-gear packet](../../packets/I03-large-planetary-gears.md) for source
+identities, remaining pin/bush work and reproduction commands.

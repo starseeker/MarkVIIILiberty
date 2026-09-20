@@ -1,0 +1,32 @@
+{
+  "status": "visually_reviewed_partial_reconstruction_not_historical_fit_qualification",
+  "native_sha256": "51ecb9dd61f01bdc441090f7cead1b61981d3df0d4d9fcc6e662550ae751caed",
+  "report_sha256": "c6dff4744885b720a7e96632378bfaa7708f7bc45175a8471045302826dc65fb",
+  "exchange_sha256": "4540133b2fe3d88b366d452b626cb6730cf7add70e0ca2f0d32441398585be42",
+  "interface_checks_sha256": "4872e4c1714c5a4793d155b7a2ddf759e5b0b9ed6ac7a24ed652bbb140da967c",
+  "source_render_receipt_sha256": "c4c28726b437335a0a407c32ed8ef17bad94150054bc799c86b8fc738e6351f0",
+  "actually_viewed_rasters": {
+    "large_gears_front.png": "0ee9e1b6719f71c4366c7c25aaa2c6e780769e2f193b1b4d70736f92d254bf77",
+    "large_gears_oblique.png": "55e1003638315b0ae9424d71d242c51853e3eefd7640c2fff35674813730657b",
+    "transmission_gear_cutaway.png": "1ad1be8ec500935ad12d45b40b03eaf62b78a98d7647df5ac899ba88f05396dd",
+    "source_plate22_overlay.png": "a9a6b55afde8541847f517e197dfb301c9183b55abdd80c495b331c3e7def980",
+    "transmission_installed.png": "0f8c29f8a75a8be313e84862e215e49fbaebb315c779b6a2307aaa30acc48361",
+    "source_review/shaft_retention_section.png": "3fad4e8ece7ffb0bcc177d059c3c410be57800921e0e8c055079b456a67551de",
+    "source_review/source_detail.png": "7ff1aac6801ae79d5ce178f0842841f92872991621437b3dc686fe1766f626cd"
+  },
+  "preserved_snapshots": {
+    "cad/intermediate_snapshot_iso_transmission_cutaway_001.png": "1ad1be8ec500935ad12d45b40b03eaf62b78a98d7647df5ac899ba88f05396dd",
+    "cad/intermediate_snapshot_detail_transmission_gears_001.png": "55e1003638315b0ae9424d71d242c51853e3eefd7640c2fff35674813730657b"
+  },
+  "findings": [
+    "Native front and oblique inspection views show three separate27-tooth planets meshing between an18-tooth sun and72-tooth ring. Gear-only views omit the carrier and cases so the teeth can be seen. Native analytic tip patches independently confirm counts on all10gears.",
+    "The installed view retains the handbook exterior component sequence. The horizontal cutaway now exposes actual gears in both large planetary spaces; the small planetary train and central bevel spaces remain empty.",
+    "The native ring is clamped between two modeled gasket faces and revised case seats. The enlarged M277local shoulder remains an inferred casting form; bolts, holes and blends are absent.",
+    "Source Plate22 comparison uses the unchanged conditional scale. Gear face width matches the72-pixel pick, while actual faces map to902.067/974.067versus895/967picks: a7.067pixel/5.129mmstation difference required by the current carrier placement and1.5mmface gap. This exceeds the earlier4pixel pick allowance.",
+    "The printed-dimension sun is visibly smaller radially than the illustrated central dark profile. Ring and planet proportions also differ. Tooth counts/pitch are retained; local calibration, illustration conventions and exact component boundaries need further reconciliation. This is a discrepancy, not historical-fit acceptance.",
+    "Three equally spaced planets cannot all lie in one shaft-height section. The single-plane native planet silhouette differs from the source two-pin presentation, which may be a composite section. No ad hoc displacement was used to match it.",
+    "The shaft-retention cutaway shows the separate sun clip and carrier washer. Native0.15mmclip/sun and groove gaps and0.1mmwasherface gaps pass; actual axial shifts encounter solid stops. Exact spring section and assembly procedure are not established."
+  ],
+  "accepted_scope": "Nominal large gear and retention geometry in the isolated fixture, with documented tooth/stack/casting approximations. No full motion, loads, historical fits, full uncertainty qualification or standard integration.",
+  "next": "Populate the large-planet pins, bronze/steel bushings and pin rings with physical carrier receivers, then the small planetary train and central bevel drive. Preserve source identity and drawing discrepancies."
+}

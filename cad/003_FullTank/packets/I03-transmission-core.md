@@ -5,6 +5,11 @@ The standard tank remains milestone 011 until integration and full-model checks.
 The complete transmission still requires its gears, bearings, brakes, controls,
 joint hardware and lubrication connections.
 
+The subsequent [large-planetary packet](I03-large-planetary-gears.md) adds the
+large sun/planet/ring gears, washers, clips and gaskets, with revised receiving
+case profiles and shaft grooves. The evidence below remains the original
+shell/rotor checkpoint; use the later candidate for continued reconstruction.
+
 ## Identity and ownership
 
 | Mark | Component | Installed quantity | Survey identity |

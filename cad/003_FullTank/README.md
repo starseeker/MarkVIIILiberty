@@ -92,6 +92,12 @@ remains preserved from snapshot 008.
 The [lower-support packet](packets/R02-lower-supports.md) records source allocations,
 front skirt refinement, native bearing/receiver checks and unfinished retention.
 
+The latest isolated [transmission candidate](experiments/drive_chains/transmission_planet_build/TransmissionPlanetCandidate.FCStd)
+contains 957 valid solids, including both large planetary gear trains. Its
+[gear packet](packets/I03-large-planetary-gears.md) records nominal fit checks,
+source discrepancies and pending pin/bush, small-gear and bevel-drive work.
+It has not yet replaced the standard tank's transmission layout.
+
 Additional commands:
 
 ```sh

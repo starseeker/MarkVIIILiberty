@@ -70,3 +70,15 @@ new bevel-case, cross-shaft, planetary-case, carrier and high-speed drum parts.
 This isolated fixture has 939 solids; gear internals, brake bands and integration
 remain unfinished. It is not standard milestone 012.
 SHA-256: `b7b37e5d9d767742fca1b85e459b622a4de379647ae72b1f87c46dd5d7a07b0e`.
+
+The subsequent isolated [transmission cutaway](intermediate_snapshot_iso_transmission_cutaway_001.png)
+and [large-gear detail](intermediate_snapshot_detail_transmission_gears_001.png)
+show the eighteen added gear, gasket and retention occurrences (20 September
+2026). Both large planetary trains are populated in the 957-solid fixture;
+pin supports, the small train, bevel gears and integration remain open. These
+inspection images supplement the standard history and are not milestone 012.
+
+`intermediate_snapshot_iso_transmission_cutaway_001.png` SHA-256:
+`1ad1be8ec500935ad12d45b40b03eaf62b78a98d7647df5ac899ba88f05396dd`.
+`intermediate_snapshot_detail_transmission_gears_001.png` SHA-256:
+`55e1003638315b0ae9424d71d242c51853e3eefd7640c2fff35674813730657b`.

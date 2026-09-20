@@ -337,6 +337,31 @@
         "historical_fit_qualified": false,
         "gear_fit_qualified": false,
         "next": "Populate M288/M256 interfaces, sun/ring/planet gears and pins, then central bevel drive/input bearings/reversing clutch, with source comparison and actual material checks."
+      },
+      "transmission_planet_experiment": {
+        "path": "experiments/drive_chains/transmission_planet_build",
+        "packet": "packets/I03-large-planetary-gears.md",
+        "status": "nominal_partial_large_gear_and_retention_fit_only",
+        "native_solids": 957,
+        "new_occurrences": 18,
+        "new_source_identities": 6,
+        "changed_prior_occurrences": 5,
+        "unchanged_prior_occurrences": 934,
+        "material_pairs": 110,
+        "overlaps": 0,
+        "specified_gap_contact_checks": 24,
+        "native_tooth_count_checks": 10,
+        "planet_center_mesh_checks": 6,
+        "exchange_roundtrip_solids": 23,
+        "local_interface_trials": 28,
+        "expected_trial_outcomes_pass": true,
+        "actually_viewed_rasters": 7,
+        "standard_modified": false,
+        "full_parameter_envelope_qualified": false,
+        "historical_fit_qualified": false,
+        "motion_qualified": false,
+        "source_axial_station_residual_mm": 5.1285714285714175,
+        "next": "Populate large-planet pins, bronze/steel bushes and pin rings with carrier receivers; retain the M272/M282 source conflict. Continue small planetary train, central bevel drive, mounting, lubrication and integration."
       }
     },
     {
@@ -515,8 +540,8 @@
         "Retain explicit simplified representations for unsupported gear or bearing detail rather than invented exact profiles.",
         "Check alignment, clearances and control connection datums against the installed powerplant and running gear."
       ],
-      "packet": "packets/I03-transmission-core.md",
-      "progress_note": "Central transmission shell/rotor geometry is now populated in the isolated939-leaf chain/frame fixture: eleven new parts across seven source identities; nominal native/STEP/material and local interface trials pass. Gears, bearings, braking/steering controls, clutch, complete mounting/lubrication and full-tank integration remain incomplete."
+      "packet": "packets/I03-large-planetary-gears.md",
+      "progress_note": "Both large planetary trains and their gasket/washer/clip interfaces are populated in the isolated 957-solid fixture: 18 new occurrences, five revised case/shaft occurrences and 934 unchanged. Nominal native/STEP/material checks and 28 local trials pass. Source sun-outline and 5.129 mm axial-station discrepancies remain explicit. Large-planet pin supports, small gears, bevel drive, bearings, clutch, braking/steering controls, complete mounting/lubrication and full-tank integration remain incomplete."
     },
     {
       "id": "I04",

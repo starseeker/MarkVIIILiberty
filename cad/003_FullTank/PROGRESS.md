@@ -11,6 +11,36 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — large planetary gears and retention
+
+The [large planetary candidate](experiments/drive_chains/transmission_planet_build/TransmissionPlanetCandidate.FCStd)
+adds eighteen sun, planet, ring, gasket, washer and retaining-ring occurrences.
+The native fixture now contains **957 valid solid components**, with five earlier
+case/shaft occurrences revised and 934 unchanged. All 110 material candidate
+pairs are clear; 24 specified interface checks, ten native tooth counts and six
+planet-center/mesh checks pass. The 23 new/changed solids survive STEP roundtrip.
+
+The large train uses HB126's 18/27/72 teeth and 4–5 DP. Cubic B-splines approximate
+the involute flanks; pressure angle, root continuations, backlash and fits remain
+documented assumptions. The printed ring dimensions require a larger local
+M277 case bore and shoulder. New M255 end grooves receive the separate M256
+clips; M288 washers fit between the carriers and existing bearing flanges.
+
+Twenty-eight local trials pass their expected outcomes, including deliberately
+misclocked planets and shifted retention parts. Seven inspected images include
+the [SNL comparison](experiments/drive_chains/transmission_planet_build/source_review/source_detail.png).
+The modeled sun differs visibly from the illustrated outline, and the gear face
+station differs by 5.129 mm from the selected source picks. These disagreements
+remain explicit; the checks establish nominal modeled fit, not historical fits
+or full parameter/motion qualification.
+
+Preserved [cutaway](../intermediate_snapshot_iso_transmission_cutaway_001.png) and
+[gear-detail](../intermediate_snapshot_detail_transmission_gears_001.png) images
+record this interior improvement. Standard milestone 011 and its opaque and
+transparent views are unchanged. The [work packet](packets/I03-large-planetary-gears.md)
+keeps large-planet pins/bushings, the small planetary train, central bevel drive,
+brakes, controls, mounting and integration open.
+
 ## 20 September 2026 — central transmission cases and rotors
 
 The [central transmission candidate](experiments/drive_chains/transmission_core_build/TransmissionCoreCandidate.FCStd)
