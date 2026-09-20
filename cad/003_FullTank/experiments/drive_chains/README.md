@@ -177,3 +177,21 @@ fiber packers are recorded in `transmission_mounting_research.json`; their sourc
 quantity conflict and unknown receiver prevent treating them as this gap's filler.
 Frame rivets/bolts, hull mounting, brake attachments and central bevel case remain
 pending. Main standard 011 is unchanged.
+
+`transmission_lid_probe.py` continues from that saved frame. The latest
+`transmission_lid_clearance_build` has 864 valid leaves, adding four source-size
+steel pins and integral hinge features on four caps and four covers. The other
+852 occurrences are unchanged. Thirty new/changed material pairs, four static
+hinge/retained-bearing checks and twelve-solid STEP reopening pass. The rejected
+`transmission_lid_build` preserves four cup-rim interferences with the lower
+hinge-axis assumption. Covers remain closed; pin retention and motion are not
+qualified. See the [cap detail and handbook comparison](transmission_lid_clearance_build/hinge_review/source_hinge_detail.png).
+
+Pin dimensions use exact cylindrical surfaces and volume, not tessellation-cached
+bounding widths. The new material filter removes display triangulation first.
+`check_transmission_frame_bounds.py` independently rechecks all nineteen earlier
+frame/bracket changes with cleaned bounds: the same 126 pairs, no new overlap.
+`transmission_stud_research.json` records the physical stud identities, nuts and
+split pins from original SNL241/124. Bare stud identities differ from nested stud
+assembly identities. The existing estimated ear depths cannot override the
+printed 3⅝-, 4⅞- and 5½-inch stud lengths. Cap fastening and lubrication are next.

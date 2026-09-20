@@ -11,6 +11,30 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — closed oil-cover hinges
+
+The [latest transmission candidate](experiments/drive_chains/transmission_lid_clearance_build/TransmissionLidCandidate.FCStd)
+has 864 valid single-solid leaves. Four steel pins use the SNL's printed
+3/16-inch diameter and 2½-inch length; integral knuckles are added to the four
+caps and covers. The other 852 earlier occurrences retain their geometry.
+Thirty new/changed material pairs have no overlap, and four hinge checks pass:
+0.15-mm bore clearance, receiving-wall interference under a diagnostic shift,
+and preserved cap split/lining seats. Twelve new/changed solids pass STEP reopening.
+The first hinge trial's four cup-rim collisions are retained separately.
+
+The [source comparison](experiments/drive_chains/transmission_lid_clearance_build/hinge_review/source_hinge_detail.png)
+shows the handbook's rear hinge and the closed native cover. Knuckle form and
+placement remain inferred; the source's rounded casting, cap nuts, oil fittings
+and wool filling are still incomplete. Pin axial retention and lid motion are
+unqualified. All standard covers stay closed.
+
+The pin check exposed an understated triangulation-cached bounding box. Printed
+diameter now uses the analytic cylinder, and collision filtering removes display
+mesh caches. An independent frame recheck with those bounds again finds no
+overlap among 126 pairs. Original SNL241/124 also supplies the next cap hardware
+set: eight MX9, four MX10, four MX36 studs, sixteen castle nuts and sixteen split
+pins. Their printed lengths must constrain the unfinished casting bosses.
+
 ## 20 September 2026 — transmission frame and revised support webs
 
 The isolated [frame candidate](experiments/drive_chains/transmission_frame_clearance_build/TransmissionFrameCandidate.FCStd)

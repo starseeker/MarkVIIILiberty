@@ -1,0 +1,79 @@
+{
+  "status": "partial_closed_oil_cover_hinge",
+  "controls": {
+    "pin_diameter": {
+      "value": 4.7625,
+      "unit": "mm",
+      "basis": "printed_nominal_dimension",
+      "interpretation": "SNL56:3/16-inch steel pin; no nominal fit specified."
+    },
+    "pin_length": {
+      "value": 63.5,
+      "unit": "mm",
+      "basis": "printed_nominal_dimension",
+      "interpretation": "SNL56:2-1/2-inch steel pin, one per cap assembly."
+    },
+    "axis_from_cup_back": {
+      "value": 4,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Hinge axis near the rear edge of the oil-cup cover, consistent with HB20 Plate11."
+    },
+    "axis_above_lid": {
+      "value": 6,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated knuckle center above closed lid underside; raised from4.5 to6mm so the central knuckle clears the existing cup rim while remaining fused to the3mm cover."
+    },
+    "knuckle_radius": {
+      "value": 5.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated integral hinge boss radius; no source diameter."
+    },
+    "lid_knuckle_half_length": {
+      "value": 20,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated central lid knuckle extent along shaft axis."
+    },
+    "cap_knuckle_length": {
+      "value": 10,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated width of each of two integral cap lugs."
+    },
+    "axial_knuckle_gap": {
+      "value": 0.25,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Nominal display clearance between interleaved hinge segments; not a manufacturing tolerance."
+    },
+    "pin_radial_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Unthreaded hinge bore radial display allowance."
+    },
+    "pedestal_embed": {
+      "value": 6,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Depth tying integral cap lug pedestals into existing cup rear wall."
+    },
+    "radial_witness_shift": {
+      "value": 1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Diagnostic displacement to prove pin is constrained by the bore walls."
+    }
+  },
+  "identity": "Four physical pins. Knuckles are features of M294/M298 caps and M295 covers, not new catalogue parts.",
+  "configuration": "closed_standard_only",
+  "deferred": [
+    "Pin axial retention or interference fit is undocumented.",
+    "Full motion/access qualification remains deferred until standard geometry is populated.",
+    "Oil fittings, passages, wool and cap studs/nuts remain incomplete."
+  ],
+  "fit_revision": "First4.5mm axis height caused100.461820mm3 lid/cap overlap per bearing. Retain rejected native; revised6mm axis changes only inferred hinge position."
+}

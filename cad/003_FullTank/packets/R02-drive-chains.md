@@ -475,3 +475,41 @@ Frame attachment and central bevel case clearance remain incomplete. Finish cap
 hardware and oil fittings, then reconstruct the central case and actual mounting
 receivers before accepting the complete assembly. No new standard snapshot is
 issued for these isolated partial candidates.
+
+### Oil-cover hinge geometry
+
+The closed standard candidate now includes four SNL56 steel pins (3/16 × 2½ in),
+plus integral hinge knuckles on the existing M294/M298 caps and M295 covers.
+Original HB20 Plate11 shows the rear hinge; segment lengths, radius and position
+are estimates. The initial 4.5-mm axis height intersects each cup rim by
+100.461820 mm³. Raising that inferred axis to 6 mm preserves the pin dimensions
+and gives a clear joint. Both native trials and exact inputs are retained.
+
+The revised `transmission_lid_clearance_build` reopens with 864 valid solids;
+four pins are new, eight cap/cover occurrences change, and 852 prior occurrences
+remain unchanged. Thirty material candidate pairs have no overlap. All four
+hinges have 0.15-mm pin/bore and cap/lid clearance. One-mm radial shifts and
+undrilled receivers correctly collide with the pins. Existing cap/lining seats
+and 0.1-mm bracket splits remain intact. Twelve new/changed solids survive STEP
+reopening. Pin axial retention and cover motion remain unqualified.
+
+The close source/native comparison makes remaining differences visible: the cup
+and cap cast transitions are still square/simplified, and cap nuts, oil inlet,
+fittings and wool are missing. The handbook's lid is open; the native lid stays
+closed, and these perspective images are not used as a dimensional registration.
+The original large source comparison has SVG clipping defects; the separate
+`hinge_review` images provide the corrected readable comparison.
+
+An early pin-diameter assertion used a display-mesh bounding box that understated
+the true cylinder. The revised verifier checks analytic radius, volume and clean
+axial bounds. Collision filtering removes triangulation caches. An independent
+cleaned-bounds check of the earlier frame/bracket candidate confirms 126 material
+pairs with no overlap; its unqualified attachment and uncertainty remain unchanged.
+
+Next fastening inventory is now source-bound in `transmission_stud_research.json`:
+eight MX9 (3⅝ in), four MX10 (4⅞ in), four MX36 (5½ in), all
+3/4-inch nominal diameter; each has one SAE castle nut and one 1/8 × 1⅜-inch split
+pin. The nested bracket rows identify stud assemblies, while SNL241 identifies
+the physical rods separately. Both inside stud lengths need a documented corner
+allocation and suitable receiving bosses; do not shorten rods to fit provisional
+ear depths. Thread forms, nut dimensions and detailed retention remain pending.
