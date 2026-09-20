@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "status": "source_review_and_mathematical_preflight",
+  "status": "source_review_and_isolated_chain_candidates",
   "sources": [
     {
       "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p061.jpg",
@@ -33,6 +33,18 @@
     {
       "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277_foldout-geometry.png",
       "sha256": "7f08a90732b5adb3a14d73f3438f1803de0230a54f9a4e27364ebdf35c91677b"
+    },
+    {
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p060.jpg",
+      "sha256": "2d5a62be80395e72b965b58164db891baf5afef9086d99f824f3b0441336752a"
+    },
+    {
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p170.jpg",
+      "sha256": "708496fcac44f0534465abbfb0e723cc573c05232a34ad5a3ee4c735d3d2a132"
+    },
+    {
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII068.jpg",
+      "sha256": "3cec8119e74b24a5bfc49925f069f2ff618a512bf816fb03f38b80a52fb937d0"
     }
   ],
   "findings": [
@@ -45,11 +57,16 @@
     "HB130 outline also specifies a two-inch chain roller diameter and 4-9/16-inch maximum chain width; its fifty-pitch length agrees with HB132.",
     "SNL Plate22 reference6 depicts the stepped transmission-pinion hub beside its splined shaft and supports. The section does not independently count the teeth.",
     "The phase-aligned fifty-pitch candidate projects to SNL Plate2 pixel (1412.157,451.749), near the visible shaft center. Browser-rendered source overlay inspected; lower route broadly follows chain depiction. This post-prediction visual comparison is not independent metric acceptance.",
-    "HB130-sized roller envelopes interfere with the nominal 22.525 mm circular relief at 16 route vertices. Enlarging relief to 25.65 mm leaves three entry/exit overlaps. Both saved/reopened native elevation rasters were inspected; neither is an accepted chain fit."
+    "HB130-sized roller envelopes interfere with the nominal 22.525 mm circular relief at 16 route vertices. Enlarging relief to 25.65 mm leaves three entry/exit overlaps. Both saved/reopened native elevation rasters were inspected; neither is an accepted chain fit.",
+    "The separate repeated tangent-flank study clears the source-sized rollers. A 25.65 mm root seat and 20 degree tangent flanks retain 0.25 mm minimum static clearance. This reconstructed profile is not a documented historical tooth form.",
+    "The saved/reopened single-chain fixture has 250 separate chain leaves plus two sprockets, with 443 candidate material pairs and zero overlap. Quantities explicitly follow the HB50-pitch interpretation; the SNL count conflict remains unresolved.",
+    "Both handed fixtures contain 504 new candidate leaves, replacing two existing castings in read-only tank context. Their 886 internal and 260 external candidate pairs have 18 overlaps, all against the provisional unperforated M2003 engine-back plate.",
+    "Original SNL60 includes one M1592 casing hull-back-plate angle per casing. Original SNL170 lists the M2003/M1592 riveted joint with allocation (11). These identify a real casing-to-wall connection; they do not dimension an opening.",
+    "Original HB134 describes a 6-5/8 inch wide casing following the entire chain, with a removable roller-pinion cap, supported within the track-extension plates and fastened to hull back plates. Two casing passages in M2003 are an explicit geometric inference from this evidence and the route, not a directly dimensioned source feature."
   ],
   "geometry_created": true,
   "source_bom_reconciled": false,
-  "geometry_scope": "Isolated diagnostic casting and roller envelopes only; no promoted chain components or datum changes.",
+  "geometry_scope": "Isolated fifty-pitch chain components and two handed installed candidates; no promoted chain components or datum changes.",
   "native_visual_review": {
     "roller_clearance_build/current_elevation.png": "294ed3ca71195d19ebeb1d3f89576524b773be5dc50fc08c32349b1ae7de23c6",
     "roller_clearance_build/candidate_elevation.png": "58cd1a60273a2a56d88338ddc9b41ab8d43e7de3bb3f224112eb403c5f0ae81c"

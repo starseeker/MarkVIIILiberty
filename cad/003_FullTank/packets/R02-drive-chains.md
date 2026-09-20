@@ -110,3 +110,34 @@ were inspected. Neither case qualifies chain engagement. The result shows that
 the tooth flank/transition shape needs work in addition to the root radius.
 The currently running pinion qualification still covers its installed wheel,
 shaft and hull interfaces; the chain interface remains explicitly incomplete.
+
+## Separate chain fixture and installed check
+
+The tangent-flank study retains the source roller diameter, tooth count, pitch,
+casting diameter and tooth width. A 25.65 mm root seat with repeated 20-degree
+straight tangent flanks has 0.25 mm minimum static roller clearance. The profile
+is an explicit reconstruction, not a source drawing or a running-mesh validation.
+
+The native single-chain fixture now contains 250 chain components and two
+sprockets. It follows the documented HB interpretation: 25 inner bar pairs,
+25 outer bar pairs, 50 bushings, 50 pins and 50 cotters. Its 443 candidate pairs
+have no overlap after saving and reopening; the pin/bush radial clearance is
+0.155575 mm. Source-sized bushings serve as the wear rollers without inventing
+another part identity. Cotters remain unsplayed, oil holes unlocated, and small
+sprocket hub/spline dimensions inferred. The SNL quantity conflict stays open.
+
+Both handed installations were then tested against the tank's physical solids.
+The 504 candidate leaves replace the two previous castings in that comparison.
+All 18 overlaps among 886 internal and 260 external candidate pairs are with
+the unperforated M2003 engine-room back plate. The failed native model, report
+and inspected rasters are preserved; no chain has been promoted to the standard
+assembly and no transmission datum has been changed.
+
+Original SNL60 identifies M1592 as the casing's hull-back-plate angle. Original
+SNL170 explicitly connects it to M2003 with 1/2 × 1-1/2 inch rivets, allocation
+(11). Together with HB134's 6-5/8 inch casing width and back-plate fastening,
+this supports testing casing passages through the wall. A separate candidate
+retains its documented station, full outer bounds and stock. The opening shape,
+corner radius, sheet thickness and installation clearances are inferred and
+recorded independently in `casing_passage_controls.json`. Casing bodies, caps,
+angles and their fasteners still need reconstruction before integration.

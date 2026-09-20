@@ -1,0 +1,711 @@
+{
+  "complete": true,
+  "authored_fingerprint": {
+    "data/assemblies.json": "a04b1f170f0ad541633c4343a1e64a7e3e02108473ce45149bd298dcf2ad011d",
+    "data/calibrations.json": "fb555b36854a6526575760b723d605d6eb10842b850c413dd8b2234f93f562b7",
+    "data/configuration.json": "06f147e0cacfdcd4b8763867467ff465b37e722aa9ea18a4092fa6cddcff0bc3",
+    "data/datums.json": "13123972fcf9875ff068eace2c5638e4edaabc920f5adb24e754224ed67fa946",
+    "data/definitions.json": "2a4c2a5c64b9c2d8751ea9f31ba7ab7ae685d6cb053a45f8793f0392cb8233f6",
+    "data/drive_mount_source_rows.json": "8043067b84f99a7a37c8f78f5d67bde30f7a4812084eb84637a739599e84ce9a",
+    "data/drive_source_rows.json": "f2b3c4da2fb27eabbb468342e7b234d3ec716d159f5f3b1165b0a16ab0fb17a6",
+    "data/hull_source_rows.json": "e0ee6f04b17b0aedc77271c9b827eda3ea63083852c7469c26dcb6c8147aceaa",
+    "data/idler_source_rows.json": "91acf25ddea218a5cbc1e3fb147d57d43bb5aab250465d314b2df2d09150e2d7",
+    "data/issues.json": "d05aa2d83c85e49fb739725d1810a3784d63eefbfaf07de033eb4e2ad17348d0",
+    "data/louver_source_rows.json": "3aed876c0d9cfd7c3361f4e5fc1f321bc24e8d131cf2f863146e83410942cb56",
+    "data/lower_support_runs.json": "a0c0cbf083c129ce18d34a06af2bff6355ba789995899710eb9957253a479d16",
+    "data/lower_support_source_rows.json": "2b59f967f652ad57a016bf0596e7f1d0a5621cb8259ed7be0798763f36157c15",
+    "data/model.json": "33bb96e07967b04f85697e946eefafd03b7a7be1f1285237b185b1f1dfd3f1a2",
+    "data/occurrences.json": "c202453bc8018ee71540ae46687028f881fbd6fe4e54d7f684bb5f74cadba56a",
+    "data/parameters.json": "846d19fc3f2f0ac129224bc024039ae75fa3b4c36226872047aadbc798b6276b",
+    "data/patterns.json": "1912f02c41a3043831c993fd3f8cc2c19faa96e73b33672bc0cc50ab55542dd4",
+    "data/pinion_source_rows.json": "922d95fbb7b20a8ffd97ae8002d75fd6cb3fc459f1b064251a6c45879d28fce2",
+    "data/roller_source_rows.json": "546c63e6c1d1d7d756d5a7ef0ad4f638dffcd21dd1659f63db03ee9d565c1194",
+    "data/roller_stations.json": "7d8d255f3d6c9a6311be2c23eb9d1410f105f29ecffb38d35391b20664a4e728",
+    "data/sponson_source_rows.json": "79ff510bceb4866fdf10563edcee794dc519c2a9d5541411f26ed79d1f37970f",
+    "data/visual_reviews.json": "3838833930036aa82f4629a35e7cd6d273896f6ee6528b8cd69eccfd7fc4310b",
+    "data/wheel_source_rows.json": "f438b78a73e8dca753736b94872d1eea9a590f9ca4d72d64eac1271cea8e4b98",
+    "lib/__init__.py": "d25dcf9ca8ec9379d065d0f288815387f4d34b0c4a50b8b21a489bf2ccfb2856",
+    "lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "lib/drive_mount_geometry.py": "fe5b79cc645f412a568211380709d3c3d047c0813ba8cc49d75149f8a756383a",
+    "lib/drive_mount_parts.py": "a94614d5abd2d1de9dabb416c646e114f8a625acbfa45096bdcb284a3bc6e5fc",
+    "lib/drive_mount_validation.py": "205b9acf546746aa26e9f0ba6dd94921857726ef92d0514d53e7e867b54fba9b",
+    "lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b",
+    "lib/hull_geometry.py": "7d313b0fa533d770d1af106f16a546c54c0fc112bc331a2f9fb5c8f4a526a233",
+    "lib/hull_parts.py": "5c89659cd857899e184c74d2883ba936c86a6231db9779ebbf4a570b17c79079",
+    "lib/hull_validation.py": "c124742119a136936f665d1c48fe12b198a60406b8565e8522d3ee40fe470dad",
+    "lib/idler_geometry.py": "a5cc2ca776d26581cf4d7984dfc59938f757228acfba5e60198a8c4565cda208",
+    "lib/idler_parts.py": "1c8382870dcb2dbfa619f817e8dc1865d527ba4fa361d34afccdba295dc181f1",
+    "lib/idler_validation.py": "07aea5d89fcc2e406c271651d969fd856d64feb7af52f33940aeac5a1413b13c",
+    "lib/inventory.py": "ee182319bc4964349931419763837ecd1cce054665b2c6cb9702da94d38585e7",
+    "lib/louver_geometry.py": "1d2d7079268a94d3f12f190379910afcd198219494a3a5d85344fcc6b1be9cd1",
+    "lib/louver_parts.py": "a30886270342c4f9d15195a89d255f59c68164568873c81c0ee8364c6a8e617b",
+    "lib/louver_validation.py": "c8690dd3399f8b773782d5539e0411a15e8f033a5bc25e4ba0e49bd622aa18c0",
+    "lib/lower_support_geometry.py": "42c44f8d93230a3bfd51d2814caba64dc6ae707916e6a25cd3bcfd51b35a9fc6",
+    "lib/lower_support_parts.py": "108c20194a228d67af0112d919c4e181c51f0983c03f4ce2120337080d741136",
+    "lib/lower_support_validation.py": "47cbdbfed4393f8f4987fceef8cfaf93625ee6cee611c5c86f137ae44ed4d97d",
+    "lib/model.py": "70b6dba7229b9919f05c39adaba5be9fd7cee1a52d14a9efb6db7e61b73f2075",
+    "lib/parameters.py": "9f27be528507c1432128466edeb541d5bcc697edb599d8a3501b1c42c2f99577",
+    "lib/patterns.py": "4cc7ac6b549b0fc9e6b069724ff330c2e2bb9b5904ca8d9333186e658bda9e28",
+    "lib/pinion_geometry.py": "e2a020501d99bb15dc34d0806842c6d05de1cfa545e195a48c1329e7ebabcc73",
+    "lib/pinion_parts.py": "c038ad90db3551f0e0e8c9a06f987f619f62e6802de1011d8391fe75932e7b80",
+    "lib/pinion_validation.py": "f176aae27fcd2ed4843d2668cb29723d38b685419559ce7a927c668005fa1283",
+    "lib/raster.c": "e2e3ef478c8e7dc753c1a56d04fa0a19fa54c6ee50b9fedf8fdfb30716c2bf48",
+    "lib/raster.py": "d4ae9a3f3332576460705ecdddfbf31f3a8ec36a7528996181a51248c11b28b4",
+    "lib/roller_geometry.py": "ba38e9213259ae2a70833313a7bb7a98a2d3af808d440447390c595243af0470",
+    "lib/roller_parts.py": "844075214ea509ea83cca5aa9d205bf478ded1eed70108f49c7fe92d39b4a72b",
+    "lib/roller_validation.py": "148c7c3a62096a56a3363031091ae662e40efe86f913f2712aa74432eebf6a6e",
+    "lib/runtime.py": "f77afcc9ab270d218f5dba30cfb23d834070edd7aeac5bd409c1ab8b1051303d",
+    "lib/sponson_geometry.py": "89e53f01f4be4a6201309a43bbe3bfd9817144d325bad525f32d888baeea4cee",
+    "lib/sponson_parts.py": "967e224c5972f7fa68b6432702c51245183caa939967f161f183ec95ba70a522",
+    "lib/sponson_validation.py": "49b00c2689fbab8c89829eed8dd2ee457c66d79851770ce690b17f8f6260a858",
+    "lib/track_parts.py": "7ee8dc0af8f0d086c842e176a874344a99943a7552ecc9cc046359f8e378d181",
+    "lib/track_path.py": "fcc57a90feec647538d9956abda7d9d15854e0b0fc8675c5077562dae512dcda",
+    "lib/track_validation.py": "4dc9a1a336dd41089284df501a63c7f2e16e66ab6eb6b5d157f0bb031d687d82",
+    "lib/upper_parts.py": "d15c9241dac72e1dc64e1e12fb2e9d4c11d2c6d3f62aa818da7621a657177e40",
+    "lib/upper_validation.py": "450f8da1b918e79336ad9a7d1948208aebbab9118c4e1b400b2b517d9b4d33fa",
+    "lib/visual_review.py": "a8297dc8e18bc1f067fe629dbd5ccbf85484b608a6d874388738783ae6a7b178",
+    "lib/wheel_geometry.py": "6c4333803d69d1b1ab97c82415609f5d3334ec040bc1d049509d989f12b3539d",
+    "lib/wheel_parts.py": "08284ae5fbb1a67727da78cb647b0a2c7d5fa9ef44ac5f8bd0bc5da57c044fb5",
+    "lib/wheel_validation.py": "735e2164ce459df4ed8e4f158bd85e0545e5df36fe430aceedddf2f53b568585",
+    "lib/worker.py": "ec1fcbb8da05a0f6ebabaf3f1fe4a086529578706aba28f01373fe8884a72a42",
+    "manage.py": "9de89dd5fa34596b186919f0dc7613b2c35bbf7f4dd1c3502fc298a0aee23f24"
+  },
+  "cases": [
+    {
+      "flank_degrees": 15,
+      "overlaps": [],
+      "clearances": [
+        {
+          "roller": "DiagnosticRoller00",
+          "gap_mm": 0.24999999999967812
+        },
+        {
+          "roller": "DiagnosticRoller01",
+          "gap_mm": 0.24999999999982317
+        },
+        {
+          "roller": "DiagnosticRoller02",
+          "gap_mm": 0.24999999999988173
+        },
+        {
+          "roller": "DiagnosticRoller03",
+          "gap_mm": 0.24999999999979858
+        },
+        {
+          "roller": "DiagnosticRoller04",
+          "gap_mm": 0.24999999999970046
+        },
+        {
+          "roller": "DiagnosticRoller05",
+          "gap_mm": 0.24999999999990513
+        },
+        {
+          "roller": "DiagnosticRoller06",
+          "gap_mm": 0.24999999999975928
+        },
+        {
+          "roller": "DiagnosticRoller07",
+          "gap_mm": 0.2499999999996281
+        },
+        {
+          "roller": "DiagnosticRoller08",
+          "gap_mm": 0.24999999999964231
+        },
+        {
+          "roller": "DiagnosticRoller09",
+          "gap_mm": 0.2499999999995334
+        },
+        {
+          "roller": "DiagnosticRoller10",
+          "gap_mm": 0.24999999999923203
+        },
+        {
+          "roller": "DiagnosticRoller11",
+          "gap_mm": 0.24999999999919406
+        },
+        {
+          "roller": "DiagnosticRoller12",
+          "gap_mm": 0.559848450888782
+        },
+        {
+          "roller": "DiagnosticRoller13",
+          "gap_mm": 0.09925828715056835
+        },
+        {
+          "roller": "DiagnosticRoller14",
+          "gap_mm": 22.056757738534102
+        },
+        {
+          "roller": "DiagnosticRoller15",
+          "gap_mm": 70.63155807658102
+        },
+        {
+          "roller": "DiagnosticRoller16",
+          "gap_mm": 126.7198872934666
+        },
+        {
+          "roller": "DiagnosticRoller17",
+          "gap_mm": 190.15617318806918
+        },
+        {
+          "roller": "DiagnosticRoller18",
+          "gap_mm": 252.94685535374848
+        },
+        {
+          "roller": "DiagnosticRoller19",
+          "gap_mm": 320.44336447111374
+        },
+        {
+          "roller": "DiagnosticRoller20",
+          "gap_mm": 389.9162667009265
+        },
+        {
+          "roller": "DiagnosticRoller21",
+          "gap_mm": 461.33514060591006
+        },
+        {
+          "roller": "DiagnosticRoller22",
+          "gap_mm": 534.0170830560277
+        },
+        {
+          "roller": "DiagnosticRoller23",
+          "gap_mm": 605.3772874303066
+        },
+        {
+          "roller": "DiagnosticRoller24",
+          "gap_mm": 677.5903288797621
+        },
+        {
+          "roller": "DiagnosticRoller25",
+          "gap_mm": 750.5662999505944
+        },
+        {
+          "roller": "DiagnosticRoller26",
+          "gap_mm": 824.1086078548918
+        },
+        {
+          "roller": "DiagnosticRoller27",
+          "gap_mm": 898.0819602894777
+        },
+        {
+          "roller": "DiagnosticRoller28",
+          "gap_mm": 971.2847702575158
+        },
+        {
+          "roller": "DiagnosticRoller29",
+          "gap_mm": 1029.4022473629166
+        },
+        {
+          "roller": "DiagnosticRoller30",
+          "gap_mm": 1058.4900151769796
+        },
+        {
+          "roller": "DiagnosticRoller31",
+          "gap_mm": 1053.5547308110556
+        },
+        {
+          "roller": "DiagnosticRoller32",
+          "gap_mm": 1012.7174312097519
+        },
+        {
+          "roller": "DiagnosticRoller33",
+          "gap_mm": 946.51344118918
+        },
+        {
+          "roller": "DiagnosticRoller34",
+          "gap_mm": 872.2411530459203
+        },
+        {
+          "roller": "DiagnosticRoller35",
+          "gap_mm": 798.2486258102427
+        },
+        {
+          "roller": "DiagnosticRoller36",
+          "gap_mm": 724.6542952145019
+        },
+        {
+          "roller": "DiagnosticRoller37",
+          "gap_mm": 651.4656948133836
+        },
+        {
+          "roller": "DiagnosticRoller38",
+          "gap_mm": 578.7789438897096
+        },
+        {
+          "roller": "DiagnosticRoller39",
+          "gap_mm": 506.8036312667149
+        },
+        {
+          "roller": "DiagnosticRoller40",
+          "gap_mm": 436.15564250406237
+        },
+        {
+          "roller": "DiagnosticRoller41",
+          "gap_mm": 367.58778240703407
+        },
+        {
+          "roller": "DiagnosticRoller42",
+          "gap_mm": 297.5233681720871
+        },
+        {
+          "roller": "DiagnosticRoller43",
+          "gap_mm": 229.86172008831426
+        },
+        {
+          "roller": "DiagnosticRoller44",
+          "gap_mm": 166.0132952582719
+        },
+        {
+          "roller": "DiagnosticRoller45",
+          "gap_mm": 109.22919209206371
+        },
+        {
+          "roller": "DiagnosticRoller46",
+          "gap_mm": 52.24014362647035
+        },
+        {
+          "roller": "DiagnosticRoller47",
+          "gap_mm": 9.898307537817692
+        },
+        {
+          "roller": "DiagnosticRoller48",
+          "gap_mm": 0.6566172125909534
+        },
+        {
+          "roller": "DiagnosticRoller49",
+          "gap_mm": 0.291512244706952
+        }
+      ],
+      "shape_volume_mm3": 14526998.605299195,
+      "native_sha256": "35356ca3c31982a73639e4309204547da521337d6d340fcbf6b9211f61b2ead7"
+    },
+    {
+      "flank_degrees": 20,
+      "overlaps": [],
+      "clearances": [
+        {
+          "roller": "DiagnosticRoller00",
+          "gap_mm": 0.24999999999980121
+        },
+        {
+          "roller": "DiagnosticRoller01",
+          "gap_mm": 0.24999999999976213
+        },
+        {
+          "roller": "DiagnosticRoller02",
+          "gap_mm": 0.24999999999990494
+        },
+        {
+          "roller": "DiagnosticRoller03",
+          "gap_mm": 0.24999999999987055
+        },
+        {
+          "roller": "DiagnosticRoller04",
+          "gap_mm": 0.24999999999970215
+        },
+        {
+          "roller": "DiagnosticRoller05",
+          "gap_mm": 0.24999999999961614
+        },
+        {
+          "roller": "DiagnosticRoller06",
+          "gap_mm": 0.24999999999984873
+        },
+        {
+          "roller": "DiagnosticRoller07",
+          "gap_mm": 0.24999999999962508
+        },
+        {
+          "roller": "DiagnosticRoller08",
+          "gap_mm": 0.2499999999997079
+        },
+        {
+          "roller": "DiagnosticRoller09",
+          "gap_mm": 0.2499999999996253
+        },
+        {
+          "roller": "DiagnosticRoller10",
+          "gap_mm": 0.2499999999992647
+        },
+        {
+          "roller": "DiagnosticRoller11",
+          "gap_mm": 0.2499999999991489
+        },
+        {
+          "roller": "DiagnosticRoller12",
+          "gap_mm": 0.812506358589687
+        },
+        {
+          "roller": "DiagnosticRoller13",
+          "gap_mm": 1.7363228216647144
+        },
+        {
+          "roller": "DiagnosticRoller14",
+          "gap_mm": 22.26099686535371
+        },
+        {
+          "roller": "DiagnosticRoller15",
+          "gap_mm": 70.84302466627307
+        },
+        {
+          "roller": "DiagnosticRoller16",
+          "gap_mm": 126.87102604245383
+        },
+        {
+          "roller": "DiagnosticRoller17",
+          "gap_mm": 190.5021354069099
+        },
+        {
+          "roller": "DiagnosticRoller18",
+          "gap_mm": 252.98318754107152
+        },
+        {
+          "roller": "DiagnosticRoller19",
+          "gap_mm": 320.44336447111374
+        },
+        {
+          "roller": "DiagnosticRoller20",
+          "gap_mm": 390.009007592591
+        },
+        {
+          "roller": "DiagnosticRoller21",
+          "gap_mm": 461.53090748959744
+        },
+        {
+          "roller": "DiagnosticRoller22",
+          "gap_mm": 534.2888901418575
+        },
+        {
+          "roller": "DiagnosticRoller23",
+          "gap_mm": 605.5809178029319
+        },
+        {
+          "roller": "DiagnosticRoller24",
+          "gap_mm": 677.7297693911097
+        },
+        {
+          "roller": "DiagnosticRoller25",
+          "gap_mm": 750.6534173473882
+        },
+        {
+          "roller": "DiagnosticRoller26",
+          "gap_mm": 824.1523648069757
+        },
+        {
+          "roller": "DiagnosticRoller27",
+          "gap_mm": 898.0892606423147
+        },
+        {
+          "roller": "DiagnosticRoller28",
+          "gap_mm": 971.2847702575158
+        },
+        {
+          "roller": "DiagnosticRoller29",
+          "gap_mm": 1029.4022473629166
+        },
+        {
+          "roller": "DiagnosticRoller30",
+          "gap_mm": 1058.5753130419114
+        },
+        {
+          "roller": "DiagnosticRoller31",
+          "gap_mm": 1053.7632774569845
+        },
+        {
+          "roller": "DiagnosticRoller32",
+          "gap_mm": 1012.8680504277017
+        },
+        {
+          "roller": "DiagnosticRoller33",
+          "gap_mm": 946.5982439527387
+        },
+        {
+          "roller": "DiagnosticRoller34",
+          "gap_mm": 872.294039453874
+        },
+        {
+          "roller": "DiagnosticRoller35",
+          "gap_mm": 798.2644259511184
+        },
+        {
+          "roller": "DiagnosticRoller36",
+          "gap_mm": 724.6542952145019
+        },
+        {
+          "roller": "DiagnosticRoller37",
+          "gap_mm": 651.4656948133836
+        },
+        {
+          "roller": "DiagnosticRoller38",
+          "gap_mm": 578.7789438897096
+        },
+        {
+          "roller": "DiagnosticRoller39",
+          "gap_mm": 506.86201589669673
+        },
+        {
+          "roller": "DiagnosticRoller40",
+          "gap_mm": 436.31560092796184
+        },
+        {
+          "roller": "DiagnosticRoller41",
+          "gap_mm": 367.88439927630293
+        },
+        {
+          "roller": "DiagnosticRoller42",
+          "gap_mm": 297.72552423854097
+        },
+        {
+          "roller": "DiagnosticRoller43",
+          "gap_mm": 229.86172170733062
+        },
+        {
+          "roller": "DiagnosticRoller44",
+          "gap_mm": 166.09656676693504
+        },
+        {
+          "roller": "DiagnosticRoller45",
+          "gap_mm": 109.70176542833083
+        },
+        {
+          "roller": "DiagnosticRoller46",
+          "gap_mm": 52.24014362647035
+        },
+        {
+          "roller": "DiagnosticRoller47",
+          "gap_mm": 10.612237890616738
+        },
+        {
+          "roller": "DiagnosticRoller48",
+          "gap_mm": 1.9149470096035186
+        },
+        {
+          "roller": "DiagnosticRoller49",
+          "gap_mm": 0.32062354668172083
+        }
+      ],
+      "shape_volume_mm3": 14499345.230195386,
+      "native_sha256": "b59060c2cce4f114ad413e44c462ea61be33a7103590b3ea42a98d61076499c5"
+    },
+    {
+      "flank_degrees": 25,
+      "overlaps": [],
+      "clearances": [
+        {
+          "roller": "DiagnosticRoller00",
+          "gap_mm": 0.24999999999967742
+        },
+        {
+          "roller": "DiagnosticRoller01",
+          "gap_mm": 0.24999999999984615
+        },
+        {
+          "roller": "DiagnosticRoller02",
+          "gap_mm": 0.2499999999998845
+        },
+        {
+          "roller": "DiagnosticRoller03",
+          "gap_mm": 0.249999999999832
+        },
+        {
+          "roller": "DiagnosticRoller04",
+          "gap_mm": 0.2499999999998447
+        },
+        {
+          "roller": "DiagnosticRoller05",
+          "gap_mm": 0.24999999999956038
+        },
+        {
+          "roller": "DiagnosticRoller06",
+          "gap_mm": 0.24999999999974812
+        },
+        {
+          "roller": "DiagnosticRoller07",
+          "gap_mm": 0.24999999999974126
+        },
+        {
+          "roller": "DiagnosticRoller08",
+          "gap_mm": 0.24999999999973851
+        },
+        {
+          "roller": "DiagnosticRoller09",
+          "gap_mm": 0.2499999999996093
+        },
+        {
+          "roller": "DiagnosticRoller10",
+          "gap_mm": 0.2499999999992344
+        },
+        {
+          "roller": "DiagnosticRoller11",
+          "gap_mm": 0.24999999999929942
+        },
+        {
+          "roller": "DiagnosticRoller12",
+          "gap_mm": 1.06088325325136
+        },
+        {
+          "roller": "DiagnosticRoller13",
+          "gap_mm": 3.656727995717912
+        },
+        {
+          "roller": "DiagnosticRoller14",
+          "gap_mm": 22.590564371004522
+        },
+        {
+          "roller": "DiagnosticRoller15",
+          "gap_mm": 71.1408708114254
+        },
+        {
+          "roller": "DiagnosticRoller16",
+          "gap_mm": 127.08466141023703
+        },
+        {
+          "roller": "DiagnosticRoller17",
+          "gap_mm": 190.93344103598233
+        },
+        {
+          "roller": "DiagnosticRoller18",
+          "gap_mm": 253.0524582544568
+        },
+        {
+          "roller": "DiagnosticRoller19",
+          "gap_mm": 320.44336447111374
+        },
+        {
+          "roller": "DiagnosticRoller20",
+          "gap_mm": 390.1390567253046
+        },
+        {
+          "roller": "DiagnosticRoller21",
+          "gap_mm": 461.77890353275626
+        },
+        {
+          "roller": "DiagnosticRoller22",
+          "gap_mm": 534.6238748755283
+        },
+        {
+          "roller": "DiagnosticRoller23",
+          "gap_mm": 605.8362281399848
+        },
+        {
+          "roller": "DiagnosticRoller24",
+          "gap_mm": 677.9101207731879
+        },
+        {
+          "roller": "DiagnosticRoller25",
+          "gap_mm": 750.7726330189673
+        },
+        {
+          "roller": "DiagnosticRoller26",
+          "gap_mm": 824.2208957606905
+        },
+        {
+          "roller": "DiagnosticRoller27",
+          "gap_mm": 898.1151632641443
+        },
+        {
+          "roller": "DiagnosticRoller28",
+          "gap_mm": 971.2847702575158
+        },
+        {
+          "roller": "DiagnosticRoller29",
+          "gap_mm": 1029.4022473629166
+        },
+        {
+          "roller": "DiagnosticRoller30",
+          "gap_mm": 1058.691006697629
+        },
+        {
+          "roller": "DiagnosticRoller31",
+          "gap_mm": 1054.0217704637903
+        },
+        {
+          "roller": "DiagnosticRoller32",
+          "gap_mm": 1013.0595873694583
+        },
+        {
+          "roller": "DiagnosticRoller33",
+          "gap_mm": 946.7137742658235
+        },
+        {
+          "roller": "DiagnosticRoller34",
+          "gap_mm": 872.3729082926591
+        },
+        {
+          "roller": "DiagnosticRoller35",
+          "gap_mm": 798.3006913297029
+        },
+        {
+          "roller": "DiagnosticRoller36",
+          "gap_mm": 724.6542952145019
+        },
+        {
+          "roller": "DiagnosticRoller37",
+          "gap_mm": 651.4656948133836
+        },
+        {
+          "roller": "DiagnosticRoller38",
+          "gap_mm": 578.7803726219478
+        },
+        {
+          "roller": "DiagnosticRoller39",
+          "gap_mm": 506.95021513708883
+        },
+        {
+          "roller": "DiagnosticRoller40",
+          "gap_mm": 436.5225697575445
+        },
+        {
+          "roller": "DiagnosticRoller41",
+          "gap_mm": 368.25092321284166
+        },
+        {
+          "roller": "DiagnosticRoller42",
+          "gap_mm": 297.9848857981101
+        },
+        {
+          "roller": "DiagnosticRoller43",
+          "gap_mm": 229.87729498471177
+        },
+        {
+          "roller": "DiagnosticRoller44",
+          "gap_mm": 166.22650912820566
+        },
+        {
+          "roller": "DiagnosticRoller45",
+          "gap_mm": 110.28888433924229
+        },
+        {
+          "roller": "DiagnosticRoller46",
+          "gap_mm": 52.24014362647035
+        },
+        {
+          "roller": "DiagnosticRoller47",
+          "gap_mm": 11.539441282172234
+        },
+        {
+          "roller": "DiagnosticRoller48",
+          "gap_mm": 3.1606055545500356
+        },
+        {
+          "roller": "DiagnosticRoller49",
+          "gap_mm": 0.3491973608225032
+        }
+      ],
+      "shape_volume_mm3": 14463628.321422499,
+      "native_sha256": "764afac14556b8a4eed71b34cd455fbe2ec8c0dcabfa6f1c5a98b7937b6551c9"
+    }
+  ],
+  "seat_radius_mm": 25.65,
+  "roller_radius_mm": 25.4,
+  "source_diameter_and_count_retained": true,
+  "input_hashes": {
+    "flank_clearance_probe.py": "a8d066f4549ff7d7ebda33a616fc89a6e9e486ddce73311cacf22869920bc0c6",
+    "sprocket_geometry.py": "e05d0ded301f601c28e95dfc9394a175c589f908aa7286eb4879a6089ab4cb08",
+    "installed_pitch_route_report.json": "8e4baeb7457dff7d43fac89c4c00d7ef5926f7d39c9ba1f8ce2ef8ee816e6337"
+  },
+  "promoted": false,
+  "full_chain_interfaces_qualified": false,
+  "historical_profile_qualified": false,
+  "interpretation": "Circular root seats and tangent straight flanks; identical repeated geometry, not per-roller clearance cuts. Static installed route only."
+}
