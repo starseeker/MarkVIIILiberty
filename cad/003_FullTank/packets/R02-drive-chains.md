@@ -283,7 +283,35 @@ reconstruction schedule, **not a reconciled historical BOM**. The audit retains
 the long/short/countersunk rivet conflicts, assumed support bolts, and HB M1586
 alternative. The selected named-component counts match their source entries.
 
-Next: reconcile and disposition source conflicts, add formed chain retention
-and lubrication details, connect the transmission shaft, then integrate and
+Next: reconcile and disposition source conflicts, connect the transmission
+shaft, then integrate and
 qualify the complete chain/casing installation under parameter changes. These
 fixtures do not alter the standard model.
+
+## Formed chain retention and link oil passages
+
+Original HB24 directs lubrication through holes in the links, and HB134 requires
+the holes on top and cotters outboard. Neither supplies hole size or count. The
+selected candidate adds a 3.175 mm passage from the outward edge to each pin bore
+in each bar. The upper straight run faces upward; the lower return follows the
+rotating link orientation. This is an explicit continuous-loop interpretation.
+
+The HB132 split pins retain their 44.45 mm nominal leg centerline length. Tails
+bend beyond the pin surface with an inferred six-mm radius and 50-degree splay.
+The two-round-leg section and eye remain proxies. Splaying their initially
+overlapping sections increases modeled volume by 0.672616 mm³ per cotter;
+exact material conservation and forming mechanics are not claimed.
+
+`chain_detail_build/ChainDetailCandidate.FCStd` preserves 809 saved/reopened,
+valid single-solid leaves. Its 100 changed cotters pass 274 new material
+candidate pairs without overlap, 100 cotter capture checks and 100 pin retention
+checks. Unformed cotters do not provide the same tail extraction stop. The 200
+drilled bars pass 400 oil-to-journal path checks and 200 orientation checks; four
+undrilled controls block the passages. These are static geometric tests.
+
+Five native rasters were inspected and their hashes retained in the external
+visual review. The joint overview section cuts obliquely across the oil holes,
+so `inspect_chain_oil_sections.py` adds separate inner/outer bar-aligned sections
+from the unchanged saved native file. They show the passages reaching the pin
+clearance. Lubrication performance, strength, historical fit, source inventory
+reconciliation and standard-model integration remain incomplete.

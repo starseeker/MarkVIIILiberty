@@ -82,3 +82,17 @@ The chain fixtures are isolated reconstruction studies. Their source quantity
 conflict, approximated tooth/hub details and installation checks are documented
 in [the drive-chain packet](../cad/003_FullTank/packets/R02-drive-chains.md).
 A passing isolated fixture is not a finished or promoted tank subsystem.
+
+## Continuation integrity check
+
+A fresh check after resuming verified 64 main and 68 private authored files,
+all 20 native documents in each build, the milestone010 archive and all 18
+preserved progression images. It also verified the 698 inherited source-lock
+files and the new chain-detail candidate against its saved input/native hashes.
+The receipt is `.work/recovery/continuation_artifact_audit.json`.
+
+Work has continued: the isolated chain candidate now includes formed split-pin
+tails and link oil passages, with passing static geometric checks and inspected
+native sections. It remains separate from the delivered standard model. The
+pinion qualification continues from its existing worker; no replacement process
+was started merely because the conversation resumed.

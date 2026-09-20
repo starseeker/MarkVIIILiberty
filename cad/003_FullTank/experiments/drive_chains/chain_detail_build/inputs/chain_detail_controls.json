@@ -1,0 +1,80 @@
+{
+  "status": "isolated_chain_oiling_and_formed_retention_candidate",
+  "controls": {
+    "oil_hole_diameter": {
+      "value": 3.175,
+      "bounds": [
+        2,
+        4
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Undimensioned link-edge oil passage, selected one per pin bore. Bounds are not qualified ranges."
+    },
+    "cotter_bend_radius": {
+      "value": 6.0,
+      "bounds": [
+        5,
+        8
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Tail centerline bend radius. Bounds are not qualified ranges."
+    },
+    "cotter_bend_angle": {
+      "value": 50,
+      "bounds": [
+        40,
+        60
+      ],
+      "unit": "degree",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Symmetric outward tail bend. Bounds are not qualified ranges."
+    },
+    "cotter_pin_exit_gap": {
+      "value": 0.1,
+      "bounds": [
+        0.05,
+        0.3
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Tail bend starts beyond pin radius plus proxy wire radius and this gap. Bounds are not qualified ranges."
+    },
+    "cotter_pull_witness": {
+      "value": 10,
+      "bounds": [
+        8,
+        12
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Straight extraction witness toward the eye; not a permitted motion. Bounds are not qualified ranges."
+    },
+    "pin_pull_witness": {
+      "value": 5,
+      "bounds": [
+        4,
+        6
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Axial pin capture witness relative to outer bar. Bounds are not qualified ranges."
+    },
+    "oil_witness_margin": {
+      "value": 0.02,
+      "bounds": [
+        0.01,
+        0.04
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Trim oil-to-journal witness annulus away from exact native faces. Bounds are not qualified ranges."
+    }
+  },
+  "inherited_controls": "chain_candidate_controls.json remains unchanged; its direct dimensions and earlier approximation status are inherited, not upgraded.",
+  "oil_hole_face": "local negative Z in each existing bar definition; native upper-run orientation checked separately",
+  "quantity_change": 0,
+  "geometry_change": "Replace100cotter shapes and drill200bar occurrences through reused definitions. Existing pins, bushings, routes, casings and sprockets retained.",
+  "historical_fit_qualified": false
+}

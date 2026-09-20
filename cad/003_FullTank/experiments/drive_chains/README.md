@@ -84,12 +84,23 @@ delivered assembly or reconcile the catalogue's chain component quantities.
   components across all twelve selected SNL casing marks. The audit reports
   actual hardware counts and retains every known quantity/identity conflict;
   it does not declare historical inventory reconciliation or standard promotion.
+- `chain_detail_probe.py` forms 100 split-pin tails and drills 400 inferred oil
+  passages through the 200 link-bar occurrences. The saved/reopened 809-leaf
+  fixture passes 274 new material pairs, 100 cotter capture checks, 100 pin
+  retention checks, 400 oil-to-journal paths and 200 orientation checks. Unformed
+  cotters and undrilled bars supply negative controls. HB24/132/134 establish the
+  functional features and split-pin size; passage dimensions and tail form remain
+  assumptions. The [joint detail](chain_detail_build/chain_joint_detail.png) and
+  [bar-aligned oil section](chain_detail_build/oil_sections/inner_bar_oil_section.png)
+  were inspected. `inspect_chain_oil_sections.py` supplies separate local sections
+  because the joint overview cuts obliquely across the individual oil passages.
 
 Native probes accept `--stage` pointing to the authored pinion experiment and
 an optional `--output`. They do not modify that stage. The complete chain
-candidate includes bars, bushes, pins and unsplayed cotters; the older circular
+candidate includes bars, bushes, pins and initially unsplayed cotters; the detail
+candidate adds formed tails and oil passages. The older circular
 clearance probe contains only diagnostic annuli. Casing shells and their wall
 attachments, cap cleats, beading, register plates and supports are now separate
-candidates. Source reconciliation, transmission-shaft integration, formed chain
-retention, lubrication and full-model parameter qualification remain. Full
+candidates. Source reconciliation, transmission-shaft integration, lubrication
+performance and full-model parameter qualification remain. Full
 inventory, moving engagement and historical-fit claims remain false.

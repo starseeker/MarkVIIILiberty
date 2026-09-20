@@ -51,10 +51,19 @@ form remain documented approximations. Catalogue chain quantities and several
 casing fastener schedules still conflict.
 
 These parts are **not promoted to the standard model**. Source reconciliation,
-formed chain retention, lubrication and transmission interfaces remain before
+transmission interfaces and full-model checks remain before
 integration and parameter qualification. See the
 [chain/casing packet](packets/R02-drive-chains.md) and
 [native support detail](experiments/drive_chains/casing_support_build/casing_support_detail.png).
+
+The latest isolated detail candidate forms all 100 chain cotters and adds 400
+inferred oil passages across 200 bar occurrences. It retains 809 valid native
+solids and passes 274 new material pairs, 100 cotter capture checks, 100 pin
+retention checks, 400 oil paths and 200 orientation checks, with negative
+controls. The original lubrication instructions support the features, but hole
+dimensions and tail bends remain assumptions. Five actual rasters were inspected,
+including clearer bar-aligned sections. Static retention and open passages are
+checked; strength, lubrication performance and running engagement are not.
 
 ## 20 September 2026 — experimental full-tank roller-pinion integration
 
