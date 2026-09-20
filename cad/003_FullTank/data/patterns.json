@@ -1,0 +1,106 @@
+[
+  {
+    "id": "PortTrack",
+    "parent": "PortRunningGear",
+    "frame": "port_track",
+    "count": "track_units_per_side",
+    "assembly": "track_unit",
+    "evidence": [
+      "page:HB:136",
+      "page:HB:137",
+      "record:JORDAN:survey:018",
+      "issue:track_outline"
+    ],
+    "mode": "closed_track",
+    "survey_ids": [
+      "P_1cd56f1415062c80"
+    ]
+  },
+  {
+    "id": "StarboardTrack",
+    "parent": "StarboardRunningGear",
+    "frame": "starboard_track",
+    "count": "track_units_per_side",
+    "assembly": "track_unit",
+    "evidence": [
+      "page:HB:136",
+      "page:HB:137",
+      "record:JORDAN:survey:018",
+      "issue:track_outline"
+    ],
+    "mode": "closed_track",
+    "survey_ids": [
+      "P_1cd56f1415062c80"
+    ]
+  },
+  {
+    "id": "PortRollers",
+    "parent": "PortRunningGear",
+    "frame": "port_track",
+    "count": "roller_stations_per_side",
+    "assembly": "roller_plain_stack",
+    "mode": "roller_bank",
+    "hand": 1,
+    "evidence": [
+      "issue:roller_station_fit",
+      "issue:roller_count_scope"
+    ]
+  },
+  {
+    "id": "StarboardRollers",
+    "parent": "StarboardRunningGear",
+    "frame": "starboard_track",
+    "count": "roller_stations_per_side",
+    "assembly": "roller_plain_stack",
+    "mode": "roller_bank",
+    "hand": -1,
+    "evidence": [
+      "issue:roller_station_fit",
+      "issue:roller_count_scope"
+    ]
+  },
+  {
+    "id": "PortIdler",
+    "parent": "PortRunningGear",
+    "frame": "port_idler_reference",
+    "count": 1,
+    "assembly": "idler_installation",
+    "evidence": [
+      "issue:idler_wheel_reconstruction"
+    ]
+  },
+  {
+    "id": "StarboardIdler",
+    "parent": "StarboardRunningGear",
+    "frame": "starboard_idler_reference",
+    "count": 1,
+    "assembly": "idler_installation",
+    "evidence": [
+      "issue:idler_wheel_reconstruction"
+    ]
+  },
+  {
+    "id": "PortDrive",
+    "parent": "PortRunningGear",
+    "frame": "port_drive",
+    "count": 1,
+    "assembly": "drive_installation",
+    "evidence": [
+      "record:SNL:275:005",
+      "issue:drive_wheel_reconstruction",
+      "issue:common_wheel_reconstruction"
+    ]
+  },
+  {
+    "id": "StarboardDrive",
+    "parent": "StarboardRunningGear",
+    "frame": "starboard_drive",
+    "count": 1,
+    "assembly": "drive_installation",
+    "evidence": [
+      "record:SNL:275:005",
+      "issue:drive_wheel_reconstruction",
+      "issue:common_wheel_reconstruction"
+    ]
+  }
+]

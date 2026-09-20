@@ -1,0 +1,362 @@
+{
+  "snl_1": {
+    "mode": "visual_only",
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277-geometry.png",
+    "original": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p277.jpg",
+    "crop": [
+      0,
+      0,
+      1676,
+      890
+    ],
+    "note": "Right side photograph; compare silhouette only.",
+    "controls": [],
+    "checks": [],
+    "prior_transform_document": "references/1928-03-30_SNL_G13/SNL_G13_Project/FIGURE_REFINEMENT.md"
+  },
+  "snl_3": {
+    "mode": "visual_only",
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p278-geometry.png",
+    "original": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p278.jpg",
+    "crop": [
+      0,
+      0,
+      1093,
+      825
+    ],
+    "note": "Rear photograph; perspective and missing equipment.",
+    "controls": [],
+    "checks": [],
+    "prior_transform_document": "references/1928-03-30_SNL_G13/SNL_G13_Project/FIGURE_REFINEMENT.md"
+  },
+  "snl_4": {
+    "mode": "visual_only",
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p278-geometry.png",
+    "original": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p278.jpg",
+    "crop": [
+      0,
+      825,
+      1093,
+      1676
+    ],
+    "note": "Top is a perspective photograph, not an orthographic plan.",
+    "controls": [],
+    "checks": [],
+    "prior_transform_document": "references/1928-03-30_SNL_G13/SNL_G13_Project/FIGURE_REFINEMENT.md"
+  },
+  "snl_10": {
+    "mode": "visual_only",
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p283-geometry.png",
+    "original": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p283.jpg",
+    "crop": [
+      0,
+      0,
+      1068,
+      800
+    ],
+    "note": "Front photograph; perspective prevents reliable global scaling.",
+    "controls": [],
+    "checks": [],
+    "prior_transform_document": "references/1928-03-30_SNL_G13/SNL_G13_Project/FIGURE_REFINEMENT.md"
+  },
+  "snl_2": {
+    "mode": "conditional_metric",
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277_foldout-geometry.png",
+    "original": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p277_foldout.jpg",
+    "crop": [
+      0,
+      0,
+      1900,
+      750
+    ],
+    "note": "Flat scanned section; axes scaled independently using provisional handbook envelope. Positive X points left in image. Datum below rear drive center at image x=1715.",
+    "datum_pixel": [
+      1715,
+      595
+    ],
+    "axes": {
+      "x": {
+        "pixels": [
+          85,
+          1815
+        ],
+        "span_parameter": "vehicle_length",
+        "sign": -1
+      },
+      "z": {
+        "pixels": [
+          68,
+          595
+        ],
+        "span_parameter": "vehicle_height",
+        "sign": -1
+      }
+    },
+    "checks": [
+      {
+        "label": "drive wheel OD (approximate visible rim)",
+        "axis": "x",
+        "pixels": [
+          1631,
+          1799
+        ],
+        "parameter": "drive_diameter"
+      },
+      {
+        "label": "idler wheel OD (rim partly obscured)",
+        "axis": "z",
+        "pixels": [
+          276,
+          447
+        ],
+        "parameter": "idler_diameter"
+      }
+    ],
+    "point_uncertainty_px": 3,
+    "prior_transform_document": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/foldout_provenance.json",
+    "profiles": {
+      "hull": [
+        [
+          108,
+          310
+        ],
+        [
+          153,
+          273
+        ],
+        [
+          382,
+          231
+        ],
+        [
+          948,
+          237
+        ],
+        [
+          1590,
+          337
+        ],
+        [
+          1700,
+          375
+        ],
+        [
+          1775,
+          443
+        ],
+        [
+          1760,
+          491
+        ],
+        [
+          1630,
+          551
+        ],
+        [
+          1440,
+          566
+        ],
+        [
+          694,
+          566
+        ],
+        [
+          400,
+          530
+        ],
+        [
+          245,
+          461
+        ],
+        [
+          151,
+          375
+        ]
+      ],
+      "upper": [
+        [
+          395,
+          232
+        ],
+        [
+          395,
+          179
+        ],
+        [
+          474,
+          179
+        ],
+        [
+          495,
+          126
+        ],
+        [
+          870,
+          127
+        ],
+        [
+          926,
+          164
+        ],
+        [
+          949,
+          237
+        ]
+      ],
+      "outlook": [
+        [
+          651,
+          126
+        ],
+        [
+          657,
+          70
+        ],
+        [
+          725,
+          70
+        ],
+        [
+          736,
+          126
+        ]
+      ],
+      "track": [
+        [
+          93,
+          313
+        ],
+        [
+          126,
+          277
+        ],
+        [
+          261,
+          236
+        ],
+        [
+          421,
+          226
+        ],
+        [
+          913,
+          232
+        ],
+        [
+          1580,
+          326
+        ],
+        [
+          1725,
+          362
+        ],
+        [
+          1804,
+          421
+        ],
+        [
+          1813,
+          470
+        ],
+        [
+          1778,
+          528
+        ],
+        [
+          1650,
+          570
+        ],
+        [
+          1450,
+          595
+        ],
+        [
+          654,
+          595
+        ],
+        [
+          437,
+          574
+        ],
+        [
+          286,
+          520
+        ],
+        [
+          187,
+          449
+        ],
+        [
+          120,
+          368
+        ]
+      ]
+    },
+    "axes_pixels": {
+      "drive": [
+        1715,
+        453
+      ],
+      "idler": [
+        163,
+        350
+      ]
+    }
+  },
+  "snl_29": {
+    "mode": "conditional_metric",
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p301-geometry.png",
+    "original": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p301.jpg",
+    "crop": [
+      0,
+      0,
+      1757,
+      882
+    ],
+    "note": "Section with 22.25-inch plate spacing. Vertical scale independently uses handbook roller diameter. Axial width held out as a disagreement check; shapes use printed dimensions.",
+    "datum_pixel": [
+      660,
+      489
+    ],
+    "axes": {
+      "x": {
+        "pixels": [
+          151,
+          1171
+        ],
+        "span_parameter": "plate_spacing",
+        "sign": 1
+      },
+      "z": {
+        "pixels": [
+          291,
+          685
+        ],
+        "span_parameter": "roller_diameter",
+        "sign": -1
+      }
+    },
+    "checks": [
+      {
+        "label": "left roller width",
+        "axis": "x",
+        "pixels": [
+          211,
+          458
+        ],
+        "parameter": "roller_width"
+      },
+      {
+        "label": "tube length",
+        "axis": "x",
+        "pixels": [
+          169,
+          1155
+        ],
+        "parameter": "tube_length"
+      }
+    ],
+    "point_uncertainty_px": 3,
+    "prior_transform_document": "references/1928-03-30_SNL_G13/SNL_G13_Project/FIGURE_REFINEMENT.md"
+  }
+}

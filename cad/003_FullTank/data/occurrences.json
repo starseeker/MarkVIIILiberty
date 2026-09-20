@@ -1,0 +1,4762 @@
+[
+  {
+    "id": "HullStructure",
+    "parent": "Root",
+    "definition": null,
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only"
+    ]
+  },
+  {
+    "id": "RunningGear",
+    "parent": "Root",
+    "definition": null,
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only"
+    ]
+  },
+  {
+    "id": "Sponsons",
+    "parent": "Root",
+    "definition": null,
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only"
+    ]
+  },
+  {
+    "id": "Powerplant",
+    "parent": "Root",
+    "definition": null,
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only"
+    ]
+  },
+  {
+    "id": "Drivetrain",
+    "parent": "Root",
+    "definition": null,
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only"
+    ]
+  },
+  {
+    "id": "CoolingVentilation",
+    "parent": "Root",
+    "definition": null,
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only"
+    ]
+  },
+  {
+    "id": "FuelPressure",
+    "parent": "Root",
+    "definition": null,
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only"
+    ]
+  },
+  {
+    "id": "ElectricalInstruments",
+    "parent": "Root",
+    "definition": null,
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only"
+    ]
+  },
+  {
+    "id": "CrewControlsAndEquipment",
+    "parent": "Root",
+    "definition": null,
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only"
+    ]
+  },
+  {
+    "id": "ArmamentRepresentation",
+    "parent": "Root",
+    "definition": null,
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only"
+    ]
+  },
+  {
+    "id": "port_track_path",
+    "parent": "PortRunningGear",
+    "definition": "track_path",
+    "frame": "port_track",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "port_stowage",
+    "parent": "CrewControlsAndEquipment",
+    "definition": "stowage",
+    "frame": "stowage_port",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "starboard_track_path",
+    "parent": "StarboardRunningGear",
+    "definition": "track_path",
+    "frame": "starboard_track",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "starboard_stowage",
+    "parent": "CrewControlsAndEquipment",
+    "definition": "stowage",
+    "frame": "stowage_starboard",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "engine",
+    "parent": "Powerplant",
+    "definition": "engine",
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "transmission",
+    "parent": "Drivetrain",
+    "definition": "transmission",
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "clutch",
+    "parent": "Drivetrain",
+    "definition": "clutch",
+    "frame": "clutch_axis",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "radiator",
+    "parent": "CoolingVentilation",
+    "definition": "radiator",
+    "frame": "radiator_port",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "cooling_fan",
+    "parent": "CoolingVentilation",
+    "definition": "fan",
+    "frame": "fan_axis",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "fuel_tank_port",
+    "parent": "FuelPressure",
+    "definition": "fuel_tank",
+    "frame": "fuel_port",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "fuel_tank_center",
+    "parent": "FuelPressure",
+    "definition": "fuel_tank",
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "fuel_tank_starboard",
+    "parent": "FuelPressure",
+    "definition": "fuel_tank",
+    "frame": "fuel_starboard",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "carburetor_reservation",
+    "parent": "FuelPressure",
+    "definition": "carburetor",
+    "frame": "carburetor_reservation",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "battery",
+    "parent": "ElectricalInstruments",
+    "definition": "battery",
+    "frame": "battery_port",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "driver_seat",
+    "parent": "CrewControlsAndEquipment",
+    "definition": "driver_seat",
+    "frame": "world",
+    "evidence": [
+      "issue:layout_only",
+      "issue:installation_interfaces"
+    ]
+  },
+  {
+    "id": "PortRunningGear",
+    "parent": "RunningGear",
+    "definition": null,
+    "frame": "port_track",
+    "evidence": [
+      "issue:layout_only"
+    ]
+  },
+  {
+    "id": "StarboardRunningGear",
+    "parent": "RunningGear",
+    "definition": null,
+    "frame": "starboard_track",
+    "evidence": [
+      "issue:layout_only"
+    ]
+  },
+  {
+    "id": "UpperStructure",
+    "parent": "HullStructure",
+    "definition": null,
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction"
+    ]
+  },
+  {
+    "id": "MainEnclosure",
+    "parent": "UpperStructure",
+    "definition": null,
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction"
+    ]
+  },
+  {
+    "id": "DriverEnclosure",
+    "parent": "UpperStructure",
+    "definition": null,
+    "frame": "upper_driver_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction"
+    ]
+  },
+  {
+    "id": "Lookout",
+    "parent": "UpperStructure",
+    "definition": null,
+    "frame": "upper_lookout_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction"
+    ],
+    "survey_ids": [
+      "P_9adef66c767992d7"
+    ]
+  },
+  {
+    "id": "upper_port_main_side_front",
+    "parent": "MainEnclosure",
+    "definition": "upper_port_main_side_front",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:150:014"
+    ]
+  },
+  {
+    "id": "upper_port_main_side_rear",
+    "parent": "MainEnclosure",
+    "definition": "upper_port_main_side_rear",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:150:016"
+    ]
+  },
+  {
+    "id": "upper_port_main_roof",
+    "parent": "MainEnclosure",
+    "definition": "upper_port_main_roof",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:150:027"
+    ]
+  },
+  {
+    "id": "upper_port_main_rear",
+    "parent": "MainEnclosure",
+    "definition": "upper_port_main_rear",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:150:017"
+    ]
+  },
+  {
+    "id": "upper_port_main_junction",
+    "parent": "MainEnclosure",
+    "definition": "upper_port_main_junction",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:133:018"
+    ]
+  },
+  {
+    "id": "upper_port_main_flap",
+    "parent": "MainEnclosure",
+    "definition": "upper_port_main_flap",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:95:001"
+    ]
+  },
+  {
+    "id": "upper_port_main_wing",
+    "parent": "MainEnclosure",
+    "definition": "upper_port_main_wing",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:151:003"
+    ]
+  },
+  {
+    "id": "upper_port_roof_door",
+    "parent": "MainEnclosure",
+    "definition": "upper_port_roof_door",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:81:034"
+    ]
+  },
+  {
+    "id": "upper_port_driver_side",
+    "parent": "DriverEnclosure",
+    "definition": "upper_port_driver_side",
+    "frame": "upper_driver_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:147:013"
+    ]
+  },
+  {
+    "id": "upper_port_lookout_side",
+    "parent": "Lookout",
+    "definition": "upper_port_lookout_side",
+    "frame": "upper_lookout_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:264:017"
+    ]
+  },
+  {
+    "id": "upper_starboard_main_side_front",
+    "parent": "MainEnclosure",
+    "definition": "upper_starboard_main_side_front",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:150:015"
+    ]
+  },
+  {
+    "id": "upper_starboard_main_side_rear",
+    "parent": "MainEnclosure",
+    "definition": "upper_starboard_main_side_rear",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:150:018"
+    ]
+  },
+  {
+    "id": "upper_starboard_main_roof",
+    "parent": "MainEnclosure",
+    "definition": "upper_starboard_main_roof",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:150:028"
+    ]
+  },
+  {
+    "id": "upper_starboard_main_rear",
+    "parent": "MainEnclosure",
+    "definition": "upper_starboard_main_rear",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:150:019"
+    ]
+  },
+  {
+    "id": "upper_starboard_main_junction",
+    "parent": "MainEnclosure",
+    "definition": "upper_starboard_main_junction",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:133:018"
+    ]
+  },
+  {
+    "id": "upper_starboard_main_flap",
+    "parent": "MainEnclosure",
+    "definition": "upper_starboard_main_flap",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:95:001"
+    ]
+  },
+  {
+    "id": "upper_starboard_main_wing",
+    "parent": "MainEnclosure",
+    "definition": "upper_starboard_main_wing",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:151:003"
+    ]
+  },
+  {
+    "id": "upper_starboard_roof_door",
+    "parent": "MainEnclosure",
+    "definition": "upper_starboard_roof_door",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:82:004"
+    ]
+  },
+  {
+    "id": "upper_starboard_driver_side",
+    "parent": "DriverEnclosure",
+    "definition": "upper_starboard_driver_side",
+    "frame": "upper_driver_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:147:014"
+    ]
+  },
+  {
+    "id": "upper_starboard_lookout_side",
+    "parent": "Lookout",
+    "definition": "upper_starboard_lookout_side",
+    "frame": "upper_lookout_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:264:017"
+    ]
+  },
+  {
+    "id": "upper_front_center",
+    "parent": "MainEnclosure",
+    "definition": "upper_front_center",
+    "frame": "upper_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:150:024"
+    ]
+  },
+  {
+    "id": "upper_driver_front",
+    "parent": "DriverEnclosure",
+    "definition": "upper_driver_front",
+    "frame": "upper_driver_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:147:019"
+    ]
+  },
+  {
+    "id": "upper_driver_roof",
+    "parent": "DriverEnclosure",
+    "definition": "upper_driver_roof",
+    "frame": "upper_driver_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:147:027"
+    ]
+  },
+  {
+    "id": "upper_lookout_roof",
+    "parent": "Lookout",
+    "definition": "upper_lookout_roof",
+    "frame": "upper_lookout_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:151:014"
+    ]
+  },
+  {
+    "id": "upper_lookout_front",
+    "parent": "Lookout",
+    "definition": "upper_lookout_front",
+    "frame": "upper_lookout_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:264:016"
+    ]
+  },
+  {
+    "id": "upper_lookout_rear",
+    "parent": "Lookout",
+    "definition": "upper_lookout_rear",
+    "frame": "upper_lookout_base",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction",
+      "record:SNL:264:016"
+    ]
+  },
+  {
+    "id": "MainHull",
+    "parent": "HullStructure",
+    "definition": null,
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction"
+    ]
+  },
+  {
+    "id": "PortHullShell",
+    "parent": "MainHull",
+    "definition": null,
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction"
+    ]
+  },
+  {
+    "id": "StarboardHullShell",
+    "parent": "MainHull",
+    "definition": null,
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction"
+    ]
+  },
+  {
+    "id": "HullFloors",
+    "parent": "MainHull",
+    "definition": null,
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction"
+    ]
+  },
+  {
+    "id": "HullRoofs",
+    "parent": "MainHull",
+    "definition": null,
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction"
+    ]
+  },
+  {
+    "id": "HullClosures",
+    "parent": "MainHull",
+    "definition": null,
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction"
+    ]
+  },
+  {
+    "id": "hull_port_front_lower",
+    "parent": "PortHullShell",
+    "definition": "hull_port_front_lower",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:010",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_front_upper",
+    "parent": "PortHullShell",
+    "definition": "hull_port_front_upper",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:013",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_front_sponson",
+    "parent": "PortHullShell",
+    "definition": "hull_port_front_sponson",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:151:015",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_under_sponson_front",
+    "parent": "PortHullShell",
+    "definition": "hull_port_under_sponson_front",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:008",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_under_sponson_rear",
+    "parent": "PortHullShell",
+    "definition": "hull_port_under_sponson_rear",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:146:014",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_over_sponson",
+    "parent": "PortHullShell",
+    "definition": "hull_port_over_sponson",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:028",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_aft_sponson",
+    "parent": "PortHullShell",
+    "definition": "hull_port_aft_sponson",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:153:001",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_door_aft_surround",
+    "parent": "PortHullShell",
+    "definition": "hull_port_door_aft_surround",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:024",
+      "calibration:snl_2",
+      "issue:hull_door_dimensions"
+    ]
+  },
+  {
+    "id": "hull_port_door_header",
+    "parent": "PortHullShell",
+    "definition": "hull_port_door_header",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:026",
+      "calibration:snl_2",
+      "issue:hull_door_dimensions"
+    ]
+  },
+  {
+    "id": "hull_port_door_sill",
+    "parent": "PortHullShell",
+    "definition": "hull_port_door_sill",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:155:002",
+      "calibration:snl_2",
+      "issue:hull_door_dimensions"
+    ]
+  },
+  {
+    "id": "hull_port_engine_side_1",
+    "parent": "PortHullShell",
+    "definition": "hull_port_engine_side_1",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:009",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_engine_side_2",
+    "parent": "PortHullShell",
+    "definition": "hull_port_engine_side_2",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:011",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_engine_side_3",
+    "parent": "PortHullShell",
+    "definition": "hull_port_engine_side_3",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:013",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_engine_access_leaf",
+    "parent": "PortHullShell",
+    "definition": "hull_port_engine_access_leaf",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:147:033",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_rear_wing",
+    "parent": "PortHullShell",
+    "definition": "hull_port_rear_wing",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:155:009",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_rear_end",
+    "parent": "PortHullShell",
+    "definition": "hull_port_rear_end",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:155:007",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_inner_front_upper",
+    "parent": "PortHullShell",
+    "definition": "hull_port_inner_front_upper",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:012",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_inner_front_lower",
+    "parent": "PortHullShell",
+    "definition": "hull_port_inner_front_lower",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:009",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_inner_front_sponson",
+    "parent": "PortHullShell",
+    "definition": "hull_port_inner_front_sponson",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:030",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_inner_fuel_side",
+    "parent": "PortHullShell",
+    "definition": "hull_port_inner_fuel_side",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:039",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_inner_rear_end",
+    "parent": "PortHullShell",
+    "definition": "hull_port_inner_rear_end",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:155:006",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_outer_skirt_front",
+    "parent": "PortHullShell",
+    "definition": "hull_port_outer_skirt_front",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:151:017",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_outer_skirt_rear",
+    "parent": "PortHullShell",
+    "definition": "hull_port_outer_skirt_rear",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:151:018",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_inner_skirt_front",
+    "parent": "PortHullShell",
+    "definition": "hull_port_inner_skirt_front",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:150:001",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_inner_skirt_rear",
+    "parent": "PortHullShell",
+    "definition": "hull_port_inner_skirt_rear",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:150:002",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_door_upper",
+    "parent": "PortHullShell",
+    "definition": "hull_port_door_upper",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:82:016",
+      "calibration:snl_2",
+      "issue:hull_door_dimensions"
+    ]
+  },
+  {
+    "id": "hull_port_door_lower",
+    "parent": "PortHullShell",
+    "definition": "hull_port_door_lower",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:82:015",
+      "calibration:snl_2",
+      "issue:hull_door_dimensions"
+    ]
+  },
+  {
+    "id": "hull_port_roof_front",
+    "parent": "HullRoofs",
+    "definition": "hull_port_roof_front",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:015",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_roof_driver",
+    "parent": "HullRoofs",
+    "definition": "hull_port_roof_driver",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:011",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_port_roof_track_rear",
+    "parent": "HullRoofs",
+    "definition": "hull_port_roof_track_rear",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:019",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_front_lower",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_front_lower",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:011",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_front_upper",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_front_upper",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:014",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_front_sponson",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_front_sponson",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:151:016",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_under_sponson_front",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_under_sponson_front",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:008",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_under_sponson_rear",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_under_sponson_rear",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:146:014",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_over_sponson",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_over_sponson",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:028",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_aft_sponson",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_aft_sponson",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:153:002",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_door_aft_surround",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_door_aft_surround",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:025",
+      "calibration:snl_2",
+      "issue:hull_door_dimensions"
+    ]
+  },
+  {
+    "id": "hull_starboard_door_header",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_door_header",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:027",
+      "calibration:snl_2",
+      "issue:hull_door_dimensions"
+    ]
+  },
+  {
+    "id": "hull_starboard_door_sill",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_door_sill",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:155:002",
+      "calibration:snl_2",
+      "issue:hull_door_dimensions"
+    ]
+  },
+  {
+    "id": "hull_starboard_engine_side_1",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_engine_side_1",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:010",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_engine_side_2",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_engine_side_2",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:012",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_engine_side_3",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_engine_side_3",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:013",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_engine_access_leaf",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_engine_access_leaf",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:003",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_rear_wing",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_rear_wing",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:155:010",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_rear_end",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_rear_end",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:155:008",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_inner_front_upper",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_inner_front_upper",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:012",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_inner_front_lower",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_inner_front_lower",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:009",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_inner_front_sponson",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_inner_front_sponson",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:001",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_inner_fuel_side",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_inner_fuel_side",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:039",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_inner_rear_end",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_inner_rear_end",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:155:006",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_outer_skirt_front",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_outer_skirt_front",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:151:017",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_outer_skirt_rear",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_outer_skirt_rear",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:151:018",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_inner_skirt_front",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_inner_skirt_front",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:150:001",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_inner_skirt_rear",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_inner_skirt_rear",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:150:002",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_door_upper",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_door_upper",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:83:004",
+      "calibration:snl_2",
+      "issue:hull_door_dimensions"
+    ]
+  },
+  {
+    "id": "hull_starboard_door_lower",
+    "parent": "StarboardHullShell",
+    "definition": "hull_starboard_door_lower",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:83:003",
+      "calibration:snl_2",
+      "issue:hull_door_dimensions"
+    ]
+  },
+  {
+    "id": "hull_starboard_roof_front",
+    "parent": "HullRoofs",
+    "definition": "hull_starboard_roof_front",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:016",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_roof_driver",
+    "parent": "HullRoofs",
+    "definition": "hull_starboard_roof_driver",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:011",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_starboard_roof_track_rear",
+    "parent": "HullRoofs",
+    "definition": "hull_starboard_roof_track_rear",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:020",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_floor_1",
+    "parent": "HullFloors",
+    "definition": "hull_floor_1",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:020",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_floor_2",
+    "parent": "HullFloors",
+    "definition": "hull_floor_2",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:021",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_floor_3",
+    "parent": "HullFloors",
+    "definition": "hull_floor_3",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:022",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_floor_4",
+    "parent": "HullFloors",
+    "definition": "hull_floor_4",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:023",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_floor_5",
+    "parent": "HullFloors",
+    "definition": "hull_floor_5",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:024",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_floor_6",
+    "parent": "HullFloors",
+    "definition": "hull_floor_6",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:025",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_floor_7",
+    "parent": "HullFloors",
+    "definition": "hull_floor_7",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:026",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_floor_8",
+    "parent": "HullFloors",
+    "definition": "hull_floor_8",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:148:027",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_floor_fuel",
+    "parent": "HullFloors",
+    "definition": "hull_floor_fuel",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:155:004",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_engine_back",
+    "parent": "HullClosures",
+    "definition": "hull_engine_back",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:147:030",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_fuel_back",
+    "parent": "HullClosures",
+    "definition": "hull_fuel_back",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:146:013",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_front_slope",
+    "parent": "HullClosures",
+    "definition": "hull_front_slope",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:007",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_roof_aft_upper",
+    "parent": "HullRoofs",
+    "definition": "hull_roof_aft_upper",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:154:028",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_roof_before_inlet",
+    "parent": "HullRoofs",
+    "definition": "hull_roof_before_inlet",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:010",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_roof_after_inlet",
+    "parent": "HullRoofs",
+    "definition": "hull_roof_after_inlet",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:152:009",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_roof_engine_cover",
+    "parent": "HullRoofs",
+    "definition": "hull_roof_engine_cover",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:147:002",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "hull_roof_fuel",
+    "parent": "HullRoofs",
+    "definition": "hull_roof_fuel",
+    "frame": "hull_shell",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction",
+      "record:SNL:149:015",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "SponsonPort",
+    "parent": "Sponsons",
+    "definition": null,
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "page:HB:37",
+      "issue:sponson_plate_reconstruction"
+    ]
+  },
+  {
+    "id": "sponson_port_back",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_back",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:011",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_back_side",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_back_side",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:012",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_back_wing",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_back_wing",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:014",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_floor",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_floor",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:018",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_front_lower",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_front_lower",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:020",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_front_upper",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_front_upper",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:022",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_front_vertical",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_front_vertical",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:024",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_front_wing",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_front_wing",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:026",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_roof",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_roof",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:031",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_side",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_side",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:154:005",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_side_lower",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_side_lower",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:154:007",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_side_upper",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_side_upper",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:154:009",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_sloping_bottom",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_sloping_bottom",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:154:011",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_sloping_side",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_sloping_side",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:154:013",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_shield_bottom_front",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_shield_bottom_front",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:033",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_shield_bottom_middle",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_shield_bottom_middle",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:035",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_shield_bottom_rear",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_shield_bottom_rear",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:034",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_shield_top_front",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_shield_top_front",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:153:039",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_port_shield_top_rear",
+    "parent": "SponsonPort",
+    "definition": "sponson_port_shield_top_rear",
+    "frame": "sponson_port_standard",
+    "evidence": [
+      "record:SNL:154:001",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "SponsonStarboard",
+    "parent": "Sponsons",
+    "definition": null,
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "page:HB:37",
+      "issue:sponson_plate_reconstruction"
+    ]
+  },
+  {
+    "id": "sponson_starboard_back",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_back",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:153:011",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_back_side",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_back_side",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:153:013",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_back_wing",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_back_wing",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:153:015",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_floor",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_floor",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:153:019",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_front_lower",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_front_lower",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:153:021",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_front_upper",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_front_upper",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:153:023",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_front_vertical",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_front_vertical",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:153:025",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_front_wing",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_front_wing",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:153:027",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_roof",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_roof",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:153:032",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_side",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_side",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:154:006",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_side_lower",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_side_lower",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:154:008",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_side_upper",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_side_upper",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:154:010",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_sloping_bottom",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_sloping_bottom",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:154:012",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_sloping_side",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_sloping_side",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:154:014",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_shield_bottom_front",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_shield_bottom_front",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:153:036",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_shield_bottom_middle",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_shield_bottom_middle",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:153:037",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_shield_bottom_rear",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_shield_bottom_rear",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:153:038",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_shield_top_front",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_shield_top_front",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:154:002",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_shield_top_middle",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_shield_top_middle",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:154:003",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "sponson_starboard_shield_top_rear",
+    "parent": "SponsonStarboard",
+    "definition": "sponson_starboard_shield_top_rear",
+    "frame": "sponson_starboard_standard",
+    "evidence": [
+      "record:SNL:154:004",
+      "page:HB:35",
+      "page:HB:43",
+      "issue:sponson_plate_reconstruction",
+      "issue:sponson_floor_scope",
+      "issue:sponson_shield_hand"
+    ]
+  },
+  {
+    "id": "LouverInlet",
+    "parent": "CoolingVentilation",
+    "definition": null,
+    "frame": "louver_inlet",
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "LouverOutlet",
+    "parent": "CoolingVentilation",
+    "definition": null,
+    "frame": "louver_outlet",
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_000",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_000",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_001",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_001",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_002",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_002",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_003",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_003",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_004",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_004",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_005",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_005",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_006",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_006",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_007",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_007",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_008",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_008",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_009",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_009",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_010",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_010",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_011",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_011",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_012",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_012",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_013",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_013",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_014",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_014",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_015",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_015",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_016",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_016",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_017",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_017",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_018",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_018",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_019",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_019",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_020",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_020",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_021",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_021",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_022",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_022",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_023",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_023",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_024",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_024",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_025",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_025",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_026",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_026",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_027",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_027",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_028",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_028",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_029",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_029",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_030",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_030",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_031",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_031",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_032",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_032",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_blade_033",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_blade",
+    "frame": "louver_inlet_blade_033",
+    "evidence": [
+      "record:SNL:18:015",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_guard_port",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_guard_port",
+    "frame": "louver_inlet",
+    "evidence": [
+      "record:SNL:95:036",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_guard_starboard",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_guard_starboard",
+    "frame": "louver_inlet",
+    "evidence": [
+      "record:SNL:95:037",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_front_frame",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_front_frame",
+    "frame": "louver_inlet",
+    "evidence": [
+      "record:SNL:133:013",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_rear_frame",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_rear_frame",
+    "frame": "louver_inlet",
+    "evidence": [
+      "record:SNL:133:008",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_front_retainer",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_front_retainer",
+    "frame": "louver_inlet",
+    "evidence": [
+      "record:SNL:149:037",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_rear_retainer",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_rear_retainer",
+    "frame": "louver_inlet",
+    "evidence": [
+      "record:SNL:149:038",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_cover",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_cover",
+    "frame": "louver_inlet",
+    "evidence": [
+      "record:SNL:149:036",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_000",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_000",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_001",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_001",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_002",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_002",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_003",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_003",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_004",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_004",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_005",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_005",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_006",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_006",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_007",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_007",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_008",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_008",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_009",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_009",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_010",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_010",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_011",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_011",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_012",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_012",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_013",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_013",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_014",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_014",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_015",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_015",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_016",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_016",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_017",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_017",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_018",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_018",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_019",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_019",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_020",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_020",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_021",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_021",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_022",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_022",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_023",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_023",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_024",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_024",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_025",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_025",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_026",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_026",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_blade_027",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_blade",
+    "frame": "louver_outlet_blade_027",
+    "evidence": [
+      "record:SNL:18:016",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_guard_port",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_guard_port",
+    "frame": "louver_outlet",
+    "evidence": [
+      "record:SNL:62:021",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_guard_starboard",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_guard_starboard",
+    "frame": "louver_outlet",
+    "evidence": [
+      "record:SNL:62:026",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_front_frame",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_front_frame",
+    "frame": "louver_outlet",
+    "evidence": [
+      "record:SNL:133:029",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_rear_frame",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_rear_frame",
+    "frame": "louver_outlet",
+    "evidence": [
+      "record:SNL:133:022",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_port_frame",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_port_frame",
+    "frame": "louver_outlet",
+    "evidence": [
+      "record:SNL:151:011",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_front_retainer",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_front_retainer",
+    "frame": "louver_outlet",
+    "evidence": [
+      "record:SNL:133:033",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_rear_retainer",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_rear_retainer",
+    "frame": "louver_outlet",
+    "evidence": [
+      "record:SNL:133:033",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_cover",
+    "parent": "LouverOutlet",
+    "definition": "louver_outlet_cover",
+    "frame": "louver_outlet",
+    "evidence": [
+      "record:SNL:151:010",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_packing_strip",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_packing_strip",
+    "frame": "louver_inlet",
+    "evidence": [
+      "record:SNL:230:014",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_packing_0",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_packing_plate",
+    "frame": "louver_inlet_packing_0",
+    "evidence": [
+      "record:SNL:150:005",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_inlet_packing_1",
+    "parent": "LouverInlet",
+    "definition": "louver_inlet_packing_plate",
+    "frame": "louver_inlet_packing_1",
+    "evidence": [
+      "record:SNL:150:005",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_packing_0",
+    "parent": "LouverOutlet",
+    "definition": "louver_inlet_packing_plate",
+    "frame": "louver_outlet_packing_0",
+    "evidence": [
+      "record:SNL:150:005",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "louver_outlet_packing_1",
+    "parent": "LouverOutlet",
+    "definition": "louver_inlet_packing_plate",
+    "frame": "louver_outlet_packing_1",
+    "evidence": [
+      "record:SNL:150:005",
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ]
+  },
+  {
+    "id": "PortLowerSupports",
+    "parent": "PortRunningGear",
+    "definition": null,
+    "frame": "port_track",
+    "evidence": [
+      "issue:lower_support_reconstruction"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner",
+    "parent": "PortLowerSupports",
+    "definition": null,
+    "frame": "port_track",
+    "evidence": [
+      "issue:lower_support_reconstruction"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run01",
+    "parent": "PortLowerSupports_Inner",
+    "definition": null,
+    "frame": "PortLowerSupports_Inner_Run01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run01_Angle",
+    "parent": "PortLowerSupports_Inner_Run01",
+    "definition": "lower_support_m2078",
+    "frame": "PortLowerSupports_Inner_Run01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run01_Bolt00",
+    "parent": "PortLowerSupports_Inner_Run01",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run01_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run02",
+    "parent": "PortLowerSupports_Inner",
+    "definition": null,
+    "frame": "PortLowerSupports_Inner_Run02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run02_Angle",
+    "parent": "PortLowerSupports_Inner_Run02",
+    "definition": "lower_support_m2079",
+    "frame": "PortLowerSupports_Inner_Run02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run02_Bolt00",
+    "parent": "PortLowerSupports_Inner_Run02",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run02_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run03",
+    "parent": "PortLowerSupports_Inner",
+    "definition": null,
+    "frame": "PortLowerSupports_Inner_Run03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run03_Angle",
+    "parent": "PortLowerSupports_Inner_Run03",
+    "definition": "lower_support_m2080",
+    "frame": "PortLowerSupports_Inner_Run03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run03_Bolt00",
+    "parent": "PortLowerSupports_Inner_Run03",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run03_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run04",
+    "parent": "PortLowerSupports_Inner",
+    "definition": null,
+    "frame": "PortLowerSupports_Inner_Run04",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run04_Angle",
+    "parent": "PortLowerSupports_Inner_Run04",
+    "definition": "lower_support_m2081a",
+    "frame": "PortLowerSupports_Inner_Run04",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run04_Bolt00",
+    "parent": "PortLowerSupports_Inner_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run04_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run04_Bolt01",
+    "parent": "PortLowerSupports_Inner_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run04_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run04_Bolt02",
+    "parent": "PortLowerSupports_Inner_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run04_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run04_Bolt03",
+    "parent": "PortLowerSupports_Inner_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run04_Bolt03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run05short",
+    "parent": "PortLowerSupports_Inner",
+    "definition": null,
+    "frame": "PortLowerSupports_Inner_Run05short",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run05short_Angle",
+    "parent": "PortLowerSupports_Inner_Run05short",
+    "definition": "lower_support_m2176_negative",
+    "frame": "PortLowerSupports_Inner_Run05short",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run05short_Bolt00",
+    "parent": "PortLowerSupports_Inner_Run05short",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run05short_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run05long",
+    "parent": "PortLowerSupports_Inner",
+    "definition": null,
+    "frame": "PortLowerSupports_Inner_Run05long",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run05long_Angle",
+    "parent": "PortLowerSupports_Inner_Run05long",
+    "definition": "lower_support_m2175_negative",
+    "frame": "PortLowerSupports_Inner_Run05long",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run05long_Bolt00",
+    "parent": "PortLowerSupports_Inner_Run05long",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run05long_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run05long_Bolt01",
+    "parent": "PortLowerSupports_Inner_Run05long",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run05long_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run05long_Bolt02",
+    "parent": "PortLowerSupports_Inner_Run05long",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run05long_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run06",
+    "parent": "PortLowerSupports_Inner",
+    "definition": null,
+    "frame": "PortLowerSupports_Inner_Run06",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run06_Angle",
+    "parent": "PortLowerSupports_Inner_Run06",
+    "definition": "lower_support_m2083a",
+    "frame": "PortLowerSupports_Inner_Run06",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run06_Bolt00",
+    "parent": "PortLowerSupports_Inner_Run06",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run06_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run06_Bolt01",
+    "parent": "PortLowerSupports_Inner_Run06",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run06_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run06_Bolt02",
+    "parent": "PortLowerSupports_Inner_Run06",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run06_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run07",
+    "parent": "PortLowerSupports_Inner",
+    "definition": null,
+    "frame": "PortLowerSupports_Inner_Run07",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run07_Angle",
+    "parent": "PortLowerSupports_Inner_Run07",
+    "definition": "lower_support_m2084a",
+    "frame": "PortLowerSupports_Inner_Run07",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run07_Bolt00",
+    "parent": "PortLowerSupports_Inner_Run07",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run07_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run07_Bolt01",
+    "parent": "PortLowerSupports_Inner_Run07",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run07_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run07_Bolt02",
+    "parent": "PortLowerSupports_Inner_Run07",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run07_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run08",
+    "parent": "PortLowerSupports_Inner",
+    "definition": null,
+    "frame": "PortLowerSupports_Inner_Run08",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run08_Angle",
+    "parent": "PortLowerSupports_Inner_Run08",
+    "definition": "lower_support_m2085_negative",
+    "frame": "PortLowerSupports_Inner_Run08",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run08_Bolt00",
+    "parent": "PortLowerSupports_Inner_Run08",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run08_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Inner_Run08_Bolt01",
+    "parent": "PortLowerSupports_Inner_Run08",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Inner_Run08_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer",
+    "parent": "PortLowerSupports",
+    "definition": null,
+    "frame": "port_track",
+    "evidence": [
+      "issue:lower_support_reconstruction"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run01",
+    "parent": "PortLowerSupports_Outer",
+    "definition": null,
+    "frame": "PortLowerSupports_Outer_Run01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run01_Angle",
+    "parent": "PortLowerSupports_Outer_Run01",
+    "definition": "lower_support_m2078",
+    "frame": "PortLowerSupports_Outer_Run01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run01_Bolt00",
+    "parent": "PortLowerSupports_Outer_Run01",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run01_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run02",
+    "parent": "PortLowerSupports_Outer",
+    "definition": null,
+    "frame": "PortLowerSupports_Outer_Run02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run02_Angle",
+    "parent": "PortLowerSupports_Outer_Run02",
+    "definition": "lower_support_m2079",
+    "frame": "PortLowerSupports_Outer_Run02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run02_Bolt00",
+    "parent": "PortLowerSupports_Outer_Run02",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run02_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run03",
+    "parent": "PortLowerSupports_Outer",
+    "definition": null,
+    "frame": "PortLowerSupports_Outer_Run03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run03_Angle",
+    "parent": "PortLowerSupports_Outer_Run03",
+    "definition": "lower_support_m2080",
+    "frame": "PortLowerSupports_Outer_Run03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run03_Bolt00",
+    "parent": "PortLowerSupports_Outer_Run03",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run03_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run04",
+    "parent": "PortLowerSupports_Outer",
+    "definition": null,
+    "frame": "PortLowerSupports_Outer_Run04",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run04_Angle",
+    "parent": "PortLowerSupports_Outer_Run04",
+    "definition": "lower_support_m2081b",
+    "frame": "PortLowerSupports_Outer_Run04",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run04_Bolt00",
+    "parent": "PortLowerSupports_Outer_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run04_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run04_Bolt01",
+    "parent": "PortLowerSupports_Outer_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run04_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run04_Bolt02",
+    "parent": "PortLowerSupports_Outer_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run04_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run04_Bolt03",
+    "parent": "PortLowerSupports_Outer_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run04_Bolt03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run05",
+    "parent": "PortLowerSupports_Outer",
+    "definition": null,
+    "frame": "PortLowerSupports_Outer_Run05",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run05_Angle",
+    "parent": "PortLowerSupports_Outer_Run05",
+    "definition": "lower_support_m2082b",
+    "frame": "PortLowerSupports_Outer_Run05",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run05_Bolt00",
+    "parent": "PortLowerSupports_Outer_Run05",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run05_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run05_Bolt01",
+    "parent": "PortLowerSupports_Outer_Run05",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run05_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run05_Bolt02",
+    "parent": "PortLowerSupports_Outer_Run05",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run05_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run05_Bolt03",
+    "parent": "PortLowerSupports_Outer_Run05",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run05_Bolt03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run06",
+    "parent": "PortLowerSupports_Outer",
+    "definition": null,
+    "frame": "PortLowerSupports_Outer_Run06",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run06_Angle",
+    "parent": "PortLowerSupports_Outer_Run06",
+    "definition": "lower_support_m2083b",
+    "frame": "PortLowerSupports_Outer_Run06",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run06_Bolt00",
+    "parent": "PortLowerSupports_Outer_Run06",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run06_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run06_Bolt01",
+    "parent": "PortLowerSupports_Outer_Run06",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run06_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run06_Bolt02",
+    "parent": "PortLowerSupports_Outer_Run06",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run06_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run07",
+    "parent": "PortLowerSupports_Outer",
+    "definition": null,
+    "frame": "PortLowerSupports_Outer_Run07",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run07_Angle",
+    "parent": "PortLowerSupports_Outer_Run07",
+    "definition": "lower_support_m2084b",
+    "frame": "PortLowerSupports_Outer_Run07",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run07_Bolt00",
+    "parent": "PortLowerSupports_Outer_Run07",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run07_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run07_Bolt01",
+    "parent": "PortLowerSupports_Outer_Run07",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run07_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run07_Bolt02",
+    "parent": "PortLowerSupports_Outer_Run07",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run07_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run08",
+    "parent": "PortLowerSupports_Outer",
+    "definition": null,
+    "frame": "PortLowerSupports_Outer_Run08",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run08_Angle",
+    "parent": "PortLowerSupports_Outer_Run08",
+    "definition": "lower_support_m2085_positive",
+    "frame": "PortLowerSupports_Outer_Run08",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run08_Bolt00",
+    "parent": "PortLowerSupports_Outer_Run08",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run08_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "PortLowerSupports_Outer_Run08_Bolt01",
+    "parent": "PortLowerSupports_Outer_Run08",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "PortLowerSupports_Outer_Run08_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports",
+    "parent": "StarboardRunningGear",
+    "definition": null,
+    "frame": "starboard_track",
+    "evidence": [
+      "issue:lower_support_reconstruction"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer",
+    "parent": "StarboardLowerSupports",
+    "definition": null,
+    "frame": "starboard_track",
+    "evidence": [
+      "issue:lower_support_reconstruction"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run01",
+    "parent": "StarboardLowerSupports_Outer",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Outer_Run01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run01_Angle",
+    "parent": "StarboardLowerSupports_Outer_Run01",
+    "definition": "lower_support_m2078",
+    "frame": "StarboardLowerSupports_Outer_Run01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run01_Bolt00",
+    "parent": "StarboardLowerSupports_Outer_Run01",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run01_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run02",
+    "parent": "StarboardLowerSupports_Outer",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Outer_Run02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run02_Angle",
+    "parent": "StarboardLowerSupports_Outer_Run02",
+    "definition": "lower_support_m2079",
+    "frame": "StarboardLowerSupports_Outer_Run02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run02_Bolt00",
+    "parent": "StarboardLowerSupports_Outer_Run02",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run02_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run03",
+    "parent": "StarboardLowerSupports_Outer",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Outer_Run03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run03_Angle",
+    "parent": "StarboardLowerSupports_Outer_Run03",
+    "definition": "lower_support_m2080",
+    "frame": "StarboardLowerSupports_Outer_Run03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run03_Bolt00",
+    "parent": "StarboardLowerSupports_Outer_Run03",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run03_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run04",
+    "parent": "StarboardLowerSupports_Outer",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Outer_Run04",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run04_Angle",
+    "parent": "StarboardLowerSupports_Outer_Run04",
+    "definition": "lower_support_m2081a",
+    "frame": "StarboardLowerSupports_Outer_Run04",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run04_Bolt00",
+    "parent": "StarboardLowerSupports_Outer_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run04_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run04_Bolt01",
+    "parent": "StarboardLowerSupports_Outer_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run04_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run04_Bolt02",
+    "parent": "StarboardLowerSupports_Outer_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run04_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run04_Bolt03",
+    "parent": "StarboardLowerSupports_Outer_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run04_Bolt03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run05",
+    "parent": "StarboardLowerSupports_Outer",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Outer_Run05",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run05_Angle",
+    "parent": "StarboardLowerSupports_Outer_Run05",
+    "definition": "lower_support_m2082a",
+    "frame": "StarboardLowerSupports_Outer_Run05",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run05_Bolt00",
+    "parent": "StarboardLowerSupports_Outer_Run05",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run05_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run05_Bolt01",
+    "parent": "StarboardLowerSupports_Outer_Run05",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run05_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run05_Bolt02",
+    "parent": "StarboardLowerSupports_Outer_Run05",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run05_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run05_Bolt03",
+    "parent": "StarboardLowerSupports_Outer_Run05",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run05_Bolt03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run06",
+    "parent": "StarboardLowerSupports_Outer",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Outer_Run06",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run06_Angle",
+    "parent": "StarboardLowerSupports_Outer_Run06",
+    "definition": "lower_support_m2083a",
+    "frame": "StarboardLowerSupports_Outer_Run06",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run06_Bolt00",
+    "parent": "StarboardLowerSupports_Outer_Run06",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run06_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run06_Bolt01",
+    "parent": "StarboardLowerSupports_Outer_Run06",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run06_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run06_Bolt02",
+    "parent": "StarboardLowerSupports_Outer_Run06",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run06_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run07",
+    "parent": "StarboardLowerSupports_Outer",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Outer_Run07",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run07_Angle",
+    "parent": "StarboardLowerSupports_Outer_Run07",
+    "definition": "lower_support_m2084a",
+    "frame": "StarboardLowerSupports_Outer_Run07",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run07_Bolt00",
+    "parent": "StarboardLowerSupports_Outer_Run07",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run07_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run07_Bolt01",
+    "parent": "StarboardLowerSupports_Outer_Run07",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run07_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run07_Bolt02",
+    "parent": "StarboardLowerSupports_Outer_Run07",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run07_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run08",
+    "parent": "StarboardLowerSupports_Outer",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Outer_Run08",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run08_Angle",
+    "parent": "StarboardLowerSupports_Outer_Run08",
+    "definition": "lower_support_m2085_negative",
+    "frame": "StarboardLowerSupports_Outer_Run08",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run08_Bolt00",
+    "parent": "StarboardLowerSupports_Outer_Run08",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run08_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Outer_Run08_Bolt01",
+    "parent": "StarboardLowerSupports_Outer_Run08",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Outer_Run08_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner",
+    "parent": "StarboardLowerSupports",
+    "definition": null,
+    "frame": "starboard_track",
+    "evidence": [
+      "issue:lower_support_reconstruction"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run01",
+    "parent": "StarboardLowerSupports_Inner",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Inner_Run01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run01_Angle",
+    "parent": "StarboardLowerSupports_Inner_Run01",
+    "definition": "lower_support_m2078",
+    "frame": "StarboardLowerSupports_Inner_Run01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run01_Bolt00",
+    "parent": "StarboardLowerSupports_Inner_Run01",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run01_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run02",
+    "parent": "StarboardLowerSupports_Inner",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Inner_Run02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run02_Angle",
+    "parent": "StarboardLowerSupports_Inner_Run02",
+    "definition": "lower_support_m2079",
+    "frame": "StarboardLowerSupports_Inner_Run02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run02_Bolt00",
+    "parent": "StarboardLowerSupports_Inner_Run02",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run02_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run03",
+    "parent": "StarboardLowerSupports_Inner",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Inner_Run03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run03_Angle",
+    "parent": "StarboardLowerSupports_Inner_Run03",
+    "definition": "lower_support_m2080",
+    "frame": "StarboardLowerSupports_Inner_Run03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run03_Bolt00",
+    "parent": "StarboardLowerSupports_Inner_Run03",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run03_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run04",
+    "parent": "StarboardLowerSupports_Inner",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Inner_Run04",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run04_Angle",
+    "parent": "StarboardLowerSupports_Inner_Run04",
+    "definition": "lower_support_m2081b",
+    "frame": "StarboardLowerSupports_Inner_Run04",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run04_Bolt00",
+    "parent": "StarboardLowerSupports_Inner_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run04_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run04_Bolt01",
+    "parent": "StarboardLowerSupports_Inner_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run04_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run04_Bolt02",
+    "parent": "StarboardLowerSupports_Inner_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run04_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run04_Bolt03",
+    "parent": "StarboardLowerSupports_Inner_Run04",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run04_Bolt03",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run05short",
+    "parent": "StarboardLowerSupports_Inner",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Inner_Run05short",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run05short_Angle",
+    "parent": "StarboardLowerSupports_Inner_Run05short",
+    "definition": "lower_support_m2176_positive",
+    "frame": "StarboardLowerSupports_Inner_Run05short",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run05short_Bolt00",
+    "parent": "StarboardLowerSupports_Inner_Run05short",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run05short_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run05long",
+    "parent": "StarboardLowerSupports_Inner",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Inner_Run05long",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run05long_Angle",
+    "parent": "StarboardLowerSupports_Inner_Run05long",
+    "definition": "lower_support_m2175_positive",
+    "frame": "StarboardLowerSupports_Inner_Run05long",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run05long_Bolt00",
+    "parent": "StarboardLowerSupports_Inner_Run05long",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run05long_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run05long_Bolt01",
+    "parent": "StarboardLowerSupports_Inner_Run05long",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run05long_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run05long_Bolt02",
+    "parent": "StarboardLowerSupports_Inner_Run05long",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run05long_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run06",
+    "parent": "StarboardLowerSupports_Inner",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Inner_Run06",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run06_Angle",
+    "parent": "StarboardLowerSupports_Inner_Run06",
+    "definition": "lower_support_m2083b",
+    "frame": "StarboardLowerSupports_Inner_Run06",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run06_Bolt00",
+    "parent": "StarboardLowerSupports_Inner_Run06",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run06_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run06_Bolt01",
+    "parent": "StarboardLowerSupports_Inner_Run06",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run06_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run06_Bolt02",
+    "parent": "StarboardLowerSupports_Inner_Run06",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run06_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run07",
+    "parent": "StarboardLowerSupports_Inner",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Inner_Run07",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run07_Angle",
+    "parent": "StarboardLowerSupports_Inner_Run07",
+    "definition": "lower_support_m2084b",
+    "frame": "StarboardLowerSupports_Inner_Run07",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run07_Bolt00",
+    "parent": "StarboardLowerSupports_Inner_Run07",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run07_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run07_Bolt01",
+    "parent": "StarboardLowerSupports_Inner_Run07",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run07_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run07_Bolt02",
+    "parent": "StarboardLowerSupports_Inner_Run07",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run07_Bolt02",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run08",
+    "parent": "StarboardLowerSupports_Inner",
+    "definition": null,
+    "frame": "StarboardLowerSupports_Inner_Run08",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run08_Angle",
+    "parent": "StarboardLowerSupports_Inner_Run08",
+    "definition": "lower_support_m2085_positive",
+    "frame": "StarboardLowerSupports_Inner_Run08",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run08_Bolt00",
+    "parent": "StarboardLowerSupports_Inner_Run08",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run08_Bolt00",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  },
+  {
+    "id": "StarboardLowerSupports_Inner_Run08_Bolt01",
+    "parent": "StarboardLowerSupports_Inner_Run08",
+    "definition": "lower_support_attachment_bolt",
+    "frame": "StarboardLowerSupports_Inner_Run08_Bolt01",
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ]
+  }
+]

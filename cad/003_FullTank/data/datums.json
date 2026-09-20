@@ -1,0 +1,3313 @@
+{
+  "world": {
+    "parent": null,
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:installation_interfaces"
+    ],
+    "notes": "Global ground origin under rear drive axis; X forward, Y port, Z up."
+  },
+  "port_track": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "translation": [
+      0,
+      "track_centers/2",
+      0
+    ]
+  },
+  "starboard_track": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "translation": [
+      0,
+      "-track_centers/2",
+      0
+    ]
+  },
+  "port_drive": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        1715,
+        453
+      ],
+      "y": "track_centers/2"
+    }
+  },
+  "starboard_drive": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        1715,
+        453
+      ],
+      "y": "-track_centers/2"
+    }
+  },
+  "port_idler": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces",
+      "issue:idler_wheel_reconstruction"
+    ],
+    "notes": "Moving idler center follows the independent source screw-axis line for provisional static bushing clearance.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        194,
+        339
+      ],
+      "y": "track_centers/2"
+    },
+    "idler_station": true
+  },
+  "starboard_idler": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces",
+      "issue:idler_wheel_reconstruction"
+    ],
+    "notes": "Moving idler center follows the independent source screw-axis line for provisional static bushing clearance.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        194,
+        339
+      ],
+      "y": "-track_centers/2"
+    },
+    "idler_station": true
+  },
+  "fuel_port": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "translation": [
+      0,
+      "layout_fuel_spacing",
+      0
+    ]
+  },
+  "fuel_starboard": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "translation": [
+      0,
+      "-layout_fuel_spacing",
+      0
+    ]
+  },
+  "stowage_port": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "translation": [
+      0,
+      370,
+      0
+    ]
+  },
+  "stowage_starboard": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "translation": [
+      0,
+      -370,
+      0
+    ]
+  },
+  "battery_port": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "translation": [
+      0,
+      300,
+      0
+    ]
+  },
+  "clutch_axis": {
+    "parent": "world",
+    "rotation_deg": [
+      -90,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        1280,
+        457
+      ],
+      "y": 0
+    }
+  },
+  "fan_axis": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces",
+      "page:HB:98"
+    ],
+    "notes": "HB98 describes spindle removal through the hull side, supporting transverse orientation. Longitudinal and vertical station remain a provisional reservation near the transmission and require assembly-section review.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        1408,
+        455
+      ],
+      "y": 275
+    }
+  },
+  "carburetor_reservation": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        1153,
+        366
+      ],
+      "y": 0
+    }
+  },
+  "fighting_bulkhead": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        982,
+        515
+      ],
+      "y": 0
+    }
+  },
+  "rear_engine_bulkhead": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        1480,
+        515
+      ],
+      "y": 0
+    }
+  },
+  "engine_axis": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        1150,
+        450
+      ],
+      "y": 0
+    }
+  },
+  "engine_front_mount": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        1035,
+        490
+      ],
+      "y": 0
+    }
+  },
+  "engine_rear_mount": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        1250,
+        490
+      ],
+      "y": 0
+    }
+  },
+  "transmission_axis": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces"
+    ],
+    "notes": "Provisional installation datum from SNL longitudinal section; Y and orientation remain inferred.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        1390,
+        455
+      ],
+      "y": 0
+    }
+  },
+  "radiator_port": {
+    "parent": "world",
+    "translation": [
+      0,
+      275,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "page:HB:97",
+      "issue:transverse_layout"
+    ],
+    "notes": "Port-side placement is documented; precise offset is provisional."
+  },
+  "port_track_segment": {
+    "parent": "port_track",
+    "translation": [
+      "track_segment_start_x",
+      0,
+      "track_rivet_head_height"
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:shoe_profile"
+    ],
+    "notes": "Three-unit straight trial; ground datum at lowest point of assumed underside button heads. Full loop not yet modeled."
+  },
+  "starboard_track_segment": {
+    "parent": "starboard_track",
+    "translation": [
+      "track_segment_start_x",
+      0,
+      "track_rivet_head_height"
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:shoe_profile"
+    ],
+    "notes": "Three-unit straight trial; ground datum at lowest point of assumed underside button heads. Full loop not yet modeled."
+  },
+  "upper_base": {
+    "parent": "world",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        719.5,
+        237
+      ],
+      "y": 0
+    },
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:upper_shape"
+    ],
+    "notes": "Midpoint of traced main envelope base fixes X and Z. HB35 separately controls shell dimensions; no refit of calibration."
+  },
+  "upper_driver_base": {
+    "parent": "upper_base",
+    "translation": [
+      "upper_length/2",
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction"
+    ],
+    "notes": "Standard assembled configuration only; closed plates/leaves. Local coordinates reference the enclosure base center or rear edge."
+  },
+  "upper_lookout_base": {
+    "parent": "upper_base",
+    "translation": [
+      "upper_lookout_station",
+      0,
+      "upper_height"
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "page:HB:35",
+      "page:HB:43",
+      "issue:upper_plate_reconstruction"
+    ],
+    "notes": "Standard assembled configuration only; closed plates/leaves. Local coordinates reference the enclosure base center or rear edge."
+  },
+  "hull_shell": {
+    "parent": "world",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction"
+    ],
+    "notes": "Hull longitudinal/ground datum; transverse planes derive from track centers and lower shell clearance. Standard configuration."
+  },
+  "hull_port": {
+    "parent": "hull_shell",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction"
+    ],
+    "notes": "Handed shell parts carry explicit transverse face coordinates in their hull-local plate sections."
+  },
+  "hull_starboard": {
+    "parent": "hull_shell",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "page:HB:35",
+      "page:HB:141",
+      "issue:hull_plate_reconstruction"
+    ],
+    "notes": "Handed shell parts carry explicit transverse face coordinates in their hull-local plate sections."
+  },
+  "sponson_port_aperture": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        510,
+        440
+      ],
+      "y": "1*((track_centers+hull_frame_clear)/2+hull_side_thickness)"
+    },
+    "evidence": [
+      "calibration:snl_2",
+      "issue:sponson_plate_reconstruction"
+    ],
+    "notes": "Standard front aperture edge, outer hull wall plane; no pose transform."
+  },
+  "sponson_port_standard": {
+    "parent": "sponson_port_aperture",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "translation": [
+      "-sponson_install_gap",
+      "1*sponson_install_gap",
+      "sponson_install_gap"
+    ],
+    "evidence": [
+      "issue:sponson_plate_reconstruction"
+    ],
+    "notes": "Plate coordinate X aft is negative, Y uses explicit handed geometry, Z up."
+  },
+  "sponson_starboard_aperture": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        510,
+        440
+      ],
+      "y": "-1*((track_centers+hull_frame_clear)/2+hull_side_thickness)"
+    },
+    "evidence": [
+      "calibration:snl_2",
+      "issue:sponson_plate_reconstruction"
+    ],
+    "notes": "Standard front aperture edge, outer hull wall plane; no pose transform."
+  },
+  "sponson_starboard_standard": {
+    "parent": "sponson_starboard_aperture",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "translation": [
+      "-sponson_install_gap",
+      "-1*sponson_install_gap",
+      "sponson_install_gap"
+    ],
+    "evidence": [
+      "issue:sponson_plate_reconstruction"
+    ],
+    "notes": "Plate coordinate X aft is negative, Y uses explicit handed geometry, Z up."
+  },
+  "louver_inlet": {
+    "parent": "world",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet"
+  },
+  "louver_outlet": {
+    "parent": "world",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet"
+  },
+  "louver_inlet_blade_000": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 0
+  },
+  "louver_inlet_blade_001": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 1
+  },
+  "louver_inlet_blade_002": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 2
+  },
+  "louver_inlet_blade_003": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 3
+  },
+  "louver_inlet_blade_004": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 4
+  },
+  "louver_inlet_blade_005": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 5
+  },
+  "louver_inlet_blade_006": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 6
+  },
+  "louver_inlet_blade_007": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 7
+  },
+  "louver_inlet_blade_008": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 8
+  },
+  "louver_inlet_blade_009": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 9
+  },
+  "louver_inlet_blade_010": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 10
+  },
+  "louver_inlet_blade_011": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 11
+  },
+  "louver_inlet_blade_012": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 12
+  },
+  "louver_inlet_blade_013": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 13
+  },
+  "louver_inlet_blade_014": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 14
+  },
+  "louver_inlet_blade_015": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 15
+  },
+  "louver_inlet_blade_016": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 16
+  },
+  "louver_inlet_blade_017": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 17
+  },
+  "louver_inlet_blade_018": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 18
+  },
+  "louver_inlet_blade_019": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 19
+  },
+  "louver_inlet_blade_020": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 20
+  },
+  "louver_inlet_blade_021": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 21
+  },
+  "louver_inlet_blade_022": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 22
+  },
+  "louver_inlet_blade_023": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 23
+  },
+  "louver_inlet_blade_024": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 24
+  },
+  "louver_inlet_blade_025": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 25
+  },
+  "louver_inlet_blade_026": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 26
+  },
+  "louver_inlet_blade_027": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 27
+  },
+  "louver_inlet_blade_028": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 28
+  },
+  "louver_inlet_blade_029": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 29
+  },
+  "louver_inlet_blade_030": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 30
+  },
+  "louver_inlet_blade_031": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 31
+  },
+  "louver_inlet_blade_032": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 32
+  },
+  "louver_inlet_blade_033": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "blade_index": 33
+  },
+  "louver_outlet_blade_000": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 0
+  },
+  "louver_outlet_blade_001": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 1
+  },
+  "louver_outlet_blade_002": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 2
+  },
+  "louver_outlet_blade_003": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 3
+  },
+  "louver_outlet_blade_004": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 4
+  },
+  "louver_outlet_blade_005": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 5
+  },
+  "louver_outlet_blade_006": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 6
+  },
+  "louver_outlet_blade_007": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 7
+  },
+  "louver_outlet_blade_008": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 8
+  },
+  "louver_outlet_blade_009": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 9
+  },
+  "louver_outlet_blade_010": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 10
+  },
+  "louver_outlet_blade_011": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 11
+  },
+  "louver_outlet_blade_012": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 12
+  },
+  "louver_outlet_blade_013": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 13
+  },
+  "louver_outlet_blade_014": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 14
+  },
+  "louver_outlet_blade_015": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 15
+  },
+  "louver_outlet_blade_016": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 16
+  },
+  "louver_outlet_blade_017": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 17
+  },
+  "louver_outlet_blade_018": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 18
+  },
+  "louver_outlet_blade_019": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 19
+  },
+  "louver_outlet_blade_020": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 20
+  },
+  "louver_outlet_blade_021": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 21
+  },
+  "louver_outlet_blade_022": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 22
+  },
+  "louver_outlet_blade_023": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 23
+  },
+  "louver_outlet_blade_024": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 24
+  },
+  "louver_outlet_blade_025": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 25
+  },
+  "louver_outlet_blade_026": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 26
+  },
+  "louver_outlet_blade_027": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "blade_index": 27
+  },
+  "louver_inlet_packing_0": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "packing_index": 0
+  },
+  "louver_inlet_packing_1": {
+    "parent": "louver_inlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "inlet",
+    "packing_index": 1
+  },
+  "louver_outlet_packing_0": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "packing_index": 0
+  },
+  "louver_outlet_packing_1": {
+    "parent": "louver_outlet",
+    "translation": [
+      0,
+      0,
+      0
+    ],
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "issue:louver_reconstruction",
+      "issue:louver_quantity_conflict",
+      "issue:louver_guard_scope"
+    ],
+    "notes": "Standard engine-roof louver frame; no pose variants.",
+    "louver_bank": "outlet",
+    "packing_index": 1
+  },
+  "port_idler_reference": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces",
+      "issue:idler_wheel_reconstruction"
+    ],
+    "notes": "Fixed original SNL2 idler center, independent of moving wheel/shaft static adjustment.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        194,
+        339
+      ],
+      "y": "track_centers/2"
+    }
+  },
+  "starboard_idler_reference": {
+    "parent": "world",
+    "rotation_deg": [
+      0,
+      0,
+      0
+    ],
+    "evidence": [
+      "calibration:snl_2",
+      "issue:installation_interfaces",
+      "issue:idler_wheel_reconstruction"
+    ],
+    "notes": "Fixed original SNL2 idler center, independent of moving wheel/shaft static adjustment.",
+    "source_point": {
+      "calibration": "snl_2",
+      "pixel": [
+        194,
+        339
+      ],
+      "y": "-track_centers/2"
+    }
+  },
+  "PortLowerSupports_Inner_Run01": {
+    "parent": "port_track",
+    "lower_support_run": "01",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Inner_Run01_Bolt00": {
+    "parent": "PortLowerSupports_Inner_Run01",
+    "lower_support_run": "01",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run02": {
+    "parent": "port_track",
+    "lower_support_run": "02",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Inner_Run02_Bolt00": {
+    "parent": "PortLowerSupports_Inner_Run02",
+    "lower_support_run": "02",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run03": {
+    "parent": "port_track",
+    "lower_support_run": "03",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Inner_Run03_Bolt00": {
+    "parent": "PortLowerSupports_Inner_Run03",
+    "lower_support_run": "03",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run04": {
+    "parent": "port_track",
+    "lower_support_run": "04",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Inner_Run04_Bolt00": {
+    "parent": "PortLowerSupports_Inner_Run04",
+    "lower_support_run": "04",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run04_Bolt01": {
+    "parent": "PortLowerSupports_Inner_Run04",
+    "lower_support_run": "04",
+    "support_end": -1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run04_Bolt02": {
+    "parent": "PortLowerSupports_Inner_Run04",
+    "lower_support_run": "04",
+    "support_end": -1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run04_Bolt03": {
+    "parent": "PortLowerSupports_Inner_Run04",
+    "lower_support_run": "04",
+    "support_end": -1,
+    "support_bolt": 3,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run05short": {
+    "parent": "port_track",
+    "lower_support_run": "05short",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Inner_Run05short_Bolt00": {
+    "parent": "PortLowerSupports_Inner_Run05short",
+    "lower_support_run": "05short",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run05long": {
+    "parent": "port_track",
+    "lower_support_run": "05long",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Inner_Run05long_Bolt00": {
+    "parent": "PortLowerSupports_Inner_Run05long",
+    "lower_support_run": "05long",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run05long_Bolt01": {
+    "parent": "PortLowerSupports_Inner_Run05long",
+    "lower_support_run": "05long",
+    "support_end": -1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run05long_Bolt02": {
+    "parent": "PortLowerSupports_Inner_Run05long",
+    "lower_support_run": "05long",
+    "support_end": -1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run06": {
+    "parent": "port_track",
+    "lower_support_run": "06",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Inner_Run06_Bolt00": {
+    "parent": "PortLowerSupports_Inner_Run06",
+    "lower_support_run": "06",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run06_Bolt01": {
+    "parent": "PortLowerSupports_Inner_Run06",
+    "lower_support_run": "06",
+    "support_end": -1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run06_Bolt02": {
+    "parent": "PortLowerSupports_Inner_Run06",
+    "lower_support_run": "06",
+    "support_end": -1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run07": {
+    "parent": "port_track",
+    "lower_support_run": "07",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Inner_Run07_Bolt00": {
+    "parent": "PortLowerSupports_Inner_Run07",
+    "lower_support_run": "07",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run07_Bolt01": {
+    "parent": "PortLowerSupports_Inner_Run07",
+    "lower_support_run": "07",
+    "support_end": -1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run07_Bolt02": {
+    "parent": "PortLowerSupports_Inner_Run07",
+    "lower_support_run": "07",
+    "support_end": -1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run08": {
+    "parent": "port_track",
+    "lower_support_run": "08",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Inner_Run08_Bolt00": {
+    "parent": "PortLowerSupports_Inner_Run08",
+    "lower_support_run": "08",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Inner_Run08_Bolt01": {
+    "parent": "PortLowerSupports_Inner_Run08",
+    "lower_support_run": "08",
+    "support_end": -1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run01": {
+    "parent": "port_track",
+    "lower_support_run": "01",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Outer_Run01_Bolt00": {
+    "parent": "PortLowerSupports_Outer_Run01",
+    "lower_support_run": "01",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run02": {
+    "parent": "port_track",
+    "lower_support_run": "02",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Outer_Run02_Bolt00": {
+    "parent": "PortLowerSupports_Outer_Run02",
+    "lower_support_run": "02",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run03": {
+    "parent": "port_track",
+    "lower_support_run": "03",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Outer_Run03_Bolt00": {
+    "parent": "PortLowerSupports_Outer_Run03",
+    "lower_support_run": "03",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run04": {
+    "parent": "port_track",
+    "lower_support_run": "04",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Outer_Run04_Bolt00": {
+    "parent": "PortLowerSupports_Outer_Run04",
+    "lower_support_run": "04",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run04_Bolt01": {
+    "parent": "PortLowerSupports_Outer_Run04",
+    "lower_support_run": "04",
+    "support_end": 1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run04_Bolt02": {
+    "parent": "PortLowerSupports_Outer_Run04",
+    "lower_support_run": "04",
+    "support_end": 1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run04_Bolt03": {
+    "parent": "PortLowerSupports_Outer_Run04",
+    "lower_support_run": "04",
+    "support_end": 1,
+    "support_bolt": 3,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run05": {
+    "parent": "port_track",
+    "lower_support_run": "05",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Outer_Run05_Bolt00": {
+    "parent": "PortLowerSupports_Outer_Run05",
+    "lower_support_run": "05",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run05_Bolt01": {
+    "parent": "PortLowerSupports_Outer_Run05",
+    "lower_support_run": "05",
+    "support_end": 1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run05_Bolt02": {
+    "parent": "PortLowerSupports_Outer_Run05",
+    "lower_support_run": "05",
+    "support_end": 1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run05_Bolt03": {
+    "parent": "PortLowerSupports_Outer_Run05",
+    "lower_support_run": "05",
+    "support_end": 1,
+    "support_bolt": 3,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run06": {
+    "parent": "port_track",
+    "lower_support_run": "06",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Outer_Run06_Bolt00": {
+    "parent": "PortLowerSupports_Outer_Run06",
+    "lower_support_run": "06",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run06_Bolt01": {
+    "parent": "PortLowerSupports_Outer_Run06",
+    "lower_support_run": "06",
+    "support_end": 1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run06_Bolt02": {
+    "parent": "PortLowerSupports_Outer_Run06",
+    "lower_support_run": "06",
+    "support_end": 1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run07": {
+    "parent": "port_track",
+    "lower_support_run": "07",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Outer_Run07_Bolt00": {
+    "parent": "PortLowerSupports_Outer_Run07",
+    "lower_support_run": "07",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run07_Bolt01": {
+    "parent": "PortLowerSupports_Outer_Run07",
+    "lower_support_run": "07",
+    "support_end": 1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run07_Bolt02": {
+    "parent": "PortLowerSupports_Outer_Run07",
+    "lower_support_run": "07",
+    "support_end": 1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run08": {
+    "parent": "port_track",
+    "lower_support_run": "08",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "PortLowerSupports_Outer_Run08_Bolt00": {
+    "parent": "PortLowerSupports_Outer_Run08",
+    "lower_support_run": "08",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "PortLowerSupports_Outer_Run08_Bolt01": {
+    "parent": "PortLowerSupports_Outer_Run08",
+    "lower_support_run": "08",
+    "support_end": 1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run01": {
+    "parent": "starboard_track",
+    "lower_support_run": "01",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Outer_Run01_Bolt00": {
+    "parent": "StarboardLowerSupports_Outer_Run01",
+    "lower_support_run": "01",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run02": {
+    "parent": "starboard_track",
+    "lower_support_run": "02",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Outer_Run02_Bolt00": {
+    "parent": "StarboardLowerSupports_Outer_Run02",
+    "lower_support_run": "02",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run03": {
+    "parent": "starboard_track",
+    "lower_support_run": "03",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Outer_Run03_Bolt00": {
+    "parent": "StarboardLowerSupports_Outer_Run03",
+    "lower_support_run": "03",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run04": {
+    "parent": "starboard_track",
+    "lower_support_run": "04",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Outer_Run04_Bolt00": {
+    "parent": "StarboardLowerSupports_Outer_Run04",
+    "lower_support_run": "04",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run04_Bolt01": {
+    "parent": "StarboardLowerSupports_Outer_Run04",
+    "lower_support_run": "04",
+    "support_end": -1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run04_Bolt02": {
+    "parent": "StarboardLowerSupports_Outer_Run04",
+    "lower_support_run": "04",
+    "support_end": -1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run04_Bolt03": {
+    "parent": "StarboardLowerSupports_Outer_Run04",
+    "lower_support_run": "04",
+    "support_end": -1,
+    "support_bolt": 3,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run05": {
+    "parent": "starboard_track",
+    "lower_support_run": "05",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Outer_Run05_Bolt00": {
+    "parent": "StarboardLowerSupports_Outer_Run05",
+    "lower_support_run": "05",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run05_Bolt01": {
+    "parent": "StarboardLowerSupports_Outer_Run05",
+    "lower_support_run": "05",
+    "support_end": -1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run05_Bolt02": {
+    "parent": "StarboardLowerSupports_Outer_Run05",
+    "lower_support_run": "05",
+    "support_end": -1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run05_Bolt03": {
+    "parent": "StarboardLowerSupports_Outer_Run05",
+    "lower_support_run": "05",
+    "support_end": -1,
+    "support_bolt": 3,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run06": {
+    "parent": "starboard_track",
+    "lower_support_run": "06",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Outer_Run06_Bolt00": {
+    "parent": "StarboardLowerSupports_Outer_Run06",
+    "lower_support_run": "06",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run06_Bolt01": {
+    "parent": "StarboardLowerSupports_Outer_Run06",
+    "lower_support_run": "06",
+    "support_end": -1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run06_Bolt02": {
+    "parent": "StarboardLowerSupports_Outer_Run06",
+    "lower_support_run": "06",
+    "support_end": -1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run07": {
+    "parent": "starboard_track",
+    "lower_support_run": "07",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Outer_Run07_Bolt00": {
+    "parent": "StarboardLowerSupports_Outer_Run07",
+    "lower_support_run": "07",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run07_Bolt01": {
+    "parent": "StarboardLowerSupports_Outer_Run07",
+    "lower_support_run": "07",
+    "support_end": -1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run07_Bolt02": {
+    "parent": "StarboardLowerSupports_Outer_Run07",
+    "lower_support_run": "07",
+    "support_end": -1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run08": {
+    "parent": "starboard_track",
+    "lower_support_run": "08",
+    "support_end": -1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Outer_Run08_Bolt00": {
+    "parent": "StarboardLowerSupports_Outer_Run08",
+    "lower_support_run": "08",
+    "support_end": -1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Outer_Run08_Bolt01": {
+    "parent": "StarboardLowerSupports_Outer_Run08",
+    "lower_support_run": "08",
+    "support_end": -1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run01": {
+    "parent": "starboard_track",
+    "lower_support_run": "01",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Inner_Run01_Bolt00": {
+    "parent": "StarboardLowerSupports_Inner_Run01",
+    "lower_support_run": "01",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run02": {
+    "parent": "starboard_track",
+    "lower_support_run": "02",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Inner_Run02_Bolt00": {
+    "parent": "StarboardLowerSupports_Inner_Run02",
+    "lower_support_run": "02",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run03": {
+    "parent": "starboard_track",
+    "lower_support_run": "03",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Inner_Run03_Bolt00": {
+    "parent": "StarboardLowerSupports_Inner_Run03",
+    "lower_support_run": "03",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run04": {
+    "parent": "starboard_track",
+    "lower_support_run": "04",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Inner_Run04_Bolt00": {
+    "parent": "StarboardLowerSupports_Inner_Run04",
+    "lower_support_run": "04",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run04_Bolt01": {
+    "parent": "StarboardLowerSupports_Inner_Run04",
+    "lower_support_run": "04",
+    "support_end": 1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run04_Bolt02": {
+    "parent": "StarboardLowerSupports_Inner_Run04",
+    "lower_support_run": "04",
+    "support_end": 1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run04_Bolt03": {
+    "parent": "StarboardLowerSupports_Inner_Run04",
+    "lower_support_run": "04",
+    "support_end": 1,
+    "support_bolt": 3,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run05short": {
+    "parent": "starboard_track",
+    "lower_support_run": "05short",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Inner_Run05short_Bolt00": {
+    "parent": "StarboardLowerSupports_Inner_Run05short",
+    "lower_support_run": "05short",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run05long": {
+    "parent": "starboard_track",
+    "lower_support_run": "05long",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Inner_Run05long_Bolt00": {
+    "parent": "StarboardLowerSupports_Inner_Run05long",
+    "lower_support_run": "05long",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run05long_Bolt01": {
+    "parent": "StarboardLowerSupports_Inner_Run05long",
+    "lower_support_run": "05long",
+    "support_end": 1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run05long_Bolt02": {
+    "parent": "StarboardLowerSupports_Inner_Run05long",
+    "lower_support_run": "05long",
+    "support_end": 1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run06": {
+    "parent": "starboard_track",
+    "lower_support_run": "06",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Inner_Run06_Bolt00": {
+    "parent": "StarboardLowerSupports_Inner_Run06",
+    "lower_support_run": "06",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run06_Bolt01": {
+    "parent": "StarboardLowerSupports_Inner_Run06",
+    "lower_support_run": "06",
+    "support_end": 1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run06_Bolt02": {
+    "parent": "StarboardLowerSupports_Inner_Run06",
+    "lower_support_run": "06",
+    "support_end": 1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run07": {
+    "parent": "starboard_track",
+    "lower_support_run": "07",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Inner_Run07_Bolt00": {
+    "parent": "StarboardLowerSupports_Inner_Run07",
+    "lower_support_run": "07",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run07_Bolt01": {
+    "parent": "StarboardLowerSupports_Inner_Run07",
+    "lower_support_run": "07",
+    "support_end": 1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run07_Bolt02": {
+    "parent": "StarboardLowerSupports_Inner_Run07",
+    "lower_support_run": "07",
+    "support_end": 1,
+    "support_bolt": 2,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run08": {
+    "parent": "starboard_track",
+    "lower_support_run": "08",
+    "support_end": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "calibration:snl_2"
+    ],
+    "notes": "Derived from installed roller seats; original station picks remain independent."
+  },
+  "StarboardLowerSupports_Inner_Run08_Bolt00": {
+    "parent": "StarboardLowerSupports_Inner_Run08",
+    "lower_support_run": "08",
+    "support_end": 1,
+    "support_bolt": 0,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  },
+  "StarboardLowerSupports_Inner_Run08_Bolt01": {
+    "parent": "StarboardLowerSupports_Inner_Run08",
+    "lower_support_run": "08",
+    "support_end": 1,
+    "support_bolt": 1,
+    "evidence": [
+      "issue:lower_support_reconstruction",
+      "record:SNL:31:001"
+    ],
+    "notes": "Bolt seat and inferred hole follow owning lower angle."
+  }
+}

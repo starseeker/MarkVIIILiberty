@@ -1,0 +1,1077 @@
+{
+  "configuration": "ROCK_ISLAND_FIRST_100",
+  "units": "mm",
+  "coordinate_system": "X forward, Y port, Z up; ground below rear drive axis",
+  "parts": {
+    "shoe": {
+      "survey_id": "P_82360e1810bb752a",
+      "builder": "shoe",
+      "parameters": [
+        "shoe_width",
+        "shoe_pitch",
+        "shoe_thickness",
+        "shoe_lip_extension",
+        "shoe_ramp_run",
+        "shoe_lift"
+      ],
+      "status": "documented_arrangement",
+      "notes": "M1264, simplified pressed shoe; edge curvature and rivets omitted.",
+      "reference_only": false
+    },
+    "link_left": {
+      "survey_id": "P_0f8dee934388dcec",
+      "builder": "rail",
+      "parameters": [
+        "shoe_pitch",
+        "rail_width",
+        "rail_height",
+        "rail_end_margin"
+      ],
+      "status": "documented_arrangement",
+      "notes": "M1265 left link web only; eye, bushing and pin geometry omitted.",
+      "reference_only": false
+    },
+    "link_right": {
+      "survey_id": "P_c8db4b34d6d26dab",
+      "builder": "rail",
+      "parameters": [
+        "shoe_pitch",
+        "rail_width",
+        "rail_height",
+        "rail_end_margin"
+      ],
+      "status": "documented_arrangement",
+      "notes": "Right link represented by same provisional web envelope; handed details deferred.",
+      "reference_only": false
+    },
+    "roller": {
+      "survey_id": "P_8e3ceddcdad084ba",
+      "builder": "roller",
+      "parameters": [
+        "roller_diameter",
+        "roller_width",
+        "roller_waist_radius",
+        "roller_flange_width",
+        "roller_transition",
+        "tube_od",
+        "roller_bore_clearance"
+      ],
+      "status": "documented_arrangement",
+      "notes": "M1332: revolved section, documented OD/width; groove shape approximated.",
+      "reference_only": false
+    },
+    "tube": {
+      "survey_id": "P_ac1761120b82966c",
+      "builder": "tube",
+      "parameters": [
+        "tube_od",
+        "tube_id",
+        "tube_length",
+        "ring_id",
+        "ring_width",
+        "ring_end_margin",
+        "groove_clearance"
+      ],
+      "status": "documented_arrangement",
+      "notes": "M1333 envelope direct; retaining-ring grooves inferred.",
+      "reference_only": false
+    },
+    "ring": {
+      "survey_id": "P_db487445992a69e4",
+      "builder": "ring",
+      "parameters": [
+        "ring_id",
+        "ring_radial",
+        "ring_width",
+        "ring_gap"
+      ],
+      "status": "documented_arrangement",
+      "notes": "M1335 diameter convention and split opening are provisional.",
+      "reference_only": false
+    },
+    "support_angle": {
+      "survey_id": "P_884586e1d302ed8a",
+      "builder": "angle",
+      "parameters": [
+        "angle_length",
+        "angle_leg",
+        "angle_thickness",
+        "joint_hole_diameter",
+        "joint_hole_offset"
+      ],
+      "status": "illustrative_provisional",
+      "notes": "M2078 local straight coupon, NOT complete support No.1.",
+      "reference_only": false
+    },
+    "mating_plate": {
+      "survey_id": null,
+      "builder": "plate",
+      "parameters": [
+        "angle_length",
+        "joint_plate_height",
+        "plate_thickness",
+        "angle_leg",
+        "joint_hole_diameter",
+        "joint_hole_offset"
+      ],
+      "status": "illustrative_provisional",
+      "notes": "Provisional local hull plate coupon, no invented original part number.",
+      "reference_only": false
+    },
+    "fastener": {
+      "survey_id": null,
+      "builder": "fastener",
+      "parameters": [
+        "fastener_shank",
+        "fastener_head_diameter",
+        "fastener_head_height",
+        "plate_thickness",
+        "angle_thickness"
+      ],
+      "status": "illustrative_provisional",
+      "notes": "Illustrative unthreaded joint fastener, unidentified historical type.",
+      "reference_only": false
+    }
+  },
+  "occurrences": [
+    {
+      "id": "HullStructure",
+      "parent": "Root",
+      "part": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:placements"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "RunningGear",
+      "parent": "Root",
+      "part": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:placements"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "Port",
+      "parent": "RunningGear",
+      "part": null,
+      "translation": [
+        0,
+        "1*track_centers/2",
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:placements"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortShoe1",
+      "parent": "Port",
+      "part": null,
+      "translation": [
+        "pilot_station_x+-1*shoe_pitch",
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:placements"
+      ],
+      "status": "assembly_inference",
+      "survey_id": "P_2a3e041c45389451"
+    },
+    {
+      "id": "PortShoe1Plate",
+      "parent": "PortShoe1",
+      "part": "shoe",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortShoe1Left",
+      "parent": "PortShoe1",
+      "part": "link_left",
+      "translation": [
+        0,
+        "1*rail_offset",
+        "shoe_thickness+shoe_lift"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortShoe1Right",
+      "parent": "PortShoe1",
+      "part": "link_right",
+      "translation": [
+        0,
+        "-1*rail_offset",
+        "shoe_thickness+shoe_lift"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortShoe2",
+      "parent": "Port",
+      "part": null,
+      "translation": [
+        "pilot_station_x+0*shoe_pitch",
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:placements"
+      ],
+      "status": "assembly_inference",
+      "survey_id": "P_2a3e041c45389451"
+    },
+    {
+      "id": "PortShoe2Plate",
+      "parent": "PortShoe2",
+      "part": "shoe",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortShoe2Left",
+      "parent": "PortShoe2",
+      "part": "link_left",
+      "translation": [
+        0,
+        "1*rail_offset",
+        "shoe_thickness+shoe_lift"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortShoe2Right",
+      "parent": "PortShoe2",
+      "part": "link_right",
+      "translation": [
+        0,
+        "-1*rail_offset",
+        "shoe_thickness+shoe_lift"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortShoe3",
+      "parent": "Port",
+      "part": null,
+      "translation": [
+        "pilot_station_x+1*shoe_pitch",
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:placements"
+      ],
+      "status": "assembly_inference",
+      "survey_id": "P_2a3e041c45389451"
+    },
+    {
+      "id": "PortShoe3Plate",
+      "parent": "PortShoe3",
+      "part": "shoe",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortShoe3Left",
+      "parent": "PortShoe3",
+      "part": "link_left",
+      "translation": [
+        0,
+        "1*rail_offset",
+        "shoe_thickness+shoe_lift"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortShoe3Right",
+      "parent": "PortShoe3",
+      "part": "link_right",
+      "translation": [
+        0,
+        "-1*rail_offset",
+        "shoe_thickness+shoe_lift"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortRoller",
+      "parent": "Port",
+      "part": null,
+      "translation": [
+        "pilot_station_x",
+        0,
+        "pilot_rail_top_z+roller_waist_radius"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:placements"
+      ],
+      "status": "assembly_inference",
+      "survey_id": "P_9e99756d5e66e03b"
+    },
+    {
+      "id": "PortRollerTube",
+      "parent": "PortRoller",
+      "part": "tube",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:141"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortRollerOuter",
+      "parent": "PortRoller",
+      "part": "roller",
+      "translation": [
+        0,
+        "1*roller_center_offset",
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:141",
+        "issue:roller_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortRollerOuterRing",
+      "parent": "PortRoller",
+      "part": "ring",
+      "translation": [
+        0,
+        "1*(tube_length/2-ring_end_margin)",
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:141",
+        "issue:ring_section"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortRollerInner",
+      "parent": "PortRoller",
+      "part": "roller",
+      "translation": [
+        0,
+        "-1*roller_center_offset",
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:141",
+        "issue:roller_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "PortRollerInnerRing",
+      "parent": "PortRoller",
+      "part": "ring",
+      "translation": [
+        0,
+        "-1*(tube_length/2-ring_end_margin)",
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:141",
+        "issue:ring_section"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "Starboard",
+      "parent": "RunningGear",
+      "part": null,
+      "translation": [
+        0,
+        "-1*track_centers/2",
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:placements"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardShoe1",
+      "parent": "Starboard",
+      "part": null,
+      "translation": [
+        "pilot_station_x+-1*shoe_pitch",
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:placements"
+      ],
+      "status": "assembly_inference",
+      "survey_id": "P_2a3e041c45389451"
+    },
+    {
+      "id": "StarboardShoe1Plate",
+      "parent": "StarboardShoe1",
+      "part": "shoe",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardShoe1Left",
+      "parent": "StarboardShoe1",
+      "part": "link_left",
+      "translation": [
+        0,
+        "1*rail_offset",
+        "shoe_thickness+shoe_lift"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardShoe1Right",
+      "parent": "StarboardShoe1",
+      "part": "link_right",
+      "translation": [
+        0,
+        "-1*rail_offset",
+        "shoe_thickness+shoe_lift"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardShoe2",
+      "parent": "Starboard",
+      "part": null,
+      "translation": [
+        "pilot_station_x+0*shoe_pitch",
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:placements"
+      ],
+      "status": "assembly_inference",
+      "survey_id": "P_2a3e041c45389451"
+    },
+    {
+      "id": "StarboardShoe2Plate",
+      "parent": "StarboardShoe2",
+      "part": "shoe",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardShoe2Left",
+      "parent": "StarboardShoe2",
+      "part": "link_left",
+      "translation": [
+        0,
+        "1*rail_offset",
+        "shoe_thickness+shoe_lift"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardShoe2Right",
+      "parent": "StarboardShoe2",
+      "part": "link_right",
+      "translation": [
+        0,
+        "-1*rail_offset",
+        "shoe_thickness+shoe_lift"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardShoe3",
+      "parent": "Starboard",
+      "part": null,
+      "translation": [
+        "pilot_station_x+1*shoe_pitch",
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:placements"
+      ],
+      "status": "assembly_inference",
+      "survey_id": "P_2a3e041c45389451"
+    },
+    {
+      "id": "StarboardShoe3Plate",
+      "parent": "StarboardShoe3",
+      "part": "shoe",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardShoe3Left",
+      "parent": "StarboardShoe3",
+      "part": "link_left",
+      "translation": [
+        0,
+        "1*rail_offset",
+        "shoe_thickness+shoe_lift"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardShoe3Right",
+      "parent": "StarboardShoe3",
+      "part": "link_right",
+      "translation": [
+        0,
+        "-1*rail_offset",
+        "shoe_thickness+shoe_lift"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardRoller",
+      "parent": "Starboard",
+      "part": null,
+      "translation": [
+        "pilot_station_x",
+        0,
+        "pilot_rail_top_z+roller_waist_radius"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:placements"
+      ],
+      "status": "assembly_inference",
+      "survey_id": "P_9e99756d5e66e03b"
+    },
+    {
+      "id": "StarboardRollerTube",
+      "parent": "StarboardRoller",
+      "part": "tube",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:141"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardRollerOuter",
+      "parent": "StarboardRoller",
+      "part": "roller",
+      "translation": [
+        0,
+        "1*roller_center_offset",
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:141",
+        "issue:roller_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardRollerOuterRing",
+      "parent": "StarboardRoller",
+      "part": "ring",
+      "translation": [
+        0,
+        "1*(tube_length/2-ring_end_margin)",
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:141",
+        "issue:ring_section"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardRollerInner",
+      "parent": "StarboardRoller",
+      "part": "roller",
+      "translation": [
+        0,
+        "-1*roller_center_offset",
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:141",
+        "issue:roller_profile"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "StarboardRollerInnerRing",
+      "parent": "StarboardRoller",
+      "part": "ring",
+      "translation": [
+        0,
+        "-1*(tube_length/2-ring_end_margin)",
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:141",
+        "issue:ring_section"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "SupportJoint",
+      "parent": "HullStructure",
+      "part": null,
+      "translation": [
+        "support_station_x",
+        "track_centers/2+plate_spacing/2",
+        "support_station_z"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "record:SNL:4:021",
+        "issue:support_joint"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "SupportAngle",
+      "parent": "SupportJoint",
+      "part": "support_angle",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "record:SNL:4:021",
+        "issue:support_joint"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "SupportPlate",
+      "parent": "SupportJoint",
+      "part": "mating_plate",
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "page:HB:141",
+        "issue:support_joint"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "JointFastener1",
+      "parent": "SupportJoint",
+      "part": "fastener",
+      "translation": [
+        "-1*joint_hole_offset",
+        0,
+        "angle_leg/2"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:support_joint"
+      ],
+      "status": "assembly_inference"
+    },
+    {
+      "id": "JointFastener2",
+      "parent": "SupportJoint",
+      "part": "fastener",
+      "translation": [
+        "1*joint_hole_offset",
+        0,
+        "angle_leg/2"
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "configuration": "ROCK_ISLAND_FIRST_100",
+      "evidence": [
+        "issue:support_joint"
+      ],
+      "status": "assembly_inference"
+    }
+  ],
+  "reference_profiles": "calibrations.snl_2.profiles",
+  "physical_scope": "Six shoe units, two five-piece rotating roller units, and one four-piece joint coupon. Not a whole-tank BOM."
+}

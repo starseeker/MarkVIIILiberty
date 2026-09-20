@@ -31,7 +31,7 @@ The intended modeling standard is **evidence-led reconstruction**. A part may be
 
 The current source strategy separates the intended 1918 design, later American production and service practice, component-specific documentation, and modern observation. The [primary-source index](docs/primary-sources.md) now includes the 1920 Rock Island Arsenal production account, contemporary Ordnance technical articles, official 1920 reports, a participant's account of the International-tank program, Alden's sponson patent, and period test films. The [modern-reference index](docs/modern-reference-sources.md) remains separate so that observations of surviving museum vehicles are not confused with period design evidence.
 
-The likely first CAD baseline is the American Rock Island production tank, but that choice should remain explicit. The 1918 prototype or British/International configuration, the 1919–1920 American production configuration, and later service states represented by the 1928 SNL may differ in fittings, equipment, and details. Those differences should be represented as documented variants rather than silently merged.
+The adopted first CAD baseline is the 1919–1920 American Rock Island first-100 production tank. The 1918 prototype or British/International configuration and later service states represented by the 1928 SNL may differ in fittings, equipment, and details. Those differences should be represented as documented variants rather than silently merged.
 
 ## Possible repository layout
 
@@ -58,4 +58,32 @@ Large or externally hosted source files may be represented by metadata, checksum
 
 ## Status
 
-This repository is at the research and reference-gathering stage. CAD work will be added incrementally as source material is organized and the evidence for individual components is evaluated.
+The [CAD foundation and pilot](cad/002_Foundation/README.md) provides a scripted
+FreeCAD build of representative track, roller, and structural-joint parts in a
+hierarchical assembly, with a simplified vehicle reference blockout. It includes
+source-linked parameters, calibration records, STEP exports, and validation.
+The [source survey](cad/001_Survey/survey_report.md) remains the frozen research
+baseline. Geometry with incomplete historical evidence is explicitly provisional;
+the pilot is not a complete or manufacturing-ready tank model.
+
+The [complete-tank workflow](docs/complete-tank-workflow.md) defines the path from
+that pilot through production inventory, full-vehicle layout, exterior and
+interior reconstruction, and a validated native assembly release. Its
+[execution queue](cad/003_FullTank/README.md) records the work packets and
+dependencies. Full-tank implementation now includes a production-triage inventory,
+an initial native installation layout, seven track component definitions in two
+closed 78-unit tracks, 26 individual upper enclosure plates and closed leaves,
+77 main hull plates, 39 sponson plates, 82 roof-louver components, 1,228 components
+in 60 lower/upper roller stacks with four upper support angles, 306 front-idler
+wheel/shaft/adjustment components, 34 lower support angles with 76 attachment
+bolts, 242 driving-wheel/bush components, and source/model comparison views. The
+upper enclosures, hull and sponsons now have hollow interiors, with separate
+floors, sides, roof pieces and closed standard leaves. Remaining hull structures,
+sponson shields/supports, lower support retention, upper attachment/covers,
+drive shafts/bearings, roller pinions and remaining idler attachment details,
+louver spacing/support hardware, fittings and interiors still need population. The
+[visual progression](cad/VISUAL_PROGRESSION.md) preserves milestone isometrics.
+Track closure uses the
+printed pin pitch; wheel engagement remains unresolved. The complete tank and
+interior reconstruction remain in progress. Standard assembled geometry takes
+priority; selected static poses follow after that population work.

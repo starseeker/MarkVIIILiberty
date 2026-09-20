@@ -1,0 +1,64 @@
+{
+  "status": "inspected_preparatory_sources",
+  "date": "2026-09-20",
+  "sources": [
+    {
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII067.jpg",
+      "sha256": "3492e16bf0f7828087dbdc755af8307567d8e80caa4b7867186c9204c39df1ea"
+    },
+    {
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate81.png",
+      "sha256": "df700499e55cdfaa3095b826483590e0aa77da26a1d90c062dc8e670e75acd86"
+    },
+    {
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate82.png",
+      "sha256": "bb8e7b084e2d35189e92c651d90b472d678be286cf3892f95e5453f1ebfc5b51"
+    },
+    {
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate125.png",
+      "sha256": "f5bea647bdac48340135ee2837b500f103d5884482fb5e33c44d370e3d6573e5"
+    },
+    {
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate132.png",
+      "sha256": "5d3780228a932906b6277a7980446965d67e08903d66c4f4667a48ce504b15c5"
+    },
+    {
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p297-geometry.png",
+      "sha256": "420be24530533265c35c028735e3e8f8b7ba97b2ee6624d49815379e5f626c3d"
+    },
+    {
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p189.jpg",
+      "sha256": "b51bbc96a55d1520d0f088215adb3c696d4df67b87d835e8370da3e21949329f"
+    },
+    {
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/batch07_body_transcription.txt",
+      "sha256": "c772c17a247453814fee08845febf82573373d880c49b89b9452b6b6f0770d2c"
+    },
+    {
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p144.jpg",
+      "sha256": "6ec68c5088bb4c65283b741aecfe2d824e38192e061a3b9a480a2252b1cb1534"
+    },
+    {
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p215.jpg",
+      "sha256": "68507e061a160e2b50a42a420f582d8c4ee70cd6e674d5c2cfe6af3079b3e229"
+    },
+    {
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277_foldout-geometry.png",
+      "sha256": "7f08a90732b5adb3a14d73f3438f1803de0230a54f9a4e27364ebdf35c91677b"
+    }
+  ],
+  "findings": [
+    "HB Plate 81 (printed p129) shows the separate fixed roller-pinion shaft and paired lateral roller banks, with the chain sprocket centered between them.",
+    "HB Plate 82 (printed p131) and SNL Plate 25 (printed plate page297) reproduce the installed pinion/drive-wheel arrangement. Perspective images support topology, not metric measurements.",
+    "HB printed p132 gives one unit casting, 23 central teeth, and printed dimensions. SNL144 independently describes one M1541 casting, eighteen roller-pin assemblies and eighteen M1542 rollers per side.",
+    "SNL143 nests three leaves in each roller-pin assembly. The rotating pinion assembly therefore has 1 + 18*3 + 18 = 73 physical leaves per side.",
+    "SNL215 pinion-shaft assembly has four leaves: M1544, 20297/D89 key and two Q52E plugs. Its two M1409 bushes are separately supported by SNL43 and HB134, not listed as shaft-BOM leaves.",
+    "HB132 says the inner 3/4-inch pipe plug is cut flush after installation while the outer head is retained. Keep supplied identity and distinct installed geometry; do not add shaft nuts or M1411 without source support.",
+    "SNL189 identifies M1978/M1546 as the inner pinion bearing joint. M1976/M1552 is the outer backing joint. Additional plate-only M1552 rivets remain unresolved.",
+    "HB237 nomenclature differentiates M1541A and M1541B; retain those aliases as evidence without inventing additional separately supplied castings absent from the SNL144 BOM.",
+    "The 13.687-inch diameter at roller-pin bosses is not explicitly identified as a roller-center pitch diameter. Its interpretation, pinion station, tooth profile and engagement remain open.",
+    "HB132 chain pin diameter 1 7/32 inch and hole1.231 inch imply .01225 inch diametral clearance, which conflicts with the separately printed .005 clearance. Preserve both values.",
+    "Direct inspection of original SNL144 and215 confirms the one-casting/eighteen-pin-assembly/eighteen-roller BOM and the four-leaf pinion shaft BOM with two Q52E plugs."
+  ],
+  "main_model_changed": false
+}

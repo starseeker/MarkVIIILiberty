@@ -1,0 +1,776 @@
+{
+  "snl_1": {
+    "mode": "visual_only",
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277-geometry.png",
+    "original": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p277.jpg",
+    "crop": [
+      0,
+      0,
+      1676,
+      890
+    ],
+    "note": "Right side photograph; compare silhouette only.",
+    "controls": [],
+    "checks": [],
+    "prior_transform_document": "references/1928-03-30_SNL_G13/SNL_G13_Project/FIGURE_REFINEMENT.md"
+  },
+  "snl_3": {
+    "mode": "visual_only",
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p278-geometry.png",
+    "original": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p278.jpg",
+    "crop": [
+      0,
+      0,
+      1093,
+      825
+    ],
+    "note": "Rear photograph; perspective and missing equipment.",
+    "controls": [],
+    "checks": [],
+    "prior_transform_document": "references/1928-03-30_SNL_G13/SNL_G13_Project/FIGURE_REFINEMENT.md"
+  },
+  "snl_4": {
+    "mode": "visual_only",
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p278-geometry.png",
+    "original": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p278.jpg",
+    "crop": [
+      0,
+      825,
+      1093,
+      1676
+    ],
+    "note": "Top is a perspective photograph, not an orthographic plan.",
+    "controls": [],
+    "checks": [],
+    "prior_transform_document": "references/1928-03-30_SNL_G13/SNL_G13_Project/FIGURE_REFINEMENT.md"
+  },
+  "snl_10": {
+    "mode": "visual_only",
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p283-geometry.png",
+    "original": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p283.jpg",
+    "crop": [
+      0,
+      0,
+      1068,
+      800
+    ],
+    "note": "Front photograph; perspective prevents reliable global scaling.",
+    "controls": [],
+    "checks": [],
+    "prior_transform_document": "references/1928-03-30_SNL_G13/SNL_G13_Project/FIGURE_REFINEMENT.md"
+  },
+  "snl_2": {
+    "mode": "conditional_metric",
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277_foldout-geometry.png",
+    "original": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p277_foldout.jpg",
+    "crop": [
+      0,
+      0,
+      1900,
+      750
+    ],
+    "note": "Flat scanned section; axes scaled independently using provisional handbook envelope. Positive X points left in image. Datum below rear drive center at image x=1715.",
+    "datum_pixel": [
+      1715,
+      595
+    ],
+    "axes": {
+      "x": {
+        "pixels": [
+          85,
+          1815
+        ],
+        "span_parameter": "vehicle_length",
+        "sign": -1
+      },
+      "z": {
+        "pixels": [
+          68,
+          595
+        ],
+        "span_parameter": "vehicle_height",
+        "sign": -1
+      }
+    },
+    "checks": [
+      {
+        "label": "drive wheel OD (approximate visible rim)",
+        "axis": "x",
+        "pixels": [
+          1631,
+          1799
+        ],
+        "parameter": "drive_diameter"
+      },
+      {
+        "label": "idler wheel OD (rim partly obscured)",
+        "axis": "z",
+        "pixels": [
+          276,
+          447
+        ],
+        "parameter": "idler_diameter"
+      }
+    ],
+    "point_uncertainty_px": 3,
+    "prior_transform_document": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/foldout_provenance.json",
+    "profiles": {
+      "hull": [
+        [
+          108,
+          310
+        ],
+        [
+          153,
+          273
+        ],
+        [
+          382,
+          231
+        ],
+        [
+          948,
+          237
+        ],
+        [
+          1590,
+          337
+        ],
+        [
+          1700,
+          375
+        ],
+        [
+          1775,
+          443
+        ],
+        [
+          1760,
+          491
+        ],
+        [
+          1630,
+          551
+        ],
+        [
+          1440,
+          566
+        ],
+        [
+          694,
+          566
+        ],
+        [
+          509,
+          562
+        ],
+        [
+          480,
+          558
+        ],
+        [
+          445,
+          552
+        ],
+        [
+          420,
+          548
+        ],
+        [
+          382,
+          540
+        ],
+        [
+          350,
+          531
+        ],
+        [
+          319,
+          520
+        ],
+        [
+          290,
+          510
+        ],
+        [
+          259,
+          497
+        ],
+        [
+          230,
+          485
+        ],
+        [
+          202,
+          469
+        ],
+        [
+          180,
+          451
+        ],
+        [
+          151,
+          429
+        ],
+        [
+          125,
+          389
+        ]
+      ],
+      "upper": [
+        [
+          395,
+          232
+        ],
+        [
+          395,
+          179
+        ],
+        [
+          474,
+          179
+        ],
+        [
+          495,
+          126
+        ],
+        [
+          870,
+          127
+        ],
+        [
+          926,
+          164
+        ],
+        [
+          949,
+          237
+        ]
+      ],
+      "outlook": [
+        [
+          651,
+          126
+        ],
+        [
+          657,
+          70
+        ],
+        [
+          725,
+          70
+        ],
+        [
+          736,
+          126
+        ]
+      ],
+      "track": [
+        [
+          93,
+          313
+        ],
+        [
+          126,
+          277
+        ],
+        [
+          261,
+          236
+        ],
+        [
+          421,
+          226
+        ],
+        [
+          913,
+          232
+        ],
+        [
+          1580,
+          326
+        ],
+        [
+          1725,
+          362
+        ],
+        [
+          1804,
+          421
+        ],
+        [
+          1813,
+          470
+        ],
+        [
+          1778,
+          528
+        ],
+        [
+          1650,
+          570
+        ],
+        [
+          1450,
+          595
+        ],
+        [
+          654,
+          595
+        ],
+        [
+          437,
+          574
+        ],
+        [
+          286,
+          520
+        ],
+        [
+          187,
+          449
+        ],
+        [
+          120,
+          368
+        ]
+      ],
+      "central_hull": [
+        [
+          403,
+          246
+        ],
+        [
+          968,
+          247
+        ],
+        [
+          1480,
+          335
+        ],
+        [
+          1480,
+          513
+        ],
+        [
+          680,
+          513
+        ],
+        [
+          442,
+          421
+        ]
+      ],
+      "main_enclosure": [
+        [
+          490,
+          237
+        ],
+        [
+          495,
+          126
+        ],
+        [
+          870,
+          127
+        ],
+        [
+          926,
+          164
+        ],
+        [
+          949,
+          237
+        ]
+      ],
+      "driver_enclosure": [
+        [
+          395,
+          232
+        ],
+        [
+          395,
+          179
+        ],
+        [
+          494,
+          179
+        ],
+        [
+          490,
+          237
+        ]
+      ],
+      "lookout": [
+        [
+          651,
+          126
+        ],
+        [
+          657,
+          70
+        ],
+        [
+          725,
+          70
+        ],
+        [
+          736,
+          126
+        ]
+      ],
+      "engine": [
+        [
+          1022,
+          476
+        ],
+        [
+          1035,
+          348
+        ],
+        [
+          1070,
+          329
+        ],
+        [
+          1209,
+          330
+        ],
+        [
+          1248,
+          384
+        ],
+        [
+          1270,
+          474
+        ],
+        [
+          1205,
+          502
+        ],
+        [
+          1055,
+          500
+        ]
+      ],
+      "transmission": [
+        [
+          1302,
+          512
+        ],
+        [
+          1304,
+          445
+        ],
+        [
+          1363,
+          407
+        ],
+        [
+          1438,
+          423
+        ],
+        [
+          1470,
+          472
+        ],
+        [
+          1462,
+          516
+        ]
+      ],
+      "fuel_tank": [
+        [
+          1490,
+          354
+        ],
+        [
+          1570,
+          354
+        ],
+        [
+          1640,
+          381
+        ],
+        [
+          1580,
+          476
+        ],
+        [
+          1490,
+          476
+        ]
+      ],
+      "radiator": [
+        [
+          1287,
+          310
+        ],
+        [
+          1428,
+          332
+        ],
+        [
+          1431,
+          386
+        ],
+        [
+          1287,
+          387
+        ]
+      ],
+      "stowage": [
+        [
+          587,
+          400
+        ],
+        [
+          790,
+          400
+        ],
+        [
+          790,
+          500
+        ],
+        [
+          583,
+          493
+        ]
+      ],
+      "battery": [
+        [
+          808,
+          453
+        ],
+        [
+          916,
+          453
+        ],
+        [
+          916,
+          494
+        ],
+        [
+          808,
+          494
+        ]
+      ],
+      "driver_seat": [
+        [
+          448,
+          360
+        ],
+        [
+          499,
+          360
+        ],
+        [
+          499,
+          404
+        ],
+        [
+          452,
+          404
+        ]
+      ],
+      "hull_initial_layout": [
+        [
+          108,
+          310
+        ],
+        [
+          153,
+          273
+        ],
+        [
+          382,
+          231
+        ],
+        [
+          948,
+          237
+        ],
+        [
+          1590,
+          337
+        ],
+        [
+          1700,
+          375
+        ],
+        [
+          1775,
+          443
+        ],
+        [
+          1760,
+          491
+        ],
+        [
+          1630,
+          551
+        ],
+        [
+          1440,
+          566
+        ],
+        [
+          694,
+          566
+        ],
+        [
+          400,
+          530
+        ],
+        [
+          245,
+          461
+        ],
+        [
+          151,
+          375
+        ]
+      ]
+    },
+    "axes_pixels": {
+      "drive": [
+        1715,
+        453
+      ],
+      "idler": [
+        194,
+        339
+      ]
+    },
+    "front_lower_border_review": {
+      "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277_foldout-geometry.png",
+      "original_profile": "hull_initial_layout",
+      "reviewed_pixels": [
+        [
+          125,
+          389
+        ],
+        [
+          151,
+          429
+        ],
+        [
+          180,
+          451
+        ],
+        [
+          202,
+          469
+        ],
+        [
+          230,
+          485
+        ],
+        [
+          259,
+          497
+        ],
+        [
+          290,
+          510
+        ],
+        [
+          319,
+          520
+        ],
+        [
+          350,
+          531
+        ],
+        [
+          382,
+          540
+        ],
+        [
+          420,
+          548
+        ],
+        [
+          445,
+          552
+        ],
+        [
+          480,
+          558
+        ],
+        [
+          509,
+          562
+        ]
+      ],
+      "point_uncertainty_px": 3,
+      "basis": "Direct manual inspection of SNL Plate2 front lower skirt border below support runs1–3; original coarse trace passes above the front receiver and through several pin fittings.",
+      "connection_note": "The existing middle/rear outline remains approximate. The connection from reviewed [509,562] to old [694,566] is a conservative inferred transition, not a newly measured continuation.",
+      "physical_fit_status": "nominal_pitch_diameter_and_lower_stock_integrated_native_checks_passed; historical_profile_remains_partial"
+    }
+  },
+  "snl_29": {
+    "mode": "conditional_metric",
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p301-geometry.png",
+    "original": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p301.jpg",
+    "crop": [
+      0,
+      0,
+      1757,
+      882
+    ],
+    "note": "Section with 22.25-inch plate spacing. Vertical scale independently uses handbook roller diameter. Axial width held out as a disagreement check; shapes use printed dimensions.",
+    "datum_pixel": [
+      660,
+      489
+    ],
+    "axes": {
+      "x": {
+        "pixels": [
+          151,
+          1171
+        ],
+        "span_parameter": "plate_spacing",
+        "sign": 1
+      },
+      "z": {
+        "pixels": [
+          291,
+          685
+        ],
+        "span_parameter": "roller_diameter",
+        "sign": -1
+      }
+    },
+    "checks": [
+      {
+        "label": "left roller width",
+        "axis": "x",
+        "pixels": [
+          211,
+          458
+        ],
+        "parameter": "roller_width"
+      },
+      {
+        "label": "tube length",
+        "axis": "x",
+        "pixels": [
+          169,
+          1155
+        ],
+        "parameter": "tube_length"
+      }
+    ],
+    "point_uncertainty_px": 3,
+    "prior_transform_document": "references/1928-03-30_SNL_G13/SNL_G13_Project/FIGURE_REFINEMENT.md"
+  },
+  "hb_2": {
+    "image": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate02.png",
+    "original": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate02.png",
+    "mode": "visual_only",
+    "rotation_ccw_deg": 270,
+    "note": "Independent handbook longitudinal cutaway. Display rotated for comparison; no metric calibration assigned in this revision.",
+    "source": "page:HB:10"
+  }
+}

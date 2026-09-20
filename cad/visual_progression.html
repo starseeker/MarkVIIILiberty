@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mark VIII — visual progression</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#242e29;background:#eeeae0;color-scheme:light}
+*{box-sizing:border-box}body{margin:0;padding:24px}main{max-width:1600px;margin:auto}
+h1{font-size:clamp(22px,3vw,32px);margin:0 0 8px}p{line-height:1.5;margin:8px 0 20px;max-width:95ch}
+a{color:#285341}label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
+.controls{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:20px 0 12px}
+select{font:inherit;width:100%;padding:10px;border:1px solid #829084;border-radius:5px;background:#faf9f3;color:#242e29}
+.compare{position:relative;aspect-ratio:16/9;background:#f5f3eb;border:1px solid #829084;overflow:hidden}
+.compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+#earlier{clip-path:inset(0 50% 0 0)}#divider{position:absolute;inset:0 auto 0 50%;width:2px;background:#375f4b;pointer-events:none}
+.tag{position:absolute;bottom:12px;padding:5px 9px;border-radius:3px;background:#f8f6eeed;font-size:13px}
+#left-tag{left:12px}#right-tag{right:12px}.slide{margin:14px 0 22px}input{width:100%;accent-color:#375f4b}
+.notes{display:grid;grid-template-columns:1fr 1fr;gap:20px}.notes p{margin:4px 0 12px;font-size:14px}
+footer{font-size:14px;margin-top:14px}#status{min-height:1.5em;font-size:14px;color:#61482d}
+@media(max-width:700px){body{padding:12px}.controls,.notes{gap:10px}select{font-size:12px}.tag{font-size:11px;bottom:5px}}
+</style>
+<main>
+<h1>Mark VIII visual progression</h1>
+<p>Compare the preserved standard isometric views. Choose two stages and move the divider. These are partial reconstructions; visible detail does not establish historical accuracy or a complete tank.</p>
+<div class="controls">
+<label>Left image<select id="left" aria-label="Left milestone"></select></label>
+<label>Right image<select id="right" aria-label="Right milestone"></select></label>
+</div>
+<div class="compare" aria-label="Two milestone images separated by the comparison slider">
+<img id="later" alt="">
+<img id="earlier" alt="">
+<div id="divider"></div><span id="left-tag" class="tag"></span><span id="right-tag" class="tag"></span>
+</div>
+<label class="slide" for="split">Comparison divider<input id="split" type="range" min="0" max="100" value="50" aria-valuetext="50 percent left image"></label>
+<div class="notes"><div><strong id="left-title"></strong><p id="left-note"></p><a id="left-file">Open left original</a></div><div><strong id="right-title"></strong><p id="right-note"></p><a id="right-file">Open right original</a></div></div>
+<p id="status" role="status"></p>
+<footer><a href="VISUAL_PROGRESSION.md">Milestone notes and SHA-256 hashes</a> · <a href="003_FullTank/README.md">Current CAD model</a></footer>
+</main>
+<script>
+const stages=[
+ ['001','Upper enclosure plates','Two closed tracks and 26 upper plates; other major systems remain layout geometry. User-saved image.'],
+ ['002','Main hull plates','77 individual hull plates and revised upper-track clearance. User-saved image.'],
+ ['003','Sponson shells','39 separate plates replace the two sponson envelopes. Mounts, shields and fittings remain open.'],
+ ['004','Roof louvers','82 blade, frame, cover and packing parts. Spacing hardware and rear deflector remain open.'],
+ ['005','Roller stacks','58 lower and two upper stacks, 1,224 components at this stage. Long supports and wheel assemblies remain open.'],
+ ['006','Front idler wheels','242 rim, disk, boss, diaphragm, rivet and bushing parts. Shafts and adjustment hardware remain open at this stage.'],
+ ['007','Idler shafts and adjusters','64 additional parts, four visible brackets and corresponding hull openings; refined wheel section. Profiles, inner plate retention and threads remain partial.'],
+ ['008','Lower support runs','34 support angles and 76 bolts, inclined front units and revised front skirt. Exact contours, tapped receivers and removable retention remain partial.'],
+ ['009','Driving wheels','242 driving-wheel and bush parts, paired aligned rims and common wheel internals. Tooth count, shafts, bearings and engagement remain unresolved.']
+];
+const get=id=>document.getElementById(id);
+for(const side of ['left','right']){
+ const select=get(side);
+ for(const stage of stages){const option=document.createElement('option');option.value=stage[0];option.textContent=stage[0]+' — '+stage[1];select.append(option);}
+ select.value=side==='left'?'008':'009';
+ select.addEventListener('change',update);
+}
+function update(){
+ get('status').textContent='';
+ for(const side of ['left','right']){
+  const stage=stages.find(x=>x[0]===get(side).value),file='intermediate_snapshot_iso_'+stage[0]+'.png';
+  const img=get(side==='left'?'earlier':'later');img.alt='Milestone '+stage[0]+': '+stage[1];img.src=file;
+  get(side+'-tag').textContent=stage[0];get(side+'-title').textContent=stage[1];get(side+'-note').textContent=stage[2];get(side+'-file').href=file;
+ }
+}
+for(const id of ['earlier','later'])get(id).addEventListener('error',()=>{get('status').textContent='A selected image is unavailable. Keep this page beside the preserved intermediate_snapshot_iso_*.png files.';});
+get('split').addEventListener('input',event=>{
+ const value=Number(event.target.value);get('earlier').style.clipPath='inset(0 '+(100-value)+'% 0 0)';get('divider').style.left=value+'%';event.target.setAttribute('aria-valuetext',value+' percent left image');
+});
+update();
+</script>
+</html>

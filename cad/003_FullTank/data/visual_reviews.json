@@ -1,0 +1,277 @@
+{
+  "comparisons": [
+    {
+      "id": "snl_longitudinal",
+      "calibration": "snl_2",
+      "projection": "xz",
+      "selection": "all",
+      "exclude": [
+        "central_hull",
+        "track_frame",
+        "sponson"
+      ],
+      "description": "Fixed-scale longitudinal overlay against SNL Plate2. Source-traced profiles are construction checks, not independent evidence. Other geometries expose installation differences."
+    },
+    {
+      "id": "hb_longitudinal",
+      "calibration": "hb_2",
+      "projection": "xz",
+      "selection": "all",
+      "exclude": [
+        "central_hull",
+        "track_frame",
+        "sponson"
+      ],
+      "description": "Independent handbook cutaway beside the model; no pixel-scale claim."
+    }
+  ],
+  "findings": [
+    {
+      "id": "LAYOUT-V01",
+      "status": "open",
+      "severity": "material",
+      "subject": "Upper enclosure transverse geometry",
+      "finding": "Pilot used the main-enclosure width for the lookout. Initial full-tank layout separates driver width (19 in) and lookout width (18 in internal plus wall estimate).",
+      "evidence": [
+        "page:HB:35"
+      ],
+      "action": "Verify plan/front geometry against additional views before finishing panels."
+    },
+    {
+      "id": "LAYOUT-V02",
+      "status": "open",
+      "severity": "material",
+      "subject": "Machinery installation",
+      "finding": "Longitudinal equipment outlines can be located in SNL Plate2, but their widths and actual mounts remain unknown.",
+      "evidence": [
+        "calibration:snl_2"
+      ],
+      "action": "Inspect transverse/assembly sections; replace layout envelopes through machinery packets."
+    },
+    {
+      "id": "LAYOUT-V03",
+      "status": "open",
+      "severity": "material",
+      "subject": "Source silhouette agreement",
+      "finding": "A traced SNL profile should coincide with that same image by construction; agreement is not independent validation.",
+      "evidence": [
+        "calibration:snl_2",
+        "page:HB:10"
+      ],
+      "action": "Use HB cutaway and held-out printed dimensions to identify meaningful discrepancies."
+    },
+    {
+      "id": "LAYOUT-V04",
+      "status": "open",
+      "severity": "material",
+      "subject": "Cooling-system port-side installation",
+      "finding": "HB97 locates the horizontal radiator aft of the engine on the port side. The first full-width centered envelope was inconsistent with that description. HB98 supports a transverse fan spindle.",
+      "evidence": [
+        "page:HB:97",
+        "page:HB:98"
+      ],
+      "action": "Radiator envelope moved to port and narrowed; fan axis corrected to transverse. Exact fan station and duct/radiator arrangement remain to be resolved from component views."
+    },
+    {
+      "id": "TRACK-V01",
+      "status": "resolved_composition",
+      "severity": "material",
+      "subject": "Four link bars per shoe unit",
+      "finding": "HB Plate84 and SNL Plate26 show two paired-bar channels. SNL217/120/143 specify 19 physical leaves per shoe assembly; the foundation two-bar simplification omitted half the bars and connecting hardware.",
+      "evidence": [
+        "record:SNL:217:019",
+        "record:SNL:120:003",
+        "record:SNL:120:004",
+        "record:SNL:143:001",
+        "record:SNL:143:002"
+      ],
+      "action": "Four bars and all listed hardware now included; source composition is checked independently."
+    },
+    {
+      "id": "TRACK-V02",
+      "status": "open",
+      "severity": "material",
+      "subject": "Forging and pressed shoe profiles",
+      "finding": "Three-unit native views reproduce paired channels, eight heads, overlapping lips and a central pressing. The photographic forging transitions and broad pressing contours are smoother and less regular than the current approximation; exact pin height and transverse spacing remain unmeasured.",
+      "evidence": [
+        "page:HB:137",
+        "issue:shoe_profile"
+      ],
+      "action": "Refine forged transitions and pressing from additional views; qualify joint and lip clearances through the track bends. Do not fit perspective pixels as metric data."
+    },
+    {
+      "id": "TRACK-V03",
+      "status": "open",
+      "severity": "material",
+      "subject": "Drive-wheel engagement circle",
+      "finding": "Road-wheel tooth count/pitch and the printed track pitch need reconciliation before constant-pitch closure and engagement can be qualified.",
+      "evidence": [
+        "page:HB:119",
+        "page:HB:130",
+        "page:HB:133",
+        "page:HB:137",
+        "issue:drive_pitch_conflict"
+      ],
+      "action": "Resolve the tooth/roller/track-pin contact interpretation in R02/R03; retain contradictory source values."
+    },
+    {
+      "id": "TRACK-V04",
+      "status": "open",
+      "severity": "material",
+      "subject": "Reverse-bend plate clearance",
+      "finding": "The trial link/pin geometry stays clear at the tested positive bends through 35 degrees, but the reconstructed overlapping shoes contact at -10 degrees reverse bend.",
+      "evidence": [
+        "issue:track_reverse_bend"
+      ],
+      "action": "Use the solved track route to establish required angles; adjust the documented pressing/lip assumption only if the actual route needs more reverse articulation."
+    },
+    {
+      "id": "TRACK-V05",
+      "status": "corrected_axis",
+      "severity": "material",
+      "subject": "Front adjusting-wheel shaft location",
+      "finding": "The visible shaft in SNL Plate2 is near pixel [194,339]. The prior [163,350] selection displaced the provisional idler about 187 mm forward and 65 mm downward.",
+      "evidence": [
+        "calibration:snl_2",
+        "issue:idler_axis"
+      ],
+      "action": "Corrected both idler datums independently of the solved track route; verify the detailed adjuster and wheel contact during R02."
+    },
+    {
+      "id": "TRACK-V06",
+      "status": "open",
+      "severity": "material",
+      "subject": "Closed track route versus source outline",
+      "finding": "Each loop now has 78 units at printed pitch. Offsetting and rounding the source envelope then enforcing chord closure requires a recorded scale change and ground registration. This is a complete static chain arrangement, with wheel/rail contact still unqualified.",
+      "evidence": [
+        "page:HB:136",
+        "page:HB:137",
+        "issue:track_outline"
+      ],
+      "action": "Inspect full native overlays, quantify contact/outline residuals and refine the supporting-wheel/rail geometry. Preserve the fixed image calibration and printed pitch."
+    },
+    {
+      "id": "UPPER-V01",
+      "status": "open",
+      "severity": "material",
+      "subject": "Standard upper plate shells versus HB30 and SNL7",
+      "finding": "Individual main/driver/lookout plates now reproduce hollow shells, five main mount apertures, handed side opening sequences, lookout viewing slits and closed roof/side/front leaves. HB35 governs overall dimensions despite a roughly +371 mm length and -87 mm height difference from the fixed SNL2 trace. Native front, rear and underside views have been inspected; roof bend is still planar and fittings are absent.",
+      "evidence": [
+        "page:HB:35",
+        "page:HB:39",
+        "page:HB:43",
+        "calibration:snl_2",
+        "issue:upper_plate_reconstruction"
+      ],
+      "action": "Add standard-configuration angles, covers, hinges, straps, rivets and brackets; refine roof forming and resolve the dimensional discrepancy before claiming finished coverage."
+    },
+    {
+      "id": "HULL-V01",
+      "status": "open",
+      "severity": "material",
+      "subject": "Standard main hull plate set versus SNL1/7",
+      "finding": "77 individual plates now form outer sides, forward/rear inner walls, inner/outer skirts, broad central floors, narrower front/fuel portions, roof pieces and closed split side doors. Subsystem oblique, opposite-side and underside views reproduce the broad topology, while the source curved contour remains faceted and several braces, roof strips, mud-chute regions and fittings are absent. Source quantity and nominal contact checks do not establish a complete hull.",
+      "evidence": [
+        "page:HB:9",
+        "page:HB:35",
+        "page:HB:141",
+        "calibration:snl_2",
+        "issue:hull_plate_reconstruction",
+        "issue:hull_door_dimensions"
+      ],
+      "action": "Complete remaining standard hull pieces and joints, refine curved boundaries, resolve side-door width/scope and transverse centering, then qualify interfaces to detailed sponsons and running gear."
+    },
+    {
+      "id": "HULL-V02",
+      "status": "corrected_nominal_candidate",
+      "severity": "material",
+      "subject": "Upper track bars versus newly populated roof plates",
+      "finding": "The first integrated hull build found 80 roof/track-part overlaps around upper units 41–44. A diagnostic using unchanged native definitions and a 60 mm smooth upper-transition route correction checks 868 candidate hull/track pairs with zero material overlap. The route still closes at printed pitch/count; source-construction RMS residual increases from 188.648 to 191.722 mm. Delivered native rebuild and full qualification follow that diagnostic.",
+      "evidence": [
+        "issue:track_roof_clearance",
+        "issue:track_outline",
+        "issue:hull_plate_reconstruction"
+      ],
+      "action": "Qualify the saved nominal assembly and pitch trial against physical hull metal; retain independent source comparison and resolve wheel/roller/support engagement."
+    },
+    {
+      "id": "SPON-V01",
+      "subject": "Standard sponson plate shells",
+      "finding": "Inspected standalone left/right exterior and inboard views against SNL7/1. Hollow tapered shells and handed openings replace the envelopes; front/outboard bay remains open for separate rotating shields. Plan proportions, shield infill contour, floor scope, seams and M2764 hand are explicitly provisional. Standalone source, thickness, hollow and nominal contact checks pass. Integrated qualification follows.",
+      "action": "Check full installed hull/track contacts and native propagation; then add hinges, supports, roof/periscope fittings and separate shield/mount representations."
+    },
+    {
+      "id": "LOUV-V01",
+      "subject": "Standard roof-louver blades and guarded frames",
+      "finding": "Inspected standalone oblique/top and three-blade views against SNL4 photograph and SNL7 drawing. Lengthwise repetition and two bank outlines are consistent with those broad views. Guards use HB41 projection and are visually tall; exact guard-to-frame assignment, end contours, sideways chevron section and bend-radius reference remain provisional. SNL counts differ from the HB lists; different derived pitches leave the common M997 attachment unresolved.",
+      "action": "Inspect integrated track/enclosure clearance; retain original source controls and quantity conflicts. Populate shared spacing/support hardware and rear deflector after resolving their geometry; do not treat the visible slats as completed louvers."
+    },
+    {
+      "id": "VIS-ROLLER-01",
+      "subject": "Lower and upper roller stacks",
+      "finding": "58 lower and two separate upper stacks are populated from SNL/HB source identities. Lower recessed waists, upper one-sided flanges and inward-facing spring-plate flanges follow the figures; exact curves remain inferred. Fixed-X source station picks need vertical adjustments against the reconstructed track. Upper roof reliefs are provisional. Upper stations are at the rear contour bend inside the engine compartment, following HB144 and SNL2; the initial forward trial placement was rejected.",
+      "action": "Review HB88/89 and SNL29 section views, keep spring/ring dimensional conflicts open, then populate the long support angles and upper covers."
+    },
+    {
+      "id": "UPPER_ROLLER_SUPPORT_INTERFACE",
+      "subject": "Suspended pin toe, upper angle and clamp seat",
+      "finding": "HB141 and the HB88/89 / SNL29 sections place the pin under the angle toe. Former bottom flats and a 31 mm washer seat were unsupported. Four HB221 M2092 angles now use upper pin flats and a 50 mm flange, with inferred stock, length and drilling. Local rear-roof access relief removes the raised clamp conflict. Exact hull attachment and covers remain open.",
+      "action": "Compare saved upper section and oblique views with HB88; retain partial status until attachment and cover topology are reconstructed."
+    },
+    {
+      "id": "VIS-IDLER-01",
+      "subject": "Separate front idler wheels and coupled foremost roller fit",
+      "finding": "Native wheel probe inspected against HB87 and SNL28. Paired rims, six disk openings, central boss and relieved radial diaphragms follow the broad depicted construction. Stock, hole proportions, web curves and rivet placement are inferred; the five X / one Y identities currently share a provisional shape. The original rim mark discrepancy M147 / M1471 remains explicit. A 45 mm rearward foremost-roller correction resolves an installed overlap but exceeds the initial horizontal pick allowance by 8.838 mm.",
+      "action": "Inspect saved integrated elevation, transverse section and standard isometric; retain partial status and populate shafts, tension screws, brackets, guards and owned hull openings next."
+    },
+    {
+      "id": "VIS-IDLER-MOUNTS-01",
+      "subject": "Idler shaft, fixed bracket and screw-axis fit",
+      "finding": "Native mounting prototype inspected against HB87 and original HB138–140. Nested disks and the flatter central diaphragm trough better follow the section reading. Four brackets, plates, guards and main screws surround two nine-part shaft assemblies. Cast corners, guide length, guard U bezel, oil drilling and rivet locations are inferred. The figure shows eight heads around the opening, whereas SNL gives four cap screws per bracket and only five positively allocated outer-plate rivets; their exact layout remains unresolved.",
+      "action": "Inspect the saved integrated oblique, elevation, mounting detail and axis section; verify native seats and source-scoped counts. Keep partial status until inner retention, thread forms, exact cast profiles and wheel engagement are qualified."
+    },
+    {
+      "id": "R02-V-LOWER-SUPPORTS",
+      "status": "open",
+      "severity": "material",
+      "subject": "Lower angle contours and removable retention",
+      "finding": "34 lower support angles and 76 short bolts follow SNL counts. Runs 1–3 are inclined through paired installed pins; runs 4/8 use horizontal seats with cubic transitions. Inner No5 M2176 serves Lower12 and M2175 serves Lower13–15 at fixed printed lengths. Run8 ownership of rear outlines27/28 is inferred. Unhanded source marks may have separate reflected construction variants; historical interchangeability is not established. 6.35mm stock, 34mm flange, run ends and drilling are inferred. Angle wall meets current 10mm skirt; plain tapped receiving holes are a working hypothesis. HB144 removable plates remain unidentified/unpopulated. No historical load, retention, manufacturing or continuous-rolling qualification.",
+      "evidence": [
+        "issue:lower_support_reconstruction",
+        "page:HB:144",
+        "record:SNL:31:001"
+      ],
+      "action": "Review rear No8 ownership and identify HB144 removable plates; retain source count and native seat checks."
+    },
+    {
+      "id": "H01-V-FRONT-SKIRT",
+      "status": "open",
+      "severity": "material",
+      "subject": "Front lower skirt contour and receiving material",
+      "finding": "The coarse initial hull profile passed through/above front roller fittings, leaving the first attachment bolt without a receiving wall. The revised front border follows inspected SNL2 points below those fittings; old trace is retained for comparison. Middle/rear contour and the transitional segment remain approximate.",
+      "evidence": [
+        "calibration:snl_2",
+        "issue:front_skirt_border"
+      ],
+      "action": "Qualify native contacts against tracks and rollers and review the retained source picks without refitting image scale."
+    },
+    {
+      "id": "R02-V-DRIVE-WHEELS",
+      "status": "open",
+      "severity": "material",
+      "subject": "Common wheel geometry and conflicting drive teeth",
+      "finding": "35-tooth M1401 hypothesis follows original HB130/HB133; original HB119 9:37 remains contradictory. 39.237-inch OD, 32.75-inch ID and 2-inch tooth width are retained, but assigning the ID to the annular bore is provisional. Circular tooth reliefs, root radius, outer lip and crest rounding are inferred. Fixed SNL2 shaft axes are retained. Source wheel composition is populated; shafts, keys, nuts, bearings, retention, roller pinions and chain remain open. Static noninterference does not establish contact or continuous engagement. Common M1403/M1404/M1405X/Y internals are reused in both idler and drive wheels. Disk radius 449 mm, rim land bore radius 415.925 mm, rim-rivet radius 430 mm, shortened diaphragm ends and 25 mm short-rivet radial pitch are explicit inferred interface choices, qualified only for native static geometry. The two 121-part common fixtures and four installed wheel study support this choice; oblique source views do not measure it. Local rim-rivet head overhang, formed profiles, X/Y distinctions and structural adequacy remain unresolved.",
+      "evidence": [
+        "record:SNL:275:005",
+        "issue:drive_wheel_reconstruction",
+        "issue:common_wheel_reconstruction"
+      ],
+      "action": "Qualify saved native installation and common-parameter independence; populate drive shafts and supports next."
+    }
+  ],
+  "inspection": {
+    "date": "2026-09-19",
+    "scope": "Viewed initial native isometric and SNL fixed-calibration overlay against SNL Plate2, independently rotated HB Plate2, HB35/36 and SNL24. Review identified upper-width and cooling-layout issues; revised render must be inspected after regeneration.",
+    "status": "first_iteration_reviewed_revisions_pending"
+  }
+}

@@ -1,0 +1,2437 @@
+{
+  "track_pin_assembly": {
+    "survey_ids": [
+      "P_93578385c7e29667"
+    ],
+    "evidence": [
+      "record:SNL:143:001",
+      "record:SNL:143:002"
+    ],
+    "children": [
+      {
+        "id": "Pin",
+        "definition": "track_pin"
+      },
+      {
+        "id": "Cotter",
+        "definition": "track_cotter",
+        "translation": [
+          0,
+          "track_cotter_y",
+          0
+        ]
+      }
+    ]
+  },
+  "track_channel_A": {
+    "survey_ids": [],
+    "evidence": [
+      "record:SNL:120:003",
+      "record:SNL:120:004",
+      "record:SNL:120:005",
+      "record:SNL:120:006"
+    ],
+    "children": [
+      {
+        "id": "LeftBar",
+        "definition": "track_link_left",
+        "translation": [
+          0,
+          "-track_bar_spacing/2",
+          0
+        ]
+      },
+      {
+        "id": "RightBar",
+        "definition": "track_link_right",
+        "translation": [
+          0,
+          "track_bar_spacing/2",
+          0
+        ]
+      },
+      {
+        "id": "Bushing",
+        "definition": "track_bushing",
+        "translation": [
+          "shoe_pitch/2",
+          0,
+          "track_pin_height"
+        ]
+      },
+      {
+        "id": "PinAssembly",
+        "assembly": "track_pin_assembly",
+        "translation": [
+          "shoe_pitch/2",
+          0,
+          "track_pin_height"
+        ],
+        "rotation_deg": [
+          180,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "track_channel_B": {
+    "survey_ids": [],
+    "evidence": [
+      "record:SNL:120:003",
+      "record:SNL:120:004",
+      "record:SNL:120:005",
+      "record:SNL:120:006"
+    ],
+    "children": [
+      {
+        "id": "LeftBar",
+        "definition": "track_link_left",
+        "translation": [
+          0,
+          "-track_bar_spacing/2",
+          0
+        ]
+      },
+      {
+        "id": "RightBar",
+        "definition": "track_link_right",
+        "translation": [
+          0,
+          "track_bar_spacing/2",
+          0
+        ]
+      },
+      {
+        "id": "Bushing",
+        "definition": "track_bushing",
+        "translation": [
+          "shoe_pitch/2",
+          0,
+          "track_pin_height"
+        ]
+      },
+      {
+        "id": "PinAssembly",
+        "assembly": "track_pin_assembly",
+        "translation": [
+          "shoe_pitch/2",
+          0,
+          "track_pin_height"
+        ],
+        "rotation_deg": [
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "track_links": {
+    "survey_ids": [
+      "P_4fff7bf1ed7bad03"
+    ],
+    "evidence": [
+      "record:SNL:217:019"
+    ],
+    "children": [
+      {
+        "id": "ChannelA",
+        "assembly": "track_channel_A",
+        "translation": [
+          0,
+          "-track_channel_spacing/2",
+          0
+        ]
+      },
+      {
+        "id": "ChannelB",
+        "assembly": "track_channel_B",
+        "translation": [
+          0,
+          "track_channel_spacing/2",
+          0
+        ]
+      }
+    ]
+  },
+  "track_unit": {
+    "survey_ids": [
+      "P_e140829e4a6c4c7d"
+    ],
+    "evidence": [
+      "record:SNL:217:019",
+      "record:SNL:217:020",
+      "record:SNL:217:021"
+    ],
+    "children": [
+      {
+        "id": "Shoe",
+        "definition": "track_shoe"
+      },
+      {
+        "id": "Links",
+        "assembly": "track_links"
+      },
+      {
+        "id": "Rivet0",
+        "definition": "track_rivet",
+        "translation": [
+          "-track_rivet_x",
+          "-track_rivet_y_outer",
+          0
+        ]
+      },
+      {
+        "id": "Rivet1",
+        "definition": "track_rivet",
+        "translation": [
+          "-track_rivet_x",
+          "-track_rivet_y_inner",
+          0
+        ]
+      },
+      {
+        "id": "Rivet2",
+        "definition": "track_rivet",
+        "translation": [
+          "-track_rivet_x",
+          "track_rivet_y_inner",
+          0
+        ]
+      },
+      {
+        "id": "Rivet3",
+        "definition": "track_rivet",
+        "translation": [
+          "-track_rivet_x",
+          "track_rivet_y_outer",
+          0
+        ]
+      },
+      {
+        "id": "Rivet4",
+        "definition": "track_rivet",
+        "translation": [
+          "track_rivet_x",
+          "-track_rivet_y_outer",
+          0
+        ]
+      },
+      {
+        "id": "Rivet5",
+        "definition": "track_rivet",
+        "translation": [
+          "track_rivet_x",
+          "-track_rivet_y_inner",
+          0
+        ]
+      },
+      {
+        "id": "Rivet6",
+        "definition": "track_rivet",
+        "translation": [
+          "track_rivet_x",
+          "track_rivet_y_inner",
+          0
+        ]
+      },
+      {
+        "id": "Rivet7",
+        "definition": "track_rivet",
+        "translation": [
+          "track_rivet_x",
+          "track_rivet_y_outer",
+          0
+        ]
+      }
+    ]
+  },
+  "roller_rotating_plain": {
+    "survey_ids": [
+      "P_9e99756d5e66e03b"
+    ],
+    "evidence": [
+      "record:SNL:197:007"
+    ],
+    "children": [
+      {
+        "id": "Tube",
+        "definition": "roller_tube"
+      },
+      {
+        "id": "RollerA",
+        "definition": "roller_lower",
+        "translation": [
+          0,
+          "-roller_center_offset",
+          0
+        ]
+      },
+      {
+        "id": "RollerB",
+        "definition": "roller_lower",
+        "translation": [
+          0,
+          "roller_center_offset",
+          0
+        ]
+      },
+      {
+        "id": "RingA",
+        "definition": "roller_ring",
+        "translation": [
+          0,
+          "-(roller_center_offset+roller_width/2+roller_axial_gap+roller_ring_axial/2)",
+          0
+        ]
+      },
+      {
+        "id": "RingB",
+        "definition": "roller_ring",
+        "translation": [
+          0,
+          "roller_center_offset+roller_width/2+roller_axial_gap+roller_ring_axial/2",
+          0
+        ]
+      }
+    ]
+  },
+  "roller_rotating_spring": {
+    "survey_ids": [
+      "P_6c74ab7d9cd13396"
+    ],
+    "evidence": [
+      "record:SNL:197:002"
+    ],
+    "children": [
+      {
+        "id": "Base",
+        "assembly": "roller_rotating_plain"
+      },
+      {
+        "id": "Spring",
+        "definition": "roller_spring"
+      },
+      {
+        "id": "PlateA",
+        "definition": "roller_spring_plate",
+        "rotation_deg": [
+          0,
+          0,
+          180
+        ]
+      },
+      {
+        "id": "PlateB",
+        "definition": "roller_spring_plate"
+      }
+    ]
+  },
+  "roller_rotating_upper": {
+    "survey_ids": [],
+    "evidence": [
+      "issue:roller_stack"
+    ],
+    "children": [
+      {
+        "id": "Tube",
+        "definition": "roller_tube"
+      },
+      {
+        "id": "RollerA",
+        "definition": "roller_upper",
+        "translation": [
+          0,
+          "-roller_center_offset",
+          0
+        ],
+        "rotation_deg": [
+          0,
+          0,
+          180
+        ]
+      },
+      {
+        "id": "RollerB",
+        "definition": "roller_upper",
+        "translation": [
+          0,
+          "roller_center_offset",
+          0
+        ],
+        "rotation_deg": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "RingA",
+        "definition": "roller_ring",
+        "translation": [
+          0,
+          "-(roller_center_offset+roller_width/2+roller_axial_gap+roller_ring_axial/2)",
+          0
+        ]
+      },
+      {
+        "id": "RingB",
+        "definition": "roller_ring",
+        "translation": [
+          0,
+          "roller_center_offset+roller_width/2+roller_axial_gap+roller_ring_axial/2",
+          0
+        ]
+      }
+    ]
+  },
+  "roller_pin_assembly": {
+    "survey_ids": [
+      "P_811701afe2e74702"
+    ],
+    "evidence": [
+      "record:SNL:143:003"
+    ],
+    "children": [
+      {
+        "id": "Pin",
+        "definition": "roller_pin"
+      },
+      {
+        "id": "Plug",
+        "definition": "roller_plug",
+        "translation": [
+          0,
+          "-roller_pin_length/2",
+          0
+        ]
+      }
+    ]
+  },
+  "roller_clamp": {
+    "survey_ids": [
+      "P_3fbe87dfb1bb973c"
+    ],
+    "evidence": [
+      "record:SNL:221:021"
+    ],
+    "children": [
+      {
+        "id": "Staple",
+        "definition": "roller_ubolt"
+      },
+      {
+        "id": "WasherA",
+        "definition": "roller_washer",
+        "translation": [
+          "-(roller_pin_diameter/2+roller_ubolt_clearance+roller_ubolt_diameter/2)",
+          0,
+          "roller_clamp_seat"
+        ]
+      },
+      {
+        "id": "NutA",
+        "definition": "roller_nut",
+        "translation": [
+          "-(roller_pin_diameter/2+roller_ubolt_clearance+roller_ubolt_diameter/2)",
+          0,
+          "roller_clamp_seat+roller_washer_thickness"
+        ]
+      },
+      {
+        "id": "WasherB",
+        "definition": "roller_washer",
+        "translation": [
+          "(roller_pin_diameter/2+roller_ubolt_clearance+roller_ubolt_diameter/2)",
+          0,
+          "roller_clamp_seat"
+        ]
+      },
+      {
+        "id": "NutB",
+        "definition": "roller_nut",
+        "translation": [
+          "(roller_pin_diameter/2+roller_ubolt_clearance+roller_ubolt_diameter/2)",
+          0,
+          "roller_clamp_seat+roller_washer_thickness"
+        ]
+      }
+    ]
+  },
+  "roller_plain_stack": {
+    "survey_ids": [],
+    "evidence": [
+      "issue:roller_stack"
+    ],
+    "children": [
+      {
+        "id": "Rotating",
+        "assembly": "roller_rotating_plain"
+      },
+      {
+        "id": "PinAssembly",
+        "assembly": "roller_pin_assembly"
+      },
+      {
+        "id": "BushA",
+        "definition": "roller_bush",
+        "translation": [
+          0,
+          "-(tube_length-roller_bush_length)/2",
+          0
+        ]
+      },
+      {
+        "id": "BushB",
+        "definition": "roller_bush",
+        "translation": [
+          0,
+          "(tube_length-roller_bush_length)/2",
+          0
+        ]
+      },
+      {
+        "id": "ClampA",
+        "assembly": "roller_clamp",
+        "translation": [
+          0,
+          "-(hull_frame_clear/2+hull_side_thickness+roller_ubolt_diameter/2+roller_clamp_gap)",
+          0
+        ]
+      },
+      {
+        "id": "ClampB",
+        "assembly": "roller_clamp",
+        "translation": [
+          0,
+          "hull_frame_clear/2+hull_side_thickness+roller_ubolt_diameter/2+roller_clamp_gap",
+          0
+        ]
+      }
+    ]
+  },
+  "roller_spring_stack": {
+    "survey_ids": [],
+    "evidence": [
+      "issue:roller_stack"
+    ],
+    "children": [
+      {
+        "id": "Rotating",
+        "assembly": "roller_rotating_spring"
+      },
+      {
+        "id": "PinAssembly",
+        "assembly": "roller_pin_assembly"
+      },
+      {
+        "id": "BushA",
+        "definition": "roller_bush",
+        "translation": [
+          0,
+          "-(tube_length-roller_bush_length)/2",
+          0
+        ]
+      },
+      {
+        "id": "BushB",
+        "definition": "roller_bush",
+        "translation": [
+          0,
+          "(tube_length-roller_bush_length)/2",
+          0
+        ]
+      },
+      {
+        "id": "ClampA",
+        "assembly": "roller_clamp",
+        "translation": [
+          0,
+          "-(hull_frame_clear/2+hull_side_thickness+roller_ubolt_diameter/2+roller_clamp_gap)",
+          0
+        ]
+      },
+      {
+        "id": "ClampB",
+        "assembly": "roller_clamp",
+        "translation": [
+          0,
+          "hull_frame_clear/2+hull_side_thickness+roller_ubolt_diameter/2+roller_clamp_gap",
+          0
+        ]
+      }
+    ]
+  },
+  "roller_upper_stack": {
+    "survey_ids": [],
+    "evidence": [
+      "issue:roller_stack"
+    ],
+    "children": [
+      {
+        "id": "Rotating",
+        "assembly": "roller_rotating_upper"
+      },
+      {
+        "id": "PinAssembly",
+        "assembly": "roller_upper_pin_assembly"
+      },
+      {
+        "id": "BushA",
+        "definition": "roller_bush",
+        "translation": [
+          0,
+          "-(tube_length-roller_bush_length)/2",
+          0
+        ]
+      },
+      {
+        "id": "BushB",
+        "definition": "roller_bush",
+        "translation": [
+          0,
+          "(tube_length-roller_bush_length)/2",
+          0
+        ]
+      },
+      {
+        "id": "ClampA",
+        "assembly": "roller_clamp",
+        "translation": [
+          0,
+          "-(hull_frame_clear/2+hull_side_thickness+roller_ubolt_diameter/2+roller_clamp_gap)",
+          0
+        ]
+      },
+      {
+        "id": "ClampB",
+        "assembly": "roller_clamp",
+        "translation": [
+          0,
+          "hull_frame_clear/2+hull_side_thickness+roller_ubolt_diameter/2+roller_clamp_gap",
+          0
+        ]
+      },
+      {
+        "id": "SupportA",
+        "definition": "roller_upper_support",
+        "translation": [
+          0,
+          "-(hull_frame_clear/2+hull_side_thickness)",
+          0
+        ],
+        "rotation_deg": [
+          180,
+          0,
+          0
+        ],
+        "evidence": [
+          "record:HB:nomenclature:221:019",
+          "issue:roller_support_interface"
+        ]
+      },
+      {
+        "id": "SupportB",
+        "definition": "roller_upper_support",
+        "translation": [
+          0,
+          "(hull_frame_clear/2+hull_side_thickness)",
+          0
+        ],
+        "rotation_deg": [
+          0,
+          0,
+          0
+        ],
+        "evidence": [
+          "record:HB:nomenclature:221:019",
+          "issue:roller_support_interface"
+        ]
+      }
+    ]
+  },
+  "roller_upper_pin_assembly": {
+    "survey_ids": [],
+    "evidence": [
+      "record:HB:nomenclature:237:046",
+      "record:HB:nomenclature:237:048"
+    ],
+    "children": [
+      {
+        "id": "Pin",
+        "definition": "roller_pin"
+      },
+      {
+        "id": "Plug",
+        "definition": "roller_upper_plug",
+        "translation": [
+          0,
+          "-roller_pin_length/2",
+          0
+        ]
+      }
+    ]
+  },
+  "idler_wheel": {
+    "survey_ids": [
+      "P_1721e5638561afe7"
+    ],
+    "evidence": [
+      "record:SNL:274:023",
+      "issue:idler_wheel_reconstruction"
+    ],
+    "children": [
+      {
+        "id": "Boss",
+        "definition": "wheel_boss"
+      },
+      {
+        "id": "RimA",
+        "definition": "wheel_rim",
+        "wheel_child": "rim",
+        "wheel_side": -1
+      },
+      {
+        "id": "DiskA",
+        "definition": "wheel_disk",
+        "wheel_child": "disk",
+        "wheel_side": -1
+      },
+      {
+        "id": "RimB",
+        "definition": "wheel_rim",
+        "wheel_child": "rim",
+        "wheel_side": 1
+      },
+      {
+        "id": "DiskB",
+        "definition": "wheel_disk",
+        "wheel_child": "disk",
+        "wheel_side": 1
+      },
+      {
+        "id": "Diaphragm0",
+        "definition": "wheel_diaphragm_y",
+        "wheel_child": "diaphragm",
+        "wheel_angle": 0
+      },
+      {
+        "id": "Diaphragm1",
+        "definition": "wheel_diaphragm_x",
+        "wheel_child": "diaphragm",
+        "wheel_angle": 60
+      },
+      {
+        "id": "Diaphragm2",
+        "definition": "wheel_diaphragm_x",
+        "wheel_child": "diaphragm",
+        "wheel_angle": 120
+      },
+      {
+        "id": "Diaphragm3",
+        "definition": "wheel_diaphragm_x",
+        "wheel_child": "diaphragm",
+        "wheel_angle": 180
+      },
+      {
+        "id": "Diaphragm4",
+        "definition": "wheel_diaphragm_x",
+        "wheel_child": "diaphragm",
+        "wheel_angle": 240
+      },
+      {
+        "id": "Diaphragm5",
+        "definition": "wheel_diaphragm_x",
+        "wheel_child": "diaphragm",
+        "wheel_angle": 300
+      },
+      {
+        "id": "Rivet000",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_0_0"
+      },
+      {
+        "id": "Rivet001",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_0_1"
+      },
+      {
+        "id": "Rivet002",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_0_2"
+      },
+      {
+        "id": "Rivet003",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_0_0"
+      },
+      {
+        "id": "Rivet004",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_0_1"
+      },
+      {
+        "id": "Rivet005",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_1_0"
+      },
+      {
+        "id": "Rivet006",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_1_1"
+      },
+      {
+        "id": "Rivet007",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_1_2"
+      },
+      {
+        "id": "Rivet008",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_1_0"
+      },
+      {
+        "id": "Rivet009",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_1_1"
+      },
+      {
+        "id": "Rivet010",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_2_0"
+      },
+      {
+        "id": "Rivet011",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_2_1"
+      },
+      {
+        "id": "Rivet012",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_2_2"
+      },
+      {
+        "id": "Rivet013",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_2_0"
+      },
+      {
+        "id": "Rivet014",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_2_1"
+      },
+      {
+        "id": "Rivet015",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_3_0"
+      },
+      {
+        "id": "Rivet016",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_3_1"
+      },
+      {
+        "id": "Rivet017",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_3_2"
+      },
+      {
+        "id": "Rivet018",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_3_0"
+      },
+      {
+        "id": "Rivet019",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_3_1"
+      },
+      {
+        "id": "Rivet020",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_4_0"
+      },
+      {
+        "id": "Rivet021",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_4_1"
+      },
+      {
+        "id": "Rivet022",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_4_2"
+      },
+      {
+        "id": "Rivet023",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_4_0"
+      },
+      {
+        "id": "Rivet024",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_4_1"
+      },
+      {
+        "id": "Rivet025",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_5_0"
+      },
+      {
+        "id": "Rivet026",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_5_1"
+      },
+      {
+        "id": "Rivet027",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_5_2"
+      },
+      {
+        "id": "Rivet028",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_5_0"
+      },
+      {
+        "id": "Rivet029",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_5_1"
+      },
+      {
+        "id": "Rivet030",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_0"
+      },
+      {
+        "id": "Rivet031",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_1"
+      },
+      {
+        "id": "Rivet032",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_2"
+      },
+      {
+        "id": "Rivet033",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_3"
+      },
+      {
+        "id": "Rivet034",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_4"
+      },
+      {
+        "id": "Rivet035",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_5"
+      },
+      {
+        "id": "Rivet036",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_6"
+      },
+      {
+        "id": "Rivet037",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_7"
+      },
+      {
+        "id": "Rivet038",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_8"
+      },
+      {
+        "id": "Rivet039",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_9"
+      },
+      {
+        "id": "Rivet040",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_10"
+      },
+      {
+        "id": "Rivet041",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_11"
+      },
+      {
+        "id": "Rivet042",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_12"
+      },
+      {
+        "id": "Rivet043",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_13"
+      },
+      {
+        "id": "Rivet044",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_14"
+      },
+      {
+        "id": "Rivet045",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_15"
+      },
+      {
+        "id": "Rivet046",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_16"
+      },
+      {
+        "id": "Rivet047",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_17"
+      },
+      {
+        "id": "Rivet048",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_18"
+      },
+      {
+        "id": "Rivet049",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_19"
+      },
+      {
+        "id": "Rivet050",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_20"
+      },
+      {
+        "id": "Rivet051",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_21"
+      },
+      {
+        "id": "Rivet052",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_22"
+      },
+      {
+        "id": "Rivet053",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_23"
+      },
+      {
+        "id": "Rivet054",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_0_0"
+      },
+      {
+        "id": "Rivet055",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_0_1"
+      },
+      {
+        "id": "Rivet056",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_0_2"
+      },
+      {
+        "id": "Rivet057",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_0_0"
+      },
+      {
+        "id": "Rivet058",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_0_1"
+      },
+      {
+        "id": "Rivet059",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_1_0"
+      },
+      {
+        "id": "Rivet060",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_1_1"
+      },
+      {
+        "id": "Rivet061",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_1_2"
+      },
+      {
+        "id": "Rivet062",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_1_0"
+      },
+      {
+        "id": "Rivet063",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_1_1"
+      },
+      {
+        "id": "Rivet064",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_2_0"
+      },
+      {
+        "id": "Rivet065",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_2_1"
+      },
+      {
+        "id": "Rivet066",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_2_2"
+      },
+      {
+        "id": "Rivet067",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_2_0"
+      },
+      {
+        "id": "Rivet068",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_2_1"
+      },
+      {
+        "id": "Rivet069",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_3_0"
+      },
+      {
+        "id": "Rivet070",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_3_1"
+      },
+      {
+        "id": "Rivet071",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_3_2"
+      },
+      {
+        "id": "Rivet072",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_3_0"
+      },
+      {
+        "id": "Rivet073",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_3_1"
+      },
+      {
+        "id": "Rivet074",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_4_0"
+      },
+      {
+        "id": "Rivet075",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_4_1"
+      },
+      {
+        "id": "Rivet076",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_4_2"
+      },
+      {
+        "id": "Rivet077",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_4_0"
+      },
+      {
+        "id": "Rivet078",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_4_1"
+      },
+      {
+        "id": "Rivet079",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_5_0"
+      },
+      {
+        "id": "Rivet080",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_5_1"
+      },
+      {
+        "id": "Rivet081",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_5_2"
+      },
+      {
+        "id": "Rivet082",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_5_0"
+      },
+      {
+        "id": "Rivet083",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_5_1"
+      },
+      {
+        "id": "Rivet084",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_0"
+      },
+      {
+        "id": "Rivet085",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_1"
+      },
+      {
+        "id": "Rivet086",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_2"
+      },
+      {
+        "id": "Rivet087",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_3"
+      },
+      {
+        "id": "Rivet088",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_4"
+      },
+      {
+        "id": "Rivet089",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_5"
+      },
+      {
+        "id": "Rivet090",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_6"
+      },
+      {
+        "id": "Rivet091",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_7"
+      },
+      {
+        "id": "Rivet092",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_8"
+      },
+      {
+        "id": "Rivet093",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_9"
+      },
+      {
+        "id": "Rivet094",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_10"
+      },
+      {
+        "id": "Rivet095",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_11"
+      },
+      {
+        "id": "Rivet096",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_12"
+      },
+      {
+        "id": "Rivet097",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_13"
+      },
+      {
+        "id": "Rivet098",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_14"
+      },
+      {
+        "id": "Rivet099",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_15"
+      },
+      {
+        "id": "Rivet100",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_16"
+      },
+      {
+        "id": "Rivet101",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_17"
+      },
+      {
+        "id": "Rivet102",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_18"
+      },
+      {
+        "id": "Rivet103",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_19"
+      },
+      {
+        "id": "Rivet104",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_20"
+      },
+      {
+        "id": "Rivet105",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_21"
+      },
+      {
+        "id": "Rivet106",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_22"
+      },
+      {
+        "id": "Rivet107",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_23"
+      }
+    ]
+  },
+  "idler_installation": {
+    "survey_ids": [],
+    "evidence": [
+      "issue:idler_wheel_reconstruction"
+    ],
+    "children": [
+      {
+        "id": "Wheel",
+        "assembly": "idler_wheel",
+        "idler_child": "wheel_frame"
+      },
+      {
+        "id": "ShaftAssembly",
+        "assembly": "idler_shaft",
+        "idler_child": "shaft_frame"
+      },
+      {
+        "id": "ShaftFittings",
+        "assembly": "idler_shaft_fittings",
+        "idler_child": "shaft_frame"
+      },
+      {
+        "id": "Supports",
+        "assembly": "idler_supports",
+        "idler_child": "support_frame"
+      }
+    ]
+  },
+  "idler_shaft": {
+    "survey_ids": [
+      "P_751bd3e4f4900616"
+    ],
+    "evidence": [
+      "record:SNL:214:021",
+      "issue:idler_wheel_reconstruction",
+      "issue:idler_mount_reconstruction"
+    ],
+    "children": [
+      {
+        "id": "BushA",
+        "definition": "wheel_bush",
+        "wheel_child": "bush",
+        "wheel_side": -1
+      },
+      {
+        "id": "BushB",
+        "definition": "wheel_bush",
+        "wheel_child": "bush",
+        "wheel_side": 1
+      },
+      {
+        "id": "Shaft",
+        "definition": "idler_shaft"
+      },
+      {
+        "id": "NutA",
+        "definition": "idler_nut",
+        "idler_child": "nut",
+        "idler_side": -1
+      },
+      {
+        "id": "LockingScrewA",
+        "definition": "idler_locking_screw",
+        "idler_child": "locking_screw",
+        "idler_side": -1
+      },
+      {
+        "id": "OilPlugA",
+        "definition": "roller_plug",
+        "idler_child": "oil_plug",
+        "idler_side": -1
+      },
+      {
+        "id": "NutB",
+        "definition": "idler_nut",
+        "idler_child": "nut",
+        "idler_side": 1
+      },
+      {
+        "id": "LockingScrewB",
+        "definition": "idler_locking_screw",
+        "idler_child": "locking_screw",
+        "idler_side": 1
+      },
+      {
+        "id": "OilPlugB",
+        "definition": "roller_plug",
+        "idler_child": "oil_plug",
+        "idler_side": 1
+      }
+    ]
+  },
+  "idler_supports": {
+    "survey_ids": [],
+    "evidence": [
+      "issue:idler_mount_reconstruction"
+    ],
+    "children": [
+      {
+        "id": "BracketA",
+        "definition": "idler_bracket",
+        "idler_child": "bracket",
+        "idler_side": -1
+      },
+      {
+        "id": "PlateA",
+        "definition": "idler_plate",
+        "idler_child": "plate",
+        "idler_side": -1
+      },
+      {
+        "id": "GuardA",
+        "definition": "idler_guard",
+        "idler_child": "guard",
+        "idler_side": -1
+      },
+      {
+        "id": "AdjustingScrewA",
+        "definition": "idler_adjusting_screw",
+        "idler_child": "adjusting_screw",
+        "idler_side": -1
+      },
+      {
+        "id": "CapA0",
+        "definition": "idler_cap_screw",
+        "idler_child": "cap_screw",
+        "idler_side": -1,
+        "idler_index": 0
+      },
+      {
+        "id": "CapA1",
+        "definition": "idler_cap_screw",
+        "idler_child": "cap_screw",
+        "idler_side": -1,
+        "idler_index": 1
+      },
+      {
+        "id": "CapA2",
+        "definition": "idler_cap_screw",
+        "idler_child": "cap_screw",
+        "idler_side": -1,
+        "idler_index": 2
+      },
+      {
+        "id": "CapA3",
+        "definition": "idler_cap_screw",
+        "idler_child": "cap_screw",
+        "idler_side": -1,
+        "idler_index": 3
+      },
+      {
+        "id": "BracketB",
+        "definition": "idler_bracket",
+        "idler_child": "bracket",
+        "idler_side": 1
+      },
+      {
+        "id": "PlateB",
+        "definition": "idler_plate",
+        "idler_child": "plate",
+        "idler_side": 1
+      },
+      {
+        "id": "GuardB",
+        "definition": "idler_guard",
+        "idler_child": "guard",
+        "idler_side": 1
+      },
+      {
+        "id": "AdjustingScrewB",
+        "definition": "idler_adjusting_screw",
+        "idler_child": "adjusting_screw",
+        "idler_side": 1
+      },
+      {
+        "id": "CapB0",
+        "definition": "idler_cap_screw",
+        "idler_child": "cap_screw",
+        "idler_side": 1,
+        "idler_index": 0
+      },
+      {
+        "id": "CapB1",
+        "definition": "idler_cap_screw",
+        "idler_child": "cap_screw",
+        "idler_side": 1,
+        "idler_index": 1
+      },
+      {
+        "id": "CapB2",
+        "definition": "idler_cap_screw",
+        "idler_child": "cap_screw",
+        "idler_side": 1,
+        "idler_index": 2
+      },
+      {
+        "id": "CapB3",
+        "definition": "idler_cap_screw",
+        "idler_child": "cap_screw",
+        "idler_side": 1,
+        "idler_index": 3
+      },
+      {
+        "id": "PlateRivet0",
+        "definition": "idler_plate_rivet",
+        "idler_child": "plate_rivet",
+        "idler_index": 0
+      },
+      {
+        "id": "PlateRivet1",
+        "definition": "idler_plate_rivet",
+        "idler_child": "plate_rivet",
+        "idler_index": 1
+      },
+      {
+        "id": "PlateRivet2",
+        "definition": "idler_plate_rivet",
+        "idler_child": "plate_rivet",
+        "idler_index": 2
+      },
+      {
+        "id": "PlateRivet3",
+        "definition": "idler_plate_rivet",
+        "idler_child": "plate_rivet",
+        "idler_index": 3
+      },
+      {
+        "id": "PlateRivet4",
+        "definition": "idler_plate_rivet",
+        "idler_child": "plate_rivet",
+        "idler_index": 4
+      }
+    ]
+  },
+  "idler_shaft_fittings": {
+    "survey_ids": [],
+    "evidence": [
+      "issue:idler_mount_reconstruction"
+    ],
+    "children": [
+      {
+        "id": "WasherA",
+        "definition": "idler_washer",
+        "idler_child": "washer",
+        "idler_side": -1
+      },
+      {
+        "id": "CopperA",
+        "definition": "idler_copper",
+        "idler_child": "copper",
+        "idler_side": -1
+      },
+      {
+        "id": "WasherB",
+        "definition": "idler_washer",
+        "idler_child": "washer",
+        "idler_side": 1
+      },
+      {
+        "id": "CopperB",
+        "definition": "idler_copper",
+        "idler_child": "copper",
+        "idler_side": 1
+      }
+    ]
+  },
+  "drive_wheel": {
+    "survey_ids": [
+      "P_4348e25f5dc97cfa"
+    ],
+    "evidence": [
+      "record:SNL:275:005",
+      "issue:drive_wheel_reconstruction",
+      "issue:common_wheel_reconstruction"
+    ],
+    "children": [
+      {
+        "id": "Boss",
+        "definition": "wheel_boss"
+      },
+      {
+        "id": "RimA",
+        "definition": "drive_rim",
+        "wheel_child": "drive_rim",
+        "wheel_side": -1
+      },
+      {
+        "id": "DiskA",
+        "definition": "wheel_disk",
+        "wheel_child": "disk",
+        "wheel_side": -1
+      },
+      {
+        "id": "RimB",
+        "definition": "drive_rim",
+        "wheel_child": "drive_rim",
+        "wheel_side": 1
+      },
+      {
+        "id": "DiskB",
+        "definition": "wheel_disk",
+        "wheel_child": "disk",
+        "wheel_side": 1
+      },
+      {
+        "id": "Diaphragm0",
+        "definition": "wheel_diaphragm_y",
+        "wheel_child": "diaphragm",
+        "wheel_angle": 0
+      },
+      {
+        "id": "Diaphragm1",
+        "definition": "wheel_diaphragm_x",
+        "wheel_child": "diaphragm",
+        "wheel_angle": 60
+      },
+      {
+        "id": "Diaphragm2",
+        "definition": "wheel_diaphragm_x",
+        "wheel_child": "diaphragm",
+        "wheel_angle": 120
+      },
+      {
+        "id": "Diaphragm3",
+        "definition": "wheel_diaphragm_x",
+        "wheel_child": "diaphragm",
+        "wheel_angle": 180
+      },
+      {
+        "id": "Diaphragm4",
+        "definition": "wheel_diaphragm_x",
+        "wheel_child": "diaphragm",
+        "wheel_angle": 240
+      },
+      {
+        "id": "Diaphragm5",
+        "definition": "wheel_diaphragm_x",
+        "wheel_child": "diaphragm",
+        "wheel_angle": 300
+      },
+      {
+        "id": "Rivet000",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_0_0"
+      },
+      {
+        "id": "Rivet001",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_0_1"
+      },
+      {
+        "id": "Rivet002",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_0_2"
+      },
+      {
+        "id": "Rivet003",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_0_0"
+      },
+      {
+        "id": "Rivet004",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_0_1"
+      },
+      {
+        "id": "Rivet005",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_1_0"
+      },
+      {
+        "id": "Rivet006",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_1_1"
+      },
+      {
+        "id": "Rivet007",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_1_2"
+      },
+      {
+        "id": "Rivet008",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_1_0"
+      },
+      {
+        "id": "Rivet009",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_1_1"
+      },
+      {
+        "id": "Rivet010",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_2_0"
+      },
+      {
+        "id": "Rivet011",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_2_1"
+      },
+      {
+        "id": "Rivet012",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_2_2"
+      },
+      {
+        "id": "Rivet013",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_2_0"
+      },
+      {
+        "id": "Rivet014",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_2_1"
+      },
+      {
+        "id": "Rivet015",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_3_0"
+      },
+      {
+        "id": "Rivet016",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_3_1"
+      },
+      {
+        "id": "Rivet017",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_3_2"
+      },
+      {
+        "id": "Rivet018",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_3_0"
+      },
+      {
+        "id": "Rivet019",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_3_1"
+      },
+      {
+        "id": "Rivet020",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_4_0"
+      },
+      {
+        "id": "Rivet021",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_4_1"
+      },
+      {
+        "id": "Rivet022",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_4_2"
+      },
+      {
+        "id": "Rivet023",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_4_0"
+      },
+      {
+        "id": "Rivet024",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_4_1"
+      },
+      {
+        "id": "Rivet025",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_5_0"
+      },
+      {
+        "id": "Rivet026",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_5_1"
+      },
+      {
+        "id": "Rivet027",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_-1_5_2"
+      },
+      {
+        "id": "Rivet028",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_5_0"
+      },
+      {
+        "id": "Rivet029",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_-1_5_1"
+      },
+      {
+        "id": "Rivet030",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_0"
+      },
+      {
+        "id": "Rivet031",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_1"
+      },
+      {
+        "id": "Rivet032",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_2"
+      },
+      {
+        "id": "Rivet033",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_3"
+      },
+      {
+        "id": "Rivet034",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_4"
+      },
+      {
+        "id": "Rivet035",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_5"
+      },
+      {
+        "id": "Rivet036",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_6"
+      },
+      {
+        "id": "Rivet037",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_7"
+      },
+      {
+        "id": "Rivet038",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_8"
+      },
+      {
+        "id": "Rivet039",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_9"
+      },
+      {
+        "id": "Rivet040",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_10"
+      },
+      {
+        "id": "Rivet041",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_11"
+      },
+      {
+        "id": "Rivet042",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_12"
+      },
+      {
+        "id": "Rivet043",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_13"
+      },
+      {
+        "id": "Rivet044",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_14"
+      },
+      {
+        "id": "Rivet045",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_15"
+      },
+      {
+        "id": "Rivet046",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_16"
+      },
+      {
+        "id": "Rivet047",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_17"
+      },
+      {
+        "id": "Rivet048",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_18"
+      },
+      {
+        "id": "Rivet049",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_19"
+      },
+      {
+        "id": "Rivet050",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_20"
+      },
+      {
+        "id": "Rivet051",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_21"
+      },
+      {
+        "id": "Rivet052",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_22"
+      },
+      {
+        "id": "Rivet053",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_-1_23"
+      },
+      {
+        "id": "Rivet054",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_0_0"
+      },
+      {
+        "id": "Rivet055",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_0_1"
+      },
+      {
+        "id": "Rivet056",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_0_2"
+      },
+      {
+        "id": "Rivet057",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_0_0"
+      },
+      {
+        "id": "Rivet058",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_0_1"
+      },
+      {
+        "id": "Rivet059",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_1_0"
+      },
+      {
+        "id": "Rivet060",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_1_1"
+      },
+      {
+        "id": "Rivet061",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_1_2"
+      },
+      {
+        "id": "Rivet062",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_1_0"
+      },
+      {
+        "id": "Rivet063",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_1_1"
+      },
+      {
+        "id": "Rivet064",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_2_0"
+      },
+      {
+        "id": "Rivet065",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_2_1"
+      },
+      {
+        "id": "Rivet066",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_2_2"
+      },
+      {
+        "id": "Rivet067",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_2_0"
+      },
+      {
+        "id": "Rivet068",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_2_1"
+      },
+      {
+        "id": "Rivet069",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_3_0"
+      },
+      {
+        "id": "Rivet070",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_3_1"
+      },
+      {
+        "id": "Rivet071",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_3_2"
+      },
+      {
+        "id": "Rivet072",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_3_0"
+      },
+      {
+        "id": "Rivet073",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_3_1"
+      },
+      {
+        "id": "Rivet074",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_4_0"
+      },
+      {
+        "id": "Rivet075",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_4_1"
+      },
+      {
+        "id": "Rivet076",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_4_2"
+      },
+      {
+        "id": "Rivet077",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_4_0"
+      },
+      {
+        "id": "Rivet078",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_4_1"
+      },
+      {
+        "id": "Rivet079",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_5_0"
+      },
+      {
+        "id": "Rivet080",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_5_1"
+      },
+      {
+        "id": "Rivet081",
+        "definition": "wheel_rivet_short",
+        "wheel_child": "rivet",
+        "wheel_rivet": "short_1_5_2"
+      },
+      {
+        "id": "Rivet082",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_5_0"
+      },
+      {
+        "id": "Rivet083",
+        "definition": "wheel_rivet_long",
+        "wheel_child": "rivet",
+        "wheel_rivet": "long_1_5_1"
+      },
+      {
+        "id": "Rivet084",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_0"
+      },
+      {
+        "id": "Rivet085",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_1"
+      },
+      {
+        "id": "Rivet086",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_2"
+      },
+      {
+        "id": "Rivet087",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_3"
+      },
+      {
+        "id": "Rivet088",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_4"
+      },
+      {
+        "id": "Rivet089",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_5"
+      },
+      {
+        "id": "Rivet090",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_6"
+      },
+      {
+        "id": "Rivet091",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_7"
+      },
+      {
+        "id": "Rivet092",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_8"
+      },
+      {
+        "id": "Rivet093",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_9"
+      },
+      {
+        "id": "Rivet094",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_10"
+      },
+      {
+        "id": "Rivet095",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_11"
+      },
+      {
+        "id": "Rivet096",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_12"
+      },
+      {
+        "id": "Rivet097",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_13"
+      },
+      {
+        "id": "Rivet098",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_14"
+      },
+      {
+        "id": "Rivet099",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_15"
+      },
+      {
+        "id": "Rivet100",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_16"
+      },
+      {
+        "id": "Rivet101",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_17"
+      },
+      {
+        "id": "Rivet102",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_18"
+      },
+      {
+        "id": "Rivet103",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_19"
+      },
+      {
+        "id": "Rivet104",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_20"
+      },
+      {
+        "id": "Rivet105",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_21"
+      },
+      {
+        "id": "Rivet106",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_22"
+      },
+      {
+        "id": "Rivet107",
+        "definition": "wheel_rivet_rim",
+        "wheel_child": "rivet",
+        "wheel_rivet": "rim_1_23"
+      }
+    ]
+  },
+  "drive_shaft": {
+    "survey_ids": [
+      "P_85a331cb868a07b7"
+    ],
+    "evidence": [
+      "record:SNL:215:001",
+      "issue:drive_wheel_reconstruction"
+    ],
+    "composition_status": "partial",
+    "omitted_source_counts": {
+      "P_7dadf20f3a38ad7e": 2,
+      "P_4b04dad4629f792c": 1,
+      "P_f4c47f33750a2038": 1,
+      "P_4a25f9905c502b80": 1
+    },
+    "children": [
+      {
+        "id": "BushA",
+        "definition": "wheel_bush",
+        "wheel_child": "bush",
+        "wheel_side": -1
+      },
+      {
+        "id": "BushB",
+        "definition": "wheel_bush",
+        "wheel_child": "bush",
+        "wheel_side": 1
+      }
+    ]
+  },
+  "drive_installation": {
+    "survey_ids": [],
+    "evidence": [
+      "record:SNL:275:005",
+      "issue:drive_wheel_reconstruction",
+      "issue:common_wheel_reconstruction"
+    ],
+    "children": [
+      {
+        "id": "Wheel",
+        "assembly": "drive_wheel"
+      },
+      {
+        "id": "ShaftAssembly",
+        "assembly": "drive_shaft"
+      }
+    ]
+  }
+}

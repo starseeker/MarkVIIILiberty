@@ -1,0 +1,585 @@
+{
+  "schema_version": 1,
+  "title": "Mark VIII complete-tank execution queue",
+  "created": "2026-09-19",
+  "document_status": "implementation_in_progress",
+  "workflow": "../../docs/complete-tank-workflow.md",
+  "packet_template": "../../docs/templates/cad-work-packet.md",
+  "existing_prerequisite": "../002_Foundation/README.md",
+  "scope": {
+    "configuration": "ROCK_ISLAND_FIRST_100",
+    "configuration_dates": "1919–1920",
+    "interior": "all_identifiable_components",
+    "approximation_policy": "documented_approximations_prioritizing_complete_appearance_without_compromising_useful_geometry",
+    "modeling_authority": "version_controlled_scripts_and_data_with_native_editable_cad",
+    "movement": "static_assembly_and_selected_hatch_sponson_service_poses",
+    "user_scope_choices": "confirmed_2026-09-19",
+    "installed_component_count": null,
+    "count_note": "Survey record count is not the vehicle BOM; inventory reconciliation establishes definitions and quantity scope.",
+    "current_priority": "fully_populate_standard_assembled_geometry_including_identifiable_interiors_before_pose_variants"
+  },
+  "statuses": [
+    "planned",
+    "active",
+    "review",
+    "accepted",
+    "accepted_approximate",
+    "blocked"
+  ],
+  "milestones": [
+    {
+      "id": "M0",
+      "title": "Production framework"
+    },
+    {
+      "id": "M1",
+      "title": "Complete arrangement"
+    },
+    {
+      "id": "M2",
+      "title": "Complete exterior"
+    },
+    {
+      "id": "M3",
+      "title": "Component reconstruction"
+    },
+    {
+      "id": "M4",
+      "title": "Integrated release"
+    }
+  ],
+  "scheduling_rule": "Dependencies require accepted technical outputs; accepted_approximate is usable only within its recorded bounds. Missing critical evidence blocks the affected packet, not independent work. Every milestone also requires the workflow's exit gate.",
+  "packets": [
+    {
+      "id": "F01",
+      "milestone": "M0",
+      "title": "Reconcile the production candidate inventory",
+      "status": "active",
+      "depends_on": [],
+      "deliverable": "Convert survey identities and assertions into a configuration-specific modeling ledger.",
+      "acceptance": [
+        "Disposition every survey record as a candidate inclusion, exclusion, nonphysical item, reviewed identity mapping or explicit unresolved case; preserve source IDs.",
+        "Separate installed, spare, per-side, per-assembly and set quantities; publish unresolved counts and unquantified commercial inventory gaps.",
+        "Record first-100 equipment alternatives, review-queue issues and the initial selected portable-equipment loadout."
+      ],
+      "progress_note": "Generated complete survey triage ledger; thirteen explicit initial configuration decisions; candidates and loadout remain unresolved.",
+      "progress_record": "PROGRESS.md"
+    },
+    {
+      "id": "F02",
+      "milestone": "M0",
+      "title": "Define typed data and interface contracts",
+      "status": "active",
+      "depends_on": [
+        "F01"
+      ],
+      "deliverable": "Specify the authoritative configuration, parameter, definition, occurrence, representation and datum records.",
+      "acceptance": [
+        "Document dimensional units, original notation, evidence status, applicability and uncertainty independently.",
+        "Define stable identity mapping, rigid-transform convention, interface ownership and one physical parent per occurrence.",
+        "Specify representation switching without duplicate BOM entries, source revision handling and dependency invalidation."
+      ],
+      "progress_note": "Typed records, source checks and named datum/occurrence hierarchy implemented; mating contracts and selectable representations remain.",
+      "progress_record": "PROGRESS.md"
+    },
+    {
+      "id": "F03",
+      "milestone": "M0",
+      "title": "Establish the modular CAD build and regression checks",
+      "status": "active",
+      "depends_on": [
+        "F02"
+      ],
+      "deliverable": "Adapt the proven foundation into a subsystem-oriented full-tank build framework.",
+      "acceptance": [
+        "Preserve the foundation pilot as a passing regression fixture; qualify the installed runtime and relative external links.",
+        "Build and reopen a representative nested assembly with nonzero rotations, repeated occurrences and selectable representations.",
+        "Demonstrate incremental invalidation, missing-link diagnostics and inventory-driven checks; record initial time and memory measurements."
+      ],
+      "progress_note": "Native subsystem build, caching, source comparisons, export and initial regression checks implemented; further representation/performance qualification remains.",
+      "progress_record": "PROGRESS.md"
+    },
+    {
+      "id": "E01",
+      "milestone": "M0",
+      "title": "Review evidence controlling the first installation layout",
+      "status": "active",
+      "depends_on": [
+        "F01"
+      ],
+      "deliverable": "Make a bounded first research pass on production variants, calibration conflicts and critical interfaces.",
+      "acceptance": [
+        "Record decisions or bounded gaps for production fuel/engine/electrical variants, wheel geometry, ring fit, SH642B and sponson interfaces.",
+        "Inspect the exact relevant source pages before promoting values; distinguish retrieved documents from archive leads.",
+        "Assign each unresolved item an affected packet, fallback or blocker and next evidence action; do not require all external research to finish."
+      ],
+      "progress_note": "Inspected controlling source sections and corrected upper-width/cooling-layout assumptions; remaining interface conflicts documented.",
+      "progress_record": "PROGRESS.md"
+    },
+    {
+      "id": "L01",
+      "milestone": "M1",
+      "title": "Establish the multi-view datum skeleton",
+      "status": "active",
+      "depends_on": [
+        "F02",
+        "E01"
+      ],
+      "deliverable": "Create longitudinal geometry, cross-sections and named vehicle and subsystem frames.",
+      "acceptance": [
+        "Retain X-forward, Y-port, Z-up coordinates and the ground datum under the rear drive axle.",
+        "Record source/calibration provenance for the envelope, wheel axes, plate planes, compartments and hinge/mount frames.",
+        "Preserve independent residuals; treat perspective photographs as observational references unless a justified local-plane measurement is established."
+      ],
+      "progress_note": "Initial longitudinal skeleton, wheel axes and independently specified transverse widths implemented; refined cross-sections remain.",
+      "progress_record": "PROGRESS.md"
+    },
+    {
+      "id": "L02",
+      "milestone": "M1",
+      "title": "Install layout representations of every major system",
+      "status": "active",
+      "depends_on": [
+        "F03",
+        "L01"
+      ],
+      "deliverable": "Deliver a complete vehicle arrangement with bounded equipment envelopes and routing/access spaces.",
+      "acceptance": [
+        "Place hull, running gear, sponsons, powerplant, drivetrain, cooling, fuel, electrical, crew and selected stowage representations.",
+        "Identify major interface and clearance conflicts and establish mounting, connection and access datums.",
+        "Publish M1 native assembly, sections, envelope uncertainty and coverage report; layout proxies remain distinguishable from finished parts."
+      ],
+      "progress_note": "Initial major-system native layout built; missing equipment and station families remain explicitly listed.",
+      "progress_record": "PROGRESS.md"
+    },
+    {
+      "id": "H01",
+      "milestone": "M2",
+      "title": "Build complete hull panels and primary track-frame structure",
+      "status": "active",
+      "depends_on": [
+        "L02"
+      ],
+      "deliverable": "Replace exterior reference masses and the support coupon with actual panel and structural definitions.",
+      "acceptance": [
+        "Model complete plate outlines and component-specific thicknesses, main frame members, principal openings and support extents.",
+        "Validate joints, laps, compartments, mounting datums and running-gear clearances.",
+        "Replace or explicitly retire pilot coupons; no coupon counts as a finished full-length historical member."
+      ],
+      "progress_record": "packets/H01.md",
+      "progress_note": "77 individual standard hull plates across 63 source identities replace central/track-frame reference solids. Includes sides, skirts, floors, roof, split closed doors and service leaves. Source counts and nominal plate interfaces checked; curved outlines, braces/angles, bulkheads, chutes, remaining roof/floor covers and fittings still open. See packets/H01.md."
+    },
+    {
+      "id": "S01",
+      "milestone": "M2",
+      "title": "Build upper structures and both sponsons",
+      "status": "active",
+      "depends_on": [
+        "H01"
+      ],
+      "deliverable": "Model enclosures, roofs, outlook, sponson plates/supports, doors and hinges.",
+      "acceptance": [
+        "Resolve production panel selection and document approximate transverse geometry and hidden construction.",
+        "Install separate port/starboard occurrences with verified handedness and named hinge/support interfaces.",
+        "Check adjoining hull geometry, openings and external-equipment installation clearance."
+      ],
+      "progress_note": "26 upper plates and 39 handed sponson shell plates replace the enclosure/sponson envelopes. The standard sponsons are hollow, with source quantities, handed openings and normal thickness checked. Rotating shields/mounts, hinges, supports, furnishings and fittings remain pending; source hand/floor-scope conflicts are retained.",
+      "progress_record": "packets/S01-sponsons.md",
+      "port_cover_issue": "Retain SH642B dimensional conflict (SNL_ERRATA_08/SURVEY_13) during revolver-port hardware reconstruction; it is not an R02 roller-spring issue."
+    },
+    {
+      "id": "R01",
+      "milestone": "M2",
+      "title": "Complete and validate the reusable track unit",
+      "status": "active",
+      "depends_on": [
+        "L02",
+        "E01"
+      ],
+      "deliverable": "Replace simplified webs with a complete representative shoe and connection assembly.",
+      "acceptance": [
+        "Document shoe/link form, pitch, pressing, eyes, pins, bushes and fasteners with source or approximation status.",
+        "Build multiple connected units and verify their local pivot frames, handedness and allowed static articulation.",
+        "Check part validity and joint clearance without changing documented pitch to hide a fit conflict."
+      ],
+      "progress_note": "Seven partial native definitions now populate two closed 78-unit tracks through R03. Source composition and nominal static track self-interference pass; pressing/forging refinement and underside evidence remain open.",
+      "progress_record": "packets/R01.md"
+    },
+    {
+      "id": "R02",
+      "milestone": "M2",
+      "title": "Install wheels, rollers, suspension and adjustment assemblies",
+      "status": "active",
+      "depends_on": [
+        "H01",
+        "R01"
+      ],
+      "deliverable": "Populate the running-gear stations and their complete support families on both sides.",
+      "acceptance": [
+        "Distinguish road-track drive wheels from final-drive chain sprockets and reconcile roller quantity scope before instancing.",
+        "Model and install shaft/bearing/support stacks, spring/plain and upper stations, idlers and adjustment geometry.",
+        "Resolve or document roller ring and M1336 spring/tube dimensional conflicts; verify support alignment, rail contact and tensioner bounds."
+      ],
+      "research_record": "packets/R02-rollers-research.md",
+      "scope_note": "SH642B is revolver-port Belleville hardware, not roller hardware; its unresolved dimensions remain with port-cover reconstruction. Shared upper-roller component quantities require an explicit HB/SNL scope decision.",
+      "progress_record": "packets/R02.md",
+      "progress_note": "Qualified partial driving-wheel stage: 242 wheel/bush parts replace two envelopes; common idler/drive definitions and paired rim phase checks pass. 1,876 wheel material candidates, 24 sampled two-head rivet seats and eight rim/disk seats pass. Full native/STEP/relocation/rebuild/cache checks, thirteen parameter trials and 33 record/renderer tests pass. Snapshot 009 and wheel detail preserved. Tooth count, engagement, exact sections and structural fit remain partial. Next: source-correct drive shaft/bearing installation, roller pinions/chain, remaining running-gear interfaces, then continuing exterior/interior systems.",
+      "support_progress_record": "packets/R02-upper-supports.md",
+      "idler_research_record": "packets/R02-idler-research.md",
+      "idler_progress_record": "packets/R02-idler-wheels.md",
+      "lower_support_experiment": "experiments/lower_supports/README.md",
+      "lower_support_experiment_status": "34 angles and 76 bolts built in a separate native document; 1502 candidate pairs without overlap, 348 pin/washer and 76 bolt bearing contacts, all 34 hull seats; headless native reopen and printed-length/negative-contact checks pass. Not yet promoted to the qualified tank. Rear run allocation, formed contour and detachable retention remain explicit historical gaps."
+    },
+    {
+      "id": "R03",
+      "milestone": "M2",
+      "title": "Solve and instantiate both complete track loops",
+      "status": "active",
+      "depends_on": [
+        "R01",
+        "R02"
+      ],
+      "deliverable": "Place complete rigid track-unit occurrences around the installed running gear.",
+      "acceptance": [
+        "Reconcile the production count of 78 shoes per side with fixed pin pitch, wheel contact and supported adjustment freedom.",
+        "Verify every inter-pin distance and the closing joint, adjacent-shoe clearance and drive-wheel engagement.",
+        "Report rounding, closure residuals and assumption changes; do not stretch links or duplicate the first unit at closure."
+      ],
+      "progress_record": "packets/R03.md",
+      "progress_note": "Two 78-unit constant-pitch loops contain 2,964 physical components. Shared pins and closing joints pass; source-calibration residuals are retained. Wheel engagement, support contact and adjustment qualification remain dependent on unfinished R02 geometry."
+    },
+    {
+      "id": "P01",
+      "milestone": "M2",
+      "title": "Refine machinery installation and external connections",
+      "status": "planned",
+      "depends_on": [
+        "L02",
+        "E01"
+      ],
+      "deliverable": "Firm up engine/drivetrain envelopes, supports and ports needed before exterior completion.",
+      "acceptance": [
+        "Resolve tank-versus-aircraft installation choices and identify provisional production equipment envelopes.",
+        "Establish engine/transmission axes and mounts, major cooling/fuel/electrical ports and intake/exhaust paths.",
+        "Check compartment access and planned routing corridors against the hull; record downstream dependencies."
+      ]
+    },
+    {
+      "id": "K01",
+      "milestone": "M2",
+      "title": "Create source-qualified shared hardware families",
+      "status": "planned",
+      "depends_on": [
+        "E01",
+        "F03"
+      ],
+      "deliverable": "Build reusable nominal hardware definitions selected from actual joint needs.",
+      "acceptance": [
+        "Identify relevant original diameter/length/head/thread notation and applicable period standard or recorded approximation.",
+        "Keep U.S., British, pipe and special hardware distinctions; preserve unknown fits and definitions.",
+        "Verify representative plate/angle grip stacks and link reuse; explicit thread geometry is representation-dependent."
+      ]
+    },
+    {
+      "id": "X01",
+      "milestone": "M2",
+      "title": "Complete visible external fittings and equipment",
+      "status": "active",
+      "depends_on": [
+        "H01",
+        "S01",
+        "P01"
+      ],
+      "deliverable": "Install covers, outlets, brackets, lifting/towing fittings and other selected exterior equipment.",
+      "acceptance": [
+        "Reconcile all known exterior items and both-side differences with the production inventory.",
+        "Locate each item through an owning installation parent and appropriate interfaces.",
+        "Review silhouette, visible detail and clearances against period sources and labeled modern observations."
+      ],
+      "progress": "Standard roof-louver subset: 82 physical component links from 19 definitions/18 identities. Blade counts follow later SNL with handbook conflicts retained. Spacing/support hardware, rear deflector and other exterior equipment remain open. Independent standard geometry proceeds under the user priority; full packet acceptance dependencies remain unsatisfied.",
+      "implementation_records": [
+        "packets/X01-louvers.md",
+        "packets/X01-louvers-research.md"
+      ]
+    },
+    {
+      "id": "A01",
+      "milestone": "M2",
+      "title": "Build historical external armament and mounting representations",
+      "status": "planned",
+      "depends_on": [
+        "S01",
+        "L02"
+      ],
+      "deliverable": "Represent selected production external equipment, shields, installation interfaces and stowage envelopes.",
+      "acceptance": [
+        "Distinguish production equipment selection from preliminary and later configurations.",
+        "Provide source-qualified exterior forms and installation geometry sufficient for historical arrangement and space checks.",
+        "Record representation scope and supported static positions separately from sponson movement."
+      ]
+    },
+    {
+      "id": "K02",
+      "milestone": "M2",
+      "title": "Populate exterior joint hardware",
+      "status": "planned",
+      "depends_on": [
+        "K01",
+        "H01",
+        "S01",
+        "R02",
+        "X01",
+        "A01"
+      ],
+      "deliverable": "Generate visible fastening patterns from defined joints and reusable hardware.",
+      "acceptance": [
+        "Tie each pattern to specific panels/supports, evidence or explicit spacing assumptions.",
+        "Check grip, hole alignment and heads; count each physical occurrence once under its owning joint.",
+        "Avoid treating a visually inferred row as a recovered dimensioned drilling pattern."
+      ]
+    },
+    {
+      "id": "V02",
+      "milestone": "M2",
+      "title": "Review and publish the complete exterior",
+      "status": "planned",
+      "depends_on": [
+        "H01",
+        "S01",
+        "R03",
+        "P01",
+        "X01",
+        "A01",
+        "K02"
+      ],
+      "deliverable": "Deliver the M2 assembly and evidence/coverage bundle.",
+      "acceptance": [
+        "Verify all selected exterior components have finished or accepted approximate representations; remove exterior blockout substitutes.",
+        "Publish views, sections, known discrepancies, quantity/definition coverage and exterior interface checks.",
+        "Keep unfinished hidden components and their remaining packets explicitly listed."
+      ]
+    },
+    {
+      "id": "I01",
+      "milestone": "M3",
+      "title": "Complete internal structure and equipment supports",
+      "status": "planned",
+      "depends_on": [
+        "H01",
+        "P01"
+      ],
+      "deliverable": "Build inner frames, bulkheads, floors, mounts, access panels and associated joints.",
+      "acceptance": [
+        "Reconcile internal structural inventory and establish remaining machinery and equipment mounts.",
+        "Check compartment boundaries, access spaces, panel overlap and assembly ownership.",
+        "Record all inferred laps, brackets, hole locations and thicknesses with uncertainty."
+      ]
+    },
+    {
+      "id": "I02",
+      "milestone": "M3",
+      "title": "Reconstruct tank-engine and lubrication components",
+      "status": "planned",
+      "depends_on": [
+        "P01",
+        "I01"
+      ],
+      "deliverable": "Refine the tank-specific engine installation and supported internal/external components.",
+      "acceptance": [
+        "Reconcile tank and aircraft identities and alternatives before creating occurrences.",
+        "Complete supported castings, cylinder/rotating/valve assemblies, lubrication components and ancillary interfaces to the selected scope.",
+        "Verify internal stacks and installation fit; label uncertain proprietary components and any unknown inventory."
+      ]
+    },
+    {
+      "id": "I03",
+      "milestone": "M3",
+      "title": "Reconstruct the drivetrain and steering/brake assemblies",
+      "status": "planned",
+      "depends_on": [
+        "P01",
+        "I01"
+      ],
+      "deliverable": "Detail clutch, transmission, final drives, supports, controls and connections.",
+      "acceptance": [
+        "Validate shaft/bearing axial stacks, housing interfaces and owning assemblies.",
+        "Retain explicit simplified representations for unsupported gear or bearing detail rather than invented exact profiles.",
+        "Check alignment, clearances and control connection datums against the installed powerplant and running gear."
+      ]
+    },
+    {
+      "id": "I04",
+      "milestone": "M3",
+      "title": "Reconstruct cooling and ventilation",
+      "status": "planned",
+      "depends_on": [
+        "I01",
+        "I02",
+        "I03"
+      ],
+      "deliverable": "Detail radiators, fans/drives, ducts, brackets and primary connections.",
+      "acceptance": [
+        "Establish tank/header/core dimensions and mounted envelopes with evidence/assumptions.",
+        "Apply radiator tube counts at their documented named-core scope after validating a representative element.",
+        "Check access and clearances with engine/drivetrain and expose routing ports for final connection work."
+      ]
+    },
+    {
+      "id": "I05",
+      "milestone": "M3",
+      "title": "Reconstruct fuel and pressure equipment",
+      "status": "planned",
+      "depends_on": [
+        "I01",
+        "I02",
+        "E01"
+      ],
+      "deliverable": "Detail production tanks, supports, pumps, carburetor exterior/interfaces and pressure equipment.",
+      "acceptance": [
+        "Resolve or bound production tank shape and capacity interpretation; capacity does not alone determine geometry.",
+        "Keep Ball & Ball and other carburetor variants separate and record unverified proprietary detail.",
+        "Verify mounts and connection ports against engine and compartment geometry."
+      ]
+    },
+    {
+      "id": "I06",
+      "milestone": "M3",
+      "title": "Reconstruct electrical equipment and instruments",
+      "status": "planned",
+      "depends_on": [
+        "I01",
+        "I02",
+        "I03",
+        "E01"
+      ],
+      "deliverable": "Detail selected starting/charging, battery, switch/panel and instrument installations.",
+      "acceptance": [
+        "Resolve production equipment applicability and record conflicting source descriptions.",
+        "Provide supported cases, mounts, terminals and interfaces; identify unquantified commercial internals.",
+        "Install equipment and verify access, ownership and routing endpoints."
+      ]
+    },
+    {
+      "id": "I07",
+      "milestone": "M3",
+      "title": "Complete crew controls, equipment and stowage",
+      "status": "planned",
+      "depends_on": [
+        "I01",
+        "I03",
+        "S01",
+        "A01"
+      ],
+      "deliverable": "Model seats, operating controls/linkages, racks, interior fittings and selected portable equipment.",
+      "acceptance": [
+        "Reconcile controls and carried equipment with the production inventory and selected loadout.",
+        "Keep installed equipment separate from spare/alternative quantities.",
+        "Check reach/access envelopes where supported, linkage arrangement, opening clearance and stowage occupancy."
+      ]
+    },
+    {
+      "id": "I08",
+      "milestone": "M3",
+      "title": "Route and install interconnecting lines and supports",
+      "status": "planned",
+      "depends_on": [
+        "I04",
+        "I05",
+        "I06",
+        "I07"
+      ],
+      "deliverable": "Complete pipes, hoses, wiring, conduit, fittings, clamps and associated supports.",
+      "acceptance": [
+        "Connect named ports and supports and preserve documented end sizes/lengths and fitting identities.",
+        "Record inferred route bends, sag and unavailable proprietary details.",
+        "Validate route clearance, service access and dependency propagation after a meaningful interface movement."
+      ]
+    },
+    {
+      "id": "I09",
+      "milestone": "M3",
+      "title": "Complete hidden hardware, packing and remaining identified pieces",
+      "status": "planned",
+      "depends_on": [
+        "K01",
+        "I02",
+        "I03",
+        "I04",
+        "I05",
+        "I06",
+        "I07",
+        "I08"
+      ],
+      "deliverable": "Close the remaining known component-definition and occurrence coverage.",
+      "acceptance": [
+        "Reconcile gaskets, packing, retainers, hidden fastening and remaining selected physical identities.",
+        "Derive approximate contact outlines only where the mating relationship is supported and record thickness assumptions.",
+        "Account for every required definition/occurrence without double-counting subassemblies or representations."
+      ]
+    },
+    {
+      "id": "V03",
+      "milestone": "M3",
+      "title": "Reconcile and validate component-complete coverage",
+      "status": "planned",
+      "depends_on": [
+        "V02",
+        "I09"
+      ],
+      "deliverable": "Deliver the M3 integrated model and declared coverage boundary.",
+      "acceptance": [
+        "Settle required scope, identity and quantity decisions; report any unquantified proprietary inventory outside the declared boundary.",
+        "Achieve required unique-definition and installed-occurrence coverage with no temporary placeholders counted as finished components.",
+        "Publish evidence-confidence coverage separately from geometric completion and run system-level interface/interference checks."
+      ]
+    },
+    {
+      "id": "P02",
+      "milestone": "M4",
+      "title": "Create selected static poses and inspect movement clearance",
+      "status": "planned",
+      "depends_on": [
+        "V03"
+      ],
+      "deliverable": "Deliver documented hatch, sponson and service arrangements plus presentation views.",
+      "acceptance": [
+        "Preserve occurrence identities and separate configuration variants, static poses and exploded views.",
+        "Check pose endpoints and any claimed movement range; keep unsupported motion paths explicitly unresolved.",
+        "Separate sponson withdrawal from external-equipment transport placement and verify applicable clearance."
+      ],
+      "progress_record": "packets/P02-research.md",
+      "progress_note": "Pose geometry deferred until the standard assembled configuration is fully populated, per user direction. Preparatory identities/notes retained; no posed native assemblies implemented."
+    },
+    {
+      "id": "V04",
+      "milestone": "M4",
+      "title": "Qualify integrated performance and release checks",
+      "status": "planned",
+      "depends_on": [
+        "V03",
+        "P02"
+      ],
+      "deliverable": "Run complete source, geometry, configuration, change and portability qualification.",
+      "acceptance": [
+        "Use spatial candidate filtering for exact interference checks; list specific intentional contacts/interference exceptions.",
+        "Measure native open/recompute/export time, memory and sizes for intended representations and address practical performance failures.",
+        "Verify clean equivalent rebuild, meaningful dependency changes, representation-independent BOM, STEP reopening and relocated native links."
+      ]
+    },
+    {
+      "id": "D01",
+      "milestone": "M4",
+      "title": "Package the complete reconstruction release",
+      "status": "planned",
+      "depends_on": [
+        "V04"
+      ],
+      "deliverable": "Publish native hierarchy, exchange geometry, evidence atlas, BOM and reproducible delivery manifest.",
+      "acceptance": [
+        "Include complete relative-link dependencies, source/runtime/input fingerprints, checksums and actual build instructions.",
+        "Deliver exterior/interior/section/pose views, definition and occurrence BOMs, configuration selection and documented approximations.",
+        "State the achieved coverage boundary and remaining evidence/inventory gaps; include actual passing release reports."
+      ]
+    }
+  ]
+}
