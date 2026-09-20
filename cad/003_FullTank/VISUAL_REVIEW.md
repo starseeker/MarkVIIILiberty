@@ -470,3 +470,37 @@ The small Q52C head is not a qualified bolt shoulder. Native checks confirm only
 - `comparisons/drive_installation.png`: `42e23b7b9c31ab5c891acd1f215568caa5a50fbe87988b9bfbb89fb9a8082df3`
 - `comparisons/idler_section.png`: `5d873909d7f6656c3f7ceaced0f84197da522289cc1badfb71501915f67e2607`
 - `comparisons/lower_support_bank.png`: `10e9e4067750071eb5cb7d4c6305956fa272cad10c0f4847bb65771296f1a863`
+
+## Standard roller-pinion delivery and transparent hull — 20 September 2026
+
+Freshly inspected the main-delivery isometric, drive/pinion oblique and pinion
+shaft/support close-up, then the newly generated transparent-hull isometric.
+The preserved original review of seven native views and two source illustrations
+remains bound to the same native geometry. Its earlier pending-qualification
+wording records the time of that inspection; full qualification has since passed.
+
+The opaque view retains the established standard camera and reveals the added
+rear supports. The close-up exposes separate roller banks, the central chain
+sprocket and paired drive-wheel rings; the mounting view shows separate supports
+and the flush inner/retained outer shaft-plug forms. Continuous engagement,
+35/37 tooth reconciliation, precise cast profiles, threads and formed pinion
+cotters remain open. Chain/casing/transmission candidates remain separate.
+
+The transparent view uses the same camera with hull/sponson armor at 18% opacity.
+Both roller runs, idlers and rear pinions are now visible through the hull. Opaque
+tracks and machinery retain depth ordering, and the broad colored interior
+shapes remain explicitly provisional envelopes. The nearest armor surface forms
+a single display layer so overlapping plates do not hide the interior again.
+This is an inspection display, not an optical material simulation or a pose.
+
+Two analytic rendering checks verify front/back depth handling, alpha endpoints
+and invalid opacity rejection. All 20 native file hashes remain unchanged.
+See [the inspected-image receipt](releases/011-roller-pinions-visual-review.json)
+and [qualification transfer](releases/011-roller-pinions-transfer.json).
+
+| Actual inspected raster, relative to build | SHA-256 |
+|---|---|
+| previews/isometric.png | fd1ee7b817ca0729c9cee1de4fa4a0080dbe9554e8a18edfaeef672b0d462f21 |
+| comparisons/pinion_drive_oblique.png | eaab45d3888028d024db63a1491aec464a4cc5985ea80d4b47481a58914aea6a |
+| comparisons/pinion_mount_detail.png | 19fbb47c92d28b031e6838159a35a30a713dc7ffc9d8a6eef92f79e6abc51cfc |
+| previews/isometric_transparent.png | 97f19ad3b616f3c5ed191a0cc1398c13f19ddfa89d1b31ada49f1b46c167605d |

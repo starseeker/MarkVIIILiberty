@@ -8,7 +8,8 @@ next `cad/intermediate_snapshot_iso_NNN.png` and update
 [the visual progression](../VISUAL_PROGRESSION.md). User-saved 001 and 002 are
 preserved; 003 records the sponson shells, 004 the roof louvers and 005 the roller
 stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjusters,
-008 the lower support runs, 009 the driving wheels and 010 their shafts and bearings.
+008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
+and 011 the roller pinions. Transparent-hull companion views start at 011.
 
 ## 20 September 2026 — experimental chains, casing shells and fastening
 
@@ -80,20 +81,33 @@ checks pass. The taper and its location are explicit assumptions. Bearings,
 shaft retaining rings, brake bands, planet-disk connections and full-model
 integration remain open; neither candidate changes the delivered standard tank.
 
-## 20 September 2026 — experimental full-tank roller-pinion integration
+## 20 September 2026 — standard roller-pinion milestone011
 
-An isolated source branch, `experiment/roller-pinions`, now builds both
-98-part pinion installations in the complete standard assembly. It has 252
-definitions and 5,341 leaves, including 5,326 physical components and 216
-represented physical source identities. Nominal native checks and 37
-record/renderer tests pass. The detailed source comparison views have been
-inspected. This has **not** been promoted to the main delivery; its full
-29-stage validation with 17 parameter trials has now passed. A fresh audit
-verified every saved checkpoint against its current artifacts, all 20 native
-documents, the 37-test receipt, nine reviewed rasters and 754 source-lock files.
-The [qualification receipt](experiments/roller_pinions/integrated_preflight/qualification_receipt.json)
-preserves that evidence. Promotion still requires rebinding the delivered model
-to the main path, checking its native dependencies there, and saving snapshot011.
+Both 98-part pinion installations are now in the main standard assembly: 252
+shared definitions and 5,341 leaves, comprising 5,326 physical components and
+15 layout occurrences. Physical geometry represents 216 source identities;
+all physical definitions still have partial coverage.
+
+The private origin passed all 29 qualification stages, 17 parameter trials and
+37 record/renderer tests. Its original report/checkpoint bindings remain intact.
+The exact authored geometry and all 20 native files were transferred to the main
+build directory. A fresh FreeCAD check verified all dependencies there, all
+252 definitions, 5,341 placements and the original geometry signatures. Only the
+build report's top-document path changed; the full trial suite was not repeated
+at the new path. The [transfer receipt](releases/011-roller-pinions-transfer.json)
+records that distinction. The 754-file source lock also passed.
+
+Preserved [isometric011](../intermediate_snapshot_iso_011.png),
+[pinion/wheel detail](../intermediate_snapshot_detail_pinions_011.png) and
+[shaft/support detail](../intermediate_snapshot_detail_pinion_mounts_011.png).
+All three actual rasters were freshly inspected, and the earlier nine native/source
+review artifacts retain their original hashes. The prior 18 progression images
+remain unchanged. A new [transparent-hull view](../intermediate_snapshot_iso_transparent_011.png)
+uses 18% armor opacity to expose enclosed geometry while retaining opaque running
+gear and interior components. Interior layout envelopes remain provisional.
+The complete native/STEP/view/report delivery is preserved in
+`.work/deliveries/011-roller-pinions.zip`, with a
+[versioned release record](releases/011-roller-pinions.json).
 
 The first integrated candidate exposed four fuel-backplate overlaps that were
 absent from the isolated fixture. A separate inferred longitudinal control now

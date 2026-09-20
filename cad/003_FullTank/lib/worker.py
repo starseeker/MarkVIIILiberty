@@ -443,7 +443,11 @@ def validate(data, doc, out, build_report):
             changed['values']=resolve(changed['parameters'])
             variant,_=build(changed,out/'verification'/trial,selected)
             variant=reopen_saved(variant);altered_items=leaves(variant.Root)
-            checks=validate_wheels(changed,altered_items,out/'verification'/trial)
+            if parameter=='drive_teeth' and any(i['definition']=='pinion_casting' for i in altered_items):
+                from .pinion_validation import alternative_wheel_checks
+                checks=alternative_wheel_checks(changed,altered_items,out/'verification'/trial)
+            else:
+                checks=validate_wheels(changed,altered_items,out/'verification'/trial)
             affected_ids=[]
             for item in altered_items:
                 key=item['id'];signature=shape_signature(item['shape'])
@@ -479,9 +483,14 @@ def validate(data, doc, out, build_report):
                 for item in altered_items:
                     key=item['id'];different=not same_shape(baseline[key],altered[key])
                     wanted=key.startswith(('PortDrive_','StarboardDrive_')) and item['definition'] in affected
+                    # Shared outer bearings, keys and cap screws also belong to
+                    # the pinions; their shaft keyways follow the same key.
+                    wanted= wanted or (key.startswith(('PortPinion_','StarboardPinion_')) and
+                            item['definition'] in {'pinion_shaft','drive_key','drive_outer_bearing','drive_bearing_screw'})
                     if different!=wanted:raise ValueError('Drive shaft length propagation differs from owned parts: '+key)
                     if different:changed_ids.append(key)
-                if len(changed_ids)!=46:raise ValueError('Drive shaft trial missed an installed fitting')
+                count=64 if any(i['definition']=='pinion_casting' for i in altered_items) else 46
+                if len(changed_ids)!=count:raise ValueError('Drive shaft trial missed an installed fitting')
                 dependencies={'fixed_hull_faces_and_wheels':True,'shaft_end_fittings_follow':True}
             else:
                 # The common hull-spacing control also owns existing roller,
@@ -499,6 +508,26 @@ def validate(data, doc, out, build_report):
                               'rollers':roller_checks,'lower_supports':support_checks}
             report[trial]={'parameter':parameter,'delta_mm':delta,'affected_occurrences':changed_ids,
                            'dependencies':dependencies,'reopened_contacts':checks,'historical_fit_qualified':False}
+    if any(i['definition']=='pinion_casting' for i in items):
+        for parameter,delta,affected,wanted_count,trial in [
+            ('pinion_casting_length',-2,{'pinion_casting','pinion_pin','pinion_cotter','pinion_pin_plug'},110,'pinion_casting_length_change'),
+            ('pinion_shaft_length',2,{'pinion_shaft','pinion_shaft_outer_plug','pinion_shaft_inner_plug','pinion_inner_bearing','pinion_inner_rivet'},20,'pinion_shaft_length_change')]:
+            print('Validating '+trial+' through reopened pinion and hull interfaces',file=sys.stderr,flush=True)
+            changed=copy.deepcopy(data)
+            changed['parameters'][parameter]['value']+=delta
+            changed['values']=resolve(changed['parameters'])
+            variant,_=build(changed,out/'verification'/trial,selected)
+            variant=reopen_saved(variant);altered_items=leaves(variant.Root)
+            checks=validate_wheels(changed,altered_items,out/'verification'/trial)
+            affected_ids=[]
+            for item in altered_items:
+                key=item['id'];different=not same_shape(baseline[key],shape_signature(item['shape']))
+                wanted=key.startswith(('PortPinion_','StarboardPinion_')) and item['definition'] in affected
+                if different!=wanted:raise ValueError('Pinion length changed a different owned set: '+key)
+                if different:affected_ids.append(key)
+            if len(affected_ids)!=wanted_count:raise ValueError('Pinion length trial missed installed components')
+            report[trial]={'parameter':parameter,'delta_mm':delta,'affected_occurrences':affected_ids,
+                'unrelated_geometry_unchanged':True,'reopened_contacts':checks,'historical_fit_qualified':False}
     if any(i['definition']=='idler_shaft' for i in items):
         print('Validating idler shaft length, end plugs and locking screw propagation',file=sys.stderr,flush=True)
         changed=copy.deepcopy(data)

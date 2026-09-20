@@ -6553,5 +6553,826 @@
       "issue:rear_inner_plate_mapping"
     ],
     "interpretation": "Inferred image-coordinate upper border of rear skirt; independent of source calibration. A level500 border gives single-solid skirts and full drive bearing receivers."
+  },
+  "pinion_casting_length": {
+    "unit": "mm",
+    "value": 495.3,
+    "bounds": [
+      396.24,
+      594.36
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_boss_envelope_radius": {
+    "unit": "mm",
+    "value": 173.82489999999999,
+    "bounds": [
+      139.05992,
+      208.58987999999997
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Printed diameter at bosses is provisionally interpreted as their outside envelope, not the roller-center pitch circle. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_boss_radius": {
+    "unit": "mm",
+    "value": 27.5,
+    "bounds": [
+      22.0,
+      33.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_hub_radius": {
+    "unit": "mm",
+    "value": 85.0,
+    "bounds": [
+      68.0,
+      102.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_bank_web_radius": {
+    "unit": "mm",
+    "value": 128.0,
+    "bounds": [
+      102.4,
+      153.6
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_roller_radius": {
+    "unit": "mm",
+    "value": 25.4,
+    "bounds": [
+      20.32,
+      30.479999999999997
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_roller_length": {
+    "unit": "mm",
+    "value": 60.198,
+    "bounds": [
+      48.1584,
+      72.2376
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_roller_end_gap": {
+    "unit": "mm",
+    "value": 0.2,
+    "bounds": [
+      0.16000000000000003,
+      0.24
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_teeth": {
+    "unit": "count",
+    "value": 23,
+    "bounds": [
+      23,
+      23
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_chain_pitch": {
+    "unit": "mm",
+    "value": 76.2,
+    "bounds": [
+      60.96000000000001,
+      91.44
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_sprocket_radius": {
+    "unit": "mm",
+    "value": 292.4937,
+    "bounds": [
+      233.99496,
+      350.99244
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_tooth_width": {
+    "unit": "mm",
+    "value": 35.306,
+    "bounds": [
+      28.244799999999998,
+      42.3672
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_chain_relief_radius": {
+    "unit": "mm",
+    "value": 22.525,
+    "bounds": [
+      18.02,
+      27.029999999999998
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_web_hole_radius": {
+    "unit": "mm",
+    "value": 40.0,
+    "bounds": [
+      32.0,
+      48.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_web_hole_circle": {
+    "unit": "mm",
+    "value": 175.0,
+    "bounds": [
+      140.0,
+      210.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_pin_length": {
+    "unit": "mm",
+    "value": 142.0622,
+    "bounds": [
+      113.64976,
+      170.47464
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_pin_diameter": {
+    "unit": "mm",
+    "value": 44.449999999999996,
+    "bounds": [
+      35.559999999999995,
+      53.339999999999996
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_head_radius": {
+    "unit": "mm",
+    "value": 27.5,
+    "bounds": [
+      22.0,
+      33.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_head_stock": {
+    "unit": "mm",
+    "value": 8.0,
+    "bounds": [
+      6.4,
+      9.6
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_cotter_nominal_diameter": {
+    "unit": "mm",
+    "value": 7.9375,
+    "bounds": [
+      6.3500000000000005,
+      9.525
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:143:010",
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_cotter_nominal_length": {
+    "unit": "mm",
+    "value": 44.449999999999996,
+    "bounds": [
+      35.559999999999995,
+      53.339999999999996
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:143:010",
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_cotter_center_spacing": {
+    "unit": "mm",
+    "value": 4.04,
+    "bounds": [
+      3.232,
+      4.848
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_cotter_head_gap": {
+    "unit": "mm",
+    "value": 0.5,
+    "bounds": [
+      0.4,
+      0.6
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_cotter_from_inner_end": {
+    "unit": "mm",
+    "value": 10.0,
+    "bounds": [
+      8.0,
+      12.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_cotter_hole_clearance": {
+    "unit": "mm",
+    "value": 0.2,
+    "bounds": [
+      0.16000000000000003,
+      0.24
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_oil_bore_diameter": {
+    "unit": "mm",
+    "value": 10.4,
+    "bounds": [
+      8.32,
+      12.48
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_oil_radial_diameter": {
+    "unit": "mm",
+    "value": 3.0,
+    "bounds": [
+      2.4000000000000004,
+      3.5999999999999996
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_plug_shank_diameter": {
+    "unit": "mm",
+    "value": 10.0,
+    "bounds": [
+      8.0,
+      12.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Nominal pipe-thread size does not establish this inferred solid envelope. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_plug_insertion": {
+    "unit": "mm",
+    "value": 8.0,
+    "bounds": [
+      6.4,
+      9.6
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Nominal pipe-thread size does not establish this inferred solid envelope. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_plug_head_af": {
+    "unit": "mm",
+    "value": 7.9375,
+    "bounds": [
+      6.3500000000000005,
+      9.525
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Nominal pipe-thread size does not establish this inferred solid envelope. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_plug_head_stock": {
+    "unit": "mm",
+    "value": 4.0,
+    "bounds": [
+      3.2,
+      4.8
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Nominal pipe-thread size does not establish this inferred solid envelope. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_shaft_length": {
+    "unit": "mm",
+    "value": 641.35,
+    "bounds": [
+      513.08,
+      769.62
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_shaft_diameter": {
+    "unit": "mm",
+    "value": 112.6236,
+    "bounds": [
+      90.09888000000001,
+      135.14831999999998
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_shaft_oil_bore_diameter": {
+    "unit": "mm",
+    "value": 26.8,
+    "bounds": [
+      21.44,
+      32.16
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_shaft_oil_radial_diameter": {
+    "unit": "mm",
+    "value": 4.0,
+    "bounds": [
+      3.2,
+      4.8
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_shaft_plug_shank_diameter": {
+    "unit": "mm",
+    "value": 26.4,
+    "bounds": [
+      21.12,
+      31.679999999999996
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Nominal pipe-thread size does not establish this inferred solid envelope. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_shaft_plug_insertion": {
+    "unit": "mm",
+    "value": 12.7,
+    "bounds": [
+      10.16,
+      15.239999999999998
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Nominal pipe-thread size does not establish this inferred solid envelope. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_shaft_plug_head_af": {
+    "unit": "mm",
+    "value": 19.05,
+    "bounds": [
+      15.240000000000002,
+      22.86
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Nominal pipe-thread size does not establish this inferred solid envelope. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_shaft_plug_head_stock": {
+    "unit": "mm",
+    "value": 9.525,
+    "bounds": [
+      7.620000000000001,
+      11.43
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Nominal pipe-thread size does not establish this inferred solid envelope. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_keyway_end_overrun": {
+    "unit": "mm",
+    "value": 0.1,
+    "bounds": [
+      0.08000000000000002,
+      0.12
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_counterbore_gap": {
+    "unit": "mm",
+    "value": 0.2,
+    "bounds": [
+      0.16000000000000003,
+      0.24
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_bush_end_gap": {
+    "unit": "mm",
+    "value": 0.5,
+    "bounds": [
+      0.4,
+      0.6
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_casting_bush_gap": {
+    "unit": "mm",
+    "value": 0.2014,
+    "bounds": [
+      0.16112,
+      0.24167999999999998
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_pin_running_gap": {
+    "unit": "mm",
+    "value": 0.1,
+    "bounds": [
+      0.08000000000000002,
+      0.12
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_cotter_eye_radius": {
+    "unit": "mm",
+    "value": 5.95,
+    "bounds": [
+      4.760000000000001,
+      7.14
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_cotter_eye_rise": {
+    "unit": "mm",
+    "value": 4.0,
+    "bounds": [
+      3.2,
+      4.8
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_inner_rivet_diameter": {
+    "unit": "mm",
+    "value": 19.05,
+    "bounds": [
+      15.240000000000002,
+      22.86
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:189:008",
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_inner_rivet_length": {
+    "unit": "mm",
+    "value": 63.5,
+    "bounds": [
+      50.800000000000004,
+      76.2
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:189:008",
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Printed control, using millimetres and radius where named. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_source_pixel_x": {
+    "unit": "scalar",
+    "value": 1614.0,
+    "bounds": [
+      1611.0,
+      1617.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction",
+      "calibration:snl_2"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_source_pixel_z": {
+    "unit": "scalar",
+    "value": 422.0,
+    "bounds": [
+      419.0,
+      425.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction",
+      "calibration:snl_2"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_axis_static_offset": {
+    "unit": "mm",
+    "value": -1.8033025421783861,
+    "bounds": [
+      -20,
+      20
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "pinion_static_phase": {
+    "unit": "deg",
+    "value": 17.21,
+    "bounds": [
+      0,
+      40
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:132",
+      "issue:pinion_reconstruction"
+    ],
+    "interpretation": "Inferred control from the inspected pinion fixture. Computational bounds permit sensitivity checks; they are not manufacturing tolerances or source-error estimates."
+  },
+  "hull_rear_wing_seam_pixel_x": {
+    "unit": "scalar",
+    "value": 1642.0,
+    "bounds": [
+      1630,
+      1650
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "record:SNL:189:008",
+      "record:SNL:170:004",
+      "calibration:snl_2",
+      "issue:pinion_receiver_seam"
+    ],
+    "interpretation": "Independent inferred wing/end seam. Panel-pair union is preserved. Fuel-compartment backplate has its own separate control."
+  },
+  "hull_fuel_back_pixel_x": {
+    "unit": "scalar",
+    "value": 1642.0,
+    "bounds": [
+      1630,
+      1655
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:35",
+      "page:HB:36",
+      "record:SNL:146:013",
+      "calibration:snl_2",
+      "issue:pinion_fuel_backplate"
+    ],
+    "interpretation": "Independent inferred longitudinal backplate station. Initial source-pixel equivalent 1630 caused two bearing and two rivet overlaps; candidate 1642 moves the continuous plate aft and extends its owned roof/floor edges. HB27 supports a continuous backplate but does not measure this station. Bounds support sensitivity trials, not historical accuracy or manufacturing tolerances."
   }
 }

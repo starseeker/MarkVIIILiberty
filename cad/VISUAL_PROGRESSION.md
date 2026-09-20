@@ -19,10 +19,11 @@ or historical-accuracy certification.
 | [008](intermediate_snapshot_iso_008.png) | 2026-09-20 | 34 lower support angles and 76 bolts, inclined front roller units, revised front skirt border and bounded nose clearance. Contours, tapped receivers and removable retention remain partial. | 123536379dc393e79d8572a9d0f1c578c231b0462666c03ebcbb369ef6aa7558 |
 | [009](intermediate_snapshot_iso_009.png) | 2026-09-20 | 242 driving-wheel/bush parts replace two envelopes; aligned toothed rims and revised common idler/drive internals. The 35/37 tooth conflict, shafts, bearings and engagement remain open. | 040eea4a40408f37e55b384c9c4160289dee173f48ec181c9aba6dea333a89d6 |
 | [010](intermediate_snapshot_iso_010.png) | 2026-09-20 | 56 driving-shaft/bearing/attachment parts; source-correct inner receivers and revised rear skirt border. Exact casting profiles, threads, sealing, additional backing-plate rivets and engagement remain open. | 7544be5660dde9e57c1386175eefb367ed12d062a66afe1c8ffd5e866913fbbe |
+| [011](intermediate_snapshot_iso_011.png) | 2026-09-20 | 196 roller-pinion, shaft and support parts; inferred fuel-backplate station. 5,326 physical components in the standard assembly. Static fit checked; tooth count, cast profiles, retention and engagement remain partial. | fd1ee7b817ca0729c9cee1de4fa4a0080dbe9554e8a18edfaeef672b0d462f21 |
 
 The initial two images were user-saved and matched against the rendering history.
-Snapshots 003–010 are byte-for-byte copies of the inspected standard isometric
-at the sponson-shell, louver, roller, idler, lower-support, drive-wheel and driving-shaft milestones. Preserve them through later rebuilds. Use the next unused
+Snapshots 003–011 are byte-for-byte copies of the inspected standard isometric
+at the sponson-shell, louver, roller, idler, lower-support, drive-wheel, driving-shaft and roller-pinion milestones. Preserve them through later rebuilds. Use the next unused
 number for the next significant visual improvement; never replace an earlier image.
 
 The idler stage also preserves an unmodified [wheel close-up](intermediate_snapshot_detail_idler_006.png),
@@ -48,3 +49,16 @@ The driving-shaft stage preserves a [wheel close-up](intermediate_snapshot_detai
 and [shaft/support detail](intermediate_snapshot_detail_drive_mounts_010.png).
 `intermediate_snapshot_detail_drive_010.png` SHA-256: `81c3b41b5aabe69e3a997df99fc67f4ee199c908e2bb2cdfae7341ecc2b95cdc`.
 `intermediate_snapshot_detail_drive_mounts_010.png` SHA-256: `84d734370c5bd753c85f3d37e5714926b714e0632ab6d1ed23eb7af756321244`.
+
+The pinion stage preserves a [pinion/wheel close-up](intermediate_snapshot_detail_pinions_011.png)
+and [shaft/support detail](intermediate_snapshot_detail_pinion_mounts_011.png).
+`intermediate_snapshot_detail_pinions_011.png` SHA-256: `eaab45d3888028d024db63a1491aec464a4cc5985ea80d4b47481a58914aea6a`.
+`intermediate_snapshot_detail_pinion_mounts_011.png` SHA-256: `19fbb47c92d28b031e6838159a35a30a713dc7ffc9d8a6eef92f79e6abc51cfc`.
+
+The [transparent-hull isometric011](intermediate_snapshot_iso_transparent_011.png)
+uses 18% opacity for hull and sponson armor, with opaque running gear and interior
+components. This exposes enclosed detail while keeping the standard assembled
+geometry unchanged. Colored interior layout envelopes remain provisional.
+The interactive viewer offers opaque and transparent hull display; older stages
+retain their original images. Future milestones should preserve both versions.
+SHA-256: `97f19ad3b616f3c5ed191a0cc1398c13f19ddfa89d1b31ada49f1b46c167605d`.

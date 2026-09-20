@@ -395,6 +395,43 @@ def run(data, items, out):
             section_source=section_source,
             fitting_performed=False,selected_occurrences=[i['id'] for i in drives],
             limitation='Source-common definitions and partial shaft/bearing installation; exact profiles, rear seams, remaining retention, source tooth conflict and operating engagement remain unresolved.'))
+    pinions=[i for i in items if i['id'].startswith('PortPinion_')]
+    if pinions:
+        import Part
+        import shutil
+        from types import SimpleNamespace
+        from .pinion_geometry import station as pinion_station
+        center=App.Vector(*pinion_station(data,1))
+        paired=pinions+[i for i in items if i['id'].startswith('PortDrive_')]
+        shaded(paired,folder/'pinion_drive_oblique.svg',(1,1,.6),
+               'Roller pinion and driving wheel | inferred static phase; engagement unqualified')
+        shaded(paired,folder/'pinion_drive_elevation.svg',(0,1,0),
+               'Installed roller banks and toothed rings |35-tooth hypothesis')
+        mounts=[i for i in pinions if not i['id'].startswith('PortPinion_Rotor_')]
+        shaded(mounts,folder/'pinion_mount_detail.svg',(1,1,.65),
+               'Pinion shaft and separate supports | inside plug cut flush; outer head retained')
+        half=Part.makeBox(20000,10000,10000,App.Vector(center.x-20000,-5000,-2000));cut=[]
+        for item in pinions:
+            shape=item['shape'].common(half)
+            if shape.Faces:
+                cut.append(dict(item,shape=shape,target=SimpleNamespace(Shape=shape),definition=item['id']))
+        shaded(cut,folder/'pinion_section.svg',(1,0,0),
+               'Roller pinion transverse half section | inferred casting, counterbores and journals')
+        hb='references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate81.png'
+        snl='references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p297-geometry.png'
+        shutil.copy2(REPO/hb,folder/'pinion_hb81_source.png')
+        shutil.copy2(REPO/snl,folder/'pinion_snl25_source.png')
+        sections += ['<h2>Roller pinions — HB81 / SNL25</h2>',
+            '<p>Each pinion has 73 rotating leaves, a four-leaf shaft assembly, two separate bushes and 19 mounting leaves. Common bearings, keys, bushes, backing plates and cap screws reuse the existing definitions. Exact casting profiles, threads, lubrication, formed cotters and operating engagement remain unresolved.</p>',
+            '<div class="pair"><img src="pinion_snl25_source.png"><img src="pinion_drive_oblique.png"></div>',
+            '<img src="pinion_drive_elevation.png">',
+            '<div class="pair"><img src="pinion_hb81_source.png"><img src="pinion_section.png"></div>',
+            '<img src="pinion_mount_detail.png">',
+            '<p>The source section includes the still unpopulated chain and transmission. The pinion section is a diagnostic cut of the standard geometry. A 17.21-degree phase and separately recorded 1.8033 mm inward station correction provide one static fit with the 35-tooth wheel. The 37-tooth alternative interferes at this same setting; the historical count conflict remains open.</p>',
+            '<p>The continuous fuel backplate has its own inferred station correction to clear the inner bearing. HB27 supports its topology without measuring the station. Source coordinates and image calibration are retained.</p>']
+        reports.append(dict(id='roller_pinions',mode='visual_only',source=hb,additional_source=snl,
+            fitting_performed=False,selected_occurrences=[i['id'] for i in pinions],
+            limitation='Static geometry only; chain, transmission, formed retention and historical fit remain incomplete.'))
     lower=[i for i in items if i['id'].startswith('PortLowerSupports_')]
     if lower:
         bank=[i for i in items if i['id'].startswith('PortRollers_') and not i['id'].startswith('PortRollers_Unit029_')]

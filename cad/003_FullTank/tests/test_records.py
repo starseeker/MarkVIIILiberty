@@ -16,6 +16,31 @@ def parameter(unit, value=None, expression=None):
 
 
 class RecordChecks(unittest.TestCase):
+    def test_pinion_source_counts_and_shared_vehicle_quantities(self):
+        from types import SimpleNamespace
+        from lib.pinion_validation import composition
+        data=load();selected=[];targets={}
+        for occurrence in data['occurrences']:
+            definition=occurrence['definition']
+            if not definition:continue
+            targets.setdefault(definition,SimpleNamespace(Name=definition,Document=SimpleNamespace(FileName='one_library')))
+            selected.append(dict(occurrence,target=targets[definition]))
+        report=composition(data,selected)
+        self.assertEqual([r['physical_occurrences'] for r in report['assemblies']],[98,98])
+        self.assertEqual({r['definition']:r['physical_occurrences'] for r in report['shared_vehicle_counts']},
+                         {'wheel_bush':12,'drive_outer_bearing':4,'drive_backing_plate':4,
+                          'drive_bearing_screw':24,'pinion_inner_rivet':12})
+        selected.remove(next(i for i in selected if i['id']=='PortPinion_Rotor_PinAssemblyA0_Cotter'))
+        with self.assertRaisesRegex(ValueError,'Pinion source composition mismatch'):
+            composition(data,selected)
+
+    def test_pinion_identity_rejects_a_same_size_drive_shaft_substitution(self):
+        from lib.pinion_validation import composition
+        data=load()
+        data['definitions']['pinion_shaft']['survey_ids']=data['definitions']['drive_shaft']['survey_ids']
+        with self.assertRaisesRegex(ValueError,'Pinion source identity mismatch: pinion_shaft'):
+            composition(data,[])
+
     def test_drive_wheel_counts_and_complete_source_shaft(self):
         from lib.wheel_validation import composition
         data=load();selected=[i for i in data['occurrences'] if i['definition'] and

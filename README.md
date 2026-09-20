@@ -76,13 +76,15 @@ closed 78-unit tracks, 26 individual upper enclosure plates and closed leaves,
 77 main hull plates, 39 sponson plates, 82 roof-louver components, 1,228 components
 in 60 lower/upper roller stacks with four upper support angles, 306 front-idler
 wheel/shaft/adjustment components, 34 lower support angles with 76 attachment
-bolts, 298 driving-wheel/shaft/bearing components, and source/model comparison views. The
+bolts, 298 driving-wheel/shaft/bearing components, 196 partial roller-pinion
+components, and source/model comparison views. The
 upper enclosures, hull and sponsons now have hollow interiors, with separate
 floors, sides, roof pieces and closed standard leaves. Remaining hull structures,
 sponson shields/supports, lower support retention, upper attachment/covers,
-exact drive bearing profiles, roller pinions/chains and remaining idler attachment details,
+exact drive/pinion bearing profiles, chain drive and remaining idler attachment details,
 louver spacing/support hardware, fittings and interiors still need population. The
-[visual progression](cad/VISUAL_PROGRESSION.md) preserves milestone isometrics.
+[visual progression](cad/VISUAL_PROGRESSION.md) preserves milestone isometrics,
+including a transparent-hull view from milestone011 onward.
 Track closure uses the
 printed pin pitch; wheel engagement remains unresolved. The complete tank and
 interior reconstruction remain in progress. Standard assembled geometry takes

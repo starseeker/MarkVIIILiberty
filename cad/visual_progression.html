@@ -26,6 +26,8 @@ footer{font-size:14px;margin-top:14px}#status{min-height:1.5em;font-size:14px;co
 <label>Left image<select id="left" aria-label="Left milestone"></select></label>
 <label>Right image<select id="right" aria-label="Right milestone"></select></label>
 </div>
+<label>Hull display<select id="hull" aria-label="Hull display"><option value="transparent" selected>Transparent where available</option><option value="opaque">Opaque</option></select></label>
+<p>Transparent hull views begin at stage 011. Earlier stages retain their original images.</p>
 <div class="compare" aria-label="Two milestone images separated by the comparison slider">
 <img id="later" alt="">
 <img id="earlier" alt="">
@@ -47,24 +49,27 @@ const stages=[
  ['007','Idler shafts and adjusters','64 additional parts, four visible brackets and corresponding hull openings; refined wheel section. Profiles, inner plate retention and threads remain partial.'],
  ['008','Lower support runs','34 support angles and 76 bolts, inclined front units and revised front skirt. Exact contours, tapped receivers and removable retention remain partial.'],
  ['009','Driving wheels','242 driving-wheel and bush parts, paired aligned rims and common wheel internals. Tooth count, shafts, bearings and engagement remain unresolved.'],
- ['010','Drive shafts and bearings','56 shaft, bearing and attachment parts; source-correct inner receivers and revised rear skirt. Exact profiles, threads, sealing and engagement remain partial.']
+ ['010','Drive shafts and bearings','56 shaft, bearing and attachment parts; source-correct inner receivers and revised rear skirt. Exact profiles, threads, sealing and engagement remain partial.'],
+ ['011','Roller pinions and supports','196 pinion, shaft and mounting parts; 5,326 physical components in the standard assembly. Static fit checked; tooth-count conflict, profiles, retention and engagement remain partial. Transparent armor exposes the running gear and provisional interior layout.']
 ];
 const get=id=>document.getElementById(id);
 for(const side of ['left','right']){
  const select=get(side);
  for(const stage of stages){const option=document.createElement('option');option.value=stage[0];option.textContent=stage[0]+' — '+stage[1];select.append(option);}
- select.value=side==='left'?'009':'010';
+ select.value=side==='left'?'010':'011';
  select.addEventListener('change',update);
 }
 function update(){
  get('status').textContent='';
  for(const side of ['left','right']){
-  const stage=stages.find(x=>x[0]===get(side).value),file='intermediate_snapshot_iso_'+stage[0]+'.png';
-  const img=get(side==='left'?'earlier':'later');img.alt='Milestone '+stage[0]+': '+stage[1];img.src=file;
-  get(side+'-tag').textContent=stage[0];get(side+'-title').textContent=stage[1];get(side+'-note').textContent=stage[2];get(side+'-file').href=file;
+  const stage=stages.find(x=>x[0]===get(side).value),transparent=get('hull').value==='transparent'&&stage[0]==='011';
+  const file='intermediate_snapshot_iso_'+(transparent?'transparent_':'')+stage[0]+'.png';
+  const img=get(side==='left'?'earlier':'later');img.alt='Milestone '+stage[0]+': '+stage[1]+(transparent?' — transparent hull':'');img.src=file;
+  get(side+'-tag').textContent=stage[0]+(transparent?' · transparent hull':'');get(side+'-title').textContent=stage[1];get(side+'-note').textContent=stage[2];get(side+'-file').href=file;
  }
 }
 for(const id of ['earlier','later'])get(id).addEventListener('error',()=>{get('status').textContent='A selected image is unavailable. Keep this page beside the preserved intermediate_snapshot_iso_*.png files.';});
+get('hull').addEventListener('change',update);
 get('split').addEventListener('input',event=>{
  const value=Number(event.target.value);get('earlier').style.clipPath='inset(0 '+(100-value)+'% 0 0)';get('divider').style.left=value+'%';event.target.setAttribute('aria-valuetext',value+' percent left image');
 });

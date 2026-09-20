@@ -43,7 +43,7 @@ def composition(data,items):
         if any(i['id'].startswith('PortIdler_') for i in items) and nuts!=int(raw['qty']):
             raise ValueError('Common M1477 whole-vehicle nut count mismatch')
     return dict(applicable=True,components=result,common_shaft_nuts=nuts,
-        unresolved='Shared outer bearings/backing plates/caps/bushes/key still have unpopulated pinion uses; additional M1552 plate-only rivets unresolved.')
+        unresolved='Shared outer bearings/backing plates/caps/bushes/key have partial pinion uses; additional M1552 plate-only rivets and detailed historical fits remain unresolved.')
 
 
 def plug_envelope(shaft,plug,pose,a):

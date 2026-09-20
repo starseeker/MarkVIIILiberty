@@ -1,7 +1,8 @@
 # R02 — chain sprockets and roller pinions
 
-Preparatory source review, 20 September 2026. This packet does not add geometry
-to the tank. The [evidence folder](../experiments/roller_pinions/source_review.json)
+Standard milestone011, 20 September 2026: both 98-part pinion installations are
+now in the tank. The earlier source review and rejected hypotheses below remain
+as reconstruction history. The [evidence folder](../experiments/roller_pinions/source_review.json)
 preserves inspected source hashes, source rows and printed controls separately
 from the authored model.
 
@@ -170,7 +171,11 @@ The later isolated full-model integration has completed 29 validation stages and
 all saved checkpoint artifacts have been independently rechecked. See the
 [integration qualification receipt](../experiments/roller_pinions/integrated_preflight/qualification_receipt.json).
 The inferred fuel-backplate correction, rejected 37-tooth combination and
-reviewed source comparisons remain documented. Main-path promotion and its
-native dependency check are next; the delivered tank remains milestone010.
+reviewed source comparisons remain documented. Main-path promotion now passes:
+20 native documents load from the main build, with 252 definitions and 5,341
+placements matching the qualified origin. The delivered tank is milestone011.
+The full qualification was transferred with byte-identical geometry; its
+parameter trials were not rerun at the main path. See the
+[transfer receipt](../releases/011-roller-pinions-transfer.json).
 Cotter forming, detailed lubrication paths, threads, cast sections and further
 shared-part quantity reconciliation remain documented approximation work.

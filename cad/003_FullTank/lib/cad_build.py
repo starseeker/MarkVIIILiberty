@@ -62,7 +62,10 @@ def pad(body, sketch, length):
 
 def part(doc, key, definition, arguments):
     builder = definition["builder"]
-    if builder.startswith("track_"):
+    if builder == "pinion_component":
+        from .pinion_parts import build as build_pinion
+        obj = build_pinion(doc, "Def_"+key, arguments)
+    elif builder.startswith("track_"):
         from .track_parts import build as build_track
         obj = build_track(doc, "Def_"+key, builder, arguments)
     elif builder.startswith("upper_"):

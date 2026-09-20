@@ -51,7 +51,7 @@ def composition(data,selected):
     mount_counts=mount_composition(data,selected)
     return dict(assemblies=checks,installed=result,whole_vehicle_wheel_totals=totals,drive_mount_counts=mount_counts,
                 shared_vehicle_totals_fully_populated=False,
-                limitation='M1409 bushes and common rivets also belong to unpopulated pinion/other assemblies.')
+                limitation='This wheel-only count excludes pinion and other source uses; pinion checks independently reconcile the populated common definitions.')
 
 
 def paired_rim_alignment(data,selected):
@@ -196,12 +196,14 @@ def validate(data,items,out):
     mounts=validate_mounts(data,items,out)
     from .drive_mount_validation import validate as validate_drive_mounts
     drive_mounts=validate_drive_mounts(data,items,out)
+    from .pinion_validation import validate as validate_pinions
+    pinions=validate_pinions(data,items,out)
     report=dict(applicable=True,source_composition=source,modeled_occurrences=len(selected),mount_interfaces=mounts,drive_mount_interfaces=drive_mounts,
         internal_candidate_pairs=internal,external_candidate_pairs=external,other_physical_occurrences=len(physical)-len(selected),
         maximum_overlap_mm3=maximum,controlled_dimensions=dimensions,rivet_stock=stocks,rivet_head_seats=seats,
         rim_bushing_gaps=gaps,drive_rim_bushing_gaps=drive_gaps,foremost_roller_gaps=roller_gaps,
         rim_disk_seats=disk_seats,shared_native_definitions=common_targets,drive_dimensions=drive_dimensions,
-        paired_drive_rim_alignment=alignment,
+        paired_drive_rim_alignment=alignment,pinion_interfaces=pinions,
         station=station(data),implemented_checks_passed=True,drive_shaft_source_composition_complete=all(r['complete'] for r in source['assemblies'] if r['template']=='drive_shaft'),
         shaft_source_composition_complete=True,adjustment_geometry_partial=True,continuous_engagement_qualified=False,historical_fit_qualified=False)
     write(out/'reports/wheel_components.json',report);return report

@@ -273,13 +273,27 @@
       "status": "open",
       "severity": "material",
       "subject": "Driving-shaft bearings and rear receiving plates",
-      "finding": "Partial driving-shaft and bearing installation. Printed shaft/key/fastener dimensions retained; journals, shoulders, casting shapes, oil leads, screw/rivet placement and locking-plate scallops are inferred. Exact threads, tolerances, retention strength and historical fit are unqualified. M1411 has two uses per drive shaft, supported by HB237. M1407/M1552/key/bush/cap-screw pinion uses remain unpopulated. Only four positively allocated M1975/M1552 rivets per drive side are installed; further plate-only M1552 rivets remain unresolved. Correct initial inner fore/aft geometry assignments: SNL189:009 attaches rear drive M1406 to M1977; SNL189:008 attaches forward pinion M1546 to M1978. SNL169:004 and178:002 cross-member allocations support the same pairing with outer M1975/M1976. Source identities stay with their definitions. Exact seams remain inferred. The rear skirt upper border is provisionally level at source pixel500, meeting the rising outer outline; earlier upward border cut through the bearing footprint. Shaft axes and source calibration stay fixed.",
+      "finding": "Partial driving-shaft and bearing installation. Printed shaft/key/fastener dimensions retained; journals, shoulders, casting shapes, oil leads, screw/rivet placement and locking-plate scallops are inferred. Exact threads, tolerances, retention strength and historical fit are unqualified. M1411 has two uses per drive shaft, supported by HB237. M1407/M1552/key/bush/cap-screw pinion uses are separately populated and reuse the common native definitions. Only four positively allocated M1975/M1552 rivets per drive side are installed; further plate-only M1552 rivets remain unresolved. Correct initial inner fore/aft geometry assignments: SNL189:009 attaches rear drive M1406 to M1977; SNL189:008 attaches forward pinion M1546 to M1978. SNL169:004 and178:002 cross-member allocations support the same pairing with outer M1975/M1976. Source identities stay with their definitions. Exact seams remain inferred. The rear skirt upper border is provisionally level at source pixel500, meeting the rising outer outline; earlier upward border cut through the bearing footprint. Shaft axes and source calibration stay fixed.",
       "evidence": [
         "issue:drive_mount_reconstruction",
         "issue:rear_inner_plate_mapping",
         "record:SNL:189:009"
       ],
       "action": "Inspect the installed rear receiver crop and shaft section against HB125 and SNL27; retain historical casting, seam, retention and thread uncertainties."
+    },
+    {
+      "id": "R02-V-ROLLER-PINIONS",
+      "status": "open",
+      "severity": "material",
+      "subject": "Roller-pinion casting, supports and fuel backplate junction",
+      "finding": "Partial source-counted roller pinion: 73 rotating leaves, four shaft-assembly leaves, two separate bushes and nineteen named mounting leaves per side. Casting profiles, counterbores, end journals, M1546 bearing, oil drilling and nominal pipe-thread envelopes are inferred. Inner Q52E plug is cut flush per HB132; outside head retained. Cotters are unsplayed supplied-length approximations; formed retention is unqualified. Static angle 17.21 degrees and explicit 1.8033 mm inward station correction clear the existing 35-tooth hypothesis at one position. Continuous gearing, 35/37 tooth conflict, detailed lubrication/sealing, threads and full shared-part quantity reconciliation remain unresolved. Full-tank pinion integration exposes the former coarse fuel-backplate station at source-pixel equivalent1630: 73654.6935mm3 inner-bearing overlap and2606.3245mm3 inner-rivet overlap per side. HB Plate27 shows a continuous rear plate without bearing notches; it does not dimension the station. Candidate1642 moves the whole plate and its roof/floor edges aft while preserving printed16mm thickness, source calibration, shaft axes and bearing geometry. This is a geometric reconstruction assumption, pending additional source reconciliation; no historical-fit claim.",
+      "evidence": [
+        "page:HB:132",
+        "record:SNL:144:004",
+        "issue:pinion_reconstruction",
+        "issue:pinion_fuel_backplate"
+      ],
+      "action": "Inspect installed paired-wheel, shaft and casting sections against HB81 and SNL25; retain explicit static-fit corrections and the unresolved tooth count, formed cotters, chain and historical fits."
     }
   ],
   "inspection": {

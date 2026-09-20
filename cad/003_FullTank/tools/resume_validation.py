@@ -96,7 +96,7 @@ def transform(source):
                      and any(isinstance(t, ast.Name) and t.id == 'trial' for t in n.target.elts)), None)
         if loop is not None:
             trials = [values[-1] for values in ast.literal_eval(loop.iter)]
-            loop.body = [guard(loop.body, 'trial', "['verification/' + trial + '/' + p for p in ('native', 'reports', 'cache')]")]
+            loop.body = [guard(loop.body, 'trial', "['verification/' + trial + '/' + p for p in ('native', 'reports', 'cache', 'wheel_scope_without_pinions/reports', 'rejected_full_installation/reports')]")]
             wrapped.extend(trials)
             continue
         keys = [report_key(n) for n in node.body if report_key(n)]
@@ -119,7 +119,7 @@ def transform(source):
     before, after = checks(original), checks(function)
     if before - after:
         raise ValueError('Checkpoint transform lost an original check')
-    if len(wrapped) != 27 or len(set(wrapped)) != 27:
+    if len(wrapped) != 29 or len(set(wrapped)) != 29:
         raise ValueError('Worker stage structure changed; review checkpoint transform: ' + repr(wrapped))
     ast.fix_missing_locations(tree)
     audit = dict(stages=wrapped, original_check_expressions=sum(before.values()),

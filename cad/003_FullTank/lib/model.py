@@ -101,6 +101,9 @@ def datum_values(key, data, seen=None):
     if "drive_mount_child" in d:
         from .drive_mount_geometry import child_datum
         return child_datum(d,data)
+    if "pinion_child" in d:
+        from .pinion_geometry import datum
+        return datum(d,data)
     if "idler_child" in d:
         from .idler_geometry import child_datum
         return child_datum(d,data)
@@ -128,6 +131,9 @@ def datum_values(key, data, seen=None):
 def geometry_arguments(definition, data):
     builder, source = definition["builder"], definition["arguments"]
     values = data["values"]
+    if builder == "pinion_component":
+        from .pinion_geometry import arguments
+        return arguments(definition,data)
     if builder == "lower_support_component":
         from .lower_support_geometry import arguments
         return arguments(definition,data)

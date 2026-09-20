@@ -231,6 +231,14 @@ Finish this cycle before multiplying the result through the tank:
    Preserve earlier images, skip identical copies, and append the milestone,
    date and image hash to `cad/VISUAL_PROGRESSION.md`. This is the user's requested
    visual history; routine rebuilds do not each need a snapshot.
+   From milestone011 onward, also render a transparent-hull companion with
+   opaque running gear and interior components (user request, 20 September).
+   Use `python3 cad/003_FullTank/tools/transparent_isometric.py` after the native
+   build; default armor opacity is 18%. Save it as
+   `cad/intermediate_snapshot_iso_transparent_NNN.png`, alongside the opaque
+   image. Keep both views available in the progression viewer. Transparency
+   changes the inspection display only; provisional interior envelopes must
+   remain identified. Earlier snapshots stay unchanged.
 8. **Integrate and record disposition.** Mark the packet accepted, accepted with
    documented approximation, needing revision, or blocked with a specific cause.
    Update dependent work. Retain superseded evidence decisions in the history.

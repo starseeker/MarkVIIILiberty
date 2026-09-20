@@ -51,7 +51,8 @@ def stock(a):
     rear_inlet=inlet_rear-v['hull_roof_cross_strip'];outlet_front=rear_inlet-v['hull_engine_cover_length']
     outlet_rear=outlet_front-v['hull_outlet_length'];roof_front=inlet_front+v['hull_roof_cross_strip']
     engine_roof_z=lambda x:Z(335)+(x-engine_back)*(roof_z-Z(335))/(roof_front-engine_back)
-    gas_rear=X(1630);gas_bottom=Z(476)
+    gas_rear=X(v['hull_fuel_back_pixel_x']);gas_bottom=Z(476)
+    wing_seam=X(v['hull_rear_wing_seam_pixel_x'])
     tools=[]
     side_roles={'front_upper','front_lower','front_sponson','under_sponson_front','under_sponson_rear',
         'over_sponson','aft_sponson','door_aft_surround','door_header','door_sill','engine_side_1',
@@ -73,8 +74,8 @@ def stock(a):
             'door_header':(center-door_half-g,center+door_half+g),
             'door_sill':(center-door_half-g,center+door_half+g),
             'engine_side_1':(X(1150),engine_front),'engine_side_2':(X(1300),X(1150)),
-            'engine_side_3':(engine_back,X(1300)),'rear_wing':(gas_rear,engine_back),
-            'rear_end':(X(1800),gas_rear),'fuel_side':(X(1800),gas_rear)}
+            'engine_side_3':(engine_back,X(1300)),'rear_wing':(wing_seam,engine_back),
+            'rear_end':(X(1800),wing_seam),'fuel_side':(X(1800),wing_seam)}
         if skirt:
             limits=(engine_front,X(90)) if role.endswith('front') else (X(1800),engine_front)
         elif role.startswith('door_') and role in {'door_upper','door_lower'}:
@@ -110,6 +111,9 @@ def stock(a):
         if role in {'rear_end','inner_fuel_side'}:
             from .drive_mount_parts import hull_tools as drive_hull_tools
             tools.extend(drive_hull_tools(a['drive_clearance'],role=='rear_end',h))
+        if role in {'rear_wing','inner_rear_wing'}:
+            from .pinion_parts import hull_tools as pinion_hull_tools
+            tools.extend(pinion_hull_tools(a['pinion_clearance'],role=='rear_wing',h))
         if role=='front_sponson':tools.append(slot((X(461),0,Z(292)),v['hull_peep_length'],v['hull_peep_height']))
         if role=='engine_side_1':tools.append(slot((X(1050),0,Z(315)),v['hull_peep_length'],v['hull_peep_height']))
         if role=='engine_side_3':

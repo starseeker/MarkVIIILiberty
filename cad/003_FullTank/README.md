@@ -2,7 +2,7 @@
 
 This stage contains the **full-tank installation layout, closed track loops and
 individual upper/main hull plates, hollow sponson plate shells, roof louvers and
-lower/upper roller stacks, upper/lower support angles, partial front idler wheels/adjusters and driving wheels with partial shafts/bearings**. The complete
+lower/upper roller stacks, upper/lower support angles, partial front idler wheels/adjusters and driving wheels with partial shafts/bearings and roller pinions**. The complete
 tank remains in progress.
 Follow the [complete-tank workflow](../../docs/complete-tank-workflow.md).
 The working target is the Rock Island first-100 production configuration, all
@@ -41,10 +41,10 @@ python3 cad/003_FullTank/manage.py validate
 Open **build/native/MarkVIII.FCStd** in FreeCAD. Keep its library and subsystem
 directories with it. The standard assembly contains 11 layout definitions,
 seven track definitions, 26 upper plate/leaf definitions and 77 main hull plate
-definitions, plus 39 sponson plate, 19 louver, 14 roller, ten wheel, eleven idler-mount, ten drive-mount and eighteen lower-support definitions. Its 5,145 leaves comprise 15 layout
+definitions, plus 39 sponson plate, 19 louver, 14 roller, ten wheel, eleven idler-mount, ten drive-mount, ten pinion and eighteen lower-support definitions. Its 5,341 leaves comprise 15 layout
 occurrences (13 solids and two wires), 2,964 components in two 78-unit tracks,
 103 upper/main hull plates, 39 sponson plates, 82 louver components and 1,228
-components in 60 roller stacks (58 lower and two separate handbook upper, including four M2092 angles), plus 306 idler wheel, shaft and adjustment components, 110 lower support/bolt components and 298 driving-wheel/shaft/bearing components.
+components in 60 roller stacks (58 lower and two separate handbook upper, including four M2092 angles), plus 306 idler wheel, shaft and adjustment components, 110 lower support/bolt components 298 driving-wheel/shaft/bearing components and 196 pinion/shaft/mount components.
 Each shoe unit has the 19 physical leaves specified by the SNL. Upper and main
 hull plates cover 84 source identities, with hollow enclosures, floors, open
 sponson/louver apertures and closed standard leaves. All physical definitions
@@ -75,9 +75,14 @@ separate quantity scopes, dimensional conflicts and reported source-station
 offsets. The upper roller position follows the rear roof bend and HB144's
 engine-room access description. The [idler-wheel packet](packets/R02-idler-wheels.md) records the separate rims, disks, boss, diaphragms, rivets and bushes, including the coupled foremost-roller clearance correction. The [mounting packet](packets/R02-idler-mounts.md) covers the two source-complete shaft BOMs and partial adjustment installations. Source comparisons include elevation, transverse section, mounting detail and adjustment-axis section views. Earlier visual milestones remain in the
 [visual progression](../VISUAL_PROGRESSION.md); the latest mounting milestone is
-[snapshot010](../intermediate_snapshot_iso_010.png), with preserved
-[wheel](../intermediate_snapshot_detail_drive_010.png) and
-[shaft/support](../intermediate_snapshot_detail_drive_mounts_010.png) close-ups.
+[snapshot011](../intermediate_snapshot_iso_011.png), with preserved
+[pinion and wheel](../intermediate_snapshot_detail_pinions_011.png) and
+[pinion shaft/support](../intermediate_snapshot_detail_pinion_mounts_011.png) close-ups.
+A [transparent-hull isometric](../intermediate_snapshot_iso_transparent_011.png)
+exposes the enclosed components; its armor uses 18% display opacity. The colored
+interior layout envelopes remain provisional. The
+[pinion packet](packets/R02-roller-pinions.md) records the source counts, static
+clearances, inferred fuel-backplate station and unresolved tooth-count conflict.
 The [drive-wheel packet](packets/R02-drive-wheels.md) records the source tooth-count
 conflict, shared wheel geometry and corrected rim alignment. The
 [drive-mount packet](packets/R02-drive-mounts.md) records the completed source shaft
@@ -95,6 +100,7 @@ python3 cad/003_FullTank/manage.py build --subsystem Powerplant
 python3 cad/003_FullTank/manage.py validate --subsystem Powerplant
 python3 cad/003_FullTank/manage.py review
 python3 cad/003_FullTank/manage.py export
+python3 cad/003_FullTank/tools/transparent_isometric.py
 python3 -m unittest discover -s cad/003_FullTank/tests -v
 ```
 
@@ -135,6 +141,14 @@ the SNL assembly composition and test actual component intersections. Selected
 joint-bend trials record limits without claiming a continuous permitted range.
 It reports remaining complete-tank gates separately. Reference-envelope overlaps
 are not accepted as proof of physical component fit.
+
+The milestone011 qualification retains the original 29-stage/17-parameter-trial
+run and 37 record/renderer tests. A fresh main-path check reopened all 20 native
+documents and verified every definition, placement and original geometry signature.
+The trials were not rerun after this byte-identical geometry transfer. See
+[the transfer receipt](releases/011-roller-pinions-transfer.json) and
+[release record](releases/011-roller-pinions.json). The original validation
+records remain intact under build/reports/qualified_origin.
 
 The inventory includes all 5,482 survey identities, retaining quantity assertions,
 variants, issues and review records. Only explicit decisions establish inclusion
