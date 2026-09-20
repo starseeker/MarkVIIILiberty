@@ -513,3 +513,69 @@ pin. The nested bracket rows identify stud assemblies, while SNL241 identifies
 the physical rods separately. Both inside stud lengths need a documented corner
 allocation and suitable receiving bosses; do not shorten rods to fit provisional
 ear depths. Thread forms, nut dimensions and detailed retention remain pending.
+
+### Cap studs, castle nuts and split pins
+
+`transmission_stud_clearance_build` adds 48 physical occurrences: eight MX9,
+four MX10, four MX36, sixteen SAE castle nuts and sixteen split pins. Each
+three-part fastener set belongs to a fixed bearing. Five shared definitions use
+the physical SNL241 identities; assembly metadata preserves the nested stud-set
+records. None of this hardware follows the output-shaft rotation.
+
+The shortest printed stud, the stated 38.1-mm US thread end, a 2-mm assumed
+thread recess and estimated nut stack derive a common cap seat at local X29.7
+and stud tip at X51.925. The MX9/MX10/MX36 tails lie at X−40.15/−71.9/−87.775.
+Integral rear bosses accommodate these full lengths; pilot bottoms have 0.3-mm
+clearance and 4-mm estimated end stock. Existing cap ears are spotfaced to the
+seat. The opposite SAE thread-end length is recorded as 28.575 mm. Actual
+threads remain smooth envelopes with no flank or axial-thread retention claim.
+
+The inferred nut has 28.575-mm flats, 19.05-mm height and six crown slots.
+Split pins use the printed 3.175-mm nominal envelope and 34.925-mm leg length,
+with the latter interpreted as the under-eye centerline length before bending.
+Their twin round legs, approximate eyes and splayed tails are shape proxies;
+they do not reproduce half-round stock or conserve exact original material
+volume. The two port outer cotter eyes initially intersected the casing by
+0.328169 mm³ each. Port pins now rotate 180 degrees about the stud axis, so eyes
+point outboard on both hands. This direction is a clearance-based assumption.
+
+The final native document has 912 valid single-solid leaves: 48 new hardware
+occurrences, eight changed bracket/cap castings and 856 unchanged earlier
+occurrences. The 56 new/changed solids survive STEP reopening. Cleaned BRep
+bounds select 262 material pairs with no overlap. All sixteen fastening checks
+pass: nut seat contact, 0.15-mm nut/stud and cotter/hole gaps, blind-end clearance
+and at least 2-mm radial casting wall around the full US thread region.
+Diagnostic stud shifts, undrilled studs, nut rotation and two-sided cotter
+shifts produce expected interference. Four retained lining/split/cover/hinge
+checks also pass. These checks establish the specified static geometry only.
+
+The current inner allocation puts MX36 above MX10. The independent allocation
+study reverses them, preserving four of each source length; its 41 material
+pairs also clear. Geometric feasibility therefore does not establish historical
+corner placement. Both candidates retain the source schedule and explicitly
+unqualified thread, casting and frame assumptions.
+
+Four native overview/detail rasters and three supplementary cap/source rasters
+were inspected. HB20 Plate11 shows an open lid; the modeled standard lid remains
+closed. The source comparison is unregistered perspective, not a dimensional
+overlay. Cap-only views omit the bracket to expose the full rods; installed
+views show their receiving bosses. Cast blends, rounded cup corners, the oil
+inlet/fittings and wool are still missing. The first failed native, exact inputs,
+reports and four rasters remain in `transmission_stud_build`.
+
+### Oil-fitting source inventory
+
+Original SNL56 lists one SH664A elbow, SH664B nut and SH664C sleeve per cap.
+SNL86 identifies the elbow as Herring Motor Co. No.69F, and SNL126 identifies
+the nut as No.61F; both standalone totals are four. The sleeve is No.60F.
+SNL67 separately lists brass quarter-inch collet A16323, vehicle quantity
+twelve, with M298 and SH664A among its applications. Its survey identity differs
+from SH664C; their possible terminology overlap remains unresolved. Do not
+silently merge them or stack both in the same receiving seat.
+
+`transmission_oil_fitting_research.json` records those inspected rows and scan
+hashes. The quarter-inch nominal label alone does not establish actual tube
+diameter, bore, seat, taper or thread form. Reconstruct the inlet and oil routes
+against section evidence, then complete frame receivers/fasteners and the
+central transmission before integration. Standard milestone011 remains intact,
+including both opaque and transparent isometric snapshots.

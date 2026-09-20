@@ -195,3 +195,25 @@ frame/bracket changes with cleaned bounds: the same 126 pairs, no new overlap.
 split pins from original SNL241/124. Bare stud identities differ from nested stud
 assembly identities. The existing estimated ear depths cannot override the
 printed 3⅝-, 4⅞- and 5½-inch stud lengths. Cap fastening and lubrication are next.
+
+`transmission_stud_probe.py` now installs those sixteen studs, sixteen castle
+nuts and sixteen formed split pins in fixed-bearing subassemblies. The latest
+`transmission_stud_clearance_build` has 912 valid leaves, with eight changed
+receiving castings and 856 unchanged earlier occurrences. All sixteen fastening
+checks, four retained bearing/hinge checks and the 56-solid STEP reopening pass;
+262 material candidate pairs have no overlap. The preserved first trial has two
+small port cotter-eye/casing overlaps. Rotating the port pins about the stud axes
+points their eyes outboard and clears those overlaps.
+
+The printed stud lengths constrain inferred blind bosses and spotfaced nut
+seats. Threads remain cylindrical envelopes, and nut dimensions and split-pin
+form are estimates. `check_transmission_stud_allocation.py` swaps MX10/MX36
+between the inner upper/lower corners: its 41 candidate pairs also clear.
+Neither feasible arrangement establishes the historical allocation. See the
+[source comparison](transmission_stud_clearance_build/source_review/source_fastener_detail.png)
+and candidate `visual_review.json` for the remaining visible discrepancies.
+
+`transmission_oil_fitting_research.json` records the next SH664A elbow, SH664B nut
+and SH664C sleeve inventory. Original SNL67 also lists a distinct A16323 brass
+collet; its relationship to the sleeve is unresolved. Complete lubrication,
+frame attachment, the central transmission and integration remain open.

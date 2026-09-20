@@ -11,6 +11,29 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — transmission cap fastening
+
+The [fastened transmission candidate](experiments/drive_chains/transmission_stud_clearance_build/TransmissionStudCandidate.FCStd)
+contains 912 valid single-solid leaves. It adds sixteen source-length studs,
+sixteen castle nuts and sixteen formed split pins, with revised blind receiving
+bosses and nut seats on eight existing castings. The other 856 occurrences
+retain their geometry. All sixteen fastening checks and four retained
+bearing/hinge checks pass; 262 material candidate pairs have no overlap.
+The 56 new/changed solids also survive STEP reopening.
+
+The first trial's two cotter-eye/casing collisions are preserved. Mirroring the
+port split pins clears those collisions without changing the source dimensions.
+The [handbook comparison](experiments/drive_chains/transmission_stud_clearance_build/source_review/source_fastener_detail.png)
+shows the added fastening and the remaining differences in the casting, cup and
+lubrication. Threads use smooth envelopes; thread retention and load capacity
+are unqualified. Both tested upper/lower allocations of the two inner stud
+lengths clear, so historical corner placement remains unresolved.
+
+Original SNL56/67/86/126 now records the next oil-fitting inventory, including an
+unresolved sleeve/collet identity. Oil fittings/passages, frame attachment and
+the central transmission remain open. This is isolated candidate geometry;
+standard milestone011 and its opaque and transparent views remain unchanged.
+
 ## 20 September 2026 — closed oil-cover hinges
 
 The [latest transmission candidate](experiments/drive_chains/transmission_lid_clearance_build/TransmissionLidCandidate.FCStd)
