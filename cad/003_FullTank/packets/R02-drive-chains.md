@@ -141,3 +141,16 @@ retains its documented station, full outer bounds and stock. The opening shape,
 corner radius, sheet thickness and installation clearances are inferred and
 recorded independently in `casing_passage_controls.json`. Casing bodies, caps,
 angles and their fasteners still need reconstruction before integration.
+
+The isolated passage candidate passed after saving and reopening: 505 leaves,
+904 internal and 255 external candidate pairs, zero overlap. All 18 formerly
+overlapping chain components clear the revised wall, with a minimum measured
+gap of 19.446583 mm. The retained hull validator checks 77 plates, 1,037
+candidate material pairs and six compartment probes without failure.
+
+Each inferred opening is 172.275 mm wide and 492.142731 mm high, with an 8 mm
+corner radius. The precise height comes from the selected route and assumed
+envelopes; it does not indicate historical measurement accuracy. The actual
+oblique, wall elevation and standard isometric were inspected and their hashes
+recorded. The model remains an isolated candidate: casing bodies, supports,
+fastening and full drivetrain fit are not yet qualified.

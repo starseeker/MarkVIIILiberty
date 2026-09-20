@@ -27,8 +27,10 @@ delivered assembly or reconcile the catalogue's chain component quantities.
   M2003 engine-room back plate. This failed installation is retained.
 - `casing_passage_probe.py` independently tests an M2003 opening hypothesis.
   HB134's casing width and SNL60/170's M1592-to-M2003 connection motivate the
-  passages. Their detailed shape and clearances remain inferred; consult the
-  separate controls and native report before accepting any result.
+  passages. The reopened 505-leaf fixture passes 904 internal and 255 external
+  candidate pairs with zero overlap; the existing 77-plate hull checks also
+  pass. The detailed opening shape and clearances remain inferred. Actual
+  casing bodies and hardware must follow before standard integration.
 
 Native probes accept `--stage` pointing to the authored pinion experiment and
 an optional `--output`. They do not modify that stage. The complete chain
