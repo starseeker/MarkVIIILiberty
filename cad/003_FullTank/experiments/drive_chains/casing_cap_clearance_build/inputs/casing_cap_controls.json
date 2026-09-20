@@ -1,0 +1,248 @@
+{
+  "status": "isolated_cap_cleat_candidate",
+  "controls": {
+    "bolt_diameter": {
+      "value": 12.7,
+      "unit": "mm",
+      "basis": "direct_dimension",
+      "evidence": "SNL31:002 half-inch bolt"
+    },
+    "bolt_length": {
+      "value": 25.4,
+      "unit": "mm",
+      "basis": "direct_dimension",
+      "evidence": "SNL31:002 one-inch bolt; interpreted as under-head length"
+    },
+    "rivet_diameter": {
+      "value": 7.9375,
+      "unit": "mm",
+      "basis": "direct_dimension",
+      "evidence": "SNL167:009/010 five-sixteenths inch"
+    },
+    "short_rivet_length": {
+      "value": 19.05,
+      "unit": "mm",
+      "basis": "direct_dimension",
+      "evidence": "SNL167:009 three-quarter inch stock"
+    },
+    "long_rivet_length": {
+      "value": 22.225,
+      "unit": "mm",
+      "basis": "direct_dimension",
+      "evidence": "SNL167:010 seven-eighths inch stock"
+    },
+    "cleat_stock": {
+      "value": 5,
+      "bounds": [
+        3,
+        6
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Undimensioned angle stock. Bounds express uncertainty, not a validated range."
+    },
+    "foot_width": {
+      "value": 32,
+      "bounds": [
+        25,
+        40
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Inferred angle foot measured along longitudinal X. Bounds express uncertainty, not a validated range."
+    },
+    "flange_reach": {
+      "value": 32,
+      "bounds": [
+        25,
+        40
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Projection of mating flange from the casing outer face. Bounds express uncertainty, not a validated range."
+    },
+    "side_end_margin": {
+      "value": 35,
+      "bounds": [
+        25,
+        45
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Vertical side cleat setback from lower seam and roof. Bounds express uncertainty, not a validated range."
+    },
+    "rivet_end_margin": {
+      "value": 12,
+      "bounds": [
+        10,
+        20
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "End distance for three rivets per cleat. Bounds express uncertainty, not a validated range."
+    },
+    "rivet_stagger": {
+      "value": 18,
+      "bounds": [
+        12,
+        24
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Middle rivet offset from middle detachable bolt. Bounds express uncertainty, not a validated range."
+    },
+    "bolt_end_margin": {
+      "value": 30,
+      "bounds": [
+        25,
+        40
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "End distance for three bolts on each side cleat. Bounds express uncertainty, not a validated range."
+    },
+    "bolt_face_offset": {
+      "value": 21,
+      "bounds": [
+        18,
+        25
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Offset of bolt axes from outer sheet face, clearing the angle foot. Bounds express uncertainty, not a validated range."
+    },
+    "roof_side_inset": {
+      "value": 12,
+      "bounds": [
+        8,
+        20
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Roof cleats stop before the casing side corners. Bounds express uncertainty, not a validated range."
+    },
+    "roof_rivet_end_margin": {
+      "value": 20,
+      "bounds": [
+        15,
+        25
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Roof rivet offset from cleat end. Bounds express uncertainty, not a validated range."
+    },
+    "hole_diameter_clearance": {
+      "value": 0.5,
+      "bounds": [
+        0.25,
+        1.0
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Clearance over nominal shank diameter. Bounds express uncertainty, not a validated range."
+    },
+    "thread_envelope_diameter_clearance": {
+      "value": 0.2,
+      "bounds": [
+        0.1,
+        0.4
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Nut cylindrical bore clearance; detailed threads are not modeled. Bounds express uncertainty, not a validated range."
+    },
+    "hex_across_flats": {
+      "value": 21,
+      "bounds": [
+        19,
+        23
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Bolt head and nut across flats; not attributed to an uninspected standard. Bounds express uncertainty, not a validated range."
+    },
+    "bolt_head_stock": {
+      "value": 8,
+      "bounds": [
+        6,
+        9
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Inferred bolt head height. Bounds express uncertainty, not a validated range."
+    },
+    "nut_stock": {
+      "value": 10,
+      "bounds": [
+        8,
+        12
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Inferred nut height. Bounds express uncertainty, not a validated range."
+    },
+    "washer_od": {
+      "value": 22,
+      "bounds": [
+        20,
+        25
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Inferred lock washer outside diameter. Bounds express uncertainty, not a validated range."
+    },
+    "washer_stock": {
+      "value": 2.5,
+      "bounds": [
+        2,
+        3
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Compressed washer envelope thickness. Bounds express uncertainty, not a validated range."
+    },
+    "washer_split": {
+      "value": 0.8,
+      "bounds": [
+        0.5,
+        1.2
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Radial split in compressed washer envelope; no spring performance claim. Bounds express uncertainty, not a validated range."
+    },
+    "roof_center_rivet_offset": {
+      "value": 24.0,
+      "bounds": [
+        20,
+        28
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Transverse offset of the middle roof-cleat rivet from the detachable bolt axis. The centered candidate interfered with the cap-side bolt/nut and is preserved. Bounds express uncertainty, not a validated range."
+    }
+  },
+  "joint_interpretation": "Two M1583 side cleats and one M1593 roof cleat attach to each body and cap. Side cleats face across the one-mm casing split, filled by one M1584 strip per side. Roof cleat flanges meet at the seam, with feet seated on the sloping casing. Three side bolts per cleat pair and one roof bolt make seven detachable sets per cap. Neither the detailed geometry nor the hole pattern is independently dimensioned by the sources.",
+  "fastener_schedule": {
+    "vehicle_bolt_sets": 14,
+    "physical_parts_per_bolt_set": 3,
+    "rivets_per_body_added_here": {
+      "short": 9,
+      "long": 0
+    },
+    "rivets_per_cap_added_here": {
+      "short": 3,
+      "long": 6
+    },
+    "rationale": "Each side and roof cleat takes three rivets. The two cap side cleats use long rivets; the other four cleats use short rivets. Combined with the17 wall-angle short rivets, this fills the nested body26 short allocation and cap3 short allocation. Eight cap long rivets remain for register plates. Long body rivets and source/global quantity conflicts remain unresolved."
+  },
+  "source_fastener_schedule_reconciled": false,
+  "remaining": [
+    "M1585 beading",
+    "M1581/M1594A/B register plates",
+    "M1587/M1588 support brackets",
+    "Remaining source-allocated rivets",
+    "Seals and detailed thread forms"
+  ],
+  "historical_fit_qualified": false
+}

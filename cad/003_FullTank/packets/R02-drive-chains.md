@@ -191,6 +191,34 @@ global and joint rivet counts conflict with the nested SNL55/60/61 quantities.
 by the joint row and fit within the body's 26 short-rivet allocation. Remaining
 joint schedules need an explicit selected interpretation before population.
 
-Next: M1583/M1593 cleats, M1584 strips, M1585 beading, M1581/M1594 register plates,
-M1587/M1588 supports and their fastening, followed by full chain/casing integration
-and parameter qualification. These fixtures do not alter the standard model.
+The cap-joint fixture now adds eight M1583 side cleats, four M1593 roof cleats,
+four M1584 packing strips, 36 cleat rivets and fourteen three-part detachable
+fastener sets. Original SNL128 and SNL270 identify the plain half-inch nut and
+lock washer and explicitly include the half-inch by one-inch bolt among their
+uses. Their general catalogue totals are not used as cap quantities.
+
+The angles, five-mm stock, packing location and seven-bolt pattern per cap are
+inferred. Side cleats face across the one-mm shell gap, with a packing strip;
+roof flanges meet at the seam and their feet follow the sloping shell. Each
+body receives nine short cleat rivets, which together with its seventeen wall-
+angle rivets fills the nested body allocation of twenty-six. Each cap receives
+three short roof-cleat and six long side-cleat rivets. Eight long cap rivets
+remain provisionally allocated to register plates; the independent short-rivet
+joint entry for those plates remains a conflict. Body long-rivet allocations
+also remain unresolved. The selected schedule is explicit in the cap controls.
+
+The first 661-leaf cap fixture found four intersections between the middle
+cap-roof rivet and the adjacent bolt/nut, despite passing its bore and seating
+checks. That candidate and its exact inputs remain preserved. Moving the
+undimensioned middle roof-rivet station 24 mm transversely clears those parts.
+The revised native fixture passes 914 new/changed material candidate pairs,
+50 receiving bores, 50 joint-seating checks and fourteen simplified retention
+checks. All leaves remain valid single solids after reopening. Actual whole-
+casing and joint-detail rasters were inspected and bound to the report hashes.
+Bolt protrusion is 1.9 mm at side joints and 2.9 mm at the roof; these values
+depend on assumed nut/washer/cleat stock. Threads, spring action, clamp loads,
+historical fit and removal motion are not qualified.
+
+Next: M1585 beading, M1581/M1594 register plates, M1587/M1588 supports and their
+remaining fastening, followed by full chain/casing integration and parameter
+qualification. These fixtures do not alter the standard model.

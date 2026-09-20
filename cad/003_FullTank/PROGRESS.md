@@ -10,14 +10,20 @@ preserved; 003 records the sponson shells, 004 the roof louvers and 005 the roll
 stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjusters,
 008 the lower support runs, 009 the driving wheels and 010 their shafts and bearings.
 
-## 20 September 2026 — experimental chains, casing shells and wall joints
+## 20 September 2026 — experimental chains, casing shells and fastening
 
 The isolated chain work now includes separate bars, bushes, pins and cotters,
 both sprockets, M1590 casing bodies, M1591 caps and M1592 wall attachments.
-The latest saved/reopened fixture has 567 physical leaves. It adds two angles,
-22 wall rivets and 34 casing rivets to the preceding chain/casing candidate;
-all 697 new/changed material candidate pairs, 56 receiving bores and 56
-two-receiver seating checks pass. Existing hull checks also pass.
+The wall-joint fixture has 567 physical leaves; its two angles, 22 wall rivets
+and 34 casing rivets pass 697 material candidate pairs, 56 receiving bores and
+56 seating checks. Existing hull checks also pass.
+
+The latest fixture adds 94 cap-joint leaves: eight side cleats, four roof cleats,
+four packing strips, 36 rivets and fourteen separate bolt/nut/lock-washer sets.
+All 661 reopened leaves are valid single solids. Its 914 new/changed material
+candidate pairs, 50 receiving bores, 50 seating checks and fourteen simplified
+retention checks pass. A rejected roof-rivet pattern with four bolt/nut clashes
+is preserved alongside the revised candidate and inspected detail rasters.
 
 Earlier failed tooth reliefs, wall interferences and casing-corner clashes are
 preserved. The latest inferred wall openings clear the actual casing section
@@ -27,11 +33,11 @@ The 50-pitch chain interpretation, case stock/contours, cap seam and wall-angle
 form remain documented approximations. Catalogue chain quantities and several
 casing fastener schedules still conflict.
 
-These parts are **not promoted to the standard model**. Cap cleats, beading,
-register plates, support brackets and remaining fasteners are next, followed
+These parts are **not promoted to the standard model**. Beading, register plates,
+support brackets and remaining fasteners are next, followed
 by integration and parameter qualification. See the
 [chain/casing packet](packets/R02-drive-chains.md) and
-[native attachment detail](experiments/drive_chains/casing_wall_mount_build/wall_joint_detail.png).
+[native cap-joint detail](experiments/drive_chains/casing_cap_clearance_build/cap_joint_detail.png).
 
 ## 20 September 2026 — experimental full-tank roller-pinion integration
 

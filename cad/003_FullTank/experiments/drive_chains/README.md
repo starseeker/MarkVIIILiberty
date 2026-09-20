@@ -48,12 +48,23 @@ delivered assembly or reconcile the catalogue's chain component quantities.
   candidate pairs, 56 receiving bores and 56 two-receiver seating checks.
   The [attachment detail](casing_wall_mount_build/wall_joint_detail.png) was
   inspected. Angle form, section and hole pattern remain explicit assumptions.
+- `casing_cap_parts.py` and `casing_cap_probe.py` add 94 leaves: eight M1583 side
+  cleats, four M1593 roof cleats, four M1584 packing strips, 36 cleat rivets and
+  fourteen separate bolt/nut/lock-washer sets. Original SNL128/270 inspection
+  supports the separate nut and washer identities; SNL31 supplies the set count.
+  `casing_cap_build` preserves a rejected centered roof-rivet pattern with four
+  bolt/nut intersections. Its exact inputs and inspected images are retained.
+- `casing_cap_clearance_build` offsets the middle roof rivet by an inferred
+  24 mm. Its 661 saved/reopened leaves pass 914 new/changed material pairs,
+  50 receiving bores, 50 seating checks and 14 fastener-envelope retention
+  checks. The [joint detail](casing_cap_clearance_build/cap_joint_detail.png)
+  was inspected. Detailed threads, spring action and clamp loads are unqualified.
 
 Native probes accept `--stage` pointing to the authored pinion experiment and
 an optional `--output`. They do not modify that stage. The complete chain
 candidate includes bars, bushes, pins and unsplayed cotters; the older circular
 clearance probe contains only diagnostic annuli. Casing shells and their wall
-attachments are now separate candidates. Cap cleats, beading, register plates,
+attachments and cap cleats are now separate candidates. Beading, register plates,
 support brackets, remaining fasteners, the transmission shaft, formed chain
 retention and lubrication still need population. Full inventory, moving
 engagement and historical-fit claims remain false.
