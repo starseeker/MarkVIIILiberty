@@ -16,18 +16,40 @@ def parameter(unit, value=None, expression=None):
 
 
 class RecordChecks(unittest.TestCase):
-    def test_drive_wheel_counts_and_explicit_incomplete_shaft(self):
+    def test_drive_wheel_counts_and_complete_source_shaft(self):
         from lib.wheel_validation import composition
         data=load();selected=[i for i in data['occurrences'] if i['definition'] and
                               i['id'].startswith(('PortIdler_','StarboardIdler_','PortDrive_','StarboardDrive_'))]
         report=composition(data,selected)
-        self.assertEqual(sum(r['modeled_leaves'] for r in report['installed']),548)
+        self.assertEqual(sum(r['modeled_leaves'] for r in report['installed']),604)
         self.assertEqual(len(report['whole_vehicle_wheel_totals']),5)
         shaft=next(r for r in report['assemblies'] if r['template']=='drive_shaft')
-        self.assertFalse(shaft['complete']);self.assertEqual(sum(shaft['omitted_counts'].values()),5)
-        data['assemblies']['drive_shaft'].pop('omitted_source_counts')
+        self.assertTrue(shaft['complete']);self.assertEqual(shaft['leaf_total'],7)
+        data['assemblies']['drive_shaft']['children'].remove(next(c for c in data['assemblies']['drive_shaft']['children'] if c['id']=='NutInner'))
         with self.assertRaisesRegex(ValueError,'Source composition mismatch for drive_shaft'):
             composition(data,selected)
+
+    def test_drive_receiver_identity_cannot_be_replaced_by_adjacent_plate(self):
+        from lib.drive_mount_validation import composition
+        data=load();selected=[i for i in data['occurrences'] if i['definition']]
+        composition(data,selected)
+        data['definitions']['hull_port_inner_fuel_side']['survey_ids']=data['definitions']['hull_port_inner_rear_end']['survey_ids']
+        with self.assertRaisesRegex(ValueError,'receiver identity conflicts with source'):
+            composition(data,selected)
+
+    def test_drive_shaft_length_updates_end_fittings_with_fixed_hull_faces(self):
+        from lib.drive_mount_geometry import values
+        data=load();before=values(data)
+        outer=datum_values('PortDrive_Unit000_ShaftAssembly_NutOuter',data)
+        inner=datum_values('PortDrive_Unit000_ShaftAssembly_NutInner',data)
+        data['parameters']['drive_mount_shaft_length']['value']+=2
+        data['values']=resolve(data['parameters']);after=values(data)
+        self.assertEqual(after['outside'],before['outside'])
+        self.assertEqual(after['shoulder'],before['shoulder'])
+        self.assertAlmostEqual(after['key_end']-before['key_end'],1)
+        self.assertAlmostEqual(after['flange_stock']-before['flange_stock'],1)
+        self.assertAlmostEqual(datum_values('PortDrive_Unit000_ShaftAssembly_NutOuter',data)['translation'][1]-outer['translation'][1],1)
+        self.assertAlmostEqual(datum_values('PortDrive_Unit000_ShaftAssembly_NutInner',data)['translation'][1]-inner['translation'][1],-1)
 
     def test_common_rivet_pattern_and_drive_axis_independent_of_idler_tip(self):
         from lib.wheel_geometry import values,rivets

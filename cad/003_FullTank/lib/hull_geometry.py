@@ -18,6 +18,7 @@ def arguments(definition,data):
     rollers=stations(data)
     rv=values(data)
     from .idler_geometry import clearance
+    from .drive_mount_geometry import clearance as drive_clearance
     from .lower_support_geometry import hull_holes
     outline=[]
     for q in data['calibrations']['snl_2']['profiles']['hull']:
@@ -28,6 +29,7 @@ def arguments(definition,data):
         outline.append([x,z])
     return {**definition['arguments'],'values':v,'image_origin_xz':origin,
             'idler_clearance':clearance(data),
+            'drive_clearance':drive_clearance(data),
             'lower_support_holes':hull_holes(data),
             'roller_clearance':{'stations':[{k:s[k] for k in ['id','kind','x','z']} for s in rollers],
                 'pin_radius':(data['values']['roller_pin_diameter'].value+data['values']['roller_hull_bore_clearance'].value)/2,

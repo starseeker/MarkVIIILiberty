@@ -9,6 +9,29 @@ next `cad/intermediate_snapshot_iso_NNN.png` and update
 preserved; 003 records the sponson shells, 004 the roof louvers and 005 the roller
 stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjusters, 008 the lower support runs, and 009 the driving wheels.
 
+## 20 September 2026 — driving shafts and mounts; delivery qualification pending
+
+The reviewed isolated implementation adds 56 shaft, bearing and attachment
+parts, completes both seven-leaf drive-shaft BOMs, and corrects M1977/M1978
+receiver geometry using the SNL bearing-joint allocations. The authored model
+has 242 definitions and 5,145 leaves, including 5,130 physical components and
+207 represented physical source identities. The qualified wheel-only delivery
+and snapshot 009 were archived before this promotion.
+
+Nominal private checks pass 82 bearing/attachment seats, 32 full hull receiving
+bores, four shaft/bush clearances and two plain oil-plug insertion envelopes.
+The 604 idler/drive wheel-and-mount leaves clear 2,042 material candidate pairs.
+Thirty-five record/renderer tests and the two additional installed parameter
+preflights pass. The private visual review and rejected bolt-seat assumption
+are retained under `experiments/drive_mounts/integration_preflight`.
+
+The shared Q52C plug has 12 mm insertion and an inferred 0.2 mm radial gap;
+its small square head is not a qualified bolt-style shoulder. Thread retention,
+sealing, historical fits and the extra M1552 plate-only rivets remain unresolved.
+The delivered native/STEP/relocation/rebuild/cache and all fifteen parameter
+trials still require qualification in the main directory. Do not treat the
+private preflight as the final delivery check. Snapshot 010 is not yet saved.
+
 ## 20 September 2026 — partial driving wheels and common wheel interfaces
 
 Replaced the two drive-wheel envelopes with two 119-part source wheel assemblies

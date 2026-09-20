@@ -74,6 +74,9 @@ def part(doc, key, definition, arguments):
     elif builder == "roller_component":
         from .roller_parts import build as build_roller
         obj = build_roller(doc, "Def_"+key, arguments)
+    elif builder == "drive_mount_component":
+        from .drive_mount_parts import build as build_drive_mount
+        obj = build_drive_mount(doc, "Def_"+key, arguments)
     elif builder == "idler_component":
         from .idler_parts import build as build_idler
         obj = build_idler(doc, "Def_"+key, arguments)
@@ -172,6 +175,7 @@ def build(data, out, selected=None):
                                         STAGE/"lib/roller_geometry.py", STAGE/"lib/roller_parts.py",
                                         STAGE/"lib/wheel_geometry.py", STAGE/"lib/wheel_parts.py",
                                         STAGE/"lib/idler_geometry.py", STAGE/"lib/idler_parts.py",
+                                        STAGE/"lib/drive_mount_geometry.py", STAGE/"lib/drive_mount_parts.py",
                                         STAGE/"lib/lower_support_geometry.py", STAGE/"lib/lower_support_parts.py"]}
     for system in systems:
         specifications = grouped[system]

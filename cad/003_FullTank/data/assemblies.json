@@ -2392,15 +2392,10 @@
     ],
     "evidence": [
       "record:SNL:215:001",
-      "issue:drive_wheel_reconstruction"
+      "issue:drive_wheel_reconstruction",
+      "issue:drive_mount_reconstruction"
     ],
-    "composition_status": "partial",
-    "omitted_source_counts": {
-      "P_7dadf20f3a38ad7e": 2,
-      "P_4b04dad4629f792c": 1,
-      "P_f4c47f33750a2038": 1,
-      "P_4a25f9905c502b80": 1
-    },
+    "composition_status": "complete",
     "children": [
       {
         "id": "BushA",
@@ -2413,6 +2408,33 @@
         "definition": "wheel_bush",
         "wheel_child": "bush",
         "wheel_side": 1
+      },
+      {
+        "id": "Shaft",
+        "definition": "drive_shaft",
+        "drive_mount_child": "shaft"
+      },
+      {
+        "id": "Key",
+        "definition": "drive_key",
+        "drive_mount_child": "key"
+      },
+      {
+        "id": "NutInner",
+        "definition": "idler_nut",
+        "drive_mount_child": "nut",
+        "drive_mount_side": -1
+      },
+      {
+        "id": "NutOuter",
+        "definition": "idler_nut",
+        "drive_mount_child": "nut",
+        "drive_mount_side": 1
+      },
+      {
+        "id": "OilPlug",
+        "definition": "roller_plug",
+        "drive_mount_child": "oil_plug"
       }
     ]
   },
@@ -2430,7 +2452,159 @@
       },
       {
         "id": "ShaftAssembly",
-        "assembly": "drive_shaft"
+        "assembly": "drive_shaft",
+        "drive_mount_child": "hand_frame"
+      },
+      {
+        "id": "Supports",
+        "assembly": "drive_mounts",
+        "drive_mount_child": "hand_frame"
+      }
+    ]
+  },
+  "drive_mounts": {
+    "survey_ids": [],
+    "evidence": [
+      "issue:drive_mount_reconstruction",
+      "record:SNL:18:006"
+    ],
+    "children": [
+      {
+        "id": "BearingInner",
+        "definition": "drive_inner_bearing",
+        "drive_mount_child": "bearing",
+        "drive_mount_side": -1
+      },
+      {
+        "id": "LockingPlateInner",
+        "definition": "drive_locking_plate",
+        "drive_mount_child": "locking_plate",
+        "drive_mount_side": -1
+      },
+      {
+        "id": "LockingScrewInner",
+        "definition": "drive_locking_screw",
+        "drive_mount_child": "locking_screw",
+        "drive_mount_side": -1
+      },
+      {
+        "id": "BearingOuter",
+        "definition": "drive_outer_bearing",
+        "drive_mount_child": "bearing",
+        "drive_mount_side": 1
+      },
+      {
+        "id": "LockingPlateOuter",
+        "definition": "drive_locking_plate",
+        "drive_mount_child": "locking_plate",
+        "drive_mount_side": 1
+      },
+      {
+        "id": "LockingScrewOuter",
+        "definition": "drive_locking_screw",
+        "drive_mount_child": "locking_screw",
+        "drive_mount_side": 1
+      },
+      {
+        "id": "BackingPlate",
+        "definition": "drive_backing_plate",
+        "drive_mount_child": "backing_plate"
+      },
+      {
+        "id": "BearingScrew0",
+        "definition": "drive_bearing_screw",
+        "drive_mount_child": "bearing_screw",
+        "drive_mount_index": 0
+      },
+      {
+        "id": "BearingScrew1",
+        "definition": "drive_bearing_screw",
+        "drive_mount_child": "bearing_screw",
+        "drive_mount_index": 1
+      },
+      {
+        "id": "BearingScrew2",
+        "definition": "drive_bearing_screw",
+        "drive_mount_child": "bearing_screw",
+        "drive_mount_index": 2
+      },
+      {
+        "id": "BearingScrew3",
+        "definition": "drive_bearing_screw",
+        "drive_mount_child": "bearing_screw",
+        "drive_mount_index": 3
+      },
+      {
+        "id": "BearingScrew4",
+        "definition": "drive_bearing_screw",
+        "drive_mount_child": "bearing_screw",
+        "drive_mount_index": 4
+      },
+      {
+        "id": "BearingScrew5",
+        "definition": "drive_bearing_screw",
+        "drive_mount_child": "bearing_screw",
+        "drive_mount_index": 5
+      },
+      {
+        "id": "InnerRivet0",
+        "definition": "drive_inner_rivet",
+        "drive_mount_child": "inner_rivet",
+        "drive_mount_index": 0
+      },
+      {
+        "id": "InnerRivet1",
+        "definition": "drive_inner_rivet",
+        "drive_mount_child": "inner_rivet",
+        "drive_mount_index": 1
+      },
+      {
+        "id": "InnerRivet2",
+        "definition": "drive_inner_rivet",
+        "drive_mount_child": "inner_rivet",
+        "drive_mount_index": 2
+      },
+      {
+        "id": "InnerRivet3",
+        "definition": "drive_inner_rivet",
+        "drive_mount_child": "inner_rivet",
+        "drive_mount_index": 3
+      },
+      {
+        "id": "InnerRivet4",
+        "definition": "drive_inner_rivet",
+        "drive_mount_child": "inner_rivet",
+        "drive_mount_index": 4
+      },
+      {
+        "id": "InnerRivet5",
+        "definition": "drive_inner_rivet",
+        "drive_mount_child": "inner_rivet",
+        "drive_mount_index": 5
+      },
+      {
+        "id": "BackingRivet0",
+        "definition": "drive_backing_rivet",
+        "drive_mount_child": "backing_rivet",
+        "drive_mount_index": 0
+      },
+      {
+        "id": "BackingRivet1",
+        "definition": "drive_backing_rivet",
+        "drive_mount_child": "backing_rivet",
+        "drive_mount_index": 1
+      },
+      {
+        "id": "BackingRivet2",
+        "definition": "drive_backing_rivet",
+        "drive_mount_child": "backing_rivet",
+        "drive_mount_index": 2
+      },
+      {
+        "id": "BackingRivet3",
+        "definition": "drive_backing_rivet",
+        "drive_mount_child": "backing_rivet",
+        "drive_mount_index": 3
       }
     ]
   }

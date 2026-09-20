@@ -47,7 +47,9 @@ def composition(data,selected):
                 actual=sum(i['definition']==role for i in selected)
                 if actual!=wanted:raise ValueError('Shared whole-vehicle wheel count mismatch: '+role)
                 totals.append(dict(definition=role,source_record=record,actual=actual,expected=wanted))
-    return dict(assemblies=checks,installed=result,whole_vehicle_wheel_totals=totals,
+    from .drive_mount_validation import composition as mount_composition
+    mount_counts=mount_composition(data,selected)
+    return dict(assemblies=checks,installed=result,whole_vehicle_wheel_totals=totals,drive_mount_counts=mount_counts,
                 shared_vehicle_totals_fully_populated=False,
                 limitation='M1409 bushes and common rivets also belong to unpopulated pinion/other assemblies.')
 
@@ -192,12 +194,14 @@ def validate(data,items,out):
             roller_gaps.append(dict(rim=rim['id'],roller=key,gap_mm=gap))
     from .idler_validation import validate as validate_mounts
     mounts=validate_mounts(data,items,out)
-    report=dict(applicable=True,source_composition=source,modeled_occurrences=len(selected),mount_interfaces=mounts,
+    from .drive_mount_validation import validate as validate_drive_mounts
+    drive_mounts=validate_drive_mounts(data,items,out)
+    report=dict(applicable=True,source_composition=source,modeled_occurrences=len(selected),mount_interfaces=mounts,drive_mount_interfaces=drive_mounts,
         internal_candidate_pairs=internal,external_candidate_pairs=external,other_physical_occurrences=len(physical)-len(selected),
         maximum_overlap_mm3=maximum,controlled_dimensions=dimensions,rivet_stock=stocks,rivet_head_seats=seats,
         rim_bushing_gaps=gaps,drive_rim_bushing_gaps=drive_gaps,foremost_roller_gaps=roller_gaps,
         rim_disk_seats=disk_seats,shared_native_definitions=common_targets,drive_dimensions=drive_dimensions,
         paired_drive_rim_alignment=alignment,
-        station=station(data),implemented_checks_passed=True,drive_shaft_source_composition_complete=False,
+        station=station(data),implemented_checks_passed=True,drive_shaft_source_composition_complete=all(r['complete'] for r in source['assemblies'] if r['template']=='drive_shaft'),
         shaft_source_composition_complete=True,adjustment_geometry_partial=True,continuous_engagement_qualified=False,historical_fit_qualified=False)
     write(out/'reports/wheel_components.json',report);return report

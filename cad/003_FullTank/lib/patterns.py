@@ -32,7 +32,7 @@ def expand(data):
             nested = child.get("assembly")
             add(identifier, parent, child.get("definition"), frame, translation, rotation,
                 child.get("evidence", spec["evidence"]), nested)
-            for key in ['wheel_child','wheel_side','wheel_angle','wheel_rivet','idler_child','idler_side','idler_index']:
+            for key in ['wheel_child','wheel_side','wheel_angle','wheel_rivet','idler_child','idler_side','idler_index','drive_mount_child','drive_mount_side','drive_mount_index']:
                 if key in child:data['datums'][identifier][key]=child[key]
             if nested:
                 children(nested, identifier, identifier, identifier, stack | {template_key})

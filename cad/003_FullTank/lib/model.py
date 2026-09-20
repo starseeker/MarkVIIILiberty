@@ -98,6 +98,9 @@ def datum_values(key, data, seen=None):
     if "idler_station" in d:
         from .wheel_geometry import datum
         return datum(d,data)
+    if "drive_mount_child" in d:
+        from .drive_mount_geometry import child_datum
+        return child_datum(d,data)
     if "idler_child" in d:
         from .idler_geometry import child_datum
         return child_datum(d,data)
@@ -130,6 +133,9 @@ def geometry_arguments(definition, data):
         return arguments(definition,data)
     if builder == "roller_component":
         from .roller_geometry import arguments
+        return arguments(definition,data)
+    elif builder == "drive_mount_component":
+        from .drive_mount_geometry import arguments
         return arguments(definition,data)
     elif builder == "idler_component":
         from .idler_geometry import arguments

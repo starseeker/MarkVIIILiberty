@@ -260,13 +260,26 @@
       "status": "open",
       "severity": "material",
       "subject": "Common wheel geometry and conflicting drive teeth",
-      "finding": "35-tooth M1401 hypothesis follows original HB130/HB133; original HB119 9:37 remains contradictory. 39.237-inch OD, 32.75-inch ID and 2-inch tooth width are retained, but assigning the ID to the annular bore is provisional. Circular tooth reliefs, root radius, outer lip and crest rounding are inferred. Fixed SNL2 shaft axes are retained. Source wheel composition is populated; shafts, keys, nuts, bearings, retention, roller pinions and chain remain open. Static noninterference does not establish contact or continuous engagement. Common M1403/M1404/M1405X/Y internals are reused in both idler and drive wheels. Disk radius 449 mm, rim land bore radius 415.925 mm, rim-rivet radius 430 mm, shortened diaphragm ends and 25 mm short-rivet radial pitch are explicit inferred interface choices, qualified only for native static geometry. The two 121-part common fixtures and four installed wheel study support this choice; oblique source views do not measure it. Local rim-rivet head overhang, formed profiles, X/Y distinctions and structural adequacy remain unresolved.",
+      "finding": "35-tooth M1401 hypothesis follows original HB130/HB133; original HB119 9:37 remains contradictory. 39.237-inch OD, 32.75-inch ID and 2-inch tooth width are retained, but assigning the ID to the annular bore is provisional. Circular tooth reliefs, root radius, outer lip and crest rounding are inferred. Fixed SNL2 shaft axes are retained. Source wheel composition is populated; source-complete shafts and partial bearing/retention installations are now populated; roller pinions, chain and remaining retention remain open. Static noninterference does not establish contact or continuous engagement. Common M1403/M1404/M1405X/Y internals are reused in both idler and drive wheels. Disk radius 449 mm, rim land bore radius 415.925 mm, rim-rivet radius 430 mm, shortened diaphragm ends and 25 mm short-rivet radial pitch are explicit inferred interface choices, qualified only for native static geometry. The two 121-part common fixtures and four installed wheel study support this choice; oblique source views do not measure it. Local rim-rivet head overhang, formed profiles, X/Y distinctions and structural adequacy remain unresolved.",
       "evidence": [
         "record:SNL:275:005",
         "issue:drive_wheel_reconstruction",
         "issue:common_wheel_reconstruction"
       ],
-      "action": "Qualify saved native installation and common-parameter independence; populate drive shafts and supports next."
+      "action": "Review installed shaft/support sections and source-identified hull receivers; keep exact geometry and engagement gates open."
+    },
+    {
+      "id": "R02-V-DRIVE-MOUNTS",
+      "status": "open",
+      "severity": "material",
+      "subject": "Driving-shaft bearings and rear receiving plates",
+      "finding": "Partial driving-shaft and bearing installation. Printed shaft/key/fastener dimensions retained; journals, shoulders, casting shapes, oil leads, screw/rivet placement and locking-plate scallops are inferred. Exact threads, tolerances, retention strength and historical fit are unqualified. M1411 has two uses per drive shaft, supported by HB237. M1407/M1552/key/bush/cap-screw pinion uses remain unpopulated. Only four positively allocated M1975/M1552 rivets per drive side are installed; further plate-only M1552 rivets remain unresolved. Correct initial inner fore/aft geometry assignments: SNL189:009 attaches rear drive M1406 to M1977; SNL189:008 attaches forward pinion M1546 to M1978. SNL169:004 and178:002 cross-member allocations support the same pairing with outer M1975/M1976. Source identities stay with their definitions. Exact seams remain inferred. The rear skirt upper border is provisionally level at source pixel500, meeting the rising outer outline; earlier upward border cut through the bearing footprint. Shaft axes and source calibration stay fixed.",
+      "evidence": [
+        "issue:drive_mount_reconstruction",
+        "issue:rear_inner_plate_mapping",
+        "record:SNL:189:009"
+      ],
+      "action": "Inspect the installed rear receiver crop and shaft section against HB125 and SNL27; retain historical casting, seam, retention and thread uncertainties."
     }
   ],
   "inspection": {

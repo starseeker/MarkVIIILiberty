@@ -110,3 +110,63 @@ roller-pinion engagement conflict.
 
 This work continues the standard assembly. Poses and motion qualification wait
 until the geometry and its documented approximations are populated and reviewed.
+
+## Current fixture and mounting questions
+
+The [73-leaf native fixture](../experiments/roller_pinions/pin_build/PinionWithPins.FCStd)
+contains the complete rotating source count and passed fresh native placement,
+pin-head seating, roller clearance and oil-gallery checks. Its cotters remain
+unsplayed supplied-length stand-ins. Source-count completeness does not qualify
+the historical profiles, formed cotters, installed supports or gear engagement.
+
+The mounting study must resolve these explicit inferred-interface questions:
+
+- The 495.3 mm casting length extends 2.15 mm past the current common M1407
+  barrel shoulder on each end. Its initial 130.4 mm through bore is smaller
+  than the barrel. Measure native interference before choosing a counterbore
+  or revising an inferred section; preserve the common bearing identity.
+- The 641.35 mm pinion shaft ends 4.9375 mm inside the current outer bearing
+  face. HB Plate 81 supports a recessed shaft end as a possibility, but does
+  not dimension that recess. The reused key ends only 0.0625 mm short of the
+  shaft end; a fragile closed keyway lip must not become an accidental feature.
+- The inferred M1977/M1978 inner-panel seam falls close to the pinion bearing's
+  rear attachment. Check actual plate containment and inspect the source joint
+  allocations before moving any seam. M1978 remains the pinion receiver.
+
+These are study questions, not changes to the frozen main mounting stage.
+
+
+## Mounting and static-fit study results
+
+The standalone [98-leaf mounting fixture](../experiments/roller_pinions/mounted_build/MountedPinionStudy.FCStd)
+now includes the 73-leaf rotor, four shaft-assembly leaves, two common bushes and
+nineteen named mounting leaves. A fresh reopen verifies sixteen source-bound
+part definitions, sixteen full-depth fastener bores, five bearing/shaft seats,
+and the flush/retained shaft-plug envelopes. Four receiving hull panels are
+separate inspection context outside that subtotal. The original full-diameter
+shaft ends were rejected; reduced end journals now follow the unchanged common
+M1407 bearing, with the printed 4.434-inch diameter retained centrally.
+
+The revised casting uses inferred 2.35 mm end counterbores and 0.2 mm barrel
+clearance. The receiver seam moves provisionally from source pixel1630 to1642,
+while the paired panels' combined solid and fuel-compartment backplate remain
+unchanged. All sixteen attachment locations fit within their assigned panels.
+SNL Plate7's M1975/M1976 leaders remain difficult to reconcile with the explicit
+joint allocations; the joint-derived identities remain provisional and the
+source ambiguity is preserved.
+
+The [paired drive/pinion study](../experiments/roller_pinions/installation_build/PairedPinionDriveStudy.FCStd)
+contains 494 physical occurrences across both sides: 149 existing drive parts
+and 98 new pinion parts per side. The 72 candidate cross-family material pairs
+have no overlaps. All four installed ring/roller banks have about 0.29997 mm
+minimum static clearance. This uses an explicitly inferred 1.8033 mm radial
+shift toward the driving-wheel axis and a 17.21 degree rotor angle; it does not
+change the source pixel pick or calibration. Earlier coarse and refined phases,
+and rejected outward offsets, are retained. Continuous gearing and the 35/37
+source conflict remain unqualified.
+
+Next integrate these parametric parts into the isolated full-model copy, apply
+the receiver bores at the corrected axis, and check all neighboring geometry.
+The paired study alone does not qualify the complete tank installation.
+Cotter forming, detailed lubrication paths, threads, cast sections and further
+shared-part quantity reconciliation remain documented approximation work.

@@ -2980,22 +2980,6 @@
     ],
     "interpretation": "Front adjuster penetration in shell; shaft fitting pending."
   },
-  "hull_drive_bore": {
-    "unit": "mm",
-    "value": 160,
-    "bounds": [
-      120,
-      190
-    ],
-    "basis": "bounded_approximation",
-    "applicability": "reconstruction_assumption",
-    "evidence": [
-      "page:HB:35",
-      "page:HB:141",
-      "issue:hull_plate_reconstruction"
-    ],
-    "interpretation": "Rear drive-axis penetration; bearing fitting pending."
-  },
   "hull_inlet_front_x": {
     "unit": "mm",
     "value": 4180,
@@ -6006,5 +5990,568 @@
       "issue:drive_wheel_reconstruction"
     ],
     "interpretation": "Inferred radius on the two axial crest edges of each tooth; native rounding must remove material only."
+  },
+  "drive_mount_shaft_length": {
+    "unit": "mm",
+    "value": 701.675,
+    "bounds": [
+      696.675,
+      706.675
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Printed component dimension; bounds permit reconstruction sensitivity trials, not manufacturing tolerances. shaft length"
+  },
+  "drive_mount_shaft_diameter": {
+    "unit": "mm",
+    "value": 112.6236,
+    "bounds": [
+      112.1236,
+      113.1236
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Printed component dimension; bounds permit reconstruction sensitivity trials, not manufacturing tolerances. shaft diameter"
+  },
+  "drive_mount_key_width": {
+    "unit": "mm",
+    "value": 12.7,
+    "bounds": [
+      12.2,
+      13.2
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:215:006",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Printed component dimension; bounds permit reconstruction sensitivity trials, not manufacturing tolerances. key width"
+  },
+  "drive_mount_key_height": {
+    "unit": "mm",
+    "value": 19.049999999999997,
+    "bounds": [
+      18.549999999999997,
+      19.549999999999997
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:215:006",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Printed component dimension; bounds permit reconstruction sensitivity trials, not manufacturing tolerances. key height"
+  },
+  "drive_mount_key_length": {
+    "unit": "mm",
+    "value": 46.037499999999994,
+    "bounds": [
+      45.537499999999994,
+      46.537499999999994
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:215:006",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Printed component dimension; bounds permit reconstruction sensitivity trials, not manufacturing tolerances. key length"
+  },
+  "drive_mount_bearing_screw_diameter": {
+    "unit": "mm",
+    "value": 19.049999999999997,
+    "bounds": [
+      18.549999999999997,
+      19.549999999999997
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:201:008",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Printed component dimension; bounds permit reconstruction sensitivity trials, not manufacturing tolerances. bearing screw diameter"
+  },
+  "drive_mount_bearing_screw_length": {
+    "unit": "mm",
+    "value": 57.15,
+    "bounds": [
+      56.65,
+      57.65
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:201:008",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Printed component dimension; bounds permit reconstruction sensitivity trials, not manufacturing tolerances. bearing screw length"
+  },
+  "drive_mount_locking_screw_diameter": {
+    "unit": "mm",
+    "value": 12.7,
+    "bounds": [
+      12.2,
+      13.2
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:200:009",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Printed component dimension; bounds permit reconstruction sensitivity trials, not manufacturing tolerances. locking screw diameter"
+  },
+  "drive_mount_locking_screw_length": {
+    "unit": "mm",
+    "value": 19.049999999999997,
+    "bounds": [
+      18.549999999999997,
+      19.549999999999997
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:200:009",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Printed component dimension; bounds permit reconstruction sensitivity trials, not manufacturing tolerances. locking screw length"
+  },
+  "drive_mount_inner_rivet_length": {
+    "unit": "mm",
+    "value": 66.675,
+    "bounds": [
+      66.175,
+      67.175
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:189:009",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Printed component dimension; bounds permit reconstruction sensitivity trials, not manufacturing tolerances. inner rivet length"
+  },
+  "drive_mount_backing_rivet_diameter": {
+    "unit": "mm",
+    "value": 12.7,
+    "bounds": [
+      12.2,
+      13.2
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:170:004",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Printed component dimension; bounds permit reconstruction sensitivity trials, not manufacturing tolerances. backing rivet diameter"
+  },
+  "drive_mount_backing_rivet_length": {
+    "unit": "mm",
+    "value": 44.449999999999996,
+    "bounds": [
+      43.949999999999996,
+      44.949999999999996
+    ],
+    "basis": "direct_dimension",
+    "applicability": "source_component",
+    "evidence": [
+      "record:SNL:170:004",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Printed component dimension; bounds permit reconstruction sensitivity trials, not manufacturing tolerances. backing rivet length"
+  },
+  "drive_mount_journal_diameter": {
+    "unit": "mm",
+    "value": 88.9,
+    "bounds": [
+      71.12,
+      106.68
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. journal diameter"
+  },
+  "drive_mount_end_projection": {
+    "unit": "mm",
+    "value": 3,
+    "bounds": [
+      2.4,
+      3.6
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. end projection"
+  },
+  "drive_mount_boss_end_gap": {
+    "unit": "mm",
+    "value": 0.5,
+    "bounds": [
+      0.4,
+      0.6
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. boss end gap"
+  },
+  "drive_mount_backing_stock": {
+    "unit": "mm",
+    "value": 12.7,
+    "bounds": [
+      10.16,
+      15.239999999999998
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. backing stock"
+  },
+  "drive_mount_key_end_inset": {
+    "unit": "mm",
+    "value": 5,
+    "bounds": [
+      4.0,
+      6.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. key end inset"
+  },
+  "drive_mount_bearing_bolt_radius": {
+    "unit": "mm",
+    "value": 100,
+    "bounds": [
+      80.0,
+      120.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. bearing bolt radius"
+  },
+  "drive_mount_backing_rivet_radius": {
+    "unit": "mm",
+    "value": 140,
+    "bounds": [
+      112.0,
+      168.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. backing rivet radius"
+  },
+  "drive_mount_locking_screw_x": {
+    "unit": "mm",
+    "value": 80,
+    "bounds": [
+      64.0,
+      96.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. locking screw x"
+  },
+  "drive_mount_locking_plate_width": {
+    "unit": "mm",
+    "value": 26,
+    "bounds": [
+      20.8,
+      31.2
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. locking plate width"
+  },
+  "drive_mount_locking_stock": {
+    "unit": "mm",
+    "value": 6.35,
+    "bounds": [
+      5.08,
+      7.619999999999999
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. locking stock"
+  },
+  "drive_mount_locking_plate_x0": {
+    "unit": "mm",
+    "value": -35,
+    "bounds": [
+      -42.0,
+      -28.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. locking plate x0"
+  },
+  "drive_mount_locking_plate_x1": {
+    "unit": "mm",
+    "value": 100,
+    "bounds": [
+      80.0,
+      120.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. locking plate x1"
+  },
+  "drive_mount_barrel_radius": {
+    "unit": "mm",
+    "value": 80,
+    "bounds": [
+      64.0,
+      96.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. barrel radius"
+  },
+  "drive_mount_flange_radius": {
+    "unit": "mm",
+    "value": 125,
+    "bounds": [
+      100.0,
+      150.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. flange radius"
+  },
+  "drive_mount_backing_radius": {
+    "unit": "mm",
+    "value": 160,
+    "bounds": [
+      128.0,
+      192.0
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. backing radius"
+  },
+  "drive_mount_journal_running_gap": {
+    "unit": "mm",
+    "value": 0.2,
+    "bounds": [
+      0.1,
+      0.30000000000000004
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. journal running gap"
+  },
+  "drive_mount_fastener_hole_clearance": {
+    "unit": "mm",
+    "value": 0.5,
+    "bounds": [
+      0.4,
+      0.6
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. fastener hole clearance"
+  },
+  "drive_mount_radial_oil_bore": {
+    "unit": "mm",
+    "value": 8,
+    "bounds": [
+      6.4,
+      9.6
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. radial oil bore"
+  },
+  "drive_mount_locking_head_clearance": {
+    "unit": "mm",
+    "value": 1.5,
+    "bounds": [
+      1.2,
+      1.8
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. locking head clearance"
+  },
+  "drive_mount_bearing_screw_head_af": {
+    "unit": "mm",
+    "value": 31.75,
+    "bounds": [
+      25.4,
+      38.1
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. bearing screw head af"
+  },
+  "drive_mount_bearing_screw_head_stock": {
+    "unit": "mm",
+    "value": 12.7,
+    "bounds": [
+      10.16,
+      15.239999999999998
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. bearing screw head stock"
+  },
+  "drive_mount_locking_screw_head_af": {
+    "unit": "mm",
+    "value": 22.225,
+    "bounds": [
+      17.78,
+      26.67
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. locking screw head af"
+  },
+  "drive_mount_locking_screw_head_stock": {
+    "unit": "mm",
+    "value": 8.73125,
+    "bounds": [
+      6.984999999999999,
+      10.4775
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "page:HB:133",
+      "page:HB:134",
+      "issue:drive_mount_reconstruction"
+    ],
+    "interpretation": "Inferred mounting interface; native contact checks do not establish historical shape. locking screw head stock"
+  },
+  "hull_rear_skirt_pixel_z": {
+    "unit": "scalar",
+    "value": 500,
+    "bounds": [
+      480,
+      515
+    ],
+    "basis": "bounded_approximation",
+    "applicability": "reconstruction_assumption",
+    "evidence": [
+      "calibration:snl_2",
+      "issue:rear_inner_plate_mapping"
+    ],
+    "interpretation": "Inferred image-coordinate upper border of rear skirt; independent of source calibration. A level500 border gives single-solid skirts and full drive bearing receivers."
   }
 }

@@ -56,7 +56,7 @@ def stock(a):
     side_roles={'front_upper','front_lower','front_sponson','under_sponson_front','under_sponson_rear',
         'over_sponson','aft_sponson','door_aft_surround','door_header','door_sill','engine_side_1',
         'engine_side_2','engine_side_3','engine_access_leaf','rear_wing','rear_end','inner_front_upper',
-        'inner_front_lower','inner_front_sponson','inner_fuel_side','inner_rear_end',
+        'inner_front_lower','inner_front_sponson','inner_fuel_side','inner_rear_end','inner_rear_wing',
         'inner_skirt_front','inner_skirt_rear','outer_skirt_front','outer_skirt_rear','door_upper','door_lower'}
     if role in side_roles:
         inside=role.startswith('inner_');skirt='skirt' in role
@@ -74,7 +74,7 @@ def stock(a):
             'door_sill':(center-door_half-g,center+door_half+g),
             'engine_side_1':(X(1150),engine_front),'engine_side_2':(X(1300),X(1150)),
             'engine_side_3':(engine_back,X(1300)),'rear_wing':(gas_rear,engine_back),
-            'rear_end':(X(1800),gas_rear),'fuel_side':(gas_rear,engine_back)}
+            'rear_end':(X(1800),gas_rear),'fuel_side':(X(1800),gas_rear)}
         if skirt:
             limits=(engine_front,X(90)) if role.endswith('front') else (X(1800),engine_front)
         elif role.startswith('door_') and role in {'door_upper','door_lower'}:
@@ -99,7 +99,7 @@ def stock(a):
             poly=clip(poly,aa,bb,cc)
         # Lower shell strip follows the source bottom, with a separately inferred upper edge.
         lower_line=[(X(u),Z(z)) for u,z in [(90,325),(151,350),(245,430),(400,495)]]
-        lower_line += [(X(680),floor),(engine_back-v['hull_side_thickness'],floor),(X(1630),Z(500)),(X(1800),Z(430))]
+        lower_line += [(X(680),floor),(engine_back-v['hull_side_thickness'],floor),(X(1630),Z(500)),(X(1800),Z(v['hull_rear_skirt_pixel_z']))]
         region=lower_line+[(X(1800),10000),(X(90),10000)] if skirt else lower_line+[(X(1800),-10000),(X(90),-10000)]
         tools.append(prism(*xz(region,-3000,6000)))
         if inside and base_role in {'front_upper','front_sponson'}:
@@ -107,7 +107,9 @@ def stock(a):
         if base_role=='front_upper':
             from .idler_parts import hull_tools
             tools.extend(hull_tools(a['idler_clearance'],not inside))
-        if base_role=='rear_end':tools.append(cylinder(v['hull_drive_bore']/2,(X(1715),0,Z(453)),(0,1,0),6000))
+        if role in {'rear_end','inner_fuel_side'}:
+            from .drive_mount_parts import hull_tools as drive_hull_tools
+            tools.extend(drive_hull_tools(a['drive_clearance'],role=='rear_end',h))
         if role=='front_sponson':tools.append(slot((X(461),0,Z(292)),v['hull_peep_length'],v['hull_peep_height']))
         if role=='engine_side_1':tools.append(slot((X(1050),0,Z(315)),v['hull_peep_length'],v['hull_peep_height']))
         if role=='engine_side_3':

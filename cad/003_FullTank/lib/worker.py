@@ -459,6 +459,46 @@ def validate(data, doc, out, build_report):
             if len(affected_ids)!=wanted:raise ValueError('Wheel propagation missed installed copies')
             report[trial]={'parameter':parameter,'delta':delta,'affected_occurrences':affected_ids,
                 'unrelated_geometry_unchanged':True,'reopened_contacts':checks,'historical_fit_qualified':False}
+    if any(i['definition']=='drive_shaft' for i in items):
+        for parameter,delta,trial in [('drive_mount_shaft_length',2,'drive_shaft_length_change'),
+                                      ('hull_frame_clear',10,'drive_frame_spacing_change')]:
+            print('Validating '+trial+' with actual mounted receivers',file=sys.stderr,flush=True)
+            changed=copy.deepcopy(data)
+            changed['parameters'][parameter]['value']+=delta
+            if parameter=='hull_frame_clear':changed['parameters'][parameter]['bounds'][1]+=delta
+            changed['values']=resolve(changed['parameters'])
+            variant,_=build(changed,out/'verification'/trial,selected)
+            variant=reopen_saved(variant);altered_items=leaves(variant.Root)
+            checks=validate_wheels(changed,altered_items,out/'verification'/trial)
+            altered={i['id']:shape_signature(i['shape']) for i in altered_items}
+            changed_ids=[]
+            if parameter=='drive_mount_shaft_length':
+                affected={'drive_shaft','drive_key','idler_nut','roller_plug','drive_inner_bearing',
+                          'drive_outer_bearing','drive_locking_plate','drive_locking_screw',
+                          'drive_bearing_screw','drive_inner_rivet'}
+                for item in altered_items:
+                    key=item['id'];different=not same_shape(baseline[key],altered[key])
+                    wanted=key.startswith(('PortDrive_','StarboardDrive_')) and item['definition'] in affected
+                    if different!=wanted:raise ValueError('Drive shaft length propagation differs from owned parts: '+key)
+                    if different:changed_ids.append(key)
+                if len(changed_ids)!=46:raise ValueError('Drive shaft trial missed an installed fitting')
+                dependencies={'fixed_hull_faces_and_wheels':True,'shaft_end_fittings_follow':True}
+            else:
+                # The common hull-spacing control also owns existing roller,
+                # idler and shell interfaces; qualify those in the full context.
+                hull_checks=validate_hull(changed,altered_items,out/'verification'/trial)
+                roller_checks=validate_rollers(changed,altered_items,out/'verification'/trial)
+                support_checks=validate_lower_supports(changed,altered_items,out/'verification'/trial)
+                for item in altered_items:
+                    key=item['id']
+                    if item['definition'] in {'drive_shaft','drive_key'} or '_ShaftAssembly_Nut' in key and 'Drive_' in key:
+                        if not same_shape(baseline[key],altered[key]):raise ValueError('Frame spacing moved the fixed drive shaft/end fittings')
+                    if not same_shape(baseline[key],altered[key]):changed_ids.append(key)
+                if not changed_ids:raise ValueError('Frame spacing trial did not alter installation geometry')
+                dependencies={'fixed_drive_shafts_and_nuts':True,'hull':hull_checks,
+                              'rollers':roller_checks,'lower_supports':support_checks}
+            report[trial]={'parameter':parameter,'delta_mm':delta,'affected_occurrences':changed_ids,
+                           'dependencies':dependencies,'reopened_contacts':checks,'historical_fit_qualified':False}
     if any(i['definition']=='idler_shaft' for i in items):
         print('Validating idler shaft length, end plugs and locking screw propagation',file=sys.stderr,flush=True)
         changed=copy.deepcopy(data)
@@ -473,7 +513,7 @@ def validate(data, doc, out, build_report):
             if definition in {'idler_shaft','idler_locking_screw'}:
                 if altered[key]['volume_mm3']<=baseline[key]['volume_mm3']:
                     raise ValueError('Shaft extension did not lengthen shaft/locking screw')
-            elif '_ShaftAssembly_OilPlug' in key:
+            elif key.startswith(('PortIdler_','StarboardIdler_')) and '_ShaftAssembly_OilPlug' in key:
                 wanted=copy.deepcopy(baseline[key]);delta=-1 if key.endswith('A') else 1
                 wanted['bounds_mm'][1]+=delta;wanted['bounds_mm'][4]+=delta
                 if not same_shape(wanted,altered[key]):raise ValueError('Idler oil plug failed to follow shaft end')

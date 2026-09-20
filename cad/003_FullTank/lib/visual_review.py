@@ -354,7 +354,7 @@ def run(data, items, out):
         center=frame('port_drive',data).Base
         for key,direction in [('drive_oblique',(1,1,.6)),('drive_elevation',(0,1,0))]:
             shaded(drives,folder/(key+'.svg'),direction,
-                   'Drive wheel | 35-tooth hypothesis | shaft and supports pending')
+                   'Drive wheel | '+str(int(data['values']['drive_teeth'].value))+'-tooth hypothesis | partial shaft and supports')
         half=Part.makeBox(20000,10000,10000,App.Vector(center.x-20000,-5000,-2000));cut=[]
         for item in drives:
             shape=item['shape'].common(half)
@@ -368,21 +368,33 @@ def run(data, items, out):
             if b.XMin<center.x+750 and b.XMax>center.x-750:neighbors.append(item)
         shaded(drives+neighbors,folder/'drive_installation.svg',(0,1,0),
                'Fixed drive axis and track | static clearance only; engagement unresolved')
+        mounts=[i for i in drives if not i['definition'].startswith(('wheel_','drive_rim'))]
+        shaded(mounts,folder/'drive_mount_detail.svg',(1,1,.6),'Driving shaft, bearings and retention | inferred profiles and drilling')
+        receiver_crop=Part.makeBox(1700,1800,1500,App.Vector(center.x-600,center.y-900,300))
+        receivers=[]
+        for item in items:
+            if item['id'] not in ['hull_port_'+role for role in ['rear_wing','rear_end','inner_fuel_side','inner_rear_end','inner_skirt_rear','outer_skirt_rear']]:continue
+            shape=item['shape'].common(receiver_crop)
+            if shape.Faces:receivers.append(dict(item,shape=shape,target=SimpleNamespace(Shape=shape),definition=item['id']))
+        shaded(mounts+receivers,folder/'drive_mount_receivers.svg',(1,1,.7),
+               'Drive bearings in source-identified rear plates | inferred seams and lower border')
         source='references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate86.png'
         Image.open(REPO/source).save(folder/'drive_hb86_source.png')
         snl='references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p299-geometry.png'
         Image.open(REPO/snl).save(folder/'drive_snl27_source.png')
         section_source='references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate125.png'
         Image.open(REPO/section_source).save(folder/'drive_hb125_source.png')
-        sections += ['<h2>Driving wheels — HB86 / SNL27</h2><p>Each wheel has two M1401 toothed rims and the same boss, disks, diaphragms and rivet definitions as the idlers. Two M1409 bushes are included; five shaft-assembly constituents per side and the separate bearing supports remain pending. HB130/HB133 print 35 teeth, while HB119 prints 9:37. Circular reliefs and crest rounding are explicit hypotheses; operating engagement is unresolved.</p>',
+        sections += ['<h2>Driving wheels — HB86 / SNL27</h2><p>Each wheel has two M1401 toothed rims and the same boss, disks, diaphragms and rivet definitions as the idlers. Each seven-part shaft assembly is populated, with separate bearings, backing and locking plates, and identified attachment hardware. HB130/HB133 print 35 teeth, while HB119 prints 9:37. Circular reliefs and crest rounding are explicit hypotheses; operating engagement is unresolved.</p>',
             '<div class="pair"><img src="drive_hb86_source.png"><img src="drive_oblique.png"></div>',
             '<div class="pair"><img src="drive_snl27_source.png"><img src="drive_elevation.png"></div>',
             '<div class="pair"><img src="drive_hb125_source.png"><img src="drive_section.png"></div>',
+            '<div class="pair"><img src="drive_mount_detail.png"><img src="drive_mount_receivers.png"></div>',
+            '<p>The source rivet rows place M1406 on M1977 and the forward pinion bearing on M1978. Those inner geometric assignments are corrected. The lower skirt border and casting outlines remain inferred; further plate-only M1552 rivets, threads and historical fit remain unresolved.</p>',
             '<p><a href="drive_section.png">Shared-interface section</a> · <a href="drive_installation.png">Drive/track installation</a></p>']
         reports.append(dict(id='drive_wheels',mode='visual_only',source=source,additional_source=snl,
             section_source=section_source,
             fitting_performed=False,selected_occurrences=[i['id'] for i in drives],
-            limitation='Source-common definitions and static fit; exact profiles, source tooth conflict, shafts/supports and operating engagement remain unresolved.'))
+            limitation='Source-common definitions and partial shaft/bearing installation; exact profiles, rear seams, remaining retention, source tooth conflict and operating engagement remain unresolved.'))
     lower=[i for i in items if i['id'].startswith('PortLowerSupports_')]
     if lower:
         bank=[i for i in items if i['id'].startswith('PortRollers_') and not i['id'].startswith('PortRollers_Unit029_')]
