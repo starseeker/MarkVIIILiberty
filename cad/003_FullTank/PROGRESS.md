@@ -9,6 +9,36 @@ next `cad/intermediate_snapshot_iso_NNN.png` and update
 preserved; 003 records the sponson shells, 004 the roof louvers and 005 the roller
 stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjusters, 008 the lower support runs, and 009 the driving wheels.
 
+## 20 September 2026 — experimental full-tank roller-pinion integration
+
+An isolated source branch, `experiment/roller-pinions`, now builds both
+98-part pinion installations in the complete standard assembly. It has 252
+definitions and 5,341 leaves, including 5,326 physical components and 216
+represented physical source identities. Nominal native checks and the 35
+existing tests pass. This has **not** been promoted to the main delivery;
+installed parameter trials and final detailed visual review remain pending.
+
+The first integrated candidate exposed four fuel-backplate overlaps that were
+absent from the isolated fixture. A separate inferred longitudinal control now
+moves the continuous backplate and its roof/floor ends aft, retaining its
+printed 16 mm thickness. The saved three-plate candidate passes 510 pinion
+material candidates, 102 bearing faces, 32 receiving bores and 40 clearances;
+both backplate/bearing gaps are 26.0295 mm. HB27 supports the continuous plate
+topology, but does not measure its station. The approximation remains explicit.
+
+The37-tooth alternative has 12 overlaps with the current fixed pinion station
+and phase. This rejects that particular geometric combination; it does not
+resolve the conflicting historical tooth counts. See the
+[integration preflight](experiments/roller_pinions/integrated_preflight/README.md).
+The next [chain packet](packets/R02-drive-chains.md) preserves a separate
+HB50-pitch/SNL25-component count conflict before chain geometry is populated.
+
+Main mounting-stage delivery validation now resumes from durable input-bound
+checkpoints. Generated records and ongoing experiments live in the project
+workspace so an environment restart does not erase them. Local commits are
+authorized by the user; `9dbb28c` records the main source checkpoint and
+`230d141` the corrected experimental pinion inputs.
+
 ## 20 September 2026 — driving shafts and mounts; delivery qualification pending
 
 The reviewed isolated implementation adds 56 shaft, bearing and attachment
