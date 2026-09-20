@@ -30,11 +30,11 @@ Both candidate rasters were inspected. This is a documented geometric
 approximation, not a historical fit or an accepted source measurement.
 The complete integrated build and parameter trials remain pending.
 
-## Alternative37-tooth wheel
+## Alternative 37-tooth wheel
 
 `alternative_teeth` rebuilds a 37-tooth native rim and checks all four installed
 copies against the unchanged paired pinion fixture. Twelve rim/pinion overlaps
 occur at the current 17.21° pinion phase and current axes. The tested combination
-is rejected. The experiment does not disprove the historical37-tooth evidence,
+is rejected. The experiment does not disprove the historical 37-tooth evidence,
 nor test every possible tooth profile, phase or station. Both printed tooth
 counts remain in the source record.

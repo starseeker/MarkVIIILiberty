@@ -26,12 +26,12 @@ material candidates, 102 bearing faces, 32 receiving bores and 40 clearances;
 both backplate/bearing gaps are 26.0295 mm. HB27 supports the continuous plate
 topology, but does not measure its station. The approximation remains explicit.
 
-The37-tooth alternative has 12 overlaps with the current fixed pinion station
+The 37-tooth alternative has 12 overlaps with the current fixed pinion station
 and phase. This rejects that particular geometric combination; it does not
 resolve the conflicting historical tooth counts. See the
 [integration preflight](experiments/roller_pinions/integrated_preflight/README.md).
 The next [chain packet](packets/R02-drive-chains.md) preserves a separate
-HB50-pitch/SNL25-component count conflict before chain geometry is populated.
+conflict between the handbook's 50 pitches and the SNL's 25 bushes/pins per chain before chain geometry is populated.
 
 Main mounting-stage delivery validation now resumes from durable input-bound
 checkpoints. Generated records and ongoing experiments live in the project

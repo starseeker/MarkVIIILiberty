@@ -50,3 +50,18 @@ installation constraints even while poses remain deferred.
    introducing posed variants.
 5. Review native sections and the installed drivetrain against HB81 and SNL25;
    retain significant isometrics after promotion and completed validation.
+
+## Discrete pitch-route preflight
+
+`experiments/drive_chains/pitch_route_probe.py` constructs a provisional external
+route around the 12/23-tooth pitch circles and steps along it by exact 76.2 mm
+chords. The 50-pitch case closes at a center distance of 1,230.966743 mm; maximum
+chord error is below 1e-9 mm. Its phase begins at the large-circle tangent and
+is not yet aligned to the installed casting's teeth.
+
+The literal 25-articulation interpretation does not bracket a closed route with
+separate pitch circles in this model. This reinforces the need to clarify the
+SNL's supplied-unit counts; it does not resolve their meaning. Neither result
+changes the provisional transmission datum or creates installed components.
+The next native study must check tooth phase, bar/bush sections and all physical
+interfaces before adopting a chain route.
