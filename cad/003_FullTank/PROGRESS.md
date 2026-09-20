@@ -18,12 +18,29 @@ The wall-joint fixture has 567 physical leaves; its two angles, 22 wall rivets
 and 34 casing rivets pass 697 material candidate pairs, 56 receiving bores and
 56 seating checks. Existing hull checks also pass.
 
-The latest fixture adds 94 cap-joint leaves: eight side cleats, four roof cleats,
+The cap-joint fixture adds 94 leaves: eight side cleats, four roof cleats,
 four packing strips, 36 rivets and fourteen separate bolt/nut/lock-washer sets.
 All 661 reopened leaves are valid single solids. Its 914 new/changed material
 candidate pairs, 50 receiving bores, 50 seating checks and fourteen simplified
 retention checks pass. A rejected roof-rivet pattern with four bolt/nut clashes
 is preserved alongside the revised candidate and inspected detail rasters.
+
+Original HB185 subsequently corrected the M1584 packing location: strips now
+sit under the body side-cleat feet. The corrected candidate retains all passing
+fit checks and adds four packing-contact checks. The trim fixture adds eight
+register plates, eight beading strips and 72 rivets, for 749 valid native solids.
+Its 1,088 material pairs, 72 bores, 72 seats, eight register laps and 40 flush-head
+checks pass. Actual exterior, inner-face and countersunk-rivet section views
+have been inspected. The HB/SNL beading identity and quantity conflicts remain
+explicit alongside the inferred sections and installation details.
+
+Four M1587/M1588 supports, 28 rivets and eight assumed three-part hull fastening
+sets now connect the casings to four drilled inner/outer wing plates. The latest
+fixture has 809 valid solids and passes 920 material pairs, 36 bores, 36 seats,
+four support contacts, eight retention checks and the existing hull validator.
+Native ownership auditing counts 300 casing occurrences, including 42 named
+components across all twelve selected SNL casing marks. Bracket profiles and
+hull bolt allocation remain inferred; the source quantity conflicts are open.
 
 Earlier failed tooth reliefs, wall interferences and casing-corner clashes are
 preserved. The latest inferred wall openings clear the actual casing section
@@ -33,11 +50,11 @@ The 50-pitch chain interpretation, case stock/contours, cap seam and wall-angle
 form remain documented approximations. Catalogue chain quantities and several
 casing fastener schedules still conflict.
 
-These parts are **not promoted to the standard model**. Beading, register plates,
-support brackets and remaining fasteners are next, followed
-by integration and parameter qualification. See the
+These parts are **not promoted to the standard model**. Source reconciliation,
+formed chain retention, lubrication and transmission interfaces remain before
+integration and parameter qualification. See the
 [chain/casing packet](packets/R02-drive-chains.md) and
-[native cap-joint detail](experiments/drive_chains/casing_cap_clearance_build/cap_joint_detail.png).
+[native support detail](experiments/drive_chains/casing_support_build/casing_support_detail.png).
 
 ## 20 September 2026 — experimental full-tank roller-pinion integration
 

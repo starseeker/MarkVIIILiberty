@@ -1,0 +1,201 @@
+{
+  "status": "isolated_register_and_beading_candidate",
+  "controls": {
+    "register_stock": {
+      "value": 3,
+      "bounds": [
+        2,
+        4
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Undimensioned register plate stock. Bounds express uncertainty, not a qualified range."
+    },
+    "register_length": {
+      "value": 140,
+      "bounds": [
+        120,
+        160
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Length of inferred lap register. Bounds express uncertainty, not a qualified range."
+    },
+    "register_hub_margin": {
+      "value": 60,
+      "bounds": [
+        40,
+        80
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Longitudinal setback from retained87mm hub opening. Bounds express uncertainty, not a qualified range."
+    },
+    "register_fixed_depth": {
+      "value": 50,
+      "bounds": [
+        40,
+        60
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Register depth on fixed owner side of horizontal seam. Bounds express uncertainty, not a qualified range."
+    },
+    "register_lap": {
+      "value": 20,
+      "bounds": [
+        15,
+        25
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Register extends across seam and contacts adjacent sheet face. Bounds express uncertainty, not a qualified range."
+    },
+    "register_corner": {
+      "value": 4,
+      "bounds": [
+        2,
+        6
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Rounded register corners. Bounds express uncertainty, not a qualified range."
+    },
+    "register_rivet_end": {
+      "value": 20,
+      "bounds": [
+        15,
+        25
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "End distance for four register rivets. Bounds express uncertainty, not a qualified range."
+    },
+    "register_rivet_offset": {
+      "value": 35,
+      "bounds": [
+        30,
+        40
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Rivet distance from seam clears internal bead backing. Bounds express uncertainty, not a qualified range."
+    },
+    "beading_stock": {
+      "value": 3,
+      "bounds": [
+        2,
+        4
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Undimensioned beading stock. Bounds express uncertainty, not a qualified range."
+    },
+    "beading_length": {
+      "value": 200,
+      "bounds": [
+        180,
+        220
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Equal-length M1585 segments on the forward horizontal seam, one per face per owner. Bounds express uncertainty, not a qualified range."
+    },
+    "beading_width": {
+      "value": 18,
+      "bounds": [
+        15,
+        22
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Flat backing with rounded longitudinal edges; exact historical beading section unlocated. Bounds express uncertainty, not a qualified range."
+    },
+    "beading_rivet_end": {
+      "value": 15,
+      "bounds": [
+        12,
+        20
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "End distance for five countersunk rivets. Bounds express uncertainty, not a qualified range."
+    },
+    "hole_diameter_clearance": {
+      "value": 0.5,
+      "bounds": [
+        0.25,
+        1
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Shank diametral clearance. Bounds express uncertainty, not a qualified range."
+    },
+    "countersunk_angle_deg": {
+      "value": 90,
+      "bounds": [
+        80,
+        100
+      ],
+      "unit": "degree",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Inferred countersunk head included angle. Bounds express uncertainty, not a qualified range."
+    },
+    "countersunk_head_radius_ratio": {
+      "value": 1,
+      "bounds": [
+        0.9,
+        1.1
+      ],
+      "unit": "ratio",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Head radius divided by nominal shank diameter. Bounds express uncertainty, not a qualified range."
+    },
+    "upset_radius_ratio": {
+      "value": 0.85,
+      "bounds": [
+        0.75,
+        1
+      ],
+      "unit": "ratio",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Button upset radius divided by nominal shank diameter. Bounds express uncertainty, not a qualified range."
+    },
+    "register_rivet_diameter": {
+      "value": 7.9375,
+      "unit": "mm",
+      "basis": "direct_dimension",
+      "evidence": "SNL167:010 five-sixteenths inch"
+    },
+    "register_rivet_length": {
+      "value": 22.225,
+      "unit": "mm",
+      "basis": "direct_dimension",
+      "evidence": "SNL167:010 seven-eighths inch; cap uses selected nested allocation"
+    },
+    "beading_rivet_diameter": {
+      "value": 4.7625,
+      "unit": "mm",
+      "basis": "direct_dimension",
+      "evidence": "SNL191:001 three-sixteenths inch"
+    },
+    "beading_rivet_length": {
+      "value": 15.875,
+      "unit": "mm",
+      "basis": "direct_dimension",
+      "evidence": "SNL191:001 five-eighths inch; nominal stock interpreted as overall including head"
+    }
+  },
+  "register_interpretation": "Each casing face has one body-fixed M1581 plate across the forward horizontal seam and one cap-fixed M1594 plate across the rear segment. Each laps the other sheet face. Profiles and exact positions are inferred. A/right is assigned negative localY and B/left positive localY with Xforward; viewing convention is not independently established.",
+  "beading_interpretation": "Selected SNL allocation gives two identical M1585 inner backing strips per body and cap, eight per vehicle. Each reinforces a forward horizontal seam segment and uses five countersunk rivets, flush to the outer sheet. No source drawing has been found to independently establish this specific section, length or edge assignment. The HB M1586 identity remains an unresolved alternative, not an additional superimposed part.",
+  "selected_schedule": {
+    "vehicle_register_plates": 8,
+    "rivets_per_register": 4,
+    "vehicle_beading_strips": 8,
+    "rivets_per_beading": 5,
+    "vehicle_added_physical_leaves": 88
+  },
+  "source_schedule_reconciled": false,
+  "full_casing_bom_populated": false,
+  "historical_fit_qualified": false
+}

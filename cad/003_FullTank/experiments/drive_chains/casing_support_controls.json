@@ -1,0 +1,128 @@
+{
+  "status": "isolated_casing_support_candidate",
+  "controls": {
+    "bracket_stock": {
+      "value": 6,
+      "bounds": [
+        4,
+        8
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Inferred Z-bracket stock. Bounds are uncertainty, not a qualified range."
+    },
+    "bracket_width": {
+      "value": 160,
+      "bounds": [
+        130,
+        190
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Longitudinal width. Bounds are uncertainty, not a qualified range."
+    },
+    "bracket_forward_offset": {
+      "value": 165,
+      "bounds": [
+        130,
+        230
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Center forward of casing cap seam. Bounds are uncertainty, not a qualified range."
+    },
+    "bracket_web_axis_offset": {
+      "value": -125,
+      "bounds": [
+        -160,
+        -100
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Web base below roller-pinion axis. Bounds are uncertainty, not a qualified range."
+    },
+    "case_leg_height": {
+      "value": 90,
+      "bounds": [
+        70,
+        110
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Case attachment leg height above web base. Bounds are uncertainty, not a qualified range."
+    },
+    "hull_leg_drop": {
+      "value": 60,
+      "bounds": [
+        45,
+        80
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Hull attachment leg below web base. Bounds are uncertainty, not a qualified range."
+    },
+    "case_rivet_end": {
+      "value": 20,
+      "bounds": [
+        15,
+        25
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Rivet distance from longitudinal edge. Bounds are uncertainty, not a qualified range."
+    },
+    "case_rivet_vertical_end": {
+      "value": 18,
+      "bounds": [
+        15,
+        22
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Rivet offset from top/bottom of case leg. Bounds are uncertainty, not a qualified range."
+    },
+    "hull_bolt_halfpitch": {
+      "value": 40,
+      "bounds": [
+        30,
+        50
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Half spacing of two inferred hull bolts. Bounds are uncertainty, not a qualified range."
+    },
+    "hole_diameter_clearance": {
+      "value": 0.5,
+      "bounds": [
+        0.25,
+        1
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Clearance above nominal shank diameter. Bounds are uncertainty, not a qualified range."
+    },
+    "case_rivet_diameter": {
+      "value": 7.9375,
+      "unit": "mm",
+      "basis": "direct_dimension",
+      "evidence": "SNL167:010"
+    },
+    "case_rivet_length": {
+      "value": 22.225,
+      "unit": "mm",
+      "basis": "direct_dimension",
+      "evidence": "SNL167:010"
+    },
+    "bolt_length": {
+      "value": 38.1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Select documented SNL31:007 standard length for this unlocated joint; applicability is not source-confirmed."
+    }
+  },
+  "fastener_shape_controls": "Reuse casing_cap_controls.json for nominal half-inch diameter, head/nut/washer envelopes; override bolt length to38.1mm.",
+  "quantity_interpretation": "Four brackets,28case rivets and8assumed three-part hull fastener sets. Bracket identities and rivet joint allocations are sourced; hull bolt size/count/placement are inferred.",
+  "hand_interpretation": "Right M1587 assigned negative localY; left M1588 positive localY. Existing frame-clearance datums set their receiver planes.",
+  "source_schedule_reconciled": false,
+  "historical_fit_qualified": false
+}

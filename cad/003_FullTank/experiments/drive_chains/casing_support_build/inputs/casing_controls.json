@@ -1,0 +1,18 @@
+{
+  "status": "isolated_casing_shell_candidate",
+  "controls": {
+    "outside_width": {"value": 168.275, "unit": "mm", "basis": "direct_dimension", "evidence": "HB134: 6-5/8 inches; interpreted as outside width"},
+    "sheet_stock": {"value": 3.0, "bounds": [1.6, 4.0], "unit": "mm", "basis": "reconstruction_assumption", "interpretation": "Sheet steel is documented; thickness is not located. Bounds express uncertainty, not a validated operating range."},
+    "chain_radial_envelope": {"value": 35.0, "bounds": [33.0, 40.0], "unit": "mm", "basis": "reconstruction_assumption", "interpretation": "Conservative section envelope for the current chain bars, pins and cotters."},
+    "radial_gap": {"value": 12.0, "bounds": [8.0, 20.0], "unit": "mm", "basis": "reconstruction_assumption", "interpretation": "Chain section to inside casing contour allowance; installed static fit is checked separately."},
+    "hub_gap": {"value": 2.0, "bounds": [1.0, 4.0], "unit": "mm", "basis": "reconstruction_assumption", "interpretation": "Radial clearance around the existing reconstructed sprocket hubs; no seal is yet represented."},
+    "cap_split_gap": {"value": 1.0, "bounds": [0.5, 2.0], "unit": "mm", "basis": "reconstruction_assumption", "interpretation": "Separated cap/body edges for this static candidate; register plates and beading remain to be installed."},
+    "cap_split_axis_height": {"value": 0.0, "bounds": [0.0, 20.0], "unit": "mm", "basis": "reconstruction_assumption", "interpretation": "Horizontal cap seam relative to the roller-pinion axis. It leaves an open half-bore in the cap, consistent with removing the cap before the pinion; the source does not dimension or independently establish this seam."},
+    "passage_straight_gap": {"value": 4.0, "bounds": [4.0, 6.0], "unit": "mm", "basis": "reconstruction_assumption", "interpretation": "Inflation of the actual casing section bounds at both wall faces. Four mm with an8mm opening corner gives at least2.34mm around a square section corner; native minimum clearance is also checked."},
+    "passage_corner_radius": {"value": 8.0, "bounds": [6.0, 8.0], "unit": "mm", "basis": "reconstruction_assumption", "interpretation": "Retain the previous inferred wall-opening radius while accounting for the casing corners."},
+    "passage_minimum_gap": {"value": 2.0, "unit": "mm", "basis": "reconstruction_assumption", "interpretation": "Minimum native wall clearance required for the casing candidate; not a source manufacturing tolerance."}
+  },
+  "contour_interpretation": "Two analytic pitch-circle offsets joined by their external common tangents. Their offset is chain envelope plus radial gap plus sheet stock. Subtract the corresponding inner contour and two hub passages to make a connected sheet-shell reconstruction. This is a gross contour, not a tracing of an independently dimensioned casing drawing.",
+  "cap_interpretation": "The rear upper part over the roller pinion is a separate M1591 cap. Its forward boundary is one large outer contour radius ahead of the pinion axis; its lower boundary is at the pinion axis. This inferred split leaves the cap hub passage open to its lower edge. No pose or service-motion qualification is claimed.",
+  "unpopulated": ["M1583 and M1593 cleats", "M1584 packing strips", "M1585 beading", "M1581 and M1594A/B register plates", "M1592 wall angle", "M1587 and M1588 support brackets", "Case and wall rivets", "Detachable fasteners and sealing details"]
+}

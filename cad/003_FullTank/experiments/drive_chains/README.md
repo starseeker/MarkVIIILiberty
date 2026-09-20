@@ -59,12 +59,37 @@ delivered assembly or reconcile the catalogue's chain component quantities.
   50 receiving bores, 50 seating checks and 14 fastener-envelope retention
   checks. The [joint detail](casing_cap_clearance_build/cap_joint_detail.png)
   was inspected. Detailed threads, spring action and clamp loads are unqualified.
+- `casing_cap_packing_build` supersedes that candidate's packing location.
+  Original HB185 explicitly puts M1584 under the cleats. The revised strips sit
+  between each body side-cleat foot and the sheet; mating flanges meet directly.
+  Its 661 leaves pass 914 material pairs, 50 bores, 50 seats, 14 retention checks
+  and four packing-contact checks. Earlier passing geometry is retained as a
+  rejected source interpretation, not promoted as the current reconstruction.
+- `casing_trim_parts.py` and `casing_trim_probe.py` add eight register plates,
+  eight beading strips, 32 button rivets and 40 countersunk rivets. The 749-leaf
+  `casing_trim_build` passes 1,088 material pairs, 72 bores, 72 seats, eight lap
+  contacts and 40 flush-head checks. Its [native rivet section](casing_trim_build/beading_rivet_section.png)
+  and inner/outer views were inspected. Profiles and exact edge assignments are
+  inferred. `casing_trim_sources.json` retains the HB M1586 alternative and the
+  SNL global/nested beading-rivet quantity conflict.
+- `casing_support_probe.py` adds four M1587/M1588 brackets, 28 case rivets and
+  eight assumed three-part hull fastening sets. Four drilled hull receivers
+  join the isolated fixture. Its 809 reopened leaves pass 920 material pairs,
+  36 bores, 36 fastener seats, four bracket contact checks and eight retention
+  checks; existing 77-plate hull validation also passes. The
+  [support installation crop](casing_support_build/casing_support_detail.png)
+  was inspected. Bracket forms and hull bolt size/count/placement are assumptions.
+- `audit_casing_inventory.py` independently reads saved native link ownership.
+  The fixture contains 300 selected casing occurrences, including 42 named
+  components across all twelve selected SNL casing marks. The audit reports
+  actual hardware counts and retains every known quantity/identity conflict;
+  it does not declare historical inventory reconciliation or standard promotion.
 
 Native probes accept `--stage` pointing to the authored pinion experiment and
 an optional `--output`. They do not modify that stage. The complete chain
 candidate includes bars, bushes, pins and unsplayed cotters; the older circular
 clearance probe contains only diagnostic annuli. Casing shells and their wall
-attachments and cap cleats are now separate candidates. Beading, register plates,
-support brackets, remaining fasteners, the transmission shaft, formed chain
-retention and lubrication still need population. Full inventory, moving
-engagement and historical-fit claims remain false.
+attachments, cap cleats, beading, register plates and supports are now separate
+candidates. Source reconciliation, transmission-shaft integration, formed chain
+retention, lubrication and full-model parameter qualification remain. Full
+inventory, moving engagement and historical-fit claims remain false.

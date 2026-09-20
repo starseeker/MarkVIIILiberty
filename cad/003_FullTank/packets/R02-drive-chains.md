@@ -219,6 +219,71 @@ Bolt protrusion is 1.9 mm at side joints and 2.9 mm at the roof; these values
 depend on assumed nut/washer/cleat stock. Threads, spring action, clamp loads,
 historical fit and removal motion are not qualified.
 
-Next: M1585 beading, M1581/M1594 register plates, M1587/M1588 supports and their
-remaining fastening, followed by full chain/casing integration and parameter
-qualification. These fixtures do not alter the standard model.
+## Packing correction, register plates and beading
+
+Inspection of original HB185 identifies M1584 as packing **under** the angle
+cleats. This supersedes the earlier between-flange hypothesis. The corrected
+candidate puts a one-mm strip beneath each body side-cleat foot, with both
+side and roof flanges meeting directly. Side rivet grip increases to nine mm;
+both side and roof bolt grips are ten mm, giving 2.9 mm inferred protrusion.
+Its 661 leaves pass the same 914 material pairs, 50 bores, 50 seats and fourteen
+retention checks, plus four explicit strip-to-cleat/sheet contact checks.
+The previous source interpretation and its native results remain preserved.
+
+The next fixture adds four M1581 body register plates, two M1594A and two M1594B
+cap register plates, eight M1585 bead strips and their 72 rivets. Each inferred
+register laps the other sheet across a horizontal cap seam. Equal-length inner
+bead strips reinforce the forward horizontal seam segments, with five flush
+countersunk rivets each. Sections, precise locations and hole patterns are
+approximations, not independently established by a detailed source drawing.
+
+All 749 saved/reopened leaves are valid single solids. The 88 added components
+and drilled sheets pass 1,088 material candidate pairs, 72 receiving bores,
+72 two-receiver seating checks, eight register-lap contacts and 40 flush-head
+checks. Countersunk heads use an inferred 90-degree cone; their nominal length
+is interpreted as including the head, and formed tails conserve the resulting
+stock volume. Exterior, inner-face and actual transverse-section rasters were
+inspected and their hashes retained.
+
+Original HB185 separately names M1586 cap beading and gives quantities that
+differ from the SNL nested body/cap lists. The selected candidate follows the
+SNL's eight M1585 strips, without silently merging or superimposing M1586.
+SNL191 assigns five countersunk rivets per bead; its global total leaves only
+twenty after other listed allocations, whereas the nested casing lists require
+forty. Both conflicts are explicit in `casing_trim_sources.json`. The passing
+native geometry does not resolve the historical inventory.
+
+## Support brackets and selected casing inventory
+
+The support candidate adds two M1587 and two M1588 brackets connecting casing
+sides to the adjacent M1978 inner and M1976 outer wing plates. Its Z-section,
+six-mm stock, station and hole patterns are inferred. Receiver planes come from
+the retained native hull geometry. Seven case rivets per bracket follow the
+direct SNL167 joint allocations, selecting 22 long body rivets including the
+register plates, despite the nested body list's sixteen.
+
+Two half-inch by 1-1/2 inch bolt/nut/lock-washer sets per bracket are an explicit
+mounting hypothesis. SNL31:007 documents that standard type for other equipment;
+it does **not** establish these casing joint allocations. The native definitions
+record that distinction. The selected eighteen-mm grip leaves 7.6 mm nominal
+bolt protrusion; threads, joint loads and tool access are not qualified.
+
+The 809-leaf saved/reopened support fixture contains 56 added support/hardware
+parts and four replacement drilled hull plates. All 920 new/changed material
+pairs, 36 bores, 36 fastening seats, four bracket-to-case/hull contact checks
+and eight simplified retention checks pass. Hull changes only remove material
+and preserve outer bounds; the existing validator passes 77 plates and 1,037
+material candidate pairs. Actual exterior and installation-crop rasters were
+inspected and checksum-bound to the native model and report.
+
+An independent saved-native ownership audit counts 300 selected casing
+occurrences: 42 named components spanning all twelve selected SNL casing marks,
+192 rivets and 22 three-part detachable fastener sets. This is the current
+reconstruction schedule, **not a reconciled historical BOM**. The audit retains
+the long/short/countersunk rivet conflicts, assumed support bolts, and HB M1586
+alternative. The selected named-component counts match their source entries.
+
+Next: reconcile and disposition source conflicts, add formed chain retention
+and lubrication details, connect the transmission shaft, then integrate and
+qualify the complete chain/casing installation under parameter changes. These
+fixtures do not alter the standard model.
