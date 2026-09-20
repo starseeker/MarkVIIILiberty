@@ -125,6 +125,23 @@ delivered assembly or reconcile the catalogue's chain component quantities.
   Their relationship remains open. The M391 foot schedule conflicts (four nested,
   two standalone); cap wool waste is a mass quantity, not a count of two parts.
   These questions remain explicit for the next fixed-support increment.
+- `transmission_support_probe.py` now constructs two each M293/M297 brackets,
+  M294/M298 caps, four common M295 oil-box lids and eight separate poured-lining
+  half regions. The latest `transmission_support_clearance_build` has 845 valid
+  reopened solids and retains all 825 prior occurrence signatures. Four local
+  bearing fits pass, and all twenty additions survive STEP export/reimport.
+  **The installation is rejected for integration:** each outer bracket meets
+  the casing wall and one wall-angle rivet. Seventy material candidate pairs
+  yield four overlaps. See the [interference view](transmission_support_clearance_build/support_interference.png)
+  and [source overlay](transmission_support_clearance_build/source_support_overlay.png).
+  Two earlier native trials preserve a lid/cap overlap and a touching lid-seat
+  edge; the latest adds a flat seat with perimeter clearance. Six latest rasters
+  were inspected. The bracket vertical profiles remain provisional.
+- `transmission_frame_research.json` records inspected SNL96/97 frame members and
+  HB/SNL orientation evidence. The next study must reconstruct the top/bottom
+  channels, angles and gussets, then resolve the bracket/casing relationship.
+  Source drawings support aft-facing feet and upward-opening cups; no unsupported
+  casing opening or bracket rotation is used to force the candidate to pass.
 
 Native probes accept `--stage` pointing to the current standard model or its
 byte-identical authored pinion origin and
@@ -134,8 +151,9 @@ candidate adds formed tails and oil passages. The older circular
 clearance probe contains only diagnostic annuli. Casing shells and their wall
 attachments, cap cleats, beading, register plates and supports are now separate
 candidates. Partial output shafts and brake drums now have a tested static
-interface. The latest candidate adds shaft sleeves, dowels and groove-seated
-rings. Source reconciliation, fixed bearing housings/lining and complete axial retention,
+interface. Shaft sleeves, dowels and groove-seated rings pass their local checks.
+Fixed bearing housings/lining are now modeled in a candidate needing interface
+revision. Source reconciliation, frame attachment and complete axial retention,
 brake bands, lubrication performance and full-model integration/parameter
 qualification remain. Full
 inventory, moving engagement and historical-fit claims remain false.

@@ -229,7 +229,18 @@
       "idler_research_record": "packets/R02-idler-research.md",
       "idler_progress_record": "packets/R02-idler-wheels.md",
       "lower_support_experiment": "experiments/lower_supports/README.md",
-      "lower_support_experiment_status": "34 angles and 76 bolts built in a separate native document; 1502 candidate pairs without overlap, 348 pin/washer and 76 bolt bearing contacts, all 34 hull seats; headless native reopen and printed-length/negative-contact checks pass. Not yet promoted to the qualified tank. Rear run allocation, formed contour and detachable retention remain explicit historical gaps."
+      "lower_support_experiment_status": "34 angles and 76 bolts built in a separate native document; 1502 candidate pairs without overlap, 348 pin/washer and 76 bolt bearing contacts, all 34 hull seats; headless native reopen and printed-length/negative-contact checks pass. Not yet promoted to the qualified tank. Rear run allocation, formed contour and detachable retention remain explicit historical gaps.",
+      "fixed_bearing_experiment": {
+        "path": "experiments/drive_chains/transmission_support_clearance_build",
+        "status": "needs_interface_revision",
+        "native_solids": 845,
+        "new_catalogue_occurrences": 12,
+        "new_in_situ_material_regions": 8,
+        "local_bearing_interfaces_pass": true,
+        "overall_fit_pass": false,
+        "remaining_material_overlaps": 4,
+        "next": "Reconstruct transmission frame channels/angles/gussets to constrain bracket vertical profiles and resolve casing/rivet interference before promotion."
+      }
     },
     {
       "id": "R03",

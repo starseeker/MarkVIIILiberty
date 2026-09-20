@@ -405,3 +405,42 @@ bearing parts or silently resolving the foot conflict.
 
 The qualified standard tank remains milestone011. This installation fixture and
 its passing checks do not yet add chain/transmission geometry to that delivery.
+
+## Fixed bearing castings and frame-interface trial
+
+`transmission_support_clearance_build/TransmissionSupportCandidate.FCStd` adds
+two M293 inside brackets, two M297 outside brackets, two M294 inside caps, two
+M298 outside caps, four M295 lids and eight poured babbitt half regions. The
+twenty new solids give 845 valid single-solid leaves after save/reopen. All 825
+prior occurrence signatures are unchanged. The eight in-situ regions have no
+fabricated catalogue identity and do not duplicate HB209's unresolved brasses.
+
+HB20/21 shows the cup openings facing upward on forward-facing caps. HB125/127,
+HB204 and SNL Plates2/23 put the supporting frame aft of the transverse shaft.
+Fixed bearing placements therefore keep +Z up and feet toward -X on both sides,
+independent of the rotating shaft's phase. The Plate22 axial overlay retains the
+existing four-inch hub calibration. Web and cup profiles remain simplified;
+the provisional 170-mm bracket depth does not establish a frame connection.
+
+Four local bearing checks pass: 0.15-mm sleeve/lining clearance, flange capture
+under both one-mm axial witnesses, 0.1-mm cap split, contacting lining seats,
+and 0.15-mm lid clearance. All twenty additions survive STEP export/reimport.
+These are selected static interface checks, not a parameter or historical-fit
+qualification. Studs, hinge pins, pipe fittings and oil passages remain pending.
+
+The overall installation **does not pass**. Seventy new-material candidate pairs
+expose four interferences: each outer bracket crosses the chain-case sheet by
+17,983.219434 mm³ and one wall-angle rivet by 2.392474 mm³. Earlier lid/cap
+intersections and touching seat edges are preserved in the first two native
+trials. The latest flat seat and perimeter clearance correct those lid issues.
+Six latest rasters were actually inspected, including a display of the common
+material and a source overlay; `visual_review.json` binds them to the artifacts.
+
+The next work is the transmission frame skeleton: separate M373/M374 channels,
+M375 diaphragm, M376/M377/M378 angles and M380/M382/M383/M384 gussets. Original
+SNL96/97 rows and inspected-file hashes are in `transmission_frame_research.json`.
+Use those members and the source side sections to constrain bracket vertical
+shape and casing clearance together. HB134 documents chain-link cutaways in
+gussets and requires casing installation before the gear, but does not establish
+a bearing-foot hole through the casing wall. Neither such a hole nor a smaller
+source footprint is assumed merely to eliminate the current clashes.

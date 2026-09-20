@@ -1,0 +1,179 @@
+{
+  "status": "isolated_fixed_bearing_candidate",
+  "frame": "origin at each sleeve center, +Y along transverse shaft, +X forward, +Z upward; fixed parts never inherit shaft phase",
+  "controls": {
+    "running_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Nominal sleeve-to-lining radial display clearance, not an established bearing fit."
+    },
+    "lining_stock": {
+      "value": 4,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Poured babbitt radial thickness; source identifies material but gives no thickness."
+    },
+    "end_gap": {
+      "value": 0.3,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Fixed liner/casting ends stop this far short of sleeve barrel ends."
+    },
+    "split_gap": {
+      "value": 0.05,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Half of the display gap at the cap/bracket split; not a manufacturing tolerance."
+    },
+    "inner_cast_radius": {
+      "value": 88,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Approximate casting radial envelope around the inside sleeve."
+    },
+    "outer_cast_radius": {
+      "value": 79,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Approximate casting radial envelope around the outside sleeve."
+    },
+    "web_stock": {
+      "value": 20,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Unmeasured axial web thickness of bracket I profile."
+    },
+    "bracket_height": {
+      "value": 170,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Unmeasured vertical extent of bracket web/foot; plan section does not constrain height."
+    },
+    "rear_stem_height": {
+      "value": 140,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Unmeasured vertical extent of outer bracket rear stem."
+    },
+    "ear_radius": {
+      "value": 18.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Four cap stud bosses; rounded casting approximations from HB20."
+    },
+    "ear_x_extent": {
+      "value": 34,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Cap and bracket stud boss depths on either side of split."
+    },
+    "stud_diameter": {
+      "value": 19.05,
+      "unit": "mm",
+      "basis": "printed_nominal_dimension",
+      "interpretation": "Nominal 3/4 inch stud body from SNL42; threads not yet modeled."
+    },
+    "stud_hole_gap": {
+      "value": 0.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Radial display allowance in unthreaded cap/bracket pilot bores."
+    },
+    "stud_y_inset": {
+      "value": 16,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Stud axes inset from casting axial ends."
+    },
+    "cup_length": {
+      "value": 70,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Common M295 cover suggests common oil-cup opening across inside/outside caps."
+    },
+    "cup_width": {
+      "value": 66,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Approximate oil cup axial width from section and HB20."
+    },
+    "cup_height": {
+      "value": 60,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Unmeasured vertical oil cup height."
+    },
+    "cup_stock": {
+      "value": 5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Unmeasured oil cup wall and bottom stock."
+    },
+    "lid_stock": {
+      "value": 3,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Approximate M295 cover thickness."
+    },
+    "lid_overhang": {
+      "value": 2,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Approximate cover lip beyond cup."
+    },
+    "lid_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Display clearance between closed lid and cup lip."
+    },
+    "inner_cup_front": {
+      "value": 158,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Forward reach approximated from Plate22 y778."
+    },
+    "outer_cup_front": {
+      "value": 132,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Forward reach approximated from Plate22 y742."
+    }
+  },
+  "conditional_image_picks": {
+    "source": "transmission_output_calibration.json",
+    "outer": {
+      "foot_y_px": [
+        247,
+        280
+      ],
+      "foot_x_px": [
+        23,
+        336
+      ],
+      "stem_y_px": [
+        40,
+        247
+      ],
+      "stem_x_px": [
+        100,
+        253
+      ]
+    },
+    "inner": {
+      "foot_y_px": [
+        255,
+        288
+      ],
+      "foot_x_px": [
+        557,
+        749
+      ]
+    },
+    "endpoint_pick_allowance_px": 4,
+    "interpretation": "Plate22 section read as horizontal axial section: image up is aft; dimensions share the four-inch hub calibration. Foot heights and stud positions are independently assumed."
+  },
+  "historical_fit_qualified": false,
+  "qualified_parameter_ranges": false
+}

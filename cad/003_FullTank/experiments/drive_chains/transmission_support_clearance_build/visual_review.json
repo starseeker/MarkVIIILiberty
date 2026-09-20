@@ -1,0 +1,39 @@
+{
+  "status": "needs_revision_before_standard_integration",
+  "native_sha256": "e9d96dff5328b2af32937f897cd4b417cf8c89bc8d2883a63ab7f8f9b552fa73",
+  "report_sha256": "e4b0d6331d1308ef592e1513cb4196fe40b23b87c9d6c8e2c147f1df10402444",
+  "exchange_sha256": "bc73a9dbd53e2b84ff828bf08168e5e946f8f79908b293dd7a8f2881806eb2d8",
+  "inspected_raster_hashes": {
+    "fixed_bearings_oblique.png": "25d2e38662ae7954071aec6834d5dfc48a22ee2923f5241e8a8e6fefd76e51e9",
+    "fixed_bearings_open.png": "28a347ae2da6e88e1634a54a8823d0af1ba904007cd6e24b74995f654f83bde7",
+    "fixed_bearings_section.png": "5ac36a17b0694b240a0d86a4608fd82c1ee12f661d195316e6ae2acf5b8f6a69",
+    "source_support_overlay.png": "d31dc3532a07a8884c6fbab88ddba20733cc4cca9be90384d827a34811ef8025",
+    "support_case_context.png": "b810510496f8dfbefc7d7ba5f6ecbebd8ec16e21f4cec165ced26d7c5b570600",
+    "support_interference.png": "542bb5938f1fa6e6015f25a222eea46ead73a6714f2f6ea14b6fe445dd00baae"
+  },
+  "findings": [
+    "Actually inspected all six native rasters: oblique, opened bearing, axial section, Plate22 overlay, case context and highlighted interfering material.",
+    "Cap cups face forward and open up on both hands; support feet point aft independently of shaft phase. This orientation follows HB20/21, HB125/127 and SNL Plate2/23.",
+    "The Plate22 overlay uses retained hub scale and maps image up to aft. Cast foot widths and stations broadly follow the section, with square inferred web transitions in place of cast blends. The native top-section raster views the opposite side, so its horizontal order is mirrored relative to the Plate22 overlay.",
+    "The separate four-mm lining regions occupy the casting/sleeve annulus. Source mandates poured lining, but its thickness and fitted clearance remain assumptions.",
+    "Common M295 lids now have flat seats and0.15mm nominal clearance. First trial had material overlaps; second touched the vertical seat edge; third adds perimeter clearance.",
+    "Both outer support feet intersect the current casing wall by17983.219434mm3 each, and rear stems intersect one wall-angle rivet per hand by2.392474mm3. The diagnostic raster displays the actual common material in wire context.",
+    "Bracket vertical depth170mm and rear stem140mm are provisional extrusions, not established frame connections. Full channel/gusset geometry must constrain these profiles before acceptance."
+  ],
+  "accepted_local_evidence": [
+    "845 valid single-solid leaves after saved native reopen",
+    "825 prior occurrence geometry signatures unchanged",
+    "Source counts:2each M293/M294/M297/M298,4M295; eight poured lining half regions have no invented survey identity",
+    "Four local bearing interface checks pass;20 new solids survive STEP export/reimport"
+  ],
+  "pending": [
+    "Top/bottom channel and gusset/frame geometry",
+    "Bracket/casing and wall-rivet interferences",
+    "Bracket profile blends and vertical mounting extent",
+    "Studs/nuts, hinge pins, oil fittings/passages and cap assembly completion",
+    "M391 foot quantities and HB brasses/shims identity conflict",
+    "Full assembly integration, parameter qualification and historical fit"
+  ],
+  "standard_assembly_modified": false,
+  "historical_fit_qualified": false
+}

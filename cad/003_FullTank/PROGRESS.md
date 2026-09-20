@@ -11,6 +11,29 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — fixed transmission bearing trial
+
+The isolated fixture now has 845 valid native solids. Twelve new catalogue
+occurrences represent the four bracket/cap pairs and four oil-box lids; eight
+additional regions represent poured babbitt, with no invented catalogue mark.
+All 825 inherited occurrence signatures remain unchanged. The new twenty solids
+survive STEP export/reimport. Four local bearing/lining, split-joint, axial
+capture and lid-clearance checks pass.
+
+The full candidate remains **unaccepted**: each outer bracket intersects the
+chain-case sheet and one wall-angle rivet. The seventy-pair material check finds
+four overlaps. Two earlier lid-seat failures are retained; the latest flat seat
+and edge clearance fix those local issues. Six native rasters, including the
+[source overlay](experiments/drive_chains/transmission_support_clearance_build/source_support_overlay.png)
+and [interference detail](experiments/drive_chains/transmission_support_clearance_build/support_interference.png),
+were inspected. The bracket vertical profiles and frame attachment need revision.
+
+Original SNL96/97 and HB/SNL side sections now support the next frame study.
+Build the top/bottom channels, angles and gussets to constrain the support/casing
+interface; preserve the source-supported aft-facing bracket orientation. Cap
+hardware, lubrication details, foot-count conflicts and full integration remain
+open. Standard milestone011 and its opaque/transparent snapshots are unchanged.
+
 ## 20 September 2026 — experimental chains, casing shells and fastening
 
 The isolated chain work now includes separate bars, bushes, pins and cotters,
