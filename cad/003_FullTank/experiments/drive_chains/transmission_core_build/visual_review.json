@@ -1,0 +1,26 @@
+{
+  "status": "visually_reviewed_partial_reconstruction_not_historical_fit_qualification",
+  "native_sha256": "7467b79d02597ade07179c6f6595141f089c7ba4473b557e072c92544f35ffe2",
+  "report_sha256": "5bf66506a358cd5b061b0785c5c713b556129cb58795b8ab04a4fbbc5fef6efa",
+  "sensitivity_sha256": "a1c12e185bc38dd11bb15384280e87a873097ae74b628682e37526e2809b66ca",
+  "source_render_receipt_sha256": "950e1d07a4a621fe283ba4a0750b1dacb82538068482e6514cc5d4f69bf1c3bd",
+  "actually_viewed_rasters": {
+    "transmission_core_oblique.png": "b7b37e5d9d767742fca1b85e459b622a4de379647ae72b1f87c46dd5d7a07b0e",
+    "core_parts.png": "fea59dd63015e8237022473fa2a4a6a3aff167c4804ff4a74ed91bc465d98889",
+    "core_horizontal_cutaway.png": "e1787bd79496e4da44270fd36537917da2bc4d40c3d47ec296ac9b6486744655",
+    "source_plate22_overlay.png": "6065cfe05233d4e687d9ab91cd733d91822980f09036bad91ba7698dced59995",
+    "source_review/bevel_case_detail.png": "1cc63849e8d1823bcd6d8bb47e97d5cc7e6d56d38c95a0d44529c28f36a0479c",
+    "source_review/source_plate23_overlay.png": "11eae3c03fdde2af8dc0c5fa52ccc6ccec008967ad718f64905e0e9f1762b6c5"
+  },
+  "findings": [
+    "HB126 Plate79 and native oblique show the same sequence of output sprocket, track-brake drum, conical carrier/planetary case, smaller high-speed drum and central bevel case. Brake bands, gears and input housing are still absent.",
+    "Plate22 source overlay uses unchanged local calibration. Planetary outline and conical carrier broadly follow the section; top/bottom asymmetry remains visible. Nominal carrier/ring and lip conflicts are resolved without changing prior shafts/rings.",
+    "Printed M269 diameter381mm overrides roughly408mm scaled image extent. The drum top is noticeably inside the illustrated outline; this is retained as a source conflict.",
+    "Plate23 native end projection broadly follows the rounded front case and squared rear contour. Rear mounting webs are narrower than the illustrated broad cast form; exact cast spreads and pads remain to be reconstructed.",
+    "Plate23 estimated inspection mapping0.9mm/px yields frame-front residual-18.613pixel (-16.751mm). This is a visible discrepancy, not independent validation or zero-residual fit.",
+    "Plate22 input center estimate1534px is about44.258px/32.119mm from assumed tank-centerline projection1578.258px; future input and bevel gears must revisit centering.",
+    "Cutaway exposes actual hollow native shells and the separate long cross shaft. Empty gear spaces remain incomplete component coverage."
+  ],
+  "accepted_scope": "Nominal partial shell/rotor geometry with documented assumptions, for continued reconstruction in isolated fixture. Not promoted to standard tank.",
+  "next": "Populate M288/M256 interfaces, sun/ring/planet gears and pins, then central bevel drive/input bearings/reversing clutch, with source comparison and actual material checks."
+}

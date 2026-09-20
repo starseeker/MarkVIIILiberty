@@ -243,3 +243,24 @@ bore variations retain the specified 1-mm wall and open route; the two lowered
 negative cases miss the reservoir. All expected outcomes pass. The test bounds
 are diagnostic assumptions, with historical route and whole-assembly parameter
 qualification still open.
+
+`transmission_core_probe.py` adds eleven major central parts to that fixture:
+the M263/M264 bevel case and cover, M255 cross shaft, and two each M278/M277
+case halves, M286 carriers and M269 high-speed drums. The
+[saved native candidate](transmission_core_build/TransmissionCoreCandidate.FCStd)
+has 939 valid single-solid leaves, with all 928 earlier occurrences unchanged.
+Thirty-three material pairs have no overlap; nine specified interface checks
+pass, with five additional diagnostic distances recorded. Eleven new solids
+pass STEP roundtrip. Twelve local source-trace/phase/end-position trials have
+their expected outcomes, including deliberate collision cases.
+
+The [oblique view](transmission_core_build/transmission_core_oblique.png),
+[cutaway](transmission_core_build/core_horizontal_cutaway.png),
+[Plate22 overlay](transmission_core_build/source_plate22_overlay.png) and
+[Plate23 comparison](transmission_core_build/source_review/source_plate23_overlay.png)
+were actually inspected. The latter records a visible mounting-plane mismatch;
+input centering differs by about32mm between the local Plate22 projection and
+the assumed tank centerline. Printed M269 diameter381mm is retained despite a
+larger scaled scan extent. Gears, bearings, brake bands, joint hardware and full
+lubrication remain open. This remains an isolated partial reconstruction; see
+the [central transmission packet](../../packets/I03-transmission-core.md).

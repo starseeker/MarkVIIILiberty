@@ -1,0 +1,119 @@
+{
+  "passed": true,
+  "trials": [
+    {
+      "kind": "case_lip_trace",
+      "pixel_y": 222,
+      "expected_clear": true,
+      "overlap_mm3": 0.0,
+      "gap_mm": 4.354285714285408,
+      "passed": true
+    },
+    {
+      "kind": "case_lip_trace",
+      "pixel_y": 224,
+      "expected_clear": true,
+      "overlap_mm3": 0.0,
+      "gap_mm": 2.90285714285701,
+      "passed": true
+    },
+    {
+      "kind": "case_lip_trace",
+      "pixel_y": 225,
+      "expected_clear": true,
+      "overlap_mm3": 0.0,
+      "gap_mm": 2.177142857142614,
+      "passed": true
+    },
+    {
+      "kind": "case_lip_trace",
+      "pixel_y": 229,
+      "expected_clear": false,
+      "overlap_mm3": 7164.781117712497,
+      "gap_mm": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "carrier_hub_trace",
+      "pixel_x": 858,
+      "expected_clear": true,
+      "ring_overlap_mm3": 0.0,
+      "shaft_overlap_mm3": 0.0,
+      "ring_gap_mm": 2.902857142857215,
+      "passed": true
+    },
+    {
+      "kind": "carrier_hub_trace",
+      "pixel_x": 860,
+      "expected_clear": true,
+      "ring_overlap_mm3": 0.0,
+      "shaft_overlap_mm3": 0.0,
+      "ring_gap_mm": 1.4514285714286643,
+      "passed": true
+    },
+    {
+      "kind": "carrier_hub_trace",
+      "pixel_x": 861.8,
+      "expected_clear": true,
+      "ring_overlap_mm3": 0.0,
+      "shaft_overlap_mm3": 0.0,
+      "ring_gap_mm": 0.14514285714301423,
+      "passed": true
+    },
+    {
+      "kind": "carrier_hub_trace",
+      "pixel_x": 865,
+      "expected_clear": false,
+      "ring_overlap_mm3": 2702.881038287911,
+      "shaft_overlap_mm3": 0.0,
+      "ring_gap_mm": 0.0,
+      "passed": true
+    },
+    {
+      "kind": "carrier_phase_negative",
+      "hand": "Port",
+      "rotation_deg": 18,
+      "overlap_mm3": 11004.22108876816,
+      "passed": true
+    },
+    {
+      "kind": "carrier_phase_negative",
+      "hand": "Starboard",
+      "rotation_deg": 18,
+      "overlap_mm3": 11004.221088760709,
+      "passed": true
+    },
+    {
+      "kind": "cross_shaft_axial_negative",
+      "shift_y_mm": 1,
+      "overlap_mm3": 2628.100573091382,
+      "passed": true
+    },
+    {
+      "kind": "cross_shaft_axial_negative",
+      "shift_y_mm": -1,
+      "overlap_mm3": 2628.1005730915995,
+      "passed": true
+    }
+  ],
+  "printed_diameter_checks": [
+    {
+      "hand": "Port",
+      "diameter_mm": 381.0,
+      "printed_HB126_mm": 381,
+      "passed": true
+    },
+    {
+      "hand": "Starboard",
+      "diameter_mm": 381.0,
+      "printed_HB126_mm": 381,
+      "passed": true
+    }
+  ],
+  "candidate_native_sha256": "7467b79d02597ade07179c6f6595141f089c7ba4473b557e072c92544f35ffe2",
+  "candidate_report_sha256": "5bf66506a358cd5b061b0785c5c713b556129cb58795b8ab04a4fbbc5fef6efa",
+  "checker_sha256": "c8a5e2fa27b2a4aac6fca9e47ce32b71bbc3601576e2a19b9ea3118055f0ab29",
+  "controls_sha256": "13e91a9a7fbe79763b966ead84c53aab484a02a656abd5984bd473731460d77a",
+  "full_parameter_envelope_qualified": false,
+  "scope": "Local lip/hub source-trace trials, actual carrier spline phase and cross-shaft end negatives. Gear, bearing, gasket, shell-thickness and full-tank perturbations remain pending."
+}

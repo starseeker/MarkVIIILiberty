@@ -11,6 +11,38 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — central transmission cases and rotors
+
+The [central transmission candidate](experiments/drive_chains/transmission_core_build/TransmissionCoreCandidate.FCStd)
+adds eleven occurrences from seven source identities: M263/M264 case and cover,
+one M255 cross shaft, and paired M278/M277 planetary case halves, M286 carriers
+and M269 high-speed drums. The native fixture now reopens with **939 valid
+single-solid leaves**, preserving all 928 earlier occurrence signatures. The
+eleven new parts also survive STEP roundtrip with matching volumes and centers.
+
+Thirty-three potentially contacting material pairs have no overlap. Nine
+specified gaps/frame contacts pass; five further clearances are recorded as
+diagnostics. Twelve local trials cover the inferred case lip and carrier hub,
+with deliberate ring, phase and shaft-end failures detected. Both analytic
+drum diameters match HB126's printed 381 mm. These checks do not qualify the
+unbuilt gears, historical tolerances or a full parameter envelope.
+
+Six actual rasters were inspected, including the
+[horizontal source overlay](experiments/drive_chains/transmission_core_build/source_plate22_overlay.png)
+and [case end-view overlay](experiments/drive_chains/transmission_core_build/source_review/source_plate23_overlay.png).
+The [preserved transmission isometric](../intermediate_snapshot_iso_transmission_candidate_001.png)
+records the visible improvement separately from the standard tank milestones.
+The case uses explicit cubic B-spline outline poles, an axial extrusion and a
+hollow cavity. Broad arrangement follows the sources; mounting-web contours,
+cast transitions and gear seats remain partial. A 32 mm input-center discrepancy
+and the printed-versus-scaled brake-diameter conflict remain explicit.
+
+The [work packet](packets/I03-transmission-core.md) defines identities, evidence,
+reproduction commands and remaining work. Populate carrier washers/retainers,
+planetary and bevel gears, input bearings, brakes and controls next. Full frame
+attachment, oil feeds and integration remain open; standard milestone 011 and
+its opaque/transparent companions are unchanged.
+
 ## 20 September 2026 — transmission cap lubrication
 
 The [lubrication candidate](experiments/drive_chains/transmission_oil_build/TransmissionOilCandidate.FCStd)

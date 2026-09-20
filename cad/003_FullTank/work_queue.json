@@ -314,6 +314,29 @@
         "oil_performance_qualified": false,
         "historical_fit_qualified": false,
         "next": "Reconstruct the central transmission and actual frame attachment; then connect full source-length armored feed lines to the lubricator. Keep source cast-profile, upper-opening and collet identity gaps explicit before integration."
+      },
+      "transmission_core_experiment": {
+        "path": "experiments/drive_chains/transmission_core_build",
+        "packet": "packets/I03-transmission-core.md",
+        "status": "nominal_partial_shell_and_rotor_fit_only",
+        "native_solids": 939,
+        "new_occurrences": 11,
+        "new_source_identities": 7,
+        "unchanged_prior_occurrences": 928,
+        "material_pairs": 33,
+        "overlaps": 0,
+        "specified_gap_contact_checks": 9,
+        "diagnostic_gap_measurements": 5,
+        "exchange_roundtrip_solids": 11,
+        "local_interface_trials": 12,
+        "expected_trial_outcomes_pass": true,
+        "printed_diameter_checks": 2,
+        "actually_viewed_rasters": 6,
+        "standard_modified": false,
+        "full_parameter_envelope_qualified": false,
+        "historical_fit_qualified": false,
+        "gear_fit_qualified": false,
+        "next": "Populate M288/M256 interfaces, sun/ring/planet gears and pins, then central bevel drive/input bearings/reversing clutch, with source comparison and actual material checks."
       }
     },
     {
@@ -481,7 +504,7 @@
       "id": "I03",
       "milestone": "M3",
       "title": "Reconstruct the drivetrain and steering/brake assemblies",
-      "status": "planned",
+      "status": "active",
       "depends_on": [
         "P01",
         "I01"
@@ -491,7 +514,9 @@
         "Validate shaft/bearing axial stacks, housing interfaces and owning assemblies.",
         "Retain explicit simplified representations for unsupported gear or bearing detail rather than invented exact profiles.",
         "Check alignment, clearances and control connection datums against the installed powerplant and running gear."
-      ]
+      ],
+      "packet": "packets/I03-transmission-core.md",
+      "progress_note": "Central transmission shell/rotor geometry is now populated in the isolated939-leaf chain/frame fixture: eleven new parts across seven source identities; nominal native/STEP/material and local interface trials pass. Gears, bearings, braking/steering controls, clutch, complete mounting/lubrication and full-tank integration remain incomplete."
     },
     {
       "id": "I04",

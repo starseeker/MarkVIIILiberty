@@ -62,3 +62,11 @@ geometry unchanged. Colored interior layout envelopes remain provisional.
 The interactive viewer offers opaque and transparent hull display; older stages
 retain their original images. Future milestones should preserve both versions.
 SHA-256: `97f19ad3b616f3c5ed191a0cc1398c13f19ddfa89d1b31ada49f1b46c167605d`.
+
+The [transmission candidate isometric](intermediate_snapshot_iso_transmission_candidate_001.png)
+preserves the first central-case stage separately from standard tank milestones
+(20 September 2026). It shows the reconstructed frame/output train with eleven
+new bevel-case, cross-shaft, planetary-case, carrier and high-speed drum parts.
+This isolated fixture has 939 solids; gear internals, brake bands and integration
+remain unfinished. It is not standard milestone 012.
+SHA-256: `b7b37e5d9d767742fca1b85e459b622a4de379647ae72b1f87c46dd5d7a07b0e`.
