@@ -154,3 +154,43 @@ envelopes; it does not indicate historical measurement accuracy. The actual
 oblique, wall elevation and standard isometric were inspected and their hashes
 recorded. The model remains an isolated candidate: casing bodies, supports,
 fastening and full drivetrain fit are not yet qualified.
+
+## Casing shells and wall attachments
+
+Separate source-identified M1590 bodies and M1591 removable caps now exist as
+isolated native solids. Their 168.275 mm outside width follows HB134. The 3 mm
+sheet stock, two-circle/tangent contour, 12 mm radial allowance, hub passages
+and upper rear cap seam are explicit reconstruction assumptions. The cap's
+half-bore is open to its lower edge, consistent with removing it before the
+roller pinion; neither its exact split nor a service motion is qualified.
+
+The first shell installation found two 21.609290 mm³ overlaps at the rounded
+corners of the chain-only wall openings. That failure and its exact inputs
+remain preserved. Openings derived from the actual casing section across the
+wall thickness now measure 176.275 × 497.795324 mm with 8 mm corners. This
+revised candidate passes 638 casing-related material pairs and the existing
+hull checks, with 2.304985 mm minimum wall clearance, 2 mm hub clearance and
+a 1 mm cap/body gap. The earlier chain-only opening candidate is superseded
+for casing fit, not silently overwritten. The corrected native half-section
+and installed views were inspected.
+
+The next fixture adds two inferred M1592 flanged collars with 11 wall rivets
+and 17 casing rivets each. SNL170 directly identifies the wall joint and
+1/2 × 1-1/2 inch stock; SNL167 identifies the casing joint and 5/16 × 3/4 inch
+stock. Angle form, 6 mm section, flange/leg dimensions and hole coordinates
+are inferred. Rivet heads use the existing stock-conserving reconstruction.
+All 567 saved/reopened fixture leaves are valid single solids. The 58 new
+mounting parts and three drilled receivers pass 697 material candidate pairs,
+56 receiving-bore checks and 56 two-receiver seating checks. The existing hull
+validator also passes. Actual attachment rasters and their hashes are retained.
+
+Original SNL31 allocates 14 bolt/nut/lock-washer sets to the two cap/body joints;
+seven per cap is the working interpretation of its total. Original SNL167's
+global and joint rivet counts conflict with the nested SNL55/60/61 quantities.
+`casing_joint_review.json` preserves both. The 17 M1592 casing rivets are supported
+by the joint row and fit within the body's 26 short-rivet allocation. Remaining
+joint schedules need an explicit selected interpretation before population.
+
+Next: M1583/M1593 cleats, M1584 strips, M1585 beading, M1581/M1594 register plates,
+M1587/M1588 supports and their fastening, followed by full chain/casing integration
+and parameter qualification. These fixtures do not alter the standard model.

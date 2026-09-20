@@ -18,10 +18,11 @@ or historical-accuracy certification.
 | [007](intermediate_snapshot_iso_007.png) | 2026-09-20 | Idler shafts and adjusters: 64 additional parts, four visible brackets and owned hull openings; nested wheel disks and flatter diaphragm troughs. Profiles, inner retention and threads remain partial. | c9f03efc751c3d84b504946ece85c731757ad76dc88d167c42ce3716d7f98073 |
 | [008](intermediate_snapshot_iso_008.png) | 2026-09-20 | 34 lower support angles and 76 bolts, inclined front roller units, revised front skirt border and bounded nose clearance. Contours, tapped receivers and removable retention remain partial. | 123536379dc393e79d8572a9d0f1c578c231b0462666c03ebcbb369ef6aa7558 |
 | [009](intermediate_snapshot_iso_009.png) | 2026-09-20 | 242 driving-wheel/bush parts replace two envelopes; aligned toothed rims and revised common idler/drive internals. The 35/37 tooth conflict, shafts, bearings and engagement remain open. | 040eea4a40408f37e55b384c9c4160289dee173f48ec181c9aba6dea333a89d6 |
+| [010](intermediate_snapshot_iso_010.png) | 2026-09-20 | 56 driving-shaft/bearing/attachment parts; source-correct inner receivers and revised rear skirt border. Exact casting profiles, threads, sealing, additional backing-plate rivets and engagement remain open. | 7544be5660dde9e57c1386175eefb367ed12d062a66afe1c8ffd5e866913fbbe |
 
 The initial two images were user-saved and matched against the rendering history.
-Snapshots 003–009 are byte-for-byte copies of the inspected standard isometric
-at the sponson-shell, louver, roller, idler, lower-support and drive-wheel milestones. Preserve them through later rebuilds. Use the next unused
+Snapshots 003–010 are byte-for-byte copies of the inspected standard isometric
+at the sponson-shell, louver, roller, idler, lower-support, drive-wheel and driving-shaft milestones. Preserve them through later rebuilds. Use the next unused
 number for the next significant visual improvement; never replace an earlier image.
 
 The idler stage also preserves an unmodified [wheel close-up](intermediate_snapshot_detail_idler_006.png),
@@ -42,3 +43,8 @@ SHA-256: `a075f2aab36ae0256702529358e43ca696f9d884b24f56a951eac2c3da8be710`.
 The driving-wheel stage preserves a [drive-wheel close-up](intermediate_snapshot_detail_drive_009.png),
 showing the paired aligned toothed rings and source-common internal parts.
 SHA-256: `d150f4d4e33294c392aadb085cfb3e14a146debc0e2f456d50c17c45dcb3be1d`.
+
+The driving-shaft stage preserves a [wheel close-up](intermediate_snapshot_detail_drive_010.png)
+and [shaft/support detail](intermediate_snapshot_detail_drive_mounts_010.png).
+`intermediate_snapshot_detail_drive_010.png` SHA-256: `81c3b41b5aabe69e3a997df99fc67f4ee199c908e2bb2cdfae7341ecc2b95cdc`.
+`intermediate_snapshot_detail_drive_mounts_010.png` SHA-256: `84d734370c5bd753c85f3d37e5714926b714e0632ab6d1ed23eb7af756321244`.

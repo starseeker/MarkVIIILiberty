@@ -46,13 +46,14 @@ const stages=[
  ['006','Front idler wheels','242 rim, disk, boss, diaphragm, rivet and bushing parts. Shafts and adjustment hardware remain open at this stage.'],
  ['007','Idler shafts and adjusters','64 additional parts, four visible brackets and corresponding hull openings; refined wheel section. Profiles, inner plate retention and threads remain partial.'],
  ['008','Lower support runs','34 support angles and 76 bolts, inclined front units and revised front skirt. Exact contours, tapped receivers and removable retention remain partial.'],
- ['009','Driving wheels','242 driving-wheel and bush parts, paired aligned rims and common wheel internals. Tooth count, shafts, bearings and engagement remain unresolved.']
+ ['009','Driving wheels','242 driving-wheel and bush parts, paired aligned rims and common wheel internals. Tooth count, shafts, bearings and engagement remain unresolved.'],
+ ['010','Drive shafts and bearings','56 shaft, bearing and attachment parts; source-correct inner receivers and revised rear skirt. Exact profiles, threads, sealing and engagement remain partial.']
 ];
 const get=id=>document.getElementById(id);
 for(const side of ['left','right']){
  const select=get(side);
  for(const stage of stages){const option=document.createElement('option');option.value=stage[0];option.textContent=stage[0]+' — '+stage[1];select.append(option);}
- select.value=side==='left'?'008':'009';
+ select.value=side==='left'?'009':'010';
  select.addEventListener('change',update);
 }
 function update(){

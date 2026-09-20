@@ -67,9 +67,15 @@ that an existing instance is no longer running.
 
 ## Work after recovery
 
-Continue standard geometry before poses. Finish drive-mount qualification and
-its milestone, then qualify and promote the pinion assembly. The next geometry
-increment is the drive chain and casing, followed by the remaining transmission,
+Continue standard geometry before poses. Drive-mount qualification has now
+passed all 27 stages and 15 parameter trials, and snapshot010 is saved. Its
+complete 161-file delivery is archived and checksum-verified at
+`.work/deliveries/010-drive-mounts.zip`; the versioned record is
+`cad/003_FullTank/releases/010-drive-mounts.json`. The archive is intentionally
+outside Git and must travel with workspace backups.
+
+The private pinion assembly still needs its full qualification and promotion.
+Separate chain/casing work continues, followed by the remaining transmission,
 exterior fittings and interior systems in the complete-tank workflow.
 
 The chain fixtures are isolated reconstruction studies. Their source quantity

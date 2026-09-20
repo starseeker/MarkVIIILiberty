@@ -445,3 +445,28 @@ Inspected raster SHA-256 values:
 - `comparisons/idler_section.png`: `d82e6bfcce619b36c4ad614c143932c0c59e3be79913e6196bfcd46fc6278f5b`
 - `comparisons/idler_installation.png`: `502eb072dc7f1ed6eba22b00f8137438818ac9cb5893396eac262250b3adb57f`
 - `comparisons/lower_support_bank.png`: `44d4d4133cd7bce98f4501f5254e47f5d76a28c7b6dd9d2e684a1e3e20732a95`
+
+## 20 September 2026 — driving shafts and bearings
+
+The standard isometric shows the new external drive-bearing faces at the unchanged rear axes and the revised rear skirt border. The original camera and subsystem colors remain consistent with prior progression snapshots.
+
+The shaft detail exposes separate inner/outer bearings, end nuts, locking plates, attachment fasteners and the oil fitting. The transverse section preserves the common wheel/bush stack and shows the axial/radial shaft oil passage.
+
+HB Plate125 and86 support the support/nut/key/plug topology. Exact casting outlines, flange contours, locking-plate shape/orientation, threading, sealing and retention strength remain inferred or unqualified; the schematic CAD is not a metric match to the source artwork.
+
+The source-identified receiver view shows the drive bearing seated in M1977 inside and M1975 outside. The inferred seam and lower-border reconstruction clears the complete bearing footprint; identity correction is supported separately by the SNL189/169/178 joint rows.
+
+The opposed drive rims remain aligned. The unchanged visible track gap is retained, and no continuous track/roller-pinion engagement is claimed. The roller pinions and chains remain unpopulated.
+
+The idler transverse section and lower-support bank retain their reviewed arrangement after the twelve rear-panel changes. Native interfaces pass in the nominal build; both additional parameter preflights now pass, including the full spacing-dependent hull/roller/support context.
+
+The small Q52C head is not a qualified bolt shoulder. Native checks confirm only its 12 mm plain-envelope insertion and inferred0.2 mm radial gap; the rejected generic shoulder-seat assumption is preserved.
+
+- `previews/isometric.png`: `7544be5660dde9e57c1386175eefb367ed12d062a66afe1c8ffd5e866913fbbe`
+- `comparisons/drive_mount_detail.png`: `84d734370c5bd753c85f3d37e5714926b714e0632ab6d1ed23eb7af756321244`
+- `comparisons/drive_mount_receivers.png`: `a0ce11e556ecdcfce986973c7357a4a7541249f1c8f7dd5d42416ed21ee04603`
+- `comparisons/drive_oblique.png`: `81c3b41b5aabe69e3a997df99fc67f4ee199c908e2bb2cdfae7341ecc2b95cdc`
+- `comparisons/drive_section.png`: `ec3d37cf5a603e1c5b4143e2c8c0dfa3dd46c1b93df16ae97743068966420fa7`
+- `comparisons/drive_installation.png`: `42e23b7b9c31ab5c891acd1f215568caa5a50fbe87988b9bfbb89fb9a8082df3`
+- `comparisons/idler_section.png`: `5d873909d7f6656c3f7ceaced0f84197da522289cc1badfb71501915f67e2607`
+- `comparisons/lower_support_bank.png`: `10e9e4067750071eb5cb7d4c6305956fa272cad10c0f4847bb65771296f1a863`

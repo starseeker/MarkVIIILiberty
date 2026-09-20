@@ -123,3 +123,52 @@ oil plugs and flange/fastener seats follow their owners. Scope the existing
 idler-length trial's oil-plug matching to idler assemblies before drive oil
 plugs are introduced. Qualify the full native/STEP delivery and inspect the
 standard isometric before advancing the next numbered snapshot.
+
+## Delivered integration
+
+Added 56 physical shaft, key, nut, plug, bearing and attachment occurrences.
+Both source-defined driving-shaft assemblies now contain all seven SNL leaves;
+the 23 bearing/attachment leaves per side remain separately owned. Ten new
+native definitions reuse the common M1477 nuts, M1409 bushes and Q52C plug.
+The standard tank now has 242 definitions and 5,145 leaves: 5,130 physical
+solids, thirteen layout solids and two wires, covering 207 physical source
+identities. All physical definitions remain partial reconstructions.
+
+The original SNL189 bearing-joint rows, supported by SNL169/178 angle allocations,
+correct the earlier inner-panel geometry mapping: M1977 receives the rear drive
+bearing, while M1978 belongs forward at the roller pinion. Source identities were
+preserved. Twelve rear panels now follow the documented level skirt-border
+hypothesis and own the bearing-barrel and attachment bores. Exact historical
+seams and casting outlines remain inferred.
+
+Nominal native checks pass 82 bearing/attachment seats, 32 full hull receiving
+cylinders, four shaft/bush clearances, shaft/key dimensions, oil-passage witnesses
+and rivet-stock volumes. All 604 idler/drive wheel-and-mount occurrences clear
+2,042 material candidate pairs. The shared Q52C plug has 12 mm insertion and
+an inferred 0.2 mm radial gap; its tiny square-head contact is not treated as a
+bolt shoulder. A deliberately shifted plug fails the insertion check. Threads,
+sealing, retention strength, exact cast profiles, extra M1552 plate-only rivets,
+historical fit and continuous engagement remain unqualified.
+
+Thirty-five record/renderer tests pass. The complete delivered native shapes,
+rigid placements, both STEP round trips, relocated links, independent rebuild,
+unchanged cache and all fifteen parameter trials pass. The two new trials vary
+shaft length and frame spacing; 46 fittings follow shaft-length changes while
+independent wheels and hull faces stay fixed. The spacing trial also rechecks
+existing hull, roller, idler and lower-support interfaces. Source verification
+covers 749 files and the unchanged survey database.
+
+Preserved [isometric010](../../intermediate_snapshot_iso_010.png), a
+[complete mounting-stage wheel view](../../intermediate_snapshot_detail_drive_010.png)
+and [shaft/support detail](../../intermediate_snapshot_detail_drive_mounts_010.png).
+Prior snapshots remain byte-identical. The reviewed source comparisons retain
+all profile and interface limitations. Snapshot009 and its preserved wheel detail retain their original hashes.
+The former temporary delivery archive was lost in an environment restart;
+ongoing work and validation receipts now live in the project directory.
+
+The next running-gear work is the source-counted roller pinions and chain drive,
+followed by remaining exterior structure, fittings and identifiable interiors.
+The isolated pinion integration has passed a focused installed geometry check
+after an explicitly inferred fuel-backplate correction; its full qualification
+remains separate from this delivery.
+The complete-tank goal remains open, with standard geometry ahead of poses.

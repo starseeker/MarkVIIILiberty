@@ -1,0 +1,17 @@
+{
+  "status": "isolated_M1592_wall_joint_candidate",
+  "controls": {
+    "angle_stock": {"value": 6.0, "unit": "mm", "bounds": [4.0, 8.0], "basis": "reconstruction_assumption"},
+    "flange_margin": {"value": 30.0, "unit": "mm", "bounds": [25.0, 40.0], "basis": "reconstruction_assumption"},
+    "collar_length": {"value": 35.0, "unit": "mm", "bounds": [30.0, 45.0], "basis": "reconstruction_assumption"},
+    "collar_case_gap": {"value": 0.25, "unit": "mm", "bounds": [0.0, 0.5], "basis": "reconstruction_assumption"},
+    "wall_rivet_diameter": {"value": 12.7, "unit": "mm", "basis": "direct_dimension", "evidence": "SNL170: 1/2 inch"},
+    "wall_rivet_stock_length": {"value": 38.1, "unit": "mm", "basis": "direct_dimension", "evidence": "SNL170: 1-1/2 inch"},
+    "case_rivet_diameter": {"value": 7.9375, "unit": "mm", "basis": "direct_dimension", "evidence": "SNL167: 5/16 inch"},
+    "case_rivet_stock_length": {"value": 19.05, "unit": "mm", "basis": "direct_dimension", "evidence": "SNL167: 3/4 inch"},
+    "hole_diameter_clearance": {"value": 0.5, "unit": "mm", "bounds": [0.2, 0.8], "basis": "reconstruction_assumption"}
+  },
+  "quantity_interpretation": "Two M1592 angles. Each has11 wall rivets following SNL170 and17 casing rivets following SNL167. The17 casing rivets fit within the26 short rivets per body in SNL60/61; other casing fastener allocations remain unresolved.",
+  "form_interpretation": "M1592 is represented as a continuous flanged collar around the case, with a flat wall flange and an axial leg following the analytic casing contour. The catalogue identifies an angle and its two riveted joints; its section, perimeter shape and hole pattern are inferred. Eleven wall holes use symmetric4+4 side,2 bottom and1 top stations;17 case holes use8 per side and1 on top.",
+  "joint_interpretation": "Wall flange contacts the rear face of M2003. Casing collar has an inferred0.25mm fit allowance; rivets span the documented wall/sheet plus inferred angle and allowance. Button heads use the existing stock-conserving reconstruction, with no strength or manufacturing qualification. Bounds denote uncertainty, not a qualified parameter range."
+}

@@ -7,16 +7,41 @@ At each significant visual improvement, retain the standard isometric as the
 next `cad/intermediate_snapshot_iso_NNN.png` and update
 [the visual progression](../VISUAL_PROGRESSION.md). User-saved 001 and 002 are
 preserved; 003 records the sponson shells, 004 the roof louvers and 005 the roller
-stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjusters, 008 the lower support runs, and 009 the driving wheels.
+stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjusters,
+008 the lower support runs, 009 the driving wheels and 010 their shafts and bearings.
+
+## 20 September 2026 — experimental chains, casing shells and wall joints
+
+The isolated chain work now includes separate bars, bushes, pins and cotters,
+both sprockets, M1590 casing bodies, M1591 caps and M1592 wall attachments.
+The latest saved/reopened fixture has 567 physical leaves. It adds two angles,
+22 wall rivets and 34 casing rivets to the preceding chain/casing candidate;
+all 697 new/changed material candidate pairs, 56 receiving bores and 56
+two-receiver seating checks pass. Existing hull checks also pass.
+
+Earlier failed tooth reliefs, wall interferences and casing-corner clashes are
+preserved. The latest inferred wall openings clear the actual casing section
+by at least 2.304985 mm. Native half-sections and joint details have been
+inspected; a faulty earlier section preview is explicitly rejected and replaced.
+The 50-pitch chain interpretation, case stock/contours, cap seam and wall-angle
+form remain documented approximations. Catalogue chain quantities and several
+casing fastener schedules still conflict.
+
+These parts are **not promoted to the standard model**. Cap cleats, beading,
+register plates, support brackets and remaining fasteners are next, followed
+by integration and parameter qualification. See the
+[chain/casing packet](packets/R02-drive-chains.md) and
+[native attachment detail](experiments/drive_chains/casing_wall_mount_build/wall_joint_detail.png).
 
 ## 20 September 2026 — experimental full-tank roller-pinion integration
 
 An isolated source branch, `experiment/roller-pinions`, now builds both
 98-part pinion installations in the complete standard assembly. It has 252
 definitions and 5,341 leaves, including 5,326 physical components and 216
-represented physical source identities. Nominal native checks and the 35
-existing tests pass. This has **not** been promoted to the main delivery;
-installed parameter trials and final detailed visual review remain pending.
+represented physical source identities. Nominal native checks and 37
+record/renderer tests pass. The detailed source comparison views have been
+inspected. This has **not** been promoted to the main delivery; its full
+29-stage validation with 17 parameter trials remains in progress.
 
 The first integrated candidate exposed four fuel-backplate overlaps that were
 absent from the isolated fixture. A separate inferred longitudinal control now
@@ -31,36 +56,63 @@ and phase. This rejects that particular geometric combination; it does not
 resolve the conflicting historical tooth counts. See the
 [integration preflight](experiments/roller_pinions/integrated_preflight/README.md).
 The next [chain packet](packets/R02-drive-chains.md) preserves a separate
-conflict between the handbook's 50 pitches and the SNL's 25 bushes/pins per chain before chain geometry is populated.
+conflict between the handbook's 50 pitches and the SNL's 25 bushes/pins per chain.
+Separate chain and casing fixtures now exist; they have not been promoted to
+the standard assembly.
 
-Main mounting-stage delivery validation now resumes from durable input-bound
-checkpoints. Generated records and ongoing experiments live in the project
-workspace so an environment restart does not erase them. Local commits are
-authorized by the user; `9dbb28c` records the main source checkpoint and
-`230d141` the corrected experimental pinion inputs.
+Main mounting-stage validation has completed using durable checkpoints, as
+recorded below. Generated records and ongoing experiments live in the project
+workspace. Local commits are authorized by the user; the private pinion branch
+includes the current qualification runner and source comparison work.
 
-## 20 September 2026 — driving shafts and mounts; delivery qualification pending
+## 20 September 2026 — partial driving shafts and bearing attachments
 
-The reviewed isolated implementation adds 56 shaft, bearing and attachment
-parts, completes both seven-leaf drive-shaft BOMs, and corrects M1977/M1978
-receiver geometry using the SNL bearing-joint allocations. The authored model
-has 242 definitions and 5,145 leaves, including 5,130 physical components and
-207 represented physical source identities. The qualified wheel-only delivery
-and snapshot 009 were archived before this promotion.
+Added 56 physical shaft, key, nut, plug, bearing and attachment occurrences.
+Both source-defined driving-shaft assemblies now contain all seven SNL leaves;
+the 23 bearing/attachment leaves per side remain separately owned. Ten new
+native definitions reuse the common M1477 nuts, M1409 bushes and Q52C plug.
+The standard tank now has 242 definitions and 5,145 leaves: 5,130 physical
+solids, thirteen layout solids and two wires, covering 207 physical source
+identities. All physical definitions remain partial reconstructions.
 
-Nominal private checks pass 82 bearing/attachment seats, 32 full hull receiving
-bores, four shaft/bush clearances and two plain oil-plug insertion envelopes.
-The 604 idler/drive wheel-and-mount leaves clear 2,042 material candidate pairs.
-Thirty-five record/renderer tests and the two additional installed parameter
-preflights pass. The private visual review and rejected bolt-seat assumption
-are retained under `experiments/drive_mounts/integration_preflight`.
+The original SNL189 bearing-joint rows, supported by SNL169/178 angle allocations,
+correct the earlier inner-panel geometry mapping: M1977 receives the rear drive
+bearing, while M1978 belongs forward at the roller pinion. Source identities were
+preserved. Twelve rear panels now follow the documented level skirt-border
+hypothesis and own the bearing-barrel and attachment bores. Exact historical
+seams and casting outlines remain inferred.
 
-The shared Q52C plug has 12 mm insertion and an inferred 0.2 mm radial gap;
-its small square head is not a qualified bolt-style shoulder. Thread retention,
-sealing, historical fits and the extra M1552 plate-only rivets remain unresolved.
-The delivered native/STEP/relocation/rebuild/cache and all fifteen parameter
-trials still require qualification in the main directory. Do not treat the
-private preflight as the final delivery check. Snapshot 010 is not yet saved.
+Nominal native checks pass 82 bearing/attachment seats, 32 full hull receiving
+cylinders, four shaft/bush clearances, shaft/key dimensions, oil-passage witnesses
+and rivet-stock volumes. All 604 idler/drive wheel-and-mount occurrences clear
+2,042 material candidate pairs. The shared Q52C plug has 12 mm insertion and
+an inferred 0.2 mm radial gap; its tiny square-head contact is not treated as a
+bolt shoulder. A deliberately shifted plug fails the insertion check. Threads,
+sealing, retention strength, exact cast profiles, extra M1552 plate-only rivets,
+historical fit and continuous engagement remain unqualified.
+
+Thirty-five record/renderer tests pass. The complete delivered native shapes,
+rigid placements, both STEP round trips, relocated links, independent rebuild,
+unchanged cache and all fifteen parameter trials pass. The two new trials vary
+shaft length and frame spacing; 46 fittings follow shaft-length changes while
+independent wheels and hull faces stay fixed. The spacing trial also rechecks
+existing hull, roller, idler and lower-support interfaces. Source verification
+covers 749 files and the unchanged survey database.
+
+Preserved [isometric010](../intermediate_snapshot_iso_010.png), a
+[complete mounting-stage wheel view](../intermediate_snapshot_detail_drive_010.png)
+and [shaft/support detail](../intermediate_snapshot_detail_drive_mounts_010.png).
+Prior snapshots remain byte-identical. The reviewed source comparisons retain
+all profile and interface limitations. Snapshot009 and its preserved wheel detail retain their original hashes.
+The former temporary delivery archive was lost in an environment restart;
+ongoing work and validation receipts now live in the project directory.
+
+The next running-gear work is the source-counted roller pinions and chain drive,
+followed by remaining exterior structure, fittings and identifiable interiors.
+The isolated pinion integration has passed a focused installed geometry check
+after an explicitly inferred fuel-backplate correction; its full qualification
+remains separate from this delivery.
+The complete-tank goal remains open, with standard geometry ahead of poses.
 
 ## 20 September 2026 — partial driving wheels and common wheel interfaces
 

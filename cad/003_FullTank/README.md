@@ -2,7 +2,7 @@
 
 This stage contains the **full-tank installation layout, closed track loops and
 individual upper/main hull plates, hollow sponson plate shells, roof louvers and
-lower/upper roller stacks, upper/lower support angles, partial front idler wheels/adjusters and driving wheels**. The complete
+lower/upper roller stacks, upper/lower support angles, partial front idler wheels/adjusters and driving wheels with partial shafts/bearings**. The complete
 tank remains in progress.
 Follow the [complete-tank workflow](../../docs/complete-tank-workflow.md).
 The working target is the Rock Island first-100 production configuration, all
@@ -41,14 +41,14 @@ python3 cad/003_FullTank/manage.py validate
 Open **build/native/MarkVIII.FCStd** in FreeCAD. Keep its library and subsystem
 directories with it. The standard assembly contains 11 layout definitions,
 seven track definitions, 26 upper plate/leaf definitions and 77 main hull plate
-definitions, plus 39 sponson plate, 19 louver, 14 roller, ten wheel, eleven idler-mount and eighteen lower-support definitions. Its 5,089 leaves comprise 15 layout
+definitions, plus 39 sponson plate, 19 louver, 14 roller, ten wheel, eleven idler-mount, ten drive-mount and eighteen lower-support definitions. Its 5,145 leaves comprise 15 layout
 occurrences (13 solids and two wires), 2,964 components in two 78-unit tracks,
 103 upper/main hull plates, 39 sponson plates, 82 louver components and 1,228
-components in 60 roller stacks (58 lower and two separate handbook upper, including four M2092 angles), plus 306 idler wheel, shaft and adjustment components, 110 lower support/bolt components and 242 driving-wheel/bush components.
+components in 60 roller stacks (58 lower and two separate handbook upper, including four M2092 angles), plus 306 idler wheel, shaft and adjustment components, 110 lower support/bolt components and 298 driving-wheel/shaft/bearing components.
 Each shoe unit has the 19 physical leaves specified by the SNL. Upper and main
 hull plates cover 84 source identities, with hollow enclosures, floors, open
 sponson/louver apertures and closed standard leaves. All physical definitions
-retain partial coverage. Drive shafts and bearing attachments, exact shaft/tensioner profiles and inner plate retention, continuous drive/idler engagement, exact lower support sections and removable retention, upper attachment and covers, remaining hull structures/fittings,
+retain partial coverage. Exact drive shaft/bearing and tensioner profiles and inner plate retention, continuous drive/idler engagement, exact lower support sections and removable retention, upper attachment and covers, remaining hull structures/fittings,
 sponson shields/supports/fittings, louver spacing/support hardware and interiors remain open; no complete tank is claimed.
 
 Open **build/comparisons/index.html** for source/model comparisons. The SNL
@@ -74,11 +74,14 @@ section views accompany HB88/89 and SNL29. The [upper support packet](packets/R0
 separate quantity scopes, dimensional conflicts and reported source-station
 offsets. The upper roller position follows the rear roof bend and HB144's
 engine-room access description. The [idler-wheel packet](packets/R02-idler-wheels.md) records the separate rims, disks, boss, diaphragms, rivets and bushes, including the coupled foremost-roller clearance correction. The [mounting packet](packets/R02-idler-mounts.md) covers the two source-complete shaft BOMs and partial adjustment installations. Source comparisons include elevation, transverse section, mounting detail and adjustment-axis section views. Earlier visual milestones remain in the
-[visual progression](../VISUAL_PROGRESSION.md); the latest wheel milestone is
-[snapshot 009](../intermediate_snapshot_iso_009.png), with a preserved
-[drive-wheel close-up](../intermediate_snapshot_detail_drive_009.png).
+[visual progression](../VISUAL_PROGRESSION.md); the latest mounting milestone is
+[snapshot010](../intermediate_snapshot_iso_010.png), with preserved
+[wheel](../intermediate_snapshot_detail_drive_010.png) and
+[shaft/support](../intermediate_snapshot_detail_drive_mounts_010.png) close-ups.
 The [drive-wheel packet](packets/R02-drive-wheels.md) records the source tooth-count
-conflict, shared wheel geometry, corrected rim alignment and remaining shafts.
+conflict, shared wheel geometry and corrected rim alignment. The
+[drive-mount packet](packets/R02-drive-mounts.md) records the completed source shaft
+BOMs, corrected receiving-plate identities and partial bearing interfaces.
 The [installed support close-up](../intermediate_snapshot_detail_supports_008.png)
 remains preserved from snapshot 008.
 The [lower-support packet](packets/R02-lower-supports.md) records source allocations,

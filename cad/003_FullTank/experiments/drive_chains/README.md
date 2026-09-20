@@ -29,12 +29,31 @@ delivered assembly or reconcile the catalogue's chain component quantities.
   HB134's casing width and SNL60/170's M1592-to-M2003 connection motivate the
   passages. The reopened 505-leaf fixture passes 904 internal and 255 external
   candidate pairs with zero overlap; the existing 77-plate hull checks also
-  pass. The detailed opening shape and clearances remain inferred. Actual
-  casing bodies and hardware must follow before standard integration.
+  pass. The detailed opening shape and clearances remain inferred. Later
+  studies below check the actual casing bodies and wall attachments.
+- `casing_source_rows.json` identifies the body/cap assemblies and their named
+  components. `casing_joint_review.json` preserves newly inspected cap-bolt
+  allocations and conflicts between nested rivet counts and joint tables.
+- `casing_parts.py` and `casing_shell_probe.py` build separate M1590 bodies and
+  M1591 caps. The initial `casing_shell_build` retains two 21.609290 mm³ wall-corner
+  overlaps and its exact input snapshot. Its original half-section raster has
+  a documented rendering error and must not be used as geometry evidence.
+- `casing_shell_passage_build` uses the actual casing section to enlarge the
+  inferred wall openings. Its 509-leaf fixture passes 638 casing-related material
+  pairs, with 2.304985 mm minimum wall clearance and 2 mm hub clearance. The
+  corrected [half section](casing_shell_passage_build/casing_half_section.png)
+  was inspected. The cap seam and detailed shell contour remain inferred.
+- `casing_wall_mount_probe.py` adds two M1592 angles, 22 wall rivets and 34 casing
+  rivets to the fixture. Its 567 reopened leaves pass 697 new/changed material
+  candidate pairs, 56 receiving bores and 56 two-receiver seating checks.
+  The [attachment detail](casing_wall_mount_build/wall_joint_detail.png) was
+  inspected. Angle form, section and hole pattern remain explicit assumptions.
 
 Native probes accept `--stage` pointing to the authored pinion experiment and
 an optional `--output`. They do not modify that stage. The complete chain
 candidate includes bars, bushes, pins and unsplayed cotters; the older circular
-clearance probe contains only diagnostic annuli. The casing, transmission shaft,
-formed retention and lubrication remain unpopulated. Full inventory, moving
+clearance probe contains only diagnostic annuli. Casing shells and their wall
+attachments are now separate candidates. Cap cleats, beading, register plates,
+support brackets, remaining fasteners, the transmission shaft, formed chain
+retention and lubrication still need population. Full inventory, moving
 engagement and historical-fit claims remain false.

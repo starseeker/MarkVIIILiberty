@@ -82,3 +82,12 @@ length +2 mm, frame spacing +10 mm) each pass 39 bearing contacts and 441 materi
 candidate pairs. Head across-flats dimensions and stocks are exposed as inferred
 controls. These checks support transferring the construction; they do not replace
 main-registry source reconciliation or full integrated delivery qualification.
+
+## Qualified integration
+
+The source-correct receiver and mounting hypothesis is now in the qualified
+partial tank stage, preserved as snapshot010. All fifteen parameter trials pass.
+The private preflight, corrected pipe-plug check and rejected shoulder-seat
+assumption are preserved in `integration_preflight`. Earlier studies retain
+their original inputs and claims. Historical fit, threads, sealing, retention
+and extra plate-only rivets remain unresolved.
