@@ -579,3 +579,63 @@ diameter, bore, seat, taper or thread form. Reconstruct the inlet and oil routes
 against section evidence, then complete frame receivers/fasteners and the
 central transmission before integration. Standard milestone011 remains intact,
 including both opaque and transparent isometric snapshots.
+
+### Populated cap lubrication candidate
+
+`transmission_oil_sources.json` extends the inspected inventory with original
+SNL261/262 oil-line assemblies, SNL274 wool quantity and HB18/19 operating text.
+The copper feed lines explicitly specify ¼-inch outside diameter, so the tube
+receiving geometry now has a source-supported 6.35-mm OD constraint. This does
+not establish the cap fitting's thread form. Each line assembly also contains
+an A16309 adapter, A16323 collet and SH102E union; these supply another possible
+collet location without duplicating SH664C in the cap seat. Exact end ownership
+and interchangeability still require the connected-system reconstruction.
+
+The saved `transmission_oil_build` contains 928 valid single-solid leaves.
+Twelve fitting occurrences and four wool regions are new; four caps and four
+front lining halves change, while the other 904 earlier occurrences remain
+unchanged. Five shared definitions hold elbow, nut, sleeve and the two local
+packing placements. Native ownership stays with the fixed bearings. SNL wool
+quantity is represented as two ounces per cup, eight total, with one porous
+material region per cup. No fiber topology, density or flow behavior is implied.
+
+The provisional inlet sits on each cup's forward face, local Y18/Z−16, at X158
+inside and X132 outside. An upward elbow uses a 12-mm centerline bend and 4-mm
+bore. The estimated sleeve is captured between an elbow cone and nut shoulder;
+the nut has 17-mm flats. All fitting dimensions except the received tube OD are
+explicit estimates. A horizontal gallery at local Z−18, radius2.5, crosses the
+cap and front lining to the sleeve's running surface. Exact source drilling
+routes and the upper opening visible in HB20 remain unresolved.
+
+All 104 new/changed material candidate pairs clear. Four local checks establish
+elbow/cap and fitting seat contact, 0.15-mm spigot clearance, 0.05/0.15-mm
+tube-to-sleeve/nut gaps and positive two-sided sleeve capture under diagnostic
+movement. A connected volume passes from the fitting through the permeable cup
+region and gallery with zero obstruction by the nonporous parts. Restoring each
+undrilled cap, undrilled lining or solid elbow produces positive obstruction.
+This verifies a geometric route only; wool is deliberately excluded from solid
+blockage because its CAD volume represents porous material.
+
+All four bearing/hinge gap checks and sixteen stud nut seats remain intact.
+Protected material around the stud receivers is identical to the prior cap;
+the 24 new/changed solids survive STEP reopening. Five main rasters and three
+supplementary cap/source rasters were inspected. Sections reveal the fitting
+seat and low gallery; the original/native comparison is not registered or used
+as dimensional calibration. The standard native covers remain closed.
+
+The local packing trial initially intersected the integral hinge pedestals.
+The final packing subtracts those cap intrusions and remains one solid envelope
+per cup. Original local inputs/logs are retained in
+`.work/transmission-oil-study/local_trial_01`. Full source-length armored feed
+lines and their lubricator remain open; short tube stubs are not counted as
+those complete source parts. Frame attachment, central transmission geometry,
+historical fitting profiles, thread/seal behavior and full-model integration
+are still incomplete.
+
+`check_transmission_oil_gallery.py` independently checks the gallery's remaining
+wall and reservoir connection. Ten nominal/height/bore cases retain at least
+1 mm of wall around the closed drilling and an open connected route. Two
+deliberately lowered galleries miss the reservoir and are correctly rejected;
+the inner one also breaks the required wall. All twelve expected outcomes pass.
+The nominal cap/lining geometry matches the saved native. These are local
+diagnostic bounds, not measured tolerances or full parameter qualification.

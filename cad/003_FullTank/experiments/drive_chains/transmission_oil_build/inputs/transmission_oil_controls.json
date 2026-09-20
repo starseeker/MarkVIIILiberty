@@ -1,0 +1,191 @@
+{
+  "status": "partial_cap_lubrication_candidate",
+  "controls": {
+    "tube_od": {
+      "value": 6.35,
+      "unit": "mm",
+      "basis": "printed_dimension",
+      "interpretation": "SNL261/262 explicitly gives quarter-inch OUTSIDE diameter for the bearing feed tubes."
+    },
+    "tube_radial_gap": {
+      "value": 0.05,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Tube-to-sleeve display clearance; compressed seal and tube wall are not qualified."
+    },
+    "spigot_length": {
+      "value": 5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Assumed cap inlet engagement, equal to current estimated front cup-wall thickness."
+    },
+    "elbow_radius": {
+      "value": 5.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated elbow body and spigot outside radius."
+    },
+    "elbow_straight": {
+      "value": 4,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated straight wrench section beyond cup face."
+    },
+    "bend_radius": {
+      "value": 12,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated elbow centerline bend radius."
+    },
+    "flow_radius": {
+      "value": 2,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated fitting bore radius."
+    },
+    "spigot_radial_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Smooth-envelope receiving-bore clearance; omitted thread form."
+    },
+    "wrench_af": {
+      "value": 13,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated cap-end wrench flats."
+    },
+    "connector_radius": {
+      "value": 6.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated outside thread envelope; no thread pitch asserted."
+    },
+    "connector_top": {
+      "value": 22,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated upper end of elbow connection relative to inlet axis."
+    },
+    "flange_radius": {
+      "value": 8.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated nut seating flange radius."
+    },
+    "flange_bottom": {
+      "value": 14,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated flange lower level."
+    },
+    "nut_bottom": {
+      "value": 16,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Common flange/nut seating level."
+    },
+    "nut_af": {
+      "value": 17,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated compression nut across flats."
+    },
+    "nut_top": {
+      "value": 28,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated nut top relative to inlet axis."
+    },
+    "nut_thread_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Radial clearance of cylindrical thread envelopes, not a thread-fit result."
+    },
+    "seat_bottom": {
+      "value": 19,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated conical sleeve seat start."
+    },
+    "seat_top_radius": {
+      "value": 5.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated conical sleeve seat upper radius."
+    },
+    "sleeve_bottom": {
+      "value": 20,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated compressed sleeve lower end on cone."
+    },
+    "sleeve_top": {
+      "value": 24,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated sleeve/nut shoulder contact level."
+    },
+    "nut_tube_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Tube-to-nut throat radial display clearance."
+    },
+    "inlet_y": {
+      "value": 18,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Offset on front cup wall; exact face/side not established by HB20 perspective."
+    },
+    "inlet_z": {
+      "value": -16,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Low cup inlet suggested by HB20; exact height unmeasured."
+    },
+    "gallery_z": {
+      "value": -18,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Low feed gallery from cup to running surface; route unshown in sources."
+    },
+    "gallery_radius": {
+      "value": 2.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated cap/lining feed-bore radius."
+    },
+    "packing_wall_gap": {
+      "value": 1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Display separation from cup walls; wool is permeable, not a sealed solid block."
+    },
+    "packing_top_gap": {
+      "value": 3,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated headroom below cup rim."
+    },
+    "packing_quantity_oz": {
+      "value": 2,
+      "unit": "oz",
+      "basis": "printed_quantity",
+      "interpretation": "SNL56/274: two ounces per cap, eight total; not a count of discrete wool parts."
+    }
+  },
+  "interpretations": [
+    "Elbow datum lies on the estimated front cup face. Local+X points forward/outward and local+Z up; all four caps use the same unhanded fitting.",
+    "SH664C is represented as the cap fitting sleeve captured between the SH664A cone and SH664B shoulder. Exact historical fitting cross-section is unknown; A16323 remains a separate unallocated collet identity.",
+    "Wool is one permeable material envelope per cup, annotated with source mass quantity. Individual fibers, density, pore structure and hydrodynamic behavior are not modeled.",
+    "One low horizontal passage crosses cap and front lining to the sleeve running interface. Geometry is an explicit reconstruction assumption, not a transcribed drilling specification."
+  ],
+  "deferred": [
+    "Helical thread/seal and clamp qualification",
+    "Exact fitting shapes, placement, cast cup profile and unidentified upper opening",
+    "Armored lines at full source lengths, source collet allocation and mechanical lubricator",
+    "Lubrication performance and complete frame/central-transmission interfaces"
+  ]
+}

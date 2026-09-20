@@ -11,6 +11,38 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — transmission cap lubrication
+
+The [lubrication candidate](experiments/drive_chains/transmission_oil_build/TransmissionOilCandidate.FCStd)
+has 928 valid single-solid leaves. It adds twelve separate elbow/nut/sleeve
+fittings and four porous wool envelopes, then drills the four caps and front
+linings. The other 904 occurrences retain their geometry. All 104 material
+candidate pairs have no overlap, four fitting/passage checks pass, and 24
+new/changed solids survive STEP reopening. Existing bearing/hinge gaps and all
+sixteen stud seats remain intact.
+
+Original SNL261/262 establishes the feed tubes' ¼-inch outside diameter;
+SNL56/274 specifies two ounces of wool per cup. The CAD uses one material
+envelope per cup, with no claim to reproduce fibers, density or permeability.
+It conforms to the hinge-lug intrusions found during the local fit check.
+Each geometric passage connects the fitting inlet through the porous cup region
+to the sleeve running interface; undrilled caps, undrilled linings and solid
+elbows correctly obstruct it.
+
+Twelve local gallery trials have the expected outcomes: ten nominal/height/bore
+cases pass the connection and 1-mm wall checks; two deliberately lowered
+drillings miss the reservoir and are rejected. This does not establish the
+historical route or qualify the full assembly's uncertain parameter ranges.
+
+The [fitting section](experiments/drive_chains/transmission_oil_build/oil_fitting_section.png),
+[bearing section](experiments/drive_chains/transmission_oil_build/bearing_oil_section.png)
+and [handbook comparison](experiments/drive_chains/transmission_oil_build/source_review/source_oil_detail.png)
+were inspected. Fitting dimensions, inlet placement and gallery route remain
+inferred. Rounded casting transitions and the source's upper opening remain
+unfinished. Full armored lines, lubricator, sealing and oil-flow performance
+are not represented by these local fit checks. Frame mounting and the central
+transmission remain ahead of integration; standard milestone011 is unchanged.
+
 ## 20 September 2026 — transmission cap fastening
 
 The [fastened transmission candidate](experiments/drive_chains/transmission_stud_clearance_build/TransmissionStudCandidate.FCStd)

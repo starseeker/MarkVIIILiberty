@@ -217,3 +217,29 @@ and candidate `visual_review.json` for the remaining visible discrepancies.
 and SH664C sleeve inventory. Original SNL67 also lists a distinct A16323 brass
 collet; its relationship to the sleeve is unresolved. Complete lubrication,
 frame attachment, the central transmission and integration remain open.
+
+`transmission_oil_probe.py` now populates one SH664A elbow, SH664B nut and SH664C
+sleeve per cap, plus four separate porous wool volumes and low galleries through
+the caps/front linings. `transmission_oil_build` reopens with 928 valid solids:
+twelve new fittings, four material envelopes, eight changed cap/lining
+occurrences and 904 unchanged prior occurrences. Its 104 material pairs have no
+overlap. Four fitting/passage checks, four retained interface checks and the
+24-solid STEP reopening pass. All sixteen existing nut seats and their protected
+cap material remain unchanged.
+
+The local [fitting section](transmission_oil_build/oil_fitting_section.png) and
+[bearing section](transmission_oil_build/bearing_oil_section.png) expose the
+inferred connection. The [handbook comparison](transmission_oil_build/source_review/source_oil_detail.png)
+records the remaining rounded-casting and upper-opening differences. Original
+SNL261/262 supplies the explicit ¼-inch tube outside diameter; original SNL274
+confirms eight ounces of wool total, represented as four two-ounce material
+envelopes rather than eight discrete parts. The packing conforms to cap hinge
+intrusions. Thread form, sealing, full feed lines and oil performance remain
+unqualified. All source rows, assumptions and exact build inputs accompany the
+native candidate; no new standard milestone has been promoted.
+
+`check_transmission_oil_gallery.py` adds twelve local trials. Nominal, height and
+bore variations retain the specified 1-mm wall and open route; the two lowered
+negative cases miss the reservoir. All expected outcomes pass. The test bounds
+are diagnostic assumptions, with historical route and whole-assembly parameter
+qualification still open.
