@@ -284,3 +284,20 @@ local outcomes, including deliberately incorrect tooth phases and axial stops.
 These do not qualify historical fits, full motion or the uncertainty envelope.
 See the [large-gear packet](../../packets/I03-large-planetary-gears.md) for source
 identities, remaining pin/bush work and reproduction commands.
+
+`transmission_pin_probe.py` adds 56 pin, bush, sleeve, ring and fastening
+occurrences from ten source identities. The
+[saved candidate](transmission_pin_build/TransmissionPinCandidate.FCStd) has
+1,013 valid solids; two carriers change and 955 prior occurrences are unchanged.
+The carrier nuts sit in source-scaled recessed seats. All 332 material candidate
+pairs are clear and 108 specified interface checks pass. All 58 exported solids
+have empty native/STEP material differences; mass-property deltas remain recorded.
+
+`check_transmission_pins.py` confirms 50 expected retention failures, six axis
+alignments, four hardware sizes and 11 deliberate export-displacement failures.
+The [pin-axis section](transmission_pin_build/source_review/pin_axis_section.png)
+and [source comparison](transmission_pin_build/source_review/source_pin_comparison.png)
+expose the bearing stack and the unresolved source radial discrepancies. The
+ring-bolt position requires a carrier-rim/pin-ring review before integration.
+See the [support packet](../../packets/I03-large-planet-supports.md) for source
+corrections, bush identity conflict, approximations and reproduction commands.

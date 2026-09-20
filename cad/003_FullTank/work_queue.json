@@ -362,6 +362,34 @@
         "motion_qualified": false,
         "source_axial_station_residual_mm": 5.1285714285714175,
         "next": "Populate large-planet pins, bronze/steel bushes and pin rings with carrier receivers; retain the M272/M282 source conflict. Continue small planetary train, central bevel drive, mounting, lubrication and integration."
+      },
+      "transmission_pin_experiment": {
+        "path": "experiments/drive_chains/transmission_pin_build",
+        "packet": "packets/I03-large-planet-supports.md",
+        "status": "nominal_partial_support_fit_with_source_discrepancies",
+        "native_solids": 1013,
+        "new_occurrences": 56,
+        "new_source_identities": 10,
+        "changed_prior_occurrences": 2,
+        "unchanged_prior_occurrences": 955,
+        "material_pairs": 332,
+        "overlaps": 0,
+        "specified_gap_contact_checks": 108,
+        "exchange_roundtrip_solids": 58,
+        "exchange_comparison": "Empty bidirectional Boolean material differences; native tolerance bounded by specified clearance, no imported tolerance inflation; mass-property differences retained.",
+        "local_interface_trials": 50,
+        "axis_checks": 6,
+        "printed_dimension_checks": 4,
+        "exchange_displacement_negative_checks": 11,
+        "expected_trial_outcomes_pass": true,
+        "actually_viewed_rasters": 7,
+        "standard_modified": false,
+        "full_parameter_envelope_qualified": false,
+        "historical_fit_qualified": false,
+        "motion_qualified": false,
+        "source_pin_center_residual_mm": 11.520714285714291,
+        "source_ring_bolt_radius_residual_mm": 59.25714285714281,
+        "next": "Reconcile source outer carrier/ring contours and the ring-bolt radial station before integration; then populate the small planetary train, central bevel drive/input, brakes, controls, mounting and lubrication."
       }
     },
     {
@@ -540,8 +568,8 @@
         "Retain explicit simplified representations for unsupported gear or bearing detail rather than invented exact profiles.",
         "Check alignment, clearances and control connection datums against the installed powerplant and running gear."
       ],
-      "packet": "packets/I03-large-planetary-gears.md",
-      "progress_note": "Both large planetary trains and their gasket/washer/clip interfaces are populated in the isolated 957-solid fixture: 18 new occurrences, five revised case/shaft occurrences and 934 unchanged. Nominal native/STEP/material checks and 28 local trials pass. Source sun-outline and 5.129 mm axial-station discrepancies remain explicit. Large-planet pin supports, small gears, bevel drive, bearings, clutch, braking/steering controls, complete mounting/lubrication and full-tank integration remain incomplete."
+      "packet": "packets/I03-large-planet-supports.md",
+      "progress_note": "Both large planetary trains now have separate pin, bronze/steel bush, ring and retention stacks in the isolated 1,013-solid fixture: 56 new occurrences, two revised carriers and 955 unchanged. All 332 material pairs, 108 specified interfaces, 58 STEP material comparisons and independent local checks pass. Nut seats follow the source axial pick; planet-center and ring-bolt radial discrepancies remain explicit. Carrier/ring contour review, small gears, bevel drive, bearings, clutch, braking/steering controls, complete mounting/lubrication and full-tank integration remain incomplete."
     },
     {
       "id": "I04",

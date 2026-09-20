@@ -136,6 +136,11 @@ need further reconciliation. These differences are not a historical-fit pass.
 
 ## Outstanding reconstruction
 
+The subsequent [pin-support checkpoint](I03-large-planet-supports.md) now provides
+the following pin/bush/ring occurrences and physical receivers. Their nominal
+fit checks pass, but the source carrier rim and ring-bolt position need further
+reconstruction. The notes below record this gear checkpoint's research handoff.
+
 M284 pins, M282/M283 bushings and M285 pin rings need geometry and physical
 receivers in the existing carriers. SNL251 names M272 for the large bronze
 bush, whereas the SNL43 catalogue and HB122 name M282. This identity conflict
@@ -144,7 +149,7 @@ part occurrence.
 
 Further inspected originals SNL43 and SNL137 and their rows are retained in
 `transmission_planet_pin_research.json`. SNL137 specifies each large-pin assembly
-as an M284 pin, M1313 nut, 3/16 × 2½-inch split pin and 1½-inch expansion plug.
+as an M284 pin, M313 nut, 3/16 × 2½-inch split pin and ½-inch expansion plug.
 Those assemblies are the next geometry increment; their survey assembly record
 must not add a duplicate physical pin.
 

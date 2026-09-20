@@ -82,3 +82,15 @@ inspection images supplement the standard history and are not milestone 012.
 `1ad1be8ec500935ad12d45b40b03eaf62b78a98d7647df5ac899ba88f05396dd`.
 `intermediate_snapshot_detail_transmission_gears_001.png` SHA-256:
 `55e1003638315b0ae9424d71d242c51853e3eefd7640c2fff35674813730657b`.
+
+The isolated [supported-planet isometric](intermediate_snapshot_iso_transmission_supports_001.png)
+and [pin-axis section](intermediate_snapshot_detail_transmission_pins_001.png)
+record 56 added pin, bearing, ring and retention occurrences (20 September 2026).
+The fixture contains 1,013 solids with recessed carrier nuts. Source pin-center
+and ring-bolt radial discrepancies remain unresolved; these are partial
+reconstruction views and do not advance the standard tank to milestone 012.
+
+`intermediate_snapshot_iso_transmission_supports_001.png` SHA-256:
+`6781fd0f8ad0f1170c215034b886143c56a3bdbc0b419a65217996ccb2d09edc`.
+`intermediate_snapshot_detail_transmission_pins_001.png` SHA-256:
+`0bd2205f7576cc7db237e4441fb2f6a3bcbc53bf50b4d4e6323daeefee76a00a`.

@@ -1,0 +1,33 @@
+{
+  "status": "visually_reviewed_partial_reconstruction_source_geometry_revision_required",
+  "native_sha256": "3931eeb29e4849c5631fcf9d920773a47e8fc8e946ffaadeee65b7daf370fd24",
+  "report_sha256": "baeb362779a455915586b7c064b1a546fc79ee75ef66588f0ef229a4786d5386",
+  "exchange_sha256": "eff4c78a6bc4fabc9cf466dd710e29f13c79a3e0af6de622ed859dde298b67c0",
+  "interface_checks_sha256": "52b4f2cfc8eae008e0ef22e5917fb0b2123e53b485162fe9d31a5a9d4c434bb3",
+  "source_render_receipt_sha256": "a8f10be853eedc86b54ef6a939a21e7e4a3d0c38cd3b316012e7b717d9c53dba",
+  "actually_viewed_rasters": {
+    "supported_gears_cutaway.png": "204ba5ee096ee28b5c70eb2c15a42a0290cca8332a906dad54f7fee6d6ec6634",
+    "carrier_and_pins.png": "64b089a21f0a9e9e05562cf097a4a7776cfa5c12e562e57a63f8cbd7ffa420ef",
+    "supported_planets.png": "6781fd0f8ad0f1170c215034b886143c56a3bdbc0b419a65217996ccb2d09edc",
+    "source_plate22_overlay.png": "a685f64651291a37eb87611d2550e151a29de146ab12482ab7e7d96a6f7ff38d",
+    "source_review/pin_axis_section.png": "0bd2205f7576cc7db237e4441fb2f6a3bcbc53bf50b4d4e6323daeefee76a00a",
+    "source_review/source_pin_comparison.png": "30597df9973e9a73e12be8c5d4022b4544126b280d36b1cc01ad76f04fceddc8",
+    "source_review/pin_axis_overlay.png": "64000ec0dbe9c75d931b7315b59b46080d0734f2ce6f110514a00795343d9952"
+  },
+  "preserved_snapshots": {
+    "cad/intermediate_snapshot_iso_transmission_supports_001.png": "6781fd0f8ad0f1170c215034b886143c56a3bdbc0b419a65217996ccb2d09edc",
+    "cad/intermediate_snapshot_detail_transmission_pins_001.png": "0bd2205f7576cc7db237e4441fb2f6a3bcbc53bf50b4d4e6323daeefee76a00a"
+  },
+  "findings": [
+    "The actual assembled oblique view shows separate pin heads, ring and three ring-bolt stations enclosing the previously modeled large planetary gears. The carrier-only view shows the connecting sleeves and stand-offs; those cast contours are inferred.",
+    "The horizontal cutaway exposes the two support groups in their saved assembly placement. Most planet axes lie outside this section; it cannot reproduce the composite two-pin presentation of Plate22.",
+    "The separate actual pin-axis section shows an integral hollow pin, separate bronze bush and steel sleeve, the ring at one end and a recessed castle nut/cotter at the carrier. This view is cropped and transformed for inspection only; the saved native assembly is unchanged.",
+    "Original SNL137/126/156 correct the preparatory nut mark to M313 and plug size to half an inch. Original SNL43/44 and HB122 support M282 large and M272 small bronze bushes, while the conflicting SNL251/252 assembly rows are retained.",
+    "The first projecting carrier-pad trial put the nut seat at local Y591mm. The final recessed seat at Y529.227142857mm projects to the approximate source x849 pick. Circular access-pocket size, shoulder shapes and casting transitions remain inferred; coincidence with the chosen pick is not independent validation.",
+    "The modeled pin diameter28mm is close to the conditional27.577mm source pick. Printed gear dimensions retain planet-center radius142.875mm versus approximately131.354mm from the lower illustrated pin, leaving an11.521mm radial discrepancy.",
+    "The upper ring bolt is substantially inboard of its illustrated position: model radius202mm, approximately261.257mm at source y200 under the retained scale. The source carrier outer rim/pin-ring contours and current gear-case envelope require reconstruction before this fixture can be accepted for integration. Nominal clearances do not resolve this source discrepancy.",
+    "Blind pin drilling and separate domed plug are present, but the complete oil path and expansion sealing are absent. Smooth thread envelopes and formed round-leg cotters do not establish original threads, clamp loads, exact stock volume or historical running fits."
+  ],
+  "accepted_scope": "Nominal static pin/support and retention geometry only. Carrier/ring source radial discrepancy requires revision; no historical-fit, full uncertainty, motion, load or standard-integration acceptance.",
+  "next": "Review carrier outer rim and pin-ring/bolt radial station against Plate22 and HB Plate73 before integration; then continue the small train and central bevel/input assemblies."
+}

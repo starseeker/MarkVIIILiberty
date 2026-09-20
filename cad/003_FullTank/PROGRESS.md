@@ -11,6 +11,38 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — large planet pins and recessed carrier seats
+
+The [pin-support candidate](experiments/drive_chains/transmission_pin_build/TransmissionPinCandidate.FCStd)
+adds 56 physical occurrences from ten source identities: bronze bushes, steel
+sleeves, hollow pins, expansion plugs, pin rings, nuts, bolts and split pins.
+It contains **1,013 valid solid components**, with two revised carriers and
+955 earlier occurrences unchanged. All 332 material candidate pairs are clear;
+108 specified contact/gap checks and 58 STEP material comparisons pass.
+
+Source inspection corrected the preliminary M313 nut and half-inch plug
+transcriptions. The large-bronze-bush model uses M282 from SNL43/HB122 while
+retaining the conflicting SNL251/252 marks. Recessed nut seats now follow the
+Plate22 axial pick. Their casting pockets and bearing shoulders remain inferred.
+
+Fifty local retention trials, six pin/gear axis checks, four printed-size checks
+and eleven deliberate export-displacement trials pass. STEP comparisons retain
+small volume/center discrepancies while verifying that neither added nor missing
+material exists and import has not enlarged numerical tolerances. These checks
+establish the modeled static interfaces, not historical running fits.
+
+The [pin-axis section](experiments/drive_chains/transmission_pin_build/source_review/pin_axis_section.png)
+and [source comparison](experiments/drive_chains/transmission_pin_build/source_review/source_pin_comparison.png)
+show the separate bearing stack and recessed retention. Two radial discrepancies
+remain explicit: about 11.5 mm at the planet center and about 59.3 mm at the
+ring-bolt station under the inherited drawing scale. The latter requires a
+carrier-rim and pin-ring review before integration. The
+[support packet](packets/I03-large-planet-supports.md) records those limits.
+
+Standard milestone 011 remains unchanged. The next geometry work is the outer
+carrier/ring contour and bolt station, followed by the small planetary train,
+bevel/input assemblies, brakes, controls, mounting and lubrication.
+
 ## 20 September 2026 — large planetary gears and retention
 
 The [large planetary candidate](experiments/drive_chains/transmission_planet_build/TransmissionPlanetCandidate.FCStd)
@@ -103,7 +135,7 @@ were inspected. Fitting dimensions, inlet placement and gallery route remain
 inferred. Rounded casting transitions and the source's upper opening remain
 unfinished. Full armored lines, lubricator, sealing and oil-flow performance
 are not represented by these local fit checks. Frame mounting and the central
-transmission remain ahead of integration; standard milestone011 is unchanged.
+transmission remain ahead of integration; standard milestone 011 is unchanged.
 
 ## 20 September 2026 — transmission cap fastening
 
@@ -126,7 +158,7 @@ lengths clear, so historical corner placement remains unresolved.
 Original SNL56/67/86/126 now records the next oil-fitting inventory, including an
 unresolved sleeve/collet identity. Oil fittings/passages, frame attachment and
 the central transmission remain open. This is isolated candidate geometry;
-standard milestone011 and its opaque and transparent views remain unchanged.
+standard milestone 011 and its opaque and transparent views remain unchanged.
 
 ## 20 September 2026 — closed oil-cover hinges
 
@@ -198,7 +230,7 @@ Original SNL96/97 and HB/SNL side sections now support the next frame study.
 Build the top/bottom channels, angles and gussets to constrain the support/casing
 interface; preserve the source-supported aft-facing bracket orientation. Cap
 hardware, lubrication details, foot-count conflicts and full integration remain
-open. Standard milestone011 and its opaque/transparent snapshots are unchanged.
+open. Standard milestone 011 and its opaque/transparent snapshots are unchanged.
 
 ## 20 September 2026 — experimental chains, casing shells and fastening
 
@@ -285,7 +317,7 @@ bearing-material descriptions and the two-versus-four support-foot count remain
 open. Fixed castings/caps, oil fittings, channels and the complete axial stack
 are next. This candidate remains outside the delivered standard tank.
 
-## 20 September 2026 — standard roller-pinion milestone011
+## 20 September 2026 — standard roller-pinion milestone 011
 
 Both 98-part pinion installations are now in the main standard assembly: 252
 shared definitions and 5,341 leaves, comprising 5,326 physical components and
