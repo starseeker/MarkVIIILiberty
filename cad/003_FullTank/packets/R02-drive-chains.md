@@ -352,3 +352,56 @@ and chain/sprocket/case distances are 2 mm on both sides. The actual oblique and
 shaft-height section were inspected. This qualifies the selected static fit;
 it does not establish the original casing contour. Shaft bearings, M290 rings,
 axial capture, planet disks, brake bands and full-model qualification remain.
+
+
+## Output bearing sleeves, dowels and shaft retention
+
+Original SNL44 identifies two M296 inside bushes and two M299 outside bushes,
+each with one M300 bronze dowel, 5/8 inch diameter by 1/2 inch long. Original
+SNL165 allocates four M290 rings to the two output shafts. HB208 Plate123 places
+M290 at both ends of the output shaft, corroborating two ring stations per side.
+The candidate uses common C-ring geometry at those stations; its section, radial
+gap, groove depth and fit remain assumptions.
+
+`transmission_bush_build/TransmissionBushCandidate.FCStd` adds twelve physical
+parts, for 825 saved/reopened valid single solids. Sleeve axial dimensions follow
+the existing conditional Plate22 scale. Their radii, flanges and dowel drilling
+remain inferred. The M289 shaft changes remove material only: two grooves and
+two blind radial pockets per shaft. Sleeve holes open radially for dowel insertion.
+All 811 other existing occurrences retain their original geometry signatures.
+
+The native candidate passes 26 new/changed material pairs without overlap, four
+0.1 mm sleeve/journal clearances, four dowel capture checks and four ring capture
+checks. Dowels have 0.05 mm nominal radial clearance; a three-degree sleeve twist
+or three-mm axial displacement meets the installed dowel. Ungrooved shafts reject
+the rings, undrilled shafts reject the dowels, and omitting the dowel removes the
+tested torque stop. Each ring has 0.15 mm minimum groove clearance and meets the
+shaft walls under both one-mm axial displacement witnesses. These tests do not
+qualify assembly procedures, load capacity or a continuous motion range.
+
+An independent fresh-native check confirms zero material difference throughout
+the four retained sprocket/drum engagement regions. All spline clearances and
+twist-capture checks still pass. The entire axial stack is not yet qualified:
+planet disks, washers, fixed supports and their receivers remain unpopulated.
+Three actual rasters, including an axial section and source overlay, were inspected;
+`visual_review.json` binds those images to the native and verification reports.
+
+SNL309 note(gq) requires a poured babbitt lining in the fixed brackets/caps after
+alignment. This supports treating the separately listed M296/M299 parts as
+shaft-mounted sleeves; the selected radial dowel interface remains a hypothesis.
+Do not mistake these sleeves for the still-missing fixed housing lining. Original
+HB207 calls M296 outside, whereas SNL44 explicitly calls it inside; the candidate
+follows SNL44 and the sectional placement while preserving that conflict.
+
+The next fixed-support study must also disposition HB209's separately listed
+M392/M393/M395/M396 brasses and M394/M397 shims against SNL309's poured material.
+Original SNL42 implies four M391 foot assemblies in the two outside brackets,
+while SNL95 and HB209 list two feet globally. Both counts are retained. SNL56's
+four bearing caps each include an oil-box cover, sleeve, pipe elbow, elbow nut
+and steel pin; its two ounces of wool per cap is a material quantity. The
+[source research](../experiments/drive_chains/transmission_support_research.json)
+records these inspected pages and avoids prematurely selecting overlapping
+bearing parts or silently resolving the foot conflict.
+
+The qualified standard tank remains milestone011. This installation fixture and
+its passing checks do not yet add chain/transmission geometry to that delivery.

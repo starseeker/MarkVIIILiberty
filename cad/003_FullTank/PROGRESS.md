@@ -81,6 +81,21 @@ checks pass. The taper and its location are explicit assumptions. Bearings,
 shaft retaining rings, brake bands, planet-disk connections and full-model
 integration remain open; neither candidate changes the delivered standard tank.
 
+The latest output-shaft candidate adds twelve sleeve/dowel/ring parts, for 825
+valid native solids. Four inner/outer sleeves, four bronze dowels and four
+retaining rings match their selected SNL allocations. Inferred shaft grooves
+and dowel pockets remove material only. All 26 changed/new material pairs,
+four journal gaps, four dowel capture checks and four bidirectional ring capture
+checks pass. An independent reopen confirms that all four existing spline
+interfaces retain their original engagement geometry and passing fits.
+
+Three native rasters, including the axial section and fixed source overlay,
+were inspected. SNL309's poured-babbitt note is now recorded; the separate shaft
+sleeves must not be confused with the future fixed lining. The handbook/SNL
+bearing-material descriptions and the two-versus-four support-foot count remain
+open. Fixed castings/caps, oil fittings, channels and the complete axial stack
+are next. This candidate remains outside the delivered standard tank.
+
 ## 20 September 2026 — standard roller-pinion milestone011
 
 Both 98-part pinion installations are now in the main standard assembly: 252

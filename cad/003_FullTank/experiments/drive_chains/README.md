@@ -107,14 +107,35 @@ delivered assembly or reconcile the catalogue's chain component quantities.
   was inspected. The rear attachment region is geometrically unchanged. The
   taper and stations are assumptions; the earlier failed candidate is preserved.
 
-Native probes accept `--stage` pointing to the authored pinion experiment and
+- `transmission_bush_probe.py` adds two M296 inner sleeves, two M299 outer sleeves,
+  four separate M300 bronze dowels and four M290 retaining rings to the saved
+  casing/output fixture. The two shared M289 shafts gain inferred grooves and
+  blind dowel pockets. All 825 reopened leaves are valid single solids; 26
+  changed/new material pairs have no overlap. Four journal-clearance, four
+  dowel-capture and four bidirectional ring-capture checks pass, including
+  undrilled/ungrooved controls. The
+  [axial section](transmission_bush_build/output_bush_section.png) and
+  [source overlay](transmission_bush_build/source_bush_overlay.png) were inspected.
+- `qualify_output_bush_interfaces.py` independently reopens that fixture and
+  checks all four sprocket/drum spline interfaces. The engagement regions have
+  zero material difference from the original shafts; clearances and twist
+  capture remain valid. This is separate from complete axial-stack retention.
+- `transmission_support_research.json` records inspected fixed-bracket/cap source
+  lists. SNL309 requires poured babbitt; HB209 separately names brasses and shims.
+  Their relationship remains open. The M391 foot schedule conflicts (four nested,
+  two standalone); cap wool waste is a mass quantity, not a count of two parts.
+  These questions remain explicit for the next fixed-support increment.
+
+Native probes accept `--stage` pointing to the current standard model or its
+byte-identical authored pinion origin and
 an optional `--output`. They do not modify that stage. The complete chain
 candidate includes bars, bushes, pins and initially unsplayed cotters; the detail
 candidate adds formed tails and oil passages. The older circular
 clearance probe contains only diagnostic annuli. Casing shells and their wall
 attachments, cap cleats, beading, register plates and supports are now separate
 candidates. Partial output shafts and brake drums now have a tested static
-interface. Source reconciliation, transmission bearings and axial retention,
+interface. The latest candidate adds shaft sleeves, dowels and groove-seated
+rings. Source reconciliation, fixed bearing housings/lining and complete axial retention,
 brake bands, lubrication performance and full-model integration/parameter
 qualification remain. Full
 inventory, moving engagement and historical-fit claims remain false.
