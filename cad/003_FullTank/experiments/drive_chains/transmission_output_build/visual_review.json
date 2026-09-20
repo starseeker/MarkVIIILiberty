@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-20",
+  "status": "inspected_failed_output_casing_fit",
+  "native_sha256": "de59e5cb22dc7ba4bbecd27c253327eb0b410f8f95224c197ba47f970a591f57",
+  "report_sha256": "adf5fef08f03faec84ae91383ce30052f45884d7ada1642c483ba755d6bb6df0",
+  "reviewed_images": {
+    "output_rotor_oblique.png": "be1571d6b42d7997d0af2ae139dbeeeb6e36816b1c5aafea805ac36e160a39f1",
+    "output_casing_fit.png": "5417985be0811fc3b345748ac8d8a44694c1f0de9647caaa41910ba542a0e347",
+    "output_rotor_section.png": "0f00a424229d11ba68fa655ac52ea5f4eee053a9c9793dc86dbbc3914bf13e3f",
+    "source_section_overlay.png": "f9f67ec4064e1e05ba2ce622de4cf2125889398d249410890b50cba555598e02"
+  },
+  "findings": [
+    "Four actual rasters inspected, including exact native section edges over the unchanged SNL Plate22 illustration. M289 shaft extent and M292 drum width/diameter follow the selected local scale. Simplified hub/web transitions differ visibly from the curved cast section; detailed contours remain inferred.",
+    "The 813-leaf native fixture adds two M289 shafts and two M292 drums. Both handed sprocket/drum spline fits pass with0.1mm minimum flank gap. Virtual twist captures each splined receiver; unsplined cores do not. Both drum and sprocket hubs meet axially.",
+    "Forty material candidate pairs expose two drum/casing intersections, each23938.321999mm3. The constant-width small-end casing is rejected with these source-proportioned rotors. No standard geometry is changed.",
+    "The next candidate must test a locally narrowed casing against all chain parts and attachments. HB134 maximum width remains a control, while a taper and its station are a new explicit hypothesis. The drawings do not independently establish that casing profile.",
+    "Bearings, shaft rings, planet disks, brake bands, axial retention and full-model qualification remain incomplete."
+  ],
+  "accepted_for_standard_promotion": false,
+  "historical_fit_qualified": false
+}

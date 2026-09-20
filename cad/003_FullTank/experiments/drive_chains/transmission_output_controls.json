@@ -1,0 +1,124 @@
+{
+  "status": "isolated_transmission_output_rotor_candidate",
+  "controls": {
+    "shaft_root_radial_gap": {
+      "value": 0.2,
+      "bounds": [
+        0.1,
+        0.4
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Clearance against inherited M291 bore; inferred, not a manufacturing tolerance. Bounds are not qualified ranges."
+    },
+    "shaft_spline_side_gap": {
+      "value": 0.1,
+      "bounds": [
+        0.05,
+        0.3
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Each spline flank gap against inherited rectangular groove. Bounds are not qualified ranges."
+    },
+    "shaft_spline_tip_gap": {
+      "value": 0.2,
+      "bounds": [
+        0.1,
+        0.4
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Tip gap against inherited groove floor. Bounds are not qualified ranges."
+    },
+    "outer_journal_radius": {
+      "value": 44,
+      "bounds": [
+        40,
+        49
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Approximate reduced outer journal from Plate22; no located printed diameter. Bounds are not qualified ranges."
+    },
+    "inner_journal_radius": {
+      "value": 54.3,
+      "bounds": [
+        54.2,
+        58
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Smooth journal over inferred spline-tip envelope; dimensions not printed. Bounds are not qualified ranges."
+    },
+    "drum_hub_radius": {
+      "value": 77,
+      "bounds": [
+        72,
+        85
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Inferred stepped hub from Plate22. Bounds are not qualified ranges."
+    },
+    "drum_rim_stock": {
+      "value": 13,
+      "bounds": [
+        10,
+        18
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Inferred radial rim stock. Bounds are not qualified ranges."
+    },
+    "drum_web_stock": {
+      "value": 20,
+      "bounds": [
+        12,
+        25
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Inferred central web stock. Bounds are not qualified ranges."
+    },
+    "drum_blend_radial": {
+      "value": 10,
+      "bounds": [
+        6,
+        16
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Straight meridian transition into the rim; casting fillets remain partial. Bounds are not qualified ranges."
+    },
+    "spline_rotation_witness": {
+      "value": 2,
+      "bounds": [
+        1,
+        3
+      ],
+      "unit": "degree",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Virtual twist to demonstrate torque capture, not a pose. Bounds are not qualified ranges."
+    },
+    "drum_rim_turn_inset": {
+      "value": 8,
+      "bounds": [
+        5,
+        12
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Axial inset of straight meridian transition from each rim end. Bounds are not qualified ranges."
+    }
+  },
+  "axial_and_drum_diameter_controls": "Derived from transmission_output_calibration.json; retains image pick and scan uncertainty.",
+  "inherited_interface": "M291 bore and ten rectangular spline grooves from chain_candidate_controls.json, without upgrading their evidence status.",
+  "not_yet_populated": [
+    "Bearing brackets and bushes",
+    "Four M290 retaining rings allocated to output shafts",
+    "Planet disks and M288 washers",
+    "Track brake bands and controls"
+  ],
+  "historical_fit_qualified": false
+}

@@ -74,7 +74,8 @@ complete 161-file delivery is archived and checksum-verified at
 `cad/003_FullTank/releases/010-drive-mounts.json`. The archive is intentionally
 outside Git and must travel with workspace backups.
 
-The private pinion assembly still needs its full qualification and promotion.
+The private pinion assembly has completed all 29 qualification stages and 17
+parameter trials. Its main-path promotion and dependency check remain.
 Separate chain/casing work continues, followed by the remaining transmission,
 exterior fittings and interior systems in the complete-tank workflow.
 
@@ -94,5 +95,6 @@ The receipt is `.work/recovery/continuation_artifact_audit.json`.
 Work has continued: the isolated chain candidate now includes formed split-pin
 tails and link oil passages, with passing static geometric checks and inspected
 native sections. It remains separate from the delivered standard model. The
-pinion qualification continues from its existing worker; no replacement process
-was started merely because the conversation resumed.
+pinion qualification completed through its existing worker; no replacement
+process was started merely because the conversation resumed. Its separate
+qualification audit also verified the complete 754-file current source lock.

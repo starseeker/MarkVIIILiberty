@@ -28,7 +28,8 @@ checks: 394 internal plus 116 external candidate pairs, zero overlaps,
 shaft-plug envelopes. Backplate/bearing clearance is 26.0295 mm on each side.
 Both candidate rasters were inspected. This is a documented geometric
 approximation, not a historical fit or an accepted source measurement.
-The complete integrated build and parameter trials remain pending.
+The complete integrated build and parameter trials subsequently passed; see
+the qualification record below.
 
 ## Alternative 37-tooth wheel
 
@@ -38,3 +39,19 @@ occur at the current 17.21° pinion phase and current axes. The tested combinati
 is rejected. The experiment does not disprove the historical 37-tooth evidence,
 nor test every possible tooth profile, phase or station. Both printed tooth
 counts remain in the source record.
+
+## Completed private qualification
+
+The durable run completed all 29 stages and 17 parameter trials, including native
+validity/placement, both STEP round trips, relocated dependencies, independent
+rebuild and unchanged-cache checks. A separate audit rechecked every checkpoint
+against its current artifact hashes. It also verified all 20 native files,
+37 source/renderer tests, nine inspected native/source rasters and 754 source-lock
+files. [qualification_receipt.json](qualification_receipt.json) binds the evidence.
+
+The qualified private assembly has 252 definitions and 5,341 leaves, including
+5,326 physical components and 216 represented physical source identities. All
+physical definitions remain partial. It has not yet replaced the main delivery.
+The preserved origin archive supports the next main-path promotion and dependency
+check; snapshot011 follows that check. The archive record is
+[qualified_origin_archive.json](qualified_origin_archive.json).

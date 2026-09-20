@@ -1,0 +1,57 @@
+{
+  "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p294-geometry.png",
+  "image_size_px": [
+    1724,
+    1147
+  ],
+  "image_sha256": "688d9d28aa4af2e91b7e2d78caea16142a0b7462af8a4517637e8263b8dea400",
+  "status": "conditional_local_scale_not_metrology",
+  "primary_control": {
+    "feature": "M291 overall hub width",
+    "pixel_x": [
+      292,
+      432
+    ],
+    "length_mm": 101.6,
+    "source": "HB132",
+    "endpoint_pick_allowance_px": 4
+  },
+  "mm_per_pixel": 0.7257142857142856,
+  "shaft_axis_y_px": 560,
+  "sprocket_center_x_px": 362,
+  "independent_check": {
+    "feature": "M291 tooth axial width",
+    "pixel_x": [
+      336,
+      388
+    ],
+    "printed_mm": 38.1,
+    "scaled_mm": 37.73714285714286,
+    "residual_mm": -0.36285714285714477,
+    "note": "Different feature but same illustration; not independent source evidence."
+  },
+  "picks": {
+    "shaft_ends_x": [
+      68,
+      879
+    ],
+    "outer_journal_end_x": 278,
+    "inner_journal_x": [
+      584,
+      714
+    ],
+    "brake_outer_faces_x": [
+      457,
+      577
+    ],
+    "brake_outer_diameter_y": [
+      148,
+      984
+    ]
+  },
+  "limits": [
+    "Single local scale assumes equal axial/radial scale; no perspective correction.",
+    "Drum extent midpoint566px differs from selected shaft axis560px by6px. Retain that residual.",
+    "Four-inch calibration controls geometry; the shaft itself has no located printed length/diameter."
+  ]
+}

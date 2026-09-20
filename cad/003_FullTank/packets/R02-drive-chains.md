@@ -315,3 +315,40 @@ so `inspect_chain_oil_sections.py` adds separate inner/outer bar-aligned section
 from the unchanged saved native file. They show the passages reaching the pin
 clearance. Lubrication performance, strength, historical fit, source inventory
 reconciliation and standard-model integration remain incomplete.
+
+## Transmission output rotors and casing clearance
+
+HB122 identifies M289 as the sprocket output shaft (callout 10), M292 as its track
+brake drum (callout 7), and M291 as the chain sprocket (callout 6). SNL215:028 and
+SNL83:036 each specify two installed pieces. M255 is a separate central cross
+shaft; it is not the shaft carrying the chain sprocket. SNL165:013 separately
+allocates four M290 retaining rings to M289 and two to M267.
+
+`transmission_output_calibration.json` uses the M291 hub's printed 101.6 mm width
+across pixels 292–432 in SNL Plate22. The separate 38.1 mm tooth-width check
+measures 37.737 mm on that scale. Axial/radial scan distortion remains; the drum
+extent midpoint is six pixels from the selected shaft axis. The roughly 589 mm
+shaft length and 607 mm drum diameter are scaled estimates, not printed dimensions.
+The existing approximate ten-groove sprocket bore is retained; the corresponding
+shaft section, journals and drum casting transitions remain assumptions.
+
+The first 813-leaf native fixture adds four rotor parts. All four spline
+interfaces have 0.1 mm minimum flank gap and resist a two-degree virtual twist;
+unsplined cores do not. Both drum/sprocket hubs meet axially. Forty material
+candidate pairs reveal two drum/casing overlaps of 23,938.321999 mm³ each. The
+failed installation, exact inputs and four inspected rasters—including the
+native section over the unchanged source—remain preserved.
+
+`casing_front_build` retains those rotors and narrows the casing symmetrically
+between inferred stations X1450–1515 mm to 132 mm outside width. HB134's 168.275 mm
+width is interpreted as the maximum, retained behind the taper. The three-mm
+sheet uses a normal offset through the taper, and a 79 mm hub passage clears the
+77 mm inferred brake hub. The rear region through X1440 mm has zero symmetric
+material difference, preserving its existing attachments and drilled joints.
+
+All 813 reopened solids remain valid. The 764 changed/new material pairs have no
+overlap, eight normal sheet-thickness checks measure 3 mm, and minimum drum/case
+and chain/sprocket/case distances are 2 mm on both sides. The actual oblique and
+shaft-height section were inspected. This qualifies the selected static fit;
+it does not establish the original casing contour. Shaft bearings, M290 rings,
+axial capture, planet disks, brake bands and full-model qualification remain.

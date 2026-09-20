@@ -94,6 +94,18 @@ delivered assembly or reconcile the catalogue's chain component quantities.
   [bar-aligned oil section](chain_detail_build/oil_sections/inner_bar_oil_section.png)
   were inspected. `inspect_chain_oil_sections.py` supplies separate local sections
   because the joint overview cuts obliquely across the individual oil passages.
+- `transmission_output_probe.py` adds two M289 output shafts and two M292 brake
+  drums. HB122 and SNL215 distinguish M289 from the central M255 cross shaft.
+  A conditional scale from HB132's four-inch sprocket hub controls the adjoining
+  proportions. The [native/source overlay](transmission_output_build/source_section_overlay.png)
+  was inspected. Four spline fits and two hub seats pass, but the 813-leaf
+  candidate retains two 23,938.321999 mm³ drum/casing clashes.
+- `casing_front_probe.py` tests a symmetric small-end taper from the retained
+  168.275 mm maximum width to an inferred 132 mm. The 813-leaf candidate passes
+  764 material pairs, eight three-mm normal sheet-thickness witnesses and both
+  chain/drum clearance checks. Its [native section](casing_front_build/casing_output_plan_section.png)
+  was inspected. The rear attachment region is geometrically unchanged. The
+  taper and stations are assumptions; the earlier failed candidate is preserved.
 
 Native probes accept `--stage` pointing to the authored pinion experiment and
 an optional `--output`. They do not modify that stage. The complete chain
@@ -101,6 +113,8 @@ candidate includes bars, bushes, pins and initially unsplayed cotters; the detai
 candidate adds formed tails and oil passages. The older circular
 clearance probe contains only diagnostic annuli. Casing shells and their wall
 attachments, cap cleats, beading, register plates and supports are now separate
-candidates. Source reconciliation, transmission-shaft integration, lubrication
-performance and full-model parameter qualification remain. Full
+candidates. Partial output shafts and brake drums now have a tested static
+interface. Source reconciliation, transmission bearings and axial retention,
+brake bands, lubrication performance and full-model integration/parameter
+qualification remain. Full
 inventory, moving engagement and historical-fit claims remain false.

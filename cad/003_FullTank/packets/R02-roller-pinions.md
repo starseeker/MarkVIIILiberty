@@ -165,8 +165,12 @@ change the source pixel pick or calibration. Earlier coarse and refined phases,
 and rejected outward offsets, are retained. Continuous gearing and the 35/37
 source conflict remain unqualified.
 
-Next integrate these parametric parts into the isolated full-model copy, apply
-the receiver bores at the corrected axis, and check all neighboring geometry.
-The paired study alone does not qualify the complete tank installation.
+The later isolated full-model integration has completed 29 validation stages and
+17 parameter trials, with 37 record/renderer tests. Its 754-file source lock and
+all saved checkpoint artifacts have been independently rechecked. See the
+[integration qualification receipt](../experiments/roller_pinions/integrated_preflight/qualification_receipt.json).
+The inferred fuel-backplate correction, rejected 37-tooth combination and
+reviewed source comparisons remain documented. Main-path promotion and its
+native dependency check are next; the delivered tank remains milestone010.
 Cotter forming, detailed lubrication paths, threads, cast sections and further
 shared-part quantity reconciliation remain documented approximation work.

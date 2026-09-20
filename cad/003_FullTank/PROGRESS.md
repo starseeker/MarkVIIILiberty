@@ -65,6 +65,21 @@ dimensions and tail bends remain assumptions. Five actual rasters were inspected
 including clearer bar-aligned sections. Static retention and open passages are
 checked; strength, lubrication performance and running engagement are not.
 
+Two M289 transmission output shafts and two M292 brake drums now extend the
+isolated fixture to 813 physical leaves. Source identity is distinct from the
+central M255 cross shaft. A native section overlay against SNL Plate22 was
+inspected; adjoining proportions use the printed four-inch sprocket hub as a
+conditional scale. Shaft splines and drum/web sections remain inferred. Four
+static spline fits and two hub seats pass. The first installation exposed two
+23,938.321999 mm³ drum/casing clashes, preserved with exact inputs and renders.
+
+A revised small-end casing narrows locally to 132 mm while retaining the
+168.275 mm maximum width and the rear attachment region. All 764 changed/new
+material pairs, eight sheet-thickness witnesses and both chain/drum clearance
+checks pass. The taper and its location are explicit assumptions. Bearings,
+shaft retaining rings, brake bands, planet-disk connections and full-model
+integration remain open; neither candidate changes the delivered standard tank.
+
 ## 20 September 2026 — experimental full-tank roller-pinion integration
 
 An isolated source branch, `experiment/roller-pinions`, now builds both
@@ -73,7 +88,12 @@ definitions and 5,341 leaves, including 5,326 physical components and 216
 represented physical source identities. Nominal native checks and 37
 record/renderer tests pass. The detailed source comparison views have been
 inspected. This has **not** been promoted to the main delivery; its full
-29-stage validation with 17 parameter trials remains in progress.
+29-stage validation with 17 parameter trials has now passed. A fresh audit
+verified every saved checkpoint against its current artifacts, all 20 native
+documents, the 37-test receipt, nine reviewed rasters and 754 source-lock files.
+The [qualification receipt](experiments/roller_pinions/integrated_preflight/qualification_receipt.json)
+preserves that evidence. Promotion still requires rebinding the delivered model
+to the main path, checking its native dependencies there, and saving snapshot011.
 
 The first integrated candidate exposed four fuel-backplate overlaps that were
 absent from the isolated fixture. A separate inferred longitudinal control now
