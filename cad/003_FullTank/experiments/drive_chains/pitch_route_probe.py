@@ -1,7 +1,7 @@
 """Discrete pitch closure of a provisional external two-sprocket chain route.
 
 This is a mathematical preflight, not component geometry or a reconciled BOM.
-It keeps the inferred12/23 tooth radii and printed3-inch pitch independent of
+It keeps the documented 12/23 tooth counts and printed three-inch pitch independent of
 the provisional transmission station. No source calibration is changed.
 """
 from pathlib import Path
@@ -79,7 +79,8 @@ def solve(count):
 
 if __name__=='__main__':
     result=dict(status='mathematical_route_preflight',pitch_mm=PITCH,large_teeth=LARGE_TEETH,
-        small_teeth_inferred=SMALL_TEETH,pitch_radii_mm=dict(large=BIG,small=SMALL),
+        small_teeth=SMALL_TEETH,tooth_count_source='HB130 original scan, outline table and prose',
+        pitch_radii_mm=dict(large=BIG,small=SMALL),
         handbook_50_pitch_case=solve(50),literal_25_pin_case=solve(25),
         source_bom_reconciled=False,native_components_created=False,
         tooth_phase_and_running_engagement_qualified=False,script_sha256=sha(__file__))

@@ -25,9 +25,17 @@ same paragraph states 0.005 inch. Preserve this separate dimensional conflict.
 
 The M291 transmission pinion has a printed four-inch overall axial width,
 1-1/2 inch tooth width, ten shaft splines and 11.592-inch pitch control.
-With three-inch pitch, 12 teeth give an 11.591110-inch pitch diameter. This
-supports a 12-tooth hypothesis; it does not establish the detailed tooth or
-spline profile. The installed roller pinion carries 23 central teeth.
+HB130 explicitly specifies 12 driving-sprocket teeth in both its outline table
+and its prose. The original scan was inspected on 20 September 2026. With
+three-inch pitch, 12 teeth give an 11.591110-inch pitch diameter, consistent
+with the rounded printed control. The tooth count is directly documented;
+the detailed tooth and spline profiles remain inferred. The installed roller
+pinion carries 23 central teeth.
+
+The same HB130 outline gives a two-inch chain roller diameter and a maximum
+chain width of 4-9/16 inches. These constrain the upcoming native chain study;
+they do not reconcile the SNL's quantities or prove that a supplied bushing
+and a finished roller are separate parts.
 
 HB134 describes a 6-5/8 inch wide casing following the chain contour, with a
 separate removable cap at the roller-pinion end. It requires oil holes on top
@@ -65,3 +73,40 @@ SNL's supplied-unit counts; it does not resolve their meaning. Neither result
 changes the provisional transmission datum or creates installed components.
 The next native study must check tooth phase, bar/bush sections and all physical
 interfaces before adopting a chain route.
+
+## Installed phase and drawing comparison
+
+The second calculation, `installed_pitch_route_probe.py`, retains the existing
+17.21-degree roller-pinion phase and aligns the chain joints to its relief
+centers. Fifty exact 76.2 mm chords close at a center distance of
+1,230.854801 mm. Twelve vertices occupy the large pitch circle and six occupy
+the small circle; their phase errors are below 1e-9 radians. The inferred
+small-sprocket phase is 17.983209 degrees. No native datum is changed.
+
+The resulting candidate transmission axis is 134.927 mm from the earlier
+provisional layout point. On the unchanged SNL Plate2 calibration it projects
+to pixel (1412.157, 451.749), close to the visible shaft center. The earlier
+point was (1390, 455). The interactive
+[source overlay](../experiments/drive_chains/route_comparison.html) was rendered
+and inspected: the lower chain run broadly follows the illustration, and the
+upper run crosses details hidden by the original casing/section. This is a
+visual comparison made after the mathematical prediction, not an independent
+metric acceptance. The casing, transmission geometry, physical tooth fit and
+catalogue quantity conflict still need checking.
+
+## Native roller-envelope clearance diagnostic
+
+`roller_clearance_probe.py` creates and reopens an isolated casting with fifty
+diagnostic annuli on the candidate route. Their 25.4 mm outer radius comes from
+HB130; their 39.6875 mm axial length covers only the inner-bar gap. These are
+diagnostic envelopes, not inventory-counted chain parts.
+
+The existing 22.525 mm circular relief produces 16 roller/casting overlaps,
+with a largest volume of 10,181.857 mm³. A 25.65 mm relief candidate reduces
+this to three overlaps, with a largest volume of 990.215 mm³ near the entry
+and exit transitions. Both reopened native models and their elevation rasters
+are retained in `experiments/drive_chains/roller_clearance_build`; both rasters
+were inspected. Neither case qualifies chain engagement. The result shows that
+the tooth flank/transition shape needs work in addition to the root radius.
+The currently running pinion qualification still covers its installed wheel,
+shaft and hull interfaces; the chain interface remains explicitly incomplete.
