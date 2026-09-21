@@ -258,3 +258,21 @@ snapshots and the opaque/transparent standard011 are unchanged.
 `intermediate_snapshot_iso_transmission_reversing_mechanism_001.png` SHA-256: `5bc51d7bacc3d363401451114422a4859790486ac3601925654c33d432866527`.
 
 `intermediate_snapshot_detail_reversing_detent_001.png` SHA-256: `e8d8d00ced715037b428f1e407711571dd67f02e2929fc687a7fecd88bbb80be`.
+
+## 21 September 2026 — vertical reversing controls
+
+The [installed rear view](intermediate_snapshot_iso_transmission_vertical_001.png),
+[exposed mechanism](intermediate_snapshot_iso_transmission_vertical_mechanism_001.png)
+and [bearing/key section](intermediate_snapshot_detail_vertical_bearing_001.png)
+preserve the addition of M303–M306, two Woodruff keys and separate MX11/MX12
+attachment sets. The isolated transmission now has 1,391 valid solids. Seven
+native/source views were inspected; all148 affected material pairs, 21 STEP
+comparisons, 116 independent checks and three parameter trials pass. No. C key
+size, bearing construction and unshown profiles remain estimates. Standard tank 011
+and its opaque/transparent companions are unchanged; this is not tank012.
+
+| Snapshot | SHA-256 |
+|---|---|
+| `intermediate_snapshot_iso_transmission_vertical_001.png` | `146ef0a60a06c36710cbbb368960d5d467574233ef5424947cb4b3cbd9c688b3` |
+| `intermediate_snapshot_iso_transmission_vertical_mechanism_001.png` | `88e32e7750322ac0cb801336a8afb62eec0ee3ae54984b2bb68273aab4a5b163` |
+| `intermediate_snapshot_detail_vertical_bearing_001.png` | `6de767825b1795b553fb4938632944674849b32fd2968c7f2d87fb7595368a8f` |

@@ -422,5 +422,15 @@ integration and the complete tank remain unfinished.
   section. The [packet](../../packets/I03-reversing-controls.md) records source
   counts, inferred dimensions and the spring-envelope checking correction.
   Use `transmission_reversing_build/qualification.json` for combined status.
-  M303–M306 vertical linkage, its two MX11 and two MX12 sets, mounts, pump,
-  brakes, lubrication and standard integration remain pending.
+  That stage leaves M303–M306 vertical linkage and its attachments pending;
+  the following stage implements them. Mounts, pump, brakes, lubrication and
+  standard integration remain open.
+
+## Vertical reversing controls
+
+The latest [candidate](transmission_vertical_build/TransmissionVerticalCandidate.FCStd)
+has 1,391 valid leaves, with 19 new and two revised occurrences. See
+[the packet](../../packets/I03-vertical-controls.md) and
+[qualification](transmission_vertical_build/qualification.json) for the 116
+independent checks, three parameter trials, STEP checks, source comparison and
+remaining approximations. The earlier reversing candidate remains preserved.

@@ -92,23 +92,22 @@ remains preserved from snapshot 008.
 The [lower-support packet](packets/R02-lower-supports.md) records source allocations,
 front skirt refinement, native bearing/receiver checks and unfinished retention.
 
-The latest isolated [transmission candidate](experiments/drive_chains/transmission_reversing_build/TransmissionReversingCandidate.FCStd)
-contains **1,372 valid solids**, including both planetary trains, the bevel drive,
-clutch, input installation, paired brake-bearing supports, case joint and reversing
-fork/rod/detent. The [reversing-controls packet](packets/I03-reversing-controls.md)
-records seven new parts and the corrected continuous fork passage. All 168
-affected material pairs, eleven native/STEP comparisons, 63 independent checks
-and three local parameter trials pass. Six inspected views retain the source
-discrepancies, with a refined fork outline and exposed detent section. The
-[case-joint packet](packets/I03-case-joint.md) preserves the preceding fourteen
-MX8 sets and two M326 gaskets. The [brake-bearing packet](packets/I03-brake-bearings.md)
-preserves the preceding shared-bush architecture and its qualifications.
-The [input-installation packet](packets/I03-input-installation.md) preserves the
-previous grease feed and cotter repairs. Source-datum, M249 quantity, MX25
-count/nut and MX14 length conflicts remain open. Pump/support installation,
-case mounting, vertical reversing linkage, brakes, complete lubrication and standard-tank
-integration remain ahead. The candidate has not yet replaced the standard
-tank's transmission layout.
+The latest isolated [transmission candidate](experiments/drive_chains/transmission_vertical_build/TransmissionVerticalCandidate.FCStd)
+contains **1,391 valid solids**, including both planetary trains, bevel drive,
+input installation, brake-bearing supports, case joint and reversing controls.
+The [vertical-controls packet](packets/I03-vertical-controls.md) adds the shaft,
+keyed levers, two bearings and distinct MX11/MX12 attachments. All 148 affected
+material pairs, 21 native/STEP comparisons, 116 independent checks and three
+parameter trials pass; 63 interfaces are rechecked and 641 retained. Seven
+inspected views record the remaining source-contour differences. Three new
+snapshots show the [installed rear](../intermediate_snapshot_iso_transmission_vertical_001.png),
+[mechanism](../intermediate_snapshot_iso_transmission_vertical_mechanism_001.png)
+and [bearing/key section](../intermediate_snapshot_detail_vertical_bearing_001.png).
+No. C key dimensions and blind bearing construction remain inferred. Case
+mounting, pump/support, brakes, oil circuits, long controls and standard tank
+integration remain ahead. Standard tank 011 and its transparent companion are unchanged.
+The existing M249 quantity, MX25 count/nut and MX14 length conflicts remain open
+in the preceding packets.
 
 Additional commands:
 

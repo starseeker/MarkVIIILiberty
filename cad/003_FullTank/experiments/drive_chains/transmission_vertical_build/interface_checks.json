@@ -1,0 +1,797 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "1391 valid physical leaves",
+      "value": 1391,
+      "expected": 1391,
+      "passed": true
+    },
+    {
+      "name": "source-owned new quantity",
+      "value": {
+        "P_14010afada4618c8": 1,
+        "P_11e9d5231c9bfdc8": 1,
+        "P_d75b882a9bf0c742": 1,
+        "P_8affb0bb2aaafb99": 2,
+        "P_96be96ec37ce54fe": 2,
+        "P_219a5dda19fd7e88": 2,
+        "P_fa532874f22959fa": 4,
+        "P_45c99004b6de95df": 4,
+        "P_b473d025bdb9232b": 2
+      },
+      "expected": {
+        "P_14010afada4618c8": 1,
+        "P_11e9d5231c9bfdc8": 1,
+        "P_d75b882a9bf0c742": 1,
+        "P_8affb0bb2aaafb99": 2,
+        "P_96be96ec37ce54fe": 2,
+        "P_219a5dda19fd7e88": 2,
+        "P_b473d025bdb9232b": 2,
+        "P_fa532874f22959fa": 4,
+        "P_45c99004b6de95df": 4
+      },
+      "passed": true
+    },
+    {
+      "name": "shaft assembly owns shaft, two levers and two keys",
+      "value": [
+        "VerticalControl_key0",
+        "VerticalControl_key1",
+        "VerticalControl_lower_lever",
+        "VerticalControl_shaft",
+        "VerticalControl_upper_lever"
+      ],
+      "expected": [
+        "VerticalControl_key0",
+        "VerticalControl_key1",
+        "VerticalControl_lower_lever",
+        "VerticalControl_shaft",
+        "VerticalControl_upper_lever"
+      ],
+      "passed": true
+    },
+    {
+      "name": "shaft assembly identity on container",
+      "value": [
+        "P_ad50f346cbed4ec0"
+      ],
+      "expected": [
+        "P_ad50f346cbed4ec0"
+      ],
+      "passed": true
+    },
+    {
+      "name": "ambiguous SNL254 identity remains conditional reference",
+      "value": [
+        "P_01da08ec0627f5ee"
+      ],
+      "expected": [
+        "P_01da08ec0627f5ee"
+      ],
+      "passed": true
+    },
+    {
+      "name": "two bearings share one definition",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "two keys share one definition",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "No.C size is explicitly unverified",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "VerticalControl_shaft one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "VerticalControl_upper_lever one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "VerticalControl_lower_lever one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "VerticalControl_key0 one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "VerticalControl_key1 one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bearing one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt_nut one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt_cotter one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud_nut one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud_cotter one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bearing one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt_nut one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt_cotter one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud_nut one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud_cotter one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "shaft straight axial extent",
+      "value": 436.7,
+      "expected": 436.7,
+      "passed": true
+    },
+    {
+      "name": "Upper blind journal axial/radial clearance",
+      "value": 0.14999999999997726,
+      "expected": 0.15,
+      "passed": true
+    },
+    {
+      "name": "Upper lever captured at bearing",
+      "value": 0.15000000000009095,
+      "expected": 0.15,
+      "passed": true
+    },
+    {
+      "name": "Upper hub seats on turned shaft shoulder",
+      "value": 2.842170943040401e-14,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Upper bearing seated on case land",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Upper bearing closed end stock",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Upper bearing journal open",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Upper continuous journal support wall",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Upper negative shaft beyond end clearance collides",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Upper lever uses smooth B-spline arm edges",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Upper key to shaft pocket",
+      "value": 0.049999956492024725,
+      "expected": 0.05,
+      "passed": true
+    },
+    {
+      "name": "Upper key to lever slot",
+      "value": 0.049999999999926104,
+      "expected": 0.05,
+      "passed": true
+    },
+    {
+      "name": "Upper key obstructs independent lever rotation",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt owns exactly fastener nut pin",
+      "value": [
+        "UpperVertical_bolt",
+        "UpperVertical_bolt_cotter",
+        "UpperVertical_bolt_nut"
+      ],
+      "expected": [
+        "UpperVertical_bolt",
+        "UpperVertical_bolt_cotter",
+        "UpperVertical_bolt_nut"
+      ],
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt assembly identity",
+      "value": [
+        "P_ba9597468c62bb1a"
+      ],
+      "expected": [
+        "P_ba9597468c62bb1a"
+      ],
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt reuses castle nut",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt reuses repaired small cotter",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt nut bears on spotface",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt pin obstructs nut withdrawal",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt intact straight cotter leg -1",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt intact straight cotter leg 1",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt has nominal source half-inch shaft",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt head seats on case spotface",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_bolt inferred underhead length",
+      "value": 110.0,
+      "expected": 110.0,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud owns exactly fastener nut pin",
+      "value": [
+        "UpperVertical_stud",
+        "UpperVertical_stud_cotter",
+        "UpperVertical_stud_nut"
+      ],
+      "expected": [
+        "UpperVertical_stud",
+        "UpperVertical_stud_cotter",
+        "UpperVertical_stud_nut"
+      ],
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud assembly identity",
+      "value": [
+        "P_ddcfcf306dc79587"
+      ],
+      "expected": [
+        "P_ddcfcf306dc79587"
+      ],
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud reuses castle nut",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud reuses repaired small cotter",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud nut bears on spotface",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud pin obstructs nut withdrawal",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud intact straight cotter leg -1",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud intact straight cotter leg 1",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud has nominal source half-inch shaft",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud printed 3-7/8in overall length",
+      "value": 98.42500000000001,
+      "expected": 98.425,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud source US thread length",
+      "value": 20.6375,
+      "expected": 20.6375,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud source SAE thread length",
+      "value": 22.225,
+      "expected": 22.225,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud inner threaded span unobstructed",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud closed blind inner end",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "UpperVertical_stud supported inner threaded span",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Lower blind journal axial/radial clearance",
+      "value": 0.1499999999999746,
+      "expected": 0.15,
+      "passed": true
+    },
+    {
+      "name": "Lower lever captured at bearing",
+      "value": 0.14999999999997726,
+      "expected": 0.15,
+      "passed": true
+    },
+    {
+      "name": "Lower hub seats on turned shaft shoulder",
+      "value": 2.842170943040401e-14,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Lower bearing seated on case land",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Lower bearing closed end stock",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Lower bearing journal open",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Lower continuous journal support wall",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Lower negative shaft beyond end clearance collides",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Lower lever uses smooth B-spline arm edges",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Lower key to shaft pocket",
+      "value": 0.04999995649207307,
+      "expected": 0.05,
+      "passed": true
+    },
+    {
+      "name": "Lower key to lever slot",
+      "value": 0.049999999999926104,
+      "expected": 0.05,
+      "passed": true
+    },
+    {
+      "name": "Lower key obstructs independent lever rotation",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt owns exactly fastener nut pin",
+      "value": [
+        "LowerVertical_bolt",
+        "LowerVertical_bolt_cotter",
+        "LowerVertical_bolt_nut"
+      ],
+      "expected": [
+        "LowerVertical_bolt",
+        "LowerVertical_bolt_cotter",
+        "LowerVertical_bolt_nut"
+      ],
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt assembly identity",
+      "value": [
+        "P_ba9597468c62bb1a"
+      ],
+      "expected": [
+        "P_ba9597468c62bb1a"
+      ],
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt reuses castle nut",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt reuses repaired small cotter",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt nut bears on spotface",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt pin obstructs nut withdrawal",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt intact straight cotter leg -1",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt intact straight cotter leg 1",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt has nominal source half-inch shaft",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt head seats on case spotface",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_bolt inferred underhead length",
+      "value": 110.0,
+      "expected": 110.0,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud owns exactly fastener nut pin",
+      "value": [
+        "LowerVertical_stud",
+        "LowerVertical_stud_cotter",
+        "LowerVertical_stud_nut"
+      ],
+      "expected": [
+        "LowerVertical_stud",
+        "LowerVertical_stud_cotter",
+        "LowerVertical_stud_nut"
+      ],
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud assembly identity",
+      "value": [
+        "P_ddcfcf306dc79587"
+      ],
+      "expected": [
+        "P_ddcfcf306dc79587"
+      ],
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud reuses castle nut",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud reuses repaired small cotter",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud nut bears on spotface",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud pin obstructs nut withdrawal",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud intact straight cotter leg -1",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud intact straight cotter leg 1",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud has nominal source half-inch shaft",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud printed 3-7/8in overall length",
+      "value": 98.42500000000001,
+      "expected": 98.425,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud source US thread length",
+      "value": 20.6375,
+      "expected": 20.6375,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud source SAE thread length",
+      "value": 22.225,
+      "expected": 22.225,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud inner threaded span unobstructed",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud closed blind inner end",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "LowerVertical_stud supported inner threaded span",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "integral upper finger occupies linkage socket center",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "rod has open cross-socket",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "finger radial running clearance",
+      "value": 0.14999999999998298,
+      "expected": 0.15,
+      "passed": true
+    },
+    {
+      "name": "negative displaced rod catches integral finger",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "lower eye open at linkage datum",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "lower eye surrounding stock",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "rod additions confined to former end hole",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "rod removals confined to linkage socket",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "case additions confined to two mounting lands",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "case removal confined to attachment receivers",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "case preserves most prior material",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "case has actual new mounting stock",
+      "value": true,
+      "expected": true,
+      "passed": true
+    }
+  ],
+  "case_change_mm3": {
+    "added": 338545.78665158566,
+    "removed": 2804.7732361616886
+  },
+  "native_sha256": "a835bef40ade011847aeb8db254c486c105f73ceb31e133b67007932460d6886",
+  "report_sha256": "e4297f8ca4ba0d8df953211d9399543bfa660a0bce948ca536a85f01d76cc144",
+  "checker_sha256": "926bdf7bd689fabbcbd63fd3daae0886a308d171181d5eb5e5df53df60c12b36",
+  "scope": "Saved standard vertical linkage geometry and bounded case/rod revisions. Not motion or load qualification."
+}

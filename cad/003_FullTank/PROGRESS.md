@@ -11,6 +11,31 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 21 September 2026 — vertical reversing shaft and attachments
+
+The [candidate](experiments/drive_chains/transmission_vertical_build/TransmissionVerticalCandidate.FCStd)
+contains **1,391 valid solids**: 19 new, two revised and 1,370 unchanged. M305 shaft,
+M303/M304 levers, two Woodruff keys, two M306 bearings and distinct MX11/MX12
+attachment sets populate the rear control mechanism. M263 receives local
+mounting lands; M302's provisional end hole becomes the lever's cross-socket.
+Printed MX12 length is retained. No. C key size and blind-bearing construction
+remain documented estimates.
+
+All 148 affected material pairs, 21 native/STEP comparisons, 116 independent checks
+and three local parameter trials pass. Sixty-three interfaces are freshly checked
+and 641 retained against unchanged geometry. Qualification resolved nut/cotter
+clearance, a mistaken reused-nut gap expectation and an upper-lever STEP issue;
+a single revolved finger profile preserves the analytic form across export.
+Seven inspected views include the fixed-scale SNL23 comparison and a bearing/key
+section. Three new snapshots preserve the installed rear view and mechanism.
+Twenty standard CAD files and 55 previous snapshots are byte unchanged.
+
+The [packet](packets/I03-vertical-controls.md) records source identities,
+assumptions and the remaining case-contour discrepancy. Next: four MX5 case
+mounting studs, pump/support, brakes, oil circuits and long controls, then
+frame/hull integration and remaining tank interiors. Standard tank011 still
+contains provisional interior envelopes; no complete tank is claimed.
+
 ## 21 September 2026 — reversing fork, rod and detent
 
 The [candidate](experiments/drive_chains/transmission_reversing_build/TransmissionReversingCandidate.FCStd)
