@@ -174,6 +174,18 @@ records estimated stations, bearing fits and wire geometry. The
 stage. Main internal clutch parts, cones, operating connections and standard
 integration remain unfinished; tank 011 retains its transparent hull companion.
 
+The [main-clutch core](experiments/drive_chains/clutch_stack_build/TransmissionWithClutchStack.FCStd)
+extends the combined candidate to **1,548 physical components**. It adds the
+relieved bearing, nested sleeve, four keys, cone-supporting collar and snap ring,
+with matching receiving geometry in SH999A. All 68 independent checks, 27 local
+interference pairs, six definition STEP comparisons, nine placed-solid checks
+and two size trials pass. The [source comparison](experiments/drive_chains/clutch_stack_build/source_review/index.html)
+and [packet](packets/I03-clutch-stack.md) record the differing HB/SNL identities
+and visibly thicker key bands from the literal handbook thickness interpretation.
+The [axial section](../intermediate_snapshot_detail_clutch_stack_001.png) exposes
+the nested parts. Thrust mechanism, cones, spring plungers, exact drive attachment
+and engine engagement remain unfinished; standard tank integration follows.
+
 Additional commands:
 
 ```sh

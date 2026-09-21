@@ -378,3 +378,24 @@ their original bytes.
 | [isolated mechanism](intermediate_snapshot_iso_clutch_collar_mechanism_001.png) | `a38a6177a6d5d308a8d1421d7609683135ef1a3561bb337dc7228a596c2ef339` |
 | [axial section](intermediate_snapshot_detail_clutch_collar_001.png) | `a177378feebcca1bd071266232af3af38c04c2a66d2213808d12bb36afd75c4a` |
 | [locking wire](intermediate_snapshot_detail_clutch_collar_wire_001.png) | `6278779e6fe989355d37b4d78b9ec1b2fa4ee17834cd1aab795bf2827fb4d2a5` |
+
+
+The main-clutch core stage (21 September 2026) adds the SH998D relieved bearing,
+SH861B nested sleeve, SH869A cone support, four SH861D keys and SH861E retaining
+ring. The combined candidate has1,548 physical components. SH999A now has the
+receiving bore, four key beds and ring groove;1,539 parent components are unchanged.
+The section follows the SNL nesting and preserves the preceding empty-bore view
+for comparison. Literal handbook key thickness produces visibly thicker bands
+than the catalogue drawing; identity and section-axis interpretation remain open.
+Exact drive attachment, cones, thrust/ball mechanism, spring plungers and engine
+engagement remain unfinished. The integrated tank remains011.
+
+Four new images follow. All76 earlier snapshots, including transparent tank011,
+remain byte-for-byte preserved.
+
+| Image | SHA-256 |
+|---|---|
+| [installed isometric](intermediate_snapshot_iso_clutch_stack_001.png) | `8d6fce988dad1e9832f8181c3167887b341b8401c6adad711ccbe9bdbc1c1aa0` |
+| [mechanism](intermediate_snapshot_iso_clutch_stack_mechanism_001.png) | `7fab17fbd59dfb4a366b097a3fbe08621d46a4f27f5c07d73caf5635edc4fee8` |
+| [axial section](intermediate_snapshot_detail_clutch_stack_001.png) | `0680f174f47f595059b69d1b14a036909101f5b61fe618657115a38ca0729db4` |
+| [exposed keys](intermediate_snapshot_detail_clutch_stack_keys_001.png) | `5b4591600295a2ecc8ca30cf3da912c6a9ec82ef9e9ec42485929b05bd3a2cc0` |

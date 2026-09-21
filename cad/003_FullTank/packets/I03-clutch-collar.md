@@ -1,5 +1,10 @@
 # I03 — sliding collar joint and end-bearing pocket
 
+Follow-up: the [main-clutch core checkpoint](I03-clutch-stack.md) populates the
+formerly empty bore and revises SH999A to receive the bearing, sleeve, keys and
+snap ring. This earlier collar-joint native remains preserved; use the later
+checkpoint for continued construction. Cones and operating parts remain ahead.
+
 Status: **checked approximate reconstruction; main clutch construction continues**, 21 September 2026.
 [Native assembly](../experiments/drive_chains/clutch_collar_build/TransmissionWithClutchCollar.FCStd) ·
 [source comparison](../experiments/drive_chains/clutch_collar_build/source_review/index.html).
