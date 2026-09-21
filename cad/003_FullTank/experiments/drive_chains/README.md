@@ -434,3 +434,16 @@ has 1,391 valid leaves, with 19 new and two revised occurrences. See
 [qualification](transmission_vertical_build/qualification.json) for the 116
 independent checks, three parameter trials, STEP checks, source comparison and
 remaining approximations. The earlier reversing candidate remains preserved.
+
+## Clutch-stop and air-pump drive
+
+The [1,520-component native checkpoint](clutch_drive_build/TransmissionWithClutchDrive.FCStd)
+adds the captured cardan shaft, coupling box, two cover halves, stop drum,
+eight fastening sets and closed linked-belt representation to the mounted pump.
+[Qualification](clutch_drive_build/qualification.json) records 474 material pairs,
+148 independent checks, 22 definition STEP comparisons, 114 placed exchange
+checks, two coupled size scenarios and six reviewed views.
+[HB/SNL comparison](clutch_drive_build/source_review/index.html) led to a wider
+estimated shaft head. See the [packet](../../packets/I03-clutch-stop-drive.md) for
+identity transfer, belt inventory and casting-profile limitations. Main clutch,
+pressure circuit and standard tank integration remain open.

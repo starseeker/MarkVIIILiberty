@@ -136,7 +136,17 @@ exports the 83 additions and two revised receiving castings. Pump height, bracke
 shape and MX99 construction remain explicit hypotheses, with
 [handbook comparison](experiments/drive_chains/air_pump_mount_build/source_review/source_comparison.png)
 and a conditional 54-inch belt study. Clutch-stop drive geometry, air lines and
-standard-tank integration remain unfinished.
+standard-tank integration remain unfinished at that checkpoint.
+
+The [clutch-stop drive candidate](experiments/drive_chains/clutch_drive_build/TransmissionWithClutchDrive.FCStd)
+extends the combined model to **1,520 physical components**. It adds the coupling
+box, two cover halves, stop drum, shaft, eight bolt/nut/washer sets and a closed
+V-belt representation. The belt fit moves the pump and its supports together.
+[HB/SNL comparison](experiments/drive_chains/clutch_drive_build/source_review/index.html)
+led to a wider shaft head; its transverse form and the handbook-to-catalogue
+shaft dimension transfer remain uncertain. The [packet](packets/I03-clutch-stop-drive.md)
+records scope, approximations and checks. The full clutch, air circuit and standard
+tank integration remain unfinished.
 
 Additional commands:
 

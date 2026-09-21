@@ -11,6 +11,39 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 21 September 2026 — clutch-stop coupling and closed pump drive
+
+The [combined native assembly](experiments/drive_chains/clutch_drive_build/TransmissionWithClutchDrive.FCStd)
+now contains **1,520 physical components**. Thirty additions represent M855,
+two M856 cover halves, M858, the SNL cardan shaft, eight bolt/nut/washer sets and
+SH900G as a linked-belt assembly representation. The previous inferred six-hole
+M246 flange now has the documented eight-bolt pattern. The closed belt raises
+the pump and its dependent mounting stack by 0.797 mm. Another 1,406 parent
+components remain unchanged.
+
+All 474 affected material pairs, 148 independent interface checks, 22 detailed
+STEP definition comparisons and 114 placed-solid exchange checks pass. Two
+coupled radius/profile and shaft-size trials pass 450/474 pairs and 27 contacts
+each. The [qualification](experiments/drive_chains/clutch_drive_build/qualification.json)
+binds the checked native, exchange files, tooling and six inspected views.
+It accepts the approximate installation for continued front-clutch construction.
+
+[Source comparison](experiments/drive_chains/clutch_drive_build/source_review/index.html)
+showed the first shaft head was too narrow; its section increased from 76 to
+100 mm between the coarse HB/SNL proportions. The transverse form, cup profile,
+sharp shoulder approximations and handbook-to-SNL shaft dimension transfer remain
+explicit limitations. The belt's 108 scores do not establish a historical link
+count; proprietary link inventory and the pitch-length convention remain open.
+
+Three new [assembled](../intermediate_snapshot_iso_clutch_drive_001.png),
+[exposed coupling](../intermediate_snapshot_iso_clutch_coupling_001.png) and
+[section](../intermediate_snapshot_detail_clutch_drive_001.png) snapshots are saved.
+All 20 standard native files and 66 prior progression PNGs are preserved.
+Standard tank011 remains unchanged. Next are the front clutch coupling and
+external spring, main compound clutch, brake band and pump air connections,
+followed by remaining drivetrain supports, controls and standard integration.
+The [packet](packets/I03-clutch-stop-drive.md) records the complete scope.
+
 ## 21 September 2026 — pump mounting reconstruction
 
 The [combined native model](experiments/drive_chains/air_pump_mount_build/TransmissionWithAirPump.FCStd)

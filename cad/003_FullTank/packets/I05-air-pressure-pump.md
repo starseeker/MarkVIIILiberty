@@ -1,6 +1,14 @@
 # I05 — air-pressure pump and transmission attachment
 
-Status: **pump core plus a 32-piece mounting reconstruction; drive installation remains conditional**
+Status: **pump core, mounting reconstruction and closed belt drive; air circuit unfinished**.
+The subsequent [clutch-stop drive packet](I03-clutch-stop-drive.md) adds the actual
+driver and a linked-belt assembly representation to a 1,520-component combined
+model. Its selected pitch convention raises the pump and supports by 0.797 mm
+to a centre height of 375.802 mm. Link construction/count and historical mounting
+profiles remain unresolved. The following sections retain the preceding pump
+and mounting checkpoint details and their evidence.
+
+Preceding status: **pump core plus a 32-piece mounting reconstruction; drive installation conditional**
 (21 September 2026). The [combined native model](../experiments/drive_chains/air_pump_mount_build/TransmissionWithAirPump.FCStd)
 contains 1,490 physical leaves: the 1,407-piece transmission checkpoint plus
 51 pump pieces and 32 brackets/attachment pieces. Two transmission castings gain

@@ -328,3 +328,18 @@ its opaque/transparent views remain unchanged.
 | `intermediate_snapshot_iso_air_pump_mount_001.png` | `a7ccb6ca51d0aed647a0fc0a36c8e5065ab383dfbde34a9bfe748f724eda4263` |
 | `intermediate_snapshot_iso_air_pump_supports_001.png` | `0c56002de284cf08abee08af76ccb1626d8567192be711c4547964f386128b93` |
 | `intermediate_snapshot_detail_air_pump_mount_001.png` | `4d3aafe9f78a889d017317ca0bb57884ed1eac12413460a2939814a9b6960623` |
+
+The clutch-stop drive stage (21 September 2026) preserves the [assembled drive](intermediate_snapshot_iso_clutch_drive_001.png),
+[exposed coupling and shaft](intermediate_snapshot_iso_clutch_coupling_001.png),
+and [centre section](intermediate_snapshot_detail_clutch_drive_001.png).
+The combined transmission/pump candidate contains 1,520 physical leaves after
+adding the coupling box, two half covers, stop drum, shaft, eight fastening sets
+and linked-belt representation. Source comparison widened the estimated head
+from 76 to 100 mm. The exact transverse form, shaft identity transfer, casting
+profiles and proprietary belt-link inventory remain approximate or unresolved.
+Main clutch, air circuit and standard integration are unfinished; standard tank
+011 and both of its hull display views remain unchanged.
+
+`intermediate_snapshot_iso_clutch_drive_001.png` SHA-256: `4c70d49360b03d0993c313d1f4dd16f2fce28e8d8243d0a14bdc054d93ae1b75`.
+`intermediate_snapshot_iso_clutch_coupling_001.png` SHA-256: `a30548fdd71165bbd1f9f1737fd072d990add6006e590e2da2a893b481a77617`.
+`intermediate_snapshot_detail_clutch_drive_001.png` SHA-256: `5b3aa2a1331a69e7dce40ca1bcc012cb4d0bea63f234eba34ec93f662c9b0d29`.

@@ -1,0 +1,1 @@
+Both physical scenarios passed (450/474 pairs,27 contacts each). Final report writer failed because its standard-build record variable was overwritten by a bounding box. This is incomplete validation output, not a success receipt. Rerun the fixed checker; preserve these reports and log as diagnostics.

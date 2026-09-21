@@ -1,0 +1,71 @@
+{
+  "native_sha256": "6aa806855a366a43b6548f8bb3f3283c2a7201847789a8be2d56f164beffb5d2",
+  "renderer_sha256": "e35999f977e6e075dd94a52433d19b56eeba477579e09dfcb61b97592cf825dd",
+  "input_hashes": {
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate71.png": "16e584182c477f9bbaf6b553edf18cb8a2e311b23c1664531c1d90506ec7c00d",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p293-geometry.png": "0d9bc7a612d9cbe2f9d4d5a4d7bbc3832b00f6ef9085aceebb601a3ec4804a6f",
+    "cad/003_FullTank/experiments/drive_chains/clutch_drive_build/previews/section.png": "5b3aa2a1331a69e7dce40ca1bcc012cb4d0bea63f234eba34ec93f662c9b0d29",
+    "cad/003_FullTank/experiments/drive_chains/clutch_drive_build/previews/open.png": "a30548fdd71165bbd1f9f1737fd072d990add6006e590e2da2a893b481a77617"
+  },
+  "output_hashes": {
+    "comparison.svg": "ee8e44aba6baa5e54231655ab9f7ed050d371b071d34bff9e8e2d5d3500cdec1",
+    "comparison.png": "3c28213f1f9827b717f0a3cf2ea30ad7c3a365737286bf31c27ddd566f5bad40"
+  },
+  "manual_coarse_picks": [
+    {
+      "source": "HB71",
+      "shaft_diameter_px": [
+        508,
+        615
+      ],
+      "drum_diameter_px": [
+        308,
+        815
+      ],
+      "drum_axial_px": [
+        168,
+        345
+      ],
+      "head_section_px": [
+        445,
+        679
+      ],
+      "estimated_head_section_mm": 111.09532710280374,
+      "estimated_diameter_mm": 240.70654205607477,
+      "estimated_axial_mm": 84.03364485981308
+    },
+    {
+      "source": "SNL21",
+      "shaft_diameter_px": [
+        528,
+        616
+      ],
+      "drum_diameter_px": [
+        373,
+        766
+      ],
+      "drum_axial_px": [
+        1068,
+        1235
+      ],
+      "head_section_px": [
+        483,
+        648
+      ],
+      "estimated_head_section_mm": 95.25,
+      "estimated_diameter_mm": 226.8681818181818,
+      "estimated_axial_mm": 96.40454545454544
+    }
+  ],
+  "measurement_limit": "Approximate pixel endpoints, at least +/-8px body-span uncertainty plus unknown figure/scan distortion. Shape comparison, not metrology.",
+  "orientation": "Original source orientations retained; native section follows HB. Panels independently fitted; no matched-scale claim.",
+  "notes": [
+    "Eight coupling-box fasteners agree across SNL31:013 and HB118. Both sources show an enclosing stop drum and captured shaft head.",
+    "Nominal stop-drum diameter228.6mm: rough shaft-relative source picks suggest about241mm (HB) and227mm (SNL).",
+    "Nominal drum axial extent99mm: rough source picks suggest about84mm (HB) and96mm (SNL); the HB discrepancy remains explicit.",
+    "The head was widened from76 to100mm after comparison with roughly111mm (HB) and95mm (SNL) sections; transverse form remains inferred.",
+    "The front spline form is approximate; its diameter/length transfer from HB does not prove applicability to the SNL shaft.",
+    "The physical54in belt loop uses an assumed pitch convention. Junction scores do not identify/count the proprietary belt links.",
+    "Pump support profiles remain unverified in the obscured installed source view. These panels do not establish historical fit."
+  ]
+}

@@ -1,0 +1,1 @@
+Initial candidate: 1520 valid saved leaves and474 material pairs with no overlap. Builder stopped at definition export because a closed-document object was accessed. This is not a qualified deliverable. Spline tip corners also require clipping to the transferred outside diameter before final checks. Inputs and first native/placed STEP preserved here.
