@@ -276,3 +276,15 @@ and its opaque/transparent companions are unchanged; this is not tank012.
 | `intermediate_snapshot_iso_transmission_vertical_001.png` | `146ef0a60a06c36710cbbb368960d5d467574233ef5424947cb4b3cbd9c688b3` |
 | `intermediate_snapshot_iso_transmission_vertical_mechanism_001.png` | `88e32e7750322ac0cb801336a8afb62eec0ee3ae54984b2bb68273aab4a5b163` |
 | `intermediate_snapshot_detail_vertical_bearing_001.png` | `6de767825b1795b553fb4938632944674849b32fd2968c7f2d87fb7595368a8f` |
+
+The [MX5 mounting trial](intermediate_snapshot_iso_transmission_case_mount_trial_001.png)
+and [joint section](intermediate_snapshot_detail_case_mount_trial_001.png) record
+four added stud/nut/pin/bevel-washer sets (21 September2026). The experimental
+fixture has 1,407 solids and passes its mechanical/STEP checks. Its long upper
+casting bosses project beyond the visible source wing; the discrepancy remains
+open. These are trial images, not accepted historical geometry or tank 012.
+
+`intermediate_snapshot_iso_transmission_case_mount_trial_001.png` SHA-256:
+`8a6eb8f5b18ef5ebce27be48a719c0c13d59ff42e881f735b076da60f5192da1`.
+`intermediate_snapshot_detail_case_mount_trial_001.png` SHA-256:
+`08b9ea2cff91d0f7d4009e9e656940fcd0d8d250964026aa233553c6cc2e7c0e`.

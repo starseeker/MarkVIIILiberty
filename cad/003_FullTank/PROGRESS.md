@@ -11,6 +11,24 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 21 September 2026 — case mounting trial and source-profile discrepancy
+
+The [MX5 mounting trial](experiments/drive_chains/transmission_case_mount_trial_build/MX5CaseMountTrial.FCStd)
+contains 1,407 valid solids:16 new stud/nut/pin/washer occurrences, three revised
+case/channel parts and 1,388 unchanged leaves. All 183 affected material pairs,
+61 interfaces,84 independent witnesses,19 native/STEP comparisons and three
+local parameter trials pass. A two-segment analytic bore resolved a small STEP
+mass discrepancy in the bevel washers without manually enlarging tolerances.
+
+The [source comparison](experiments/drive_chains/transmission_case_mount_trial_build/source_review/mounting_overlay.png)
+shows that the inferred upper mounting boss extends beyond the visible wing.
+The source stud lengths conflict, and the inherited frame also differs from the
+upper source face. The [packet](packets/I03-case-mount-trial.md) records these
+observations and the conditional allocation of four MX13 washers. **This remains
+an experimental trial requiring a casting-profile disposition**, not a replacement
+for the accepted 1,391-solid vertical-controls candidate. Two trial snapshots are
+preserved;20 standard CAD files and 58 earlier snapshots remain byte unchanged.
+
 ## 21 September 2026 — vertical reversing shaft and attachments
 
 The [candidate](experiments/drive_chains/transmission_vertical_build/TransmissionVerticalCandidate.FCStd)

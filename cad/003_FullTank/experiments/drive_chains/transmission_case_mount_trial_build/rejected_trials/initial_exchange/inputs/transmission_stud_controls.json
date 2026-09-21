@@ -1,0 +1,194 @@
+{
+  "status": "partial_bearing_cap_fastening_candidate",
+  "controls": {
+    "stud_diameter": {
+      "value": 19.05,
+      "unit": "mm",
+      "basis": "printed_nominal_dimension",
+      "interpretation": "3/4in nominal diameter; SNL241."
+    },
+    "MX9_length": {
+      "value": 92.075,
+      "unit": "mm",
+      "basis": "printed_nominal_dimension",
+      "interpretation": "3-5/8in, SNL241:013; eight physical studs."
+    },
+    "MX10_length": {
+      "value": 123.825,
+      "unit": "mm",
+      "basis": "printed_nominal_dimension",
+      "interpretation": "4-7/8in, SNL241:018; four physical studs."
+    },
+    "MX36_length": {
+      "value": 139.7,
+      "unit": "mm",
+      "basis": "printed_nominal_dimension",
+      "interpretation": "5-1/2in, SNL241:023; four physical studs."
+    },
+    "US_thread_length": {
+      "value": 38.1,
+      "unit": "mm",
+      "basis": "printed_nominal_dimension",
+      "interpretation": "1-1/2in US Std thread at casting end; pitch/form not modeled."
+    },
+    "SAE_thread_length": {
+      "value": 28.575,
+      "unit": "mm",
+      "basis": "printed_nominal_dimension",
+      "interpretation": "1-1/8in SAE thread at nut end; pitch/form not modeled."
+    },
+    "nut_af": {
+      "value": 28.575,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated 1-1/8in across flats, not a transcribed nut dimension."
+    },
+    "nut_height": {
+      "value": 19.05,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated overall castle nut height."
+    },
+    "crown_radius": {
+      "value": 13.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated turned castle crown radius."
+    },
+    "slot_depth": {
+      "value": 7,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated axial depth of six castle slots."
+    },
+    "nut_bore_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Radial display gap for omitted nut/stud thread form; not a thread-fit qualification."
+    },
+    "stud_end_projection": {
+      "value": 3.175,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated rod tip projection beyond the castle nut."
+    },
+    "US_thread_recess": {
+      "value": 2,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Coarse thread front stops2mm behind the casting split; fixes derived outer stud/cap/nut axial stack."
+    },
+    "blind_end_gap": {
+      "value": 0.3,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Nominal clearance from stud tail to blind pilot bottom."
+    },
+    "blind_end_stock": {
+      "value": 4,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated casting stock behind each blind bore."
+    },
+    "cotter_diameter": {
+      "value": 3.175,
+      "unit": "mm",
+      "basis": "printed_nominal_dimension",
+      "interpretation": "1/8in nominal split-pin envelope, SNL241:015/020/025."
+    },
+    "cotter_length": {
+      "value": 34.925,
+      "unit": "mm",
+      "basis": "printed_nominal_dimension",
+      "interpretation": "1-3/8in nominal under-eye leg length interpreted as centerline stock length before bending."
+    },
+    "cotter_center_spacing": {
+      "value": 1.6875,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Twin round-section leg proxy; derived wire radius gives printed nominal outer diameter."
+    },
+    "cotter_hole_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Radial clearance in stud cross bore."
+    },
+    "cotter_slot_gap": {
+      "value": 0.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Castle slot width minus nominal split-pin diameter."
+    },
+    "cotter_head_gap": {
+      "value": 0.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Under-eye station beyond the crown outside radius."
+    },
+    "cotter_eye_radius": {
+      "value": 2.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Approximate eye centerline radius."
+    },
+    "cotter_eye_rise": {
+      "value": 3,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Approximate transition from straight stems to eye."
+    },
+    "cotter_exit_gap": {
+      "value": 1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Bend begins beyond the crown radial extent."
+    },
+    "cotter_bend_radius": {
+      "value": 2,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Estimated tail centerline bend radius."
+    },
+    "cotter_bend_angle": {
+      "value": 45,
+      "unit": "deg",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Symmetric splayed tails; inferred installed form."
+    },
+    "radial_witness_shift": {
+      "value": 1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Diagnostic stud displacement across pilot wall."
+    },
+    "cotter_retention_shift": {
+      "value": 5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Diagnostic axial split-pin displacement against nut crown."
+    },
+    "nut_rotation_witness": {
+      "value": 10,
+      "unit": "deg",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Diagnostic nut rotation relative to fixed split pin."
+    }
+  },
+  "inner_stud_allocation": "MX36 at upper two corners; MX10 at lower two corners, on both hands. This is an explicit provisional allocation, not established by the source schedule.",
+  "frame": "+X forward along stud, +Y transverse, +Z up; hardware belongs to the fixed bearing, never to the phased shaft.",
+  "interpretations": [
+    "Outer MX9 nominal length, full US thread engagement, explicit recess, nut height and tip projection derive a common cap seating plane. Current estimated ear face is spotfaced to that plane.",
+    "Rear integral casting bosses extend to house each source-length stud with a blind end. Preserve bearing socket and the established shaft/lining geometry.",
+    "Stud and nut threads use cylindrical envelopes with identified source thread-end lengths; helical flank contact/axial retention and torque capacity remain unqualified.",
+    "Split-pin leg centerlines retain the nominal source length through straight, bent and tail segments. Round-section proxy and eye junctions do not claim original half-round stock or exact material volume."
+  ],
+  "deferred": [
+    "Historical corner allocation of MX10/MX36",
+    "Exact cast bosses/blends, thread forms and nut dimensions",
+    "Complete lubrication, frame mounting and central transmission"
+  ],
+  "cotter_hand_orientation": "Eyes point outboard: Port +Y (180deg about localX), Starboard -Y. The source does not establish this direction; installation clearance selects the mirrored arrangement.",
+  "fit_revision": "First trial used eye toward world-Y on both hands and had two0.328169mm3 eye/casing overlaps on port inboard studs. Revised port cotters rotate180deg about their stud axes; dimensions and castings remain unchanged."
+}

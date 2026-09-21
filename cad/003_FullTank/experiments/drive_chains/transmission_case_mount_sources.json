@@ -1,0 +1,247 @@
+{
+  "status": "mounting_trial_evidence",
+  "configuration": "1919-1920 Rock Island production; later service catalogue and preliminary handbook applicability conditional",
+  "physical_inventory": [
+    {
+      "key": "stud",
+      "mark": "MX5",
+      "part_id": "P_c5b4d785b6867abb",
+      "record_id": "SNL:241:028",
+      "count": 4
+    },
+    {
+      "key": "nut",
+      "mark": "",
+      "part_id": "P_c3bb5fc9299bfab2",
+      "record_id": "SNL:241:029",
+      "count": 4
+    },
+    {
+      "key": "cotter",
+      "mark": "",
+      "part_id": "P_715e37e46e3ce9b8",
+      "record_id": "SNL:242:003",
+      "count": 4
+    },
+    {
+      "key": "washer",
+      "mark": "MX13",
+      "part_id": "P_6e5a15454080a055",
+      "record_id": "SNL:267:006",
+      "count": 4
+    }
+  ],
+  "assembly_identities": {
+    "detailed_stud": "P_21218b61a7580c24",
+    "case_list_stud": "P_50d2ee4ba9ef6f71",
+    "case": "P_d9b36fdfefa34afe"
+  },
+  "length_conflict": {
+    "detailed_record": "SNL:241:028",
+    "detailed_mm": 142.875,
+    "owning_record": "SNL:60:003",
+    "owning_mm": 139.7,
+    "difference_mm": 3.175,
+    "decision": "Use detailed physical-stud listing for trial; test owning-list alternative; retain distinct survey assembly IDs."
+  },
+  "washer_allocation": {
+    "catalogue_total": 24,
+    "frame_bracket_scope": 20,
+    "conditional_case_allocation": 4,
+    "evidence": [
+      "SNL:267:006",
+      "SNL:96:007",
+      "SNL:96:012",
+      "SNL:28:003",
+      "HB printed204 Plate121 MX13 callout"
+    ],
+    "interpretation": "Twenty washers for twenty MX1 bracket bolts, plus four washers for four MX5 case studs. Case allocation inferred from the marked drawing and remaining total; not explicitly enumerated in SNL59/60 case list."
+  },
+  "source_records": [
+    {
+      "record_id": "SNL:59:031",
+      "source_id": "SNL",
+      "printed_page": "59",
+      "row_no": 31,
+      "record_type": "catalogue_entry",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_045_064.py",
+      "description": "CASE, transmission bevel gear, assembly",
+      "raw_json": "{\"brit\": \"\", \"cell_baseline_offsets\": {\"ident\": -0.5, \"plate\": -0.5}, \"ident\": \"46\\n20\", \"item\": \"CASE, transmission bevel gear, assembly\", \"mfr\": \"\", \"note\": \"(gq)&\", \"ord\": \"\", \"page\": \"59\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_045_064.py\", \"plate\": \"22\\n23\", \"price\": \"222.56\", \"qty\": \"(1)\", \"row\": 31, \"source\": \"SNL\", \"space_after\": 0.5, \"space_before\": 0.5}",
+      "part_ids": [
+        "P_d9b36fdfefa34afe"
+      ]
+    },
+    {
+      "record_id": "SNL:59:033",
+      "source_id": "SNL",
+      "printed_page": "59",
+      "row_no": 33,
+      "record_type": "component",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_045_064.py",
+      "description": "          *one M263 transmission bevel gear CASE (1)",
+      "raw_json": "{\"brit\": \"\", \"ident\": \"\", \"item\": \"          *one M263 transmission bevel gear CASE (1)\", \"mfr\": \"\", \"note\": \"\", \"ord\": \"670\", \"page\": \"59\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_045_064.py\", \"plate\": \"\", \"price\": \"220.00\", \"qty\": \"\", \"row\": 33, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_2f8188a10797254f"
+      ]
+    },
+    {
+      "record_id": "SNL:60:003",
+      "source_id": "SNL",
+      "printed_page": "60",
+      "row_no": 3,
+      "record_type": "component",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_045_064.py",
+      "description": "          four (MX5) STUD, \u00be\u2033 x 5\u00bd\u2033, threaded U. S. Std. 1\u00bd\u2033 and S. A. E.\n                    1\u215b\u2033, assembly.)",
+      "raw_json": "{\"brit\": \"\", \"ident\": \"\", \"item\": \"          four (MX5) STUD, \u00be\u2033 x 5\u00bd\u2033, threaded U. S. Std. 1\u00bd\u2033 and S. A. E.\\n                    1\u215b\u2033, assembly.)\", \"mfr\": \"\", \"note\": \"\", \"ord\": \"\", \"page\": \"60\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_045_064.py\", \"plate\": \"\", \"price\": \"\", \"qty\": \"\", \"row\": 3, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_50d2ee4ba9ef6f71"
+      ]
+    },
+    {
+      "record_id": "SNL:96:007",
+      "source_id": "SNL",
+      "printed_page": "96",
+      "row_no": 7,
+      "record_type": "component",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_085_104.py",
+      "description": "          twenty MX13 bevel WASHER,",
+      "raw_json": "{\"brit\": \"\", \"ident\": \"\", \"item\": \"          twenty MX13 bevel WASHER,\", \"mfr\": \"\", \"note\": \"\", \"ord\": \"\", \"page\": \"96\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_085_104.py\", \"plate\": \"\", \"price\": \"\", \"qty\": \"\", \"row\": 7, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_6e5a15454080a055"
+      ]
+    },
+    {
+      "record_id": "SNL:241:026",
+      "source_id": "SNL",
+      "printed_page": "241",
+      "row_no": 26,
+      "record_type": "catalogue_entry",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_225_244.py",
+      "description": "STUD, \u00be\u2033 x 5\u215d\u2033, threaded U. S. Std. 1\u00bd\u2033 and S. A. E. 1\u215b\u2033, assembly",
+      "raw_json": "{\"brit\": \"\", \"ident\": \"\", \"item\": \"STUD, \u00be\u2033 x 5\u215d\u2033, threaded U. S. Std. 1\u00bd\u2033 and S. A. E. 1\u215b\u2033, assembly\", \"mfr\": \"\", \"note\": \"&\", \"ord\": \"\", \"page\": \"241\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_225_244.py\", \"plate\": \"\", \"price\": \".55\", \"qty\": \"(4)\", \"row\": 26, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_21218b61a7580c24"
+      ]
+    },
+    {
+      "record_id": "SNL:241:028",
+      "source_id": "SNL",
+      "printed_page": "241",
+      "row_no": 28,
+      "record_type": "component",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_225_244.py",
+      "description": "          *one MX5 STUD, \u00be\u2033 x 5\u215d\u2033, threaded U. S. Std. 1\u00bd\u2033 and S. A. E. 1\u215b\u2033\n                   (4)",
+      "raw_json": "{\"brit\": \"\", \"ident\": \"\", \"item\": \"          *one MX5 STUD, \u00be\u2033 x 5\u215d\u2033, threaded U. S. Std. 1\u00bd\u2033 and S. A. E. 1\u215b\u2033\\n                   (4)\", \"mfr\": \"\", \"note\": \"\", \"ord\": \"711\", \"page\": \"241\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_225_244.py\", \"plate\": \"\", \"price\": \".50\", \"qty\": \"\", \"row\": 28, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_c5b4d785b6867abb"
+      ]
+    },
+    {
+      "record_id": "SNL:241:029",
+      "source_id": "SNL",
+      "printed_page": "241",
+      "row_no": 29,
+      "record_type": "component",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_225_244.py",
+      "description": "           one \u2014       NUT, castle, S. A. E., \u00be\u2033,",
+      "raw_json": "{\"brit\": \"\", \"ident\": \"\", \"item\": \"           one \u2014       NUT, castle, S. A. E., \u00be\u2033,\", \"mfr\": \"\", \"note\": \"\", \"ord\": \"\", \"page\": \"241\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_225_244.py\", \"plate\": \"\", \"price\": \"\", \"qty\": \"\", \"row\": 29, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_c3bb5fc9299bfab2"
+      ]
+    },
+    {
+      "record_id": "SNL:242:003",
+      "source_id": "SNL",
+      "printed_page": "242",
+      "row_no": 3,
+      "record_type": "component",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_225_244.py",
+      "description": "           one \u2014     PIN, split, \u215b\u2033 x 1\u215c\u2033.\n                   For case M263 (4).)",
+      "raw_json": "{\"brit\": \"\", \"ident\": \"\", \"item\": \"           one \u2014     PIN, split, \u215b\u2033 x 1\u215c\u2033.\\n                   For case M263 (4).)\", \"mfr\": \"\", \"note\": \"\", \"ord\": \"\", \"page\": \"242\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_225_244.py\", \"plate\": \"\", \"price\": \"\", \"qty\": \"\", \"row\": 3, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_715e37e46e3ce9b8"
+      ]
+    },
+    {
+      "record_id": "SNL:267:006",
+      "source_id": "SNL",
+      "printed_page": "267",
+      "row_no": 6,
+      "record_type": "catalogue_entry",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_265_276.py",
+      "description": "WASHER, bevel",
+      "raw_json": "{\"brit\": \"MX13\", \"ident\": \"\", \"item\": \"WASHER, bevel\", \"mfr\": \"\", \"note\": \"&\", \"ord\": \"713\", \"page\": \"267\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_265_276.py\", \"plate\": \"\", \"price\": \".05\", \"qty\": \"24\", \"row\": 6, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_6e5a15454080a055"
+      ]
+    },
+    {
+      "record_id": "SNL:28:003",
+      "source_id": "SNL",
+      "printed_page": "28",
+      "row_no": 3,
+      "record_type": "component",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_025_044.py",
+      "description": "          *one MX1 transmission sprocket bearing bracket to channel BOLT (20)",
+      "raw_json": "{\"brit\": \"\", \"ident\": \"\", \"item\": \"          *one MX1 transmission sprocket bearing bracket to channel BOLT (20)\", \"mfr\": \"\", \"note\": \"\", \"ord\": \"712\", \"page\": \"28\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_025_044.py\", \"plate\": \"\", \"price\": \".08\", \"qty\": \"\", \"row\": 3, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_1bb060b070d00986"
+      ]
+    },
+    {
+      "record_id": "SNL:96:012",
+      "source_id": "SNL",
+      "printed_page": "96",
+      "row_no": 12,
+      "record_type": "component",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_085_104.py",
+      "description": "          twenty \u2014           transmission sprocket bearing bracket to channel BOLT,\n                          assembly,",
+      "raw_json": "{\"brit\": \"\", \"ident\": \"\", \"item\": \"          twenty \u2014           transmission sprocket bearing bracket to channel BOLT,\\n                          assembly,\", \"mfr\": \"\", \"note\": \"\", \"ord\": \"\", \"page\": \"96\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_085_104.py\", \"plate\": \"\", \"price\": \"\", \"qty\": \"\", \"row\": 12, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_5ee9ff59364cc273"
+      ]
+    }
+  ],
+  "source_hashes": {
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate121.png": "c813affd1d0559ac1a363092df677a9ead0a1c2bfd13e0069a5b8159496e4841",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png": "4d8e75e309a53fe89b185c80cafdf70b05780591b5d7baac53bd830eff667944",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII064.jpg": "d119043b15426fcaf8f863fc1df22c588c1f1fe0c2016b0100a8504a18ed0cfa",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p295-geometry.png": "0d845e3964faf559cc5dd3047625adf72226a6babb0af17c801b3a6006a34c53",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_025_044.py": "f6278d1a5aea425d3f7aa6e6be5b0dc9577151d067e5b899ab18cd4530ec83d5",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_045_064.py": "e571c17f7c9a89889a49da3d9ce31a89683fb7e06909130fa9b80f929d34ee88",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_085_104.py": "42da624c65338b480ff77429245bd882b3d904d22f4299f38e065d3cebd71720",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_225_244.py": "77b6d64a3b53ca0b8e0149d159da8930a06c3df6fc2c29f906e11a034f550269",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_265_276.py": "138f5d5e2fc13dbf5cc088ab5bf9c38f625a2d73a8b1061474b13b7f4619d326",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p028.jpg": "32c7cc22ae6c3f58b42049e6eb9ac72e3daef6a9a158c6cb1b6e1645e5b5f498",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p059.jpg": "a1c78ed7bab0f46280101c06e298002c2f2c4a7fa65c2dbc086cc68043dafb82",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p060.jpg": "2d5a62be80395e72b965b58164db891baf5afef9086d99f824f3b0441336752a",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p096.jpg": "f6764155b07bbf5ee6241d627a20b1f468e751094008dcbd3da44d3c439a600d",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p241.jpg": "28a11c5837997c8c0c8c9fa4415003c72c606eface505fbc63d2b34307016f63",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p242.jpg": "c68e0e17e174d36edc1d0555d32e6000fa5465155f7f6a3c5aec53badbdfae45",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p267.jpg": "961c2d7b6e76bb6fb735f86eb08275a231a9246e8e17b278c8e264181d581491"
+  },
+  "figure_locators": [
+    {
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate121.png",
+      "locator": "HB printed204 Plate121",
+      "use": "X-axis case attachment, channel opening direction and MX13 marked washer"
+    },
+    {
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+      "locator": "HB printed126 Plate79",
+      "use": "Transmission photograph, qualitative mounting/frame arrangement; no dimensional calibration"
+    },
+    {
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p295-geometry.png",
+      "locator": "SNL printed295 Plate23",
+      "use": "Fixed inherited scale and shaft origin; compare mounting/casting silhouette without image warping"
+    }
+  ],
+  "limits": [
+    "Cast boss diameter, reach and blind threaded receivers are installation hypotheses; the long boss may overrun the illustrated side profile. Trial source comparison required before acceptance.",
+    "Channel taper and washer dimensions estimated; no rolled-section standard verified.",
+    "Helical threads omitted; nominal envelopes and explicitly stated bore clearance do not qualify load or thread retention.",
+    "Four mounting axes inherited from existing M263 webs; transverse spacing not a printed dimension.",
+    "Complete bracket-to-channel MX1 attachments, frame rivets, brakes, oil circuits, pump and standard tank integration remain pending."
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "status": "needs_casting_profile_review",
+  "source_warped": false,
+  "calibration": {
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p295-geometry.png",
+    "image_sha256": "0d845e3964faf559cc5dd3047625adf72226a6babb0af17c801b3a6006a34c53",
+    "image_size_px": [
+      1094,
+      921
+    ],
+    "status": "conditional_local_scale_not_metrology",
+    "primary_control": {
+      "feature": "Inboard Timken6420 cup outside diameter",
+      "pick_line_x_px": 326,
+      "pixel_y": [
+        405,
+        567
+      ],
+      "length_mm": 149.225,
+      "endpoint_pick_allowance_px": 3
+    },
+    "mm_per_pixel": 0.921141975308642,
+    "origin_px": [
+      579,
+      493
+    ],
+    "independent_checks": [
+      {
+        "feature": "cone axial width",
+        "pixel_x": [
+          300,
+          364
+        ],
+        "printed_mm": 54.229,
+        "scaled_mm": 58.953086419753085,
+        "residual_mm": 4.724086419753085
+      },
+      {
+        "feature": "cup axial width",
+        "pixel_x": [
+          303,
+          359
+        ],
+        "printed_mm": 44.45,
+        "scaled_mm": 51.583950617283946,
+        "residual_mm": 7.1339506172839435
+      }
+    ],
+    "limits": [
+      "Picks are visual estimates from a stylized section; residuals are retained, not corrected by image stretching.",
+      "Horizontal/radial checks disagree; source is insufficient for exact machining dimensions.",
+      "Plate22 separate coupling detail must not be mistaken for an assembled shaft endpoint."
+    ]
+  },
+  "observations": [
+    {
+      "location": "upper",
+      "model_axis_row_px": 119.94532656477321,
+      "model_boss_front_u_px": 707.3174305339492,
+      "source_wing_front_visual_range_px": [
+        767,
+        779
+      ],
+      "model_forward_overrun_range_mm": [
+        54.976119929453304,
+        66.02982363315701
+      ],
+      "model_frame_face_u_px": 825.5945288753799,
+      "source_frame_face_visual_range_px": [
+        853,
+        865
+      ],
+      "inherited_frame_forward_offset_range_mm": [
+        25.24432980599654,
+        36.29803350970025
+      ]
+    },
+    {
+      "location": "lower",
+      "model_axis_row_px": 804.9328690955529,
+      "model_boss_front_u_px": 707.3174305339492,
+      "source_wing_front_visual_range_px": [
+        718,
+        738
+      ],
+      "model_forward_overrun_range_mm": [
+        9.840163139329851,
+        28.26300264550269
+      ],
+      "model_frame_face_u_px": 825.5945288753799,
+      "source_frame_face_visual_range_px": [
+        827,
+        837
+      ],
+      "inherited_frame_forward_offset_range_mm": [
+        1.2946384479718496,
+        10.50605820105827
+      ]
+    }
+  ],
+  "evidence_interpretation": "Manual broad visual brackets on SNL23 at the modeled stud-axis rows; not traced metrology. The side section may omit out-of-plane bosses, but the photo does not resolve their depth. Printed stud length, inferred nut stack and existing frame datums require long receivers. This does not prove the illustrated historical casting had them.",
+  "disposition": "Preserve an unqualified native mounting trial and checks. Do not replace the accepted vertical-controls checkpoint or promote into the standard tank on mechanical fit alone.",
+  "next_action": "Review M263 mounting-foot depth, stud assignment and inherited frame/upper-foot offsets together using SNL22/23, HB Plate121 and original transmission photos; accept with explicit approximation or revise after this review.",
+  "qualification_scope": "Mechanical fit and exchange can be checked independently of the unresolved casting shape.",
+  "source_sha256": "0d845e3964faf559cc5dd3047625adf72226a6babb0af17c801b3a6006a34c53"
+}
