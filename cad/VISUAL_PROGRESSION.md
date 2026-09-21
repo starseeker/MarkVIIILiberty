@@ -222,3 +222,23 @@ snapshots remain unchanged; this candidate awaits tank integration.
 `intermediate_snapshot_iso_transmission_brake_bearings_001.png` SHA-256: `70f3c796161bd02b9303459774555bb18bc46b83a392ef7adcd150d0a71fd141`.
 `intermediate_snapshot_detail_brake_bearing_001.png` SHA-256: `58af613065c4f081c53f8ce2a806735728b0e30b63fe491a6b4074d577a28b39`.
 `intermediate_snapshot_detail_brake_bearing_fasteners_001.png` SHA-256: `3f5c9b9ef288cf8dade590dbd5a562af1cdc70f5b6ce6e010eb5976c1c28316b`.
+
+The central case joint (21 September 2026) preserves a
+[case overview](intermediate_snapshot_iso_transmission_case_joint_001.png),
+[cover-hidden isometric](intermediate_snapshot_iso_transmission_case_joint_open_001.png)
+and [joint section](intermediate_snapshot_detail_case_joint_001.png).
+Fourteen MX8 bolt/nut/pin sets and two M326 gaskets bring the isolated transmission
+to 1,365 valid solids. Source counts are retained; the transverse bolt pattern,
+flange detail and gasket stock remain inferred. Six inspected views include the
+unchanged SNL23 calibration and record casting/fastener-position differences.
+These are inspection views of an incomplete transmission, not standard tank012.
+All twenty standard native files and forty-nine previous images are preserved.
+
+`intermediate_snapshot_iso_transmission_case_joint_001.png` SHA-256:
+`6fff221141049d24c103c58bf4b5cb5d1b4698da917a5a470f4b0ef187213c9a`.
+
+`intermediate_snapshot_iso_transmission_case_joint_open_001.png` SHA-256:
+`9b29aa0a5026b73b7a335e811eede16fac16ff91779762753a7feec084559257`.
+
+`intermediate_snapshot_detail_case_joint_001.png` SHA-256:
+`7e28b922c9c227a9bee20515918447cdc8167d269678ed059da8247fa33fd69c`.

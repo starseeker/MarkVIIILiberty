@@ -11,6 +11,30 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 21 September 2026 — central bevel-case joint
+
+The [candidate](experiments/drive_chains/transmission_case_joint_build/TransmissionCaseJointCandidate.FCStd)
+now contains **1,365 valid solids**: 44 new occurrences, two revised castings
+and 1,319 unchanged parts. Fourteen MX8 bolt/nut/cotter sets and two M326 gaskets
+populate the case split. Source counts are explicit; flange lands, bolt pattern,
+gasket stock and fits remain documented estimates.
+
+All 335 affected material pairs, 46 native/STEP comparisons and 200 independent
+checks pass. Fifty-nine interfaces are freshly checked and 602 reused against
+unchanged geometry. Three local parameter trials also pass. Qualification
+resolved gasket/seat and cotter-eye interference, inconsistent overlapping
+cutters, and a default mass-integration discrepancy; rejected evidence is kept.
+Gasket backing is checked at 2,072 points per half against each casting, with
+a displaced-cover negative. This sampled result is not a sealing qualification.
+
+Six inspected views retain the SNL23 scale, showing the inferred joint and the
+remaining casting/fastener-position differences. Three new progression images
+preserve the overview, exposed joint and section. Twenty standard native files
+and forty-nine earlier snapshots are unchanged. The
+[packet](packets/I03-case-joint.md) records the evidence and numerical limits.
+Reversing controls, case mounts, pump/support installation, brakes, lubrication
+and standard integration remain ahead; the full-tank goal remains active.
+
 ## 21 September 2026 — paired brake-bearing supports
 
 The [candidate](experiments/drive_chains/transmission_brake_bearing_build/TransmissionBrakeBearingCandidate.FCStd)

@@ -1,0 +1,12 @@
+Seal intersection 2714.6203132150613 2714.62015127176 0.0 0
+Test True True Vector (2.1874166393879512e-14, -7.853285234511724e-14, 160.07777741133137) Vector (-3.2011615526669236e-15, -4.732731668509336e-13, 160.07776515164423) BoundBox (-0.15, -198.727, 58.9998, 0.15, 198.727, 231.5) BoundBox (-0.15, -198.727, 58.9998, 0.15, 198.727, 231.5)
+Seal intersection 2714.620313221388 2714.6201647829544 0.0 0
+Test False False Vector (1.8984483529309362e-14, -2.1241127631778697e-13, -160.07777741254458) Vector (-4.42351839499645e-16, 1.4809650638697369e-12, -160.0777661751485) BoundBox (-0.15, -198.727, -231.5, 0.15, 198.727, -58.9998) BoundBox (-0.15, -198.727, -231.5, 0.15, 198.727, -58.9998)
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/.work/transmission-case-joint-study/local_trial.py", line 15, in <module>
+    shapes,d=case_joint_parts(c,*old)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_case_joint_parts.py", line 43, in case_joint_parts
+    assert len(seals)==2,[(s.Volume,str(s.BoundBox)) for s in seals]
+           ^^^^^^^^^^^^^
+AssertionError: []

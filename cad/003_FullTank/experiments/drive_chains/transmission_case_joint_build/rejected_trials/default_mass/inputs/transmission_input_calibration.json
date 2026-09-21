@@ -1,0 +1,51 @@
+{
+  "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p295-geometry.png",
+  "image_sha256": "0d845e3964faf559cc5dd3047625adf72226a6babb0af17c801b3a6006a34c53",
+  "image_size_px": [
+    1094,
+    921
+  ],
+  "status": "conditional_local_scale_not_metrology",
+  "primary_control": {
+    "feature": "Inboard Timken6420 cup outside diameter",
+    "pick_line_x_px": 326,
+    "pixel_y": [
+      405,
+      567
+    ],
+    "length_mm": 149.225,
+    "endpoint_pick_allowance_px": 3
+  },
+  "mm_per_pixel": 0.921141975308642,
+  "origin_px": [
+    579,
+    493
+  ],
+  "independent_checks": [
+    {
+      "feature": "cone axial width",
+      "pixel_x": [
+        300,
+        364
+      ],
+      "printed_mm": 54.229,
+      "scaled_mm": 58.953086419753085,
+      "residual_mm": 4.724086419753085
+    },
+    {
+      "feature": "cup axial width",
+      "pixel_x": [
+        303,
+        359
+      ],
+      "printed_mm": 44.45,
+      "scaled_mm": 51.583950617283946,
+      "residual_mm": 7.1339506172839435
+    }
+  ],
+  "limits": [
+    "Picks are visual estimates from a stylized section; residuals are retained, not corrected by image stretching.",
+    "Horizontal/radial checks disagree; source is insufficient for exact machining dimensions.",
+    "Plate22 separate coupling detail must not be mistaken for an assembled shaft endpoint."
+  ]
+}
