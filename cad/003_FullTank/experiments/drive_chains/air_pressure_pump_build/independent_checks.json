@@ -1,0 +1,666 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "51 unique physical leaves",
+      "value": 51,
+      "expected": 51,
+      "passed": true
+    },
+    {
+      "name": "all physical leaves valid single solids",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "four catalogue mounting sets deferred",
+      "value": 4,
+      "expected": 4,
+      "passed": true
+    },
+    {
+      "name": "shaft container occurs once",
+      "value": 1,
+      "expected": 1,
+      "passed": true
+    },
+    {
+      "name": "saved physical identities and counts match frozen survey expansion",
+      "value": {
+        "P_388d29e50742d44e": 2,
+        "P_8008873fc03f2d00": 2,
+        "P_e59a54ea57ff7893": 6,
+        "P_d2779225e9f05e8c": 4,
+        "P_59f06381c83c416b": 4,
+        "P_06d071d42b8dd84d": 4,
+        "P_407fcf998470dcb9": 4,
+        "P_b2fba7dbd050bdd9": 4,
+        "P_4d1c1872e8431867": 8,
+        "P_098b98df3d76320d": 7,
+        "P_f62a1456e13f8b34": 1,
+        "P_a0b0cabb65eed504": 1,
+        "P_85e44dd1331a0bd6": 1,
+        "P_addc094f791a805e": 1,
+        "P_c7cb29536caaaf40": 1,
+        "P_0f97545952cc7638": 1
+      },
+      "expected": {
+        "P_06d071d42b8dd84d": 4,
+        "P_098b98df3d76320d": 7,
+        "P_0f97545952cc7638": 1,
+        "P_388d29e50742d44e": 2,
+        "P_407fcf998470dcb9": 4,
+        "P_4d1c1872e8431867": 8,
+        "P_59f06381c83c416b": 4,
+        "P_8008873fc03f2d00": 2,
+        "P_a0b0cabb65eed504": 1,
+        "P_addc094f791a805e": 1,
+        "P_b2fba7dbd050bdd9": 4,
+        "P_d2779225e9f05e8c": 4,
+        "P_e59a54ea57ff7893": 6,
+        "P_f62a1456e13f8b34": 1,
+        "P_85e44dd1331a0bd6": 1,
+        "P_c7cb29536caaaf40": 1
+      },
+      "passed": true
+    },
+    {
+      "name": "Port1 cam contact point on shaft",
+      "value": 3.552713678800501e-15,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port1 cam contact point on piston foot",
+      "value": 2.5121479338940403e-15,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port1 inward piston displacement collides with cam",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Port1 piston running clearance in cylinder",
+      "value": 0.19999999999998846,
+      "expected": 0.1999999999999993,
+      "passed": true
+    },
+    {
+      "name": "Port1 lateral piston shift detects lost guide clearance",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Port1 spring bears on piston floor",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port1 spring bears on cylinder shoulder",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port1 outward spring shift enters shoulder",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Port1 inward spring shift enters piston floor",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Port1 displacement plug clears piston",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Port1 hollow piston cup is open",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port1 piston cup retains floor",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Port1 flange seats on base",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port1 screw1 head seats on flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port1 screw1 nominal under-head length",
+      "value": 19.05,
+      "expected": 19.05,
+      "passed": true
+    },
+    {
+      "name": "Port1 screw2 head seats on flange",
+      "value": 3.552713678800501e-15,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port1 screw2 nominal under-head length",
+      "value": 19.05,
+      "expected": 19.05,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 cam contact point on shaft",
+      "value": 1.7763568394002505e-15,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 cam contact point on piston foot",
+      "value": 1.9860273225978185e-15,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 inward piston displacement collides with cam",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 piston running clearance in cylinder",
+      "value": 0.1999999999999932,
+      "expected": 0.1999999999999993,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 lateral piston shift detects lost guide clearance",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 spring bears on piston floor",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 spring bears on cylinder shoulder",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 outward spring shift enters shoulder",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 inward spring shift enters piston floor",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 displacement plug clears piston",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 hollow piston cup is open",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 piston cup retains floor",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 flange seats on base",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 screw1 head seats on flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 screw1 nominal under-head length",
+      "value": 19.05,
+      "expected": 19.05,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 screw2 head seats on flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard1 screw2 nominal under-head length",
+      "value": 19.05,
+      "expected": 19.05,
+      "passed": true
+    },
+    {
+      "name": "Port2 cam contact point on shaft",
+      "value": 3.552713678800501e-15,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port2 cam contact point on piston foot",
+      "value": 2.5121479338940403e-15,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port2 inward piston displacement collides with cam",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Port2 piston running clearance in cylinder",
+      "value": 0.199999999999991,
+      "expected": 0.1999999999999993,
+      "passed": true
+    },
+    {
+      "name": "Port2 lateral piston shift detects lost guide clearance",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Port2 spring bears on piston floor",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port2 spring bears on cylinder shoulder",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port2 outward spring shift enters shoulder",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Port2 inward spring shift enters piston floor",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Port2 displacement plug clears piston",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Port2 hollow piston cup is open",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port2 piston cup retains floor",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Port2 flange seats on base",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port2 screw1 head seats on flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port2 screw1 nominal under-head length",
+      "value": 19.05,
+      "expected": 19.05,
+      "passed": true
+    },
+    {
+      "name": "Port2 screw2 head seats on flange",
+      "value": 3.552713678800501e-15,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port2 screw2 nominal under-head length",
+      "value": 19.05,
+      "expected": 19.05,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 cam contact point on shaft",
+      "value": 1.7763568394002505e-15,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 cam contact point on piston foot",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 inward piston displacement collides with cam",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 piston running clearance in cylinder",
+      "value": 0.19999999999999543,
+      "expected": 0.1999999999999993,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 lateral piston shift detects lost guide clearance",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 spring bears on piston floor",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 spring bears on cylinder shoulder",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 outward spring shift enters shoulder",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 inward spring shift enters piston floor",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 displacement plug clears piston",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 hollow piston cup is open",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 piston cup retains floor",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 flange seats on base",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 screw1 head seats on flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 screw1 nominal under-head length",
+      "value": 19.05,
+      "expected": 19.05,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 screw2 head seats on flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard2 screw2 nominal under-head length",
+      "value": 19.05,
+      "expected": 19.05,
+      "passed": true
+    },
+    {
+      "name": "Rear cover seats on base",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Rear bush flange seats on cover",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Rear shaft running clearance",
+      "value": 0.09999999999999432,
+      "expected": 0.1,
+      "passed": true
+    },
+    {
+      "name": "Rear driven bush flange enters cover",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Rear shaft is stopped axially by bush after running gap",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Rear shaft remains clear within axial running gap",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Rear cover encloses complete crankcase opening rim",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Rear bearing screw1 seats",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Rear bearing screw2 seats",
+      "value": 1.4210854715202004e-14,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Rear bearing screw3 seats",
+      "value": 1.4210854715202004e-14,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Front cover seats on base",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Front bush flange seats on cover",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Front shaft running clearance",
+      "value": 0.09999999999999787,
+      "expected": 0.1,
+      "passed": true
+    },
+    {
+      "name": "Front driven bush flange enters cover",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Front shaft is stopped axially by bush after running gap",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "Front shaft remains clear within axial running gap",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Front cover encloses complete crankcase opening rim",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Front bearing screw1 seats",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Front bearing screw2 seats",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Front bearing screw3 seats",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "pulley retained by shaft shoulder",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "retaining nut bears on pulley",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "nut moved into hub collides",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "key shifted across width interferes with shaft",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "key shifted across width interferes with pulley",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "base mounting bore(-51.0, -87.0) is open",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "base mounting bore(-51.0, 87.0) is open",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "base mounting bore(51.0, -87.0) is open",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "base mounting bore(51.0, 87.0) is open",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "continuous axial vent from crankcase into air-hole cover",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "51 core plus12 deferred mounting pieces reconciles63",
+      "value": 63,
+      "expected": 63,
+      "passed": true
+    }
+  ],
+  "native_sha256": "8fa262987cbbd7bb8d8a59b10c1726c2cd9dc72aeef07166a5cac76488f857bd",
+  "report_sha256": "cf9ffa0e5937d85a8dfaafa70c9a98cdebb66aa446f14d9918ffefc8f234341e",
+  "checker_sha256": "2600b84536f362fd78ee1da4f869ae12abd7a6335aa66106387f77ae42e93860"
+}

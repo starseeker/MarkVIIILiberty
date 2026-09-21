@@ -117,6 +117,18 @@ integration remain ahead. Standard tank 011 and its transparent companion are un
 The existing M249 quantity, MX25 count/nut and MX14 length conflicts remain open
 in the preceding packets.
 
+The separate [air-pressure pump native assembly](experiments/drive_chains/air_pressure_pump_build/AirPressurePump.FCStd)
+adds 51 source-linked physical pieces, including four pistons and return springs,
+a cam shaft, bushes and pulley. Its [assembled STEP](experiments/drive_chains/air_pressure_pump_build/AirPressurePump.step),
+[isometric](../intermediate_snapshot_iso_air_pressure_pump_001.png) and
+[internal view](../intermediate_snapshot_iso_air_pressure_pump_internals_001.png)
+are available for inspection. All 139 local material pairs, 104 independent checks,
+17 detailed STEP comparisons, 51 placed-solid exchange checks and two dimension
+trials pass. The [pump packet](packets/I05-air-pressure-pump.md) records scale and
+hidden-detail approximations. Transmission supports, twelve base-fastener pieces,
+belt/drive alignment and air lines remain unfinished; this core is not yet part
+of the standard tank011 assembly.
+
 Additional commands:
 
 ```sh

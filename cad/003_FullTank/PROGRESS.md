@@ -11,6 +11,37 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 21 September 2026 — air-pressure pump core and internal mechanism
+
+The [native pump](experiments/drive_chains/air_pressure_pump_build/AirPressurePump.FCStd)
+now contains **51 physical pieces in 17 reusable definitions**: hollow base,
+four cylinders and pistons, return springs, cam shaft, bushes, rounded triangular
+bearing covers, V pulley and catalogue hardware. The [packet](packets/I05-air-pressure-pump.md)
+records approximate dimensions and separates twelve pending base-fastener pieces
+from the expanded 63-piece catalogue assembly.
+
+All 139 local material pairs, 104 independent physical checks, 17 detailed definition
+STEP comparisons, 51 placed STEP mass/centroid checks and two coupled dimension
+trials pass. Checks include cam contact, hollow pistons, spring seating, shaft
+axial stops, complete cover rims and an open vent path. Visual comparison led to
+smaller triangular bearing covers; screw-head clearance and a missing shaft
+locating shoulder were corrected. Explicit-accuracy mass integration resolved
+default integration discrepancies without enlarging BRep tolerances.
+
+Three preserved snapshots show the [assembled pump](../intermediate_snapshot_iso_air_pressure_pump_001.png),
+[internal mechanism](../intermediate_snapshot_iso_air_pressure_pump_internals_001.png)
+and [bank section](../intermediate_snapshot_detail_air_pressure_pump_section_001.png).
+The fixed source overlay retains differences in foot ledges, cylinder reach,
+pulley spacing and casting blends. Pump scale, hidden pressure passages and
+historical key dimensions remain approximate or unresolved.
+
+The proposed location above the transmission was raised 5mm after its pulley
+intersected the M250 flange. Six candidate pairs against 6,733 current physical
+context leaves are now clear. The placement study is separate from a qualified
+installation. Next are MX100/MX101 brackets, MX98/MX99 attachments, base fasteners,
+the clutch-stop drive pulley/belt and connected air ports/lines. The 1,407-leaf
+transmission checkpoint and standard tank011 remain separate and unchanged.
+
 ## 21 September 2026 — mount approximation accepted; air-pressure pump prepared
 
 The 1,407-solid MX5 checkpoint is now accepted for continued reconstruction with

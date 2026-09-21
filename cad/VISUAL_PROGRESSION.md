@@ -290,3 +290,22 @@ images are retained; historical fit is unqualified and this is not tank012.
 `8a6eb8f5b18ef5ebce27be48a719c0c13d59ff42e881f735b076da60f5192da1`.
 `intermediate_snapshot_detail_case_mount_trial_001.png` SHA-256:
 `08b9ea2cff91d0f7d4009e9e656940fcd0d8d250964026aa233553c6cc2e7c0e`.
+
+## 21 September 2026 — air-pressure pump core
+
+The [assembled pump](intermediate_snapshot_iso_air_pressure_pump_001.png),
+[internal mechanism](intermediate_snapshot_iso_air_pressure_pump_internals_001.png)
+and [transverse bank section](intermediate_snapshot_detail_air_pressure_pump_section_001.png)
+preserve 51 new physical pieces in an isolated native assembly. Four cylinders,
+hollow pistons, return springs, cam shaft, separate bearing bushes and a V pulley
+are visible. Bearing covers were refined against the source; axial shaft location,
+screw-head clearance and vent continuity are checked. Dimensions and internal
+details remain documented approximations. Supports, mounting hardware, drive belt
+and air lines remain unfinished. Standard tank011 and its transparent companion
+are unchanged; these component views are not tank012.
+
+| Snapshot | SHA-256 |
+|---|---|
+| `intermediate_snapshot_iso_air_pressure_pump_001.png` | `8e1f96d2219290554a68721ec4c631f27dd0663f74ce7325630d5547b7a9a4be` |
+| `intermediate_snapshot_iso_air_pressure_pump_internals_001.png` | `20ce493ae617c82b5c40959afbf63e1c923493dd6ba90b5bb5625a686508212f` |
+| `intermediate_snapshot_detail_air_pressure_pump_section_001.png` | `68aa7a24ab5b74a6a487c75129aa8f81e414829ca3e6a45ad4a7d5577ee906ff` |

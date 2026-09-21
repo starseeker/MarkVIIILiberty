@@ -1,8 +1,14 @@
 # I05 — air-pressure pump and transmission attachment
 
-Status: **source preparation; no pump geometry built** (21 September 2026).
-The next installation uses the accepted approximate MX5 transmission checkpoint.
-This packet spans FuelPressure and its Drivetrain mounting interfaces. It is not
+Status: **51-piece native pump core; vehicle attachment remains unfinished**
+(21 September 2026). The [native assembly](../experiments/drive_chains/air_pressure_pump_build/AirPressurePump.FCStd)
+and [assembled STEP](../experiments/drive_chains/air_pressure_pump_build/AirPressurePump.step)
+contain separate casting, cylinders, pistons, springs, shaft, pulley, bushes,
+covers and catalogue closure/retention hardware. Twelve base-fastener pieces,
+transmission brackets and their studs, belt and lines remain unbuilt.
+
+The proposed installation uses the accepted approximate MX5 transmission
+checkpoint. This packet spans FuelPressure and its Drivetrain interfaces. It is not
 the transmission mechanical lubricator, the engine oil pump, or the B6205
 input-pinion bearing-housing support.
 
@@ -34,9 +40,10 @@ views; repetition is not independent dimensional confirmation.
 | US 5/16 × 3/4in hex cap screw | 8 | SNL159:019 |
 | US 3/8 × 3/4in hex cap screw | 6 | SNL159:020 |
 
-This expands to **63 physical pieces**, including the four base-attachment sets,
-before the drive belt, transmission brackets and studs. This is a source count,
-not geometric coverage. Port/plug allocation must be checked again when the air
+The catalogue expands to **63 physical pieces**, including the four base-attachment
+sets, before the drive belt, transmission brackets and studs. The native core
+contains 51 pieces; twelve base-fastener pieces await the support installation.
+Port/plug allocation must be checked again when the air
 lines are installed; a closed catalogue pump may differ from the connected
 installation. Pump and shaft assembly records are containers. The
 base-bolt survey identity describes a set; splitting it into three physical
@@ -56,14 +63,15 @@ The inspected views show two cylinders on each sloping side of a hollow base,
 a shaft along the two cylinder stations, and a grooved pulley at one shaft end.
 Triangular three-screw bearing covers enclose separate bushes. Each cylinder has
 a two-screw mounting flange. The section exposes the pistons, displacement plugs,
-return springs and cam shaft. These components need separate native solids;
-the section does not justify arbitrary solid cylinder placeholders.
+return springs and cam shaft. All are separate native solids in the current core.
+Two spring definitions represent the different installed compressions at the
+selected static cam positions; both retain the single SH901A survey identity.
 
 The end view suggests bank axes roughly 45degrees from vertical. This is a visual
 estimate. Overall length, width, pulley diameter, shaft journals, piston stroke,
 spring dimensions, cam profiles and internal port routes are not dimensioned in
-the inspected figures. Their reconstruction values and bounds must be authored
-before building. Do not scale from a nominal pipe-thread size as if it were an
+the inspected figures. The [controls](../experiments/drive_chains/air_pressure_pump_controls.json)
+identify the reconstruction values explicitly. Do not scale from a nominal pipe-thread size as if it were an
 outside diameter.
 
 SNL18:011 explicitly gives SH900G as a **link V belt, 54in long, 5/8in wide,
@@ -112,26 +120,83 @@ Their split-clamp relationship is supported by the catalogue; a particular tall
 pedestal shape or mounting location has not yet been established.
 Relevant records are SNL41:030–034,56:011,217:013,222:021,241:006–010 and25:017.
 
-## Next construction cycle
+## Geometry, checks and source comparison
 
-1. Establish an explicit approximate pump scale using the illustrated shaft/nut
-   and printed fastener controls. Retain pixel picks, original image hash and
-   disagreement between views. Check the installed envelope and belt closure
-   against the existing clutch-stop pulley before freezing the scale.
-2. Build the hollow base, triangular covers, bushes, shaft, V pulley and four
-   separate cylinder/piston/plug/spring groups. Record static cam phases and
-   undocumented internal passage/valve assumptions. Add the source hardware.
-3. Reconstruct MX100/MX101 and MX98/MX99 around named M250/M264 datums; preserve
+The core uses a 140mm base, 190.5mm pulley diameter, two opposed 45degree banks
+and cylinder stations at X±28mm. These are approximate dimensions. Source-sized
+cap screws retain their printed under-head lengths. The hollow casting has
+separate piston guide bores and a crank cavity; covers use rounded triangular
+outlines, with separate bushes. Opposed inferred shaft shoulders leave 0.3mm total
+axial endplay. A semicircular key and shaft nut locate the pulley. Circular
+eccentric cams, reduced piston feet and ground-end helical springs form a
+consistent static internal arrangement. Cam law, spring properties, actual
+thread forms and the historical No.5 key dimensions remain unverified.
+
+The first cylinder screw heads intersected the barrel walls. Widening the
+estimated flange screw spacing resolved this. Source review then reduced the
+overlarge bearing covers and replaced their lobed outline with an analytic
+rounded triangle. The smaller crank cavity also required the vent passage's
+lower endpoint to follow the new cavity radius. Native geometry checks include
+continuous vent access, cam/piston contact, spring seating, shaft axial stops,
+guide clearances and deliberate displaced-part collision checks.
+
+The [fixed-scale source comparison](../experiments/drive_chains/air_pressure_pump_build/source_review/source_overlay.png)
+normalizes the **assumed** 190.5mm pulley diameter to approximately400 source
+pixels. It is a proportional comparison, not independent dimensional calibration.
+The four-cylinder arrangement, base length and revised bearing-cover form agree
+broadly with SNL5/HB115. The foot ledges extend beyond the visibly illustrated
+end ledge; their shape and bolt locations remain installation assumptions.
+Cylinder reach, pulley axial spacing and unshown casting blends retain visible
+differences. No image warping or forced source fit is applied. The manual's side
+section is not treated as a simple upright projection of both inclined banks.
+
+The initial proposed location, core [300,0,205]mm, put the pulley slightly inside
+the M250 housing flange. The revised study uses [300,0,210]mm and has no material
+overlap in six candidate pairs against 6,733 current physical context leaves.
+This is a placement study, not a supported installation: neither transmission brackets nor belt
+alignment has been qualified. The clutch and its drive pulley are still layout
+dependencies; the earlier source-preparation wording referring to an existing
+finished drive pulley was premature.
+
+Internal pressure routing and valve action remain unresolved. The model provides
+the named physical components, oil/vent openings and closure receivers, but does
+not claim a functional fluid circuit or verified historical hidden drillings.
+
+The [qualification receipt](../experiments/drive_chains/air_pressure_pump_build/qualification.json)
+binds the native model, checks, source review and scope. All 139 local material
+pairs and 104 independent physical checks pass. Detailed STEP comparisons
+cover all 17 reusable definitions; the assembled STEP separately checks 51 placed
+solids. Default mass integration initially reported discrepancies on rotated
+springs and the casting; explicit-accuracy OCC integration resolved these without
+enlarging shape tolerances or changing export geometry. Two coherent dimension
+trials vary base length126/154mm, bank seat54/60mm and cam eccentricity2.5/4.5mm,
+moving end hardware, oil plugs, feet, pulley and key with the case ends. Their
+scope is sampled local topology, contact and clearance, not the whole uncertainty
+domain or moving-tank operation.
+
+## Remaining construction cycle
+
+1. Reconstruct MX100/MX101 and MX98/MX99 around named M250/M264 datums; preserve
    the existing grease feed and MX25 installation, including their open conflicts.
-   Check access, pulley alignment, belt route and all nearby component clearances.
-4. Reopen the saved native assembly, reconcile the source counts, verify closed
-   solids and critical interfaces, then round-trip changed definitions through
-   STEP. Perturb pump scale and support height coherently rather than introducing
-   unrelated dimensional variation into each occurrence.
-5. Compare the assembled and sectional native views with SNL5/HB115 and HB15.
-   Save a progression image when actual geometry improves; source preparation
-   alone does not warrant another isometric snapshot.
+   Revisit the inferred pump feet against the actual brackets, add their twelve
+   fastener pieces and verify each receiving hole and seating face.
+2. Establish the clutch-stop drive pulley and its shaft datum, then check pump
+   pulley alignment and the54in belt closure with its unstated length convention.
+   Revise pump scale/position coherently if that evidence requires it.
+3. Resolve connected air ports and hidden passage/valve approximations, then route
+   the air lines and reconcile the seven catalogue plugs with the installed state.
+4. Integrate the linked pump under FuelPressure and mounts under Drivetrain,
+   qualify affected standard-tank interfaces, and regenerate opaque/transparent
+   standard views. Current component snapshots do not constitute tank012.
+
+```sh
+python3 cad/003_FullTank/experiments/drive_chains/air_pressure_pump_build.py
+python3 cad/003_FullTank/experiments/drive_chains/check_air_pressure_pump.py
+python3 cad/003_FullTank/experiments/drive_chains/check_air_pressure_pump_variants.py
+python3 cad/003_FullTank/experiments/drive_chains/render_air_pressure_pump_review.py
+```
 
 The [source dossier](../experiments/drive_chains/air_pressure_pump_sources.json)
 preserves exact survey records, linked identities, selected assembly edges and
-source hashes. No part of this packet yet counts as populated standard geometry.
+source hashes. The core is an isolated deliverable; it is not yet counted as
+populated standard-tank geometry.
