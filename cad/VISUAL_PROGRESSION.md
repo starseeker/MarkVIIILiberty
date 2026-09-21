@@ -149,3 +149,18 @@ remain open. Standard milestone 011 and all previous views are preserved.
 
 `intermediate_snapshot_detail_transmission_sun_retention_001.png` SHA-256:
 `39e5c9b60ed47b93d0783d0b82b60f495076693c1e70c99c1018839aec73c59e`.
+
+The [bevel-support cutaway](intermediate_snapshot_iso_transmission_bevel_supports_001.png)
+and [central bearing section](intermediate_snapshot_detail_transmission_bevel_supports_001.png)
+record twelve new sleeve, bush, oil-retainer, screw and dowel occurrences
+(20 September 2026). The 1,129-solid fixture has seven revised shaft/case/cover/
+sun/bush occurrences. Enlarged journals correct an assembly-passage defect;
+the source datum conflict and unqualified axial stack remain documented in
+[the packet](003_FullTank/packets/I03-bevel-sleeve-supports.md). This isolated
+interior checkpoint retains standard milestone011 and both hull display views.
+
+`intermediate_snapshot_iso_transmission_bevel_supports_001.png` SHA-256:
+`f37e14a5193883e73843f3f8a5e9c80a1cae161c70eca74f5492d4f2701ff1e6`.
+
+`intermediate_snapshot_detail_transmission_bevel_supports_001.png` SHA-256:
+`981f6e83a1be155cd158eb620c2e2bbe4cd6569f4bd8aedd8664a73cd7669c27`.

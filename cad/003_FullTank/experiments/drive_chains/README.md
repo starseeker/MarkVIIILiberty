@@ -339,7 +339,7 @@ planet-pin and ring-bolt supports. The [packet](../../packets/I03-small-planet-s
 records the source discrepancies, flat rivet-seat correction and limits.
 Brake bearings/retention, central bevel/input and standard integration remain open.
 
-The latest [sun-retention candidate](transmission_sun_retention_build/TransmissionSunRetentionCandidate.FCStd)
+The preceding [sun-retention candidate](transmission_sun_retention_build/TransmissionSunRetentionCandidate.FCStd)
 adds the two M290 rings assigned to the small sun pinions. All six catalogue
 rings now share one definition. Four sleeve/drum occurrences receive complete
 groove collars, smooth shoulders and counterbores; 1,111 earlier occurrences
@@ -353,3 +353,18 @@ and [work packet](../../packets/I03-sun-retention.md) preserve the inferred fits
 and unresolved cap/bush ownership. `transmission_brake_bearing_research.json`
 records the next M265/M266/M300 source interpretation. The split angle is assumed,
 elastic installation is unqualified, and standard tank 011 remains unchanged.
+
+The latest [bevel-support candidate](transmission_bevel_sleeve_build/TransmissionBevelSleeveCandidate.FCStd)
+adds twelve M259/M261/M262/M310/screw/M300 occurrences and revises seven
+shaft/case/cover/sun/bush occurrences. The 1,129-solid fixture passes 117 affected
+material pairs, 326 interfaces and nineteen native/STEP material comparisons.
+An independent checker passes 83 dimension, passage, capture, source-station,
+shaft-section and deliberate-failure checks.
+
+The earlier root-diameter bush trial had static clearance but no spline passage.
+Larger journals and corresponding bores correct that limitation, with a larger
+central spline reserving a future clutch interface. The [comparison](transmission_bevel_sleeve_build/source_review/bevel_support_comparison.png)
+shows the unresolved 32.113 mm source-datum conflict. The [packet](../../packets/I03-bevel-sleeve-supports.md)
+retains exact approximations and the 31.387 mm sleeve-end gap. Six inspected
+images show the supports and stepped shaft. Complete bevel gears, clutch,
+shims, brake bearing, remaining fastening and standard integration remain open.

@@ -1,0 +1,186 @@
+{
+  "controls": {
+    "source_bevel_center_x_px": {
+      "value": 1534,
+      "unit": "pixel",
+      "basis": "conditional_Plate22_pick"
+    },
+    "sleeve_inner_face_x_px": {
+      "value": 1442,
+      "unit": "pixel",
+      "basis": "conditional_Plate22_pick"
+    },
+    "flange_outer_face_x_px": {
+      "value": 1420,
+      "unit": "pixel",
+      "basis": "conditional_Plate22_pick"
+    },
+    "sleeve_outer_end_x_px": {
+      "value": 1293,
+      "unit": "pixel",
+      "basis": "conditional_Plate22_pick"
+    },
+    "outer_bush_end_x_px": {
+      "value": 1300,
+      "unit": "pixel",
+      "basis": "conditional_Plate22_pick"
+    },
+    "dowel_center_x_px": {
+      "value": 1338,
+      "unit": "pixel",
+      "basis": "conditional_Plate22_pick"
+    },
+    "flange_radius": {
+      "value": 167,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "sleeve_radius": {
+      "value": 49.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "inner_bush_radius": {
+      "value": 36.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "inner_bush_bore": {
+      "value": 28.95,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "inner_bush_sleeve_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "outer_bush_radius": {
+      "value": 54,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "outer_bush_running_gap": {
+      "value": 0.1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "outer_bush_flange_radius": {
+      "value": 60,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "outer_bush_flange_stock": {
+      "value": 4,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "boss_radius": {
+      "value": 65,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "retainer_radius": {
+      "value": 60,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "retainer_stock": {
+      "value": 2.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "retainer_running_gap": {
+      "value": 0.2,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "shaft_journal_radius": {
+      "value": 28.8,
+      "unit": "mm",
+      "basis": "inherited_shaft_root"
+    },
+    "journal_end_gap": {
+      "value": 0.3,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "screw_diameter": {
+      "value": 7.9375,
+      "unit": "mm",
+      "basis": "printed_SNL204_5/16in"
+    },
+    "screw_length": {
+      "value": 12.7,
+      "unit": "mm",
+      "basis": "printed_SNL204_1/2in"
+    },
+    "screw_tip_radius": {
+      "value": 35.3,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "screw_axial_station": {
+      "value": 96,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "screw_slot_width": {
+      "value": 1.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "screw_slot_depth": {
+      "value": 1.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "hole_radial_gap": {
+      "value": 0.05,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "hole_bottom_gap": {
+      "value": 0.1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "dowel_start_radius": {
+      "value": 50,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "dowel_diameter": {
+      "value": 15.875,
+      "unit": "mm",
+      "basis": "printed_SNL77_5/8in"
+    },
+    "dowel_length": {
+      "value": 12.7,
+      "unit": "mm",
+      "basis": "printed_SNL77_1/2in"
+    },
+    "flange_hole_count": {
+      "value": 6,
+      "unit": "count",
+      "basis": "SNL99_six_rivets_per_joint"
+    },
+    "flange_hole_circle": {
+      "value": 112,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "flange_hole_diameter": {
+      "value": 16.175,
+      "unit": "mm",
+      "basis": "printed_5/8in_rivet_plus_assumed_.15radial_gap"
+    }
+  },
+  "registration": "Y=(1534-source_x)*inherited_scale. This explicitly registers the bevel input axis to the already centered central case. The 32.119mm disagreement with the output registration is retained; no global rescale.",
+  "interfaces": "Outer bush flange seats on the existing case inner wall. New split bosses carry the outer bushes; nominal fitted oil washers occupy outboard counterbores. Shaft journals, diameters and all fits are inferred.",
+  "limits": [
+    "Gear wheels, clutch rings, shims, rivets and input pinion are not populated by this support stage.",
+    "Threads, interference fits, oil sealing and service loads are not qualified.",
+    "Flange holes provisionally follow six-rivet source joint; circle/phase and exact assignment need gear reconstruction."
+  ]
+}

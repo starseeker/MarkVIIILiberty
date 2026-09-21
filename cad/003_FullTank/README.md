@@ -92,14 +92,15 @@ remains preserved from snapshot 008.
 The [lower-support packet](packets/R02-lower-supports.md) records source allocations,
 front skirt refinement, native bearing/receiver checks and unfinished retention.
 
-The latest isolated [transmission candidate](experiments/drive_chains/transmission_sun_retention_build/TransmissionSunRetentionCandidate.FCStd)
-contains 1,117 valid solids, including both planetary gear/support stacks,
-swept input disks and the two small-sun retaining rings. All six M290 rings
-reuse one definition. The [retention packet](packets/I03-sun-retention.md)
-records the sleeve collars, drum counterbores, native/STEP checks and inspected
-source comparisons. Earlier tooth-count, disk-row and casting uncertainties
-remain documented. Brake bearings, bevel drive, case fastening and standard-tank
-integration remain open.
+The latest isolated [transmission candidate](experiments/drive_chains/transmission_bevel_sleeve_build/TransmissionBevelSleeveCandidate.FCStd)
+contains 1,129 valid solids, including both planetary gear/support stacks,
+sun retainers and twelve new bevel sleeve/bush/retainer/fastener occurrences.
+The [bevel-support packet](packets/I03-bevel-sleeve-supports.md) records the
+shaft assembly-path correction, native/STEP checks and inspected cutaways.
+The [source comparison](experiments/drive_chains/transmission_bevel_sleeve_build/source_review/bevel_support_comparison.png)
+shows both axial registrations and their 32.113 mm disagreement. Journal
+sizes, case profiles and fits remain inferred. Brake bearings, bevel gears,
+clutch/input, case fastening and standard-tank integration remain open.
 It has not yet replaced the standard tank's transmission layout.
 
 Additional commands:

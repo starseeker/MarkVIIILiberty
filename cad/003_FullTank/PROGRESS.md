@@ -11,6 +11,30 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — bevel sleeve supports and shaft passages
+
+The [new candidate](experiments/drive_chains/transmission_bevel_sleeve_build/TransmissionBevelSleeveCandidate.FCStd)
+adds twelve sleeve, bush, oil-retainer, screw and dowel occurrences. Seven
+existing shaft/case/cover/sun/bush occurrences are revised; 1,110 are unchanged.
+The saved fixture contains **1,129 valid solids**. All 117 material pairs,
+326 interfaces and nineteen native/STEP material comparisons pass.
+
+Assembly checks exposed a defect that static clearance missed: the original
+root-diameter bushes could not pass the shaft splines. Enlarged bevel and
+small-sun journals, mating bores and a larger central clutch spline provide
+shaft-only assembly passages. The independent checker passes 83 checks,
+including continuous bush/gauge sweeps, actual native sections, local retention
+and deliberate undersized-bore/displaced-export failures. Diameters and the
+stepped-shaft interpretation remain assumptions.
+
+Six inspected images include a [comparison with both axial registrations](experiments/drive_chains/transmission_bevel_sleeve_build/source_review/bevel_support_comparison.png).
+The 32.113 mm datum conflict and 31.387 mm sleeve-end gap remain unresolved;
+no complete axial stack is claimed. The [packet](packets/I03-bevel-sleeve-supports.md)
+records source counts, rejected geometry and remaining bevel/input work.
+New cutaways preserve this interior increment. Standard tank 011, both hull
+views and all earlier snapshots remain intact. Brake cap/bush attachment,
+bevel gears/clutch/shims, fastening, controls, lubrication and integration remain open.
+
 ## 20 September 2026 — small-sun retaining rings
 
 The [new candidate](experiments/drive_chains/transmission_sun_retention_build/TransmissionSunRetentionCandidate.FCStd)
