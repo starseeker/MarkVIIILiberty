@@ -11,6 +11,42 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 21 September 2026 — pump mounting reconstruction
+
+The [combined native model](experiments/drive_chains/air_pump_mount_build/TransmissionWithAirPump.FCStd)
+now has **1,490 physical leaves**. It incorporates the 51-piece pump and adds
+32 mounting pieces: two handed brackets, two MX98 stud/nut/pin sets, two MX99
+stud/three-nut/two-washer sets and four base bolt/nut/washer sets. Pump/base
+hardware belongs to FuelPressure; transmission supports belong to Drivetrain.
+The M264 cover and M250 housing gain integral blind receivers. The installed
+pump feet are widened for bolt-head clearance. The other 1,405 transmission and
+50 pump pieces retain their geometry.
+
+All 529 affected material pairs, 93 independent interface/count checks,
+16 detailed definition STEP comparisons and 85 placed-solid exchange checks
+pass. Two coupled belt-reference scenarios rebuild the support height and stud
+lengths; both pass 529 material pairs and 20 contacts. A global face-refinement
+operation initially increased tolerance at the existing grease port. Retaining
+the valid Boolean face divisions fixes this without relaxing exchange criteria.
+The initial bracket/flange clashes and rejected refinement evidence are preserved.
+
+The [qualification](experiments/drive_chains/air_pump_mount_build/qualification.json)
+accepts this geometry for further clutch development. It does not establish the
+historical support profile or final drive installation. Pump height375.005mm
+above the input axis is derived from a54-inch belt and estimated pitch radii.
+The new pulley planeX516 clears the input coupling; actual drive alignment remains
+conditional. The [handbook comparison](experiments/drive_chains/air_pump_mount_build/source_review/source_comparison.png)
+uses an opposite-side native isometric, with no source-image warping or claim
+of matched scale. HB15 hides much of the support, so the tall webs and stepped
+stud arrangement remain explicit hypotheses.
+
+Three new [mounting](../intermediate_snapshot_iso_air_pump_mount_001.png),
+[support](../intermediate_snapshot_iso_air_pump_supports_001.png) and
+[section](../intermediate_snapshot_detail_air_pump_mount_001.png) snapshots are saved.
+All 20 standard native files and 63 earlier PNGs remain byte unchanged.
+Next are the clutch-stop drive, its belt and air connections, followed by standard
+integration. The pump packet records this scope; standard tank011 remains current.
+
 ## 21 September 2026 — air-pressure pump core and internal mechanism
 
 The [native pump](experiments/drive_chains/air_pressure_pump_build/AirPressurePump.FCStd)

@@ -1,11 +1,15 @@
 # I05 — air-pressure pump and transmission attachment
 
-Status: **51-piece native pump core; vehicle attachment remains unfinished**
-(21 September 2026). The [native assembly](../experiments/drive_chains/air_pressure_pump_build/AirPressurePump.FCStd)
+Status: **pump core plus a 32-piece mounting reconstruction; drive installation remains conditional**
+(21 September 2026). The [combined native model](../experiments/drive_chains/air_pump_mount_build/TransmissionWithAirPump.FCStd)
+contains 1,490 physical leaves: the 1,407-piece transmission checkpoint plus
+51 pump pieces and 32 brackets/attachment pieces. Two transmission castings gain
+integral blind receivers; the installed pump base has wider mounting feet.
+The clutch-stop drive, belt, air connections and standard-tank integration remain
+unfinished. The earlier [standalone pump](../experiments/drive_chains/air_pressure_pump_build/AirPressurePump.FCStd)
 and [assembled STEP](../experiments/drive_chains/air_pressure_pump_build/AirPressurePump.step)
 contain separate casting, cylinders, pistons, springs, shaft, pulley, bushes,
-covers and catalogue closure/retention hardware. Twelve base-fastener pieces,
-transmission brackets and their studs, belt and lines remain unbuilt.
+covers and catalogue closure/retention hardware and remain preserved as the core checkpoint.
 
 The proposed installation uses the accepted approximate MX5 transmission
 checkpoint. This packet spans FuelPressure and its Drivetrain interfaces. It is not
@@ -42,7 +46,8 @@ views; repetition is not independent dimensional confirmation.
 
 The catalogue expands to **63 physical pieces**, including the four base-attachment
 sets, before the drive belt, transmission brackets and studs. The native core
-contains 51 pieces; twelve base-fastener pieces await the support installation.
+contains 51 pieces; the twelve base-fastener pieces are now included in the
+combined mounting reconstruction, completing these 63 catalogue pieces geometrically.
 Port/plug allocation must be checked again when the air
 lines are installed; a closed catalogue pump may differ from the connected
 installation. Pump and shaft assembly records are containers. The
@@ -176,16 +181,14 @@ domain or moving-tank operation.
 
 ## Remaining construction cycle
 
-1. Reconstruct MX100/MX101 and MX98/MX99 around named M250/M264 datums; preserve
-   the existing grease feed and MX25 installation, including their open conflicts.
-   Revisit the inferred pump feet against the actual brackets, add their twelve
-   fastener pieces and verify each receiving hole and seating face.
-2. Establish the clutch-stop drive pulley and its shaft datum, then check pump
+1. Establish the clutch-stop drive pulley and its shaft datum, then check pump
    pulley alignment and the54in belt closure with its unstated length convention.
-   Revise pump scale/position coherently if that evidence requires it.
-3. Resolve connected air ports and hidden passage/valve approximations, then route
+   Revise the current support height, pump scale/position and bracket profiles
+   coherently if that evidence requires it. The geometry described below is a
+   supported mounting hypothesis, not a resolved historical installation.
+2. Resolve connected air ports and hidden passage/valve approximations, then route
    the air lines and reconcile the seven catalogue plugs with the installed state.
-4. Integrate the linked pump under FuelPressure and mounts under Drivetrain,
+3. Integrate the linked pump under FuelPressure and mounts under Drivetrain,
    qualify affected standard-tank interfaces, and regenerate opaque/transparent
    standard views. Current component snapshots do not constitute tank012.
 
@@ -200,3 +203,73 @@ The [source dossier](../experiments/drive_chains/air_pressure_pump_sources.json)
 preserves exact survey records, linked identities, selected assembly edges and
 source hashes. The core is an isolated deliverable; it is not yet counted as
 populated standard-tank geometry.
+
+## Mounting reconstruction checkpoint
+
+The [mounting controls](../experiments/drive_chains/air_pump_mount_controls.json)
+and [source records](../experiments/drive_chains/air_pump_mount_sources.json) retain
+all unprinted dimensions as assumptions. Two distinct handed MX101/MX100 brackets
+join the M264 cover to M250 housing through two MX98 stud/nut/pin sets and two
+MX99 stud/three-nut/two-washer sets. These 20 pieces belong to Drivetrain. The
+four base bolt/nut/washer sets contribute 12 pieces under FuelPressure. Set records
+are provenance containers, not extra solids. US base nuts and SAE adjustment nuts
+have separate definitions even though their smooth inspection envelopes coincide.
+
+The prior core[300,0,210]mm position was only a clearance study. Its pulley plane
+X396 falls within the input-housing length, so it does not establish a workable
+drive to the clutch-stop drum. The new pump origin is core
+**[420,0,375.005218]mm**, with pulley planeX516. The height solves the open-belt
+equation for the printed1371.6mm length using **assumed** pitch radii89.25 and
+108.3mm. The driving radius corresponds to an estimated9-inch pulley OD with a
+6mm radial deduction; neither is a printed dimension. Changing both reference
+radii by±6mm gives heights356.130 and393.878mm. These scenarios do not establish
+the belt's historical length convention or the actual clutch datum.
+
+MX98 retains its printed73.025mm overall length and25.4/22.225mm thread spans.
+Its forward axis meets an inferred blind boss in the M264 front face. MX99 is
+interpreted as a vertical stepped half-inch/three-eighth-inch stud, with an MX102
+jam nut below and the other nuts/washers clamping the rail. Its roughly290mm
+length, the rail shape and the tall triangular webs remain hypotheses. The M250
+bosses preserve the existing cup passage. Smooth threads and compressed split
+washers are explicit inspection approximations; no structural capacity is claimed.
+
+The mounting trial exposed insufficient bolt-head clearance at the original pump
+feet. The installed base extends each ledge4mm and moves the holes fromY±87 to
+Y±90.5mm. The other50 pump pieces retain their original geometry. A first trial
+also intersected the cover boss and flange shims at the rear bracket corners;
+a cylindrical relief of radius110.5mm cleared the existing110mm flange envelope.
+The rejected report and geometry inputs are retained with the new build.
+
+A separate exchange failure traced to global face refinement: after the valid
+boss/receiver Booleans, `removeSplitter()` merged existing grease-port edges at
+X279 and increased their stored tolerance to0.000603mm. The Boolean result before
+that refinement has maximum tolerance about0.000000306mm. The final build retains
+its valid face divisions. It does not alter the original port or manually relax
+tolerances, and the same exchange criteria are retained.
+
+The [source comparison](../experiments/drive_chains/air_pump_mount_build/source_review/source_comparison.png)
+places the actual native rendering beside HB15 without image warping or claiming
+matched scale. The four-cylinder form, grooved pulley and longitudinal mounting
+ledges agree broadly. The source hides much of the support; it does **not** verify
+the tall open frame or stepped-stud arrangement. The conditional height, source
+profile differences and absent air lines remain explicit. A separate
+[belt diagram](../experiments/drive_chains/air_pump_mount_build/source_review/belt_datum_study.png)
+shows the unresolved construction without adding a fictional completed driver
+or belt to the physical BOM.
+
+```sh
+python3 cad/003_FullTank/experiments/drive_chains/air_pump_mount_build.py
+python3 cad/003_FullTank/experiments/drive_chains/check_air_pump_mount.py
+python3 cad/003_FullTank/experiments/drive_chains/check_air_pump_mount_variants.py
+python3 cad/003_FullTank/experiments/drive_chains/render_air_pump_mount_review.py
+```
+
+The combined native and affected85-solid STEP are component-installation
+deliverables. They do not supersede standard tank011 or constitute tank012.
+
+The [qualification](../experiments/drive_chains/air_pump_mount_build/qualification.json)
+binds 529 affected material pairs, 93 independent interface/count checks,
+16 definition-level STEP comparisons and 85 placed-solid exchange checks.
+Two rebuilt height scenarios each pass529 pairs and20 seating contacts. Seven
+final images were visually reviewed. This accepts the local mounting geometry
+for clutch development while retaining the source-profile and belt-datum limits.

@@ -125,9 +125,18 @@ a cam shaft, bushes and pulley. Its [assembled STEP](experiments/drive_chains/ai
 are available for inspection. All 139 local material pairs, 104 independent checks,
 17 detailed STEP comparisons, 51 placed-solid exchange checks and two dimension
 trials pass. The [pump packet](packets/I05-air-pressure-pump.md) records scale and
-hidden-detail approximations. Transmission supports, twelve base-fastener pieces,
-belt/drive alignment and air lines remain unfinished; this core is not yet part
-of the standard tank011 assembly.
+hidden-detail approximations. This core is not yet part of the standard tank011 assembly.
+
+The subsequent [pump mounting reconstruction](experiments/drive_chains/air_pump_mount_build/TransmissionWithAirPump.FCStd)
+combines that pump with the transmission and adds 32 bracket/stud/fastener pieces,
+including the twelve base-attachment pieces. Its 1,490 physical leaves retain
+separate FuelPressure and Drivetrain ownership. The
+[installation STEP](experiments/drive_chains/air_pump_mount_build/AirPumpInstallation.step)
+exports the 83 additions and two revised receiving castings. Pump height, bracket
+shape and MX99 construction remain explicit hypotheses, with
+[handbook comparison](experiments/drive_chains/air_pump_mount_build/source_review/source_comparison.png)
+and a conditional 54-inch belt study. Clutch-stop drive geometry, air lines and
+standard-tank integration remain unfinished.
 
 Additional commands:
 

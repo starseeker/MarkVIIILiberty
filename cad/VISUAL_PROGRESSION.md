@@ -309,3 +309,22 @@ are unchanged; these component views are not tank012.
 | `intermediate_snapshot_iso_air_pressure_pump_001.png` | `8e1f96d2219290554a68721ec4c631f27dd0663f74ce7325630d5547b7a9a4be` |
 | `intermediate_snapshot_iso_air_pressure_pump_internals_001.png` | `20ce493ae617c82b5c40959afbf63e1c923493dd6ba90b5bb5625a686508212f` |
 | `intermediate_snapshot_detail_air_pressure_pump_section_001.png` | `68aa7a24ab5b74a6a487c75129aa8f81e414829ca3e6a45ad4a7d5577ee906ff` |
+
+## 21 September 2026 — pump mounting and conditional drive datum
+
+The [mounted pump](intermediate_snapshot_iso_air_pump_mount_001.png),
+[exposed supports](intermediate_snapshot_iso_air_pump_supports_001.png) and
+[attachment section](intermediate_snapshot_detail_air_pump_mount_001.png) preserve
+32 new bracket/stud/base-fastener pieces. The combined transmission/pump document
+has1,490 physical leaves with separate FuelPressure and Drivetrain ownership.
+The pump is now attached to modeled receiving bosses, with widened feet for
+bolt-head clearance. This remains a mounting hypothesis: the54-inch belt study
+uses estimated driver and pitch radii, and HB15 obscures much of the support.
+Clutch drive, air lines and standard integration remain unfinished. Tank011 and
+its opaque/transparent views remain unchanged.
+
+| Image | SHA-256 |
+|---|---|
+| `intermediate_snapshot_iso_air_pump_mount_001.png` | `a7ccb6ca51d0aed647a0fc0a36c8e5065ab383dfbde34a9bfe748f724eda4263` |
+| `intermediate_snapshot_iso_air_pump_supports_001.png` | `0c56002de284cf08abee08af76ccb1626d8567192be711c4547964f386128b93` |
+| `intermediate_snapshot_detail_air_pump_mount_001.png` | `4d3aafe9f78a889d017317ca0bb57884ed1eac12413460a2939814a9b6960623` |

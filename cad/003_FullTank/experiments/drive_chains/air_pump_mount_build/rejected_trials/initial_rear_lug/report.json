@@ -1,0 +1,666 @@
+{
+  "status": "pump_mount_candidate",
+  "native_sha256": "a83071b6154adf7315a90660717850beb2a9a0d4c5f13b221bf43e65f56ff55d",
+  "parent_native_sha256": "866050204bcce1007692d3fd1963efd4cb0bfacd877e59a0431c62e2b46c0a1a",
+  "pump_native_sha256": "8fa262987cbbd7bb8d8a59b10c1726c2cd9dc72aeef07166a5cac76488f857bd",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/air_pump_mount_build.py": "52aaa8b85adfd8c3167c113282eac8155d6b697c956dcf24fa136a34aac5417c",
+    "cad/003_FullTank/experiments/drive_chains/air_pump_mount_parts.py": "02541e09bb5f8ba4d28557adb35f0f6b4a6172d990e40990559f44d3e6febb97",
+    "cad/003_FullTank/experiments/drive_chains/air_pump_mount_controls.json": "8da268771eac4ff75311aa8fb9a1b4fe64bc33d041c6af52399837eff2731d7a",
+    "cad/003_FullTank/experiments/drive_chains/air_pressure_pump_controls.json": "eba7c8d8dd88fb6ecc1f9e55e32d3bdcc232c7ddeef957adea8fe17726686be7",
+    "cad/003_FullTank/experiments/drive_chains/air_pressure_pump_parts.py": "b5528d41b5916deda1baaebb0f96cd012934c1e44df506e15a96b9bb63bbd0f7",
+    "cad/003_FullTank/experiments/drive_chains/air_pressure_pump_sources.json": "579abd530ee498a197f5d6d197eb0c42d32a5cb377b4de22663140fb0f0a96bf",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_installation_parts.py": "3aa0f82af289688b8453ac25dbe1c53bf84924880a0e03adb51328431a3eef7f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_stud_parts.py": "cdeda621c79bf68a95f3cb03f173e60c75a66f2d63331c0e334418840f6fd3bb"
+  },
+  "controls": {
+    "pump_x": 420.0,
+    "pump_y": 0.0,
+    "pump_foot_hole_y": 90.5,
+    "pump_foot_extension": 18.0,
+    "belt_length": 1371.6,
+    "belt_pump_pitch_radius": 89.25,
+    "belt_drive_pitch_radius": 108.3,
+    "belt_reference_radius_uncertainty": 6.0,
+    "rail_stock": 10.0,
+    "rail_half_width": 15.0,
+    "rail_end_x": 478.0,
+    "rear_face_x": 220.0,
+    "rear_joint_z": 95.0,
+    "rear_boss_radius": 17.0,
+    "rear_boss_start_x": 185.0,
+    "rear_lug_stock": 29.625,
+    "rear_lug_half_width": 16.0,
+    "web_stock": 8.0,
+    "front_stud_x": 340.0,
+    "front_stud_half_span": 58.0,
+    "front_boss_radius": 16.0,
+    "front_boss_bottom": 50.0,
+    "front_boss_seat": 88.0,
+    "front_stud_embed": 20.0,
+    "front_half_thread_length": 38.0,
+    "front_stud_tip_extra": 3.0,
+    "receiver_gap": 0.15,
+    "blind_gap": 0.2,
+    "nut_bore_gap": 0.1,
+    "base_bolt_diameter": 9.525,
+    "base_bolt_length": 31.75,
+    "base_bolt_af": 14.2875,
+    "base_bolt_head_height": 6.35,
+    "small_nut_af": 14.2875,
+    "small_nut_height": 7.9375,
+    "half_nut_af": 19.05,
+    "half_nut_height": 11.1125,
+    "jam_nut_height": 9.525,
+    "washer_radius": 8.7,
+    "washer_bore_radius": 4.9125,
+    "washer_stock": 2.2,
+    "washer_split": 0.8,
+    "mx98_diameter": 12.7,
+    "mx98_length": 73.025,
+    "mx98_us_thread": 25.4,
+    "mx98_sae_thread": 22.225,
+    "mx98_nut_height": 13.0,
+    "mx98_crown_radius": 9.0,
+    "mx98_slot_depth": 5.0,
+    "cotter_diameter": 2.38125,
+    "cotter_length": 25.4
+  },
+  "pump_controls": {
+    "body_length": 140.0,
+    "bank_seat": 57.0,
+    "base_floor": -30.0,
+    "foot_extension": 18.0,
+    "foot_stock": 7.0,
+    "foot_hole_x": 51.0,
+    "foot_hole_y": 90.5,
+    "shaft_cavity_radius": 22.0,
+    "station_x": [
+      -28.0,
+      28.0
+    ],
+    "journal_radius": 8.0,
+    "journal_gap": 0.1,
+    "shaft_body_radius": 10.0,
+    "shaft_axial_gap": 0.15,
+    "cam_radius": 14.0,
+    "cam_eccentricity": 3.5,
+    "cam_width": 22.0,
+    "cover_stock": 8.0,
+    "bearing_bolt_axes_yz": [
+      [
+        0.0,
+        31.0
+      ],
+      [
+        -27.0,
+        -15.5
+      ],
+      [
+        27.0,
+        -15.5
+      ]
+    ],
+    "bearing_corner_radius": 10.0,
+    "bearing_bolt_diameter": 9.525,
+    "bearing_bolt_length": 19.05,
+    "bearing_bolt_head_af": 14.2875,
+    "bearing_bolt_head_height": 6.35,
+    "bush_radius": 11.0,
+    "bush_length": 16.0,
+    "bush_flange_radius": 14.0,
+    "bush_flange_stock": 1.5,
+    "receiver_gap": 0.15,
+    "cylinder_bore_radius": 16.5,
+    "piston_radius": 16.3,
+    "piston_inside_radius": 13.0,
+    "piston_stem_radius": 5.0,
+    "piston_cone_start": 16.0,
+    "piston_cup_start": 22.0,
+    "piston_floor_stock": 3.0,
+    "piston_height": 62.0,
+    "cylinder_flange_stock": 5.0,
+    "cylinder_radius": 21.0,
+    "cylinder_barrel_top": 87.0,
+    "cylinder_top": 93.0,
+    "cylinder_bolt_offset": 30.0,
+    "cylinder_bolt_diameter": 7.9375,
+    "cylinder_bolt_length": 19.05,
+    "cylinder_bolt_head_af": 12.7,
+    "cylinder_bolt_head_height": 5.5,
+    "check_nut_af": 22.0,
+    "check_nut_height": 6.0,
+    "displacement_thread_radius": 6.35,
+    "displacement_stem_radius": 5.5,
+    "displacement_bottom": 67.0,
+    "displacement_head_start": 111.0,
+    "displacement_head_af": 21.0,
+    "displacement_head_height": 5.0,
+    "spring_mean_radius": 10.0,
+    "spring_wire_radius": 1.2,
+    "spring_turns": 9.0,
+    "spring_top": 87.0,
+    "pulley_radius": 95.25,
+    "pulley_rim_start": 85.0,
+    "pulley_rim_end": 107.0,
+    "pulley_groove_angle": 28.0,
+    "pulley_groove_width": 16.5,
+    "pulley_groove_depth": 14.0,
+    "pulley_hub_start": 82.0,
+    "pulley_hub_end": 112.0,
+    "pulley_hub_radius": 18.0,
+    "pulley_web_stock": 4.0,
+    "shaft_nut_af": 19.05,
+    "shaft_nut_height": 9.525,
+    "shaft_thread_radius": 6.35,
+    "shaft_thread_end": 123.0,
+    "key_radius": 6.35,
+    "key_width": 3.175,
+    "key_top": 10.0,
+    "key_station_x": 97.0,
+    "key_gap": 0.05,
+    "plug_shank_radius": 4.85,
+    "plug_embed": 8.0,
+    "plug_square": 7.0,
+    "plug_head_height": 5.0,
+    "oil_plug_x": [
+      -50.0,
+      50.0
+    ],
+    "end_plug_yz": [
+      [
+        -40.0,
+        30.0
+      ],
+      [
+        40.0,
+        30.0
+      ]
+    ],
+    "vent_stem_radius": 4.0,
+    "vent_head_radius": 7.0,
+    "vent_height": 6.0,
+    "inspection_position_core_xyz": [
+      300.0,
+      0.0,
+      210.0
+    ]
+  },
+  "details": {
+    "pump_origin": [
+      420.0,
+      0.0,
+      375.005218240614
+    ],
+    "rail_top": 345.005218240614,
+    "rail_bottom": 335.005218240614,
+    "rear_stud_start": 194.6,
+    "rear_stud_end": 267.625,
+    "rear_nut_seat": 249.625,
+    "rear_cotter_station": 260.125,
+    "rear_us_thread": [
+      194.6,
+      220.0
+    ],
+    "rear_sae_thread": [
+      245.4,
+      267.625
+    ],
+    "front_stud_lower": 68.0,
+    "front_stud_shoulder": 332.805218240614,
+    "front_stud_end": 358.142718240614,
+    "inferred_front_thread_spans": [
+      [
+        68.0,
+        106.0
+      ],
+      [
+        313.692718240614,
+        332.805218240614
+      ],
+      [
+        332.805218240614,
+        358.142718240614
+      ]
+    ],
+    "datums": [
+      {
+        "side": "Port",
+        "sign": 1,
+        "rear_axis": [
+          220.0,
+          90.5,
+          95.0
+        ],
+        "front_axis": [
+          340.0,
+          58.0,
+          88.0
+        ],
+        "foot_axes": [
+          [
+            369.0,
+            90.5,
+            345.005218240614
+          ],
+          [
+            471.0,
+            90.5,
+            345.005218240614
+          ]
+        ]
+      },
+      {
+        "side": "Starboard",
+        "sign": -1,
+        "rear_axis": [
+          220.0,
+          -90.5,
+          95.0
+        ],
+        "front_axis": [
+          340.0,
+          -58.0,
+          88.0
+        ],
+        "foot_axes": [
+          [
+            369.0,
+            -90.5,
+            345.005218240614
+          ],
+          [
+            471.0,
+            -90.5,
+            345.005218240614
+          ]
+        ]
+      }
+    ],
+    "cotter": {
+      "straight_length_mm": 19.4,
+      "bend_arc_length_mm": 1.5707963267948966,
+      "tail_length_mm": 4.429203673205103,
+      "total_leg_centerline_mm": 25.4,
+      "tail_endpoints": [
+        [
+          0.0,
+          13.313639942279211,
+          -5.1908028995309685
+        ],
+        [
+          0.0,
+          13.313639942279211,
+          5.1908028995309685
+        ]
+      ],
+      "wire_radius_mm": 0.5856250000000001,
+      "under_eye_y_mm": -9.6,
+      "bend_start_y_mm": 9.8,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "belt": {
+      "length": 1371.6,
+      "pump_pitch_radius": 89.25,
+      "drive_pitch_radius": 108.3,
+      "center_distance": 375.005218240614,
+      "plane_x": 516.0,
+      "physical_drive_present": false,
+      "length_reference_unverified": true,
+      "radius_scenarios": [
+        {
+          "radial_shift": -6.0,
+          "center": 393.8779728526172
+        },
+        {
+          "radial_shift": 0,
+          "center": 375.005218240614
+        },
+        {
+          "radial_shift": 6.0,
+          "center": 356.1299996585185
+        }
+      ]
+    }
+  },
+  "new_ids": [
+    "AirPump_RearBearing",
+    "AirPump_RearBush",
+    "AirPump_RearBearingScrew1",
+    "AirPump_RearBearingScrew2",
+    "AirPump_RearBearingScrew3",
+    "AirPump_FrontBearing",
+    "AirPump_FrontBush",
+    "AirPump_FrontBearingScrew1",
+    "AirPump_FrontBearingScrew2",
+    "AirPump_FrontBearingScrew3",
+    "AirPump_Port1_cylinder",
+    "AirPump_Port1_check_nut",
+    "AirPump_Port1_displacement_plug",
+    "AirPump_Port1_piston",
+    "AirPump_Port1_spring",
+    "AirPump_Port1_screw1",
+    "AirPump_Port1_screw2",
+    "AirPump_Starboard1_cylinder",
+    "AirPump_Starboard1_check_nut",
+    "AirPump_Starboard1_displacement_plug",
+    "AirPump_Starboard1_piston",
+    "AirPump_Starboard1_spring",
+    "AirPump_Starboard1_screw1",
+    "AirPump_Starboard1_screw2",
+    "AirPump_Port2_cylinder",
+    "AirPump_Port2_check_nut",
+    "AirPump_Port2_displacement_plug",
+    "AirPump_Port2_piston",
+    "AirPump_Port2_spring",
+    "AirPump_Port2_screw1",
+    "AirPump_Port2_screw2",
+    "AirPump_Starboard2_cylinder",
+    "AirPump_Starboard2_check_nut",
+    "AirPump_Starboard2_displacement_plug",
+    "AirPump_Starboard2_piston",
+    "AirPump_Starboard2_spring",
+    "AirPump_Starboard2_screw1",
+    "AirPump_Starboard2_screw2",
+    "AirPump_Oil_50_plug",
+    "AirPump_Oil50_plug",
+    "AirPump_End_1_0_plug",
+    "AirPump_End_1_1_plug",
+    "AirPump_End1_0_plug",
+    "AirPump_End1_1_plug",
+    "AirPump_Drain_plug",
+    "AirPump_AirHoleCover",
+    "AirPump_base",
+    "AirPump_shaft",
+    "AirPump_pulley",
+    "AirPump_shaft_nut",
+    "AirPump_key",
+    "PumpMount_Port_Bracket",
+    "PumpMount_Port_MX98_Stud",
+    "PumpMount_Port_MX98_Nut",
+    "PumpMount_Port_MX98_Cotter",
+    "PumpMount_Port_MX99_Stud",
+    "PumpMount_Port_MX102_JamNut",
+    "PumpMount_Port_MX99_HalfNut",
+    "PumpMount_Port_MX99_LowerWasher",
+    "PumpMount_Port_MX99_UpperWasher",
+    "PumpMount_Port_MX99_SmallNut",
+    "PumpMount_Port_Base1_Bolt",
+    "PumpMount_Port_Base1_Washer",
+    "PumpMount_Port_Base1_Nut",
+    "PumpMount_Port_Base2_Bolt",
+    "PumpMount_Port_Base2_Washer",
+    "PumpMount_Port_Base2_Nut",
+    "PumpMount_Starboard_Bracket",
+    "PumpMount_Starboard_MX98_Stud",
+    "PumpMount_Starboard_MX98_Nut",
+    "PumpMount_Starboard_MX98_Cotter",
+    "PumpMount_Starboard_MX99_Stud",
+    "PumpMount_Starboard_MX102_JamNut",
+    "PumpMount_Starboard_MX99_HalfNut",
+    "PumpMount_Starboard_MX99_LowerWasher",
+    "PumpMount_Starboard_MX99_UpperWasher",
+    "PumpMount_Starboard_MX99_SmallNut",
+    "PumpMount_Starboard_Base1_Bolt",
+    "PumpMount_Starboard_Base1_Washer",
+    "PumpMount_Starboard_Base1_Nut",
+    "PumpMount_Starboard_Base2_Bolt",
+    "PumpMount_Starboard_Base2_Washer",
+    "PumpMount_Starboard_Base2_Nut"
+  ],
+  "changed_ids": [
+    "CenterTransmissionCore_bevel_cover",
+    "InputHousing_housing"
+  ],
+  "native_occurrences": 1490,
+  "new_physical_occurrences": 83,
+  "new_support_and_fastener_occurrences": 32,
+  "unchanged_parent_occurrences": 1405,
+  "pump_base_revised": true,
+  "standard_assembly_modified": false,
+  "complete_installation": false,
+  "clutch_and_belt_verified": false,
+  "complete_tank": false,
+  "historical_fit_qualified": false,
+  "material_pairs": 529,
+  "overlaps": [
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "CenterTransmissionCore_bevel_cover",
+      "intersection_mm3": 55.71826209617498
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim00",
+      "intersection_mm3": 0.24874224150081334
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim01",
+      "intersection_mm3": 0.24874224150081334
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim02",
+      "intersection_mm3": 0.24874224150081334
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim03",
+      "intersection_mm3": 0.24874224150081334
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim04",
+      "intersection_mm3": 0.24874224150081334
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim05",
+      "intersection_mm3": 0.24874224150081334
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim06",
+      "intersection_mm3": 0.24874224150081334
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim07",
+      "intersection_mm3": 0.24874224150081334
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim08",
+      "intersection_mm3": 0.24874224150081334
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim09",
+      "intersection_mm3": 0.24874224150081334
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim10",
+      "intersection_mm3": 0.24874224150081334
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim11",
+      "intersection_mm3": 0.24874224150081334
+    },
+    {
+      "a": "PumpMount_Port_Bracket",
+      "b": "InputHousing_flange_shim12",
+      "intersection_mm3": 0.248742241500905
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "CenterTransmissionCore_bevel_cover",
+      "intersection_mm3": 55.71826209617532
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim00",
+      "intersection_mm3": 0.2487422415008211
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim01",
+      "intersection_mm3": 0.2487422415008211
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim02",
+      "intersection_mm3": 0.2487422415008211
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim03",
+      "intersection_mm3": 0.2487422415008211
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim04",
+      "intersection_mm3": 0.2487422415008211
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim05",
+      "intersection_mm3": 0.2487422415008211
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim06",
+      "intersection_mm3": 0.2487422415008211
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim07",
+      "intersection_mm3": 0.2487422415008211
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim08",
+      "intersection_mm3": 0.2487422415008211
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim09",
+      "intersection_mm3": 0.2487422415008211
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim10",
+      "intersection_mm3": 0.2487422415008211
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim11",
+      "intersection_mm3": 0.2487422415008211
+    },
+    {
+      "a": "PumpMount_Starboard_Bracket",
+      "b": "InputHousing_flange_shim12",
+      "intersection_mm3": 0.24874224150090768
+    }
+  ],
+  "material_passed": false,
+  "standard_context_checked": false,
+  "step_sha256": "1ced333f20a7a6e60d62fab30cf4d8fe2f23c2a4bf0dea265669b058bf118bb1",
+  "step_ids": [
+    "AirPump_RearBearing",
+    "AirPump_RearBush",
+    "AirPump_RearBearingScrew1",
+    "AirPump_RearBearingScrew2",
+    "AirPump_RearBearingScrew3",
+    "AirPump_FrontBearing",
+    "AirPump_FrontBush",
+    "AirPump_FrontBearingScrew1",
+    "AirPump_FrontBearingScrew2",
+    "AirPump_FrontBearingScrew3",
+    "AirPump_Port1_cylinder",
+    "AirPump_Port1_check_nut",
+    "AirPump_Port1_displacement_plug",
+    "AirPump_Port1_piston",
+    "AirPump_Port1_spring",
+    "AirPump_Port1_screw1",
+    "AirPump_Port1_screw2",
+    "AirPump_Starboard1_cylinder",
+    "AirPump_Starboard1_check_nut",
+    "AirPump_Starboard1_displacement_plug",
+    "AirPump_Starboard1_piston",
+    "AirPump_Starboard1_spring",
+    "AirPump_Starboard1_screw1",
+    "AirPump_Starboard1_screw2",
+    "AirPump_Port2_cylinder",
+    "AirPump_Port2_check_nut",
+    "AirPump_Port2_displacement_plug",
+    "AirPump_Port2_piston",
+    "AirPump_Port2_spring",
+    "AirPump_Port2_screw1",
+    "AirPump_Port2_screw2",
+    "AirPump_Starboard2_cylinder",
+    "AirPump_Starboard2_check_nut",
+    "AirPump_Starboard2_displacement_plug",
+    "AirPump_Starboard2_piston",
+    "AirPump_Starboard2_spring",
+    "AirPump_Starboard2_screw1",
+    "AirPump_Starboard2_screw2",
+    "AirPump_Oil_50_plug",
+    "AirPump_Oil50_plug",
+    "AirPump_End_1_0_plug",
+    "AirPump_End_1_1_plug",
+    "AirPump_End1_0_plug",
+    "AirPump_End1_1_plug",
+    "AirPump_Drain_plug",
+    "AirPump_AirHoleCover",
+    "AirPump_base",
+    "AirPump_shaft",
+    "AirPump_pulley",
+    "AirPump_shaft_nut",
+    "AirPump_key",
+    "PumpMount_Port_Bracket",
+    "PumpMount_Port_MX98_Stud",
+    "PumpMount_Port_MX98_Nut",
+    "PumpMount_Port_MX98_Cotter",
+    "PumpMount_Port_MX99_Stud",
+    "PumpMount_Port_MX102_JamNut",
+    "PumpMount_Port_MX99_HalfNut",
+    "PumpMount_Port_MX99_LowerWasher",
+    "PumpMount_Port_MX99_UpperWasher",
+    "PumpMount_Port_MX99_SmallNut",
+    "PumpMount_Port_Base1_Bolt",
+    "PumpMount_Port_Base1_Washer",
+    "PumpMount_Port_Base1_Nut",
+    "PumpMount_Port_Base2_Bolt",
+    "PumpMount_Port_Base2_Washer",
+    "PumpMount_Port_Base2_Nut",
+    "PumpMount_Starboard_Bracket",
+    "PumpMount_Starboard_MX98_Stud",
+    "PumpMount_Starboard_MX98_Nut",
+    "PumpMount_Starboard_MX98_Cotter",
+    "PumpMount_Starboard_MX99_Stud",
+    "PumpMount_Starboard_MX102_JamNut",
+    "PumpMount_Starboard_MX99_HalfNut",
+    "PumpMount_Starboard_MX99_LowerWasher",
+    "PumpMount_Starboard_MX99_UpperWasher",
+    "PumpMount_Starboard_MX99_SmallNut",
+    "PumpMount_Starboard_Base1_Bolt",
+    "PumpMount_Starboard_Base1_Washer",
+    "PumpMount_Starboard_Base1_Nut",
+    "PumpMount_Starboard_Base2_Bolt",
+    "PumpMount_Starboard_Base2_Washer",
+    "PumpMount_Starboard_Base2_Nut",
+    "CenterTransmissionCore_bevel_cover",
+    "InputHousing_housing"
+  ],
+  "definition_step_sha256": "ebe004c69c95acbd19b13b0d690e7fd7b67d2e5780797a141b98b1ef4e51e82a",
+  "render_hashes": {
+    "isometric.png": "a698107d25ba18edee8923b362e25a692d5663a3bd4904ed97582cd3ea0db160",
+    "side_section.png": "4d3aafe9f78a889d017317ca0bb57884ed1eac12413460a2939814a9b6960623",
+    "front.png": "3583fd5a25a85f1117f5fde62a189622d55a1a5910fcd7663fa27a18a8110214",
+    "supports.png": "5b85696e4f3d8579c9d789f800af9df77f2cc7835c79bdbc21190615cc1c9e14"
+  }
+}
