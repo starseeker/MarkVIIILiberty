@@ -1,0 +1,50 @@
+{
+  "basis": "Millimetres. All values except explicitly printed or transferred values are reconstruction assumptions; no manufacturing fit or original thread form is claimed.",
+  "printed": {
+    "mount.stud_diameter": "SNL240:016: half inch",
+    "mount.stud_length": "SNL240:016: 2-17/32 inches",
+    "mount.US_thread_length": "SNL240:016: one inch",
+    "mount.SAE_thread_length": "SNL240:016: 7/8 inch",
+    "mount.count": "SNL77:002 owning M264 assembly and SNL240:014 give four; SNL240:018 usage gives two, conflict retained",
+    "mount.cotter_diameter": "SNL240:018: 3/32 inch",
+    "mount.cotter_length": "SNL240:018: one inch, represented as formed leg centreline under eye",
+    "grease.nipple_length": "SNL124:009: 1-3/4 inches",
+    "grease.angle": "SNL85:030: 45 degrees; all three fittings nominal half-inch connection"
+  },
+  "transferred": {
+    "grease.pipe_od": "Wheatland standard pipe brochure p5: 0.840 inch, modern dimensional transfer, historical wall unspecified",
+    "grease.pipe_bore": "Wheatland p5: Schedule40 ID0.622 inch; historical wall selection inferred",
+    "grease.center_to_face": "Anvil Fig1102 half-inch 45deg elbow C=7/8 inch on p3; modern dimensional transfer, historical casting not proven"
+  },
+  "mount": {
+    "count": 4, "stud_diameter": 12.7, "stud_length": 64.29375,
+    "US_thread_length": 25.4, "SAE_thread_length": 22.225,
+    "stud_start": 219.6, "nut_seat": 262.0, "bolt_circle": 96.0,
+    "blind_gap": 0.2, "receiver_gap": 0.15, "nut_bore_gap": 0.1,
+    "nut_af": 19.05, "nut_height": 13.0, "slot_depth": 5.0,
+    "crown_radius": 9.0, "slot_gap": 0.5,
+    "cotter_diameter": 2.38125, "cotter_length": 25.4,
+    "cotter_hole_gap": 0.05, "cotter_center_spacing": 1.21,
+    "cotter_head_gap": 0.6, "cotter_exit_gap": 0.8,
+    "cotter_bend_radius": 1.5, "cotter_bend_angle": 60.0,
+    "cotter_eye_radius": 2.2, "cotter_eye_rise": 1.8
+  },
+  "grease": {
+    "station": 276.5, "inlet_angle": 45.0, "angle": 45.0,
+    "pipe_od": 21.336, "pipe_bore": 15.7988, "nipple_length": 44.45,
+    "nipple_start_radius": 75.0, "socket_depth": 12.0, "socket_gap": 0.15,
+    "center_to_face": 22.225, "bend_radius": 18.0,
+    "elbow_radius": 13.0, "bead_radius": 15.5, "bead_stock": 4.0,
+    "cup_radius": 22.0, "cup_bore": 18.0, "cup_height": 30.0,
+    "cup_floor": 4.0, "cap_radius": 24.0, "cap_bottom": 23.0,
+    "cap_top": 35.0, "cap_stock": 3.0,
+    "flow_radius": 4.0, "passage_start_radius": 50.0
+  },
+  "decisions": [
+    "Four stud axes at cardinal positions on existing R96 circle, inferred pattern. Blind receivers are deepened 3.2mm so the nut seats within the printed SAE thread interval.",
+    "Half-inch nominal nut inferred to mate MX25; conflicting SNL240 one-inch and SNL124 three-quarter-inch nut identities are NOT counted as fulfilled catalogue parts.",
+    "Grease port at X276.5 midway between cup backs, 45 degrees above port; elbow turns cup upright. Station and clocking are inferred because neither SNL section locates these off-plane fittings.",
+    "M249 is drilled through its top quadrant to the open cavity between cone small ends. Its installed quantity remains provisionally one; the published quantity conflict is unresolved.",
+    "No.4 grease-cup external dimensions and two-piece screw-cap construction are assumptions. Nominal thread engagement is represented by smooth clearance envelopes; no helical thread, taper seal or pressure rating is claimed."
+  ]
+}

@@ -438,6 +438,14 @@ are different quantities. The pilot's STEP tolerances validate export equivalenc
 they do not confer micrometer knowledge of the original tank. Do not publish
 precise mass, center of gravity or fit claims derived from unfinished interiors.
 
+After Boolean unions, also check that required constituent material survives.
+A valid single solid and a successful STEP comparison can still describe an
+incomplete part: input-installation work found cotter eyes whose fusion had
+dropped one leg. Use independent leg/branch gauges or equivalent feature
+checks for such constructions. For lubrication, check a connected passage
+through the saved parts and identify the gauge diameter and its endpoints;
+an external fitting alone does not establish a working internal route.
+
 For large assemblies:
 
 - Build unchanged definitions once using hashes of code, parameters, sources,

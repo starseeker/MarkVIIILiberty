@@ -192,3 +192,18 @@ are candidate interior improvements awaiting integration.
 `intermediate_snapshot_iso_transmission_input_001.png` SHA-256: `f9b08bb95d3a00b0251b195aa768bc9c086ac7c8efb4971ad31b376a174c325d`.
 `intermediate_snapshot_detail_transmission_input_001.png` SHA-256: `c707a4245ad11927cd4eda61113298ef133ca189bf4bd7daab4a5ff4c6b38742`.
 `intermediate_snapshot_detail_input_bearing_001.png` SHA-256: `fed23cf8801f77bf4f86426e370fd4b4d502fa75e51963060e89bbd0cfabcc12`.
+
+## Input installation and cotter repair — 21 September 2026
+
+The [installation cutaway](intermediate_snapshot_iso_transmission_input_installation_001.png),
+[grease-feed section](intermediate_snapshot_detail_input_grease_001.png) and
+[MX25 joint](intermediate_snapshot_detail_input_fasteners_001.png) preserve the
+1,303-solid candidate's new cover fasteners and bored grease feed. Seventeen
+older cotter occurrences also regain a leg lost during fusion. The
+[packet](003_FullTank/packets/I03-input-installation.md) retains the count/nut
+conflicts, inferred fitting location and source-scale differences. Standard011
+and its opaque/transparent companions remain unchanged pending integration.
+
+`intermediate_snapshot_iso_transmission_input_installation_001.png` SHA-256: `3b34fbc4f4b016a700e5dc6c6cadf6bd9c32baf2cbc6ad961f01be482541b598`.
+`intermediate_snapshot_detail_input_grease_001.png` SHA-256: `33d728238967fd9a8f345f5852c52029ffc181c9bc432437492b14fd5a5a0168`.
+`intermediate_snapshot_detail_input_fasteners_001.png` SHA-256: `40352b6e7562621f3620a08cc7958093cea8207f840dcf65f8604260b2c50521`.

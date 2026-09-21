@@ -1,0 +1,9 @@
+QOpenGLWidget is not supported on this platform.
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_input_installation_probe.py", line 50, in <module>
+    grease,gd,_=grease_feed(c['grease'],parts['housing'],originals['spacer']);parts.update(grease)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_input_installation_parts.py", line 76, in grease_feed
+    assert (cup_axis-App.Vector(0,0,1)).Length<1e-8
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

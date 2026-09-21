@@ -1,0 +1,4883 @@
+{
+  "complete": true,
+  "passed": false,
+  "native_occurrences": 1303,
+  "new_occurrences": 16,
+  "new_definitions": 7,
+  "changed_prior_occurrences": 19,
+  "unchanged_prior_occurrences": 1268,
+  "new_ids": [
+    "InputInstallation_mount_stud0",
+    "InputInstallation_mount_nut0",
+    "InputInstallation_mount_cotter0",
+    "InputInstallation_mount_stud1",
+    "InputInstallation_mount_nut1",
+    "InputInstallation_mount_cotter1",
+    "InputInstallation_mount_stud2",
+    "InputInstallation_mount_nut2",
+    "InputInstallation_mount_cotter2",
+    "InputInstallation_mount_stud3",
+    "InputInstallation_mount_nut3",
+    "InputInstallation_mount_cotter3",
+    "InputInstallation_nipple",
+    "InputInstallation_elbow",
+    "InputInstallation_cup_body",
+    "InputInstallation_cup_cap"
+  ],
+  "changed_ids": [
+    "CenterTransmissionCore_bevel_cover",
+    "InputHousing_housing",
+    "InputHousing_spacer",
+    "InputHousing_flange_shim00",
+    "InputHousing_flange_shim01",
+    "InputHousing_flange_shim02",
+    "InputHousing_flange_shim03",
+    "InputHousing_flange_shim04",
+    "InputHousing_flange_shim05",
+    "InputHousing_flange_shim06",
+    "InputHousing_flange_shim07",
+    "InputHousing_flange_shim08",
+    "InputHousing_flange_shim09",
+    "InputHousing_flange_shim10",
+    "InputHousing_flange_shim11",
+    "InputHousing_flange_shim12",
+    "InputHousing_flange_shim13",
+    "InputHousing_flange_shim14",
+    "InputHousing_flange_shim15"
+  ],
+  "keys_by_id": {
+    "InputInstallation_mount_stud0": "mount_stud",
+    "InputInstallation_mount_nut0": "mount_nut",
+    "InputInstallation_mount_cotter0": "mount_cotter",
+    "InputInstallation_mount_stud1": "mount_stud",
+    "InputInstallation_mount_nut1": "mount_nut",
+    "InputInstallation_mount_cotter1": "mount_cotter",
+    "InputInstallation_mount_stud2": "mount_stud",
+    "InputInstallation_mount_nut2": "mount_nut",
+    "InputInstallation_mount_cotter2": "mount_cotter",
+    "InputInstallation_mount_stud3": "mount_stud",
+    "InputInstallation_mount_nut3": "mount_nut",
+    "InputInstallation_mount_cotter3": "mount_cotter",
+    "InputInstallation_nipple": "nipple",
+    "InputInstallation_elbow": "elbow",
+    "InputInstallation_cup_body": "cup_body",
+    "InputInstallation_cup_cap": "cup_cap"
+  },
+  "new_source_counts": {
+    "P_0994fb778c654e30": 4,
+    "P_45c99004b6de95df": 4,
+    "P_c232b4504fefc504": 1,
+    "P_87212fb47e22eb0d": 1,
+    "P_93686e77901a6fee": 1
+  },
+  "unreconciled_inferred_nuts": 4,
+  "material_candidate_pairs": 598,
+  "overlaps": [
+    {
+      "a": "InputInstallation_mount_nut0",
+      "b": "InputHousing_housing",
+      "volume_mm3": 0.5545528728428566
+    },
+    {
+      "a": "InputInstallation_mount_nut1",
+      "b": "InputHousing_housing",
+      "volume_mm3": 30.59640451046606
+    },
+    {
+      "a": "InputInstallation_mount_cotter1",
+      "b": "InputHousing_housing",
+      "volume_mm3": 6.7849881657054265
+    },
+    {
+      "a": "InputInstallation_mount_nut2",
+      "b": "InputHousing_housing",
+      "volume_mm3": 0.5545528728427606
+    },
+    {
+      "a": "InputInstallation_mount_nut3",
+      "b": "InputHousing_housing",
+      "volume_mm3": 30.596404510465856
+    },
+    {
+      "a": "InputInstallation_mount_cotter3",
+      "b": "InputHousing_housing",
+      "volume_mm3": 10.0588250664264
+    },
+    {
+      "a": "InputInstallation_elbow",
+      "b": "InputHousing_housing",
+      "volume_mm3": 18.54405162387841
+    }
+  ],
+  "interfaces": [
+    {
+      "a": "PortPlanetSupports_pin_ring",
+      "b": "PortTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bronze0",
+      "b": "PortPlanetSupports_steel0",
+      "gap_mm": 0.09999999999985695,
+      "expected_mm": 0.10000000000000142,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_steel0",
+      "b": "PortPlanetSupports_pin0",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_nut0",
+      "b": "PortPlanetSupports_pin0",
+      "gap_mm": 0.14999999896253702,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_cotter0",
+      "b": "PortPlanetSupports_pin0",
+      "gap_mm": 0.14999999999991348,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_cotter0",
+      "b": "PortPlanetSupports_nut0",
+      "gap_mm": 0.14999999999987101,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_plug0",
+      "b": "PortPlanetSupports_pin0",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bolt_cotter0",
+      "b": "PortPlanetSupports_bolt0",
+      "gap_mm": 0.14999999999992403,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bolt_cotter0",
+      "b": "PortPlanetSupports_bolt_nut0",
+      "gap_mm": 0.14999999999982486,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_pin0",
+      "b": "PortPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_steel0",
+      "b": "PortPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bronze0",
+      "b": "PortPlanetSupports_pin_ring",
+      "gap_mm": 0.5,
+      "expected_mm": 0.5,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bolt0",
+      "b": "PortPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_steel0",
+      "b": "PortTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_nut0",
+      "b": "PortTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bolt_nut0",
+      "b": "PortTransmissionCore_planet_disk",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bronze0",
+      "b": "PortPlanetTrain_planet0",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_steel0",
+      "b": "PortPlanetTrain_planet0",
+      "gap_mm": 0.19999999999998863,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bronze1",
+      "b": "PortPlanetSupports_steel1",
+      "gap_mm": 0.09999999999982177,
+      "expected_mm": 0.10000000000000142,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_steel1",
+      "b": "PortPlanetSupports_pin1",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_nut1",
+      "b": "PortPlanetSupports_pin1",
+      "gap_mm": 0.149999998962678,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_cotter1",
+      "b": "PortPlanetSupports_pin1",
+      "gap_mm": 0.14999999999987196,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_cotter1",
+      "b": "PortPlanetSupports_nut1",
+      "gap_mm": 0.14999999999990293,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_plug1",
+      "b": "PortPlanetSupports_pin1",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bolt_cotter1",
+      "b": "PortPlanetSupports_bolt1",
+      "gap_mm": 0.14999999999992555,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bolt_cotter1",
+      "b": "PortPlanetSupports_bolt_nut1",
+      "gap_mm": 0.14999999999987368,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_pin1",
+      "b": "PortPlanetSupports_pin_ring",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_steel1",
+      "b": "PortPlanetSupports_pin_ring",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bronze1",
+      "b": "PortPlanetSupports_pin_ring",
+      "gap_mm": 0.5000000000001137,
+      "expected_mm": 0.5,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bolt1",
+      "b": "PortPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_steel1",
+      "b": "PortTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_nut1",
+      "b": "PortTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bolt_nut1",
+      "b": "PortTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bronze1",
+      "b": "PortPlanetTrain_planet1",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_steel1",
+      "b": "PortPlanetTrain_planet1",
+      "gap_mm": 0.20000000000010232,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bronze2",
+      "b": "PortPlanetSupports_steel2",
+      "gap_mm": 0.09999999999989179,
+      "expected_mm": 0.10000000000000142,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_steel2",
+      "b": "PortPlanetSupports_pin2",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_nut2",
+      "b": "PortPlanetSupports_pin2",
+      "gap_mm": 0.1499999989626625,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_cotter2",
+      "b": "PortPlanetSupports_pin2",
+      "gap_mm": 0.14999999999984398,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_cotter2",
+      "b": "PortPlanetSupports_nut2",
+      "gap_mm": 0.14999999999987407,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_plug2",
+      "b": "PortPlanetSupports_pin2",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bolt_cotter2",
+      "b": "PortPlanetSupports_bolt2",
+      "gap_mm": 0.14999999999984798,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bolt_cotter2",
+      "b": "PortPlanetSupports_bolt_nut2",
+      "gap_mm": 0.14999999999983765,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_pin2",
+      "b": "PortPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_steel2",
+      "b": "PortPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bronze2",
+      "b": "PortPlanetSupports_pin_ring",
+      "gap_mm": 0.5,
+      "expected_mm": 0.5,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bolt2",
+      "b": "PortPlanetSupports_pin_ring",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_steel2",
+      "b": "PortTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_nut2",
+      "b": "PortTransmissionCore_planet_disk",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bolt_nut2",
+      "b": "PortTransmissionCore_planet_disk",
+      "gap_mm": 1.6077746776921858e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_bronze2",
+      "b": "PortPlanetTrain_planet2",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetSupports_steel2",
+      "b": "PortPlanetTrain_planet2",
+      "gap_mm": 0.19999999999998863,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortPlanetTrain_washer",
+      "b": "PortTransmissionCore_planet_disk",
+      "gap_mm": 0.10000000000013642,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "PortTransmissionBearing_InnerRing",
+      "b": "PortTransmissionCore_planet_disk",
+      "gap_mm": 0.14514285714301423,
+      "expected_mm": 0.14514285714285713,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_pin_ring",
+      "b": "StarboardTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bronze0",
+      "b": "StarboardPlanetSupports_steel0",
+      "gap_mm": 0.09999999999980928,
+      "expected_mm": 0.10000000000000142,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_steel0",
+      "b": "StarboardPlanetSupports_pin0",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_nut0",
+      "b": "StarboardPlanetSupports_pin0",
+      "gap_mm": 0.14999999896254282,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_cotter0",
+      "b": "StarboardPlanetSupports_pin0",
+      "gap_mm": 0.14999999999994676,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_cotter0",
+      "b": "StarboardPlanetSupports_nut0",
+      "gap_mm": 0.14999999999985547,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_plug0",
+      "b": "StarboardPlanetSupports_pin0",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bolt_cotter0",
+      "b": "StarboardPlanetSupports_bolt0",
+      "gap_mm": 0.14999999999980929,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bolt_cotter0",
+      "b": "StarboardPlanetSupports_bolt_nut0",
+      "gap_mm": 0.14999999999968933,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_pin0",
+      "b": "StarboardPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_steel0",
+      "b": "StarboardPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bronze0",
+      "b": "StarboardPlanetSupports_pin_ring",
+      "gap_mm": 0.5,
+      "expected_mm": 0.5,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bolt0",
+      "b": "StarboardPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_steel0",
+      "b": "StarboardTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_nut0",
+      "b": "StarboardTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bolt_nut0",
+      "b": "StarboardTransmissionCore_planet_disk",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bronze0",
+      "b": "StarboardPlanetTrain_planet0",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_steel0",
+      "b": "StarboardPlanetTrain_planet0",
+      "gap_mm": 0.19999999999998863,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bronze1",
+      "b": "StarboardPlanetSupports_steel1",
+      "gap_mm": 0.09999999999990872,
+      "expected_mm": 0.10000000000000142,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_steel1",
+      "b": "StarboardPlanetSupports_pin1",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_nut1",
+      "b": "StarboardPlanetSupports_pin1",
+      "gap_mm": 0.1499999989625466,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_cotter1",
+      "b": "StarboardPlanetSupports_pin1",
+      "gap_mm": 0.14999999999994187,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_cotter1",
+      "b": "StarboardPlanetSupports_nut1",
+      "gap_mm": 0.14999999999987546,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_plug1",
+      "b": "StarboardPlanetSupports_pin1",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bolt_cotter1",
+      "b": "StarboardPlanetSupports_bolt1",
+      "gap_mm": 0.14999999999990615,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bolt_cotter1",
+      "b": "StarboardPlanetSupports_bolt_nut1",
+      "gap_mm": 0.14999999999987368,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_pin1",
+      "b": "StarboardPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_steel1",
+      "b": "StarboardPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bronze1",
+      "b": "StarboardPlanetSupports_pin_ring",
+      "gap_mm": 0.5,
+      "expected_mm": 0.5,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bolt1",
+      "b": "StarboardPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_steel1",
+      "b": "StarboardTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_nut1",
+      "b": "StarboardTransmissionCore_planet_disk",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bolt_nut1",
+      "b": "StarboardTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bronze1",
+      "b": "StarboardPlanetTrain_planet1",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_steel1",
+      "b": "StarboardPlanetTrain_planet1",
+      "gap_mm": 0.20000000000010232,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bronze2",
+      "b": "StarboardPlanetSupports_steel2",
+      "gap_mm": 0.099999999999785,
+      "expected_mm": 0.10000000000000142,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_steel2",
+      "b": "StarboardPlanetSupports_pin2",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_nut2",
+      "b": "StarboardPlanetSupports_pin2",
+      "gap_mm": 0.1499999989626203,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_cotter2",
+      "b": "StarboardPlanetSupports_pin2",
+      "gap_mm": 0.1499999999999117,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_cotter2",
+      "b": "StarboardPlanetSupports_nut2",
+      "gap_mm": 0.1499999999997974,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_plug2",
+      "b": "StarboardPlanetSupports_pin2",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bolt_cotter2",
+      "b": "StarboardPlanetSupports_bolt2",
+      "gap_mm": 0.14999999999989816,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bolt_cotter2",
+      "b": "StarboardPlanetSupports_bolt_nut2",
+      "gap_mm": 0.14999999999984426,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_pin2",
+      "b": "StarboardPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_steel2",
+      "b": "StarboardPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bronze2",
+      "b": "StarboardPlanetSupports_pin_ring",
+      "gap_mm": 0.5,
+      "expected_mm": 0.5,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bolt2",
+      "b": "StarboardPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_steel2",
+      "b": "StarboardTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_nut2",
+      "b": "StarboardTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bolt_nut2",
+      "b": "StarboardTransmissionCore_planet_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_bronze2",
+      "b": "StarboardPlanetTrain_planet2",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetSupports_steel2",
+      "b": "StarboardPlanetTrain_planet2",
+      "gap_mm": 0.20000000000010232,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardPlanetTrain_washer",
+      "b": "StarboardTransmissionCore_planet_disk",
+      "gap_mm": 0.10000000000002274,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "StarboardTransmissionBearing_InnerRing",
+      "b": "StarboardTransmissionCore_planet_disk",
+      "gap_mm": 0.1451428571432416,
+      "expected_mm": 0.14514285714285713,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_sun_bush",
+      "b": "CenterTransmissionCore_cross_shaft",
+      "gap_mm": 0.14999999999997726,
+      "expected_mm": 0.14999999999999858,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_sun_bush",
+      "b": "PortSmallPlanetTrain_sun",
+      "gap_mm": 0.14999999999979746,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_disk",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_disk",
+      "b": "CenterTransmissionCore_cross_shaft",
+      "gap_mm": 0.09999999999987166,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_sun",
+      "b": "PortTransmissionCore_high_drum",
+      "gap_mm": 0.09999999999987166,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet0",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet0",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet1",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet1",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet2",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet2",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet3",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet3",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet4",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet4",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet5",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet5",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet6",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet6",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet7",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet7",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet8",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet8",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet9",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet9",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet10",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet10",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet11",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet11",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet12",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet12",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet13",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet13",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet14",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet14",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet15",
+      "b": "PortSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetTrain_rivet15",
+      "b": "PortSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_sun_bush",
+      "b": "CenterTransmissionCore_cross_shaft",
+      "gap_mm": 0.14999999999997726,
+      "expected_mm": 0.14999999999999858,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_sun_bush",
+      "b": "StarboardSmallPlanetTrain_sun",
+      "gap_mm": 0.14999999999981115,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_disk",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_disk",
+      "b": "CenterTransmissionCore_cross_shaft",
+      "gap_mm": 0.09999999999987166,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_sun",
+      "b": "StarboardTransmissionCore_high_drum",
+      "gap_mm": 0.09999999999987166,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet0",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet0",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet1",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet1",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet2",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet2",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet3",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet3",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet4",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet4",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet5",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet5",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet6",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet6",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet7",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet7",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet8",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet8",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet9",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet9",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet10",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet10",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet11",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet11",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet12",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet12",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet13",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet13",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet14",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet14",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet15",
+      "b": "StarboardSmallPlanetTrain_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetTrain_rivet15",
+      "b": "StarboardSmallPlanetTrain_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bronze0",
+      "b": "PortSmallPlanetSupports_steel0",
+      "gap_mm": 0.0999999999998913,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_steel0",
+      "b": "PortSmallPlanetSupports_pin0",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_nut0",
+      "b": "PortSmallPlanetSupports_pin0",
+      "gap_mm": 0.14999999999986452,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_cotter0",
+      "b": "PortSmallPlanetSupports_pin0",
+      "gap_mm": 0.14999999999997726,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_cotter0",
+      "b": "PortSmallPlanetSupports_nut0",
+      "gap_mm": 0.14999999999997726,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_plug0",
+      "b": "PortSmallPlanetSupports_pin0",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt0",
+      "b": "PortSmallPlanetSupports_bolt_nut0",
+      "gap_mm": 0.14999999713051673,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt_cotter0",
+      "b": "PortSmallPlanetSupports_bolt0",
+      "gap_mm": 0.14999999999994956,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt_cotter0",
+      "b": "PortSmallPlanetSupports_bolt_nut0",
+      "gap_mm": 0.14999999999984684,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_pin0",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_steel0",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bronze0",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.5,
+      "expected_mm": 0.5,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt_nut0",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 5.684341886080802e-14,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt0",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.14999999999980554,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_steel0",
+      "b": "PortTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_nut0",
+      "b": "PortTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt0",
+      "b": "PortTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bronze0",
+      "b": "PortSmallPlanetTrain_planet0",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_steel0",
+      "b": "PortSmallPlanetTrain_planet0",
+      "gap_mm": 0.19999999999998863,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bronze1",
+      "b": "PortSmallPlanetSupports_steel1",
+      "gap_mm": 0.09999999999988218,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_steel1",
+      "b": "PortSmallPlanetSupports_pin1",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_nut1",
+      "b": "PortSmallPlanetSupports_pin1",
+      "gap_mm": 0.1499999999998374,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_cotter1",
+      "b": "PortSmallPlanetSupports_pin1",
+      "gap_mm": 0.14999999999992153,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_cotter1",
+      "b": "PortSmallPlanetSupports_nut1",
+      "gap_mm": 0.14999999999985947,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_plug1",
+      "b": "PortSmallPlanetSupports_pin1",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt1",
+      "b": "PortSmallPlanetSupports_bolt_nut1",
+      "gap_mm": 0.14999999713051637,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt_cotter1",
+      "b": "PortSmallPlanetSupports_bolt1",
+      "gap_mm": 0.14999999999997726,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt_cotter1",
+      "b": "PortSmallPlanetSupports_bolt_nut1",
+      "gap_mm": 0.14999999999997726,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_pin1",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_steel1",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 5.684341886080802e-14,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bronze1",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.49999999999994316,
+      "expected_mm": 0.5,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt_nut1",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt1",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.14999999999985977,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_steel1",
+      "b": "PortTransmissionCore_plain_case",
+      "gap_mm": 5.684341886080802e-14,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_nut1",
+      "b": "PortTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt1",
+      "b": "PortTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bronze1",
+      "b": "PortSmallPlanetTrain_planet1",
+      "gap_mm": 5.684341886080802e-14,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_steel1",
+      "b": "PortSmallPlanetTrain_planet1",
+      "gap_mm": 0.1999999999999318,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bronze2",
+      "b": "PortSmallPlanetSupports_steel2",
+      "gap_mm": 0.0999999999999256,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_steel2",
+      "b": "PortSmallPlanetSupports_pin2",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_nut2",
+      "b": "PortSmallPlanetSupports_pin2",
+      "gap_mm": 0.1499999999998374,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_cotter2",
+      "b": "PortSmallPlanetSupports_pin2",
+      "gap_mm": 0.14999999999984584,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_cotter2",
+      "b": "PortSmallPlanetSupports_nut2",
+      "gap_mm": 0.14999999999987865,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_plug2",
+      "b": "PortSmallPlanetSupports_pin2",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt2",
+      "b": "PortSmallPlanetSupports_bolt_nut2",
+      "gap_mm": 0.14999999713050555,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt_cotter2",
+      "b": "PortSmallPlanetSupports_bolt2",
+      "gap_mm": 0.1499999999998796,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt_cotter2",
+      "b": "PortSmallPlanetSupports_bolt_nut2",
+      "gap_mm": 0.149999999999858,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_pin2",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_steel2",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bronze2",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.5,
+      "expected_mm": 0.5,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt_nut2",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt2",
+      "b": "PortSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.14999999999983418,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_steel2",
+      "b": "PortTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_nut2",
+      "b": "PortTransmissionCore_plain_case",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bolt2",
+      "b": "PortTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_bronze2",
+      "b": "PortSmallPlanetTrain_planet2",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortSmallPlanetSupports_steel2",
+      "b": "PortSmallPlanetTrain_planet2",
+      "gap_mm": 0.19999999999998863,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bronze0",
+      "b": "StarboardSmallPlanetSupports_steel0",
+      "gap_mm": 0.09999999999987932,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_steel0",
+      "b": "StarboardSmallPlanetSupports_pin0",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_nut0",
+      "b": "StarboardSmallPlanetSupports_pin0",
+      "gap_mm": 0.14999999999978006,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_cotter0",
+      "b": "StarboardSmallPlanetSupports_pin0",
+      "gap_mm": 0.14999999999997726,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_cotter0",
+      "b": "StarboardSmallPlanetSupports_nut0",
+      "gap_mm": 0.14999999999997726,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_plug0",
+      "b": "StarboardSmallPlanetSupports_pin0",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt0",
+      "b": "StarboardSmallPlanetSupports_bolt_nut0",
+      "gap_mm": 0.14999999713051673,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt_cotter0",
+      "b": "StarboardSmallPlanetSupports_bolt0",
+      "gap_mm": 0.14999999999988442,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt_cotter0",
+      "b": "StarboardSmallPlanetSupports_bolt_nut0",
+      "gap_mm": 0.14999999999983862,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_pin0",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_steel0",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bronze0",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.5,
+      "expected_mm": 0.5,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt_nut0",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 5.684341886080802e-14,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt0",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.14999999999982933,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_steel0",
+      "b": "StarboardTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_nut0",
+      "b": "StarboardTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt0",
+      "b": "StarboardTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bronze0",
+      "b": "StarboardSmallPlanetTrain_planet0",
+      "gap_mm": 5.684341886080802e-14,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_steel0",
+      "b": "StarboardSmallPlanetTrain_planet0",
+      "gap_mm": 0.20000000000004547,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bronze1",
+      "b": "StarboardSmallPlanetSupports_steel1",
+      "gap_mm": 0.09999999999982011,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_steel1",
+      "b": "StarboardSmallPlanetSupports_pin1",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_nut1",
+      "b": "StarboardSmallPlanetSupports_pin1",
+      "gap_mm": 0.1499999999998374,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_cotter1",
+      "b": "StarboardSmallPlanetSupports_pin1",
+      "gap_mm": 0.14999999999985722,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_cotter1",
+      "b": "StarboardSmallPlanetSupports_nut1",
+      "gap_mm": 0.14999999999983316,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_plug1",
+      "b": "StarboardSmallPlanetSupports_pin1",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt1",
+      "b": "StarboardSmallPlanetSupports_bolt_nut1",
+      "gap_mm": 0.14999999713051637,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt_cotter1",
+      "b": "StarboardSmallPlanetSupports_bolt1",
+      "gap_mm": 0.14999999999997726,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt_cotter1",
+      "b": "StarboardSmallPlanetSupports_bolt_nut1",
+      "gap_mm": 0.14999999999997732,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_pin1",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_steel1",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 5.684341886080802e-14,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bronze1",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.49999999999994316,
+      "expected_mm": 0.5,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt_nut1",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt1",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.1499999999998698,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_steel1",
+      "b": "StarboardTransmissionCore_plain_case",
+      "gap_mm": 5.684341886080802e-14,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_nut1",
+      "b": "StarboardTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt1",
+      "b": "StarboardTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bronze1",
+      "b": "StarboardSmallPlanetTrain_planet1",
+      "gap_mm": 5.684341886080802e-14,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_steel1",
+      "b": "StarboardSmallPlanetTrain_planet1",
+      "gap_mm": 0.1999999999999318,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bronze2",
+      "b": "StarboardSmallPlanetSupports_steel2",
+      "gap_mm": 0.0999999999998903,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_steel2",
+      "b": "StarboardSmallPlanetSupports_pin2",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_nut2",
+      "b": "StarboardSmallPlanetSupports_pin2",
+      "gap_mm": 0.1499999999998374,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_cotter2",
+      "b": "StarboardSmallPlanetSupports_pin2",
+      "gap_mm": 0.14999999999987365,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_cotter2",
+      "b": "StarboardSmallPlanetSupports_nut2",
+      "gap_mm": 0.1499999999999046,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_plug2",
+      "b": "StarboardSmallPlanetSupports_pin2",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt2",
+      "b": "StarboardSmallPlanetSupports_bolt_nut2",
+      "gap_mm": 0.14999999713050555,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt_cotter2",
+      "b": "StarboardSmallPlanetSupports_bolt2",
+      "gap_mm": 0.14999999999986863,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt_cotter2",
+      "b": "StarboardSmallPlanetSupports_bolt_nut2",
+      "gap_mm": 0.14999999999987532,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_pin2",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_steel2",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bronze2",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.5,
+      "expected_mm": 0.5,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt_nut2",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 5.684341886080802e-14,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt2",
+      "b": "StarboardSmallPlanetSupports_pin_ring",
+      "gap_mm": 0.1499999999998319,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_steel2",
+      "b": "StarboardTransmissionCore_plain_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_nut2",
+      "b": "StarboardTransmissionCore_plain_case",
+      "gap_mm": 1.1368683772161603e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bolt2",
+      "b": "StarboardTransmissionCore_plain_case",
+      "gap_mm": 5.684341886080802e-14,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_bronze2",
+      "b": "StarboardSmallPlanetTrain_planet2",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardSmallPlanetSupports_steel2",
+      "b": "StarboardSmallPlanetTrain_planet2",
+      "gap_mm": 0.19999999999998863,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortSunRetention_ring",
+      "b": "PortSmallPlanetTrain_sun",
+      "gap_mm": 0.15000000000000568,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortSunRetention_ring",
+      "b": "PortTransmissionCore_high_drum",
+      "gap_mm": 0.1999999999998944,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardSunRetention_ring",
+      "b": "StarboardSmallPlanetTrain_sun",
+      "gap_mm": 0.14999999999997726,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardSunRetention_ring",
+      "b": "StarboardTransmissionCore_high_drum",
+      "gap_mm": 0.1999999999999318,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortBevelWheelSupports_inner_bush",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.14999999154989685,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortBevelWheelSupports_outer_bush",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0999999933201493,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "PortBevelWheelSupports_retainer",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.1999999999998839,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortBevelWheelSupports_outer_bush",
+      "b": "PortBevelWheelSupports_retainer",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelWheelSupports_screw",
+      "b": "PortBevelWheelSupports_inner_bush",
+      "gap_mm": 0.04999996512926164,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortBevelWheelSupports_screw",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.04999996511750515,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortBevelWheelSupports_dowel",
+      "b": "PortBevelWheelSupports_outer_bush",
+      "gap_mm": 0.04999996000269623,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortBevelWheelSupports_inner_bush",
+      "b": "CenterTransmissionCore_cross_shaft",
+      "gap_mm": 0.1499999999998686,
+      "expected_mm": 0.14999999999999858,
+      "passed": true
+    },
+    {
+      "a": "PortBevelWheelSupports_outer_bush",
+      "b": "CenterTransmissionCore_bevel_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelWheelSupports_retainer",
+      "b": "CenterTransmissionCore_bevel_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelWheelSupports_inner_bush",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.14999999155010288,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelWheelSupports_outer_bush",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.09999999332009703,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelWheelSupports_retainer",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.1999999999999101,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelWheelSupports_outer_bush",
+      "b": "StarboardBevelWheelSupports_retainer",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelWheelSupports_screw",
+      "b": "StarboardBevelWheelSupports_inner_bush",
+      "gap_mm": 0.0499999651292682,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelWheelSupports_screw",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.049999965117445415,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelWheelSupports_dowel",
+      "b": "StarboardBevelWheelSupports_outer_bush",
+      "gap_mm": 0.04999996000266507,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelWheelSupports_inner_bush",
+      "b": "CenterTransmissionCore_cross_shaft",
+      "gap_mm": 0.14999999999996405,
+      "expected_mm": 0.14999999999999858,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelWheelSupports_outer_bush",
+      "b": "CenterTransmissionCore_bevel_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelWheelSupports_retainer",
+      "b": "CenterTransmissionCore_bevel_case",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_wheel",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_clutch_ring",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_rotating_race",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_stationary_race",
+      "b": "PortBevelDrive_shim",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_shim",
+      "b": "PortBevelWheelSupports_outer_bush",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelWheelSupports_sleeve",
+      "b": "PortSmallPlanetTrain_sun",
+      "gap_mm": 0.19999999999998863,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortBevelWheelSupports_retainer",
+      "b": "PortTransmissionCore_high_drum",
+      "gap_mm": 0.30000000000001137,
+      "expected_mm": 0.3,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball00",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999996723,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball00",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999993353,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball00",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.19999999999990786,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball01",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999992619,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball01",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.05000000000000315,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball01",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.19999999999993753,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball02",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball02",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball02",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.19999999999986942,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball03",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.0499999999998893,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball03",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.0499999999998893,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball03",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.19999999999986942,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball04",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.049999999999948676,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball04",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.049999999999948676,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball04",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.19999999999991022,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball05",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.0499999999998992,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball05",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.0499999999998893,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball05",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.19999999999986942,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball06",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball06",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball06",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.1999999999998939,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball07",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999996813,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball07",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.049999999999920997,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball07",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.19999999999985943,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball08",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999992862,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball08",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999992609,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball08",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.19999999999988255,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball09",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999991617,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball09",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999996231,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball09",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.1999999999998853,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball10",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball10",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball10",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.1999999999998831,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball11",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.0499999999998992,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball11",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.0499999999998893,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball11",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.1999999999999389,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball12",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999994436,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball12",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999994668,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball12",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.19999999999988752,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball13",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.0499999999998893,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball13",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.0499999999998893,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball13",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.19999999999984885,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball14",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball14",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball14",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.1999999999998938,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball15",
+      "b": "PortThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999999369,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball15",
+      "b": "PortThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999999744,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "PortThrustBearing_ball15",
+      "b": "PortThrustBearing_cage",
+      "gap_mm": 0.19999999999985638,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_short0",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_short0",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_short1",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_short1",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_short2",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_short2",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_short3",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_short3",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_short4",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_short4",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_short5",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_short5",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long0",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.14999999999986843,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long0",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long0",
+      "b": "PortBevelDrive_clutch_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long1",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.14999999999986843,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long1",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long1",
+      "b": "PortBevelDrive_clutch_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long2",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.14999999999986843,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long2",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long2",
+      "b": "PortBevelDrive_clutch_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long3",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.14999999999986843,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long3",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long3",
+      "b": "PortBevelDrive_clutch_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long4",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.14999999999986843,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long4",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long4",
+      "b": "PortBevelDrive_clutch_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long5",
+      "b": "PortBevelDrive_wheel",
+      "gap_mm": 0.14999999999986843,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long5",
+      "b": "PortBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "PortBevelDrive_rivet_long5",
+      "b": "PortBevelDrive_clutch_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_wheel",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_clutch_ring",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_rotating_race",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_stationary_race",
+      "b": "StarboardBevelDrive_shim",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_shim",
+      "b": "StarboardBevelWheelSupports_outer_bush",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelWheelSupports_sleeve",
+      "b": "StarboardSmallPlanetTrain_sun",
+      "gap_mm": 0.19999999999998863,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelWheelSupports_retainer",
+      "b": "StarboardTransmissionCore_high_drum",
+      "gap_mm": 0.30000000000001137,
+      "expected_mm": 0.3,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball00",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999994867,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball00",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999992366,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball00",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999993037,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball01",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999995778,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball01",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.049999999999944214,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball01",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999990042,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball02",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball02",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball02",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999986942,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball03",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.0499999999998992,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball03",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.0499999999998893,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball03",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999986942,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball04",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.049999999999948676,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball04",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999993878,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball04",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999992235,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball05",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.0499999999998992,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball05",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.0499999999998893,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball05",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999986942,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball06",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball06",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball06",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999986942,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball07",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.05000000000000099,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball07",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.049999999999940176,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball07",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999984602,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball08",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999996944,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball08",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999994775,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball08",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999989593,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball09",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.049999999999899424,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball09",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999994137,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball09",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999986942,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball10",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.049999999999931176,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball10",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball10",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999990556,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball11",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.0499999999998893,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball11",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.0499999999998893,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball11",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.1999999999999427,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball12",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999994437,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball12",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999993469,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball12",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999993204,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball13",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.0499999999998893,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball13",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.0499999999998893,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball13",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999986845,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball14",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball14",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.04999999999992128,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball14",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999992255,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball15",
+      "b": "StarboardThrustBearing_rotating_race",
+      "gap_mm": 0.050000000000005665,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball15",
+      "b": "StarboardThrustBearing_stationary_race",
+      "gap_mm": 0.05000000000000578,
+      "expected_mm": 0.05,
+      "passed": true
+    },
+    {
+      "a": "StarboardThrustBearing_ball15",
+      "b": "StarboardThrustBearing_cage",
+      "gap_mm": 0.19999999999997256,
+      "expected_mm": 0.2,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_short0",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_short0",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_short1",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_short1",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_short2",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_short2",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_short3",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_short3",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_short4",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_short4",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_short5",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_short5",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long0",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.14999999999981709,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long0",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long0",
+      "b": "StarboardBevelDrive_clutch_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long1",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.14999999999981709,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long1",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long1",
+      "b": "StarboardBevelDrive_clutch_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long2",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.14999999999981709,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long2",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long2",
+      "b": "StarboardBevelDrive_clutch_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long3",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.14999999999981709,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long3",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long3",
+      "b": "StarboardBevelDrive_clutch_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long4",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.14999999999981709,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long4",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long4",
+      "b": "StarboardBevelDrive_clutch_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long5",
+      "b": "StarboardBevelDrive_wheel",
+      "gap_mm": 0.14999999999981709,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long5",
+      "b": "StarboardBevelWheelSupports_sleeve",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "StarboardBevelDrive_rivet_long5",
+      "b": "StarboardBevelDrive_clutch_ring",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "CenterBevelDrive_clutch",
+      "b": "CenterTransmissionCore_cross_shaft",
+      "gap_mm": 0.09999999999987166,
+      "expected_mm": 0.09999999999999964,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_inner_race",
+      "b": "CenterBevelDrive_pinion",
+      "gap_mm": 2.2737367544323206e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller00",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.03997338887342948,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller00",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.03997338887354507,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller01",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.039973388873449776,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller01",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.03997338887338551,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller02",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.03997338887344401,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller02",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.039973388873342265,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller03",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.03997338887345969,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller03",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.039973388873346345,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller04",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.03997338887342976,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller04",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.03997338887335933,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller05",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.039973388873369105,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller05",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.03997338887334504,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller06",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.03997338887345897,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller06",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.03997338887347264,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller07",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.03997338887347337,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller07",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.039973388873379194,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller08",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.03997338887349902,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller08",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.039973388873400295,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller09",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.03997338887350522,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller09",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.039973388873379194,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller10",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.03997338887344459,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller10",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.03997338887347747,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller11",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.0399733888734197,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller11",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.0399733888733372,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller12",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.03997338887342776,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller12",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.03997338887335933,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller13",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.039973388873396465,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller13",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.039973388873334584,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller14",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.0399733888734712,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller14",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.03997338887346781,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller15",
+      "b": "InputBearing0_inner_race",
+      "gap_mm": 0.03997338887344509,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_roller15",
+      "b": "InputBearing0_cup",
+      "gap_mm": 0.039973388873379194,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_inner_race",
+      "b": "CenterBevelDrive_pinion",
+      "gap_mm": 0.09999999999990905,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller00",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.03997338887351293,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller00",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.03997338887352595,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller01",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.039973388873435774,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller01",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.039973388873435975,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller02",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.03997338887340764,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller02",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.039973388873429286,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller03",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.039973388873438674,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller03",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.03997338887346166,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller04",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.039973388873383295,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller04",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.03997338887346859,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller05",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.039973388873385904,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller05",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.03997338887335157,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller06",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.039973388873404805,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller06",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.039973388873424456,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller07",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.03997338887342686,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller07",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.03997338887339812,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller08",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.03997338887349902,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller08",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.03997338887343444,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller09",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.03997338887343017,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller09",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.03997338887344229,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller10",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.03997338887347632,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller10",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.039973388873438945,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller11",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.039973388873429876,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller11",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.039973388873350266,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller12",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.039973388873428106,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller12",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.03997338887346859,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller13",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.03997338887346986,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller13",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.03997338887334373,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller14",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.03997338887349348,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller14",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.03997338887341963,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller15",
+      "b": "InputBearing1_inner_race",
+      "gap_mm": 0.03997338887344691,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_roller15",
+      "b": "InputBearing1_cup",
+      "gap_mm": 0.03997338887347148,
+      "expected_mm": 0.03997338887351843,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_coupling",
+      "b": "InputHousing_washer",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_washer",
+      "b": "InputHousing_nut",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_disk",
+      "b": "InputHousing_felt",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_felt",
+      "b": "InputHousing_gland",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_felt",
+      "b": "InputHousing_coupling",
+      "gap_mm": 3.8999999999999884e-16,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_inner_race",
+      "b": "InputHousing_coupling",
+      "gap_mm": 4.547473508864641e-13,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputBearing0_cup",
+      "b": "InputHousing_spacer",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_cup",
+      "b": "InputHousing_spacer_shim12",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputBearing1_cup",
+      "b": "InputHousing_disk",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_gland_bolt0",
+      "b": "InputHousing_housing",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_gland_nut0_0",
+      "b": "InputHousing_gland",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_gland_nut0_0",
+      "b": "InputHousing_gland_nut0_1",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_gland_bolt1",
+      "b": "InputHousing_housing",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_gland_nut1_0",
+      "b": "InputHousing_gland",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_gland_nut1_0",
+      "b": "InputHousing_gland_nut1_1",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_gland_bolt2",
+      "b": "InputHousing_housing",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_gland_nut2_0",
+      "b": "InputHousing_gland",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_gland_nut2_0",
+      "b": "InputHousing_gland_nut2_1",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_gland_bolt3",
+      "b": "InputHousing_housing",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_gland_nut3_0",
+      "b": "InputHousing_gland",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputHousing_gland_nut3_0",
+      "b": "InputHousing_gland_nut3_1",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_mount_nut0",
+      "b": "InputHousing_housing",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_mount_stud0",
+      "b": "CenterTransmissionCore_bevel_cover",
+      "gap_mm": 0.14999999999994118,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_mount_stud0",
+      "b": "InputInstallation_mount_nut0",
+      "gap_mm": 0.09999999999994684,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_mount_nut1",
+      "b": "InputHousing_housing",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_mount_stud1",
+      "b": "CenterTransmissionCore_bevel_cover",
+      "gap_mm": 0.14999999999992122,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_mount_stud1",
+      "b": "InputInstallation_mount_nut1",
+      "gap_mm": 0.09999999999994834,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_mount_nut2",
+      "b": "InputHousing_housing",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_mount_stud2",
+      "b": "CenterTransmissionCore_bevel_cover",
+      "gap_mm": 0.14999999999995095,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_mount_stud2",
+      "b": "InputInstallation_mount_nut2",
+      "gap_mm": 0.09999999999994684,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_mount_nut3",
+      "b": "InputHousing_housing",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_mount_stud3",
+      "b": "CenterTransmissionCore_bevel_cover",
+      "gap_mm": 0.14999999999992122,
+      "expected_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_mount_stud3",
+      "b": "InputInstallation_mount_nut3",
+      "gap_mm": 0.09999999999994834,
+      "expected_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_nipple",
+      "b": "InputInstallation_elbow",
+      "gap_mm": 1.4210854715202004e-14,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_elbow",
+      "b": "InputInstallation_cup_body",
+      "gap_mm": 0.0,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_nipple",
+      "b": "InputHousing_housing",
+      "gap_mm": 7.105427357601002e-15,
+      "expected_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "InputInstallation_cup_body",
+      "b": "InputInstallation_cup_cap",
+      "gap_mm": 0.14999999999965502,
+      "expected_mm": 0.15,
+      "passed": true
+    }
+  ],
+  "dimensions": {
+    "mount": {
+      "stud_end_mm": 283.89375,
+      "US_thread_limits_mm": [
+        219.6,
+        245.0
+      ],
+      "SAE_thread_limits_mm": [
+        261.66875,
+        283.89375
+      ],
+      "cotter_station_mm": 272.5,
+      "axes_yz_mm": [
+        [
+          5.878304635907295e-15,
+          96.0
+        ],
+        [
+          -96.0,
+          1.175660927181459e-14
+        ],
+        [
+          -1.7634913907721887e-14,
+          -96.0
+        ],
+        [
+          96.0,
+          -2.351321854362918e-14
+        ]
+      ],
+      "cotter": {
+        "straight_length_mm": 19.4,
+        "bend_arc_length_mm": 1.5707963267948966,
+        "tail_length_mm": 4.429203673205103,
+        "total_leg_centerline_mm": 25.4,
+        "tail_endpoints": [
+          [
+            0.0,
+            13.313639942279211,
+            -5.1908028995309685
+          ],
+          [
+            0.0,
+            13.313639942279211,
+            5.1908028995309685
+          ]
+        ],
+        "wire_radius_mm": 0.5856250000000001,
+        "under_eye_y_mm": -9.6,
+        "bend_start_y_mm": 9.8,
+        "exact_stock_volume_conserved": false
+      }
+    },
+    "grease": {
+      "port_origin_mm": [
+        276.5,
+        0.0,
+        0.0
+      ],
+      "inlet_direction": [
+        0.0,
+        0.7071067811865475,
+        0.7071067811865476
+      ],
+      "nipple_bottom_mm": [
+        276.5,
+        53.03300858899106,
+        53.033008588991066
+      ],
+      "nipple_top_mm": [
+        276.5,
+        84.4639050127331,
+        84.46390501273311
+      ],
+      "elbow_origin_mm": [
+        276.5,
+        75.97862363849453,
+        75.97862363849454
+      ],
+      "elbow_local_end_mm": [
+        0.0,
+        -15.715448211871017,
+        37.94044821187102
+      ],
+      "cup_face_mm": [
+        276.5,
+        91.69407185036556,
+        113.91907185036555
+      ],
+      "cup_axis": [
+        0.0,
+        2.220446049250313e-16,
+        1.0
+      ],
+      "elbow_centerline_length_mm": 43.675478695722646
+    }
+  },
+  "shaft_axis_world_mm": [
+    1825.2303627827532,
+    0.0,
+    849.2335104357661
+  ],
+  "input_hashes": {
+    "transmission_input_installation_probe.py": "2ae474abd1961acdf33f5f3bc201e894a1d9c2698a5a7be76742a54cb1c21fba",
+    "transmission_input_installation_parts.py": "fdf84923f2a649b53bbd7112523e3b8526523f529a3c441893f0307c12fb40ca",
+    "transmission_input_installation_controls.json": "edfc7994d68e5296182816f4c4f130a13c95cc59cbd2eacbec5eb0870c2d82f7",
+    "transmission_input_installation_sources.json": "2051f70125898de403c746c32ca162fd5133212a92a8a821bd3d30178270c47c",
+    "transmission_input_parts.py": "35c677472dad5a90701bedbd6c06b3fb01f2b0fda494efc00be48a64db35d3a6",
+    "transmission_stud_parts.py": "cdeda621c79bf68a95f3cb03f173e60c75a66f2d63331c0e334418840f6fd3bb",
+    "transmission_core_parts.py": "b7b3150e42529535f842871e81c4c580a15b25ce123e997da3ef5437041d7ff1",
+    "transmission_input_build/report.json": "5d4d45cd94f2ef308a548fbecf667a6242662fb64045b9b9fe432887c4253d7c",
+    "transmission_input_build/interface_checks.json": "454bcd2b15c9e37949de7e17d29d5e3b183bf79150c6fe795e4cd74d98824d52",
+    "transmission_input_build/visual_review.json": "2974aa6fa75b83834dca0e9d6569d2f67001e328d6ae807b8f43307b5a385d80",
+    "transmission_input_build/TransmissionInputCandidate.FCStd": "0a9df7241f5948603812f6ff9ebbde5b4f437f9b6cb060d1489d493e5defe4c3"
+  },
+  "authored_fingerprint": {
+    "data/assemblies.json": "a04b1f170f0ad541633c4343a1e64a7e3e02108473ce45149bd298dcf2ad011d",
+    "data/calibrations.json": "fb555b36854a6526575760b723d605d6eb10842b850c413dd8b2234f93f562b7",
+    "data/configuration.json": "06f147e0cacfdcd4b8763867467ff465b37e722aa9ea18a4092fa6cddcff0bc3",
+    "data/datums.json": "13123972fcf9875ff068eace2c5638e4edaabc920f5adb24e754224ed67fa946",
+    "data/definitions.json": "2a4c2a5c64b9c2d8751ea9f31ba7ab7ae685d6cb053a45f8793f0392cb8233f6",
+    "data/drive_mount_source_rows.json": "8043067b84f99a7a37c8f78f5d67bde30f7a4812084eb84637a739599e84ce9a",
+    "data/drive_source_rows.json": "f2b3c4da2fb27eabbb468342e7b234d3ec716d159f5f3b1165b0a16ab0fb17a6",
+    "data/hull_source_rows.json": "e0ee6f04b17b0aedc77271c9b827eda3ea63083852c7469c26dcb6c8147aceaa",
+    "data/idler_source_rows.json": "91acf25ddea218a5cbc1e3fb147d57d43bb5aab250465d314b2df2d09150e2d7",
+    "data/issues.json": "d05aa2d83c85e49fb739725d1810a3784d63eefbfaf07de033eb4e2ad17348d0",
+    "data/louver_source_rows.json": "3aed876c0d9cfd7c3361f4e5fc1f321bc24e8d131cf2f863146e83410942cb56",
+    "data/lower_support_runs.json": "a0c0cbf083c129ce18d34a06af2bff6355ba789995899710eb9957253a479d16",
+    "data/lower_support_source_rows.json": "2b59f967f652ad57a016bf0596e7f1d0a5621cb8259ed7be0798763f36157c15",
+    "data/model.json": "33bb96e07967b04f85697e946eefafd03b7a7be1f1285237b185b1f1dfd3f1a2",
+    "data/occurrences.json": "c202453bc8018ee71540ae46687028f881fbd6fe4e54d7f684bb5f74cadba56a",
+    "data/parameters.json": "846d19fc3f2f0ac129224bc024039ae75fa3b4c36226872047aadbc798b6276b",
+    "data/patterns.json": "1912f02c41a3043831c993fd3f8cc2c19faa96e73b33672bc0cc50ab55542dd4",
+    "data/pinion_source_rows.json": "922d95fbb7b20a8ffd97ae8002d75fd6cb3fc459f1b064251a6c45879d28fce2",
+    "data/roller_source_rows.json": "546c63e6c1d1d7d756d5a7ef0ad4f638dffcd21dd1659f63db03ee9d565c1194",
+    "data/roller_stations.json": "7d8d255f3d6c9a6311be2c23eb9d1410f105f29ecffb38d35391b20664a4e728",
+    "data/sponson_source_rows.json": "79ff510bceb4866fdf10563edcee794dc519c2a9d5541411f26ed79d1f37970f",
+    "data/visual_reviews.json": "3838833930036aa82f4629a35e7cd6d273896f6ee6528b8cd69eccfd7fc4310b",
+    "data/wheel_source_rows.json": "f438b78a73e8dca753736b94872d1eea9a590f9ca4d72d64eac1271cea8e4b98",
+    "lib/__init__.py": "d25dcf9ca8ec9379d065d0f288815387f4d34b0c4a50b8b21a489bf2ccfb2856",
+    "lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "lib/drive_mount_geometry.py": "fe5b79cc645f412a568211380709d3c3d047c0813ba8cc49d75149f8a756383a",
+    "lib/drive_mount_parts.py": "a94614d5abd2d1de9dabb416c646e114f8a625acbfa45096bdcb284a3bc6e5fc",
+    "lib/drive_mount_validation.py": "205b9acf546746aa26e9f0ba6dd94921857726ef92d0514d53e7e867b54fba9b",
+    "lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b",
+    "lib/hull_geometry.py": "7d313b0fa533d770d1af106f16a546c54c0fc112bc331a2f9fb5c8f4a526a233",
+    "lib/hull_parts.py": "5c89659cd857899e184c74d2883ba936c86a6231db9779ebbf4a570b17c79079",
+    "lib/hull_validation.py": "c124742119a136936f665d1c48fe12b198a60406b8565e8522d3ee40fe470dad",
+    "lib/idler_geometry.py": "a5cc2ca776d26581cf4d7984dfc59938f757228acfba5e60198a8c4565cda208",
+    "lib/idler_parts.py": "1c8382870dcb2dbfa619f817e8dc1865d527ba4fa361d34afccdba295dc181f1",
+    "lib/idler_validation.py": "07aea5d89fcc2e406c271651d969fd856d64feb7af52f33940aeac5a1413b13c",
+    "lib/inventory.py": "ee182319bc4964349931419763837ecd1cce054665b2c6cb9702da94d38585e7",
+    "lib/louver_geometry.py": "1d2d7079268a94d3f12f190379910afcd198219494a3a5d85344fcc6b1be9cd1",
+    "lib/louver_parts.py": "a30886270342c4f9d15195a89d255f59c68164568873c81c0ee8364c6a8e617b",
+    "lib/louver_validation.py": "c8690dd3399f8b773782d5539e0411a15e8f033a5bc25e4ba0e49bd622aa18c0",
+    "lib/lower_support_geometry.py": "42c44f8d93230a3bfd51d2814caba64dc6ae707916e6a25cd3bcfd51b35a9fc6",
+    "lib/lower_support_parts.py": "108c20194a228d67af0112d919c4e181c51f0983c03f4ce2120337080d741136",
+    "lib/lower_support_validation.py": "47cbdbfed4393f8f4987fceef8cfaf93625ee6cee611c5c86f137ae44ed4d97d",
+    "lib/model.py": "70b6dba7229b9919f05c39adaba5be9fd7cee1a52d14a9efb6db7e61b73f2075",
+    "lib/parameters.py": "9f27be528507c1432128466edeb541d5bcc697edb599d8a3501b1c42c2f99577",
+    "lib/patterns.py": "4cc7ac6b549b0fc9e6b069724ff330c2e2bb9b5904ca8d9333186e658bda9e28",
+    "lib/pinion_geometry.py": "e2a020501d99bb15dc34d0806842c6d05de1cfa545e195a48c1329e7ebabcc73",
+    "lib/pinion_parts.py": "c038ad90db3551f0e0e8c9a06f987f619f62e6802de1011d8391fe75932e7b80",
+    "lib/pinion_validation.py": "f176aae27fcd2ed4843d2668cb29723d38b685419559ce7a927c668005fa1283",
+    "lib/raster.c": "e2e3ef478c8e7dc753c1a56d04fa0a19fa54c6ee50b9fedf8fdfb30716c2bf48",
+    "lib/raster.py": "d4ae9a3f3332576460705ecdddfbf31f3a8ec36a7528996181a51248c11b28b4",
+    "lib/roller_geometry.py": "ba38e9213259ae2a70833313a7bb7a98a2d3af808d440447390c595243af0470",
+    "lib/roller_parts.py": "844075214ea509ea83cca5aa9d205bf478ded1eed70108f49c7fe92d39b4a72b",
+    "lib/roller_validation.py": "148c7c3a62096a56a3363031091ae662e40efe86f913f2712aa74432eebf6a6e",
+    "lib/runtime.py": "f77afcc9ab270d218f5dba30cfb23d834070edd7aeac5bd409c1ab8b1051303d",
+    "lib/sponson_geometry.py": "89e53f01f4be4a6201309a43bbe3bfd9817144d325bad525f32d888baeea4cee",
+    "lib/sponson_parts.py": "967e224c5972f7fa68b6432702c51245183caa939967f161f183ec95ba70a522",
+    "lib/sponson_validation.py": "49b00c2689fbab8c89829eed8dd2ee457c66d79851770ce690b17f8f6260a858",
+    "lib/track_parts.py": "7ee8dc0af8f0d086c842e176a874344a99943a7552ecc9cc046359f8e378d181",
+    "lib/track_path.py": "fcc57a90feec647538d9956abda7d9d15854e0b0fc8675c5077562dae512dcda",
+    "lib/track_validation.py": "4dc9a1a336dd41089284df501a63c7f2e16e66ab6eb6b5d157f0bb031d687d82",
+    "lib/upper_parts.py": "d15c9241dac72e1dc64e1e12fb2e9d4c11d2c6d3f62aa818da7621a657177e40",
+    "lib/upper_validation.py": "450f8da1b918e79336ad9a7d1948208aebbab9118c4e1b400b2b517d9b4d33fa",
+    "lib/visual_review.py": "a8297dc8e18bc1f067fe629dbd5ccbf85484b608a6d874388738783ae6a7b178",
+    "lib/wheel_geometry.py": "6c4333803d69d1b1ab97c82415609f5d3334ec040bc1d049509d989f12b3539d",
+    "lib/wheel_parts.py": "08284ae5fbb1a67727da78cb647b0a2c7d5fa9ef44ac5f8bd0bc5da57c044fb5",
+    "lib/wheel_validation.py": "735e2164ce459df4ed8e4f158bd85e0545e5df36fe430aceedddf2f53b568585",
+    "lib/worker.py": "ec1fcbb8da05a0f6ebabaf3f1fe4a086529578706aba28f01373fe8884a72a42",
+    "manage.py": "9de89dd5fa34596b186919f0dc7613b2c35bbf7f4dd1c3502fc298a0aee23f24"
+  },
+  "tank_native_hashes": {
+    "native/MarkVIII.FCStd": "52aea1af979efc27fbfbce003e976e8a02cfa2da3e0ca0d25a631d7c5e7d48ac",
+    "native/library/CoolingVentilation.FCStd": "810553a07fb9610c11dd3cd2f15e1eec0b7712e16f1d0a4245d70922532f73c4",
+    "native/library/CrewControlsAndEquipment.FCStd": "990e476bcdd088d58bbe76028a782667301a6f73e9c5a8065767bfd4e3860bae",
+    "native/library/Drivetrain.FCStd": "694c20a3995baafb0698f8c07d61e3e6b37bf6a0b0214362fe75bf0a80c30e25",
+    "native/library/ElectricalInstruments.FCStd": "7ca38479c37f7a169b2ab52a4ea90afd80cc7cf97d45c52df380abbd91dc393d",
+    "native/library/FuelPressure.FCStd": "5d5e8ced3b3b1bc380c9822e4b0d210520da081fa119ab16bd58523fce93dc6a",
+    "native/library/HullStructure.FCStd": "a6b78305dddcfa74904b07ea9dad8356ba168d774499599c854074c8aca778fc",
+    "native/library/Powerplant.FCStd": "234c3582a110f607f98977a034638b3f65391b6c6c5cd284a9570c74629752b7",
+    "native/library/RunningGear.FCStd": "52587107dabf028783ad6bd087ce1f8e2bf3aacea7d641ab8bfee07101fddf44",
+    "native/library/Sponsons.FCStd": "cca4a76fd623303caeb7d6b2fa277f6bcc251170303379ce6f07a432add20162",
+    "native/subsystems/ArmamentRepresentation.FCStd": "da6a1fd3e488982cff35e88bbce264f85a448c8349177ac9550939dc96f0b553",
+    "native/subsystems/CoolingVentilation.FCStd": "bb0996bed71ec8269a68f7445da53fb86789a7cb7777c5972cff74fd47811e47",
+    "native/subsystems/CrewControlsAndEquipment.FCStd": "5831b330452e69ba2dc0ae4b2c9757b2fbf174d988ce44126e64a7adec7e4fe5",
+    "native/subsystems/Drivetrain.FCStd": "222888c3c6d72363524415dfeec66ce89f9144cf973cbb077dab245d2fc0c4bf",
+    "native/subsystems/ElectricalInstruments.FCStd": "5f423b486223168139193422992d379bc291e73ac992a372bdcef75069051f0c",
+    "native/subsystems/FuelPressure.FCStd": "45f9cb47c26ef7e007ccb0451554cf33321bf63bc85d26e2edda9f00764b7e7b",
+    "native/subsystems/HullStructure.FCStd": "91bb04cc51d10a143ffeb982b3bec08e0e28b5942da452601f738d2c2528f56c",
+    "native/subsystems/Powerplant.FCStd": "c22f9480fc5a60028e6af664fc5ebb2e07ca292694e89d29eacd0b0a18ad720d",
+    "native/subsystems/RunningGear.FCStd": "5b225c9b28cce15f4c331e1d076a39a7575319831d95cf92d8db5cbc0672418e",
+    "native/subsystems/Sponsons.FCStd": "79c852869c29529dd8de89a257e7e127ff3d7d2255e1a8b186fc044b292f38bb"
+  },
+  "native_sha256": "cb0eb1fdc42b26841438f1a2182d8ddfc7d564216a33a60b9307b421a27082eb",
+  "exchange_sha256": "0b405a17ba5acee810d87c7922f8624c3d8c4fc1800dd7103ac02bfca53cb387",
+  "exchange_roundtrip_checks": [
+    {
+      "id": "InputInstallation_mount_stud0",
+      "native_max_tolerance_mm": 1.00000002e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.00000002e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputInstallation_mount_nut0",
+      "native_max_tolerance_mm": 1.50000004e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.50000004e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputInstallation_mount_cotter0",
+      "native_max_tolerance_mm": 1e-05,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 1.0100000000000002e-05,
+      "raw_missing_mm3": 37.3253687363641,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 37.3253687363641,
+      "added_mm3": 0.0,
+      "passed": false
+    },
+    {
+      "id": "InputInstallation_mount_stud1",
+      "native_max_tolerance_mm": 1.00000002e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.00000002e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputInstallation_mount_nut1",
+      "native_max_tolerance_mm": 1.50000004e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.50000004e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputInstallation_mount_cotter1",
+      "native_max_tolerance_mm": 1e-05,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 1.0100000000000002e-05,
+      "raw_missing_mm3": 37.325368736371836,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 37.325368736371836,
+      "added_mm3": 0.0,
+      "passed": false
+    },
+    {
+      "id": "InputInstallation_mount_stud2",
+      "native_max_tolerance_mm": 1.00000002e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.00000002e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputInstallation_mount_nut2",
+      "native_max_tolerance_mm": 1.50000004e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.50000004e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputInstallation_mount_cotter2",
+      "native_max_tolerance_mm": 1e-05,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 1.0100000000000002e-05,
+      "raw_missing_mm3": 37.325368736364105,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 37.325368736364105,
+      "added_mm3": 0.0,
+      "passed": false
+    },
+    {
+      "id": "InputInstallation_mount_stud3",
+      "native_max_tolerance_mm": 1.00000002e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.00000002e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputInstallation_mount_nut3",
+      "native_max_tolerance_mm": 1.50000004e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.50000004e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputInstallation_mount_cotter3",
+      "native_max_tolerance_mm": 1e-05,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 1.0100000000000002e-05,
+      "raw_missing_mm3": 37.325368736345865,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 37.325368736345865,
+      "added_mm3": 0.0,
+      "passed": false
+    },
+    {
+      "id": "InputInstallation_nipple",
+      "native_max_tolerance_mm": 1.0000002e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputInstallation_elbow",
+      "native_max_tolerance_mm": 1.00000008e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.00000008e-07,
+      "raw_missing_mm3": 12298.382753878892,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 12298.382753878892,
+      "added_mm3": 0.0,
+      "passed": false
+    },
+    {
+      "id": "InputInstallation_cup_body",
+      "native_max_tolerance_mm": 1.00000028e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002799999999e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputInstallation_cup_cap",
+      "native_max_tolerance_mm": 1e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "CenterTransmissionCore_bevel_cover",
+      "native_max_tolerance_mm": 1e-05,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 1.0100000000000002e-05,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_housing",
+      "native_max_tolerance_mm": 2.77008822e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 3.77008822e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_spacer",
+      "native_max_tolerance_mm": 2.50717852e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 3.50717852e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim00",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim01",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim02",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim03",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim04",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim05",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim06",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim07",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim08",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim09",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim10",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim11",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim12",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim13",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim14",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "id": "InputHousing_flange_shim15",
+      "native_max_tolerance_mm": 1.00000021e-07,
+      "step_max_tolerance_mm": 1e-07,
+      "comparison_fuzzy_tolerance_mm": 2.0000002100000001e-07,
+      "raw_missing_mm3": 0.0,
+      "raw_added_mm3": 0.0,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    }
+  ],
+  "standard_assembly_modified": false,
+  "complete_transmission": false,
+  "historical_fit_qualified": false,
+  "rendering_complete": false,
+  "limitations": [
+    "MX25 count four in owning M264 assembly SNL77 and catalogue SNL240 versus usage note two; use four provisionally.",
+    "MX25 half-inch stud conflicts with one-inch nested nut and three-quarter-inch generic allocation; inferred half-inch nut not claimed as either conflicting catalogue identity.",
+    "M249 count one in SNL112 versus two in SNL134/HB205 remains unresolved.",
+    "Four stud axes at cardinal positions on existing R96 circle, inferred pattern. Blind receivers are deepened 3.2mm so the nut seats within the printed SAE thread interval.",
+    "Half-inch nominal nut inferred to mate MX25; conflicting SNL240 one-inch and SNL124 three-quarter-inch nut identities are NOT counted as fulfilled catalogue parts.",
+    "Grease port at X276.5 midway between cup backs, 45 degrees above port; elbow turns cup upright. Station and clocking are inferred because neither SNL section locates these off-plane fittings.",
+    "M249 is drilled through its top quadrant to the open cavity between cone small ends. Its installed quantity remains provisionally one; the published quantity conflict is unresolved.",
+    "No.4 grease-cup external dimensions and two-piece screw-cap construction are assumptions. Nominal thread engagement is represented by smooth clearance envelopes; no helical thread, taper seal or pressure rating is claimed.",
+    "Pump, B6205 support bracket and complete input installation remain pending."
+  ]
+}

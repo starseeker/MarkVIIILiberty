@@ -11,6 +11,36 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 21 September 2026 — input cover joint, grease feed and cotter repairs
+
+The [qualified candidate](experiments/drive_chains/transmission_input_installation_build/TransmissionInputInstallationCandidate.FCStd)
+contains **1,303 valid solids**: sixteen new occurrences, thirty-six revised,
+and 1,251 retained unchanged. Four MX25 stud/nut/cotter sets attach the housing
+through sixteen drilled shim leaves. A hollow grease cup, 45-degree elbow and
+source-length nipple feed a bored housing/spacer passage.
+
+Independent constituent checks found missing cotter legs that earlier solid
+validity and STEP checks had not detected. Analytic eye/leg construction fixes
+the four new pins and two prior definitions, affecting sixteen bearing-cap
+pins and the input-shaft pin. The latter remains unspread. The workflow now
+requires checks that constituent material survives Boolean unions.
+
+All 653 affected material pairs, 52 raw/bounded STEP comparisons and 344
+independent checks pass. Twenty-one interfaces are rechecked; 573 prior
+results are retained against unchanged, hash-bound geometry. Four local feed
+parameter trials also pass. A 1e-10 mm tolerance-reporting roundoff allowance
+is documented separately from shape tolerances; the rejected receipt remains
+preserved. All raw STEP material differences are zero.
+
+Seven inspected views include SNL23's unchanged scale and explicit pin-repair
+close-ups. The [packet](packets/I03-input-installation.md) records source count
+and nut-size conflicts, inferred fitting placement, passage geometry and
+rejected trials. Three new [progression images](../VISUAL_PROGRESSION.md)
+show the cutaway, grease passage and fastener. Standard tank011, its twenty
+native files and forty-three older snapshots remain unchanged. Pump/support
+installation, brake bearings, case joints, controls and integration remain
+open; this is progress toward the full tank, not a completed transmission.
+
 ## 21 September 2026 — input bearings, housing and coupling
 
 The [new candidate](experiments/drive_chains/transmission_input_build/TransmissionInputCandidate.FCStd)

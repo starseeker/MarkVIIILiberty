@@ -92,15 +92,18 @@ remains preserved from snapshot 008.
 The [lower-support packet](packets/R02-lower-supports.md) records source allocations,
 front skirt refinement, native bearing/receiver checks and unfinished retention.
 
-The latest isolated [transmission candidate](experiments/drive_chains/transmission_input_build/TransmissionInputCandidate.FCStd)
-contains 1,287 valid solids, including both planetary trains, the bevel drive,
-clutch, thrust bearings and the newly populated input bearings/housing/coupling.
-The [input-assembly packet](packets/I03-input-assembly.md) records printed bearing
-dimensions, inferred internals, native/STEP checks and comparisons with both
-SNL sections. The 32.113 mm source-datum conflict and M249 spacer quantity remain
-unresolved. Housing attachments, brake bearings, fastening, controls, lubrication
-and standard-tank integration remain open.
-It has not yet replaced the standard tank's transmission layout.
+The latest isolated [transmission candidate](experiments/drive_chains/transmission_input_installation_build/TransmissionInputInstallationCandidate.FCStd)
+contains 1,303 valid solids, including both planetary trains, the bevel drive,
+clutch, input bearings and the new cover fasteners and grease feed. It also
+repairs seventeen earlier cotter occurrences whose fusion had dropped a leg.
+The [installation packet](packets/I03-input-installation.md) records source
+conflicts, inferred fitting geometry, connected passage checks, STEP results
+and inspected SNL comparisons. The [input-assembly packet](packets/I03-input-assembly.md)
+retains the printed bearing dimensions and earlier source registration work.
+The 32.113 mm source-datum conflict, M249 spacer quantity and MX25 count/nut
+conflicts remain unresolved. Pump attachments, support bracket, brake-bearing
+joints, controls and standard-tank integration remain open. The candidate has
+not yet replaced the standard tank's transmission layout.
 
 Additional commands:
 

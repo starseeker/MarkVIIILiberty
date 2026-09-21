@@ -392,3 +392,14 @@ integration and the complete tank remain unfinished.
   The [packet](../../packets/I03-input-assembly.md) records quantity conflicts,
   corrected insertion passages and Plate22 detached-coupling interpretation.
   Housing attachments, controls, lubrication and integration remain open.
+
+- The current [input installation](transmission_input_installation_build/TransmissionInputInstallationCandidate.FCStd)
+  adds sixteen leaves for four MX25 sets and the hollow grease-cup feed.
+  It revises nineteen receivers/spacer/shim occurrences and repairs seventeen
+  older cotter occurrences. The 1,303-solid candidate passes 653 affected
+  material pairs, 52 STEP comparisons, 344 independent checks and four local
+  parameter trials. Seven inspected views include the source overlay and both
+  repaired pin forms. The [packet](../../packets/I03-input-installation.md)
+  records the source conflicts and constituent-loss defect; use the
+  [combined qualification](transmission_input_installation_build/qualification.json)
+  for the completed review status. Standard integration remains pending.
