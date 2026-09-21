@@ -356,3 +356,25 @@ and standard integration are unfinished; standard tank011 remains preserved.
 [intermediate_snapshot_iso_front_clutch_mechanism_001.png](intermediate_snapshot_iso_front_clutch_mechanism_001.png) · SHA-256 `67faf39a95e45e7ac6e9974a90e41ad3b66f4925c9070a50d7f54a6fd4fb79b6`.
 
 [intermediate_snapshot_detail_front_clutch_001.png](intermediate_snapshot_detail_front_clutch_001.png) · SHA-256 `e7cb946c0c3886fcb4f1f58e35fc35a6660c3f097de3058bc0abb8d3540c3214`.
+
+
+The collar-joint stage (21 September 2026) adds the SH999A collar, SH997A ring,
+SH997B bush, six drilled screws and one continuous locking wire, for 1,540
+physical components in the combined transmission/pump candidate. Closer SNL
+inspection required two coupling flanges and a forward end-bearing pocket;
+the earlier single-flange reconstruction remains preserved for comparison.
+The external spring and split clamp move 67 mm aft together. Axial stations,
+bearing fits and wire diameter/routing remain explicit approximations. The
+main internal clutch stack and standard integration remain unfinished.
+
+Four new images preserve the installed joint, exposed mechanism, true axial
+section and wire through all six drilled heads. The existing 72 progression
+images, including the opaque and transparent standard tank 011 views, retain
+their original bytes.
+
+| Image | SHA-256 |
+|---|---|
+| [installed isometric](intermediate_snapshot_iso_clutch_collar_001.png) | `659651e385e4e898eb327dc3e836431f57bee744628e905d68f1cdf3bdc984b5` |
+| [isolated mechanism](intermediate_snapshot_iso_clutch_collar_mechanism_001.png) | `a38a6177a6d5d308a8d1421d7609683135ef1a3561bb337dc7228a596c2ef339` |
+| [axial section](intermediate_snapshot_detail_clutch_collar_001.png) | `a177378feebcca1bd071266232af3af38c04c2a66d2213808d12bb36afd75c4a` |
+| [locking wire](intermediate_snapshot_detail_clutch_collar_wire_001.png) | `6278779e6fe989355d37b4d78b9ec1b2fa4ee17834cd1aab795bf2827fb4d2a5` |

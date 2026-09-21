@@ -161,6 +161,19 @@ spring diameter convention and catalogue bolt-callout mismatch. The
 spring and coupling; the main collar, cones, bearings and standard integration
 remain unfinished.
 
+The subsequent [collar-joint checkpoint](experiments/drive_chains/clutch_collar_build/TransmissionWithClutchCollar.FCStd)
+contains **1,540 physical components**. Closer SNL inspection required separate
+spring and collar flanges and a forward end-bearing pocket; the earlier coupling
+approximation remains preserved. The new collar, ring, bush, six drilled screws
+and continuous locking wire complete this joint. All 104 independent checks,
+65 local interference pairs, 8 definition STEP comparisons, 20 placed-solid
+exchange checks and two size trials pass. The [source comparison](experiments/drive_chains/clutch_collar_build/source_review/index.html)
+shows the corrected and earlier sections, and the [packet](packets/I03-clutch-collar.md)
+records estimated stations, bearing fits and wire geometry. The
+[isometric](../intermediate_snapshot_iso_clutch_collar_001.png) preserves this
+stage. Main internal clutch parts, cones, operating connections and standard
+integration remain unfinished; tank 011 retains its transparent hull companion.
+
 Additional commands:
 
 ```sh

@@ -1,5 +1,12 @@
 # I03 — front coupling, split spring flange and external spring
 
+Follow-up: the [collar-joint checkpoint](I03-clutch-collar.md) corrects the
+single-flange coupling approximation described here. Closer SNL inspection
+requires separate spring and collar flanges and an end-bearing pocket. That
+checkpoint also moves the spring and split clamp 67 mm aft together. This
+earlier native, its checks and images remain preserved as development history;
+use the later checkpoint for continued main-clutch construction.
+
 Status: **checked approximate front coupling and external spring**, 21 September 2026.
 [Native assembly](../experiments/drive_chains/front_clutch_build/TransmissionWithFrontClutch.FCStd) ·
 [qualification](../experiments/drive_chains/front_clutch_build/qualification.json) ·
