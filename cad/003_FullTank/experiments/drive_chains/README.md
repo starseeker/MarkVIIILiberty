@@ -383,3 +383,12 @@ gap is superseded by a 0.2 mm fit to the sun datum. The
 [packet](../../packets/I03-bevel-drive.md) records assumptions, rejected rivet/cage
 trials and remaining input/brake/fastening/control/lubrication work. Standard
 integration and the complete tank remain unfinished.
+
+- The latest [input assembly](transmission_input_build/TransmissionInputCandidate.FCStd)
+  adds88 source-linked/inferred leaves: opposed Timken bearings, M250 housing,
+  M246 coupling, packing/gland, spacer/shims and retaining/gland hardware.
+  Its1,287 leaves pass749 material pairs,578 interfaces,90 STEP comparisons
+  and181 independent checks. Six inspected rasters retain both source scales.
+  The [packet](../../packets/I03-input-assembly.md) records quantity conflicts,
+  corrected insertion passages and Plate22 detached-coupling interpretation.
+  Housing attachments, controls, lubrication and integration remain open.

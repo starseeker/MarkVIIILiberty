@@ -1,0 +1,13 @@
+{
+  "bearing_trial": "Cage/race overlap148.096mm3 and zero axial pocket end clearance. Original geometry inputs archived in full01.",
+  "full01": "Terminal failure: App::Link has no getGlobalPlacement method. No accepted native candidate.",
+  "full02": "Terminal failure: washer/spline overlap3859.497mm3. 1287 valid leaves and90 STEP comparisons were insufficient to accept the assembly.",
+  "corrections": [
+    "Cage large rib59mm, axial pocket clearance0.3mm",
+    "Explicit assembly-parent placement composition",
+    "Separate X466thread start from X470nut seat",
+    "Enlarge seal/gland cavity to permit cup insertion"
+  ],
+  "native_full02_sha256": "2b1272b83505026a3b6228b8ab2b10ae8d0510d3a4b6f16fe4b2033a3225fb9c",
+  "first_independent_checks": "Four false failures from using a display-triangulation bounding box for cup OD and raw conical-face count for cage windows. Checker now reads analytic cylinder radius and groups inclined conical patches by common axis; geometry unchanged."
+}

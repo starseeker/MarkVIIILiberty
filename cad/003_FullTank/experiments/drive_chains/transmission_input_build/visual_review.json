@@ -1,0 +1,45 @@
+{
+  "passed": true,
+  "reviewed": "2026-09-21",
+  "method": "All six final PNG images opened and visually inspected; overlays use actual native sections and unchanged source pixels.",
+  "native_sha256": "0a9df7241f5948603812f6ff9ebbde5b4f437f9b6cb060d1489d493e5defe4c3",
+  "report_sha256": "5d4d45cd94f2ef308a548fbecf667a6242662fb64045b9b9fe432887c4253d7c",
+  "views": [
+    {
+      "file": "source_review/input_section.png",
+      "sha256": "c707a4245ad11927cd4eda61113298ef133ca189bf4bd7daab4a5ff4c6b38742",
+      "observations": "Opposed bearing orientations and separate cup/cone/cage/roller, spacer/shims, housing, packing/gland and coupling are visible. The near nut/cotter section shows unspread cotter legs. No obvious floating interior pieces in this cutaway."
+    },
+    {
+      "file": "source_review/input_bearing_section.png",
+      "sha256": "fed23cf8801f77bf4f86426e370fd4b4d502fa75e51963060e89bbd0cfabcc12",
+      "observations": "Section exposes cup and inner race, two cut rollers and perforated cage. Printed radial/axial envelopes control the shape; rib forms and16-roller internals remain inferred."
+    },
+    {
+      "file": "source_review/input_bevel_cutaway.png",
+      "sha256": "f9b08bb95d3a00b0251b195aa768bc9c086ac7c8efb4971ad31b376a174c325d",
+      "observations": "Populated input assembly joins existing bevel case and transverse shaft. Cut surfaces conceal some tooth detail; this image is not the gear-mesh validation evidence."
+    },
+    {
+      "file": "source_review/input_exposed.png",
+      "sha256": "f1c9eb492911222d93b36d0111fbdc25c50cef71e002805f565b3acd60f1f7f6",
+      "observations": "Housing/gland are intentionally hidden with all placements retained. Gland bolts consequently appear suspended; cups obscure most rollers, so the section images are the interior evidence."
+    },
+    {
+      "file": "source_review/input_plate23_overlay.png",
+      "sha256": "a02696d2f7f8d54f29bf59ff17f89355fdb6747c65dfa67519c45b661984385b",
+      "observations": "Conditional cup-OD registration places coupling flange near source end and matches overall bearing/spacer arrangement. Cone/cup widths, shoulder steps and cast profiles differ; modeled pinion radial profile remains narrower than illustration. Exact axial width residuals are retained in calibration."
+    },
+    {
+      "file": "source_review/input_plate22_overlay.png",
+      "sha256": "bd78d268e04ec20753949ccad4aead0e1842f4abb0fa82d458a145e5ea2b43fb",
+      "observations": "Original hub-based scale retained. Inboard/outboard bearing spacing differs from Plate23 calibration. Coupling is drawn separately in source, so assembled extension outside principal source section is expected and not proof of excess shaft length."
+    }
+  ],
+  "disposition": "Accept nominal visual reconstruction with explicit profile/scale/quantity uncertainty; not historical-fit or complete-transmission qualification.",
+  "required_followup": [
+    "Resolve M249quantity andMX25joint allocation.",
+    "Complete housing mounting/pump/lubrication, brake-bearing joint and controls.",
+    "Retain source-registration and pinion-profile differences during future geometry refinement."
+  ]
+}

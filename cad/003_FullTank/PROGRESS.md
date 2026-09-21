@@ -11,6 +11,31 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 21 September 2026 — input bearings, housing and coupling
+
+The [new candidate](experiments/drive_chains/transmission_input_build/TransmissionInputCandidate.FCStd)
+contains **1,287 valid single-solid occurrences**: 88 new input-assembly leaves,
+two revised shaft/cover occurrences and 1,197 retained unchanged. Seventeen
+definitions supply two opposed, internally decomposed Timken bearings, housing,
+coupling, packing, gland, spacer, two shim packs and retaining/gland hardware.
+All 749 affected material pairs, 578 interfaces and 90 native/STEP material
+comparisons pass, without stored-tolerance inflation.
+The independent checker passes 181 checks, including exact bearing envelopes,
+cup insertion, cone passage over the shaft, preserved pinion flank geometry
+and deliberate obstructed-entry/displaced-export failures.
+
+Six inspected images include actual native sections over SNL Plates22 and23.
+Printed bearing envelopes constrain the reconstruction; race/cage details,
+fits and cast forms remain assumptions. Plate22's coupling is a detached
+detail, correcting the earlier inference that the shaft extended too far.
+M249 quantity and MX25 fastening conflicts remain explicit. The
+[packet](packets/I03-input-assembly.md) records rejected cage/rib and
+washer/spline interference, installation passages and the remaining work.
+Standard tank011 and its opaque/transparent images remain unchanged; the
+transmission candidate still awaits integration.
+Three new [progression images](../VISUAL_PROGRESSION.md) preserve the input
+assembly and bearing cutaways.
+
 ## 21 September 2026 — bevel drive and thrust bearings
 
 The [new candidate](experiments/drive_chains/transmission_bevel_gear_build/TransmissionBevelGearCandidate.FCStd)

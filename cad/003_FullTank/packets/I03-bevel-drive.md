@@ -79,6 +79,10 @@ spline count and thread envelope remain provisional. Its 69.65 mm journal
 allows 0.1 mm radial clearance within the printed 2.75 inch Timken cone bore;
 that separate bearing/housing/coupling stack still needs reconstruction. The
 comparison explicitly shows its provisional end extending beyond the source.
+The later [input-assembly review](I03-input-assembly.md) corrects that endpoint
+interpretation: Plate22 shows the coupling as a detached detail and omits its
+assembled extension. It cannot establish complete shaft length. Plate23 now
+provides the conditional end-to-end comparison.
 The wheel tooth-band/web contours and pinion cone width also differ; printed
 tooth counts/pitch are retained while source-scale and inferred-profile
 uncertainties remain open.

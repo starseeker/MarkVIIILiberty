@@ -92,13 +92,14 @@ remains preserved from snapshot 008.
 The [lower-support packet](packets/R02-lower-supports.md) records source allocations,
 front skirt refinement, native bearing/receiver checks and unfinished retention.
 
-The latest isolated [transmission candidate](experiments/drive_chains/transmission_bevel_gear_build/TransmissionBevelGearCandidate.FCStd)
-contains 1,199 valid solids, including both planetary trains, the bevel drive,
-clutch and decomposed thrust bearings. The [bevel-drive packet](packets/I03-bevel-drive.md)
-records printed dimensions, inferred internals, native/STEP checks and source
-comparisons. Its 32.113 mm source-datum conflict remains unresolved. Input
-bearings/housing/coupling, brake bearings, fastening, controls, lubrication and
-standard-tank integration remain open.
+The latest isolated [transmission candidate](experiments/drive_chains/transmission_input_build/TransmissionInputCandidate.FCStd)
+contains 1,287 valid solids, including both planetary trains, the bevel drive,
+clutch, thrust bearings and the newly populated input bearings/housing/coupling.
+The [input-assembly packet](packets/I03-input-assembly.md) records printed bearing
+dimensions, inferred internals, native/STEP checks and comparisons with both
+SNL sections. The 32.113 mm source-datum conflict and M249 spacer quantity remain
+unresolved. Housing attachments, brake bearings, fastening, controls, lubrication
+and standard-tank integration remain open.
 It has not yet replaced the standard tank's transmission layout.
 
 Additional commands:

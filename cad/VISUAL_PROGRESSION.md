@@ -176,3 +176,19 @@ integration are pending. Standard 011 and both hull views are preserved.
 `intermediate_snapshot_iso_transmission_bevel_001.png` SHA-256: `d3de93d41d3b1c6c573a2065976cd45942672483c02e3e9f21a841400c442f4d`.
 `intermediate_snapshot_detail_transmission_bevel_001.png` SHA-256: `44d41a1ae1fd598ea4ec737c0ef1cb302a6a10825735154e08da84ff234e3faa`.
 `intermediate_snapshot_iso_bevel_mesh_001.png` SHA-256: `c035c19d179c974176e054a7c2468bd77f3d34069d33b90931cd604fffae4f8a`.
+
+## Input bearing/housing/coupling increment — 21 September 2026
+
+The isolated transmission now contains 1,287 valid solids, including 88 new
+input-assembly occurrences. Preserve the [central cutaway](intermediate_snapshot_iso_transmission_input_001.png),
+[input section](intermediate_snapshot_detail_transmission_input_001.png) and
+[bearing section](intermediate_snapshot_detail_input_bearing_001.png). The
+[packet](003_FullTank/packets/I03-input-assembly.md) records printed bearing
+envelopes, inferred internals, corrected assembly passages and comparisons
+with SNL Plates22/23. Source quantity/profile conflicts remain explicit.
+Standard tank011 and its opaque/transparent companions are unchanged; these
+are candidate interior improvements awaiting integration.
+
+`intermediate_snapshot_iso_transmission_input_001.png` SHA-256: `f9b08bb95d3a00b0251b195aa768bc9c086ac7c8efb4971ad31b376a174c325d`.
+`intermediate_snapshot_detail_transmission_input_001.png` SHA-256: `c707a4245ad11927cd4eda61113298ef133ca189bf4bd7daab4a5ff4c6b38742`.
+`intermediate_snapshot_detail_input_bearing_001.png` SHA-256: `fed23cf8801f77bf4f86426e370fd4b4d502fa75e51963060e89bbd0cfabcc12`.
