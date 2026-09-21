@@ -126,3 +126,8 @@ The first narrow-head model and the export/report-writer failures are retained
 as diagnostics; passing mechanics did not establish source-profile acceptance.
 Standard tank011 and its opaque and transparent views remain the current
 integrated tank checkpoint.
+
+The subsequent [front-clutch packet](I03-front-clutch.md) adds the external
+spring, split flange and front coupling, and refines both shaft shoulders.
+Its 1,530-piece native preserves this earlier checkpoint. Main clutch
+construction and standard integration continue.

@@ -148,6 +148,19 @@ shaft dimension transfer remain uncertain. The [packet](packets/I03-clutch-stop-
 records scope, approximations and checks. The full clutch, air circuit and standard
 tank integration remain unfinished.
 
+The [front-clutch checkpoint](experiments/drive_chains/front_clutch_build/TransmissionWithFrontClutch.FCStd)
+extends the combined native to **1,530 physical components** with a front
+coupling, split spring flange, seven-turn NURBS spring and two fastening sets.
+It also blends the cardan shoulders and relieves the adjacent receiving passage.
+All 88 material pairs, 70 independent checks, 8 definition STEP comparisons,
+12 placed-solid exchange checks and two size trials pass. The
+[source comparison](experiments/drive_chains/front_clutch_build/source_review/index.html)
+and [packet](packets/I03-front-clutch.md) retain the coupling identity transfer,
+spring diameter convention and catalogue bolt-callout mismatch. The
+[isometric](../intermediate_snapshot_iso_front_clutch_001.png) shows the installed
+spring and coupling; the main collar, cones, bearings and standard integration
+remain unfinished.
+
 Additional commands:
 
 ```sh

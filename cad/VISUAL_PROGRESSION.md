@@ -343,3 +343,16 @@ Main clutch, air circuit and standard integration are unfinished; standard tank
 `intermediate_snapshot_iso_clutch_drive_001.png` SHA-256: `4c70d49360b03d0993c313d1f4dd16f2fce28e8d8243d0a14bdc054d93ae1b75`.
 `intermediate_snapshot_iso_clutch_coupling_001.png` SHA-256: `a30548fdd71165bbd1f9f1737fd072d990add6006e590e2da2a893b481a77617`.
 `intermediate_snapshot_detail_clutch_drive_001.png` SHA-256: `5b3aa2a1331a69e7dce40ca1bcc012cb4d0bea63f234eba34ec93f662c9b0d29`.
+
+The front-clutch stage (21 September 2026) adds the SH945A coupling, two SH849A
+half flanges, seven-turn SH849B spring and two bolt/nut/washer sets. The combined
+transmission/pump candidate has1,530 physical pieces, with blended cardan shoulders
+and a relieved receiving passage. Spring diameter convention, coupling dimension
+transfer and collar profiles remain documented approximations. The main clutch
+and standard integration are unfinished; standard tank011 remains preserved.
+
+[intermediate_snapshot_iso_front_clutch_001.png](intermediate_snapshot_iso_front_clutch_001.png) · SHA-256 `76aab7188d7154b33d5b3fb8171a67099a934eec6535659431be006d148faff5`.
+
+[intermediate_snapshot_iso_front_clutch_mechanism_001.png](intermediate_snapshot_iso_front_clutch_mechanism_001.png) · SHA-256 `67faf39a95e45e7ac6e9974a90e41ad3b66f4925c9070a50d7f54a6fd4fb79b6`.
+
+[intermediate_snapshot_detail_front_clutch_001.png](intermediate_snapshot_detail_front_clutch_001.png) · SHA-256 `e7cb946c0c3886fcb4f1f58e35fc35a6660c3f097de3058bc0abb8d3540c3214`.

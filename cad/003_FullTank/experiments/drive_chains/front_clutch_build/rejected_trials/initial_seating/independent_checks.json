@@ -1,0 +1,435 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "name": "1530 unique physical leaves",
+      "value": 1530,
+      "expected": 1530,
+      "passed": true
+    },
+    {
+      "name": "10 added occurrences",
+      "value": 10,
+      "expected": 10,
+      "passed": true
+    },
+    {
+      "name": "12 affected valid single solids",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "source identity expansion",
+      "value": {
+        "P_aa2979bfcb3bde26": 2,
+        "P_53a7f4b7d5250df7": 1,
+        "P_7e06cb0aa7aaec65": 1,
+        "P_2a3cb30ed643c820": 6
+      },
+      "expected": {
+        "P_53a7f4b7d5250df7": 1,
+        "P_aa2979bfcb3bde26": 2,
+        "P_7e06cb0aa7aaec65": 1,
+        "P_2a3cb30ed643c820": 6
+      },
+      "passed": true
+    },
+    {
+      "name": "main-clutch SH849C not misassigned to external spring",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "all new occurrences owned by drivetrain",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "half flanges share one definition",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "fastener set1 expands to bolt nut washer",
+      "value": [
+        "bolt",
+        "nut",
+        "washer"
+      ],
+      "expected": [
+        "bolt",
+        "nut",
+        "washer"
+      ],
+      "passed": true
+    },
+    {
+      "name": "fastener set2 expands to bolt nut washer",
+      "value": [
+        "bolt",
+        "nut",
+        "washer"
+      ],
+      "expected": [
+        "bolt",
+        "nut",
+        "washer"
+      ],
+      "passed": true
+    },
+    {
+      "name": "upper clamp nominal bore contact",
+      "value": 1.0547118733938987e-15,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "lower clamp nominal bore contact",
+      "value": 1.4849232954361469e-15,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "split collar retains clamp gap",
+      "value": 0.2499999999999951,
+      "expected": 0.25,
+      "passed": true
+    },
+    {
+      "name": "upper collar displacement detects shaft interference",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "lower collar displacement detects shaft interference",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "set1 head bears on upper half",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "set1 washer bears on lower half",
+      "value": 2.1316282072803006e-14,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "set1 nut bears on washer",
+      "value": 2.1316282072803006e-14,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "set1 smooth shank-nut clearance",
+      "value": 0.09999999999990905,
+      "expected": 0.1,
+      "passed": true
+    },
+    {
+      "name": "set1 printed98.425 underhead length",
+      "value": 98.42500000000001,
+      "expected": 98.425,
+      "passed": true
+    },
+    {
+      "name": "set1 printed15.875 shank cylinder",
+      "value": 11875.657306532312,
+      "expected": 11875.657306532305,
+      "passed": true
+    },
+    {
+      "name": "set1 useful thread protrusion",
+      "value": 4.762499999999974,
+      "expected": 4.7625,
+      "passed": true
+    },
+    {
+      "name": "set1 clear receiving passage through both halves",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "set1 bolt does not drill through cardan shaft",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "set1 lowered head detects seating",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "set1 raised nut detects seating",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "set2 head bears on upper half",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "set2 washer bears on lower half",
+      "value": 1.4210854715202004e-14,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "set2 nut bears on washer",
+      "value": 2.1316282072803006e-14,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "set2 smooth shank-nut clearance",
+      "value": 0.09999999999990905,
+      "expected": 0.1,
+      "passed": true
+    },
+    {
+      "name": "set2 printed98.425 underhead length",
+      "value": 98.42500000000001,
+      "expected": 98.425,
+      "passed": true
+    },
+    {
+      "name": "set2 printed15.875 shank cylinder",
+      "value": 11875.657306532312,
+      "expected": 11875.657306532305,
+      "passed": true
+    },
+    {
+      "name": "set2 useful thread protrusion",
+      "value": 4.762499999999974,
+      "expected": 4.7625,
+      "passed": true
+    },
+    {
+      "name": "set2 clear receiving passage through both halves",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "set2 bolt does not drill through cardan shaft",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "set2 lowered head detects seating",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "set2 raised nut detects seating",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "spring rear end seats on upper half flange",
+      "value": 1.1368683772161603e-13,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "spring rear end seats on lower half flange",
+      "value": 0.2621635624811946,
+      "expected": 0.0,
+      "passed": false
+    },
+    {
+      "name": "spring front end seats on coupling flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "spring clears coupling material",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "spring shift through front seat detects obstruction",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "spring shift through rear seat detects obstruction",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "interpreted installed coil envelope107.95",
+      "value": 121.58879503654055,
+      "expected": 107.95,
+      "passed": false
+    },
+    {
+      "name": "saved NURBS centreline winds seven turns",
+      "value": 7.000000000000008,
+      "expected": 7.0,
+      "passed": true
+    },
+    {
+      "name": "spine stays on selected mean cylinder",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "near-closed end turn pitch follows selected gauge clearance",
+      "value": 12.750000045348077,
+      "expected": 12.75,
+      "passed": true
+    },
+    {
+      "name": "five free turns have greater pitch than end turns",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "adjacent turns retain wire clearance at minimum pitch",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "spring curve axial rise retained",
+      "value": 97.78999999999996,
+      "expected": 97.79,
+      "passed": true
+    },
+    {
+      "name": "female spline has explicit radial/flank clearance",
+      "value": 0.1499999999984798,
+      "expected": 0.15,
+      "passed": true
+    },
+    {
+      "name": "female spline carries torque after clearance",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "coupling flange transferred9in diameter",
+      "value": 228.6,
+      "expected": 228.6,
+      "passed": true
+    },
+    {
+      "name": "coupling tube retains transferred5in outer envelope",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "future collar hole1 open through flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "future collar hole2 open through flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "future collar hole3 open through flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "future collar hole4 open through flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "future collar hole5 open through flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "future collar hole6 open through flange",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "source-shaped shoulder blends add material",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "shoulder blending preserves all original shaft material",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "fillets leave shaft overall length unchanged",
+      "value": 285.7500000000003,
+      "expected": 285.75,
+      "passed": true
+    },
+    {
+      "name": "shaft has two new toroidal shoulder surfaces",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "M855 retains head stop beyond fillet relief",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "forward axial head endplay retained",
+      "value": 0.1999999999998181,
+      "expected": 0.2,
+      "passed": true
+    },
+    {
+      "name": "forward shaft displacement still catches head stop",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "blended shaft does not penetrate M855",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    }
+  ],
+  "native_sha256": "72c67a587aa092d427e9e8af51258fe45db78d457eefd385ee899338f676f32f",
+  "checker_sha256": "dd9259813cff22f956f56ace990d672eed03f533b3b304420809d1175b5bf07b"
+}

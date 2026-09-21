@@ -1,0 +1,14 @@
+{
+  "accepted": false,
+  "reasons": [
+    "Rear ground contact misses lower half flange by0.262mm.",
+    "Bounding-box length check is conservative: actual Boolean cut outside107.95mm seat slab is empty.",
+    "Alternative mean-diameter overlap test unexpectedly returns empty; further diagnosis required."
+  ],
+  "diagnostic_log_sha256": "d64ebee4b8e4b8ea61405c348a9e105c5aee7015800ef14dbbb1a5f3cc81d716",
+  "resolution": {
+    "seating": "Centre the rear ground patch across the split plane with inferred clocking of about -18degrees.",
+    "length": "Use planar end-face stations and an empty cut outside the actual seat slab; conservative transformed NURBS bounds are not the physical envelope.",
+    "boolean": "One seven-turn sweep surface silently returned zero intersection despite common interior witnesses. Split the unchanged interpolated spine into seven one-turn sweep spans; the alternate mean-diameter spring now intersects the coupling by about16110.5mm3."
+  }
+}
