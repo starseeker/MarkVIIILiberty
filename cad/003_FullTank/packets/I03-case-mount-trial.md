@@ -1,9 +1,10 @@
 # I03 — MX5 case mounting trial
 
-Status: **native installation trial; casting-profile review remains open**.
-This packet does not replace the accepted vertical-controls candidate or modify
-the standard tank. It investigates the four M263 case attachments, with separate
-studs, castle nuts, split pins and bevel washers.
+Status: **accepted for continued reconstruction with a documented casting
+approximation** (21 September 2026). This becomes the next isolated transmission
+checkpoint after the vertical-controls candidate. The standard tank remains at
+011. The trial filename and original review receipts preserve the earlier state;
+the later `qualification.json` records acceptance of these exact saved bytes.
 
 ## Identity and evidence
 
@@ -80,11 +81,19 @@ forward at the lower face. A straight frame, a slightly leaning source drawing
 and unresolved out-of-plane casting detail contribute to the uncertainty.
 HB's photograph does not establish the required boss depth.
 
-The source lengths and washer callout support the attachment interpretation,
-but a clear mechanical fit does not settle this visible discrepancy. Preserve
-the trial for comparison. The next geometry decision must consider the M263
-foot profile, stud assignment and inherited frame offsets together, then either
-revise the mounting architecture or explicitly accept its bounded approximation.
+The subsequent [profile disposition](../experiments/drive_chains/transmission_case_mount_trial_build/source_profile_disposition.json)
+considers the foot profile, stud assignment and inherited frame offsets together.
+It retains the long bosses as an explicit approximation: both printed stud
+lengths require substantial receiver depth, while neither the source section nor
+the inspected photographs establishes a better mounting arrangement. Moving the
+whole frame to one silhouette would change other retained interfaces without a
+common dimensional control. Shortening the studs would contradict both listings.
+
+Two [surviving-vehicle photographs](https://afvdatabase.com/usa/pics/mkviii/mkviii.html)
+show the outer transmission supports and brakes; the central mount is occluded.
+These photographs are retained with their URLs and hashes. They do not confirm
+the bosses. Historical casting shape remains unqualified, and later physical
+interference or clearer source evidence must reopen this approximation.
 
 ## Validation and reproduction
 
@@ -93,8 +102,9 @@ trials and STEP results are retained with the
 [native trial](../experiments/drive_chains/transmission_case_mount_trial_build/MX5CaseMountTrial.FCStd).
 All 183 affected material pairs,61 interface distances,84 independent geometric
 checks,19 native/STEP comparisons and three local parameter trials pass.
-Final numerical results are recorded in `review_status.json`; no historical-fit
-qualification is implied by a numerical pass. Twenty standard CAD files and 58
+The original numerical review remains in `review_status.json`; the later
+`qualification.json` binds the native/STEP files, numerical receipts and explicit
+profile disposition. No historical-fit qualification is implied. Twenty standard CAD files and 58
 earlier progression images remain byte unchanged. Two new trial images record
 the mounting arrangement and joint section.
 
@@ -107,9 +117,9 @@ nut/channel separation; the channel web is actually the nearest surface, at
 2.7125mm. The corrected check measures that physical gap.
 
 ```sh
-python 3 cad/003_FullTank/experiments/drive_chains/transmission_case_mount_trial.py
-python 3 cad/003_FullTank/experiments/drive_chains/check_transmission_case_mount_trial.py
-python 3 cad/003_FullTank/experiments/drive_chains/check_case_mount_variants.py
+python3 cad/003_FullTank/experiments/drive_chains/transmission_case_mount_trial.py
+python3 cad/003_FullTank/experiments/drive_chains/check_transmission_case_mount_trial.py
+python3 cad/003_FullTank/experiments/drive_chains/check_case_mount_variants.py
 ```
 
 The trial builder reopens and checks the accepted parent before mutation, saves
@@ -120,5 +130,7 @@ Sensitivity cases rebuild the 19 local shapes with the shorter printed stud and
 10/14mm flange-root stock; their scope excludes external context and STEP.
 
 Standard tank 011, its transparent companion and the full-tank coverage remain
-unchanged. Pump/support, MX1 frame attachments, brakes, oil circuits, long
+unchanged. Next is the [air-pressure pump and its installation](I05-air-pressure-pump.md).
+The B6205 input-bearing support is a separate assembly; the transmission mechanical
+lubricator is a different pump. MX1 frame attachments, brakes, oil circuits, long
 controls, integration and other tank interiors remain unfinished.

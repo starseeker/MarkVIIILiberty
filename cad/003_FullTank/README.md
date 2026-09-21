@@ -92,10 +92,17 @@ remains preserved from snapshot 008.
 The [lower-support packet](packets/R02-lower-supports.md) records source allocations,
 front skirt refinement, native bearing/receiver checks and unfinished retention.
 
-The latest isolated [transmission candidate](experiments/drive_chains/transmission_vertical_build/TransmissionVerticalCandidate.FCStd)
-contains **1,391 valid solids**, including both planetary trains, bevel drive,
-input installation, brake-bearing supports, case joint and reversing controls.
-The [vertical-controls packet](packets/I03-vertical-controls.md) adds the shaft,
+The latest isolated [transmission candidate](experiments/drive_chains/transmission_case_mount_trial_build/MX5CaseMountTrial.FCStd)
+contains **1,407 valid solids**, including both planetary trains, bevel drive,
+input installation, brake-bearing supports, case joint, reversing controls and
+four MX5 case attachments. The [mounting packet](packets/I03-case-mount-trial.md)
+accepts the long receiver bosses as a documented casting approximation; their
+visible source-profile discrepancy remains explicit. The trial filename and
+original receipts are preserved; subsequent `qualification.json` records this
+acceptance. All 183 affected material pairs, 61 interfaces, 84 independent checks,
+19 STEP comparisons and three local variants pass.
+The preceding [vertical-controls packet](packets/I03-vertical-controls.md)
+retains the 1,391-solid checkpoint with its shaft,
 keyed levers, two bearings and distinct MX11/MX12 attachments. All 148 affected
 material pairs, 21 native/STEP comparisons, 116 independent checks and three
 parameter trials pass; 63 interfaces are rechecked and 641 retained. Seven
@@ -103,8 +110,9 @@ inspected views record the remaining source-contour differences. Three new
 snapshots show the [installed rear](../intermediate_snapshot_iso_transmission_vertical_001.png),
 [mechanism](../intermediate_snapshot_iso_transmission_vertical_mechanism_001.png)
 and [bearing/key section](../intermediate_snapshot_detail_vertical_bearing_001.png).
-No. C key dimensions and blind bearing construction remain inferred. Case
-mounting, pump/support, brakes, oil circuits, long controls and standard tank
+No. C key dimensions and blind bearing construction remain inferred. The
+[air-pressure pump](packets/I05-air-pressure-pump.md), separate input-bearing
+support, brakes, oil circuits, long controls and standard tank
 integration remain ahead. Standard tank 011 and its transparent companion are unchanged.
 The existing M249 quantity, MX25 count/nut and MX14 length conflicts remain open
 in the preceding packets.

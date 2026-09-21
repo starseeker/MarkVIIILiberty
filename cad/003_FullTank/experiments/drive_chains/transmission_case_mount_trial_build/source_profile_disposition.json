@@ -1,0 +1,67 @@
+{
+  "date": "2026-09-21",
+  "status": "accepted_with_documented_casting_approximation",
+  "accepted_for_continued_reconstruction": true,
+  "historical_fit_qualified": false,
+  "geometry_revised": false,
+  "standard_assembly_modified": false,
+  "native_sha256": "866050204bcce1007692d3fd1963efd4cb0bfacd877e59a0431c62e2b46c0a1a",
+  "prior_profile_review_sha256": "e3d38d7585d0f35f47a0701d84fcfb4caa657da9701f3cb36837e685a8c9fab2",
+  "decision": "Retain the four printed-length MX5 studs, conditional four MX13 washers, existing frame datums and long blind M263 receiver bosses as the current reconstruction. The casting bosses are accepted approximations, not verified historical contours.",
+  "evidence_priority": [
+    "SNL60:003 and SNL241:026/028 independently specify long studs (139.7 versus 142.875mm); the conflict does not support replacing them with short studs to fit the visible wing.",
+    "SNL59/60 owns four stud sets in the M263 case. SNL242:003 expressly assigns four split pins to M263. No better source-supported allocation was found.",
+    "HB printed204 Plate121 labels MX13 at the frame joint. Allocation of 24 total washers as 20 frame-bracket washers plus four case-joint washers remains conditional.",
+    "The fixed-scale SNL23 comparison visibly disagrees with the upper casting boss and inherited frame face. Its independent axial calibration residuals and uncertain cutting plane prevent treating this silhouette as an exact machining profile.",
+    "HB printed126 Plate79 and the two newly reviewed surviving-vehicle photographs do not expose the central mounting depth. Their absence of a visible boss is not evidence of its absence."
+  ],
+  "alternatives_considered": [
+    {
+      "alternative": "Shorten MX5 to the visible wing depth",
+      "disposition": "Not selected: contradicts both printed lengths without new dimensional evidence. The shorter printed 139.7mm alternative remains in the existing parameter trial."
+    },
+    {
+      "alternative": "Move or lean the entire frame to the SNL23 silhouette",
+      "disposition": "Not selected: upper and lower apparent offsets differ, the existing frame follows separate calibration, and a global move changes retained bearing feet and hull interfaces. No common source-supported transform is established."
+    },
+    {
+      "alternative": "Reassign MX5 to another joint",
+      "disposition": "Not selected: case ownership and washer callout support this joint; MX14 is separately assigned to the brake-bearing caps."
+    },
+    {
+      "alternative": "Interpret the extra depth as out-of-plane casting detail omitted by the section",
+      "disposition": "Plausible but unproved. Retained only as a reconstruction hypothesis, not a newly established source fact."
+    }
+  ],
+  "retained_uncertainties": {
+    "upper_boss_forward_overrun_visual_bracket_mm": [54.976119929453304, 66.02982363315701],
+    "lower_boss_forward_overrun_visual_bracket_mm": [9.840163139329851, 28.26300264550269],
+    "upper_inherited_frame_forward_offset_visual_bracket_mm": [25.24432980599654, 36.29803350970025],
+    "lower_inherited_frame_forward_offset_visual_bracket_mm": [1.2946384479718496, 10.50605820105827],
+    "meaning": "Manual visual brackets inherited from source_profile_review.json; not tolerances or proof of historical dimensions.",
+    "other": ["Boss radius and blends", "Blind-bore depth and end stock", "Rolled-channel flange taper", "Washer size and conditional quantity allocation", "Thread envelopes omit flanks"]
+  },
+  "additional_photo_review": [
+    {
+      "file": "source_review/photos/mkviiibrake.jpg",
+      "sha256": "92a0fc9089ce8dcdefe10f5c45550137255f55cf4f991280f7ad4590ee301c67",
+      "url": "https://afvdatabase.com/usa/pics/mkviii/mkviiibrake.jpg",
+      "landing_page": "https://afvdatabase.com/usa/pics/mkviii/mkviii.html",
+      "observation": "Outer transmission support, track-brake mechanism and chain visible through the open hull side. Central MX5 case attachment depth is occluded. Circular openings in the broad outer support web are a separate future fidelity lead."
+    },
+    {
+      "file": "source_review/photos/mkviiibrake2.jpg",
+      "sha256": "d1d9a3dc6c4da9083c725fd818946691fe3d22255d570c13c6fe9f827b7d9618",
+      "url": "https://afvdatabase.com/usa/pics/mkviii/mkviiibrake2.jpg",
+      "landing_page": "https://afvdatabase.com/usa/pics/mkviii/mkviii.html",
+      "observation": "Track-brake band, lever, threaded link and return springs visible. Does not establish the central case mounting boss profile."
+    }
+  ],
+  "photo_applicability": "Uncalibrated surviving museum vehicle; restoration and configuration differences unresolved. Photographs are visual observations, not dimensional controls.",
+  "reopen_if": [
+    "A dimensioned M263/frame drawing or unobscured central mounting photograph establishes receiver depth or an alternative stud arrangement.",
+    "Later frame/hull integration or added neighboring equipment produces a physical conflict with these bosses.",
+    "The casting, frame datums or mounting stack changes; existing fit receipts are then invalid for the changed geometry."
+  ],
+  "record_policy": "Prior review_status.json, source_profile_review.json, trial filename and native trial metadata remain preserved as historical records. qualification.json supplies the subsequent acceptance scope; no historical-fit or full-tank completion claim follows from this disposition."
+}

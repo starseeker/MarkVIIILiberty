@@ -282,7 +282,9 @@ and [joint section](intermediate_snapshot_detail_case_mount_trial_001.png) recor
 four added stud/nut/pin/bevel-washer sets (21 September2026). The experimental
 fixture has 1,407 solids and passes its mechanical/STEP checks. Its long upper
 casting bosses project beyond the visible source wing; the discrepancy remains
-open. These are trial images, not accepted historical geometry or tank 012.
+explicit. A subsequent source review accepted these exact CAD bytes for continued
+reconstruction with the bosses documented as approximate. The original trial
+images are retained; historical fit is unqualified and this is not tank012.
 
 `intermediate_snapshot_iso_transmission_case_mount_trial_001.png` SHA-256:
 `8a6eb8f5b18ef5ebce27be48a719c0c13d59ff42e881f735b076da60f5192da1`.

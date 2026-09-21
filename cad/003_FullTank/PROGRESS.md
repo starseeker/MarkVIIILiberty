@@ -11,6 +11,25 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 21 September 2026 — mount approximation accepted; air-pressure pump prepared
+
+The 1,407-solid MX5 checkpoint is now accepted for continued reconstruction with
+its long casting bosses explicitly approximate. The
+[disposition](experiments/drive_chains/transmission_case_mount_trial_build/source_profile_disposition.json)
+retains the source-profile disagreement, conflicting stud lengths and inherited
+frame offsets. Additional photographs expose outer supports and brakes but do
+not establish the central boss depth. No CAD bytes or prior checks were changed;
+the later qualification binds the existing evidence and this acceptance scope.
+Historical fit and standard-tank integration remain unqualified.
+
+The [air-pressure-pump packet](packets/I05-air-pressure-pump.md) separates the
+four-cylinder fuel-pressure pump from the mechanical lubricator and B6205
+input-bearing support. The inspected catalogue expands its core and base
+attachments to 63 physical pieces. Its 54in link V belt, MX100/MX101 brackets,
+M264-owned MX98 studs and M250-owned MX99 studs are separately identified.
+This is source preparation; no new pump solids or standard-tank milestone are
+claimed. The next work is calibrated approximate pump geometry and installation.
+
 ## 21 September 2026 — case mounting trial and source-profile discrepancy
 
 The [MX5 mounting trial](experiments/drive_chains/transmission_case_mount_trial_build/MX5CaseMountTrial.FCStd)
@@ -24,9 +43,9 @@ The [source comparison](experiments/drive_chains/transmission_case_mount_trial_b
 shows that the inferred upper mounting boss extends beyond the visible wing.
 The source stud lengths conflict, and the inherited frame also differs from the
 upper source face. The [packet](packets/I03-case-mount-trial.md) records these
-observations and the conditional allocation of four MX13 washers. **This remains
-an experimental trial requiring a casting-profile disposition**, not a replacement
-for the accepted 1,391-solid vertical-controls candidate. Two trial snapshots are
+observations and the conditional allocation of four MX13 washers. At this initial
+checkpoint it was **an experimental trial requiring a casting-profile disposition**;
+the later acceptance is recorded above. Two trial snapshots are
 preserved;20 standard CAD files and 58 earlier snapshots remain byte unchanged.
 
 ## 21 September 2026 — vertical reversing shaft and attachments

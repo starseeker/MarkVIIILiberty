@@ -8,7 +8,7 @@
   "existing_prerequisite": "../002_Foundation/README.md",
   "scope": {
     "configuration": "ROCK_ISLAND_FIRST_100",
-    "configuration_dates": "1919\u20131920",
+    "configuration_dates": "1919–1920",
     "interior": "all_identifiable_components",
     "approximation_policy": "documented_approximations_prioritizing_complete_appearance_without_compromising_useful_geometry",
     "modeling_authority": "version_controlled_scripts_and_data_with_native_editable_cad",
@@ -623,8 +623,8 @@
         "Retain explicit simplified representations for unsupported gear or bearing detail rather than invented exact profiles.",
         "Check alignment, clearances and control connection datums against the installed powerplant and running gear."
       ],
-      "packet": "packets/I03-vertical-controls.md",
-      "progress_note": "Isolated 1,391-solid transmission: 19 new vertical shaft/lever/key/bearing/attachment leaves, two revised occurrences and 1,370 unchanged. Distinct two MX11 bolt and two printed-length MX12 stud sets retained. All 148 material pairs, 21 native/STEP comparisons, 116 independent checks and three parameter trials pass; 63 interfaces rechecked and 641 retained. Seven source/native views inspected; case contour, No. C key size and blind-bearing architecture remain documented approximations. Three snapshots added; 20 standard CAD and 55 previous PNG unchanged. Next four MX5 case mounts, pump/support installation, brakes, lubrication, long controls and full-tank integration. New MX5 mounting trial has 1,407 solids (16 new, three revised); 183 material pairs, 61 interfaces, 84 independent checks, 19 STEP comparisons and three local variants pass. It remains experimental because its long upper casting bosses overrun the visible source profile. See packets/I03-case-mount-trial.md; disposition precedes promotion. Two trial snapshots saved; accepted vertical checkpoint and standard tank unchanged."
+      "packet": "packets/I03-case-mount-trial.md",
+      "progress_note": "Accepted isolated 1,407-solid checkpoint: four MX5 stud/nut/pin/washer sets added to the 1,391-leaf vertical-controls candidate. Long receiver bosses accepted as a documented casting approximation after combined stud/frame/profile review. The visible source discrepancy and conditional washer allocation remain explicit; no historical-fit claim. All 183 affected pairs, 61 interfaces, 84 independent checks, 19 STEP comparisons and three local variants pass. qualification.json binds the preserved trial bytes and source-profile disposition. Next air-pressure-pump installation, separate B6205 support, MX1 frame mounts, brakes, lubrication, long controls and standard integration. Standard tank011 unchanged."
     },
     {
       "id": "I04",
@@ -647,7 +647,7 @@
       "id": "I05",
       "milestone": "M3",
       "title": "Reconstruct fuel and pressure equipment",
-      "status": "planned",
+      "status": "active",
       "depends_on": [
         "I01",
         "I02",
@@ -658,7 +658,9 @@
         "Resolve or bound production tank shape and capacity interpretation; capacity does not alone determine geometry.",
         "Keep Ball & Ball and other carburetor variants separate and record unverified proprietary detail.",
         "Verify mounts and connection ports against engine and compartment geometry."
-      ]
+      ],
+      "packet": "packets/I05-air-pressure-pump.md",
+      "progress_note": "Air-pressure pump source preparation: original SNL159/209 composition expands to 63 physical pump/base-fastener pieces, with shaft and bolt-set containers separated. Original SNL18 confirms SH900G 54in link V belt, 5/8in width and 28degree angle. MX100/MX101 bracket ownership, M264 MX98 and M250 MX99 attachment families distinguished. Inspected SNL5/HB115 sections and HB15 installation; dimensions, calibration, bracket form and actual pump solids remain to be built. No added standard geometric coverage."
     },
     {
       "id": "I06",
