@@ -1,5 +1,5 @@
 {
-  "status": "Main bearing, positive sleeve, four keys, cone-support collar and snap ring; cones and thrust mechanism pending",
+  "status": "Main bearing, sleeve, four keys, cone support, thrust collar and external snap ring; cones and ball mechanism pending",
   "controls": {
     "collar_body_radius": 88.0,
     "main_bore_radius": 76.0,
@@ -33,25 +33,117 @@
     "key_roof_gap": 0.1,
     "key_end_gap": 1.0,
     "key_count": 4,
-    "snap_front": 1004.95,
-    "snap_ridge_rear": 997.95,
-    "snap_ridge_front": 1000.95,
-    "snap_ridge_radius": 79.0,
     "snap_gap_width": 2.0,
-    "snap_gap_angle": 45.0
+    "snap_gap_angle": 45.0,
+    "thrust_front": 1010.95,
+    "thrust_lip_rear": 991.95,
+    "thrust_outer_radius": 96.0,
+    "thrust_outer_running_gap": 0.15,
+    "snap_rear": 987.95,
+    "snap_front": 990.95,
+    "snap_inner_radius": 86.0,
+    "snap_outer_radius": 92.0
   },
   "evidence": [
-    {"controls": ["key_count"], "basis": "printed", "source": "SNL114:024, SH861D, quantity4"},
-    {"controls": ["key_length", "key_radial_height", "key_width"], "basis": "provisional dimensional transfer", "source": "HB117 preliminary-drive key:4.25in long,0.75in thick,0.375in wide", "interpretation": "Thickness selected radially and width tangentially; HB prose does not identify SH861D explicitly. Section proportions and axis interpretation remain uncertain."},
-    {"controls": ["sleeve_length", "sleeve_bore_radius", "sleeve_spline_count"], "basis": "provisional dimensional transfer", "source": "HB117 sleeve2.687in long,3.531in inside diameter,24splines; HB116 markSH864C differs from catalogueSH861B", "interpretation": "Inside diameter selected at internal tooth tips. Straight rectangular spline grooves are an approximation; historical tooth form and engagement with crankshaft remain unqualified."},
-    {"controls": ["bearing_front_bore_radius"], "basis": "provisional dimensional transfer", "source": "HB117 bearing4.002in inside diameter; HB SH863A differs from SNL SH998D", "interpretation": "Applied to forward journal band only. The SNL bearing has a larger rear sleeve bore and a relieved middle; HB4.684in outside diameter is NOT applied to this different profile."},
-    {"controls": ["main_bore_radius", "bearing_rear", "bearing_front", "bearing_rear_bore_radius", "relief_rear", "relief_front", "relief_radius", "relief_fillet"], "basis": "estimated from catalogue arrangement", "source": "SNL Plate21, callouts32 and33", "interpretation": "Long bearing with internal relief; sleeve overlaps rear bearing band. OD152mm, stations and fits are estimates, not calibrated source dimensions."},
-    {"controls": ["collar_body_radius", "support_rear", "support_front", "support_radius", "support_flange_start", "support_flange_radius", "support_fillet", "support_running_gap", "key_bed_radius", "key_side_gap", "key_roof_gap", "key_end_gap"], "basis": "estimated mating geometry", "source": "SNL Plate21 callouts9,10,11", "interpretation": "Revised SH999A body and bore receive the nested stack. Four literal-dimension keys require finite wall stock at their beds. Cone flange is provisional until cone/rivet construction; wire clearance is checked."},
-    {"controls": ["sleeve_radius", "sleeve_spline_root_radius", "sleeve_spline_width"], "basis": "estimated mating geometry", "source": "SNL Plate21 callout32", "interpretation": "Rear annular flange seats in SH999A with nominal zero radial gap. Exact sleeve-to-collar drive attachment is unresolved; smooth fitted interface is not a validated torque connection."},
-    {"controls": ["snap_front", "snap_ridge_rear", "snap_ridge_front", "snap_ridge_radius", "snap_gap_width", "snap_gap_angle"], "basis": "estimated retention construction", "source": "SNL165:001 SH861E, Plate21 callout30", "interpretation": "Split annular ring with an outer retaining ridge and receiving groove. Split position, profile, stock and assembly deflection are inferred; HB SH863C identity differs."}
+    {
+      "controls": [
+        "key_count"
+      ],
+      "basis": "printed",
+      "source": "SNL114:024, SH861D, quantity4"
+    },
+    {
+      "controls": [
+        "key_length",
+        "key_radial_height",
+        "key_width"
+      ],
+      "basis": "provisional dimensional transfer",
+      "source": "HB117 preliminary-drive key:4.25in long,0.75in thick,0.375in wide",
+      "interpretation": "Thickness selected radially and width tangentially; HB prose does not identify SH861D explicitly. Section proportions and axis interpretation remain uncertain."
+    },
+    {
+      "controls": [
+        "sleeve_length",
+        "sleeve_bore_radius",
+        "sleeve_spline_count"
+      ],
+      "basis": "provisional dimensional transfer",
+      "source": "HB117 sleeve2.687in long,3.531in inside diameter,24splines; HB116 markSH864C differs from catalogueSH861B",
+      "interpretation": "Inside diameter selected at internal tooth tips. Straight rectangular spline grooves are an approximation; historical tooth form and engagement with crankshaft remain unqualified."
+    },
+    {
+      "controls": [
+        "bearing_front_bore_radius"
+      ],
+      "basis": "provisional dimensional transfer",
+      "source": "HB117 bearing4.002in inside diameter; HB SH863A differs from SNL SH998D",
+      "interpretation": "Applied to forward journal band only. The SNL bearing has a larger rear sleeve bore and a relieved middle; HB4.684in outside diameter is NOT applied to this different profile."
+    },
+    {
+      "controls": [
+        "main_bore_radius",
+        "bearing_rear",
+        "bearing_front",
+        "bearing_rear_bore_radius",
+        "relief_rear",
+        "relief_front",
+        "relief_radius",
+        "relief_fillet"
+      ],
+      "basis": "estimated from catalogue arrangement",
+      "source": "SNL Plate21, callouts32 and33",
+      "interpretation": "Long bearing with internal relief; sleeve overlaps rear bearing band. OD152mm, stations and fits are estimates, not calibrated source dimensions."
+    },
+    {
+      "controls": [
+        "collar_body_radius",
+        "support_rear",
+        "support_front",
+        "support_radius",
+        "support_flange_start",
+        "support_flange_radius",
+        "support_fillet",
+        "support_running_gap",
+        "key_bed_radius",
+        "key_side_gap",
+        "key_roof_gap",
+        "key_end_gap"
+      ],
+      "basis": "estimated mating geometry",
+      "source": "SNL Plate21 callouts9,10,11",
+      "interpretation": "Revised SH999A body and bore receive the nested stack. Four literal-dimension keys require finite wall stock at their beds. Cone flange is provisional until cone/rivet construction; wire clearance is checked."
+    },
+    {
+      "controls": [
+        "sleeve_radius",
+        "sleeve_spline_root_radius",
+        "sleeve_spline_width"
+      ],
+      "basis": "estimated mating geometry",
+      "source": "SNL Plate21 callout32",
+      "interpretation": "Rear annular flange seats in SH999A with nominal zero radial gap. Exact sleeve-to-collar drive attachment is unresolved; smooth fitted interface is not a validated torque connection."
+    },
+    {
+      "controls": [
+        "thrust_front",
+        "thrust_lip_rear",
+        "thrust_outer_radius",
+        "thrust_outer_running_gap",
+        "snap_rear",
+        "snap_front",
+        "snap_inner_radius",
+        "snap_outer_radius",
+        "snap_gap_width",
+        "snap_gap_angle"
+      ],
+      "basis": "estimated retention construction",
+      "source": "SNL67:020 SH998B thrust collar,callout28; SNL165:001 SH861E external snap ring,callout30",
+      "interpretation": "Full-plate callout trace corrects the first candidate. Thrust collar has an inner bearing-end plug, front disk and outer guiding lip. Separate external split ring sits in an outside collar groove, aft of the thrust collar. Exact attachment, profile, split and assembly deflection remain inferred."
+    }
   ],
   "remaining": [
-    "SH998B thrust collar, SH998C retainer and30balls, SH998A stop ring and their actual reaction interfaces",
+    "SH998C retainer and30balls,SH998A stop ring and actual thrust reaction interfaces",
     "Cone bodies/linings/rivets, six spring plungers/retainers/springs and SH849C retaining ring",
     "Engine crankshaft/nut and positive spline engagement; exact sleeve-to-collar attachment",
     "Clutch-stop brake, air circuit and standard tank integration"

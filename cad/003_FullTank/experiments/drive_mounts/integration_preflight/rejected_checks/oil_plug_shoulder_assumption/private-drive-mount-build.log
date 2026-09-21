@@ -1,0 +1,38 @@
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+QOpenGLWidget is not supported on this platform.
+Traceback (most recent call last):
+  File "/tmp/drive-mount-integration-repo/cad/003_FullTank/manage.py", line 73, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/tmp/drive-mount-integration-repo/cad/003_FullTank/manage.py", line 64, in main
+    result = run(args.command, out, args.subsystem)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/drive-mount-integration-repo/cad/003_FullTank/lib/worker.py", line 675, in run
+    validate_wheels(data,items,out)
+  File "/tmp/drive-mount-integration-repo/cad/003_FullTank/lib/wheel_validation.py", line 198, in validate
+    drive_mounts=validate_drive_mounts(data,items,out)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/drive-mount-integration-repo/cad/003_FullTank/lib/drive_mount_validation.py", line 75, in validate
+    seat(shaft+'OilPlug',shaft+'Shaft','oil plug / shaft end')
+  File "/tmp/drive-mount-integration-repo/cad/003_FullTank/lib/drive_mount_validation.py", line 61, in seat
+    if gap>1e-5 or area<1:raise ValueError('Drive bearing seat missing: '+label+f' {gap}, {area}')
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Drive bearing seat missing: oil plug / shaft end 0.0, 0.3176323089238233

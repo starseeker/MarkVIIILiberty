@@ -28,10 +28,10 @@ def main():
     native = out / 'TransmissionWithClutchStack.FCStd'
     native_hash = sha(native)
     assert native_hash == report['native_sha256']
-    assert report['native_occurrences'] == 1548
-    assert report['new_physical_occurrences'] == len(report['new_ids']) == 8
+    assert report['native_occurrences'] == 1549
+    assert report['new_physical_occurrences'] == len(report['new_ids']) == 9
     assert len(report['changed_ids']) == 1
-    assert len(set(report['affected_ids'])) == 9
+    assert len(set(report['affected_ids'])) == 10
     assert set(report['affected_ids']) == set(report['new_ids'] + report['changed_ids'])
     assert report['unchanged_parent_occurrences'] == 1539
     assert report['material_passed'] and report['standard_context_checked']
@@ -63,7 +63,7 @@ def main():
     assert report['step_ids'] == report['affected_ids']
     names = [
         'material_checks.json', 'independent_checks.json', 'exchange_checks.json',
-        'assembly_exchange_checks.json', 'variants/report.json', 'visual_review.json',
+        'assembly_exchange_checks.json', 'variants/report.json', 'visual_review.json', 'source_review/identity_review.json',
     ]
     receipts = {name: read(out / name) for name in names}
     for name, receipt in receipts.items():
@@ -72,12 +72,12 @@ def main():
             assert all(row['passed'] for row in receipt['checks']), name
     material = receipts['material_checks.json']
     assert material['standard_context_checked']
-    assert len(material['pairs']) == report['material_pairs'] == 27
+    assert len(material['pairs']) == report['material_pairs'] == 29
     assert all(abs(row['intersection_mm3']) < 1e-5 for row in material['pairs'])
-    assert len(receipts['independent_checks.json']['checks']) == 68
-    assert len(receipts['exchange_checks.json']['checks']) == 6
-    assert len(read(out / 'definition_order.json')) == 6
-    assert len(receipts['assembly_exchange_checks.json']['checks']) == 9
+    assert len(receipts['independent_checks.json']['checks']) == 75
+    assert len(receipts['exchange_checks.json']['checks']) == 7
+    assert len(read(out / 'definition_order.json')) == 7
+    assert len(receipts['assembly_exchange_checks.json']['checks']) == 10
     for name in ['independent_checks.json', 'exchange_checks.json', 'assembly_exchange_checks.json']:
         assert receipts[name]['checker_sha256'] == sha(HERE / 'check_clutch_stack.py'), name
     assert receipts['exchange_checks.json']['step_sha256'] == report['definition_step_sha256']
@@ -93,12 +93,17 @@ def main():
         detail = read(out / path)
         assert summary == {k: v for k, v in detail.items() if k != 'pairs'}, path
         assert detail['passed'] and not detail['overlaps']
-        assert len(detail['pairs']) == detail['material_pairs'] == 27
+        assert len(detail['pairs']) == detail['material_pairs'] == 29
         assert all(abs(row['intersection_mm3']) < 1e-5 for row in detail['pairs'])
-        assert len(detail['contacts']) == 22 and all(row['passed'] for row in detail['contacts'])
+        assert len(detail['contacts']) == 24 and all(row['passed'] for row in detail['contacts'])
         assert detail['wire_gap_mm'] > .25
         names.append(path)
 
+    identity = receipts['source_review/identity_review.json']
+    assert identity['survey_sha256'] == dossier['survey_sha256']
+    for rel, digest in identity['source_hashes'].items():
+        assert sha(REPO / rel) == digest, rel
+    assert identity['callout_mapping'] == {'28': 'SH998B', '30': 'SH861E'}
     source = read(out / 'source_review/render_receipt.json')
     assert source['native_sha256'] == native_hash
     assert source['renderer_sha256'] == sha(HERE / 'render_clutch_stack_review.py')
@@ -133,13 +138,13 @@ def main():
             actual = hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest()
             assert actual == oid, path
             preserved.append(dict(path=path, sha256=sha(REPO / path), git_blob=oid))
-    assert len(preserved) >= 76
+    assert len(preserved) >= 80
     names += ['report.json', 'definition_order.json', 'source_review/render_receipt.json', 'source_review/index.html']
     result = dict(
         passed=True, status='checked_approximate_nested_clutch_stack',
         native_sha256=native_hash, parent_native_sha256=report['parent_native_sha256'],
         parent_qualification_sha256=sha(parent / 'qualification.json'),
-        native_occurrences=1548, new_physical_occurrences=8, changed_parent_occurrences=1,
+        native_occurrences=1549, new_physical_occurrences=9, changed_parent_occurrences=1,
         unchanged_parent_occurrences=1539, accepted_for_main_clutch_development=True,
         complete_clutch=False, complete_installation=False, integrated_in_standard_tank=False,
         historical_fit_qualified=False, load_qualified=False, complete_tank=False,
@@ -149,14 +154,14 @@ def main():
         artifact_hashes={name: sha(out / name) for name in artifacts},
         preserved_progression_images=preserved, qualifier_sha256=sha(Path(__file__)),
         remaining=[
-            'Thrust collar, ball retainer and30balls, spring-stop ring and actual reaction interfaces',
+            'Ball retainer and30balls, spring-stop ring and actual reaction surfaces on the thrust collar',
             'Cones, facing/rivets, six spring plungers, drum/flywheel/crankshaft interfaces and clutch-stop band',
             'HB/SNL transfers and key section-axis mismatch; inferred bearing fits, spline form and sleeve-to-collar attachment',
             'Pump air circuit, B6205/MX1 supports, lubrication, brakes, long controls and standard integration',
         ],
     )
     (out / 'qualification.json').write_text(json.dumps(result, indent=2) + '\n')
-    print('PASS: 1548-leaf main-clutch core checked; thrust mechanism, cones and full tank remain incomplete.')
+    print('PASS: 1549-leaf corrected main-clutch core checked; ball reaction, cones and full tank remain incomplete.')
 
 
 if __name__ == '__main__':

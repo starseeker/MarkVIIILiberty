@@ -380,6 +380,11 @@ their original bytes.
 | [locking wire](intermediate_snapshot_detail_clutch_collar_wire_001.png) | `6278779e6fe989355d37b4d78b9ec1b2fa4ee17834cd1aab795bf2827fb4d2a5` |
 
 
+**Superseded first main-clutch core:** the following 001 images retain the
+initial 1,548-component candidate. Later full-plate tracing showed that its
+large end-retention piece was misidentified; the corrected 002 views follow.
+Passing static geometry checks did not establish correct source identity.
+
 The main-clutch core stage (21 September 2026) adds the SH998D relieved bearing,
 SH861B nested sleeve, SH869A cone support, four SH861D keys and SH861E retaining
 ring. The combined candidate has1,548 physical components. SH999A now has the

@@ -31,11 +31,11 @@ try:
     base=old['ClutchCollar_collar']['target'].Shape.copy();base.exportBrep(str(out/'inputs/parent_collar.brep'))
     parts,occ,collar=build(c,pc,base);changed=['ClutchCollar_collar']
     old['ClutchCollar_collar']['target'].Tip.Shape=collar
-    metadata(old['ClutchCollar_collar']['target'],MainStackRevision='Larger main bore and body, four literal-dimension key beds, captured snap-ring groove. Prior empty-bore approximation superseded in this candidate.')
+    metadata(old['ClutchCollar_collar']['target'],MainStackRevision='Larger main bore and body, four literal-dimension key beds, external snap-ring groove. Prior empty-bore approximation superseded in this candidate.')
     group=doc.addObject('App::Part','ClutchStack');doc.TransmissionCore.addObject(group)
-    metadata(group,Scope='SH998D bearing,SH861B sleeve,SH869A cone support,four SH861D keys,SH861E snap ring. Cones, thrust/ball mechanism, spring plungers and engine interface pending.')
+    metadata(group,Scope='SH998D bearing,SH861B sleeve,SH869A cone support,four SH861D keys,SH998B thrust collar,SH861E external snap ring. Cones, thrust/ball mechanism, spring plungers and engine interface pending.')
     identity=dict(bearing=('SH998D','SNL:17:016'),sleeve=('SH861B','SNL:217:024'),support=('SH869A','SNL:67:018'),
-        key=('SH861D','SNL:114:024'),snap=('SH861E','SNL:165:001'))
+        key=('SH861D','SNL:114:024'),thrust=('SH998B','SNL:67:020'),snap=('SH861E','SNL:165:001'))
     bodies={}
     for key,s in parts.items():
         body=doc.addObject('PartDesign::Body','Def_ClutchStack_'+key);doc.Definitions.addObject(body)
@@ -51,17 +51,17 @@ try:
     doc.Definitions.Visibility=False;doc.recompute();native=out/'TransmissionWithClutchStack.FCStd';doc.saveAs(str(native));App.closeDocument(doc.Name)
     doc=App.openDocument(str(native));doc.recompute();items=leaves(doc.Root);byid={i['id']:i for i in items};origin=doc.TransmissionCore.Placement.Base
     new=[r['name'] for r in occ];affected=new+changed
-    assert len(items)==len(byid)==1548 and len(new)==8 and len(affected)==9
+    assert len(items)==len(byid)==1549 and len(new)==9 and len(affected)==10
     for n,i in byid.items():
         assert i['shape'].isValid() and len(i['shape'].Solids)==1,n
         if n in old and n not in changed:
             t,r=placement_errors(i['shape'].Placement,places[n]);assert t<1e-6 and r<1e-8,n
             assert same_shape(signatures[n],shape_signature(i['shape'])),n
     report=dict(status='clutch_stack_candidate',native_sha256=sha(native),parent_native_sha256=sha(native_parent),input_hashes=hashes,
-        controls=c,parent_controls=pc,native_occurrences=1548,new_physical_occurrences=8,new_ids=new,changed_ids=changed,
+        controls=c,parent_controls=pc,native_occurrences=1549,new_physical_occurrences=9,new_ids=new,changed_ids=changed,
         affected_ids=affected,unchanged_parent_occurrences=1539,parent_collar_sha256=sha(out/'inputs/parent_collar.brep'),
         standard_assembly_modified=False,main_clutch_complete=False,historical_fit_qualified=False,complete_tank=False)
-    write(out/'report.json',report);print('Saved and reopened1548 leaves,8new,1revised collar,1539unchanged.',flush=True)
+    write(out/'report.json',report);print('Saved and reopened1549 leaves,9new,1revised collar,1539unchanged.',flush=True)
     standard=check_build(STAGE/'build');td=App.openDocument(standard['build']['top_document']);td.recompute()
     context=[i for i in leaves(td.Root) if i['representation']=='assembly'];report['standard_native_hashes']=standard['native_hashes']
     physical=items+context;boxes=np.array([[b.XMin,b.YMin,b.ZMin,b.XMax,b.YMax,b.ZMax] for b in [i['shape'].copy().cleaned().BoundBox for i in physical]])
@@ -95,19 +95,19 @@ try:
         shaded(selected,view/(file+'.svg'),direction,title)
     front=[n for n in byid if n.startswith(('FrontClutch_','ClutchCollar_'))]
     drive=[n for n in byid if n.startswith(('ClutchDrive_','AirPump_','PumpMount_','InputHousing_')) or n=='CenterTransmissionCore_bevel_cover']
-    draw(new+front+drive,'isometric','Main clutch core | bearing, sleeve, keyed cone support and snap ring',(1,1,.65))
+    draw(new+front+drive,'isometric','Main clutch core | bearing, sleeve, keyed support, thrust collar and external ring',(1,1,.65))
     mechanism=new+front+['ClutchDrive_shaft','ClutchDrive_box','ClutchDrive_drum']
     draw(mechanism,'mechanism','Main clutch core | cones, thrust mechanism and spring plungers still pending',(1,1,.6))
     clip=Part.makeBox(225,270,2,origin+App.Vector(800,-135,-1))
     draw(new+front+['ClutchDrive_shaft'],'section','Main clutch axial section | nested sleeve, relieved bearing and keyed support',(0,0,1),clip)
-    draw(['ClutchStack_bearing','ClutchStack_sleeve','ClutchStack_snap'],'internals','Enclosing collars hidden | separate bearing, sleeve and retaining ring',(1,1,.6))
+    draw(['ClutchStack_bearing','ClutchStack_sleeve','ClutchStack_thrust'],'internals','Enclosing collars hidden | separate bearing, sleeve and thrust collar',(1,1,.6))
     draw(['ClutchStack_sleeve'],'sleeve','Positive sleeve | provisional HB24-spline dimensional transfer',(1,1,.6))
     draw(['ClutchCollar_collar']+[n for n in new if 'Key' in n],'keys','Cone support hidden | four keys in actual receiving beds',(1,1,.6))
     clip=Part.makeBox(50,200,2,origin+App.Vector(975,-100,-1))
-    draw(['ClutchCollar_collar','ClutchStack_bearing','ClutchStack_snap'],'retention','Front retention section | separate ring ridge and collar groove',(0,0,1),clip)
+    draw(['ClutchCollar_collar','ClutchStack_bearing','ClutchStack_thrust','ClutchStack_snap'],'retention','Front retention section | thrust collar and separate external snap ring',(0,0,1),clip)
     report['render_hashes']={f.name:sha(f) for f in view.glob('*.png')};write(out/'report.json',report)
     assert sha(native_parent)==pq['native_sha256']
     for path,h in hashes.items():assert sha(REPO/path)==h,path
-    print('Native,6definition STEP,9placed STEP and seven views saved.',flush=True)
+    print('Native,7definition STEP,10placed STEP and seven views saved.',flush=True)
     assert not overlaps,'See material_checks.json'
 finally:runtime.close()

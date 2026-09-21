@@ -34,7 +34,7 @@ assets += ['references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p293-geometry.p
 result = dict(status='Connected main-clutch stack; cones, thrust mechanism and engine interfaces pending',
     survey_sha256=sha(SURVEY), records=rows, identities=identities, variants=variants,
     source_assets={name:sha(REPO/name) for name in assets},
-    inventory=dict(bearing=1,sleeve=1,cone_support=1,keys=4,snap_ring=1,total_new=8),
+    inventory=dict(bearing=1,sleeve=1,cone_support=1,keys=4,thrust_collar=1,snap_ring=1,total_new=9),
     decisions=[
         'SNL Plate21 shows a long bearing with middle bore relief and a sleeve nested in its rear band. They are not placed end-to-end. Original source pages17,67,114,165 and217 confirm selected marks and quantities.',
         'SH869A cone support agrees between HB and SNL. Catalogue SH998D bearing,SH861B sleeve andSH861E snap ring differ from HB SH863A,SH864C andSH863C. Variant membership remains unresolved; no universal equivalence is inferred.',
@@ -42,9 +42,10 @@ result = dict(status='Connected main-clutch stack; cones, thrust mechanism and e
         'HB1174.002in bearing bore is transferred provisionally to the forward journal band. The different SNL profile uses a larger rear sleeve bore and relieved middle. HB4.684in bearing OD is not applied;152mm OD is estimated for this profile.',
         'HB117 preliminary-drive key4.25in long,.75in thick,.375in wide is transferred provisionally to the four catalogue SH861D keys. Thickness is selected radially and width tangentially; exact section-axis interpretation remains uncertain.',
         'SH999A body/bore, four key beds and end groove are revised together to receive the stack. Cone support follows a documented inferred profile; actual cone/rivet attachment is pending.',
-        'SH861E is represented as one split annular ring with an outer retaining ridge. Section profile, split and fit are inferred; installation deflection and retention strength are unqualified.',
+        'Full SNL21 callout tracing corrects the rejected first candidate:28identifies the large SH998B thrust collar at the bearing end;30identifies the separate external SH861E ring aft of that collar. The unsupported internal snap-ring groove is removed.',
+        'SH998B has an inferred bearing-end plug, front disk and outer guiding lip. SH861E is a separate split ring seated in an external SH999A groove. Profiles, attachment, fits and elastic installation remain unqualified.',
         'Sleeve rear flange and bearing OD use nominal fitted surfaces in SH999A. Exact sleeve-to-collar drive attachment is unresolved. This does not qualify torque transmission or the eventual crankshaft positive engagement.',
-        'SH998B thrust collar,SH998C retainer and30quarter-inchballs,SH998A stop ring,cones/linings/rivets and six spring-plunger sets remain unbuilt. Source assembly rows are not extra physical pieces.'
+        'SH998C retainer and30quarter-inchballs,SH998A stop ring,cones/linings/rivets and six spring-plunger sets remain unbuilt. Source assembly rows are not extra physical pieces.'
     ])
 Path(__file__).with_suffix('.json').write_text(json.dumps(result,indent=2,ensure_ascii=False)+'\n')
-print('Retained15source records;8new physical pieces with explicit dimensional transfers.')
+print('Retained15source records;9new physical pieces with explicit dimensional transfers.')

@@ -1,0 +1,951 @@
+{
+  "applicable": true,
+  "source_composition": {
+    "applicable": true,
+    "components": [
+      {
+        "definition": "drive_shaft",
+        "record": "SNL:215:004",
+        "drive_occurrences": 2,
+        "source_vehicle_quantity": null
+      },
+      {
+        "definition": "drive_key",
+        "record": "SNL:215:006",
+        "drive_occurrences": 2,
+        "source_vehicle_quantity": null
+      },
+      {
+        "definition": "drive_inner_bearing",
+        "record": "SNL:18:006",
+        "drive_occurrences": 2,
+        "source_vehicle_quantity": 2
+      },
+      {
+        "definition": "drive_outer_bearing",
+        "record": "SNL:18:008",
+        "drive_occurrences": 2,
+        "source_vehicle_quantity": 4
+      },
+      {
+        "definition": "drive_backing_plate",
+        "record": "SNL:152:021",
+        "drive_occurrences": 2,
+        "source_vehicle_quantity": 4
+      },
+      {
+        "definition": "drive_locking_plate",
+        "record": "SNL:152:022",
+        "drive_occurrences": 4,
+        "source_vehicle_quantity": 4
+      },
+      {
+        "definition": "drive_bearing_screw",
+        "record": "SNL:201:008",
+        "drive_occurrences": 12,
+        "source_vehicle_quantity": 24
+      },
+      {
+        "definition": "drive_locking_screw",
+        "record": "SNL:200:009",
+        "drive_occurrences": 4,
+        "source_vehicle_quantity": 4
+      },
+      {
+        "definition": "drive_inner_rivet",
+        "record": "SNL:189:009",
+        "drive_occurrences": 12,
+        "source_vehicle_quantity": 12
+      },
+      {
+        "definition": "drive_backing_rivet",
+        "record": "SNL:170:004",
+        "drive_occurrences": 8,
+        "source_vehicle_quantity": 52
+      }
+    ],
+    "common_shaft_nuts": 8,
+    "unresolved": "Shared outer bearings/backing plates/caps/bushes/key still have unpopulated pinion uses; additional M1552 plate-only rivets unresolved."
+  },
+  "bearing_faces": [
+    {
+      "a": "PortDrive_Unit000_ShaftAssembly_NutInner",
+      "b": "PortDrive_Unit000_Supports_BearingInner",
+      "interface": "shaft nut / bearing",
+      "gap_mm": 1.1368683772161603e-13,
+      "area_mm2": 3485.080942529863
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_LockingPlateInner",
+      "b": "PortDrive_Unit000_ShaftAssembly_NutInner",
+      "interface": "locking plate / nut flat",
+      "gap_mm": 0.0,
+      "area_mm2": 389.24504815554764
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_LockingPlateInner",
+      "b": "PortDrive_Unit000_Supports_BearingInner",
+      "interface": "locking plate / bearing face",
+      "gap_mm": 1.1368683772161603e-13,
+      "area_mm2": 3029.539365265268
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_LockingScrewInner",
+      "b": "PortDrive_Unit000_Supports_LockingPlateInner",
+      "interface": "locking cap / locking plate",
+      "gap_mm": 0.0,
+      "area_mm2": 290.9260134748295
+    },
+    {
+      "a": "PortDrive_Unit000_ShaftAssembly_Shaft",
+      "b": "PortDrive_Unit000_Supports_BearingInner",
+      "interface": "shaft shoulder / bearing barrel",
+      "gap_mm": 0.0,
+      "area_mm2": 3698.8996268880446
+    },
+    {
+      "a": "PortDrive_Unit000_ShaftAssembly_NutOuter",
+      "b": "PortDrive_Unit000_Supports_BearingOuter",
+      "interface": "shaft nut / bearing",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 3485.080942529863
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_LockingPlateOuter",
+      "b": "PortDrive_Unit000_ShaftAssembly_NutOuter",
+      "interface": "locking plate / nut flat",
+      "gap_mm": 0.0,
+      "area_mm2": 389.2450481555407
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_LockingPlateOuter",
+      "b": "PortDrive_Unit000_Supports_BearingOuter",
+      "interface": "locking plate / bearing face",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 3029.539365265268
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_LockingScrewOuter",
+      "b": "PortDrive_Unit000_Supports_LockingPlateOuter",
+      "interface": "locking cap / locking plate",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 290.9260134748295
+    },
+    {
+      "a": "PortDrive_Unit000_ShaftAssembly_Shaft",
+      "b": "PortDrive_Unit000_Supports_BearingOuter",
+      "interface": "shaft shoulder / bearing barrel",
+      "gap_mm": 0.0,
+      "area_mm2": 3698.899626888042
+    },
+    {
+      "a": "PortDrive_Unit000_ShaftAssembly_Key",
+      "b": "PortDrive_Unit000_ShaftAssembly_Shaft",
+      "interface": "key / shaft keyway",
+      "gap_mm": 0.0,
+      "area_mm2": 1657.795678445225
+    },
+    {
+      "a": "PortDrive_Unit000_ShaftAssembly_Key",
+      "b": "PortDrive_Unit000_Supports_BearingOuter",
+      "interface": "key / outer bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 1725.753244785186
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BearingScrew0",
+      "b": "PortDrive_Unit000_Supports_BearingOuter",
+      "interface": "outer cap screw / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 572.8265920565376
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_InnerRivet0",
+      "b": "PortDrive_Unit000_Supports_BearingInner",
+      "interface": "inner rivet / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619561
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BearingScrew1",
+      "b": "PortDrive_Unit000_Supports_BearingOuter",
+      "interface": "outer cap screw / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 572.8265920565376
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_InnerRivet1",
+      "b": "PortDrive_Unit000_Supports_BearingInner",
+      "interface": "inner rivet / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619561
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BearingScrew2",
+      "b": "PortDrive_Unit000_Supports_BearingOuter",
+      "interface": "outer cap screw / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 572.8265920565377
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_InnerRivet2",
+      "b": "PortDrive_Unit000_Supports_BearingInner",
+      "interface": "inner rivet / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619561
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BearingScrew3",
+      "b": "PortDrive_Unit000_Supports_BearingOuter",
+      "interface": "outer cap screw / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 572.8265920565376
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_InnerRivet3",
+      "b": "PortDrive_Unit000_Supports_BearingInner",
+      "interface": "inner rivet / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619561
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BearingScrew4",
+      "b": "PortDrive_Unit000_Supports_BearingOuter",
+      "interface": "outer cap screw / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 572.8265920565377
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_InnerRivet4",
+      "b": "PortDrive_Unit000_Supports_BearingInner",
+      "interface": "inner rivet / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619561
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BearingScrew5",
+      "b": "PortDrive_Unit000_Supports_BearingOuter",
+      "interface": "outer cap screw / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 572.8265920565376
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_InnerRivet5",
+      "b": "PortDrive_Unit000_Supports_BearingInner",
+      "interface": "inner rivet / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619561
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BackingRivet0",
+      "b": "PortDrive_Unit000_Supports_BackingPlate",
+      "interface": "backing rivet / plate",
+      "gap_mm": 0.0,
+      "area_mm2": 229.24837765757084
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BackingRivet1",
+      "b": "PortDrive_Unit000_Supports_BackingPlate",
+      "interface": "backing rivet / plate",
+      "gap_mm": 0.0,
+      "area_mm2": 229.24837765757084
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BackingRivet2",
+      "b": "PortDrive_Unit000_Supports_BackingPlate",
+      "interface": "backing rivet / plate",
+      "gap_mm": 0.0,
+      "area_mm2": 229.24837765757084
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BackingRivet3",
+      "b": "PortDrive_Unit000_Supports_BackingPlate",
+      "interface": "backing rivet / plate",
+      "gap_mm": 0.0,
+      "area_mm2": 229.24837765757084
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BearingInner",
+      "b": "hull_port_inner_fuel_side",
+      "interface": "bearing/backing / source-identified hull receiver",
+      "gap_mm": 5.729962394826185e-15,
+      "area_mm2": 27180.10538009038
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BearingOuter",
+      "b": "hull_port_rear_end",
+      "interface": "bearing/backing / source-identified hull receiver",
+      "gap_mm": 4.1000000000000153e-16,
+      "area_mm2": 27180.10538009037
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BackingPlate",
+      "b": "hull_port_rear_end",
+      "interface": "bearing/backing / source-identified hull receiver",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 57970.10099568708
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_InnerRivet0",
+      "b": "hull_port_inner_fuel_side",
+      "interface": "inner rivet / M1977",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 523.5352041619559
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_InnerRivet1",
+      "b": "hull_port_inner_fuel_side",
+      "interface": "inner rivet / M1977",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 523.5352041619559
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_InnerRivet2",
+      "b": "hull_port_inner_fuel_side",
+      "interface": "inner rivet / M1977",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 523.5352041619559
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_InnerRivet3",
+      "b": "hull_port_inner_fuel_side",
+      "interface": "inner rivet / M1977",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 523.5352041619558
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_InnerRivet4",
+      "b": "hull_port_inner_fuel_side",
+      "interface": "inner rivet / M1977",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 523.5352041619559
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_InnerRivet5",
+      "b": "hull_port_inner_fuel_side",
+      "interface": "inner rivet / M1977",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 523.5352041619559
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BackingRivet0",
+      "b": "hull_port_rear_end",
+      "interface": "backing rivet / M1975",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 229.24837765757047
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BackingRivet1",
+      "b": "hull_port_rear_end",
+      "interface": "backing rivet / M1975",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 229.24837765757047
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BackingRivet2",
+      "b": "hull_port_rear_end",
+      "interface": "backing rivet / M1975",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 229.24837765757047
+    },
+    {
+      "a": "PortDrive_Unit000_Supports_BackingRivet3",
+      "b": "hull_port_rear_end",
+      "interface": "backing rivet / M1975",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 229.24837765757047
+    },
+    {
+      "a": "StarboardDrive_Unit000_ShaftAssembly_NutInner",
+      "b": "StarboardDrive_Unit000_Supports_BearingInner",
+      "interface": "shaft nut / bearing",
+      "gap_mm": 1.1368683772161603e-13,
+      "area_mm2": 3485.080942529863
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_LockingPlateInner",
+      "b": "StarboardDrive_Unit000_ShaftAssembly_NutInner",
+      "interface": "locking plate / nut flat",
+      "gap_mm": 0.0,
+      "area_mm2": 389.24504815554764
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_LockingPlateInner",
+      "b": "StarboardDrive_Unit000_Supports_BearingInner",
+      "interface": "locking plate / bearing face",
+      "gap_mm": 1.1368683772161603e-13,
+      "area_mm2": 3029.539365265268
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_LockingScrewInner",
+      "b": "StarboardDrive_Unit000_Supports_LockingPlateInner",
+      "interface": "locking cap / locking plate",
+      "gap_mm": 0.0,
+      "area_mm2": 290.9260134748295
+    },
+    {
+      "a": "StarboardDrive_Unit000_ShaftAssembly_Shaft",
+      "b": "StarboardDrive_Unit000_Supports_BearingInner",
+      "interface": "shaft shoulder / bearing barrel",
+      "gap_mm": 0.0,
+      "area_mm2": 3698.8996268880446
+    },
+    {
+      "a": "StarboardDrive_Unit000_ShaftAssembly_NutOuter",
+      "b": "StarboardDrive_Unit000_Supports_BearingOuter",
+      "interface": "shaft nut / bearing",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 3485.080942529863
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_LockingPlateOuter",
+      "b": "StarboardDrive_Unit000_ShaftAssembly_NutOuter",
+      "interface": "locking plate / nut flat",
+      "gap_mm": 0.0,
+      "area_mm2": 389.2450481555407
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_LockingPlateOuter",
+      "b": "StarboardDrive_Unit000_Supports_BearingOuter",
+      "interface": "locking plate / bearing face",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 3029.539365265268
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_LockingScrewOuter",
+      "b": "StarboardDrive_Unit000_Supports_LockingPlateOuter",
+      "interface": "locking cap / locking plate",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 290.9260134748295
+    },
+    {
+      "a": "StarboardDrive_Unit000_ShaftAssembly_Shaft",
+      "b": "StarboardDrive_Unit000_Supports_BearingOuter",
+      "interface": "shaft shoulder / bearing barrel",
+      "gap_mm": 0.0,
+      "area_mm2": 3698.899626888042
+    },
+    {
+      "a": "StarboardDrive_Unit000_ShaftAssembly_Key",
+      "b": "StarboardDrive_Unit000_ShaftAssembly_Shaft",
+      "interface": "key / shaft keyway",
+      "gap_mm": 0.0,
+      "area_mm2": 1657.795678445225
+    },
+    {
+      "a": "StarboardDrive_Unit000_ShaftAssembly_Key",
+      "b": "StarboardDrive_Unit000_Supports_BearingOuter",
+      "interface": "key / outer bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 1725.753244785186
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BearingScrew0",
+      "b": "StarboardDrive_Unit000_Supports_BearingOuter",
+      "interface": "outer cap screw / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 572.8265920565376
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_InnerRivet0",
+      "b": "StarboardDrive_Unit000_Supports_BearingInner",
+      "interface": "inner rivet / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619561
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BearingScrew1",
+      "b": "StarboardDrive_Unit000_Supports_BearingOuter",
+      "interface": "outer cap screw / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 572.8265920565376
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_InnerRivet1",
+      "b": "StarboardDrive_Unit000_Supports_BearingInner",
+      "interface": "inner rivet / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619561
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BearingScrew2",
+      "b": "StarboardDrive_Unit000_Supports_BearingOuter",
+      "interface": "outer cap screw / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 572.8265920565377
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_InnerRivet2",
+      "b": "StarboardDrive_Unit000_Supports_BearingInner",
+      "interface": "inner rivet / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619561
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BearingScrew3",
+      "b": "StarboardDrive_Unit000_Supports_BearingOuter",
+      "interface": "outer cap screw / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 572.8265920565376
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_InnerRivet3",
+      "b": "StarboardDrive_Unit000_Supports_BearingInner",
+      "interface": "inner rivet / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619561
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BearingScrew4",
+      "b": "StarboardDrive_Unit000_Supports_BearingOuter",
+      "interface": "outer cap screw / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 572.8265920565377
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_InnerRivet4",
+      "b": "StarboardDrive_Unit000_Supports_BearingInner",
+      "interface": "inner rivet / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619561
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BearingScrew5",
+      "b": "StarboardDrive_Unit000_Supports_BearingOuter",
+      "interface": "outer cap screw / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 572.8265920565376
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_InnerRivet5",
+      "b": "StarboardDrive_Unit000_Supports_BearingInner",
+      "interface": "inner rivet / bearing",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619561
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BackingRivet0",
+      "b": "StarboardDrive_Unit000_Supports_BackingPlate",
+      "interface": "backing rivet / plate",
+      "gap_mm": 0.0,
+      "area_mm2": 229.24837765757084
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BackingRivet1",
+      "b": "StarboardDrive_Unit000_Supports_BackingPlate",
+      "interface": "backing rivet / plate",
+      "gap_mm": 0.0,
+      "area_mm2": 229.24837765757084
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BackingRivet2",
+      "b": "StarboardDrive_Unit000_Supports_BackingPlate",
+      "interface": "backing rivet / plate",
+      "gap_mm": 0.0,
+      "area_mm2": 229.24837765757084
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BackingRivet3",
+      "b": "StarboardDrive_Unit000_Supports_BackingPlate",
+      "interface": "backing rivet / plate",
+      "gap_mm": 0.0,
+      "area_mm2": 229.24837765757084
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BearingInner",
+      "b": "hull_starboard_inner_fuel_side",
+      "interface": "bearing/backing / source-identified hull receiver",
+      "gap_mm": 0.0,
+      "area_mm2": 27180.10538009038
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BearingOuter",
+      "b": "hull_starboard_rear_end",
+      "interface": "bearing/backing / source-identified hull receiver",
+      "gap_mm": 4.372219673520037e-15,
+      "area_mm2": 27180.10538009037
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BackingPlate",
+      "b": "hull_starboard_rear_end",
+      "interface": "bearing/backing / source-identified hull receiver",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 57970.10099568708
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_InnerRivet0",
+      "b": "hull_starboard_inner_fuel_side",
+      "interface": "inner rivet / M1977",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619559
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_InnerRivet1",
+      "b": "hull_starboard_inner_fuel_side",
+      "interface": "inner rivet / M1977",
+      "gap_mm": 0.0,
+      "area_mm2": 523.535204161956
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_InnerRivet2",
+      "b": "hull_starboard_inner_fuel_side",
+      "interface": "inner rivet / M1977",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619558
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_InnerRivet3",
+      "b": "hull_starboard_inner_fuel_side",
+      "interface": "inner rivet / M1977",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619559
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_InnerRivet4",
+      "b": "hull_starboard_inner_fuel_side",
+      "interface": "inner rivet / M1977",
+      "gap_mm": 0.0,
+      "area_mm2": 523.535204161956
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_InnerRivet5",
+      "b": "hull_starboard_inner_fuel_side",
+      "interface": "inner rivet / M1977",
+      "gap_mm": 0.0,
+      "area_mm2": 523.5352041619558
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BackingRivet0",
+      "b": "hull_starboard_rear_end",
+      "interface": "backing rivet / M1975",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 229.24837765757047
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BackingRivet1",
+      "b": "hull_starboard_rear_end",
+      "interface": "backing rivet / M1975",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 229.24837765757047
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BackingRivet2",
+      "b": "hull_starboard_rear_end",
+      "interface": "backing rivet / M1975",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 229.24837765757047
+    },
+    {
+      "a": "StarboardDrive_Unit000_Supports_BackingRivet3",
+      "b": "hull_starboard_rear_end",
+      "interface": "backing rivet / M1975",
+      "gap_mm": 2.2737367544323206e-13,
+      "area_mm2": 229.24837765757047
+    }
+  ],
+  "receiving_hull_bores": [
+    {
+      "receiver": "hull_port_inner_fuel_side",
+      "index": 0,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_port_inner_fuel_side",
+      "index": 1,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_port_inner_fuel_side",
+      "index": 2,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_port_inner_fuel_side",
+      "index": 3,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_port_inner_fuel_side",
+      "index": 4,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_port_inner_fuel_side",
+      "index": 5,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_port_rear_end",
+      "index": 0,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_port_rear_end",
+      "index": 1,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_port_rear_end",
+      "index": 2,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_port_rear_end",
+      "index": 3,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_port_rear_end",
+      "index": 4,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_port_rear_end",
+      "index": 5,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_port_rear_end",
+      "index": 0,
+      "diameter_mm": 13.2,
+      "full_cylinder_length_mm": 12.0
+    },
+    {
+      "receiver": "hull_port_rear_end",
+      "index": 1,
+      "diameter_mm": 13.2,
+      "full_cylinder_length_mm": 12.0
+    },
+    {
+      "receiver": "hull_port_rear_end",
+      "index": 2,
+      "diameter_mm": 13.2,
+      "full_cylinder_length_mm": 12.0
+    },
+    {
+      "receiver": "hull_port_rear_end",
+      "index": 3,
+      "diameter_mm": 13.2,
+      "full_cylinder_length_mm": 12.0
+    },
+    {
+      "receiver": "hull_starboard_inner_fuel_side",
+      "index": 0,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_starboard_inner_fuel_side",
+      "index": 1,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_starboard_inner_fuel_side",
+      "index": 2,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_starboard_inner_fuel_side",
+      "index": 3,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_starboard_inner_fuel_side",
+      "index": 4,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_starboard_inner_fuel_side",
+      "index": 5,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_starboard_rear_end",
+      "index": 0,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_starboard_rear_end",
+      "index": 1,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_starboard_rear_end",
+      "index": 2,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_starboard_rear_end",
+      "index": 3,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_starboard_rear_end",
+      "index": 4,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_starboard_rear_end",
+      "index": 5,
+      "diameter_mm": 19.549999999999997,
+      "full_cylinder_length_mm": 11.999999999999996
+    },
+    {
+      "receiver": "hull_starboard_rear_end",
+      "index": 0,
+      "diameter_mm": 13.2,
+      "full_cylinder_length_mm": 12.0
+    },
+    {
+      "receiver": "hull_starboard_rear_end",
+      "index": 1,
+      "diameter_mm": 13.2,
+      "full_cylinder_length_mm": 12.0
+    },
+    {
+      "receiver": "hull_starboard_rear_end",
+      "index": 2,
+      "diameter_mm": 13.2,
+      "full_cylinder_length_mm": 12.0
+    },
+    {
+      "receiver": "hull_starboard_rear_end",
+      "index": 3,
+      "diameter_mm": 13.2,
+      "full_cylinder_length_mm": 12.0
+    }
+  ],
+  "clearances": [
+    {
+      "shaft": "PortDrive_Unit000_ShaftAssembly_Shaft",
+      "bush": "PortDrive_Unit000_ShaftAssembly_BushA",
+      "gap_mm": 0.044449999999958904,
+      "expected_mm": 0.044450000000004763
+    },
+    {
+      "shaft": "PortDrive_Unit000_ShaftAssembly_Shaft",
+      "bush": "PortDrive_Unit000_ShaftAssembly_BushB",
+      "gap_mm": 0.044449999999920366,
+      "expected_mm": 0.044450000000004763
+    },
+    {
+      "shaft": "StarboardDrive_Unit000_ShaftAssembly_Shaft",
+      "bush": "StarboardDrive_Unit000_ShaftAssembly_BushA",
+      "gap_mm": 0.04444999999996063,
+      "expected_mm": 0.044450000000004763
+    },
+    {
+      "shaft": "StarboardDrive_Unit000_ShaftAssembly_Shaft",
+      "bush": "StarboardDrive_Unit000_ShaftAssembly_BushB",
+      "gap_mm": 0.04444999999993584,
+      "expected_mm": 0.044450000000004763
+    }
+  ],
+  "oil_leads": [
+    {
+      "shaft": "PortDrive_Unit000_ShaftAssembly_Shaft",
+      "axial_and_radial_open": true,
+      "hydraulic_function_qualified": false
+    },
+    {
+      "shaft": "StarboardDrive_Unit000_ShaftAssembly_Shaft",
+      "axial_and_radial_open": true,
+      "hydraulic_function_qualified": false
+    }
+  ],
+  "oil_plug_envelopes": [
+    {
+      "shaft": "PortDrive_Unit000_ShaftAssembly_Shaft",
+      "plug": "PortDrive_Unit000_ShaftAssembly_OilPlug",
+      "insertion_mm": 12.000000000000002,
+      "radial_envelope_gap_mm": 0.1999999999999993,
+      "head_contact_area_mm2": 0.31763230892390354,
+      "minimum_gap_mm": 0.0,
+      "shoulder_seat_qualified": false,
+      "thread_retention_qualified": false,
+      "sealing_qualified": false
+    },
+    {
+      "shaft": "StarboardDrive_Unit000_ShaftAssembly_Shaft",
+      "plug": "StarboardDrive_Unit000_ShaftAssembly_OilPlug",
+      "insertion_mm": 12.000000000000002,
+      "radial_envelope_gap_mm": 0.1999999999999993,
+      "head_contact_area_mm2": 0.31763230892390354,
+      "minimum_gap_mm": 0.0,
+      "shoulder_seat_qualified": false,
+      "thread_retention_qualified": false,
+      "sealing_qualified": false
+    }
+  ],
+  "controlled_dimensions": [
+    {
+      "definition": "drive_shaft",
+      "axis": "Y",
+      "actual_mm": 701.6750001,
+      "expected_mm": 701.675
+    },
+    {
+      "definition": "drive_shaft",
+      "axis": "X",
+      "actual_mm": 112.6236002,
+      "expected_mm": 112.6236
+    },
+    {
+      "definition": "drive_key",
+      "axis": "X",
+      "actual_mm": 12.7,
+      "expected_mm": 12.7
+    },
+    {
+      "definition": "drive_key",
+      "axis": "Y",
+      "actual_mm": 46.03750000000002,
+      "expected_mm": 46.037499999999994
+    },
+    {
+      "definition": "drive_key",
+      "axis": "Z",
+      "actual_mm": 19.049999999999997,
+      "expected_mm": 19.049999999999997
+    }
+  ],
+  "rivet_stock": [
+    {
+      "definition": "drive_inner_rivet",
+      "stock_length_mm": 66.675,
+      "volume_error_mm3": -3.637978807091713e-12
+    },
+    {
+      "definition": "drive_backing_rivet",
+      "stock_length_mm": 44.449999999999996,
+      "volume_error_mm3": -9.094947017729282e-13
+    }
+  ],
+  "implemented_checks_passed": true,
+  "source_shaft_boms_complete": true,
+  "historical_fit_qualified": false,
+  "thread_forms_qualified": false,
+  "remaining_plate_only_rivets_unresolved": true
+}
