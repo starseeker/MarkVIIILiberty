@@ -8,7 +8,7 @@
   "existing_prerequisite": "../002_Foundation/README.md",
   "scope": {
     "configuration": "ROCK_ISLAND_FIRST_100",
-    "configuration_dates": "1919–1920",
+    "configuration_dates": "1919\u20131920",
     "interior": "all_identifiable_components",
     "approximation_policy": "documented_approximations_prioritizing_complete_appearance_without_compromising_useful_geometry",
     "modeling_authority": "version_controlled_scripts_and_data_with_native_editable_cad",
@@ -417,6 +417,34 @@
         "historical_fit_qualified": false,
         "motion_qualified": false,
         "next": "Populate the small planetary train and central bevel/input assemblies; continue case joint fastening, brakes, controls, mounting and lubrication before full-tank integration."
+      },
+      "transmission_small_experiment": {
+        "path": "experiments/drive_chains/transmission_small_build",
+        "packet": "packets/I03-small-planetary-gears.md",
+        "status": "nominal_partial_small_train_with_open_source_profile_discrepancies",
+        "native_solids": 1059,
+        "new_occurrences": 46,
+        "changed_prior_occurrences": 1,
+        "unchanged_prior_occurrences": 1012,
+        "material_pairs": 166,
+        "overlaps": 0,
+        "specified_gap_contact_checks": 182,
+        "native_tooth_count_checks": 10,
+        "native_mesh_checks": 6,
+        "exchange_roundtrip_solids": 47,
+        "actually_viewed_rasters": 8,
+        "derived_small_planet_teeth": 24,
+        "derived_high_ratio": 1.2857142857142858,
+        "small_planet_center_source_residual_mm": 7.257142857142867,
+        "rivet_center_source_residual_mm": -15.02178560144617,
+        "standard_modified": false,
+        "full_parameter_envelope_qualified": false,
+        "historical_fit_qualified": false,
+        "motion_qualified": false,
+        "next": "Reconcile swept disk/rim and rivet source station while populating small planet pin/bush/ring supports, retention and brake bearings. Then central bevel/input, case fastening, brakes, controls, mounting/lubrication and standard integration.",
+        "local_trials": 30,
+        "native_dimension_checks": 8,
+        "exchange_displacement_negative_checks": 7
       }
     },
     {
@@ -595,8 +623,8 @@
         "Retain explicit simplified representations for unsupported gear or bearing detail rather than invented exact profiles.",
         "Check alignment, clearances and control connection datums against the installed powerplant and running gear."
       ],
-      "packet": "packets/I03-ring-bolt-station.md",
-      "progress_note": "The isolated transmission fixture has 1,013 valid solids. Corrected callout15 attribution moves M318 fastening to the inner source station with shorter bolts, recessed carrier seats and open head counterbores: 22 occurrences revised, 991 unchanged. All 166 material pairs, 108 interfaces, 22 STEP material comparisons and independent local checks pass. The earlier outer-case-bolt comparison and two-planet interpretation are withdrawn. Small gears, bevel/input, case fastening, brakes, controls, complete mounting/lubrication and full-tank integration remain open."
+      "packet": "packets/I03-small-planetary-gears.md",
+      "progress_note": "The isolated transmission fixture has1,059 valid solids:46new small-gear, sun-bush, disk/ring and rivet occurrences;one revised cross shaft has smooth sun-bush journals. All166 material pairs,182 interfaces,10 tooth counts,6 meshes and47 STEP material comparisons pass. The24-tooth planet count is derived from printed30/78 counts; theM276 printed disk-row conflict remains. Source comparison retains7.257mm planet-center and15.022mm rivet axial discrepancies. Swept disk/rim refinement, small pin/bush/ring supports, brake bearings/retention, bevel/input, case fastening and standard integration remain open."
     },
     {
       "id": "I04",

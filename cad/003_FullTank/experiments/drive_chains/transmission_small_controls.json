@@ -1,0 +1,191 @@
+{
+  "status": "partial_small_planetary_reconstruction",
+  "controls": {
+    "teeth_sun": {
+      "value": 30,
+      "unit": "count",
+      "basis": "printed_HB126"
+    },
+    "teeth_planet": {
+      "value": 24,
+      "unit": "count",
+      "basis": "derived_(78-30)/2_not_printed_count"
+    },
+    "teeth_ring": {
+      "value": 78,
+      "unit": "count",
+      "basis": "printed_HB126"
+    },
+    "planets_per_side": {
+      "value": 3,
+      "unit": "count",
+      "basis": "HB120_three_small_planets_SNL144_six_total"
+    },
+    "pitch_numerator": {
+      "value": 5,
+      "unit": "teeth/in",
+      "basis": "printed_HB126"
+    },
+    "pitch_denominator": {
+      "value": 7,
+      "unit": "teeth/in",
+      "basis": "printed_HB126"
+    },
+    "pressure_angle": {
+      "value": 20,
+      "unit": "degree",
+      "basis": "reconstruction_assumption"
+    },
+    "tooth_thinning": {
+      "value": 0.2,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "flank_samples": {
+      "value": 16,
+      "unit": "count",
+      "basis": "numerical_approximation_setting"
+    },
+    "gear_face_picks_px": {
+      "value": [
+        1064,
+        1104
+      ],
+      "unit": "pixel",
+      "basis": "conditional_Plate22_manual_pick"
+    },
+    "disk_outer_face_px": {
+      "value": 1017,
+      "unit": "pixel",
+      "basis": "conditional_Plate22_manual_pick"
+    },
+    "disk_web_stock": {
+      "value": 12,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "disk_hub_extension": {
+      "value": 8,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "disk_hub_radius": {
+      "value": 45,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "ring_outer_radius": {
+      "value": 211.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "ring_attachment_inner_radius": {
+      "value": 206,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "ring_attachment_outer_radius": {
+      "value": 224,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "rivet_count_per_side": {
+      "value": 16,
+      "unit": "count",
+      "basis": "printed_SNL165_small_spur_ring_assembly"
+    },
+    "rivet_circle_radius": {
+      "value": 215,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "rivet_diameter": {
+      "value": 12.7,
+      "unit": "mm",
+      "basis": "printed_SNL165_small_spur_ring_assembly"
+    },
+    "rivet_raw_length": {
+      "value": 47.625,
+      "unit": "mm",
+      "basis": "printed_SNL165_small_spur_ring_assembly"
+    },
+    "rivet_upset_allowance": {
+      "value": 8,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "rivet_head_height": {
+      "value": 6,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "rivet_hole_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "planet_bore_radius": {
+      "value": 24,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "sun_sleeve_inner_end_px": {
+      "value": 1294,
+      "unit": "pixel",
+      "basis": "conditional_Plate22_manual_pick"
+    },
+    "sun_bush_inner_radius": {
+      "value": 28.95,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "sun_bush_outer_radius": {
+      "value": 36.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "sun_bush_outer_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "shaft_journal_radius": {
+      "value": 28.8,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "shaft_journal_end_gap": {
+      "value": 0.3,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "spline_radial_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "spline_side_gap": {
+      "value": 0.1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "rivet_head_access_gap": {
+      "value": 0.25,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Axial head-access counterbore in forward ring rim; first trial exposed203.14mm3 head/rim interference per rivet."
+    }
+  },
+  "limits": [
+    "M27024teeth inferred from printed M26730/M27578 at common5-7DP; HB126M27630teeth conflicts with disk description.",
+    "20degree involute form and backlash inherited assumptions, radial roots without cutter fillets.",
+    "Rivet nominal length is unformed shank length.8mm is assigned to formed tail head with conserved modeled shank/tail volume; original head contour unknown.",
+    "Axial web/rim arrangement, bores, smooth shaft journals, spline transitions and receiving fits are reconstructed.",
+    "Small planet bearing/pin stacks, pin rings, retainers and brake bearings remain to be populated."
+  ],
+  "coordinate": "Same transverse Y-axis and tank-center origin as previous transmission candidate.",
+  "fit_revision": {
+    "trial_01": "46new valid parts,1revised shaft,182interfaces,6meshes,10toothcounts,47STEP comparisons pass;32actual rivet head/ring overlaps ~203.14mm3 each. The stepped rim extends in front of the rivet seat and requires head access.",
+    "trial_02": "Add inferred counterbores through the forward rim up to the rivet head seat, head radius plus0.25mm. No change to rivet stock, diameter or tooth geometry."
+  }
+}

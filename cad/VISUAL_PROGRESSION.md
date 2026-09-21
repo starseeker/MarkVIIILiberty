@@ -108,3 +108,15 @@ images remain preserved, and standard tank milestone 011 is unchanged.
 `e0e34faf4f9c1e19182d5d5c3363dc26304cd1aa2c2970a7e1630690d7a5adcb`.
 `intermediate_snapshot_detail_transmission_ring_bolts_001.png` SHA-256:
 `4832942123168e19b3096c72a30fbb32ffc92284bc506035afac1772f340119c`.
+
+The [combined planetary cutaway](intermediate_snapshot_iso_transmission_small_001.png)
+and [small-train oblique](intermediate_snapshot_detail_transmission_small_001.png)
+record 46 added small-gear, bush, disk/ring and rivet occurrences (20 September
+2026). The isolated fixture contains 1,059 solids. Source planet-center and rivet
+axial discrepancies remain documented; small supports and full-tank integration
+are unfinished. Standard milestone 011 and all earlier images remain unchanged.
+
+`intermediate_snapshot_iso_transmission_small_001.png` SHA-256:
+`8087bc84fe79bed20684e63d1fee3d2e66a8cfc76f1efe2f88195641bfc5195f`.
+`intermediate_snapshot_detail_transmission_small_001.png` SHA-256:
+`263623a1d20c510169004966f381afe2aec7c911d11765c364f4e8bed1958cb8`.

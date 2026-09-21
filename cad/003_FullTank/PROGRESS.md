@@ -11,6 +11,35 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — small planetary gears and riveted input disks
+
+The [small-train candidate](experiments/drive_chains/transmission_small_build/TransmissionSmallCandidate.FCStd)
+adds 46 occurrences: both small sun/planet/ring sets, sun sleeve bushes, input
+disks and 32 separate rivets. The native fixture contains **1,059 valid solids**,
+with one cross shaft revised to provide smooth sun-bush journals and 1,012
+previous occurrences unchanged. All 166 material pairs are clear; 182 specified
+interfaces, ten native tooth counts, six gear meshes and 47 STEP material
+comparisons pass. Thirty independent local trials, eight native dimension checks
+and seven intentional STEP-displacement checks also pass.
+
+HB126's 30/78 teeth imply 24 small-planet teeth and reproduce the stated high
+reduction. Its contradictory M276 disk tooth row remains documented. The first
+trial exposed rivet-head collisions; explicit forward head recesses resolve
+those without changing the printed rivet size. Cast lap, head form and fits
+remain inferred.
+
+Eight inspected images include the [original/native comparison](experiments/drive_chains/transmission_small_build/source_review/small_train_comparison.png).
+It retains a 7.257 mm planet-center discrepancy and a 15.022 mm axial rivet-center
+discrepancy. The source disk's swept outer transition is not yet represented by
+the current flat-web approximation. The [work packet](packets/I03-small-planetary-gears.md)
+keeps that refinement and the small pin/bush/ring support stacks open.
+
+Preserved [combined cutaway](../intermediate_snapshot_iso_transmission_small_001.png)
+and [small-gear oblique](../intermediate_snapshot_detail_transmission_small_001.png)
+record this interior improvement. Standard tank milestone 011 and its opaque and
+transparent views remain unchanged. Brake bearings, retention, central bevel/input,
+case fastening, controls, mounting/lubrication and integration remain unfinished.
+
 ## 20 September 2026 — corrected ring-bolt source identity and seats
 
 Tracing the original callout15 leader in SNL Plate22 and HB Plate73 corrected

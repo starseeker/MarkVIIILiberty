@@ -314,3 +314,16 @@ and [bolt section](transmission_ring_support_build/source_review/bolt_axis_secti
 show the corrected station and inferred recessed receivers. See the
 [revision packet](../../packets/I03-ring-bolt-station.md); exact cast contours,
 case fastening, small gears and central bevel/input work remain open.
+
+The latest [small planetary candidate](transmission_small_build/TransmissionSmallCandidate.FCStd)
+adds 46 occurrences: both small gear sets, separate sun bushes, input disks,
+rings and 32 rivets. One cross shaft receives smooth sun-bush journals, while
+1,012 earlier occurrences remain unchanged. All 166 material candidate pairs,
+182 interfaces, ten native tooth counts, six gear meshes and 47 STEP material
+comparisons pass. Thirty local trials, eight native dimension checks and seven
+intentional STEP-displacement checks also pass. The [small-train packet](../../packets/I03-small-planetary-gears.md)
+records the inferred 24-tooth planets, printed M276 row conflict and open source
+profile discrepancies. The [source comparison](transmission_small_build/source_review/small_train_comparison.png)
+and [combined cutaway](transmission_small_build/source_review/coupled_trains_cutaway.png)
+show how the new gears fit the retained assembly; small supports, brake bearings,
+retention and standard integration remain unfinished.
