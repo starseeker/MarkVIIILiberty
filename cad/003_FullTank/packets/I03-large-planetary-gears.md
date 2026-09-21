@@ -119,10 +119,11 @@ hashes in `visual_review.json`. The retained
 are isolated transmission checkpoints, not standard milestone 012.
 
 The direct Plate22 comparison overlays the actual horizontal native section at
-the shaft axis. Its source scale is unchanged. Three planets at 120 degrees
-cannot all lie in that plane; the drawing may show a composite section. This
-limits visual comparison of pin placement but does not justify moving individual
-gears to force a two-dimensional match. Native front/oblique views expose the
+the shaft axis. Its source scale is unchanged. The later
+[ring-bolt review](I03-ring-bolt-station.md) identifies the upper inner feature
+as M318, not a second planet pin, correcting the earlier composite-section
+hypothesis. A section through one planet pin and the opposite ring bolt is
+available without moving individual gears. Native front/oblique views expose the
 sun and planets without the carrier hiding them; these are inspection views.
 
 The close comparison reveals a substantial sun-outline discrepancy: the

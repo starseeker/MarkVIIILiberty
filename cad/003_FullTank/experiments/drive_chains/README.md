@@ -301,3 +301,16 @@ expose the bearing stack and the unresolved source radial discrepancies. The
 ring-bolt position requires a carrier-rim/pin-ring review before integration.
 See the [support packet](../../packets/I03-large-planet-supports.md) for source
 corrections, bush identity conflict, approximations and reproduction commands.
+
+The subsequent [ring-support revision](transmission_ring_support_build/TransmissionRingSupportCandidate.FCStd)
+corrects the M318 source feature and station. Callout15 identifies the inner
+bolt; the prior comparison used an unrelated outer case-joint bolt. Twenty-two
+occurrences change, with 991 retained unchanged in the 1,013-solid fixture.
+All 166 material pairs, 108 interfaces and 22 STEP material comparisons pass.
+Fifty local access/stop trials, six radius/diameter checks and five deliberate
+STEP displacement checks pass. The
+[source comparison](transmission_ring_support_build/source_review/source_pin_comparison.png)
+and [bolt section](transmission_ring_support_build/source_review/bolt_axis_section.png)
+show the corrected station and inferred recessed receivers. See the
+[revision packet](../../packets/I03-ring-bolt-station.md); exact cast contours,
+case fastening, small gears and central bevel/input work remain open.

@@ -1,0 +1,34 @@
+{
+  "status": "visually_reviewed_partial_reconstruction_with_corrected_source_attribution",
+  "native_sha256": "a986832311ec16ebf51f822ca61368e2d290ec159e536d6fd686524ed9c368d2",
+  "report_sha256": "f0b596794b7787ba0597d8fb26e19b77df4ab4c818a9dd69f1d8ca33bb86e43d",
+  "exchange_sha256": "82399ae0fe03544d8cf02d414f745a35890d0361d84d025f7e709f2433854d72",
+  "interface_checks_sha256": "3f3112f230af66b7ef25ec313c9678b159e052cb18841fcb065294d45f3df6ba",
+  "source_render_receipt_sha256": "91c81da30d013799c8126e925aaee2f333c23be4720809725abe45f48f095792",
+  "actually_viewed_rasters": {
+    "recessed_carrier.png": "6e065d04bad0a1d387624007026ba34b33fe3deea5f1547e7a61c3dbde2ccbe9",
+    "supported_planets.png": "e0e34faf4f9c1e19182d5d5c3363dc26304cd1aa2c2970a7e1630690d7a5adcb",
+    "ring_support_cutaway.png": "7dc45653e979578468a28940d1568b0f6a50729491fc2b6f474e46afc23e331f",
+    "source_review/pin_axis_section.png": "0bd2205f7576cc7db237e4441fb2f6a3bcbc53bf50b4d4e6323daeefee76a00a",
+    "source_review/source_pin_comparison.png": "d00bd2ab5c88000fd68899d5d1fbcfefcf4c603ca13212f03d69f5568330735a",
+    "source_review/pin_axis_overlay.png": "97c433113b6c626e83396007d32a56644aabf0317b111a42c4ff22a7d112e628",
+    "source_review/bolt_axis_section.png": "4832942123168e19b3096c72a30fbb32ffc92284bc506035afac1772f340119c"
+  },
+  "preserved_snapshots": {
+    "cad/intermediate_snapshot_iso_transmission_supports_002.png": "e0e34faf4f9c1e19182d5d5c3363dc26304cd1aa2c2970a7e1630690d7a5adcb",
+    "cad/intermediate_snapshot_detail_transmission_ring_bolts_001.png": "4832942123168e19b3096c72a30fbb32ffc92284bc506035afac1772f340119c"
+  },
+  "findings": [
+    "Original SNL24 assigns identification15 on Plate22 to the M318 assembly; HB122callout15 independently names M318. The leader points to the inner bolt near y355, not the outer case-joint bolt near y200. Prior59.257mm outward discrepancy and proposed carrier-rim enlargement are withdrawn.",
+    "The upper inner source feature is a ring bolt and the lower feature is a planet pin. The earlier two-planet/composite-section interpretation is withdrawn for this pair. A native plane through planet0 and opposite ring bolt1 gives the shown comparison without changing their saved placements.",
+    "The revised native section follows the chosen bolt radius148.771428571mm, head-seatx906 and nut-seatx842 under the unchanged conditional scale. Agreement with these input picks is construction evidence, not independent historical dimensional validation.",
+    "The carrier-side oblique view exposes three large pin-nut recesses and three smaller ring-bolt nut recesses. The outer dish silhouette and protected central hub are retained. The earlier pin-ring/front view and this carrier-face view use opposite axial viewing directions to reveal different retained details.",
+    "The bolt-axis cutaway shows the shorter M318 shank, recessed head shoulder, continuous axial access counterbore and separate nut/cotter. The geometry check confirms sampled bolt extraction with nut/cotter absent. Boss radii, pocket contours,2mm nominal counterbore wall and7mm nominal nut-recess wall are inferred; tool access and structural performance remain unqualified.",
+    "The retained pin-axis section preserves the hollow pin, bronze bush and steel sleeve. Printed7/8in bolt size is retained despite differences from the illustrated shank profile. Planet-center11.521mm and earlier gear-outline/axial station discrepancies remain documented.",
+    "Case-joint bolts remain absent and must be modeled as their own fastening family. Small planetary gears, bevel/input assemblies, brakes, controls, complete mounting/lubrication and full-tank integration remain unfinished."
+  ],
+  "superseded_review": "transmission_pin_build/source_review/render_receipt.json ring_bolt_comparison and corresponding visual_review findings are superseded by the corrected feature attribution; originals retained byte-for-byte.",
+  "accepted_scope": "Nominal static revised M318/ring/carrier geometry with source identity corrected and approximated cast receivers; no historical fits, complete tooling/load/motion/uncertainty or standard-integration qualification.",
+  "next": "Populate the small planetary train and central bevel/input assemblies; continue case joint fastening, brakes, controls, mounting and lubrication before full-tank integration.",
+  "final_rebuild_review": "Final rebuild corrects regeneration metadata only. All seven raster hashes exactly match the actually inspected first qualified revision."
+}

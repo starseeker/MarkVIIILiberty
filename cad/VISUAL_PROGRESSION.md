@@ -86,11 +86,25 @@ inspection images supplement the standard history and are not milestone 012.
 The isolated [supported-planet isometric](intermediate_snapshot_iso_transmission_supports_001.png)
 and [pin-axis section](intermediate_snapshot_detail_transmission_pins_001.png)
 record 56 added pin, bearing, ring and retention occurrences (20 September 2026).
-The fixture contains 1,013 solids with recessed carrier nuts. Source pin-center
-and ring-bolt radial discrepancies remain unresolved; these are partial
-reconstruction views and do not advance the standard tank to milestone 012.
+The fixture contains 1,013 solids with recessed carrier nuts. The source
+pin-center discrepancy remains unresolved; the ring-bolt comparison is corrected
+in the subsequent revision below. These partial reconstruction views do not
+advance the standard tank to milestone 012.
 
 `intermediate_snapshot_iso_transmission_supports_001.png` SHA-256:
 `6781fd0f8ad0f1170c215034b886143c56a3bdbc0b419a65217996ccb2d09edc`.
 `intermediate_snapshot_detail_transmission_pins_001.png` SHA-256:
 `0bd2205f7576cc7db237e4441fb2f6a3bcbc53bf50b4d4e6323daeefee76a00a`.
+
+The revised [support isometric](intermediate_snapshot_iso_transmission_supports_002.png)
+and [ring-bolt section](intermediate_snapshot_detail_transmission_ring_bolts_001.png)
+record the corrected M318 installation (20 September 2026). Callout15 identifies
+the inner ring bolt; the previous outer-bolt comparison used a case-joint bolt
+and is superseded. Twenty-two occurrences change; the fixture still has 1,013
+solids. The carrier-face view exposes the revised recessed nuts. All earlier
+images remain preserved, and standard tank milestone 011 is unchanged.
+
+`intermediate_snapshot_iso_transmission_supports_002.png` SHA-256:
+`e0e34faf4f9c1e19182d5d5c3363dc26304cd1aa2c2970a7e1630690d7a5adcb`.
+`intermediate_snapshot_detail_transmission_ring_bolts_001.png` SHA-256:
+`4832942123168e19b3096c72a30fbb32ffc92284bc506035afac1772f340119c`.

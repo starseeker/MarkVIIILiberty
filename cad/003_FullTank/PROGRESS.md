@@ -11,7 +11,35 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — corrected ring-bolt source identity and seats
+
+Tracing the original callout15 leader in SNL Plate22 and HB Plate73 corrected
+the previous comparison: M318 is the inner bolt near source y355; the outer
+bolt near y200 belongs to the case joint. The claimed 59.257 mm outward error
+and proposed carrier-rim enlargement are withdrawn. The upper inner feature
+is a ring bolt, so the earlier interpretation of two opposed planet pins is
+also corrected. The old images and receipts remain preserved.
+
+The [revised candidate](experiments/drive_chains/transmission_ring_support_build/TransmissionRingSupportCandidate.FCStd)
+retains 1,013 valid solids, with 22 occurrences revised and 991 unchanged. The
+M318 circle follows the conditional 148.771 mm source radius. Shorter bolts
+seat in projecting ring bosses with open head counterbores; their nuts occupy
+recessed carrier seats. Casting contours and access dimensions remain inferred.
+
+All 166 material candidate pairs are clear, 108 retained interface checks pass,
+and 22 changed solids preserve material through STEP. Fifty local access/stop
+trials, six radius/diameter checks and five deliberately shifted STEP checks
+pass. Seven images were inspected, including the
+[corrected source comparison](experiments/drive_chains/transmission_ring_support_build/source_review/source_pin_comparison.png).
+The [work packet](packets/I03-ring-bolt-station.md) records the correction and
+remaining limits. Next populate the small planetary train and central bevel/input
+assemblies. Case fastening, brakes, controls, mounting, lubrication and standard
+tank integration remain incomplete.
+
 ## 20 September 2026 — large planet pins and recessed carrier seats
+
+The subsequent ring-bolt revision above supersedes this checkpoint's M318
+source comparison and geometry; its earlier artifacts remain preserved.
 
 The [pin-support candidate](experiments/drive_chains/transmission_pin_build/TransmissionPinCandidate.FCStd)
 adds 56 physical occurrences from ten source identities: bronze bushes, steel
@@ -33,15 +61,14 @@ establish the modeled static interfaces, not historical running fits.
 
 The [pin-axis section](experiments/drive_chains/transmission_pin_build/source_review/pin_axis_section.png)
 and [source comparison](experiments/drive_chains/transmission_pin_build/source_review/source_pin_comparison.png)
-show the separate bearing stack and recessed retention. Two radial discrepancies
-remain explicit: about 11.5 mm at the planet center and about 59.3 mm at the
-ring-bolt station under the inherited drawing scale. The latter requires a
-carrier-rim and pin-ring review before integration. The
+show the separate bearing stack and recessed retention. The approximately
+11.5 mm planet-center discrepancy remains. The originally reported ring-bolt
+discrepancy used the wrong source feature and is corrected above. The
 [support packet](packets/I03-large-planet-supports.md) records those limits.
 
-Standard milestone 011 remains unchanged. The next geometry work is the outer
-carrier/ring contour and bolt station, followed by the small planetary train,
-bevel/input assemblies, brakes, controls, mounting and lubrication.
+Standard milestone 011 remains unchanged. The carrier/ring and bolt-station
+review is recorded in the subsequent revision above. The small planetary train,
+bevel/input assemblies, brakes, controls, mounting and lubrication remain open.
 
 ## 20 September 2026 — large planetary gears and retention
 

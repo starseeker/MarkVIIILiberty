@@ -388,8 +388,35 @@
         "historical_fit_qualified": false,
         "motion_qualified": false,
         "source_pin_center_residual_mm": 11.520714285714291,
-        "source_ring_bolt_radius_residual_mm": 59.25714285714281,
-        "next": "Reconcile source outer carrier/ring contours and the ring-bolt radial station before integration; then populate the small planetary train, central bevel drive/input, brakes, controls, mounting and lubrication."
+        "next": "Superseded by transmission_ring_support_experiment: corrected M318 source attribution and physical receivers. Continue from that candidate.",
+        "superseded_ring_bolt_comparison_mm": 59.25714285714281,
+        "source_review_correction": "The 59.257 mm comparison used the outer case-joint bolt, not M318. See transmission_ring_support_experiment for the corrected callout 15 station and receivers."
+      },
+      "transmission_ring_support_experiment": {
+        "path": "experiments/drive_chains/transmission_ring_support_build",
+        "packet": "packets/I03-ring-bolt-station.md",
+        "status": "nominal_partial_corrected_ring_bolt_station_and_receivers",
+        "native_solids": 1013,
+        "new_occurrences": 0,
+        "changed_prior_occurrences": 22,
+        "unchanged_prior_occurrences": 991,
+        "material_pairs": 166,
+        "overlaps": 0,
+        "specified_gap_contact_checks": 108,
+        "exchange_roundtrip_solids": 22,
+        "local_trials": 50,
+        "extraction_clearance_trials": 24,
+        "expected_interference_trials": 26,
+        "native_radius_diameter_checks": 6,
+        "exchange_displacement_negative_checks": 5,
+        "actually_viewed_rasters": 7,
+        "source_identity_correction": "M318 is the inner callout15 bolt near Plate22 y355; outer y200 bolt belongs to case joint.",
+        "conditional_bolt_radius_mm": 148.77142857142854,
+        "standard_modified": false,
+        "full_parameter_envelope_qualified": false,
+        "historical_fit_qualified": false,
+        "motion_qualified": false,
+        "next": "Populate the small planetary train and central bevel/input assemblies; continue case joint fastening, brakes, controls, mounting and lubrication before full-tank integration."
       }
     },
     {
@@ -568,8 +595,8 @@
         "Retain explicit simplified representations for unsupported gear or bearing detail rather than invented exact profiles.",
         "Check alignment, clearances and control connection datums against the installed powerplant and running gear."
       ],
-      "packet": "packets/I03-large-planet-supports.md",
-      "progress_note": "Both large planetary trains now have separate pin, bronze/steel bush, ring and retention stacks in the isolated 1,013-solid fixture: 56 new occurrences, two revised carriers and 955 unchanged. All 332 material pairs, 108 specified interfaces, 58 STEP material comparisons and independent local checks pass. Nut seats follow the source axial pick; planet-center and ring-bolt radial discrepancies remain explicit. Carrier/ring contour review, small gears, bevel drive, bearings, clutch, braking/steering controls, complete mounting/lubrication and full-tank integration remain incomplete."
+      "packet": "packets/I03-ring-bolt-station.md",
+      "progress_note": "The isolated transmission fixture has 1,013 valid solids. Corrected callout15 attribution moves M318 fastening to the inner source station with shorter bolts, recessed carrier seats and open head counterbores: 22 occurrences revised, 991 unchanged. All 166 material pairs, 108 interfaces, 22 STEP material comparisons and independent local checks pass. The earlier outer-case-bolt comparison and two-planet interpretation are withdrawn. Small gears, bevel/input, case fastening, brakes, controls, complete mounting/lubrication and full-tank integration remain open."
     },
     {
       "id": "I04",

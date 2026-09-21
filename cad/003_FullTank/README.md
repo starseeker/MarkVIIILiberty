@@ -92,12 +92,13 @@ remains preserved from snapshot 008.
 The [lower-support packet](packets/R02-lower-supports.md) records source allocations,
 front skirt refinement, native bearing/receiver checks and unfinished retention.
 
-The latest isolated [transmission candidate](experiments/drive_chains/transmission_pin_build/TransmissionPinCandidate.FCStd)
+The latest isolated [transmission candidate](experiments/drive_chains/transmission_ring_support_build/TransmissionRingSupportCandidate.FCStd)
 contains 1,013 valid solids, including both large planetary gear trains and their
 pin, bearing and retention stacks. Its
-[support packet](packets/I03-large-planet-supports.md) records nominal fit checks,
-recessed carrier seats and source discrepancies. The carrier rim/ring-bolt
-position needs further review; small gears and the bevel drive remain open.
+[ring-bolt packet](packets/I03-ring-bolt-station.md) corrects the source feature
+identification and bolt station, with revised recessed seats and head access.
+Detailed casting forms remain approximate; small gears, the bevel drive and
+case-joint fastening remain open.
 It has not yet replaced the standard tank's transmission layout.
 
 Additional commands:

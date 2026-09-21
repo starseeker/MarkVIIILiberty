@@ -5,6 +5,10 @@ pin rings and retaining hardware. It is an isolated transmission candidate;
 the standard tank remains milestone 011 pending complete transmission and
 mounting integration.
 
+The subsequent [ring-bolt revision](I03-ring-bolt-station.md) corrects a feature
+misidentification in this checkpoint's source review and supersedes its M318
+station and receivers. The original native file and images remain preserved.
+
 ## Source identity and installation
 
 | Mark | Component | Installed quantity | Survey identity |
@@ -131,8 +135,9 @@ record this partial interior checkpoint separately from standard tank milestones
 
 The actual horizontal assembly section is retained alongside a separate section
 through one pin axis. The latter transforms only the inspection coordinates;
-saved occurrence placements are unchanged. A three-planet train at 120 degrees
-cannot reproduce both illustrated pins in a single section plane.
+saved occurrence placements are unchanged. The later callout review identifies
+the upper illustrated feature as a ring bolt, not a second planet pin. The
+earlier suggestion that this pair requires a composite section is withdrawn.
 
 The recessed nut seat now follows the selected axial source pick. This does not
 resolve the radial discrepancy: the printed tooth counts and pitch imply
@@ -141,17 +146,16 @@ pin illustration under the inherited scale. That 11.521 mm difference remains
 visible. The inherited gear-face station residual, sun-outline discrepancy,
 high-speed drum diameter conflict and central-input offset also remain open.
 
-The upper M318 bolt in the pin-axis section lies substantially closer to the
-shaft than the illustrated bolt: modeled radius 202 mm versus approximately
-261.257 mm from a source pixel y200 pick. Its image station is 281.654 pixels,
-about 81.654 pixels from that pick. The source outer carrier/ring region needs
-reconciliation with the existing carrier rim and gear-case envelope before
-enlarging the bolt circle. This discrepancy exceeds plausible line-picking
-uncertainty; the current ring/bolt placement is an explicit provisional form.
+**Source-review correction:** the bolt near pixel y200 is a case-joint bolt,
+not M318. The original callout15 leader identifies the inner M318 bolt near
+y355. The previous 59.257 mm outward discrepancy and proposed carrier-rim
+enlargement are withdrawn. The preserved review images/receipts record that
+earlier misattribution; the [ring-bolt revision](I03-ring-bolt-station.md) supplies
+the corrected comparison and geometry.
 
 Source casting transitions, ring bolt station/profile, bearing fit, pin oil
-passages and complete case fastening require further work. Review the outer
-carrier/ring contour and ring-bolt station next, then populate the small
+passages and complete case fastening require further work. After the corrected
+ring-bolt revision, populate the small
 planetary train and central bevel/input assemblies, and finish brakes,
 controls, mounting and lubrication before integrating the transmission into
 the standard tank. This checkpoint cannot establish a complete drivetrain or

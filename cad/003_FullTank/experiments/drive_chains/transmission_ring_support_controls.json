@@ -1,0 +1,52 @@
+{
+  "status": "source_identity_corrected_ring_bolt_station",
+  "controls": {
+    "bolt_circle_radius": {
+      "value": 148.77142857142854,
+      "unit": "mm",
+      "basis": "conditional_source_scale",
+      "source": "Plate22 inner bolt identified by callout15; approximate axis y355. Not the outer case-joint bolt at y200."
+    },
+    "bolt_head_seat_y": {
+      "value": 487.8614285714286,
+      "unit": "mm",
+      "basis": "conditional_source_scale",
+      "source": "Approximate callout15 bolt head seat x906; inherited output datum and scale."
+    },
+    "bolt_boss_back_y": {
+      "value": 534.3071428571429,
+      "unit": "mm",
+      "basis": "conditional_source_scale",
+      "source": "Approximate nut seat x842 on callout15 bolt; inferred cast receiver must meet this plane."
+    },
+    "bolt_boss_radius": {
+      "value": 33,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "source": "Local bearing stock clipped to inherited M286 outer silhouette."
+    },
+    "bolt_nut_recess_radius": {
+      "value": 26,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "source": "Access pocket encloses the modeled castle nut and formed cotter."
+    },
+    "post_radius": {
+      "value": 23,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "source": "Inferred M285 projecting bolt boss around its recessed head."
+    },
+    "bolt_head_access_radius": {
+      "value": 21,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "source": "Open axial head-access counterbore;2mm minimum nominal boss wall; exact casting/access form unknown."
+    }
+  },
+  "limits": [
+    "The source supplies a section and callout identity, not a dimensioned manufacturing drawing. Four-pixel picking allowance does not cover drawing or calibration distortion.",
+    "Bolt shank nominal7/8in is retained despite the smaller illustrated shank under this calibration.",
+    "Recesses, boss diameters and counterbore access are inferred; exact thread, casting, assembly-tool and structural fits are unqualified."
+  ]
+}
