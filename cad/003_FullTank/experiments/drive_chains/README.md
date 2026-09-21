@@ -354,7 +354,7 @@ and unresolved cap/bush ownership. `transmission_brake_bearing_research.json`
 records the next M265/M266/M300 source interpretation. The split angle is assumed,
 elastic installation is unqualified, and standard tank 011 remains unchanged.
 
-The latest [bevel-support candidate](transmission_bevel_sleeve_build/TransmissionBevelSleeveCandidate.FCStd)
+The preceding [bevel-support candidate](transmission_bevel_sleeve_build/TransmissionBevelSleeveCandidate.FCStd)
 adds twelve M259/M261/M262/M310/screw/M300 occurrences and revises seven
 shaft/case/cover/sun/bush occurrences. The 1,129-solid fixture passes 117 affected
 material pairs, 326 interfaces and nineteen native/STEP material comparisons.
@@ -368,3 +368,18 @@ shows the unresolved 32.113 mm source-datum conflict. The [packet](../../packets
 retains exact approximations and the 31.387 mm sleeve-end gap. Six inspected
 images show the supports and stepped shaft. Complete bevel gears, clutch,
 shims, brake bearing, remaining fastening and standard integration remain open.
+
+The latest [bevel-drive candidate](transmission_bevel_gear_build/TransmissionBevelGearCandidate.FCStd)
+adds 70 leaves for 46-tooth wheels, 14-tooth input pinion, four-dog clutch, clutch
+rings, 24 rivets, shims and two thrust-bearing assemblies. It revises 13 earlier
+support/shaft/case leaves and retains 1,116 unchanged, totaling 1,199. The printed
+105 × 155 × 40 mm bearing envelope constrains the axial stack; its internal 19
+parts per bearing are inferred and count as two catalogue assemblies.
+
+All 458 material pairs, 497 interfaces, 83 STEP material comparisons and 109
+independent checks pass. The [source comparison](transmission_bevel_gear_build/source_review/bevel_drive_comparison.png)
+retains both axial registrations and their 32.113 mm discrepancy. The old sleeve
+gap is superseded by a 0.2 mm fit to the sun datum. The
+[packet](../../packets/I03-bevel-drive.md) records assumptions, rejected rivet/cage
+trials and remaining input/brake/fastening/control/lubrication work. Standard
+integration and the complete tank remain unfinished.

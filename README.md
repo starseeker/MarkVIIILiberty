@@ -84,7 +84,10 @@ sponson shields/supports, lower support retention, upper attachment/covers,
 exact drive/pinion bearing profiles, chain drive and remaining idler attachment details,
 louver spacing/support hardware, fittings and interiors still need population. The
 [visual progression](cad/VISUAL_PROGRESSION.md) preserves milestone isometrics,
-including a transparent-hull view from milestone011 onward.
+including a transparent-hull view from milestone011 onward. The isolated
+[transmission bevel-drive candidate](cad/003_FullTank/packets/I03-bevel-drive.md)
+now contains 1,199 parts, including bevel gears, clutch and thrust-bearing
+internals; standard-tank integration is pending.
 Track closure uses the
 printed pin pitch; wheel engagement remains unresolved. The complete tank and
 interior reconstruction remain in progress. Standard assembled geometry takes

@@ -11,6 +11,30 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 21 September 2026 — bevel drive and thrust bearings
+
+The [new candidate](experiments/drive_chains/transmission_bevel_gear_build/TransmissionBevelGearCandidate.FCStd)
+contains **1,199 valid single-solid occurrences**. Seventy new leaves populate
+both bevel wheels and clutch rings, the central shifter and input pinion,
+24 rivets, two shims and two decomposed thrust bearings. Thirteen earlier
+support/shaft/case occurrences change; 1,116 are retained unchanged.
+
+All 458 affected material pairs, 497 interfaces and 83 native/STEP
+material comparisons pass. The 109 independent checks include actual tooth
+counts, 26 sampled bevel-mesh positions, forward clutch engagement, printed
+bearing envelopes, shaft passages, rivet-head capture and displaced STEP
+negatives. Rejected missing-head rivets and a cage exchange-precision issue
+are preserved with their corrections in the [packet](packets/I03-bevel-drive.md).
+
+Seven inspected views compare the native bevel drive with SNL Plate22.
+Printed 105 × 155 × 40 mm bearings constrain the revised support stack, reducing
+the old 31.387 mm sleeve gap to 0.2 mm. The 32.113 mm source-registration conflict
+remains explicit; tooth pressure angle, bearing internals, fits and many
+profiles remain approximations. New cutaway snapshots preserve the visual
+increment. Standard tank 011 and its opaque/transparent views remain unchanged.
+Next populate the input bearings/housing/coupling, then remaining brake
+bearings, fastening, controls, lubrication, mounting and standard integration.
+
 ## 20 September 2026 — bevel sleeve supports and shaft passages
 
 The [new candidate](experiments/drive_chains/transmission_bevel_sleeve_build/TransmissionBevelSleeveCandidate.FCStd)

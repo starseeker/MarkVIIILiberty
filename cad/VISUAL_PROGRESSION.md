@@ -164,3 +164,15 @@ interior checkpoint retains standard milestone011 and both hull display views.
 
 `intermediate_snapshot_detail_transmission_bevel_supports_001.png` SHA-256:
 `981f6e83a1be155cd158eb620c2e2bbe4cd6569f4bd8aedd8664a73cd7669c27`.
+
+The bevel-drive increment (21 September 2026) preserves the
+[transmission cutaway](intermediate_snapshot_iso_transmission_bevel_001.png),
+[central section](intermediate_snapshot_detail_transmission_bevel_001.png) and
+[exposed gear mesh](intermediate_snapshot_iso_bevel_mesh_001.png). These show the
+1,199-leaf isolated candidate with 46/14-tooth bevel gears, four-dog clutch,
+rivets and decomposed thrust bearings. Source-datum disagreement and inferred
+internal profiles remain explicit; input bearings and complete transmission
+integration are pending. Standard 011 and both hull views are preserved.
+`intermediate_snapshot_iso_transmission_bevel_001.png` SHA-256: `d3de93d41d3b1c6c573a2065976cd45942672483c02e3e9f21a841400c442f4d`.
+`intermediate_snapshot_detail_transmission_bevel_001.png` SHA-256: `44d41a1ae1fd598ea4ec737c0ef1cb302a6a10825735154e08da84ff234e3faa`.
+`intermediate_snapshot_iso_bevel_mesh_001.png` SHA-256: `c035c19d179c974176e054a7c2468bd77f3d34069d33b90931cd604fffae4f8a`.
