@@ -135,3 +135,17 @@ snapshots, including transparent/opaque 011, remain preserved.
 
 `intermediate_snapshot_detail_transmission_small_pins_001.png` SHA-256:
 `77794f427b6d298ccd037b8daa18c35fc8667357363cae0b1703ca939776b109`.
+
+The [sun-retention cutaway](intermediate_snapshot_iso_transmission_retention_001.png)
+and [sleeve/drum section](intermediate_snapshot_detail_transmission_sun_retention_001.png)
+record the two small-sun M290 rings and four revised sleeve/drum occurrences
+(20 September 2026). Six M290 rings now share one definition in the 1,117-solid
+fixture. The close view exposes the groove collar, shoulder and counterbore;
+fits and split angle remain inferred. Brake bearings and standard integration
+remain open. Standard milestone 011 and all previous views are preserved.
+
+`intermediate_snapshot_iso_transmission_retention_001.png` SHA-256:
+`9f72097204650212350519d3a5b490d9dd4c2c3e34bcc62e43da3011e9431de7`.
+
+`intermediate_snapshot_detail_transmission_sun_retention_001.png` SHA-256:
+`39e5c9b60ed47b93d0783d0b82b60f495076693c1e70c99c1018839aec73c59e`.

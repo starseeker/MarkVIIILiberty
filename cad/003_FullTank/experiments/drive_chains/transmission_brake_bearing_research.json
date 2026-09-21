@@ -1,0 +1,65 @@
+{
+  "status": "source_joint_interpretation_open_after_sun_retention",
+  "inspected_source_hashes": {
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p056.jpg": "9991e2616ca3921fefa9e7b921cf636c6bae4a8d6271fda1775c4a3893c362f7",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p165.jpg": "c2c36adc13998f26cbc536b6d341b375cfcc3bc5617126090274ff3279c51925",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p294-geometry.png": "688d9d28aa4af2e91b7e2d78caea16142a0b7462af8a4517637e8263b8dea400",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p295-geometry.png": "0d845e3964faf559cc5dd3047625adf72226a6babb0af17c801b3a6006a34c53",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII061.jpg": "799dce6d29bd4aba793e209884887022971c9e63bdf533d7877622eb016190d9",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII062.jpg": "82db9bdab044e307427993548760bd4346434e96ab57a4f91a31821748261d12"
+  },
+  "next_physical_parts": [
+    {
+      "mark": "M265",
+      "part_id": "P_09847f344df2705e",
+      "count": 2,
+      "records": [
+        "SNL:44:013",
+        "SNL:253:005"
+      ],
+      "callout": 41
+    },
+    {
+      "mark": "M266",
+      "part_id": "P_0e366f514040386e",
+      "count": 2,
+      "records": [
+        "SNL:56:007"
+      ],
+      "callout": 38
+    },
+    {
+      "mark": "M300",
+      "part_id": "P_639003647733b1a1",
+      "count": 2,
+      "records": [
+        "SNL:56:008"
+      ],
+      "printed_diameter_mm": 15.875,
+      "printed_length_mm": 12.7,
+      "reuse_existing_definition_if_same": true
+    }
+  ],
+  "observations": [
+    "SNL56 brake-bearing cap assembly comprises one M266 cap and one M300 bronze dowel. Assembly row itself is not an extra solid.",
+    "HB122 legend:38 M266 cap;39 M277 case;40 M290 ring;41 M265 bush;42 M269 drum;43 M268 bush;44 M267 sun sleeve.",
+    "Tracing the enlarged original:38 points to the lower cup-like contour near source x1200,y705;39 to the adjacent case atx1133,y690;41 to the thin boundary nearx1240,y666. Earlier scratch speculation reversing cap/bush leader ownership was rejected.",
+    "The enlarged HB Plate73 confirms these leaders more clearly than the SNL raster. Upper/lower outlines and shaded regions differ, so copying one into a full revolved bearing could assign the wrong part boundary.",
+    "HB120 high-speed progression explicitly distinguishes held small sun F/high-speed brake G from rotating planet-pin housing Q. New bearing topology must accommodate relative rotation.",
+    "M290 sun rings are now modeled independently of this unresolved bearing interface. Their separate retention does not settle the M265/M266 attachment.",
+    "Existing M269 web atsourcex1304 and hub endx1180 are retained by the ring stage. A preliminary suspicion that the web belonged atx1180 was not established; do not reverse the drum based on that speculation."
+  ],
+  "next_actions": [
+    "Resolve M265/M266/M277 journal ownership and whether cap attachment is an annular threaded joint or another construction before declaring the stack populated.",
+    "Cross-check other available original transmission views or photographs and catalogue fastening references; use explicit approximate interfaces where source detail cannot resolve exact form.",
+    "Reuse the existing M300 solid only after its location, direction and two receiving parts are specified.",
+    "Validate all revised sun/drum/neck shapes together and retain existing gear centers, teeth, source calibration and protected support regions."
+  ],
+  "not_qualified": [
+    "bearing load path",
+    "cap attachment method",
+    "historical running fits",
+    "oil path",
+    "elastic ring installation"
+  ]
+}

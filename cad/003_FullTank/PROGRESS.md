@@ -11,6 +11,27 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — small-sun retaining rings
+
+The [new candidate](experiments/drive_chains/transmission_sun_retention_build/TransmissionSunRetentionCandidate.FCStd)
+adds both M290 small-sun rings and revises the mating sun sleeves and brake
+drums. It contains **1,117 valid solids**, with 1,111 previous occurrences
+unchanged. Six M290 occurrences now reuse one definition, matching SNL165's
+four shaft rings plus two pinion rings.
+
+Complete groove collars, smooth shoulders and drum counterbores provide nominal
+static retention. All 30 affected material pairs, 300 specified interfaces,
+12 capture trials and six native/STEP comparisons pass. Independent checks
+cover capture direction, actual native radii, source stations, definition reuse
+and deliberately displaced exports. Four final views were inspected; the ring
+split was moved out of the source section, with its angle recorded as assumed.
+
+The [source comparison](experiments/drive_chains/transmission_sun_retention_build/source_review/sun_retention_comparison.png)
+retains the existing calibration and exposes remaining hub/profile differences.
+M265/M266 cap and bush ownership is still unresolved; this stage does not claim
+to complete that bearing. The [packet](packets/I03-sun-retention.md) records the
+limits and next work. Standard tank 011 and all earlier snapshots remain intact.
+
 ## 20 September 2026 — small planet supports and swept input disks
 
 The [new transmission candidate](experiments/drive_chains/transmission_small_support_build/TransmissionSmallSupportCandidate.FCStd)

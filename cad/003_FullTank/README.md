@@ -92,13 +92,14 @@ remains preserved from snapshot 008.
 The [lower-support packet](packets/R02-lower-supports.md) records source allocations,
 front skirt refinement, native bearing/receiver checks and unfinished retention.
 
-The latest isolated [transmission candidate](experiments/drive_chains/transmission_small_support_build/TransmissionSmallSupportCandidate.FCStd)
-contains 1,115 valid solids, including both planetary gear/support stacks and
-swept input disks with separate rivets. The [support packet](packets/I03-small-planet-supports.md)
-records 56 added occurrences, the source-derived rivet station, native/STEP
-checks and inspected comparisons. The earlier tooth-count, disk-row and casting
-uncertainties remain documented. Sun/brake bearings, retention, bevel drive,
-case fastening and standard-tank integration remain open.
+The latest isolated [transmission candidate](experiments/drive_chains/transmission_sun_retention_build/TransmissionSunRetentionCandidate.FCStd)
+contains 1,117 valid solids, including both planetary gear/support stacks,
+swept input disks and the two small-sun retaining rings. All six M290 rings
+reuse one definition. The [retention packet](packets/I03-sun-retention.md)
+records the sleeve collars, drum counterbores, native/STEP checks and inspected
+source comparisons. Earlier tooth-count, disk-row and casting uncertainties
+remain documented. Brake bearings, bevel drive, case fastening and standard-tank
+integration remain open.
 It has not yet replaced the standard tank's transmission layout.
 
 Additional commands:

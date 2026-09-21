@@ -1,0 +1,138 @@
+{
+  "status": "isolated_output_sleeve_and_ring_candidate",
+  "controls": {
+    "journal_radial_gap": {
+      "value": 0.1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Nominal sleeve/shaft radial display clearance; no manufacturing fit established."
+    },
+    "inner_bush_radius": {
+      "value": 65.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Barrel radius estimated from Plate22; not independently dimensioned."
+    },
+    "inner_flange_radius": {
+      "value": 72,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Flange radius estimated from Plate22."
+    },
+    "inner_flange_stock": {
+      "value": 3,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Axial flange thickness beyond retained journal endpoints."
+    },
+    "outer_bush_radius": {
+      "value": 55,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Barrel radius estimated from Plate22."
+    },
+    "outer_flange_radius": {
+      "value": 61,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Flange radius estimated from Plate22."
+    },
+    "ring_inner_radius": {
+      "value": 46.2,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Same source identity and common geometry at both shaft ends."
+    },
+    "ring_outer_radius": {
+      "value": 57,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Inferred retention lip outside the shaft root; planet-disk interface remains pending."
+    },
+    "ring_gap_width": {
+      "value": 3,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Open ring gap for a separate C-shaped solid; original section and spring form unknown."
+    },
+    "ring_groove_radius": {
+      "value": 46,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Inferred reduced groove root in M289; no strength qualification."
+    },
+    "ring_axial_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Each groove wall lies this far beyond the ring face."
+    },
+    "dowel_radial_engagement": {
+      "value": 6.35,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Half the printed dowel length seats inside the shaft journal."
+    },
+    "dowel_hole_radial_gap": {
+      "value": 0.05,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Nominal clearance for separate dowel solids in shaft and sleeve."
+    },
+    "dowel_hole_bottom_gap": {
+      "value": 0.1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Blind shaft pocket extends beyond the dowel tip."
+    },
+    "retention_translation_witness": {
+      "value": 1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Axial displacement used to test ring/groove capture; not a pose."
+    },
+    "dowel_axial_witness": {
+      "value": 3,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Sleeve-only axial displacement used to test dowel capture."
+    },
+    "dowel_diameter": {
+      "value": 15.875,
+      "unit": "mm",
+      "basis": "printed_dimension",
+      "interpretation": "SNL44: 5/8 inch bronze dowel."
+    },
+    "dowel_length": {
+      "value": 12.7,
+      "unit": "mm",
+      "basis": "printed_dimension",
+      "interpretation": "SNL44: 1/2 inch bronze dowel."
+    },
+    "dowel_twist_witness": {
+      "value": 3,
+      "unit": "degree",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Sleeve-only twist used to test dowel torque capture."
+    }
+  },
+  "conditional_image_picks": {
+    "image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p294-geometry.png",
+    "scale_record": "transmission_output_calibration.json",
+    "outer_bush_barrel_end_x_px": [
+      86,
+      266
+    ],
+    "outer_flange_stock_px": 8,
+    "ring_width_px": 8,
+    "ring_center_x_px": [
+      286,
+      866
+    ],
+    "endpoint_pick_allowance_px": 4,
+    "inner_bush_barrel": "Retain the existing M289 smooth inner-journal endpoints from transmission_output_calibration.json."
+  },
+  "interface_hypothesis": "Dowel locks each sleeve to the rotating shaft; fixed bracket/cap and poured babbitt to follow. Radial sleeve bore is open at OD for dowel insertion; shaft pocket is blind.",
+  "historical_fit_qualified": false,
+  "qualified_parameter_ranges": false
+}

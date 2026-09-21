@@ -328,7 +328,7 @@ and [combined cutaway](transmission_small_build/source_review/coupled_trains_cut
 show how the new gears fit the retained assembly; small supports, brake bearings,
 retention and standard integration remain unfinished.
 
-The latest [small-support candidate](transmission_small_support_build/TransmissionSmallSupportCandidate.FCStd)
+The preceding [small-support candidate](transmission_small_support_build/TransmissionSmallSupportCandidate.FCStd)
 adds 56 support occurrences and revises 38 case/disk/ring/rivet occurrences.
 It contains 1,115 valid solids. All 416 material pairs, 296 interfaces, six gear
 meshes, ten tooth counts and 94 bounded native/STEP material comparisons pass.
@@ -338,3 +338,18 @@ shows the cubic swept disk and source-positioned rivets alongside the new
 planet-pin and ring-bolt supports. The [packet](../../packets/I03-small-planet-supports.md)
 records the source discrepancies, flat rivet-seat correction and limits.
 Brake bearings/retention, central bevel/input and standard integration remain open.
+
+The latest [sun-retention candidate](transmission_sun_retention_build/TransmissionSunRetentionCandidate.FCStd)
+adds the two M290 rings assigned to the small sun pinions. All six catalogue
+rings now share one definition. Four sleeve/drum occurrences receive complete
+groove collars, smooth shoulders and counterbores; 1,111 earlier occurrences
+remain unchanged in the 1,117-solid fixture. All 30 affected material pairs,
+300 interfaces, 12 capture trials and six native/STEP comparisons pass.
+Independent checks confirm eight capture directions, 20 radii, ring stations,
+definition reuse and three deliberate export-displacement failures.
+
+The [section comparison](transmission_sun_retention_build/source_review/sun_retention_comparison.png)
+and [work packet](../../packets/I03-sun-retention.md) preserve the inferred fits
+and unresolved cap/bush ownership. `transmission_brake_bearing_research.json`
+records the next M265/M266/M300 source interpretation. The split angle is assumed,
+elastic installation is unqualified, and standard tank 011 remains unchanged.
