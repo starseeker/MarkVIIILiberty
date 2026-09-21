@@ -1,0 +1,25 @@
+{
+  "controls": {
+    "rivet_center_x_px": {
+      "value": 1065,
+      "unit": "source_pixel",
+      "basis": "conditional_source_pick",
+      "source": "SNLPlate22 upper ring rivet approximate center; inherited common calibration"
+    },
+    "transition_start_radius": {
+      "value": 174,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "transition_end_radius": {
+      "value": 204.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "source": "Flat rivet seat begins inside the head footprint: circle215 minus headbase9.7738 minus radial margin0.7262mm. Earlier206mm transition caused0.023mm3 interference per head."
+    }
+  },
+  "limits": [
+    "The axial center is calibrated from a schematic section; cast transition radii and cubic poles remain approximations.",
+    "Constant axial web thickness is retained; no constant normal stock, foundry or strength qualification."
+  ]
+}

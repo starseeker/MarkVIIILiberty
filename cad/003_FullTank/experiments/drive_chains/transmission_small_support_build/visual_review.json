@@ -1,0 +1,34 @@
+{
+  "status": "visually_reviewed_partial_small_planet_support_and_swept_disk_reconstruction",
+  "native_sha256": "0385401a5e708dfb1086e99f4b1f70c44ba7e4ef05689377efdfe0fe3b52bccc",
+  "report_sha256": "dfdd7d224a6276f1728642ef07efb24063f05e40fd465fb4c2f7a113d34f36a8",
+  "exchange_sha256": "16e761f75753008b5083011734bdc5fd7b66ed0ceab44d7f70f025f43aa8456a",
+  "interface_checks_sha256": "4ae47b6962fb8f8aadd145385403bea99b6a89bf4e29ea35a18c97d05ad9814b",
+  "source_render_receipt_sha256": "720cc8358a58588a5767b4cd947f39258e960c2228b35097acd9b3c8efd0edeb",
+  "actually_viewed_rasters": {
+    "supported_small_planets.png": "873edf6c1a98477d068e705eb6d98e3431ba1002f8f1f4cd1493d56cb1c80d0f",
+    "small_support_cutaway.png": "f56fccba6d64b576286d5fb1c6bd5a8bc23ca3fe2901bca3bbde7792a3afb52a",
+    "source_review/small_train_comparison.png": "2dfdc39193a36d886a68dde5e480f41d59e1b25331ed058a73b2cbc5d58a2815",
+    "source_review/coupled_trains_cutaway.png": "75adb4749160b51952aafecd8491f27f604733f484da95f159216cd1c4e8197b",
+    "source_review/small_train_overlay.png": "d3f0f91d7934c1d0862518a29b3eceb9c12c1f57f55ceb6886862894df6c203a",
+    "source_review/small_ring_bolt_section.png": "3530e11b53eb49ff5d544e71d859a34cd1ea4925f46f210f7efb0b727133b4df",
+    "source_review/small_pin_section.png": "77794f427b6d298ccd037b8daa18c35fc8667357363cae0b1703ca939776b109"
+  },
+  "preserved_snapshots": {
+    "cad/intermediate_snapshot_iso_transmission_small_supports_001.png": "75adb4749160b51952aafecd8491f27f604733f484da95f159216cd1c4e8197b",
+    "cad/intermediate_snapshot_detail_transmission_small_pins_001.png": "77794f427b6d298ccd037b8daa18c35fc8667357363cae0b1703ca939776b109"
+  },
+  "findings": [
+    "Supported-planet oblique shows the three bushed pins, alternating ring bolts and common pin ring. These were absent from the preceding small-gear candidate.",
+    "Pin section exposes the separate steel sleeve and bronze bush, hollow pin, reused dished plug, nut and split pin. Ring-bolt section exposes the opposite insertion direction and recessed nut/cotter seat. Cast shoulders and hardware profiles are inferred.",
+    "Combined cutaway shows both planetary trains with their physical support stacks. The input disk now has a cubic swept transition to the riveted rim. No native placement is changed for these inspection sections.",
+    "Actual native/source overlay retains the original conditional scale. The rivet center now projects to source pixel1065; its previous15.0218mm axial discrepancy is resolved at that chosen source pick. The nominal rivet/case gap is0.569988mm, overturning the earlier collision concern.",
+    "The source rivet/head outline is shorter than the retained printed-stock reconstruction; matching its center does not establish the historical grip or head contour. Disk transition poles and radial stations remain assumptions.",
+    "The small planet/pin center remains7.25714mm outside the approximate illustrated radius. Printed tooth counts and pitch control the gear centers. The M276 printed tooth-row and M272/M273 naming conflicts remain recorded.",
+    "First swept trial left about0.0227mm3 overlap beneath each rivet head. Ending the curve atR204.5 rather than206 leaves a flat seating land; final416 material pairs have no detected overlaps.",
+    "One raw coincident-face STEP cut failed for a cotter. Bounded fuzzy material comparisons preserve all94 exported solids without increasing stored tolerances; all8 deliberately shifted1micron solids are detected by the independent checker.",
+    "The high-speed drum and external sun-sleeve/brake-bearing region still differ from the illustrated contours. M265/M266 bearings, M290 retention and adjacent spline/hub profiles require joint refinement next."
+  ],
+  "accepted_scope": "Nominal static small planet supports and swept disk/ring revision. No full transmission, thread load, historical fit, motion or parameter-envelope qualification.",
+  "next": "Refine the external M267/M269/M277 bearing stack; add M265/M266, M290 retainers and M300 cap dowels, then central bevel/input and remaining case/brake/lubrication work before standard integration."
+}

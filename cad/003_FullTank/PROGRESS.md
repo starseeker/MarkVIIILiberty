@@ -11,6 +11,36 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 20 September 2026 — small planet supports and swept input disks
+
+The [new transmission candidate](experiments/drive_chains/transmission_small_support_build/TransmissionSmallSupportCandidate.FCStd)
+adds 56 small-planet support occurrences and revises 38 case, disk, ring and
+rivet occurrences. It contains **1,115 valid solids**, with 1,021 earlier
+occurrences unchanged. The pins, bushes, support rings, plugs and retaining
+hardware are separate linked parts. The existing expansion-plug definition is
+reused. The disk now has a cubic spline transition to its rim.
+
+All 416 material pairs are clear; 296 interfaces, six gear meshes, ten tooth
+counts and 94 native/STEP comparisons pass. Independent checks confirm 48 local
+retention outcomes, 24 dimensions, six shared definitions, eight displaced STEP
+failures, and the native spline/source stations. A bounded comparison handles
+one cotter's coincident-face Boolean issue without changing stored tolerances.
+
+The [source overlay](experiments/drive_chains/transmission_small_support_build/source_review/small_train_comparison.png)
+shows the rivets at the source-derived axial station, correcting the earlier
+15.022 mm discrepancy. The actual rivet clears the case by about 0.570 mm;
+the previous concern about a necessary collision was too conservative. A flat
+land beneath each head resolves the first swept-disk trial's small overlaps.
+The planet-center discrepancy and source/profile uncertainties remain explicit
+in the [work packet](packets/I03-small-planet-supports.md).
+
+Seven views were inspected. New [combined cutaway](../intermediate_snapshot_iso_transmission_small_supports_001.png)
+and [pin-section](../intermediate_snapshot_detail_transmission_small_pins_001.png)
+snapshots preserve the improvement. Standard tank 011 and its transparent/opaque
+views remain unchanged. Next are the sun/brake-bearing stack, retention and cap
+dowels, followed by central bevel/input, remaining fastening, brakes, lubrication
+and integration.
+
 ## 20 September 2026 — small planetary gears and riveted input disks
 
 The [small-train candidate](experiments/drive_chains/transmission_small_build/TransmissionSmallCandidate.FCStd)

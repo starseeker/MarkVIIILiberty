@@ -120,3 +120,18 @@ are unfinished. Standard milestone 011 and all earlier images remain unchanged.
 `8087bc84fe79bed20684e63d1fee3d2e66a8cfc76f1efe2f88195641bfc5195f`.
 `intermediate_snapshot_detail_transmission_small_001.png` SHA-256:
 `263623a1d20c510169004966f381afe2aec7c911d11765c364f4e8bed1958cb8`.
+
+The [small-support cutaway](intermediate_snapshot_iso_transmission_small_supports_001.png)
+and [small pin section](intermediate_snapshot_detail_transmission_small_pins_001.png)
+record 56 additional support occurrences and 38 revised case/disk/ring/rivet
+occurrences (20 September 2026). The 1,115-solid fixture has both planetary
+support stacks. A cubic swept input disk brings the rivet center to its source
+station; the planet-center and exact-profile uncertainties remain. This is an
+isolated transmission checkpoint, not standard tank milestone 012. All prior
+snapshots, including transparent/opaque 011, remain preserved.
+
+`intermediate_snapshot_iso_transmission_small_supports_001.png` SHA-256:
+`75adb4749160b51952aafecd8491f27f604733f484da95f159216cd1c4e8197b`.
+
+`intermediate_snapshot_detail_transmission_small_pins_001.png` SHA-256:
+`77794f427b6d298ccd037b8daa18c35fc8667357363cae0b1703ca939776b109`.

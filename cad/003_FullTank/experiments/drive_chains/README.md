@@ -315,7 +315,7 @@ show the corrected station and inferred recessed receivers. See the
 [revision packet](../../packets/I03-ring-bolt-station.md); exact cast contours,
 case fastening, small gears and central bevel/input work remain open.
 
-The latest [small planetary candidate](transmission_small_build/TransmissionSmallCandidate.FCStd)
+The preceding [small planetary candidate](transmission_small_build/TransmissionSmallCandidate.FCStd)
 adds 46 occurrences: both small gear sets, separate sun bushes, input disks,
 rings and 32 rivets. One cross shaft receives smooth sun-bush journals, while
 1,012 earlier occurrences remain unchanged. All 166 material candidate pairs,
@@ -327,3 +327,14 @@ profile discrepancies. The [source comparison](transmission_small_build/source_r
 and [combined cutaway](transmission_small_build/source_review/coupled_trains_cutaway.png)
 show how the new gears fit the retained assembly; small supports, brake bearings,
 retention and standard integration remain unfinished.
+
+The latest [small-support candidate](transmission_small_support_build/TransmissionSmallSupportCandidate.FCStd)
+adds 56 support occurrences and revises 38 case/disk/ring/rivet occurrences.
+It contains 1,115 valid solids. All 416 material pairs, 296 interfaces, six gear
+meshes, ten tooth counts and 94 bounded native/STEP material comparisons pass.
+Independent retention, dimension, shared-definition and deliberate export-offset
+checks also pass. The [source comparison](transmission_small_support_build/source_review/small_train_comparison.png)
+shows the cubic swept disk and source-positioned rivets alongside the new
+planet-pin and ring-bolt supports. The [packet](../../packets/I03-small-planet-supports.md)
+records the source discrepancies, flat rivet-seat correction and limits.
+Brake bearings/retention, central bevel/input and standard integration remain open.
