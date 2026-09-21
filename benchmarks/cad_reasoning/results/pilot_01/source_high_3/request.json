@@ -1,0 +1,36 @@
+{
+  "case": "source",
+  "effort": "high",
+  "repeat": 3,
+  "index": 21,
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--strict-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--model",
+    "gpt-6-astra",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "--json",
+    "--cd",
+    "/home/cyapp/MarkVIIILiberty/.work/cad-benchmark/trials/source_high_3",
+    "--output-schema",
+    "/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/fixtures/source/schema.json",
+    "--output-last-message",
+    "/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/results/pilot_01/source_high_3/answer.json",
+    "--image",
+    "/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/fixtures/plate21.png",
+    "-"
+  ],
+  "started_unix": 1790003666.869942,
+  "prompt_sha256": "7d241e0bca1187c1c95383e462b91b10ec81d5c9679aa30b6d0d3938667f30ef",
+  "schema_sha256": "137180f0f662b59b7d3b758b9fa63e7aa6c25b2e09e1962959844aa05791c655",
+  "image_hashes": {
+    "plate21.png": "0d9bc7a612d9cbe2f9d4d5a4d7bbc3832b00f6ef9085aceebb601a3ec4804a6f"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "case": "repair",
+  "effort": "xhigh",
+  "repeat": 3,
+  "index": 26,
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--strict-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--model",
+    "gpt-6-astra",
+    "-c",
+    "model_reasoning_effort=\"xhigh\"",
+    "--json",
+    "--cd",
+    "/home/cyapp/MarkVIIILiberty/.work/cad-benchmark/trials/repair_xhigh_3",
+    "--output-schema",
+    "/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/fixtures/repair/schema.json",
+    "--output-last-message",
+    "/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/results/pilot_01/repair_xhigh_3/answer.json",
+    "-"
+  ],
+  "started_unix": 1790003935.3478594,
+  "prompt_sha256": "16ce800123c36f57bb601ddec3c37d90ad29fe299ba3ea3696a43bebb4306d4e",
+  "schema_sha256": "9ce00059abb5ff56026aa87efc2b8f9dcc76f8ef3f6c4202e33012a9878ed4c5",
+  "image_hashes": {}
+}

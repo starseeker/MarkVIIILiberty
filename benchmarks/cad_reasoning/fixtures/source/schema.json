@@ -1,0 +1,66 @@
+{
+  "type": "object",
+  "properties": {
+    "callout_28_mark": {
+      "type": "string"
+    },
+    "callout_30_mark": {
+      "type": "string"
+    },
+    "bearing_end_mark": {
+      "type": "string"
+    },
+    "separate_components": {
+      "type": "boolean"
+    },
+    "ring_location": {
+      "type": "string",
+      "enum": [
+        "external",
+        "internal",
+        "uncertain"
+      ]
+    },
+    "endpoint_28": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "endpoint_30": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "exact_ring_diameter_mm": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "historical_fit_proven": {
+      "type": "boolean"
+    },
+    "explanation": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "callout_28_mark",
+    "callout_30_mark",
+    "bearing_end_mark",
+    "separate_components",
+    "ring_location",
+    "endpoint_28",
+    "endpoint_30",
+    "exact_ring_diameter_mm",
+    "historical_fit_proven",
+    "explanation"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,63 @@
+{
+  "case": "source",
+  "effort": "high",
+  "repeat": 2,
+  "index": 10,
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--strict-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--model",
+    "gpt-6-astra",
+    "-c",
+    "model_reasoning_effort=\"high\"",
+    "--json",
+    "--cd",
+    "/home/cyapp/MarkVIIILiberty/.work/cad-benchmark/trials/source_high_2",
+    "--output-schema",
+    "/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/fixtures/source/schema.json",
+    "--output-last-message",
+    "/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/results/pilot_01/source_high_2/answer.json",
+    "--image",
+    "/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/fixtures/plate21.png",
+    "-"
+  ],
+  "started_unix": 1790003138.1295238,
+  "prompt_sha256": "7d241e0bca1187c1c95383e462b91b10ec81d5c9679aa30b6d0d3938667f30ef",
+  "schema_sha256": "137180f0f662b59b7d3b758b9fa63e7aa6c25b2e09e1962959844aa05791c655",
+  "image_hashes": {
+    "plate21.png": "0d9bc7a612d9cbe2f9d4d5a4d7bbc3832b00f6ef9085aceebb601a3ec4804a6f"
+  },
+  "returncode": 0,
+  "timed_out": false,
+  "cli_seconds": 25.147445454989793,
+  "grading_seconds": 0.12102349499764387,
+  "usage": {
+    "input_tokens": 15959,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 667,
+    "reasoning_output_tokens": 444
+  },
+  "unexpected_tool_events": [],
+  "malformed_event_lines": [],
+  "parse_error": null,
+  "transport_ok": true,
+  "passed": true,
+  "grade_summary": {
+    "passed": true,
+    "passed_checks": 9,
+    "total_checks": 9
+  },
+  "finished_unix": 1790003163.4026506,
+  "artifact_hashes": {
+    "events.jsonl": "2152c7c8c422ba6f7fcfaa33504fbf576e8d7f93af4b42aa7474be3a65991ed4",
+    "stderr.log": "3e75d28a6681c31400a3f0fcb564c7613fd42796fb83294e4d53fea86bcbd401",
+    "answer.json": "abac85e6d3ec2ab6b5f1004632ef0572e0c6d8cd271394d6ee56732a15f6b48a"
+  }
+}

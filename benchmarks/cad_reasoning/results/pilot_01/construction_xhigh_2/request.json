@@ -1,0 +1,32 @@
+{
+  "case": "construction",
+  "effort": "xhigh",
+  "repeat": 2,
+  "index": 13,
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--strict-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--model",
+    "gpt-6-astra",
+    "-c",
+    "model_reasoning_effort=\"xhigh\"",
+    "--json",
+    "--cd",
+    "/home/cyapp/MarkVIIILiberty/.work/cad-benchmark/trials/construction_xhigh_2",
+    "--output-schema",
+    "/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/fixtures/construction/schema.json",
+    "--output-last-message",
+    "/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/results/pilot_01/construction_xhigh_2/answer.json",
+    "-"
+  ],
+  "started_unix": 1790003228.4545314,
+  "prompt_sha256": "8950786a15dd5694c29fe3bb23e6427aa24ee4202acb94ec65be09568341d8d8",
+  "schema_sha256": "9ce00059abb5ff56026aa87efc2b8f9dcc76f8ef3f6c4202e33012a9878ed4c5",
+  "image_hashes": {}
+}

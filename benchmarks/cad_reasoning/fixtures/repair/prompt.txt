@@ -1,0 +1,46 @@
+This is an isolated empirical benchmark, not an instruction to continue the tank project.
+All necessary inputs are in this prompt and any attached image. Do not use any tools,
+read files, search the web, delegate, or inspect project history. Return only the JSON
+object required by the supplied output schema. Give a concise explanation, not a
+reasoning transcript. Your output will be assessed outside this session. State
+uncertainty honestly. Do not assume an unknown dimension from apparent drawing scale.
+A collar generator passes nominal-size checks but fails a smaller-size
+trial. Diagnose the cause and return a corrected pure FreeCAD function
+rebuild(parent, p) returning one valid collar TopoShape. The globals App, Part and
+math are supplied. No imports, file IO, documents, printing or GUI operations.
+Return python_code and explanation. Do not modify the input parent shape.
+
+All shapes use local X as the axis, mm. The supplied legacy parent has a mounting
+lip at X834.95..841.30 with outer radius114.3 and SIX actual screw clearance holes;
+body radius77 from841.30 onward; and an old FRONT rim of radius88 starting995.0
+and ending1002.95. Its old front bore radius is59.65. The rear bore radius52.65
+continues to842.95. Preserve every bit of the mounting lip and its six holes.
+
+Required new collar: the same mounting lip, a body whose outer radius is
+p['body_radius'] everywhere from p['lip_end'] to p['front'], a rear bore radius
+p['rear_bore'] from p['joint_face'] to p['bore_step'], and a main bore radius
+p['main_bore'] from p['bore_step'] to p['front']. No other forward rim is requested.
+Do not change receiving components, tolerances or the six lip holes to obtain a pass.
+Only body_radius and main_bore vary in the trial, by the same delta; parent stays
+fixed. A separate thrust lip has inner radius body_radius+0.15 over X991.95..1002.95.
+At nominal body_radius88 it clears; at body_radius87 a positive overlap appears.
+
+Faulty implementation:
+def xc(r, a, b):
+    return Part.makeCylinder(r, b-a, App.Vector(a,0,0), App.Vector(1,0,0))
+def rebuild(parent, p):
+    s = parent.fuse(xc(p['body_radius'], p['lip_end'], p['front']))
+    s = s.cut(xc(p['rear_bore'], p['joint_face']-1, p['bore_step']))
+    return s.cut(xc(p['main_bore'], p['bore_step'], p['front']+1)).removeSplitter()
+
+Nominal p:
+{
+  "joint_face": 834.95,
+  "lip_end": 841.3,
+  "front": 1002.95,
+  "bore_step": 842.95,
+  "rear_bore": 52.65,
+  "main_bore": 76.0,
+  "body_radius": 88.0,
+  "lip_radius": 114.3
+}

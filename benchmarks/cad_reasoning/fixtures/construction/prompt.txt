@@ -1,0 +1,48 @@
+This is an isolated empirical benchmark, not an instruction to continue the tank project.
+All necessary inputs are in this prompt and any attached image. Do not use any tools,
+read files, search the web, delegate, or inspect project history. Return only the JSON
+object required by the supplied output schema. Give a concise explanation, not a
+reasoning transcript. Your output will be assessed outside this session. State
+uncertainty honestly. Do not assume an unknown dimension from apparent drawing scale.
+Implement a pure FreeCAD Python function build(p, frame) returning
+{'bearing': TopoShape, 'sleeve': TopoShape}. The globals App (FreeCAD), Part and math
+are supplied. No imports, file IO, documents, printing or GUI operations. Return
+the function and helpers as a python_code string, plus a short explanation.
+Use parameters by key; the grader changes dimensions and installation frames.
+Millimetres, LOCAL X along the shaft; radius is measured in local Y/Z.
+
+Bearing: outer cylinder of radius outer_radius, from shoulder to bearing_end.
+The bore has radius rear_bore from shoulder to relief_start, radius relief_radius
+from relief_start to relief_end, and radius front_bore from relief_end to bearing_end.
+Sleeve: barrel radius sleeve_radius from x0 to x0+sleeve_length, plus an integral
+rear flange of radius outer_radius from x0 to shoulder. Its bore is a circle of
+radius sleeve_bore UNION groove_count straight radial rectangular grooves.
+Each groove extends from radius zero to groove_root in its radial direction and
+has total tangential width groove_width; rotate evenly around local X, starting
+along +Y (angle zero). Extrude this entire bore/groove void through the full sleeve.
+This defines rectangular-ended grooves, not an involute spline or radial circular
+arcs. Keep the bearing and sleeve as separate one-solid, valid shapes. They nest
+axially: the sleeve barrel enters the bearing rear bore; do not lay them end to end.
+No fillets or other details are requested.
+
+Apply the supplied App.Placement frame to each finished LOCAL shape exactly once.
+Return shapes in world coordinates. Example frame: translation (112,-37,84),
+rotation 27 degrees about axis (1,2,3); other frames will also be checked.
+Nominal p:
+{
+  "x0": 842.95,
+  "shoulder": 853.15,
+  "sleeve_length": 68.2498,
+  "bearing_end": 994.95,
+  "outer_radius": 76.0,
+  "rear_bore": 57.3,
+  "front_bore": 50.8254,
+  "relief_radius": 69.0,
+  "relief_start": 893.15,
+  "relief_end": 969.95,
+  "sleeve_radius": 57.15,
+  "sleeve_bore": 44.8437,
+  "groove_root": 50.525,
+  "groove_width": 5.0,
+  "groove_count": 24
+}

@@ -1,0 +1,9 @@
+{
+  "reason": "The candidate contract permits pure Python. Grader v1 accidentally omitted the ordinary all/any builtins; xhigh repair trial 1 failed before CAD evaluation.",
+  "change": "Add only all and any to the candidate builtin allowlist. All geometry/source criteria and tolerances remain byte-identical.",
+  "v1_sha256": "d51d5cc2f7f0c3e4b045e545f48ff3c4000cbe7990387a723e665d373dc3cec6",
+  "v2_sha256": "1d1b46704a86ef24edd45d9a74f5c2cc9f8338a77379a21f4da61a82e033ffe6",
+  "policy": "Keep all original grades; re-score every unchanged saved answer using v2. No replacement inference runs.",
+  "first_affected_trial": "repair_xhigh_1",
+  "launcher_fix": "Resolve an explicitly supplied output directory before configuring Qt/FreeCAD paths; relative user-setting paths cause Qt to abort. Original inference runner already supplied absolute paths."
+}

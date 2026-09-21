@@ -1,0 +1,22 @@
+This is an isolated empirical benchmark, not an instruction to continue the tank project.
+All necessary inputs are in this prompt and any attached image. Do not use any tools,
+read files, search the web, delegate, or inspect project history. Return only the JSON
+object required by the supplied output schema. Give a concise explanation, not a
+reasoning transcript. Your output will be assessed outside this session. State
+uncertainty honestly. Do not assume an unknown dimension from apparent drawing scale.
+Read the attached full SNL G-13 Plate 21 (1447 by 1055 pixels).
+Catalogue transcriptions, not geometrical interpretations:
+SNL p67 row20: COLLAR, clutch spring thrust; mark SH998B; Plate21 ident28; quantity1.
+SNL p165 row1: RING, clutch snap; mark SH861E; Plate21 ident30; quantity1.
+
+Trace both callout leaders to their component endpoints. Identify the mark of the
+large annular piece that closes the LEFT end of the long central bearing in this
+image. Decide whether callout30 is a separate ring and whether it sits externally
+on the collar or internally in the large bearing bore. Give approximate leader
+endpoint coordinates in the FULL original image (origin top left; x right, y down).
+Do not give the coordinates of the printed number. Decide whether these inputs
+establish an exact ring diameter or justify claiming historical dimensional fit.
+The fields are: callout_28_mark, callout_30_mark, bearing_end_mark,
+separate_components, ring_location (external/internal/uncertain), endpoint_28,
+endpoint_30, exact_ring_diameter_mm (null if not established), historical_fit_proven,
+and explanation. Keep explanation under 180 words.

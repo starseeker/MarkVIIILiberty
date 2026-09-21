@@ -1,0 +1,99 @@
+{
+  "completed": 27,
+  "planned": 27,
+  "rescored": 27,
+  "efforts": [
+    {
+      "effort": "medium",
+      "runs": 9,
+      "valid_runs": 9,
+      "passes": 9,
+      "mean_cli_seconds": 27.39661580077437,
+      "total_cli_seconds": 246.56954220696934,
+      "usage": {
+        "input_tokens": 133512,
+        "cached_input_tokens": 0,
+        "output_tokens": 6457,
+        "reasoning_output_tokens": 2256
+      },
+      "cases": {
+        "source": {
+          "passes": 3,
+          "runs": 3
+        },
+        "construction": {
+          "passes": 3,
+          "runs": 3
+        },
+        "repair": {
+          "passes": 3,
+          "runs": 3
+        }
+      }
+    },
+    {
+      "effort": "high",
+      "runs": 9,
+      "valid_runs": 9,
+      "passes": 9,
+      "mean_cli_seconds": 37.79777131911154,
+      "total_cli_seconds": 340.17994187200384,
+      "usage": {
+        "input_tokens": 133512,
+        "cached_input_tokens": 0,
+        "output_tokens": 9121,
+        "reasoning_output_tokens": 4676
+      },
+      "cases": {
+        "source": {
+          "passes": 3,
+          "runs": 3
+        },
+        "construction": {
+          "passes": 3,
+          "runs": 3
+        },
+        "repair": {
+          "passes": 3,
+          "runs": 3
+        }
+      }
+    },
+    {
+      "effort": "xhigh",
+      "runs": 9,
+      "valid_runs": 9,
+      "passes": 9,
+      "mean_cli_seconds": 71.85098186522211,
+      "total_cli_seconds": 646.658836786999,
+      "usage": {
+        "input_tokens": 133530,
+        "cached_input_tokens": 0,
+        "output_tokens": 20074,
+        "reasoning_output_tokens": 15664
+      },
+      "cases": {
+        "source": {
+          "passes": 3,
+          "runs": 3
+        },
+        "construction": {
+          "passes": 3,
+          "runs": 3
+        },
+        "repair": {
+          "passes": 3,
+          "runs": 3
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "limitations": [
+    "Three distinct tasks; three repetitions per setting are not nine distinct problems.",
+    "Tool use prohibited and audited. Not an autonomous CAD workflow comparison.",
+    "CAD functions scored on nominal and varied dimensions plus STEP checks.",
+    "Shared project-derived source interpretation is a reviewed reference, not metrology.",
+    "Cached input and requested settings recorded; no billed-cost estimate or returned-model attestation."
+  ]
+}

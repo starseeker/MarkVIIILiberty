@@ -1,0 +1,59 @@
+{
+  "case": "repair",
+  "effort": "xhigh",
+  "repeat": 3,
+  "index": 26,
+  "command": [
+    "codex",
+    "exec",
+    "--ignore-user-config",
+    "--strict-config",
+    "--ephemeral",
+    "--skip-git-repo-check",
+    "--sandbox",
+    "read-only",
+    "--model",
+    "gpt-6-astra",
+    "-c",
+    "model_reasoning_effort=\"xhigh\"",
+    "--json",
+    "--cd",
+    "/home/cyapp/MarkVIIILiberty/.work/cad-benchmark/trials/repair_xhigh_3",
+    "--output-schema",
+    "/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/fixtures/repair/schema.json",
+    "--output-last-message",
+    "/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/results/pilot_01/repair_xhigh_3/answer.json",
+    "-"
+  ],
+  "started_unix": 1790003935.3478594,
+  "prompt_sha256": "16ce800123c36f57bb601ddec3c37d90ad29fe299ba3ea3696a43bebb4306d4e",
+  "schema_sha256": "9ce00059abb5ff56026aa87efc2b8f9dcc76f8ef3f6c4202e33012a9878ed4c5",
+  "image_hashes": {},
+  "returncode": 0,
+  "timed_out": false,
+  "cli_seconds": 65.55488729599165,
+  "grading_seconds": 2.020772288000444,
+  "usage": {
+    "input_tokens": 14284,
+    "cached_input_tokens": 0,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2017,
+    "reasoning_output_tokens": 1552
+  },
+  "unexpected_tool_events": [],
+  "malformed_event_lines": [],
+  "parse_error": null,
+  "transport_ok": true,
+  "passed": true,
+  "grade_summary": {
+    "passed": true,
+    "passed_checks": 60,
+    "total_checks": 60
+  },
+  "finished_unix": 1790004002.9242702,
+  "artifact_hashes": {
+    "events.jsonl": "89cfb75aa9fba4ca55dac3f16e9088bd7189e81681ce93002a18514510424d8e",
+    "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "answer.json": "4e3285f62d9523ec53abaf4f9824d5f8af47f955d18f72a863fc8b7438b97ca7"
+  }
+}

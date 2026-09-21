@@ -1,0 +1,15 @@
+{
+  "passed": false,
+  "passed_checks": 0,
+  "total_checks": 1,
+  "checks": [
+    {
+      "name": "execution",
+      "passed": false,
+      "detail": "name 'all' is not defined"
+    }
+  ],
+  "traceback": "Traceback (most recent call last):\n  File \"/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/grade.py\", line 173, in evaluate\n    result={'source':source,'construction':lambda a:construction(a,out,save),'repair':lambda a:repair(a,out,save)}[case](answer)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/grade.py\", line 173, in <lambda>\n    result={'source':source,'construction':lambda a:construction(a,out,save),'repair':lambda a:repair(a,out,save)}[case](answer)\n                                                                                               ^^^^^^^^^^^^^^^^^^\n  File \"/home/cyapp/MarkVIIILiberty/benchmarks/cad_reasoning/grade.py\", line 131, in repair\n    before=parent.copy();s=fn(parent,dict(p))\n                           ^^^^^^^^^^^^^^^^^^\n  File \"<candidate>\", line 11, in rebuild\nNameError: name 'all' is not defined\n",
+  "grader_sha256": "d51d5cc2f7f0c3e4b045e545f48ff3c4000cbe7990387a723e665d373dc3cec6",
+  "answer_sha256": "feb129152a4f3ef9839839f3eae802650995d2b1ad8efac223c2d51dafc91a71"
+}
