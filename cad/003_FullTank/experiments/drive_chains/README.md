@@ -412,3 +412,15 @@ integration and the complete tank remain unfinished.
   [packet](../../packets/I03-brake-bearings.md) retain the casting/registration
   uncertainties and conflicting MX14 lengths. Use its `qualification.json` for
   combined status; its builder report remains immutable.
+
+- `transmission_reversing_probe.py` extends the qualified case-joint candidate
+  to 1,372 solids with M301 fork, M302 rod assembly and M307–M309 detent.
+  It corrects the continuous clutch groove and both ring-dog free tips, and
+  adds bounded case receivers. All 168 affected material pairs, 11 STEP
+  comparisons, 63 independent checks and three local trials pass. Six inspected
+  views compare the widened fork arm against SNL23 and expose the spring/cap
+  section. The [packet](../../packets/I03-reversing-controls.md) records source
+  counts, inferred dimensions and the spring-envelope checking correction.
+  Use `transmission_reversing_build/qualification.json` for combined status.
+  M303–M306 vertical linkage, its two MX11 and two MX12 sets, mounts, pump,
+  brakes, lubrication and standard integration remain pending.

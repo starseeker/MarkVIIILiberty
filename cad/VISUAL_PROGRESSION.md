@@ -242,3 +242,19 @@ All twenty standard native files and forty-nine previous images are preserved.
 
 `intermediate_snapshot_detail_case_joint_001.png` SHA-256:
 `7e28b922c9c227a9bee20515918447cdc8167d269678ed059da8247fa33fd69c`.
+
+The reversing-controls stage preserves the [open isometric](intermediate_snapshot_iso_transmission_reversing_001.png),
+[fork/rod mechanism](intermediate_snapshot_iso_transmission_reversing_mechanism_001.png)
+and [detent section](intermediate_snapshot_detail_reversing_detent_001.png)
+(21 September2026). Seven added leaves bring the isolated candidate to1,372
+solids. The continuous clutch groove and paired ring tips are corrected to clear
+the fork; its upper arm is refined against the fixed-scale SNL23 image. The
+section exposes the plunger, spring and hollow cap. Vertical linkage, mounting,
+other transmission equipment and standard integration remain pending. Earlier
+snapshots and the opaque/transparent standard011 are unchanged.
+
+`intermediate_snapshot_iso_transmission_reversing_001.png` SHA-256: `812d2afbf7e6bd348a5c31d67daf12ce65b7b0d06a83e8fae9352d95d9088e35`.
+
+`intermediate_snapshot_iso_transmission_reversing_mechanism_001.png` SHA-256: `5bc51d7bacc3d363401451114422a4859790486ac3601925654c33d432866527`.
+
+`intermediate_snapshot_detail_reversing_detent_001.png` SHA-256: `e8d8d00ced715037b428f1e407711571dd67f02e2929fc687a7fecd88bbb80be`.

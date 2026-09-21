@@ -92,19 +92,21 @@ remains preserved from snapshot 008.
 The [lower-support packet](packets/R02-lower-supports.md) records source allocations,
 front skirt refinement, native bearing/receiver checks and unfinished retention.
 
-The latest isolated [transmission candidate](experiments/drive_chains/transmission_case_joint_build/TransmissionCaseJointCandidate.FCStd)
-contains **1,365 valid solids**, including both planetary trains, the bevel drive,
-clutch, input installation, paired brake-bearing supports and central case joint.
-The [case-joint packet](packets/I03-case-joint.md) records fourteen MX8 bolt/nut/pin
-sets, two M326 gaskets and revised mating lands. All 335 affected material pairs,
-46 native/STEP comparisons, 200 independent checks and three local parameter
-trials pass. Six inspected views retain the source discrepancies; bolt placement
-and casting contours remain inferred. The [brake-bearing packet](packets/I03-brake-bearings.md)
+The latest isolated [transmission candidate](experiments/drive_chains/transmission_reversing_build/TransmissionReversingCandidate.FCStd)
+contains **1,372 valid solids**, including both planetary trains, the bevel drive,
+clutch, input installation, paired brake-bearing supports, case joint and reversing
+fork/rod/detent. The [reversing-controls packet](packets/I03-reversing-controls.md)
+records seven new parts and the corrected continuous fork passage. All 168
+affected material pairs, eleven native/STEP comparisons, 63 independent checks
+and three local parameter trials pass. Six inspected views retain the source
+discrepancies, with a refined fork outline and exposed detent section. The
+[case-joint packet](packets/I03-case-joint.md) preserves the preceding fourteen
+MX8 sets and two M326 gaskets. The [brake-bearing packet](packets/I03-brake-bearings.md)
 preserves the preceding shared-bush architecture and its qualifications.
 The [input-installation packet](packets/I03-input-installation.md) preserves the
 previous grease feed and cotter repairs. Source-datum, M249 quantity, MX25
 count/nut and MX14 length conflicts remain open. Pump/support installation,
-case mounting, reversing controls, brakes, complete lubrication and standard-tank
+case mounting, vertical reversing linkage, brakes, complete lubrication and standard-tank
 integration remain ahead. The candidate has not yet replaced the standard
 tank's transmission layout.
 

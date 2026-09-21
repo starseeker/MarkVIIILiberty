@@ -1,0 +1,82 @@
+{
+  "dimensions": {
+    "fork_hub_limits_y_mm": [
+      -27.0,
+      -5.0
+    ],
+    "nut_seat_y_mm": -5.0,
+    "cotter_axis_y_mm": 5.0,
+    "rod_tip_y_mm": 10.0,
+    "detent_centers_y_mm": [
+      -135,
+      -151,
+      -167
+    ],
+    "nose_center_z_mm": 177.35756172839504,
+    "spring_seats_z_mm": [
+      186,
+      214
+    ],
+    "spring_pitch_mm": 4.3999999999999995,
+    "cotter": {
+      "straight_length_mm": 37.5,
+      "bend_arc_length_mm": 6.283185307179586,
+      "tail_length_mm": 7.016814692820411,
+      "total_leg_centerline_mm": 50.8,
+      "tail_endpoints": [
+        [
+          0.0,
+          23.0,
+          -11.81056469282041
+        ],
+        [
+          0.0,
+          23.0,
+          11.81056469282041
+        ]
+      ],
+      "wire_radius_mm": 1.5875,
+      "under_eye_y_mm": -18.5,
+      "bend_start_y_mm": 19.0,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "removed_clutch_mm3": 28934.296628628144,
+    "added_case_mm3": 66015.1871073932,
+    "removed_case_mm3": 11693.348951970094
+  },
+  "pairs": 134,
+  "overlaps": [
+    {
+      "a": "fork",
+      "b": "StarboardBevelDrive_clutch_ring",
+      "volume": 3488.7035493857798
+    },
+    {
+      "a": "fork",
+      "b": "case",
+      "volume": 165.32297122085308
+    },
+    {
+      "a": "cotter",
+      "b": "case",
+      "volume": 2.1373124682021176
+    },
+    {
+      "a": "cap",
+      "b": "case",
+      "volume": 506.62005682178597
+    }
+  ],
+  "volumes": {
+    "fork": 129735.66972747646,
+    "rod": 143073.37638910022,
+    "cotter": 816.8882054503375,
+    "plunger": 1171.6434053732432,
+    "spring": 603.515777781379,
+    "cap": 8654.82831548645,
+    "case": 7914488.407146054,
+    "clutch": 549006.7237050044,
+    "nut": 6620.246841155384
+  }
+}

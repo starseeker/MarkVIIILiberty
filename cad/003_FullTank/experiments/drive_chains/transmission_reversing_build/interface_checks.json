@@ -1,0 +1,427 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "1372 native physical leaves",
+      "value": 1372,
+      "expected": 1372,
+      "passed": true
+    },
+    {
+      "name": "fork source identity",
+      "value": [
+        "P_117a97fb4550e40a"
+      ],
+      "expected": [
+        "P_117a97fb4550e40a"
+      ],
+      "passed": true
+    },
+    {
+      "name": "fork one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "rod source identity",
+      "value": [
+        "P_8de9acca6cd53a2f"
+      ],
+      "expected": [
+        "P_8de9acca6cd53a2f"
+      ],
+      "passed": true
+    },
+    {
+      "name": "rod one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "nut source identity",
+      "value": [
+        "P_4540b96b50f55041"
+      ],
+      "expected": [
+        "P_4540b96b50f55041"
+      ],
+      "passed": true
+    },
+    {
+      "name": "nut one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "cotter source identity",
+      "value": [
+        "P_00e7a0eee38fd982"
+      ],
+      "expected": [
+        "P_00e7a0eee38fd982"
+      ],
+      "passed": true
+    },
+    {
+      "name": "cotter one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "plunger source identity",
+      "value": [
+        "P_01fb49ee2f45f640"
+      ],
+      "expected": [
+        "P_01fb49ee2f45f640"
+      ],
+      "passed": true
+    },
+    {
+      "name": "plunger one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "spring source identity",
+      "value": [
+        "P_c74821e0eb58b782"
+      ],
+      "expected": [
+        "P_c74821e0eb58b782"
+      ],
+      "passed": true
+    },
+    {
+      "name": "spring one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "cap source identity",
+      "value": [
+        "P_1940e88a774bb304"
+      ],
+      "expected": [
+        "P_1940e88a774bb304"
+      ],
+      "passed": true
+    },
+    {
+      "name": "cap one connected valid solid",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "rod assembly owns exactly rod/nut/pin",
+      "value": [
+        "ReversingControl_cotter",
+        "ReversingControl_nut",
+        "ReversingControl_rod"
+      ],
+      "expected": [
+        "ReversingControl_cotter",
+        "ReversingControl_nut",
+        "ReversingControl_rod"
+      ],
+      "passed": true
+    },
+    {
+      "name": "rod assembly identity on container",
+      "value": [
+        "P_00245f69dbd25d7d"
+      ],
+      "expected": [
+        "P_00245f69dbd25d7d"
+      ],
+      "passed": true
+    },
+    {
+      "name": "M314 shared native definition",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "both ring hands share revised definition",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "fork has cubic B-spline profile edges",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "clutch clear full fork annulus",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "port ring clear full fork annulus",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "starboard ring clear full fork annulus",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "negative old clutch obstructs full fork annulus",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "negative old starboard ring obstructs full fork annulus",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "negative axially displaced fork collides",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "clutch has no added material",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "clutch removal confined to groove",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "clutch standard ahead center unchanged",
+      "value": -16.0,
+      "expected": -16.0,
+      "passed": true
+    },
+    {
+      "name": "Port ring has no added material",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port ring removal confined to free tips",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Port ring retains four driving lugs",
+      "value": 4,
+      "expected": 4,
+      "passed": true
+    },
+    {
+      "name": "Starboard ring has no added material",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard ring removal confined to free tips",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "Starboard ring retains four driving lugs",
+      "value": 4,
+      "expected": 4,
+      "passed": true
+    },
+    {
+      "name": "fork to clutch groove",
+      "value": 0.29999999999861243,
+      "expected": 0.3,
+      "passed": true
+    },
+    {
+      "name": "fork to starboard ring",
+      "value": 0.44999999999998863,
+      "expected": 0.45,
+      "passed": true
+    },
+    {
+      "name": "fork clamped by rod shoulder",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "fork clamped by M314 nut",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "split pin obstructs nut withdrawal",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "cotter complete straight leg -1",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "cotter complete straight leg 1",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "rod continuous case passage",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "case supports rod journal wall",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "rod detent recess -135",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "rod retains stock under detent -135",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "rod detent recess -151",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "rod retains stock under detent -151",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "rod detent recess -167",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "rod retains stock under detent -167",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "detent nose seated on selected pocket",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "spring lower seat",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "spring upper seat",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "spring has two ground end faces",
+      "value": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "installed spring height from ground faces",
+      "value": 28.0,
+      "expected": 28.0,
+      "passed": true
+    },
+    {
+      "name": "spring within source OD plus .0001mm radial witness",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "sampled spring OD agrees within .0002mm",
+      "value": 17.462521614709072,
+      "expected": 17.4625,
+      "passed": true
+    },
+    {
+      "name": "spring reaches printed OD within .002mm diameter",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "source free length stored separately",
+      "value": 38.1,
+      "expected": 38.1,
+      "passed": true
+    },
+    {
+      "name": "spring is visibly hollow",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "spring has at least twelve complete meridian intersections",
+      "value": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "case additions bounded to rod/detent",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    },
+    {
+      "name": "case removal bounded to rod/detent",
+      "value": 0.0,
+      "expected": 0.0,
+      "passed": true
+    }
+  ],
+  "native_sha256": "48720e3915a755283590e87f88fadad71396859328c5897fb4567fc683c8aefa",
+  "report_sha256": "fd888102ba354121644d276b0d561cb39f9e0fdb5606de4247f68e3de9f7be73",
+  "checker_sha256": "188fd753159ca0b019e1d00d4dcd5bafec0595fde9188a13df0d88817ceac932",
+  "scope": "Local fork/rod/detent and bounded changes; not full transmission or motion qualification."
+}

@@ -11,6 +11,29 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 21 September 2026 — reversing fork, rod and detent
+
+The [candidate](experiments/drive_chains/transmission_reversing_build/TransmissionReversingCandidate.FCStd)
+contains **1,372 valid solids**: seven new, four revised and 1,361 unchanged.
+M301 fork, retained M302 rod and M307–M309 detent populate the reversing
+mechanism. The fork exposed an inherited groove obstruction and excessive
+ring-dog reach; bounded revisions clear the continuous fork path while retaining
+standard forward engagement. Case journal, detent and access receivers are added.
+
+All 168 affected material pairs, 11 native/STEP comparisons, 63 independent checks
+and three local parameter trials pass. Fifty interfaces are freshly checked
+and 621 reused against unchanged geometry. The spring checks use ground end
+faces, actual boundary samples and a 0.0001mm radial envelope allowance; rejected
+conservative-bound and tangent-Boolean checks are retained. Native tolerances
+are unchanged. Six inspected views led to a wider source-following upper arm.
+Three new progression snapshots preserve the open assembly, mechanism and detent.
+Twenty standard native files and 52 previous snapshots are byte unchanged.
+
+The [packet](packets/I03-reversing-controls.md) records approximations and evidence.
+Next: M303/M304 levers, M305 shaft, two M306 bearings and their distinct MX11/MX12
+attachments, then remaining transmission and tank systems. The standard tank
+still contains provisional interior envelopes; the full goal remains active.
+
 ## 21 September 2026 — central bevel-case joint
 
 The [candidate](experiments/drive_chains/transmission_case_joint_build/TransmissionCaseJointCandidate.FCStd)
