@@ -403,3 +403,12 @@ integration and the complete tank remain unfinished.
   records the source conflicts and constituent-loss defect; use the
   [combined qualification](transmission_input_installation_build/qualification.json)
   for the completed review status. Standard integration remains pending.
+
+- `transmission_brake_bearing_probe.py` extends the input-installation candidate
+  to1,321 solids with paired M265/M266 supports, two shared M300 dowels and four
+  MX14 sets. Rear saddles and common journals are documented hypotheses.153
+  affected material pairs,21 exact-material STEP comparisons,109 independent
+  checks and four local trials pass. Seven source-review views and the
+  [packet](../../packets/I03-brake-bearings.md) retain the casting/registration
+  uncertainties and conflicting MX14 lengths. Use its `qualification.json` for
+  combined status; its builder report remains immutable.

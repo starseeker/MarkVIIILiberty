@@ -92,18 +92,20 @@ remains preserved from snapshot 008.
 The [lower-support packet](packets/R02-lower-supports.md) records source allocations,
 front skirt refinement, native bearing/receiver checks and unfinished retention.
 
-The latest isolated [transmission candidate](experiments/drive_chains/transmission_input_installation_build/TransmissionInputInstallationCandidate.FCStd)
-contains 1,303 valid solids, including both planetary trains, the bevel drive,
-clutch, input bearings and the new cover fasteners and grease feed. It also
-repairs seventeen earlier cotter occurrences whose fusion had dropped a leg.
-The [installation packet](packets/I03-input-installation.md) records source
-conflicts, inferred fitting geometry, connected passage checks, STEP results
-and inspected SNL comparisons. The [input-assembly packet](packets/I03-input-assembly.md)
-retains the printed bearing dimensions and earlier source registration work.
-The 32.113 mm source-datum conflict, M249 spacer quantity and MX25 count/nut
-conflicts remain unresolved. Pump attachments, support bracket, brake-bearing
-joints, controls and standard-tank integration remain open. The candidate has
-not yet replaced the standard tank's transmission layout.
+The latest isolated [transmission candidate](experiments/drive_chains/transmission_brake_bearing_build/TransmissionBrakeBearingCandidate.FCStd)
+contains **1,321 valid solids**, including both planetary trains, the bevel drive,
+clutch, input installation and paired brake-bearing supports. The
+[brake-bearing packet](packets/I03-brake-bearings.md) records two bushes/caps,
+reused dowels/cotters, four MX14 sets, revised rear saddles and drum journals.
+Their common-bush architecture and casting form are documented reconstruction
+hypotheses. All affected clearance/STEP checks,109 independent checks and four
+local parameter trials pass; seven inspected views retain source discrepancies.
+The [input-installation packet](packets/I03-input-installation.md) preserves the
+previous grease feed and cotter repairs. Source-datum, M249 quantity, MX25
+count/nut and MX14 length conflicts remain open. Pump/support installation,
+case fastening, controls, brakes, complete lubrication and standard-tank
+integration remain ahead. The candidate has not yet replaced the standard
+tank's transmission layout.
 
 Additional commands:
 

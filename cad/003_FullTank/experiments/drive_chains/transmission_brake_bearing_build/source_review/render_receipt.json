@@ -1,0 +1,29 @@
+{
+  "native_sha256": "9953f760ae1ad74ce2750498cc4f45ba497c648db294f486e7e3a28a2a281104",
+  "report_sha256": "e472c2ceb896a548d61fee9a89b6c8ed04f3f321185bcc60ae49cab0b4361d9e",
+  "renderer_sha256": "b92990052875a9ff9fda5f2bb2a868d1c2c7e87a5375ace3ae4c92f1fe29b197",
+  "source_sha256": {
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p294-geometry.png": "688d9d28aa4af2e91b7e2d78caea16142a0b7462af8a4517637e8263b8dea400"
+  },
+  "calibration_sha256": "6ac55930407bfb24b72ea65bb7c75b6c30d7ec3626e528032aed6783922a43ac",
+  "rasters": {
+    "brake_bearings_overview.png": "70f3c796161bd02b9303459774555bb18bc46b83a392ef7adcd150d0a71fd141",
+    "brake_bearing_fastener.png": "3f5c9b9ef288cf8dade590dbd5a562af1cdc70f5b6ce6e010eb5976c1c28316b",
+    "brake_bearing_comparison.png": "2c2e81741807639d4dcd8146e86b8fc77993a34e551e1385c2dfd5cf7dc916c6",
+    "brake_bearing_section.png": "d225b96aee87b55ae0df785d7a3fc3c13299753831695f7e6f97ac5458ec5987",
+    "brake_bearing_close_section.png": "58af613065c4f081c53f8ce2a806735728b0e30b63fe491a6b4074d577a28b39",
+    "brake_bearing_overlay.png": "5836d5d62d8af142c545c5ae710cb48147abd92b7382b5653d72379dd782f92f",
+    "brake_bearing_joint.png": "a7bdf5ea54c4a43ba32e83ff93a6ac65d62da1fdc919a6d1fe717e7fbe25dc59"
+  },
+  "native_placements_changed": false,
+  "source_warping": false,
+  "limitations": [
+    "MX14 detailed SNL240 gives1-11/16in (42.8625mm); owning SNL59 gives1-9/16in (39.6875mm). Both retain half-inch US and7/8in SAE threaded lengths.",
+    "M265 is reconstructed as one continuous flanged bush supporting adjacent M277 neck and M269 drum hub journals; the four-mm gap between journals remains open.",
+    "M266 is a forward semicircular cap. A rear saddle and bridge are added to M263 as integral casting geometry, with two MX14 sets per cap. The section and M263 ownership support this hypothesis but do not prove its unshown three-dimensional form.",
+    "M269 previously had an unmeasured R58 hub; enlarge its exterior to the existing M277 R76.2 journal. Keep its printed381mm drum OD and all spline/ring-pocket material unchanged.",
+    "MX14 length42.8625 follows detailed SNL240 component entry. Owning SNL59 gives39.6875; retain both and test the shorter alternative.",
+    "Reuse the existing source-sized M300 dowel and repaired3/32x1in cotter definition. Half-inch nut shape matches the earlier inferred shape but has an independently supported catalogue identity.",
+    "Smooth nominal thread envelopes, split gap and bore clearances are geometric approximations, not manufacturing fits or load qualification. No lubricant route is yet qualified for these bushes."
+  ]
+}

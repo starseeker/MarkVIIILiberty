@@ -207,3 +207,18 @@ and its opaque/transparent companions remain unchanged pending integration.
 `intermediate_snapshot_iso_transmission_input_installation_001.png` SHA-256: `3b34fbc4f4b016a700e5dc6c6cadf6bd9c32baf2cbc6ad961f01be482541b598`.
 `intermediate_snapshot_detail_input_grease_001.png` SHA-256: `33d728238967fd9a8f345f5852c52029ffc181c9bc432437492b14fd5a5a0168`.
 `intermediate_snapshot_detail_input_fasteners_001.png` SHA-256: `40352b6e7562621f3620a08cc7958093cea8207f840dcf65f8604260b2c50521`.
+
+## Brake-bearing supports — 21 September 2026
+
+The [support overview](intermediate_snapshot_iso_transmission_brake_bearings_001.png),
+[focused bearing section](intermediate_snapshot_detail_brake_bearing_001.png) and
+[MX14 fastener](intermediate_snapshot_detail_brake_bearing_fasteners_001.png)
+preserve the1,321-solid candidate. Two bushes/caps and their hardware close the
+previously missing joint; shared-journal architecture and casting form remain
+explicit hypotheses. The [packet](003_FullTank/packets/I03-brake-bearings.md)
+records the qualification and SNL22 differences. Standard011 and all46 earlier
+snapshots remain unchanged; this candidate awaits tank integration.
+
+`intermediate_snapshot_iso_transmission_brake_bearings_001.png` SHA-256: `70f3c796161bd02b9303459774555bb18bc46b83a392ef7adcd150d0a71fd141`.
+`intermediate_snapshot_detail_brake_bearing_001.png` SHA-256: `58af613065c4f081c53f8ce2a806735728b0e30b63fe491a6b4074d577a28b39`.
+`intermediate_snapshot_detail_brake_bearing_fasteners_001.png` SHA-256: `3f5c9b9ef288cf8dade590dbd5a562af1cdc70f5b6ce6e010eb5976c1c28316b`.

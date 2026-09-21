@@ -11,6 +11,30 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 21 September 2026 — paired brake-bearing supports
+
+The [candidate](experiments/drive_chains/transmission_brake_bearing_build/TransmissionBrakeBearingCandidate.FCStd)
+now contains **1,321 valid solids**: eighteen new occurrences, three revised and
+1,300 unchanged. Two M265 bushes and M266 caps, two reused M300 dowels and four
+MX14 stud/nut/cotter sets populate the joint. M263 gains connected rear saddles;
+the M269 hub exteriors gain a common journal radius while retaining their
+printed drum OD, splines and retaining-ring pockets. The shared-bush arrangement
+and unshown casting shapes remain explicit hypotheses.
+
+All153 affected pairs and21 raw/bounded STEP comparisons pass with zero material
+difference. Thirty interfaces are freshly checked and584 retained against
+unchanged geometry.109 independent checks and four local parameter trials pass.
+A corrected annular installation witness replaces a false solid-bore check;
+its failed predecessor is preserved. Both conflicting printed MX14 lengths fit
+the inferred joint, so the source conflict remains unresolved.
+
+Seven inspected views compare the actual saved section with SNL22. Three new
+progression snapshots preserve the overview, focused section and fastener.
+The [packet](packets/I03-brake-bearings.md) records the evidence and limitations.
+Twenty standard native files and forty-six earlier snapshots are unchanged.
+The full-tank goal remains active; pump/support installation, case fastening,
+controls, brakes, lubrication and standard integration remain ahead.
+
 ## 21 September 2026 — input cover joint, grease feed and cotter repairs
 
 The [qualified candidate](experiments/drive_chains/transmission_input_installation_build/TransmissionInputInstallationCandidate.FCStd)
