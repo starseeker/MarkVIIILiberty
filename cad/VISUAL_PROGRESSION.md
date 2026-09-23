@@ -670,3 +670,23 @@ companion remain unchanged pending combined drivetrain integration.
 | [installed isometric with upper case hidden](intermediate_snapshot_iso_engine_crankshaft_001.png) | `54b04b0acf60c0554a4f0917f573ade6a909ceedc76eb5906cd11f403fa9966d` |
 | [bare crankshaft](intermediate_snapshot_detail_engine_crankshaft_001.png) | `ac88e9a41001ad05b4a72fe8ac7884f53e43db0edf51a153e771bfa4852395cf` |
 | [thrust bearing section](intermediate_snapshot_detail_engine_thrust_001.png) | `12402f7333a87506b09448eb3a27f2510857a2fec392940f405b45c18385f87a` |
+
+
+## Engine shaft closures — 23 September 2026
+
+The development assembly contains 2,131 physical occurrences: 139 new closure and
+retaining constituents, one revised forging and 1,991 preserved parent pieces.
+Nominal 268 independent checks, 738 affected material pairs including standard
+context and 157 STEP comparisons pass. Coupled parameter trial:
+268/738 pass; trial STEP unchecked. Seven views inspected against source
+context; unprinted cap profiles and recesses remain estimates.
+
+The upper case is hidden only for review. Three new images bring progression to
+126; all 123 prior images are preserved. Standard tank011 and its transparent-hull
+companion remain unchanged pending combined drivetrain integration.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_engine_shaft_fittings_001.png) | `91e4acb00dba69cbcaa6a7507c923bf58d2dfec0532d0dc95d8f6149a96f8776` |
+| [shaft and closures](intermediate_snapshot_detail_engine_shaft_fittings_001.png) | `4fc5fe28c54835a65c3003efb3cbf9d625b6e2023ee930327fd92b9d7dff8329` |
+| [crankpin closure section](intermediate_snapshot_detail_engine_shaft_closures_001.png) | `e0bdd3d4f0cbd288af8d454ab16cf325840823f497d2847a321f491d4eab5b03` |

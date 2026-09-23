@@ -11,6 +11,20 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — shaft closures and retaining sets
+
+The latest [shaft-closure development candidate](experiments/drive_chains/engine_shaft_fittings_build/DrivetrainWithEngineShaftFittings.FCStd)
+contains **2,131 physical components**: 139 new plugs, gaskets and retaining
+constituents, one revised shaft and 1,991 preserved parent pieces. Nominal
+**268 independent checks, 738 affected material pairs including standard context,
+and 157 STEP comparisons pass**. Six continuous oil-route witnesses pass with
+the stud sets installed. A coupled cap/gasket/nose-bore trial passes
+268/738; trial STEP remains unchecked. Seven views were inspected;
+three snapshots bring the progression to 126. The
+[packet](packets/P01-engine-shaft-fittings.md) preserves catalogue conflicts and
+inferred cap/nose geometry. Gear, shims, thrust lock and the remaining engine
+systems are pending; combined qualification and standard integration remain open.
+
 ## 23 September 2026 — crankshaft and bearings
 
 The [development assembly](experiments/drive_chains/engine_crankshaft_build/DrivetrainWithEngineCrankshaft.FCStd)

@@ -172,3 +172,6 @@ LQ266A; the latter is selected for later work with the contrary literal retained
 Cylinders, rods, pistons, valve gear, accessories and services follow. Combined
 drivetrain qualification, a fresh nominal reproduction and standard integration
 remain required. No complete-engine or complete-tank claim is made here.
+
+
+Subsequent [shaft-closure development](P01-engine-shaft-fittings.md) adds the source-selected plugs, gaskets and retaining sets. It revises internal closure seats, the inferred blind nose termination, the key-screw receiver floor and capped oil-drill entries while preserving the other 1,991 parent constituents. The earlier checkpoint and its original receipts remain intact.

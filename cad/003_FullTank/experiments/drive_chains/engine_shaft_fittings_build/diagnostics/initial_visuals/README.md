@@ -1,0 +1,1 @@
+Initial nose camera looked along the key screw and hid the receiver floor; change review half-plane and camera to expose it. Initial gear section caption called its stud source-length, although its length is inferred from the stack; correct that caption. Neither correction changes saved physical geometry.

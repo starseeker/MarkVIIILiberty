@@ -223,7 +223,19 @@ two parameter trials and a fresh rebuild pass. Five views were inspected and
 three new progression snapshots are saved. The [packet](packets/I03-clutch-retention.md)
 records these checks and the numerical volume diagnostic.
 
-The latest [crankshaft development candidate](experiments/drive_chains/engine_crankshaft_build/DrivetrainWithEngineCrankshaft.FCStd)
+The latest [shaft-closure development candidate](experiments/drive_chains/engine_shaft_fittings_build/DrivetrainWithEngineShaftFittings.FCStd)
+contains **2,131 physical components**: 139 new plugs, gaskets and retaining
+constituents, one revised shaft and 1,991 preserved parent pieces. Nominal
+**268 independent checks, 738 affected material pairs including standard context,
+and 157 STEP comparisons pass**. Six continuous oil-route witnesses pass with
+the stud sets installed. A coupled cap/gasket/nose-bore trial passes
+268/738; trial STEP remains unchecked. Seven views were inspected;
+three snapshots bring the progression to 126. The
+[packet](packets/P01-engine-shaft-fittings.md) preserves catalogue conflicts and
+inferred cap/nose geometry. Gear, shims, thrust lock and the remaining engine
+systems are pending; combined qualification and standard integration remain open.
+
+The [crankshaft development candidate](experiments/drive_chains/engine_crankshaft_build/DrivetrainWithEngineCrankshaft.FCStd)
 contains **1,992 physical components**: 81 new constituents, two receiving-case
 revisions and 1,909 preserved parent pieces. It adds the hollow six-throw shaft,
 seven pairs of main-bearing halves, their dowels, double thrust internals, sleeves,

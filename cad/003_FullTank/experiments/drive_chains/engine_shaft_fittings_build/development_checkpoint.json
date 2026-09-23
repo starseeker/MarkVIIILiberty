@@ -1,0 +1,88 @@
+{
+  "status": "verified_development_checkpoint_not_historically_qualified",
+  "native_sha256": "43cce45d5168d743dab9aa41ffd3190b220259833ba8f0545a9ae3b6bc952400",
+  "parent_commit": "e8b557c6d0a2c292873ba66df89837bab98b9498",
+  "parent_native_sha256": "e595f43dfaab99061c1771f7493122010d155d3a87966f187c05dd71ca8c30e0",
+  "native_occurrences": 2131,
+  "new_physical_occurrences": 139,
+  "revised_parent_occurrences": 1,
+  "preserved_parent_occurrences": 1991,
+  "new_definitions": 16,
+  "nominal_checks": {
+    "independent": 268,
+    "material_pairs": 738,
+    "standard_context": true,
+    "step_comparisons": 157
+  },
+  "parameter_trial": {
+    "passed": true,
+    "native_sha256": "09a89a44a500522254d46f9436e22843332e4bc5de0f937a07d8277c0584df9e",
+    "native_path": ".work/engine-shaft-fittings/variant/build/DrivetrainWithEngineShaftFittings.FCStd",
+    "changed_controls": {
+      "cap_stock": {
+        "nominal": 3.175,
+        "trial": 3.5
+      },
+      "large_gasket_stock": {
+        "nominal": 0.8,
+        "trial": 1.0
+      },
+      "nose_bore_radius": {
+        "nominal": 14.0,
+        "trial": 13.5
+      }
+    },
+    "independent_checks": 268,
+    "material_pairs": 738,
+    "standard_context_checked": true,
+    "step_checked": false,
+    "receipt_hashes": {
+      "report.json": "67e6220e4c06ec4b35c086dd8ec5ee46e7191dd5c64a473384729d6cab5d124b",
+      "independent_checks.json": "4fdef8ad0f1f5723eeb2b4720b46aac52666b3630ddd469b049e3e6496055a15",
+      "material_checks.json": "0b070c408b001e81416ac790696dfa355d5d0b756d0d5b253eb5454a1aa379db",
+      "controls.json": "d32174be92c10cd0f9515702392b7f2e76bd3d387d83580db5147a838be03a2b"
+    }
+  },
+  "source_dossier_sha256": "a0b0dc82feb944b5e0130afbb0589ed3a4ee31c3b751ba7a5458b2842c350a8c",
+  "controls_sha256": "3d2194483061aa4caa8ff870951b30241a5ec941540924ff41cb8f2137933287",
+  "source_records": 58,
+  "source_assets": 21,
+  "verification_hashes": {
+    "independent_checks.json": "23fb44dbb3ea1fa360fe95272a7879206edb571b1f589ce6fd4b9757c8bc6a17",
+    "material_checks.json": "5aac033bf2d3348ded374dec2f1bd4bb1cbc3efa192eb55b038520b508c6ebf3",
+    "exchange_checks.json": "8c057fa35c4f7b45446fd9e1660af0a6355d6c504f0f0f15c1777efc092fd4a9",
+    "visual_review.json": "ec9229bbc694437b1deb9e104ccb3b1e9ade2555cf1a4e4bededf81211766277",
+    "source_review/render_receipt.json": "262c7ca7e6d6aed32b3f120e255e9dd37a95df7403081067ba3de33c3a68cd3f",
+    "progression_receipt.json": "a00d435e0a5a3ad41cdc616e55da9c5ee67ad3d42ceb37927f47808e6561b3b7",
+    "shared_helper_hashes.json": "3ed23e5280060bddb146d55a3be9e0b6a2e86a73e6ba366401b532d782214706"
+  },
+  "standard_native_hashes": {
+    "native/MarkVIII.FCStd": "52aea1af979efc27fbfbce003e976e8a02cfa2da3e0ca0d25a631d7c5e7d48ac",
+    "native/library/CoolingVentilation.FCStd": "810553a07fb9610c11dd3cd2f15e1eec0b7712e16f1d0a4245d70922532f73c4",
+    "native/library/CrewControlsAndEquipment.FCStd": "990e476bcdd088d58bbe76028a782667301a6f73e9c5a8065767bfd4e3860bae",
+    "native/library/Drivetrain.FCStd": "694c20a3995baafb0698f8c07d61e3e6b37bf6a0b0214362fe75bf0a80c30e25",
+    "native/library/ElectricalInstruments.FCStd": "7ca38479c37f7a169b2ab52a4ea90afd80cc7cf97d45c52df380abbd91dc393d",
+    "native/library/FuelPressure.FCStd": "5d5e8ced3b3b1bc380c9822e4b0d210520da081fa119ab16bd58523fce93dc6a",
+    "native/library/HullStructure.FCStd": "a6b78305dddcfa74904b07ea9dad8356ba168d774499599c854074c8aca778fc",
+    "native/library/Powerplant.FCStd": "234c3582a110f607f98977a034638b3f65391b6c6c5cd284a9570c74629752b7",
+    "native/library/RunningGear.FCStd": "52587107dabf028783ad6bd087ce1f8e2bf3aacea7d641ab8bfee07101fddf44",
+    "native/library/Sponsons.FCStd": "cca4a76fd623303caeb7d6b2fa277f6bcc251170303379ce6f07a432add20162",
+    "native/subsystems/ArmamentRepresentation.FCStd": "da6a1fd3e488982cff35e88bbce264f85a448c8349177ac9550939dc96f0b553",
+    "native/subsystems/CoolingVentilation.FCStd": "bb0996bed71ec8269a68f7445da53fb86789a7cb7777c5972cff74fd47811e47",
+    "native/subsystems/CrewControlsAndEquipment.FCStd": "5831b330452e69ba2dc0ae4b2c9757b2fbf174d988ce44126e64a7adec7e4fe5",
+    "native/subsystems/Drivetrain.FCStd": "222888c3c6d72363524415dfeec66ce89f9144cf973cbb077dab245d2fc0c4bf",
+    "native/subsystems/ElectricalInstruments.FCStd": "5f423b486223168139193422992d379bc291e73ac992a372bdcef75069051f0c",
+    "native/subsystems/FuelPressure.FCStd": "45f9cb47c26ef7e007ccb0451554cf33321bf63bc85d26e2edda9f00764b7e7b",
+    "native/subsystems/HullStructure.FCStd": "91bb04cc51d10a143ffeb982b3bec08e0e28b5942da452601f738d2c2528f56c",
+    "native/subsystems/Powerplant.FCStd": "c22f9480fc5a60028e6af664fc5ebb2e07ca292694e89d29eacd0b0a18ad720d",
+    "native/subsystems/RunningGear.FCStd": "5b225c9b28cce15f4c331e1d076a39a7575319831d95cf92d8db5cbc0672418e",
+    "native/subsystems/Sponsons.FCStd": "79c852869c29529dd8de89a257e7e127ff3d7d2255e1a8b186fc044b292f38bb"
+  },
+  "standard_assembly_modified": false,
+  "complete_engine": false,
+  "complete_tank": false,
+  "historically_qualified": false,
+  "fresh_nominal_reproduction": false,
+  "qualified_baseline_commit": "539b5a2",
+  "remaining_work": "Gear, bolts and shim selection; thrust-nut lock; cylinders, rods, valve gear and engine services; inventory/source registration and mounting reconciliation; fresh nominal rebuild, combined qualification and standard integration."
+}
