@@ -1,0 +1,373 @@
+{
+  "controls": {
+    "collar_body_radius": 87.0,
+    "main_bore_radius": 75.0,
+    "bearing_rear": 851.15,
+    "bearing_front": 994.95,
+    "bearing_rear_bore_radius": 57.3,
+    "bearing_front_bore_radius": 50.8254,
+    "relief_rear": 891.15,
+    "relief_front": 969.95,
+    "relief_radius": 69.0,
+    "relief_fillet": 5.0,
+    "sleeve_length": 68.2498,
+    "sleeve_radius": 57.15,
+    "sleeve_bore_radius": 44.8437,
+    "sleeve_spline_root_radius": 50.525,
+    "sleeve_spline_count": 24,
+    "sleeve_spline_width": 5.0,
+    "support_rear": 865.45,
+    "support_front": 980.95,
+    "support_radius": 102.0,
+    "support_flange_start": 975.95,
+    "support_flange_radius": 110.0,
+    "support_fillet": 2.0,
+    "support_running_gap": 0.15,
+    "key_rear": 866.45,
+    "key_length": 107.95,
+    "key_radial_height": 19.05,
+    "key_width": 9.525,
+    "key_bed_radius": 77.475,
+    "key_side_gap": 0.1,
+    "key_roof_gap": 0.1,
+    "key_end_gap": 1.0,
+    "key_count": 4,
+    "snap_gap_width": 2.0,
+    "snap_gap_angle": 45.0,
+    "thrust_front": 1010.95,
+    "thrust_lip_rear": 991.95,
+    "thrust_outer_radius": 95.0,
+    "thrust_outer_running_gap": 0.15,
+    "snap_rear": 987.95,
+    "snap_front": 990.95,
+    "snap_inner_radius": 85.0,
+    "snap_outer_radius": 91.0
+  },
+  "material_pairs": 29,
+  "overlaps": [
+    {
+      "a": "ClutchStack_thrust",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 3718.314059267912
+    }
+  ],
+  "contacts": [
+    {
+      "a": "ClutchStack_bearing",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_sleeve",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_bearing",
+      "b": "ClutchStack_sleeve",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_bearing",
+      "b": "ClutchStack_thrust",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_thrust",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_thrust",
+      "b": "ClutchStack_snap",
+      "gap_mm": 1.0,
+      "expected_gap_mm": 1,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_snap",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_support",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.14999999999993344,
+      "expected_gap_mm": 0.15,
+      "passed": true
+    },
+    {
+      "a": "ClutchCollar_collar",
+      "b": "FrontClutch_Coupling",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchCollar_ring",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_Key1",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_Key2",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_Key3",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_Key4",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_Key1",
+      "b": "ClutchStack_support",
+      "gap_mm": 0.09999999999990905,
+      "expected_gap_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_Key2",
+      "b": "ClutchStack_support",
+      "gap_mm": 0.09999999999998899,
+      "expected_gap_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_Key3",
+      "b": "ClutchStack_support",
+      "gap_mm": 0.09999999999990905,
+      "expected_gap_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "ClutchStack_Key4",
+      "b": "ClutchStack_support",
+      "gap_mm": 0.09999999999999876,
+      "expected_gap_mm": 0.1,
+      "passed": true
+    },
+    {
+      "a": "ClutchCollar_Screw1",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchCollar_Screw2",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchCollar_Screw3",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchCollar_Screw4",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchCollar_Screw5",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    },
+    {
+      "a": "ClutchCollar_Screw6",
+      "b": "ClutchCollar_collar",
+      "gap_mm": 0.0,
+      "expected_gap_mm": 0,
+      "passed": true
+    }
+  ],
+  "wire_gap_mm": 2.4689881988565503,
+  "passed": false,
+  "pairs": [
+    {
+      "a": "ClutchStack_Key1",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_Key1",
+      "b": "ClutchStack_support",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_Key2",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_Key2",
+      "b": "ClutchStack_support",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_Key3",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_Key3",
+      "b": "ClutchStack_support",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_Key4",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_Key4",
+      "b": "ClutchStack_support",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_bearing",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_bearing",
+      "b": "ClutchCollar_wire",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_bearing",
+      "b": "ClutchStack_sleeve",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_bearing",
+      "b": "ClutchStack_support",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_bearing",
+      "b": "ClutchStack_thrust",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_bearing",
+      "b": "ClutchStack_snap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_sleeve",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_sleeve",
+      "b": "ClutchCollar_wire",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_sleeve",
+      "b": "ClutchStack_support",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_support",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchStack_thrust",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 3718.314059267912
+    },
+    {
+      "a": "ClutchStack_snap",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCollar_collar",
+      "b": "FrontClutch_Coupling",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCollar_collar",
+      "b": "ClutchCollar_Screw1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCollar_collar",
+      "b": "ClutchCollar_Screw2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCollar_collar",
+      "b": "ClutchCollar_Screw3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCollar_collar",
+      "b": "ClutchCollar_Screw4",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCollar_collar",
+      "b": "ClutchCollar_Screw5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCollar_collar",
+      "b": "ClutchCollar_Screw6",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCollar_collar",
+      "b": "ClutchCollar_ring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCollar_collar",
+      "b": "ClutchCollar_wire",
+      "intersection_mm3": 0.0
+    }
+  ]
+}

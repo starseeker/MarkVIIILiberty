@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "native_sha256": "38befc2bd79d0d7c1aa4e69d4633e3fa856056858735eaadd040a2ad14b74a78",
+  "survey_sha256": "6dfd7c413d777601e6e8660cd7d1386e2071aed9cdd0f163f4d1d10d014b8f90",
+  "source_hashes": {
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p067.jpg": "3536dc96f0ec4d34279f155d06e6cc743137202d8f31e55ffab96d5737293c02",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p165.jpg": "c2c36adc13998f26cbc536b6d341b375cfcc3bc5617126090274ff3279c51925",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p293.jpg": "959a64b1356d35387104a295c8bdb1a19681513bfd106a804f9ddce702a5fa1d",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p293-geometry.png": "0d9bc7a612d9cbe2f9d4d5a4d7bbc3832b00f6ef9085aceebb601a3ec4804a6f"
+  },
+  "callout_mapping": {
+    "28": "SH998B",
+    "30": "SH861E"
+  },
+  "records": [
+    {
+      "record_id": "SNL:165:001",
+      "source_id": "SNL",
+      "printed_page": "165",
+      "row_no": 1,
+      "record_type": "catalogue_entry",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_165_184.py",
+      "description": "RING, clutch snap",
+      "raw": {
+        "brit": "",
+        "ident": "30",
+        "item": "RING, clutch snap",
+        "mfr": "",
+        "note": "&",
+        "ord": "SH861E",
+        "page": "165",
+        "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_165_184.py",
+        "plate": "21",
+        "price": "1.12",
+        "qty": "1",
+        "row": 1,
+        "source": "SNL"
+      },
+      "part_ids": [
+        "P_b69b4e7f361bb8c7"
+      ]
+    },
+    {
+      "record_id": "SNL:67:020",
+      "source_id": "SNL",
+      "printed_page": "67",
+      "row_no": 20,
+      "record_type": "catalogue_entry",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_065_084.py",
+      "description": "COLLAR, clutch spring thrust",
+      "raw": {
+        "brit": "",
+        "ident": "28",
+        "item": "COLLAR, clutch spring thrust",
+        "mfr": "",
+        "note": "&",
+        "ord": "SH998B",
+        "page": "67",
+        "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_065_084.py",
+        "plate": "21",
+        "price": "5.00",
+        "qty": "1",
+        "row": 20,
+        "source": "SNL"
+      },
+      "part_ids": [
+        "P_e9e98ebf6818bacd"
+      ]
+    }
+  ],
+  "review": "Full rotated SNL Plate21 callout leaders inspected after the initial crop had hidden the labels.28ends at the large bearing-end thrust collar;30ends at the smaller external ring on the sliding collar, aft of the thrust collar.",
+  "approximate_trace_endpoints_pixels": {
+    "28": [
+      383,
+      674
+    ],
+    "30": [
+      427,
+      718
+    ]
+  },
+  "trace_asset": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p293-geometry.png",
+  "trace_is_dimension_calibration": false,
+  "correction": "Replace misidentified inner retaining piece with separateSH998Bthrust collar; placeSH861Eexternally, add its outside groove and remove unsupported internal groove.",
+  "rejected_native_sha256": "6a2382310016e16d0076b268e19228183566328ba89bafd6afaf00cf81d430c6",
+  "rejected_commit": "f78ba521b249f1d6ccfee4a33c763b05936a0cd9",
+  "remaining": "Thrust collar profile/attachment and actual ball reaction surfaces remain inferred or unfinished; historical fit and load qualification are not established."
+}

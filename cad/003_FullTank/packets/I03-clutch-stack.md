@@ -1,6 +1,6 @@
 # I03 — nested clutch bearing, sleeve, keyed support and retention
 
-Status: **source mapping corrected; rechecks pending**, 21 September 2026.
+Status: **qualified partial reconstruction with documented approximations**, 22 September 2026.
 [Native assembly](../experiments/drive_chains/clutch_stack_build/TransmissionWithClutchStack.FCStd) ·
 [source comparison](../experiments/drive_chains/clutch_stack_build/source_review/index.html).
 This stage populates the previously vacant main collar with the bearing, sleeve
@@ -117,8 +117,19 @@ parts that must interfere. Two coherent radial-stack/rear-bearing-station
 trials retain the printed HB key and sleeve dimensions. They sample uncertainty;
 they do not qualify historical dimensions, loads or elastic installation.
 
-New independent, exchange and size-trial checks must bind the corrected native;
-the rejected candidate's successful static checks do not prove its source mapping.
+The corrected native now passes 75 independent checks, seven definition STEP
+comparisons, ten placed-solid exchange checks and 29 material pairs against the
+combined assembly and standard physical context. Both coupled size trials pass
+29 pairs and 24 contacts. Eight regenerated images were inspected against the
+full source figures. The qualifier binds those receipts to the exact native and
+current builder inputs.
+
+The first smaller-radius trial exposed a surviving rim from the previous collar:
+fusing a smaller body onto that parent could not remove the old larger rim. The
+builder now preserves only the qualified six-hole rear lip and reconstructs the
+remaining body from its current controls. The failed variant and old records
+remain under `rejected_trials/radial_variant_overlap`. A complete regeneration
+and the above checks qualified the fix; no clearance threshold was relaxed.
 
 Next are the SH998C ball retainer and 30 quarter-inch balls and their reaction
 surfaces on the thrust collar,

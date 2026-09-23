@@ -404,3 +404,20 @@ remain byte-for-byte preserved.
 | [mechanism](intermediate_snapshot_iso_clutch_stack_mechanism_001.png) | `7fab17fbd59dfb4a366b097a3fbe08621d46a4f27f5c07d73caf5635edc4fee8` |
 | [axial section](intermediate_snapshot_detail_clutch_stack_001.png) | `0680f174f47f595059b69d1b14a036909101f5b61fe618657115a38ca0729db4` |
 | [exposed keys](intermediate_snapshot_detail_clutch_stack_keys_001.png) | `5b4591600295a2ecc8ca30cf3da912c6a9ec82ef9e9ec42485929b05bd3a2cc0` |
+
+
+## Corrected main-clutch core — 22 September 2026
+
+The 002 images preserve the separate SH998B thrust collar and external SH861E
+snap ring after full-plate source tracing corrected the first core. This
+1,549-component isolated transmission/pump candidate passed current geometry,
+exchange, size-trial and visual checks. The old 001 images remain unchanged.
+The radial variant also exposed a retained parent rim; the regenerated body now
+responds coherently to its radius control. Standard tank 011 remains unchanged.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_clutch_stack_002.png) | `7fb570f78a5e634f1d05a54c53c451322a4e63dcd6b83376a4fdd45c57b787a3` |
+| [mechanism](intermediate_snapshot_iso_clutch_stack_mechanism_002.png) | `8b76e182f690d4b6d6d0885f3c8c90dec0d6a90574c3c9b5609a5cf66c84b03c` |
+| [axial section](intermediate_snapshot_detail_clutch_stack_002.png) | `d35ce242a3db5eaf300d2752a496d9a15b03949ea80f17270721071a8d387918` |
+| [exposed keys](intermediate_snapshot_detail_clutch_stack_keys_002.png) | `873ca1ab582262085e0356b32e401bdf04868c966cafc64c258a537d54071a4f` |

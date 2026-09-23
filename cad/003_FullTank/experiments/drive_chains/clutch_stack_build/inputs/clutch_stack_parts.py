@@ -15,9 +15,12 @@ def box(low, high, inner, outer, half_width):
 def build(c, parent_controls, parent_collar):
     rear = parent_controls['collar_bore_step']
     front = parent_controls['collar_front']
-    # Keep the checked six-hole rear lip; replace the formerly vacant body/bore.
-    collar = parent_collar.fuse(xc(c['collar_body_radius'],
-        parent_controls['joint_face']+parent_controls['collar_lip_stock'], front))
+    # Preserve only the checked six-hole lip: the preceding estimated front rim
+    # must not survive when a smaller body radius is selected.
+    lip_end = parent_controls['joint_face']+parent_controls['collar_lip_stock']
+    collar = parent_collar.common(xc(parent_controls['flange_radius']+1,
+        parent_controls['joint_face']-1, lip_end))
+    collar = collar.fuse(xc(c['collar_body_radius'], lip_end, front))
     collar = collar.cut(xc(parent_controls['collar_rear_bore_radius'],
         parent_controls['joint_face']-1, rear))
     collar = collar.cut(xc(c['main_bore_radius'], rear, front+1)).removeSplitter()
