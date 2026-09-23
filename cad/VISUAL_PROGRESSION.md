@@ -519,3 +519,24 @@ transparent-hull companion remain unchanged.
 | [installed isometric](intermediate_snapshot_iso_clutch_stop_band_001.png) | `dadf0b8a5ae68a35c66992c05cb9e813a6e3f22a863b900b2783275e0115c40d` |
 | [band and lining detail](intermediate_snapshot_detail_clutch_stop_band_001.png) | `a0c7856264fc934f1bccc58af538ebea2b5ef0b39b7529ede2f65111742ee710` |
 | [returned-eye section](intermediate_snapshot_section_clutch_stop_band_001.png) | `efc30fe72de5ea86c1e7bd332b7d559f6049c2639467e8f1d0f34ad79cfe9e5e` |
+
+
+## Clutch release bearings, forks and shaft — 23 September 2026
+
+The isolated development assembly has **1,758 physical components**. Two release
+bearings, their pins and retaining hardware, forks, main shaft, operating lever
+and three keys are populated. The two catalogue bearings contain54 estimated
+internal pieces; these counts do not establish a historical manufacturing BOM.
+Brackets, shaft retention, auxiliary controls and full brake linkage remain pending.
+
+Five native views were inspected. Geometry,332 interference pairs,93 STEP
+comparisons and a coupled parameter trial pass. All102 previous images are
+preserved; these three additions bring the progression to105. Standard tank011
+and its transparent-hull companion remain unchanged. Source registration and
+overall clutch-length interpretation remain open.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_clutch_throwout_001.png) | `e1909e937fd459f1cabd623b47d7096585b36a3f64f676cb699443791e23fbe2` |
+| [coupling receiver](intermediate_snapshot_detail_clutch_throwout_001.png) | `9f93302087baea0b800fb55d55769bc092325bb10b0d6a5fa4c949a92aeef302` |
+| [two-row bearing section](intermediate_snapshot_section_clutch_throwout_bearing_001.png) | `4b990ad5e3f5b964633231eeccb2f01c9e4e38b583c27bf24b1ebae5a8b7e2b9` |

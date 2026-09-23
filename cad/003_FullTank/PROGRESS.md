@@ -11,6 +11,27 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — clutch release bearings, forks and shaft
+
+The [development assembly](experiments/drive_chains/clutch_throwout_build/TransmissionWithClutchThrowout.FCStd)
+contains **1,758 physical occurrences**, adding77 and preserving all1,681 parent
+occurrences. It populates the two release bearings, pins and retaining hardware,
+fork levers, main shaft, operating lever and three keys. The two catalogue
+bearings contain54 estimated internal pieces; the77 additions represent25
+catalogue-level installed items, not77 independently source-enumerated parts.
+
+All90 independent checks,332 affected material pairs and93 STEP comparisons
+pass. A coupled bearing-internal/shaft-height trial passes90 checks and368 local
+pairs. Five native views were inspected; three new snapshots preserve all102
+earlier images, bringing the progression to105.
+
+The [packet](packets/I03-clutch-throwout.md) retains the unresolved overall clutch
+length and source registration, and identifies all inferred dimensions. Supporting
+brackets, retention, auxiliary controls and complete brake linkage remain required.
+The shaft lies78.28mm above an existing floor plate; detailed frame support and
+attachment are not yet established. The candidate remains unqualified and is not
+integrated into standard tank011. The full-tank goal remains active and incomplete.
+
 ## 23 September 2026 — clutch-stop band development
 
 The [development candidate](experiments/drive_chains/clutch_stop_band_build/TransmissionWithClutchStopBand.FCStd)

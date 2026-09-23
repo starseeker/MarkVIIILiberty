@@ -1,6 +1,8 @@
 # I03 — clutch-stop brake and receiving throwout interfaces
 
 Status: **development candidate, incomplete and not qualified**, 23 September 2026.
+The subsequent [throwout packet](I03-clutch-throwout.md) develops the receiving
+bearings, fork levers and main shaft while retaining the source-envelope questions.
 The full-tank goal remains active. This packet retains the Rock Island first-100
 target and the priority for standard assembled geometry before poses.
 

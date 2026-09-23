@@ -223,7 +223,17 @@ two parameter trials and a fresh rebuild pass. Five views were inspected and
 three new progression snapshots are saved. The [packet](packets/I03-clutch-retention.md)
 records these checks and the numerical volume diagnostic.
 
-The [clutch-stop band development candidate](experiments/drive_chains/clutch_stop_band_build/TransmissionWithClutchStopBand.FCStd)
+The latest [clutch release development candidate](experiments/drive_chains/clutch_throwout_build/TransmissionWithClutchThrowout.FCStd)
+contains **1,758 physical components**. It adds the two release bearings, pins and
+retaining hardware, forks, main shaft, operating lever and three keys. All90
+independent checks,332 affected material pairs and93 STEP comparisons pass;
+a coupled parameter trial also passes. Bearing internals and unprinted lever/
+shaft profiles are explicit estimates. The [packet](packets/I03-clutch-throwout.md)
+records unresolved source alignment and remaining brackets, retention and brake
+linkage. Three new progression images bring the total to105. This development
+candidate is unqualified; standard tank011 remains unchanged.
+
+The earlier [clutch-stop band development candidate](experiments/drive_chains/clutch_stop_band_build/TransmissionWithClutchStopBand.FCStd)
 contains **1,681 physical components**, including the band, lining and seventeen
 rivets. The printed stop-drum diameter now controls the coupled belt/pump update.
 Geometry, STEP and two parameter trials pass, but the anchor and operating
