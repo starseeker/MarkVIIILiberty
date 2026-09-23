@@ -9,6 +9,8 @@ development document. It adds no separately counted parts: all 17 lower-drive
 constituents and the other 2,152 inherited occurrences remain present. The native
 document includes drivetrain context; its count is not additive to the tank BOM.
 
+A subsequent [water-pump development candidate](P01-engine-water-pump.md) populates the pump internals and castings. Its mounting and body precision remain under review; this receiving-case checkpoint is retained unchanged.
+
 ## Source interpretation and geometry
 
 LIB23/28 describes a cylindrical lug cast into the lower crankcase to receive the

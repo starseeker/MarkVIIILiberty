@@ -11,6 +11,30 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — water-pump development
+
+The [water-pump candidate](experiments/drive_chains/engine_water_pump_study/DrivetrainWithWaterPump.FCStd)
+adds 60 physical constituents in 24 definitions: geared shaft, radial bearing
+internals, two packing/gland sets and spring, open impeller, pump body and
+outlets, inlet cover, sealing layers, drain plug and eight cover stud sets.
+The development document contains 2,230 occurrences and preserves all 2,170
+inherited parts. **All 26 native checks and 202 material comparisons pass**,
+including nine gear-mesh samples and eight complete-rotor rotation samples.
+
+**82 of 84 STEP comparisons pass.** The pump body fails the unchanged native
+kernel-tolerance limit in both coordinate frames; both exported body solids
+are valid and have zero material differences. A separate spherical-pocket
+parametrization fix resolved the bearing cage's STEP failure without changing
+material. Frozen diagnostics retain both findings.
+
+The [packet](packets/P01-engine-water-pump.md) documents remaining source conflicts
+and the mounting constraint found in SNL239: the printed stud thread lengths
+require revision of the estimated flange stack. Case receivers, mounting
+hardware, drain lock wire, body precision, profile refinement, parameter trial,
+fresh reproduction and standard integration remain open. Five views were rendered,
+three final views directly inspected, and two progression images saved (135 total).
+All prior images and standard native documents remain unchanged.
+
 ## 23 September 2026 — lower-drive receiving casting
 
 The [receiving-case candidate](experiments/drive_chains/engine_lower_drive_installation/DrivetrainWithLowerDriveReceivers.FCStd)

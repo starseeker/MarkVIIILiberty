@@ -739,3 +739,18 @@ to 133; all 131 previous images and standard tank 011 are preserved.
 | --- | --- |
 | [receiver isometric section](intermediate_snapshot_iso_engine_lower_drive_receivers_001.png) | `b6249b604b5a42ef61b5bc62fef9943bfbe3d0e8778e490641de899fb39add53` |
 | [offset oil-pump opening from below](intermediate_snapshot_detail_engine_lower_drive_receivers_001.png) | `d66af08dc2057f424e86260b668147d82da493f88bdc87d2509b16f85e6bb106` |
+
+
+## Water-pump development — 23 September 2026
+
+The development assembly now includes 60 water-pump constituents: geared shaft,
+bearing internals, packing/glands/spring, open impeller, pump body, inlet cover,
+sealing layers and cover fasteners. Native geometry, fit, rotation and preservation
+checks pass. The pump body's STEP tolerance repair remains in progress; case
+attachment, exact cast profiles and source identity conflicts remain open.
+Two images bring the progression to 135; all 133 previous images are preserved.
+
+| View | SHA-256 |
+| --- | --- |
+| [intermediate_snapshot_iso_engine_water_pump_study_001](intermediate_snapshot_iso_engine_water_pump_study_001.png) | `b63c5f7ee305d1e7fe79c5996e9ac6d5539867bdc4735bdf67af0b74c9210929` |
+| [intermediate_snapshot_detail_engine_water_pump_study_001](intermediate_snapshot_detail_engine_water_pump_study_001.png) | `2dde934794363f710bd29fc86e4978f1495827384f91d9f8d301c0bc075fa1bc` |

@@ -80,6 +80,14 @@ and installed coordinates. Retain the intended spherical geometry and verify
 the actual round trip. See the
 [isolated pocket export probe](../../../cad/003_FullTank/experiments/drive_chains/engine_crankshaft_build/diagnostics/cage_step_probe/).
 
+Choose that orientation from the actual retained patch. In a thicker cylindrical
+water-pump cage, axial sphere poles remained inside the cage stock and produced
+invalid STEP; tangential poles also failed. Radial poles lay outside both cage
+cylinders, preserving material in both directions and passing the original strict
+round-trip criteria. Thus the useful rule is to keep singularities outside the
+trimmed patch when possible, then verify the saved result. See the
+[three-orientation cage probe](../../../cad/003_FullTank/experiments/drive_chains/engine_water_pump_study/diagnostics/cage_step/README.md).
+
 For small formed wire with planar circular bends, consider explicit cylinders
 and torus segments before sweeping a circular section along a composite path.
 On FreeCAD 1.1.1 / OCC 7.8.0, a swept split pin with a polygonal eye passed native
