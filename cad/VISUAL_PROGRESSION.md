@@ -421,3 +421,22 @@ responds coherently to its radius control. Standard tank 011 remains unchanged.
 | [mechanism](intermediate_snapshot_iso_clutch_stack_mechanism_002.png) | `8b76e182f690d4b6d6d0885f3c8c90dec0d6a90574c3c9b5609a5cf66c84b03c` |
 | [axial section](intermediate_snapshot_detail_clutch_stack_002.png) | `d35ce242a3db5eaf300d2752a496d9a15b03949ea80f17270721071a8d387918` |
 | [exposed keys](intermediate_snapshot_detail_clutch_stack_keys_002.png) | `873ca1ab582262085e0356b32e401bdf04868c966cafc64c258a537d54071a4f` |
+
+
+## Clutch thrust mechanism — 22 September 2026
+
+The 1,581-component isolated transmission/pump native now includes the SH998C
+retainer, thirty quarter-inch steel balls and SH998A spring-stop ring. The
+existing SH998B collar receives an estimated axial race. Source identity, native
+geometry, exchange, two size trials and a fresh build were checked; seven native/
+source views were inspected. These snapshots use 0.04 mm display tessellation
+without changing analytic geometry. Race/cage manufacture and load behavior
+remain unqualified. The six provisional holes await their spring-plunger sets.
+Standard tank 011 and all earlier images remain unchanged.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_clutch_thrust_001.png) | `97c90ad8b0a4ef5a9e9d7ecd97e6946620bfbcf5fdd0fd1ed4ebdbec612b9288` |
+| [exposed balls and cage](intermediate_snapshot_iso_clutch_thrust_open_001.png) | `d161b17d0a5f081ee5a18b94ad574545d8306525d4b73daa08efdaf3b9975e21` |
+| [race contact section](intermediate_snapshot_detail_clutch_thrust_001.png) | `562cef9b8aa6dae9b4b9abade3a678fd06aa49b63bc6a7bd75a6a314f51dc2bf` |
+| [retainer](intermediate_snapshot_detail_clutch_thrust_cage_001.png) | `864458d011f499d20ad971da5d2048f0d2bd703a13b59a20d00c7adec40de328` |

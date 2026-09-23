@@ -186,6 +186,18 @@ the literal handbook interpretation. Ball reaction, cones, spring plungers,
 exact drive attachment and engine engagement remain unfinished; standard tank
 integration follows.
 
+The next [clutch thrust checkpoint](experiments/drive_chains/clutch_thrust_build/TransmissionWithClutchThrust.FCStd)
+contains **1,581 physical components**, adding a separate SH998C retainer,
+30 quarter-inch balls sharing one definition, and the SH998A spring-stop ring.
+The existing thrust collar now has a receiving race; all other 1,548 parent
+occurrences retain their geometry and placement. All 95 affected material pairs,
+460 independent checks, four definition STEP comparisons, 33 placed-solid checks,
+two coupled size trials and a fresh rebuild pass. Seven fine native/source views
+were inspected. The [packet](packets/I03-clutch-thrust.md) records estimated race,
+cage and ring geometry, the contact-query diagnostic and unfinished plunger/cone
+interfaces. The [source comparison](experiments/drive_chains/clutch_thrust_build/source_review/index.html)
+retains the full SNL figure. Standard tank011 remains unchanged.
+
 Additional commands:
 
 ```sh

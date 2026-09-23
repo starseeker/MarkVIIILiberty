@@ -1,0 +1,29 @@
+{
+  "status": "Reconstruction candidate: spring thrust bearing and stop ring; static geometry, not load qualification",
+  "controls": {
+    "ball_count": 30,
+    "ball_diameter": 6.35,
+    "ball_pitch_radius": 87.0,
+    "race_floor_depth": 6.0,
+    "race_groove_radius": 3.4,
+    "groove_depth": 1.075,
+    "pocket_half_width": 7.0,
+    "cage_half_width": 4.8,
+    "cage_stock": 1.5,
+    "cage_hole_radius": 3.3,
+    "stop_bore_offset": 6.8,
+    "stop_boss_half_width": 5.0,
+    "stop_outer_radius": 124.0,
+    "stop_plate_stock": 6.0,
+    "plunger_count": 6,
+    "plunger_pitch_radius": 114.0,
+    "plunger_hole_radius": 4.9125,
+    "plunger_phase_deg": 30.0
+  },
+  "evidence": [
+    {"controls": ["ball_count", "ball_diameter"], "basis": "printed", "source": "SNL164:005: thirty steel balls, 1/4 inch; exact conversion 25.4 mm/in"},
+    {"controls": ["plunger_count"], "basis": "printed quantity applied to inferred hole pattern", "source": "SNL157:018: six SH861A clutch spring plungers; SNL21 shows a plunger through the spring-stop ring"},
+    {"controls": ["plunger_hole_radius"], "basis": "provisional transfer plus inferred clearance", "source": "HB115 gives 3/8-inch plunger diameter; selected hole adds 0.15 mm radial clearance; applicability and fit unresolved"},
+    {"controls": ["ball_pitch_radius", "race_floor_depth", "race_groove_radius", "groove_depth", "pocket_half_width", "cage_half_width", "cage_stock", "cage_hole_radius", "stop_bore_offset", "stop_boss_half_width", "stop_outer_radius", "stop_plate_stock", "plunger_pitch_radius", "plunger_phase_deg"], "basis": "estimated receiving geometry", "source": "SNL Plate21 full figure: callouts 28 thrust collar, 29 retainer assembly, 4 stop ring", "limitation": "Source supports arrangement and separate identities. Dimensions, groove section, cage manufacture, clearances and angular phase are estimates. No pixel scale calibration or load/installation claim."}
+  ]
+}
