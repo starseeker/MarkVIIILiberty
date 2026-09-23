@@ -540,3 +540,25 @@ overall clutch-length interpretation remain open.
 | [installed isometric](intermediate_snapshot_iso_clutch_throwout_001.png) | `e1909e937fd459f1cabd623b47d7096585b36a3f64f676cb699443791e23fbe2` |
 | [coupling receiver](intermediate_snapshot_detail_clutch_throwout_001.png) | `9f93302087baea0b800fb55d55769bc092325bb10b0d6a5fa4c949a92aeef302` |
 | [two-row bearing section](intermediate_snapshot_section_clutch_throwout_bearing_001.png) | `4b990ad5e3f5b964633231eeccb2f01c9e4e38b583c27bf24b1ebae5a8b7e2b9` |
+
+
+## Clutch supports and auxiliary controls — 23 September 2026
+
+The isolated development assembly contains **1,786 physical components**: 27 new
+mechanism pieces, one replacement floor context, two revised parent parts and
+1,756 unchanged inherited occurrences. Brackets, mounting hardware, auxiliary
+shaft/levers and the rear control rod are populated. Floor mounting and casting
+contours remain hypotheses; full-source review corrected the longitudinal control
+direction. The complete brake and forward controls remain unfinished.
+
+All 117 independent checks, 88 affected material pairs and 46 STEP comparisons
+pass, along with one coupled local parameter trial. Five native views were inspected.
+All 105 earlier images remain unchanged; these additions bring the progression to
+108. Standard tank011 and its transparent-hull companion remain unchanged. Source
+registration, complete clutch length and historical mounting remain open.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_clutch_supports_001.png) | `3d8db4d1f797e815821f31d0fb5620262c0ed506e177699c245600236b0c3edf` |
+| [support detail](intermediate_snapshot_detail_clutch_supports_001.png) | `c62de91a3c25027f3e5e63120ffee2203a5a83976b243f84c35eba16ae7636ad` |
+| [auxiliary controls](intermediate_snapshot_detail_clutch_auxiliary_001.png) | `8918fa3e6518783c5cdfe4056fe804c5ce980bc017c34a1c7715081fa92aafd8` |

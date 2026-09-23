@@ -1,5 +1,11 @@
 # I03 — main clutch release bearings, forks and shaft
 
+The subsequent [support and auxiliary-control checkpoint](I03-clutch-supports.md)
+is the current development parent. Its source review withdraws this packet's
+M4150 main-shaft split-pin assignment and removes that unsupported receiving hole:
+the 5/32 × 1in split pin belongs to M4165's pending bell-crank pin assembly.
+The results below describe the preserved earlier checkpoint.
+
 Status: **development candidate; incomplete and not qualified**, 23 September 2026.
 This continues [the clutch-stop brake packet](I03-clutch-stop-brake.md). The full
 tank remains in progress, with standard geometry taking priority over poses.

@@ -1,5 +1,10 @@
 # I03 — clutch-stop brake and receiving throwout interfaces
 
+The latest [support and auxiliary-control packet](I03-clutch-supports.md) builds on
+the subsequent throwout work. It supplies provisional supporting brackets and rear
+controls; the complete clutch-stop brake remains the next required mechanism.
+The counts and results below describe the preserved stop-band checkpoint.
+
 Status: **development candidate, incomplete and not qualified**, 23 September 2026.
 The subsequent [throwout packet](I03-clutch-throwout.md) develops the receiving
 bearings, fork levers and main shaft while retaining the source-envelope questions.

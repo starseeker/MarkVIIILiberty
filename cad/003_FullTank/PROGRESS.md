@@ -11,6 +11,34 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — clutch supports and auxiliary controls
+
+The [development assembly](experiments/drive_chains/clutch_support_build/TransmissionWithClutchSupports.FCStd)
+contains **1,786 physical occurrences**: 27 new mechanism pieces, one replacement
+floor context, two revised parent parts and 1,756 unchanged inherited occurrences.
+It adds both supporting brackets and their eight cap screws, the cup setscrew,
+auxiliary shaft/levers/keys/taper pins, and the rear rod with forks and pin assemblies.
+The floor copy is replacement context and must not be duplicated at integration.
+
+Full-source review corrected the control direction and withdrew the unsupported
+main-shaft split-pin assignment. That pin belongs to the pending M4165 bell-crank
+joint. The estimated bracket mounting uses underside screw heads, real floor
+clearance holes and blind receiving bosses. Attachment to this floor remains a
+historical hypothesis to revisit with the engine frame.
+
+All 117 independent geometry checks, 88 affected material pairs including standard
+context, and 46 STEP comparisons pass. A coupled dimensional trial passes 117 checks
+and 78 local pairs. Five native views were inspected; three new progression images
+bring the total to 108, preserving all 105 previous images. A retained split-pin
+exchange failure and successful analytic replacement inform a focused FreeCAD skill
+note. No acceptance tolerance was relaxed.
+
+The [packet](packets/I03-clutch-supports.md) and its receipts preserve all source and
+qualification limits. Full brake/forward controls, engine-frame receivers, overall
+clutch length and source registration remain open. The candidate is unqualified;
+standard tank011 and all 20 standard native documents remain unchanged. The full
+tank goal is active and incomplete.
+
 ## 23 September 2026 — clutch release bearings, forks and shaft
 
 The [development assembly](experiments/drive_chains/clutch_throwout_build/TransmissionWithClutchThrowout.FCStd)

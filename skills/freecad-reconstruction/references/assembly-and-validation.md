@@ -38,6 +38,15 @@ matches the evidence. Booleans can return a compound containing one solid; check
 attributes specific to a solid, such as its `CenterOfMass`, are present on a
 generic imported `Part.Shape`. Use the constituent solids for aggregate centroids.
 
+For small formed wire with planar circular bends, consider explicit cylinders
+and torus segments before sweeping a circular section along a composite path.
+On FreeCAD 1.1.1 / OCC 7.8.0, a swept split pin with a polygonal eye passed native
+validity but failed STEP material/centroid comparisons; analytic bends and a
+semicircular eye passed both definition and installed-orientation checks. This is
+a tested local alternative, not a ban on sweeps. Check that fusions retain both
+legs; a connected, valid result can still have lost material. The project retains
+the [failure and focused probe](../../../cad/003_FullTank/experiments/drive_chains/clutch_support_build/diagnostics/README.md).
+
 A native save can normalize quaternion components in their last decimal places
 or change BRep bookkeeping without changing the geometry. Preserve the original
 parent file and its hash, then assess the new document against the declared

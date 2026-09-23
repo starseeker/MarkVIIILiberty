@@ -223,15 +223,19 @@ two parameter trials and a fresh rebuild pass. Five views were inspected and
 three new progression snapshots are saved. The [packet](packets/I03-clutch-retention.md)
 records these checks and the numerical volume diagnostic.
 
-The latest [clutch release development candidate](experiments/drive_chains/clutch_throwout_build/TransmissionWithClutchThrowout.FCStd)
-contains **1,758 physical components**. It adds the two release bearings, pins and
-retaining hardware, forks, main shaft, operating lever and three keys. All90
-independent checks,332 affected material pairs and93 STEP comparisons pass;
-a coupled parameter trial also passes. Bearing internals and unprinted lever/
-shaft profiles are explicit estimates. The [packet](packets/I03-clutch-throwout.md)
-records unresolved source alignment and remaining brackets, retention and brake
-linkage. Three new progression images bring the total to105. This development
-candidate is unqualified; standard tank011 remains unchanged.
+The latest [clutch-support development candidate](experiments/drive_chains/clutch_support_build/TransmissionWithClutchSupports.FCStd)
+contains **1,786 physical components**. It adds 27 mechanism pieces and a replacement
+floor context, revises the main shaft and operating lever, and preserves 1,756
+parent occurrences. Both brackets, mounting screws, auxiliary shaft/levers and
+rear control rod are populated. Full-source review corrects their longitudinal
+direction and removes an unsupported main-shaft hole; the source split pin belongs
+to the pending brake bell crank. All 117 independent checks, 88 affected material
+pairs and 46 STEP comparisons pass; a coupled dimensional trial also passes local
+checks. Five native views were inspected, and three new progression images bring
+the total to 108. The [packet](packets/I03-clutch-supports.md) records provisional
+floor attachment, unresolved source alignment and clutch length. Full brake,
+forward controls and engine-frame interfaces remain required. This candidate is
+unqualified; standard tank011 and its transparent-hull view remain unchanged.
 
 The earlier [clutch-stop band development candidate](experiments/drive_chains/clutch_stop_band_build/TransmissionWithClutchStopBand.FCStd)
 contains **1,681 physical components**, including the band, lining and seventeen

@@ -1,0 +1,902 @@
+{
+  "status": "development_hypothesis_not_qualified",
+  "native_sha256": "a9755924cfb88786dc81fcd74f07c32cb59bdcf642d08e39597d16ee509d677a",
+  "parent_native_sha256": "28c1d911cf7ede7e517061d685141e8db901d117f0a759789ea9d41e7c17a100",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/clutch_support_build.py": "26a45da97b66f35b1cbc8faa29f989b87573ee2deb8b2b42ce1b2f8c025ff4cf",
+    "cad/003_FullTank/experiments/drive_chains/clutch_support_parts.py": "05b129e8f53989cbbda5bc379352d41a64778eea427087195c23814746013ddb",
+    "cad/003_FullTank/experiments/drive_chains/clutch_support_sources.json": "76da599e8b39d5cc0b2aa090953290b5dd6542a8159929d999fbc5bd0a07c5e7",
+    "cad/003_FullTank/experiments/drive_chains/clutch_throwout_parts.py": "117bfdfb2d72f3bca43656f7491dfd3b29036492391cf76610342d2a2f01f6fd",
+    "cad/003_FullTank/experiments/drive_chains/transmission_stud_parts.py": "cdeda621c79bf68a95f3cb03f173e60c75a66f2d63331c0e334418840f6fd3bb",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_installation_parts.py": "3aa0f82af289688b8453ac25dbe1c53bf84924880a0e03adb51328431a3eef7f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_parts.py": "35c677472dad5a90701bedbd6c06b3fb01f2b0fda494efc00be48a64db35d3a6",
+    "cad/003_FullTank/experiments/drive_chains/transmission_support_parts.py": "378d460b581c26154940ced9b9f4a8d8ca514fb97b05f24a2ac13c8c8b595405",
+    "cad/003_FullTank/experiments/drive_chains/transmission_output_parts.py": "f5733f343308c7a7179cc6273b0c62162ba2b84ee09eeb6f68a31e31ebc2ed20",
+    "cad/003_FullTank/experiments/drive_chains/clutch_support_controls.json": "a12bf3ab4bc2e30477c0dcd1ee751d7e0d80ac7a18fe952893ea170f3d8f9810"
+  },
+  "controls": {
+    "main_x": 783.45,
+    "main_z": -237.9056473,
+    "main_radius": 19.05,
+    "bracket_y": 185.0,
+    "journal_width": 40.0,
+    "journal_radius": 31.0,
+    "journal_clearance": 0.1,
+    "foot_half_width": 55.0,
+    "foot_thickness": 14.0,
+    "foot_rear_x": -80.0,
+    "foot_front_margin": 80.0,
+    "bolt_x_margin": 55.0,
+    "bolt_y": 32.0,
+    "boss_radius": 20.0,
+    "boss_height": 48.0,
+    "web_thickness": 12.0,
+    "cap_hole_clearance": 0.15,
+    "blind_end_gap": 1.0,
+    "right_cap_diameter": 12.7,
+    "right_cap_length": 44.45,
+    "left_cap_diameter": 15.875,
+    "left_cap_length": 47.625,
+    "aux_dx": -260.0,
+    "aux_dz": 25.0,
+    "aux_shaft_radius": 19.05,
+    "aux_shaft_y_min": 116.0,
+    "aux_shaft_y_max": 254.0,
+    "aux_lever_ys": [
+      141.0,
+      229.0
+    ],
+    "aux_hub_radius": 32.0,
+    "aux_hub_width": 44.0,
+    "aux_eye_height": -65.0,
+    "aux_eye_radius": 18.0,
+    "aux_web_width": 18.0,
+    "taper_pin_length": 76.2,
+    "taper_pin_large_diameter": 8.6614,
+    "taper_ratio": 48.0,
+    "taper_bore_clearance": 0.03,
+    "taper_pin_z": -5.0,
+    "fork_gap": 18.4,
+    "fork_cheek_thickness": 8.0,
+    "fork_eye_radius": 17.0,
+    "fork_length": 55.0,
+    "fork_socket_start": 30.0,
+    "fork_socket_radius": 14.0,
+    "fork_pin_radius": 8.0,
+    "fork_pin_clearance": 0.05,
+    "fork_pin_length": 47.625,
+    "fork_pin_head_radius": 11.0,
+    "fork_pin_head_thickness": 4.5,
+    "fork_pin_cotter_y": 22.5,
+    "rod_diameter": 19.05,
+    "rod_engagement": 20.0,
+    "rod_nut_af": 28.575,
+    "rod_nut_height": 15.875,
+    "set_screw_diameter": 15.875,
+    "set_screw_length": 22.225,
+    "set_screw_tip_x": -17.2,
+    "set_screw_head_width": 12.7,
+    "set_screw_head_height": 5.5,
+    "set_screw_cup_radius": 6.0,
+    "set_screw_cup_depth": 1.5,
+    "aux_bracket_y": 185.0,
+    "operating_eye_x": -100.0,
+    "operating_eye_z": -40.0
+  },
+  "inherited_controls": {
+    "bearing_diameter": 72.0,
+    "bearing_bore": 35.0,
+    "bearing_width": 17.0,
+    "bearing_center_x": 783.45,
+    "bearing_center_y": 105.0,
+    "bearing_center_z": 0.0,
+    "ball_radius": 3.96875,
+    "ball_pitch_radius": 26.75,
+    "ball_row_offset": 4.0,
+    "balls_per_row": 12,
+    "race_clearance": 0.025,
+    "inner_shoulder_radius": 23.5,
+    "cage_inner_radius": 25.4,
+    "cage_outer_radius": 28.1,
+    "cage_half_width": 8.3,
+    "cage_ball_clearance": 0.2,
+    "pin_journal_radius": 17.45,
+    "pin_stem_radius": 12.7,
+    "pin_lever_bore_radius": 12.8,
+    "washer_bore_radius": 17.55,
+    "washer_seat_radius": 22.5,
+    "washer_outer_radius": 33.0,
+    "washer_thickness": 4.0,
+    "washer_outer_relief": 1.5,
+    "lever_y": 134.0,
+    "lever_web_thickness": 18.0,
+    "lever_hub_width": 44.0,
+    "lever_hub_radius": 33.0,
+    "lever_top_radius": 24.0,
+    "shaft_center_x": 783.45,
+    "shaft_center_z": -237.9056473,
+    "shaft_radius": 19.05,
+    "shaft_bore_radius": 19.15,
+    "shaft_y_min": -205.0,
+    "shaft_y_max": 265.0,
+    "key_width": 9.525,
+    "key_length": 38.1,
+    "key_depth_in_shaft": 4.7625,
+    "key_fit_allowance": 0.1,
+    "operating_lever_y": 229.0,
+    "operating_eye_x": 100.0,
+    "operating_eye_z": 65.0,
+    "operating_eye_bore": 8.05,
+    "pin_lock_screw_diameter": 11.1125,
+    "pin_lock_screw_length": 24.0
+  },
+  "datums": {
+    "mounts": [
+      {
+        "name": "ClutchSupport_RightMount1",
+        "side": "Right",
+        "center": [
+          728.45,
+          -217.0,
+          -322.18351043576615
+        ],
+        "diameter": 12.7,
+        "length": 44.45,
+        "head_seat_z": -322.18351043576615,
+        "engagement": 38.449999999999775
+      },
+      {
+        "name": "ClutchSupport_RightMount2",
+        "side": "Right",
+        "center": [
+          728.45,
+          -153.0,
+          -322.18351043576615
+        ],
+        "diameter": 12.7,
+        "length": 44.45,
+        "head_seat_z": -322.18351043576615,
+        "engagement": 38.449999999999775
+      },
+      {
+        "name": "ClutchSupport_RightMount3",
+        "side": "Right",
+        "center": [
+          838.45,
+          -217.0,
+          -322.18351043576615
+        ],
+        "diameter": 12.7,
+        "length": 44.45,
+        "head_seat_z": -322.18351043576615,
+        "engagement": 38.449999999999775
+      },
+      {
+        "name": "ClutchSupport_RightMount4",
+        "side": "Right",
+        "center": [
+          838.45,
+          -153.0,
+          -322.18351043576615
+        ],
+        "diameter": 12.7,
+        "length": 44.45,
+        "head_seat_z": -322.18351043576615,
+        "engagement": 38.449999999999775
+      },
+      {
+        "name": "ClutchSupport_LeftMount1",
+        "side": "Left",
+        "center": [
+          838.45,
+          153.0,
+          -322.18351043576615
+        ],
+        "diameter": 15.875,
+        "length": 47.625,
+        "head_seat_z": -322.18351043576615,
+        "engagement": 41.62499999999977
+      },
+      {
+        "name": "ClutchSupport_LeftMount2",
+        "side": "Left",
+        "center": [
+          838.45,
+          217.0,
+          -322.18351043576615
+        ],
+        "diameter": 15.875,
+        "length": 47.625,
+        "head_seat_z": -322.18351043576615,
+        "engagement": 41.62499999999977
+      },
+      {
+        "name": "ClutchSupport_LeftMount3",
+        "side": "Left",
+        "center": [
+          468.45000000000005,
+          153.0,
+          -322.18351043576615
+        ],
+        "diameter": 15.875,
+        "length": 47.625,
+        "head_seat_z": -322.18351043576615,
+        "engagement": 41.62499999999977
+      },
+      {
+        "name": "ClutchSupport_LeftMount4",
+        "side": "Left",
+        "center": [
+          468.45000000000005,
+          217.0,
+          -322.18351043576615
+        ],
+        "diameter": 15.875,
+        "length": 47.625,
+        "head_seat_z": -322.18351043576615,
+        "engagement": 41.62499999999977
+      }
+    ],
+    "floor_top": -316.1835104357659,
+    "floor_thickness": 6.000000000000227,
+    "main_axis": [
+      783.45,
+      0,
+      -237.9056473
+    ],
+    "aux_axis": [
+      523.45,
+      0,
+      -212.9056473
+    ],
+    "rod_eyes": [
+      [
+        683.45,
+        229.0,
+        -277.9056473
+      ],
+      [
+        523.45,
+        229.0,
+        -277.9056473
+      ]
+    ],
+    "rod_center_distance": 160.0,
+    "cotter": {
+      "straight_length_mm": 17.6,
+      "bend_arc_length_mm": 1.2217304763960306,
+      "tail_length_mm": 3.4032695236039694,
+      "total_leg_centerline_mm": 22.225,
+      "tail_endpoints": [
+        [
+          0.0,
+          12.734948060228707,
+          -3.1387311167129033
+        ],
+        [
+          0.0,
+          12.734948060228707,
+          3.1387311167129033
+        ]
+      ],
+      "wire_radius_mm": 0.7625,
+      "under_eye_y_mm": -8.8,
+      "bend_start_y_mm": 8.8,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "unsupported_main_shaft_cotter_removed": true,
+    "mounting_hypothesis": "Underside floor screws into bracket bosses; unverified historical attachment"
+  },
+  "occurrences": [
+    {
+      "key": "right_cap",
+      "name": "ClutchSupport_RightMount1",
+      "xyz": [
+        728.45,
+        -217.0,
+        -322.18351043576615
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchSupports"
+    },
+    {
+      "key": "right_cap",
+      "name": "ClutchSupport_RightMount2",
+      "xyz": [
+        728.45,
+        -153.0,
+        -322.18351043576615
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchSupports"
+    },
+    {
+      "key": "right_cap",
+      "name": "ClutchSupport_RightMount3",
+      "xyz": [
+        838.45,
+        -217.0,
+        -322.18351043576615
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchSupports"
+    },
+    {
+      "key": "right_cap",
+      "name": "ClutchSupport_RightMount4",
+      "xyz": [
+        838.45,
+        -153.0,
+        -322.18351043576615
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchSupports"
+    },
+    {
+      "key": "right_bracket",
+      "name": "ClutchSupport_RightBracket",
+      "xyz": [
+        783.45,
+        -185.0,
+        -316.1835104357659
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchSupports"
+    },
+    {
+      "key": "left_cap",
+      "name": "ClutchSupport_LeftMount1",
+      "xyz": [
+        838.45,
+        153.0,
+        -322.18351043576615
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchSupports"
+    },
+    {
+      "key": "left_cap",
+      "name": "ClutchSupport_LeftMount2",
+      "xyz": [
+        838.45,
+        217.0,
+        -322.18351043576615
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchSupports"
+    },
+    {
+      "key": "left_cap",
+      "name": "ClutchSupport_LeftMount3",
+      "xyz": [
+        468.45000000000005,
+        153.0,
+        -322.18351043576615
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchSupports"
+    },
+    {
+      "key": "left_cap",
+      "name": "ClutchSupport_LeftMount4",
+      "xyz": [
+        468.45000000000005,
+        217.0,
+        -322.18351043576615
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchSupports"
+    },
+    {
+      "key": "left_bracket",
+      "name": "ClutchSupport_LeftBracket",
+      "xyz": [
+        783.45,
+        185.0,
+        -316.1835104357659
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchSupports"
+    },
+    {
+      "key": "cup_screw",
+      "name": "ClutchSupport_MainSetScrew",
+      "xyz": [
+        783.45,
+        134.0,
+        -237.9056473
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchSupports"
+    },
+    {
+      "key": "aux_lever",
+      "name": "ClutchSupport_AuxLever1",
+      "xyz": [
+        523.45,
+        141.0,
+        -212.9056473
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "existing_key",
+      "name": "ClutchSupport_AuxKey1",
+      "xyz": [
+        523.45,
+        141.0,
+        -212.9056473
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "taper_pin",
+      "name": "ClutchSupport_AuxTaper1",
+      "xyz": [
+        523.45,
+        141.0,
+        -212.9056473
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "aux_lever",
+      "name": "ClutchSupport_AuxLever2",
+      "xyz": [
+        523.45,
+        229.0,
+        -212.9056473
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "existing_key",
+      "name": "ClutchSupport_AuxKey2",
+      "xyz": [
+        523.45,
+        229.0,
+        -212.9056473
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "taper_pin",
+      "name": "ClutchSupport_AuxTaper2",
+      "xyz": [
+        523.45,
+        229.0,
+        -212.9056473
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "aux_shaft",
+      "name": "ClutchSupport_AuxShaft",
+      "xyz": [
+        523.45,
+        0,
+        -212.9056473
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "rod",
+      "name": "ClutchSupport_RearAuxRod",
+      "xyz": [
+        683.45,
+        229.0,
+        -277.9056473
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "fork",
+      "name": "ClutchSupport_MainFork",
+      "xyz": [
+        683.45,
+        229.0,
+        -277.9056473
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "fork_pin",
+      "name": "ClutchSupport_MainForkPin",
+      "xyz": [
+        683.45,
+        229.0,
+        -277.9056473
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "fork_cotter",
+      "name": "ClutchSupport_MainForkCotter",
+      "xyz": [
+        683.45,
+        251.5,
+        -277.9056473
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "rod_nut",
+      "name": "ClutchSupport_MainRodNut",
+      "xyz": [
+        628.45,
+        229.0,
+        -277.9056473
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "fork",
+      "name": "ClutchSupport_AuxFork",
+      "xyz": [
+        523.45,
+        229.0,
+        -277.9056473
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "fork_pin",
+      "name": "ClutchSupport_AuxForkPin",
+      "xyz": [
+        523.45,
+        229.0,
+        -277.9056473
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "fork_cotter",
+      "name": "ClutchSupport_AuxForkCotter",
+      "xyz": [
+        523.45,
+        251.5,
+        -277.9056473
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "rod_nut",
+      "name": "ClutchSupport_AuxRodNut",
+      "xyz": [
+        578.45,
+        229.0,
+        -277.9056473
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "ClutchAuxiliary"
+    },
+    {
+      "key": "floor_revision",
+      "name": "hull_floor_7",
+      "xyz": [
+        2628.6660043354777,
+        0.0,
+        527.05
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "assembly": "HullInterfaceContext"
+    }
+  ],
+  "new_ids": [
+    "ClutchSupport_RightMount1",
+    "ClutchSupport_RightMount2",
+    "ClutchSupport_RightMount3",
+    "ClutchSupport_RightMount4",
+    "ClutchSupport_RightBracket",
+    "ClutchSupport_LeftMount1",
+    "ClutchSupport_LeftMount2",
+    "ClutchSupport_LeftMount3",
+    "ClutchSupport_LeftMount4",
+    "ClutchSupport_LeftBracket",
+    "ClutchSupport_MainSetScrew",
+    "ClutchSupport_AuxLever1",
+    "ClutchSupport_AuxKey1",
+    "ClutchSupport_AuxTaper1",
+    "ClutchSupport_AuxLever2",
+    "ClutchSupport_AuxKey2",
+    "ClutchSupport_AuxTaper2",
+    "ClutchSupport_AuxShaft",
+    "ClutchSupport_RearAuxRod",
+    "ClutchSupport_MainFork",
+    "ClutchSupport_MainForkPin",
+    "ClutchSupport_MainForkCotter",
+    "ClutchSupport_MainRodNut",
+    "ClutchSupport_AuxFork",
+    "ClutchSupport_AuxForkPin",
+    "ClutchSupport_AuxForkCotter",
+    "ClutchSupport_AuxRodNut",
+    "hull_floor_7"
+  ],
+  "new_mechanism_ids": [
+    "ClutchSupport_RightMount1",
+    "ClutchSupport_RightMount2",
+    "ClutchSupport_RightMount3",
+    "ClutchSupport_RightMount4",
+    "ClutchSupport_RightBracket",
+    "ClutchSupport_LeftMount1",
+    "ClutchSupport_LeftMount2",
+    "ClutchSupport_LeftMount3",
+    "ClutchSupport_LeftMount4",
+    "ClutchSupport_LeftBracket",
+    "ClutchSupport_MainSetScrew",
+    "ClutchSupport_AuxLever1",
+    "ClutchSupport_AuxKey1",
+    "ClutchSupport_AuxTaper1",
+    "ClutchSupport_AuxLever2",
+    "ClutchSupport_AuxKey2",
+    "ClutchSupport_AuxTaper2",
+    "ClutchSupport_AuxShaft",
+    "ClutchSupport_RearAuxRod",
+    "ClutchSupport_MainFork",
+    "ClutchSupport_MainForkPin",
+    "ClutchSupport_MainForkCotter",
+    "ClutchSupport_MainRodNut",
+    "ClutchSupport_AuxFork",
+    "ClutchSupport_AuxForkPin",
+    "ClutchSupport_AuxForkCotter",
+    "ClutchSupport_AuxRodNut"
+  ],
+  "context_revision_ids": [
+    "hull_floor_7"
+  ],
+  "changed_ids": [
+    "ClutchThrowout_Shaft",
+    "ClutchThrowout_OperatingLever"
+  ],
+  "exchange_ids": [
+    "ClutchSupport_RightMount1",
+    "ClutchSupport_RightMount2",
+    "ClutchSupport_RightMount3",
+    "ClutchSupport_RightMount4",
+    "ClutchSupport_RightBracket",
+    "ClutchSupport_LeftMount1",
+    "ClutchSupport_LeftMount2",
+    "ClutchSupport_LeftMount3",
+    "ClutchSupport_LeftMount4",
+    "ClutchSupport_LeftBracket",
+    "ClutchSupport_MainSetScrew",
+    "ClutchSupport_AuxLever1",
+    "ClutchSupport_AuxKey1",
+    "ClutchSupport_AuxTaper1",
+    "ClutchSupport_AuxLever2",
+    "ClutchSupport_AuxKey2",
+    "ClutchSupport_AuxTaper2",
+    "ClutchSupport_AuxShaft",
+    "ClutchSupport_RearAuxRod",
+    "ClutchSupport_MainFork",
+    "ClutchSupport_MainForkPin",
+    "ClutchSupport_MainForkCotter",
+    "ClutchSupport_MainRodNut",
+    "ClutchSupport_AuxFork",
+    "ClutchSupport_AuxForkPin",
+    "ClutchSupport_AuxForkCotter",
+    "ClutchSupport_AuxRodNut",
+    "hull_floor_7",
+    "ClutchThrowout_Shaft",
+    "ClutchThrowout_OperatingLever"
+  ],
+  "native_occurrences": 1786,
+  "unchanged_parent_occurrences": 1756,
+  "standard_native_hashes": {
+    "native/MarkVIII.FCStd": "52aea1af979efc27fbfbce003e976e8a02cfa2da3e0ca0d25a631d7c5e7d48ac",
+    "native/library/CoolingVentilation.FCStd": "810553a07fb9610c11dd3cd2f15e1eec0b7712e16f1d0a4245d70922532f73c4",
+    "native/library/CrewControlsAndEquipment.FCStd": "990e476bcdd088d58bbe76028a782667301a6f73e9c5a8065767bfd4e3860bae",
+    "native/library/Drivetrain.FCStd": "694c20a3995baafb0698f8c07d61e3e6b37bf6a0b0214362fe75bf0a80c30e25",
+    "native/library/ElectricalInstruments.FCStd": "7ca38479c37f7a169b2ab52a4ea90afd80cc7cf97d45c52df380abbd91dc393d",
+    "native/library/FuelPressure.FCStd": "5d5e8ced3b3b1bc380c9822e4b0d210520da081fa119ab16bd58523fce93dc6a",
+    "native/library/HullStructure.FCStd": "a6b78305dddcfa74904b07ea9dad8356ba168d774499599c854074c8aca778fc",
+    "native/library/Powerplant.FCStd": "234c3582a110f607f98977a034638b3f65391b6c6c5cd284a9570c74629752b7",
+    "native/library/RunningGear.FCStd": "52587107dabf028783ad6bd087ce1f8e2bf3aacea7d641ab8bfee07101fddf44",
+    "native/library/Sponsons.FCStd": "cca4a76fd623303caeb7d6b2fa277f6bcc251170303379ce6f07a432add20162",
+    "native/subsystems/ArmamentRepresentation.FCStd": "da6a1fd3e488982cff35e88bbce264f85a448c8349177ac9550939dc96f0b553",
+    "native/subsystems/CoolingVentilation.FCStd": "bb0996bed71ec8269a68f7445da53fb86789a7cb7777c5972cff74fd47811e47",
+    "native/subsystems/CrewControlsAndEquipment.FCStd": "5831b330452e69ba2dc0ae4b2c9757b2fbf174d988ce44126e64a7adec7e4fe5",
+    "native/subsystems/Drivetrain.FCStd": "222888c3c6d72363524415dfeec66ce89f9144cf973cbb077dab245d2fc0c4bf",
+    "native/subsystems/ElectricalInstruments.FCStd": "5f423b486223168139193422992d379bc291e73ac992a372bdcef75069051f0c",
+    "native/subsystems/FuelPressure.FCStd": "45f9cb47c26ef7e007ccb0451554cf33321bf63bc85d26e2edda9f00764b7e7b",
+    "native/subsystems/HullStructure.FCStd": "91bb04cc51d10a143ffeb982b3bec08e0e28b5942da452601f738d2c2528f56c",
+    "native/subsystems/Powerplant.FCStd": "c22f9480fc5a60028e6af664fc5ebb2e07ca292694e89d29eacd0b0a18ad720d",
+    "native/subsystems/RunningGear.FCStd": "5b225c9b28cce15f4c331e1d076a39a7575319831d95cf92d8db5cbc0672418e",
+    "native/subsystems/Sponsons.FCStd": "79c852869c29529dd8de89a257e7e127ff3d7d2255e1a8b186fc044b292f38bb"
+  },
+  "standard_assembly_modified": false,
+  "complete_throwout": false,
+  "complete_brake": false,
+  "complete_clutch": false,
+  "complete_tank": false,
+  "historical_mounting_proven": false,
+  "floor_base": [
+    2628.6660043354777,
+    0.0,
+    527.05
+  ],
+  "floor_original_signature": {
+    "solids": 1,
+    "volume_mm3": 11214973.724214459,
+    "bounds_mm": [
+      2227.635669556985,
+      -1165.225,
+      527.05,
+      3029.69633911397,
+      1165.225,
+      533.0500000000002
+    ]
+  },
+  "headless": true,
+  "freecad": [
+    "1",
+    "1",
+    "1",
+    "44227 +647 (Git)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "tag: 1.1.1",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
+  "occ": "7.8.0",
+  "artifact_hashes": {
+    "ClutchSupportInstallation.step": "7e457b749d599e6b53b865bb248d47f3f89ba3c7e569f4e8ec573df79454eb41",
+    "ClutchSupportDefinitions.step": "8abcf1efa839f843d9b1a42411ef63d25c419a48a2309d343cb104ec8b33fdd3"
+  }
+}
