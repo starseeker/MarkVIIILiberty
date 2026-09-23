@@ -1,5 +1,7 @@
 # P01 — Water-pump mounting and casting revision
 
+Historical checkpoint at commit `2739442`; the [passage correction](P01-engine-water-pump-passage.md) follows this work. Results below describe the retained mounting candidate.
+
 This extends the [water-pump development checkpoint](P01-engine-water-pump.md).
 The new development assembly has 2,246 physical occurrences: 76 pump constituents
 in 28 definitions, one revised lower crankcase and 2,169 preserved parent parts.
@@ -80,7 +82,7 @@ must preserve the fluid void while retaining the blind stud bosses. Fresh nomina
 reproduction passes: all 848 serialized shapes and 45,133 checked properties match.
 This remains a development checkpoint; the coupled trial is not qualified.
 Regenerate with `python3 cad/003_FullTank/experiments/drive_chains/engine_water_pump_build.py`;
-its default output is now `engine_water_pump_mounting_study`.
+at commit `2739442` its default output was `engine_water_pump_mounting_study`. The continuing builder now writes the following passage study; use that historical commit to reproduce this earlier checkpoint.
 The [controls](../experiments/drive_chains/engine_water_pump_controls.json) expose
 133 construction/validation inputs, with separate evidence labels. The builder
 freezes 82 records, nine source pages and five assets; the washer discrepancy

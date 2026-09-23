@@ -11,7 +11,7 @@ HERE=Path(__file__).resolve().parent;STAGE=HERE.parents[1];ROOT=STAGE.parents[1]
 sys.path[:0]=[str(HERE),str(STAGE)]
 from lib import runtime
 from lib.evidence import read,write,sha
-p=argparse.ArgumentParser();p.add_argument('--candidate',type=Path,default=HERE/'engine_water_pump_mounting_study')
+p=argparse.ArgumentParser();p.add_argument('--candidate',type=Path,default=HERE/'engine_water_pump_passage_study')
 p.add_argument('--standard-context',action='store_true')
 p.add_argument('--preservation',action='store_true');p.add_argument('--worker',action='store_true')
 a=p.parse_args();out=a.candidate.resolve()
@@ -119,6 +119,18 @@ try:
         t=i*math.pi/16;rad=9.5
         drain_support.append(body.isInside(V(c['scroll_center_x']+rad*math.cos(t),rad*math.sin(t),seat+.2),1e-7,False))
     ck('drain gasket has a complete flat casting seat',all(drain_support) and gasket.distToShape(body)[0]<1e-5 and gasket.distToShape(plug)[0]<1e-5)
+    # Check the intended fluid volume near the added drain stock, beyond the
+    # smaller centerline gauges. The retained old casting fails this witness.
+    drain_region=Part.makeCylinder(c['plug_head_af']/2+2,
+        -c['scroll_center_radius']-c['scroll_outer_radius']+c['body_wall']+1-seat,
+        V(c['scroll_center_x'],0,seat),Z)
+    fluid=Part.makeTorus(c['scroll_center_radius'],c['scroll_inner_radius'],V(c['scroll_center_x'],0,0),X)
+    for sign in [-1,1]:
+        rotation=App.Rotation(X,c['outlet_clock_deg'])
+        start=V(c['scroll_center_x'],0,0)+rotation.multVec(V(0,sign*c['outlet_start_y'],sign*c['outlet_offset_z']))
+        fluid=fluid.fuse(Part.makeCylinder(c['outlet_inner_radius'],c['outlet_tip_y']-c['outlet_start_y'],start,rotation.multVec(Y*sign)))
+    intrusion=abs(body.common(fluid.common(drain_region)).Volume)
+    ck('drain boss preserves adjoining chamber and outlet fluid volume',intrusion<1e-5,dict(intrusion_mm3=intrusion))
     # Preserve full outlet wall circumference and passage near each hose end.
     for sign in [-1,1]:
         y=sign*(c['outlet_tip_y']-.2);z=sign*c['outlet_offset_z'];rad=(c['outlet_inner_radius']+c['outlet_outer_radius'])/2

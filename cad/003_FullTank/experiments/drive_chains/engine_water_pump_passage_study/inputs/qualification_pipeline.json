@@ -1,0 +1,87 @@
+[
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_build.py",
+      "--output",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_passage_study"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 99.38200545310974
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_engine_water_pump.py",
+      "--candidate",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_passage_study",
+      "--preservation",
+      "--standard-context"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 178.70806884765625
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_engine_water_pump_exchange.py",
+      "--candidate",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_passage_study"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 436.85669779777527
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_build.py",
+      "--output",
+      "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-passage/variant",
+      "--controls",
+      "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-passage/variant_controls.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 110.47579908370972
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_engine_water_pump.py",
+      "--candidate",
+      "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-passage/variant",
+      "--preservation",
+      "--standard-context"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 178.05666947364807
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_engine_water_pump_exchange.py",
+      "--candidate",
+      "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-passage/variant"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 438.7351415157318
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_build.py",
+      "--output",
+      "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-passage/fresh_nominal"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 98.49049758911133
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-passage/check_reproduction.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 5.309657335281372
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/render_engine_water_pump.py",
+      "--candidate",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_passage_study"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 67.28429532051086
+  }
+]

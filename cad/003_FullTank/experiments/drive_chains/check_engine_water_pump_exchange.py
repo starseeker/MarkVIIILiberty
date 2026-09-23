@@ -9,7 +9,7 @@ HERE=Path(__file__).resolve().parent;STAGE=HERE.parents[1];ROOT=STAGE.parents[1]
 sys.path[:0]=[str(HERE),str(STAGE)]
 from lib import runtime
 from lib.evidence import read,write,sha
-p=argparse.ArgumentParser();p.add_argument('--candidate',type=Path,default=HERE/'engine_water_pump_mounting_study');p.add_argument('--worker',action='store_true')
+p=argparse.ArgumentParser();p.add_argument('--candidate',type=Path,default=HERE/'engine_water_pump_passage_study');p.add_argument('--worker',action='store_true')
 a=p.parse_args();out=a.candidate.resolve()
 if not a.worker:
     with (out/'exchange_check.log').open('w') as log:

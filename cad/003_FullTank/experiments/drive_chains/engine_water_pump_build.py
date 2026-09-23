@@ -9,7 +9,7 @@ sys.path[:0]=[str(HERE),str(STAGE)]
 from lib import runtime
 from lib.evidence import read,write,sha
 p=argparse.ArgumentParser(description=__doc__)
-p.add_argument('--output',type=Path,default=HERE/'engine_water_pump_mounting_study')
+p.add_argument('--output',type=Path,default=HERE/'engine_water_pump_passage_study')
 p.add_argument('--controls',type=Path,default=HERE/'engine_water_pump_controls.json')
 p.add_argument('--worker',action='store_true');a=p.parse_args();out=a.output.resolve();out.mkdir(parents=True,exist_ok=True)
 if not a.worker:

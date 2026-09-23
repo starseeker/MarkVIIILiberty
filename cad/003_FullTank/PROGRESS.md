@@ -11,6 +11,20 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — water-pump fluid passage corrected
+
+The [passage correction](packets/P01-engine-water-pump-passage.md) removes drain-boss
+material that entered the intended fluid cavity. The retained original trial
+reproduces the outlet-gauge failure. Both corrected configurations pass without
+changing gauges or tolerances: **39 native checks, 472 nominal / 473 trial context
+pairs, and 106 STEP comparisons each**. The development assembly still contains
+2,246 physical occurrences. Only the pump body changes; the other 846 serialized
+shapes and 45,133 checked assembly properties match the previous checkpoint.
+Fresh nominal reproduction matches all 848 shapes and those properties.
+Five views and local before/after sections were inspected. All 137 progression
+images and 20 standard natives are preserved. Drain lock wire, source conflicts,
+remaining engine components and standard integration remain open.
+
 ## 23 September 2026 — water-pump mounting revision
 
 The [mounting candidate](packets/P01-engine-water-pump-mounting.md) adds the four

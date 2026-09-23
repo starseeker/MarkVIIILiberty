@@ -183,7 +183,10 @@ def parts(c,lower,mount_x,progress=None):
     # A small flat boss provides an explicit washer seat on the drain opening.
     drain_seat=c['drain_seat_z'];boss_top=plug_z+wall+1
     assert drain_seat<boss_top
-    body=body.fuse(Part.makeCylinder(c['plug_head_af']/2+2,boss_top-drain_seat,V(plug_x,0,drain_seat),Z))
+    drain_stock=Part.makeCylinder(c['plug_head_af']/2+2,boss_top-drain_seat,V(plug_x,0,drain_seat),Z)
+    # The flat seat must not refill the chamber or a clocked outlet. Clear only
+    # this added stock: recutting the whole body would erase blind-stud supports.
+    body=body.fuse(drain_stock.cut(cavity))
     bore_top=-c['scroll_center_radius']+c['scroll_inner_radius']
     body=body.cut(Part.makeCylinder(c['plug_diameter']/2+c['thread_gap'],bore_top-drain_seat+1,V(plug_x,0,drain_seat-1),Z))
     p['body']=body;add('body','BodyCasting',parent='EngineWaterPumpBodyAssembly');audit('body')
