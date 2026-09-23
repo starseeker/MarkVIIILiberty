@@ -223,7 +223,20 @@ two parameter trials and a fresh rebuild pass. Five views were inspected and
 three new progression snapshots are saved. The [packet](packets/I03-clutch-retention.md)
 records these checks and the numerical volume diagnostic.
 
-The latest [clutch-brake development candidate](experiments/drive_chains/clutch_brake_linkage_build/TransmissionWithClutchBrake.FCStd)
+The latest [engine-crossmember development candidate](experiments/drive_chains/engine_crossmember_build/DrivetrainWithEngineCrossmembers.FCStd)
+contains **1,848 physical components**: 25 new frame/rivet pieces, two replacement
+floor contexts and one revised floor, preserving 1,820 inherited occurrences.
+Both transverse channels, the front cleat, rear gussets and 14 direct floor
+rivets are populated. All 151 independent checks, 93 affected material pairs and
+40 STEP comparisons pass. A coupled station/span/depth trial also passes 151/93,
+including standard context. Six native views and a fixed SNL2 projection were
+inspected; three new snapshots bring the progression to 114. The
+[packet](packets/I01-engine-crossmembers.md) records source conflicts, estimated
+profiles and floor seams, and the remaining suspension/rail interfaces. This is a
+development checkpoint; standard tank011 and its transparent-hull view remain
+unchanged pending combined drivetrain qualification and integration.
+
+The [clutch-brake development candidate](experiments/drive_chains/clutch_brake_linkage_build/TransmissionWithClutchBrake.FCStd)
 contains **1,821 physical components**. Its 35 additions populate the anchor,
 mounting hardware, spring-loaded eyebolt, stop rod and bell-crank assembly. Four
 receiving parts change; the other 1,782 parent occurrences are preserved. All 112

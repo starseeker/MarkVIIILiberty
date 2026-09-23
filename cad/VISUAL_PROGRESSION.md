@@ -582,3 +582,24 @@ unchanged while combined drivetrain qualification and integration are pending.
 | [installed isometric](intermediate_snapshot_iso_clutch_brake_001.png) | `8e7cf425882d7de080b009d3de41a8835e65acdd116e24ca4a18b8fa4828dd86` |
 | [mechanism detail](intermediate_snapshot_detail_clutch_brake_001.png) | `c007d2d4b742858b0a9eb4b518b6494c751c3b87f24ece39ab5cb15842399776` |
 | [end view](intermediate_snapshot_end_clutch_brake_001.png) | `561213dd04eac69b5ac731214bceff65c660552d59b52fd27c32ff63c62ef57f` |
+
+
+## Engine transverse supports and floor joints — 23 September 2026
+
+The development assembly now contains **1,848 physical components**, adding the
+11 nested channel parts and 14 direct floor rivets. Two additional replacement
+floor contexts and one revised floor preserve the original combined floor outline
+and clutch holes. Profiles, transverse stations and floor seams remain estimates;
+engine suspension brackets, rails and associated joints remain to be built.
+
+All 151 independent checks, 93 material pairs including standard context and 40 STEP
+comparisons pass. A coupled station/span/depth trial also passes 151/93 including
+standard context. Six native views and a fixed-calibration SNL2 projection were
+inspected. These three images bring the progression to 114, preserving all 111 prior
+images. Standard tank011 and its transparent-hull companion remain unchanged.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_engine_crossmembers_001.png) | `2fd84d603879efc4f599a807f9d7e58972578ae0b0a9dfc2c2953db32711ddd5` |
+| [exposed crossmembers](intermediate_snapshot_detail_engine_crossmembers_001.png) | `517031b9b9700b2ee6411631aa825fd1db955c216e71ebe6dc767df932cdb5d6` |
+| [rear gusset joint](intermediate_snapshot_detail_engine_gusset_001.png) | `0d82a74f23a018be8c381e0f811b49af4dc5a13ada7ca92e193817b7b4a24ad8` |

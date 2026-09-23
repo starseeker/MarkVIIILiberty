@@ -1,0 +1,1350 @@
+{
+  "status": "development_hypothesis_not_qualified",
+  "native_sha256": "10ebf86b62013ded0f82306fd2c971de00409c32d522d8274b352740d38e2ecb",
+  "parent_native_sha256": "0217e5b26fbfcf404b7a9c3baa1eb54fa2f3ba10cdfdd97ba9856c7825ad1f98",
+  "controls": {
+    "front_x": 3860.0,
+    "rear_x": 3010.0,
+    "floor_top": 533.05,
+    "floor_stock": 6.0,
+    "floor_5_6_seam": 3970.0,
+    "floor_6_7_seam": 3190.0,
+    "channel_half_span": 1120.0,
+    "channel_depth": 95.0,
+    "channel_height": 76.2,
+    "channel_web": 9.525,
+    "channel_flange": 12.7,
+    "cleat_stock": 12.7,
+    "cleat_half_width": 60.0,
+    "cleat_overhang": 80.0,
+    "cleat_bottom": 14.0,
+    "cleat_rivet_y": 30.0,
+    "cleat_rivet_z": 35.0,
+    "gusset_stock": 9.525,
+    "gusset_half_width": 50.0,
+    "gusset_y": 1000.0,
+    "gusset_length": 130.0,
+    "gusset_rivet_y": 28.0,
+    "gusset_web_rivet_z": 38.1,
+    "gusset_floor_rivet_x": 110.0,
+    "channel_floor_rivet_x": -10.0,
+    "channel_floor_rivet_y": [
+      -850.0,
+      -425.0,
+      0.0,
+      425.0,
+      850.0
+    ],
+    "hole_radial_allowance": 0.1,
+    "front_rivet_diameter": 15.875,
+    "front_rivet_blank_length": 53.975,
+    "rear_rivet_diameter": 17.4625,
+    "rear_rivet_blank_length": 53.975,
+    "floor_rivet_diameter": 17.4625,
+    "floor_rivet_blank_length": 47.625,
+    "head_radius_ratio": 0.875,
+    "head_height_ratio": 0.5,
+    "formed_radius_ratio": 1.0
+  },
+  "datums": {
+    "joints": [
+      {
+        "name": "EngineFrame_FrontWebRivet1",
+        "key": "front_rivet",
+        "base": [
+          3897.975,
+          -30.0,
+          568.05
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "grip": 22.225,
+        "receivers": [
+          "front_channel",
+          "cleat"
+        ],
+        "diameter": 15.875,
+        "blank_length": 53.975
+      },
+      {
+        "name": "EngineFrame_FrontWebRivet2",
+        "key": "front_rivet",
+        "base": [
+          3897.975,
+          30.0,
+          568.05
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "grip": 22.225,
+        "receivers": [
+          "front_channel",
+          "cleat"
+        ],
+        "diameter": 15.875,
+        "blank_length": 53.975
+      },
+      {
+        "name": "EngineFrame_LeftWebRivet1",
+        "key": "rear_rivet",
+        "base": [
+          3047.975,
+          972.0,
+          571.15
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "grip": 19.05,
+        "receivers": [
+          "rear_channel",
+          "left_gusset"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 53.975
+      },
+      {
+        "name": "EngineFrame_LeftWebRivet2",
+        "key": "rear_rivet",
+        "base": [
+          3047.975,
+          1028.0,
+          571.15
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "grip": 19.05,
+        "receivers": [
+          "rear_channel",
+          "left_gusset"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 53.975
+      },
+      {
+        "name": "EngineFrame_RightWebRivet1",
+        "key": "rear_rivet",
+        "base": [
+          3047.975,
+          -1028.0,
+          571.15
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "grip": 19.05,
+        "receivers": [
+          "rear_channel",
+          "right_gusset"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 53.975
+      },
+      {
+        "name": "EngineFrame_RightWebRivet2",
+        "key": "rear_rivet",
+        "base": [
+          3047.975,
+          -972.0,
+          571.15
+        ],
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "grip": 19.05,
+        "receivers": [
+          "rear_channel",
+          "right_gusset"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 53.975
+      },
+      {
+        "name": "EngineFrame_FrontFloorRivet1",
+        "key": "channel_floor_rivet",
+        "base": [
+          3850.0,
+          -850.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "front_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_6"
+      },
+      {
+        "name": "EngineFrame_FrontFloorRivet2",
+        "key": "channel_floor_rivet",
+        "base": [
+          3850.0,
+          -425.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "front_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_6"
+      },
+      {
+        "name": "EngineFrame_FrontFloorRivet3",
+        "key": "channel_floor_rivet",
+        "base": [
+          3850.0,
+          0.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "front_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_6"
+      },
+      {
+        "name": "EngineFrame_FrontFloorRivet4",
+        "key": "channel_floor_rivet",
+        "base": [
+          3850.0,
+          425.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "front_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_6"
+      },
+      {
+        "name": "EngineFrame_FrontFloorRivet5",
+        "key": "channel_floor_rivet",
+        "base": [
+          3850.0,
+          850.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "front_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_6"
+      },
+      {
+        "name": "EngineFrame_RearFloorRivet1",
+        "key": "channel_floor_rivet",
+        "base": [
+          3000.0,
+          -850.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "rear_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_RearFloorRivet2",
+        "key": "channel_floor_rivet",
+        "base": [
+          3000.0,
+          -425.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "rear_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_RearFloorRivet3",
+        "key": "channel_floor_rivet",
+        "base": [
+          3000.0,
+          0.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "rear_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_RearFloorRivet4",
+        "key": "channel_floor_rivet",
+        "base": [
+          3000.0,
+          425.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "rear_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_RearFloorRivet5",
+        "key": "channel_floor_rivet",
+        "base": [
+          3000.0,
+          850.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "rear_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_LeftFloorRivet1",
+        "key": "gusset_floor_rivet",
+        "base": [
+          3120.0,
+          972.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 15.525,
+        "receivers": [
+          "left_gusset"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_LeftFloorRivet2",
+        "key": "gusset_floor_rivet",
+        "base": [
+          3120.0,
+          1028.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 15.525,
+        "receivers": [
+          "left_gusset"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_RightFloorRivet1",
+        "key": "gusset_floor_rivet",
+        "base": [
+          3120.0,
+          -1028.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 15.525,
+        "receivers": [
+          "right_gusset"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_RightFloorRivet2",
+        "key": "gusset_floor_rivet",
+        "base": [
+          3120.0,
+          -972.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 15.525,
+        "receivers": [
+          "right_gusset"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      }
+    ],
+    "floor_holes": [
+      {
+        "name": "EngineFrame_FrontFloorRivet1",
+        "key": "channel_floor_rivet",
+        "base": [
+          3850.0,
+          -850.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "front_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_6"
+      },
+      {
+        "name": "EngineFrame_FrontFloorRivet2",
+        "key": "channel_floor_rivet",
+        "base": [
+          3850.0,
+          -425.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "front_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_6"
+      },
+      {
+        "name": "EngineFrame_FrontFloorRivet3",
+        "key": "channel_floor_rivet",
+        "base": [
+          3850.0,
+          0.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "front_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_6"
+      },
+      {
+        "name": "EngineFrame_FrontFloorRivet4",
+        "key": "channel_floor_rivet",
+        "base": [
+          3850.0,
+          425.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "front_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_6"
+      },
+      {
+        "name": "EngineFrame_FrontFloorRivet5",
+        "key": "channel_floor_rivet",
+        "base": [
+          3850.0,
+          850.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "front_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_6"
+      },
+      {
+        "name": "EngineFrame_RearFloorRivet1",
+        "key": "channel_floor_rivet",
+        "base": [
+          3000.0,
+          -850.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "rear_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_RearFloorRivet2",
+        "key": "channel_floor_rivet",
+        "base": [
+          3000.0,
+          -425.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "rear_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_RearFloorRivet3",
+        "key": "channel_floor_rivet",
+        "base": [
+          3000.0,
+          0.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "rear_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_RearFloorRivet4",
+        "key": "channel_floor_rivet",
+        "base": [
+          3000.0,
+          425.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "rear_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_RearFloorRivet5",
+        "key": "channel_floor_rivet",
+        "base": [
+          3000.0,
+          850.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 18.7,
+        "receivers": [
+          "rear_channel"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_LeftFloorRivet1",
+        "key": "gusset_floor_rivet",
+        "base": [
+          3120.0,
+          972.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 15.525,
+        "receivers": [
+          "left_gusset"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_LeftFloorRivet2",
+        "key": "gusset_floor_rivet",
+        "base": [
+          3120.0,
+          1028.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 15.525,
+        "receivers": [
+          "left_gusset"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_RightFloorRivet1",
+        "key": "gusset_floor_rivet",
+        "base": [
+          3120.0,
+          -1028.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 15.525,
+        "receivers": [
+          "right_gusset"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      },
+      {
+        "name": "EngineFrame_RightFloorRivet2",
+        "key": "gusset_floor_rivet",
+        "base": [
+          3120.0,
+          -972.0,
+          527.05
+        ],
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "grip": 15.525,
+        "receivers": [
+          "right_gusset"
+        ],
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "floor": "hull_floor_7"
+      }
+    ],
+    "rivet_forming": {
+      "front_rivet": {
+        "diameter": 15.875,
+        "blank_length": 53.975,
+        "grip": 22.225,
+        "tail_height": 12.981490322953324,
+        "head_radius": 13.890625,
+        "head_height": 7.9375
+      },
+      "rear_rivet": {
+        "diameter": 17.4625,
+        "blank_length": 53.975,
+        "grip": 19.05,
+        "tail_height": 14.279639355248655,
+        "head_radius": 15.279687499999998,
+        "head_height": 8.73125
+      },
+      "channel_floor_rivet": {
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "grip": 18.7,
+        "tail_height": 12.385595319626653,
+        "head_radius": 15.279687499999998,
+        "head_height": 8.73125
+      },
+      "gusset_floor_rivet": {
+        "diameter": 17.4625,
+        "blank_length": 47.625,
+        "grip": 15.525,
+        "tail_height": 13.412489902040551,
+        "head_radius": 15.279687499999998,
+        "head_height": 8.73125
+      }
+    }
+  },
+  "floor_extents": {
+    "hull_floor_5": [
+      3970.0,
+      4633.817678227941
+    ],
+    "hull_floor_6": [
+      3190.0,
+      3970.0
+    ],
+    "hull_floor_7": [
+      2227.635669556985,
+      3190.0
+    ]
+  },
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/engine_crossmember_build.py": "bd8a92b644af56b9f30f87468dbdab1fb8d9b612eecd65dfadb18a1bf1ce39e3",
+    "cad/003_FullTank/experiments/drive_chains/engine_crossmember_parts.py": "72426ba028c260d72035600436c0bfc36c01169f722e5faed9a877906e2e74c4",
+    "cad/003_FullTank/experiments/drive_chains/engine_frame_sources.json": "c41b059f0f4f1208f76192acfd87a0df169c075d358c190ff10a917c1da6acde",
+    ".work/engine-frame/variant/controls.json": "a2f08cc0b0442381a816423eb2acbe01408500eafde22d3da983fd97a9a7c33d"
+  },
+  "new_ids": [
+    "EngineFrame_FrontChannel",
+    "EngineFrame_RearChannel",
+    "EngineFrame_FrontCleat",
+    "EngineFrame_LeftGusset",
+    "EngineFrame_RightGusset",
+    "EngineFrame_FrontWebRivet1",
+    "EngineFrame_FrontWebRivet2",
+    "EngineFrame_LeftWebRivet1",
+    "EngineFrame_LeftWebRivet2",
+    "EngineFrame_RightWebRivet1",
+    "EngineFrame_RightWebRivet2",
+    "EngineFrame_FrontFloorRivet1",
+    "EngineFrame_FrontFloorRivet2",
+    "EngineFrame_FrontFloorRivet3",
+    "EngineFrame_FrontFloorRivet4",
+    "EngineFrame_FrontFloorRivet5",
+    "EngineFrame_RearFloorRivet1",
+    "EngineFrame_RearFloorRivet2",
+    "EngineFrame_RearFloorRivet3",
+    "EngineFrame_RearFloorRivet4",
+    "EngineFrame_RearFloorRivet5",
+    "EngineFrame_LeftFloorRivet1",
+    "EngineFrame_LeftFloorRivet2",
+    "EngineFrame_RightFloorRivet1",
+    "EngineFrame_RightFloorRivet2"
+  ],
+  "context_ids": [
+    "hull_floor_5",
+    "hull_floor_6"
+  ],
+  "changed_ids": [
+    "hull_floor_7"
+  ],
+  "exchange_ids": [
+    "EngineFrame_FrontChannel",
+    "EngineFrame_RearChannel",
+    "EngineFrame_FrontCleat",
+    "EngineFrame_LeftGusset",
+    "EngineFrame_RightGusset",
+    "EngineFrame_FrontWebRivet1",
+    "EngineFrame_FrontWebRivet2",
+    "EngineFrame_LeftWebRivet1",
+    "EngineFrame_LeftWebRivet2",
+    "EngineFrame_RightWebRivet1",
+    "EngineFrame_RightWebRivet2",
+    "EngineFrame_FrontFloorRivet1",
+    "EngineFrame_FrontFloorRivet2",
+    "EngineFrame_FrontFloorRivet3",
+    "EngineFrame_FrontFloorRivet4",
+    "EngineFrame_FrontFloorRivet5",
+    "EngineFrame_RearFloorRivet1",
+    "EngineFrame_RearFloorRivet2",
+    "EngineFrame_RearFloorRivet3",
+    "EngineFrame_RearFloorRivet4",
+    "EngineFrame_RearFloorRivet5",
+    "EngineFrame_LeftFloorRivet1",
+    "EngineFrame_LeftFloorRivet2",
+    "EngineFrame_RightFloorRivet1",
+    "EngineFrame_RightFloorRivet2",
+    "hull_floor_5",
+    "hull_floor_6",
+    "hull_floor_7"
+  ],
+  "occurrences": [
+    {
+      "key": "front_channel",
+      "name": "EngineFrame_FrontChannel",
+      "xyz": [
+        3860.0,
+        0,
+        533.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FrontCrossmember"
+    },
+    {
+      "key": "rear_channel",
+      "name": "EngineFrame_RearChannel",
+      "xyz": [
+        3010.0,
+        0,
+        533.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RearCrossmember"
+    },
+    {
+      "key": "cleat",
+      "name": "EngineFrame_FrontCleat",
+      "xyz": [
+        3860.0,
+        0,
+        533.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FrontCrossmember"
+    },
+    {
+      "key": "left_gusset",
+      "name": "EngineFrame_LeftGusset",
+      "xyz": [
+        3010.0,
+        1000.0,
+        533.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RearCrossmember"
+    },
+    {
+      "key": "right_gusset",
+      "name": "EngineFrame_RightGusset",
+      "xyz": [
+        3010.0,
+        -1000.0,
+        533.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RearCrossmember"
+    },
+    {
+      "key": "front_rivet",
+      "name": "EngineFrame_FrontWebRivet1",
+      "xyz": [
+        3897.975,
+        -30.0,
+        568.05
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "FrontCrossmember"
+    },
+    {
+      "key": "front_rivet",
+      "name": "EngineFrame_FrontWebRivet2",
+      "xyz": [
+        3897.975,
+        30.0,
+        568.05
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "FrontCrossmember"
+    },
+    {
+      "key": "rear_rivet",
+      "name": "EngineFrame_LeftWebRivet1",
+      "xyz": [
+        3047.975,
+        972.0,
+        571.15
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "RearCrossmember"
+    },
+    {
+      "key": "rear_rivet",
+      "name": "EngineFrame_LeftWebRivet2",
+      "xyz": [
+        3047.975,
+        1028.0,
+        571.15
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "RearCrossmember"
+    },
+    {
+      "key": "rear_rivet",
+      "name": "EngineFrame_RightWebRivet1",
+      "xyz": [
+        3047.975,
+        -1028.0,
+        571.15
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "RearCrossmember"
+    },
+    {
+      "key": "rear_rivet",
+      "name": "EngineFrame_RightWebRivet2",
+      "xyz": [
+        3047.975,
+        -972.0,
+        571.15
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "RearCrossmember"
+    },
+    {
+      "key": "channel_floor_rivet",
+      "name": "EngineFrame_FrontFloorRivet1",
+      "xyz": [
+        3850.0,
+        -850.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "channel_floor_rivet",
+      "name": "EngineFrame_FrontFloorRivet2",
+      "xyz": [
+        3850.0,
+        -425.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "channel_floor_rivet",
+      "name": "EngineFrame_FrontFloorRivet3",
+      "xyz": [
+        3850.0,
+        0.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "channel_floor_rivet",
+      "name": "EngineFrame_FrontFloorRivet4",
+      "xyz": [
+        3850.0,
+        425.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "channel_floor_rivet",
+      "name": "EngineFrame_FrontFloorRivet5",
+      "xyz": [
+        3850.0,
+        850.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "channel_floor_rivet",
+      "name": "EngineFrame_RearFloorRivet1",
+      "xyz": [
+        3000.0,
+        -850.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "channel_floor_rivet",
+      "name": "EngineFrame_RearFloorRivet2",
+      "xyz": [
+        3000.0,
+        -425.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "channel_floor_rivet",
+      "name": "EngineFrame_RearFloorRivet3",
+      "xyz": [
+        3000.0,
+        0.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "channel_floor_rivet",
+      "name": "EngineFrame_RearFloorRivet4",
+      "xyz": [
+        3000.0,
+        425.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "channel_floor_rivet",
+      "name": "EngineFrame_RearFloorRivet5",
+      "xyz": [
+        3000.0,
+        850.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "gusset_floor_rivet",
+      "name": "EngineFrame_LeftFloorRivet1",
+      "xyz": [
+        3120.0,
+        972.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "gusset_floor_rivet",
+      "name": "EngineFrame_LeftFloorRivet2",
+      "xyz": [
+        3120.0,
+        1028.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "gusset_floor_rivet",
+      "name": "EngineFrame_RightFloorRivet1",
+      "xyz": [
+        3120.0,
+        -1028.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    },
+    {
+      "key": "gusset_floor_rivet",
+      "name": "EngineFrame_RightFloorRivet2",
+      "xyz": [
+        3120.0,
+        -972.0,
+        527.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FloorAttachments"
+    }
+  ],
+  "native_occurrences": 1848,
+  "unchanged_parent_occurrences": 1820,
+  "new_definitions": 9,
+  "standard_native_hashes": {
+    "native/MarkVIII.FCStd": "52aea1af979efc27fbfbce003e976e8a02cfa2da3e0ca0d25a631d7c5e7d48ac",
+    "native/library/CoolingVentilation.FCStd": "810553a07fb9610c11dd3cd2f15e1eec0b7712e16f1d0a4245d70922532f73c4",
+    "native/library/CrewControlsAndEquipment.FCStd": "990e476bcdd088d58bbe76028a782667301a6f73e9c5a8065767bfd4e3860bae",
+    "native/library/Drivetrain.FCStd": "694c20a3995baafb0698f8c07d61e3e6b37bf6a0b0214362fe75bf0a80c30e25",
+    "native/library/ElectricalInstruments.FCStd": "7ca38479c37f7a169b2ab52a4ea90afd80cc7cf97d45c52df380abbd91dc393d",
+    "native/library/FuelPressure.FCStd": "5d5e8ced3b3b1bc380c9822e4b0d210520da081fa119ab16bd58523fce93dc6a",
+    "native/library/HullStructure.FCStd": "a6b78305dddcfa74904b07ea9dad8356ba168d774499599c854074c8aca778fc",
+    "native/library/Powerplant.FCStd": "234c3582a110f607f98977a034638b3f65391b6c6c5cd284a9570c74629752b7",
+    "native/library/RunningGear.FCStd": "52587107dabf028783ad6bd087ce1f8e2bf3aacea7d641ab8bfee07101fddf44",
+    "native/library/Sponsons.FCStd": "cca4a76fd623303caeb7d6b2fa277f6bcc251170303379ce6f07a432add20162",
+    "native/subsystems/ArmamentRepresentation.FCStd": "da6a1fd3e488982cff35e88bbce264f85a448c8349177ac9550939dc96f0b553",
+    "native/subsystems/CoolingVentilation.FCStd": "bb0996bed71ec8269a68f7445da53fb86789a7cb7777c5972cff74fd47811e47",
+    "native/subsystems/CrewControlsAndEquipment.FCStd": "5831b330452e69ba2dc0ae4b2c9757b2fbf174d988ce44126e64a7adec7e4fe5",
+    "native/subsystems/Drivetrain.FCStd": "222888c3c6d72363524415dfeec66ce89f9144cf973cbb077dab245d2fc0c4bf",
+    "native/subsystems/ElectricalInstruments.FCStd": "5f423b486223168139193422992d379bc291e73ac992a372bdcef75069051f0c",
+    "native/subsystems/FuelPressure.FCStd": "45f9cb47c26ef7e007ccb0451554cf33321bf63bc85d26e2edda9f00764b7e7b",
+    "native/subsystems/HullStructure.FCStd": "91bb04cc51d10a143ffeb982b3bec08e0e28b5942da452601f738d2c2528f56c",
+    "native/subsystems/Powerplant.FCStd": "c22f9480fc5a60028e6af664fc5ebb2e07ca292694e89d29eacd0b0a18ad720d",
+    "native/subsystems/RunningGear.FCStd": "5b225c9b28cce15f4c331e1d076a39a7575319831d95cf92d8db5cbc0672418e",
+    "native/subsystems/Sponsons.FCStd": "79c852869c29529dd8de89a257e7e127ff3d7d2255e1a8b186fc044b292f38bb"
+  },
+  "artifact_hashes": {
+    "EngineCrossmemberInstallation.step": "6ce5bf59d172b71cc23d25f5a34a4870904b124641bdbdef764b72d139443ac5",
+    "EngineCrossmemberDefinitions.step": "cae8948c22029ba4db278566177c3a127babd4fb5042a25ed7760c05d5f97742"
+  },
+  "standard_assembly_modified": false,
+  "historical_mounting_proven": false,
+  "complete_engine_frame": false,
+  "complete_tank": false,
+  "source_inventory": {
+    "support_assembly_including_nested_channels": 72,
+    "front_channel_children": 4,
+    "rear_channel_children": 7,
+    "direct_floor_rivets_additional": 14,
+    "shared_floor_angle_rivets_additional": 7,
+    "engine_rail_bolt_sets_additional": 12,
+    "engine_rail_bolt_physical_pieces": 36
+  },
+  "remaining_scope": {
+    "constructed_support_children": 11,
+    "constructed_direct_floor_rivets": 14,
+    "remaining_support_children": 61,
+    "shared_floor_angle_rivets": "7 remain pending M2017A/B and M2018A/B receivers; no double count",
+    "engine_rail_bolts": "36 physical pieces remain pending longitudinal supports and engine mounting flanges"
+  },
+  "headless": true,
+  "freecad": [
+    "1",
+    "1",
+    "1",
+    "44227 +647 (Git)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "tag: 1.1.1",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
+  "occ": "7.8.0"
+}
