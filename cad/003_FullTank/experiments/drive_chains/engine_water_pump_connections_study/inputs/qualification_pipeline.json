@@ -1,0 +1,89 @@
+[
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_build.py",
+      "--output",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_connections_study"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 117.65611577033997
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_engine_water_pump.py",
+      "--candidate",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_connections_study",
+      "--preservation",
+      "--standard-context"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 189.43170762062073
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_engine_water_pump_exchange.py",
+      "--candidate",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_connections_study"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 457.0886461734772
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_build.py",
+      "--output",
+      "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-lock/variant",
+      "--controls",
+      "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-lock/variant_controls.json"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 115.04536986351013
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_engine_water_pump.py",
+      "--candidate",
+      "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-lock/variant",
+      "--preservation",
+      "--standard-context"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 194.919988155365
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_engine_water_pump_exchange.py",
+      "--candidate",
+      "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-lock/variant"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 459.25287652015686
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_build.py",
+      "--output",
+      "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-lock/fresh_nominal"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 117.74832248687744
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-lock/check_reproduction.py"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 5.564716577529907
+  },
+  {
+    "command": [
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/render_engine_water_pump.py",
+      "--candidate",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_connections_study"
+    ],
+    "exit_code": 0,
+    "elapsed_seconds": 76.16807532310486,
+    "display_revision": "Hide detached cover slivers created by detail crop; no native geometry change",
+    "superseded_render_receipt": "/home/cyapp/MarkVIIILiberty/.work/engine-water-pump-lock/before_display_cleanup/render_receipt.json"
+  }
+]

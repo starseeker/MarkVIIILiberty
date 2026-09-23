@@ -128,6 +128,17 @@ shells or invalid topology as a successful empty difference. See the
 
 ## Acceptance and exchange
 
+Match isolated probes to the delivery pipeline's STEP settings before changing
+geometry in response to an exchange failure. In the local FreeCAD 1.1.1/OCC 7.8
+drain-wire probe, an export without surface curves reopened as a valid solid but
+gave an incorrect full-volume Boolean difference from its native source. Exporting
+the **same BRep** with `Part.setStaticValue('write.surfacecurve.mode', 1)` retained
+the STEP `PCURVE` records and passed both material directions with no difference
+faces. The project builder already used that setting; the isolated probe omitted
+it. This is a tested local export remedy, not a reason to discard geometry or
+weaken acceptance limits. Preserve the settings and failing control in the
+[focused replay](../../../cad/003_FullTank/experiments/drive_chains/engine_water_pump_connections_study/diagnostics/step_surface_curves/replay.py).
+
 Use criteria that would reject a plausible wrong solution: independent material/
 void witnesses, analytic dimensions, whole-region differences, required openings,
 composed frames and neighbor clearances. Keep numerical tolerances separate from

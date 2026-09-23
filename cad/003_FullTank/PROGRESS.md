@@ -11,6 +11,19 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — water-pump source connections and drain lock
+
+The [new checkpoint](packets/P01-engine-water-pump-connections.md) applies HB191's
+printed inlet/outlet tube stocks and integral ownership, and adds the source-length
+No18 drain wire. The development assembly has **2,247 physical occurrences**:
+77 pump constituents in 29 definitions. Nominal **59 native checks, 481
+context pairs and 108 STEP comparisons pass**; the ten-control trial also passes
+59/482/108. Fresh reproduction matches 851 BReps and
+53,393 checked properties. Source quantities/alternatives and estimates
+remain explicit. Six views were inspected; two snapshots bring the progression to
+139, preserving all 137 earlier images and 20 standard natives. Oil pump,
+remaining engine geometry and standard integration remain unfinished.
+
 ## 23 September 2026 — water-pump fluid passage corrected
 
 The [passage correction](packets/P01-engine-water-pump-passage.md) removes drain-boss

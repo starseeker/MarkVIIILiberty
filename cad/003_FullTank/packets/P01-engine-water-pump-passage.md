@@ -1,5 +1,7 @@
 # P01 — Water-pump fluid-passage correction
 
+Historical checkpoint `e819833`; current regeneration and source decisions are in the [connection and wire revision](P01-engine-water-pump-connections.md).
+
 This follows the [mounting checkpoint](P01-engine-water-pump-mounting.md).
 The development assembly still has 2,246 physical occurrences, including 76
 pump constituents in 28 definitions. No new physical parts are introduced.
@@ -48,7 +50,7 @@ See [diagnostics](../experiments/drive_chains/engine_water_pump_passage_study/di
 and the [parameter trial](../experiments/drive_chains/engine_water_pump_passage_study/diagnostics/parameter_trial/README.md).
 
 Regenerate with `python3 cad/003_FullTank/experiments/drive_chains/engine_water_pump_build.py`;
-the continuing builder now defaults to `engine_water_pump_passage_study`,
+at this historical checkpoint the builder default was `engine_water_pump_passage_study`,
 preserving the previous mounting checkpoint. The same 133 controls, 82 source
 records, nine source pages and five builder assets remain in use.
 

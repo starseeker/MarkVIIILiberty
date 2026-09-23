@@ -771,3 +771,17 @@ material for visibility while retaining complete fasteners.
 | --- | --- |
 | [isometric.png](intermediate_snapshot_iso_engine_water_pump_mounting_001.png) | `b01a8ccf74b95c0e2e40e0c95a3533b5e6c453800fdd1ffd302af86a9ec4dac9` |
 | [installed.png](intermediate_snapshot_detail_engine_water_pump_mounting_001.png) | `b19c224c84444fc534254980d929986f3fc0afe94334ccdb718dd2cafe085b16` |
+
+
+## Water-pump connections and drain wire — 23 September 2026
+
+Printed hose-end stock and the source-length formed wire extend the pump
+development checkpoint. Nominal and coupled-trial native/STEP checks and fresh
+reproduction pass. Exact cast profiles and wire route remain documented estimates;
+standard tank011 is unchanged. Two images bring the total to 139, preserving all 137
+earlier images.
+
+| View | SHA-256 |
+| --- | --- |
+| [isometric.png](intermediate_snapshot_iso_engine_water_pump_connections_001.png) | `48e6140b0f43cbb0da3fe0aa963244b4c77d895496f8889d6f06bb6b1daccd8b` |
+| [drain_lock.png](intermediate_snapshot_detail_engine_water_pump_drain_lock_001.png) | `f78629194802926e1241bf5745829f90010d06af69c03570520a85ca55124ead` |
