@@ -1,0 +1,30 @@
+{
+  "category": "reviewed_implementation",
+  "id": "stack",
+  "inputs": [
+    {
+      "destination": "stack_spec.json",
+      "sha256": "6c69a8ffe08e70065ba89f8c97e999937c907911f9bc78dfeda719ffe97fdc78",
+      "source": "benchmarks/cad_work_packets/fixtures/stack_spec.json"
+    }
+  ],
+  "instructions": "Implement the synthetic hollow pin/tube/two-bush stack in stack_spec.json for both nominal and variant. This benchmark specification is reviewed for internal consistency only; it does not qualify these details for the tank. Use analytic BRep solids along local +X. Definitions Pin, Tube, Bush start at X=0, have identity placement, and belong to an App::Part named Definitions. Make Assembly (App::Part) at assembly_frame, with Station (App::Part) at station_frame relative to Assembly. Under Station use exactly four App::Link occurrences PinInstance, TubeInstance, BushLeft, BushRight referencing the three shared definitions. Center the pin and tube along Station X. Bushes sit inside the tube at its two ends, with the right bush ending at +tube_length/2. Rotations of links are identity. Use named radii and lengths, retain all hollows, and prevent overlaps. Save each native document and a STEP compound of the FOUR installed world-space solids. Keep Definitions hidden in saved views. The builder must regenerate both scenarios from the supplied JSON. Document fits as fixture assumptions, not historical measurements.",
+  "mode": "shadow",
+  "outputs": [
+    "deliverables/build.py",
+    "deliverables/notes.md",
+    "deliverables/nominal.FCStd",
+    "deliverables/variant.FCStd",
+    "deliverables/nominal.step",
+    "deliverables/variant.step"
+  ],
+  "reviewed": {
+    "dimensions": true,
+    "interfaces": true,
+    "sources": true
+  },
+  "risks": [],
+  "validator": "tools/cad_packets/validators/shadow.py",
+  "validator_qualification": "benchmarks/cad_work_packets/results/qualification/self_test.json",
+  "version": 1
+}

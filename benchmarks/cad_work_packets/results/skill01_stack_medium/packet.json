@@ -1,0 +1,70 @@
+{
+  "category": "reviewed_implementation",
+  "id": "stack",
+  "inputs": [
+    {
+      "destination": "stack_spec.json",
+      "sha256": "6c69a8ffe08e70065ba89f8c97e999937c907911f9bc78dfeda719ffe97fdc78",
+      "source": "benchmarks/cad_work_packets/fixtures/stack_spec.json"
+    },
+    {
+      "destination": "freecad_skill/SKILL.md",
+      "sha256": "6c96b41afa05c14bdd86533b9318425d27930f1b576994cf1bf28cfc2020791c",
+      "source": "skills/freecad-reconstruction/SKILL.md"
+    },
+    {
+      "destination": "freecad_skill/agents/openai.yaml",
+      "sha256": "5d7126e50435864e249cf8fa8f6750dd7d5e15ca3b38f468c15db1d54ab7b5e4",
+      "source": "skills/freecad-reconstruction/agents/openai.yaml"
+    },
+    {
+      "destination": "freecad_skill/references/assembly-and-validation.md",
+      "sha256": "27c0a7e6e49e71b8bae58d90ec06bf47fc653574cb8696b039816d2e5420c48f",
+      "source": "skills/freecad-reconstruction/references/assembly-and-validation.md"
+    },
+    {
+      "destination": "freecad_skill/references/local-runtime.md",
+      "sha256": "568c42291a8186009fc861b7c690f8eb6fc06fba2a85367808931e7647ec8b0c",
+      "source": "skills/freecad-reconstruction/references/local-runtime.md"
+    },
+    {
+      "destination": "freecad_skill/references/source-reconstruction.md",
+      "sha256": "7f55df700f780b24defc1cf70333cc12f5e1d4065dbf6366a0ac96d23816a4d3",
+      "source": "skills/freecad-reconstruction/references/source-reconstruction.md"
+    },
+    {
+      "destination": "freecad_skill/scripts/assembly_geometry.py",
+      "sha256": "8f3cc829a62e49107feeae2ccd03b7564ec2df88d8a68c91658af1ae3e80b0e0",
+      "source": "skills/freecad-reconstruction/scripts/assembly_geometry.py"
+    },
+    {
+      "destination": "freecad_skill/scripts/freecad_headless.py",
+      "sha256": "308bf8bdc828ba38c147863f634375e9962df8cc3b36488176faa3be8aea25fd",
+      "source": "skills/freecad-reconstruction/scripts/freecad_headless.py"
+    },
+    {
+      "destination": "freecad_skill/scripts/self_test.py",
+      "sha256": "8bde84c94edf3740e179bc2cdd1719ce56746afba531d173fdb7941cd9b19e58",
+      "source": "skills/freecad-reconstruction/scripts/self_test.py"
+    }
+  ],
+  "instructions": "Implement the synthetic hollow pin/tube/two-bush stack in stack_spec.json for both nominal and variant. This benchmark specification is reviewed for internal consistency only; it does not qualify these details for the tank. Use analytic BRep solids along local +X. Definitions Pin, Tube, Bush start at X=0, have identity placement, and belong to an App::Part named Definitions. Make Assembly (App::Part) at assembly_frame, with Station (App::Part) at station_frame relative to Assembly. Under Station use exactly four App::Link occurrences PinInstance, TubeInstance, BushLeft, BushRight referencing the three shared definitions. Center the pin and tube along Station X. Bushes sit inside the tube at its two ends, with the right bush ending at +tube_length/2. Rotations of links are identity. Use named radii and lengths, retain all hollows, and prevent overlaps. Save each native document and a STEP compound of the FOUR installed world-space solids. Keep Definitions hidden in saved views. The builder must regenerate both scenarios from the supplied JSON. Document fits as fixture assumptions, not historical measurements.\nUse the supplied FreeCAD reconstruction skill at inputs/freecad_skill/SKILL.md. Read the relevant assembly/runtime references before choosing API or GUI operations. It provides tested helpers, not the solution to this packet. This is a separately recorded skill forward-test; all original geometry and deliverable requirements remain in force.",
+  "mode": "shadow",
+  "outputs": [
+    "deliverables/build.py",
+    "deliverables/notes.md",
+    "deliverables/nominal.FCStd",
+    "deliverables/variant.FCStd",
+    "deliverables/nominal.step",
+    "deliverables/variant.step"
+  ],
+  "reviewed": {
+    "dimensions": true,
+    "interfaces": true,
+    "sources": true
+  },
+  "risks": [],
+  "validator": "tools/cad_packets/validators/shadow.py",
+  "validator_qualification": "benchmarks/cad_work_packets/results/qualification/self_test.json",
+  "version": 1
+}

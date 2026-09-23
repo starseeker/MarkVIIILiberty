@@ -15,6 +15,9 @@ new mechanisms, cross-assembly changes and failure diagnosis retain xhigh.
 Its acceptance checks run outside candidate write access, and passing candidates
 still require source and visual review. It currently produces shadow review
 bundles; this does not relax the integration or completion gates below.
+Use the [FreeCAD reconstruction skill](../skills/freecad-reconstruction/SKILL.md)
+for tested runtime and assembly practices; freeze its relevant resources as
+packet inputs when evaluating isolated workers.
 
 ## 1. Target and working decisions
 

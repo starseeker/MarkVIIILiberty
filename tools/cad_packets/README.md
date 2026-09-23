@@ -5,6 +5,10 @@ validation. It currently operates in **shadow mode**: it cannot overwrite the
 tank's accepted native documents. The first backend uses the existing CLI login;
 there is no API key setup or App Server dependency.
 
+The [tool-enabled trial report](../../benchmarks/cad_work_packets/REPORT.md)
+records the initial comparison, timeout diagnostics and separate FreeCAD skill
+trial. These results support conservative routing, with review before integration.
+
 ## Routing
 
 Medium is experimental and eligible only for `reviewed_implementation` or

@@ -1,0 +1,39 @@
+{
+  "category": "source_conflict",
+  "id": "spring",
+  "inputs": [
+    {
+      "destination": "HB140-141.jpg",
+      "sha256": "f62e0fc8194dbae7785eb6659bab6cdd07f42fe3aa6c9624bee27e772681e1d8",
+      "source": "benchmarks/cad_work_packets/fixtures/HB140-141.jpg"
+    },
+    {
+      "destination": "HB-plate138.png",
+      "sha256": "dd6e1758ce04ff051b5574528060298a3de1289fb12cf05b96e729dbb6a9000c",
+      "source": "benchmarks/cad_work_packets/fixtures/HB-plate138.png"
+    },
+    {
+      "destination": "spring_evidence.md",
+      "sha256": "01c15d2dab0f18103f63e5c5640a1de3490c9f220dc856d226db751a96dac438",
+      "source": "benchmarks/cad_work_packets/fixtures/spring_evidence.md"
+    }
+  ],
+  "instructions": "Read spring_evidence.md and inspect BOTH full source figures with image tools. Resolve the spring/tube conflict without creating final CAD. Write assessment.json with numeric fields printed_spring_od_in, assumed_wire_diameter_in, printed_tube_od_in, literal_spring_id_mm, tube_od_mm, literal_radial_clearance_mm, alternative_spring_id_mm, alternative_spring_od_mm, alternative_radial_clearance_mm; string fields spring_mark, tube_mark, source_wording, decision_status, missing_evidence; boolean fields memo_supported, historical_dimensions_proven. decision_status must distinguish needs_source_review from accepted. notes.md must explain evidence and assumptions, including whether any alternative is printed or inferred, and identify useful follow-up evidence. A geometric fit alone does not establish historical identity or dimensions.",
+  "mode": "shadow",
+  "outputs": [
+    "deliverables/assessment.json",
+    "deliverables/notes.md"
+  ],
+  "reviewed": {
+    "dimensions": false,
+    "interfaces": false,
+    "sources": false
+  },
+  "risks": [
+    "source_conflict",
+    "incomplete_evidence"
+  ],
+  "validator": "tools/cad_packets/validators/shadow.py",
+  "validator_qualification": "benchmarks/cad_work_packets/results/qualification/self_test.json",
+  "version": 1
+}

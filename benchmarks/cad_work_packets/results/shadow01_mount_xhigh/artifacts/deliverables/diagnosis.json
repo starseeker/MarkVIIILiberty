@@ -1,0 +1,7 @@
+{
+  "changed_objects": [
+    "BoltLeft1",
+    "BoltRight2"
+  ],
+  "cause": "BoltLeft1 and BoltRight2 stored their intended WORLD placements in their side-local LinkPlacement fields. With W = Rig * Side * Local, each defective Local equals Rig * Side * the required hole placement, so FreeCAD applies the parent frames twice: Rig * Side * Rig * Side * required_local. CAD comparison and inverse-parent composition confirm this error. Reset only those links to their specified side-local translations (20, -10, 0) and (20, 10, 0), respectively, with identity rotation. Preserved Rig/side frames, all other placements, all object names/types/hierarchy, and shared definitions."
+}

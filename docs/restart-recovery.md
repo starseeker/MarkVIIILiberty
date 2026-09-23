@@ -57,6 +57,8 @@ offers opaque and transparent hull display; the transparent mode begins at 011.
 | Original effort benchmark, preserved results | `benchmarks/cad_reasoning` |
 | Tool-enabled shadow protocol, packets and durable results | `benchmarks/cad_work_packets` |
 | Candidate scratch workspaces | `.work/cad-packets/runs` |
+| Tool-enabled comparison, completed reviews and reuse audit | `benchmarks/cad_work_packets/REPORT.md` |
+| Reusable FreeCAD skill source and project discovery link | `skills/freecad-reconstruction`, `.agents/skills/freecad-reconstruction` |
 
 `.work` is intentionally ignored by Git. It survives process restarts but must
 travel with workspace backups; a Git clone alone does not include these delivery
@@ -77,6 +79,14 @@ interrupted run is preserved and needs a new run ID; do not delete its records
 to restart it. The committed declared artifacts and raw events are sufficient
 to review completed trials even if scratch workspaces are lost. Resuming or
 staging with changed inputs, controller code or validators requires requalification.
+
+The six baseline trials and separate skill-assisted trial are complete. Five
+sessions finished and passed their checks; two xhigh sessions reached their time
+limit, including one whose saved geometry passed a separate diagnostic. All
+reviews are benchmark-only, and no trial changed the tank delivery. The
+[report](../benchmarks/cad_work_packets/REPORT.md) and
+[final verification](../benchmarks/cad_work_packets/results/verification.json)
+preserve the findings. Completed records were reused without new inference.
 
 The stage011 promotion, main-path verification, transparent rendering and archive
 finalization are complete. Do not rerun promotion preparation or the older010

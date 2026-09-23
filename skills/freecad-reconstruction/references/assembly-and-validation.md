@@ -38,6 +38,13 @@ matches the evidence. Booleans can return a compound containing one solid; check
 attributes specific to a solid, such as its `CenterOfMass`, are present on a
 generic imported `Part.Shape`. Use the constituent solids for aggregate centroids.
 
+A native save can normalize quaternion components in their last decimal places
+or change BRep bookkeeping without changing the geometry. Preserve the original
+parent file and its hash, then assess the new document against the declared
+geometric, metadata and frame criteria. Unless exact archive-byte preservation
+is an actual requirement, avoid rewriting FCStd ZIP internals merely to make
+serialized hashes match. Such a repair adds another implementation to qualify.
+
 For freeform sections, establish a common coordinate system and corresponding
 curve directions before lofting or fitting surfaces. Retain source picks and
 control curves; check section residuals, seams, surface continuity where required,

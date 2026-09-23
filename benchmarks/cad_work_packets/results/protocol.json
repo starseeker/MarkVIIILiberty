@@ -1,0 +1,35 @@
+{
+  "automatic_production_promotion": false,
+  "mode": "shadow",
+  "model": "gpt-6-astra",
+  "protocol_sha256": "598053214d187616c6dc20ddbf8a014290bd411396e5999091ee57fa3dcbbde3",
+  "repeats": 1,
+  "runner_sha256": "cfe371483c67fa8a7737b3418432b8041bb9d5f050cbfaef11743d55aa7ce547",
+  "schedule": [
+    [
+      "stack",
+      "medium"
+    ],
+    [
+      "stack",
+      "xhigh"
+    ],
+    [
+      "mount",
+      "xhigh"
+    ],
+    [
+      "mount",
+      "medium"
+    ],
+    [
+      "spring",
+      "medium"
+    ],
+    [
+      "spring",
+      "xhigh"
+    ]
+  ],
+  "timeout_seconds": 480
+}

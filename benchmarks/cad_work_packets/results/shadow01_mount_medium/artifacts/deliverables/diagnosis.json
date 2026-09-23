@@ -1,0 +1,87 @@
+{
+  "changed_objects": [
+    "BoltLeft1",
+    "BoltRight2"
+  ],
+  "cause": "World-space transforms were stored as side-local LinkPlacements on BoltLeft1, BoltRight2. Correct composition is T_world = T_Rig * T_side * T_occurrence. The defective values equal T_Rig * T_side * T_hole, so nesting applied the parent frames a second time. Restore only the offending local hole translations with identity rotation.",
+  "evidence": {
+    "BoltLeft1": {
+      "before_matrix": [
+        -2.220446049250313e-16,
+        -0.9396926207859085,
+        0.34202014332566877,
+        329.3969262078591,
+        1.0000000000000002,
+        -2.220446049250313e-16,
+        0.0,
+        170.0,
+        0.0,
+        0.34202014332566877,
+        0.9396926207859084,
+        -83.4202014332567,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "after_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        20.0,
+        0.0,
+        1.0,
+        0.0,
+        -10.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "before_equals_expected_world_transform": true
+    },
+    "BoltRight2": {
+      "before_matrix": [
+        -4.440892098500626e-16,
+        0.9396926207859085,
+        0.3420201433256687,
+        329.39692620785905,
+        -1.0000000000000002,
+        -4.440892098500626e-16,
+        0.0,
+        -69.99999999999999,
+        1.1102230246251565e-16,
+        -0.3420201433256687,
+        0.9396926207859084,
+        -83.42020143325668,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "after_matrix": [
+        1.0,
+        0.0,
+        0.0,
+        20.0,
+        0.0,
+        1.0,
+        0.0,
+        10.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "before_equals_expected_world_transform": true
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "limitations": [
+    "One repetition per case",
+    "Synthetic geometry fixtures",
+    "No automatic promotion",
+    "Requested effort, not served-model attestation",
+    "Human/source and builder review remain separate"
+  ],
+  "summary": {
+    "medium": {
+      "mean_seconds": 174.9747175373292,
+      "passed": 3,
+      "reported_usage_only": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 701056,
+        "input_tokens": 772362,
+        "output_tokens": 13955,
+        "reasoning_output_tokens": 997
+      },
+      "total": 3,
+      "trials_with_reported_usage": 3,
+      "trials_without_reported_usage": 0,
+      "usage_totals_are_partial": false
+    },
+    "xhigh": {
+      "mean_seconds": 399.4618523023285,
+      "passed": 1,
+      "reported_usage_only": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 172416,
+        "input_tokens": 197580,
+        "output_tokens": 7053,
+        "reasoning_output_tokens": 1321
+      },
+      "total": 3,
+      "trials_with_reported_usage": 1,
+      "trials_without_reported_usage": 2,
+      "usage_totals_are_partial": true
+    }
+  },
+  "trials": [
+    {
+      "case": "stack",
+      "checks_passed": 70,
+      "checks_total": 70,
+      "effort": "medium",
+      "mechanical_pass": true,
+      "result_sha256": "3de29bc4ca2f7d59f40d1cc889dc5f7e99ca33099e8c597a853e3cd0c77a617d",
+      "review": {
+        "disposition": "benchmark_only",
+        "result_sha256": "3de29bc4ca2f7d59f40d1cc889dc5f7e99ca33099e8c597a853e3cd0c77a617d",
+        "reviewed_unix": 1790127230.2590716,
+        "reviewer": "Codex primary reviewer (AI)",
+        "source_note": "Checked against the supplied synthetic stack specification, required nested frames, shared definitions, and both parameter scenarios. Independent saved-artifact validation and fresh sandbox reproduction each passed 70 checks. Some nominal sizes originate in handbook data, but this simplified fixture is not an accepted historical tank subassembly.",
+        "visual_note": "Inspected saved native-BRep nominal isometric and longitudinal section views and the variant section in review_views. The pin, tube and two bushes occupy the expected coaxial arrangement with the bore visible in section. Fit and submillimetre clearance acceptance comes from the independent kernel checks, not raster appearance."
+      },
+      "run": "shadow01_stack_medium",
+      "seconds": 290.74679792200914,
+      "tools": {
+        "agent_message": 5,
+        "command_execution": 19
+      },
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 427520,
+        "input_tokens": 463889,
+        "output_tokens": 7410,
+        "reasoning_output_tokens": 858
+      }
+    },
+    {
+      "case": "stack",
+      "checks_passed": 0,
+      "checks_total": 0,
+      "effort": "xhigh",
+      "mechanical_pass": false,
+      "result_sha256": "5157c92bacbdbffbf081626ebb0aa5194762b16334c0d64674db66bb00e0c4d7",
+      "review": null,
+      "run": "shadow01_stack_xhigh",
+      "seconds": 480.0331214799953,
+      "tools": {
+        "agent_message": 4,
+        "command_execution": 19,
+        "file_change": 5
+      },
+      "usage": {}
+    },
+    {
+      "case": "mount",
+      "checks_passed": 0,
+      "checks_total": 0,
+      "effort": "xhigh",
+      "mechanical_pass": false,
+      "result_sha256": "0d2c75b5af86e6a654a6dc73d86b3a21d3c6e48cf64d422674cd8672f9ccf9af",
+      "review": null,
+      "run": "shadow01_mount_xhigh",
+      "seconds": 480.03272681697854,
+      "tools": {
+        "agent_message": 4,
+        "command_execution": 14,
+        "file_change": 6
+      },
+      "usage": {}
+    },
+    {
+      "case": "mount",
+      "checks_passed": 94,
+      "checks_total": 94,
+      "effort": "medium",
+      "mechanical_pass": true,
+      "result_sha256": "6c67abdd9decba4fb01f63769b58d69c7676df2371604907246231d3fd3889ee",
+      "review": {
+        "disposition": "benchmark_only",
+        "result_sha256": "6c67abdd9decba4fb01f63769b58d69c7676df2371604907246231d3fd3889ee",
+        "reviewed_unix": 1790127230.3061066,
+        "reviewer": "Codex primary reviewer (AI)",
+        "source_note": "Checked against the synthetic mount contract and supplied broken document: the repair targets BoltLeft1 and BoltRight2 local frames. Independent validation and fresh sandbox reproduction each passed 94 checks, including preserved object inventory, definitions and unaffected placements. This fixture establishes placement behavior, not historical tank accuracy.",
+        "visual_note": "Inspected the repaired native-BRep isometric in review_views: both plate assemblies have four bolts in the expected transformed positions. Curved silhouettes reflect preview tessellation. Parent composition, hole alignment and preserved geometry are established by saved-document checks, not visual tolerance estimates."
+      },
+      "run": "shadow01_mount_medium",
+      "seconds": 131.89087206998374,
+      "tools": {
+        "agent_message": 4,
+        "command_execution": 9
+      },
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 211456,
+        "input_tokens": 233872,
+        "output_tokens": 3739,
+        "reasoning_output_tokens": 76
+      }
+    },
+    {
+      "case": "spring",
+      "checks_passed": 16,
+      "checks_total": 16,
+      "effort": "medium",
+      "mechanical_pass": true,
+      "result_sha256": "b1c4358490c48bb029c65609ce9d3b43d979f4d11d5cea0d35bcbb3924a009cd",
+      "review": {
+        "disposition": "benchmark_only",
+        "result_sha256": "b1c4358490c48bb029c65609ce9d3b43d979f4d11d5cea0d35bcbb3924a009cd",
+        "reviewed_unix": 1790127230.3703542,
+        "reviewer": "Codex primary reviewer (AI)",
+        "source_note": "Independently inspected the full HB140-141.jpg source spread and HB-plate138.png supplied section. Confirmed printed outside-diameter wording, M1336 spring and M1333 tube identities, and conditional circular 1-inch wire assumption. The reported -23.8125 mm literal and +1.5875 mm alternative radial clearances are correct; the memo is unsupported and historical dimensions remain unresolved. No dimension correction or tank geometry is approved.",
+        "visual_note": "Inspected the complete source originals, including the section showing M1336 surrounding M1333 between the plates. The illustration supports arrangement but does not establish an inside-diameter correction or wire dimensions. This packet requests a source assessment, so no new CAD rendering is expected. Candidate image-tool use is not independently attested by this CLI event format."
+      },
+      "run": "shadow01_spring_medium",
+      "seconds": 102.28648261999479,
+      "tools": {
+        "agent_message": 3,
+        "command_execution": 4,
+        "file_change": 1
+      },
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 62080,
+        "input_tokens": 74601,
+        "output_tokens": 2806,
+        "reasoning_output_tokens": 63
+      }
+    },
+    {
+      "case": "spring",
+      "checks_passed": 16,
+      "checks_total": 16,
+      "effort": "xhigh",
+      "mechanical_pass": true,
+      "result_sha256": "a44f6ed02e708c5447802ee66894583f2cc27fab58417c6b3a89ef377a237ba2",
+      "review": {
+        "disposition": "benchmark_only",
+        "result_sha256": "a44f6ed02e708c5447802ee66894583f2cc27fab58417c6b3a89ef377a237ba2",
+        "reviewed_unix": 1790127230.436423,
+        "reviewer": "Codex primary reviewer (AI)",
+        "source_note": "Independently inspected the full HB140-141.jpg source spread and HB-plate138.png supplied section. Confirmed printed outside-diameter wording, M1336 spring and M1333 tube identities, and conditional circular 1-inch wire assumption. The reported -23.8125 mm literal and +1.5875 mm alternative radial clearances are correct; the memo is unsupported and historical dimensions remain unresolved. No dimension correction or tank geometry is approved. The additional distinction between supplied filename/provenance and printed plate identity is appropriate.",
+        "visual_note": "Inspected the complete source originals, including the section showing M1336 surrounding M1333 between the plates. The illustration supports arrangement but does not establish an inside-diameter correction or wire dimensions. This packet requests a source assessment, so no new CAD rendering is expected. Candidate image-tool use is not independently attested by this CLI event format."
+      },
+      "run": "shadow01_spring_xhigh",
+      "seconds": 238.31970861001173,
+      "tools": {
+        "agent_message": 4,
+        "command_execution": 9,
+        "file_change": 1
+      },
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 172416,
+        "input_tokens": 197580,
+        "output_tokens": 7053,
+        "reasoning_output_tokens": 1321
+      }
+    }
+  ],
+  "verification": {
+    "passed": true,
+    "production_documents_unchanged": 249,
+    "unique_threads": 6
+  }
+}
