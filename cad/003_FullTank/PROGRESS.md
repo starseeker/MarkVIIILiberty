@@ -11,6 +11,27 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — outer clutch drum and flywheel
+
+The [latest isolated native assembly](experiments/drive_chains/clutch_drum_build/TransmissionWithClutchDrum.FCStd)
+contains **1,662 physical occurrences**. Nine additions represent the outer drum,
+flywheel, six drilled cap screws and their source-length 48in locking wire.
+The existing 30in plunger wire turns inward to clear the dished flywheel;
+1,652 other parent occurrences retain their geometry and placement.
+
+All 270 independent checks, 262 affected interference pairs, five definition and
+ten installed STEP comparisons pass. Two coupled stock/bend/tooth-count trials
+each pass 68 checks and 262 pairs. A fresh build repeats the nominal geometry
+and exchange checks. Six source/native views were inspected; four new progression
+images preserve all 95 earlier snapshots.
+
+The [packet](packets/I03-clutch-drum.md) records source conflicts, estimated tooth
+form and mounting profiles, and the steeper modeled flywheel dish compared with
+the handbook sketch. The complete crankshaft installation must revisit the dish
+and hub interpretation. Clutch-stop brake, engine retention/starter, remaining
+interiors, integration and coverage remain required. Standard tank011 and its
+transparent-hull view are unchanged; the full goal remains active and incomplete.
+
 ## 22 September 2026 — plunger locking wire and head passages
 
 The [latest isolated native assembly](experiments/drive_chains/clutch_retention_build/TransmissionWithClutchRetention.FCStd)

@@ -1,0 +1,18 @@
+Constructing outer drum, toothed dished flywheel, six screws and two inward wire routes.
+Prior axial wire route/flywheel overlap 62.241730305620635 mm3
+Saved/reopened1662components;9new,one rerouted wire,1652preserved.
+ClutchRetention_Wire 11 pairs 0 overlaps
+ClutchDrum_Screw1 14 pairs 1 overlaps
+ClutchDrum_Screw2 17 pairs 2 overlaps
+ClutchDrum_Screw3 20 pairs 3 overlaps
+ClutchDrum_Screw4 23 pairs 4 overlaps
+ClutchDrum_Screw5 26 pairs 5 overlaps
+ClutchDrum_Screw6 29 pairs 6 overlaps
+ClutchDrum_drum 141 pairs 7 overlaps
+ClutchDrum_flywheel 262 pairs 7 overlaps
+ClutchDrum_wire 262 pairs 7 overlaps
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/clutch_drum_build.py", line 92, in <module>
+    assert not overlaps,overlaps
+           ^^^^^^^^^^^^
+AssertionError: [{'a': 'ClutchDrum_Screw1', 'b': 'ClutchDrum_drum', 'intersection_mm3': 0.0005602850337289883}, {'a': 'ClutchDrum_Screw2', 'b': 'ClutchDrum_drum', 'intersection_mm3': 0.0005602852552188775}, {'a': 'ClutchDrum_Screw3', 'b': 'ClutchDrum_drum', 'intersection_mm3': 0.0005602852552154647}, {'a': 'ClutchDrum_Screw4', 'b': 'ClutchDrum_drum', 'intersection_mm3': 0.0005602852552134459}, {'a': 'ClutchDrum_Screw5', 'b': 'ClutchDrum_drum', 'intersection_mm3': 0.0005602852552186767}, {'a': 'ClutchDrum_Screw6', 'b': 'ClutchDrum_drum', 'intersection_mm3': 0.0005602852552177278}, {'a': 'ClutchDrum_drum', 'b': 'ClutchDrum_flywheel', 'intersection_mm3': 5393.955642159879}]

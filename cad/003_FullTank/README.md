@@ -214,7 +214,7 @@ The [source review](experiments/drive_chains/clutch_cone_build/source_review/ind
 shows the full SNL figure beside actual native sections. SH861K plunger locking
 wire/head holes were unfinished at that checkpoint.
 
-The latest [plunger retention checkpoint](experiments/drive_chains/clutch_retention_build/TransmissionWithClutchRetention.FCStd)
+The [plunger retention checkpoint](experiments/drive_chains/clutch_retention_build/TransmissionWithClutchRetention.FCStd)
 contains **1,653 physical components**: one new SH861K wire, six revised plunger
 heads sharing one definition, and 1,646 preserved parent occurrences. The wire
 retains the catalogue 30in length; diameter, head passages and route are documented
@@ -223,9 +223,19 @@ two parameter trials and a fresh rebuild pass. Five views were inspected and
 three new progression snapshots are saved. The [packet](packets/I03-clutch-retention.md)
 records these checks and the numerical volume diagnostic.
 
-Next are the outer drum, flywheel/crankshaft engagement and clutch-stop brake.
-The wire tail requires a clearance check against the future flywheel. Standard
-tank011 remains unchanged; full tank geometry and integration remain incomplete.
+The latest [drum/flywheel checkpoint](experiments/drive_chains/clutch_drum_build/TransmissionWithClutchDrum.FCStd)
+contains **1,662 physical components**. It adds the outer drum, flywheel, six
+drilled screws and their 48in wire. The existing 30in plunger wire now routes
+inward to clear the flywheel; the other 1,652 parent occurrences remain unchanged.
+All 270 independent checks, 262 interference pairs, 15 STEP comparisons, two
+coupled parameter trials and a fresh rebuild pass. Six views were inspected and
+four new progression images preserve the visual improvement.
+
+The [packet](packets/I03-clutch-drum.md) records the uncertain hub interpretation,
+starter tooth count and flywheel dish profile, including its visible difference
+from the handbook sketch. Next are the clutch-stop brake and complete crankshaft,
+key/nut retention and starter interfaces. Standard tank011 remains unchanged;
+full tank geometry and integration remain incomplete.
 
 Additional commands:
 

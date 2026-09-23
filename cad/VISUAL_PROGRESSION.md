@@ -478,3 +478,24 @@ transparent-hull companion remain unchanged; all 92 previous images are preserve
 | [installed isometric](intermediate_snapshot_iso_clutch_retention_001.png) | `256604d12bd1d6885059f8905714b62750b1de72fc2fee3384861596b5380dcb` |
 | [six-head wire route](intermediate_snapshot_detail_clutch_retention_001.png) | `72d9d70fe4af082fdedf3dd879192109eb2bf2d283e84dcf3d5fcd149ba5a502` |
 | [head passage section](intermediate_snapshot_detail_plunger_wire_001.png) | `a782d7dcf948ce14f84ab3ca769ab50b908b8a5789f60d7833257440e6003afd` |
+
+
+## Outer clutch drum and flywheel — 23 September 2026
+
+The isolated candidate contains **1,662 physical components**. The drum, toothed
+flywheel, six drilled screws and 48in locking wire are populated. The existing 30in
+plunger wire turns inward to clear the flywheel. Geometry, STEP exchange, two
+coupled parameter trials and fresh reproduction pass. Six images were inspected.
+
+Flywheel dish and hub profiles, starter tooth count and wire routes remain
+explicit approximations. The axial section exposes a steeper dish than the
+handbook sketch; complete engine/crankshaft work must revisit it. Standard tank011
+and its transparent-hull companion remain unchanged. All 95 earlier images are
+preserved, bringing the progression to 99 images.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_clutch_drum_001.png) | `4badcc162ed9b104a28f6c1981220b5b7920d14898b70573e9bf601362b20a1a` |
+| [axial section](intermediate_snapshot_section_clutch_drum_001.png) | `fd2f38afdaed6ab6c528459b7622167f536505b47c2083e11a8370e1e28edfd4` |
+| [flywheel detail](intermediate_snapshot_detail_flywheel_001.png) | `a20f624175a25fc30a85da6a99af3c78481d20261ab2ef3823b3f0a6f6dabc1f` |
+| [two wire routes](intermediate_snapshot_detail_clutch_wires_001.png) | `8cdb75ff84a36d10cf17e97dbcb3d0cf52cb6705a72ac250fbeb9ab93918cfc0` |

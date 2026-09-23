@@ -1,0 +1,340 @@
+{
+  "status": "working_candidate_not_qualified",
+  "native_sha256": "42333cc7c2c794f4d5cffe074bb263df2ecc58d7e07de500b0e0fe54a5f008a2",
+  "parent_native_sha256": "a30e8ddc995534bad874bd0777b45beea4f91049f95333c86695491e9c1ac99d",
+  "parent_qualification_sha256": "b905797fa9f404309e8b0024adc0ec016cceea02d7cd9bc45a512470cc40bf0c",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/clutch_drum_build.py": "6b38b539b930da9c6c6c732f8d38e4b829fb48d1b08b944d77435cf470f8f23e",
+    "cad/003_FullTank/experiments/drive_chains/clutch_drum_parts.py": "3bd73c0dd0a699f1cc3057b1d2017c1f98b09215fc2c3af0a8d3106fdfe8ca54",
+    "cad/003_FullTank/experiments/drive_chains/clutch_drum_controls.json": "a160bf80ec79553947d0a6f71a13113172436167c74ea1dcffdb6470cc1dbdb8",
+    "cad/003_FullTank/experiments/drive_chains/clutch_drum_sources.json": "26f45dab79285de3804ccc52341a1946cc1c0dc4dd76e756af8a3d4668f5dbae",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_parts.py": "35c677472dad5a90701bedbd6c06b3fb01f2b0fda494efc00be48a64db35d3a6",
+    "cad/003_FullTank/experiments/drive_chains/clutch_drive_parts.py": "3d05a95e90e1fcc906aa92b69461e7bf61df04e8194f87f654d07666d7a65543",
+    "cad/003_FullTank/experiments/drive_chains/transmission_planet_parts.py": "dbda95f02c30dd6707e9d2db206468256f10014a14197676b01df25d6553e570",
+    "cad/003_FullTank/experiments/drive_chains/transmission_core_parts.py": "b7b3150e42529535f842871e81c4c580a15b25ce123e997da3ef5437041d7ff1"
+  },
+  "controls": {
+    "drum_stock": 6.0,
+    "drum_inner_bend_radius": 25.0,
+    "drum_flange_inner_radius": 168.0,
+    "bolt_circle": 188.0,
+    "bolt_phase": 0.0,
+    "bolt_count": 6,
+    "bolt_diameter": 15.875,
+    "bolt_length": 31.75,
+    "bolt_thread_length": 25.4,
+    "bolt_head_af": 26.9875,
+    "bolt_head_height": 10.31875,
+    "bolt_head_clock": 30.0,
+    "bolt_hole_gap": 0.2,
+    "thread_envelope_gap": 0.1,
+    "blind_tip_gap": 1.0,
+    "head_drill_radius": 1.5,
+    "wire_length": 1219.2,
+    "wire_diameter": 1.5,
+    "wire_seam_angle": 30.0,
+    "wire_seam_half_angle": 10.0,
+    "wire_twist_radius": 1.1,
+    "wire_twist_turns": 1.5,
+    "wire_bridge_inward": 10.0,
+    "wire_bend_handle": 3.0,
+    "flywheel_diameter": 503.1994,
+    "flywheel_rim_stock": 32.0,
+    "flywheel_web_outer_radius": 166.0,
+    "flywheel_web_stock_axial": 18.0,
+    "flywheel_rim_front_transition_radius": 178.0,
+    "journal_running_gap": 0.15,
+    "journal_front": 1019.0,
+    "hub_rear_setback": 0.25,
+    "spline_shoulder_gap": 0.25,
+    "spline_radial_gap": 0.25,
+    "spline_side_gap": 0.1,
+    "taper_rear_radius": 25.5,
+    "taper_front_radius": 33.3375,
+    "keyway_width": 12.9,
+    "keyway_depth": 6.45,
+    "starter_teeth": 124,
+    "starter_pressure_angle": 20.0,
+    "starter_tooth_thinning": 0.15,
+    "starter_flank_samples": 13
+  },
+  "datums": {
+    "bolt_seat": 1038.5751884885083,
+    "flywheel_joint": 1044.5751884885083,
+    "bend_center": [
+      1013.5751884885083,
+      203.02333884501252
+    ],
+    "bend_tangent_radius": 203.02333884501252,
+    "contact_large": [
+      958.7506231548401,
+      243.6622
+    ],
+    "contact_small": [
+      1020.0701884885083,
+      227.1649
+    ],
+    "normal": [
+      0.2598000000000005,
+      0.9656624461994988
+    ],
+    "hub_rear": 843.2,
+    "spline_front": 911.4498000000001,
+    "spline_root": 44.5937,
+    "spline_tip": 50.275,
+    "journal_radius": 50.6754,
+    "taper_front": 1037.0,
+    "flywheel_front": 1076.5751884885083,
+    "starter_tooth_profile": {
+      "teeth": 124,
+      "pitch_radius_mm": 247.60605396825397,
+      "base_radius_mm": 232.67358177588565,
+      "root_radius_mm": 242.61399642857143,
+      "tip_radius_mm": 251.5997,
+      "pressure_angle_deg": 20.0,
+      "pitch_tooth_thinning_mm": 0.15,
+      "flank_samples": 13,
+      "max_flank_fit_error_mm": 7.427519165506554e-07,
+      "spline_degrees": [
+        3
+      ]
+    },
+    "wire": {
+      "centerline_length": 1219.1999999999616,
+      "tail_inward_length": 15.004428176505826,
+      "sweep_spans": 8
+    },
+    "retention_wire": {
+      "centerline_length": 761.9999999998954,
+      "tail_inward_length": 18.203666354767847,
+      "sweep_spans": 8
+    },
+    "screw_insertion": 25.75,
+    "thread_engagement": 25.4,
+    "plain_shank_in_flywheel": 0.3500000000000014,
+    "blind_back_wall": 5.25
+  },
+  "occurrences": [
+    {
+      "name": "ClutchDrum_Screw1",
+      "key": "screw",
+      "xyz": [
+        1038.5751884885083,
+        188.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        6.123233995736766e-17
+      ],
+      "parent": "Drum"
+    },
+    {
+      "name": "ClutchDrum_Screw2",
+      "key": "screw",
+      "xyz": [
+        1038.5751884885083,
+        94.00000000000001,
+        162.81277591147446
+      ],
+      "rotation": [
+        3.0616169978683824e-17,
+        0.8660254037844387,
+        0.49999999999999994,
+        5.3028761936245346e-17
+      ],
+      "parent": "Drum"
+    },
+    {
+      "name": "ClutchDrum_Screw3",
+      "key": "screw",
+      "xyz": [
+        1038.5751884885083,
+        -93.99999999999996,
+        162.8127759114745
+      ],
+      "rotation": [
+        5.302876193624534e-17,
+        0.5000000000000001,
+        0.8660254037844386,
+        3.0616169978683836e-17
+      ],
+      "parent": "Drum"
+    },
+    {
+      "name": "ClutchDrum_Screw4",
+      "key": "screw",
+      "xyz": [
+        1038.5751884885083,
+        -188.0,
+        2.302335982397024e-14
+      ],
+      "rotation": [
+        6.123233995736766e-17,
+        6.123233995736766e-17,
+        1.0,
+        3.749399456654644e-33
+      ],
+      "parent": "Drum"
+    },
+    {
+      "name": "ClutchDrum_Screw5",
+      "key": "screw",
+      "xyz": [
+        1038.5751884885083,
+        -94.00000000000009,
+        -162.8127759114744
+      ],
+      "rotation": [
+        5.302876193624535e-17,
+        -0.49999999999999983,
+        0.8660254037844388,
+        -3.0616169978683824e-17
+      ],
+      "parent": "Drum"
+    },
+    {
+      "name": "ClutchDrum_Screw6",
+      "key": "screw",
+      "xyz": [
+        1038.5751884885083,
+        94.00000000000001,
+        -162.81277591147446
+      ],
+      "rotation": [
+        3.0616169978683824e-17,
+        -0.8660254037844387,
+        0.49999999999999994,
+        -5.3028761936245346e-17
+      ],
+      "parent": "Drum"
+    },
+    {
+      "name": "ClutchDrum_drum",
+      "key": "drum",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent": "Drum"
+    },
+    {
+      "name": "ClutchDrum_flywheel",
+      "key": "flywheel",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent": "Flywheel"
+    },
+    {
+      "name": "ClutchDrum_wire",
+      "key": "wire",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "parent": "Drum"
+    }
+  ],
+  "native_occurrences": 1662,
+  "new_ids": [
+    "ClutchDrum_Screw1",
+    "ClutchDrum_Screw2",
+    "ClutchDrum_Screw3",
+    "ClutchDrum_Screw4",
+    "ClutchDrum_Screw5",
+    "ClutchDrum_Screw6",
+    "ClutchDrum_drum",
+    "ClutchDrum_flywheel",
+    "ClutchDrum_wire"
+  ],
+  "changed_ids": [
+    "ClutchRetention_Wire"
+  ],
+  "affected_ids": [
+    "ClutchRetention_Wire",
+    "ClutchDrum_Screw1",
+    "ClutchDrum_Screw2",
+    "ClutchDrum_Screw3",
+    "ClutchDrum_Screw4",
+    "ClutchDrum_Screw5",
+    "ClutchDrum_Screw6",
+    "ClutchDrum_drum",
+    "ClutchDrum_flywheel",
+    "ClutchDrum_wire"
+  ],
+  "unchanged_parent_occurrences": 1652,
+  "original_plunger_wire_flywheel_overlap_mm3": 58.23945280249583,
+  "standard_assembly_modified": false,
+  "complete_clutch": false,
+  "complete_tank": false,
+  "headless": true,
+  "freecad": [
+    "1",
+    "1",
+    "1",
+    "44227 +647 (Git)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "tag: 1.1.1",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
+  "occ": "7.8.0",
+  "artifact_hashes": {
+    "ClutchDrumDefinitions.step": "33d7bb04e3436a7fea4fc603447fd63f458afb0620e8e309f2696413d36783ef",
+    "ClutchDrumInstallation.step": "2c28a520d1d55742e94afe23cc626707ed84885c46b1be1c1271f7d14d85a0b9",
+    "inputs/parent_plunger_wire.brep": "5131d8d32799829a1720dba4bbdd8fbf9b98205f7e5776a664aa66781ab7f45c",
+    "inputs/drum_wire_centerline.brep": "045d07612f59e8016862d18cf25f4dcd10de3c556bed99054df18ec35de4c4fa",
+    "inputs/retention_wire_centerline.brep": "49f52ffd616ebf286bcdfd46337375c1cf69d9efd0335160cc120dbcb9e4283b"
+  },
+  "standard_native_hashes": {
+    "native/MarkVIII.FCStd": "52aea1af979efc27fbfbce003e976e8a02cfa2da3e0ca0d25a631d7c5e7d48ac",
+    "native/library/CoolingVentilation.FCStd": "810553a07fb9610c11dd3cd2f15e1eec0b7712e16f1d0a4245d70922532f73c4",
+    "native/library/CrewControlsAndEquipment.FCStd": "990e476bcdd088d58bbe76028a782667301a6f73e9c5a8065767bfd4e3860bae",
+    "native/library/Drivetrain.FCStd": "694c20a3995baafb0698f8c07d61e3e6b37bf6a0b0214362fe75bf0a80c30e25",
+    "native/library/ElectricalInstruments.FCStd": "7ca38479c37f7a169b2ab52a4ea90afd80cc7cf97d45c52df380abbd91dc393d",
+    "native/library/FuelPressure.FCStd": "5d5e8ced3b3b1bc380c9822e4b0d210520da081fa119ab16bd58523fce93dc6a",
+    "native/library/HullStructure.FCStd": "a6b78305dddcfa74904b07ea9dad8356ba168d774499599c854074c8aca778fc",
+    "native/library/Powerplant.FCStd": "234c3582a110f607f98977a034638b3f65391b6c6c5cd284a9570c74629752b7",
+    "native/library/RunningGear.FCStd": "52587107dabf028783ad6bd087ce1f8e2bf3aacea7d641ab8bfee07101fddf44",
+    "native/library/Sponsons.FCStd": "cca4a76fd623303caeb7d6b2fa277f6bcc251170303379ce6f07a432add20162",
+    "native/subsystems/ArmamentRepresentation.FCStd": "da6a1fd3e488982cff35e88bbce264f85a448c8349177ac9550939dc96f0b553",
+    "native/subsystems/CoolingVentilation.FCStd": "bb0996bed71ec8269a68f7445da53fb86789a7cb7777c5972cff74fd47811e47",
+    "native/subsystems/CrewControlsAndEquipment.FCStd": "5831b330452e69ba2dc0ae4b2c9757b2fbf174d988ce44126e64a7adec7e4fe5",
+    "native/subsystems/Drivetrain.FCStd": "222888c3c6d72363524415dfeec66ce89f9144cf973cbb077dab245d2fc0c4bf",
+    "native/subsystems/ElectricalInstruments.FCStd": "5f423b486223168139193422992d379bc291e73ac992a372bdcef75069051f0c",
+    "native/subsystems/FuelPressure.FCStd": "45f9cb47c26ef7e007ccb0451554cf33321bf63bc85d26e2edda9f00764b7e7b",
+    "native/subsystems/HullStructure.FCStd": "91bb04cc51d10a143ffeb982b3bec08e0e28b5942da452601f738d2c2528f56c",
+    "native/subsystems/Powerplant.FCStd": "c22f9480fc5a60028e6af664fc5ebb2e07ca292694e89d29eacd0b0a18ad720d",
+    "native/subsystems/RunningGear.FCStd": "5b225c9b28cce15f4c331e1d076a39a7575319831d95cf92d8db5cbc0672418e",
+    "native/subsystems/Sponsons.FCStd": "79c852869c29529dd8de89a257e7e127ff3d7d2255e1a8b186fc044b292f38bb"
+  },
+  "material_pairs": 262,
+  "material_passed": true,
+  "overlaps": [],
+  "standard_context_checked": true
+}
