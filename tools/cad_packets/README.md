@@ -57,6 +57,14 @@ The included validator is specific to the three benchmark cases, not a universal
 tank-model certifier. Builders also need a reproducibility review before any real
 model integration; the current mechanical gate checks their saved outputs.
 
+The project's [FreeCAD reconstruction skill](../../skills/freecad-reconstruction/SKILL.md)
+captures tested runtime, placement and evidence-handling guidance. Supply the
+skill and relevant resources as hashed packet inputs for isolated workers, as in
+`benchmarks/cad_work_packets/packets/stack_with_skill.json`. This makes the intended
+guidance readable within the candidate's restricted workspace and records its
+revision. Keep the skill/discovery environment fixed during paired comparisons;
+the controller records requested CLI settings, not every server-side instruction.
+
 ## Isolation and failure handling
 
 The CLI profile grants candidate commands only minimal platform reads, `/snap`

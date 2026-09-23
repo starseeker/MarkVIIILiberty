@@ -38,7 +38,10 @@ def main():
         fields=sorted(set(k for r in selected for k in r['usage']))
         summary[effort]=dict(passed=sum(r['mechanical_pass'] for r in selected),total=len(selected),
              mean_seconds=statistics.mean(r['seconds'] for r in selected),
-             usage={k:sum(r['usage'].get(k,0) for r in selected) for k in fields})
+             trials_with_reported_usage=sum(bool(r['usage']) for r in selected),
+             trials_without_reported_usage=sum(not r['usage'] for r in selected),
+             usage_totals_are_partial=any(not r['usage'] for r in selected),
+             reported_usage_only={k:sum(r['usage'].get(k,0) for r in selected) for k in fields})
     write(HERE/'results/summary.json',dict(summary=summary,trials=rows,
           verification=dict(passed=True,unique_threads=len(threads),production_documents_unchanged=len(current)),
           limitations=['One repetition per case','Synthetic geometry fixtures','No automatic promotion',
