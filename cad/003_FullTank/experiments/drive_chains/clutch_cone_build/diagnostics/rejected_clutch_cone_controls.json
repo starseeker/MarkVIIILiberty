@@ -1,0 +1,37 @@
+{
+  "status": "Source-informed static cone and six spring sets; historical dimensions transferred conditionally",
+  "controls": {
+    "large_diameter": 487.3244, "small_diameter": 454.3298, "face_slant": 63.5,
+    "lining_stock": 6.35, "steel_stock": 4.0, "bend_radius": 10.0,
+    "web_inner_radius": 132.0, "web_x_intercept": 820.0,
+    "support_joint_stock": 14.0, "support_outer_radius": 162.0,
+    "support_rivet_radius": 143.0, "support_rivet_diameter": 7.9375,
+    "support_rivet_blank_length": 28.575,
+    "lining_rivet_diameter": 4.7625, "lining_rivet_blank_length": 17.4625,
+    "lining_rivet_rows": [22, 21], "lining_rivet_slant_fractions": [0.23, 0.77],
+    "lining_head_radius": 4.3, "lining_head_depth": 2.0, "lining_head_recess": 1.2,
+    "spotface_depth": 0.2,
+    "plunger_length": 123.825, "plunger_diameter": 9.525, "plunger_head_height": 4.0,
+    "plunger_head_radius": 7.0, "ring_stock": 6.0, "ring_bore_gap": 0.15,
+    "cup_rear": 945.95, "cup_front": 983.95, "cup_end_stock": 3.0,
+    "cup_outer_radius": 10.25, "cup_inner_radius": 8.1,
+    "cup_flange_radius": 11.0, "cup_flange_stock": 5.0,
+    "cup_support_gap": 0.10, "cup_plunger_gap": 0.15,
+    "spring_outer_diameter": 15.875, "spring_wire_radius": 0.8,
+    "spring_turns": 32, "spring_end_pitch": 1.65,
+    "plug_x": 883.0, "plug_angle_deg": 45.0,
+    "plug_tip_radius": 4.4, "plug_root_radius": 4.85,
+    "plug_length": 7.5, "plug_head_width": 9.0, "plug_head_height": 4.5,
+    "plug_seat_radius": 102.0, "plug_passage_radius": 3.0
+  },
+  "evidence_and_bounds": [
+    {"parameters": ["large_diameter", "small_diameter", "face_slant", "lining_stock"], "basis": "HB115 table and HB117 Plate72; conditional transfer to SNL SH876A/SH997C", "interpretation": "Finished friction surface uses the listed cone diameters; 2.5in is slant width. Flat section is 2.5 by .25in. Pattern radii/angle independently agree to .015mm diameter; no manufacturing tolerance inferred."},
+    {"parameters": ["plunger_length", "plunger_diameter", "spring_outer_diameter", "spring_turns"], "basis": "HB115; SH861A plunger mark agrees with SNL; HB spring mark differs", "interpretation": "Length includes the inferred plunger head. 5/8in spring diameter selected as OD. Spring installed height derives from receiving seats, not either conflicting free length."},
+    {"parameters": ["support_rivet_diameter", "support_rivet_blank_length", "lining_rivet_diameter", "lining_rivet_blank_length", "lining_rivet_rows"], "basis": "SNL68 lists six 5/16 x1-1/8 button rivets and forty-three 3/16 x11/16 countersunk copper rivets", "interpretation": "43 is supported; split into22+21 staggered rows is an estimate. Nominal lengths are blank dimensions; installed upset shapes do not retain that shank length."},
+    {"parameters": ["steel_stock", "bend_radius", "web_inner_radius", "web_x_intercept", "support_joint_stock", "support_outer_radius", "support_rivet_radius"], "basis": "Estimated profile following full SNL21/HB71; no pixel calibration", "bounds": "Steel3-5mm; bend8-12mm; web intercept +/-3mm coupled to cone/support; supporting web12-16mm. Current inner key region and existing thrust race are fixed interfaces."},
+    {"parameters": ["cup_rear", "cup_front", "cup_end_stock", "cup_outer_radius", "cup_inner_radius", "cup_flange_radius", "cup_flange_stock", "ring_stock", "plunger_head_height", "plunger_head_radius"], "basis": "Estimated from full source arrangement and physical interfaces", "bounds": "Cup length34-42mm, end2.5-3.5mm, ring5-7mm; preserve minimum wall and installed spring clearance. Smooth threaded envelopes at six plunger tails; thread pitch unknown."},
+    {"parameters": ["spring_wire_radius", "spring_end_pitch"], "basis": "Estimated spring construction", "bounds": "Wire radius.7-.9mm; end pitch must exceed wire diameter. Selected .8mm gives 12.675mm ID around9.525mm plunger. HB5.85in and SNL4-5/8in free lengths both retained as conflicting sources."},
+    {"parameters": ["cup_support_gap", "cup_plunger_gap", "ring_bore_gap", "spotface_depth", "lining_head_radius", "lining_head_depth", "lining_head_recess", "lining_rivet_slant_fractions"], "basis": "Explicit fit/fastener finishing approximations", "bounds": "Gaps .1/.15mm are physical allowances, independent of Boolean tolerance. Rivet head profiles, shallow seats and layout are inferred; no forming or strength certification."},
+    {"parameters": ["plug_x", "plug_angle_deg", "plug_tip_radius", "plug_root_radius", "plug_length", "plug_head_width", "plug_head_height", "plug_seat_radius", "plug_passage_radius"], "basis": "Q52A 1/8in pipe plug identity/count printed; position and physical envelope estimated", "interpretation": "Nominal pipe size is not actual diameter. Smooth tapered thread envelope, square head, matching receiving seat and passage to support/collar running interface; exact original port position unresolved."}
+  ]
+}

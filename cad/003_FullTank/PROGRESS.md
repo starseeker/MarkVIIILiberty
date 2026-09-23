@@ -11,6 +11,28 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 22 September 2026 — clutch cone and spring sets
+
+The [latest isolated native assembly](experiments/drive_chains/clutch_cone_build/TransmissionWithClutchCone.FCStd)
+contains **1,652 physical occurrences**. This checkpoint adds nine reusable part
+definitions and 71 occurrences, including the cone, lining, 49 rivets and six
+spring-plunger sets. It refines one existing support and preserves the other
+1,580 parent occurrences. These local counts are not additive to the standard
+tank inventory; integration has not occurred.
+
+All 462 independent checks, 326 affected interference pairs, ten definition and
+72 installed STEP comparisons pass, together with two coupled parameter trials
+and a fresh rebuild. Seven actual native/source images were reviewed; four new
+progression snapshots are saved. The [packet](packets/I03-clutch-cone.md) records
+conditional handbook dimensions, source conflicts and inferred profiles/finishing.
+Independent through-hole checks rejected two Boolean defects that whole-part
+interference and exchange checks alone had missed.
+
+Next are the SH861K plunger locking wire and receiving holes, outer drum,
+flywheel/crankshaft engagement, clutch-stop brake, and remaining drivetrain and
+engine systems. Standard tank 011 and its transparent-hull view are unchanged.
+The full-tank goal remains active and incomplete.
+
 ## 21 September 2026 — clutch-stop coupling and closed pump drive
 
 The [combined native assembly](experiments/drive_chains/clutch_drive_build/TransmissionWithClutchDrive.FCStd)

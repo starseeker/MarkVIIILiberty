@@ -1,0 +1,16 @@
+Independent checks 403 failed [{'name': 'spring1/rear seat', 'passed': False, 'detail': {'actual': 901.5571922122887, 'expected': 903.475, 'tolerance': 2e-05}}, {'name': 'spring1/front seat', 'passed': False, 'detail': {'actual': 981.4703835545268, 'expected': 980.95, 'tolerance': 2e-05}}, {'name': 'spring2/rear seat', 'passed': False, 'detail': {'actual': 901.5571922122887, 'expected': 903.475, 'tolerance': 2e-05}}, {'name': 'spring2/front seat', 'passed': False, 'detail': {'actual': 981.4703835545268, 'expected': 980.95, 'tolerance': 2e-05}}, {'name': 'spring3/rear seat', 'passed': False, 'detail': {'actual': 901.5571922122887, 'expected': 903.475, 'tolerance': 2e-05}}, {'name': 'spring3/front seat', 'passed': False, 'detail': {'actual': 981.4703835545268, 'expected': 980.95, 'tolerance': 2e-05}}, {'name': 'spring4/rear seat', 'passed': False, 'detail': {'actual': 901.5571922122887, 'expected': 903.475, 'tolerance': 2e-05}}, {'name': 'spring4/front seat', 'passed': False, 'detail': {'actual': 981.4703835545268, 'expected': 980.95, 'tolerance': 2e-05}}, {'name': 'spring5/rear seat', 'passed': False, 'detail': {'actual': 901.5571922122887, 'expected': 903.475, 'tolerance': 2e-05}}, {'name': 'spring5/front seat', 'passed': False, 'detail': {'actual': 981.4703835545268, 'expected': 980.95, 'tolerance': 2e-05}}, {'name': 'spring6/rear seat', 'passed': False, 'detail': {'actual': 901.5571922122887, 'expected': 903.475, 'tolerance': 2e-05}}, {'name': 'spring6/front seat', 'passed': False, 'detail': {'actual': 981.4703835545268, 'expected': 980.95, 'tolerance': 2e-05}}, {'name': 'ClutchCone_LiningRivet08/through joint 1', 'passed': False, 'detail': None}, {'name': 'ClutchCone_LiningRivet31/through joint 1', 'passed': False, 'detail': None}]
+Definition STEP Def_ClutchCone_support_rivet True
+Definition STEP Def_ClutchCone_lining_rivet True
+Definition STEP Def_ClutchCone_cup True
+Definition STEP Def_ClutchCone_plunger True
+Definition STEP Def_ClutchCone_spring True
+Definition STEP Def_ClutchCone_plug True
+Definition STEP Def_ClutchCone_cone True
+Definition STEP Def_ClutchCone_lining True
+Definition STEP Def_ClutchCone_ring True
+Definition STEP Def_ClutchStack_support True
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_clutch_cone.py", line 150, in <module>
+    assert all(x['passed'] for x in checks+exchange+placed)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

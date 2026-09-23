@@ -1,0 +1,2317 @@
+{
+  "native_sha256": "2be2bb10cc4c243bc17fba95419cd6c6a1885e4d25dde9fa26e81ee402096d36",
+  "parent_native_sha256": "6ef91e218050b4a0f5c926d22bd8b7b887b44353a0ceb9a07b9fc8abed1a31b7",
+  "parent_qualification_sha256": "cbf90abdee4cf5d46f23d77ebe2867dda18b0f42fec6267562ba0fd1e8860e39",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/clutch_cone_build.py": "7fc8584a05d367dde693c32708cd255b22d0a1328abedcd23eda904bba1c101a",
+    "cad/003_FullTank/experiments/drive_chains/clutch_cone_parts.py": "871a3cdd1b633d70b6c09bc074cf8058d2f49c42af416975dacac717484c6530",
+    "cad/003_FullTank/experiments/drive_chains/clutch_cone_controls.json": "df016601142c5d0ca89f6643367ea76cff1b1741ad6bf717d7fae98107a05814",
+    "cad/003_FullTank/experiments/drive_chains/clutch_cone_sources.json": "3845a4f3ebf386703706ac7390a639a850cf6cf9166c4a4f723e96c15eab79d4",
+    "cad/003_FullTank/experiments/drive_chains/front_clutch_parts.py": "beddeb9c76fea48552926a4542a0a7d02d986e1e88f45bb0e6c33fdf2f338f72",
+    "cad/003_FullTank/experiments/drive_chains/air_pressure_pump_parts.py": "b5528d41b5916deda1baaebb0f96cd012934c1e44df506e15a96b9bb63bbd0f7",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_parts.py": "35c677472dad5a90701bedbd6c06b3fb01f2b0fda494efc00be48a64db35d3a6"
+  },
+  "parent_support_sha256": "8ca05aac1e865778554aaa51e4e2b531b9e297dcb4e303918aea279cc4bbee72",
+  "controls": {
+    "large_diameter": 487.3244,
+    "small_diameter": 454.3298,
+    "face_slant": 63.5,
+    "lining_stock": 6.35,
+    "steel_stock": 4.0,
+    "bend_radius": 10.0,
+    "web_inner_radius": 132.0,
+    "web_x_intercept": 820.0,
+    "support_joint_stock": 14.0,
+    "support_outer_radius": 162.0,
+    "support_rivet_radius": 143.0,
+    "support_rivet_diameter": 7.9375,
+    "support_rivet_blank_length": 28.575,
+    "lining_rivet_diameter": 4.7625,
+    "lining_rivet_blank_length": 17.4625,
+    "lining_rivet_rows": [
+      22,
+      21
+    ],
+    "lining_rivet_slant_fractions": [
+      0.23,
+      0.77
+    ],
+    "lining_head_radius": 4.3,
+    "lining_head_depth": 2.0,
+    "lining_head_recess": 1.2,
+    "spotface_depth": 0.2,
+    "plunger_length": 123.825,
+    "plunger_diameter": 9.525,
+    "plunger_head_height": 4.0,
+    "plunger_head_radius": 7.0,
+    "ring_stock": 6.0,
+    "ring_bore_gap": 0.15,
+    "cup_rear": 945.95,
+    "cup_front": 983.95,
+    "cup_end_stock": 3.0,
+    "cup_outer_radius": 10.25,
+    "cup_inner_radius": 8.1,
+    "cup_flange_radius": 11.0,
+    "cup_flange_stock": 5.0,
+    "cup_support_gap": 0.1,
+    "cup_plunger_gap": 0.15,
+    "spring_outer_diameter": 15.875,
+    "spring_wire_radius": 0.8,
+    "spring_turns": 32,
+    "spring_end_pitch": 1.65,
+    "plug_x": 883.0,
+    "plug_angle_deg": 45.0,
+    "plug_tip_radius": 4.4,
+    "plug_root_radius": 4.85,
+    "plug_length": 7.5,
+    "plug_head_width": 9.0,
+    "plug_head_height": 4.5,
+    "plug_seat_radius": 102.0,
+    "plug_passage_radius": 3.0
+  },
+  "parent_controls": {
+    "collar_body_radius": 88.0,
+    "main_bore_radius": 76.0,
+    "bearing_rear": 853.15,
+    "bearing_front": 994.95,
+    "bearing_rear_bore_radius": 57.3,
+    "bearing_front_bore_radius": 50.8254,
+    "relief_rear": 893.15,
+    "relief_front": 969.95,
+    "relief_radius": 69.0,
+    "relief_fillet": 5.0,
+    "sleeve_length": 68.2498,
+    "sleeve_radius": 57.15,
+    "sleeve_bore_radius": 44.8437,
+    "sleeve_spline_root_radius": 50.525,
+    "sleeve_spline_count": 24,
+    "sleeve_spline_width": 5.0,
+    "support_rear": 865.95,
+    "support_front": 980.95,
+    "support_radius": 103.0,
+    "support_flange_start": 975.95,
+    "support_flange_radius": 111.0,
+    "support_fillet": 2.0,
+    "support_running_gap": 0.15,
+    "key_rear": 866.95,
+    "key_length": 107.95,
+    "key_radial_height": 19.05,
+    "key_width": 9.525,
+    "key_bed_radius": 78.475,
+    "key_side_gap": 0.1,
+    "key_roof_gap": 0.1,
+    "key_end_gap": 1.0,
+    "key_count": 4,
+    "snap_gap_width": 2.0,
+    "snap_gap_angle": 45.0,
+    "thrust_front": 1010.95,
+    "thrust_lip_rear": 991.95,
+    "thrust_outer_radius": 96.0,
+    "thrust_outer_running_gap": 0.15,
+    "snap_rear": 987.95,
+    "snap_front": 990.95,
+    "snap_inner_radius": 86.0,
+    "snap_outer_radius": 92.0
+  },
+  "thrust_controls": {
+    "ball_count": 30,
+    "ball_diameter": 6.35,
+    "ball_pitch_radius": 87.0,
+    "race_floor_depth": 6.0,
+    "race_groove_radius": 3.4,
+    "groove_depth": 1.075,
+    "pocket_half_width": 7.0,
+    "cage_half_width": 4.8,
+    "cage_stock": 1.5,
+    "cage_hole_radius": 3.3,
+    "stop_bore_offset": 6.8,
+    "stop_boss_half_width": 5.0,
+    "stop_outer_radius": 124.0,
+    "stop_plate_stock": 6.0,
+    "plunger_count": 6,
+    "plunger_pitch_radius": 114.0,
+    "plunger_hole_radius": 4.9125,
+    "plunger_phase_deg": 30.0
+  },
+  "datums": {
+    "sin_alpha": 0.25980000000000036,
+    "cos_alpha": 0.9656624461994987,
+    "half_angle_deg": 15.058195187335595,
+    "bend_center": [
+      1015.3028584885083,
+      209.4449941122392
+    ],
+    "web_tangent": [
+      1022.3739263003737,
+      202.3739263003737
+    ],
+    "small_face": [
+      1020.0701884885083,
+      227.1649
+    ],
+    "large_face": [
+      958.7506231548401,
+      243.6622
+    ],
+    "stop_front": 1017.3000000000001,
+    "plunger_tail": 897.475,
+    "ring_front": 903.475,
+    "spring_front": 980.95,
+    "spring_length": 77.47500000000002,
+    "cup_support_seat": 978.95,
+    "spring": {
+      "turns": 32,
+      "free_turns": 30,
+      "end_turns_each": 1,
+      "selected_inside_radius": 6.3375,
+      "mean_radius": 7.1375,
+      "wire_radius": 0.8,
+      "end_pitch": 1.65,
+      "free_pitch": 2.4674576271186446,
+      "centerline_rise": 76.91500000000002,
+      "seats": [
+        0,
+        77.47500000000002
+      ],
+      "sample_count": 1025,
+      "ground_depth": 0.52,
+      "inferred_clocking_degrees": -56.727272727272734,
+      "sweep_spans": 32
+    },
+    "rivet_joints": [
+      {
+        "kind": "support",
+        "name": "ClutchCone_SupportRivet1",
+        "base": [
+          951.8277128572525,
+          133.51711722516828,
+          77.08614357137371
+        ],
+        "normal": [
+          0.7071067811865476,
+          -0.6123724356957946,
+          -0.35355339059327373
+        ],
+        "grip": 17.6
+      },
+      {
+        "kind": "support",
+        "name": "ClutchCone_SupportRivet2",
+        "base": [
+          951.8277128572525,
+          9.440329898329615e-15,
+          154.17228714274745
+        ],
+        "normal": [
+          0.7071067811865476,
+          -4.329780281177467e-17,
+          -0.7071067811865476
+        ],
+        "grip": 17.6
+      },
+      {
+        "kind": "support",
+        "name": "ClutchCone_SupportRivet3",
+        "base": [
+          951.8277128572525,
+          -133.51711722516828,
+          77.08614357137371
+        ],
+        "normal": [
+          0.7071067811865476,
+          0.6123724356957946,
+          -0.35355339059327373
+        ],
+        "grip": 17.6
+      },
+      {
+        "kind": "support",
+        "name": "ClutchCone_SupportRivet4",
+        "base": [
+          951.8277128572525,
+          -133.51711722516828,
+          -77.08614357137374
+        ],
+        "normal": [
+          0.7071067811865476,
+          0.6123724356957946,
+          0.35355339059327384
+        ],
+        "grip": 17.6
+      },
+      {
+        "kind": "support",
+        "name": "ClutchCone_SupportRivet5",
+        "base": [
+          951.8277128572525,
+          -2.8320989694988844e-14,
+          -154.17228714274745
+        ],
+        "normal": [
+          0.7071067811865476,
+          1.29893408435324e-16,
+          0.7071067811865476
+        ],
+        "grip": 17.6
+      },
+      {
+        "kind": "support",
+        "name": "ClutchCone_SupportRivet6",
+        "base": [
+          951.8277128572525,
+          133.51711722516825,
+          -77.08614357137378
+        ],
+        "normal": [
+          0.7071067811865476,
+          -0.6123724356957944,
+          0.3535533905932741
+        ],
+        "grip": 17.6
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet01",
+        "base": [
+          1003.3297184617646,
+          221.15780517107507,
+          0.0
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.9656624461994987,
+          0.0
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet02",
+        "base": [
+          1003.3297184617646,
+          212.19936012165047,
+          62.30735391628573
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.9265463320118066,
+          0.2720585500135343
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet03",
+        "base": [
+          1003.3297184617646,
+          186.04978491335697,
+          119.5669365743758
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.8123669443877287,
+          0.522076534299469
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet04",
+        "base": [
+          1003.3297184617646,
+          144.8275626120586,
+          167.13991712316198
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.6323744182616031,
+          0.729798982685163
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet05",
+        "base": [
+          1003.3297184617646,
+          91.87227251061081,
+          201.17221560599083
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.40115067764339823,
+          0.8783974577753753
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet06",
+        "base": [
+          1003.3297184617646,
+          31.474037275796242,
+          218.9067375976559
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.13742809485746654,
+          0.9558333948674564
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet07",
+        "base": [
+          1003.3297184617646,
+          -31.474037275796224,
+          218.90673759765593
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.13742809485746643,
+          0.9558333948674564
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet08",
+        "base": [
+          1003.3297184617646,
+          -91.8722725106108,
+          201.17221560599086
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.4011506776433981,
+          0.8783974577753754
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet09",
+        "base": [
+          1003.3297184617646,
+          -144.82756261205859,
+          167.13991712316198
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.632374418261603,
+          0.729798982685163
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet10",
+        "base": [
+          1003.3297184617646,
+          -186.04978491335694,
+          119.56693657437586
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.8123669443877286,
+          0.5220765342994692
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet11",
+        "base": [
+          1003.3297184617646,
+          -212.19936012165047,
+          62.30735391628573
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.9265463320118066,
+          0.2720585500135343
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet12",
+        "base": [
+          1003.3297184617646,
+          -221.15780517107507,
+          1.2529781477151794e-13
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.9656624461994987,
+          5.470998150941159e-16
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet13",
+        "base": [
+          1003.3297184617646,
+          -212.1993601216505,
+          -62.30735391628568
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.9265463320118067,
+          -0.272058550013534
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet14",
+        "base": [
+          1003.3297184617646,
+          -186.04978491335697,
+          -119.5669365743758
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.8123669443877287,
+          -0.522076534299469
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet15",
+        "base": [
+          1003.3297184617646,
+          -144.8275626120586,
+          -167.13991712316195
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.6323744182616032,
+          -0.7297989826851629
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet16",
+        "base": [
+          1003.3297184617646,
+          -91.87227251061097,
+          -201.17221560599074
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.4011506776433989,
+          -0.8783974577753749
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet17",
+        "base": [
+          1003.3297184617646,
+          -31.47403727579627,
+          -218.9067375976559
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.13742809485746665,
+          -0.9558333948674564
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet18",
+        "base": [
+          1003.3297184617646,
+          31.47403727579619,
+          -218.90673759765593
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.1374280948574663,
+          -0.9558333948674564
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet19",
+        "base": [
+          1003.3297184617646,
+          91.87227251061073,
+          -201.17221560599089
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.40115067764339785,
+          -0.8783974577753755
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet20",
+        "base": [
+          1003.3297184617646,
+          144.82756261205847,
+          -167.13991712316206
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.6323744182616026,
+          -0.7297989826851634
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet21",
+        "base": [
+          1003.3297184617646,
+          186.04978491335697,
+          -119.56693657437577
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.8123669443877287,
+          -0.5220765342994689
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet22",
+        "base": [
+          1003.3297184617646,
+          212.19936012165047,
+          -62.307353916285756
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.9265463320118066,
+          -0.2720585500135344
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet23",
+        "base": [
+          970.2171531815837,
+          227.49669615977146,
+          34.28960975325153
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.954876794530029,
+          0.14392451934280143
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet24",
+        "base": [
+          970.2171531815837,
+          207.28261635316846,
+          99.82204695570431
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.8700318009282431,
+          0.4189852328824463
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet25",
+        "base": [
+          970.2171531815837,
+          168.6505664388073,
+          156.48485722430496
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.7078806637423115,
+          0.6568172697940762
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet26",
+        "base": [
+          970.2171531815837,
+          115.03317358553758,
+          199.24330120604114
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.48283122309974946,
+          0.8362882098893896
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet27",
+        "base": [
+          970.2171531815837,
+          51.19457844442531,
+          224.29810351079485
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.2148801094148517,
+          0.9414512725456698
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet28",
+        "base": [
+          970.2171531815837,
+          -17.192879655181166,
+          229.42303500259976
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.07216404497738371,
+          0.9629622581454071
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet29",
+        "base": [
+          970.2171531815837,
+          -84.05267494771527,
+          214.1627230280176
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.35279610728668376,
+          0.8989098212186596
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet30",
+        "base": [
+          970.2171531815837,
+          -143.4440212120562,
+          179.8731132747661
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.6020806872433453,
+          0.7549853018758582
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet31",
+        "base": [
+          970.2171531815837,
+          -190.0897366979873,
+          129.60098804689542
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.7978677559508592,
+          0.5439770252629608
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet32",
+        "base": [
+          970.2171531815837,
+          -219.84514488323256,
+          67.81324628648997
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.922760773157163,
+          0.284634002751594
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet33",
+        "base": [
+          970.2171531815837,
+          -230.0663471710751,
+          2.817500156545808e-14
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.9656624461994987,
+          1.1825954237950192e-16
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet34",
+        "base": [
+          970.2171531815837,
+          -219.8451448832326,
+          -67.81324628648981
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.9227607731571632,
+          -0.2846340027515934
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet35",
+        "base": [
+          970.2171531815837,
+          -190.08973669798726,
+          -129.60098804689545
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.7978677559508592,
+          -0.5439770252629609
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet36",
+        "base": [
+          970.2171531815837,
+          -143.44402121205627,
+          -179.87311327476604
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.6020806872433455,
+          -0.754985301875858
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet37",
+        "base": [
+          970.2171531815837,
+          -84.05267494771522,
+          -214.16272302801764
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.35279610728668354,
+          -0.8989098212186597
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet38",
+        "base": [
+          970.2171531815837,
+          -17.192879655181326,
+          -229.42303500259976
+        ],
+        "normal": [
+          0.25980000000000036,
+          -0.07216404497738436,
+          -0.9629622581454071
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet39",
+        "base": [
+          970.2171531815837,
+          51.19457844442527,
+          -224.29810351079485
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.2148801094148515,
+          -0.9414512725456698
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet40",
+        "base": [
+          970.2171531815837,
+          115.03317358553741,
+          -199.24330120604125
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.4828312230997487,
+          -0.83628820988939
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet41",
+        "base": [
+          970.2171531815837,
+          168.65056643880735,
+          -156.4848572243049
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.7078806637423117,
+          -0.656817269794076
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet42",
+        "base": [
+          970.2171531815837,
+          207.28261635316846,
+          -99.82204695570437
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.870031800928243,
+          -0.4189852328824465
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      },
+      {
+        "kind": "lining",
+        "name": "ClutchCone_LiningRivet43",
+        "base": [
+          970.2171531815837,
+          227.49669615977143,
+          -34.289609753251725
+        ],
+        "normal": [
+          0.25980000000000036,
+          0.9548767945300289,
+          -0.14392451934280223
+        ],
+        "head_top": 8.950000000000001,
+        "surface": 10.15
+      }
+    ],
+    "spring_controls": {
+      "spring_turns": 32,
+      "spring_end_turns": 1,
+      "spring_wire_radius": 0.8,
+      "spring_inside_radius": 6.3375,
+      "spring_rear_seat": 0,
+      "spring_length": 77.47500000000002,
+      "spring_transition_turns": 0.5,
+      "spring_end_pitch": 1.65,
+      "spring_end_grind_fraction": 0.65,
+      "spring_samples_per_turn": 32
+    },
+    "plug_base": [
+      883.0,
+      66.82159082212874,
+      66.82159082212874
+    ],
+    "plug_axis": [
+      0.0,
+      0.7071067811865476,
+      0.7071067811865475
+    ]
+  },
+  "occurrences": [
+    {
+      "name": "ClutchCone_SupportRivet1",
+      "key": "support_rivet",
+      "xyz": [
+        951.8277128572525,
+        133.51711722516828,
+        77.08614357137371
+      ],
+      "rotation": [
+        0.5385602613701925,
+        0.6218758237538317,
+        -0.0,
+        0.5685273121876936
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_SupportRivet2",
+      "key": "support_rivet",
+      "xyz": [
+        951.8277128572525,
+        9.440329898329615e-15,
+        154.17228714274745
+      ],
+      "rotation": [
+        5.657130561438501e-17,
+        0.9238795325112867,
+        -0.0,
+        0.38268343236508984
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_SupportRivet3",
+      "key": "support_rivet",
+      "xyz": [
+        951.8277128572525,
+        -133.51711722516828,
+        77.08614357137371
+      ],
+      "rotation": [
+        -0.5385602613701925,
+        0.6218758237538317,
+        0.0,
+        0.5685273121876936
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_SupportRivet4",
+      "key": "support_rivet",
+      "xyz": [
+        951.8277128572525,
+        -133.51711722516828,
+        -77.08614357137374
+      ],
+      "rotation": [
+        -0.37218849182141356,
+        0.42976625188474793,
+        0.0,
+        0.8226643880080363
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_SupportRivet5",
+      "key": "support_rivet",
+      "xyz": [
+        951.8277128572525,
+        -2.8320989694988844e-14,
+        -154.17228714274745
+      ],
+      "rotation": [
+        -7.029780607989448e-17,
+        0.3826834323650898,
+        0.0,
+        0.9238795325112867
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_SupportRivet6",
+      "key": "support_rivet",
+      "xyz": [
+        951.8277128572525,
+        133.51711722516825,
+        -77.08614357137378
+      ],
+      "rotation": [
+        0.37218849182141345,
+        0.4297662518847479,
+        -0.0,
+        0.8226643880080364
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet01",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        221.15780517107507,
+        0.0
+      ],
+      "rotation": [
+        -0.6828264640448551,
+        0.18370634175226533,
+        0.0,
+        0.7071067811865476
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet02",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        212.19936012165047,
+        62.30735391628573
+      ],
+      "rotation": [
+        -0.5808962763807528,
+        0.16288106421622175,
+        0.0,
+        0.7975144356102698
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet03",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        186.04978491335697,
+        119.5669365743758
+      ],
+      "rotation": [
+        -0.4656064633091221,
+        0.1489038420425632,
+        0.0,
+        0.8723750725173974
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet04",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        144.8275626120586,
+        167.13991712316198
+      ],
+      "rotation": [
+        -0.33998634635211794,
+        0.13967746042778775,
+        0.0,
+        0.9299997265282294
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet05",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        91.87227251061081,
+        201.17221560599083
+      ],
+      "rotation": [
+        -0.20696589527054313,
+        0.13403876046567628,
+        0.0,
+        0.9691226593613873
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet06",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        31.474037275796242,
+        218.9067375976559
+      ],
+      "rotation": [
+        -0.0694855660163008,
+        0.13135851202592858,
+        0.0,
+        0.988896707160929
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet07",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        -31.474037275796224,
+        218.90673759765593
+      ],
+      "rotation": [
+        0.06948556601630075,
+        0.1313585120259286,
+        -0.0,
+        0.988896707160929
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet08",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        -91.8722725106108,
+        201.17221560599086
+      ],
+      "rotation": [
+        0.20696589527054302,
+        0.13403876046567625,
+        -0.0,
+        0.9691226593613874
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet09",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        -144.82756261205859,
+        167.13991712316198
+      ],
+      "rotation": [
+        0.3399863463521179,
+        0.13967746042778775,
+        -0.0,
+        0.9299997265282295
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet10",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        -186.04978491335694,
+        119.56693657437586
+      ],
+      "rotation": [
+        0.46560646330912203,
+        0.14890384204256324,
+        -0.0,
+        0.8723750725173975
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet11",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        -212.19936012165047,
+        62.30735391628573
+      ],
+      "rotation": [
+        0.5808962763807528,
+        0.16288106421622175,
+        -0.0,
+        0.7975144356102698
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet12",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        -221.15780517107507,
+        1.2529781477151794e-13
+      ],
+      "rotation": [
+        0.682826464044855,
+        0.1837063417522653,
+        -0.0,
+        0.7071067811865477
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet13",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        -212.1993601216505,
+        -62.30735391628568
+      ],
+      "rotation": [
+        0.7678986756485048,
+        0.2153158121087243,
+        -0.0,
+        0.6032998632464895
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet14",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        -186.04978491335697,
+        -119.5669365743758
+      ],
+      "rotation": [
+        0.830917810983478,
+        0.26573268248403237,
+        -0.0,
+        0.48883712302797294
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet15",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        -144.8275626120586,
+        -167.13991712316195
+      ],
+      "rotation": [
+        0.8602324183363759,
+        0.3534114850789824,
+        -0.0,
+        0.3675602109279764
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet16",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        -91.87227251061097,
+        -201.17221560599074
+      ],
+      "rotation": [
+        0.8134319097426537,
+        0.5268085583018814,
+        -0.0,
+        0.24657913762585923
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet17",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        -31.47403727579627,
+        -218.9067375976559
+      ],
+      "rotation": [
+        0.4623954148265616,
+        0.8741322427305266,
+        -0.0,
+        0.14860451731448734
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet18",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        31.47403727579619,
+        -218.90673759765593
+      ],
+      "rotation": [
+        -0.46239541482656066,
+        0.874132242730527,
+        0.0,
+        0.14860451731448712
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet19",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        91.87227251061073,
+        -201.17221560599089
+      ],
+      "rotation": [
+        -0.8134319097426532,
+        0.5268085583018824,
+        0.0,
+        0.2465791376258588
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet20",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        144.82756261205847,
+        -167.13991712316206
+      ],
+      "rotation": [
+        -0.8602324183363758,
+        0.35341148507898273,
+        0.0,
+        0.3675602109279762
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet21",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        186.04978491335697,
+        -119.56693657437577
+      ],
+      "rotation": [
+        -0.830917810983478,
+        0.26573268248403237,
+        0.0,
+        0.48883712302797294
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet22",
+      "key": "lining_rivet",
+      "xyz": [
+        1003.3297184617646,
+        212.19936012165047,
+        -62.307353916285756
+      ],
+      "rotation": [
+        -0.7678986756485049,
+        0.21531581210872433,
+        0.0,
+        0.6032998632464894
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet23",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        227.49669615977146,
+        34.28960975325153
+      ],
+      "rotation": [
+        -0.6312969002921138,
+        0.17176135773266357,
+        0.0,
+        0.7562818652271127
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet24",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        207.28261635316846,
+        99.82204695570431
+      ],
+      "rotation": [
+        -0.5164534598809793,
+        0.15421805126424895,
+        0.0,
+        0.842313846758572
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet25",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        168.6505664388073,
+        156.48485722430496
+      ],
+      "rotation": [
+        -0.38887295943759104,
+        0.14272065905541356,
+        0.0,
+        0.9101695638160167
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet26",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        115.03317358553758,
+        199.24330120604114
+      ],
+      "rotation": [
+        -0.25194742612523074,
+        0.13556691898902387,
+        0.0,
+        0.9581983640899701
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet27",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        51.19457844442531,
+        224.29810351079485
+      ],
+      "rotation": [
+        -0.1090480668899473,
+        0.13184416117041609,
+        0.0,
+        0.9852540973133961
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet28",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        -17.192879655181166,
+        229.42303500259976
+      ],
+      "rotation": [
+        0.036420834793563,
+        0.131119768609605,
+        -0.0,
+        0.9906972943703357
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet29",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        -84.05267494771527,
+        214.1627230280176
+      ],
+      "rotation": [
+        0.18103252810879042,
+        0.13331283943120492,
+        -0.0,
+        0.9743997694013119
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet30",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        -143.4440212120562,
+        179.8731132747661
+      ],
+      "rotation": [
+        0.3213682420321691,
+        0.13867156188355295,
+        -0.0,
+        0.9367457771124079
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet31",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        -190.0897366979873,
+        129.60098804689542
+      ],
+      "rotation": [
+        0.45404144768591054,
+        0.14784400952288249,
+        -0.0,
+        0.878628768383713
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet32",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        -219.84514488323256,
+        67.81324628648997
+      ],
+      "rotation": [
+        0.5756843454487748,
+        0.16208187137807456,
+        -0.0,
+        0.8014468175592171
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet33",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        -230.0663471710751,
+        2.817500156545808e-14
+      ],
+      "rotation": [
+        0.6828264640448551,
+        0.18370634175226533,
+        -0.0,
+        0.7071067811865476
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet34",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        -219.8451448832326,
+        -67.81324628648981
+      ],
+      "rotation": [
+        0.7714539014056776,
+        0.21720009065779775,
+        -0.0,
+        0.598066048713855
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet35",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        -190.08973669798726,
+        -129.60098804689545
+      ],
+      "rotation": [
+        0.8354540235433451,
+        0.2720387604307819,
+        -0.0,
+        0.47750548412402505
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet36",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        -143.44402121205627,
+        -179.87311327476604
+      ],
+      "rotation": [
+        0.8600894684860338,
+        0.37113172477887274,
+        -0.0,
+        0.3500104985026463
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet37",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        -84.05267494771522,
+        -214.16272302801764
+      ],
+      "rotation": [
+        0.7846108408060997,
+        0.5777895283741956,
+        -0.0,
+        0.22482235073646523
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet38",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        -17.192879655181326,
+        -229.42303500259976
+      ],
+      "rotation": [
+        0.26514510910124867,
+        0.9545570701599725,
+        -0.0,
+        0.13608405831432413
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet39",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        51.19457844442527,
+        -224.29810351079485
+      ],
+      "rotation": [
+        -0.6279462749984706,
+        0.7592161167865051,
+        0.0,
+        0.17109752694637362
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet40",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        115.03317358553741,
+        -199.24330120604125
+      ],
+      "rotation": [
+        -0.8438016498883896,
+        0.4540296032092255,
+        0.0,
+        0.2861046924734108
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet41",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        168.65056643880735,
+        -156.4848572243049
+      ],
+      "rotation": [
+        -0.8544415105271703,
+        0.3135894449516528,
+        0.0,
+        0.41423588099410463
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet42",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        207.28261635316846,
+        -99.82204695570437
+      ],
+      "rotation": [
+        -0.8070985068867257,
+        0.24100750324925838,
+        0.0,
+        0.5389873686449217
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_LiningRivet43",
+      "key": "lining_rivet",
+      "xyz": [
+        970.2171531815837,
+        227.49669615977143,
+        -34.289609753251725
+      ],
+      "rotation": [
+        -0.7297537110622778,
+        0.19854919003167568,
+        0.0,
+        0.6542459326037869
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_Plunger1",
+      "key": "plunger",
+      "xyz": [
+        897.475,
+        98.72689603142601,
+        56.99999999999999
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Cup1",
+      "key": "cup",
+      "xyz": [
+        945.95,
+        98.72689603142601,
+        56.99999999999999
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Spring1",
+      "key": "spring",
+      "xyz": [
+        903.475,
+        98.72689603142601,
+        56.99999999999999
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Plunger2",
+      "key": "plunger",
+      "xyz": [
+        897.475,
+        6.980486755139913e-15,
+        114.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Cup2",
+      "key": "cup",
+      "xyz": [
+        945.95,
+        6.980486755139913e-15,
+        114.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Spring2",
+      "key": "spring",
+      "xyz": [
+        903.475,
+        6.980486755139913e-15,
+        114.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Plunger3",
+      "key": "plunger",
+      "xyz": [
+        897.475,
+        -98.72689603142601,
+        56.99999999999999
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Cup3",
+      "key": "cup",
+      "xyz": [
+        945.95,
+        -98.72689603142601,
+        56.99999999999999
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Spring3",
+      "key": "spring",
+      "xyz": [
+        903.475,
+        -98.72689603142601,
+        56.99999999999999
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Plunger4",
+      "key": "plunger",
+      "xyz": [
+        897.475,
+        -98.726896031426,
+        -57.000000000000014
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Cup4",
+      "key": "cup",
+      "xyz": [
+        945.95,
+        -98.726896031426,
+        -57.000000000000014
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Spring4",
+      "key": "spring",
+      "xyz": [
+        903.475,
+        -98.726896031426,
+        -57.000000000000014
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Plunger5",
+      "key": "plunger",
+      "xyz": [
+        897.475,
+        -2.094146026541974e-14,
+        -114.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Cup5",
+      "key": "cup",
+      "xyz": [
+        945.95,
+        -2.094146026541974e-14,
+        -114.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Spring5",
+      "key": "spring",
+      "xyz": [
+        903.475,
+        -2.094146026541974e-14,
+        -114.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Plunger6",
+      "key": "plunger",
+      "xyz": [
+        897.475,
+        98.72689603142598,
+        -57.00000000000005
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Cup6",
+      "key": "cup",
+      "xyz": [
+        945.95,
+        98.72689603142598,
+        -57.00000000000005
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Spring6",
+      "key": "spring",
+      "xyz": [
+        903.475,
+        98.72689603142598,
+        -57.00000000000005
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    },
+    {
+      "name": "ClutchCone_Plug",
+      "key": "plug",
+      "xyz": [
+        883.0,
+        66.82159082212874,
+        66.82159082212874
+      ],
+      "rotation": [
+        -0.3826834323650898,
+        0.0,
+        0.0,
+        0.9238795325112867
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_cone",
+      "key": "cone",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_lining",
+      "key": "lining",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Cone"
+    },
+    {
+      "name": "ClutchCone_ring",
+      "key": "ring",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs"
+    }
+  ],
+  "native_occurrences": 1652,
+  "new_ids": [
+    "ClutchCone_SupportRivet1",
+    "ClutchCone_SupportRivet2",
+    "ClutchCone_SupportRivet3",
+    "ClutchCone_SupportRivet4",
+    "ClutchCone_SupportRivet5",
+    "ClutchCone_SupportRivet6",
+    "ClutchCone_LiningRivet01",
+    "ClutchCone_LiningRivet02",
+    "ClutchCone_LiningRivet03",
+    "ClutchCone_LiningRivet04",
+    "ClutchCone_LiningRivet05",
+    "ClutchCone_LiningRivet06",
+    "ClutchCone_LiningRivet07",
+    "ClutchCone_LiningRivet08",
+    "ClutchCone_LiningRivet09",
+    "ClutchCone_LiningRivet10",
+    "ClutchCone_LiningRivet11",
+    "ClutchCone_LiningRivet12",
+    "ClutchCone_LiningRivet13",
+    "ClutchCone_LiningRivet14",
+    "ClutchCone_LiningRivet15",
+    "ClutchCone_LiningRivet16",
+    "ClutchCone_LiningRivet17",
+    "ClutchCone_LiningRivet18",
+    "ClutchCone_LiningRivet19",
+    "ClutchCone_LiningRivet20",
+    "ClutchCone_LiningRivet21",
+    "ClutchCone_LiningRivet22",
+    "ClutchCone_LiningRivet23",
+    "ClutchCone_LiningRivet24",
+    "ClutchCone_LiningRivet25",
+    "ClutchCone_LiningRivet26",
+    "ClutchCone_LiningRivet27",
+    "ClutchCone_LiningRivet28",
+    "ClutchCone_LiningRivet29",
+    "ClutchCone_LiningRivet30",
+    "ClutchCone_LiningRivet31",
+    "ClutchCone_LiningRivet32",
+    "ClutchCone_LiningRivet33",
+    "ClutchCone_LiningRivet34",
+    "ClutchCone_LiningRivet35",
+    "ClutchCone_LiningRivet36",
+    "ClutchCone_LiningRivet37",
+    "ClutchCone_LiningRivet38",
+    "ClutchCone_LiningRivet39",
+    "ClutchCone_LiningRivet40",
+    "ClutchCone_LiningRivet41",
+    "ClutchCone_LiningRivet42",
+    "ClutchCone_LiningRivet43",
+    "ClutchCone_Plunger1",
+    "ClutchCone_Cup1",
+    "ClutchCone_Spring1",
+    "ClutchCone_Plunger2",
+    "ClutchCone_Cup2",
+    "ClutchCone_Spring2",
+    "ClutchCone_Plunger3",
+    "ClutchCone_Cup3",
+    "ClutchCone_Spring3",
+    "ClutchCone_Plunger4",
+    "ClutchCone_Cup4",
+    "ClutchCone_Spring4",
+    "ClutchCone_Plunger5",
+    "ClutchCone_Cup5",
+    "ClutchCone_Spring5",
+    "ClutchCone_Plunger6",
+    "ClutchCone_Cup6",
+    "ClutchCone_Spring6",
+    "ClutchCone_Plug",
+    "ClutchCone_cone",
+    "ClutchCone_lining",
+    "ClutchCone_ring"
+  ],
+  "changed_ids": [
+    "ClutchStack_support"
+  ],
+  "affected_ids": [
+    "ClutchStack_support",
+    "ClutchCone_SupportRivet1",
+    "ClutchCone_SupportRivet2",
+    "ClutchCone_SupportRivet3",
+    "ClutchCone_SupportRivet4",
+    "ClutchCone_SupportRivet5",
+    "ClutchCone_SupportRivet6",
+    "ClutchCone_LiningRivet01",
+    "ClutchCone_LiningRivet02",
+    "ClutchCone_LiningRivet03",
+    "ClutchCone_LiningRivet04",
+    "ClutchCone_LiningRivet05",
+    "ClutchCone_LiningRivet06",
+    "ClutchCone_LiningRivet07",
+    "ClutchCone_LiningRivet08",
+    "ClutchCone_LiningRivet09",
+    "ClutchCone_LiningRivet10",
+    "ClutchCone_LiningRivet11",
+    "ClutchCone_LiningRivet12",
+    "ClutchCone_LiningRivet13",
+    "ClutchCone_LiningRivet14",
+    "ClutchCone_LiningRivet15",
+    "ClutchCone_LiningRivet16",
+    "ClutchCone_LiningRivet17",
+    "ClutchCone_LiningRivet18",
+    "ClutchCone_LiningRivet19",
+    "ClutchCone_LiningRivet20",
+    "ClutchCone_LiningRivet21",
+    "ClutchCone_LiningRivet22",
+    "ClutchCone_LiningRivet23",
+    "ClutchCone_LiningRivet24",
+    "ClutchCone_LiningRivet25",
+    "ClutchCone_LiningRivet26",
+    "ClutchCone_LiningRivet27",
+    "ClutchCone_LiningRivet28",
+    "ClutchCone_LiningRivet29",
+    "ClutchCone_LiningRivet30",
+    "ClutchCone_LiningRivet31",
+    "ClutchCone_LiningRivet32",
+    "ClutchCone_LiningRivet33",
+    "ClutchCone_LiningRivet34",
+    "ClutchCone_LiningRivet35",
+    "ClutchCone_LiningRivet36",
+    "ClutchCone_LiningRivet37",
+    "ClutchCone_LiningRivet38",
+    "ClutchCone_LiningRivet39",
+    "ClutchCone_LiningRivet40",
+    "ClutchCone_LiningRivet41",
+    "ClutchCone_LiningRivet42",
+    "ClutchCone_LiningRivet43",
+    "ClutchCone_Plunger1",
+    "ClutchCone_Cup1",
+    "ClutchCone_Spring1",
+    "ClutchCone_Plunger2",
+    "ClutchCone_Cup2",
+    "ClutchCone_Spring2",
+    "ClutchCone_Plunger3",
+    "ClutchCone_Cup3",
+    "ClutchCone_Spring3",
+    "ClutchCone_Plunger4",
+    "ClutchCone_Cup4",
+    "ClutchCone_Spring4",
+    "ClutchCone_Plunger5",
+    "ClutchCone_Cup5",
+    "ClutchCone_Spring5",
+    "ClutchCone_Plunger6",
+    "ClutchCone_Cup6",
+    "ClutchCone_Spring6",
+    "ClutchCone_Plug",
+    "ClutchCone_cone",
+    "ClutchCone_lining",
+    "ClutchCone_ring"
+  ],
+  "unchanged_parent_occurrences": 1580,
+  "standard_assembly_modified": false,
+  "complete_clutch": false,
+  "complete_tank": false,
+  "headless": true,
+  "freecad": [
+    "1",
+    "1",
+    "1",
+    "44227 +647 (Git)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "tag: 1.1.1",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
+  "occ": "7.8.0",
+  "definition_step_sha256": "a171e25e41c316006b804d39b9ce86012891228dd0b95c33fcdefaf2f1d114bc",
+  "step_sha256": "a3918cba0bef91f9b086c913470a01ab7baade45eaec226b0020dbc434ce77b9",
+  "standard_native_hashes": {
+    "native/MarkVIII.FCStd": "52aea1af979efc27fbfbce003e976e8a02cfa2da3e0ca0d25a631d7c5e7d48ac",
+    "native/library/CoolingVentilation.FCStd": "810553a07fb9610c11dd3cd2f15e1eec0b7712e16f1d0a4245d70922532f73c4",
+    "native/library/CrewControlsAndEquipment.FCStd": "990e476bcdd088d58bbe76028a782667301a6f73e9c5a8065767bfd4e3860bae",
+    "native/library/Drivetrain.FCStd": "694c20a3995baafb0698f8c07d61e3e6b37bf6a0b0214362fe75bf0a80c30e25",
+    "native/library/ElectricalInstruments.FCStd": "7ca38479c37f7a169b2ab52a4ea90afd80cc7cf97d45c52df380abbd91dc393d",
+    "native/library/FuelPressure.FCStd": "5d5e8ced3b3b1bc380c9822e4b0d210520da081fa119ab16bd58523fce93dc6a",
+    "native/library/HullStructure.FCStd": "a6b78305dddcfa74904b07ea9dad8356ba168d774499599c854074c8aca778fc",
+    "native/library/Powerplant.FCStd": "234c3582a110f607f98977a034638b3f65391b6c6c5cd284a9570c74629752b7",
+    "native/library/RunningGear.FCStd": "52587107dabf028783ad6bd087ce1f8e2bf3aacea7d641ab8bfee07101fddf44",
+    "native/library/Sponsons.FCStd": "cca4a76fd623303caeb7d6b2fa277f6bcc251170303379ce6f07a432add20162",
+    "native/subsystems/ArmamentRepresentation.FCStd": "da6a1fd3e488982cff35e88bbce264f85a448c8349177ac9550939dc96f0b553",
+    "native/subsystems/CoolingVentilation.FCStd": "bb0996bed71ec8269a68f7445da53fb86789a7cb7777c5972cff74fd47811e47",
+    "native/subsystems/CrewControlsAndEquipment.FCStd": "5831b330452e69ba2dc0ae4b2c9757b2fbf174d988ce44126e64a7adec7e4fe5",
+    "native/subsystems/Drivetrain.FCStd": "222888c3c6d72363524415dfeec66ce89f9144cf973cbb077dab245d2fc0c4bf",
+    "native/subsystems/ElectricalInstruments.FCStd": "5f423b486223168139193422992d379bc291e73ac992a372bdcef75069051f0c",
+    "native/subsystems/FuelPressure.FCStd": "45f9cb47c26ef7e007ccb0451554cf33321bf63bc85d26e2edda9f00764b7e7b",
+    "native/subsystems/HullStructure.FCStd": "91bb04cc51d10a143ffeb982b3bec08e0e28b5942da452601f738d2c2528f56c",
+    "native/subsystems/Powerplant.FCStd": "c22f9480fc5a60028e6af664fc5ebb2e07ca292694e89d29eacd0b0a18ad720d",
+    "native/subsystems/RunningGear.FCStd": "5b225c9b28cce15f4c331e1d076a39a7575319831d95cf92d8db5cbc0672418e",
+    "native/subsystems/Sponsons.FCStd": "79c852869c29529dd8de89a257e7e127ff3d7d2255e1a8b186fc044b292f38bb"
+  },
+  "material_pairs": 326,
+  "material_passed": true,
+  "overlaps": [],
+  "standard_context_checked": true
+}

@@ -198,6 +198,23 @@ cage and ring geometry, the contact-query diagnostic and unfinished plunger/cone
 interfaces. The [source comparison](experiments/drive_chains/clutch_thrust_build/source_review/index.html)
 retains the full SNL figure. Standard tank011 remains unchanged.
 
+The latest [cone and spring checkpoint](experiments/drive_chains/clutch_cone_build/TransmissionWithClutchCone.FCStd)
+contains **1,652 physical components**. It adds 71 occurrences across nine shared
+part definitions and refines the existing cone support; 1,580 parent components
+retain their geometry and placement. All 326 affected material pairs, 462
+independent checks, ten definition and 72 installed STEP comparisons pass, along
+with two coupled dimension trials and a fresh rebuild. Seven native/source views
+were inspected, and four new progression snapshots are preserved.
+
+The [packet](packets/I03-clutch-cone.md) records conditional handbook dimensions,
+conflicting spring free lengths and estimated receiving profiles. Independent
+hole checks caught two bad Boolean cuts despite passing whole-part interference
+and STEP tests; the corrected cutters and retained diagnostics are included.
+The [source review](experiments/drive_chains/clutch_cone_build/source_review/index.html)
+shows the full SNL figure beside actual native sections. SH861K plunger locking
+wire/head holes, outer drum, flywheel/crankshaft engagement and the clutch-stop
+brake remain unfinished. Standard tank 011 remains unchanged.
+
 Additional commands:
 
 ```sh

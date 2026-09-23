@@ -440,3 +440,25 @@ Standard tank 011 and all earlier images remain unchanged.
 | [exposed balls and cage](intermediate_snapshot_iso_clutch_thrust_open_001.png) | `d161b17d0a5f081ee5a18b94ad574545d8306525d4b73daa08efdaf3b9975e21` |
 | [race contact section](intermediate_snapshot_detail_clutch_thrust_001.png) | `562cef9b8aa6dae9b4b9abade3a678fd06aa49b63bc6a7bd75a6a314f51dc2bf` |
 | [retainer](intermediate_snapshot_detail_clutch_thrust_cage_001.png) | `864458d011f499d20ad971da5d2048f0d2bd703a13b59a20d00c7adec40de328` |
+
+
+## Clutch cone and spring sets — 22 September 2026
+
+The isolated transmission/pump assembly now has **1,652 physical components**.
+It adds the pressed cone, separate lining, 49 rivets, plug, six plungers, cups
+and springs, and the rear retaining ring. The existing keyed support now has
+actual cone and cup interfaces. Conditional handbook dimensions constrain the
+friction surface; support contours, finishing and spring details remain inferred.
+
+All 326 material pairs, 462 independent checks, ten definition and 72 installed
+STEP checks pass, as do two coupled geometry trials and a fresh build. Seven
+native/source views were inspected. The plunger locking wire, outer drum and
+flywheel/crankshaft engagement remain unfinished. Standard tank 011, including
+its transparent-hull view, and all 88 prior images remain unchanged.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_clutch_cone_001.png) | `8b9b99d36d79a5e7e9c1578d12c191ed13c7233c47269744e02d6f5c9ed48c8f` |
+| [clutch cutaway](intermediate_snapshot_iso_clutch_cone_cutaway_001.png) | `f6a5aec7d637dc7e52aa5272c0eeeaf1ea802a91668b78d26d9ee388f43c07ac` |
+| [axial section](intermediate_snapshot_detail_clutch_cone_001.png) | `44b039e0860ea6c4fc25f7aeb86e70fda81ac5c21724cd64b68b850bc5a38b24` |
+| [six spring sets](intermediate_snapshot_detail_clutch_springs_001.png) | `ca0c8aa3cd14191d6e38a0b77f273061e5428340f14fb7413d2ab907b421e182` |
