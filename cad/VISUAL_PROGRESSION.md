@@ -724,3 +724,18 @@ companion remain unchanged.
 | --- | --- |
 | [mating gears and lower unit](intermediate_snapshot_iso_engine_lower_drive_study_001.png) | `1d47ca76c43876af9c5b5ef491c3d0ecba91257321452f319a7a31fa434a581b` |
 | [exploded component study](intermediate_snapshot_detail_engine_lower_drive_study_001.png) | `b1c1bed84d71be655100c5e3af4869dab3cd7379eaa7b8cd4a21f2cf4a11292b` |
+
+
+## Lower-drive receiving casting — 23 September 2026
+
+One revised integral crankcase now supports the lower driver and retaining screw,
+with explicit oil access, rear water-pump opening and offset bottom oil-pump rim.
+Native fit, continuous case withdrawal, STEP, actual gear mesh, a coupled trial
+and fresh reproduction pass. Casting dimensions remain estimated and pump
+assemblies/standard integration remain pending. Two images bring the progression
+to 133; all 131 previous images and standard tank 011 are preserved.
+
+| View | SHA-256 |
+| --- | --- |
+| [receiver isometric section](intermediate_snapshot_iso_engine_lower_drive_receivers_001.png) | `b6249b604b5a42ef61b5bc62fef9943bfbe3d0e8778e490641de899fb39add53` |
+| [offset oil-pump opening from below](intermediate_snapshot_detail_engine_lower_drive_receivers_001.png) | `d66af08dc2057f424e86260b668147d82da493f88bdc87d2509b16f85e6bb106` |

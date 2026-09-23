@@ -10,6 +10,8 @@ parent occurrences. This count includes drivetrain context and is not additive
 to the standard tank BOM. The original casing is retained so its conflicts with
 the new unit remain visible.
 
+A subsequent [receiving-case candidate](P01-engine-lower-drive-receivers.md) resolves the three casing contacts and verifies local withdrawal and saved-driver mesh. The original component study below is preserved as its dated checkpoint.
+
 ## Ownership and evidence
 
 The [source dossier](../experiments/drive_chains/engine_lower_drive_sources.json)

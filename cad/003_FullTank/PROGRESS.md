@@ -11,6 +11,25 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — lower-drive receiving casting
+
+The [receiving-case candidate](experiments/drive_chains/engine_lower_drive_installation/DrivetrainWithLowerDriveReceivers.FCStd)
+revises one integral lower crankcase, preserving the other 2,169 physical
+occurrences in the 2,170-occurrence development document. The cylindrical lug,
+retaining-screw support, oil-access recess and both pump openings now have
+explicit geometry. **25 independent checks, 261 affected material pairs
+including standard tank context, and two casing STEP comparisons pass**. The
+complete 16-piece removable unit clears a continuous downward envelope through
+the casing. Actual saved-driver mesh/free-play checks, a seven-control coupled
+trial and an independent fresh reproduction pass.
+
+Six native views were compared with the source figures; two new progression
+images bring the total to 133, preserving all 131 earlier images and 20 standard
+native files. The [packet](packets/P01-engine-lower-drive-receivers.md) retains
+estimated casting dimensions and the 184 mm pump-axis drop. Actual water/oil pumps,
+receiving attachment features, source-profile refinement and standard integration
+remain open. This is a verified geometry checkpoint, not a completed powerplant.
+
 ## 23 September 2026 — lower distribution component study
 
 The [lower distribution study](experiments/drive_chains/engine_lower_drive_study/DrivetrainWithLowerDriveStudy.FCStd)

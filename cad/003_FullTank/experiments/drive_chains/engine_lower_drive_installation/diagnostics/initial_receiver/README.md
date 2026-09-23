@@ -1,0 +1,3 @@
+Initial receiver candidate: native SHA 8b6ea0e40778db6ca00285155888132a99350127acd51cf4f477d3977671c086.
+
+All 261 affected material pairs including standard tank context cleared; entire unit passed the continuous casing envelope. Two access checks failed: a 12 mm straight radial oil-entry witness struck the rear wall (34.745 mm3), and the screw-support cone obstructed the pump opening (3559.827 mm3). The final study machines an annular oil-access recess above the lug and tests a radial-then-upward route, and re-machines the pump bore after the support addition. No dimensional/numerical acceptance tolerance was relaxed. Full original native/STEP remains in the durable .work/engine-distribution/initial_receiver_candidate archive.

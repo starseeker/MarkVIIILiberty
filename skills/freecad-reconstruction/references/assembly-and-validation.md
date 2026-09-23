@@ -48,6 +48,18 @@ If cleanup fails, retain the checked original BRep and record that choice;
 saved-native and exchange checks still apply. The project retains the
 [focused probe and before/after BReps](../../../cad/003_FullTank/experiments/drive_chains/engine_crankshaft_build/diagnostics/groove_probe/).
 
+Validity alone also does not prove that optional cleanup improved a shape. In
+the lower-drive receiving case, the same `removeSplitter()` operation returned
+a valid single solid but raised its maximum kernel tolerance from about
+5.10e-6 to 1.015e-4 mm at intersecting cone/cylinder boundaries. The original
+and cleaned shapes had zero material differences in both directions. Keeping
+the valid shape before cleanup passed the original strict STEP criteria, with
+about 1.28e-7 mm maximum STEP tolerance. Compare the tolerances as well as
+validity before adopting an optional cleanup; retain the original when cleanup
+degrades the representation. Do not reset tolerances to hide the change. The
+[saved diagnostic and replay](../../../cad/003_FullTank/experiments/drive_chains/engine_lower_drive_installation/diagnostics/cleanup_tolerance/README.md)
+records this FreeCAD 1.1.1 / OCC 7.8.0 case.
+
 For a prismatic rounded opening, prefer one planar wire of tangent lines and
 analytic circular arcs, extruded once. In the lower distribution housing study,
 an equivalent tool assembled from boxes and cylinders left higher-tolerance
