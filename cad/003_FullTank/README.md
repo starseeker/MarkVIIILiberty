@@ -223,7 +223,19 @@ two parameter trials and a fresh rebuild pass. Five views were inspected and
 three new progression snapshots are saved. The [packet](packets/I03-clutch-retention.md)
 records these checks and the numerical volume diagnostic.
 
-The latest [clutch-support development candidate](experiments/drive_chains/clutch_support_build/TransmissionWithClutchSupports.FCStd)
+The latest [clutch-brake development candidate](experiments/drive_chains/clutch_brake_linkage_build/TransmissionWithClutchBrake.FCStd)
+contains **1,821 physical components**. Its 35 additions populate the anchor,
+mounting hardware, spring-loaded eyebolt, stop rod and bell-crank assembly. Four
+receiving parts change; the other 1,782 parent occurrences are preserved. All 112
+independent checks, 273 affected material pairs and 64 STEP comparisons pass,
+along with a coupled local dimensional trial. Six native views were inspected and
+three snapshots bring the progression to 111. The
+[packet](packets/I03-clutch-brake-linkage.md) documents the inferred mounting and
+linkage arrangement. Engine-frame/engine interfaces, forward controls, source
+registration and complete-clutch length remain open. This development checkpoint
+awaits combined drivetrain qualification and standard integration.
+
+The preceding [clutch-support development candidate](experiments/drive_chains/clutch_support_build/TransmissionWithClutchSupports.FCStd)
 contains **1,786 physical components**. It adds 27 mechanism pieces and a replacement
 floor context, revises the main shaft and operating lever, and preserves 1,756
 parent occurrences. Both brackets, mounting screws, auxiliary shaft/levers and

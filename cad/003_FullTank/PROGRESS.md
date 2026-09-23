@@ -11,6 +11,29 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — clutch-stop anchor and operating linkage
+
+The [development assembly](experiments/drive_chains/clutch_brake_linkage_build/TransmissionWithClutchBrake.FCStd)
+contains **1,821 physical occurrences**: 35 new pieces, four revised receiving
+parts and 1,782 preserved parent occurrences. The anchor, six rivets, mounting
+hardware, spring-loaded eyebolt, stop rod and complete bell-crank pin assembly are
+populated. The native band assembly owns its 26 catalogue children. Local counts
+are not additive to the standard tank inventory.
+
+All 112 independent checks, 273 affected material pairs including standard
+context, and 64 STEP comparisons pass. A coupled dimensional trial passes 112
+checks and 271 local pairs. Two final mounting overlaps were resolved by
+finishing the estimated web at its mating plane and moving the carrier return
+4mm outward. No source hardware size or numerical acceptance tolerance changed.
+Six native views were inspected; three progression images bring the total to 111,
+preserving all 108 earlier images.
+
+The [packet](packets/I03-clutch-brake-linkage.md) retains the unproven mounting and
+linkage arrangement, source-registration and complete-clutch-length questions.
+Engine-frame/engine receivers and forward controls are next. Combined drivetrain
+qualification and standard integration remain required. Standard tank011 and its
+20 native documents are unchanged; the full-tank goal remains active and incomplete.
+
 ## 23 September 2026 — clutch supports and auxiliary controls
 
 The [development assembly](experiments/drive_chains/clutch_support_build/TransmissionWithClutchSupports.FCStd)

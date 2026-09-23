@@ -1,5 +1,9 @@
 # I03 — clutch supports and auxiliary controls
 
+The subsequent [brake-linkage checkpoint](I03-clutch-brake-linkage.md) adds the
+remaining stop-brake inventory and revises the left bracket's receiving lugs.
+The results below describe this preserved support checkpoint.
+
 Status: **development hypothesis; incomplete and not qualified**, 23 September 2026.
 This continues [the throwout packet](I03-clutch-throwout.md). Standard geometry
 and all identifiable interiors remain the priority; the full-tank goal is active.

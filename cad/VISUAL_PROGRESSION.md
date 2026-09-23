@@ -562,3 +562,23 @@ registration, complete clutch length and historical mounting remain open.
 | [installed isometric](intermediate_snapshot_iso_clutch_supports_001.png) | `3d8db4d1f797e815821f31d0fb5620262c0ed506e177699c245600236b0c3edf` |
 | [support detail](intermediate_snapshot_detail_clutch_supports_001.png) | `c62de91a3c25027f3e5e63120ffee2203a5a83976b243f84c35eba16ae7636ad` |
 | [auxiliary controls](intermediate_snapshot_detail_clutch_auxiliary_001.png) | `8918fa3e6518783c5cdfe4056fe804c5ce980bc017c34a1c7715081fa92aafd8` |
+
+
+## Clutch-stop anchor and operating linkage — 23 September 2026
+
+The isolated development assembly contains **1,821 physical components**, adding
+35 brake pieces and revising four receiving parts. The band now owns its complete
+26-child catalogue inventory, with mounting hardware separately allocated.
+The mounting, carrier profile and crank arrangement remain inferred.
+
+All 112 independent checks, 273 affected material pairs and 64 STEP comparisons
+pass, together with a coupled local dimensional trial. Six native views were
+inspected. These three snapshots bring the progression to 111; all 108 earlier
+images are preserved. Standard tank011 and its transparent-hull companion remain
+unchanged while combined drivetrain qualification and integration are pending.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_clutch_brake_001.png) | `8e7cf425882d7de080b009d3de41a8835e65acdd116e24ca4a18b8fa4828dd86` |
+| [mechanism detail](intermediate_snapshot_detail_clutch_brake_001.png) | `c007d2d4b742858b0a9eb4b518b6494c751c3b87f24ece39ab5cb15842399776` |
+| [end view](intermediate_snapshot_end_clutch_brake_001.png) | `561213dd04eac69b5ac731214bceff65c660552d59b52fd27c32ff63c62ef57f` |
