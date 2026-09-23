@@ -11,6 +11,21 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — oil-pump core, passages and strainers
+
+The [oil-pump study](packets/P01-engine-oil-pump.md) now contains **35 physical
+constituents in 32 definitions**: the five-gear core, castings and passages,
+relief unit, bottom closure, two filter baskets with separate coarse open-gauze
+representations, and screen nut/lock. The saved native passes **138 checks and
+123 material comparisons**, including 27 gear-mesh samples. STEP comparisons
+are still running; exported files alone are not qualified exchange results.
+Five views were inspected and two snapshots saved, bringing the progression to
+141 while preserving all previous images and standard natives. Printed mounting
+stud dimensions expose a flange-stack revision still to be made. Fasteners,
+lock wires, external fittings, parameter/reproduction trials, crankcase fit and
+standard integration remain open. This separate study is not added to the
+standard tank or prior drivetrain component count.
+
 ## 23 September 2026 — water-pump source connections and drain lock
 
 The [new checkpoint](packets/P01-engine-water-pump-connections.md) applies HB191's

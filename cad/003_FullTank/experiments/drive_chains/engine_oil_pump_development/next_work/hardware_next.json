@@ -1,0 +1,40 @@
+{
+  "status": "Source-based next construction calculation; hardware not yet present in 35-part native",
+  "upper": {
+    "count": 4,
+    "diameter_mm": 6.35,
+    "stock_length_mm": 33.3375,
+    "head_to_nut_span_mm": 22.225,
+    "head_underside_z_mm": 7.0,
+    "nut_top_z_mm": -15.225,
+    "selected_cotters": 3,
+    "wire_locked_bolts": 1,
+    "source": "HB203 upper-body118 length/grip; HB87 locking instructions; SNL24 alternate15/16 length retained"
+  },
+  "cover": {
+    "count": 10,
+    "diameter_mm": 6.35,
+    "stock_length_mm": 23.8125,
+    "head_to_nut_span_mm": 12.7,
+    "head_underside_z_mm": -67.0,
+    "nut_top_z_mm": -79.7,
+    "source": "HB203 cover116 length/grip; SNL25 constituent expansion"
+  },
+  "estimated_common": {
+    "nut_height_mm": 6.35,
+    "nut_af_mm": 11.1125,
+    "nut_crown_radius_mm": 5.0,
+    "nut_castle_depth_mm": 2.0,
+    "washer_outer_radius_mm": 6.35,
+    "washer_stock_mm": 1.0,
+    "head_stock_mm": 3.96875
+  },
+  "source_cotter": {
+    "diameter_mm": 1.5875,
+    "length_mm": 12.7
+  },
+  "reuse": "engine_water_pump_parts.castle and cotter use shaft-local +X; rotate +X to pump -Z and install below the source bolt head planes.",
+  "coupled_issue": "Current pressure tube at X44 passes near the lower washers/nuts of upper-body bolts at X34. Their actual solids may require routing X47-48 while retaining the bore graph. Recheck all passage webs and source-estimated wall stock.",
+  "projected_internal_count": 107,
+  "calculation": "35 modeled +19 upper-bolt constituents (3 cotters/1 wire-locked) +50 cover-bolt constituents +3 source wire pieces =107. Mounting41 and unresolved external fittings are additional. This is provisional inventory, not completed coverage."
+}

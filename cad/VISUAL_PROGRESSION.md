@@ -1,5 +1,18 @@
 # Mark VIII visual progression
 
+The 23 September oil-pump development adds a preserved
+[isometric](intermediate_snapshot_iso_engine_oil_pump_development_001.png) and
+[cutaway](intermediate_snapshot_detail_engine_oil_pump_cutaway_001.png).
+The separate 35-component study includes five gears, two castings, the pressure
+relief internals, both strainer baskets and their open screen approximations.
+Fastening sets, lock wires, external fittings and crankcase installation remain
+pending; this does not advance the standard tank to milestone 012.
+All 139 earlier progression images remain unchanged; the total is now 141.
+See the [oil-pump packet](003_FullTank/packets/P01-engine-oil-pump.md).
+
+Isometric SHA-256: `aa2bece0e8e38b15f3aab96ee5be6dd4b9e92c3e233b1edb42a795be86583fcf`.
+Cutaway SHA-256: `a0a798100fe57a6bfc25acc73f8fa47671095c16278f40105585d18d90a9816c`.
+
 Preserved standard isometric renderings, requested by the user on 19 September
 2026. Add the next unused `intermediate_snapshot_iso_NNN.png` when the assembled
 model reaches a significant visual improvement. Copy the rendered image without
