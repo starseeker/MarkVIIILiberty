@@ -38,6 +38,26 @@ matches the evidence. Booleans can return a compound containing one solid; check
 attributes specific to a solid, such as its `CenterOfMass`, are present on a
 generic imported `Part.Shape`. Use the constituent solids for aggregate centroids.
 
+On FreeCAD 1.1.1 / OCC 7.8.0, `removeSplitter()` can return invalid topology
+without raising an exception. A grooved bearing passed validity after every
+Boolean cut, then failed only after same-domain face unification. The operation
+also mutated its input BRep. Running `shape.copy().removeSplitter()` preserved
+the original and produced a valid result in the focused probe. Isolate optional
+cleanup on a copy, and check the returned shape before replacing the original.
+If cleanup fails, retain the checked original BRep and record that choice;
+saved-native and exchange checks still apply. The project retains the
+[focused probe and before/after BReps](../../../cad/003_FullTank/experiments/drive_chains/engine_crankshaft_build/diagnostics/groove_probe/).
+
+For spherical pockets between two parallel trimming planes, the sphere's
+parametrization can affect STEP transfer even though rotating a complete sphere
+does not change its material. On the same runtime, pockets crossing the default
+sphere poles produced valid native cages but invalid STEP solids. Aligning the
+sphere axis with the trimming-plane normal made the boundaries latitude circles;
+both tested sizes then reopened with zero material differences, in definition
+and installed coordinates. Retain the intended spherical geometry and verify
+the actual round trip. See the
+[isolated pocket export probe](../../../cad/003_FullTank/experiments/drive_chains/engine_crankshaft_build/diagnostics/cage_step_probe/).
+
 For small formed wire with planar circular bends, consider explicit cylinders
 and torus segments before sweeping a circular section along a composite path.
 On FreeCAD 1.1.1 / OCC 7.8.0, a swept split pin with a polygonal eye passed native

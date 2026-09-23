@@ -223,7 +223,20 @@ two parameter trials and a fresh rebuild pass. Five views were inspected and
 three new progression snapshots are saved. The [packet](packets/I03-clutch-retention.md)
 records these checks and the numerical volume diagnostic.
 
-The latest [engine-case development candidate](experiments/drive_chains/engine_case_build/DrivetrainWithEngineCase.FCStd)
+The latest [crankshaft development candidate](experiments/drive_chains/engine_crankshaft_build/DrivetrainWithEngineCrankshaft.FCStd)
+contains **1,992 physical components**: 81 new constituents, two receiving-case
+revisions and 1,909 preserved parent pieces. It adds the hollow six-throw shaft,
+seven pairs of main-bearing halves, their dowels, double thrust internals, sleeves,
+key and output retention. SNL17 and LIB17 support the selected one long/six short
+bearing pairs; printed lengths are 115/49 mm. Unprinted profiles and thrust sizes
+remain estimates. Nominal **437 independent checks, 517 affected material
+pairs including standard context, and 101 STEP comparisons pass**. A coupled
+trial passes 437/517. Eight views were inspected against manual figures;
+three snapshots bring the progression to 123. The [packet](packets/P01-engine-crankshaft.md)
+records rejected flange/receiver fits, source decisions and remaining shaft/engine
+work. Full drivetrain qualification and standard integration remain open.
+
+The [engine-case development candidate](experiments/drive_chains/engine_case_build/DrivetrainWithEngineCase.FCStd)
 contains **1,911 physical components**, including two new hollow crankcase
 castings. Seven support occurrences change to accommodate the sump; all1,902
 unaffected inherited components are preserved. The case has twelve cylinder

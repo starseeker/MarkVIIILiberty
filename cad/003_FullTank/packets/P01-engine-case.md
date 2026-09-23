@@ -141,3 +141,6 @@ view and the qualified drivetrain baseline await combined qualification/integrat
 The source identity conflicts, case-joint and cylinder hardware, bearing inserts,
 crankshaft/thrust interfaces, complete engine internals and mounting joints remain
 open work. These two castings do not constitute a complete engine.
+
+
+Subsequent [crankshaft development](P01-engine-crankshaft.md) selects matched one-long/six-short bearing pairs using SNL17 individual entries and LIB17. It revises receiving seats to 115/49 mm and adds the thrust housing/gear-floor changes. The earlier case checkpoint above retains its original geometry and receipts.

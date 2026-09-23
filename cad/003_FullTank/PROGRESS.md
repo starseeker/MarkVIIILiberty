@@ -11,6 +11,25 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — crankshaft and bearings
+
+The [development assembly](experiments/drive_chains/engine_crankshaft_build/DrivetrainWithEngineCrankshaft.FCStd)
+contains **1,992 physical occurrences**: 81 new, two revised cases and 1,909
+preserved inherited pieces. Seven source-sized bearing pairs, fourteen dowels,
+a hollow six-throw forging, double thrust internals and output retention are
+represented. This is a development count including context, not an additive count
+for the standard tank. Bearing quantity selection follows the individual SNL17
+entries and LIB17, with contrary SNL58 wording retained.
+
+Nominal 437 independent checks, 517 affected material pairs including standard
+context and 101 STEP comparisons pass. A coupled parameter trial passes
+437/517; variant STEP is not checked. Eight native views were inspected
+against source figures. Three new images bring progression to 123; all 120 previous
+images and 20 standard native files are unchanged. Standard geometry remains the
+priority before poses. See the [packet](packets/P01-engine-crankshaft.md) for
+approximations, rejected diagnostics and pending shaft plugs/gear, cylinders,
+services, mounting reconciliation, combined qualification and integration.
+
 ## 23 September 2026 — clutch-stop anchor and operating linkage
 
 The [development assembly](experiments/drive_chains/clutch_brake_linkage_build/TransmissionWithClutchBrake.FCStd)

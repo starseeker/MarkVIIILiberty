@@ -1,0 +1,52 @@
+{
+  "Definitions": {
+    "valid": false,
+    "solids": 18,
+    "expected": 18,
+    "bad": [
+      {
+        "name": "Def_EngineCrank_thrust_sleeve",
+        "native_valid": true,
+        "native_tolerance": 1e-05,
+        "step_tolerance": 1e-05,
+        "native_volume": 32631.64435302085,
+        "step_volume": -7097.236329164705,
+        "native_faces": 6,
+        "step_faces": 24
+      }
+    ]
+  },
+  "Installation": {
+    "valid": false,
+    "solids": 83,
+    "expected": 83,
+    "bad": [
+      {
+        "name": "EngineCrank_ThrustRightCage",
+        "native_valid": true,
+        "native_tolerance": 1.0000001e-07,
+        "step_tolerance": 1e-05,
+        "native_volume": 5546.946825330382,
+        "step_volume": -7097.23632919756,
+        "native_faces": 24,
+        "step_faces": 24
+      },
+      {
+        "name": "EngineCrank_ThrustNut",
+        "native_valid": true,
+        "native_tolerance": 1e-05,
+        "step_tolerance": 1e-05,
+        "native_volume": 10630.870850948551,
+        "step_volume": -7097.23632919756,
+        "native_faces": 29,
+        "step_faces": 24
+      }
+    ]
+  },
+  "identification_note": "Initial greedy centroid/volume matching misidentified some invalid solids because their signed volumes/centroids are corrupt. Bounds and isolated export probes identify the thrust cage definition and its two installed occurrences; the sleeve and nut labels above are not reliable identities.",
+  "confirmed_invalid_parts": [
+    "Def_EngineCrank_thrust_cage",
+    "EngineCrank_ThrustLeftCage",
+    "EngineCrank_ThrustRightCage"
+  ]
+}

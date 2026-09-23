@@ -1,0 +1,9 @@
+FAIL EngineCrank_Main1_lower dowel recessed from shaft {'actual': 1.8293612273139894, 'expected': 1.1625000000000014, 'tolerance': 1e-05}
+FAIL EngineCrank_Main7_upper running clearance {'actual': 0.0, 'expected': 0.036512499999999996, 'tolerance': 1e-05}
+FAIL EngineCrank_Main7_lower running clearance {'actual': 0.0, 'expected': 0.036512499999999996, 'tolerance': 1e-05}
+Checking parent preservation.
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_engine_crankshaft.py", line 124, in <module>
+    if not a.local_only:
+           ^^^^^^^^^^^^
+AttributeError: 'float' object has no attribute 'local_only'

@@ -648,3 +648,25 @@ combined drivetrain integration. Profiles remain documented approximations.
 | [installed isometric](intermediate_snapshot_iso_engine_case_001.png) | `d548711903b8f5a36a0b7acad9137fac29807ef5020060e9716057689fcea26c` |
 | [upper crankcase casting](intermediate_snapshot_detail_engine_case_upper_001.png) | `e14f18669fbafe1cf05c0651d2b926c2932251037cd403cbdede1d3386341b1f` |
 | [lower crankcase casting](intermediate_snapshot_detail_engine_case_lower_001.png) | `22666b21812d60610dbeda4d1a95f36268a51e431fc8db69c0417bd312a7ce36` |
+
+
+## Engine crankshaft and bearing interiors — 23 September 2026
+
+The development candidate contains **1,992 physical components**: 81 new shaft,
+bearing and retention constituents; two revised receiving cases; 1,909 preserved
+parent pieces. Nominal 437 independent checks, 517 affected material pairs
+including standard context and 101 STEP comparisons pass. The coupled trial passes
+437/517. Eight native views were compared with manual figures.
+Unprinted profiles, thrust internals and registration remain estimates; shaft
+plugs/gear and the remaining engine systems are pending.
+
+The upper case is hidden in the review isometric to expose the internals. Both
+cases remain installed in the native model. Three snapshots bring the progression
+to 123, preserving 120 earlier images. Standard tank011 and its transparent-hull
+companion remain unchanged pending combined drivetrain integration.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric with upper case hidden](intermediate_snapshot_iso_engine_crankshaft_001.png) | `54b04b0acf60c0554a4f0917f573ade6a909ceedc76eb5906cd11f403fa9966d` |
+| [bare crankshaft](intermediate_snapshot_detail_engine_crankshaft_001.png) | `ac88e9a41001ad05b4a72fe8ac7884f53e43db0edf51a153e771bfa4852395cf` |
+| [thrust bearing section](intermediate_snapshot_detail_engine_thrust_001.png) | `12402f7333a87506b09448eb3a27f2510857a2fec392940f405b45c18385f87a` |

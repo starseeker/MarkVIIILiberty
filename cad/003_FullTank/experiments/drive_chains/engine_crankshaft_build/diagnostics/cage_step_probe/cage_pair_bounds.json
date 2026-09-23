@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "previous_native_sha256": "66fd5e0fffde557cc79b27192977cca61a32a762ec46cf4dfd415b2dbb978507",
+  "native_sha256": "e595f43dfaab99061c1771f7493122010d155d3a87966f187c05dd71ca8c30e0",
+  "old_pairs": 521,
+  "new_pairs": 517,
+  "checks": [
+    {
+      "a": "EngineCrank_ThrustCenter",
+      "b": "EngineCrank_ThrustLeftCage",
+      "gap_mm": 3.5,
+      "axial_bbox_gap_mm": 2.831000000000131,
+      "trimmed_axial_gap_mm": 3.5,
+      "minimum_gap_mm": 3.5,
+      "overlap_mm3": 0.0,
+      "old_cage_bbox_x_mm": [
+        2937.6555512712616,
+        2949.955551271262
+      ],
+      "current_cage_bbox_x_mm": [
+        2942.3055512712617,
+        2945.3055512712617
+      ],
+      "current_cage_trimmed_x_mm": [
+        2942.3055512712617,
+        2945.3055512712617
+      ]
+    },
+    {
+      "a": "EngineCrank_ThrustCenter",
+      "b": "EngineCrank_ThrustRightCage",
+      "gap_mm": 3.5,
+      "axial_bbox_gap_mm": 2.831000000000131,
+      "trimmed_axial_gap_mm": 3.5,
+      "minimum_gap_mm": 3.5,
+      "overlap_mm3": 0.0,
+      "old_cage_bbox_x_mm": [
+        2955.6555512712616,
+        2967.955551271262
+      ],
+      "current_cage_bbox_x_mm": [
+        2960.3055512712617,
+        2963.3055512712617
+      ],
+      "current_cage_trimmed_x_mm": [
+        2960.3055512712617,
+        2963.3055512712617
+      ]
+    },
+    {
+      "a": "EngineCrank_ThrustLeftCage",
+      "b": "EngineCrank_ThrustLeftSleeve",
+      "gap_mm": 6.569056248807693,
+      "axial_bbox_gap_mm": 0.5,
+      "trimmed_axial_gap_mm": 0.49999990000014805,
+      "minimum_gap_mm": 0.5,
+      "overlap_mm3": 0.0,
+      "old_cage_bbox_x_mm": [
+        2937.6555512712616,
+        2949.955551271262
+      ],
+      "current_cage_bbox_x_mm": [
+        2942.3055512712617,
+        2945.3055512712617
+      ],
+      "current_cage_trimmed_x_mm": [
+        2942.3055512712617,
+        2945.3055512712617
+      ]
+    },
+    {
+      "a": "EngineCrank_ThrustRightCage",
+      "b": "EngineCrank_ThrustRightSleeve",
+      "gap_mm": 6.56905624880768,
+      "axial_bbox_gap_mm": 0.5,
+      "trimmed_axial_gap_mm": 0.49999990000014805,
+      "minimum_gap_mm": 0.5,
+      "overlap_mm3": 0.0,
+      "old_cage_bbox_x_mm": [
+        2955.6555512712616,
+        2967.955551271262
+      ],
+      "current_cage_bbox_x_mm": [
+        2960.3055512712617,
+        2963.3055512712617
+      ],
+      "current_cage_trimmed_x_mm": [
+        2960.3055512712617,
+        2963.3055512712617
+      ]
+    }
+  ],
+  "initial_probe_correction": "Sleeve/cage surfaces are also radially separated; axial gap is a lower bound on Euclidean distance, not an equality. Default BRep bounds are conservative; trimmed bounds recover the design planes.",
+  "explanation": "Same spherical pocket material, tighter conservative axial cage bounds. All four removed candidate pairs are geometrically separated; no interference was skipped."
+}

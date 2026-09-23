@@ -1,0 +1,62 @@
+STEP long upper shell=half(ring(outer,inner,0,length),sign) True 1
+STEP long upper shell=shell.cut(layer.common(mask)) True 1
+STEP long upper shell=shell.cut(layer.common(mask)) True 1
+STEP long upper shell=shell.cut(Part.makeCylinder(c['bearing_oil_feed_radius'],outer+2,V(x,0,0), True 1
+STEP long upper shell=shell.cut(layer.common(mask)) True 1
+STEP long upper shell=shell.cut(layer.common(mask)) True 1
+STEP long upper shell=shell.cut(Part.makeCylinder(c['bearing_oil_feed_radius'],outer+2,V(x,0,0), True 1
+STEP long upper shell=shell.cut(Part.makeCylinder(c['dowel_diameter']/2+c['dowel_clearance'],out True 1
+STEP long upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+BEFORE_REFINE long upper True 1
+AFTER_REFINE long upper False 1
+STEP long lower shell=half(ring(outer,inner,0,length),sign) True 1
+STEP long lower shell=shell.cut(layer.common(mask)) True 1
+STEP long lower shell=shell.cut(layer.common(mask)) True 1
+STEP long lower shell=shell.cut(Part.makeCylinder(c['bearing_oil_feed_radius'],outer+2,V(x,0,0), True 1
+STEP long lower shell=shell.cut(layer.common(mask)) True 1
+STEP long lower shell=shell.cut(layer.common(mask)) True 1
+STEP long lower shell=shell.cut(Part.makeCylinder(c['bearing_oil_feed_radius'],outer+2,V(x,0,0), True 1
+STEP long lower shell=shell.cut(Part.makeCylinder(c['dowel_diameter']/2+c['dowel_clearance'],out True 1
+STEP long lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP long lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+BEFORE_REFINE long lower True 1
+AFTER_REFINE long lower True 1
+STEP short upper shell=half(ring(outer,inner,0,length),sign) True 1
+STEP short upper shell=shell.cut(layer.common(mask)) True 1
+STEP short upper shell=shell.cut(Part.makeCylinder(c['bearing_oil_feed_radius'],outer+2,V(x,0,0), True 1
+STEP short upper shell=shell.cut(Part.makeCylinder(c['dowel_diameter']/2+c['dowel_clearance'],out True 1
+STEP short upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP short upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP short upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP short upper shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+BEFORE_REFINE short upper True 1
+AFTER_REFINE short upper True 1
+STEP short lower shell=half(ring(outer,inner,0,length),sign) True 1
+STEP short lower shell=shell.cut(layer.common(mask)) True 1
+STEP short lower shell=shell.cut(Part.makeCylinder(c['bearing_oil_feed_radius'],outer+2,V(x,0,0), True 1
+STEP short lower shell=shell.cut(Part.makeCylinder(c['dowel_diameter']/2+c['dowel_clearance'],out True 1
+STEP short lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP short lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP short lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+STEP short lower shell=shell.cut(ring(inner+c['bearing_oil_groove_depth'],inner-.1,x-1,x+1).commo True 1
+BEFORE_REFINE short lower True 1
+AFTER_REFINE short lower True 1
