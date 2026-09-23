@@ -11,6 +11,22 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — oil-pump fastening sets and relief lock
+
+The [oil-pump checkpoint](packets/P01-engine-oil-pump.md) now has **105 physical
+constituents in 38 definitions**: all fourteen internal bolt sets and the
+source-length cage-to-bolt wire are added. Underside access wells preserve the
+strainer seat and at least 2.397 mm to the checked galleries. **266 saved-native
+checks and 345 material comparisons pass**. Fresh reproduction matches 77 BReps
+and 6,059 object properties; a four-control local wire probe passes its material,
+stock and self-clearance checks. All 135 nonscreen STEP comparisons pass; eight
+screen comparisons remain deferred, so complete STEP qualification is pending.
+Six views were inspected; two snapshots bring the progression to 143, preserving
+all prior images and standard natives. The folded-wire diagnostic also improves
+the reusable FreeCAD guidance. Two wires, mounting components, source-profile and
+port refinement, coupled full-pump qualification, crankcase fit and standard
+integration remain open. The complete tank and pump remain unfinished.
+
 ## 23 September 2026 — oil-pump core, passages and strainers
 
 The [oil-pump study](packets/P01-engine-oil-pump.md) now contains **35 physical

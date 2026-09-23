@@ -12,8 +12,10 @@ two fixed idler pins, two bushes, the separating plate, two locating dowels and
 both body castings. It also includes the relief seat, mushroom valve, cage,
 spring and shim; three machining plugs; the bottom cover and gasket; the drain
 plug and gasket; two strainer frames, four separate screens, and the upper
-screen's retaining nut and tab lock. This is 35 physical occurrences in 32
-definitions, before fastening sets, lock wires and mounting components.
+screen's retaining nut and tab lock. Four upper-body and ten cover bolt sets add
+69 constituents, and the relief-cage lock adds one wire: **105 physical occurrences
+in 38 definitions**. The remaining two catalogue wires and mounting components
+are still pending. The earlier 35- and 104-piece checkpoints are retained.
 
 The native hierarchy separates bodies, rotors, relief components, strainers and
 fasteners. Repeated occurrences link to shared definitions. Each definition has
@@ -45,12 +47,14 @@ whole-tank count.
   one, while HB203 calls one an upper-screen dowel. The selected pair follows
   the explicit assembly instructions; the alternatives remain open evidence.
 - HB87 cotters three upper-body bolts and connects the fourth to the relief cage
-  with wire. Those fastening components are still pending. HB203's upper bolt
+  with wire. Those fourteen joints and the relief lock are now modeled. HB203's upper bolt
   is 1-5/16 inch long with a 7/8 inch head-to-nut span; SNL24 prints 15/16 inch.
   This is a real printed disagreement, not silently corrected OCR.
 - The cover flange estimate is 4.3 mm: the HB203 1/2 inch head-to-nut span less
   the estimated 6 mm body flange, 0.4 mm gasket and two 1 mm washers. The actual
-  bolts and their fitted joint still need construction and checking.
+  bolts now meet the printed joint span in the saved native. Both washer layers,
+  castle nuts and separate cotters are represented; detailed helical threads
+  remain nominal cylinder envelopes.
 - LIB29/30/33 and SNL plate33 show separate open strainer frames and gauze.
   The modeled dome/dish, four end spokes, eight side posts and all basket
   dimensions are estimates. Each gauze component is a porous thin BRep with
@@ -90,31 +94,69 @@ The initial side screens intersected the sloping basket rims by 40.191434 and
 44.274557 mm³. Their ends now follow the supporting conical profiles. This is
 a geometry correction, not an overlap exemption.
 
+## Hardware and relief-lock checkpoint — 23 September 2026
+
+The 104-piece hardware study passes 241 native checks and 338 affected material
+pairs. Its first fitting trial found 28 contacts with the former casting. Moving
+estimated galleries, lowering the strainer ceiling and adding shallow cover-head
+seats cleared the source-length joints without changing acceptance tolerances.
+The changed casting retains the intended oil-path graph.
+
+The current [105-piece native](../experiments/drive_chains/engine_oil_pump_relief_lock_study/OilPump.FCStd)
+adds HB87(f)'s cage-to-bolt lock. HB203 identifies wire177; SNL160 specifies
+No18 × 8 inches. The 203.2 mm continuous centerline is retained as hidden,
+nonphysical construction geometry. The formed route, two-turn tail, fourth-bolt
+corner and cage drilling are estimates. Under the lower casting, four access
+wells expose the bolt nuts and permit the lock route. They retain at least
+2.397106 mm to the checked oil passages and preserve the lower-strainer rim seat.
+
+The three-turn wire trial produced a valid solid and cleared all neighboring
+parts, yet folded into itself and lost 6.337590 mm³ of stock through fusion.
+The revised two-turn wire conserves the complete stock volume, with 1.405765 mm
+minimum sampled nonlocal centerline spacing. The retained
+[positive and negative controls](../experiments/drive_chains/engine_oil_pump_relief_lock_study/diagnostics/wire_self_contact/README.md)
+reproduce the distinction. No source stock was trimmed and no tolerance relaxed.
+
 ## Verification and next work
 
-The saved [hierarchical native](../experiments/drive_chains/engine_oil_pump_development/OilPump.FCStd)
-passes **138 checks and 123 component material comparisons**, including all 27
-sampled gear meshes. Checks reopen the actual file and examine validity,
-occurrence identity, parent-relative placements, passage connections/separation,
-open bores and screen apertures. This qualifies the stated local checks only;
-crankcase fit and the complete pump are unproven.
+The [saved native report](../experiments/drive_chains/engine_oil_pump_relief_lock_study/native_checks.json)
+passes **266 checks and 345 material comparisons**, including 27 gear meshes,
+source bolt lengths and joint spans, passage voids, wire stock volume, both
+attachment bores, material surrounding the holes, and local/nonlocal wire fit.
+The held-out helical-reference fit has maximum 0.000667107 mm residual; this
+measures the estimated curve fit, not historical accuracy.
 
-The strict STEP comparisons are still running. The two exported files exist,
-but export completion is not exchange acceptance. Parameter variation and fresh
-reproduction remain pending. The [native report](../experiments/drive_chains/engine_oil_pump_development/native_checks.json)
-and the eventual `exchange_checks.json` provide the actual check results.
+Compared with the 104-piece checkpoint, only the lower body and relief cage
+change: 70 prior serialized BReps and 2,553 frame/identity properties match.
+A fresh rebuild matches **77 serialized shapes, all 559 object types and 6,059
+object properties**; only new document object UUIDs are excluded. This includes
+the wire reference, controls and datums.
 
-Five [views](../experiments/drive_chains/engine_oil_pump_development/source_review/index.html)
-were inspected against LIB27/29/30/33 and SNL plate33. The separate component
-arrangement is recognizable; unprinted profiles, source-camera registration and
-fine weave remain uncertain. The isometric and cutaway snapshots bring the
-progression to 141 images, preserving all 139 previous images, 20 standard
-natives and the preceding water-pump checkpoint.
+A four-control local wire trial changes cage-hole offset/radius, bend radius and
+strand spacing. Its eight local material comparisons, self-spacing and stock
+volume pass. This is a bounded wire probe, not the required coupled full-pump
+parameter qualification; that broader trial remains open.
 
-The build exposes 143 controls, with 160 source records and 18 hashed source
-images. A copy of its local input dependencies is retained in the study's
-`inputs` directory; shared stage libraries and runtime are supplied by this
-repository. No complete-pump acceptance is claimed.
+All **135 strict STEP comparisons of nonscreen parts pass**, across definitions
+and installed occurrences. The four dense screens remain deferred in both frames
+(eight comparisons), so the [subset report](../experiments/drive_chains/engine_oil_pump_relief_lock_study/exchange_nonscreen_checks.json)
+cannot certify complete exchange. The original 35-part candidate's full STEP process is still running.
+Exact serialized-pair reuse was investigated, but no uncompleted comparison is
+counted as a pass. Exported STEP files alone do not satisfy exchange acceptance.
+
+Six [views](../experiments/drive_chains/engine_oil_pump_relief_lock_study/source_review/index.html)
+were directly compared with LIB27/29/30/33/34 and SNL plate33. The new access wells
+address the underside attachment, while LIB34 still shows more contoured bosses
+than the broad modeled ceiling. The mounting holes, external pipes and relative
+passage diameters also need source-led refinement. These discrepancies remain
+open; the views are not registered to the source cameras.
+
+Two snapshots bring the progression to **143**, preserving all 141 prior images,
+20 standard native files, and the previous water-pump and hardware natives.
+The build has **171 controls**, with the retained 160 source records and 18 hashed
+source images. Local dependencies and checks are frozen in `frozen_inputs`;
+shared stage libraries and runtime come from this repository.
+
 The reusable entry points are:
 
 ```sh
@@ -124,12 +166,12 @@ python3 cad/003_FullTank/experiments/drive_chains/check_engine_oil_pump_exchange
 python3 cad/003_FullTank/experiments/drive_chains/render_engine_oil_pump.py --candidate .work/oil-pump-rebuild
 ```
 
-Complete the source-length upper and cover bolt sets, source-length lock wires,
-mounting gasket/fasteners and external fittings. Then revise the receiving case,
-verify the shaft coupling and shared water-drive constraints, perform a coupled
-parameter trial and fresh reproduction, and qualify the combined installation.
-Continue all remaining engine systems and standard-tank integration afterward.
-Pose variants remain deferred until standard geometry is populated.
+Complete the two remaining source wires, mounting gasket/stud sets, mounting-hole
+pattern and external connection selection. Reconcile the unequal openings shown
+in LIB28 with the current estimated passage sizes. Then revise the receiving
+case, verify the shaft coupling and shared water-drive constraints, run the
+coupled full-pump parameter trial and qualify the combined installation. Continue
+the remaining engine systems and standard integration. Poses remain deferred.
 
 Direct inspection of HB196/199 (original scans MarkVIII099/100) now establishes
 ten 132 mounting studs, **1/4-28 × 1-7/16 inch**, with **7/16 inch between nut and

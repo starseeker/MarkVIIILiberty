@@ -1,5 +1,17 @@
 # Mark VIII visual progression
 
+The latest hardware and relief-lock checkpoint preserves a new
+[isometric](intermediate_snapshot_iso_engine_oil_pump_hardware_001.png) and
+[underside detail](intermediate_snapshot_detail_engine_oil_pump_relief_lock_001.png).
+The separate pump now contains 105 constituents, including fourteen bolt sets
+and the cage-to-bolt lock wire. All 141 earlier images are unchanged: **143 total**.
+Two wires, mounting, connections and source-profile refinement remain pending;
+standard tank 011 is unchanged. The detail omits the cover and lower strainer
+for inspection; it does not change the physical assembly or implement a pose.
+
+Isometric SHA-256: `8b2e80d8d39d061acffc4dd438aa05343f93c49a1a5f1a1bde7310233b355f93`.
+Underside SHA-256: `799bafc01dedc7e08785011d376d505f89ee0b8fd8978472a8482ff9f193c990`.
+
 The 23 September oil-pump development adds a preserved
 [isometric](intermediate_snapshot_iso_engine_oil_pump_development_001.png) and
 [cutaway](intermediate_snapshot_detail_engine_oil_pump_cutaway_001.png).

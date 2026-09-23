@@ -104,6 +104,17 @@ geometric, metadata and frame criteria. Unless exact archive-byte preservation
 is an actual requirement, avoid rewriting FCStd ZIP internals merely to make
 serialized hashes match. Such a repair adds another implementation to qualify.
 
+For formed round wire, a valid fused solid can conceal self-interference: fusion
+removes the overlapping stock. Retain a nonphysical centerline and compare solid
+volume with cross-sectional area times its length. Check nonadjacent centerline
+separation and local bend radius as well as contact with neighboring parts.
+On FreeCAD 1.1.1 / OCC 7.8.0, a doubled lock-wire tail passed validity and all
+neighbor checks but lost 6.337590 mm³ through self-overlap. Revising its estimated
+twist retained the full source stock length and passed all three checks. The
+[saved positive and negative controls](../../../cad/003_FullTank/experiments/drive_chains/engine_oil_pump_relief_lock_study/diagnostics/wire_self_contact/README.md)
+include a replay. Centerline sampling needs a spacing allowance; it is not an
+exact global minimum-distance proof or a simulation of wire deformation.
+
 For freeform sections, establish a common coordinate system and corresponding
 curve directions before lofting or fitting surfaces. Retain source picks and
 control curves; check section residuals, seams, surface continuity where required,
