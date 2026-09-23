@@ -11,6 +11,22 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — lower distribution component study
+
+The [lower distribution study](experiments/drive_chains/engine_lower_drive_study/DrivetrainWithLowerDriveStudy.FCStd)
+adds **17 physical constituents in ten definitions**, preserving all 2,153 parent
+occurrences in a 2,170-occurrence development document. The integral 22/21-tooth
+driver, two split bushes, two housing halves, dowel, two complete clamp sets and
+retaining screw are represented. **37 component checks and 27 STEP comparisons
+pass**. The 68 affected material pairs include **3 unresolved contacts with the
+inherited lower casing**; installation and standard tank context are not qualified.
+The [packet](packets/P01-engine-lower-distribution.md) records source-range bearing
+fits, a native mating-gear experiment, source-led cup/access corrections and
+estimated dimensions. Six revised native views were inspected. Two new study
+images bring the progression to 131; all previous images and standard native
+documents are unchanged. Pump-axis reconciliation, the casting lug and screw
+support, oil-pump opening and full-unit withdrawal precede installation acceptance.
+
 ## 23 September 2026 — engine driving bevel and thrust-nut lock
 
 The latest [engine driving-gear candidate](experiments/drive_chains/engine_gear_build/DrivetrainWithEngineGear.FCStd)

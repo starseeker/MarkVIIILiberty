@@ -1,0 +1,380 @@
+{
+  "controls": {
+    "upper_teeth": 22,
+    "lower_teeth": 21,
+    "pump_mate_teeth": 21,
+    "module": 3.5,
+    "upper_face": 10.0,
+    "lower_face": 7.0,
+    "pressure_angle_deg": 20.0,
+    "tooth_thinning": 0.1,
+    "flank_samples": 128,
+    "root_embed": 0.1,
+    "pump_axis_drop": 184.0,
+    "shaft_radius": 16.0,
+    "bore_radius": 8.0,
+    "spline_count": 6,
+    "spline_depth": 1.5,
+    "spline_width": 3.0,
+    "spline_length": 24.0,
+    "endplay": 0.1651,
+    "diametrical_clearance": 0.0508,
+    "bush_radius": 18.5,
+    "bush_flange_radius": 20.5,
+    "bush_flange_stock": 2.5,
+    "bush_housing_gap": 0.05,
+    "housing_radius": 43.0,
+    "housing_end_stock": 8.0,
+    "housing_end_relief": 0.1,
+    "window_half_width": 24.0,
+    "window_corner_radius": 4.0,
+    "center_bridge_stock": 10.0,
+    "clamp_offset": 29.0,
+    "clamp_grip": 14.0,
+    "clamp_head_af": 11.1125,
+    "clamp_head_stock": 4.0,
+    "clamp_diameter": 6.35,
+    "clamp_length": 23.8125,
+    "clamp_thread_length": 14.2875,
+    "nut_af": 11.1125,
+    "nut_stock": 6.35,
+    "nut_crown_radius": 4.6,
+    "castle_depth": 2.4,
+    "washer_radius": 6.5,
+    "washer_stock": 1.0,
+    "fastener_gap": 0.05,
+    "cotter_diameter": 1.5875,
+    "cotter_length": 12.7,
+    "cotter_hole_gap": 0.08,
+    "dowel_diameter": 4.7625,
+    "dowel_length": 9.525,
+    "dowel_tip_radius": 16.5,
+    "dowel_end_offset": 5.0,
+    "oil_port_diameter": 2.5,
+    "oil_groove_radius": 0.7,
+    "retaining_screw_diameter": 9.525,
+    "retaining_screw_length": 82.55,
+    "retaining_tip_radius": 26.0,
+    "retaining_head_af": 14.2875,
+    "retaining_head_stock": 5.0,
+    "lower_tooth_phase_deg": 0.0,
+    "upper_cup_radius": 34.0,
+    "upper_cup_depth": 6.0,
+    "clamp_relief_margin": 1.5
+  },
+  "parameter_evidence": {
+    "upper_teeth": {
+      "value": 22,
+      "basis": "printed dimension/count with stated applicability",
+      "source": "LIB27 (conditional tank transfer)"
+    },
+    "lower_teeth": {
+      "value": 21,
+      "basis": "printed dimension/count with stated applicability",
+      "source": "LIB28 (conditional tank transfer)"
+    },
+    "pump_mate_teeth": {
+      "value": 21,
+      "basis": "printed dimension/count with stated applicability",
+      "source": "LIB28 (conditional tank transfer)"
+    },
+    "module": {
+      "value": 3.5,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "upper_face": {
+      "value": 10.0,
+      "basis": "estimated reconstruction control",
+      "source": "Inherited main-bevel face width; HB101 places wider gear at cupped housing end"
+    },
+    "lower_face": {
+      "value": 7.0,
+      "basis": "estimated reconstruction control",
+      "source": "Estimated narrower face per HB101; not a printed7mm dimension"
+    },
+    "pressure_angle_deg": {
+      "value": 20.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "tooth_thinning": {
+      "value": 0.1,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "flank_samples": {
+      "value": 128,
+      "basis": "numerical approximation control",
+      "source": "128 interpolation stations; report and independently check residuals"
+    },
+    "root_embed": {
+      "value": 0.1,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "pump_axis_drop": {
+      "value": 184.0,
+      "basis": "estimated reconstruction control",
+      "source": "Provisional184mm separation gives roughly84mm journal, comparable to driver diameter in SNLplate19; qualitative proportions only. Inherited154mm casing aperture remains unresolved."
+    },
+    "shaft_radius": {
+      "value": 16.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "bore_radius": {
+      "value": 8.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "spline_count": {
+      "value": 6,
+      "basis": "estimated reconstruction control",
+      "source": "LIB28 and33 establish splined bore/spindle; six grooves remain an estimate"
+    },
+    "spline_depth": {
+      "value": 1.5,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "spline_width": {
+      "value": 3.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "spline_length": {
+      "value": 24.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "endplay": {
+      "value": 0.1651,
+      "basis": "selected midpoint of printed fit range",
+      "source": "HB100:0.005\u20130.008in",
+      "limits_mm": [
+        0.127,
+        0.2032
+      ]
+    },
+    "diametrical_clearance": {
+      "value": 0.0508,
+      "basis": "selected midpoint of printed fit range",
+      "source": "HB100:0.0015\u20130.0025in",
+      "limits_mm": [
+        0.0381,
+        0.0635
+      ]
+    },
+    "bush_radius": {
+      "value": 18.5,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "bush_flange_radius": {
+      "value": 20.5,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "bush_flange_stock": {
+      "value": 2.5,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "bush_housing_gap": {
+      "value": 0.05,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "housing_radius": {
+      "value": 43.0,
+      "basis": "estimated reconstruction control",
+      "source": "Estimated43mm outer radius: matches broadly similar housing/gear diameters in SNLplate19 and exceeds41.4mm gear radial envelope so the upper gear can pass the cylindrical receiving lug during HB100 withdrawal. Earlier37mm housing was incompatible with a complete cylindrical lug."
+    },
+    "housing_end_stock": {
+      "value": 8.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "housing_end_relief": {
+      "value": 0.1,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "window_half_width": {
+      "value": 24.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "window_corner_radius": {
+      "value": 4.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "center_bridge_stock": {
+      "value": 10.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "clamp_offset": {
+      "value": 29.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "clamp_grip": {
+      "value": 14.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "clamp_head_af": {
+      "value": 11.1125,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "clamp_head_stock": {
+      "value": 4.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "clamp_diameter": {
+      "value": 6.35,
+      "basis": "printed dimension/count with stated applicability",
+      "source": "SNL25:020"
+    },
+    "clamp_length": {
+      "value": 23.8125,
+      "basis": "printed dimension/count with stated applicability",
+      "source": "SNL25:020"
+    },
+    "clamp_thread_length": {
+      "value": 14.2875,
+      "basis": "printed dimension/count with stated applicability",
+      "source": "SNL25:020"
+    },
+    "nut_af": {
+      "value": 11.1125,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "nut_stock": {
+      "value": 6.35,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "nut_crown_radius": {
+      "value": 4.6,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "castle_depth": {
+      "value": 2.4,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "washer_radius": {
+      "value": 6.5,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "washer_stock": {
+      "value": 1.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "fastener_gap": {
+      "value": 0.05,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "cotter_diameter": {
+      "value": 1.5875,
+      "basis": "printed dimension/count with stated applicability",
+      "source": "SNL25:022"
+    },
+    "cotter_length": {
+      "value": 12.7,
+      "basis": "printed dimension/count with stated applicability",
+      "source": "SNL25:022"
+    },
+    "cotter_hole_gap": {
+      "value": 0.08,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "dowel_diameter": {
+      "value": 4.7625,
+      "basis": "printed dimension/count with stated applicability",
+      "source": "SNL113:017"
+    },
+    "dowel_length": {
+      "value": 9.525,
+      "basis": "printed dimension/count with stated applicability",
+      "source": "SNL113:017"
+    },
+    "dowel_tip_radius": {
+      "value": 16.5,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "dowel_end_offset": {
+      "value": 5.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "oil_port_diameter": {
+      "value": 2.5,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "oil_groove_radius": {
+      "value": 0.7,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "retaining_screw_diameter": {
+      "value": 9.525,
+      "basis": "printed dimension/count with stated applicability",
+      "source": "SNL206:010"
+    },
+    "retaining_screw_length": {
+      "value": 82.55,
+      "basis": "printed dimension/count with stated applicability",
+      "source": "SNL206:010"
+    },
+    "retaining_tip_radius": {
+      "value": 26.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "retaining_head_af": {
+      "value": 14.2875,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "retaining_head_stock": {
+      "value": 5.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "lower_tooth_phase_deg": {
+      "value": 0.0,
+      "basis": "estimated reconstruction control",
+      "source": "Unprinted; reconstruction estimate, not a recovered manufacturing dimension"
+    },
+    "upper_cup_radius": {
+      "value": 34.0,
+      "basis": "estimated reconstruction control",
+      "source": "Estimated conical recess at upper/wider gear end, per HB101; not printed dimensions"
+    },
+    "upper_cup_depth": {
+      "value": 6.0,
+      "basis": "estimated reconstruction control",
+      "source": "Estimated upper-end recess depth per HB101"
+    },
+    "clamp_relief_margin": {
+      "value": 1.5,
+      "basis": "estimated reconstruction control",
+      "source": "Estimated hardware access margin; earlier1mm margin let cotter eye contact casting"
+    }
+  }
+}

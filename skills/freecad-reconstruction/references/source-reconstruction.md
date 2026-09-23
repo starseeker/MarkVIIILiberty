@@ -20,6 +20,15 @@ interfaces. Catalogue assembly totals can include subassemblies already counted;
 source quantity is not automatically the number of extra installed pieces.
 Named source alternatives or later production variants need explicit selection.
 
+Translate explicit assembly and service instructions into geometric requirements
+before finalizing estimated interfaces. A shaft can fit its bearing while an
+integral gear cannot pass through the bearing housing's receiving lug. Check the
+complete moving unit and the stated removal sequence; an offset access opening
+does not by itself imply a coaxial path. Preserve a failed envelope as evidence,
+and distinguish component fit from a verified installation or removal path. The
+[lower distribution-drive study](../../../cad/003_FullTank/packets/P01-engine-lower-distribution.md)
+records this constraint and the remaining casing-access work.
+
 When values conflict, retain the original values and calculate the consequences
 of each defensible interpretation. For example, an outside diameter and assumed
 wire diameter imply a spring inside diameter; a negative clearance is evidence of

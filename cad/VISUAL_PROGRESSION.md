@@ -709,3 +709,18 @@ companion remain unchanged pending combined drivetrain integration.
 | [installed isometric](intermediate_snapshot_iso_engine_gear_001.png) | `8d182cae50df7a0c101581aecaa1abc536f7c84003acbcf2b37d75bdef86e405` |
 | [driving bevel joint](intermediate_snapshot_detail_engine_gear_001.png) | `6c2ff3e8ffa5c8faa128b0e0e3228e2a8ec8073604e7e887815bea52123c4ab9` |
 | [thrust-nut lock](intermediate_snapshot_detail_engine_thrust_lock_001.png) | `1e766788500faac4d8c45654e2d6a3ef9556458276b83ee72af8d919d0e6eb32` |
+
+
+## Lower distribution component study — 23 September 2026
+
+Seventeen new pieces represent the lower driver and its split bearing/housing
+assembly. Component and STEP checks pass; casing contacts, pump-axis position,
+receiving lug and service withdrawal remain unresolved. These are development
+views, not a newly qualified standard tank. Two images bring the progression to
+131, preserving all 129 previous images. Standard tank011 and its transparent-hull
+companion remain unchanged.
+
+| View | SHA-256 |
+| --- | --- |
+| [mating gears and lower unit](intermediate_snapshot_iso_engine_lower_drive_study_001.png) | `1d47ca76c43876af9c5b5ef491c3d0ecba91257321452f319a7a31fa434a581b` |
+| [exploded component study](intermediate_snapshot_detail_engine_lower_drive_study_001.png) | `b1c1bed84d71be655100c5e3af4869dab3cd7379eaa7b8cd4a21f2cf4a11292b` |

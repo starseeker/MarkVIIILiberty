@@ -48,6 +48,16 @@ If cleanup fails, retain the checked original BRep and record that choice;
 saved-native and exchange checks still apply. The project retains the
 [focused probe and before/after BReps](../../../cad/003_FullTank/experiments/drive_chains/engine_crankshaft_build/diagnostics/groove_probe/).
 
+For a prismatic rounded opening, prefer one planar wire of tangent lines and
+analytic circular arcs, extruded once. In the lower distribution housing study,
+an equivalent tool assembled from boxes and cylinders left higher-tolerance
+intersection edges after Boolean operations. Both housing halves reopened from
+STEP with slightly increased kernel tolerances despite zero material differences.
+The single-profile prism preserved material in both directions and passed the
+original tolerance bounds. Diagnose and compare the actual shapes before adopting
+this remedy; do not enlarge import tolerances to conceal an unexplained failure.
+See the [lower distribution packet](../../../cad/003_FullTank/packets/P01-engine-lower-distribution.md).
+
 For spherical pockets between two parallel trimming planes, the sphere's
 parametrization can affect STEP transfer even though rotating a complete sphere
 does not change its material. On the same runtime, pockets crossing the default

@@ -1,0 +1,7 @@
+FAIL new assembly has no internal material overlaps [{'a': 'EngineLowerDrive_ClampCotter1', 'b': 'EngineLowerDrive_DistributorHousing', 'overlap_mm3': 0.018131431744085658, 'internal': True, 'passed': False}]
+Component checks False checks 30 pairs 67 external clashes 3
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_engine_lower_drive.py", line 122, in <module>
+    assert result['component_checks_passed'],'Component study itself has failed checks; see report'
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Component study itself has failed checks; see report

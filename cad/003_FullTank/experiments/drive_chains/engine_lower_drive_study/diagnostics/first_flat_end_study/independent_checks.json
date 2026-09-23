@@ -1,0 +1,716 @@
+{
+  "component_checks_passed": false,
+  "installation_passed": false,
+  "checks": [
+    {
+      "name": "2170 unique physical occurrences",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "17 source-owned constituents",
+      "passed": true,
+      "detail": {
+        "dowel": 1,
+        "bolt": 2,
+        "cotter": 2,
+        "nut": 2,
+        "bush": 2,
+        "housing_distributor": 1,
+        "housing_flywheel": 1,
+        "washer": 4,
+        "retaining_screw": 1,
+        "driver": 1
+      }
+    },
+    {
+      "name": "10 shared definitions and hidden library",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "new components are valid single solids",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "engine owns lower distribution unit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clamp set1 has five physical leaves",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clamp set2 has five physical leaves",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "upper bevel native tooth count",
+      "passed": true,
+      "detail": 22
+    },
+    {
+      "name": "lower bevel native tooth count",
+      "passed": true,
+      "detail": 21
+    },
+    {
+      "name": "two gear shoulders bound journal",
+      "passed": true,
+      "detail": 2
+    },
+    {
+      "name": "printed bearing endplay",
+      "passed": true,
+      "detail": 0.16509999999999536
+    },
+    {
+      "name": "printed diametrical bearing clearance",
+      "passed": true,
+      "detail": 0.0508000000000024
+    },
+    {
+      "name": "journal radial bearing separation",
+      "passed": true,
+      "detail": {
+        "actual": 0.025399993148051008,
+        "target": 0.0254000000000012
+      }
+    },
+    {
+      "name": "continuous hollow driver",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "six estimated internal spline grooves present",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "longitudinal bearing oil groove is open",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bearing retains material beside groove",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "housing_distributor window0 remains open",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "housing_distributor window1 remains open",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "housing_distributor end collar material",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "housing_flywheel window0 remains open",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "housing_flywheel window1 remains open",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "housing_flywheel end collar material",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "printed clamp under-head length",
+      "passed": true,
+      "detail": {
+        "actual": 23.8125,
+        "target": 23.8125
+      }
+    },
+    {
+      "name": "printed dowel length",
+      "passed": true,
+      "detail": {
+        "actual": 9.525,
+        "target": 9.525
+      }
+    },
+    {
+      "name": "printed dowel diameter",
+      "passed": true,
+      "detail": {
+        "actual": 4.7625,
+        "target": 4.7625
+      }
+    },
+    {
+      "name": "printed housing screw under-head length",
+      "passed": true,
+      "detail": {
+        "actual": 82.55,
+        "target": 82.55
+      }
+    },
+    {
+      "name": "printed housing screw diameter",
+      "passed": true,
+      "detail": {
+        "actual": 9.525,
+        "target": 9.525
+      }
+    },
+    {
+      "name": "2153 parent occurrences preserve full material and frames",
+      "passed": true,
+      "detail": {
+        "unique_definitions": 382,
+        "fallback": [
+          "Def_TransmissionPin_nut",
+          "Def_TransmissionPin_bolt_nut",
+          "Def_TransmissionSmallSupport_nut",
+          "Def_TransmissionSmallSupport_bolt_nut",
+          "Def_TransmissionInput_cage",
+          "Def_FrontClutch_spring",
+          "Def_ClutchCone_spring",
+          "Def_ClutchRetention_wire",
+          "Def_ClutchStopBand_lining",
+          "Def_ClutchBrake_carrier",
+          "Def_ClutchDrive_belt",
+          "Def_EngineCrank_shaft",
+          "Def_EngineCrank_thrust_nut",
+          "Def_EngineGear_bolt",
+          "Def_EngineGear_nut",
+          "Def_EngineGear_cotter",
+          "Def_EngineGear_gear",
+          "Def_EngineGear_shim",
+          "Def_EngineGear_lock_screw",
+          "Def_EngineGear_lock_wire"
+        ],
+        "failures": []
+      }
+    },
+    {
+      "name": "new assembly has no internal material overlaps",
+      "passed": false,
+      "detail": [
+        {
+          "a": "EngineLowerDrive_ClampCotter1",
+          "b": "EngineLowerDrive_DistributorHousing",
+          "overlap_mm3": 0.018131431744085658,
+          "internal": true,
+          "passed": false
+        }
+      ]
+    }
+  ],
+  "material_pairs": [
+    {
+      "a": "EngineLowerDrive_BushDowel",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_BushDowel",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_BushDowel",
+      "b": "EngineLowerDrive_DistributorBush",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_BushDowel",
+      "b": "EngineLowerDrive_DistributorHousing",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt1",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt1",
+      "b": "EngineLowerDrive_HeadWasher1",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt1",
+      "b": "EngineLowerDrive_NutWasher1",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt1",
+      "b": "EngineLowerDrive_ClampNut1",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt1",
+      "b": "EngineLowerDrive_ClampCotter1",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt1",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt1",
+      "b": "EngineLowerDrive_FlywheelHousing",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt1",
+      "b": "EngineLowerDrive_DistributorHousing",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt2",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt2",
+      "b": "EngineLowerDrive_HeadWasher2",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt2",
+      "b": "EngineLowerDrive_NutWasher2",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt2",
+      "b": "EngineLowerDrive_ClampNut2",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt2",
+      "b": "EngineLowerDrive_ClampCotter2",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt2",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt2",
+      "b": "EngineLowerDrive_FlywheelHousing",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampBolt2",
+      "b": "EngineLowerDrive_DistributorHousing",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampCotter1",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampCotter1",
+      "b": "EngineLowerDrive_ClampNut1",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampCotter1",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampCotter1",
+      "b": "EngineLowerDrive_DistributorHousing",
+      "overlap_mm3": 0.018131431744085658,
+      "internal": true,
+      "passed": false
+    },
+    {
+      "a": "EngineLowerDrive_ClampCotter2",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampCotter2",
+      "b": "EngineLowerDrive_ClampNut2",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampCotter2",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampCotter2",
+      "b": "EngineLowerDrive_DistributorHousing",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampNut1",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampNut1",
+      "b": "EngineLowerDrive_NutWasher1",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampNut1",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampNut1",
+      "b": "EngineLowerDrive_DistributorHousing",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampNut2",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampNut2",
+      "b": "EngineLowerDrive_NutWasher2",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampNut2",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_ClampNut2",
+      "b": "EngineLowerDrive_DistributorHousing",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_DistributorBush",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_DistributorBush",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_DistributorBush",
+      "b": "EngineLowerDrive_FlywheelBush",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_DistributorBush",
+      "b": "EngineLowerDrive_FlywheelHousing",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_DistributorBush",
+      "b": "EngineLowerDrive_DistributorHousing",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_DistributorHousing",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 1430.0788300224076,
+      "internal": false,
+      "passed": false
+    },
+    {
+      "a": "EngineLowerDrive_DistributorHousing",
+      "b": "EngineLowerDrive_NutWasher1",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_DistributorHousing",
+      "b": "EngineLowerDrive_NutWasher2",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_DistributorHousing",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_DistributorHousing",
+      "b": "EngineLowerDrive_FlywheelBush",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_DistributorHousing",
+      "b": "EngineLowerDrive_FlywheelHousing",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_DistributorHousing",
+      "b": "EngineLowerDrive_HousingRetainingScrew",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_FlywheelBush",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_FlywheelBush",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_FlywheelBush",
+      "b": "EngineLowerDrive_FlywheelHousing",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_FlywheelHousing",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_FlywheelHousing",
+      "b": "EngineLowerDrive_HeadWasher1",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_FlywheelHousing",
+      "b": "EngineLowerDrive_HeadWasher2",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_FlywheelHousing",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_HeadWasher1",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_HeadWasher1",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_HeadWasher2",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_HeadWasher2",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_HousingRetainingScrew",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 570.0459139847499,
+      "internal": false,
+      "passed": false
+    },
+    {
+      "a": "EngineLowerDrive_HousingRetainingScrew",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_IntegralDriver",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 840.9459007778393,
+      "internal": false,
+      "passed": false
+    },
+    {
+      "a": "EngineLowerDrive_IntegralDriver",
+      "b": "EngineGear_DrivingBevel",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_IntegralDriver",
+      "b": "EngineLowerDrive_NutWasher1",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_IntegralDriver",
+      "b": "EngineLowerDrive_NutWasher2",
+      "overlap_mm3": 0.0,
+      "internal": true,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_NutWasher1",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_NutWasher2",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "internal": false,
+      "passed": true
+    }
+  ],
+  "unresolved_external_interferences": [
+    {
+      "a": "EngineLowerDrive_DistributorHousing",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 1430.0788300224076,
+      "internal": false,
+      "passed": false
+    },
+    {
+      "a": "EngineLowerDrive_HousingRetainingScrew",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 570.0459139847499,
+      "internal": false,
+      "passed": false
+    },
+    {
+      "a": "EngineLowerDrive_IntegralDriver",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 840.9459007778393,
+      "internal": false,
+      "passed": false
+    }
+  ],
+  "native_sha256": "17cfb04b8a6d58248ea4868b0e19cb3d81372f24f5fa551356cdba1b19340bef",
+  "checker_sha256": "3f935442297cd2066ee0a9ba019f8cce0a533eca67c89564dee134f5eb186930",
+  "standard_context_checked": false,
+  "scope": "Development geometry only; source review, STEP, parameter trial, case revision and standard integration remain open."
+}
