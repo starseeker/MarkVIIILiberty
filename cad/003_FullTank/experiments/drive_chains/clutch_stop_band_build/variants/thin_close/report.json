@@ -1,0 +1,1256 @@
+{
+  "status": "parameter_trial_not_qualified",
+  "native_sha256": "76e644ed1130f9b85164398a56820339291eebc2ec3f8e2b8ddc3d1f45873fa0",
+  "parent_native_sha256": "c38f129f749d286fd6d8a05eb0015fd4d1c6101cb46db3655d43ec0b0ffdbd05",
+  "parent_qualification_sha256": "83caf41409bba1a5052fbe455aeca0e8a2c9afbbc4807c5cf65f673147db0aeb",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/clutch_stop_band_build.py": "3202799ee27f1ee0bff85373dde31db97e0f561a035f768581bacc156a126d02",
+    "cad/003_FullTank/experiments/drive_chains/clutch_stop_brake_parts.py": "0065b3a48a87605919cf119032df37a66c89aded9367e65cc5779c5d740d8644",
+    "cad/003_FullTank/experiments/drive_chains/clutch_stop_brake_controls.json": "b61782150329ac41704467c8a2b7fcd6151b647fd67058ac4d0e3fb6cb78b275",
+    "cad/003_FullTank/experiments/drive_chains/clutch_stop_brake_sources.json": "415c3ef1b524a90a4d80f1d573c39ec4e36fda437edcb893c86388d6d387d977",
+    "cad/003_FullTank/experiments/drive_chains/clutch_drive_parts.py": "3d05a95e90e1fcc906aa92b69461e7bf61df04e8194f87f654d07666d7a65543",
+    "cad/003_FullTank/experiments/drive_chains/air_pump_mount_parts.py": "cde6d7fb002494373d5379acaab8d36cf85c333b46457b4ea7bab0511f6b8b23",
+    "cad/003_FullTank/experiments/drive_chains/air_pressure_pump_parts.py": "b5528d41b5916deda1baaebb0f96cd012934c1e44df506e15a96b9bb63bbd0f7",
+    "cad/003_FullTank/experiments/drive_chains/clutch_cone_parts.py": "9b2ab26bd177cd6830b3bb2ab86d4bd26e7bec3c3e8812fb5e9ac4eab93cf8db",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_controls.json": "38980e2791875679d6f3ab253790fb4f2e9e06ae0d50dbd8219741cbbb4990bf"
+  },
+  "controls": {
+    "drum_diameter": 234.95,
+    "released_gap": 0.35,
+    "lining_width": 50.8,
+    "lining_stock": 4.7625,
+    "lining_cut_length": 704.85,
+    "band_center_x": 556.625,
+    "steel_stock": 2.75,
+    "opening_clock_deg": 270.0,
+    "eye_inside_radius": 6.0,
+    "eye_slot_width": 18.0,
+    "return_transition_deg": 30.0,
+    "return_lap_deg": 20.0,
+    "return_profile_samples": 61,
+    "lining_rivet_diameter": 4.7625,
+    "lining_rivet_blank_length": 12.7,
+    "lining_rivet_axial_offsets": [
+      -14.0,
+      14.0
+    ],
+    "lining_rivet_stations": 7,
+    "lining_rivet_start_margin": 90.0,
+    "lining_rivet_end_margin": 150.0,
+    "lining_rivet_head_radius": 4.7625,
+    "lining_rivet_recess": 1.0,
+    "lining_rivet_tail_radius": 4.7625,
+    "fold_rivet_diameter": 6.35,
+    "fold_rivet_blank_length": 19.05,
+    "fold_rivet_axial_offsets": [
+      -15.0,
+      0.0,
+      15.0
+    ],
+    "fold_rivet_head_radius": 5.55,
+    "fold_rivet_head_height": 3.5,
+    "fold_rivet_tail_radius": 6.8,
+    "spotface_depth": 0.25,
+    "rivet_radial_gap": 0.025,
+    "head_seat_radial_gap": 0.05
+  },
+  "datums": {
+    "lining_inner_radius": 117.82499999999999,
+    "lining_neutral_radius": 120.20624999999998,
+    "band_inner_radius": 122.58749999999999,
+    "band_outer_radius": 125.33749999999999,
+    "arc_start_rad": 4.922145726939698,
+    "arc_end_rad": 10.785817541009267,
+    "wrap_angle_deg": 335.96364739600546,
+    "opening_angle_deg": 24.03635260399452,
+    "band_axial_extent": [
+      531.225,
+      582.025
+    ],
+    "eye_axis_point": [
+      556.625,
+      -27.347354861899593,
+      -128.45879140139584
+    ],
+    "eye_axis": [
+      1,
+      0,
+      0
+    ],
+    "eye_slot_radius": 9.0,
+    "return_profile_max_residual_mm": 9.323616057847864e-07,
+    "rivet_joints": [
+      {
+        "name": "ClutchStopBand_LiningRivet01",
+        "kind": "lining",
+        "base": [
+          542.625,
+          97.23604987350663,
+          -68.29737352195127
+        ],
+        "radial": [
+          0.0,
+          0.8183130643678236,
+          -0.5747727626505472
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 5.670858876214383
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet02",
+        "kind": "lining",
+        "base": [
+          570.625,
+          97.23604987350663,
+          -68.29737352195127
+        ],
+        "radial": [
+          0.0,
+          0.8183130643678236,
+          -0.5747727626505472
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 5.670858876214383
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet03",
+        "kind": "lining",
+        "base": [
+          542.625,
+          118.76343923622174,
+          3.824411822001174
+        ],
+        "radial": [
+          0.0,
+          0.9994819207761141,
+          0.032185245714295596
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 6.315376112215007
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet04",
+        "kind": "lining",
+        "base": [
+          570.625,
+          118.76343923622174,
+          3.824411822001174
+        ],
+        "radial": [
+          0.0,
+          0.9994819207761141,
+          0.032185245714295596
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 6.315376112215007
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet05",
+        "kind": "lining",
+        "base": [
+          542.625,
+          92.64054031518435,
+          74.41176597226209
+        ],
+        "radial": [
+          0.0,
+          0.7796384625725593,
+          0.6262298840501754
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 6.959893348215631
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet06",
+        "kind": "lining",
+        "base": [
+          570.625,
+          92.64054031518435,
+          74.41176597226209
+        ],
+        "radial": [
+          0.0,
+          0.7796384625725593,
+          0.6262298840501754
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 6.959893348215631
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet07",
+        "kind": "lining",
+        "base": [
+          542.625,
+          29.348387277137434,
+          115.14361810031485
+        ],
+        "radial": [
+          0.0,
+          0.24698832128876447,
+          0.9690184565564054
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 7.6044105842162555
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet08",
+        "kind": "lining",
+        "base": [
+          570.625,
+          29.348387277137434,
+          115.14361810031485
+        ],
+        "radial": [
+          0.0,
+          0.24698832128876447,
+          0.9690184565564054
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 7.6044105842162555
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet09",
+        "kind": "lining",
+        "base": [
+          542.625,
+          -45.718930941477005,
+          109.67752722672249
+        ],
+        "radial": [
+          0.0,
+          -0.38475851833769836,
+          0.9230172710012413
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 8.24892782021688
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet10",
+        "kind": "lining",
+        "base": [
+          570.625,
+          -45.718930941477005,
+          109.67752722672249
+        ],
+        "radial": [
+          0.0,
+          -0.38475851833769836,
+          0.9230172710012413
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 8.24892782021688
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet11",
+        "kind": "lining",
+        "base": [
+          542.625,
+          -102.44289152918564,
+          60.20659930721465
+        ],
+        "radial": [
+          0.0,
+          -0.8621324765763573,
+          0.5066829312620632
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 8.893445056217502
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet12",
+        "kind": "lining",
+        "base": [
+          570.625,
+          -102.44289152918564,
+          60.20659930721465
+        ],
+        "radial": [
+          0.0,
+          -0.8621324765763573,
+          0.5066829312620632
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 8.893445056217502
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet13",
+        "kind": "lining",
+        "base": [
+          542.625,
+          -118.06469689656892,
+          -13.420431130232142
+        ],
+        "radial": [
+          0.0,
+          -0.9936014887150763,
+          -0.11294282457590694
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 9.537962292218127
+      },
+      {
+        "name": "ClutchStopBand_LiningRivet14",
+        "kind": "lining",
+        "base": [
+          570.625,
+          -118.06469689656892,
+          -13.420431130232142
+        ],
+        "radial": [
+          0.0,
+          -0.9936014887150763,
+          -0.11294282457590694
+        ],
+        "head_top_radius": 118.82499999999999,
+        "tail_seat_radius": 125.08749999999999,
+        "grip": 6.262500000000003,
+        "tail_height": 2.8709757982764,
+        "tail_volume": 114.67720535238774,
+        "angle_rad": 9.537962292218127
+      },
+      {
+        "name": "ClutchStopBand_FoldRivet1",
+        "kind": "fold",
+        "base": [
+          541.625,
+          -96.82125748898659,
+          -75.59560506075307
+        ],
+        "radial": [
+          0.0,
+          -0.7882060241293302,
+          -0.6154114587219137
+        ],
+        "head_seat_radius": 122.83749999999999,
+        "tail_seat_radius": 127.83749999999998,
+        "grip": 4.999999999999986,
+        "tail_height": 5.144490493902685,
+        "tail_volume": 444.95250508249063,
+        "angle_rad": 10.087685840211536
+      },
+      {
+        "name": "ClutchStopBand_FoldRivet2",
+        "kind": "fold",
+        "base": [
+          556.625,
+          -96.82125748898659,
+          -75.59560506075307
+        ],
+        "radial": [
+          0.0,
+          -0.7882060241293302,
+          -0.6154114587219137
+        ],
+        "head_seat_radius": 122.83749999999999,
+        "tail_seat_radius": 127.83749999999998,
+        "grip": 4.999999999999986,
+        "tail_height": 5.144490493902685,
+        "tail_volume": 444.95250508249063,
+        "angle_rad": 10.087685840211536
+      },
+      {
+        "name": "ClutchStopBand_FoldRivet3",
+        "kind": "fold",
+        "base": [
+          571.625,
+          -96.82125748898659,
+          -75.59560506075307
+        ],
+        "radial": [
+          0.0,
+          -0.7882060241293302,
+          -0.6154114587219137
+        ],
+        "head_seat_radius": 122.83749999999999,
+        "tail_seat_radius": 127.83749999999998,
+        "grip": 4.999999999999986,
+        "tail_height": 5.144490493902685,
+        "tail_volume": 444.95250508249063,
+        "angle_rad": 10.087685840211536
+      }
+    ],
+    "anchor_present": false,
+    "operating_linkage_present": false,
+    "complete_brake": false,
+    "historical_form_qualified": false
+  },
+  "receiving_drive": {
+    "drive_controls": {
+      "joint_face": 490.0,
+      "flange_back": 475.0,
+      "bolt_count": 8,
+      "bolt_circle": 68.0,
+      "bolt_clock": 22.5,
+      "bolt_diameter": 12.7,
+      "bolt_length": 73.025,
+      "bolt_head_af": 19.05,
+      "bolt_head_height": 8.4667,
+      "bolt_nut_af": 19.05,
+      "bolt_nut_height": 11.1125,
+      "bolt_seat": 530.0,
+      "washer_radius": 11.5,
+      "washer_bore_radius": 6.5,
+      "washer_stock": 2.5,
+      "washer_split": 1.0,
+      "receiver_gap": 0.15,
+      "nut_gap": 0.1,
+      "cover_stock": 6.0,
+      "cover_radius": 82.5,
+      "drum_web_stock": 6.0,
+      "drum_web_bore": 42.0,
+      "drum_radius": 117.475,
+      "drum_inside": 111.475,
+      "drum_groove_inside": 97.175,
+      "drum_inner_transition_start": 529.0,
+      "drum_inner_transition_end": 539.0,
+      "drum_end": 589.0,
+      "groove_plane": 516.0,
+      "groove_width": 16.5,
+      "groove_depth": 14.0,
+      "groove_angle": 28.0,
+      "box_start": 502.0,
+      "box_neck_radius": 92.0,
+      "box_outer_radius": 106.0,
+      "box_transition_start": 535.0,
+      "box_transition_end": 543.0,
+      "box_end": 583.0,
+      "box_nut_relief_radius": 12.5,
+      "head_start": 502.2,
+      "head_end": 545.8,
+      "head_half_width": 50.0,
+      "head_corner_radius": 36.0,
+      "head_axial_gap": 0.2,
+      "head_radial_gap": 0.15,
+      "shaft_length": 285.75,
+      "shaft_radius": 25.4,
+      "spline_radius": 55.3593,
+      "spline_root_radius": 49.0,
+      "spline_width": 12.0,
+      "spline_count": 10,
+      "spline_length": 40.0,
+      "belt_length": 1371.6,
+      "belt_top_width": 15.875,
+      "belt_depth": 10.0,
+      "belt_pitch_depth": 5.0,
+      "belt_mark_count": 108,
+      "belt_mark_width": 0.8,
+      "belt_mark_depth": 0.8
+    },
+    "mount_controls": {
+      "pump_x": 420.0,
+      "pump_y": 0.0,
+      "pump_foot_hole_y": 90.5,
+      "pump_foot_extension": 18.0,
+      "belt_length": 1371.6,
+      "belt_pump_pitch_radius": 88.99663095827005,
+      "belt_drive_pitch_radius": 111.22163095827004,
+      "belt_reference_radius_uncertainty": 6.0,
+      "rail_stock": 10.0,
+      "rail_half_width": 15.0,
+      "rail_end_x": 478.0,
+      "rear_face_x": 220.0,
+      "rear_joint_z": 95.0,
+      "rear_boss_radius": 17.0,
+      "rear_boss_start_x": 185.0,
+      "rear_lug_stock": 29.625,
+      "rear_lug_half_width": 16.0,
+      "rear_flange_relief_radius": 110.5,
+      "web_stock": 8.0,
+      "front_stud_x": 340.0,
+      "front_stud_half_span": 58.0,
+      "front_boss_radius": 16.0,
+      "front_boss_bottom": 50.0,
+      "front_boss_seat": 88.0,
+      "front_stud_embed": 20.0,
+      "front_half_thread_length": 38.0,
+      "front_stud_tip_extra": 3.0,
+      "receiver_gap": 0.15,
+      "blind_gap": 0.2,
+      "nut_bore_gap": 0.1,
+      "base_bolt_diameter": 9.525,
+      "base_bolt_length": 31.75,
+      "base_bolt_af": 14.2875,
+      "base_bolt_head_height": 6.35,
+      "small_nut_af": 14.2875,
+      "small_nut_height": 7.9375,
+      "half_nut_af": 19.05,
+      "half_nut_height": 11.1125,
+      "jam_nut_height": 9.525,
+      "washer_radius": 8.7,
+      "washer_bore_radius": 4.9125,
+      "washer_stock": 2.2,
+      "washer_split": 0.8,
+      "mx98_diameter": 12.7,
+      "mx98_length": 73.025,
+      "mx98_us_thread": 25.4,
+      "mx98_sae_thread": 22.225,
+      "mx98_nut_height": 13.0,
+      "mx98_crown_radius": 9.0,
+      "mx98_slot_depth": 5.0,
+      "cotter_diameter": 2.38125,
+      "cotter_length": 25.4
+    },
+    "belt": {
+      "drive_pitch_radius": 111.22163095827004,
+      "pump_pitch_radius": 88.99663095827005,
+      "center_distance": 370.63132589366114,
+      "angle": 0.06000124545133941,
+      "top_inset": 1.2533690417299514,
+      "pump_top_inset": 1.2533690417299514,
+      "pitch_plane": 516.0,
+      "straight_length": 369.9643619440841,
+      "pitch_length": 1371.6,
+      "outer_offset": 5.0,
+      "inner_offset": -5.0,
+      "inner_width": 10.888439943136387,
+      "scored_junctions": 108,
+      "physical_link_count_known": false
+    },
+    "mounts": {
+      "pump_origin": [
+        420.0,
+        0.0,
+        370.63132589366114
+      ],
+      "rail_top": 340.63132589366114,
+      "rail_bottom": 330.63132589366114,
+      "rear_stud_start": 194.6,
+      "rear_stud_end": 267.625,
+      "rear_nut_seat": 249.625,
+      "rear_cotter_station": 260.125,
+      "rear_us_thread": [
+        194.6,
+        220.0
+      ],
+      "rear_sae_thread": [
+        245.4,
+        267.625
+      ],
+      "front_stud_lower": 68.0,
+      "front_stud_shoulder": 328.43132589366115,
+      "front_stud_end": 353.76882589366113,
+      "inferred_front_thread_spans": [
+        [
+          68.0,
+          106.0
+        ],
+        [
+          309.31882589366114,
+          328.43132589366115
+        ],
+        [
+          328.43132589366115,
+          353.76882589366113
+        ]
+      ],
+      "datums": [
+        {
+          "side": "Port",
+          "sign": 1,
+          "rear_axis": [
+            220.0,
+            90.5,
+            95.0
+          ],
+          "front_axis": [
+            340.0,
+            58.0,
+            88.0
+          ],
+          "foot_axes": [
+            [
+              369.0,
+              90.5,
+              340.63132589366114
+            ],
+            [
+              471.0,
+              90.5,
+              340.63132589366114
+            ]
+          ]
+        },
+        {
+          "side": "Starboard",
+          "sign": -1,
+          "rear_axis": [
+            220.0,
+            -90.5,
+            95.0
+          ],
+          "front_axis": [
+            340.0,
+            -58.0,
+            88.0
+          ],
+          "foot_axes": [
+            [
+              369.0,
+              -90.5,
+              340.63132589366114
+            ],
+            [
+              471.0,
+              -90.5,
+              340.63132589366114
+            ]
+          ]
+        }
+      ],
+      "cotter": {
+        "straight_length_mm": 19.4,
+        "bend_arc_length_mm": 1.5707963267948966,
+        "tail_length_mm": 4.429203673205103,
+        "total_leg_centerline_mm": 25.4,
+        "tail_endpoints": [
+          [
+            0.0,
+            13.313639942279211,
+            -5.1908028995309685
+          ],
+          [
+            0.0,
+            13.313639942279211,
+            5.1908028995309685
+          ]
+        ],
+        "wire_radius_mm": 0.5856250000000001,
+        "under_eye_y_mm": -9.6,
+        "bend_start_y_mm": 9.8,
+        "exact_stock_volume_conserved": false,
+        "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+      },
+      "belt": {
+        "length": 1371.6,
+        "pump_pitch_radius": 88.99663095827005,
+        "drive_pitch_radius": 111.22163095827004,
+        "center_distance": 370.63132589366114,
+        "plane_x": 516.0,
+        "physical_drive_present": false,
+        "length_reference_unverified": true,
+        "radius_scenarios": [
+          {
+            "radial_shift": -6.0,
+            "center": 389.513211901977
+          },
+          {
+            "radial_shift": 0,
+            "center": 370.63132589366114
+          },
+          {
+            "radial_shift": 6.0,
+            "center": 351.7459586731443
+          }
+        ]
+      }
+    },
+    "radial_change_mm": 3.174999999999997,
+    "source_drum_diameter_mm": 234.95
+  },
+  "occurrences": [
+    {
+      "name": "ClutchStopBand_LiningRivet01",
+      "key": "lining_rivet",
+      "xyz": [
+        542.625,
+        97.23604987350663,
+        -68.29737352195127
+      ],
+      "rotation": [
+        -0.8873479482848167,
+        0.0,
+        0.0,
+        0.46110044315173493
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet02",
+      "key": "lining_rivet",
+      "xyz": [
+        570.625,
+        97.23604987350663,
+        -68.29737352195127
+      ],
+      "rotation": [
+        -0.8873479482848167,
+        0.0,
+        0.0,
+        0.46110044315173493
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet03",
+      "key": "lining_rivet",
+      "xyz": [
+        542.625,
+        118.76343923622174,
+        3.824411822001174
+      ],
+      "rotation": [
+        -0.6956345140537897,
+        0.0,
+        0.0,
+        0.7183958677895829
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet04",
+      "key": "lining_rivet",
+      "xyz": [
+        570.625,
+        118.76343923622174,
+        3.824411822001174
+      ],
+      "rotation": [
+        -0.6956345140537897,
+        0.0,
+        0.0,
+        0.7183958677895829
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet05",
+      "key": "lining_rivet",
+      "xyz": [
+        542.625,
+        92.64054031518435,
+        74.41176597226209
+      ],
+      "rotation": [
+        -0.4323020448423906,
+        0.0,
+        0.0,
+        0.9017288628102617
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet06",
+      "key": "lining_rivet",
+      "xyz": [
+        570.625,
+        92.64054031518435,
+        74.41176597226209
+      ],
+      "rotation": [
+        -0.4323020448423906,
+        0.0,
+        0.0,
+        0.9017288628102617
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet07",
+      "key": "lining_rivet",
+      "xyz": [
+        542.625,
+        29.348387277137434,
+        115.14361810031485
+      ],
+      "rotation": [
+        -0.12446192880474456,
+        0.0,
+        0.0,
+        0.9922243840373016
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet08",
+      "key": "lining_rivet",
+      "xyz": [
+        570.625,
+        29.348387277137434,
+        115.14361810031485
+      ],
+      "rotation": [
+        -0.12446192880474456,
+        0.0,
+        0.0,
+        0.9922243840373016
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet09",
+      "key": "lining_rivet",
+      "xyz": [
+        542.625,
+        -45.718930941477005,
+        109.67752722672249
+      ],
+      "rotation": [
+        0.1961921621762178,
+        0.0,
+        -0.0,
+        0.9805654672180847
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet10",
+      "key": "lining_rivet",
+      "xyz": [
+        570.625,
+        -45.718930941477005,
+        109.67752722672249
+      ],
+      "rotation": [
+        0.1961921621762178,
+        0.0,
+        -0.0,
+        0.9805654672180847
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet11",
+      "key": "lining_rivet",
+      "xyz": [
+        542.625,
+        -102.44289152918564,
+        60.20659930721465
+      ],
+      "rotation": [
+        0.49664729372963307,
+        0.0,
+        -0.0,
+        0.8679524558586326
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet12",
+      "key": "lining_rivet",
+      "xyz": [
+        570.625,
+        -102.44289152918564,
+        60.20659930721465
+      ],
+      "rotation": [
+        0.49664729372963307,
+        0.0,
+        -0.0,
+        0.8679524558586326
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet13",
+      "key": "lining_rivet",
+      "xyz": [
+        542.625,
+        -118.06469689656892,
+        -13.420431130232142
+      ],
+      "rotation": [
+        0.7459701148758934,
+        0.0,
+        -0.0,
+        0.6659794198862653
+      ]
+    },
+    {
+      "name": "ClutchStopBand_LiningRivet14",
+      "key": "lining_rivet",
+      "xyz": [
+        570.625,
+        -118.06469689656892,
+        -13.420431130232142
+      ],
+      "rotation": [
+        0.7459701148758934,
+        0.0,
+        -0.0,
+        0.6659794198862653
+      ]
+    },
+    {
+      "name": "ClutchStopBand_FoldRivet1",
+      "key": "fold_rivet",
+      "xyz": [
+        541.625,
+        -96.82125748898659,
+        -75.59560506075307
+      ],
+      "rotation": [
+        0.8987245013689995,
+        0.0,
+        -0.0,
+        0.4385137063297374
+      ]
+    },
+    {
+      "name": "ClutchStopBand_FoldRivet2",
+      "key": "fold_rivet",
+      "xyz": [
+        556.625,
+        -96.82125748898659,
+        -75.59560506075307
+      ],
+      "rotation": [
+        0.8987245013689995,
+        0.0,
+        -0.0,
+        0.4385137063297374
+      ]
+    },
+    {
+      "name": "ClutchStopBand_FoldRivet3",
+      "key": "fold_rivet",
+      "xyz": [
+        571.625,
+        -96.82125748898659,
+        -75.59560506075307
+      ],
+      "rotation": [
+        0.8987245013689995,
+        0.0,
+        -0.0,
+        0.4385137063297374
+      ]
+    },
+    {
+      "name": "ClutchStopBand_band",
+      "key": "band",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "name": "ClutchStopBand_lining",
+      "key": "lining",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "native_occurrences": 1681,
+  "new_ids": [
+    "ClutchStopBand_LiningRivet01",
+    "ClutchStopBand_LiningRivet02",
+    "ClutchStopBand_LiningRivet03",
+    "ClutchStopBand_LiningRivet04",
+    "ClutchStopBand_LiningRivet05",
+    "ClutchStopBand_LiningRivet06",
+    "ClutchStopBand_LiningRivet07",
+    "ClutchStopBand_LiningRivet08",
+    "ClutchStopBand_LiningRivet09",
+    "ClutchStopBand_LiningRivet10",
+    "ClutchStopBand_LiningRivet11",
+    "ClutchStopBand_LiningRivet12",
+    "ClutchStopBand_LiningRivet13",
+    "ClutchStopBand_LiningRivet14",
+    "ClutchStopBand_FoldRivet1",
+    "ClutchStopBand_FoldRivet2",
+    "ClutchStopBand_FoldRivet3",
+    "ClutchStopBand_band",
+    "ClutchStopBand_lining"
+  ],
+  "changed_ids": [
+    "ClutchDrive_drum",
+    "ClutchDrive_belt",
+    "AirPump_RearBearing",
+    "AirPump_RearBush",
+    "AirPump_RearBearingScrew1",
+    "AirPump_RearBearingScrew2",
+    "AirPump_RearBearingScrew3",
+    "AirPump_FrontBearing",
+    "AirPump_FrontBush",
+    "AirPump_FrontBearingScrew1",
+    "AirPump_FrontBearingScrew2",
+    "AirPump_FrontBearingScrew3",
+    "AirPump_Port1_cylinder",
+    "AirPump_Port1_check_nut",
+    "AirPump_Port1_displacement_plug",
+    "AirPump_Port1_piston",
+    "AirPump_Port1_spring",
+    "AirPump_Port1_screw1",
+    "AirPump_Port1_screw2",
+    "AirPump_Starboard1_cylinder",
+    "AirPump_Starboard1_check_nut",
+    "AirPump_Starboard1_displacement_plug",
+    "AirPump_Starboard1_piston",
+    "AirPump_Starboard1_spring",
+    "AirPump_Starboard1_screw1",
+    "AirPump_Starboard1_screw2",
+    "AirPump_Port2_cylinder",
+    "AirPump_Port2_check_nut",
+    "AirPump_Port2_displacement_plug",
+    "AirPump_Port2_piston",
+    "AirPump_Port2_spring",
+    "AirPump_Port2_screw1",
+    "AirPump_Port2_screw2",
+    "AirPump_Starboard2_cylinder",
+    "AirPump_Starboard2_check_nut",
+    "AirPump_Starboard2_displacement_plug",
+    "AirPump_Starboard2_piston",
+    "AirPump_Starboard2_spring",
+    "AirPump_Starboard2_screw1",
+    "AirPump_Starboard2_screw2",
+    "AirPump_Oil_50_plug",
+    "AirPump_Oil50_plug",
+    "AirPump_End_1_0_plug",
+    "AirPump_End_1_1_plug",
+    "AirPump_End1_0_plug",
+    "AirPump_End1_1_plug",
+    "AirPump_Drain_plug",
+    "AirPump_AirHoleCover",
+    "AirPump_base",
+    "AirPump_shaft",
+    "AirPump_pulley",
+    "AirPump_shaft_nut",
+    "AirPump_key",
+    "PumpMount_Port_Bracket",
+    "PumpMount_Port_MX98_Stud",
+    "PumpMount_Port_MX98_Nut",
+    "PumpMount_Port_MX98_Cotter",
+    "PumpMount_Port_MX99_Stud",
+    "PumpMount_Port_MX102_JamNut",
+    "PumpMount_Port_MX99_HalfNut",
+    "PumpMount_Port_MX99_LowerWasher",
+    "PumpMount_Port_MX99_UpperWasher",
+    "PumpMount_Port_MX99_SmallNut",
+    "PumpMount_Port_Base1_Bolt",
+    "PumpMount_Port_Base1_Washer",
+    "PumpMount_Port_Base1_Nut",
+    "PumpMount_Port_Base2_Bolt",
+    "PumpMount_Port_Base2_Washer",
+    "PumpMount_Port_Base2_Nut",
+    "PumpMount_Starboard_Bracket",
+    "PumpMount_Starboard_MX98_Stud",
+    "PumpMount_Starboard_MX98_Nut",
+    "PumpMount_Starboard_MX98_Cotter",
+    "PumpMount_Starboard_MX99_Stud",
+    "PumpMount_Starboard_MX102_JamNut",
+    "PumpMount_Starboard_MX99_HalfNut",
+    "PumpMount_Starboard_MX99_LowerWasher",
+    "PumpMount_Starboard_MX99_UpperWasher",
+    "PumpMount_Starboard_MX99_SmallNut",
+    "PumpMount_Starboard_Base1_Bolt",
+    "PumpMount_Starboard_Base1_Washer",
+    "PumpMount_Starboard_Base1_Nut",
+    "PumpMount_Starboard_Base2_Bolt",
+    "PumpMount_Starboard_Base2_Washer",
+    "PumpMount_Starboard_Base2_Nut"
+  ],
+  "affected_ids": [
+    "ClutchDrive_drum",
+    "ClutchDrive_belt",
+    "AirPump_RearBearing",
+    "AirPump_RearBush",
+    "AirPump_RearBearingScrew1",
+    "AirPump_RearBearingScrew2",
+    "AirPump_RearBearingScrew3",
+    "AirPump_FrontBearing",
+    "AirPump_FrontBush",
+    "AirPump_FrontBearingScrew1",
+    "AirPump_FrontBearingScrew2",
+    "AirPump_FrontBearingScrew3",
+    "AirPump_Port1_cylinder",
+    "AirPump_Port1_check_nut",
+    "AirPump_Port1_displacement_plug",
+    "AirPump_Port1_piston",
+    "AirPump_Port1_spring",
+    "AirPump_Port1_screw1",
+    "AirPump_Port1_screw2",
+    "AirPump_Starboard1_cylinder",
+    "AirPump_Starboard1_check_nut",
+    "AirPump_Starboard1_displacement_plug",
+    "AirPump_Starboard1_piston",
+    "AirPump_Starboard1_spring",
+    "AirPump_Starboard1_screw1",
+    "AirPump_Starboard1_screw2",
+    "AirPump_Port2_cylinder",
+    "AirPump_Port2_check_nut",
+    "AirPump_Port2_displacement_plug",
+    "AirPump_Port2_piston",
+    "AirPump_Port2_spring",
+    "AirPump_Port2_screw1",
+    "AirPump_Port2_screw2",
+    "AirPump_Starboard2_cylinder",
+    "AirPump_Starboard2_check_nut",
+    "AirPump_Starboard2_displacement_plug",
+    "AirPump_Starboard2_piston",
+    "AirPump_Starboard2_spring",
+    "AirPump_Starboard2_screw1",
+    "AirPump_Starboard2_screw2",
+    "AirPump_Oil_50_plug",
+    "AirPump_Oil50_plug",
+    "AirPump_End_1_0_plug",
+    "AirPump_End_1_1_plug",
+    "AirPump_End1_0_plug",
+    "AirPump_End1_1_plug",
+    "AirPump_Drain_plug",
+    "AirPump_AirHoleCover",
+    "AirPump_base",
+    "AirPump_shaft",
+    "AirPump_pulley",
+    "AirPump_shaft_nut",
+    "AirPump_key",
+    "PumpMount_Port_Bracket",
+    "PumpMount_Port_MX98_Stud",
+    "PumpMount_Port_MX98_Nut",
+    "PumpMount_Port_MX98_Cotter",
+    "PumpMount_Port_MX99_Stud",
+    "PumpMount_Port_MX102_JamNut",
+    "PumpMount_Port_MX99_HalfNut",
+    "PumpMount_Port_MX99_LowerWasher",
+    "PumpMount_Port_MX99_UpperWasher",
+    "PumpMount_Port_MX99_SmallNut",
+    "PumpMount_Port_Base1_Bolt",
+    "PumpMount_Port_Base1_Washer",
+    "PumpMount_Port_Base1_Nut",
+    "PumpMount_Port_Base2_Bolt",
+    "PumpMount_Port_Base2_Washer",
+    "PumpMount_Port_Base2_Nut",
+    "PumpMount_Starboard_Bracket",
+    "PumpMount_Starboard_MX98_Stud",
+    "PumpMount_Starboard_MX98_Nut",
+    "PumpMount_Starboard_MX98_Cotter",
+    "PumpMount_Starboard_MX99_Stud",
+    "PumpMount_Starboard_MX102_JamNut",
+    "PumpMount_Starboard_MX99_HalfNut",
+    "PumpMount_Starboard_MX99_LowerWasher",
+    "PumpMount_Starboard_MX99_UpperWasher",
+    "PumpMount_Starboard_MX99_SmallNut",
+    "PumpMount_Starboard_Base1_Bolt",
+    "PumpMount_Starboard_Base1_Washer",
+    "PumpMount_Starboard_Base1_Nut",
+    "PumpMount_Starboard_Base2_Bolt",
+    "PumpMount_Starboard_Base2_Washer",
+    "PumpMount_Starboard_Base2_Nut",
+    "ClutchStopBand_LiningRivet01",
+    "ClutchStopBand_LiningRivet02",
+    "ClutchStopBand_LiningRivet03",
+    "ClutchStopBand_LiningRivet04",
+    "ClutchStopBand_LiningRivet05",
+    "ClutchStopBand_LiningRivet06",
+    "ClutchStopBand_LiningRivet07",
+    "ClutchStopBand_LiningRivet08",
+    "ClutchStopBand_LiningRivet09",
+    "ClutchStopBand_LiningRivet10",
+    "ClutchStopBand_LiningRivet11",
+    "ClutchStopBand_LiningRivet12",
+    "ClutchStopBand_LiningRivet13",
+    "ClutchStopBand_LiningRivet14",
+    "ClutchStopBand_FoldRivet1",
+    "ClutchStopBand_FoldRivet2",
+    "ClutchStopBand_FoldRivet3",
+    "ClutchStopBand_band",
+    "ClutchStopBand_lining"
+  ],
+  "unchanged_parent_occurrences": 1577,
+  "pump_height_change_mm": -5.170901515850005,
+  "standard_assembly_modified": false,
+  "complete_brake": false,
+  "complete_clutch": false,
+  "complete_tank": false,
+  "headless": true,
+  "freecad": [
+    "1",
+    "1",
+    "1",
+    "44227 +647 (Git)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "tag: 1.1.1",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
+  "occ": "7.8.0",
+  "artifact_hashes": {},
+  "standard_native_hashes": {
+    "native/MarkVIII.FCStd": "52aea1af979efc27fbfbce003e976e8a02cfa2da3e0ca0d25a631d7c5e7d48ac",
+    "native/library/CoolingVentilation.FCStd": "810553a07fb9610c11dd3cd2f15e1eec0b7712e16f1d0a4245d70922532f73c4",
+    "native/library/CrewControlsAndEquipment.FCStd": "990e476bcdd088d58bbe76028a782667301a6f73e9c5a8065767bfd4e3860bae",
+    "native/library/Drivetrain.FCStd": "694c20a3995baafb0698f8c07d61e3e6b37bf6a0b0214362fe75bf0a80c30e25",
+    "native/library/ElectricalInstruments.FCStd": "7ca38479c37f7a169b2ab52a4ea90afd80cc7cf97d45c52df380abbd91dc393d",
+    "native/library/FuelPressure.FCStd": "5d5e8ced3b3b1bc380c9822e4b0d210520da081fa119ab16bd58523fce93dc6a",
+    "native/library/HullStructure.FCStd": "a6b78305dddcfa74904b07ea9dad8356ba168d774499599c854074c8aca778fc",
+    "native/library/Powerplant.FCStd": "234c3582a110f607f98977a034638b3f65391b6c6c5cd284a9570c74629752b7",
+    "native/library/RunningGear.FCStd": "52587107dabf028783ad6bd087ce1f8e2bf3aacea7d641ab8bfee07101fddf44",
+    "native/library/Sponsons.FCStd": "cca4a76fd623303caeb7d6b2fa277f6bcc251170303379ce6f07a432add20162",
+    "native/subsystems/ArmamentRepresentation.FCStd": "da6a1fd3e488982cff35e88bbce264f85a448c8349177ac9550939dc96f0b553",
+    "native/subsystems/CoolingVentilation.FCStd": "bb0996bed71ec8269a68f7445da53fb86789a7cb7777c5972cff74fd47811e47",
+    "native/subsystems/CrewControlsAndEquipment.FCStd": "5831b330452e69ba2dc0ae4b2c9757b2fbf174d988ce44126e64a7adec7e4fe5",
+    "native/subsystems/Drivetrain.FCStd": "222888c3c6d72363524415dfeec66ce89f9144cf973cbb077dab245d2fc0c4bf",
+    "native/subsystems/ElectricalInstruments.FCStd": "5f423b486223168139193422992d379bc291e73ac992a372bdcef75069051f0c",
+    "native/subsystems/FuelPressure.FCStd": "45f9cb47c26ef7e007ccb0451554cf33321bf63bc85d26e2edda9f00764b7e7b",
+    "native/subsystems/HullStructure.FCStd": "91bb04cc51d10a143ffeb982b3bec08e0e28b5942da452601f738d2c2528f56c",
+    "native/subsystems/Powerplant.FCStd": "c22f9480fc5a60028e6af664fc5ebb2e07ca292694e89d29eacd0b0a18ad720d",
+    "native/subsystems/RunningGear.FCStd": "5b225c9b28cce15f4c331e1d076a39a7575319831d95cf92d8db5cbc0672418e",
+    "native/subsystems/Sponsons.FCStd": "79c852869c29529dd8de89a257e7e127ff3d7d2255e1a8b186fc044b292f38bb"
+  },
+  "material_pairs": 111,
+  "material_passed": true,
+  "overlaps": [],
+  "standard_context_checked": false,
+  "variant_parent_native_sha256": "c775ebfcb77d68cbb05e87cc96a68522dc0289b3c36aecd119284cbdb2c2e3e3",
+  "variant_changes": {
+    "steel_stock": 2.75,
+    "released_gap": 0.35,
+    "eye_inside_radius": 6.0
+  },
+  "material_scope": "19 changed band pieces against nominal candidate neighbors; standard-tank variation check still pending"
+}

@@ -223,7 +223,16 @@ two parameter trials and a fresh rebuild pass. Five views were inspected and
 three new progression snapshots are saved. The [packet](packets/I03-clutch-retention.md)
 records these checks and the numerical volume diagnostic.
 
-The latest [drum/flywheel checkpoint](experiments/drive_chains/clutch_drum_build/TransmissionWithClutchDrum.FCStd)
+The [clutch-stop band development candidate](experiments/drive_chains/clutch_stop_band_build/TransmissionWithClutchStopBand.FCStd)
+contains **1,681 physical components**, including the band, lining and seventeen
+rivets. The printed stop-drum diameter now controls the coupled belt/pump update.
+Geometry, STEP and two parameter trials pass, but the anchor and operating
+linkage remain missing. This candidate is unqualified; its
+[packet](packets/I03-clutch-stop-brake.md) records the source-envelope questions
+to resolve before mounting those parts. Three new progression views bring the
+total to 102. Standard tank011 remains unchanged.
+
+The latest qualified [drum/flywheel checkpoint](experiments/drive_chains/clutch_drum_build/TransmissionWithClutchDrum.FCStd)
 contains **1,662 physical components**. It adds the outer drum, flywheel, six
 drilled screws and their 48in wire. The existing 30in plunger wire now routes
 inward to clear the flywheel; the other 1,652 parent occurrences remain unchanged.

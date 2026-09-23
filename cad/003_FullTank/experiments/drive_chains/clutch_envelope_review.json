@@ -1,0 +1,154 @@
+{
+  "status": "open_source_and_interface_review_before_throwout_brackets",
+  "source_record": {
+    "record_id": "HB:spec:113",
+    "source_id": "HB",
+    "printed_page": "115",
+    "row_no": 113,
+    "record_type": "specification",
+    "source_path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/tables_batch06.json",
+    "description": "Length of clutch unit, complete: 19.875 inches.",
+    "raw": {
+      "feature": "Length of clutch unit, complete",
+      "page": "115",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/tables_batch06.json",
+      "raw_value": "19.875 inches.",
+      "source": "HB"
+    }
+  },
+  "source_assets": {
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII058.jpg": "b66a255fd174f93564f1a8eb0fdd8f1b0d58c1f61f91377d17c706f7848c8525",
+    "cad/003_FullTank/experiments/drive_chains/clutch_stop_brake_sources/p277_foldout_original.jpg": "cee953e962ac47ce64f4b86b08a23a71a995df26ac63f0b63cd8398a390070fe",
+    "cad/003_FullTank/data/calibrations.json": "fb555b36854a6526575760b723d605d6eb10842b850c413dd8b2234f93f562b7",
+    "cad/003_FullTank/data/parameters.json": "846d19fc3f2f0ac129224bc024039ae75fa3b4c36226872047aadbc798b6276b"
+  },
+  "native_checkpoint": "c38f129f749d286fd6d8a05eb0015fd4d1c6101cb46db3655d43ec0b0ffdbd05",
+  "dimensional_scope": "Uninterpreted source dimension: do not choose endpoints solely to make the number fit.",
+  "alternative_axial_spans": [
+    {
+      "rear_datum": "M858 rear mounting face",
+      "rear_x_mm": 490,
+      "front_datum": "current flywheel front",
+      "front_x_mm": 1076.5751884885083,
+      "span_mm": 586.5751884885083,
+      "printed_mm": 504.825,
+      "residual_mm": 81.75018848850829
+    },
+    {
+      "rear_datum": "M855 front edge",
+      "rear_x_mm": 583,
+      "front_datum": "current flywheel front",
+      "front_x_mm": 1076.5751884885083,
+      "span_mm": 493.5751884885083,
+      "printed_mm": 504.825,
+      "residual_mm": -11.249811511491714
+    },
+    {
+      "rear_datum": "external spring clamp rear",
+      "rear_x_mm": 587,
+      "front_datum": "current flywheel front",
+      "front_x_mm": 1076.5751884885083,
+      "span_mm": 489.5751884885083,
+      "printed_mm": 504.825,
+      "residual_mm": -15.249811511491714
+    }
+  ],
+  "source_registration": {
+    "method": "Map original11072x5456 pixels to existing2048x1009 source, subtract crop[45,65], then retain existing snl_2 conditional independent scales.",
+    "calibration_id": "snl_2",
+    "scale_x_mm_per_restored_pixel": 6.0269942196531785,
+    "scale_z_mm_per_restored_pixel": 5.928273244781783,
+    "original_pick_uncertainty_pixels": 16.3,
+    "systematic_scale_and_configuration_uncertainty": "Additional and unquantified; inherited envelope transfer is provisional.",
+    "points": {
+      "throwout_shaft": {
+        "original_pixels": [
+          7241,
+          2998
+        ],
+        "existing_restored_pixels": [
+          1294.3757225433526,
+          489.4321847507331
+        ],
+        "conditional_world_xz_mm": [
+          2535.1000888770086,
+          625.8348546522953
+        ],
+        "relative_to_current_transmission_xz_mm": [
+          709.8697260942554,
+          -223.39865578347076
+        ]
+      },
+      "clutch_axis_at_shaft": {
+        "original_pixels": [
+          7241,
+          2781
+        ],
+        "existing_restored_pixels": [
+          1294.3757225433526,
+          449.30150293255133
+        ],
+        "conditional_world_xz_mm": [
+          2535.1000888770086,
+          863.7405019698731
+        ],
+        "relative_to_current_transmission_xz_mm": [
+          709.8697260942554,
+          14.506991534106987
+        ]
+      },
+      "stop_drum_axis": {
+        "original_pixels": [
+          7455,
+          2787
+        ],
+        "existing_restored_pixels": [
+          1333.9595375722542,
+          450.4111070381232
+        ],
+        "conditional_world_xz_mm": [
+          2296.5286645059978,
+          857.1624656385113
+        ],
+        "relative_to_current_transmission_xz_mm": [
+          471.29830172324455,
+          7.928955202745215
+        ]
+      },
+      "flywheel_axis": {
+        "original_pixels": [
+          7015,
+          2770
+        ],
+        "existing_restored_pixels": [
+          1252.5722543352601,
+          447.2672287390029
+        ],
+        "conditional_world_xz_mm": [
+          2787.0493501286373,
+          875.8002352440361
+        ],
+        "relative_to_current_transmission_xz_mm": [
+          961.8189873458841,
+          26.56672480827001
+        ]
+      }
+    },
+    "observed_local_axis_to_throwout_offset_mm": -237.90564731757775
+  },
+  "findings": [
+    "The mapped transverse-shaft feature lies about238mm below the drawn clutch axis. The earlier165mm offset is not supported. The quick250-280mm visual estimate also changes when the retained whole-vehicle calibration is used.",
+    "The absolute mapped throwout station is approximately X710,Z-223 in the current transmission frame. Its X is74mm aft of the current collar-flange gap center783.45. These values expose a source/model proportion issue; they are not adopted mounting datums.",
+    "The mapped drawn main shaft differs vertically from the current shaft by8-27mm across the clutch. Original line slope, distortion and inherited registration must be distinguished from actual component placement.",
+    "Taking complete-unit endpoints as M858 rear face through flywheel front gives586.575mm,81.750mm longer than504.825mm printed. Excluding the stop cup yields other plausible but unproven spans. The survey explicitly retained this dimension as uninterpreted.",
+    "Source identification, endpoint scope and axial budget must be resolved before final anchor, throwout, engine and standard-tank integration. Do not silently shrink source-sized shafts/bearings or alter the image calibration to hide the discrepancy."
+  ],
+  "next_actions": [
+    "Inspect whole HB71/111 and SNL21; identify candidate complete-unit endpoints and configuration differences.",
+    "Measure actual saved axial interfaces and compare the source-sized cardan shaft, clutch bearings, spring seats, drum/cone and flywheel dish as one axial budget.",
+    "Use the resolved collar gap and real SKF1207 bearing envelope to establish the transverse throwout shaft and bracket datums; document retained offsets from the drawing.",
+    "Construct M4160 and six anchor rivets only after those receiving interfaces are established. Keep the band candidate and accepted parent reversible."
+  ],
+  "complete_clutch": false,
+  "historical_fit_qualified": false
+}

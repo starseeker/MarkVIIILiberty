@@ -1,0 +1,68 @@
+{
+  "status": "Development controls: band form estimated; anchor and operating linkage still required",
+  "controls": {
+    "drum_diameter": 234.95,
+    "released_gap": 0.5,
+    "lining_width": 50.8,
+    "lining_stock": 4.7625,
+    "lining_cut_length": 704.85,
+    "band_center_x": 556.625,
+    "steel_stock": 3.175,
+    "opening_clock_deg": 270.0,
+    "eye_inside_radius": 6.5,
+    "eye_slot_width": 18.0,
+    "return_transition_deg": 30.0,
+    "return_lap_deg": 20.0,
+    "return_profile_samples": 61,
+    "lining_rivet_diameter": 4.7625,
+    "lining_rivet_blank_length": 12.7,
+    "lining_rivet_axial_offsets": [-14.0, 14.0],
+    "lining_rivet_stations": 7,
+    "lining_rivet_start_margin": 90.0,
+    "lining_rivet_end_margin": 150.0,
+    "lining_rivet_head_radius": 4.7625,
+    "lining_rivet_recess": 1.0,
+    "lining_rivet_tail_radius": 4.7625,
+    "fold_rivet_diameter": 6.35,
+    "fold_rivet_blank_length": 19.05,
+    "fold_rivet_axial_offsets": [-15.0, 0.0, 15.0],
+    "fold_rivet_head_radius": 5.55,
+    "fold_rivet_head_height": 3.5,
+    "fold_rivet_tail_radius": 6.8,
+    "spotface_depth": 0.25,
+    "rivet_radial_gap": 0.025,
+    "head_seat_radial_gap": 0.05
+  },
+  "evidence_and_bounds": [
+    {
+      "parameters": ["drum_diameter"],
+      "basis": "HB printed115, original MarkVIII058.jpg: clutch-stop drum diameter9.25in",
+      "interpretation": "Replaces previous9in estimate. Both pulley and brake lands change; uniform wall and groove profile remain inferred. Propagate through the existing54in belt and pump mounts."
+    },
+    {
+      "parameters": ["lining_width", "lining_stock", "lining_cut_length"],
+      "basis": "SNL119:018: one27-3/4in piece of2in-wide,3/16in-thick lining forM4158; namedM4159 record119:022 is the same piece",
+      "interpretation": "Apply printed flat length to the installed neutral radius. Compression/stretch is not established; circular released form is an assumption, not a recovered developed pattern."
+    },
+    {
+      "parameters": ["lining_rivet_diameter", "lining_rivet_blank_length", "fold_rivet_diameter", "fold_rivet_blank_length"],
+      "basis": "SNL8:024,026: three1/4x3/4in button rivets and fourteen3/16x1/2in copper countersunk rivets",
+      "interpretation": "Short button rivets are assigned to an integral returned pin eye as an explicit inference. Six1/4x1in anchor rivets remain required withM4160. Button length is taken under the factory head; countersunk length includes its head. Installed tails conserve the selected blank material. Historical forming practice is unverified."
+    },
+    {
+      "parameters": ["steel_stock", "eye_inside_radius", "eye_slot_width", "return_transition_deg", "return_lap_deg", "return_profile_samples"],
+      "basis": "Estimated formed strip and integral clevis eye; no resolved part drawing",
+      "bounds": "Steel2.5-4mm; eye radius5-8mm; slot16-22mm; transition25-40deg; lap16-24deg. Return transition uses retained offset spline profiles fitted to an explicit smooth radius law; fitting tolerance is not historical accuracy."
+    },
+    {
+      "parameters": ["opening_clock_deg", "band_center_x", "released_gap"],
+      "basis": "Axial center is midpoint of existing smooth drum land524.25..589mm. Bottom opening and0.5mm release allowance are estimates",
+      "bounds": "Axial center +/-5mm while fully supported by drum land. Gap0.3-0.8mm. Opening clock is unresolved and must be revisited with anchor/throwout linkage; no pose or complete-installation claim."
+    },
+    {
+      "parameters": ["lining_rivet_axial_offsets", "lining_rivet_stations", "lining_rivet_start_margin", "lining_rivet_end_margin", "lining_rivet_head_radius", "lining_rivet_recess", "lining_rivet_tail_radius", "fold_rivet_axial_offsets", "fold_rivet_head_radius", "fold_rivet_head_height", "fold_rivet_tail_radius", "spotface_depth", "rivet_radial_gap", "head_seat_radial_gap"],
+      "basis": "Estimated rivet layout, head profiles, formed tails and finishing details",
+      "bounds": "Two rows of seven preserve the printed14 total. Fold three across width.0.025mm shank and0.05mm head-seat radial allowances are physical gaps, separate from kernel tolerance. Recesses preserve positive lining stock above metal heads."
+    }
+  ]
+}

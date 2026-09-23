@@ -11,6 +11,35 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — clutch-stop band development
+
+The [development candidate](experiments/drive_chains/clutch_stop_band_build/TransmissionWithClutchStopBand.FCStd)
+contains **1,681 physical occurrences**. It adds M4158 band, M4159 lining,
+fourteen copper lining rivets and three button rivets at an inferred returned
+pin eye. HB115's 9.25in stop-drum diameter replaces the former 9in estimate;
+the belt, pump and supports update coherently. There are 85 affected parent
+occurrences and 1,577 preserved ones.
+
+All 119 independent checks, 472 affected interference pairs and 23 definition/
+installed STEP comparisons pass. Two stock/gap/eye-size trials each pass the
+119 independent checks and 111 local material pairs. These are development
+checks; broader qualification and a fresh reproduction remain required.
+Five native views were inspected. Three new progression images preserve all
+99 previous images, bringing the total to 102.
+
+The sharper original SNL2 drawing improves the throwout-shaft reading and exposes
+an unresolved comparison with the inherited clutch proportions. The
+[packet](packets/I03-clutch-stop-brake.md) and
+[envelope review](experiments/drive_chains/clutch_envelope_review.json) retain
+HB115's uninterpreted 19.875in complete-unit dimension and alternative endpoint
+spans. Resolve the axial budget and shaft/bearing receivers before constructing
+the anchor attachment. The current candidate is **not qualified or integrated**;
+M4160, six anchor rivets and the full brake/throwout linkage remain required.
+
+The qualified drum/flywheel checkpoint remains the accepted baseline. Standard
+tank011 and its transparent-hull view are unchanged. Engine/crankshaft, remaining
+interiors, complete coverage, integration and later poses remain full-goal work.
+
 ## 23 September 2026 — outer clutch drum and flywheel
 
 The [latest isolated native assembly](experiments/drive_chains/clutch_drum_build/TransmissionWithClutchDrum.FCStd)

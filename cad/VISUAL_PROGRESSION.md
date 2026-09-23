@@ -499,3 +499,23 @@ preserved, bringing the progression to 99 images.
 | [axial section](intermediate_snapshot_section_clutch_drum_001.png) | `fd2f38afdaed6ab6c528459b7622167f536505b47c2083e11a8370e1e28edfd4` |
 | [flywheel detail](intermediate_snapshot_detail_flywheel_001.png) | `a20f624175a25fc30a85da6a99af3c78481d20261ab2ef3823b3f0a6f6dabc1f` |
 | [two wire routes](intermediate_snapshot_detail_clutch_wires_001.png) | `8cdb75ff84a36d10cf17e97dbcb3d0cf52cb6705a72ac250fbeb9ab93918cfc0` |
+
+
+## Clutch-stop band development — 23 September 2026
+
+The isolated development candidate has **1,681 physical components**. It adds
+M4158 band, M4159 lining, fourteen copper lining rivets and three button rivets
+at an inferred returned pin eye. The source-sized stop drum, belt and pump mounts
+update together. This is an unfinished brake: anchor, six anchor rivets and the
+operating linkage remain required. The clutch axial envelope and throwout-shaft
+placement are under source review before mounting those parts.
+
+Five native views were inspected. All 99 earlier images remain unchanged; these
+three additions bring the progression to 102. Standard tank011 and its
+transparent-hull companion remain unchanged.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_clutch_stop_band_001.png) | `dadf0b8a5ae68a35c66992c05cb9e813a6e3f22a863b900b2783275e0115c40d` |
+| [band and lining detail](intermediate_snapshot_detail_clutch_stop_band_001.png) | `a0c7856264fc934f1bccc58af538ebea2b5ef0b39b7529ede2f65111742ee710` |
+| [returned-eye section](intermediate_snapshot_section_clutch_stop_band_001.png) | `efc30fe72de5ea86c1e7bd332b7d559f6049c2639467e8f1d0f34ad79cfe9e5e` |
