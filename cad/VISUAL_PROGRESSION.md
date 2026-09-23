@@ -754,3 +754,20 @@ Two images bring the progression to 135; all 133 previous images are preserved.
 | --- | --- |
 | [intermediate_snapshot_iso_engine_water_pump_study_001](intermediate_snapshot_iso_engine_water_pump_study_001.png) | `b63c5f7ee305d1e7fe79c5996e9ac6d5539867bdc4735bdf67af0b74c9210929` |
 | [intermediate_snapshot_detail_engine_water_pump_study_001](intermediate_snapshot_detail_engine_water_pump_study_001.png) | `2dde934794363f710bd29fc86e4978f1495827384f91d9f8d301c0bc075fa1bc` |
+
+
+## Water-pump mounting revision — 23 September 2026
+
+Four complete source-length mounting stud sets, integral case pads, tangential
+outlets and a revised flat drain seat extend the development assembly to 2,246
+occurrences. All 38 native checks and 472 material comparisons pass, including
+standard context. STEP, parameter-trial and reproduction qualification are still
+in progress at this snapshot stage. These are development views; standard tank
+011 remains unchanged. Two new images bring the progression to 137, preserving
+all 135 previous images. The case section deliberately removes some receiving
+material for visibility while retaining complete fasteners.
+
+| View | SHA-256 |
+| --- | --- |
+| [isometric.png](intermediate_snapshot_iso_engine_water_pump_mounting_001.png) | `b01a8ccf74b95c0e2e40e0c95a3533b5e6c453800fdd1ffd302af86a9ec4dac9` |
+| [installed.png](intermediate_snapshot_detail_engine_water_pump_mounting_001.png) | `b19c224c84444fc534254980d929986f3fc0afe94334ccdb718dd2cafe085b16` |

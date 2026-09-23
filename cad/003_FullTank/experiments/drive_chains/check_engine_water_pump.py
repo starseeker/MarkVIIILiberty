@@ -11,19 +11,21 @@ HERE=Path(__file__).resolve().parent;STAGE=HERE.parents[1];ROOT=STAGE.parents[1]
 sys.path[:0]=[str(HERE),str(STAGE)]
 from lib import runtime
 from lib.evidence import read,write,sha
-p=argparse.ArgumentParser();p.add_argument('--candidate',type=Path,default=HERE/'engine_water_pump_study')
+p=argparse.ArgumentParser();p.add_argument('--candidate',type=Path,default=HERE/'engine_water_pump_mounting_study')
+p.add_argument('--standard-context',action='store_true')
 p.add_argument('--preservation',action='store_true');p.add_argument('--worker',action='store_true')
 a=p.parse_args();out=a.candidate.resolve()
 if not a.worker:
     command=[sys.executable,__file__,'--candidate',str(out),'--worker']
     if a.preservation:command.append('--preservation')
+    if a.standard_context:command.append('--standard-context')
     with (out/'independent_check.log').open('w') as log:
         sys.exit(subprocess.run(command,env=runtime.environment(out/'check_runtime'),stdout=log,stderr=subprocess.STDOUT).returncode)
 try:
     import FreeCAD as App
     import Part
     from lib.cad_build import leaves
-    from lib.worker import placement_errors
+    from lib.worker import placement_errors,check_build
     V=App.Vector;X,Y,Z=V(1,0,0),V(0,1,0),V(0,0,1)
     r=read(out/'report.json');native=out/r['native_file'];assert sha(native)==r['native_sha256']
     doc=App.openDocument(str(native));items=leaves(doc.Root);byid={i['id']:i for i in items};checks=[]
@@ -74,16 +76,64 @@ try:
     ck('inlet end wall remains continuous around full circumference',all(cover.isInside(
         V(endx+wall_radius*math.cos(i*math.pi/32),wall_radius*math.sin(i*math.pi/32),wall_z),1e-7,False) for i in range(64)))
     for sign in [-1,1]:
-        probe=Part.makeCylinder(5,c['outlet_tip_y']-35,V(c['scroll_center_x'],sign*35,sign*c['outlet_offset_z']),Y*sign)
+        rotation=App.Rotation(X,c['outlet_clock_deg'])
+        start=V(c['scroll_center_x'],0,0)+rotation.multVec(V(0,sign*c['outlet_start_y'],sign*c['outlet_offset_z']))
+        probe=Part.makeCylinder(5,c['outlet_tip_y']-c['outlet_start_y'],start,rotation.multVec(Y*sign))
         ck('outlet open '+str(sign),abs(body.common(probe).Volume)<1e-5)
     ck('eight source stud sets',all(len([row for row in r['occurrences'] if row['key']==key_])==8 for key_ in ['cover_stud','cover_nut','cover_washer','cover_cotter']))
     stud=doc.getObject(r['definitions']['cover_stud']).Shape
     ck('stud printed length 1-3/16 inch',abs(stud.BoundBox.XLength-30.1625)<1e-6)
+    mounting=r['datums']['mounting'];case=local('EngineCase_lower');face=mounting['case_face_x']
+    ck('revised lower case is one valid solid',case.isValid() and len(case.Solids)==1)
+    ck('four source mounting stud sets',all(sum(row['key']==key for row in r['occurrences'])==4 for key in ['mount_stud','mount_nut','mount_washer','mount_cotter']))
+    stud=doc.getObject(r['definitions']['mount_stud']).Shape
+    ck('mounting studs retain printed diameter and length',abs(stud.BoundBox.XLength-(1+31/32)*25.4)<1e-6 and any(abs(s.Radius-3/8*25.4/2)<1e-6 for s in cylinders(stud)))
+    mount_details=[];tool_checks=[];support=[];washer_seats=[]
+    for i in range(1,5):
+        stud,washer,nut,pin=[part(k+str(i)) for k in ['MountStud','MountWasher','MountNut','MountCotter']]
+        bb=stud.BoundBox;y=(bb.YMin+bb.YMax)/2;z=(bb.ZMin+bb.ZMax)/2
+        start,end=bb.XMin,bb.XMax;thread_start=end-5/8*25.4
+        mount_details.append(dict(index=i,inner_thread_end=start+21/32*25.4,case_face=face,
+            nut_start=nut.BoundBox.XMin,nut_end=nut.BoundBox.XMax,outer_thread_start=thread_start,stud_end=end,
+            passed=abs(start+21/32*25.4-face)<1e-6 and nut.BoundBox.XMin>=thread_start-1e-6 and nut.BoundBox.XMax<=end+1e-6))
+        tool=Part.makeCylinder(c['mount_tool_radius'],c['mount_tool_depth'],V(nut.BoundBox.XMin,y,z),X)
+        tool_checks.append(dict(index=i,overlap_mm3=abs(tool.common(Part.makeCompound([body,cover,retainer,case,part('DrainPlug'),part('DrainGasket'),local('EngineLowerDrive_HousingRetainingScrew')])).Volume)))
+        for angle in range(0,360,30):
+            t=math.radians(angle);support.append(case.isInside(V(face-8,y+7*math.cos(t),z+7*math.sin(t)),1e-7,False))
+        support.append(case.isInside(V(start-.75,y,z),1e-7,False))
+        washer_seats.append(washer.distToShape(body)[0]<1e-5 and washer.distToShape(nut)[0]<1e-5)
+    ck('source thread spans contain full nut engagement',all(t['passed'] for t in mount_details),mount_details)
+    ck('all mounting washers bear against body and nuts',all(washer_seats))
+    ck('all blind case receivers have surrounding material and bottom walls',all(support))
+    ck('estimated straight socket envelopes clear castings and adjacent fittings',all(t['overlap_mm3']<1e-5 for t in tool_checks),tool_checks)
+    cover_support=[]
+    for i in range(1,9):
+        b=part('CoverStud'+str(i)).BoundBox;y=(b.YMin+b.YMax)/2;z=(b.ZMin+b.ZMax)/2
+        cover_support.append(body.isInside(V(b.XMin-.75,y,z),1e-7,False))
+        for angle in range(0,360,30):
+            t=math.radians(angle);cover_support.append(body.isInside(V(b.XMin+2,y+4.5*math.cos(t),z+4.5*math.sin(t)),1e-7,False))
+    ck('eight blind cover receivers retain wall and bottom material',all(cover_support))
+    gasket=part('DrainGasket');plug=part('DrainPlug');seat=gasket.BoundBox.ZMax
+    drain_support=[]
+    for i in range(32):
+        t=i*math.pi/16;rad=9.5
+        drain_support.append(body.isInside(V(c['scroll_center_x']+rad*math.cos(t),rad*math.sin(t),seat+.2),1e-7,False))
+    ck('drain gasket has a complete flat casting seat',all(drain_support) and gasket.distToShape(body)[0]<1e-5 and gasket.distToShape(plug)[0]<1e-5)
+    # Preserve full outlet wall circumference and passage near each hose end.
+    for sign in [-1,1]:
+        y=sign*(c['outlet_tip_y']-.2);z=sign*c['outlet_offset_z'];rad=(c['outlet_inner_radius']+c['outlet_outer_radius'])/2
+        rotation=App.Rotation(X,c['outlet_clock_deg'])
+        ck('outlet end wall continuous '+str(sign),all(body.isInside(V(c['scroll_center_x'],0,0)+rotation.multVec(V(rad*math.cos(i*math.pi/32),y,z+rad*math.sin(i*math.pi/32))),1e-7,False) for i in range(64)))
     # Actual installed material against all development context, without exclusions.
-    boxes={n:i['shape'].BoundBox for n,i in byid.items()};pairs=[];seen=set()
+    candidates=dict(byid)
+    if a.standard_context:
+        standard=check_build(STAGE/'build');tank=App.openDocument(standard['build']['top_document'])
+        for item in leaves(tank.Root):
+            if item['representation']!='layout' and item['id'] not in byid:candidates['Standard_'+item['id']]=item
+    boxes={n:i['shape'].BoundBox for n,i in candidates.items()};pairs=[];seen=set()
     def intersects(a,b):return all(getattr(a,k+'Min')<=getattr(b,k+'Max')+1e-7 and getattr(b,k+'Min')<=getattr(a,k+'Max')+1e-7 for k in ['X','Y','Z'])
-    for n in r['new_ids']:
-        for other,row in byid.items():
+    for n in r['new_ids']+r['changed_ids']:
+        for other,row in candidates.items():
             key_=tuple(sorted([n,other]))
             if n==other or key_ in seen or not intersects(boxes[n],boxes[other]):continue
             seen.add(key_);volume=abs(byid[n]['shape'].common(row['shape']).Volume)
@@ -121,16 +171,22 @@ try:
         for n,item in old.items():
             now=byid[n];dt,angle=placement_errors(item['shape'].Placement,now['shape'].Placement)
             if dt>=1e-6 or angle>=1e-8:failures.append(n+' frame')
+            if n in r['changed_ids']:continue
             target,dest=item['target'],now['target']
             if target.Name in compared:continue
             compared.add(target.Name)
             if previous.get(target.Name) and previous.get(target.Name)==current.get(dest.Name):continue
             fallback.append(target.Name);mv,av=abs(target.Shape.cut(dest.Shape).Volume),abs(dest.Shape.cut(target.Shape).Volume)
             if max(mv,av)>=1e-5:failures.append(dict(name=n,missing=mv,added=av))
-        ck('all2170 parent materials and frames preserved',len(old)==2170 and not failures,dict(fallback=fallback,failures=failures))
+        ck('2169 parent materials and all2170frames preserved',len(old)==2170 and not failures,dict(fallback=fallback,failures=failures))
+        before=old['EngineCase_lower']['shape'].copy();before.Placement=inverse.multiply(before.Placement)
+        allowed=Part.makeCylinder(100,24,V(101,0,0),X)
+        missing,added=before.cut(case),case.cut(before)
+        differences=dict(removed_mm3=abs(missing.Volume),added_mm3=abs(added.Volume),removed_outside_mm3=0. if not missing.Solids else abs(missing.cut(allowed).Volume),added_outside_mm3=0. if not added.Solids else abs(added.cut(allowed).Volume))
+        ck('case material preserved outside fixed mounting region',differences['removed_outside_mm3']<1e-5 and differences['added_outside_mm3']<1e-5,differences)
     result=dict(passed=all(t['passed'] for t in checks),checks=checks,material_pairs=pairs,
         native_sha256=sha(native),checker_sha256=sha(Path(__file__)),parent_material_checked=a.preservation,
-        standard_context_checked=False,case_mounting_qualified=False,historical_dimensions_qualified=False)
+        standard_context_checked=a.standard_context,case_mounting_qualified=False,historical_dimensions_qualified=False)
     write(out/'independent_checks.json',result)
     assert result['passed'],'Saved-pump checks failed; inspect receipts'
 finally:

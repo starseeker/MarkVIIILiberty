@@ -1,0 +1,254 @@
+[
+  {
+    "stage": 1,
+    "label": "body=outer.fuse(cyl(c['chamber_radius']+wall,rear,front))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 1.0000036348042649e-07
+  },
+  {
+    "stage": 2,
+    "label": "body=body.fuse(Part.makeCylinder(c['outlet_outer_radius'],length,start,direction))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 1.0000076227029991e-07
+  },
+  {
+    "stage": 3,
+    "label": "body=body.fuse(Part.makeCylinder(c['outlet_outer_radius']+c['hose_bead_height'],c['hose_bead_width'],start+direction*distance,direction))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 1.0000076227029991e-07
+  },
+  {
+    "stage": 4,
+    "label": "body=body.fuse(Part.makeCylinder(c['outlet_outer_radius']+c['hose_bead_height'],c['hose_bead_width'],start+direction*distance,direction))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 1.0000076227029991e-07
+  },
+  {
+    "stage": 5,
+    "label": "body=body.fuse(Part.makeCylinder(c['outlet_outer_radius']+c['hose_bead_height'],c['hose_bead_width'],start+direction*distance,direction))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 1.0000076227029991e-07
+  },
+  {
+    "stage": 6,
+    "label": "body=body.fuse(Part.makeCylinder(c['outlet_outer_radius'],length,start,direction))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 1.0000076227029991e-07
+  },
+  {
+    "stage": 7,
+    "label": "body=body.fuse(Part.makeCylinder(c['outlet_outer_radius']+c['hose_bead_height'],c['hose_bead_width'],start+direction*distance,direction))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 1.0000076227029991e-07
+  },
+  {
+    "stage": 8,
+    "label": "body=body.fuse(Part.makeCylinder(c['outlet_outer_radius']+c['hose_bead_height'],c['hose_bead_width'],start+direction*distance,direction))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 1.0000076227029991e-07
+  },
+  {
+    "stage": 9,
+    "label": "body=body.fuse(Part.makeCylinder(c['outlet_outer_radius']+c['hose_bead_height'],c['hose_bead_width'],start+direction*distance,direction))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 1.0000076227029991e-07
+  },
+  {
+    "stage": 10,
+    "label": "body=body.cut(cavity)",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 1.0000229996712909e-07
+  },
+  {
+    "stage": 11,
+    "label": "body=body.fuse(back_flange).fuse(back_shell).fuse(cyl(sleeve_outer,spring1+gf,rear+wall))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 2.892098816037971e-07
+  },
+  {
+    "stage": 12,
+    "label": "body=body.cut(cyl(shaft_r+c['rotating_gap'],spring1-1,rear+wall+1))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 2.892098816037971e-07
+  },
+  {
+    "stage": 13,
+    "label": "body=body.cut(cyl(packing_outer+c['packing_radial_gap'],spring1,pack3))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 2.892098816037971e-07
+  },
+  {
+    "stage": 14,
+    "label": "body=gland_slots(body,spring1-1,pack2+.1)",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 2.892098816037971e-07
+  },
+  {
+    "stage": 15,
+    "label": "body=body.cut(cavity)",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 2.892098816037971e-07
+  },
+  {
+    "stage": 16,
+    "label": "body=body.fuse(cover_face)",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 4.220469285579025e-07
+  },
+  {
+    "stage": 17,
+    "label": "body=body.fuse(cyl(c['cover_ear_radius'],front-c['cover_stud_embed']-2,front,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 4.220469285579025e-07
+  },
+  {
+    "stage": 18,
+    "label": "body=body.cut(cyl(c['cover_stud_diameter']/2+c['thread_gap'],front-c['cover_stud_embed']-.1,front+1,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 4.220469285579025e-07
+  },
+  {
+    "stage": 19,
+    "label": "body=body.fuse(cyl(c['cover_ear_radius'],front-c['cover_stud_embed']-2,front,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 20,
+    "label": "body=body.cut(cyl(c['cover_stud_diameter']/2+c['thread_gap'],front-c['cover_stud_embed']-.1,front+1,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 21,
+    "label": "body=body.fuse(cyl(c['cover_ear_radius'],front-c['cover_stud_embed']-2,front,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 22,
+    "label": "body=body.cut(cyl(c['cover_stud_diameter']/2+c['thread_gap'],front-c['cover_stud_embed']-.1,front+1,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 23,
+    "label": "body=body.fuse(cyl(c['cover_ear_radius'],front-c['cover_stud_embed']-2,front,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 24,
+    "label": "body=body.cut(cyl(c['cover_stud_diameter']/2+c['thread_gap'],front-c['cover_stud_embed']-.1,front+1,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 25,
+    "label": "body=body.fuse(cyl(c['cover_ear_radius'],front-c['cover_stud_embed']-2,front,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 26,
+    "label": "body=body.cut(cyl(c['cover_stud_diameter']/2+c['thread_gap'],front-c['cover_stud_embed']-.1,front+1,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 27,
+    "label": "body=body.fuse(cyl(c['cover_ear_radius'],front-c['cover_stud_embed']-2,front,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 28,
+    "label": "body=body.cut(cyl(c['cover_stud_diameter']/2+c['thread_gap'],front-c['cover_stud_embed']-.1,front+1,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 29,
+    "label": "body=body.fuse(cyl(c['cover_ear_radius'],front-c['cover_stud_embed']-2,front,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 30,
+    "label": "body=body.cut(cyl(c['cover_stud_diameter']/2+c['thread_gap'],front-c['cover_stud_embed']-.1,front+1,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 31,
+    "label": "body=body.fuse(cyl(c['cover_ear_radius'],front-c['cover_stud_embed']-2,front,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 32,
+    "label": "body=body.cut(cyl(c['cover_stud_diameter']/2+c['thread_gap'],front-c['cover_stud_embed']-.1,front+1,y,z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 33,
+    "label": "body=body.fuse(Part.makeCylinder(c['plug_head_af']/2+2,boss_top-drain_seat,V(plug_x,0,drain_seat),Z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 34,
+    "label": "body=body.cut(Part.makeCylinder(c['plug_diameter']/2+c['thread_gap'],bore_top-drain_seat+1,V(plug_x,0,drain_seat-1),Z))",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 35,
+    "label": "raw_final",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  },
+  {
+    "stage": 36,
+    "label": "selected_cleanup",
+    "valid": true,
+    "solids": 1,
+    "max_tolerance_mm": 8.745933030269468e-07
+  }
+]

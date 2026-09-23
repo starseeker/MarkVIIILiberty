@@ -9,7 +9,7 @@ HERE=Path(__file__).resolve().parent;STAGE=HERE.parents[1];ROOT=STAGE.parents[1]
 sys.path[:0]=[str(HERE),str(STAGE)]
 from lib import runtime
 from lib.evidence import read,write,sha
-p=argparse.ArgumentParser();p.add_argument('--candidate',type=Path,default=HERE/'engine_water_pump_study');p.add_argument('--worker',action='store_true')
+p=argparse.ArgumentParser();p.add_argument('--candidate',type=Path,default=HERE/'engine_water_pump_mounting_study');p.add_argument('--worker',action='store_true')
 a=p.parse_args();base=a.candidate.resolve();out=base/'source_review';out.mkdir(exist_ok=True)
 if not a.worker:
     with (out/'run.log').open('w') as log:
@@ -40,7 +40,7 @@ try:
                 shape=shape.common(clip)
             if explode:
                 shift=0
-                if key in ['body','joint_gasket']:shift=80
+                if key in ['body','joint_gasket','plug','plug_gasket']:shift=80
                 elif key in ['impeller','key','impeller_nut','impeller_cotter']:shift=150
                 elif key=='cover' or key.startswith('cover_'):shift=220
                 shape.translate(V(shift,0,0))

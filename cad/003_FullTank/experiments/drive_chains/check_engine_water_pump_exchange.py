@@ -9,7 +9,7 @@ HERE=Path(__file__).resolve().parent;STAGE=HERE.parents[1];ROOT=STAGE.parents[1]
 sys.path[:0]=[str(HERE),str(STAGE)]
 from lib import runtime
 from lib.evidence import read,write,sha
-p=argparse.ArgumentParser();p.add_argument('--candidate',type=Path,default=HERE/'engine_water_pump_study');p.add_argument('--worker',action='store_true')
+p=argparse.ArgumentParser();p.add_argument('--candidate',type=Path,default=HERE/'engine_water_pump_mounting_study');p.add_argument('--worker',action='store_true')
 a=p.parse_args();out=a.candidate.resolve()
 if not a.worker:
     with (out/'exchange_check.log').open('w') as log:
@@ -21,9 +21,11 @@ try:
     r=read(out/'report.json');native=out/r['native_file'];nh=sha(native);assert r['native_sha256']==nh
     doc=App.openDocument(str(native));byid={i['id']:i for i in leaves(doc.Root)}
     mass=calculator(out/'exchange_runtime/mass');exchange=[]
-    for label,expected in [('Definitions',[(k,doc.getObject(k).Shape) for k in read(out/'definition_order.json')]),
-                           ('Installation',[(n,byid[n]['shape']) for n in r['new_ids']])]:
-        path=out/('WaterPump'+label+'.step');loaded=Part.Shape();loaded.read(str(path))
+    for label,filename,expected in [('Definitions','WaterPumpDefinitions.step',[(k,doc.getObject(k).Shape) for k in read(out/'definition_order.json')]),
+                           ('Installation','WaterPumpInstallation.step',[(n,byid[n]['shape']) for n in r['new_ids']]),
+                           ('CaseDefinition','LowerCaseDefinition.step',[('EngineCase_lower',byid['EngineCase_lower']['target'].Shape)]),
+                           ('CaseInstallation','LowerCaseInstallation.step',[('EngineCase_lower',byid['EngineCase_lower']['shape'])])]:
+        path=out/filename;loaded=Part.Shape();loaded.read(str(path))
         if not loaded.isValid() or len(loaded.Solids)!=len(expected):
             bad=[]
             for index,solid in enumerate(loaded.Solids):
@@ -45,7 +47,7 @@ try:
             print(label,key,passed,flush=True)
             write(out/'exchange_progress.json',dict(checks=exchange))
     write(out/'exchange_checks.json',dict(passed=all(x['passed'] for x in exchange),native_sha256=nh,checker_sha256=sha(Path(__file__)),
-        artifact_hashes={n:sha(out/n) for n in ['WaterPumpDefinitions.step','WaterPumpInstallation.step']},checks=exchange))
+        artifact_hashes={n:sha(out/n) for n in ['WaterPumpDefinitions.step','WaterPumpInstallation.step','LowerCaseDefinition.step','LowerCaseInstallation.step']},checks=exchange))
     assert all(x['passed'] for x in exchange)
 finally:
     runtime.close()

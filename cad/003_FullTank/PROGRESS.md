@@ -11,6 +11,18 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — water-pump mounting revision
+
+The [mounting candidate](packets/P01-engine-water-pump-mounting.md) adds the four
+source-length case stud/nut/washer/cotter sets and integral receiving pads. It
+reconciles the flange stack, tangential outlets and drain seat in a 2,246-occurrence
+development assembly: 76 pump constituents, one revised case and 2,169 preserved
+parent components. **All 38 native checks and 472 affected material comparisons,
+including standard context, pass.** All 106 nominal STEP comparisons pass. The six-control trial passes 37/38 native checks and all 473 local pairs, but
+finds drain-boss interference with an outlet passage gauge; that correction is
+next. Fresh nominal reproduction matches 848 shapes and 45,133 checked properties. Five views were inspected and two
+snapshots saved (137 total). The standard tank remains unchanged.
+
 ## 23 September 2026 — water-pump development
 
 The [water-pump candidate](experiments/drive_chains/engine_water_pump_study/DrivetrainWithWaterPump.FCStd)

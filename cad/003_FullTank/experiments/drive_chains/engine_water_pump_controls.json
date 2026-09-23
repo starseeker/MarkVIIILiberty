@@ -20,10 +20,10 @@
     "neck_end": 58.0,
     "retainer_end_radius": 55.5,
     "retainer_wall": 4.0,
-    "retainer_flange_radius": 64.0,
+    "retainer_flange_radius": 74.0,
     "retainer_flange_stock": 5.0,
-    "mount_bolt_radius": 72.0,
-    "mount_ear_radius": 10.0,
+    "mount_bolt_radius": 84.0,
+    "mount_ear_radius": 12.0,
     "mount_hole_radius": 4.8125,
     "retainer_body_gasket": 0.4,
     "packing_rope_diameter": 4.7625,
@@ -47,9 +47,9 @@
     "scroll_outer_radius": 21.0,
     "scroll_inner_radius": 16.0,
     "scroll_center_x": 153.0,
-    "outlet_outer_radius": 22.0,
-    "outlet_inner_radius": 18.0,
-    "outlet_offset_z": 42.0,
+    "outlet_outer_radius": 20.0,
+    "outlet_inner_radius": 15.0,
+    "outlet_offset_z": 51.0,
     "outlet_tip_y": 102.0,
     "cover_flange_radius": 67.0,
     "cover_flange_stock": 5.0,
@@ -111,7 +111,28 @@
     "hose_bead_spacing": 5.0,
     "hose_bead_count": 3,
     "impeller_back_shroud": false,
-    "washer_seat_relief_depth": 8.0
+    "washer_seat_relief_depth": 8.0,
+    "body_mount_flange_stock": 14.0,
+    "outlet_start_y": 0.0,
+    "mount_stud_diameter": 9.525,
+    "mount_stud_length": 50.00625,
+    "mount_stud_embed": 16.66875,
+    "mount_stud_outer_thread": 15.875,
+    "mount_washer_radius": 9.525,
+    "mount_washer_stock": 1.5875,
+    "mount_nut_af": 15.875,
+    "mount_nut_stock": 9.525,
+    "mount_nut_crown": 6.9,
+    "mount_castle_depth": 3.0,
+    "mount_cotter_diameter": 2.38125,
+    "mount_cotter_length": 15.875,
+    "case_mount_flange_stock": 22.0,
+    "case_mount_bore_clearance": 0.1,
+    "mount_tool_radius": 11.0,
+    "mount_tool_depth": 15.0,
+    "mount_angle_deg": 22.5,
+    "outlet_clock_deg": 22.5,
+    "drain_seat_z": -85.0
   },
   "parameter_evidence": {
     "bearing_od": {
@@ -215,9 +236,9 @@
       "source": "LIB79, SNL17 and HB52 constrain arrangement; this unprinted dimension/profile remains an estimate."
     },
     "retainer_flange_radius": {
-      "value": 64.0,
+      "value": 74.0,
       "basis": "reconstruction estimate",
-      "source": "LIB79, SNL17 and HB52 constrain arrangement; this unprinted dimension/profile remains an estimate."
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
     },
     "retainer_flange_stock": {
       "value": 5.0,
@@ -225,14 +246,14 @@
       "source": "LIB79, SNL17 and HB52 constrain arrangement; this unprinted dimension/profile remains an estimate."
     },
     "mount_bolt_radius": {
-      "value": 72.0,
+      "value": 84.0,
       "basis": "reconstruction estimate",
-      "source": "LIB79, SNL17 and HB52 constrain arrangement; this unprinted dimension/profile remains an estimate."
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
     },
     "mount_ear_radius": {
-      "value": 10.0,
+      "value": 12.0,
       "basis": "reconstruction estimate",
-      "source": "LIB79, SNL17 and HB52 constrain arrangement; this unprinted dimension/profile remains an estimate."
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
     },
     "mount_hole_radius": {
       "value": 4.8125,
@@ -350,19 +371,19 @@
       "source": "LIB79, SNL17 and HB52 constrain arrangement; this unprinted dimension/profile remains an estimate."
     },
     "outlet_outer_radius": {
-      "value": 22.0,
+      "value": 20.0,
       "basis": "reconstruction estimate",
-      "source": "LIB79, SNL17 and HB52 constrain arrangement; this unprinted dimension/profile remains an estimate."
+      "source": "Source-informed estimate: tangential outlet with 1mm smaller radii than annular passage, providing a small throat transition. SNL17/LIB79 show the arrangement but no measured outlet diameter. Exact matched torus/barrel radii produced invalid disconnected material in the first numerical construction."
     },
     "outlet_inner_radius": {
-      "value": 18.0,
+      "value": 15.0,
       "basis": "reconstruction estimate",
-      "source": "LIB79, SNL17 and HB52 constrain arrangement; this unprinted dimension/profile remains an estimate."
+      "source": "Source-informed estimate: tangential outlet with 1mm smaller radii than annular passage, providing a small throat transition. SNL17/LIB79 show the arrangement but no measured outlet diameter. Exact matched torus/barrel radii produced invalid disconnected material in the first numerical construction."
     },
     "outlet_offset_z": {
-      "value": 42.0,
+      "value": 51.0,
       "basis": "reconstruction estimate",
-      "source": "LIB79, SNL17 and HB52 constrain arrangement; this unprinted dimension/profile remains an estimate."
+      "source": "Source-informed estimate: opposite tangential outlets follow the annular chamber at its radial centerline in SNL17/LIB79; matched outlet and annular tube radii replace the crossing-barrel approximation. Exact flow profile unprinted."
     },
     "outlet_tip_y": {
       "value": 102.0,
@@ -673,6 +694,111 @@
       "value": 8.0,
       "basis": "reconstruction estimate",
       "source": "Local flat washer-seat relief at dome/ear intersection; bounded to avoid cutting the distant inlet hose end."
+    },
+    "body_mount_flange_stock": {
+      "value": 14.0,
+      "basis": "reconstruction estimate",
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
+    },
+    "outlet_start_y": {
+      "value": 0.0,
+      "basis": "reconstruction estimate",
+      "source": "Source-informed estimate: opposite tangential outlets follow the annular chamber at its radial centerline in SNL17/LIB79; matched outlet and annular tube radii replace the crossing-barrel approximation. Exact flow profile unprinted."
+    },
+    "mount_stud_diameter": {
+      "value": 9.525,
+      "basis": "printed source conversion with stated installation choice",
+      "source": "SNL239:017 3/8 inch"
+    },
+    "mount_stud_length": {
+      "value": 50.00625,
+      "basis": "printed source conversion with stated installation choice",
+      "source": "SNL239:017 1-31/32 inch"
+    },
+    "mount_stud_embed": {
+      "value": 16.66875,
+      "basis": "printed source conversion with stated installation choice",
+      "source": "SNL239:017 US Std thread length21/32 inch; full embedding is selected, not printed"
+    },
+    "mount_stud_outer_thread": {
+      "value": 15.875,
+      "basis": "printed source conversion with stated installation choice",
+      "source": "SNL239:017 SAE thread length5/8 inch"
+    },
+    "mount_washer_radius": {
+      "value": 9.525,
+      "basis": "reconstruction estimate",
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
+    },
+    "mount_washer_stock": {
+      "value": 1.5875,
+      "basis": "reconstruction estimate",
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
+    },
+    "mount_nut_af": {
+      "value": 15.875,
+      "basis": "reconstruction estimate",
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
+    },
+    "mount_nut_stock": {
+      "value": 9.525,
+      "basis": "reconstruction estimate",
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
+    },
+    "mount_nut_crown": {
+      "value": 6.9,
+      "basis": "reconstruction estimate",
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
+    },
+    "mount_castle_depth": {
+      "value": 3.0,
+      "basis": "reconstruction estimate",
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
+    },
+    "mount_cotter_diameter": {
+      "value": 2.38125,
+      "basis": "printed source conversion with stated installation choice",
+      "source": "SNL239:019 3/32 inch"
+    },
+    "mount_cotter_length": {
+      "value": 15.875,
+      "basis": "printed source conversion with stated installation choice",
+      "source": "SNL239:019 5/8 inch"
+    },
+    "case_mount_flange_stock": {
+      "value": 22.0,
+      "basis": "reconstruction estimate",
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
+    },
+    "case_mount_bore_clearance": {
+      "value": 0.1,
+      "basis": "reconstruction estimate",
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
+    },
+    "mount_tool_radius": {
+      "value": 11.0,
+      "basis": "reconstruction estimate",
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
+    },
+    "mount_tool_depth": {
+      "value": 15.0,
+      "basis": "reconstruction estimate",
+      "source": "Reconstruction estimate: SNL17 and LIB79 arrangement; mounting stack constrained by SNL239 stud threads, complete fastener envelopes and access. Exact flange/ear dimensions unprinted."
+    },
+    "mount_angle_deg": {
+      "value": 22.5,
+      "basis": "coupled installation estimate",
+      "source": "SNL17 shows four mounting ears and opposed outlets, without absolute installed angles. Rotating mounting ears and outlets together preserves their relative clearance while moving lower hardware away from the drain and upper hardware away from the lower-drive retaining screw. SNL14 explicitly transposes outlets. Exact clocking remains unregistered."
+    },
+    "outlet_clock_deg": {
+      "value": 22.5,
+      "basis": "coupled installation estimate",
+      "source": "SNL17 shows four mounting ears and opposed outlets, without absolute installed angles. Rotating mounting ears and outlets together preserves their relative clearance while moving lower hardware away from the drain and upper hardware away from the lower-drive retaining screw. SNL14 explicitly transposes outlets. Exact clocking remains unregistered."
+    },
+    "drain_seat_z": {
+      "value": -85.0,
+      "basis": "coupled casting estimate",
+      "source": "SNL17/LIB79 show a flat drain-plug gasket seat. Revised outlet clocking carries cast material below the former -74mm seat; -85mm provides a complete seat below the local curved casting while retaining the original drain direction. Exact projection remains estimated."
     }
   },
   "status": "Unqualified development; geometry and counts require independent checks"

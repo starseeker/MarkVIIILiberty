@@ -116,6 +116,16 @@ compare it in both material directions. Fusing a replacement onto an old body
 can leave a larger stale rim intact. Distinguish missing material, extra material,
 and neighbor interference; a volume-only check can miss an incorrect distribution.
 
+A Boolean difference can be an empty compound with `isNull() == False`.
+On FreeCAD 1.1.1 / OCC 7.8.0, this occurred in the water-pump case preservation
+check; a further cut raised `ValueError: Null shape`. A simple contained-box
+probe also returns a non-null compound with zero solids, faces and volume,
+although its second cut succeeds. For differences between validated closed
+solids, inspect the material/topology before chaining more Boolean operations
+and handle an empty result explicitly. Do not silently classify unexpected
+shells or invalid topology as a successful empty difference. See the
+[mounting diagnostics](../../../cad/003_FullTank/experiments/drive_chains/engine_water_pump_mounting_study/diagnostics/mounting_revision/README.md).
+
 ## Acceptance and exchange
 
 Use criteria that would reject a plausible wrong solution: independent material/

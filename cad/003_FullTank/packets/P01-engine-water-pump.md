@@ -1,5 +1,9 @@
 # P01 — Liberty water pump
 
+This is the historical `6c42df8` checkpoint. Current work and regeneration commands
+are in the [mounting and casting revision](P01-engine-water-pump-mounting.md);
+use that commit's frozen inputs when reviewing the earlier implementation.
+
 Status: **development candidate; installation unqualified; pump-body STEP precision issue open**,
 23 September 2026. This extends the
 [receiving-case checkpoint](P01-engine-lower-drive-receivers.md).

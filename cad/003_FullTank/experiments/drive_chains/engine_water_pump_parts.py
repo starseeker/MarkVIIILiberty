@@ -37,7 +37,8 @@ def flange(radius,inner,a,b,pitch,ear,count,phase,hole):
     for i in range(count):
         theta=math.radians(phase+i*360/count);y,z=pitch*math.cos(theta),pitch*math.sin(theta)
         shape=shape.fuse(cyl(ear,a,b,y,z));centers.append((y,z))
-    for y,z in centers:shape=shape.cut(cyl(hole,a-1,b+1,y,z))
+    if hole>0:
+        for y,z in centers:shape=shape.cut(cyl(hole,a-1,b+1,y,z))
     return shape,centers
 
 def castle(rad,af,stock,crown,depth,pind,gap):
@@ -122,7 +123,7 @@ def parts(c,lower,mount_x,progress=None):
     shell=shell.cut(cyl(shaft_r+c['rotating_gap'],a-1,mount_x+1))
     shell=shell.cut(cyl(packing_outer+c['packing_radial_gap'],pack0,pack1+gn+1))
     flange0,mount_centers=flange(c['retainer_flange_radius'],c['retainer_end_radius']-c['retainer_wall'],mount_x,mount_x+c['retainer_flange_stock'],
-        c['mount_bolt_radius'],c['mount_ear_radius'],4,45,c['mount_hole_radius'])
+        c['mount_bolt_radius'],c['mount_ear_radius'],4,c['mount_angle_deg'],c['mount_hole_radius'])
     shell=shell.fuse(flange0)
     def gland_slots(shape,lo,hi):
         for angle in range(0,360,90):
@@ -153,7 +154,9 @@ def parts(c,lower,mount_x,progress=None):
     cavity=Part.makeTorus(c['scroll_center_radius'],c['scroll_inner_radius'],V(cx,0,0),X)
     cavity=cavity.fuse(cyl(c['chamber_radius'],rear+wall,front+1))
     for sign in [-1,1]:
-        start=V(cx,sign*35,sign*c['outlet_offset_z']);direction=Y*sign;length=c['outlet_tip_y']-35
+        start=V(cx,sign*c['outlet_start_y'],sign*c['outlet_offset_z']);direction=Y*sign;length=c['outlet_tip_y']-c['outlet_start_y']
+        outlet_rotation=App.Rotation(X,c['outlet_clock_deg'])
+        start=V(cx,0,0)+outlet_rotation.multVec(start-V(cx,0,0));direction=outlet_rotation.multVec(direction)
         body=body.fuse(Part.makeCylinder(c['outlet_outer_radius'],length,start,direction))
         cavity=cavity.fuse(Part.makeCylinder(c['outlet_inner_radius'],length+1,start,direction))
         for i in range(c['hose_bead_count']):
@@ -161,12 +164,15 @@ def parts(c,lower,mount_x,progress=None):
             body=body.fuse(Part.makeCylinder(c['outlet_outer_radius']+c['hose_bead_height'],c['hose_bead_width'],start+direction*distance,direction))
     body=body.cut(cavity)
     joint=mount_x+c['retainer_flange_stock'];back0=joint+c['retainer_body_gasket']
-    back_flange,_=flange(c['retainer_flange_radius'],c['retainer_end_radius']-c['retainer_wall'],back0,back0+wall,c['mount_bolt_radius'],c['mount_ear_radius'],4,45,c['mount_hole_radius'])
+    back_flange,_=flange(c['retainer_flange_radius'],c['retainer_end_radius']-c['retainer_wall'],back0,back0+c['body_mount_flange_stock'],c['mount_bolt_radius'],c['mount_ear_radius'],4,c['mount_angle_deg'],c['mount_hole_radius'])
     back_shell=ring(c['chamber_radius']+wall,c['chamber_radius']-wall,back0,rear+wall)
     body=body.fuse(back_flange).fuse(back_shell).fuse(cyl(sleeve_outer,spring1+gf,rear+wall))
     body=body.cut(cyl(shaft_r+c['rotating_gap'],spring1-1,rear+wall+1))
     body=body.cut(cyl(packing_outer+c['packing_radial_gap'],spring1,pack3))
     body=gland_slots(body,spring1-1,pack2+.1)
+    # Clear added flange stock before adding blind cover-stud receiving bosses.
+    # Those bosses must retain their walls where they project into the chamber.
+    body=body.cut(cavity)
     cover_face,cover_centers=flange(c['cover_flange_radius'],c['chamber_radius'],front-wall,front,c['cover_stud_radius'],c['cover_ear_radius'],8,c['cover_stud_angle_deg'],c['cover_stud_diameter']/2+c['thread_gap'])
     body=body.fuse(cover_face)
     # Studs are threaded into blind receiving holes, not fused into the casting.
@@ -175,17 +181,41 @@ def parts(c,lower,mount_x,progress=None):
         body=body.cut(cyl(c['cover_stud_diameter']/2+c['thread_gap'],front-c['cover_stud_embed']-.1,front+1,y,z))
     plug_x=cx;plug_z=-c['scroll_center_radius']-c['scroll_outer_radius']
     # A small flat boss provides an explicit washer seat on the drain opening.
-    body=body.fuse(Part.makeCylinder(c['plug_head_af']/2+2,wall+3,V(plug_x,0,plug_z-2),Z))
-    body=body.cut(Part.makeCylinder(c['plug_diameter']/2+c['thread_gap'],2*c['scroll_outer_radius']+5,V(plug_x,0,plug_z-3),Z))
+    drain_seat=c['drain_seat_z'];boss_top=plug_z+wall+1
+    assert drain_seat<boss_top
+    body=body.fuse(Part.makeCylinder(c['plug_head_af']/2+2,boss_top-drain_seat,V(plug_x,0,drain_seat),Z))
+    bore_top=-c['scroll_center_radius']+c['scroll_inner_radius']
+    body=body.cut(Part.makeCylinder(c['plug_diameter']/2+c['thread_gap'],bore_top-drain_seat+1,V(plug_x,0,drain_seat-1),Z))
     p['body']=body;add('body','BodyCasting',parent='EngineWaterPumpBodyAssembly');audit('body')
-    p['joint_gasket'],_=flange(c['retainer_flange_radius'],c['retainer_end_radius']-c['retainer_wall'],0,c['retainer_body_gasket'],c['mount_bolt_radius'],c['mount_ear_radius'],4,45,c['mount_hole_radius'])
-    p['shim'],_=flange(c['retainer_flange_radius'],c['retainer_end_radius']+c['thread_gap'],0,c['shim_stock'],c['mount_bolt_radius'],c['mount_ear_radius'],4,45,c['mount_hole_radius'])
+    p['joint_gasket'],_=flange(c['retainer_flange_radius'],c['retainer_end_radius']-c['retainer_wall'],0,c['retainer_body_gasket'],c['mount_bolt_radius'],c['mount_ear_radius'],4,c['mount_angle_deg'],c['mount_hole_radius'])
+    p['shim'],_=flange(c['retainer_flange_radius'],c['retainer_end_radius']+c['thread_gap'],0,c['shim_stock'],c['mount_bolt_radius'],c['mount_ear_radius'],4,c['mount_angle_deg'],c['mount_hole_radius'])
     add('joint_gasket','RetainerBodyGasket',V(joint,0,0));add('shim','RetainerAdjustmentShim',V(mount_x-c['shim_stock'],0,0))
+    # Four case attachment sets. Printed thread lengths constrain the estimated
+    # flange stack; smooth thread envelopes still retain both axial extents.
+    face=mount_x-c['shim_stock'];seat=back0+c['body_mount_flange_stock']
+    nutseat=seat+c['mount_washer_stock'];pinstation=nutseat+c['mount_nut_stock']-c['mount_castle_depth']/2
+    end=c['mount_stud_length']-c['mount_stud_embed']
+    assert nutseat-face>=end-c['mount_stud_outer_thread']
+    assert pinstation+c['mount_cotter_diameter']/2<face+end
+    stud=cyl(c['mount_stud_diameter']/2,-c['mount_stud_embed'],end)
+    stud=stud.cut(Part.makeCylinder(c['mount_cotter_diameter']/2+.08,24,V(pinstation-face,-12,0),Y))
+    p['mount_stud']=stud
+    p['mount_washer']=ring(c['mount_washer_radius'],c['mount_stud_diameter']/2+c['thread_gap'],0,c['mount_washer_stock'])
+    p['mount_nut']=castle(c['mount_stud_diameter']/2,c['mount_nut_af'],c['mount_nut_stock'],c['mount_nut_crown'],c['mount_castle_depth'],c['mount_cotter_diameter'],c['thread_gap'])
+    p['mount_cotter'],d['mount_cotter']=cotter(c['mount_cotter_diameter'],c['mount_cotter_length'],c['mount_nut_crown'])
+    for i,(y,z) in enumerate(mount_centers,1):
+        for key_,name,dx in [('mount_stud','MountStud',face),('mount_washer','MountWasher',seat),('mount_nut','MountNut',nutseat),('mount_cotter','MountCotter',pinstation)]:
+            add(key_,name+str(i),V(dx,y,z))
+    d['mounting']=dict(case_face_x=face,washer_seat_x=seat,nut_seat_x=nutseat,cotter_x=pinstation,
+        stud_span=[face-c['mount_stud_embed'],face+end],
+        inner_thread_span=[face-c['mount_stud_embed'],face],
+        outer_thread_span=[face+end-c['mount_stud_outer_thread'],face+end],
+        flange_stack_mm=seat-face,fully_embedded_inner_thread_is_estimate=True)
     p['plug']=cyl(c['plug_diameter']/2,-c['plug_length'],0).fuse(hex_x(c['plug_head_af'],0,c['plug_head_stock']))
     p['plug_gasket']=ring(c['plug_head_af']/2+1,c['plug_diameter']/2+c['thread_gap'],0,c['plug_gasket_stock'])
     plug_rot=App.Rotation(Y,90)
-    add('plug_gasket','DrainGasket',V(plug_x,0,plug_z-2),plug_rot)
-    add('plug','DrainPlug',V(plug_x,0,plug_z-2-c['plug_gasket_stock']),plug_rot)
+    add('plug_gasket','DrainGasket',V(plug_x,0,drain_seat),plug_rot)
+    add('plug','DrainPlug',V(plug_x,0,drain_seat-c['plug_gasket_stock']),plug_rot)
 
     # Tapered, keyed open impeller; the source does not establish a full back disk.
     imp=cyl(c['impeller_hub_radius'],c['impeller_hub_start'],c['impeller_hub_end'])
