@@ -1,0 +1,74 @@
+{
+  "status": "Rigid-shift diagnostic, not a selected installation",
+  "native_sha256": "e5419509462638da113259503261f57433e765a29eda9633c1b35f96695c442f",
+  "parent_native_sha256": "7cae6a94d058e4d9497d207a06cf49d28891214e7e4fe4a73fc1a4a9516ad3fb",
+  "checker_sha256": "67b3c29007457c07724177eab5b1a9195397683ab6dc7fc4759a755ef11a138a",
+  "floor_engine_z": [
+    -322.18351043576615,
+    -316.1835104357658
+  ],
+  "lowest_pump_engine_z": -378.7,
+  "minimum_upward_shift_for_floor_mm": 62.51648956423418,
+  "trial_clearance_mm": 1.0,
+  "trial_shift_mm": 63.51648956423418,
+  "trial_mount_z": -218.48351043576582,
+  "pairs": [
+    {
+      "pump": "EngineOilPump_UpperBody",
+      "neighbor": "EngineWaterPump_GearedShaft",
+      "overlap_mm3": 2841.614689695864,
+      "clear": false
+    },
+    {
+      "pump": "EngineOilPump_UpperBody",
+      "neighbor": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 64.40313091060874,
+      "clear": false
+    },
+    {
+      "pump": "EngineOilPump_UpperBody",
+      "neighbor": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "pump": "EngineOilPump_UpperFilterFrame",
+      "neighbor": "EngineWaterPump_GearedShaft",
+      "overlap_mm3": 467.01484974766913,
+      "clear": false
+    },
+    {
+      "pump": "EngineOilPump_UpperFilterFrame",
+      "neighbor": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 314.91835925957713,
+      "clear": false
+    },
+    {
+      "pump": "EngineOilPump_UpperFilterFrame",
+      "neighbor": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "pump": "EngineOilPump_DrivingShaft",
+      "neighbor": "EngineWaterPump_GearedShaft",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "pump": "EngineOilPump_DrivingShaft",
+      "neighbor": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "pump": "EngineOilPump_DrivingShaft",
+      "neighbor": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 642.980906053536,
+      "clear": false
+    }
+  ],
+  "rigid_shift_alone_rejected": true,
+  "floor_clear_by_full_envelope": true,
+  "source_documents_unchanged": true
+}

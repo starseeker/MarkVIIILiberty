@@ -1,0 +1,36 @@
+{
+  "source_assets": {
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII030.jpg": "921424ec8572e70fb5353c8fccd67954ab0c4c3881d385af994d53c129659a82",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate40.png": "2cbf1d3f8756ba892f8a9b81b3652b183dfced88da24d04e6108ac486d6d05bd",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p286.jpg": "a804b17511376c860f2ecaddc59b1f454f6f3c97ad12aef644b79b1845824f6c",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277_foldout-geometry.png": "7f08a90732b5adb3a14d73f3438f1803de0230a54f9a4e27364ebdf35c91677b"
+  },
+  "source_views_directly_inspected": [
+    "HB58 plate40 original and extracted asset",
+    "SNL14 p286 original",
+    "SNL2 longitudinal section geometry asset"
+  ],
+  "facts": {
+    "floor_underside_mm": 527.05,
+    "floor_stock_mm": 6.0,
+    "engine_origin_z_mm": 849.2335104357661,
+    "proposed_pump_mount_local_z_mm": -282.0,
+    "old_case_oil_mount_local_z_mm": -254.0,
+    "proposed_gasket_case_face_local_z_mm": -281.6,
+    "nominal_case_face_gap_mm": 27.6
+  },
+  "source_constraints": [
+    "HB9 printed20.75in ground clearance controls floor underside;6mm floor stock remains an estimate.",
+    "HB196/199 printed mounting spans and hardware quantities remain fixed in mounting study.",
+    "HB58 and SNL14 locate both pumps and common lower drive; exact metric registration across drawings is not yet established.",
+    "SNL2 is conditionally calibrated with separate longitudinal/vertical scales; do not move the printed floor height merely to match a lower drawn line."
+  ],
+  "next_actions": [
+    "Reconcile pump radial/vertical scale and184mm lower-drive axis drop against HB58/SNL14 with explicit calibration and held-out dimensions.",
+    "Recheck engine crankshaft elevation and full drivetrain registration against SNL2; any change must propagate to flywheel/clutch, mounting supports and downstream shafts.",
+    "After selecting the coupled geometry, reconstruct the oil receiver from the pre-receiver lower case and reapply the qualified water-pump pads; verify that old holes/rims do not persist.",
+    "Keep two case oil passages, mounting stud engagement, floor clearance and common shaft coupling explicit in installation checks.",
+    "Check the complete standard-tank context before integration."
+  ],
+  "decision": "Reject current proposed installation and reject a rigid pump raise alone. No floor cut, floor lowering, shortened source fastener or source-profile change is selected by this diagnostic."
+}

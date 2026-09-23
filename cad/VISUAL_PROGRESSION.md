@@ -1,6 +1,22 @@
 # Mark VIII visual progression
 
-The latest hardware and relief-lock checkpoint preserves a new
+The 23 September oil-pump mounting checkpoint adds an
+[isometric](intermediate_snapshot_iso_engine_oil_pump_mounting_001.png) and
+[mounting plan](intermediate_snapshot_detail_engine_oil_pump_mounting_001.png).
+Ten stud/washer/nut/cotter sets and a gasket bring the isolated pump to 146
+components. Both nominal and eight-control trial builds pass 402 native checks,
+466 material comparisons and 186 STEP pairs. All 143 previous snapshots remain
+unchanged, giving **145 total**. The first installation trial finds floor and
+crankcase interference; its rejected section views are retained in the
+[work packet](003_FullTank/packets/P01-engine-oil-pump.md), rather than presented
+as an accepted installation. Standard tank011 remains unchanged.
+
+| New image | SHA256 |
+|---|---|
+| Mounting isometric | `9f2d01938c586dd5b93d8c0fca4f9645bf6c40974207845d044bfb9b83e6b453` |
+| Mounting plan | `5476ce5b4d03e961429931d95a2ddd13dedf5c4b8b85bab879b75e3a90191fd1` |
+
+The earlier hardware and relief-lock checkpoint preserves a new
 [isometric](intermediate_snapshot_iso_engine_oil_pump_hardware_001.png) and
 [underside detail](intermediate_snapshot_detail_engine_oil_pump_relief_lock_001.png).
 The separate pump now contains 105 constituents, including fourteen bolt sets

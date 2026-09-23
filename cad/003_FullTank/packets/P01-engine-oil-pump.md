@@ -13,12 +13,13 @@ both body castings. It also includes the relief seat, mushroom valve, cage,
 spring and shim; three machining plugs; the bottom cover and gasket; the drain
 plug and gasket; two strainer frames, four separate screens, and the upper
 screen's retaining nut and tab lock. Four upper-body and ten cover bolt sets add
-69 constituents, and the relief-cage lock adds one wire: **105 physical occurrences
-in 38 definitions**. The remaining two catalogue wires and mounting components
-are still pending. The earlier 35- and 104-piece checkpoints are retained.
+69 constituents, and the relief-cage lock adds one wire. Ten mounting stud,
+washer, nut and cotter sets plus gasket8348 add another 41 pieces: **146 physical
+occurrences in 40 definitions**. The remaining two catalogue wires are pending.
+The earlier 35-, 104- and 105-piece checkpoints are retained.
 
 The native hierarchy separates bodies, rotors, relief components, strainers and
-fasteners. Repeated occurrences link to shared definitions. Each definition has
+fasteners, with a separate case-mounting group. Repeated occurrences link to shared definitions. Each definition has
 source references and a piece-mark property; source transcription is retained.
 For example, the nomenclature transcription calls the separating plate 8138,
 while HB86's assembly instructions identify 8188. Native custom controls require
@@ -64,8 +65,9 @@ whole-tank count.
 - HB203 lists two 8420 connections with two 207 gaskets. SNL plate33 says those
   parts are not required. The 1919–1920 target does not justify assuming the
   later omission universally; the installed pipe configuration must settle this.
-- HB110 requires mounting gasket 8348 and unobstructed oil ports. That gasket,
-  the mounting sets and the receiving crankcase revision remain pending.
+- HB110 requires mounting gasket 8348 and unobstructed oil ports. The gasket
+  and ten mounting sets are now modeled and checked locally. Receiving-case
+  engagement and the combined installation remain unqualified.
 
 The proposed engine placement is X=1243.87630083555, Y=0, Z=-282 mm. The earlier
 receiver opening was about 45.8763 mm forward of the driving spindle. LIB27/28's
@@ -102,7 +104,7 @@ estimated galleries, lowering the strainer ceiling and adding shallow cover-head
 seats cleared the source-length joints without changing acceptance tolerances.
 The changed casting retains the intended oil-path graph.
 
-The current [105-piece native](../experiments/drive_chains/engine_oil_pump_relief_lock_study/OilPump.FCStd)
+The earlier [105-piece native](../experiments/drive_chains/engine_oil_pump_relief_lock_study/OilPump.FCStd)
 adds HB87(f)'s cage-to-bolt lock. HB203 identifies wire177; SNL160 specifies
 No18 × 8 inches. The 203.2 mm continuous centerline is retained as hidden,
 nonphysical construction geometry. The formed route, two-turn tail, fourth-bolt
@@ -117,7 +119,7 @@ minimum sampled nonlocal centerline spacing. The retained
 [positive and negative controls](../experiments/drive_chains/engine_oil_pump_relief_lock_study/diagnostics/wire_self_contact/README.md)
 reproduce the distinction. No source stock was trimmed and no tolerance relaxed.
 
-## Verification and next work
+## Verification of the 105-piece checkpoint
 
 The [saved native report](../experiments/drive_chains/engine_oil_pump_relief_lock_study/native_checks.json)
 passes **266 checks and 345 material comparisons**, including 27 gear meshes,
@@ -148,8 +150,8 @@ unit link scale; it does not infer success from a matching volume or valid expor
 Changed native geometry, changed STEP geometry, an unpassed source comparison and
 a nonidentity pose are rejected by the negative controls.
 
-The original 35-part whole-assembly STEP process remains separate and may still
-be running. Only its completed per-part comparisons are reused. This qualification
+The original 35-part whole-assembly STEP process subsequently finished with all
+67 comparisons passing. Only its completed per-part comparisons are reused. This qualification
 covers the present isolated pump geometry, not crankcase installation or historical
 completeness. The nonscreen subset report intentionally retains its eight deferred
 entries; the combined report resolves those entries explicitly.
@@ -176,26 +178,81 @@ python3 cad/003_FullTank/experiments/drive_chains/check_engine_oil_pump_exchange
 python3 cad/003_FullTank/experiments/drive_chains/render_engine_oil_pump.py --candidate .work/oil-pump-rebuild
 ```
 
-Complete the two remaining source wires, mounting gasket/stud sets, mounting-hole
-pattern and external connection selection. Reconcile the unequal openings shown
-in LIB28 with the current estimated passage sizes. Then revise the receiving
-case, verify the shaft coupling and shared water-drive constraints, run the
-coupled full-pump parameter trial and qualify the combined installation. Continue
-the remaining engine systems and standard integration. Poses remain deferred.
+## Mounting checkpoint — 23 September 2026
 
 Direct inspection of HB196/199 (original scans MarkVIII099/100) now establishes
 ten 132 mounting studs, **1/4-28 × 1-7/16 inch**, with **7/16 inch between nut and
-case surface**, plus ten washers111, nuts101 and cotters106. The present estimated
-6 mm flange + 0.4 mm gasket + 1 mm washer is 3.7125 mm short of that 11.1125 mm
-span. A 9.7125 mm flange would satisfy the assumed stack; this is a proposed
-revision requiring actual joint checks, not a change already made. The next-work
-notes retain those source rows and original-image hashes.
+case surface**, plus ten washers111, nuts101 and cotters106. The new
+[146-piece native](../experiments/drive_chains/engine_oil_pump_mounting_study/OilPump.FCStd)
+uses a **9.7125 mm flange**, derived from that 11.1125 mm span less the estimated
+0.4 mm gasket and 1 mm washer. LIB28 supplies nine circular stations and one
+forward nose station. The nose has tangent straight sides and a rounded tip;
+its dimensions remain estimates. Shallow nut seats preserve supporting wall
+material and complete washer bearing lands. Cotter axes are tangent to the
+pattern so the legs clear the body.
 
 A further direct check of SNL237 finds LQ196A/manufacturer132 printed as
 **1/4 × 1-9/16 inches**, with 7/16-inch U.S. Standard and 9/16-inch S.A.E.
 threaded ends. This is **3.175 mm longer** than HB196's 1-7/16-inch stud.
-The source application includes ten studs for the lower crankcase. Retain this
-conflict when choosing the mounting stack and engagement; the same assumed
-case engagement does not put both versions' nut threads at the HB bearing plane.
+The source application includes ten studs for the lower crankcase. The selected
+model retains HB's shorter stock and transfers SNL's threaded-end lengths as an
+explicit compatibility inference. Full 11.1125 mm case engagement is an estimate;
+threads are nominal envelopes and the receiving case is not yet qualified.
 The [calculation](../experiments/drive_chains/engine_oil_pump_relief_lock_study/next_work/mounting_stud_conflict.json)
 records the alternatives without treating an assumed engagement as a printed fact.
+
+The [saved-native checks](../experiments/drive_chains/engine_oil_pump_mounting_study/native_checks.json)
+pass **402 checks and 466 material comparisons**. They include actual source
+stock length, nut-to-case spans, full washer seating, retained local walls,
+cotter bores, source bindings and both open gasket ports. An eight-control trial
+changes gasket/flange stock, flange and stud-circle radii, nose position,
+opening radius and nut-seat clearance. It also passes **402 checks and 466
+material comparisons**, retaining the printed joint dimensions.
+
+Both nominal and trial builds pass **186 STEP comparisons**: 178 direct strict
+comparisons and eight exact-pair screen reuses, with complete disjoint coverage
+and all negative controls passing. The nominal
+[combined report](../experiments/drive_chains/engine_oil_pump_mounting_study/exchange_checks.json)
+and [trial report](../experiments/drive_chains/engine_oil_pump_mounting_study/diagnostics/parameter_trial/exchange_checks.json)
+bind their respective native and STEP hashes. Caching unchanged mass properties
+in the screen matcher preserves every previous comparison result and acceptance
+criterion; the before/after proof is retained in the diagnostics.
+
+A fresh rebuild matches **81 serialized shapes, 629 object types and 7,376
+object properties**, excluding only new object UUIDs. Compared with the 105-piece
+checkpoint, only the lower casting changes: **75 prior BReps and 1,049 checked
+frame/identity properties** are preserved, and all 105 prior occurrence records
+match. The build retains 180 controls, 161 source records and 21 hashed images.
+Seven native [review views](../experiments/drive_chains/engine_oil_pump_mounting_study/source_review/index.html)
+include a new mounting plan for comparison with LIB28. Source interpretation,
+CAD fit and complete historical representation remain separate questions.
+Two new progression images bring the total to **145**, preserving all 143
+previous snapshots, 20 standard native files and three previous subsystem
+checkpoints. Standard tank011 remains unchanged at 5,326 physical occurrences.
+The current inputs and checker copies are retained in `frozen_inputs`.
+
+## Installation conflict and next work
+
+The read-only [installation diagnostic](../experiments/drive_chains/engine_oil_pump_mounting_study/diagnostics/current_context/README.md)
+places the pump at the previously proposed engine coordinates against the
+unchanged 2,247-component water-pump development document. **12 of 54 nearby
+pairs collide**: eight with floor plate M1935 and four with the current crankcase.
+The proposed gasket face is also 27.6 mm below the existing receiver plane.
+The [section view](../experiments/drive_chains/engine_oil_pump_mounting_study/diagnostics/current_context/installation_section.png)
+shows why local pump qualification does not establish a workable installation.
+
+The pump requires a **62.5165 mm rigid raise** just to clear the floor envelope.
+A trial with another 1 mm clearance then produces five collisions in nine checked
+water-drive/coupling pairs. Moving the pump upward alone is rejected. HB9's
+20.75 inch ground-clearance constraint remains explicit; no arbitrary floor
+opening or lower floor is selected to conceal the conflict.
+
+Next reconcile pump scale, the estimated 184 mm lower-drive axis drop, and
+engine/drivetrain registration against HB58, SNL14 and SNL2 with documented
+calibration. Then reconstruct the receiving case from its earlier parent and
+reapply the water-pump mounting features, checking both oil ports, stud
+engagement, the coupling, neighboring pumps and floor together. Finish the two
+remaining wires, external connection selection and unequal passage/profile
+refinement. Continue the other engine systems and standard integration after
+the combined geometry is qualified. The complete engine and tank remain
+unfinished; poses remain deferred.

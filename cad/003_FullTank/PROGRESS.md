@@ -11,6 +11,31 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — oil-pump mounting and installation conflict
+
+The [oil-pump checkpoint](packets/P01-engine-oil-pump.md) now has **146 physical
+constituents in 40 definitions**. Ten source-length mounting stud/washer/nut/
+cotter sets and gasket8348 add 41 pieces; the flange stack and rounded nose
+support the source joint span and ten-hole pattern. Both nominal and eight-control
+trial builds pass **402 native checks, 466 material pairs and 186 STEP
+comparisons**. Fresh reproduction matches 81 BReps and 7,376 object properties.
+Only the lower casting changes among prior components; 75 previous BReps and
+1,049 checked frame/identity properties remain identical.
+
+Seven source-review views were inspected. Two saved snapshots bring the
+progression to **145**, preserving all earlier images and standard natives.
+The original 35-part pump's full STEP check also finished: all 67 comparisons pass.
+
+The first actual installation probe rejects the proposed pump position: **12
+collisions in 54 nearby pairs**, with floor plate M1935 and the current crankcase.
+A rigid 62.5165 mm raise would clear the floor envelope, but a trial with 1 mm
+extra clearance then collides with the water drive and shaft coupling. Section
+views and both failed trials are retained. Reconcile pump scale, lower-drive
+spacing and engine/drivetrain registration against HB58/SNL14/SNL2 before
+reconstructing the receiver and integrating the pump. Two wires, source profiles,
+ports and external connections also remain open. Standard tank011 remains
+unchanged at 5,326 physical occurrences; the full tank is incomplete.
+
 ## 23 September 2026 — oil-pump fastening sets and relief lock
 
 The [oil-pump checkpoint](packets/P01-engine-oil-pump.md) now has **105 physical
