@@ -19,8 +19,9 @@ source-length cage-to-bolt wire are added. Underside access wells preserve the
 strainer seat and at least 2.397 mm to the checked galleries. **266 saved-native
 checks and 345 material comparisons pass**. Fresh reproduction matches 77 BReps
 and 6,059 object properties; a four-control local wire probe passes its material,
-stock and self-clearance checks. All 135 nonscreen STEP comparisons pass; eight
-screen comparisons remain deferred, so complete STEP qualification is pending.
+stock and self-clearance checks. All 143 native/STEP pairs are qualified: 135
+direct strict comparisons plus eight exact-pair reuses from completed screen
+checks, with identity placement, unit scale and full coverage verified.
 Six views were inspected; two snapshots bring the progression to 143, preserving
 all prior images and standard natives. The folded-wire diagnostic also improves
 the reusable FreeCAD guidance. Two wires, mounting components, source-profile and

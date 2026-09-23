@@ -1,0 +1,30 @@
+{
+  "status": "Source conflict discovered before mounting construction; no geometry changed",
+  "source_asset": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p237.jpg",
+  "sha256": "45a2feae5164952f18e7e8bf2af3db4f08958be14fb2a1ef451551b4a5987b88",
+  "original_directly_inspected": true,
+  "identity": "SNL237 LQ196A, manufacturer132; application includes crankcase lower half (10)",
+  "printed_snl": {
+    "diameter_in": 0.25,
+    "length_in": 1.5625,
+    "length_mm": 39.6875,
+    "case_thread_system": "U.S. Standard",
+    "case_thread_length_in": 0.4375,
+    "nut_thread_system": "S.A.E.",
+    "nut_thread_length_in": 0.5625
+  },
+  "printed_hb196": {
+    "diameter_in": 0.25,
+    "pitch_tpi": 28,
+    "length_in": 1.4375,
+    "length_mm": 36.5125,
+    "case_to_nut_span_in": 0.4375
+  },
+  "difference_mm": 3.175,
+  "consequences": [
+    "Do not silently overwrite the HB196 length with SNL237. Target production applicability and thread engagement need explicit selection.",
+    "If case engagement is assumed equal to the full printed 7/16-inch coarse end, SNL stock projects28.575mm and its nut thread starts14.2875mm below case; this is3.175mm below HB196 nut bearing plane11.1125.",
+    "Transferring the same end-thread lengths to the shorter HB stock would put the nut-thread start at11.1125mm under that engagement assumption. This is an inference, not independent HB thread-end evidence.",
+    "Alternative deeper engagement would need source-compatible case counterbore/thread geometry; do not infer engagement from total length alone."
+  ]
+}

@@ -137,12 +137,22 @@ strand spacing. Its eight local material comparisons, self-spacing and stock
 volume pass. This is a bounded wire probe, not the required coupled full-pump
 parameter qualification; that broader trial remains open.
 
-All **135 strict STEP comparisons of nonscreen parts pass**, across definitions
-and installed occurrences. The four dense screens remain deferred in both frames
-(eight comparisons), so the [subset report](../experiments/drive_chains/engine_oil_pump_relief_lock_study/exchange_nonscreen_checks.json)
-cannot certify complete exchange. The original 35-part candidate's full STEP process is still running.
-Exact serialized-pair reuse was investigated, but no uncompleted comparison is
-counted as a pass. Exported STEP files alone do not satisfy exchange acceptance.
+All **143 definition/occurrence STEP comparisons are covered**: 135 direct
+strict comparisons and eight exact-pair reuses for the unchanged screens. The
+[combined report](../experiments/drive_chains/engine_oil_pump_relief_lock_study/exchange_checks.json)
+binds the native and both STEP files, records each reused pair and proves complete,
+disjoint coverage. The [reference evidence](../experiments/drive_chains/engine_oil_pump_relief_lock_study/screen_reference/completed_comparisons.json)
+retains the four completed strict screen-definition comparisons and their actual
+native/STEP BReps. Reuse requires exact serialized pairs, identity placement and
+unit link scale; it does not infer success from a matching volume or valid export.
+Changed native geometry, changed STEP geometry, an unpassed source comparison and
+a nonidentity pose are rejected by the negative controls.
+
+The original 35-part whole-assembly STEP process remains separate and may still
+be running. Only its completed per-part comparisons are reused. This qualification
+covers the present isolated pump geometry, not crankcase installation or historical
+completeness. The nonscreen subset report intentionally retains its eight deferred
+entries; the combined report resolves those entries explicitly.
 
 Six [views](../experiments/drive_chains/engine_oil_pump_relief_lock_study/source_review/index.html)
 were directly compared with LIB27/29/30/33/34 and SNL plate33. The new access wells
@@ -180,3 +190,12 @@ case surface**, plus ten washers111, nuts101 and cotters106. The present estimat
 span. A 9.7125 mm flange would satisfy the assumed stack; this is a proposed
 revision requiring actual joint checks, not a change already made. The next-work
 notes retain those source rows and original-image hashes.
+
+A further direct check of SNL237 finds LQ196A/manufacturer132 printed as
+**1/4 × 1-9/16 inches**, with 7/16-inch U.S. Standard and 9/16-inch S.A.E.
+threaded ends. This is **3.175 mm longer** than HB196's 1-7/16-inch stud.
+The source application includes ten studs for the lower crankcase. Retain this
+conflict when choosing the mounting stack and engagement; the same assumed
+case engagement does not put both versions' nut threads at the HB bearing plane.
+The [calculation](../experiments/drive_chains/engine_oil_pump_relief_lock_study/next_work/mounting_stud_conflict.json)
+records the alternatives without treating an assumed engagement as a printed fact.
