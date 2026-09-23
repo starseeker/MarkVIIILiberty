@@ -1,0 +1,36 @@
+{
+  "category": "cross_assembly_repair",
+  "id": "mount",
+  "inputs": [
+    {
+      "destination": "mount_spec.json",
+      "sha256": "7cc784e0419ba14ca74c548f0b9afeba3fb7623f3bb5cd34c706cbe6040f7445",
+      "source": "benchmarks/cad_work_packets/fixtures/mount_spec.json"
+    },
+    {
+      "destination": "broken_mount.FCStd",
+      "sha256": "c2d52ac7a2ddcc317ea3c6313b070a7870304179570420794499dbb179b461df",
+      "source": "benchmarks/cad_work_packets/fixtures/broken_mount.FCStd"
+    }
+  ],
+  "instructions": "Inspect broken_mount.FCStd using FreeCAD and repair the assembly to mount_spec.json. The defect location is not supplied: use CAD diagnostics. Preserve every object name/type, parent hierarchy, shared definition shape, and all valid placements. Fix only the occurrence placements that violate the contract. Save fixed.FCStd and a STEP compound of the TEN installed world-space solids (two plates and eight bolts). Write diagnosis.json with keys changed_objects (array of object names) and cause (text explaining frame composition), and notes.md describing the checks actually run. Include a builder that reproduces the repair from the supplied native file. This is a synthetic diagnostic fixture, not a historical mount design.",
+  "mode": "shadow",
+  "outputs": [
+    "deliverables/build.py",
+    "deliverables/notes.md",
+    "deliverables/fixed.FCStd",
+    "deliverables/fixed.step",
+    "deliverables/diagnosis.json"
+  ],
+  "reviewed": {
+    "dimensions": true,
+    "interfaces": false,
+    "sources": true
+  },
+  "risks": [
+    "cross_assembly_change"
+  ],
+  "validator": "tools/cad_packets/validators/shadow.py",
+  "validator_qualification": "benchmarks/cad_work_packets/results/qualification/self_test.json",
+  "version": 1
+}

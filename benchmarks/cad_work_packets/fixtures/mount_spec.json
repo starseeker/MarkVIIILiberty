@@ -1,0 +1,64 @@
+{
+  "contract": "Keep all object names/types, Rig/Left/Right hierarchy, shared definitions, and shape geometry unchanged. Each Plate link is identity in its side frame. Each Bolt link has its hole XY and Z=0, identity rotation in its side frame.",
+  "historical_status": "Synthetic cross-assembly diagnostic fixture",
+  "holes": [
+    [
+      -20,
+      -10
+    ],
+    [
+      20,
+      -10
+    ],
+    [
+      20,
+      10
+    ],
+    [
+      -20,
+      10
+    ]
+  ],
+  "rig_frame": {
+    "angle_degrees": 20,
+    "axis": [
+      0,
+      1,
+      0
+    ],
+    "translation": [
+      320,
+      50,
+      -80
+    ]
+  },
+  "side_frames": {
+    "Left": {
+      "angle_degrees": 90,
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "translation": [
+        0,
+        100,
+        0
+      ]
+    },
+    "Right": {
+      "angle_degrees": -90,
+      "axis": [
+        0,
+        0,
+        1
+      ],
+      "translation": [
+        0,
+        -100,
+        0
+      ]
+    }
+  },
+  "units": "mm"
+}

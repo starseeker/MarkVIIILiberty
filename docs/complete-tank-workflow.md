@@ -8,6 +8,14 @@ implementation progress is recorded in
 [execution queue](../cad/003_FullTank/work_queue.json) records that work; the
 [work-packet template](templates/cad-work-packet.md) defines each deliverable.
 
+The [CLI work-packet controller](../tools/cad_packets/README.md), added on
+22 September 2026, supplies experimental effort routing and isolated execution.
+Reviewed, bounded implementation can trial Astra medium; uncertain sources,
+new mechanisms, cross-assembly changes and failure diagnosis retain xhigh.
+Its acceptance checks run outside candidate write access, and passing candidates
+still require source and visual review. It currently produces shadow review
+bundles; this does not relax the integration or completion gates below.
+
 ## 1. Target and working decisions
 
 Build an evidence-led, full-size, hierarchical FreeCAD reconstruction of the

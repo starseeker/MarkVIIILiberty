@@ -53,6 +53,10 @@ offers opaque and transparent hull display; the transparent mode begins at 011.
 | Preserved generated delivery archives | `.work/deliveries` |
 | Current handoff and active job handles | `.work/WORKFLOW_HANDOFF.md` |
 | Numbered images and their hashes | `cad/VISUAL_PROGRESSION.md` |
+| CLI work-packet controller and usage | `tools/cad_packets/README.md` |
+| Original effort benchmark, preserved results | `benchmarks/cad_reasoning` |
+| Tool-enabled shadow protocol, packets and durable results | `benchmarks/cad_work_packets` |
+| Candidate scratch workspaces | `.work/cad-packets/runs` |
 
 `.work` is intentionally ignored by Git. It survives process restarts but must
 travel with workspace backups; a Git clone alone does not include these delivery
@@ -66,6 +70,13 @@ Check the current handoff, job handle and status files before resuming an
 operation. A slow stage or tool observation timeout is not proof that a process
 has stopped. Do not start a replacement worker while the original is active.
 Keep source inputs fixed during an active qualification.
+
+For a controller run, use `python3 tools/cad_packets/controller.py status RUN_ID`.
+Repeating an identical completed run verifies and reuses its evidence. An
+interrupted run is preserved and needs a new run ID; do not delete its records
+to restart it. The committed declared artifacts and raw events are sufficient
+to review completed trials even if scratch workspaces are lost. Resuming or
+staging with changed inputs, controller code or validators requires requalification.
 
 The stage011 promotion, main-path verification, transparent rendering and archive
 finalization are complete. Do not rerun promotion preparation or the older010
