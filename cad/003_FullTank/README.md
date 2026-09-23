@@ -223,7 +223,20 @@ two parameter trials and a fresh rebuild pass. Five views were inspected and
 three new progression snapshots are saved. The [packet](packets/I03-clutch-retention.md)
 records these checks and the numerical volume diagnostic.
 
-The latest [engine-suspension development candidate](experiments/drive_chains/engine_suspension_build/DrivetrainWithEngineSuspension.FCStd)
+The latest [engine-case development candidate](experiments/drive_chains/engine_case_build/DrivetrainWithEngineCase.FCStd)
+contains **1,911 physical components**, including two new hollow crankcase
+castings. Seven support occurrences change to accommodate the sump; all1,902
+unaffected inherited components are preserved. The case has twelve cylinder
+receivers, integral bearing webs, a dry gear chamber and lower oil trough/wells.
+Nominal191 independent checks,71 affected material pairs including standard
+context, and15 STEP comparisons pass. A coupled thicker/deeper casing trial
+passes191/71. Eight native views and the fixed source projection were inspected;
+three new images bring the progression to120. The [packet](packets/P01-engine-case.md)
+documents the rejected first trial, estimated profiles and unresolved engine
+registration, bearing identities and mounting count. This is a development
+checkpoint; engine internals and combined qualification/integration remain open.
+
+The [engine-suspension development candidate](experiments/drive_chains/engine_suspension_build/DrivetrainWithEngineSuspension.FCStd)
 contains **1,909 physical components**: 61 new pieces and two receiving revisions,
 preserving 1,846 inherited occurrences. Both longitudinal rails, three suspension
 brackets, packings, bevel washers and catalogue hardware populate all 72 SNL242

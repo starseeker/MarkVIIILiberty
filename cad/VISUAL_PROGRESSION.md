@@ -625,3 +625,26 @@ prior images. Standard tank011 and its transparent-hull companion are unchanged.
 | [installed isometric](intermediate_snapshot_iso_engine_suspension_001.png) | `0c8b69e9dceab23865fc0f054dd172e81c9608e1fde2df42c8b8dc7a2dab3cc0` |
 | [exposed engine supports](intermediate_snapshot_detail_engine_suspension_001.png) | `3a4cf97bf47e22ccea98154dfbabbe9387457d544b19260d039c2d348b362d68` |
 | [front suspension mount](intermediate_snapshot_detail_engine_front_mount_001.png) | `3f2d9f19e1a0cf48e4ca2d0d2c5edc5ece7f455f16d48ee627836b6028176b3a` |
+
+
+## Hollow engine crankcase castings — 23 September 2026
+
+The development candidate contains **1,911 physical components**: two new
+castings, seven support revisions and1,902 preserved inherited occurrences.
+Upper V-bank receivers, integral webs and main-bearing seats, a dry gear chamber,
+lower oil trough/wells and estimated pump receivers are now represented. The
+front yoke's estimated arms drop around the sump, with4.392248mm nominal clearance.
+Engine internals, hardware, registration and mounting identity conflicts remain open.
+
+Nominal191 independent checks,71 affected material pairs including standard
+context and15 STEP comparisons pass. A coupled parameter trial passes191/71.
+Eight native views and the fixed source projection were visually inspected.
+Three images bring the progression to120; all117 earlier images and20 standard
+native files are unchanged. Standard tank011 and its transparent view await
+combined drivetrain integration. Profiles remain documented approximations.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_engine_case_001.png) | `d548711903b8f5a36a0b7acad9137fac29807ef5020060e9716057689fcea26c` |
+| [upper crankcase casting](intermediate_snapshot_detail_engine_case_upper_001.png) | `e14f18669fbafe1cf05c0651d2b926c2932251037cd403cbdede1d3386341b1f` |
+| [lower crankcase casting](intermediate_snapshot_detail_engine_case_lower_001.png) | `22666b21812d60610dbeda4d1a95f36268a51e431fc8db69c0417bd312a7ce36` |
