@@ -6,6 +6,15 @@ wording or value behind a dimension. A cropped shape can lose its leader line or
 assembly context. Separate scanned wording, transcription, interpretation and
 chosen approximation in the packet.
 
+Search the local figure index by component and mounting name before settling an
+uncertain visible form from a general assembly view. In the Liberty gear work,
+the timing section left the starting claw ambiguous; the separately indexed
+exploded mounting view resolved a broad rim and larger centre opening. Numerical
+geometry checks had passed the earlier hypothesis. Preserve that diagnostic and
+revise the source comparison before accepting the part. The
+[gear reconstruction packet](../../../cad/003_FullTank/packets/P01-engine-driving-gear.md)
+records this example and its retained uncertainty.
+
 Before fitting geometry, identify the part, its installed quantity and its
 interfaces. Catalogue assembly totals can include subassemblies already counted;
 source quantity is not automatically the number of extra installed pieces.

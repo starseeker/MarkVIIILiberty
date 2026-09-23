@@ -148,3 +148,6 @@ valve gear, accessories and services remain substantially incomplete. Fresh
 nominal reproduction, combined drivetrain qualification, source registration,
 mounting reconciliation and integration into the standard tank remain open.
 P01, I01 and the full-tank goal remain incomplete.
+
+
+Subsequent [driving-gear development](P01-engine-driving-gear.md) installs the bevel, selected shim, six bolt sets and thrust-nut lock. It preserves this checkpoint and adds only local shaft/nut receiver holes; mating gears and final shim/backlash/timing remain open.

@@ -1,0 +1,1 @@
+Initial source93-based gear hypothesis. All91/428/33 nominal and variant checks passed, but source review subsequently found the more specific Liberty figure86. Its larger centre opening and largely continuous claw rim justify a geometry revision before acceptance. This archive is not a qualified final gear. No snapshots or checkpoint were finalized from it.

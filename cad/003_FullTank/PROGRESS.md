@@ -11,9 +11,24 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — engine driving bevel and thrust-nut lock
+
+The latest [engine driving-gear candidate](experiments/drive_chains/engine_gear_build/DrivetrainWithEngineGear.FCStd)
+contains **2,153 physical components**: 22 new, two locally revised and 2,129
+preserved parent occurrences. The main bevel has 33 spline-flanked teeth, an
+integral estimated starting claw and splined hub, six complete bolt sets and one
+provisional thin shim. The thrust nut has a radial lock screw and formed wire.
+Nominal **93 independent checks, 428 affected material pairs including standard
+context, and 33 native/STEP comparisons pass**. A coupled module/face/web trial
+passes 93/428/33, including STEP. Six native views were inspected;
+three new images bring the progression to 129. The [packet](packets/P01-engine-driving-gear.md)
+retains the handbook bolt-grip conflict and unverified hub/locking details.
+Mating gears, final backlash/shims/timing and the remaining engine systems are
+pending. Combined qualification and standard integration remain open.
+
 ## 23 September 2026 — shaft closures and retaining sets
 
-The latest [shaft-closure development candidate](experiments/drive_chains/engine_shaft_fittings_build/DrivetrainWithEngineShaftFittings.FCStd)
+The [shaft-closure development candidate](experiments/drive_chains/engine_shaft_fittings_build/DrivetrainWithEngineShaftFittings.FCStd)
 contains **2,131 physical components**: 139 new plugs, gaskets and retaining
 constituents, one revised shaft and 1,991 preserved parent pieces. Nominal
 **268 independent checks, 738 affected material pairs including standard context,

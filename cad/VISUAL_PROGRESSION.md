@@ -690,3 +690,22 @@ companion remain unchanged pending combined drivetrain integration.
 | [installed isometric](intermediate_snapshot_iso_engine_shaft_fittings_001.png) | `91e4acb00dba69cbcaa6a7507c923bf58d2dfec0532d0dc95d8f6149a96f8776` |
 | [shaft and closures](intermediate_snapshot_detail_engine_shaft_fittings_001.png) | `4fc5fe28c54835a65c3003efb3cbf9d625b6e2023ee930327fd92b9d7dff8329` |
 | [crankpin closure section](intermediate_snapshot_detail_engine_shaft_closures_001.png) | `e0bdd3d4f0cbd288af8d454ab16cf325840823f497d2847a321f491d4eab5b03` |
+
+
+## Engine driving bevel and thrust lock — 23 September 2026
+
+The development assembly contains 2,153 physical occurrences: 22 new, two locally
+revised and 2,129 preserved. Nominal 93 independent / 428 material-pair/33 STEP checks
+pass. The module/face/web trial passes 93/428/33, including standard
+context and STEP. Six views were inspected against source context; bolt-grip
+conflict, claw/spline counts and wire route remain documented uncertainties.
+
+Three new images bring progression to 129; all 126prior images are preserved.
+Upper case hidden only for review. Standard tank011 and its transparent-hull
+companion remain unchanged pending combined drivetrain integration.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_engine_gear_001.png) | `8d182cae50df7a0c101581aecaa1abc536f7c84003acbcf2b37d75bdef86e405` |
+| [driving bevel joint](intermediate_snapshot_detail_engine_gear_001.png) | `6c2ff3e8ffa5c8faa128b0e0e3228e2a8ec8073604e7e887815bea52123c4ab9` |
+| [thrust-nut lock](intermediate_snapshot_detail_engine_thrust_lock_001.png) | `1e766788500faac4d8c45654e2d6a3ef9556458276b83ee72af8d919d0e6eb32` |

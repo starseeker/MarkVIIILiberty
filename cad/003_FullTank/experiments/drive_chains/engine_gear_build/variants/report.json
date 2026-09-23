@@ -1,0 +1,1856 @@
+{
+  "status": "development_hypothesis_not_qualified",
+  "native_sha256": "7173b4749ad619826f67efdaa4d4266a77cd2810ceb7fa17870ae05205fe9947",
+  "parent_native_sha256": "43cce45d5168d743dab9aa41ffd3190b220259833ba8f0545a9ae3b6bc952400",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/engine_gear_build.py": "bce1c9fbc503acce173449e3963350710156e4261c5678894a58ada0cf50ae93",
+    ".work/engine-gear/variant/controls.json": "d0827a44cf83091b673c299504b27d82f803cf9de7b1d50a500692f14f6d373a",
+    "cad/003_FullTank/experiments/drive_chains/engine_gear_parts.py": "7ea70c4a0155cf1546fbc1f965fbe0c25153b8d35a958576c280ee48672bf638",
+    "cad/003_FullTank/experiments/drive_chains/engine_gear_sources.json": "f54add0453e32e55ce017debb0c4d5306b2ebc97bb7cafb51996eb6a76dc30bd",
+    "cad/003_FullTank/experiments/drive_chains/transmission_bevel_tooth.py": "81d3a490578ce81ceceeff193cb5c8c4a3891566c7cd98ec1bd9e3ce7a0b6c15",
+    "cad/003_FullTank/experiments/drive_chains/engine_crankshaft_parts.py": "7826dbae3b707bcf57b84691a9b4a440f67dd509c58e395e7dcb1cfaf6f02aeb",
+    "cad/003_FullTank/experiments/drive_chains/engine_crossmember_parts.py": "72426ba028c260d72035600436c0bfc36c01169f722e5faed9a877906e2e74c4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_stud_parts.py": "cdeda621c79bf68a95f3cb03f173e60c75a66f2d63331c0e334418840f6fd3bb",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_installation_parts.py": "3aa0f82af289688b8453ac25dbe1c53bf84924880a0e03adb51328431a3eef7f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_core_parts.py": "b7b3150e42529535f842871e81c4c580a15b25ce123e997da3ef5437041d7ff1"
+  },
+  "controls": {
+    "teeth": 33,
+    "mating_teeth": 22,
+    "module": 3.6,
+    "face_width": 10.5,
+    "pressure_angle_deg": 20.0,
+    "tooth_thinning": 0.1,
+    "flank_samples": 64,
+    "root_embed": 0.1,
+    "web_stock": 5.2,
+    "bore_radius": 21.0,
+    "hub_radius": 26.5,
+    "hub_length": 20.0,
+    "claw_count": 2,
+    "claw_angle_deg": 150.0,
+    "claw_stock": 3.0,
+    "spline_count": 12,
+    "spline_depth": 2.0,
+    "spline_width": 2.0,
+    "shim_stock": 0.0508,
+    "shim_radius": 49.0,
+    "shim_bore_radius": 22.5,
+    "tooth_phase_at_reference_deg": 90.0,
+    "reference_crank_phase_deg": -12.5,
+    "bolt_count": 6,
+    "bolt_circle": 40.25,
+    "bolt_diameter": 7.9375,
+    "bolt_length": 22.225,
+    "bolt_head_af": 12.7,
+    "bolt_head_stock": 4.0,
+    "nut_af": 12.7,
+    "nut_stock": 6.35,
+    "castle_radius": 5.3,
+    "castle_slot_depth": 2.4,
+    "castle_slot_gap": 0.25,
+    "cotter_diameter": 1.5875,
+    "cotter_length": 15.875,
+    "cotter_hole_gap": 0.08,
+    "receiver_gap": 0.05,
+    "nut_bore_gap": 0.05,
+    "lock_station": 34.2,
+    "lock_angle_deg": 30.0,
+    "lock_tip_radius": 30.0,
+    "lock_seat_radius": 37.0,
+    "lock_screw_diameter": 3.175,
+    "lock_head_radius": 2.0,
+    "lock_head_stock": 1.5,
+    "lock_blind_gap": 0.1,
+    "lock_driver_slot_width": 0.6,
+    "lock_driver_slot_depth": 0.4,
+    "wire_crosshole_radius": 0.5,
+    "wire_radius": 0.35,
+    "wire_pitch_radius": 37.5,
+    "wire_entry_tail": 3.0,
+    "wire_end_bend_radius": 1.0,
+    "wire_anchor_radius": 34.8
+  },
+  "parent_controls": {
+    "journal_diameter": 66.675,
+    "stroke": 177.8,
+    "main_bearing_long_length": 115.0,
+    "main_bearing_short_length": 49.0,
+    "bearing_diametral_clearance": 0.07302499999999999,
+    "journal_endplay": 1.7145,
+    "static_phase_deg": -12.5,
+    "crankpin_diameter": 63.5,
+    "web_stock": 12.7,
+    "web_root_radius": 43.0,
+    "web_pin_radius": 39.0,
+    "main_hollow_radius": 17.4625,
+    "pin_hollow_radius": 15.875,
+    "oil_drill_radius": 3.0,
+    "gear_flange_radius": 50.0,
+    "gear_flange_back": 32.0,
+    "gear_flange_stock": 10.0,
+    "gear_floor_height": 70.0,
+    "dowel_diameter": 3.175,
+    "dowel_length": 6.35,
+    "dowel_radial_start": 34.5,
+    "dowel_clearance": 0.05,
+    "bearing_oil_groove_width": 3.0,
+    "bearing_oil_groove_depth": 0.6,
+    "bearing_oil_feed_radius": 2.5,
+    "thrust_center": 46.0,
+    "thrust_center_stock": 8.0,
+    "thrust_ball_row_offset": 9.0,
+    "thrust_ball_radius": 6.0,
+    "thrust_ball_pitch_radius": 47.5,
+    "thrust_balls_per_row": 20,
+    "thrust_groove_allowance": 0.1,
+    "thrust_center_outer_radius": 60.0,
+    "thrust_outer_radius": 61.0,
+    "thrust_outer_bore": 39.0,
+    "thrust_outer_stock": 8.0,
+    "thrust_outer_offset": 13.0,
+    "thrust_cage_inner_radius": 40.5,
+    "thrust_cage_outer_radius": 54.5,
+    "thrust_cage_stock": 3.0,
+    "thrust_cage_ball_gap": 0.15,
+    "thrust_sleeve_outer_radius": 65.0,
+    "thrust_sleeve_stock": 2.0,
+    "thrust_sleeve_length": 12.0,
+    "thrust_seat_radius": 74.0,
+    "thrust_seat_gap": 0.05,
+    "thrust_shaft_shoulder_radius": 39.0,
+    "thrust_shaft_shoulder_stock": 4.0,
+    "thrust_nut_length": 10.0,
+    "thrust_nut_radius": 40.0,
+    "thrust_nut_neck_radius": 37.0,
+    "thrust_nut_slot_count": 6,
+    "thrust_nut_slot_width": 4.0,
+    "key_length": 150.0,
+    "key_width": 12.7,
+    "key_depth": 4.0,
+    "key_top_gap": 0.254,
+    "key_screw_diameter": 4.7625,
+    "key_screw_length": 19.05,
+    "key_screw_head_radius": 4.7625,
+    "key_screw_head_height": 2.38125,
+    "output_thread_radius": 24.0,
+    "output_thread_length": 24.0,
+    "output_nut_af": 63.5,
+    "output_nut_length": 16.0,
+    "thread_clearance": 0.05,
+    "output_cotter_diameter": 6.35,
+    "output_cotter_length": 76.2
+  },
+  "case_controls": {
+    "output_clearance_to_flywheel": 5.0,
+    "nose_to_first_row": 169.06875,
+    "cylinder_pitch": 165.1,
+    "bank_angle": 45.0,
+    "piston_bore": 127.0,
+    "cylinder_spigot_stock": 3.175,
+    "cylinder_spigot_clearance": 0.1,
+    "crankshaft_diameter": 66.675,
+    "main_bearing_shell_stock": 3.175,
+    "case_wall": 8.0,
+    "body_half_width": 174.0,
+    "deck_half_width": 166.0,
+    "deck_center_height": 240.0,
+    "mount_flange_half_width": 239.0,
+    "mount_flange_stock": 9.525,
+    "lower_flange_half_width": 184.0,
+    "lower_flange_stock": 9.525,
+    "body_start_before_first_row": 25.0,
+    "nose_half_width": 61.0,
+    "nose_second_web_spacing": 62.0,
+    "web_stock": 12.7,
+    "main_seat_width": 38.1,
+    "bearing_boss_radius": 53.0,
+    "bearing_stud_half_spacing": 50.8,
+    "bearing_stud_boss_radius": 12.7,
+    "bearing_stud_bore_radius": 6.45,
+    "mount_rib_stock": 6.35,
+    "mount_rib_pair_spacing": 17.0,
+    "gear_end_after_last_row": 125.0,
+    "gear_chamber_floor": 46.0,
+    "gear_vertical_bore_radius": 34.0,
+    "gear_inclined_bore_radius": 26.0,
+    "gear_oil_trap_radius": 9.0,
+    "lower_pan_depth": 165.0,
+    "lower_trough_depth": 190.0,
+    "gear_well_depth": 220.0,
+    "forward_well_radius": 41.0,
+    "forward_well_depth": 215.0,
+    "suspension_front_hub_height": 30.0,
+    "suspension_rail_front_x": 4120.0,
+    "oil_pump_receiver_radius": 65.0,
+    "oil_pump_receiver_after_last_row": 50.0,
+    "front_arm_mid_y": 120.0,
+    "front_arm_mid_drop": 25.0
+  },
+  "parent_datums": {
+    "main_rows": [
+      169.06875,
+      334.16875,
+      499.26874999999995,
+      664.36875,
+      829.46875,
+      994.56875,
+      1159.6687499999998
+    ],
+    "bearing_spans": [
+      [
+        78.56875,
+        193.56875
+      ],
+      [
+        309.66875,
+        358.66875
+      ],
+      [
+        474.76874999999995,
+        523.76875
+      ],
+      [
+        639.86875,
+        688.86875
+      ],
+      [
+        804.96875,
+        853.96875
+      ],
+      [
+        970.06875,
+        1019.06875
+      ],
+      [
+        1135.1687499999998,
+        1184.1687499999998
+      ]
+    ],
+    "bearing_inner_radius": 33.3740125,
+    "bearing_outer_radius": 36.512499999999996,
+    "crank_phases_deg": [
+      -12.5,
+      -132.5,
+      107.5,
+      107.5,
+      -132.5,
+      -12.5
+    ],
+    "cylinder_numbers_nose_to_gear": [
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "taper": {
+      "rear": -238.37518848850868,
+      "front": -44.5751884885085,
+      "rear_radius": 25.5,
+      "front_radius": 33.3375,
+      "keyway_depth": 6.45,
+      "keyway_width": 12.9
+    },
+    "crankpin_stations": [
+      {
+        "cylinder": 6,
+        "center": [
+          251.61874999999998,
+          -19.241481679097348,
+          86.79271503296208
+        ],
+        "running_span": [
+          207.12599999999998,
+          296.1115
+        ],
+        "phase_deg": -12.5
+      },
+      {
+        "cylinder": 5,
+        "center": [
+          416.71875,
+          -65.54395524242004,
+          -60.0599694570322
+        ],
+        "running_span": [
+          372.226,
+          461.21149999999994
+        ],
+        "phase_deg": -132.5
+      },
+      {
+        "cylinder": 4,
+        "center": [
+          581.8187499999999,
+          84.78543692151737,
+          -26.732745575929883
+        ],
+        "running_span": [
+          537.326,
+          626.3114999999999
+        ],
+        "phase_deg": 107.5
+      },
+      {
+        "cylinder": 3,
+        "center": [
+          746.91875,
+          84.78543692151737,
+          -26.732745575929883
+        ],
+        "running_span": [
+          702.426,
+          791.4114999999999
+        ],
+        "phase_deg": 107.5
+      },
+      {
+        "cylinder": 2,
+        "center": [
+          912.01875,
+          -65.54395524242004,
+          -60.0599694570322
+        ],
+        "running_span": [
+          867.5260000000001,
+          956.5115
+        ],
+        "phase_deg": -132.5
+      },
+      {
+        "cylinder": 1,
+        "center": [
+          1077.1187499999999,
+          -19.241481679097348,
+          86.79271503296208
+        ],
+        "running_span": [
+          1032.626,
+          1121.6114999999998
+        ],
+        "phase_deg": -12.5
+      }
+    ],
+    "oil_passages": [
+      {
+        "kind": "main_radial",
+        "start": [
+          136.06875,
+          0,
+          0
+        ],
+        "end": [
+          136.06875,
+          0,
+          -35.3375
+        ]
+      },
+      {
+        "kind": "main_radial",
+        "start": [
+          334.16875,
+          0,
+          0
+        ],
+        "end": [
+          334.16875,
+          0,
+          -35.3375
+        ]
+      },
+      {
+        "kind": "main_radial",
+        "start": [
+          499.26874999999995,
+          0,
+          0
+        ],
+        "end": [
+          499.26874999999995,
+          0,
+          -35.3375
+        ]
+      },
+      {
+        "kind": "main_radial",
+        "start": [
+          664.36875,
+          0,
+          0
+        ],
+        "end": [
+          664.36875,
+          0,
+          -35.3375
+        ]
+      },
+      {
+        "kind": "main_radial",
+        "start": [
+          829.46875,
+          0,
+          0
+        ],
+        "end": [
+          829.46875,
+          0,
+          -35.3375
+        ]
+      },
+      {
+        "kind": "main_radial",
+        "start": [
+          994.56875,
+          0,
+          0
+        ],
+        "end": [
+          994.56875,
+          0,
+          -35.3375
+        ]
+      },
+      {
+        "kind": "main_radial",
+        "start": [
+          1159.6687499999998,
+          0,
+          0
+        ],
+        "end": [
+          1159.6687499999998,
+          0,
+          -35.3375
+        ]
+      },
+      {
+        "kind": "pin_radial",
+        "start": [
+          251.61874999999998,
+          -19.241481679097348,
+          86.79271503296208
+        ],
+        "end": [
+          251.61874999999998,
+          -26.54631864950832,
+          119.74270527325983
+        ]
+      },
+      {
+        "kind": "pin_radial",
+        "start": [
+          416.71875,
+          -65.54395524242004,
+          -60.0599694570322
+        ],
+        "end": [
+          416.71875,
+          -90.42706535976173,
+          -82.86113896406073
+        ]
+      },
+      {
+        "kind": "pin_radial",
+        "start": [
+          581.8187499999999,
+          84.78543692151737,
+          -26.732745575929883
+        ],
+        "end": [
+          581.8187499999999,
+          116.97338400927003,
+          -36.8815663091991
+        ]
+      },
+      {
+        "kind": "pin_radial",
+        "start": [
+          746.91875,
+          84.78543692151737,
+          -26.732745575929883
+        ],
+        "end": [
+          746.91875,
+          116.97338400927003,
+          -36.8815663091991
+        ]
+      },
+      {
+        "kind": "pin_radial",
+        "start": [
+          912.01875,
+          -65.54395524242004,
+          -60.0599694570322
+        ],
+        "end": [
+          912.01875,
+          -90.42706535976173,
+          -82.86113896406073
+        ]
+      },
+      {
+        "kind": "pin_radial",
+        "start": [
+          1077.1187499999999,
+          -19.241481679097348,
+          86.79271503296208
+        ],
+        "end": [
+          1077.1187499999999,
+          -26.54631864950832,
+          119.74270527325983
+        ]
+      },
+      {
+        "kind": "rear_web",
+        "start": [
+          302.4615,
+          0.0,
+          0.0
+        ],
+        "end": [
+          302.4615,
+          -19.241481679097348,
+          86.79271503296208
+        ]
+      },
+      {
+        "kind": "rear_web",
+        "start": [
+          467.5614999999999,
+          0.0,
+          0.0
+        ],
+        "end": [
+          467.5614999999999,
+          -65.54395524242004,
+          -60.0599694570322
+        ]
+      },
+      {
+        "kind": "rear_web",
+        "start": [
+          632.6614999999999,
+          0.0,
+          0.0
+        ],
+        "end": [
+          632.6614999999999,
+          84.78543692151737,
+          -26.732745575929883
+        ]
+      },
+      {
+        "kind": "rear_web",
+        "start": [
+          797.7615,
+          0.0,
+          0.0
+        ],
+        "end": [
+          797.7615,
+          84.78543692151737,
+          -26.732745575929883
+        ]
+      },
+      {
+        "kind": "rear_web",
+        "start": [
+          962.8615,
+          0.0,
+          0.0
+        ],
+        "end": [
+          962.8615,
+          -65.54395524242004,
+          -60.0599694570322
+        ]
+      },
+      {
+        "kind": "rear_web",
+        "start": [
+          1127.9615,
+          0.0,
+          0.0
+        ],
+        "end": [
+          1127.9615,
+          -19.241481679097348,
+          86.79271503296208
+        ]
+      }
+    ],
+    "bearing_ports": [
+      [
+        107.31875,
+        0,
+        -36.512499999999996
+      ],
+      [
+        164.81875,
+        0,
+        -36.512499999999996
+      ],
+      [
+        334.16875,
+        0,
+        -36.512499999999996
+      ],
+      [
+        499.26874999999995,
+        0,
+        -36.512499999999996
+      ],
+      [
+        664.36875,
+        0,
+        -36.512499999999996
+      ],
+      [
+        829.46875,
+        0,
+        -36.512499999999996
+      ],
+      [
+        994.56875,
+        0,
+        -36.512499999999996
+      ],
+      [
+        1159.6687499999998,
+        0,
+        -36.512499999999996
+      ]
+    ],
+    "dowel_positions": [
+      [
+        136.06875,
+        0.0,
+        34.5
+      ],
+      [
+        136.06875,
+        0.0,
+        -34.5
+      ],
+      [
+        344.94875,
+        0.0,
+        34.5
+      ],
+      [
+        344.94875,
+        0.0,
+        -34.5
+      ],
+      [
+        510.0487499999999,
+        0.0,
+        34.5
+      ],
+      [
+        510.0487499999999,
+        0.0,
+        -34.5
+      ],
+      [
+        675.14875,
+        0.0,
+        34.5
+      ],
+      [
+        675.14875,
+        0.0,
+        -34.5
+      ],
+      [
+        840.24875,
+        0.0,
+        34.5
+      ],
+      [
+        840.24875,
+        0.0,
+        -34.5
+      ],
+      [
+        1005.34875,
+        0.0,
+        34.5
+      ],
+      [
+        1005.34875,
+        0.0,
+        -34.5
+      ],
+      [
+        1170.4487499999998,
+        0.0,
+        34.5
+      ],
+      [
+        1170.4487499999998,
+        0.0,
+        -34.5
+      ]
+    ],
+    "estimated_profiles": true,
+    "output_cotter": {
+      "straight_length_mm": 49.6,
+      "bend_arc_length_mm": 1.832595714594046,
+      "tail_length_mm": 24.767404285405956,
+      "total_leg_centerline_mm": 76.2,
+      "tail_endpoints": [
+        [
+          0.0,
+          46.808999161175365,
+          -16.399543354821798
+        ],
+        [
+          0.0,
+          46.808999161175365,
+          16.399543354821798
+        ]
+      ],
+      "wire_radius_mm": 1.5239999999999998,
+      "under_eye_y_mm": -24.8,
+      "bend_start_y_mm": 24.8,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "key_center": [
+      -141.4751884885086,
+      35.61475,
+      0
+    ],
+    "key_span": [
+      -216.4751884885086,
+      -66.47518848850859
+    ],
+    "key_screw_normal": [
+      -0.04040814643559428,
+      0.9991832573165143,
+      0.0
+    ],
+    "output_cotter_x": -258.8751884885087,
+    "gear_flange_span": [
+      1191.6687499999998,
+      1201.6687499999998
+    ],
+    "bearing_refinement": {
+      "long_upper": "coplanar faces unified on independent copy",
+      "long_lower": "coplanar faces unified on independent copy",
+      "short_upper": "coplanar faces unified on independent copy",
+      "short_lower": "coplanar faces unified on independent copy"
+    },
+    "thrust_sleeve_span": [
+      23.0,
+      69.0
+    ],
+    "thrust_race_spans": [
+      [
+        25.0,
+        33.0
+      ],
+      [
+        42.0,
+        50.0
+      ],
+      [
+        59.0,
+        67.0
+      ]
+    ],
+    "thrust_ball_rows": [
+      37.0,
+      55.0
+    ],
+    "thrust_nut_span": [
+      32.0,
+      42.0
+    ],
+    "thrust_housing_span": [
+      20.0,
+      72.0
+    ],
+    "origin": [
+      2906.8055512712617,
+      0.0,
+      849.2335104357661
+    ],
+    "axial_registration": "5mm nominal flywheel-to-nose clearance plus conditional HB44 nose length; not qualified engine/crankshaft alignment"
+  },
+  "datums": {
+    "bevel": {
+      "teeth": 33,
+      "mating_teeth": 22,
+      "pitch_radius_mm": 59.4,
+      "pitch_cone_angle_deg": 56.309932474020215,
+      "cone_distance_mm": 71.38991525418699,
+      "face_width_mm": 10.5,
+      "base_cone_angle_deg": 51.432250994884846,
+      "root_cone_angle_deg": 52.70311575854946,
+      "tip_cone_angle_deg": 59.19675807204353,
+      "addendum_mm": 3.6,
+      "dedendum_mm": 4.5,
+      "pressure_angle_deg": 20.0,
+      "pitch_tooth_thinning_mm": 0.1,
+      "root_radial_axial_outer_mm": [
+        56.79113687005467,
+        43.25837228799435
+      ],
+      "root_radial_axial_inner_mm": [
+        48.43831931855042,
+        36.89594830406475
+      ],
+      "spline_degrees": [
+        3
+      ],
+      "max_flank_fit_error_mm": 1.5802483379572458e-07,
+      "sample_angles_rad": [
+        0.9198428960463969,
+        0.9216418712657191,
+        0.9234408464850411,
+        0.9252398217043633,
+        0.9270387969236854,
+        0.9288377721430074,
+        0.9306367473623296,
+        0.9324357225816517,
+        0.9342346978009738,
+        0.9360336730202959,
+        0.9378326482396181,
+        0.9396316234589401,
+        0.9414305986782623,
+        0.9432295738975844,
+        0.9450285491169066,
+        0.9468275243362286,
+        0.9486264995555508,
+        0.9504254747748729,
+        0.952224449994195,
+        0.9540234252135171,
+        0.9558224004328393,
+        0.9576213756521613,
+        0.9594203508714835,
+        0.9612193260908056,
+        0.9630183013101277,
+        0.9648172765294498,
+        0.966616251748772,
+        0.968415226968094,
+        0.9702142021874162,
+        0.9720131774067383,
+        0.9738121526260604,
+        0.9756111278453825,
+        0.9774101030647047,
+        0.9792090782840268,
+        0.9810080535033489,
+        0.982807028722671,
+        0.9846060039419932,
+        0.9864049791613152,
+        0.9882039543806374,
+        0.9900029295999595,
+        0.9918019048192815,
+        0.9936008800386037,
+        0.9953998552579258,
+        0.9971988304772479,
+        0.99899780569657,
+        1.0007967809158922,
+        1.0025957561352143,
+        1.0043947313545365,
+        1.0061937065738584,
+        1.0079926817931806,
+        1.0097916570125027,
+        1.0115906322318249,
+        1.013389607451147,
+        1.0151885826704692,
+        1.0169875578897911,
+        1.0187865331091133,
+        1.0205855083284354,
+        1.0223844835477576,
+        1.0241834587670797,
+        1.0259824339864019,
+        1.027781409205724,
+        1.029580384425046,
+        1.031379359644368,
+        1.0331783348636903
+      ],
+      "outer_positive_flank_poles_mm": [
+        [
+          56.6567325879443,
+          43.25837228799435,
+          3.90485332009458
+        ],
+        [
+          56.68318167275878,
+          43.22429368767469,
+          3.898621619465413
+        ],
+        [
+          56.73603800068359,
+          43.15608993223999,
+          3.8858204688700986
+        ],
+        [
+          56.81513982027512,
+          43.05371458560637,
+          3.865652625178989
+        ],
+        [
+          56.89410938220938,
+          42.95119990351253,
+          3.8445393243287462
+        ],
+        [
+          56.97294323858588,
+          42.848546217823184,
+          3.8225095765247916
+        ],
+        [
+          57.05163811450688,
+          42.74575386078287,
+          3.799590051155409
+        ],
+        [
+          57.13019091623343,
+          42.64282316508989,
+          3.7758049639873392
+        ],
+        [
+          57.20859869746385,
+          42.53975446387961,
+          3.751176543010955
+        ],
+        [
+          57.28685864273037,
+          42.436548090730064,
+          3.7257252578527935
+        ],
+        [
+          57.364968050741155,
+          42.333204379661034,
+          3.6994700500029305
+        ],
+        [
+          57.44292432129627,
+          42.229723665134316,
+          3.6724285137010138
+        ],
+        [
+          57.52072494406919,
+          42.12610628205304,
+          3.644617051078415
+        ],
+        [
+          57.598367489155684,
+          42.022352565761146,
+          3.6160510029110844
+        ],
+        [
+          57.67584959898761,
+          41.9184628520427,
+          3.5867447605340446
+        ],
+        [
+          57.75316898138578,
+          41.81443747712103,
+          3.5567118620321407
+        ],
+        [
+          57.83032340355019,
+          41.710276777657754,
+          3.525965075494243
+        ],
+        [
+          57.90731068683318,
+          41.605981090751904,
+          3.494516471463781
+        ],
+        [
+          57.98412870216911,
+          41.50155075393896,
+          3.4623774863237946
+        ],
+        [
+          58.060775366059325,
+          41.39698610518981,
+          3.429558978020373
+        ],
+        [
+          58.13724863702873,
+          41.29228748290968,
+          3.396071275272323
+        ],
+        [
+          58.213546512486346,
+          41.18745522593727,
+          3.3619242212120803
+        ],
+        [
+          58.28966702593169,
+          41.08248967354335,
+          3.327127212240309
+        ],
+        [
+          58.365608244461896,
+          40.97739116543019,
+          3.2916892327466356
+        ],
+        [
+          58.44136826653709,
+          40.87216004172996,
+          3.255618886243571
+        ],
+        [
+          58.51694521997373,
+          40.766796643004085,
+          3.2189244233748786
+        ],
+        [
+          58.59233726013481,
+          40.66130131024186,
+          3.1816137671889995
+        ],
+        [
+          58.667542568294785,
+          40.55567438485956,
+          3.1436945360105315
+        ],
+        [
+          58.74255935015756,
+          40.44991620869922,
+          3.10517406419432
+        ],
+        [
+          58.81738583451004,
+          40.3440271240276,
+          3.0660594210065573
+        ],
+        [
+          58.89202027199628,
+          40.23800747353506,
+          3.0263574278440686
+        ],
+        [
+          58.9664609339986,
+          40.13185760033452,
+          2.986074673974253
+        ],
+        [
+          59.040706111614206,
+          40.025577847960214,
+          2.9452175309543978
+        ],
+        [
+          59.1147541147177,
+          39.919168560366764,
+          2.9037921658689005
+        ],
+        [
+          59.18860327110009,
+          39.8126300819279,
+          2.8618045535054657
+        ],
+        [
+          59.26225192567723,
+          39.70596275743555,
+          2.8192604875765204
+        ],
+        [
+          59.33569843976005,
+          39.59916693209841,
+          2.776165591079623
+        ],
+        [
+          59.408941190381974,
+          39.49224295154126,
+          2.7325253258793123
+        ],
+        [
+          59.481978569676414,
+          39.38519116180342,
+          2.6883450015836963
+        ],
+        [
+          59.55480898430133,
+          39.278011909337934,
+          2.643629783780705
+        ],
+        [
+          59.627430854905576,
+          39.17070554101032,
+          2.5983847016917014
+        ],
+        [
+          59.699842615633685,
+          39.063272404097404,
+          2.5526146552942004
+        ],
+        [
+          59.772042713665925,
+          38.95571284628643,
+          2.506324421959655
+        ],
+        [
+          59.84402960879009,
+          38.848027215673575,
+          2.459518662647604
+        ],
+        [
+          59.91580177300292,
+          38.74021586076314,
+          2.412201927693382
+        ],
+        [
+          59.98735769013851,
+          38.632279130466266,
+          2.364378662222727
+        ],
+        [
+          60.05869585552129,
+          38.52421737409985,
+          2.3160532112233274
+        ],
+        [
+          60.12981477564197,
+          38.41603094138537,
+          2.2672298243005864
+        ],
+        [
+          60.20071296785464,
+          38.30772018244787,
+          2.217912660142219
+        ],
+        [
+          60.27138896009288,
+          38.19928544781468,
+          2.1681057907137578
+        ],
+        [
+          60.34184129060423,
+          38.090727088414354,
+          2.1178132052056897
+        ],
+        [
+          60.412068507701164,
+          37.98204545557557,
+          2.0670388137500693
+        ],
+        [
+          60.48206916952719,
+          37.873240901025895,
+          2.01578645092403
+        ],
+        [
+          60.551841843837686,
+          37.764313776890766,
+          1.9640598790548727
+        ],
+        [
+          60.62138510779359,
+          37.655264435692274,
+          1.9118627913411599
+        ],
+        [
+          60.69069754776772,
+          37.546093230348006,
+          1.8591988148028842
+        ],
+        [
+          60.759777759162375,
+          37.43680051416997,
+          1.8060715130706617
+        ],
+        [
+          60.82862434623771,
+          37.32738664086342,
+          1.7524843890308708
+        ],
+        [
+          60.89723592195075,
+          37.217851964525664,
+          1.6984408873151207
+        ],
+        [
+          60.965611107799916,
+          37.108196839645046,
+          1.6439443967218672
+        ],
+        [
+          61.033748533694755,
+          36.99842162109965,
+          1.5889982522860335
+        ],
+        [
+          61.10164683776931,
+          36.88852666415624,
+          1.5336057380964825
+        ],
+        [
+          61.16930466644713,
+          36.77851232446911,
+          1.4777700867870989
+        ],
+        [
+          61.2367206735992,
+          36.66837895807881,
+          1.4214944909639005
+        ],
+        [
+          61.281478520850996,
+          36.594917078003554,
+          1.3837065169110223
+        ],
+        [
+          61.30381681651213,
+          36.5581663595624,
+          1.3647403247812986
+        ]
+      ],
+      "limits": "Spherical-involute flanks with chordal caps/roots/tips; root fillets and manufactured corrections absent."
+    },
+    "tooth_phase_deg": 90.0,
+    "gear_back": 1201.7195499999998,
+    "gear_web_front": 1206.9195499999998,
+    "gear_apex": 1245.0779222879942,
+    "hub_end": 1226.9195499999998,
+    "claw_end": 1229.9195499999998,
+    "bolt_axes": [
+      [
+        0.0,
+        0.0,
+        40.25
+      ],
+      [
+        0.0,
+        34.857522502323654,
+        20.125000000000004
+      ],
+      [
+        0.0,
+        34.85752250232366,
+        -20.12499999999999
+      ],
+      [
+        0.0,
+        4.929203366568097e-15,
+        -40.25
+      ],
+      [
+        0.0,
+        -34.85752250232365,
+        -20.125000000000018
+      ],
+      [
+        0.0,
+        -34.857522502323654,
+        20.125000000000004
+      ]
+    ],
+    "grip": 15.250800000000002,
+    "bolt_exposure": 0.6242000000000001,
+    "cotter_station": 1212.0695499999997,
+    "cotter": {
+      "straight_length_mm": 10.9,
+      "bend_arc_length_mm": 0.42760566673861067,
+      "tail_length_mm": 4.547394333261389,
+      "total_leg_centerline_mm": 15.875,
+      "tail_endpoints": [
+        [
+          0.0,
+          9.576510869724975,
+          -3.1476218053527143
+        ],
+        [
+          0.0,
+          9.576510869724975,
+          3.1476218053527143
+        ]
+      ],
+      "wire_radius_mm": 0.38099999999999995,
+      "under_eye_y_mm": -5.45,
+      "bend_start_y_mm": 5.45,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "cotter_controls": {
+      "cotter_center_spacing": 0.8255,
+      "cotter_diameter": 1.5875,
+      "crown_radius": 5.3,
+      "cotter_head_gap": 0.15,
+      "cotter_exit_gap": 0.15,
+      "cotter_bend_radius": 0.7,
+      "cotter_bend_angle": 35,
+      "cotter_length": 15.875,
+      "cotter_eye_radius": 1.2,
+      "cotter_eye_rise": 0.6,
+      "cotter_eye_join_overlap": 0.02
+    },
+    "lock_normal": [
+      0.0,
+      0.8660254037844387,
+      0.49999999999999994
+    ],
+    "lock_start": [
+      34.2,
+      25.98076211353316,
+      14.999999999999998
+    ],
+    "lock_underhead_length": 7.0,
+    "wire_length": 222.25529126109313,
+    "origin": [
+      2906.8055512712617,
+      0.0,
+      849.2335104357661
+    ]
+  },
+  "occurrences": [
+    {
+      "key": "bolt",
+      "name": "EngineGear_Bolt1",
+      "assembly": "EngineGearBoltSet1",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "nut",
+      "name": "EngineGear_Nut1",
+      "assembly": "EngineGearBoltSet1",
+      "xyz": [
+        15.250800000000002,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "cotter",
+      "name": "EngineGear_Cotter1",
+      "assembly": "EngineGearBoltSet1",
+      "xyz": [
+        20.4008,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "bolt",
+      "name": "EngineGear_Bolt2",
+      "assembly": "EngineGearBoltSet2",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "nut",
+      "name": "EngineGear_Nut2",
+      "assembly": "EngineGearBoltSet2",
+      "xyz": [
+        15.250800000000002,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "cotter",
+      "name": "EngineGear_Cotter2",
+      "assembly": "EngineGearBoltSet2",
+      "xyz": [
+        20.4008,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "bolt",
+      "name": "EngineGear_Bolt3",
+      "assembly": "EngineGearBoltSet3",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "nut",
+      "name": "EngineGear_Nut3",
+      "assembly": "EngineGearBoltSet3",
+      "xyz": [
+        15.250800000000002,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "cotter",
+      "name": "EngineGear_Cotter3",
+      "assembly": "EngineGearBoltSet3",
+      "xyz": [
+        20.4008,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "bolt",
+      "name": "EngineGear_Bolt4",
+      "assembly": "EngineGearBoltSet4",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "nut",
+      "name": "EngineGear_Nut4",
+      "assembly": "EngineGearBoltSet4",
+      "xyz": [
+        15.250800000000002,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "cotter",
+      "name": "EngineGear_Cotter4",
+      "assembly": "EngineGearBoltSet4",
+      "xyz": [
+        20.4008,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "bolt",
+      "name": "EngineGear_Bolt5",
+      "assembly": "EngineGearBoltSet5",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "nut",
+      "name": "EngineGear_Nut5",
+      "assembly": "EngineGearBoltSet5",
+      "xyz": [
+        15.250800000000002,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "cotter",
+      "name": "EngineGear_Cotter5",
+      "assembly": "EngineGearBoltSet5",
+      "xyz": [
+        20.4008,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "bolt",
+      "name": "EngineGear_Bolt6",
+      "assembly": "EngineGearBoltSet6",
+      "xyz": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "nut",
+      "name": "EngineGear_Nut6",
+      "assembly": "EngineGearBoltSet6",
+      "xyz": [
+        15.250800000000002,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "cotter",
+      "name": "EngineGear_Cotter6",
+      "assembly": "EngineGearBoltSet6",
+      "xyz": [
+        20.4008,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "gear",
+      "name": "EngineGear_DrivingBevel",
+      "assembly": "EngineDrivingGear",
+      "xyz": [
+        1201.6687499999998,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "shim",
+      "name": "EngineGear_ThinShim",
+      "assembly": "EngineDrivingGear",
+      "xyz": [
+        1201.6687499999998,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "key": "lock_screw",
+      "name": "EngineGear_ThrustLockScrew",
+      "assembly": "EngineThrustNutLock",
+      "xyz": [
+        34.2,
+        25.98076211353316,
+        14.999999999999998
+      ],
+      "rotation": [
+        0.25881904510252074,
+        0.0,
+        0.0,
+        0.9659258262890683
+      ]
+    },
+    {
+      "key": "lock_wire",
+      "name": "EngineGear_ThrustLockWire",
+      "assembly": "EngineThrustNutLock",
+      "xyz": [
+        34.2,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "assemblies": [
+    {
+      "name": "EngineGearBoltSet1",
+      "parent": "EngineDrivingGear",
+      "xyz": [
+        1191.6687499999998,
+        0.0,
+        40.25
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "EngineGearBoltSet2",
+      "parent": "EngineDrivingGear",
+      "xyz": [
+        1191.6687499999998,
+        34.857522502323654,
+        20.125000000000004
+      ],
+      "rotation": [
+        0.49999999999999994,
+        0.0,
+        0.0,
+        -0.8660254037844387
+      ]
+    },
+    {
+      "name": "EngineGearBoltSet3",
+      "parent": "EngineDrivingGear",
+      "xyz": [
+        1191.6687499999998,
+        34.85752250232366,
+        -20.12499999999999
+      ],
+      "rotation": [
+        0.8660254037844385,
+        0.0,
+        0.0,
+        -0.5000000000000002
+      ]
+    },
+    {
+      "name": "EngineGearBoltSet4",
+      "parent": "EngineDrivingGear",
+      "xyz": [
+        1191.6687499999998,
+        4.929203366568097e-15,
+        -40.25
+      ],
+      "rotation": [
+        1.0,
+        0.0,
+        0.0,
+        6.123233995736766e-17
+      ]
+    },
+    {
+      "name": "EngineGearBoltSet5",
+      "parent": "EngineDrivingGear",
+      "xyz": [
+        1191.6687499999998,
+        -34.85752250232365,
+        -20.125000000000018
+      ],
+      "rotation": [
+        0.8660254037844387,
+        0.0,
+        0.0,
+        0.4999999999999999
+      ]
+    },
+    {
+      "name": "EngineGearBoltSet6",
+      "parent": "EngineDrivingGear",
+      "xyz": [
+        1191.6687499999998,
+        -34.857522502323654,
+        20.125000000000004
+      ],
+      "rotation": [
+        0.49999999999999983,
+        0.0,
+        0.0,
+        0.8660254037844387
+      ]
+    }
+  ],
+  "new_ids": [
+    "EngineGear_Bolt1",
+    "EngineGear_Nut1",
+    "EngineGear_Cotter1",
+    "EngineGear_Bolt2",
+    "EngineGear_Nut2",
+    "EngineGear_Cotter2",
+    "EngineGear_Bolt3",
+    "EngineGear_Nut3",
+    "EngineGear_Cotter3",
+    "EngineGear_Bolt4",
+    "EngineGear_Nut4",
+    "EngineGear_Cotter4",
+    "EngineGear_Bolt5",
+    "EngineGear_Nut5",
+    "EngineGear_Cotter5",
+    "EngineGear_Bolt6",
+    "EngineGear_Nut6",
+    "EngineGear_Cotter6",
+    "EngineGear_DrivingBevel",
+    "EngineGear_ThinShim",
+    "EngineGear_ThrustLockScrew",
+    "EngineGear_ThrustLockWire"
+  ],
+  "changed_ids": [
+    "EngineCrank_Forging",
+    "EngineCrank_ThrustNut"
+  ],
+  "exchange_ids": [
+    "EngineGear_Bolt1",
+    "EngineGear_Nut1",
+    "EngineGear_Cotter1",
+    "EngineGear_Bolt2",
+    "EngineGear_Nut2",
+    "EngineGear_Cotter2",
+    "EngineGear_Bolt3",
+    "EngineGear_Nut3",
+    "EngineGear_Cotter3",
+    "EngineGear_Bolt4",
+    "EngineGear_Nut4",
+    "EngineGear_Cotter4",
+    "EngineGear_Bolt5",
+    "EngineGear_Nut5",
+    "EngineGear_Cotter5",
+    "EngineGear_Bolt6",
+    "EngineGear_Nut6",
+    "EngineGear_Cotter6",
+    "EngineGear_DrivingBevel",
+    "EngineGear_ThinShim",
+    "EngineGear_ThrustLockScrew",
+    "EngineGear_ThrustLockWire",
+    "EngineCrank_Forging",
+    "EngineCrank_ThrustNut"
+  ],
+  "native_occurrences": 2153,
+  "new_definitions": 7,
+  "unchanged_parent_occurrences": 2129,
+  "standard_native_hashes": {
+    "native/MarkVIII.FCStd": "52aea1af979efc27fbfbce003e976e8a02cfa2da3e0ca0d25a631d7c5e7d48ac",
+    "native/library/CoolingVentilation.FCStd": "810553a07fb9610c11dd3cd2f15e1eec0b7712e16f1d0a4245d70922532f73c4",
+    "native/library/CrewControlsAndEquipment.FCStd": "990e476bcdd088d58bbe76028a782667301a6f73e9c5a8065767bfd4e3860bae",
+    "native/library/Drivetrain.FCStd": "694c20a3995baafb0698f8c07d61e3e6b37bf6a0b0214362fe75bf0a80c30e25",
+    "native/library/ElectricalInstruments.FCStd": "7ca38479c37f7a169b2ab52a4ea90afd80cc7cf97d45c52df380abbd91dc393d",
+    "native/library/FuelPressure.FCStd": "5d5e8ced3b3b1bc380c9822e4b0d210520da081fa119ab16bd58523fce93dc6a",
+    "native/library/HullStructure.FCStd": "a6b78305dddcfa74904b07ea9dad8356ba168d774499599c854074c8aca778fc",
+    "native/library/Powerplant.FCStd": "234c3582a110f607f98977a034638b3f65391b6c6c5cd284a9570c74629752b7",
+    "native/library/RunningGear.FCStd": "52587107dabf028783ad6bd087ce1f8e2bf3aacea7d641ab8bfee07101fddf44",
+    "native/library/Sponsons.FCStd": "cca4a76fd623303caeb7d6b2fa277f6bcc251170303379ce6f07a432add20162",
+    "native/subsystems/ArmamentRepresentation.FCStd": "da6a1fd3e488982cff35e88bbce264f85a448c8349177ac9550939dc96f0b553",
+    "native/subsystems/CoolingVentilation.FCStd": "bb0996bed71ec8269a68f7445da53fb86789a7cb7777c5972cff74fd47811e47",
+    "native/subsystems/CrewControlsAndEquipment.FCStd": "5831b330452e69ba2dc0ae4b2c9757b2fbf174d988ce44126e64a7adec7e4fe5",
+    "native/subsystems/Drivetrain.FCStd": "222888c3c6d72363524415dfeec66ce89f9144cf973cbb077dab245d2fc0c4bf",
+    "native/subsystems/ElectricalInstruments.FCStd": "5f423b486223168139193422992d379bc291e73ac992a372bdcef75069051f0c",
+    "native/subsystems/FuelPressure.FCStd": "45f9cb47c26ef7e007ccb0451554cf33321bf63bc85d26e2edda9f00764b7e7b",
+    "native/subsystems/HullStructure.FCStd": "91bb04cc51d10a143ffeb982b3bec08e0e28b5942da452601f738d2c2528f56c",
+    "native/subsystems/Powerplant.FCStd": "c22f9480fc5a60028e6af664fc5ebb2e07ca292694e89d29eacd0b0a18ad720d",
+    "native/subsystems/RunningGear.FCStd": "5b225c9b28cce15f4c331e1d076a39a7575319831d95cf92d8db5cbc0672418e",
+    "native/subsystems/Sponsons.FCStd": "79c852869c29529dd8de89a257e7e127ff3d7d2255e1a8b186fc044b292f38bb"
+  },
+  "standard_assembly_modified": false,
+  "historically_qualified": false,
+  "complete_engine": false,
+  "complete_tank": false,
+  "pending": "Independent native, spline, interface, STEP and visual checks; mating distribution gears and final shim stack; remaining engine systems; combined qualification and standard integration.",
+  "artifact_hashes": {
+    "EngineGearInstallation.step": "28116b85e3b099b1c4479717bffae9efaf40ec154556df46c9e97eb9ab560e15",
+    "EngineGearDefinitions.step": "26c1a641d1701853b31ac5cf26b8fccc74f7d9b1ed9948db7ee096cc14bbb504"
+  },
+  "export_settings": {
+    "write.surfacecurve.mode": 1
+  },
+  "headless": true,
+  "freecad": [
+    "1",
+    "1",
+    "1",
+    "44227 +647 (Git)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "tag: 1.1.1",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
+  "occ": "7.8.0"
+}
