@@ -1,0 +1,115 @@
+{
+  "status": "verified_development_checkpoint_not_historically_qualified",
+  "native_sha256": "e8f3c2e1302298c75237fe2b79bb14ae05059f8139eaf4383ae3a44c8543f451",
+  "parent_commit": "fd450557188ebc5cfa3504fc76b93194f876cea6",
+  "parent_native_sha256": "3f4cf32e699e6d68eb1503404fc7d4d206d2c476bca47c532490a3c068d708f2",
+  "native_occurrences": 1909,
+  "new_support_occurrences": 61,
+  "revised_parent_occurrences": 2,
+  "preserved_parent_occurrences": 1846,
+  "new_definitions": 18,
+  "support_catalogue_children_populated": 72,
+  "additional_direct_floor_rivets": 14,
+  "nominal_checks": {
+    "independent": 202,
+    "material_pairs": 159,
+    "standard_context": true,
+    "step_comparisons": 83,
+    "closed_form_bevel_comparisons": 5
+  },
+  "parameter_trial": {
+    "passed": true,
+    "native_sha256": "fda1113480a9b4243cda2b8cc074bdb9db1d65a508312fcf4543d2be02e7517c",
+    "native_path": ".work/engine-suspension/variant/build/DrivetrainWithEngineSuspension.FCStd",
+    "changed_controls": {
+      "rail_width": {
+        "nominal": 50.8,
+        "trial": 49.0
+      },
+      "rail_height": {
+        "nominal": 76.2,
+        "trial": 82.55
+      },
+      "rear_rail_bolt_x": {
+        "nominal": [
+          -52.5,
+          -17.5,
+          17.5,
+          52.5
+        ],
+        "trial": [
+          -55.0,
+          -20.0,
+          20.0,
+          55.0
+        ]
+      },
+      "rear_base_bolt_x": {
+        "nominal": -5.0,
+        "trial": -8.0
+      },
+      "rear_channel_upper_taper_deg": {
+        "nominal": 6.0,
+        "trial": 6.5
+      },
+      "front_pad_x": {
+        "nominal": 70.0,
+        "trial": 65.0
+      }
+    },
+    "independent_checks": 202,
+    "material_pairs": 159,
+    "standard_context_checked": true,
+    "step_checked": false,
+    "receipt_hashes": {
+      "controls.json": "98b4a058253e580e0dcfe56a4f5d38ded6dd308cb966f40b2c3ebd85dd96add1",
+      "report.json": "b934d08dcae4ba186efa40acad9ce1305ee4583c260150c64ef4917bb7121348",
+      "independent_checks.json": "a38b95f856099a3e8d27a30bc032a1b86211cd908d2fde4f26f30def48f0aa81",
+      "material_checks.json": "0b6b6b3b3d7eeb33870f39302b3c279bd4bf2b072a407a112d5206c8500ee5e7"
+    }
+  },
+  "verification_hashes": {
+    "independent_checks.json": "950dfe2a0940850fdcc8cde070c59dfea41efc7e64a5eca165675359c8ed92c1",
+    "material_checks.json": "a8549f27baad1e63dbee52d140842ef1321d676b36eae6f673136d03a4e963d0",
+    "exchange_checks.json": "4510ddd94e919688819ee1d82ce7ec65c3ac319b95169661d85f6433a6a4de56",
+    "export_receipt.json": "8a6edd9dc36b758510310f62b4a84b46ddef84968fc718bb7d8b5f6bccbc86b0",
+    "visual_review.json": "5b8108d67d84a0c5d1bce38feddf77bd436ed2b97a8ad8e004e724755b753d71",
+    "source_review/render_receipt.json": "cb83c45236d1ad7680a007653b57260fa49adab5ac3ac3cd64e167199daabf06",
+    "progression_receipt.json": "f419437078f1da4ff99d1acb4ac2da201b963b8bfa461d5994e329d8c036abff",
+    "shared_helper_hashes.json": "3ed23e5280060bddb146d55a3be9e0b6a2e86a73e6ba366401b532d782214706"
+  },
+  "source_dossier_sha256": "7a4ec9a6bfd9f310e90cb5c8e74ae7244e852760da1949712c48a5bae93fd27e",
+  "source_records": 159,
+  "source_assets": 25,
+  "standard_native_hashes": {
+    "native/MarkVIII.FCStd": "52aea1af979efc27fbfbce003e976e8a02cfa2da3e0ca0d25a631d7c5e7d48ac",
+    "native/library/CoolingVentilation.FCStd": "810553a07fb9610c11dd3cd2f15e1eec0b7712e16f1d0a4245d70922532f73c4",
+    "native/library/CrewControlsAndEquipment.FCStd": "990e476bcdd088d58bbe76028a782667301a6f73e9c5a8065767bfd4e3860bae",
+    "native/library/Drivetrain.FCStd": "694c20a3995baafb0698f8c07d61e3e6b37bf6a0b0214362fe75bf0a80c30e25",
+    "native/library/ElectricalInstruments.FCStd": "7ca38479c37f7a169b2ab52a4ea90afd80cc7cf97d45c52df380abbd91dc393d",
+    "native/library/FuelPressure.FCStd": "5d5e8ced3b3b1bc380c9822e4b0d210520da081fa119ab16bd58523fce93dc6a",
+    "native/library/HullStructure.FCStd": "a6b78305dddcfa74904b07ea9dad8356ba168d774499599c854074c8aca778fc",
+    "native/library/Powerplant.FCStd": "234c3582a110f607f98977a034638b3f65391b6c6c5cd284a9570c74629752b7",
+    "native/library/RunningGear.FCStd": "52587107dabf028783ad6bd087ce1f8e2bf3aacea7d641ab8bfee07101fddf44",
+    "native/library/Sponsons.FCStd": "cca4a76fd623303caeb7d6b2fa277f6bcc251170303379ce6f07a432add20162",
+    "native/subsystems/ArmamentRepresentation.FCStd": "da6a1fd3e488982cff35e88bbce264f85a448c8349177ac9550939dc96f0b553",
+    "native/subsystems/CoolingVentilation.FCStd": "bb0996bed71ec8269a68f7445da53fb86789a7cb7777c5972cff74fd47811e47",
+    "native/subsystems/CrewControlsAndEquipment.FCStd": "5831b330452e69ba2dc0ae4b2c9757b2fbf174d988ce44126e64a7adec7e4fe5",
+    "native/subsystems/Drivetrain.FCStd": "222888c3c6d72363524415dfeec66ce89f9144cf973cbb077dab245d2fc0c4bf",
+    "native/subsystems/ElectricalInstruments.FCStd": "5f423b486223168139193422992d379bc291e73ac992a372bdcef75069051f0c",
+    "native/subsystems/FuelPressure.FCStd": "45f9cb47c26ef7e007ccb0451554cf33321bf63bc85d26e2edda9f00764b7e7b",
+    "native/subsystems/HullStructure.FCStd": "91bb04cc51d10a143ffeb982b3bec08e0e28b5942da452601f738d2c2528f56c",
+    "native/subsystems/Powerplant.FCStd": "c22f9480fc5a60028e6af664fc5ebb2e07ca292694e89d29eacd0b0a18ad720d",
+    "native/subsystems/RunningGear.FCStd": "5b225c9b28cce15f4c331e1d076a39a7575319831d95cf92d8db5cbc0672418e",
+    "native/subsystems/Sponsons.FCStd": "79c852869c29529dd8de89a257e7e127ff3d7d2255e1a8b186fc044b292f38bb"
+  },
+  "standard_assembly_modified": false,
+  "historical_mounting_proven": false,
+  "complete_engine_mounting": false,
+  "complete_tank": false,
+  "fresh_nominal_reproduction": false,
+  "qualified_baseline_commit": "539b5a2",
+  "remaining_shared_angle_rivets": 7,
+  "remaining_longitudinal_support_bolt_set_pieces": 36,
+  "remaining_work": "Engine case, mounting flange receivers and sump; reconcile6 tank versus7 aviation mounts; shared hull-angle joints; engine/clutch registration; forward M581 controls; combined drivetrain qualification and standard integration; remaining engine/tank interiors."
+}

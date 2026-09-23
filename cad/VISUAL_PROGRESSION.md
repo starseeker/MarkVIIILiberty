@@ -603,3 +603,25 @@ images. Standard tank011 and its transparent-hull companion remain unchanged.
 | [installed isometric](intermediate_snapshot_iso_engine_crossmembers_001.png) | `2fd84d603879efc4f599a807f9d7e58972578ae0b0a9dfc2c2953db32711ddd5` |
 | [exposed crossmembers](intermediate_snapshot_detail_engine_crossmembers_001.png) | `517031b9b9700b2ee6411631aa825fd1db955c216e71ebe6dc767df932cdb5d6` |
 | [rear gusset joint](intermediate_snapshot_detail_engine_gusset_001.png) | `0d82a74f23a018be8c381e0f811b49af4dc5a13ada7ca92e193817b7b4a24ad8` |
+
+
+## Engine suspension and longitudinal supports — 23 September 2026
+
+The development candidate contains **1,909 physical components**:61 new support
+pieces and two receiving revisions, preserving1,846 inherited occurrences.
+All72 SNL242 engine-support children plus14 direct floor rivets are populated.
+Cast profiles and joint allocation remain estimated; the17in mounting-row spacing
+and flange datum are conditional aviation transfers. Engine casing/receivers,
+sump fit and the six-versus-seven mounting count remain unresolved.
+
+Nominal202 independent checks,159 material pairs including standard context and
+83 STEP comparisons pass. A coupled parameter trial passes202/159, including
+standard context. Seven native views and a fixed SNL2 source projection were
+inspected. These three images bring the progression to117, preserving all114
+prior images. Standard tank011 and its transparent-hull companion are unchanged.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_engine_suspension_001.png) | `0c8b69e9dceab23865fc0f054dd172e81c9608e1fde2df42c8b8dc7a2dab3cc0` |
+| [exposed engine supports](intermediate_snapshot_detail_engine_suspension_001.png) | `3a4cf97bf47e22ccea98154dfbabbe9387457d544b19260d039c2d348b362d68` |
+| [front suspension mount](intermediate_snapshot_detail_engine_front_mount_001.png) | `3f2d9f19e1a0cf48e4ca2d0d2c5edc5ece7f455f16d48ee627836b6028176b3a` |

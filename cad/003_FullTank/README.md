@@ -223,7 +223,21 @@ two parameter trials and a fresh rebuild pass. Five views were inspected and
 three new progression snapshots are saved. The [packet](packets/I03-clutch-retention.md)
 records these checks and the numerical volume diagnostic.
 
-The latest [engine-crossmember development candidate](experiments/drive_chains/engine_crossmember_build/DrivetrainWithEngineCrossmembers.FCStd)
+The latest [engine-suspension development candidate](experiments/drive_chains/engine_suspension_build/DrivetrainWithEngineSuspension.FCStd)
+contains **1,909 physical components**: 61 new pieces and two receiving revisions,
+preserving 1,846 inherited occurrences. Both longitudinal rails, three suspension
+brackets, packings, bevel washers and catalogue hardware populate all 72 SNL242
+support children, plus 14 direct floor rivets. Nominal 202 independent checks,
+159 affected material pairs and 83 STEP comparisons pass. A coupled parameter
+trial passes 202/159, including standard context. Seven native views and the
+fixed SNL2 projection were inspected; three new images bring the progression
+to 117. The [packet](packets/I01-engine-suspension.md) records estimated profiles,
+conditional aviation mounting dimensions, and the unresolved six-versus-seven
+engine mount count. Engine case receivers and sump fit remain pending. This is a
+development checkpoint; standard tank011 and its transparent view await combined
+qualification and integration.
+
+The [engine-crossmember development candidate](experiments/drive_chains/engine_crossmember_build/DrivetrainWithEngineCrossmembers.FCStd)
 contains **1,848 physical components**: 25 new frame/rivet pieces, two replacement
 floor contexts and one revised floor, preserving 1,820 inherited occurrences.
 Both transverse channels, the front cleat, rear gussets and 14 direct floor
