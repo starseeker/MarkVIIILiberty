@@ -1,0 +1,474 @@
+{
+  "name": "larger_wire",
+  "passed": true,
+  "native_sha256": "0d430165a75d04ee5d94a19d442167e3ce3e717b4203209de90323d5aa342e27",
+  "controls": {
+    "wire_length": 762.0,
+    "wire_diameter": 1.6,
+    "head_drill_radius": 1.45,
+    "wire_seam_angle": 0.0,
+    "wire_seam_half_angle": 10.0,
+    "wire_twist_radius": 1.1,
+    "wire_twist_turns": 1.5,
+    "wire_bridge_height": 10.0,
+    "wire_bend_handle": 5.0
+  },
+  "datums": {
+    "centerline_length": 761.9999999998821,
+    "tail_axial_length": 17.538017833940103,
+    "sweep_spans": 8,
+    "head_hole_x_local": 121.825,
+    "wire_plane": 1019.3000000000001,
+    "pitch_radius": 114.0,
+    "head_wall_axial": 0.55,
+    "head_height": 4.0,
+    "plunger_tail": 897.475,
+    "head_radius": 7.0
+  },
+  "checks": [
+    {
+      "name": "seven single valid saved solids",
+      "passed": true
+    },
+    {
+      "name": "printed cut length retained",
+      "passed": true
+    },
+    {
+      "name": "changed wire size changes physical material",
+      "passed": true
+    },
+    {
+      "name": "bore remains inside head thickness",
+      "passed": true
+    },
+    {
+      "name": "head1/through passage",
+      "passed": true
+    },
+    {
+      "name": "head1/wire inside passage",
+      "passed": true
+    },
+    {
+      "name": "head1/changed bore removes material",
+      "passed": true
+    },
+    {
+      "name": "head2/through passage",
+      "passed": true
+    },
+    {
+      "name": "head2/wire inside passage",
+      "passed": true
+    },
+    {
+      "name": "head2/changed bore removes material",
+      "passed": true
+    },
+    {
+      "name": "head3/through passage",
+      "passed": true
+    },
+    {
+      "name": "head3/wire inside passage",
+      "passed": true
+    },
+    {
+      "name": "head3/changed bore removes material",
+      "passed": true
+    },
+    {
+      "name": "head4/through passage",
+      "passed": true
+    },
+    {
+      "name": "head4/wire inside passage",
+      "passed": true
+    },
+    {
+      "name": "head4/changed bore removes material",
+      "passed": true
+    },
+    {
+      "name": "head5/through passage",
+      "passed": true
+    },
+    {
+      "name": "head5/wire inside passage",
+      "passed": true
+    },
+    {
+      "name": "head5/changed bore removes material",
+      "passed": true
+    },
+    {
+      "name": "head6/through passage",
+      "passed": true
+    },
+    {
+      "name": "head6/wire inside passage",
+      "passed": true
+    },
+    {
+      "name": "head6/changed bore removes material",
+      "passed": true
+    }
+  ],
+  "pairs": [
+    {
+      "a": "ClutchCone_Plunger1",
+      "b": "ClutchRetention_Wire",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger1",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger1",
+      "b": "ClutchStack_thrust",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger1",
+      "b": "ClutchStack_snap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger1",
+      "b": "ClutchThrust_Cage",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger1",
+      "b": "ClutchThrust_Stop",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger1",
+      "b": "ClutchStack_support",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger1",
+      "b": "ClutchCone_cone",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger1",
+      "b": "ClutchCone_lining",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger1",
+      "b": "ClutchCone_Cup1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger1",
+      "b": "ClutchCone_Spring1",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger1",
+      "b": "ClutchCone_ring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger2",
+      "b": "ClutchRetention_Wire",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger2",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger2",
+      "b": "ClutchThrust_Stop",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger2",
+      "b": "ClutchStack_support",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger2",
+      "b": "ClutchCone_cone",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger2",
+      "b": "ClutchCone_lining",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger2",
+      "b": "ClutchCone_Cup2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger2",
+      "b": "ClutchCone_Spring2",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger2",
+      "b": "ClutchCone_ring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger3",
+      "b": "ClutchRetention_Wire",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger3",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger3",
+      "b": "ClutchStack_thrust",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger3",
+      "b": "ClutchStack_snap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger3",
+      "b": "ClutchThrust_Cage",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger3",
+      "b": "ClutchThrust_Stop",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger3",
+      "b": "ClutchStack_support",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger3",
+      "b": "ClutchCone_cone",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger3",
+      "b": "ClutchCone_lining",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger3",
+      "b": "ClutchCone_Cup3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger3",
+      "b": "ClutchCone_Spring3",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger3",
+      "b": "ClutchCone_ring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger4",
+      "b": "ClutchRetention_Wire",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger4",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger4",
+      "b": "ClutchStack_thrust",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger4",
+      "b": "ClutchStack_snap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger4",
+      "b": "ClutchThrust_Cage",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger4",
+      "b": "ClutchThrust_Stop",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger4",
+      "b": "ClutchStack_support",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger4",
+      "b": "ClutchCone_cone",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger4",
+      "b": "ClutchCone_lining",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger4",
+      "b": "ClutchCone_Cup4",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger4",
+      "b": "ClutchCone_Spring4",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger4",
+      "b": "ClutchCone_ring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger5",
+      "b": "ClutchRetention_Wire",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger5",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger5",
+      "b": "ClutchThrust_Stop",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger5",
+      "b": "ClutchStack_support",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger5",
+      "b": "ClutchCone_cone",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger5",
+      "b": "ClutchCone_lining",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger5",
+      "b": "ClutchCone_Cup5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger5",
+      "b": "ClutchCone_Spring5",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger5",
+      "b": "ClutchCone_ring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger6",
+      "b": "ClutchRetention_Wire",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger6",
+      "b": "ClutchCollar_collar",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger6",
+      "b": "ClutchStack_thrust",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger6",
+      "b": "ClutchStack_snap",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger6",
+      "b": "ClutchThrust_Cage",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger6",
+      "b": "ClutchThrust_Stop",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger6",
+      "b": "ClutchStack_support",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger6",
+      "b": "ClutchCone_cone",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger6",
+      "b": "ClutchCone_lining",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger6",
+      "b": "ClutchCone_Cup6",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger6",
+      "b": "ClutchCone_Spring6",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchCone_Plunger6",
+      "b": "ClutchCone_ring",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchRetention_Wire",
+      "b": "ClutchCone_cone",
+      "intersection_mm3": 0.0
+    },
+    {
+      "a": "ClutchRetention_Wire",
+      "b": "ClutchCone_lining",
+      "intersection_mm3": 0.0
+    }
+  ],
+  "overlaps": [],
+  "wire_mass": {
+    "default_volume_mm3": 1532.1469443140543,
+    "accurate": {
+      "volume_mm3": 1532.0923134345958,
+      "estimated_relative_error": 1.85070445912328e-06,
+      "center_mm": [
+        2845.7488163158546,
+        6.689480910489036,
+        849.2344068980753
+      ]
+    },
+    "expected_volume_mm3": 1532.0919053026705
+  }
+}

@@ -11,6 +11,26 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 22 September 2026 — plunger locking wire and head passages
+
+The [latest isolated native assembly](experiments/drive_chains/clutch_retention_build/TransmissionWithClutchRetention.FCStd)
+contains **1,653 physical occurrences**. One source-specified 30in SH861K wire now
+passes through six real head bores in the existing shared plunger definition.
+The other 1,646 parent occurrences retain their geometry and placement.
+
+All 84 independent checks, 68 affected interference pairs, two definition and seven
+installed STEP comparisons pass. Two wire/bore-size trials each pass 22 checks
+and 68 pairs; a fresh build/check repeats the nominal result. Higher-accuracy OCC
+integration resolves a default spline-volume measurement error without changing
+the geometry or acceptance tolerance. Five views were inspected and three new
+progression images are saved, preserving all 92 prior images.
+
+The [packet](packets/I03-clutch-retention.md) documents estimated wire diameter,
+route, twist and drilling. Next are the outer drum, flywheel/crankshaft interface
+and clutch-stop brake, including a clearance check for the projecting wire tail.
+Standard tank011 and its transparent-hull view remain unchanged. The complete-tank
+goal remains active and incomplete.
+
 ## 22 September 2026 — clutch cone and spring sets
 
 The [latest isolated native assembly](experiments/drive_chains/clutch_cone_build/TransmissionWithClutchCone.FCStd)

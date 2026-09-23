@@ -1,0 +1,211 @@
+{
+  "native_sha256": "a30e8ddc995534bad874bd0777b45beea4f91049f95333c86695491e9c1ac99d",
+  "parent_native_sha256": "dbd72bf07c7a3b3d707fb95a9854f8a68ec91920580fe598a39abb0ed12be4ad",
+  "parent_qualification_sha256": "27e3573d488ae793a1e4c2d62dd1ac70815ee6f1798aa2c965481b3bf4aab56c",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/clutch_retention_build.py": "91c3ca86236e39969fb34a54b6ea7b1dd1027d657c89eb1c8ae88cbc06bea8fc",
+    "cad/003_FullTank/experiments/drive_chains/clutch_retention_parts.py": "c9cb1d1006f4706626caf4c3befb56ef43dbb01c35c36f082ad1887ab1dc33c4",
+    "cad/003_FullTank/experiments/drive_chains/clutch_retention_controls.json": "697de57ec46c92283df4caf31719f7a7ead696633c82bbfec2ecfa76b9a1556d",
+    "cad/003_FullTank/experiments/drive_chains/clutch_retention_sources.json": "19887d24661fdc519cc5152d404745cd6892b71c1170f0003eb000163dad68f1",
+    "cad/003_FullTank/experiments/drive_chains/clutch_collar_parts.py": "7b1d01150dd662f286c24c9d90640c99dc009214134b02b4171fb7caeb86c4b5",
+    "cad/003_FullTank/experiments/drive_chains/air_pressure_pump_parts.py": "b5528d41b5916deda1baaebb0f96cd012934c1e44df506e15a96b9bb63bbd0f7",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_parts.py": "35c677472dad5a90701bedbd6c06b3fb01f2b0fda494efc00be48a64db35d3a6",
+    "cad/003_FullTank/experiments/drive_chains/clutch_drive_parts.py": "3d05a95e90e1fcc906aa92b69461e7bf61df04e8194f87f654d07666d7a65543"
+  },
+  "controls": {
+    "wire_length": 762.0,
+    "wire_diameter": 1.5,
+    "head_drill_radius": 1.35,
+    "wire_seam_angle": 0.0,
+    "wire_seam_half_angle": 10.0,
+    "wire_twist_radius": 1.1,
+    "wire_twist_turns": 1.5,
+    "wire_bridge_height": 10.0,
+    "wire_bend_handle": 5.0
+  },
+  "datums": {
+    "centerline_length": 761.9999999998821,
+    "tail_axial_length": 17.538017833940103,
+    "sweep_spans": 8,
+    "head_hole_x_local": 121.825,
+    "wire_plane": 1019.3000000000001,
+    "pitch_radius": 114.0,
+    "head_wall_axial": 0.6499999999999999,
+    "head_height": 4.0,
+    "plunger_tail": 897.475,
+    "head_radius": 7.0
+  },
+  "occurrences": [
+    {
+      "name": "ClutchCone_Plunger1",
+      "key": "plunger",
+      "xyz": [
+        897.475,
+        98.72689603142601,
+        56.99999999999999
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs",
+      "angle": 29.999999999999996
+    },
+    {
+      "name": "ClutchCone_Plunger2",
+      "key": "plunger",
+      "xyz": [
+        897.475,
+        6.980486755139913e-15,
+        114.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs",
+      "angle": 90.0
+    },
+    {
+      "name": "ClutchCone_Plunger3",
+      "key": "plunger",
+      "xyz": [
+        897.475,
+        -98.72689603142601,
+        56.99999999999999
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs",
+      "angle": 150.0
+    },
+    {
+      "name": "ClutchCone_Plunger4",
+      "key": "plunger",
+      "xyz": [
+        897.475,
+        -98.726896031426,
+        -57.000000000000014
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs",
+      "angle": -150.0
+    },
+    {
+      "name": "ClutchCone_Plunger5",
+      "key": "plunger",
+      "xyz": [
+        897.475,
+        -2.094146026541974e-14,
+        -114.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs",
+      "angle": -90.00000000000001
+    },
+    {
+      "name": "ClutchCone_Plunger6",
+      "key": "plunger",
+      "xyz": [
+        897.475,
+        98.72689603142598,
+        -57.00000000000005
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "parent": "Springs",
+      "angle": -30.00000000000003
+    }
+  ],
+  "native_occurrences": 1653,
+  "new_ids": [
+    "ClutchRetention_Wire"
+  ],
+  "changed_ids": [
+    "ClutchCone_Plunger1",
+    "ClutchCone_Plunger2",
+    "ClutchCone_Plunger3",
+    "ClutchCone_Plunger4",
+    "ClutchCone_Plunger5",
+    "ClutchCone_Plunger6"
+  ],
+  "affected_ids": [
+    "ClutchCone_Plunger1",
+    "ClutchCone_Plunger2",
+    "ClutchCone_Plunger3",
+    "ClutchCone_Plunger4",
+    "ClutchCone_Plunger5",
+    "ClutchCone_Plunger6",
+    "ClutchRetention_Wire"
+  ],
+  "unchanged_parent_occurrences": 1646,
+  "standard_assembly_modified": false,
+  "complete_clutch": false,
+  "complete_tank": false,
+  "headless": true,
+  "freecad": [
+    "1",
+    "1",
+    "1",
+    "44227 +647 (Git)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "tag: 1.1.1",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
+  "occ": "7.8.0",
+  "artifact_hashes": {
+    "ClutchRetentionDefinitions.step": "505460617bb8ed07e3850771d989f8e905fceafda2f4004033f57782cbbd6439",
+    "ClutchRetentionInstallation.step": "48a60f028a8132d80252401d2c4edd5e4376682729151fa6d489b0da74eb967c",
+    "inputs/plunger_blank.brep": "75e4cf0bf7368d5cbfba4d345a8ae7bb7053fa9a301a9d3e4766a6e9740885b6",
+    "inputs/wire_centerline.brep": "78f527d619a31a681775c69e18549784e0ce5721fd2df394fa11bca9e5b1e910"
+  },
+  "standard_native_hashes": {
+    "native/MarkVIII.FCStd": "52aea1af979efc27fbfbce003e976e8a02cfa2da3e0ca0d25a631d7c5e7d48ac",
+    "native/library/CoolingVentilation.FCStd": "810553a07fb9610c11dd3cd2f15e1eec0b7712e16f1d0a4245d70922532f73c4",
+    "native/library/CrewControlsAndEquipment.FCStd": "990e476bcdd088d58bbe76028a782667301a6f73e9c5a8065767bfd4e3860bae",
+    "native/library/Drivetrain.FCStd": "694c20a3995baafb0698f8c07d61e3e6b37bf6a0b0214362fe75bf0a80c30e25",
+    "native/library/ElectricalInstruments.FCStd": "7ca38479c37f7a169b2ab52a4ea90afd80cc7cf97d45c52df380abbd91dc393d",
+    "native/library/FuelPressure.FCStd": "5d5e8ced3b3b1bc380c9822e4b0d210520da081fa119ab16bd58523fce93dc6a",
+    "native/library/HullStructure.FCStd": "a6b78305dddcfa74904b07ea9dad8356ba168d774499599c854074c8aca778fc",
+    "native/library/Powerplant.FCStd": "234c3582a110f607f98977a034638b3f65391b6c6c5cd284a9570c74629752b7",
+    "native/library/RunningGear.FCStd": "52587107dabf028783ad6bd087ce1f8e2bf3aacea7d641ab8bfee07101fddf44",
+    "native/library/Sponsons.FCStd": "cca4a76fd623303caeb7d6b2fa277f6bcc251170303379ce6f07a432add20162",
+    "native/subsystems/ArmamentRepresentation.FCStd": "da6a1fd3e488982cff35e88bbce264f85a448c8349177ac9550939dc96f0b553",
+    "native/subsystems/CoolingVentilation.FCStd": "bb0996bed71ec8269a68f7445da53fb86789a7cb7777c5972cff74fd47811e47",
+    "native/subsystems/CrewControlsAndEquipment.FCStd": "5831b330452e69ba2dc0ae4b2c9757b2fbf174d988ce44126e64a7adec7e4fe5",
+    "native/subsystems/Drivetrain.FCStd": "222888c3c6d72363524415dfeec66ce89f9144cf973cbb077dab245d2fc0c4bf",
+    "native/subsystems/ElectricalInstruments.FCStd": "5f423b486223168139193422992d379bc291e73ac992a372bdcef75069051f0c",
+    "native/subsystems/FuelPressure.FCStd": "45f9cb47c26ef7e007ccb0451554cf33321bf63bc85d26e2edda9f00764b7e7b",
+    "native/subsystems/HullStructure.FCStd": "91bb04cc51d10a143ffeb982b3bec08e0e28b5942da452601f738d2c2528f56c",
+    "native/subsystems/Powerplant.FCStd": "c22f9480fc5a60028e6af664fc5ebb2e07ca292694e89d29eacd0b0a18ad720d",
+    "native/subsystems/RunningGear.FCStd": "5b225c9b28cce15f4c331e1d076a39a7575319831d95cf92d8db5cbc0672418e",
+    "native/subsystems/Sponsons.FCStd": "79c852869c29529dd8de89a257e7e127ff3d7d2255e1a8b186fc044b292f38bb"
+  },
+  "material_pairs": 68,
+  "material_passed": true,
+  "overlaps": [],
+  "standard_context_checked": true
+}

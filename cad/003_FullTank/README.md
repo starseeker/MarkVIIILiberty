@@ -198,7 +198,7 @@ cage and ring geometry, the contact-query diagnostic and unfinished plunger/cone
 interfaces. The [source comparison](experiments/drive_chains/clutch_thrust_build/source_review/index.html)
 retains the full SNL figure. Standard tank011 remains unchanged.
 
-The latest [cone and spring checkpoint](experiments/drive_chains/clutch_cone_build/TransmissionWithClutchCone.FCStd)
+The [cone and spring checkpoint](experiments/drive_chains/clutch_cone_build/TransmissionWithClutchCone.FCStd)
 contains **1,652 physical components**. It adds 71 occurrences across nine shared
 part definitions and refines the existing cone support; 1,580 parent components
 retain their geometry and placement. All 326 affected material pairs, 462
@@ -212,8 +212,20 @@ hole checks caught two bad Boolean cuts despite passing whole-part interference
 and STEP tests; the corrected cutters and retained diagnostics are included.
 The [source review](experiments/drive_chains/clutch_cone_build/source_review/index.html)
 shows the full SNL figure beside actual native sections. SH861K plunger locking
-wire/head holes, outer drum, flywheel/crankshaft engagement and the clutch-stop
-brake remain unfinished. Standard tank 011 remains unchanged.
+wire/head holes were unfinished at that checkpoint.
+
+The latest [plunger retention checkpoint](experiments/drive_chains/clutch_retention_build/TransmissionWithClutchRetention.FCStd)
+contains **1,653 physical components**: one new SH861K wire, six revised plunger
+heads sharing one definition, and 1,646 preserved parent occurrences. The wire
+retains the catalogue 30in length; diameter, head passages and route are documented
+estimates. All 84 independent checks, 68 material pairs, nine STEP comparisons,
+two parameter trials and a fresh rebuild pass. Five views were inspected and
+three new progression snapshots are saved. The [packet](packets/I03-clutch-retention.md)
+records these checks and the numerical volume diagnostic.
+
+Next are the outer drum, flywheel/crankshaft engagement and clutch-stop brake.
+The wire tail requires a clearance check against the future flywheel. Standard
+tank011 remains unchanged; full tank geometry and integration remain incomplete.
 
 Additional commands:
 

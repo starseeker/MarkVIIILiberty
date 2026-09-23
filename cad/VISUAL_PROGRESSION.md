@@ -462,3 +462,19 @@ its transparent-hull view, and all 88 prior images remain unchanged.
 | [clutch cutaway](intermediate_snapshot_iso_clutch_cone_cutaway_001.png) | `f6a5aec7d637dc7e52aa5272c0eeeaf1ea802a91668b78d26d9ee388f43c07ac` |
 | [axial section](intermediate_snapshot_detail_clutch_cone_001.png) | `44b039e0860ea6c4fc25f7aeb86e70fda81ac5c21724cd64b68b850bc5a38b24` |
 | [six spring sets](intermediate_snapshot_detail_clutch_springs_001.png) | `ca0c8aa3cd14191d6e38a0b77f273061e5428340f14fb7413d2ab907b421e182` |
+
+
+## Clutch plunger retention — 22 September 2026
+
+The 1,653-component isolated transmission/pump checkpoint adds one 30in SH861K
+wire and six actual tangential head passages. Existing plungers remain shared
+native links. Wire diameter, route and twist are explicit estimates; orange
+highlights the wire for review and does not identify its material. Geometry,
+exchange, two size trials and fresh rebuild pass. Standard tank011 and its
+transparent-hull companion remain unchanged; all 92 previous images are preserved.
+
+| View | SHA-256 |
+| --- | --- |
+| [installed isometric](intermediate_snapshot_iso_clutch_retention_001.png) | `256604d12bd1d6885059f8905714b62750b1de72fc2fee3384861596b5380dcb` |
+| [six-head wire route](intermediate_snapshot_detail_clutch_retention_001.png) | `72d9d70fe4af082fdedf3dd879192109eb2bf2d283e84dcf3d5fcd149ba5a502` |
+| [head passage section](intermediate_snapshot_detail_plunger_wire_001.png) | `a782d7dcf948ce14f84ab3ca769ab50b908b8a5789f60d7833257440e6003afd` |

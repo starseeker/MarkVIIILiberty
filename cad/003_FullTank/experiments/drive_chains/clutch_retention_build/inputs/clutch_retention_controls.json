@@ -1,0 +1,25 @@
+{
+  "controls": {
+    "wire_length": 762.0,
+    "wire_diameter": 1.5,
+    "head_drill_radius": 1.35,
+    "wire_seam_angle": 0.0,
+    "wire_seam_half_angle": 10.0,
+    "wire_twist_radius": 1.1,
+    "wire_twist_turns": 1.5,
+    "wire_bridge_height": 10.0,
+    "wire_bend_handle": 5.0
+  },
+  "evidence": {
+    "wire_length": "SNL275:024, SH861K, one30in wire; spool allocation275:023 corroborates the same piece.",
+    "material": "Soft iron, W.&M.Ga.No16 as printed. The1.5mm modeled diameter is an estimate, not a verified gauge conversion.",
+    "head_drill_radius": "Estimated transverse passage through the middle of each inherited4mm head. Range1.25-1.45mm; always below half the head height.",
+    "routing": "One near-circular wire through six tangential head bores, with paired twisted ends between adjacent plungers. Route, twist and clocking are inferred; no locking-strength claim.",
+    "datums": "Derive head plane, pitch radius, phase, head size and shaft length from the qualified cone packet. Local wire frame is the TransmissionCore frame; plunger definitions remain axial at the tail origin.",
+    "future_interface": "Axial tail projection must be checked again against the future flywheel/crankshaft; this packet cannot establish that missing interface."
+  },
+  "parameter_trials": [
+    {"name": "smaller_wire", "wire_diameter": 1.4, "head_drill_radius": 1.25, "wire_seam_angle": 60.0},
+    {"name": "larger_wire", "wire_diameter": 1.6, "head_drill_radius": 1.45, "wire_seam_angle": 0.0}
+  ]
+}
