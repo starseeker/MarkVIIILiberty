@@ -910,3 +910,19 @@ earlier images.
 | --- | --- |
 | [isometric.png](intermediate_snapshot_iso_engine_water_pump_connections_001.png) | `48e6140b0f43cbb0da3fe0aa963244b4c77d895496f8889d6f06bb6b1daccd8b` |
 | [drain_lock.png](intermediate_snapshot_detail_engine_water_pump_drain_lock_001.png) | `f78629194802926e1241bf5745829f90010d06af69c03570520a85ca55124ead` |
+
+
+## Chain casings at the revised shaft station — 23 September 2026
+
+Constant-stock shells, wall collars, cap joints and bulkhead passages now follow
+the conditional shaft station. Native/context checks, local STEP, two parameter
+variations and fresh reproduction pass. Four views were inspected; historical
+station, source fastener conflicts and complete installation remain open. Three
+new snapshots give **161 total**, preserving all 158 earlier images and 24 recorded
+native files. Standard tank011 is unchanged; section cuts affect display only.
+
+| View | SHA-256 |
+| --- | --- |
+| [intermediate_snapshot_iso_powertrain_registration_004](intermediate_snapshot_iso_powertrain_registration_004.png) | `ac97261c5b9200c4b73676940ba65dffea53469096257a1b7cb8e4ab62c58726` |
+| [intermediate_snapshot_detail_chain_casing_registration_001](intermediate_snapshot_detail_chain_casing_registration_001.png) | `72f3e34f5233fde884fe3b551bc3afe89be8010b547ac17bc9e916af8f772daf` |
+| [intermediate_snapshot_source_chain_casing_registration_001](intermediate_snapshot_source_chain_casing_registration_001.png) | `05913612effbd444115f32b901b565f0951a92bebac5f569bc458fa36f5ed9b4` |

@@ -560,3 +560,26 @@ holding hardware and chain casings next. Three snapshots give158 total; all155
 previous images and24 recorded natives remain unchanged. Standard tank011 is
 unchanged. Neither frame clearance nor this source comparison qualifies a complete
 installation or the unfinished tank.
+
+
+## Rebuilt chain casings — 23 September 2026
+
+Directly inspected the development isometric, port casing section, joint view and
+SNL2 source overlay in [the casing trial](experiments/drive_chains/engine_pump_receiver_study/registration/native_casing_trial01/README.md).
+The closed casings now follow the revised chain route; the section exposes the
+chain and retained supports, and the joint view preserves distinct cap cleats,
+collar, trim and fasteners. Physical native parts remain uncut.
+
+The overlay retains the original global calibration, with red old and blue revised
+central sections. The large roller end stays fixed; the small end rises and its
+lower tangent becomes nearly horizontal. The source small-gear center remains
+below the revised station. This disagreement and the lack of a dimensioned casing
+outline prevent treating the image as historical station qualification. HB134
+supports the width, sheet construction and separate cap; detailed stock, taper,
+seam and hole patterns remain estimates. Catalogue and handbook fastening
+conflicts remain documented. The exact checks establish local fit separately.
+
+Three progression snapshots bring the total to161; all158 earlier images and24
+recorded natives are preserved. Sixteen unchanged definitions still need strict
+material-preservation checks, as does the inherited parent gate. Standard tank011
+is unchanged; full attachment and the tank interior remain incomplete.

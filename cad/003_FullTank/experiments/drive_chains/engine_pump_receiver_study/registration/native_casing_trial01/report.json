@@ -1,0 +1,7080 @@
+{
+  "status": "saved_casing_reconstruction_pending_independent_checks",
+  "native_file": "PowertrainWithRebuiltChainCasings.FCStd",
+  "native_sha256": "64ca0ac392e36eeba7feeec1125e629d6935171c90d04d11c9c588d35301c695",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_following_frame_trial01/PowertrainWithFollowingFrame.FCStd",
+  "source_native_sha256": "3d6419e12fbf0916c2c4a65fed60d76139da0fc99d6b5bc2d1d6add939430339",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_powertrain_casing_trial.py": "592dac468e81ddf5d867a65176131fc6b2718de3afd233e70b46247e8f49d10a",
+    "cad/003_FullTank/experiments/drive_chains/powertrain_casing_registration_parts.py": "10a39c16677eaae476ca3496f8419a9b0df00e2fbe15a5f8159154964642534a",
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_following_frame_trial01/report.json": "1e5559e6a80757f5e78158ff2eb63a0e8f7460cff75d76a9ecd8f0caa576efe7",
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_following_frame_trial01/independent_checks.json": "f75e554d5c74d8e527a1013130fe962c09b831bcbce53ff02e63f4c14535b844",
+    "cad/003_FullTank/experiments/drive_chains/installed_pitch_route_report.json": "8e4baeb7457dff7d43fac89c4c00d7ef5926f7d39c9ba1f8ce2ef8ee816e6337",
+    "cad/003_FullTank/experiments/drive_chains/casing_support_build/report.json": "ffb7574ad5bf76a1aaa1b0b4e3a74f25177be703ec896d10510e7c94c1e65b0f",
+    "cad/003_FullTank/experiments/drive_chains/chain_candidate_controls.json": "bbdf1aeb6bfcdcf77ef03bd7b6e333f2108bc195dd273e942fbc636c043bef46",
+    "cad/003_FullTank/experiments/drive_chains/casing_shell_passage_build/report.json": "50e2cf3ee5dc4dd691a0338a9a8fd9ce00f95ca50ec0a51604a122df598e181f",
+    "cad/003_FullTank/experiments/drive_chains/casing_front_build/inputs/casing_controls.json": "33991e419e8ef727fca18f95ab5d739ecc4cd8ca8427a994b93dc9d384d9ad4e",
+    "cad/003_FullTank/experiments/drive_chains/casing_mount_controls.json": "fa2654a99798fab17ae40904e00f1620311cc3bf8e3731d4f432d0f6aca197a0",
+    "cad/003_FullTank/experiments/drive_chains/casing_cap_packing_build/inputs/casing_cap_controls.json": "7438cec17ff44e463d8f16823a3cbe7733994f7a9a84c20f746b844181cc2cad",
+    "cad/003_FullTank/experiments/drive_chains/casing_trim_build/inputs/casing_trim_controls.json": "3434fcbecd21fe0e2b407b6512cacc88e11cd0d1c1ad74a17b7f4b219a4a1fc8",
+    "cad/003_FullTank/experiments/drive_chains/casing_support_build/inputs/casing_support_controls.json": "45ed9a8cc24720f2b8ce2ed904749a9eeeb7d17d40aac387281b107ec6c167b9",
+    "cad/003_FullTank/experiments/drive_chains/casing_front_build/inputs/casing_front_controls.json": "7dd33781a9286ef39b288bd626f841f11695835cd17f02bea7da2f3cd6b09e87",
+    "cad/003_FullTank/experiments/drive_chains/casing_parts.py": "5ffc18fe5e320ff3a3b777a221ee0f8a32b331317e56d32caa800bd69716c80d",
+    "cad/003_FullTank/experiments/drive_chains/casing_mount_parts.py": "cf584f3744d8571823ae0d5a03fffafcccf710dcf65518333713e5d5dfbd4534",
+    "cad/003_FullTank/experiments/drive_chains/casing_cap_parts.py": "f9e2a291200b2a29d44b5defa457d6d91a10acaffcf1050d407e219933afdfad",
+    "cad/003_FullTank/experiments/drive_chains/casing_trim_parts.py": "0bb5cdf1a4454a29842e2e99ceaae7f3101168dfd4c2977a14689f4ac556124e",
+    "cad/003_FullTank/experiments/drive_chains/casing_front_parts.py": "0aaff16c793cecadeb78f2db5d491078c3fd49dc1f7d0c157b5c837438d5f10c"
+  },
+  "controls": {
+    "casing": {
+      "outside_width": 168.275,
+      "sheet_stock": 3.0,
+      "chain_radial_envelope": 35.0,
+      "radial_gap": 12.0,
+      "hub_gap": 2.0,
+      "cap_split_gap": 1.0,
+      "cap_split_axis_height": 0.0,
+      "passage_straight_gap": 4.0,
+      "passage_corner_radius": 8.0,
+      "passage_minimum_gap": 2.0
+    },
+    "mount": {
+      "angle_stock": 6.0,
+      "flange_margin": 30.0,
+      "collar_length": 35.0,
+      "collar_case_gap": 0.25,
+      "wall_rivet_diameter": 12.7,
+      "wall_rivet_stock_length": 38.1,
+      "case_rivet_diameter": 7.9375,
+      "case_rivet_stock_length": 19.05,
+      "hole_diameter_clearance": 0.5
+    },
+    "cap": {
+      "bolt_diameter": 12.7,
+      "bolt_length": 25.4,
+      "rivet_diameter": 7.9375,
+      "short_rivet_length": 19.05,
+      "long_rivet_length": 22.225,
+      "cleat_stock": 5,
+      "foot_width": 32,
+      "flange_reach": 32,
+      "side_end_margin": 35,
+      "rivet_end_margin": 12,
+      "rivet_stagger": 18,
+      "bolt_end_margin": 30,
+      "bolt_face_offset": 21,
+      "roof_side_inset": 12,
+      "roof_rivet_end_margin": 20,
+      "hole_diameter_clearance": 0.5,
+      "thread_envelope_diameter_clearance": 0.2,
+      "hex_across_flats": 21,
+      "bolt_head_stock": 8,
+      "nut_stock": 10,
+      "washer_od": 22,
+      "washer_stock": 2.5,
+      "washer_split": 0.8,
+      "roof_center_rivet_offset": 24.0,
+      "packing_stock": 1.0
+    },
+    "trim": {
+      "register_stock": 3,
+      "register_length": 140,
+      "register_hub_margin": 60,
+      "register_fixed_depth": 50,
+      "register_lap": 20,
+      "register_corner": 4,
+      "register_rivet_end": 20,
+      "register_rivet_offset": 35,
+      "beading_stock": 3,
+      "beading_length": 200,
+      "beading_width": 18,
+      "beading_rivet_end": 15,
+      "hole_diameter_clearance": 0.5,
+      "countersunk_angle_deg": 90,
+      "countersunk_head_radius_ratio": 1,
+      "upset_radius_ratio": 0.85,
+      "register_rivet_diameter": 7.9375,
+      "register_rivet_length": 22.225,
+      "beading_rivet_diameter": 4.7625,
+      "beading_rivet_length": 15.875
+    },
+    "support": {
+      "bracket_stock": 6,
+      "bracket_width": 160,
+      "bracket_forward_offset": 165,
+      "bracket_web_axis_offset": -125,
+      "case_leg_height": 90,
+      "hull_leg_drop": 60,
+      "case_rivet_end": 20,
+      "case_rivet_vertical_end": 18,
+      "hull_bolt_halfpitch": 40,
+      "hole_diameter_clearance": 0.5,
+      "case_rivet_diameter": 7.9375,
+      "case_rivet_length": 22.225,
+      "bolt_length": 38.1
+    },
+    "front": {
+      "taper_start_x": 1450,
+      "taper_end_x": 1515,
+      "front_outside_width": 132,
+      "small_hub_radius": 77,
+      "hub_gap": 2,
+      "minimum_rotor_gap": 2
+    }
+  },
+  "original_route": {
+    "status": "phase_aligned_mathematical_candidate",
+    "pitch_count": 50,
+    "pitch_mm": 76.2,
+    "large_teeth": 23,
+    "small_teeth": 12,
+    "tooth_count_source": "HB130 original scan, outline table and prose",
+    "roller_pinion_phase_deg": 17.21,
+    "center_distance_mm": 1230.8548006089063,
+    "roller_pinion_axis_xz_mm": [
+      607.0000725411861,
+      1025.0700826269272
+    ],
+    "provisional_transmission_axis_xz_mm": [
+      1958.773121387283,
+      829.9582542694496
+    ],
+    "candidate_transmission_axis_xz_mm": [
+      1825.2303627827532,
+      849.2335104357661
+    ],
+    "provisional_station_difference_mm": 134.92666110144742,
+    "small_pinion_candidate_phase_deg": 17.983209418256024,
+    "large_pitch_circle_vertices": 12,
+    "small_pitch_circle_vertices": 6,
+    "maximum_large_tooth_phase_error_rad": 2.1649348980190553e-15,
+    "maximum_small_tooth_phase_error_rad": 5.6066262743570405e-15,
+    "maximum_pitch_error_mm": 1.5575096767861396e-11,
+    "closing_error_mm": 3.3810695376938703e-10,
+    "vertices_world_xz_mm": [
+      [
+        614.6067859688277,
+        1304.770863722466
+      ],
+      [
+        538.8623407708889,
+        1296.4510667503987
+      ],
+      [
+        468.17135942897124,
+        1268.0041836712871
+      ],
+      [
+        407.7766686394838,
+        1221.5399896672777
+      ],
+      [
+        362.15746633095654,
+        1160.504521448105
+      ],
+      [
+        334.6971200446491,
+        1089.4245004728964
+      ],
+      [
+        327.4322380418916,
+        1013.5716067279244
+      ],
+      [
+        340.90162338620473,
+        938.5715023383543
+      ],
+      [
+        374.10631338493874,
+        869.9866019441132
+      ],
+      [
+        424.5836680822367,
+        812.9035338524
+      ],
+      [
+        488.5900129987326,
+        771.5558880859164
+      ],
+      [
+        561.378290341514,
+        749.0102303782696
+      ],
+      [
+        637.414249147533,
+        744.0129342641951
+      ],
+      [
+        713.5664801689991,
+        741.315211066149
+      ],
+      [
+        789.7187111904651,
+        738.6174878681031
+      ],
+      [
+        865.870942211931,
+        735.9197646700571
+      ],
+      [
+        942.0231732333971,
+        733.2220414720111
+      ],
+      [
+        1018.175404254863,
+        730.5243182739652
+      ],
+      [
+        1094.3276352763287,
+        727.8265950759192
+      ],
+      [
+        1170.4798662977948,
+        725.128871877873
+      ],
+      [
+        1246.632097319261,
+        722.4311486798272
+      ],
+      [
+        1322.784328340727,
+        719.7334254817812
+      ],
+      [
+        1398.9365593621926,
+        717.0357022837352
+      ],
+      [
+        1475.0887903836588,
+        714.3379790856892
+      ],
+      [
+        1551.241021405125,
+        711.6402558876432
+      ],
+      [
+        1627.3932524265906,
+        708.9425326895972
+      ],
+      [
+        1703.545483448057,
+        706.2448094915512
+      ],
+      [
+        1779.697714469523,
+        703.5470862935052
+      ],
+      [
+        1855.878634164926,
+        705.2522180662886
+      ],
+      [
+        1923.7631905665332,
+        739.8661892651703
+      ],
+      [
+        1965.2459553355213,
+        803.7850458500682
+      ],
+      [
+        1969.2116551522308,
+        879.8817818179382
+      ],
+      [
+        1934.5976839533494,
+        947.7663382195453
+      ],
+      [
+        1870.6788273684513,
+        989.2491029885342
+      ],
+      [
+        1796.9441642217878,
+        1008.4751127317968
+      ],
+      [
+        1723.1373204495308,
+        1027.4221392103145
+      ],
+      [
+        1649.3304766772735,
+        1046.3691656888323
+      ],
+      [
+        1575.5236329050163,
+        1065.3161921673498
+      ],
+      [
+        1501.716789132759,
+        1084.2632186458675
+      ],
+      [
+        1427.909945360502,
+        1103.2102451243852
+      ],
+      [
+        1354.1031015882447,
+        1122.157271602903
+      ],
+      [
+        1280.2962578159875,
+        1141.1042980814207
+      ],
+      [
+        1206.4894140437304,
+        1160.0513245599384
+      ],
+      [
+        1132.6825702714739,
+        1178.998351038456
+      ],
+      [
+        1058.8757264992173,
+        1197.9453775169736
+      ],
+      [
+        985.0688827269602,
+        1216.8924039954911
+      ],
+      [
+        911.2620389547035,
+        1235.8394304740086
+      ],
+      [
+        837.4551951824466,
+        1254.7864569525264
+      ],
+      [
+        763.6483514101899,
+        1273.733483431044
+      ],
+      [
+        689.841507637933,
+        1292.6805099095616
+      ]
+    ],
+    "authored_fingerprint": {
+      "data/assemblies.json": "a04b1f170f0ad541633c4343a1e64a7e3e02108473ce45149bd298dcf2ad011d",
+      "data/calibrations.json": "fb555b36854a6526575760b723d605d6eb10842b850c413dd8b2234f93f562b7",
+      "data/configuration.json": "06f147e0cacfdcd4b8763867467ff465b37e722aa9ea18a4092fa6cddcff0bc3",
+      "data/datums.json": "f77d3db1a6dbd757bc2fc1d2b3b045c8ac563ac7d0880f9bde1504a8a58cfb17",
+      "data/definitions.json": "d96f9b7a445818cb785a0da8e2a524b46e139bafbbd87d0e144ab3d0e9942a83",
+      "data/drive_mount_source_rows.json": "8043067b84f99a7a37c8f78f5d67bde30f7a4812084eb84637a739599e84ce9a",
+      "data/drive_source_rows.json": "f2b3c4da2fb27eabbb468342e7b234d3ec716d159f5f3b1165b0a16ab0fb17a6",
+      "data/hull_source_rows.json": "e0ee6f04b17b0aedc77271c9b827eda3ea63083852c7469c26dcb6c8147aceaa",
+      "data/idler_source_rows.json": "91acf25ddea218a5cbc1e3fb147d57d43bb5aab250465d314b2df2d09150e2d7",
+      "data/issues.json": "ec5b3e4db74c13ce5dfc81628bbefacdcd54501fad37b7096cc9de2de3f3d4b4",
+      "data/louver_source_rows.json": "3aed876c0d9cfd7c3361f4e5fc1f321bc24e8d131cf2f863146e83410942cb56",
+      "data/lower_support_runs.json": "a0c0cbf083c129ce18d34a06af2bff6355ba789995899710eb9957253a479d16",
+      "data/lower_support_source_rows.json": "2b59f967f652ad57a016bf0596e7f1d0a5621cb8259ed7be0798763f36157c15",
+      "data/model.json": "d000b5cfa8f11fbc451eb5c663e70432e79e18c487dd8efb16da65ef4bc0980e",
+      "data/occurrences.json": "fd645b0301ae0403f7b5b5ca35632f8a4384e47bd201ca389c1c9f80b1b327be",
+      "data/parameters.json": "54df22042736659f95d5118ad04826d0d330678c7f1f2befce7e815893c051d6",
+      "data/patterns.json": "1912f02c41a3043831c993fd3f8cc2c19faa96e73b33672bc0cc50ab55542dd4",
+      "data/roller_source_rows.json": "546c63e6c1d1d7d756d5a7ef0ad4f638dffcd21dd1659f63db03ee9d565c1194",
+      "data/roller_stations.json": "7d8d255f3d6c9a6311be2c23eb9d1410f105f29ecffb38d35391b20664a4e728",
+      "data/sponson_source_rows.json": "79ff510bceb4866fdf10563edcee794dc519c2a9d5541411f26ed79d1f37970f",
+      "data/visual_reviews.json": "eb4d26aad0b21bc6a779b1cb1fd9577e1aa3a8fa915af4a0add4b90cced270ef",
+      "data/wheel_source_rows.json": "f438b78a73e8dca753736b94872d1eea9a590f9ca4d72d64eac1271cea8e4b98",
+      "lib/__init__.py": "d25dcf9ca8ec9379d065d0f288815387f4d34b0c4a50b8b21a489bf2ccfb2856",
+      "lib/cad_build.py": "a570c74f52ef1969d8002fd50cc6975b6d7261abe0324f596ad159d60485c95b",
+      "lib/drive_mount_geometry.py": "fe5b79cc645f412a568211380709d3c3d047c0813ba8cc49d75149f8a756383a",
+      "lib/drive_mount_parts.py": "a94614d5abd2d1de9dabb416c646e114f8a625acbfa45096bdcb284a3bc6e5fc",
+      "lib/drive_mount_validation.py": "42b72ff26f5e60e1f831f0cd028ddd1c98b674b9aa8ea6d7a3280ab675b894f3",
+      "lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b",
+      "lib/hull_geometry.py": "2116331ac82116f5d3acb77f336489ccdd3219fafea116801f43aa922b34b5eb",
+      "lib/hull_parts.py": "25c61fdc5e7189353b75bc6656aafa28944233223b16d7a16e218bc0011a291c",
+      "lib/hull_validation.py": "c124742119a136936f665d1c48fe12b198a60406b8565e8522d3ee40fe470dad",
+      "lib/idler_geometry.py": "a5cc2ca776d26581cf4d7984dfc59938f757228acfba5e60198a8c4565cda208",
+      "lib/idler_parts.py": "1c8382870dcb2dbfa619f817e8dc1865d527ba4fa361d34afccdba295dc181f1",
+      "lib/idler_validation.py": "07aea5d89fcc2e406c271651d969fd856d64feb7af52f33940aeac5a1413b13c",
+      "lib/inventory.py": "ee182319bc4964349931419763837ecd1cce054665b2c6cb9702da94d38585e7",
+      "lib/louver_geometry.py": "1d2d7079268a94d3f12f190379910afcd198219494a3a5d85344fcc6b1be9cd1",
+      "lib/louver_parts.py": "a30886270342c4f9d15195a89d255f59c68164568873c81c0ee8364c6a8e617b",
+      "lib/louver_validation.py": "c8690dd3399f8b773782d5539e0411a15e8f033a5bc25e4ba0e49bd622aa18c0",
+      "lib/lower_support_geometry.py": "42c44f8d93230a3bfd51d2814caba64dc6ae707916e6a25cd3bcfd51b35a9fc6",
+      "lib/lower_support_parts.py": "108c20194a228d67af0112d919c4e181c51f0983c03f4ce2120337080d741136",
+      "lib/lower_support_validation.py": "47cbdbfed4393f8f4987fceef8cfaf93625ee6cee611c5c86f137ae44ed4d97d",
+      "lib/model.py": "e9e88024bdb9f61694231b7a5791761c997694c6ba4fc3a0da70eeb65b6671d7",
+      "lib/parameters.py": "9f27be528507c1432128466edeb541d5bcc697edb599d8a3501b1c42c2f99577",
+      "lib/patterns.py": "4cc7ac6b549b0fc9e6b069724ff330c2e2bb9b5904ca8d9333186e658bda9e28",
+      "lib/raster.c": "e2e3ef478c8e7dc753c1a56d04fa0a19fa54c6ee50b9fedf8fdfb30716c2bf48",
+      "lib/raster.py": "d4ae9a3f3332576460705ecdddfbf31f3a8ec36a7528996181a51248c11b28b4",
+      "lib/roller_geometry.py": "ba38e9213259ae2a70833313a7bb7a98a2d3af808d440447390c595243af0470",
+      "lib/roller_parts.py": "844075214ea509ea83cca5aa9d205bf478ded1eed70108f49c7fe92d39b4a72b",
+      "lib/roller_validation.py": "148c7c3a62096a56a3363031091ae662e40efe86f913f2712aa74432eebf6a6e",
+      "lib/runtime.py": "f77afcc9ab270d218f5dba30cfb23d834070edd7aeac5bd409c1ab8b1051303d",
+      "lib/sponson_geometry.py": "89e53f01f4be4a6201309a43bbe3bfd9817144d325bad525f32d888baeea4cee",
+      "lib/sponson_parts.py": "967e224c5972f7fa68b6432702c51245183caa939967f161f183ec95ba70a522",
+      "lib/sponson_validation.py": "49b00c2689fbab8c89829eed8dd2ee457c66d79851770ce690b17f8f6260a858",
+      "lib/track_parts.py": "7ee8dc0af8f0d086c842e176a874344a99943a7552ecc9cc046359f8e378d181",
+      "lib/track_path.py": "fcc57a90feec647538d9956abda7d9d15854e0b0fc8675c5077562dae512dcda",
+      "lib/track_validation.py": "4dc9a1a336dd41089284df501a63c7f2e16e66ab6eb6b5d157f0bb031d687d82",
+      "lib/upper_parts.py": "d15c9241dac72e1dc64e1e12fb2e9d4c11d2c6d3f62aa818da7621a657177e40",
+      "lib/upper_validation.py": "450f8da1b918e79336ad9a7d1948208aebbab9118c4e1b400b2b517d9b4d33fa",
+      "lib/visual_review.py": "30e201c638c92d93e78b65e2d1ad8d62f526dd73a842a039853ce07c95e2aa37",
+      "lib/wheel_geometry.py": "6c4333803d69d1b1ab97c82415609f5d3334ec040bc1d049509d989f12b3539d",
+      "lib/wheel_parts.py": "08284ae5fbb1a67727da78cb647b0a2c7d5fa9ef44ac5f8bd0bc5da57c044fb5",
+      "lib/wheel_validation.py": "22d3ab35164c5898283d54a4cb6edb0fdd9a61fe9348a1fb9eb07dc3f87d41c7",
+      "lib/worker.py": "a134ff81c5d715660f04df86ea04f414da8457aeea491fbffb3557f3fcf9f654",
+      "manage.py": "9de89dd5fa34596b186919f0dc7613b2c35bbf7f4dd1c3502fc298a0aee23f24"
+    },
+    "static_fit_report_sha256": "142be12f403514fb16f55e995290c1081dfad55e0b37c619cb1aac25590a65a6",
+    "script_sha256": "7c749b8bec8e9b94bcc618ea95172cec3df2a75de07d2b16084e43edaef60be7",
+    "transmission_datum_changed": false,
+    "native_components_created": false,
+    "physical_contacts_qualified": false,
+    "limitation": "Retains the direction to a provisional transmission datum, but derives a new station from50 pitches. Tooth-center alignment alone is not tooth/profile clearance or historical station evidence."
+  },
+  "revised_route": {
+    "status": "phase_aligned_mathematical_candidate",
+    "pitch_count": 50,
+    "pitch_mm": 76.2,
+    "large_teeth": 23,
+    "small_teeth": 12,
+    "tooth_count_source": "HB130 original scan, outline table and prose",
+    "roller_pinion_phase_deg": 17.21,
+    "center_distance_mm": 1230.8548006089063,
+    "roller_pinion_axis_xz_mm": [
+      607.0000725411861,
+      1025.0700826269272
+    ],
+    "provisional_transmission_axis_xz_mm": [
+      1958.773121387283,
+      829.9582542694496
+    ],
+    "candidate_transmission_axis_xz_mm": [
+      1831.4946420457636,
+      900.6029411764705
+    ],
+    "provisional_station_difference_mm": 134.92666110144742,
+    "small_pinion_candidate_phase_deg": 17.983209418256024,
+    "large_pitch_circle_vertices": 12,
+    "small_pitch_circle_vertices": 6,
+    "maximum_large_tooth_phase_error_rad": 2.1649348980190553e-15,
+    "maximum_small_tooth_phase_error_rad": 5.6066262743570405e-15,
+    "maximum_pitch_error_mm": 1.5575096767861396e-11,
+    "closing_error_mm": 3.3810695376938703e-10,
+    "vertices_world_xz_mm": [
+      [
+        614.6067859688277,
+        1304.770863722466
+      ],
+      [
+        538.8623407708889,
+        1296.4510667503987
+      ],
+      [
+        468.17135942897124,
+        1268.0041836712871
+      ],
+      [
+        407.7766686394838,
+        1221.5399896672777
+      ],
+      [
+        362.15746633095654,
+        1160.504521448105
+      ],
+      [
+        334.6971200446491,
+        1089.4245004728964
+      ],
+      [
+        327.4322380418916,
+        1013.5716067279244
+      ],
+      [
+        340.90162338620473,
+        938.5715023383543
+      ],
+      [
+        374.10631338493874,
+        869.9866019441132
+      ],
+      [
+        424.5836680822367,
+        812.9035338524
+      ],
+      [
+        488.5900129987326,
+        771.5558880859164
+      ],
+      [
+        561.378290341514,
+        749.0102303782696
+      ],
+      [
+        637.414249147533,
+        744.0129342641951
+      ],
+      [
+        713.5664801689991,
+        741.315211066149
+      ],
+      [
+        789.7187111904651,
+        738.6174878681031
+      ],
+      [
+        865.870942211931,
+        735.9197646700571
+      ],
+      [
+        942.0231732333971,
+        733.2220414720111
+      ],
+      [
+        1018.175404254863,
+        730.5243182739652
+      ],
+      [
+        1094.3276352763287,
+        727.8265950759192
+      ],
+      [
+        1170.4798662977948,
+        725.128871877873
+      ],
+      [
+        1246.632097319261,
+        722.4311486798272
+      ],
+      [
+        1322.784328340727,
+        719.7334254817812
+      ],
+      [
+        1398.9365593621926,
+        717.0357022837352
+      ],
+      [
+        1475.0887903836588,
+        714.3379790856892
+      ],
+      [
+        1551.241021405125,
+        711.6402558876432
+      ],
+      [
+        1627.3932524265906,
+        708.9425326895972
+      ],
+      [
+        1703.545483448057,
+        706.2448094915512
+      ],
+      [
+        1779.697714469523,
+        703.5470862935052
+      ],
+      [
+        1855.878634164926,
+        705.2522180662886
+      ],
+      [
+        1923.7631905665332,
+        739.8661892651703
+      ],
+      [
+        1965.2459553355213,
+        803.7850458500682
+      ],
+      [
+        1969.2116551522308,
+        879.8817818179382
+      ],
+      [
+        1934.5976839533494,
+        947.7663382195453
+      ],
+      [
+        1870.6788273684513,
+        989.2491029885342
+      ],
+      [
+        1796.9441642217878,
+        1008.4751127317968
+      ],
+      [
+        1723.1373204495308,
+        1027.4221392103145
+      ],
+      [
+        1649.3304766772735,
+        1046.3691656888323
+      ],
+      [
+        1575.5236329050163,
+        1065.3161921673498
+      ],
+      [
+        1501.716789132759,
+        1084.2632186458675
+      ],
+      [
+        1427.909945360502,
+        1103.2102451243852
+      ],
+      [
+        1354.1031015882447,
+        1122.157271602903
+      ],
+      [
+        1280.2962578159875,
+        1141.1042980814207
+      ],
+      [
+        1206.4894140437304,
+        1160.0513245599384
+      ],
+      [
+        1132.6825702714739,
+        1178.998351038456
+      ],
+      [
+        1058.8757264992173,
+        1197.9453775169736
+      ],
+      [
+        985.0688827269602,
+        1216.8924039954911
+      ],
+      [
+        911.2620389547035,
+        1235.8394304740086
+      ],
+      [
+        837.4551951824466,
+        1254.7864569525264
+      ],
+      [
+        763.6483514101899,
+        1273.733483431044
+      ],
+      [
+        689.841507637933,
+        1292.6805099095616
+      ]
+    ],
+    "authored_fingerprint": {
+      "data/assemblies.json": "a04b1f170f0ad541633c4343a1e64a7e3e02108473ce45149bd298dcf2ad011d",
+      "data/calibrations.json": "fb555b36854a6526575760b723d605d6eb10842b850c413dd8b2234f93f562b7",
+      "data/configuration.json": "06f147e0cacfdcd4b8763867467ff465b37e722aa9ea18a4092fa6cddcff0bc3",
+      "data/datums.json": "f77d3db1a6dbd757bc2fc1d2b3b045c8ac563ac7d0880f9bde1504a8a58cfb17",
+      "data/definitions.json": "d96f9b7a445818cb785a0da8e2a524b46e139bafbbd87d0e144ab3d0e9942a83",
+      "data/drive_mount_source_rows.json": "8043067b84f99a7a37c8f78f5d67bde30f7a4812084eb84637a739599e84ce9a",
+      "data/drive_source_rows.json": "f2b3c4da2fb27eabbb468342e7b234d3ec716d159f5f3b1165b0a16ab0fb17a6",
+      "data/hull_source_rows.json": "e0ee6f04b17b0aedc77271c9b827eda3ea63083852c7469c26dcb6c8147aceaa",
+      "data/idler_source_rows.json": "91acf25ddea218a5cbc1e3fb147d57d43bb5aab250465d314b2df2d09150e2d7",
+      "data/issues.json": "ec5b3e4db74c13ce5dfc81628bbefacdcd54501fad37b7096cc9de2de3f3d4b4",
+      "data/louver_source_rows.json": "3aed876c0d9cfd7c3361f4e5fc1f321bc24e8d131cf2f863146e83410942cb56",
+      "data/lower_support_runs.json": "a0c0cbf083c129ce18d34a06af2bff6355ba789995899710eb9957253a479d16",
+      "data/lower_support_source_rows.json": "2b59f967f652ad57a016bf0596e7f1d0a5621cb8259ed7be0798763f36157c15",
+      "data/model.json": "d000b5cfa8f11fbc451eb5c663e70432e79e18c487dd8efb16da65ef4bc0980e",
+      "data/occurrences.json": "fd645b0301ae0403f7b5b5ca35632f8a4384e47bd201ca389c1c9f80b1b327be",
+      "data/parameters.json": "54df22042736659f95d5118ad04826d0d330678c7f1f2befce7e815893c051d6",
+      "data/patterns.json": "1912f02c41a3043831c993fd3f8cc2c19faa96e73b33672bc0cc50ab55542dd4",
+      "data/roller_source_rows.json": "546c63e6c1d1d7d756d5a7ef0ad4f638dffcd21dd1659f63db03ee9d565c1194",
+      "data/roller_stations.json": "7d8d255f3d6c9a6311be2c23eb9d1410f105f29ecffb38d35391b20664a4e728",
+      "data/sponson_source_rows.json": "79ff510bceb4866fdf10563edcee794dc519c2a9d5541411f26ed79d1f37970f",
+      "data/visual_reviews.json": "eb4d26aad0b21bc6a779b1cb1fd9577e1aa3a8fa915af4a0add4b90cced270ef",
+      "data/wheel_source_rows.json": "f438b78a73e8dca753736b94872d1eea9a590f9ca4d72d64eac1271cea8e4b98",
+      "lib/__init__.py": "d25dcf9ca8ec9379d065d0f288815387f4d34b0c4a50b8b21a489bf2ccfb2856",
+      "lib/cad_build.py": "a570c74f52ef1969d8002fd50cc6975b6d7261abe0324f596ad159d60485c95b",
+      "lib/drive_mount_geometry.py": "fe5b79cc645f412a568211380709d3c3d047c0813ba8cc49d75149f8a756383a",
+      "lib/drive_mount_parts.py": "a94614d5abd2d1de9dabb416c646e114f8a625acbfa45096bdcb284a3bc6e5fc",
+      "lib/drive_mount_validation.py": "42b72ff26f5e60e1f831f0cd028ddd1c98b674b9aa8ea6d7a3280ab675b894f3",
+      "lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b",
+      "lib/hull_geometry.py": "2116331ac82116f5d3acb77f336489ccdd3219fafea116801f43aa922b34b5eb",
+      "lib/hull_parts.py": "25c61fdc5e7189353b75bc6656aafa28944233223b16d7a16e218bc0011a291c",
+      "lib/hull_validation.py": "c124742119a136936f665d1c48fe12b198a60406b8565e8522d3ee40fe470dad",
+      "lib/idler_geometry.py": "a5cc2ca776d26581cf4d7984dfc59938f757228acfba5e60198a8c4565cda208",
+      "lib/idler_parts.py": "1c8382870dcb2dbfa619f817e8dc1865d527ba4fa361d34afccdba295dc181f1",
+      "lib/idler_validation.py": "07aea5d89fcc2e406c271651d969fd856d64feb7af52f33940aeac5a1413b13c",
+      "lib/inventory.py": "ee182319bc4964349931419763837ecd1cce054665b2c6cb9702da94d38585e7",
+      "lib/louver_geometry.py": "1d2d7079268a94d3f12f190379910afcd198219494a3a5d85344fcc6b1be9cd1",
+      "lib/louver_parts.py": "a30886270342c4f9d15195a89d255f59c68164568873c81c0ee8364c6a8e617b",
+      "lib/louver_validation.py": "c8690dd3399f8b773782d5539e0411a15e8f033a5bc25e4ba0e49bd622aa18c0",
+      "lib/lower_support_geometry.py": "42c44f8d93230a3bfd51d2814caba64dc6ae707916e6a25cd3bcfd51b35a9fc6",
+      "lib/lower_support_parts.py": "108c20194a228d67af0112d919c4e181c51f0983c03f4ce2120337080d741136",
+      "lib/lower_support_validation.py": "47cbdbfed4393f8f4987fceef8cfaf93625ee6cee611c5c86f137ae44ed4d97d",
+      "lib/model.py": "e9e88024bdb9f61694231b7a5791761c997694c6ba4fc3a0da70eeb65b6671d7",
+      "lib/parameters.py": "9f27be528507c1432128466edeb541d5bcc697edb599d8a3501b1c42c2f99577",
+      "lib/patterns.py": "4cc7ac6b549b0fc9e6b069724ff330c2e2bb9b5904ca8d9333186e658bda9e28",
+      "lib/raster.c": "e2e3ef478c8e7dc753c1a56d04fa0a19fa54c6ee50b9fedf8fdfb30716c2bf48",
+      "lib/raster.py": "d4ae9a3f3332576460705ecdddfbf31f3a8ec36a7528996181a51248c11b28b4",
+      "lib/roller_geometry.py": "ba38e9213259ae2a70833313a7bb7a98a2d3af808d440447390c595243af0470",
+      "lib/roller_parts.py": "844075214ea509ea83cca5aa9d205bf478ded1eed70108f49c7fe92d39b4a72b",
+      "lib/roller_validation.py": "148c7c3a62096a56a3363031091ae662e40efe86f913f2712aa74432eebf6a6e",
+      "lib/runtime.py": "f77afcc9ab270d218f5dba30cfb23d834070edd7aeac5bd409c1ab8b1051303d",
+      "lib/sponson_geometry.py": "89e53f01f4be4a6201309a43bbe3bfd9817144d325bad525f32d888baeea4cee",
+      "lib/sponson_parts.py": "967e224c5972f7fa68b6432702c51245183caa939967f161f183ec95ba70a522",
+      "lib/sponson_validation.py": "49b00c2689fbab8c89829eed8dd2ee457c66d79851770ce690b17f8f6260a858",
+      "lib/track_parts.py": "7ee8dc0af8f0d086c842e176a874344a99943a7552ecc9cc046359f8e378d181",
+      "lib/track_path.py": "fcc57a90feec647538d9956abda7d9d15854e0b0fc8675c5077562dae512dcda",
+      "lib/track_validation.py": "4dc9a1a336dd41089284df501a63c7f2e16e66ab6eb6b5d157f0bb031d687d82",
+      "lib/upper_parts.py": "d15c9241dac72e1dc64e1e12fb2e9d4c11d2c6d3f62aa818da7621a657177e40",
+      "lib/upper_validation.py": "450f8da1b918e79336ad9a7d1948208aebbab9118c4e1b400b2b517d9b4d33fa",
+      "lib/visual_review.py": "30e201c638c92d93e78b65e2d1ad8d62f526dd73a842a039853ce07c95e2aa37",
+      "lib/wheel_geometry.py": "6c4333803d69d1b1ab97c82415609f5d3334ec040bc1d049509d989f12b3539d",
+      "lib/wheel_parts.py": "08284ae5fbb1a67727da78cb647b0a2c7d5fa9ef44ac5f8bd0bc5da57c044fb5",
+      "lib/wheel_validation.py": "22d3ab35164c5898283d54a4cb6edb0fdd9a61fe9348a1fb9eb07dc3f87d41c7",
+      "lib/worker.py": "a134ff81c5d715660f04df86ea04f414da8457aeea491fbffb3557f3fcf9f654",
+      "manage.py": "9de89dd5fa34596b186919f0dc7613b2c35bbf7f4dd1c3502fc298a0aee23f24"
+    },
+    "static_fit_report_sha256": "142be12f403514fb16f55e995290c1081dfad55e0b37c619cb1aac25590a65a6",
+    "script_sha256": "7c749b8bec8e9b94bcc618ea95172cec3df2a75de07d2b16084e43edaef60be7",
+    "transmission_datum_changed": false,
+    "native_components_created": false,
+    "physical_contacts_qualified": false,
+    "limitation": "Retains the direction to a provisional transmission datum, but derives a new station from50 pitches. Tooth-center alignment alone is not tooth/profile clearance or historical station evidence."
+  },
+  "centers": {
+    "Port": 882.65,
+    "Starboard": -882.65
+  },
+  "big_hub_radius_mm": 85,
+  "small_hub_radius_mm": 75.0,
+  "support_joints": [
+    {
+      "hand": "Port",
+      "cy": 882.65,
+      "face": "Right",
+      "mark": "M1587",
+      "receiver": "hull_port_inner_rear_end",
+      "stations": {
+        "case_rivets": [
+          {
+            "center": [
+              1041.8042702127452,
+              -85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1081.8042702127452,
+              -85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1121.8042702127452,
+              -85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1161.8042702127452,
+              -85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1041.8042702127452,
+              -85.6375,
+              972.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1101.8042702127452,
+              -85.6375,
+              972.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1161.8042702127452,
+              -85.6375,
+              972.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          }
+        ],
+        "hull_bolts": [
+          {
+            "center": [
+              1061.8042702127452,
+              -285.5749999999996,
+              870.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 18.000000000000682
+          },
+          {
+            "center": [
+              1141.8042702127452,
+              -285.5749999999996,
+              870.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 18.000000000000682
+          }
+        ]
+      },
+      "dimensions": {
+        "center_x_mm": 1101.8042702127452,
+        "web_base_z_mm": 900.0700826269272,
+        "case_face_local_y_mm": -84.1375,
+        "hull_face_local_y_mm": -282.57499999999925,
+        "span_mm": 198.43749999999926
+      }
+    },
+    {
+      "hand": "Port",
+      "cy": 882.65,
+      "face": "Left",
+      "mark": "M1588",
+      "receiver": "hull_port_rear_wing",
+      "stations": {
+        "case_rivets": [
+          {
+            "center": [
+              1041.8042702127452,
+              85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1081.8042702127452,
+              85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1121.8042702127452,
+              85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1161.8042702127452,
+              85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1041.8042702127452,
+              85.6375,
+              972.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1101.8042702127452,
+              85.6375,
+              972.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1161.8042702127452,
+              85.6375,
+              972.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          }
+        ],
+        "hull_bolts": [
+          {
+            "center": [
+              1061.8042702127452,
+              285.5750000000003,
+              870.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 18.000000000000682
+          },
+          {
+            "center": [
+              1141.8042702127452,
+              285.5750000000003,
+              870.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 18.000000000000682
+          }
+        ]
+      },
+      "dimensions": {
+        "center_x_mm": 1101.8042702127452,
+        "web_base_z_mm": 900.0700826269272,
+        "case_face_local_y_mm": 84.1375,
+        "hull_face_local_y_mm": 282.57499999999993,
+        "span_mm": 198.43749999999994
+      }
+    },
+    {
+      "hand": "Starboard",
+      "cy": -882.65,
+      "face": "Right",
+      "mark": "M1587",
+      "receiver": "hull_starboard_rear_wing",
+      "stations": {
+        "case_rivets": [
+          {
+            "center": [
+              1041.8042702127452,
+              -85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1081.8042702127452,
+              -85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1121.8042702127452,
+              -85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1161.8042702127452,
+              -85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1041.8042702127452,
+              -85.6375,
+              972.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1101.8042702127452,
+              -85.6375,
+              972.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1161.8042702127452,
+              -85.6375,
+              972.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 9.0
+          }
+        ],
+        "hull_bolts": [
+          {
+            "center": [
+              1061.8042702127452,
+              -285.5749999999997,
+              870.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 18.000000000000455
+          },
+          {
+            "center": [
+              1141.8042702127452,
+              -285.5749999999997,
+              870.0700826269272
+            ],
+            "axis": [
+              0,
+              -1,
+              0
+            ],
+            "grip": 18.000000000000455
+          }
+        ]
+      },
+      "dimensions": {
+        "center_x_mm": 1101.8042702127452,
+        "web_base_z_mm": 900.0700826269272,
+        "case_face_local_y_mm": -84.1375,
+        "hull_face_local_y_mm": -282.5749999999995,
+        "span_mm": 198.4374999999995
+      }
+    },
+    {
+      "hand": "Starboard",
+      "cy": -882.65,
+      "face": "Left",
+      "mark": "M1588",
+      "receiver": "hull_starboard_inner_rear_end",
+      "stations": {
+        "case_rivets": [
+          {
+            "center": [
+              1041.8042702127452,
+              85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1081.8042702127452,
+              85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1121.8042702127452,
+              85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1161.8042702127452,
+              85.6375,
+              918.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1041.8042702127452,
+              85.6375,
+              972.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1101.8042702127452,
+              85.6375,
+              972.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          },
+          {
+            "center": [
+              1161.8042702127452,
+              85.6375,
+              972.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 9.0
+          }
+        ],
+        "hull_bolts": [
+          {
+            "center": [
+              1061.8042702127452,
+              285.57500000000016,
+              870.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 18.000000000000455
+          },
+          {
+            "center": [
+              1141.8042702127452,
+              285.57500000000016,
+              870.0700826269272
+            ],
+            "axis": [
+              0,
+              1,
+              0
+            ],
+            "grip": 18.000000000000455
+          }
+        ]
+      },
+      "dimensions": {
+        "center_x_mm": 1101.8042702127452,
+        "web_base_z_mm": 900.0700826269272,
+        "case_face_local_y_mm": 84.1375,
+        "hull_face_local_y_mm": 282.57499999999993,
+        "span_mm": 198.43749999999994
+      }
+    }
+  ],
+  "standard_native_files": {
+    "cad/003_FullTank/build/native/MarkVIII.FCStd": "52aea1af979efc27fbfbce003e976e8a02cfa2da3e0ca0d25a631d7c5e7d48ac",
+    "cad/003_FullTank/build/native/subsystems/RunningGear.FCStd": "5b225c9b28cce15f4c331e1d076a39a7575319831d95cf92d8db5cbc0672418e",
+    "cad/003_FullTank/build/native/subsystems/FuelPressure.FCStd": "45f9cb47c26ef7e007ccb0451554cf33321bf63bc85d26e2edda9f00764b7e7b",
+    "cad/003_FullTank/build/native/subsystems/HullStructure.FCStd": "91bb04cc51d10a143ffeb982b3bec08e0e28b5942da452601f738d2c2528f56c",
+    "cad/003_FullTank/build/native/subsystems/Sponsons.FCStd": "79c852869c29529dd8de89a257e7e127ff3d7d2255e1a8b186fc044b292f38bb",
+    "cad/003_FullTank/build/native/subsystems/CrewControlsAndEquipment.FCStd": "5831b330452e69ba2dc0ae4b2c9757b2fbf174d988ce44126e64a7adec7e4fe5",
+    "cad/003_FullTank/build/native/subsystems/ElectricalInstruments.FCStd": "5f423b486223168139193422992d379bc291e73ac992a372bdcef75069051f0c",
+    "cad/003_FullTank/build/native/subsystems/CoolingVentilation.FCStd": "bb0996bed71ec8269a68f7445da53fb86789a7cb7777c5972cff74fd47811e47",
+    "cad/003_FullTank/build/native/subsystems/ArmamentRepresentation.FCStd": "da6a1fd3e488982cff35e88bbce264f85a448c8349177ac9550939dc96f0b553",
+    "cad/003_FullTank/build/native/subsystems/Powerplant.FCStd": "c22f9480fc5a60028e6af664fc5ebb2e07ca292694e89d29eacd0b0a18ad720d",
+    "cad/003_FullTank/build/native/subsystems/Drivetrain.FCStd": "222888c3c6d72363524415dfeec66ce89f9144cf973cbb077dab245d2fc0c4bf",
+    "cad/003_FullTank/build/native/library/RunningGear.FCStd": "52587107dabf028783ad6bd087ce1f8e2bf3aacea7d641ab8bfee07101fddf44",
+    "cad/003_FullTank/build/native/library/FuelPressure.FCStd": "5d5e8ced3b3b1bc380c9822e4b0d210520da081fa119ab16bd58523fce93dc6a",
+    "cad/003_FullTank/build/native/library/HullStructure.FCStd": "a6b78305dddcfa74904b07ea9dad8356ba168d774499599c854074c8aca778fc",
+    "cad/003_FullTank/build/native/library/Sponsons.FCStd": "cca4a76fd623303caeb7d6b2fa277f6bcc251170303379ce6f07a432add20162",
+    "cad/003_FullTank/build/native/library/CrewControlsAndEquipment.FCStd": "990e476bcdd088d58bbe76028a782667301a6f73e9c5a8065767bfd4e3860bae",
+    "cad/003_FullTank/build/native/library/ElectricalInstruments.FCStd": "7ca38479c37f7a169b2ab52a4ea90afd80cc7cf97d45c52df380abbd91dc393d",
+    "cad/003_FullTank/build/native/library/CoolingVentilation.FCStd": "810553a07fb9610c11dd3cd2f15e1eec0b7712e16f1d0a4245d70922532f73c4",
+    "cad/003_FullTank/build/native/library/Powerplant.FCStd": "234c3582a110f607f98977a034638b3f65391b6c6c5cd284a9570c74629752b7",
+    "cad/003_FullTank/build/native/library/Drivetrain.FCStd": "694c20a3995baafb0698f8c07d61e3e6b37bf6a0b0214362fe75bf0a80c30e25"
+  },
+  "standard_manifest_sha256": "58fb0a1b010c314dd8fc69758e9aeada05ce97f325c21d6801d7288cd6be753b",
+  "baseline_checks": [
+    {
+      "definition": "Def_Casing_body",
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "definition": "Def_Casing_cap",
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "definition": "Def_CasingWallAngle",
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "definition": "Def_hull_engine_back",
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "definition": "Def_CapJointBodyInnerCleat",
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "definition": "Def_CapJointCapInnerCleat",
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "definition": "Def_CapJointInnerPacking",
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "definition": "Def_CapJointBodyOuterCleat",
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "definition": "Def_CapJointCapOuterCleat",
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "definition": "Def_CapJointOuterPacking",
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "definition": "Def_CapJointBodyRoofCleat",
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "definition": "Def_CapJointCapRoofCleat",
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0,
+      "passed": true
+    }
+  ],
+  "baseline_brep_hashes": {
+    "Def_CapJointBodyRoofCleat_regenerated_original.brep": "550813ac2a93ad13bb634873760ef4cacc47942a45e291128d7318541bfc9d91",
+    "Def_CasingWallAngle_regenerated_original.brep": "eeae3e1b3bde03ecdc43d0d2e099ebe75f61391e11bbfaf61dc5c7dfb929d51b",
+    "Def_CapJointCapOuterCleat_regenerated_original.brep": "76e8d3194444005765aa126cb4b7732264936e4dcc3bd59e198dd7f84aacb6b7",
+    "Def_Casing_cap_regenerated_original.brep": "104420338bb07e7fcb59327f06161a64f2327c5107eda99e04042b5728168859",
+    "standard_bulkhead.brep": "e5b470f02544c0141f978a1edb2c703ad0ac6c5c696907de0c2cca1692e10a9f",
+    "Def_CapJointCapInnerCleat_regenerated_original.brep": "b453189c7d9911d76d267f35298d030d46bf478c6a6e266d9790044e8d80dead",
+    "Def_CapJointBodyOuterCleat_regenerated_original.brep": "33c641105a1d7773082c992f3df8e995e1705662880c277066bcf1888595060e",
+    "Def_Casing_body_regenerated_original.brep": "8685b7821efb3f02356a57ab06281b21bea7f03959df56679efee18241cd7d28",
+    "Def_CapJointBodyInnerCleat_regenerated_original.brep": "6bba03dc6c374aaceb81740c8ef221fa866573ee84059df4e4fb7764c4943380",
+    "Def_CapJointInnerPacking_regenerated_original.brep": "f5d9db964adc08a7276758da54773c631f070584bde7b7b68e184cf46ff364be",
+    "Def_hull_engine_back_regenerated_original.brep": "529502a3f14df61f9d6a2e1235093869b6e3331ecdce80d57e6b35be8169a75d",
+    "Def_CapJointCapRoofCleat_regenerated_original.brep": "721299e41d1f0ba180c89c03078f2bde75e5c590deca5391d62228f928432b73",
+    "Def_CapJointOuterPacking_regenerated_original.brep": "4e27bb0a47476661f15a11df97bc72ea1a0d3d383f29c6d9e11ebb369b0ef1f7"
+  },
+  "original_details": {
+    "dimensions": {
+      "large_pitch_radius_mm": 279.80419767155905,
+      "small_pitch_radius_mm": 147.20709592645403,
+      "outside_contour_radii_mm": [
+        329.80419767155905,
+        197.20709592645403
+      ],
+      "cap_seam_x_mm": 936.8042702127452,
+      "cap_seam_z_mm": 1025.0700826269272,
+      "gap_mm": 1.0,
+      "complete_shell_volume_mm3": 7058705.783242064,
+      "split_material_removed_mm3": 5438.092284132261
+    },
+    "wall_opening": {
+      "width_mm": 176.2750000000001,
+      "bottom_z_mm": 661.6355559565504,
+      "top_z_mm": 1159.430880428399,
+      "corner_radius_mm": 8.0
+    },
+    "wall_stations": {
+      "wall": [
+        {
+          "center": [
+            1428.575,
+            -103.13750000000005,
+            711.6355559565504
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            -103.13750000000005,
+            844.2339974471666
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            -103.13750000000005,
+            976.8324389377829
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            -103.13750000000005,
+            1109.430880428399
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            103.13750000000005,
+            711.6355559565504
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            103.13750000000005,
+            844.2339974471666
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            103.13750000000005,
+            976.8324389377829
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            103.13750000000005,
+            1109.430880428399
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            -44.06875000000002,
+            646.6355559565504
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            44.06875000000002,
+            646.6355559565504
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            0,
+            1174.430880428399
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        }
+      ],
+      "case": [
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            706.6355559565504
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            764.8920308811003
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            823.14850580565
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            881.4049807301998
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            939.6614556547496
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            997.9179305792993
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            1056.1744055038491
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            1114.430880428399
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            706.6355559565504
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            764.8920308811003
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            823.14850580565
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            881.4049807301998
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            939.6614556547496
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            997.9179305792993
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            1056.1744055038491
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            1114.430880428399
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.479054042357,
+            0,
+            1163.0375530743427
+          ],
+          "axis": [
+            0.24864864145036286,
+            0,
+            0.9685937502920865
+          ],
+          "grip": 9.25
+        }
+      ]
+    },
+    "cap_stations": {
+      "rivets": [
+        {
+          "name": "BodyInnerCleatRivet00",
+          "owner": "Body",
+          "cleat": "BodyInnerCleat",
+          "length_role": "short",
+          "grip": 9.0,
+          "packing": "InnerPacking",
+          "center": [
+            955.8042702127452,
+            -85.6375,
+            1072.0700826269272
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "name": "BodyInnerCleatRivet01",
+          "owner": "Body",
+          "cleat": "BodyInnerCleat",
+          "length_role": "short",
+          "grip": 9.0,
+          "packing": "InnerPacking",
+          "center": [
+            955.8042702127452,
+            -85.6375,
+            1166.815332406039
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "name": "BodyInnerCleatRivet02",
+          "owner": "Body",
+          "cleat": "BodyInnerCleat",
+          "length_role": "short",
+          "grip": 9.0,
+          "packing": "InnerPacking",
+          "center": [
+            955.8042702127452,
+            -85.6375,
+            1225.5605821851511
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "name": "CapInnerCleatRivet00",
+          "owner": "Cap",
+          "cleat": "CapInnerCleat",
+          "length_role": "long",
+          "grip": 8.0,
+          "packing": null,
+          "center": [
+            917.8042702127452,
+            -85.1375,
+            1072.0700826269272
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "name": "CapInnerCleatRivet01",
+          "owner": "Cap",
+          "cleat": "CapInnerCleat",
+          "length_role": "long",
+          "grip": 8.0,
+          "packing": null,
+          "center": [
+            917.8042702127452,
+            -85.1375,
+            1166.815332406039
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "name": "CapInnerCleatRivet02",
+          "owner": "Cap",
+          "cleat": "CapInnerCleat",
+          "length_role": "long",
+          "grip": 8.0,
+          "packing": null,
+          "center": [
+            917.8042702127452,
+            -85.1375,
+            1225.5605821851511
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "name": "BodyOuterCleatRivet00",
+          "owner": "Body",
+          "cleat": "BodyOuterCleat",
+          "length_role": "short",
+          "grip": 9.0,
+          "packing": "OuterPacking",
+          "center": [
+            955.8042702127452,
+            85.6375,
+            1072.0700826269272
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "name": "BodyOuterCleatRivet01",
+          "owner": "Body",
+          "cleat": "BodyOuterCleat",
+          "length_role": "short",
+          "grip": 9.0,
+          "packing": "OuterPacking",
+          "center": [
+            955.8042702127452,
+            85.6375,
+            1166.815332406039
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "name": "BodyOuterCleatRivet02",
+          "owner": "Body",
+          "cleat": "BodyOuterCleat",
+          "length_role": "short",
+          "grip": 9.0,
+          "packing": "OuterPacking",
+          "center": [
+            955.8042702127452,
+            85.6375,
+            1225.5605821851511
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "name": "CapOuterCleatRivet00",
+          "owner": "Cap",
+          "cleat": "CapOuterCleat",
+          "length_role": "long",
+          "grip": 8.0,
+          "packing": null,
+          "center": [
+            917.8042702127452,
+            85.1375,
+            1072.0700826269272
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "name": "CapOuterCleatRivet01",
+          "owner": "Cap",
+          "cleat": "CapOuterCleat",
+          "length_role": "long",
+          "grip": 8.0,
+          "packing": null,
+          "center": [
+            917.8042702127452,
+            85.1375,
+            1166.815332406039
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "name": "CapOuterCleatRivet02",
+          "owner": "Cap",
+          "cleat": "CapOuterCleat",
+          "length_role": "long",
+          "grip": 8.0,
+          "packing": null,
+          "center": [
+            917.8042702127452,
+            85.1375,
+            1225.5605821851511
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "name": "BodyRoofCleatRivet00",
+          "owner": "Body",
+          "cleat": "BodyRoofCleat",
+          "length_role": "short",
+          "grip": 8.0,
+          "center": [
+            956.0529188541956,
+            -52.1375,
+            1276.9947740343032
+          ],
+          "axis": [
+            0.24864864145036286,
+            0,
+            0.9685937502920865
+          ]
+        },
+        {
+          "name": "BodyRoofCleatRivet01",
+          "owner": "Body",
+          "cleat": "BodyRoofCleat",
+          "length_role": "short",
+          "grip": 8.0,
+          "center": [
+            956.0529188541956,
+            24.0,
+            1276.9947740343032
+          ],
+          "axis": [
+            0.24864864145036286,
+            0,
+            0.9685937502920865
+          ]
+        },
+        {
+          "name": "BodyRoofCleatRivet02",
+          "owner": "Body",
+          "cleat": "BodyRoofCleat",
+          "length_role": "short",
+          "grip": 8.0,
+          "center": [
+            956.0529188541956,
+            52.1375,
+            1276.9947740343032
+          ],
+          "axis": [
+            0.24864864145036286,
+            0,
+            0.9685937502920865
+          ]
+        },
+        {
+          "name": "CapRoofCleatRivet00",
+          "owner": "Cap",
+          "cleat": "CapRoofCleat",
+          "length_role": "short",
+          "grip": 8.0,
+          "center": [
+            918.0529188541956,
+            -52.1375,
+            1286.7497909051683
+          ],
+          "axis": [
+            0.24864864145036286,
+            0,
+            0.9685937502920865
+          ]
+        },
+        {
+          "name": "CapRoofCleatRivet01",
+          "owner": "Cap",
+          "cleat": "CapRoofCleat",
+          "length_role": "short",
+          "grip": 8.0,
+          "center": [
+            918.0529188541956,
+            24.0,
+            1286.7497909051683
+          ],
+          "axis": [
+            0.24864864145036286,
+            0,
+            0.9685937502920865
+          ]
+        },
+        {
+          "name": "CapRoofCleatRivet02",
+          "owner": "Cap",
+          "cleat": "CapRoofCleat",
+          "length_role": "short",
+          "grip": 8.0,
+          "center": [
+            918.0529188541956,
+            52.1375,
+            1286.7497909051683
+          ],
+          "axis": [
+            0.24864864145036286,
+            0,
+            0.9685937502920865
+          ]
+        }
+      ],
+      "bolts": [
+        {
+          "name": "InnerBoltSet00",
+          "center": [
+            936.8042702127452,
+            -105.1375,
+            1090.0700826269272
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyInnerCleat",
+          "cap": "CapInnerCleat",
+          "packing": null
+        },
+        {
+          "name": "InnerBoltSet01",
+          "center": [
+            936.8042702127452,
+            -105.1375,
+            1148.815332406039
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyInnerCleat",
+          "cap": "CapInnerCleat",
+          "packing": null
+        },
+        {
+          "name": "InnerBoltSet02",
+          "center": [
+            936.8042702127452,
+            -105.1375,
+            1207.5605821851511
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyInnerCleat",
+          "cap": "CapInnerCleat",
+          "packing": null
+        },
+        {
+          "name": "OuterBoltSet00",
+          "center": [
+            936.8042702127452,
+            105.1375,
+            1090.0700826269272
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyOuterCleat",
+          "cap": "CapOuterCleat",
+          "packing": null
+        },
+        {
+          "name": "OuterBoltSet01",
+          "center": [
+            936.8042702127452,
+            105.1375,
+            1148.815332406039
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyOuterCleat",
+          "cap": "CapOuterCleat",
+          "packing": null
+        },
+        {
+          "name": "OuterBoltSet02",
+          "center": [
+            936.8042702127452,
+            105.1375,
+            1207.5605821851511
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyOuterCleat",
+          "cap": "CapOuterCleat",
+          "packing": null
+        },
+        {
+          "name": "RoofBoltSet00",
+          "center": [
+            936.8042702127452,
+            0,
+            1301.9036887194436
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyRoofCleat",
+          "cap": "CapRoofCleat",
+          "packing": null
+        }
+      ]
+    },
+    "cap_dimensions": {
+      "seam_x_mm": 936.8042702127452,
+      "side_bottom_z_mm": 1060.0700826269272,
+      "side_top_z_mm": 1237.5605821851511,
+      "roof_normal": [
+        0.24864864145036286,
+        0,
+        0.9685937502920865
+      ],
+      "side_grip_mm": 10,
+      "roof_grip_mm": 10,
+      "body_side_packing_mm": 1.0
+    },
+    "trim_stations": [
+      {
+        "name": "BodyRightRegisterRivet00",
+        "part": "BodyRightRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          774.0000725411861,
+          -84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightRegisterRivet01",
+        "part": "BodyRightRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          807.3334058745195,
+          -84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightRegisterRivet02",
+        "part": "BodyRightRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          840.6667392078527,
+          -84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightRegisterRivet03",
+        "part": "BodyRightRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          874.0000725411861,
+          -84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightRegisterRivet00",
+        "part": "CapRightRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          340.0000725411861,
+          -84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightRegisterRivet01",
+        "part": "CapRightRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          373.3334058745194,
+          -84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightRegisterRivet02",
+        "part": "CapRightRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          406.6667392078528,
+          -84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightRegisterRivet03",
+        "part": "CapRightRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          440.0000725411861,
+          -84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightBeadingRivet00",
+        "part": "BodyRightBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          730.4021713769657,
+          -81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightBeadingRivet01",
+        "part": "BodyRightBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          772.9021713769657,
+          -81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightBeadingRivet02",
+        "part": "BodyRightBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          815.4021713769657,
+          -81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightBeadingRivet03",
+        "part": "BodyRightBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          857.9021713769657,
+          -81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightBeadingRivet04",
+        "part": "BodyRightBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          900.4021713769657,
+          -81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightBeadingRivet00",
+        "part": "CapRightBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          730.4021713769657,
+          -81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightBeadingRivet01",
+        "part": "CapRightBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          772.9021713769657,
+          -81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightBeadingRivet02",
+        "part": "CapRightBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          815.4021713769657,
+          -81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightBeadingRivet03",
+        "part": "CapRightBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          857.9021713769657,
+          -81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightBeadingRivet04",
+        "part": "CapRightBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          900.4021713769657,
+          -81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftRegisterRivet00",
+        "part": "BodyLeftRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          774.0000725411861,
+          84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftRegisterRivet01",
+        "part": "BodyLeftRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          807.3334058745195,
+          84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftRegisterRivet02",
+        "part": "BodyLeftRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          840.6667392078527,
+          84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftRegisterRivet03",
+        "part": "BodyLeftRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          874.0000725411861,
+          84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftRegisterRivet00",
+        "part": "CapLeftRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          340.0000725411861,
+          84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftRegisterRivet01",
+        "part": "CapLeftRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          373.3334058745194,
+          84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftRegisterRivet02",
+        "part": "CapLeftRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          406.6667392078528,
+          84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftRegisterRivet03",
+        "part": "CapLeftRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          440.0000725411861,
+          84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftBeadingRivet00",
+        "part": "BodyLeftBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          730.4021713769657,
+          81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftBeadingRivet01",
+        "part": "BodyLeftBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          772.9021713769657,
+          81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftBeadingRivet02",
+        "part": "BodyLeftBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          815.4021713769657,
+          81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftBeadingRivet03",
+        "part": "BodyLeftBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          857.9021713769657,
+          81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftBeadingRivet04",
+        "part": "BodyLeftBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          900.4021713769657,
+          81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftBeadingRivet00",
+        "part": "CapLeftBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          730.4021713769657,
+          81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftBeadingRivet01",
+        "part": "CapLeftBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          772.9021713769657,
+          81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftBeadingRivet02",
+        "part": "CapLeftBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          815.4021713769657,
+          81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftBeadingRivet03",
+        "part": "CapLeftBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          857.9021713769657,
+          81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftBeadingRivet04",
+        "part": "CapLeftBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          900.4021713769657,
+          81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      }
+    ],
+    "taper_report": {
+      "rear_region_symmetric_difference_mm3": 0.0,
+      "taper_slope": -0.27903846153846157,
+      "inside_corner_shift_mm": -0.4107127598379198,
+      "removed_volume_mm3": 1354176.7372112342,
+      "added_volume_mm3": 1212456.3855663538,
+      "sheet_thickness_checks": [
+        {
+          "x_mm": 1445,
+          "side": -1,
+          "thickness_segments_mm": [
+            2.9999999999999716
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1445,
+          "side": 1,
+          "thickness_segments_mm": [
+            3.0000000000000426
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1482.5,
+          "side": -1,
+          "thickness_segments_mm": [
+            2.9999999999999956
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1482.5,
+          "side": 1,
+          "thickness_segments_mm": [
+            2.9999999999999405
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1520,
+          "side": -1,
+          "thickness_segments_mm": [
+            3.0
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1520,
+          "side": 1,
+          "thickness_segments_mm": [
+            3.0
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1825.2303627827532,
+          "side": -1,
+          "thickness_segments_mm": [
+            3.0
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1825.2303627827532,
+          "side": 1,
+          "thickness_segments_mm": [
+            3.0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    "regenerated_trim_names": [
+      "BodyRightRegister",
+      "CapRightRegister",
+      "BodyRightBeading",
+      "CapRightBeading",
+      "BodyLeftRegister",
+      "CapLeftRegister",
+      "BodyLeftBeading",
+      "CapLeftBeading"
+    ]
+  },
+  "revised_details": {
+    "dimensions": {
+      "large_pitch_radius_mm": 279.80419767155905,
+      "small_pitch_radius_mm": 147.20709592645403,
+      "outside_contour_radii_mm": [
+        329.80419767155905,
+        197.20709592645403
+      ],
+      "cap_seam_x_mm": 936.8042702127452,
+      "cap_seam_z_mm": 1025.0700826269272,
+      "gap_mm": 1.0,
+      "complete_shell_volume_mm3": 7058497.8003127035,
+      "split_material_removed_mm3": 5500.906158471946
+    },
+    "wall_opening": {
+      "width_mm": 176.2750000000001,
+      "bottom_z_mm": 696.6954461930511,
+      "top_z_mm": 1192.4041177657814,
+      "corner_radius_mm": 8.0
+    },
+    "wall_stations": {
+      "wall": [
+        {
+          "center": [
+            1428.575,
+            -103.13750000000005,
+            746.6954461930511
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            -103.13750000000005,
+            878.5983367172945
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            -103.13750000000005,
+            1010.5012272415379
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            -103.13750000000005,
+            1142.4041177657814
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            103.13750000000005,
+            746.6954461930511
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            103.13750000000005,
+            878.5983367172945
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            103.13750000000005,
+            1010.5012272415379
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            103.13750000000005,
+            1142.4041177657814
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            -44.06875000000002,
+            681.6954461930511
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            44.06875000000002,
+            681.6954461930511
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        },
+        {
+          "center": [
+            1428.575,
+            0,
+            1207.4041177657814
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 18.0
+        }
+      ],
+      "case": [
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            741.6954461930511
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            799.6538278462983
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            857.6122094995454
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            915.5705911527926
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            973.5289728060399
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            1031.487354459287
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            1089.4457361125342
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            -85.7625,
+            1147.4041177657814
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            741.6954461930511
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            799.6538278462983
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            857.6122094995454
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            915.5705911527926
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            973.5289728060399
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            1031.487354459287
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            1089.4457361125342
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.075,
+            85.7625,
+            1147.4041177657814
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ],
+          "grip": 9.25
+        },
+        {
+          "center": [
+            1402.4125416154013,
+            0,
+            1194.9838882755473
+          ],
+          "axis": [
+            0.20771791717003132,
+            0,
+            0.9781887685342457
+          ],
+          "grip": 9.25
+        }
+      ]
+    },
+    "cap_stations": {
+      "rivets": [
+        {
+          "name": "BodyInnerCleatRivet00",
+          "owner": "Body",
+          "cleat": "BodyInnerCleat",
+          "length_role": "short",
+          "grip": 9.0,
+          "packing": "InnerPacking",
+          "center": [
+            955.8042702127452,
+            -85.6375,
+            1072.0700826269272
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "name": "BodyInnerCleatRivet01",
+          "owner": "Body",
+          "cleat": "BodyInnerCleat",
+          "length_role": "short",
+          "grip": 9.0,
+          "packing": "InnerPacking",
+          "center": [
+            955.8042702127452,
+            -85.6375,
+            1173.1815358235767
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "name": "BodyInnerCleatRivet02",
+          "owner": "Body",
+          "cleat": "BodyInnerCleat",
+          "length_role": "short",
+          "grip": 9.0,
+          "packing": "InnerPacking",
+          "center": [
+            955.8042702127452,
+            -85.6375,
+            1238.2929890202263
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "name": "CapInnerCleatRivet00",
+          "owner": "Cap",
+          "cleat": "CapInnerCleat",
+          "length_role": "long",
+          "grip": 8.0,
+          "packing": null,
+          "center": [
+            917.8042702127452,
+            -85.1375,
+            1072.0700826269272
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "name": "CapInnerCleatRivet01",
+          "owner": "Cap",
+          "cleat": "CapInnerCleat",
+          "length_role": "long",
+          "grip": 8.0,
+          "packing": null,
+          "center": [
+            917.8042702127452,
+            -85.1375,
+            1173.1815358235767
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "name": "CapInnerCleatRivet02",
+          "owner": "Cap",
+          "cleat": "CapInnerCleat",
+          "length_role": "long",
+          "grip": 8.0,
+          "packing": null,
+          "center": [
+            917.8042702127452,
+            -85.1375,
+            1238.2929890202263
+          ],
+          "axis": [
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "name": "BodyOuterCleatRivet00",
+          "owner": "Body",
+          "cleat": "BodyOuterCleat",
+          "length_role": "short",
+          "grip": 9.0,
+          "packing": "OuterPacking",
+          "center": [
+            955.8042702127452,
+            85.6375,
+            1072.0700826269272
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "name": "BodyOuterCleatRivet01",
+          "owner": "Body",
+          "cleat": "BodyOuterCleat",
+          "length_role": "short",
+          "grip": 9.0,
+          "packing": "OuterPacking",
+          "center": [
+            955.8042702127452,
+            85.6375,
+            1173.1815358235767
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "name": "BodyOuterCleatRivet02",
+          "owner": "Body",
+          "cleat": "BodyOuterCleat",
+          "length_role": "short",
+          "grip": 9.0,
+          "packing": "OuterPacking",
+          "center": [
+            955.8042702127452,
+            85.6375,
+            1238.2929890202263
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "name": "CapOuterCleatRivet00",
+          "owner": "Cap",
+          "cleat": "CapOuterCleat",
+          "length_role": "long",
+          "grip": 8.0,
+          "packing": null,
+          "center": [
+            917.8042702127452,
+            85.1375,
+            1072.0700826269272
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "name": "CapOuterCleatRivet01",
+          "owner": "Cap",
+          "cleat": "CapOuterCleat",
+          "length_role": "long",
+          "grip": 8.0,
+          "packing": null,
+          "center": [
+            917.8042702127452,
+            85.1375,
+            1173.1815358235767
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "name": "CapOuterCleatRivet02",
+          "owner": "Cap",
+          "cleat": "CapOuterCleat",
+          "length_role": "long",
+          "grip": 8.0,
+          "packing": null,
+          "center": [
+            917.8042702127452,
+            85.1375,
+            1238.2929890202263
+          ],
+          "axis": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "name": "BodyRoofCleatRivet00",
+          "owner": "Body",
+          "cleat": "BodyRoofCleat",
+          "length_role": "short",
+          "grip": 8.0,
+          "center": [
+            956.0119881299153,
+            -52.1375,
+            1289.1378963322552
+          ],
+          "axis": [
+            0.20771791717003132,
+            0,
+            0.9781887685342457
+          ]
+        },
+        {
+          "name": "BodyRoofCleatRivet01",
+          "owner": "Body",
+          "cleat": "BodyRoofCleat",
+          "length_role": "short",
+          "grip": 8.0,
+          "center": [
+            956.0119881299153,
+            24.0,
+            1289.1378963322552
+          ],
+          "axis": [
+            0.20771791717003132,
+            0,
+            0.9781887685342457
+          ]
+        },
+        {
+          "name": "BodyRoofCleatRivet02",
+          "owner": "Body",
+          "cleat": "BodyRoofCleat",
+          "length_role": "short",
+          "grip": 8.0,
+          "center": [
+            956.0119881299153,
+            52.1375,
+            1289.1378963322552
+          ],
+          "axis": [
+            0.20771791717003132,
+            0,
+            0.9781887685342457
+          ]
+        },
+        {
+          "name": "CapRoofCleatRivet00",
+          "owner": "Cap",
+          "cleat": "CapRoofCleat",
+          "length_role": "short",
+          "grip": 8.0,
+          "center": [
+            918.0119881299153,
+            -52.1375,
+            1297.2071781583886
+          ],
+          "axis": [
+            0.20771791717003132,
+            0,
+            0.9781887685342457
+          ]
+        },
+        {
+          "name": "CapRoofCleatRivet01",
+          "owner": "Cap",
+          "cleat": "CapRoofCleat",
+          "length_role": "short",
+          "grip": 8.0,
+          "center": [
+            918.0119881299153,
+            24.0,
+            1297.2071781583886
+          ],
+          "axis": [
+            0.20771791717003132,
+            0,
+            0.9781887685342457
+          ]
+        },
+        {
+          "name": "CapRoofCleatRivet02",
+          "owner": "Cap",
+          "cleat": "CapRoofCleat",
+          "length_role": "short",
+          "grip": 8.0,
+          "center": [
+            918.0119881299153,
+            52.1375,
+            1297.2071781583886
+          ],
+          "axis": [
+            0.20771791717003132,
+            0,
+            0.9781887685342457
+          ]
+        }
+      ],
+      "bolts": [
+        {
+          "name": "InnerBoltSet00",
+          "center": [
+            936.8042702127452,
+            -105.1375,
+            1090.0700826269272
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyInnerCleat",
+          "cap": "CapInnerCleat",
+          "packing": null
+        },
+        {
+          "name": "InnerBoltSet01",
+          "center": [
+            936.8042702127452,
+            -105.1375,
+            1155.1815358235767
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyInnerCleat",
+          "cap": "CapInnerCleat",
+          "packing": null
+        },
+        {
+          "name": "InnerBoltSet02",
+          "center": [
+            936.8042702127452,
+            -105.1375,
+            1220.2929890202263
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyInnerCleat",
+          "cap": "CapInnerCleat",
+          "packing": null
+        },
+        {
+          "name": "OuterBoltSet00",
+          "center": [
+            936.8042702127452,
+            105.1375,
+            1090.0700826269272
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyOuterCleat",
+          "cap": "CapOuterCleat",
+          "packing": null
+        },
+        {
+          "name": "OuterBoltSet01",
+          "center": [
+            936.8042702127452,
+            105.1375,
+            1155.1815358235767
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyOuterCleat",
+          "cap": "CapOuterCleat",
+          "packing": null
+        },
+        {
+          "name": "OuterBoltSet02",
+          "center": [
+            936.8042702127452,
+            105.1375,
+            1220.2929890202263
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyOuterCleat",
+          "cap": "CapOuterCleat",
+          "packing": null
+        },
+        {
+          "name": "RoofBoltSet00",
+          "center": [
+            936.8042702127452,
+            0,
+            1313.1943484767876
+          ],
+          "axis": [
+            1,
+            0,
+            0
+          ],
+          "grip": 10,
+          "body": "BodyRoofCleat",
+          "cap": "CapRoofCleat",
+          "packing": null
+        }
+      ]
+    },
+    "cap_dimensions": {
+      "seam_x_mm": 936.8042702127452,
+      "side_bottom_z_mm": 1060.0700826269272,
+      "side_top_z_mm": 1250.2929890202263,
+      "roof_normal": [
+        0.20771791717003132,
+        0,
+        0.9781887685342457
+      ],
+      "side_grip_mm": 10,
+      "roof_grip_mm": 10,
+      "body_side_packing_mm": 1.0
+    },
+    "trim_stations": [
+      {
+        "name": "BodyRightRegisterRivet00",
+        "part": "BodyRightRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          774.0000725411861,
+          -84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightRegisterRivet01",
+        "part": "BodyRightRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          807.3334058745195,
+          -84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightRegisterRivet02",
+        "part": "BodyRightRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          840.6667392078527,
+          -84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightRegisterRivet03",
+        "part": "BodyRightRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          874.0000725411861,
+          -84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightRegisterRivet00",
+        "part": "CapRightRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          340.0000725411861,
+          -84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightRegisterRivet01",
+        "part": "CapRightRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          373.3334058745194,
+          -84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightRegisterRivet02",
+        "part": "CapRightRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          406.6667392078528,
+          -84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightRegisterRivet03",
+        "part": "CapRightRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          440.0000725411861,
+          -84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightBeadingRivet00",
+        "part": "BodyRightBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          730.4021713769657,
+          -81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightBeadingRivet01",
+        "part": "BodyRightBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          772.9021713769657,
+          -81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightBeadingRivet02",
+        "part": "BodyRightBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          815.4021713769657,
+          -81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightBeadingRivet03",
+        "part": "BodyRightBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          857.9021713769657,
+          -81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyRightBeadingRivet04",
+        "part": "BodyRightBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          900.4021713769657,
+          -81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightBeadingRivet00",
+        "part": "CapRightBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          730.4021713769657,
+          -81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightBeadingRivet01",
+        "part": "CapRightBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          772.9021713769657,
+          -81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightBeadingRivet02",
+        "part": "CapRightBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          815.4021713769657,
+          -81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightBeadingRivet03",
+        "part": "CapRightBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          857.9021713769657,
+          -81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "CapRightBeadingRivet04",
+        "part": "CapRightBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          900.4021713769657,
+          -81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftRegisterRivet00",
+        "part": "BodyLeftRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          774.0000725411861,
+          84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftRegisterRivet01",
+        "part": "BodyLeftRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          807.3334058745195,
+          84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftRegisterRivet02",
+        "part": "BodyLeftRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          840.6667392078527,
+          84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftRegisterRivet03",
+        "part": "BodyLeftRegister",
+        "owner": "Body",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          874.0000725411861,
+          84.1375,
+          990.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftRegisterRivet00",
+        "part": "CapLeftRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          340.0000725411861,
+          84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftRegisterRivet01",
+        "part": "CapLeftRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          373.3334058745194,
+          84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftRegisterRivet02",
+        "part": "CapLeftRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          406.6667392078528,
+          84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftRegisterRivet03",
+        "part": "CapLeftRegister",
+        "owner": "Cap",
+        "role": "register",
+        "grip": 6.0,
+        "center": [
+          440.0000725411861,
+          84.1375,
+          1060.0700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftBeadingRivet00",
+        "part": "BodyLeftBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          730.4021713769657,
+          81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftBeadingRivet01",
+        "part": "BodyLeftBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          772.9021713769657,
+          81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftBeadingRivet02",
+        "part": "BodyLeftBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          815.4021713769657,
+          81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftBeadingRivet03",
+        "part": "BodyLeftBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          857.9021713769657,
+          81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "BodyLeftBeadingRivet04",
+        "part": "BodyLeftBeading",
+        "owner": "Body",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          900.4021713769657,
+          81.1375,
+          1015.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftBeadingRivet00",
+        "part": "CapLeftBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          730.4021713769657,
+          81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftBeadingRivet01",
+        "part": "CapLeftBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          772.9021713769657,
+          81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftBeadingRivet02",
+        "part": "CapLeftBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          815.4021713769657,
+          81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftBeadingRivet03",
+        "part": "CapLeftBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          857.9021713769657,
+          81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "name": "CapLeftBeadingRivet04",
+        "part": "CapLeftBeading",
+        "owner": "Cap",
+        "role": "beading",
+        "grip": 6.0,
+        "center": [
+          900.4021713769657,
+          81.1375,
+          1034.5700826269272
+        ],
+        "axis": [
+          0,
+          1,
+          0
+        ]
+      }
+    ],
+    "taper_report": {
+      "rear_region_symmetric_difference_mm3": 0.0,
+      "taper_slope": -0.27903846153846157,
+      "inside_corner_shift_mm": -0.4107127598379198,
+      "removed_volume_mm3": 1367110.3573147452,
+      "added_volume_mm3": 1224438.372178199,
+      "sheet_thickness_checks": [
+        {
+          "x_mm": 1445,
+          "side": -1,
+          "thickness_segments_mm": [
+            3.000000000000057
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1445,
+          "side": 1,
+          "thickness_segments_mm": [
+            3.000000000000057
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1482.5,
+          "side": -1,
+          "thickness_segments_mm": [
+            2.9999999999999956
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1482.5,
+          "side": 1,
+          "thickness_segments_mm": [
+            2.9999999999999405
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1520,
+          "side": -1,
+          "thickness_segments_mm": [
+            3.0
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1520,
+          "side": 1,
+          "thickness_segments_mm": [
+            3.0
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1831.4946420457636,
+          "side": -1,
+          "thickness_segments_mm": [
+            3.0
+          ],
+          "passed": true
+        },
+        {
+          "x_mm": 1831.4946420457636,
+          "side": 1,
+          "thickness_segments_mm": [
+            3.0
+          ],
+          "passed": true
+        }
+      ]
+    },
+    "regenerated_trim_names": [
+      "BodyRightRegister",
+      "CapRightRegister",
+      "BodyRightBeading",
+      "CapRightBeading",
+      "BodyLeftRegister",
+      "CapLeftRegister",
+      "BodyLeftBeading",
+      "CapLeftBeading"
+    ]
+  },
+  "replaced_definitions": [
+    "Def_CapJointBodyInnerCleat",
+    "Def_CapJointBodyOuterCleat",
+    "Def_CapJointBodyRoofCleat",
+    "Def_CapJointCapInnerCleat",
+    "Def_CapJointCapOuterCleat",
+    "Def_CapJointCapRoofCleat",
+    "Def_CapJointInnerPacking",
+    "Def_CapJointOuterPacking",
+    "Def_CasingWallAngle",
+    "Def_Casing_body",
+    "Def_Casing_cap",
+    "Def_hull_engine_back"
+  ],
+  "expected_occurrence_frames": {
+    "PortCasingWall_WallRivet00": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      779.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      746.6954461930511,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_WallRivet01": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      779.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      878.5983367172945,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_WallRivet02": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      779.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1010.5012272415379,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_WallRivet03": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      779.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1142.4041177657814,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_WallRivet04": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      985.7875,
+      -0.0,
+      0.0,
+      1.0,
+      746.6954461930511,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_WallRivet05": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      985.7875,
+      -0.0,
+      0.0,
+      1.0,
+      878.5983367172945,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_WallRivet06": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      985.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1010.5012272415379,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_WallRivet07": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      985.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1142.4041177657814,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_WallRivet08": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      838.58125,
+      -0.0,
+      0.0,
+      1.0,
+      681.6954461930511,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_WallRivet09": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      926.71875,
+      -0.0,
+      0.0,
+      1.0,
+      681.6954461930511,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_WallRivet10": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      882.65,
+      -0.0,
+      0.0,
+      1.0,
+      1207.4041177657814,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet00": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      796.8874999999999,
+      -0.0,
+      0.0,
+      1.0,
+      741.6954461930511,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet01": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      796.8874999999999,
+      -0.0,
+      0.0,
+      1.0,
+      799.6538278462983,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet02": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      796.8874999999999,
+      -0.0,
+      0.0,
+      1.0,
+      857.6122094995454,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet03": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      796.8874999999999,
+      -0.0,
+      0.0,
+      1.0,
+      915.5705911527926,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet04": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      796.8874999999999,
+      -0.0,
+      0.0,
+      1.0,
+      973.5289728060399,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet05": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      796.8874999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1031.487354459287,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet06": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      796.8874999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1089.4457361125342,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet07": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      796.8874999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1147.4041177657814,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet08": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      968.4125,
+      0.0,
+      0.0,
+      1.0,
+      741.6954461930511,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet09": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      968.4125,
+      0.0,
+      0.0,
+      1.0,
+      799.6538278462983,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet10": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      968.4125,
+      0.0,
+      0.0,
+      1.0,
+      857.6122094995454,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet11": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      968.4125,
+      0.0,
+      0.0,
+      1.0,
+      915.5705911527926,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet12": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      968.4125,
+      0.0,
+      0.0,
+      1.0,
+      973.5289728060399,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet13": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      968.4125,
+      0.0,
+      0.0,
+      1.0,
+      1031.487354459287,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet14": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      968.4125,
+      0.0,
+      0.0,
+      1.0,
+      1089.4457361125342,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet15": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      968.4125,
+      0.0,
+      0.0,
+      1.0,
+      1147.4041177657814,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingWall_CaseRivet16": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      1402.4125416154013,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      882.65,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1194.9838882755473,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_BodyInnerCleatRivet00": [
+      -1.0,
+      0.0,
+      0.0,
+      955.8042702127452,
+      0.0,
+      -1.0,
+      -0.0,
+      797.0124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1072.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_BodyInnerCleatRivet01": [
+      -1.0,
+      0.0,
+      0.0,
+      955.8042702127452,
+      0.0,
+      -1.0,
+      -0.0,
+      797.0124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1173.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_BodyInnerCleatRivet02": [
+      -1.0,
+      0.0,
+      0.0,
+      955.8042702127452,
+      0.0,
+      -1.0,
+      -0.0,
+      797.0124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1238.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_CapInnerCleatRivet00": [
+      -1.0,
+      0.0,
+      0.0,
+      917.8042702127452,
+      0.0,
+      -1.0,
+      -0.0,
+      797.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1072.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_CapInnerCleatRivet01": [
+      -1.0,
+      0.0,
+      0.0,
+      917.8042702127452,
+      0.0,
+      -1.0,
+      -0.0,
+      797.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1173.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_CapInnerCleatRivet02": [
+      -1.0,
+      0.0,
+      0.0,
+      917.8042702127452,
+      0.0,
+      -1.0,
+      -0.0,
+      797.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1238.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_BodyOuterCleatRivet00": [
+      1.0,
+      0.0,
+      0.0,
+      955.8042702127452,
+      0.0,
+      1.0,
+      0.0,
+      968.2875,
+      0.0,
+      0.0,
+      1.0,
+      1072.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_BodyOuterCleatRivet01": [
+      1.0,
+      0.0,
+      0.0,
+      955.8042702127452,
+      0.0,
+      1.0,
+      0.0,
+      968.2875,
+      0.0,
+      0.0,
+      1.0,
+      1173.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_BodyOuterCleatRivet02": [
+      1.0,
+      0.0,
+      0.0,
+      955.8042702127452,
+      0.0,
+      1.0,
+      0.0,
+      968.2875,
+      0.0,
+      0.0,
+      1.0,
+      1238.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_CapOuterCleatRivet00": [
+      1.0,
+      0.0,
+      0.0,
+      917.8042702127452,
+      0.0,
+      1.0,
+      0.0,
+      967.7875,
+      0.0,
+      0.0,
+      1.0,
+      1072.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_CapOuterCleatRivet01": [
+      1.0,
+      0.0,
+      0.0,
+      917.8042702127452,
+      0.0,
+      1.0,
+      0.0,
+      967.7875,
+      0.0,
+      0.0,
+      1.0,
+      1173.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_CapOuterCleatRivet02": [
+      1.0,
+      0.0,
+      0.0,
+      917.8042702127452,
+      0.0,
+      1.0,
+      0.0,
+      967.7875,
+      0.0,
+      0.0,
+      1.0,
+      1238.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_BodyRoofCleatRivet00": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      956.0119881299153,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      830.5124999999999,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1289.1378963322552,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_BodyRoofCleatRivet01": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      956.0119881299153,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      906.65,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1289.1378963322552,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_BodyRoofCleatRivet02": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      956.0119881299153,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      934.7875,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1289.1378963322552,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_CapRoofCleatRivet00": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      918.0119881299153,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      830.5124999999999,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1297.2071781583886,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_CapRoofCleatRivet01": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      918.0119881299153,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      906.65,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1297.2071781583886,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_CapRoofCleatRivet02": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      918.0119881299153,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      934.7875,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1297.2071781583886,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_InnerBoltSet00Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1090.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_InnerBoltSet00Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1090.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_InnerBoltSet00Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1090.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_InnerBoltSet01Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1155.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_InnerBoltSet01Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1155.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_InnerBoltSet01Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1155.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_InnerBoltSet02Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1220.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_InnerBoltSet02Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1220.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_InnerBoltSet02Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1220.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_OuterBoltSet00Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1090.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_OuterBoltSet00Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1090.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_OuterBoltSet00Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1090.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_OuterBoltSet01Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1155.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_OuterBoltSet01Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1155.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_OuterBoltSet01Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1155.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_OuterBoltSet02Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1220.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_OuterBoltSet02Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1220.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_OuterBoltSet02Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1220.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_RoofBoltSet00Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      882.65,
+      -0.0,
+      0.0,
+      1.0,
+      1313.1943484767876,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_RoofBoltSet00Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      882.65,
+      -0.0,
+      0.0,
+      1.0,
+      1313.1943484767876,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortCasingCap_RoofBoltSet00Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      882.65,
+      -0.0,
+      0.0,
+      1.0,
+      1313.1943484767876,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_WallRivet00": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -985.7875,
+      -0.0,
+      0.0,
+      1.0,
+      746.6954461930511,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_WallRivet01": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -985.7875,
+      -0.0,
+      0.0,
+      1.0,
+      878.5983367172945,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_WallRivet02": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -985.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1010.5012272415379,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_WallRivet03": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -985.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1142.4041177657814,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_WallRivet04": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -779.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      746.6954461930511,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_WallRivet05": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -779.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      878.5983367172945,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_WallRivet06": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -779.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1010.5012272415379,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_WallRivet07": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -779.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1142.4041177657814,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_WallRivet08": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -926.71875,
+      -0.0,
+      0.0,
+      1.0,
+      681.6954461930511,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_WallRivet09": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -838.58125,
+      -0.0,
+      0.0,
+      1.0,
+      681.6954461930511,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_WallRivet10": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      1428.575,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -882.65,
+      -0.0,
+      0.0,
+      1.0,
+      1207.4041177657814,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet00": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      -968.4125,
+      -0.0,
+      0.0,
+      1.0,
+      741.6954461930511,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet01": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      -968.4125,
+      -0.0,
+      0.0,
+      1.0,
+      799.6538278462983,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet02": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      -968.4125,
+      -0.0,
+      0.0,
+      1.0,
+      857.6122094995454,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet03": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      -968.4125,
+      -0.0,
+      0.0,
+      1.0,
+      915.5705911527926,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet04": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      -968.4125,
+      -0.0,
+      0.0,
+      1.0,
+      973.5289728060399,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet05": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      -968.4125,
+      -0.0,
+      0.0,
+      1.0,
+      1031.487354459287,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet06": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      -968.4125,
+      -0.0,
+      0.0,
+      1.0,
+      1089.4457361125342,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet07": [
+      -1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      -1.0,
+      -0.0,
+      -968.4125,
+      -0.0,
+      0.0,
+      1.0,
+      1147.4041177657814,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet08": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      -796.8874999999999,
+      0.0,
+      0.0,
+      1.0,
+      741.6954461930511,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet09": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      -796.8874999999999,
+      0.0,
+      0.0,
+      1.0,
+      799.6538278462983,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet10": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      -796.8874999999999,
+      0.0,
+      0.0,
+      1.0,
+      857.6122094995454,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet11": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      -796.8874999999999,
+      0.0,
+      0.0,
+      1.0,
+      915.5705911527926,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet12": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      -796.8874999999999,
+      0.0,
+      0.0,
+      1.0,
+      973.5289728060399,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet13": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      -796.8874999999999,
+      0.0,
+      0.0,
+      1.0,
+      1031.487354459287,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet14": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      -796.8874999999999,
+      0.0,
+      0.0,
+      1.0,
+      1089.4457361125342,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet15": [
+      1.0,
+      0.0,
+      0.0,
+      1402.075,
+      0.0,
+      1.0,
+      0.0,
+      -796.8874999999999,
+      0.0,
+      0.0,
+      1.0,
+      1147.4041177657814,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingWall_CaseRivet16": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      1402.4125416154013,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      -882.65,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1194.9838882755473,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_BodyInnerCleatRivet00": [
+      -1.0,
+      0.0,
+      0.0,
+      955.8042702127452,
+      0.0,
+      -1.0,
+      -0.0,
+      -968.2875,
+      -0.0,
+      0.0,
+      1.0,
+      1072.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_BodyInnerCleatRivet01": [
+      -1.0,
+      0.0,
+      0.0,
+      955.8042702127452,
+      0.0,
+      -1.0,
+      -0.0,
+      -968.2875,
+      -0.0,
+      0.0,
+      1.0,
+      1173.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_BodyInnerCleatRivet02": [
+      -1.0,
+      0.0,
+      0.0,
+      955.8042702127452,
+      0.0,
+      -1.0,
+      -0.0,
+      -968.2875,
+      -0.0,
+      0.0,
+      1.0,
+      1238.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_CapInnerCleatRivet00": [
+      -1.0,
+      0.0,
+      0.0,
+      917.8042702127452,
+      0.0,
+      -1.0,
+      -0.0,
+      -967.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1072.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_CapInnerCleatRivet01": [
+      -1.0,
+      0.0,
+      0.0,
+      917.8042702127452,
+      0.0,
+      -1.0,
+      -0.0,
+      -967.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1173.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_CapInnerCleatRivet02": [
+      -1.0,
+      0.0,
+      0.0,
+      917.8042702127452,
+      0.0,
+      -1.0,
+      -0.0,
+      -967.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1238.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_BodyOuterCleatRivet00": [
+      1.0,
+      0.0,
+      0.0,
+      955.8042702127452,
+      0.0,
+      1.0,
+      0.0,
+      -797.0124999999999,
+      0.0,
+      0.0,
+      1.0,
+      1072.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_BodyOuterCleatRivet01": [
+      1.0,
+      0.0,
+      0.0,
+      955.8042702127452,
+      0.0,
+      1.0,
+      0.0,
+      -797.0124999999999,
+      0.0,
+      0.0,
+      1.0,
+      1173.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_BodyOuterCleatRivet02": [
+      1.0,
+      0.0,
+      0.0,
+      955.8042702127452,
+      0.0,
+      1.0,
+      0.0,
+      -797.0124999999999,
+      0.0,
+      0.0,
+      1.0,
+      1238.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_CapOuterCleatRivet00": [
+      1.0,
+      0.0,
+      0.0,
+      917.8042702127452,
+      0.0,
+      1.0,
+      0.0,
+      -797.5124999999999,
+      0.0,
+      0.0,
+      1.0,
+      1072.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_CapOuterCleatRivet01": [
+      1.0,
+      0.0,
+      0.0,
+      917.8042702127452,
+      0.0,
+      1.0,
+      0.0,
+      -797.5124999999999,
+      0.0,
+      0.0,
+      1.0,
+      1173.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_CapOuterCleatRivet02": [
+      1.0,
+      0.0,
+      0.0,
+      917.8042702127452,
+      0.0,
+      1.0,
+      0.0,
+      -797.5124999999999,
+      0.0,
+      0.0,
+      1.0,
+      1238.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_BodyRoofCleatRivet00": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      956.0119881299153,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      -934.7875,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1289.1378963322552,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_BodyRoofCleatRivet01": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      956.0119881299153,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      -858.65,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1289.1378963322552,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_BodyRoofCleatRivet02": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      956.0119881299153,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      -830.5124999999999,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1289.1378963322552,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_CapRoofCleatRivet00": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      918.0119881299153,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      -934.7875,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1297.2071781583886,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_CapRoofCleatRivet01": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      918.0119881299153,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      -858.65,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1297.2071781583886,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_CapRoofCleatRivet02": [
+      0.956853266886544,
+      0.20771791717003132,
+      -0.20318733359905136,
+      918.0119881299153,
+      -0.20771791717003132,
+      0.0,
+      -0.9781887685342457,
+      -830.5124999999999,
+      -0.20318733359905136,
+      0.9781887685342457,
+      0.04314673311345596,
+      1297.2071781583886,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_InnerBoltSet00Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1090.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_InnerBoltSet00Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1090.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_InnerBoltSet00Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1090.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_InnerBoltSet01Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1155.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_InnerBoltSet01Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1155.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_InnerBoltSet01Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1155.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_InnerBoltSet02Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1220.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_InnerBoltSet02Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1220.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_InnerBoltSet02Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -987.7875,
+      -0.0,
+      0.0,
+      1.0,
+      1220.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_OuterBoltSet00Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1090.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_OuterBoltSet00Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1090.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_OuterBoltSet00Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1090.0700826269272,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_OuterBoltSet01Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1155.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_OuterBoltSet01Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1155.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_OuterBoltSet01Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1155.1815358235767,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_OuterBoltSet02Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1220.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_OuterBoltSet02Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1220.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_OuterBoltSet02Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -777.5124999999999,
+      -0.0,
+      0.0,
+      1.0,
+      1220.2929890202263,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_RoofBoltSet00Bolt": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      941.8042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -882.65,
+      -0.0,
+      0.0,
+      1.0,
+      1313.1943484767876,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_RoofBoltSet00Washer": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      929.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -882.65,
+      -0.0,
+      0.0,
+      1.0,
+      1313.1943484767876,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardCasingCap_RoofBoltSet00Nut": [
+      2.220446049250313e-16,
+      1.0,
+      0.0,
+      919.3042702127452,
+      -1.0,
+      2.220446049250313e-16,
+      -0.0,
+      -882.65,
+      -0.0,
+      0.0,
+      1.0,
+      1313.1943484767876,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "affected_occurrences": [
+    "PortCasingCap_BodyInnerCleat",
+    "PortCasingCap_BodyInnerCleatRivet00",
+    "PortCasingCap_BodyInnerCleatRivet01",
+    "PortCasingCap_BodyInnerCleatRivet02",
+    "PortCasingCap_BodyOuterCleat",
+    "PortCasingCap_BodyOuterCleatRivet00",
+    "PortCasingCap_BodyOuterCleatRivet01",
+    "PortCasingCap_BodyOuterCleatRivet02",
+    "PortCasingCap_BodyRoofCleat",
+    "PortCasingCap_BodyRoofCleatRivet00",
+    "PortCasingCap_BodyRoofCleatRivet01",
+    "PortCasingCap_BodyRoofCleatRivet02",
+    "PortCasingCap_CapInnerCleat",
+    "PortCasingCap_CapInnerCleatRivet00",
+    "PortCasingCap_CapInnerCleatRivet01",
+    "PortCasingCap_CapInnerCleatRivet02",
+    "PortCasingCap_CapOuterCleat",
+    "PortCasingCap_CapOuterCleatRivet00",
+    "PortCasingCap_CapOuterCleatRivet01",
+    "PortCasingCap_CapOuterCleatRivet02",
+    "PortCasingCap_CapRoofCleat",
+    "PortCasingCap_CapRoofCleatRivet00",
+    "PortCasingCap_CapRoofCleatRivet01",
+    "PortCasingCap_CapRoofCleatRivet02",
+    "PortCasingCap_InnerBoltSet00Bolt",
+    "PortCasingCap_InnerBoltSet00Nut",
+    "PortCasingCap_InnerBoltSet00Washer",
+    "PortCasingCap_InnerBoltSet01Bolt",
+    "PortCasingCap_InnerBoltSet01Nut",
+    "PortCasingCap_InnerBoltSet01Washer",
+    "PortCasingCap_InnerBoltSet02Bolt",
+    "PortCasingCap_InnerBoltSet02Nut",
+    "PortCasingCap_InnerBoltSet02Washer",
+    "PortCasingCap_InnerPacking",
+    "PortCasingCap_OuterBoltSet00Bolt",
+    "PortCasingCap_OuterBoltSet00Nut",
+    "PortCasingCap_OuterBoltSet00Washer",
+    "PortCasingCap_OuterBoltSet01Bolt",
+    "PortCasingCap_OuterBoltSet01Nut",
+    "PortCasingCap_OuterBoltSet01Washer",
+    "PortCasingCap_OuterBoltSet02Bolt",
+    "PortCasingCap_OuterBoltSet02Nut",
+    "PortCasingCap_OuterBoltSet02Washer",
+    "PortCasingCap_OuterPacking",
+    "PortCasingCap_RoofBoltSet00Bolt",
+    "PortCasingCap_RoofBoltSet00Nut",
+    "PortCasingCap_RoofBoltSet00Washer",
+    "PortCasingWall_Angle",
+    "PortCasingWall_CaseRivet00",
+    "PortCasingWall_CaseRivet01",
+    "PortCasingWall_CaseRivet02",
+    "PortCasingWall_CaseRivet03",
+    "PortCasingWall_CaseRivet04",
+    "PortCasingWall_CaseRivet05",
+    "PortCasingWall_CaseRivet06",
+    "PortCasingWall_CaseRivet07",
+    "PortCasingWall_CaseRivet08",
+    "PortCasingWall_CaseRivet09",
+    "PortCasingWall_CaseRivet10",
+    "PortCasingWall_CaseRivet11",
+    "PortCasingWall_CaseRivet12",
+    "PortCasingWall_CaseRivet13",
+    "PortCasingWall_CaseRivet14",
+    "PortCasingWall_CaseRivet15",
+    "PortCasingWall_CaseRivet16",
+    "PortCasingWall_WallRivet00",
+    "PortCasingWall_WallRivet01",
+    "PortCasingWall_WallRivet02",
+    "PortCasingWall_WallRivet03",
+    "PortCasingWall_WallRivet04",
+    "PortCasingWall_WallRivet05",
+    "PortCasingWall_WallRivet06",
+    "PortCasingWall_WallRivet07",
+    "PortCasingWall_WallRivet08",
+    "PortCasingWall_WallRivet09",
+    "PortCasingWall_WallRivet10",
+    "PortCasing_Body",
+    "PortCasing_Cap",
+    "StarboardCasingCap_BodyInnerCleat",
+    "StarboardCasingCap_BodyInnerCleatRivet00",
+    "StarboardCasingCap_BodyInnerCleatRivet01",
+    "StarboardCasingCap_BodyInnerCleatRivet02",
+    "StarboardCasingCap_BodyOuterCleat",
+    "StarboardCasingCap_BodyOuterCleatRivet00",
+    "StarboardCasingCap_BodyOuterCleatRivet01",
+    "StarboardCasingCap_BodyOuterCleatRivet02",
+    "StarboardCasingCap_BodyRoofCleat",
+    "StarboardCasingCap_BodyRoofCleatRivet00",
+    "StarboardCasingCap_BodyRoofCleatRivet01",
+    "StarboardCasingCap_BodyRoofCleatRivet02",
+    "StarboardCasingCap_CapInnerCleat",
+    "StarboardCasingCap_CapInnerCleatRivet00",
+    "StarboardCasingCap_CapInnerCleatRivet01",
+    "StarboardCasingCap_CapInnerCleatRivet02",
+    "StarboardCasingCap_CapOuterCleat",
+    "StarboardCasingCap_CapOuterCleatRivet00",
+    "StarboardCasingCap_CapOuterCleatRivet01",
+    "StarboardCasingCap_CapOuterCleatRivet02",
+    "StarboardCasingCap_CapRoofCleat",
+    "StarboardCasingCap_CapRoofCleatRivet00",
+    "StarboardCasingCap_CapRoofCleatRivet01",
+    "StarboardCasingCap_CapRoofCleatRivet02",
+    "StarboardCasingCap_InnerBoltSet00Bolt",
+    "StarboardCasingCap_InnerBoltSet00Nut",
+    "StarboardCasingCap_InnerBoltSet00Washer",
+    "StarboardCasingCap_InnerBoltSet01Bolt",
+    "StarboardCasingCap_InnerBoltSet01Nut",
+    "StarboardCasingCap_InnerBoltSet01Washer",
+    "StarboardCasingCap_InnerBoltSet02Bolt",
+    "StarboardCasingCap_InnerBoltSet02Nut",
+    "StarboardCasingCap_InnerBoltSet02Washer",
+    "StarboardCasingCap_InnerPacking",
+    "StarboardCasingCap_OuterBoltSet00Bolt",
+    "StarboardCasingCap_OuterBoltSet00Nut",
+    "StarboardCasingCap_OuterBoltSet00Washer",
+    "StarboardCasingCap_OuterBoltSet01Bolt",
+    "StarboardCasingCap_OuterBoltSet01Nut",
+    "StarboardCasingCap_OuterBoltSet01Washer",
+    "StarboardCasingCap_OuterBoltSet02Bolt",
+    "StarboardCasingCap_OuterBoltSet02Nut",
+    "StarboardCasingCap_OuterBoltSet02Washer",
+    "StarboardCasingCap_OuterPacking",
+    "StarboardCasingCap_RoofBoltSet00Bolt",
+    "StarboardCasingCap_RoofBoltSet00Nut",
+    "StarboardCasingCap_RoofBoltSet00Washer",
+    "StarboardCasingWall_Angle",
+    "StarboardCasingWall_CaseRivet00",
+    "StarboardCasingWall_CaseRivet01",
+    "StarboardCasingWall_CaseRivet02",
+    "StarboardCasingWall_CaseRivet03",
+    "StarboardCasingWall_CaseRivet04",
+    "StarboardCasingWall_CaseRivet05",
+    "StarboardCasingWall_CaseRivet06",
+    "StarboardCasingWall_CaseRivet07",
+    "StarboardCasingWall_CaseRivet08",
+    "StarboardCasingWall_CaseRivet09",
+    "StarboardCasingWall_CaseRivet10",
+    "StarboardCasingWall_CaseRivet11",
+    "StarboardCasingWall_CaseRivet12",
+    "StarboardCasingWall_CaseRivet13",
+    "StarboardCasingWall_CaseRivet14",
+    "StarboardCasingWall_CaseRivet15",
+    "StarboardCasingWall_CaseRivet16",
+    "StarboardCasingWall_WallRivet00",
+    "StarboardCasingWall_WallRivet01",
+    "StarboardCasingWall_WallRivet02",
+    "StarboardCasingWall_WallRivet03",
+    "StarboardCasingWall_WallRivet04",
+    "StarboardCasingWall_WallRivet05",
+    "StarboardCasingWall_WallRivet06",
+    "StarboardCasingWall_WallRivet07",
+    "StarboardCasingWall_WallRivet08",
+    "StarboardCasingWall_WallRivet09",
+    "StarboardCasingWall_WallRivet10",
+    "StarboardCasing_Body",
+    "StarboardCasing_Cap",
+    "hull_engine_back"
+  ],
+  "expected_physical_occurrences": 2393,
+  "historical_station_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false
+}

@@ -11,6 +11,28 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — constant-stock chain casings reconstructed
+
+The [casing trial](experiments/drive_chains/engine_pump_receiver_study/registration/native_casing_trial01/README.md)
+rebuilds twelve definitions and repositions 134 fasteners around the revised chain
+route, preserving normal sheet thickness and the handbook's 6⅝ inch width.
+All **326 local checks, 1,340 development material pairs, 27 standard-context
+pairs and 169 STEP comparisons pass**. Both alternative source-axis stations pass
+63 local regeneration checks. Fresh reproduction matches 1,409 BReps and 113,542
+persistent properties. The hierarchy retains 2,393 physical occurrences.
+
+Four views were inspected. Three new progression images give **161 total**,
+preserving all 158 previous images and 24 recorded native files. The source
+overlay retains visible shaft-height disagreement; historical station, fastener
+schedule conflicts and complete mounting remain open. Sixteen save-normalized
+definitions need strict preservation checks, alongside the running parent check.
+The corrected packing-bore measurement and initial diagnostic are retained.
+
+The installed FreeCAD 1.1.1/OCC 7.8.0 runtime was rechecked successfully on resume.
+Next: transmission holding interfaces, feet, packing and hardware, followed by
+remaining engine and tank interiors. Standard tank011 is unchanged; poses remain
+deferred and the complete-tank goal is unfinished.
+
 ## 23 September 2026 — following-frame placement checked against the full standard context
 
 The [following-frame trial](experiments/drive_chains/engine_pump_receiver_study/registration/native_following_frame_trial01/README.md)

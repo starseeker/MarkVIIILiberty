@@ -16,7 +16,17 @@ both complete saved contexts and improves relative SNL23 agreement. It is the
 preferred development placement, retaining explicit bulkhead/floor gaps pending
 holding bolts, screws and feet. Its 53 native checks, 77 development material pairs,
 one standard-context material pair and 36 local STEP comparisons pass. The
-progression now contains 158 images; the standard tank is unchanged.
+progression at that checkpoint contains 158 images; the standard tank is unchanged.
+
+The subsequent [casing reconstruction](registration/native_casing_trial01/README.md)
+rebuilds constant-stock bodies, caps, collars, cleats and bulkhead passages at the
+revised route. All 326 local checks, 1,340 development material pairs, 27 retained
+standard-context pairs and 169 STEP comparisons pass. Both alternate source-axis
+stations pass 63 local regeneration checks, and a fresh build reproduces all
+1,409 archived BReps and 113,542 properties. Four inspected views and three new
+snapshots bring the progression to 161. The historical station, complete mounting,
+catalogue conflicts and strict preservation of sixteen save-normalized definitions
+remain open; the parent preservation check is also still running.
 
 `trial02/PumpReceiver.FCStd` reconstructs the receiver from the pre-receiver
 lower crankcase, using the source-profile oil pump and the 171.45 mm lower-drive

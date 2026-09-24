@@ -1,0 +1,68 @@
+{
+  "status": "inferred_front_casing_taper_candidate",
+  "controls": {
+    "taper_start_x": {
+      "value": 1450,
+      "bounds": [
+        1445,
+        1465
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Start ahead of the existing wall-angle attachment; no printed station. Bounds are not qualified ranges."
+    },
+    "taper_end_x": {
+      "value": 1515,
+      "bounds": [
+        1500,
+        1530
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Finish before the brake rim enters the casing footprint; no printed station. Bounds are not qualified ranges."
+    },
+    "front_outside_width": {
+      "value": 132,
+      "bounds": [
+        128,
+        136
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Local reduced width chosen to clear the scaled brake rim while retaining the chain; original168.275mm maximum remains behind the taper. Bounds are not qualified ranges."
+    },
+    "small_hub_radius": {
+      "value": 77,
+      "bounds": [
+        75,
+        80
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Clear the inferred brake hub, which is larger than the prior sprocket-only envelope. Bounds are not qualified ranges."
+    },
+    "hub_gap": {
+      "value": 2,
+      "bounds": [
+        1,
+        3
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Static radial gap at the brake hub. Bounds are not qualified ranges."
+    },
+    "minimum_rotor_gap": {
+      "value": 2,
+      "bounds": [
+        1,
+        3
+      ],
+      "unit": "mm",
+      "basis": "reconstruction_assumption",
+      "interpretation": "Minimum candidate drum-to-casing separation; not a historical tolerance. Bounds are not qualified ranges."
+    }
+  },
+  "interpretation": "Symmetric narrowing at the transmission end, with true normal sheet offset through the straight taper. The6-5/8inch handbook width is interpreted as maximum casing width. Exact small-end shape is unmeasured.",
+  "motivation": "transmission_output_build/report.json retains the two rejected drum/casing clashes; all original rotor shapes and placements are retained.",
+  "historical_fit_qualified": false
+}
