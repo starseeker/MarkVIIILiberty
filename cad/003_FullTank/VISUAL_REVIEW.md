@@ -545,3 +545,18 @@ and [source measurements](experiments/drive_chains/engine_pump_receiver_study/re
 bind the actual viewed images, native file and unaltered source calibration.
 Three progression images preserve this hypothesis and its disagreement, bringing
 the total to155 without changing the152 earlier images.
+
+## 23 September 2026 — following-frame comparison
+
+Five saved-native views were inspected in the
+[following-frame trial](experiments/drive_chains/engine_pump_receiver_study/registration/native_following_frame_trial01/README.md):
+powertrain isometric, frame/support view, hull side view, case mounting and SNL23
+overlay. Translating the original frame with the shaft improves relative source
+alignment and restores existing casting/MX5 interfaces. The hull view exposes
+the unfilled 18.771 mm bulkhead and55.218 mm lower-channel/floor gaps. No attachment
+material was invented to close them. Long MX5 bosses and inner packing remain
+approximate/incomplete. This placement is preferred for development, with source-led
+holding hardware and chain casings next. Three snapshots give158 total; all155
+previous images and24 recorded natives remain unchanged. Standard tank011 is
+unchanged. Neither frame clearance nor this source comparison qualifies a complete
+installation or the unfinished tank.

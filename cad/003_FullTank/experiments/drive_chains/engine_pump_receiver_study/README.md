@@ -9,7 +9,14 @@ qualification remain open. The subsequent
 [fixed-frame trial](registration/native_frame_trial02/README.md) closes local
 transmission support/MX5 interfaces but worsens channel-height agreement in its
 source overlay. Compare a frame that follows the shaft before choosing the
-installation. The progression now contains 155 images; the standard tank is unchanged.
+installation. The subsequent
+[following-frame trial](registration/native_following_frame_trial01/README.md)
+now provides that comparison: it restores local interfaces, passes checks against
+both complete saved contexts and improves relative SNL23 agreement. It is the
+preferred development placement, retaining explicit bulkhead/floor gaps pending
+holding bolts, screws and feet. Its 53 native checks, 77 development material pairs,
+one standard-context material pair and 36 local STEP comparisons pass. The
+progression now contains 158 images; the standard tank is unchanged.
 
 `trial02/PumpReceiver.FCStd` reconstructs the receiver from the pre-receiver
 lower crankcase, using the source-profile oil pump and the 171.45 mm lower-drive

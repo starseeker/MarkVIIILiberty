@@ -1,5 +1,17 @@
 # Mark VIII visual progression
 
+The following-frame trial adds an
+[isometric](intermediate_snapshot_iso_powertrain_registration_003.png),
+[hull-interface view](intermediate_snapshot_detail_transmission_hull_registration_001.png)
+and [source overlay](intermediate_snapshot_source_transmission_registration_002.png).
+Moving the original frame with the shaft restores local mounting fit and improves
+SNL23 channel alignment. The side view exposes the unfinished bulkhead and floor
+interfaces. Native checks, full-context frame collision checks, 36 local STEP
+comparisons and fresh reproduction pass. This is the preferred development
+placement; complete mounting and chain casings remain open. All 155 prior images
+and 24 recorded natives are preserved: **158 total**. See the
+[trial record](003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_following_frame_trial01/README.md).
+
 The fixed-frame transmission trial adds an
 [isometric](intermediate_snapshot_iso_powertrain_registration_002.png),
 [support detail](intermediate_snapshot_detail_transmission_support_registration_001.png)

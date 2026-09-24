@@ -11,6 +11,28 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — following-frame placement checked against the full standard context
+
+The [following-frame trial](experiments/drive_chains/engine_pump_receiver_study/registration/native_following_frame_trial01/README.md)
+retains the original transmission castings and moves the 15 frame occurrences
+with the shaft. **53 native checks, 77 development material pairs and the sole
+spatially possible frame/standard-tank pair pass.** Filtering covers all 5,326
+physical standard occurrences. All **36 local STEP comparisons** pass, and fresh
+reproduction matches 1,409 BReps and 113,542 persistent properties.
+
+The source overlay improves relative channel-height agreement. This becomes the
+preferred development placement, with attachment explicitly unfinished: the
+channels remain 18.771 mm from the rear bulkhead and the lower channel 55.218 mm
+above the floor. HB127 and SNL27/205 identify the missing holding interface and
+separate bolt/screw hardware; they do not establish an arbitrary spacer thickness.
+Feet, packing, complete fastening and constant-stock chain casings remain next.
+A separate direct source-material comparison is running to close inherited
+save-normalization gates; its final report is required before claiming that result.
+
+Five views were inspected and three progression snapshots saved: **158 total**,
+preserving all 155 earlier images and 24 recorded native files. Standard tank011
+is unchanged. The full tank and its interior remain incomplete; poses are deferred.
+
 ## 23 September 2026 — transmission frame hypothesis checked against sources
 
 The [fixed-frame trial](experiments/drive_chains/engine_pump_receiver_study/registration/native_frame_trial02/README.md)
