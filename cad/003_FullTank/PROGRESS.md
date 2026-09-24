@@ -11,6 +11,34 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — four retained rear-control fulcrum units
+
+[The fulcrum checkpoint](experiments/drive_chains/transmission_controls_study/fulcrum_integrated01/README.md)
+adds four M4131 bracket/journals, four horizontal levers, four M4137 washers,
+four cotters and eight rivets, with real receiving holes in the channel:
+**3,226 occurrences / 558 used definitions / 347 groups**. A source comparison
+motivated a longer, narrower bearing column after the first broad-base hypothesis;
+both versions are preserved. Profiles, stations and washer form remain estimates.
+
+Nominal and +0.5 mm rivet-boss stock each pass 82 native/interface checks,
+46 local material pairs, four surrounding pairs and 33 strict STEP comparisons.
+Integration passes 46 checks and preserves all 550 unchanged inherited definitions
+(529 exact / 21 strict). All links reopen after relocation; fresh generation and
+integration reproduce shapes, frames and persistent properties. Sixteen completed
+strict comparisons were reused for identical BRep pairs and unchanged worker code.
+
+The source camera remains fixed. The checkpoint records why reuse is appropriate,
+preserves the existing 21.867 px control-bore discrepancy, and names evidence that
+would trigger targeted reverification. The new plan picks guided construction;
+they are not independent holdouts. Four saved images bring progression to **229**,
+preserving all 225 earlier images. Standard tank011 remains unchanged.
+
+Eight new vertical rod eyes and four inherited transverse brake eyes are measured
+from the saved native. M573/M578 end forks need a quarter-turn orientation
+difference; eye-center chords are not finished rod lengths or clearance results.
+Next: M4129 attachment, M4135/M4136 spring supports, and complete rear rods with
+their joints, spring interfaces and clearances. Full standard-tank goal remains active.
+
 ## 24 September 2026 — mounted rear channel and four M4130 cleats
 
 [The new powertrain checkpoint](experiments/drive_chains/transmission_controls_study/channel_integrated01/README.md)

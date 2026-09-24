@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-24",
+  "reviewer": "Codex",
+  "action": "reuse_fixed_local_registration",
+  "native_sha256": "d4f9a5bd2294b0e41755b3fce3e47197bf4d04f165e1c4ec918246ba2edec2c2",
+  "registration": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json",
+  "registration_sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe",
+  "parent_render_receipt_sha256": "50430eb2ce6ddb6cdb5877ddc2afe1ee1539ab5548e2c0c1782b434ebd938f03",
+  "current_render_receipt_sha256": "6bbf6d629d809920696b20fe47f58444ff09b4e8342729e58f98b382adb0883b",
+  "source_camera_refitted": false,
+  "reason": "New fulcrum geometry uses the saved local side registration. No fitting landmark, source pixel mapping or projection assumption changed. New plan picks guided geometry and are not independent holdouts.",
+  "retained_discrepancy": "Existing high-speed control bore21.867px; correlated outer-drum comparisons1.8-2.8px. Neither is improved by a new fit in this increment.",
+  "review_when": [
+    "New independently supported image landmarks supply useful depth or reveal a coherent mismatch across established parts.",
+    "An anchor definition, datum or source pixel mapping changes.",
+    "A clearer source changes the projection classification or landmark identity."
+  ],
+  "refit_rule": "Diagnose geometry, picking, projection and scan distortion first. Record a reason, retain the prior fit, and compare old/new cameras on identical current geometry with independent checks.",
+  "historical_camera_calibrated": false
+}

@@ -1,0 +1,92 @@
+{
+  "date": "2026-09-24",
+  "reviewer": "Codex",
+  "parent_native_sha256": "f3d3005eaead46314acacb48c8a2d58ddf58e5a2f495f6a1dca887888f2db25a",
+  "source_packets": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_sources01/sources.json": "1795a5dad88e7f82c5568ddc263b0804df708ef40f538d6d8845265a7d20b4e1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/sources.json": "708b68c68f9d489d9e5b7bf765fa6de0ef45da0f0156e5cb4b11d2b965091998"
+  },
+  "additional_source": {
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_065_084.py": "e9d22e142aeac4c375806b9b56b7840612462299a8e9397ebee110d673b020f3"
+  },
+  "observations": [
+    "SNL36:015-018 gives four M4131 bracket assemblies, each with a quarter-inch by two-inch split pin. SNL170:007 assigns two half-inch by2-1/8inch rivets per bracket, total8.",
+    "SNL72:026 and73:001-004 rear-control composition lists four M4137 spring washers, two M4132 foot-brake horizontal levers and one each M4133/M4134 low-brake lever plus the channel assembly. This supports assigning one washer and one retained lever to each fulcrum; the exact washer form is not printed.",
+    "HB104 shows vertical pedestal pivots with circular shoulders and horizontal levers. The mounting-foot outline and fastener axes are obscured; the cast-foot/vertical-rivet hypothesis below is an approximation, not an observation.",
+    "SNL6 plan locates the outer foot-brake pivots nearer the forward channel edge and inner low-brake pivots rearward. Rod-end stations guide lever ratios and clocking; this segmented schematic is not globally calibrated.",
+    "M4129 has a floor bolt but no separate rivet application. This increment does not assign invented rivets or establish its mounting topology."
+  ],
+  "plan_picks": {
+    "StarboardTrack": {
+      "pivot": [
+        1348,
+        143
+      ],
+      "brake": [
+        1341,
+        121
+      ],
+      "front": [
+        1370,
+        202
+      ]
+    },
+    "PortTrack": {
+      "pivot": [
+        1345,
+        594
+      ],
+      "brake": [
+        1334,
+        615
+      ],
+      "front": [
+        1372,
+        538
+      ]
+    },
+    "StarboardLow": {
+      "pivot": [
+        1405,
+        225
+      ],
+      "brake": [
+        1390,
+        202
+      ],
+      "front": [
+        1442,
+        279
+      ]
+    },
+    "PortLow": {
+      "pivot": [
+        1402,
+        511
+      ],
+      "brake": [
+        1392,
+        540
+      ],
+      "front": [
+        1436,
+        461
+      ]
+    }
+  },
+  "hypotheses": [
+    "M4131 has a thick cast foot with two vertical rivets through the upper channel web, a round thrust shoulder and integral vertical journal.25.4mm estimated foot stock plus6.35mm channel gives31.75mm grip, allowing the literal53.975mm rivet shank stock to form a conventional1.75D tail without trimming.",
+    "Four fulcrums atY+/-710 and+/-450mm follow the existing conditional transverse layout. Outer pivots lie over the forward flange; inner pivots cantilever25.4mm rearward of the rear flange to reproduce the separate neighboring eye stations without merging geometry.",
+    "Bracket foot overhang is intentional; both rivet pads must fully bear on channel material. This is not a full-foot seating or load-capacity claim.",
+    "Each M4132 uses the same straight double-arm lever definition at different clockings. Distinct low-lever profiles use the separately estimated front/brake vectors from their plan picks. All hub, stock and bore dimensions are estimates.",
+    "M4137 is initially represented as a compressed flat annular spring washer above the lever. Its free form is unknown. The split pin spreads horizontally to clear the washer and supplies axial retention."
+  ],
+  "limits": [
+    "HB five fulcrums and center M4131/M1431 identity remain open; this rear assembly follows the internally consistent SNL four.",
+    "No source declares the pivot diameter, casting footprint, rivet orientation, lever stock/bores or washer dimensions. Native fit cannot establish these historical facts.",
+    "The source plan is used to form geometry, not as an independent camera validation. The existing SNL6 side registration remains fixed for diagnostic projection.",
+    "M4129, spring brackets, rods and complete service paths remain subsequent work."
+  ],
+  "historical_geometry_qualified": false,
+  "camera_refitted": false
+}

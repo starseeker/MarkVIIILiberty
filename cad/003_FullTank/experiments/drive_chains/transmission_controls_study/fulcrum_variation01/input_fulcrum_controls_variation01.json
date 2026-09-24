@@ -1,0 +1,136 @@
+{
+  "controls": {
+    "parent": "channel_integrated01",
+    "channel_definition": "Def_RearControlMount_channel",
+    "channel_occurrence": "RearControlChannelStock",
+    "channel_top_z": 583.85,
+    "channel_stock": 6.35,
+    "bracket": {
+      "foot_stock": 25.9,
+      "pivot_radius": 25.4,
+      "rivet_pad_radius": 15.875,
+      "rivet_x": 69.85,
+      "rivet_y": [
+        -20.6375,
+        20.6375
+      ],
+      "journal_diameter": 31.75,
+      "journal_height": 31.75,
+      "cotter_hole_diameter": 6.65
+    },
+    "rivet": {
+      "diameter": 12.7,
+      "stock_length": 53.975,
+      "hole_diameter": 13.0,
+      "factory_ratio": 1.75,
+      "factory_height_ratio": 0.7,
+      "upset_ratio": 1.75
+    },
+    "lever": {
+      "hub_radius": 25.4,
+      "hub_height": 19.05,
+      "stock": 12.7,
+      "end_radius": 19.05,
+      "bore_diameter": 32.05,
+      "end_bore_diameter": 13.0,
+      "web_width": 25.4
+    },
+    "washer": {
+      "outer_radius": 25.4,
+      "bore_radius": 16.025,
+      "stock": 3.175
+    },
+    "cotter": {
+      "cotter_diameter": 6.35,
+      "cotter_center_spacing": 3.3,
+      "crown_radius": 15.875,
+      "cotter_head_gap": 1.0,
+      "cotter_exit_gap": 1.0,
+      "cotter_bend_radius": 4.0,
+      "cotter_bend_angle": 35.0,
+      "cotter_length": 50.8,
+      "cotter_eye_radius": 6.0,
+      "cotter_eye_rise": 4.0,
+      "cotter_eye_join_overlap": 0.03
+    },
+    "lever_profiles": {
+      "track": {
+        "brake": [
+          0,
+          -76.2
+        ],
+        "front": [
+          0,
+          203.2
+        ]
+      },
+      "low_right": {
+        "brake": [
+          47.625,
+          -73.025
+        ],
+        "front": [
+          -114.3,
+          171.45
+        ]
+      },
+      "low_left": {
+        "brake": [
+          31.75,
+          88.9
+        ],
+        "front": [
+          -107.95,
+          -158.75
+        ]
+      }
+    },
+    "stations": {
+      "StarboardTrack": {
+        "pivot": [
+          2476.2,
+          -710,
+          583.85
+        ],
+        "inboard_clock": 180,
+        "lever_profile": "track",
+        "lever_clock": 20,
+        "mark": "M4132"
+      },
+      "PortTrack": {
+        "pivot": [
+          2476.2,
+          710,
+          583.85
+        ],
+        "inboard_clock": 180,
+        "lever_profile": "track",
+        "lever_clock": 156.3,
+        "mark": "M4132"
+      },
+      "StarboardLow": {
+        "pivot": [
+          2298.4,
+          -450,
+          583.85
+        ],
+        "inboard_clock": 0,
+        "lever_profile": "low_right",
+        "lever_clock": 0,
+        "mark": "M4134"
+      },
+      "PortLow": {
+        "pivot": [
+          2298.4,
+          450,
+          583.85
+        ],
+        "inboard_clock": 0,
+        "lever_profile": "low_left",
+        "lever_clock": 0,
+        "mark": "M4133"
+      }
+    }
+  },
+  "source_review_sha256": "790d5da73eb2cbb9489075149e89d3517ac565c0050b6f23759f2db37a4864bb"
+}

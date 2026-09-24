@@ -1195,3 +1195,22 @@ Three reviewed images bring progression to **225**, preserving all222 prior imag
 | [intermediate_snapshot_iso_rear_control_channel_mounts_001.png](intermediate_snapshot_iso_rear_control_channel_mounts_001.png) | `5a607bf5e1930c0eb68d1c57d39c849064a826e63f0f676a0b241dc5d2014545` |
 | [intermediate_snapshot_detail_rear_control_channel_mounts_001.png](intermediate_snapshot_detail_rear_control_channel_mounts_001.png) | `b0f2f06cfb675f3b84740de5613e1f4f8d94281d59d20414cfac8fdd7a163108` |
 | [intermediate_snapshot_source_rear_control_channel_mounts_001.png](intermediate_snapshot_source_rear_control_channel_mounts_001.png) | `430d7f76e55699471289b01ad5bdd487086d0aca9bd527f4dd5f159236674bbd` |
+
+
+## Retained rear-control fulcrums — 24 September 2026
+
+Four M4131 bracket/journal units now carry the two M4132 and individual M4133/M4134
+horizontal levers, with washers, cotters and eight rivets. The early isometric
+preserves the first broad-base/short-hub hypothesis; the revised views show the
+source-driven bearing-column change. The source comparison retains the same
+local SNL6 registration and its open discrepancies. These are subsystem views
+from the development checkpoint; standard tank011 remains unchanged.
+Four saved images bring progression to **229**, preserving all225 earlier images.
+See the [checkpoint evidence](003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_integrated01/README.md).
+
+| View | SHA-256 |
+|---|---|
+| [intermediate_snapshot_iso_rear_control_fulcrums_trial_001.png](intermediate_snapshot_iso_rear_control_fulcrums_trial_001.png) | `a85773bac9b241ad4fb0c052f8daa5dad770f2da72bd7c20a70110a5e5a09ae6` |
+| [intermediate_snapshot_iso_rear_control_fulcrums_001.png](intermediate_snapshot_iso_rear_control_fulcrums_001.png) | `483b07757973cb22319c2b987d577650d068529b2fe17c2e56adaafb0a67ec76` |
+| [intermediate_snapshot_detail_rear_control_fulcrum_001.png](intermediate_snapshot_detail_rear_control_fulcrum_001.png) | `2a3a19c4502710ba861e303b4df72c97d6dff27ea713c1d8ec8607a7d4f1ec76` |
+| [intermediate_snapshot_source_rear_control_fulcrums_001.png](intermediate_snapshot_source_rear_control_fulcrums_001.png) | `bcc69cc17e749f0dca1ca5da203a86993204861eab486b0a0dd6d3e37da0ab8a` |

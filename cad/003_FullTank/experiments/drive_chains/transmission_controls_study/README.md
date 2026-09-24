@@ -1,14 +1,29 @@
 # Transmission operating controls — evidence and receiving interfaces
 
-Current assembly: [PowertrainWithRearChannelMounts.FCStd](channel_integrated01/PowertrainWithRearChannelMounts.FCStd),
-with3,202 physical occurrences /551 used definitions /343 assembly groups.
-The [channel mounting checkpoint](channel_integrated01/README.md) follows the
+Current assembly: [PowertrainWithRearControlFulcrums.FCStd](fulcrum_integrated01/PowertrainWithRearControlFulcrums.FCStd),
+with 3,226 physical occurrences / 558 used definitions / 347 assembly groups.
+The [fulcrum checkpoint](fulcrum_integrated01/README.md) follows the
+[channel mounting checkpoint](channel_integrated01/README.md), the
 [rear-joint checkpoint](us_nuts01/README.md) and the locally qualified
 [brake-support assembly](../transmission_high_brake_support_study/integrated_upper01/qualification.json).
 This packet covers the rear control channel, brake return springs, control rod
 ends and subsequent connections toward the center and driver controls. Two rear high-speed fork/pin/cotter joints and their plain nuts are now installed.
-The channel and four M4130 cleat/bolt/rivet sets are installed in the development
-assembly. M4129 attachments, fulcrums, rods and return springs remain pending.
+The channel, four M4130 mounting sets and four retained M4131/lever units are
+installed in the development assembly. M4129 attachments, spring supports, rods
+and return springs remain pending. The new units add 24 physical occurrences:
+four brackets, four levers, four washers, four cotters and eight rivets.
+
+The fulcrum checkpoint retains an earlier geometry hypothesis and the source
+review that led to the revised bearing column. Native/interface/context/STEP
+checks pass in nominal and thicker-boss variants; actual prototype geometry
+transfers into the full development hierarchy. Its source overlay reuses the
+unchanged local SNL6 registration and preserves the existing control-bore
+discrepancy. Four new images bring visual progression to 229.
+
+The [saved interface measurements](fulcrum_integrated01/operating_interfaces.json)
+locate eight new vertical rod eyes and reverify four transverse brake eyes. The
+next M573/M578 connections need differently oriented end forks; endpoint chords
+do not establish clear routes or finished rod lengths.
 
 [sources.json](sources.json) retains 99 source rows associated with 34 identities,
 handbook operating/adjustment text, literal dimensional constraints and source

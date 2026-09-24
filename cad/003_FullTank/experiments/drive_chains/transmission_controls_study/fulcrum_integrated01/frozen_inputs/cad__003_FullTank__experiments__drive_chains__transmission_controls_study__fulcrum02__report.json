@@ -1,0 +1,1298 @@
+{
+  "native_file": "RearControlFulcrums.FCStd",
+  "native_sha256": "a81fade370009e0cbbc126086d1e01be3ab5ca06af1c1ae160192c60dbbf51a4",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01/PowertrainWithRearChannelMounts.FCStd",
+  "parent_native_sha256": "f3d3005eaead46314acacb48c8a2d58ddf58e5a2f495f6a1dca887888f2db25a",
+  "parent_manifest_sha256": "13ca190408ff510afce34c8c003564198bbf7cf034154e170cd3776a6d01c9bc",
+  "controls": {
+    "parent": "channel_integrated01",
+    "channel_definition": "Def_RearControlMount_channel",
+    "channel_occurrence": "RearControlChannelStock",
+    "channel_top_z": 583.85,
+    "channel_stock": 6.35,
+    "bracket": {
+      "foot_stock": 25.4,
+      "pivot_radius": 25.4,
+      "rivet_pad_radius": 15.875,
+      "rivet_x": 69.85,
+      "rivet_y": [
+        -20.6375,
+        20.6375
+      ],
+      "journal_diameter": 31.75,
+      "journal_height": 50.8,
+      "cotter_hole_diameter": 6.65,
+      "web_stock": 9.525,
+      "seat_height": 9.525
+    },
+    "rivet": {
+      "diameter": 12.7,
+      "stock_length": 53.975,
+      "hole_diameter": 13.0,
+      "factory_ratio": 1.75,
+      "factory_height_ratio": 0.7,
+      "upset_ratio": 1.75
+    },
+    "lever": {
+      "hub_radius": 25.4,
+      "hub_height": 38.1,
+      "stock": 12.7,
+      "end_radius": 19.05,
+      "bore_diameter": 32.05,
+      "end_bore_diameter": 13.0,
+      "web_width": 25.4,
+      "neck_radius": 19.05,
+      "lower_flange_stock": 3.175,
+      "top_flange_stock": 6.35,
+      "arm_bottom": 25.4
+    },
+    "washer": {
+      "outer_radius": 25.4,
+      "bore_radius": 16.025,
+      "stock": 3.175
+    },
+    "cotter": {
+      "cotter_diameter": 6.35,
+      "cotter_center_spacing": 3.3,
+      "crown_radius": 15.875,
+      "cotter_head_gap": 1.0,
+      "cotter_exit_gap": 1.0,
+      "cotter_bend_radius": 4.0,
+      "cotter_bend_angle": 35.0,
+      "cotter_length": 50.8,
+      "cotter_eye_radius": 6.0,
+      "cotter_eye_rise": 4.0,
+      "cotter_eye_join_overlap": 0.03
+    },
+    "lever_profiles": {
+      "track": {
+        "brake": [
+          0,
+          -76.2
+        ],
+        "front": [
+          0,
+          203.2
+        ]
+      },
+      "low_right": {
+        "brake": [
+          47.625,
+          -73.025
+        ],
+        "front": [
+          -114.3,
+          171.45
+        ]
+      },
+      "low_left": {
+        "brake": [
+          31.75,
+          88.9
+        ],
+        "front": [
+          -107.95,
+          -158.75
+        ]
+      }
+    },
+    "stations": {
+      "StarboardTrack": {
+        "pivot": [
+          2476.2,
+          -710,
+          583.85
+        ],
+        "inboard_clock": 180,
+        "lever_profile": "track",
+        "lever_clock": 20,
+        "mark": "M4132"
+      },
+      "PortTrack": {
+        "pivot": [
+          2476.2,
+          710,
+          583.85
+        ],
+        "inboard_clock": 180,
+        "lever_profile": "track",
+        "lever_clock": 156.3,
+        "mark": "M4132"
+      },
+      "StarboardLow": {
+        "pivot": [
+          2298.4,
+          -450,
+          583.85
+        ],
+        "inboard_clock": 0,
+        "lever_profile": "low_right",
+        "lever_clock": 0,
+        "mark": "M4134"
+      },
+      "PortLow": {
+        "pivot": [
+          2298.4,
+          450,
+          583.85
+        ],
+        "inboard_clock": 0,
+        "lever_profile": "low_left",
+        "lever_clock": 0,
+        "mark": "M4133"
+      }
+    }
+  },
+  "details": {
+    "rivet": {
+      "grip_mm": 31.75,
+      "factory_radius_mm": 11.112499999999999,
+      "upset_radius_mm": 11.112499999999999,
+      "upset_height_mm": 10.960271608555217,
+      "upset_stock_volume_mm3": 2815.3934307354716
+    },
+    "cotter": {
+      "straight_length_mm": 33.75,
+      "bend_arc_length_mm": 2.443460952792061,
+      "tail_length_mm": 14.606539047207935,
+      "total_leg_centerline_mm": 50.8,
+      "tail_endpoints": [
+        [
+          0.0,
+          31.13428206591155,
+          -10.751358436963963
+        ],
+        [
+          0.0,
+          31.13428206591155,
+          10.751358436963963
+        ]
+      ],
+      "wire_radius_mm": 1.525,
+      "under_eye_y_mm": -16.875,
+      "bend_start_y_mm": 16.875,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "cotter_center_z_mm": 52.324999999999996,
+    "lever_bearing_z_mm": 9.525,
+    "washer_bottom_z_mm": 47.625,
+    "rivet_axes": [
+      {
+        "owner": "StarboardTrack",
+        "world_mm": [
+          2406.35,
+          -689.3625,
+          583.85
+        ]
+      },
+      {
+        "owner": "StarboardTrack",
+        "world_mm": [
+          2406.35,
+          -730.6375,
+          583.85
+        ]
+      },
+      {
+        "owner": "PortTrack",
+        "world_mm": [
+          2406.35,
+          730.6375,
+          583.85
+        ]
+      },
+      {
+        "owner": "PortTrack",
+        "world_mm": [
+          2406.35,
+          689.3625,
+          583.85
+        ]
+      },
+      {
+        "owner": "StarboardLow",
+        "world_mm": [
+          2368.25,
+          -470.6375,
+          583.85
+        ]
+      },
+      {
+        "owner": "StarboardLow",
+        "world_mm": [
+          2368.25,
+          -429.3625,
+          583.85
+        ]
+      },
+      {
+        "owner": "PortLow",
+        "world_mm": [
+          2368.25,
+          429.3625,
+          583.85
+        ]
+      },
+      {
+        "owner": "PortLow",
+        "world_mm": [
+          2368.25,
+          470.6375,
+          583.85
+        ]
+      }
+    ]
+  },
+  "specs": {
+    "RearControlChannelStock": {
+      "role": "channel",
+      "owner": "Root",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackFulcrumBracket": {
+      "role": "bracket",
+      "owner": "StarboardTrackControlFulcrum",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        2476.2,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        -710.0,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackHorizontalLever": {
+      "role": "lever_track",
+      "owner": "StarboardTrackControlFulcrum",
+      "frame": [
+        0.9396926207859084,
+        -0.3420201433256686,
+        -0.0,
+        2476.2,
+        0.3420201433256686,
+        0.9396926207859084,
+        0.0,
+        -710.0,
+        0.0,
+        -0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        -0.9396926207859086,
+        0.3420201433256687,
+        0.0,
+        0.0,
+        -0.3420201433256687,
+        -0.9396926207859086,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        9.525,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackFulcrumSpringWasher": {
+      "role": "washer",
+      "owner": "StarboardTrackControlFulcrum",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        2476.2,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        -710.0,
+        0.0,
+        0.0,
+        1.0,
+        631.475,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        47.625,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackFulcrumCotter": {
+      "role": "cotter",
+      "owner": "StarboardTrackControlFulcrum",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        2476.2,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        -710.0,
+        0.0,
+        0.0,
+        1.0,
+        636.1750000000001,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        52.324999999999996,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackFulcrumRivet1": {
+      "role": "rivet",
+      "owner": "StarboardTrackControlFulcrum",
+      "frame": [
+        -1.0,
+        1.2246467991473532e-16,
+        1.4997597826618576e-32,
+        2406.35,
+        1.2246467991473532e-16,
+        1.0,
+        1.2246467991473532e-16,
+        -689.3625,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        69.85,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -20.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        25.4,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackFulcrumRivet2": {
+      "role": "rivet",
+      "owner": "StarboardTrackControlFulcrum",
+      "frame": [
+        -1.0,
+        1.2246467991473532e-16,
+        1.4997597826618576e-32,
+        2406.35,
+        1.2246467991473532e-16,
+        1.0,
+        1.2246467991473532e-16,
+        -730.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        69.85,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        20.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        25.4,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackFulcrumBracket": {
+      "role": "bracket",
+      "owner": "PortTrackControlFulcrum",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        2476.2,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        710.0,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackHorizontalLever": {
+      "role": "lever_track",
+      "owner": "PortTrackControlFulcrum",
+      "frame": [
+        -0.9156625933395612,
+        -0.4019477766559605,
+        -0.0,
+        2476.2,
+        0.4019477766559605,
+        -0.9156625933395612,
+        0.0,
+        710.0,
+        0.0,
+        -0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        0.915662593339561,
+        0.4019477766559604,
+        0.0,
+        0.0,
+        -0.4019477766559604,
+        0.915662593339561,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        9.525,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackFulcrumSpringWasher": {
+      "role": "washer",
+      "owner": "PortTrackControlFulcrum",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        2476.2,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        710.0,
+        0.0,
+        0.0,
+        1.0,
+        631.475,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        47.625,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackFulcrumCotter": {
+      "role": "cotter",
+      "owner": "PortTrackControlFulcrum",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        2476.2,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        710.0,
+        0.0,
+        0.0,
+        1.0,
+        636.1750000000001,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        52.324999999999996,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackFulcrumRivet1": {
+      "role": "rivet",
+      "owner": "PortTrackControlFulcrum",
+      "frame": [
+        -1.0,
+        1.2246467991473532e-16,
+        1.4997597826618576e-32,
+        2406.35,
+        1.2246467991473532e-16,
+        1.0,
+        1.2246467991473532e-16,
+        730.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        69.85,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -20.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        25.4,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackFulcrumRivet2": {
+      "role": "rivet",
+      "owner": "PortTrackControlFulcrum",
+      "frame": [
+        -1.0,
+        1.2246467991473532e-16,
+        1.4997597826618576e-32,
+        2406.35,
+        1.2246467991473532e-16,
+        1.0,
+        1.2246467991473532e-16,
+        689.3625,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        69.85,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        20.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        25.4,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowFulcrumBracket": {
+      "role": "bracket",
+      "owner": "StarboardLowControlFulcrum",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowHorizontalLever": {
+      "role": "lever_low_right",
+      "owner": "StarboardLowControlFulcrum",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        9.525,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowFulcrumSpringWasher": {
+      "role": "washer",
+      "owner": "StarboardLowControlFulcrum",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        631.475,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        47.625,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowFulcrumCotter": {
+      "role": "cotter",
+      "owner": "StarboardLowControlFulcrum",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        636.1750000000001,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        52.324999999999996,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowFulcrumRivet1": {
+      "role": "rivet",
+      "owner": "StarboardLowControlFulcrum",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.25,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -470.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        69.85,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -20.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        25.4,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowFulcrumRivet2": {
+      "role": "rivet",
+      "owner": "StarboardLowControlFulcrum",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.25,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -429.3625,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        69.85,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        20.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        25.4,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowFulcrumBracket": {
+      "role": "bracket",
+      "owner": "PortLowControlFulcrum",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowHorizontalLever": {
+      "role": "lever_low_left",
+      "owner": "PortLowControlFulcrum",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        9.525,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowFulcrumSpringWasher": {
+      "role": "washer",
+      "owner": "PortLowControlFulcrum",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        631.475,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        47.625,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowFulcrumCotter": {
+      "role": "cotter",
+      "owner": "PortLowControlFulcrum",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        636.1750000000001,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        52.324999999999996,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowFulcrumRivet1": {
+      "role": "rivet",
+      "owner": "PortLowControlFulcrum",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.25,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        429.3625,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        69.85,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -20.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        25.4,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowFulcrumRivet2": {
+      "role": "rivet",
+      "owner": "PortLowControlFulcrum",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.25,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        470.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        69.85,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        20.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        25.4,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "record_ids": {
+    "bracket": [
+      "SNL:36:017"
+    ],
+    "cotter": [
+      "SNL:36:018",
+      "SNL:141:016"
+    ],
+    "washer": [
+      "SNL:72:026",
+      "SNL:267:008"
+    ],
+    "rivet": [
+      "SNL:170:007"
+    ],
+    "channel": [
+      "SNL:63:010"
+    ],
+    "lever_track": [
+      "SNL:116:025",
+      "SNL:73:001"
+    ],
+    "lever_low_left": [
+      "SNL:117:027",
+      "SNL:73:002"
+    ],
+    "lever_low_right": [
+      "SNL:117:028",
+      "SNL:73:003"
+    ]
+  },
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/trial_rear_control_fulcrums.py": "7ad662575290455ac1727a3af73798e148c6ccb13fc25cbcd062585bba6c7bad",
+    "cad/003_FullTank/experiments/drive_chains/rear_control_fulcrum_parts.py": "64222d274069f436b187010ceabceadbf116c3a1958396093443e02aefc61221",
+    "cad/003_FullTank/experiments/drive_chains/rear_control_channel_mount_parts.py": "4d8eec7292a635e762f19c3c9c8224b875ac3397f5c26de1f1d63740749d4aae",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_installation_parts.py": "3aa0f82af289688b8453ac25dbe1c53bf84924880a0e03adb51328431a3eef7f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py": "97cb213e7707b3cce73b0bca7e5fa8b76345ff841e8fab767c3d16cf350a803e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_controls02.json": "84abce585858a741036691560d4bac0f23989c036043a165607f54fe1b6158cd",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_source_review02.json": "990dcd0bf89589279554c4e23810ec33cf73cb61a8f5412d9c396d24440effd0",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/sources.json": "708b68c68f9d489d9e5b7bf765fa6de0ef45da0f0156e5cb4b11d2b965091998",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_sources01/sources.json": "1795a5dad88e7f82c5568ddc263b0804df708ef40f538d6d8845265a7d20b4e1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01/qualification.json": "e9ccddb61ad9cc3058602b70e796b78072eb0c31bb8b84ac2ee4cb9659c2ed26"
+  },
+  "new_physical_occurrences": 24,
+  "prototype_physical_occurrences": 25,
+  "prototype_definition_count": 8,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}
