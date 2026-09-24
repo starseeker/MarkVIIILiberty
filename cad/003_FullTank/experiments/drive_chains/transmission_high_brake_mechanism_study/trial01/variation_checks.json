@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Only estimated installed spring height changed by 1 mm",
+      "passed": true
+    },
+    {
+      "name": "Printed joining-rivet stock and both washer bores fixed",
+      "passed": true
+    },
+    {
+      "name": "Physical quantities and definition identities retained",
+      "passed": true
+    },
+    {
+      "name": "All other occurrence frames fixed",
+      "passed": true
+    },
+    {
+      "name": "PortHighSpeedBrakeUpperSpringWasher follows spring end along the screw",
+      "passed": true
+    },
+    {
+      "name": "StarboardHighSpeedBrakeUpperSpringWasher follows spring end along the screw",
+      "passed": true
+    },
+    {
+      "name": "Only spring and paired lever seat material changes",
+      "passed": true,
+      "changed": [
+        "Def_HighBrakeMechanism_spring",
+        "Def_HighBrakeMechanism_lever_left",
+        "Def_HighBrakeMechanism_lever_right"
+      ]
+    }
+  ],
+  "native_sha256": "7f7eb9f687ed458d7bcfba599af6333be4899fb6477581ce2fd0075b01158b96",
+  "parameter_native_sha256": "eeab2806d41211e28dfd2c94bcf458e3843d1a8c371f4823c420a281f929d1bf",
+  "checker_sha256": "85890e8fc34e1a383eeef32abc5efc7d6d97bfe0cc8e2ce24113a3557d7f19c7",
+  "scope": "One estimated installed-height variation; both saved candidates independently pass static mechanism checks. Does not qualify operating motion or a general parameter range."
+}

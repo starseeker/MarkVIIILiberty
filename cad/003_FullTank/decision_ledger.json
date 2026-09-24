@@ -279,6 +279,48 @@
           "sha256": "72f9d9651281acd1fee2c7e3ad9bd027f18ad2769152ede3b0ed7700735a312e"
         }
       ]
+    },
+    {
+      "id": "high_speed_brake_operating_mechanism",
+      "status": "reviewed_approximation",
+      "scope": "Paired operating levers, source-counted rivets, free-end pin/cotter joints and spring adjustment; static interfaces, preservation, STEP, context, exact reproduction and installed-height sensitivity.",
+      "reason": "Original catalogue confirms counts, joining-rivet stock and washer bores; handbook establishes mechanism connections. Saved interfaces, material, STEP and sensitivity checks pass.",
+      "uncertainty": "Paired lever transverse section and rectangular integral saddle, M356/cotter stock, spring dimensions and manufactured head forms are inferred. Repeated source illustration does not independently constrain depth.",
+      "limits": [
+        "Paired lever member section and full-width rectangular integral screw saddle are inferred; B-spline curves approximate the illustrated silhouette.",
+        "Free-end pin and cotter stock, spring dimensions, nut form and screw shoulders are estimates.",
+        "Washer bore dimensions and joining-rivet stock are printed; washer outside diameters and thickness are estimates.",
+        "Thread interfaces use nominal cylindrical envelopes, without helices.",
+        "Static arrangement only; anchor supports, stops, control rods and complete service paths remain pending."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "basis": "Original SNL118/137/253/274, HB100/HB133 and handbook service sequence; SNLPlate30 repetition, three inspected native views and15 completed stages."
+      },
+      "reopen_when": [
+        "Identified lever, screw, pin or spring drawing establishes hidden section or dimensions.",
+        "Anchor supports, stops or control rods contradict current frames or service access.",
+        "Independent source evidence contradicts the member pairing, washer assignment or catalogue configuration."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/sources.json",
+          "sha256": "d912911d4967de05576c4426a984a27641ec9e4f1702c2fc5cfb2155567fbe25"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/controls.json",
+          "sha256": "f4c111394c6c39cead64ada2cb9bec9dc81574f6be561022aca78dadcb90b718"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/source_registration.json",
+          "sha256": "60b1e975285f50e159015e7d22d351516442ced93738f977e20c1313bd909d2c"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/qualification.json",
+          "sha256": "21751b00d4104642b76430ba13cf3512cbad47d283350744348571f1f68eaf75"
+        }
+      ]
     }
   ]
 }

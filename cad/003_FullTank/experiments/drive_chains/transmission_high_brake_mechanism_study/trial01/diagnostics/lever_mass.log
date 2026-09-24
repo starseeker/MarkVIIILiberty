@@ -1,0 +1,22 @@
+left native whole False
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/.work/high-brake-mechanism/probe_lever_mass.py", line 17, in <module>
+    measured=partition.measure(shape);row=dict(role=role,scope=scope,whole=initial,partitioned=measured);records.append(row);write(out/'results.json',records);print(role,scope,'partition',measured['converged'],measured['volume_convergence_mm3'],flush=True)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/partitioned_mass.py", line 60, in measure
+    for i in range(4):leaves+=interval(box.ZMin+box.ZLength*i/4,box.ZMin+box.ZLength*(i+1)/4,0)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/partitioned_mass.py", line 58, in interval
+    return interval(lo,mid,depth+1)+interval(mid,hi,depth+1)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/partitioned_mass.py", line 58, in interval
+    return interval(lo,mid,depth+1)+interval(mid,hi,depth+1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/partitioned_mass.py", line 58, in interval
+    return interval(lo,mid,depth+1)+interval(mid,hi,depth+1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 1 more time]
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/partitioned_mass.py", line 51, in interval
+    assert piece.isValid() and len(piece.Solids)==1 and piece.getTolerance(1)<=1e-4
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

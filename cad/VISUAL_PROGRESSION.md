@@ -1094,3 +1094,15 @@ Source registration is unchanged. Full high-speed controls/supports remain pendi
 | [intermediate_snapshot_detail_transmission_high_brake_front_trial_001.png](intermediate_snapshot_detail_transmission_high_brake_front_trial_001.png) | `087c8cac01e4d4785fe1a1e81845bf90f5e7deb0edb18b214d0d8aa1f4aeb851` |
 | [intermediate_snapshot_source_transmission_high_brake_front_trial_001.png](intermediate_snapshot_source_transmission_high_brake_front_trial_001.png) | `82e8544614c6e6f0cb2172db04709663b4520a9256d73bce2d48973541f36511` |
 | [intermediate_snapshot_section_transmission_high_brake_front_trial_001.png](intermediate_snapshot_section_transmission_high_brake_front_trial_001.png) | `0504636aba096e42c35fec6f9398aafc9860ede2483f53e5558b2b5a53873003` |
+
+
+## High-speed operating mechanisms — 24 September 2026
+
+Three inspected views bring progression to 211, preserving 208 earlier images.
+The source registration and standard tank011 remain unchanged.
+
+| View | SHA-256 |
+| --- | --- |
+| [intermediate_snapshot_iso_transmission_high_brake_mechanism_trial_001.png](intermediate_snapshot_iso_transmission_high_brake_mechanism_trial_001.png) | `60e1da1053f723677b6a223f4685dea90c88ed45e5570821fccdd6fe38465e2d` |
+| [intermediate_snapshot_detail_transmission_high_brake_mechanism_trial_001.png](intermediate_snapshot_detail_transmission_high_brake_mechanism_trial_001.png) | `45cb13e29422957b789a650ed6f3cbb7130f2eb953103b66e62f85c08c112762` |
+| [intermediate_snapshot_source_transmission_high_brake_mechanism_trial_001.png](intermediate_snapshot_source_transmission_high_brake_mechanism_trial_001.png) | `b7d9a7e81a29244e890ae5449f8deeca062f25db3d5a04acb1292ececae1cf39` |

@@ -1,0 +1,59 @@
+{
+  "local_static_checks_passed": true,
+  "native_sha256": "c34346d75ef3b69199867b390d97b88644da1d2566cd00579437b99e17707e20",
+  "source_native_sha256": "d6a48759522cde42e0444f810f892a56120d068aac59d4343a49ebd0212e95a2",
+  "checks": {
+    "independent_checks.json": "6df98de01183399c5b0434172127224c980e8a5de7c50b4c51926e581c16a284",
+    "material_checks.json": "c0751006debba8dde273cec3b3f87de463a6ea044a5cebac3aa258dffcb9a255",
+    "definition_preservation_checks.json": "740e1fa42ee06054a46b678f46a825efbd32835e4598c693ae3240447cdf76d2",
+    "exchange_checks.json": "417f82cead5d3bd91793fc907ff2bc0bd79a816907f20a9d413330c344413dc2",
+    "standard_context_checks.json": "2ce850f6f438de37ece72ec59ad79991eff9217c8e8f7a68e519ba201d7675bf",
+    "reproduction_checks.json": "5e55806ba973990f8d7a76d3f9e6483f3c51478023e887b0f1519845e92b3f7d",
+    "variation_checks.json": "e8903c317f7837e55c677cf6df506694ca0622a6ad0edb60e0701be97c7d8143",
+    "parameter_evidence/variation.json": "35e7415548a5bf438d6a2d91906226078c20f52ba1c01ae281fc00aeccff416c",
+    "parameter_evidence/independent_checks.json": "5038a57a670a56ba5a73dbc992fa1a3d61f0cc2b4ce24bd0d7e0f94ea68b67b2",
+    "parameter_evidence/material_checks.json": "05e3fdf40a23dd51e4c368209eaf2a64b89e3975ca146c1be3a56706449012c8",
+    "publication_checks.json": "a69c8491971949aa1f5862aa585b97db27e38e14732cbe6d99dff1a7135e5398",
+    "visual_review.json": "8458c7c770ec4e2de83675257af16fa7b56c5413fc314c921c394c33b47c506a",
+    "snapshot_preservation.json": "65c0a3b248de56d933cd59957151ac85621a19273b5aa6ea187edcfecab9507d",
+    "case_render_receipt.json": "353f0ccbcac91901cd1e79e894a24dcd608c79e1abc79994347170f37f258f63"
+  },
+  "step_hashes": {
+    "HighBrakeFrontDefinitions.step": "974e3829ea6cb69215e2df3e0194d8830fab25f3a9cd22b35a227ecec8fd5821",
+    "HighBrakeFrontInstallation.step": "a9bd761e09001a56c3b15edf3192a9fae5a520d85ca7ff11bbaee68991bb593c"
+  },
+  "counts": {
+    "physical_occurrences": 3091,
+    "definitions": 519,
+    "assemblies": 314,
+    "native_checks": 104,
+    "material_checks": 28,
+    "development_pairs": 504,
+    "retained_standard_context": 5316,
+    "nearby_standard_pairs": 1,
+    "step_comparisons": 71,
+    "unchanged_definitions": 507,
+    "exact_brep_preservation": 487,
+    "strict_material_preservation": 20,
+    "reproduced_archive_breps": 1585,
+    "reproduced_persistent_properties": 144937
+  },
+  "pipeline_run": "high_brake_front01",
+  "all_16_stages_passed": true,
+  "scope": "Forward fittings, catalogue lining hardware, bounded backing/anchor/case changes, whole lining support with explicit exceptions, preservation, STEP, context, exact reproduction and forward-stock sensitivity.",
+  "disposition": "Reviewed local approximation for continued development; standard integration remains a separate gate.",
+  "open_issues": [
+    "Forward fitting shape, fork width, pin bores and fastener head forms are estimates.",
+    "Source rivet stock-length datum remains uncertain; formed tails conserve the selected under-head stock model.",
+    "Brass screw threads represented by nominal shank and receiving bore, without helices.",
+    "M356 pins/cotters, lever members, adjustment, anchor supports and stops remain to populate.",
+    "M263 rear bridge clearance is an interface-driven estimate; casting shape and strength are not recovered from the source.",
+    "Centered printed lining stock overhangs the image-derived drum by0.589643mm per edge. Full support is verified within the drum width; backing contact excludes the three steel-head recesses per band.",
+    "SNL continuous lining composition differs from HB six-segment nomenclature.",
+    "Inherited brake-stop identity, transverse architecture and complete service/control paths remain conditional."
+  ],
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "packet_complete": false
+}

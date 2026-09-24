@@ -11,6 +11,24 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — high-speed operating mechanisms
+
+The [mechanism checkpoint](experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/README.md)
+adds 30 parts: paired M355 lever members and joining rivets, four retained M356
+pin joints, and both screw/spring/washer adjustment units. Development now has
+**3,121 physical occurrences /529 definitions /322 assemblies**.
+
+All 15 stages pass: 61 component checks, 98 development pairs, 519 preserved
+definitions, 40 STEP comparisons, retained standard context, exact reproduction
+and a 1 mm installed spring-height sensitivity. The curved profiles retain B-spline
+boundaries. Hidden saddle/member sections and unprinted stock remain estimates;
+failed pin envelopes and the circular-saddle tolerance diagnostic are retained.
+
+Three inspected views bring progression to **211 images**, preserving all 208
+previous views. The handbook registration is reused. Anchor supports, high-speed
+stops and control rods remain; standard tank011 is unchanged and the full tank
+goal remains active.
+
 ## 24 September 2026 — high-speed forward fittings and lining hardware
 
 The [forward checkpoint](experiments/drive_chains/transmission_high_brake_front_study/trial01/README.md)

@@ -1,0 +1,14 @@
+build: running
+build: passed
+extract: running
+extract: passed
+check: running
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/pipeline.py", line 382, in <module>
+    main()
+  File "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/pipeline.py", line 370, in main
+    print(json.dumps(run(a.plan, a.id), indent=2))
+                     ^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/pipeline.py", line 335, in run
+    raise ValueError('Stage '+name+' failed; see '+record['log'])
+ValueError: Stage check failed; see /home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_mechanism01/records/check/attempt_001/run.log

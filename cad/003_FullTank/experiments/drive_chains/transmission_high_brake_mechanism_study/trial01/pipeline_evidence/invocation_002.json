@@ -1,0 +1,43 @@
+{
+  "current_stage": "exchange",
+  "error": "Stage exchange failed; see /home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_mechanism02/records/exchange/attempt_001/run.log",
+  "metrics": {
+    "executed": 2,
+    "execution_seconds": 313.9251116809901,
+    "failures": 1,
+    "model_invocations": 0,
+    "orchestrating_assistant_usage": "not measured by deterministic runner",
+    "reused": 4,
+    "reused_prior_execution_seconds": 63.64578631805489
+  },
+  "plan": "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/plans/high_brake_mechanism_development.json",
+  "plan_sha256": "52818d0bf7596cbeb5aca5330283b5ef40e0f690a97b89d72495ce0e5925b12b",
+  "stages": [
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_mechanism02/records/build/latest.json",
+      "id": "build",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_mechanism02/records/extract/latest.json",
+      "id": "extract",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_mechanism02/records/check/latest.json",
+      "id": "check",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_mechanism02/records/render/latest.json",
+      "id": "render",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_mechanism02/records/preserve/latest.json",
+      "id": "preserve",
+      "status": "passed"
+    }
+  ],
+  "status": "failed"
+}

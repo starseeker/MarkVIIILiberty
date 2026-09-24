@@ -181,6 +181,18 @@ includes analytic controls and missing, duplicate and displaced-section negative
 `lib/partitioned_mass.py` implements the tested measurement option. This is an
 explicit diagnostic alternative, not a reason to partition every shape.
 
+For trimmed B-spline faces, also consider span-aware Gauss–Kronrod integration
+after diagnosing a Gauss convergence failure. On the same runtime, the high-speed
+lever's whole-face Gauss results differed by about 2.50 mm³ between requested
+precisions despite small reported errors. Z partitioning failed at a measurement
+slice. `lib/kronrod_mass.py` uses `VolumePropertiesGK` with face spans and the
+unchanged convergence predicates. Native/STEP levers then passed; independent
+box, annular and exact quadratic B-spline prism controls, including rigid
+transforms, agreed with known volumes and centroids. Keep the failed measurements,
+check actual convergence and preserve separate material/tolerance tests. This
+changes measurement, not geometry, and is not a blanket replacement integrator.
+See the [lever diagnostics](../../../cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/diagnostics/README.md).
+
 Treat kernel bounding boxes as enclosures, not guaranteed exact size measurements.
 On this runtime, a retained cross-drilled stud reports a 19.058984 mm bounding-box
 width, while its axial cylinder faces have radius 9.525 mm and no material lies

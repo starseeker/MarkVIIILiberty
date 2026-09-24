@@ -1,0 +1,42 @@
+{
+  "source_sha256": "e8e4c7c4f84e37a9074cd72de755224b37c408aee318aae619306eef165ff385",
+  "binary_sha256": "7562cb93bf6e7e7bd7fc0bd54fcb93e9404b27c5cb7fae8b740ae273d0d4d27c",
+  "compile_command": [
+    "g++",
+    "-std=c++17",
+    "-O2",
+    "-I/snap/freecad/2741/usr/include/opencascade",
+    "/home/cyapp/MarkVIIILiberty/.work/high-brake-mechanism/lever_gk/mass_probe.cpp",
+    "-L/snap/freecad/2741/usr/lib",
+    "-lTKTopAlgo",
+    "-lTKBRep",
+    "-lTKG3d",
+    "-lTKMath",
+    "-lTKernel",
+    "-o",
+    "/home/cyapp/MarkVIIILiberty/.work/high-brake-mechanism/lever_gk/probe"
+  ],
+  "adaptive": {
+    "adapter_sha256": "8f92c1d73aafda1f53d5c130e783d0939a8688964b97b8814bcace080ab8d7d7",
+    "source_sha256": "320bbdb62b127d9476ad743e553a5bdaa63c46b7294008b34a310040d9a4984f",
+    "binary_sha256": "3f0fd07070cc2be22943b945db3f6e4c71b3ea0789f370dddb9d4e21fc6bc722",
+    "runtime_root": "/snap/freecad/2741",
+    "compile_command": [
+      "g++",
+      "-std=c++17",
+      "-O2",
+      "-I/snap/freecad/2741/usr/include/opencascade",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/occt_mass_properties.cpp",
+      "-L/snap/freecad/2741/usr/lib",
+      "-lTKTopAlgo",
+      "-lTKBRep",
+      "-lTKG3d",
+      "-lTKMath",
+      "-lTKernel",
+      "-o",
+      "/home/cyapp/MarkVIIILiberty/.work/high-brake-mechanism/lever_gk/mass/occt_mass_properties"
+    ],
+    "header_sha256": "a1d5c195f2234cbdc748ebbdd4af499d59e4b96ea235cde9ba74878e5d7d3056",
+    "library_sha256": "e484214d874d21b7dfdcb44d20d903a9c213e0d96f68c459ecb7e5369a32ef04"
+  }
+}

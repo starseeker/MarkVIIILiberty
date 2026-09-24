@@ -5,21 +5,21 @@
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
   "accepted_development_parent": "front-brake checkpoint 169c3da",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/trial01",
-  "latest_native_sha256": "c34346d75ef3b69199867b390d97b88644da1d2566cd00579437b99e17707e20",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/trial01/qualification.json",
-  "current_pipeline_run": "high_brake_front01",
-  "pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/trial01/pipeline_evidence",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01",
+  "latest_native_sha256": "7f7eb9f687ed458d7bcfba599af6333be4899fb6477581ce2fd0075b01158b96",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/qualification.json",
+  "current_pipeline_run": "high_brake_mechanism02",
+  "pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/pipeline_evidence",
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
-    "python3 tools/cad_pipeline/pipeline.py status high_brake_front01",
-    "python3 tools/cad_pipeline/pipeline.py verify high_brake_front01",
+    "python3 tools/cad_pipeline/pipeline.py status high_brake_mechanism02",
+    "python3 tools/cad_pipeline/pipeline.py verify high_brake_mechanism02",
     "python3 tools/cad_pipeline/decisions.py cad/003_FullTank/decision_ledger.json"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Populate M356 free-end pins/cotters, paired M355A/B levers with four rivets each, adjustment, M362/M363 anchor supports and high-speed stops. Then controls, frame/hull joints, engine/interiors, inventory reconciliation and full standard integration; poses remain deferred.",
+  "next_action": "Populate M362/M363 high-speed anchor supports and M365 clips and M366/M398/M399 stops with their hardware. Then control rods, frame/hull joints, engine/interior population, inventory reconciliation and full standard integration; poses remain deferred.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -29,14 +29,15 @@
     "SH687A stock interpretation, bore and installed side remain documented approximations",
     "High-speed backing stock/clocking and long-hole pattern estimated",
     "High-speed lining variant: HB six M364 versus SNL two MX109 plus two M364",
-    "Forward fittings, rear anchor extension and case bridge relief are estimated; lining support has documented recess/overhang exceptions; complete high-speed mechanism remains open."
+    "Forward fittings, rear anchor extension and case bridge relief are estimated; lining support has documented recess/overhang exceptions; complete high-speed mechanism remains open.",
+    "High-speed operating lever/saddle, M356 pin/cotter stock and spring sections are inferred; anchor supports, stops, control rods and service paths remain pending."
   ],
-  "visual_progression_count": 208,
-  "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/README.md",
+  "visual_progression_count": 211,
+  "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/README.md",
   "latest_locally_qualified_checkpoint": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/trial01",
-    "native_sha256": "c34346d75ef3b69199867b390d97b88644da1d2566cd00579437b99e17707e20",
-    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/trial01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01",
+    "native_sha256": "7f7eb9f687ed458d7bcfba599af6333be4899fb6477581ce2fd0075b01158b96",
+    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/qualification.json"
   },
-  "qualification_scope": "Forward fittings, catalogue lining hardware, bounded backing/anchor/case changes, whole lining support with explicit exceptions, preservation, STEP, context, exact reproduction and forward-stock sensitivity."
+  "qualification_scope": "Paired operating levers, source-counted rivets, free-end pin/cotter joints and spring adjustment; static interfaces, preservation, STEP, context, exact reproduction and installed-height sensitivity."
 }

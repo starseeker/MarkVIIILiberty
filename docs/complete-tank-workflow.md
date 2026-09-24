@@ -270,6 +270,13 @@ New unrelated geometry uses the existing camera. Reassess holdouts and explicitl
 review changed anchors, source pixels or conflicting evidence before refitting;
 retain old fits and before/after residuals. Do not use camera freedom to conceal
 geometry disagreement. Standard progression views keep their established cameras.
+Reverification is separate from refitting: new depth information from a populated
+subassembly or stronger evidence for an estimated anchor triggers a targeted
+review of the affected figure. Introduce new check features as holdouts first.
+Compare candidate and previous cameras on the same current geometry before
+adopting a change, preserving source interpretation and landmark reasoning as well
+as the numerical fit. See the source-camera workflow's review cadence and
+diagnostic guidance; routine detail additions do not reopen every camera.
 
 A documented approximation is complete **within its recorded scope** once its
 source review, interfaces, uncertainty, limitations and applicable checks are

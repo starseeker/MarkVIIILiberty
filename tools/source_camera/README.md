@@ -30,6 +30,33 @@ fit coordinates/picks/uncertainties, assumptions, fitter code and numerical libr
 versions. It excludes unrelated geometry and holdouts. Every reuse reassesses the
 current holdouts. Camera changes never mutate CAD geometry.
 
+### When to reverify
+
+Reverification and refitting are separate decisions. Reuse the saved camera for
+routine detail additions. When producing a source comparison, resolve the current
+CAD anchors and reassess holdouts before interpreting the overlay. Review the
+projection hypothesis again when a newly populated subassembly supplies useful
+depth information, a previously estimated anchor gains better dimensional
+evidence, or a new source contradicts the existing interpretation. These events
+call for targeted checks, not an automatic new fit or a reread of every figure.
+Preserve the source classification, landmark identities, uncertainty rationale
+and unresolved ambiguities alongside the numerical camera.
+
+Inspect where discrepancies occur. A disagreement confined to one uncertain
+component first calls for checking that component and its image picks. A coherent
+pattern across several independently supported parts is a reason to investigate
+camera/projection or scan assumptions. Neither pattern proves its cause; mixed
+illustrations and local scan distortion may not admit a single camera. Add useful
+new features as holdouts first, retaining the existing fitting/checking roles.
+
+Before adopting a refit, record the evidence that warrants revising the old hypothesis
+and compare both cameras against the same current geometry and independent check
+features. Preserve the previous assessments as well. A smaller fitting error is
+insufficient if it merely compensates for estimated geometry or worsens agreement
+with established parts. Revisit only the affected source views; standard
+progression cameras remain fixed. Routine evidence review belongs to the modeling
+workflow and does not require another user approval.
+
 A packet needs `source_image`, `source_sha256`, `image_size_px: [width,height]`,
 `projection`, and `landmarks`. Each landmark has a unique `id`, `use: fit|holdout`,
 `world_mm: [x,y,z]`, `pixel: [u,v]`, and positive `sigma_px`. Use original decoded

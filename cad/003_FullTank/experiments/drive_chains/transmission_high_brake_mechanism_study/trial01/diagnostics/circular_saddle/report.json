@@ -1,0 +1,1437 @@
+{
+  "native_file": "PowertrainWithHighBrakeMechanism.FCStd",
+  "native_sha256": "6f15735723e90abeb6c4491f38c6c289add728546875ca683d9b446bdc612777",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/trial01/PowertrainWithHighBrakeFront.FCStd",
+  "source_native_sha256": "c34346d75ef3b69199867b390d97b88644da1d2566cd00579437b99e17707e20",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_transmission_high_brake_mechanism.py": "bfdd997bb4376dec149f59b41b2f520455dc359e2cb2c7c36e60e41bcf0e7b33",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py": "d29c6b065009e36257bb54dbcf7fc9c1a49950e9e092194b9549b0a03069aa77",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_band_parts.py": "c68c3c8d379580346d63caaec0a07266fa9dc4a51a7a4e22c7b06d8dcbb15136",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_front_parts.py": "73352d879f26d00e4f9cfb430ba56bc4119810b5dfae2c929183a1afc631394e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_core_parts.py": "b7b3150e42529535f842871e81c4c580a15b25ce123e997da3ef5437041d7ff1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py": "97cb213e7707b3cce73b0bca7e5fa8b76345ff841e8fab767c3d16cf350a803e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_parts.py": "a0ef001b84b6593093fa1ffe1aff650a2253646e0facba5610a7d4600a0da228",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/trial01/isolated/manifest.json": "a5484e9f20741bc4dd7cb197cf5a8bd5de556c44bb5d4b30e103209125a2eec5",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/trial01/qualification.json": "72f9d9651281acd1fee2c7e3ad9bd027f18ad2769152ede3b0ed7700735a312e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/trial01/report.json": "e5019c78b0ecf54b5dea7af1cb98e430d41c94a0491704118f2b7fe2ef0596b3",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_parts.py": "021190851214baef2c90ca1b2266d1604b5ba4a2e943a5691663855a16e7d0a9",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/controls.json": "c3d1ac148da009c8171705d254318ac2f425b919bbdf45bb8d7edee4911fc6ab",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/sources.json": "0c8a9c11d51855cb62d9df1e76746e50dedcbfa404b576776cd2234fdd6d8654",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_installation_parts.py": "3aa0f82af289688b8453ac25dbe1c53bf84924880a0e03adb51328431a3eef7f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_parts.py": "35c677472dad5a90701bedbd6c06b3fb01f2b0fda494efc00be48a64db35d3a6",
+    "cad/003_FullTank/experiments/drive_chains/transmission_output_parts.py": "f5733f343308c7a7179cc6273b0c62162ba2b84ee09eeb6f68a31e31ebc2ed20",
+    "cad/003_FullTank/experiments/drive_chains/transmission_stud_parts.py": "cdeda621c79bf68a95f3cb03f173e60c75a66f2d63331c0e334418840f6fd3bb",
+    "cad/003_FullTank/experiments/drive_chains/transmission_support_parts.py": "378d460b581c26154940ced9b9f4a8d8ca514fb97b05f24a2ac13c8c8b595405",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b"
+  },
+  "controls": {
+    "pin_diameter": 15.875,
+    "pin_bore_clearance": 0.15,
+    "pin_head_radius": 11.1125,
+    "pin_head_stock": 3.96875,
+    "pin_axial_clearance": 0.25,
+    "cotter_station_overhang": 1.4,
+    "pin_end_beyond_cotter": 3.96875,
+    "cotter_diameter": 4.7625,
+    "cotter_length": 31.75,
+    "cotter_hole_clearance": 0.15,
+    "cotter_center_spacing": 2.4765,
+    "crown_radius": 7.9375,
+    "cotter_head_gap": 0.8,
+    "cotter_exit_gap": 0.8,
+    "cotter_bend_radius": 2.38125,
+    "cotter_bend_angle": 35,
+    "cotter_eye_radius": 3.175,
+    "cotter_eye_rise": 2.38125,
+    "cotter_eye_join_overlap": 0.03,
+    "lever_width": 25.4,
+    "lever_eye_radius": 14.2875,
+    "lever_end_center": [
+      238.45,
+      0,
+      -293.675
+    ],
+    "lever_end_radius": 14.2875,
+    "lever_end_bore_radius": 8.0875,
+    "lever_outer_curve_xz": [
+      [
+        213.0,
+        63.2875
+      ],
+      [
+        245,
+        63.5
+      ],
+      [
+        263,
+        63.5
+      ],
+      [
+        287,
+        52
+      ],
+      [
+        309,
+        33
+      ],
+      [
+        320,
+        10
+      ],
+      [
+        322,
+        -10
+      ]
+    ],
+    "lever_inner_curve_xz": [
+      [
+        287,
+        -5
+      ],
+      [
+        283,
+        1
+      ],
+      [
+        271,
+        8
+      ],
+      [
+        251,
+        18
+      ],
+      [
+        234,
+        26
+      ],
+      [
+        213,
+        34.7125
+      ]
+    ],
+    "lever_rivet_centers_xz": [
+      [
+        237.35,
+        47.625
+      ],
+      [
+        292.1,
+        22.225
+      ],
+      [
+        285.75,
+        -86.0425
+      ],
+      [
+        244.475,
+        -266.7
+      ]
+    ],
+    "rivet_diameter": 9.525,
+    "rivet_stock_length": 34.925,
+    "rivet_hole_clearance": 0.15,
+    "rivet_head_radius": 9.525,
+    "rivet_head_height": 4.7625,
+    "rivet_tail_radius": 9.525,
+    "screw_axis_angle_deg": 31.0,
+    "screw_radius": 7.9375,
+    "screw_guide_radius": 9.525,
+    "screw_length": 177.8,
+    "screw_eye_radius": 14.2875,
+    "screw_shoulder_radius": 14.2875,
+    "screw_shoulder_distance": 25.4,
+    "screw_shoulder_stock": 3.175,
+    "screw_guide_above_lower_washer": 6.35,
+    "washer_a_bore_diameter": 17.4625,
+    "washer_b_bore_diameter": 20.6375,
+    "washer_outer_radius": 15.875,
+    "washer_stock": 3.175,
+    "spring_installed_height": 50.8,
+    "spring_wire_radius": 1.5875,
+    "spring_mean_radius": 12.7,
+    "spring_turns": 6,
+    "lever_upper_seat_distance": 133.35,
+    "lever_bearing_radius": 12.7,
+    "lever_screw_bore_radius": 8.2375,
+    "nut_neck_radius": 12.7,
+    "nut_neck_length": 19.05,
+    "nut_wing_length": 76.2,
+    "nut_wing_width": 15.875,
+    "nut_wing_stock": 9.525,
+    "nut_hex_af": 22.225,
+    "nut_hex_stock": 9.525,
+    "thread_bore_clearance": 0.15
+  },
+  "front_controls": {
+    "foot_stock": 12.7,
+    "foot_length": 110.0,
+    "pin_x": 213.0,
+    "upper_pin_z": 49.0,
+    "lower_pin_z": -53.975,
+    "pin_bore_radius": 8.0875,
+    "lug_outer_radius": 14.2875,
+    "lug_stock": 9.525,
+    "fork_gap": 25.9,
+    "receiver_width": 25.4,
+    "receiver_eye_radius": 14.2875,
+    "receiver_radial_clearance": 0.25,
+    "web_width": 19.05,
+    "web_station": 38.1,
+    "steel_shank_diameter": 7.9375,
+    "steel_hole_clearance": 0.15,
+    "steel_stock_length": 28.575,
+    "steel_head_radius": 6.35,
+    "steel_head_recess": 0.5,
+    "steel_countersink_angle_deg": 90.0,
+    "steel_tail_radius": 7.9375,
+    "steel_tail_spotface": 0.4,
+    "steel_stations": [
+      48.0,
+      72.0,
+      96.0
+    ],
+    "steel_axial": [
+      12.7,
+      0.0,
+      -12.7
+    ],
+    "lining_rivet_shank_diameter": 6.35,
+    "lining_head_recess": 0.5,
+    "lining_tail_spotface": 0.4,
+    "lining_tail_radius": 7.9375,
+    "rear_anchor_end_deg": 261.0,
+    "brass_screw_diameter": 6.35,
+    "brass_screw_length": 19.05,
+    "brass_slot_width": 1.4,
+    "brass_slot_depth": 1.25,
+    "case_clearance_radius": 208.0,
+    "case_axial_margin": 1.0,
+    "case_relief_x_min": -225.0,
+    "case_relief_x_max": -190.0,
+    "case_relief_half_height": 37.0
+  },
+  "band_controls": {
+    "inner_radius": 190.5,
+    "lining_stock": 6.35,
+    "width": 47.625,
+    "short_flat_length": 346.075,
+    "long_flat_length": 695.325,
+    "hole_diameter": 7.14375,
+    "end_margin": 38.1,
+    "hole_pitch": 53.975,
+    "edge_margin": 12.7,
+    "straight_bore_depth": 3.175,
+    "countersink_included_angle_deg": 70,
+    "steel_stock": 2.38125,
+    "steel_hole_radius": 3.325,
+    "steel_terminal_margin": 2.0,
+    "joint_clock_deg": 246.0,
+    "joint_lining_gap": 4.0,
+    "axial_outboard_shift": 0.0
+  },
+  "interfaces": {
+    "PortHighSpeedBrake": {
+      "receiver": "PortTransmissionCore_high_drum",
+      "drum_station_mm": 222.25,
+      "center_world_mm": [
+        1831.4946420457636,
+        222.25,
+        900.6029411764705
+      ],
+      "axial_outboard_shift_mm": 0.0,
+      "drum_face_bounds_mm": [
+        199.02714285714285,
+        245.47285714285715
+      ]
+    },
+    "StarboardHighSpeedBrake": {
+      "receiver": "StarboardTransmissionCore_high_drum",
+      "drum_station_mm": 222.25,
+      "center_world_mm": [
+        1831.4946420457636,
+        -222.25000000000006,
+        900.6029411764705
+      ],
+      "axial_outboard_shift_mm": 0.0,
+      "drum_face_bounds_mm": [
+        199.02714285714285,
+        245.47285714285715
+      ]
+    }
+  },
+  "details": {
+    "upper_pin_mm": [
+      213.0,
+      0.0,
+      49.0
+    ],
+    "lower_pin_mm": [
+      213.0,
+      0.0,
+      -53.975
+    ],
+    "pin_head_seat_y_mm": -24.0625,
+    "pin_tip_y_mm": 29.18125,
+    "cotter_station_y_mm": 25.2125,
+    "fork_outer_width_mm": 44.95,
+    "pin_joint_envelope_width_mm": 47.625,
+    "screw_frame": [
+      0.8571673007021122,
+      0.0,
+      0.5150380749100543,
+      213.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      -0.5150380749100543,
+      0.0,
+      0.8571673007021122,
+      -53.975,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "washer_b_distance_mm": 25.4,
+    "spring_base_distance_mm": 28.575,
+    "washer_a_distance_mm": 79.375,
+    "lever_lower_seat_distance_mm": 82.55,
+    "lever_upper_seat_distance_mm": 133.35,
+    "screw_guide_end_mm": 34.925,
+    "cotter": {
+      "straight_length_mm": 17.475,
+      "bend_arc_length_mm": 1.454622848459024,
+      "tail_length_mm": 12.820377151540974,
+      "total_leg_centerline_mm": 31.75,
+      "tail_endpoints": [
+        [
+          0.0,
+          20.6051670413016,
+          -9.022360433794086
+        ],
+        [
+          0.0,
+          20.6051670413016,
+          9.022360433794086
+        ]
+      ],
+      "wire_radius_mm": 1.143,
+      "under_eye_y_mm": -8.7375,
+      "bend_start_y_mm": 8.7375,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "spring": {
+      "installed_height_mm": 50.8,
+      "pitch_mm": 7.9375,
+      "mean_radius_mm": 12.7,
+      "wire_radius_mm": 1.5875,
+      "generated_centerline_length_mm": 521.2366973193681,
+      "ends": "Planar ground ends cut from extended helix; source section/turn count estimated."
+    },
+    "rivet": {
+      "grip_mm": 25.4,
+      "tail_height_mm": 4.440750490250116,
+      "tail_volume_mm3": 678.7109163380154
+    },
+    "lever_curves": {
+      "outer": {
+        "degree": 3,
+        "poles_mm": [
+          [
+            213.0,
+            -12.7,
+            63.2875
+          ],
+          [
+            223.1761345048046,
+            -12.7,
+            61.27545354057361
+          ],
+          [
+            240.28279815623517,
+            -12.700000000000001,
+            63.20065087121581
+          ],
+          [
+            266.22204392215565,
+            -12.699999999999998,
+            65.25377460259735
+          ],
+          [
+            288.0647770793245,
+            -12.7,
+            51.77701797657313
+          ],
+          [
+            309.98038778861604,
+            -12.700000000000001,
+            35.48564769959069
+          ],
+          [
+            320.75925079020055,
+            -12.699999999999998,
+            11.975400575254838
+          ],
+          [
+            322.4221100049577,
+            -12.7,
+            -3.265927608837318
+          ],
+          [
+            322.0,
+            -12.7,
+            -10.0
+          ]
+        ],
+        "knots": [
+          0.0,
+          32.00070555862792,
+          50.00070555862792,
+          76.61367232297044,
+          105.68255603046771,
+          131.17765359843162,
+          151.2774048406734
+        ],
+        "multiplicities": [
+          4,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ]
+      },
+      "inner": {
+        "degree": 3,
+        "poles_mm": [
+          [
+            287.0,
+            -12.7,
+            -5.0
+          ],
+          [
+            286.0366718180689,
+            -12.7,
+            -2.612727344797175
+          ],
+          [
+            282.07539850479986,
+            -12.699999999999998,
+            3.1781762480405495
+          ],
+          [
+            268.1041673494356,
+            -12.700000000000001,
+            9.02309755897393
+          ],
+          [
+            252.2083031648487,
+            -12.7,
+            17.620914071825368
+          ],
+          [
+            232.83003957301582,
+            -12.700000000000003,
+            26.659281396284754
+          ],
+          [
+            220.10072590060628,
+            -12.7,
+            32.04162294899833
+          ],
+          [
+            213.0,
+            -12.7,
+            34.7125
+          ]
+        ],
+        "knots": [
+          0.0,
+          7.211102550927978,
+          21.10354654037778,
+          43.46422631537568,
+          62.252520543431615,
+          84.98812381781164
+        ],
+        "multiplicities": [
+          4,
+          1,
+          1,
+          1,
+          1,
+          4
+        ]
+      }
+    },
+    "limits": [
+      "Paired lever member section and integral bearing bosses are inferred; B-spline curves approximate the illustrated silhouette.",
+      "Free-end pin and cotter stock, spring dimensions, nut form and screw shoulders are estimates.",
+      "Washer bore dimensions and joining-rivet stock are printed; washer outside diameters and thickness are estimates.",
+      "Thread interfaces use nominal cylindrical envelopes, without helices.",
+      "Static arrangement only; anchor supports, stops, control rods and complete service paths remain pending."
+    ]
+  },
+  "expected_new_occurrences": {
+    "PortHighSpeedBrakeLeverLeft": {
+      "definition": "Def_HighBrakeMechanism_lever_left",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeLeverRight": {
+      "definition": "Def_HighBrakeMechanism_lever_right",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeLeverRivet1": {
+      "definition": "Def_HighBrakeMechanism_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2068.8446420457635,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        948.2279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeLeverRivet2": {
+      "definition": "Def_HighBrakeMechanism_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2123.5946420457635,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        922.8279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeLeverRivet3": {
+      "definition": "Def_HighBrakeMechanism_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2117.2446420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        814.5604411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeLeverRivet4": {
+      "definition": "Def_HighBrakeMechanism_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2075.9696420457635,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        633.9029411764704,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeAdjustingScrew": {
+      "definition": "Def_HighBrakeMechanism_screw",
+      "frame": [
+        0.8571673007021122,
+        0.0,
+        0.5150380749100544,
+        2044.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.5150380749100544,
+        0.0,
+        0.8571673007021122,
+        846.6279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeAdjustingAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeLowerSpringWasher": {
+      "definition": "Def_HighBrakeMechanism_washer_b",
+      "frame": [
+        0.8571673007021122,
+        0.0,
+        0.5150380749100544,
+        2057.576609148479,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.5150380749100544,
+        0.0,
+        0.8571673007021122,
+        868.3999906143041,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeAdjustingAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeAdjustingSpring": {
+      "definition": "Def_HighBrakeMechanism_spring",
+      "frame": [
+        0.8571673007021122,
+        0.0,
+        0.5150380749100544,
+        2059.2118550363184,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.5150380749100544,
+        0.0,
+        0.8571673007021122,
+        871.1214967940333,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeAdjustingAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeUpperSpringWasher": {
+      "definition": "Def_HighBrakeMechanism_washer_a",
+      "frame": [
+        0.8571673007021122,
+        0.0,
+        0.5150380749100544,
+        2085.3757892417493,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.5150380749100544,
+        0.0,
+        0.8571673007021122,
+        914.6655956697007,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeAdjustingAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeAdjustingNut": {
+      "definition": "Def_HighBrakeMechanism_nut",
+      "frame": [
+        0.8571673007021122,
+        0.0,
+        0.5150380749100544,
+        2113.1749693350193,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.5150380749100544,
+        0.0,
+        0.8571673007021122,
+        960.9312007250971,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeAdjustingAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeUpperFreeEndPin": {
+      "definition": "Def_HighBrakeMechanism_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2044.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        949.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeUpperPinJoint"
+      ]
+    },
+    "PortHighSpeedBrakeUpperFreeEndCotter": {
+      "definition": "Def_HighBrakeMechanism_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2044.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        247.4625,
+        0.0,
+        0.0,
+        1.0,
+        949.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeUpperPinJoint"
+      ]
+    },
+    "PortHighSpeedBrakeLowerFreeEndPin": {
+      "definition": "Def_HighBrakeMechanism_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2044.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        846.6279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeLowerPinJoint"
+      ]
+    },
+    "PortHighSpeedBrakeLowerFreeEndCotter": {
+      "definition": "Def_HighBrakeMechanism_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2044.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        247.4625,
+        0.0,
+        0.0,
+        1.0,
+        846.6279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeLowerPinJoint"
+      ]
+    },
+    "StarboardHighSpeedBrakeLeverLeft": {
+      "definition": "Def_HighBrakeMechanism_lever_left",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeLeverRight": {
+      "definition": "Def_HighBrakeMechanism_lever_right",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeLeverRivet1": {
+      "definition": "Def_HighBrakeMechanism_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2068.8446420457635,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        948.2279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeLeverRivet2": {
+      "definition": "Def_HighBrakeMechanism_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2123.5946420457635,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        922.8279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeLeverRivet3": {
+      "definition": "Def_HighBrakeMechanism_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2117.2446420457636,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        814.5604411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeLeverRivet4": {
+      "definition": "Def_HighBrakeMechanism_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2075.9696420457635,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        633.9029411764704,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeAdjustingScrew": {
+      "definition": "Def_HighBrakeMechanism_screw",
+      "frame": [
+        0.8571673007021122,
+        0.0,
+        0.5150380749100544,
+        2044.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        -0.5150380749100544,
+        0.0,
+        0.8571673007021122,
+        846.6279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeAdjustingAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeLowerSpringWasher": {
+      "definition": "Def_HighBrakeMechanism_washer_b",
+      "frame": [
+        0.8571673007021122,
+        0.0,
+        0.5150380749100544,
+        2057.576609148479,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        -0.5150380749100544,
+        0.0,
+        0.8571673007021122,
+        868.3999906143041,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeAdjustingAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeAdjustingSpring": {
+      "definition": "Def_HighBrakeMechanism_spring",
+      "frame": [
+        0.8571673007021122,
+        0.0,
+        0.5150380749100544,
+        2059.2118550363184,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        -0.5150380749100544,
+        0.0,
+        0.8571673007021122,
+        871.1214967940333,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeAdjustingAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeUpperSpringWasher": {
+      "definition": "Def_HighBrakeMechanism_washer_a",
+      "frame": [
+        0.8571673007021122,
+        0.0,
+        0.5150380749100544,
+        2085.3757892417493,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        -0.5150380749100544,
+        0.0,
+        0.8571673007021122,
+        914.6655956697007,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeAdjustingAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeAdjustingNut": {
+      "definition": "Def_HighBrakeMechanism_nut",
+      "frame": [
+        0.8571673007021122,
+        0.0,
+        0.5150380749100544,
+        2113.1749693350193,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        -0.5150380749100544,
+        0.0,
+        0.8571673007021122,
+        960.9312007250971,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeAdjustingAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeUpperFreeEndPin": {
+      "definition": "Def_HighBrakeMechanism_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2044.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -222.25000000000006,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        949.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeUpperPinJoint"
+      ]
+    },
+    "StarboardHighSpeedBrakeUpperFreeEndCotter": {
+      "definition": "Def_HighBrakeMechanism_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2044.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -247.46250000000006,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        949.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeUpperPinJoint"
+      ]
+    },
+    "StarboardHighSpeedBrakeLowerFreeEndPin": {
+      "definition": "Def_HighBrakeMechanism_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2044.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -222.25000000000006,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        846.6279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeLowerPinJoint"
+      ]
+    },
+    "StarboardHighSpeedBrakeLowerFreeEndCotter": {
+      "definition": "Def_HighBrakeMechanism_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2044.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -247.46250000000006,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        846.6279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeLowerPinJoint"
+      ]
+    }
+  },
+  "new_assemblies": [
+    "PortHighSpeedBrakeOperatingLeverAssembly",
+    "PortHighSpeedBrakeAdjustingAssembly",
+    "PortHighSpeedBrakeUpperPinJoint",
+    "PortHighSpeedBrakeLowerPinJoint",
+    "StarboardHighSpeedBrakeOperatingLeverAssembly",
+    "StarboardHighSpeedBrakeAdjustingAssembly",
+    "StarboardHighSpeedBrakeUpperPinJoint",
+    "StarboardHighSpeedBrakeLowerPinJoint"
+  ],
+  "added_children": {
+    "Definitions": [
+      "Def_HighBrakeMechanism_pin",
+      "Def_HighBrakeMechanism_cotter",
+      "Def_HighBrakeMechanism_lever_left",
+      "Def_HighBrakeMechanism_lever_right",
+      "Def_HighBrakeMechanism_rivet",
+      "Def_HighBrakeMechanism_nut",
+      "Def_HighBrakeMechanism_screw",
+      "Def_HighBrakeMechanism_spring",
+      "Def_HighBrakeMechanism_washer_a",
+      "Def_HighBrakeMechanism_washer_b",
+      "HighBrakeMechanism_spring_centerline",
+      "HighBrakeMechanism_lever_profile"
+    ],
+    "PortHighSpeedBrake": [
+      "PortHighSpeedBrakeOperatingLeverAssembly",
+      "PortHighSpeedBrakeAdjustingAssembly",
+      "PortHighSpeedBrakeUpperPinJoint",
+      "PortHighSpeedBrakeLowerPinJoint"
+    ],
+    "PortHighSpeedBrakeOperatingLeverAssembly": [
+      "PortHighSpeedBrakeLeverLeft",
+      "PortHighSpeedBrakeLeverRight",
+      "PortHighSpeedBrakeLeverRivet1",
+      "PortHighSpeedBrakeLeverRivet2",
+      "PortHighSpeedBrakeLeverRivet3",
+      "PortHighSpeedBrakeLeverRivet4"
+    ],
+    "PortHighSpeedBrakeAdjustingAssembly": [
+      "PortHighSpeedBrakeAdjustingScrew",
+      "PortHighSpeedBrakeLowerSpringWasher",
+      "PortHighSpeedBrakeAdjustingSpring",
+      "PortHighSpeedBrakeUpperSpringWasher",
+      "PortHighSpeedBrakeAdjustingNut"
+    ],
+    "PortHighSpeedBrakeUpperPinJoint": [
+      "PortHighSpeedBrakeUpperFreeEndPin",
+      "PortHighSpeedBrakeUpperFreeEndCotter"
+    ],
+    "PortHighSpeedBrakeLowerPinJoint": [
+      "PortHighSpeedBrakeLowerFreeEndPin",
+      "PortHighSpeedBrakeLowerFreeEndCotter"
+    ],
+    "StarboardHighSpeedBrake": [
+      "StarboardHighSpeedBrakeOperatingLeverAssembly",
+      "StarboardHighSpeedBrakeAdjustingAssembly",
+      "StarboardHighSpeedBrakeUpperPinJoint",
+      "StarboardHighSpeedBrakeLowerPinJoint"
+    ],
+    "StarboardHighSpeedBrakeOperatingLeverAssembly": [
+      "StarboardHighSpeedBrakeLeverLeft",
+      "StarboardHighSpeedBrakeLeverRight",
+      "StarboardHighSpeedBrakeLeverRivet1",
+      "StarboardHighSpeedBrakeLeverRivet2",
+      "StarboardHighSpeedBrakeLeverRivet3",
+      "StarboardHighSpeedBrakeLeverRivet4"
+    ],
+    "StarboardHighSpeedBrakeAdjustingAssembly": [
+      "StarboardHighSpeedBrakeAdjustingScrew",
+      "StarboardHighSpeedBrakeLowerSpringWasher",
+      "StarboardHighSpeedBrakeAdjustingSpring",
+      "StarboardHighSpeedBrakeUpperSpringWasher",
+      "StarboardHighSpeedBrakeAdjustingNut"
+    ],
+    "StarboardHighSpeedBrakeUpperPinJoint": [
+      "StarboardHighSpeedBrakeUpperFreeEndPin",
+      "StarboardHighSpeedBrakeUpperFreeEndCotter"
+    ],
+    "StarboardHighSpeedBrakeLowerPinJoint": [
+      "StarboardHighSpeedBrakeLowerFreeEndPin",
+      "StarboardHighSpeedBrakeLowerFreeEndCotter"
+    ]
+  },
+  "nonphysical_features": [
+    "HighBrakeMechanism_spring_centerline",
+    "HighBrakeMechanism_lever_profile"
+  ],
+  "new_definitions": [
+    "Def_HighBrakeMechanism_pin",
+    "Def_HighBrakeMechanism_cotter",
+    "Def_HighBrakeMechanism_rivet",
+    "Def_HighBrakeMechanism_screw",
+    "Def_HighBrakeMechanism_washer_a",
+    "Def_HighBrakeMechanism_washer_b",
+    "Def_HighBrakeMechanism_spring",
+    "Def_HighBrakeMechanism_nut",
+    "Def_HighBrakeMechanism_lever_left",
+    "Def_HighBrakeMechanism_lever_right"
+  ],
+  "changed_definitions": [],
+  "affected_occurrences": [
+    "PortHighSpeedBrakeAdjustingNut",
+    "PortHighSpeedBrakeAdjustingScrew",
+    "PortHighSpeedBrakeAdjustingSpring",
+    "PortHighSpeedBrakeLeverLeft",
+    "PortHighSpeedBrakeLeverRight",
+    "PortHighSpeedBrakeLeverRivet1",
+    "PortHighSpeedBrakeLeverRivet2",
+    "PortHighSpeedBrakeLeverRivet3",
+    "PortHighSpeedBrakeLeverRivet4",
+    "PortHighSpeedBrakeLowerFreeEndCotter",
+    "PortHighSpeedBrakeLowerFreeEndPin",
+    "PortHighSpeedBrakeLowerSpringWasher",
+    "PortHighSpeedBrakeUpperFreeEndCotter",
+    "PortHighSpeedBrakeUpperFreeEndPin",
+    "PortHighSpeedBrakeUpperSpringWasher",
+    "StarboardHighSpeedBrakeAdjustingNut",
+    "StarboardHighSpeedBrakeAdjustingScrew",
+    "StarboardHighSpeedBrakeAdjustingSpring",
+    "StarboardHighSpeedBrakeLeverLeft",
+    "StarboardHighSpeedBrakeLeverRight",
+    "StarboardHighSpeedBrakeLeverRivet1",
+    "StarboardHighSpeedBrakeLeverRivet2",
+    "StarboardHighSpeedBrakeLeverRivet3",
+    "StarboardHighSpeedBrakeLeverRivet4",
+    "StarboardHighSpeedBrakeLowerFreeEndCotter",
+    "StarboardHighSpeedBrakeLowerFreeEndPin",
+    "StarboardHighSpeedBrakeLowerSpringWasher",
+    "StarboardHighSpeedBrakeUpperFreeEndCotter",
+    "StarboardHighSpeedBrakeUpperFreeEndPin",
+    "StarboardHighSpeedBrakeUpperSpringWasher"
+  ],
+  "expected_physical_occurrences": 3121,
+  "expected_definition_count": 529,
+  "expected_assembly_count": 322,
+  "limits": [
+    "Paired lever member section and integral bearing bosses are inferred; B-spline curves approximate the illustrated silhouette.",
+    "Free-end pin and cotter stock, spring dimensions, nut form and screw shoulders are estimates.",
+    "Washer bore dimensions and joining-rivet stock are printed; washer outside diameters and thickness are estimates.",
+    "Thread interfaces use nominal cylindrical envelopes, without helices.",
+    "Static arrangement only; anchor supports, stops, control rods and complete service paths remain pending."
+  ],
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "packet_complete": false
+}
