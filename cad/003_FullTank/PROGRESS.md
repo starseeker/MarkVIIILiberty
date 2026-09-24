@@ -11,6 +11,37 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — rear brake anchors and riveted feet populated
+
+The [rear-anchor trial](experiments/drive_chains/transmission_brake_anchor_study/trial01/README.md)
+adds eight rear brackets, four anchor pins, four springs, two spacers, four
+retainer rivets and 60 steel rivets. Sixteen lining rivets use longer stock
+through the feet. The development assembly now contains **2,857 physical
+occurrences, 484 definitions and 276 assemblies**. Printed lining lengths and
+hole pitches remain fixed; each lining group advances four degrees as the
+estimated rear half-gap grows to five degrees.
+
+All **106 native checks, 1,362 development material pairs and 342 STEP comparisons
+pass**. The full retained standard context contains 5,316 occurrences and no
+possible affected pair. All 472 unchanged inherited definitions are preserved:
+453 exact BReps and 19 strict comparisons. Reproduction matches 1,478 BReps and
+133,313 persistent properties. A thicker-foot/inset-lug parameter variation
+passes the same native/context checks and retains all 472 unchanged nominal
+BReps. Five inspected views give **183 progression images**, preserving 178 prior
+images and 30 recorded native baselines.
+
+Rejected layouts exposed real retainer and chain-case interference. The final
+static joint fits; hidden lug/pin/spring sections and rivet forms remain named
+estimates. Handbook coupling screws, additional MX49 rivet applications and the
+source/model anchor-station residual remain unresolved. A false incomplete-seat
+report was traced to omitted support patches; the corrected union-coverage
+check retains negative controls and is documented in the FreeCAD skill.
+
+Next: front ears/pins, adjusters, levers, stops, high-speed brake fittings and
+support fastening; then remaining frame/hull joints, engine and tank interiors,
+inventory reconciliation and standard integration. Standard tank011 remains
+unchanged. Full-tank completion and pose work remain ahead.
+
 ## 24 September 2026 — brake suspension links and pivots populated
 
 The [link study](experiments/drive_chains/transmission_brake_link_study/trial03/README.md)

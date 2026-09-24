@@ -1,5 +1,18 @@
 # Mark VIII visual progression
 
+The rear-anchor study adds an
+[isometric](intermediate_snapshot_iso_transmission_brake_anchors_001.png),
+[inner detail](intermediate_snapshot_detail_transmission_brake_anchors_001.png),
+[outer detail](intermediate_snapshot_detail_transmission_brake_anchors_back_001.png),
+[low-speed overlay](intermediate_snapshot_source_low_brake_anchors_001.png) and
+[track overlay](intermediate_snapshot_source_track_brake_anchors_001.png).
+Eight rear brackets now connect the bands to four retained anchor pins, with
+separate rivets, springs and spacers. Native/context, STEP, preservation,
+reproduction and parameter checks pass; hidden layout, source registration and
+coupling details remain qualified approximations. All 178 prior images and 30
+native baselines are preserved: **183 images total**. See the
+[trial record](003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/README.md).
+
 The suspension-link study adds an
 [isometric](intermediate_snapshot_iso_transmission_brake_links_001.png),
 [link detail](intermediate_snapshot_detail_transmission_brake_links_001.png),

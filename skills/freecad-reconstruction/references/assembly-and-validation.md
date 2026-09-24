@@ -148,6 +148,15 @@ gave slightly different integrated areas after re-trimming. Matching analytic
 supports plus empty uncovered-face differences, with displaced negative controls,
 proved coverage directly; an area estimate alone was insufficient.
 
+When a bearing surface is split across several faces, check coverage by the
+union of the coincident support patches. Do not require each patch to span the
+entire receiving face: that filter discarded two small restored patches in the
+rear brake backing and falsely reported an unsupported bracket foot. On this
+runtime, including all patches on the same analytic cylinder left zero uncovered
+faces and area; a displaced-foot negative still failed. Keep separate material
+interference checks. The [retained probe and initial failure](../../../cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/diagnostics/seat_coverage/README.md)
+demonstrate the distinction between a physical surface and its face subdivision.
+
 Treat kernel bounding boxes as enclosures, not guaranteed exact size measurements.
 On this runtime, a retained cross-drilled stud reports a 19.058984 mm bounding-box
 width, while its axial cylinder faces have radius 9.525 mm and no material lies
@@ -203,6 +212,15 @@ prove native link hierarchy or dependency portability; inspect those separately.
 Rebuild in a fresh workspace when qualifying a generator. Do not interpret custom
 dimension properties as live parametric dependencies unless expressions/features
 actually connect them to the geometry.
+
+Cache imported mass-property signatures before repeatedly matching STEP solids.
+The project's [StepSolidMatcher](../../../cad/003_FullTank/lib/step_matching.py)
+preserves its nearest centroid/volume rule while avoiding repeated integration
+inside the candidate loop. A [saved-artifact replay](../../../cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/diagnostics/step_matching/README.md)
+selected the same imported solids for all 342 comparisons; matching 330 installed
+solids required 330 imported centroid evaluations instead of 54,615. Pairing is
+only a proposal: retain independent topology, material, tolerance and mass
+acceptance checks. This optimization does not establish geometric equivalence.
 
 Read only the relevant API when an unfamiliar method matters. The official
 [App::Part Python API](https://freecad.github.io/API/d5/df9/classApp_1_1PartPy.html)
