@@ -1,5 +1,16 @@
 # Mark VIII visual progression
 
+## Rear-control support family — 24 September 2026
+
+M4135/M4136 and the estimated M4129 shared-rivet attachments are installed in
+an updated development hierarchy. Three inspected views bring the archive to
+**238 images**, preserving all235 earlier images. The fixed source camera is
+unchanged; the hidden cleat stack and spring alignment remain approximate.
+
+- [Installed support isometric](intermediate_snapshot_iso_rear_support_family_001.png)
+- [Right-cleat attachment detail](intermediate_snapshot_detail_rear_support_family_001.png)
+- [Fixed source comparison](intermediate_snapshot_source_rear_support_family_001.png)
+
 ## High-speed upper stops and assembled brakes — 24 September 2026
 
 M399/M398 stops and M365 clips complete the named brake support members.

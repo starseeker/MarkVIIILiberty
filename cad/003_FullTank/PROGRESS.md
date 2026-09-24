@@ -11,6 +11,24 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — rear support family installed
+
+The [new development native](experiments/drive_chains/transmission_controls_study/support_integrated01/README.md)
+contains **3,246 occurrences / 564 definitions / 353 groups**. Two M4135 guides,
+two M4136 supports, eight rivets, two M4129 cleats and two complete bolt sets add
+20 parts. The estimated right cleats share M4136 rivets and bolt to the floor.
+Original SNL33/65 confirms hardware and quantities; the hidden mounting shape
+remains a documented hypothesis, with the Plate21/callout25 conflict retained.
+
+Both stock variants pass native/interface/context/STEP and provisional corridor
+checks. The full integration preserves all inherited frames and556 unchanged
+definitions;45 integration checks and a fresh1,724-BRep/155,376-property rebuild
+pass. Sixteen strict comparison results were safely reused by exact byte hashes.
+Three inspected progression views bring the archive to238 images. The source
+camera is unchanged and its known geometric discrepancies remain visible.
+Standard tank011 remains unchanged; actual forks, washers, hooks, rods, springs,
+remaining interiors and full standard assembly are still active work.
+
 ## 24 September 2026 — shared low-speed/foot-brake spring supports
 
 [The M4136 study](experiments/drive_chains/transmission_controls_study/low_spring04/README.md)

@@ -1,0 +1,85 @@
+{
+  "passed": true,
+  "scope": "Source allocation review supplement; does not claim the catalogue mismatch resolved.",
+  "native_sha256": "0c128874526d95c7dcafdf37702e5022e37533fec1491befe4c553eaed008286",
+  "survey_sha256": "6dfd7c413d777601e6e8660cd7d1386e2071aed9cdd0f163f4d1d10d014b8f90",
+  "source_hashes": {
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p033.jpg": "7e14702afd42dde9e446b57c3e11a69a8f8289ef6cc216b1090c764d6cb45c5b"
+  },
+  "records": [
+    {
+      "record_id": "SNL:33:004",
+      "source_id": "SNL",
+      "printed_page": "33",
+      "row_no": 4,
+      "record_type": "catalogue_entry",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_025_044.py",
+      "description": "BOLT, U. S. Std., hexagon head, \u215d\u2033 x 3\u215e\u2033, with plain nut and lock washer.\n  (For flange SH849A (1).)",
+      "raw": {
+        "brit": "",
+        "ident": "",
+        "item": "BOLT, U. S. Std., hexagon head, \u215d\u2033 x 3\u215e\u2033, with plain nut and lock washer.\n  (For flange SH849A (1).)",
+        "mfr": "",
+        "note": "%(sh)R",
+        "ord": "",
+        "page": "33",
+        "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_025_044.py",
+        "plate": "",
+        "price": ".03 P",
+        "qty": "(2)",
+        "row": 4,
+        "source": "SNL"
+      }
+    },
+    {
+      "record_id": "SNL:33:005",
+      "source_id": "SNL",
+      "printed_page": "33",
+      "row_no": 5,
+      "record_type": "catalogue_entry",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_025_044.py",
+      "description": "BOLT, U. S. Std., hexagon head, \u00be\u2033 x 1\u215d\u2033, with plain nut and lock washer.\n  (For cleat M4129 (1).)",
+      "raw": {
+        "brit": "",
+        "ident": "25",
+        "item": "BOLT, U. S. Std., hexagon head, \u00be\u2033 x 1\u215d\u2033, with plain nut and lock washer.\n  (For cleat M4129 (1).)",
+        "mfr": "",
+        "note": "%(sh)R",
+        "ord": "",
+        "page": "33",
+        "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_025_044.py",
+        "plate": "21",
+        "price": ".04 P",
+        "qty": "(2)",
+        "row": 5,
+        "source": "SNL"
+      }
+    },
+    {
+      "record_id": "SNL:200:002",
+      "source_id": "SNL",
+      "printed_page": "200",
+      "row_no": 2,
+      "record_type": "catalogue_entry",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_185_204.py",
+      "description": "SCREW, cap, U. S. Std., hexagon head, drilled, \u215c\u2033 x \u215d\u2033.  (For collar SH999A\n   (6).)",
+      "raw": {
+        "brit": "",
+        "ident": "13",
+        "item": "SCREW, cap, U. S. Std., hexagon head, drilled, \u215c\u2033 x \u215d\u2033.  (For collar SH999A\n   (6).)",
+        "mfr": "",
+        "note": "%(sh)R",
+        "ord": "",
+        "page": "200",
+        "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_185_204.py",
+        "plate": "21",
+        "price": ".04 P",
+        "qty": "6",
+        "row": 2,
+        "source": "SNL"
+      }
+    }
+  ],
+  "finding": "Original p033 places Plate21 callout25 at the3/4 x1-5/8in cleatM4129 bolt row, while the adjacent5/8 x3-7/8in bolt explicitly allocates to SH849A without a plate callout. Selected geometry follows the SH849A written allocation; conflicting callout remains unresolved.",
+  "next_joint_lead": "SNL200:002 allocates six3/8 x5/8in drilled-head cap screws to SH999A. Original p200 still needs inspection before modeling that joint; resize the presently provisional coupling holes and stock with the actual collar and thread engagement."
+}

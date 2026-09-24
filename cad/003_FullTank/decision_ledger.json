@@ -823,6 +823,50 @@
           "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
         }
       ]
+    },
+    {
+      "id": "rear_control_support_family_shared_cleats",
+      "status": "reviewed_approximation",
+      "scope": "Install M4135/M4136 and two M4129 cleats with source-counted hardware in the rear-channel hierarchy.",
+      "reason": "Original SNL33/65 confirms right-cleat quantities and shorter floor bolts. No separate M4129 rivet application was identified; a shared M4136 stack was explicitly modeled and checked against saved surrounding geometry.",
+      "uncertainty": "Exact M4129 outline, handedness, mounting topology and stock remain inferred. Plate21/callout25 conflicts with the clutch figure. Feasible fit does not establish historical form.",
+      "limits": [
+        "Shared-rivet cleat topology is an approximation; M4136 is lifted9.525mm and its four rivets reformed without changing source stock.",
+        "Rod/spring corridor witnesses still omit forks, washers and hooks. No completed physical connections, strength, motion or installation/service claim.",
+        "Existing SNL6 camera is reused; spring-height/inclination and high-speed control-bore disagreement remain. Estimated cleat/anchor coordinates are not independent holdouts.",
+        "Development native3246/564/353; standard tank011 remains unchanged."
+      ],
+      "supersedes_scope": "The previous low-spring study remains immutable evidence. Its bracket shape is retained; installed M4136 elevation and rivet grip now follow the shared-cleat prototype. Both spring-support families are now integrated.",
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01/visual_review.json",
+        "sha256": "d89524203d1929cdf8dc301e92b0b4c979b9ff19ced40e6ec6b2df8322046cec"
+      },
+      "reopen_when": [
+        "More direct M4129 or channel attachment evidence becomes available.",
+        "Actual forks, washers, hooks or rods conflict with the tested core corridors.",
+        "Channel, floor, fulcrum or brake geometry changes an attachment or clearance.",
+        "New independent source landmarks contradict the retained camera; diagnose before versioned refitting."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01/qualification.json",
+          "sha256": "4b45ec8f2cdc770f3889c25e444f09d69e0e2f29aa41552ed64529d35fe9a809"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01/visual_review.json",
+          "sha256": "d89524203d1929cdf8dc301e92b0b4c979b9ff19ced40e6ec6b2df8322046cec"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/right_cleat_source_review01.json",
+          "sha256": "0f8200877bef47947a3e6dcc11d624dd5db30279d57a6df8135f06389a50d76d"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json",
+          "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
+        }
+      ]
     }
   ]
 }

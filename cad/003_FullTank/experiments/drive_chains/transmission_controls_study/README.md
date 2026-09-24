@@ -1,7 +1,11 @@
 # Transmission operating controls — evidence and receiving interfaces
 
-Current assembly: [PowertrainWithRearControlFulcrums.FCStd](fulcrum_integrated01/PowertrainWithRearControlFulcrums.FCStd),
-with 3,226 physical occurrences / 558 used definitions / 347 assembly groups.
+Current assembly: [PowertrainWithRearControlSupports.FCStd](support_integrated01/PowertrainWithRearControlSupports.FCStd),
+with 3,246 physical occurrences / 564 used definitions / 353 assembly groups.
+The [support-family checkpoint](support_integrated01/README.md) installs M4135,
+M4136 and estimated M4129 attachments with source-counted hardware. Its checked
+shared-rivet mounting hypothesis and remaining source uncertainty are documented.
+Actual rods, return springs and complete service paths remain open.
 The [fulcrum checkpoint](fulcrum_integrated01/README.md) follows the
 [channel mounting checkpoint](channel_integrated01/README.md), the
 [rear-joint checkpoint](us_nuts01/README.md) and the locally qualified
@@ -9,8 +13,9 @@ The [fulcrum checkpoint](fulcrum_integrated01/README.md) follows the
 This packet covers the rear control channel, brake return springs, control rod
 ends and subsequent connections toward the center and driver controls. Two rear high-speed fork/pin/cotter joints and their plain nuts are now installed.
 The channel, four M4130 mounting sets and four retained M4131/lever units are
-installed in the development assembly. M4129 attachments, spring supports, rods
-and return springs remain pending. The new units add 24 physical occurrences:
+installed in the development assembly. M4135/M4136 and estimated M4129 attachments
+add20 further parts in the latest checkpoint; rods and return springs remain pending.
+The preceding fulcrum units added24 physical occurrences:
 four brackets, four levers, four washers, four cotters and eight rivets.
 
 The fulcrum checkpoint retains an earlier geometry hypothesis and the source

@@ -1,0 +1,1044 @@
+{
+  "native_file": "PowertrainWithRearControlFulcrums.FCStd",
+  "native_sha256": "d4f9a5bd2294b0e41755b3fce3e47197bf4d04f165e1c4ec918246ba2edec2c2",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01/PowertrainWithRearChannelMounts.FCStd",
+  "source_native_sha256": "f3d3005eaead46314acacb48c8a2d58ddf58e5a2f495f6a1dca887888f2db25a",
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum02",
+  "prototype_native_sha256": "a81fade370009e0cbbc126086d1e01be3ab5ca06af1c1ae160192c60dbbf51a4",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_rear_control_fulcrums.py": "e39562df782eb443dac1241fe25f935a6b86c4e93a15307866a3381b3bcbec23",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum02/report.json": "a847553d24275ff1c39b752c10ce883e7b9b2be9e3764d1154cb31d90ac64dbc",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum02/isolated/manifest.json": "cb6c6dc95336846c84c00f632b5a2192a6e7a8c6857fe7a80cc54f24c45e5e1d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum02/RearControlFulcrums.FCStd": "a81fade370009e0cbbc126086d1e01be3ab5ca06af1c1ae160192c60dbbf51a4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum02/visual_review.json": "e7ef544c8bb5d5967350e6569c9ce2dcd0dc343d1e68bf73cc73050bcf3d50aa",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum02/render_receipt.json": "bb10616f54a65cb2ca0f8575fe9ca9ff21eafcbfa15c951851a9735b1216431e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01/qualification.json": "e9ccddb61ad9cc3058602b70e796b78072eb0c31bb8b84ac2ee4cb9659c2ed26",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01/isolated/manifest.json": "13ca190408ff510afce34c8c003564198bbf7cf034154e170cd3776a6d01c9bc",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum02/independent_checks.json": "62f377d15c870b8fa8616d9943f3cc5572f9efa277970ff36cca7f5cbec0058c",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum02/context_checks.json": "ac8b3cc8543be9e37ac40915fc89d3f6b74c136997e484eff3e153e46dac0b12",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum02/exchange_checks.json": "1a377b0e0e4dd7df44c539bdfc2029de76fcb4e9e79cf26ac9e5ea7dce2af2dc",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_variation02/independent_checks.json": "a19e9dbc790304f5694e44503b809aef4efce8dfd1413f79b91f0b22a710111b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_variation02/context_checks.json": "dfc60eb87d36d491d9f19fb48bf86335d47a77fd0b243a81e3766e67e4e4e794",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_variation02/exchange_checks.json": "8c1a45f487d45faa4bfa8a90d76a49d33e10a87690eef46f156d0062b1085aac",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum02/reproduction_checks.json": "c8f06d4941a7e85e698c46ea8bd02e987332972a85d6ce031277fa54c9d804dc"
+  },
+  "controls": {
+    "parent": "channel_integrated01",
+    "channel_definition": "Def_RearControlMount_channel",
+    "channel_occurrence": "RearControlChannelStock",
+    "channel_top_z": 583.85,
+    "channel_stock": 6.35,
+    "bracket": {
+      "foot_stock": 25.4,
+      "pivot_radius": 25.4,
+      "rivet_pad_radius": 15.875,
+      "rivet_x": 69.85,
+      "rivet_y": [
+        -20.6375,
+        20.6375
+      ],
+      "journal_diameter": 31.75,
+      "journal_height": 50.8,
+      "cotter_hole_diameter": 6.65,
+      "web_stock": 9.525,
+      "seat_height": 9.525
+    },
+    "rivet": {
+      "diameter": 12.7,
+      "stock_length": 53.975,
+      "hole_diameter": 13.0,
+      "factory_ratio": 1.75,
+      "factory_height_ratio": 0.7,
+      "upset_ratio": 1.75
+    },
+    "lever": {
+      "hub_radius": 25.4,
+      "hub_height": 38.1,
+      "stock": 12.7,
+      "end_radius": 19.05,
+      "bore_diameter": 32.05,
+      "end_bore_diameter": 13.0,
+      "web_width": 25.4,
+      "neck_radius": 19.05,
+      "lower_flange_stock": 3.175,
+      "top_flange_stock": 6.35,
+      "arm_bottom": 25.4
+    },
+    "washer": {
+      "outer_radius": 25.4,
+      "bore_radius": 16.025,
+      "stock": 3.175
+    },
+    "cotter": {
+      "cotter_diameter": 6.35,
+      "cotter_center_spacing": 3.3,
+      "crown_radius": 15.875,
+      "cotter_head_gap": 1.0,
+      "cotter_exit_gap": 1.0,
+      "cotter_bend_radius": 4.0,
+      "cotter_bend_angle": 35.0,
+      "cotter_length": 50.8,
+      "cotter_eye_radius": 6.0,
+      "cotter_eye_rise": 4.0,
+      "cotter_eye_join_overlap": 0.03
+    },
+    "lever_profiles": {
+      "track": {
+        "brake": [
+          0,
+          -76.2
+        ],
+        "front": [
+          0,
+          203.2
+        ]
+      },
+      "low_right": {
+        "brake": [
+          47.625,
+          -73.025
+        ],
+        "front": [
+          -114.3,
+          171.45
+        ]
+      },
+      "low_left": {
+        "brake": [
+          31.75,
+          88.9
+        ],
+        "front": [
+          -107.95,
+          -158.75
+        ]
+      }
+    },
+    "stations": {
+      "StarboardTrack": {
+        "pivot": [
+          2476.2,
+          -710,
+          583.85
+        ],
+        "inboard_clock": 180,
+        "lever_profile": "track",
+        "lever_clock": 20,
+        "mark": "M4132"
+      },
+      "PortTrack": {
+        "pivot": [
+          2476.2,
+          710,
+          583.85
+        ],
+        "inboard_clock": 180,
+        "lever_profile": "track",
+        "lever_clock": 156.3,
+        "mark": "M4132"
+      },
+      "StarboardLow": {
+        "pivot": [
+          2298.4,
+          -450,
+          583.85
+        ],
+        "inboard_clock": 0,
+        "lever_profile": "low_right",
+        "lever_clock": 0,
+        "mark": "M4134"
+      },
+      "PortLow": {
+        "pivot": [
+          2298.4,
+          450,
+          583.85
+        ],
+        "inboard_clock": 0,
+        "lever_profile": "low_left",
+        "lever_clock": 0,
+        "mark": "M4133"
+      }
+    }
+  },
+  "details": {
+    "rivet": {
+      "grip_mm": 31.75,
+      "factory_radius_mm": 11.112499999999999,
+      "upset_radius_mm": 11.112499999999999,
+      "upset_height_mm": 10.960271608555217,
+      "upset_stock_volume_mm3": 2815.3934307354716
+    },
+    "cotter": {
+      "straight_length_mm": 33.75,
+      "bend_arc_length_mm": 2.443460952792061,
+      "tail_length_mm": 14.606539047207935,
+      "total_leg_centerline_mm": 50.8,
+      "tail_endpoints": [
+        [
+          0.0,
+          31.13428206591155,
+          -10.751358436963963
+        ],
+        [
+          0.0,
+          31.13428206591155,
+          10.751358436963963
+        ]
+      ],
+      "wire_radius_mm": 1.525,
+      "under_eye_y_mm": -16.875,
+      "bend_start_y_mm": 16.875,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "cotter_center_z_mm": 52.324999999999996,
+    "lever_bearing_z_mm": 9.525,
+    "washer_bottom_z_mm": 47.625,
+    "rivet_axes": [
+      {
+        "owner": "StarboardTrack",
+        "world_mm": [
+          2406.35,
+          -689.3625,
+          583.85
+        ]
+      },
+      {
+        "owner": "StarboardTrack",
+        "world_mm": [
+          2406.35,
+          -730.6375,
+          583.85
+        ]
+      },
+      {
+        "owner": "PortTrack",
+        "world_mm": [
+          2406.35,
+          730.6375,
+          583.85
+        ]
+      },
+      {
+        "owner": "PortTrack",
+        "world_mm": [
+          2406.35,
+          689.3625,
+          583.85
+        ]
+      },
+      {
+        "owner": "StarboardLow",
+        "world_mm": [
+          2368.25,
+          -470.6375,
+          583.85
+        ]
+      },
+      {
+        "owner": "StarboardLow",
+        "world_mm": [
+          2368.25,
+          -429.3625,
+          583.85
+        ]
+      },
+      {
+        "owner": "PortLow",
+        "world_mm": [
+          2368.25,
+          429.3625,
+          583.85
+        ]
+      },
+      {
+        "owner": "PortLow",
+        "world_mm": [
+          2368.25,
+          470.6375,
+          583.85
+        ]
+      }
+    ]
+  },
+  "expected_new_occurrences": {
+    "StarboardTrackFulcrumBracket": {
+      "definition": "Def_RearControlFulcrum_bracket",
+      "role": "bracket",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        2476.2,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        -710.0,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumBracket"
+    },
+    "StarboardTrackHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_track",
+      "role": "lever_track",
+      "frame": [
+        0.9396926207859084,
+        -0.3420201433256686,
+        -0.0,
+        2476.2,
+        0.3420201433256686,
+        0.9396926207859084,
+        0.0,
+        -710.0,
+        0.0,
+        -0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardTrackHorizontalLever"
+    },
+    "StarboardTrackFulcrumSpringWasher": {
+      "definition": "Def_RearControlFulcrum_washer",
+      "role": "washer",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        2476.2,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        -710.0,
+        0.0,
+        0.0,
+        1.0,
+        631.475,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumSpringWasher"
+    },
+    "StarboardTrackFulcrumCotter": {
+      "definition": "Def_RearControlFulcrum_cotter",
+      "role": "cotter",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        2476.2,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        -710.0,
+        0.0,
+        0.0,
+        1.0,
+        636.1750000000001,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumCotter"
+    },
+    "StarboardTrackFulcrumRivet1": {
+      "definition": "Def_RearControlFulcrum_rivet",
+      "role": "rivet",
+      "frame": [
+        -1.0,
+        1.2246467991473532e-16,
+        1.4997597826618576e-32,
+        2406.35,
+        1.2246467991473532e-16,
+        1.0,
+        1.2246467991473532e-16,
+        -689.3625,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumRivet1"
+    },
+    "StarboardTrackFulcrumRivet2": {
+      "definition": "Def_RearControlFulcrum_rivet",
+      "role": "rivet",
+      "frame": [
+        -1.0,
+        1.2246467991473532e-16,
+        1.4997597826618576e-32,
+        2406.35,
+        1.2246467991473532e-16,
+        1.0,
+        1.2246467991473532e-16,
+        -730.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumRivet2"
+    },
+    "PortTrackFulcrumBracket": {
+      "definition": "Def_RearControlFulcrum_bracket",
+      "role": "bracket",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        2476.2,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        710.0,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumBracket"
+    },
+    "PortTrackHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_track",
+      "role": "lever_track",
+      "frame": [
+        -0.9156625933395612,
+        -0.4019477766559605,
+        -0.0,
+        2476.2,
+        0.4019477766559605,
+        -0.9156625933395612,
+        0.0,
+        710.0,
+        0.0,
+        -0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "PortTrackHorizontalLever"
+    },
+    "PortTrackFulcrumSpringWasher": {
+      "definition": "Def_RearControlFulcrum_washer",
+      "role": "washer",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        2476.2,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        710.0,
+        0.0,
+        0.0,
+        1.0,
+        631.475,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumSpringWasher"
+    },
+    "PortTrackFulcrumCotter": {
+      "definition": "Def_RearControlFulcrum_cotter",
+      "role": "cotter",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        2476.2,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        710.0,
+        0.0,
+        0.0,
+        1.0,
+        636.1750000000001,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumCotter"
+    },
+    "PortTrackFulcrumRivet1": {
+      "definition": "Def_RearControlFulcrum_rivet",
+      "role": "rivet",
+      "frame": [
+        -1.0,
+        1.2246467991473532e-16,
+        1.4997597826618576e-32,
+        2406.35,
+        1.2246467991473532e-16,
+        1.0,
+        1.2246467991473532e-16,
+        730.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumRivet1"
+    },
+    "PortTrackFulcrumRivet2": {
+      "definition": "Def_RearControlFulcrum_rivet",
+      "role": "rivet",
+      "frame": [
+        -1.0,
+        1.2246467991473532e-16,
+        1.4997597826618576e-32,
+        2406.35,
+        1.2246467991473532e-16,
+        1.0,
+        1.2246467991473532e-16,
+        689.3625,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumRivet2"
+    },
+    "StarboardLowFulcrumBracket": {
+      "definition": "Def_RearControlFulcrum_bracket",
+      "role": "bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardLowFulcrumBracket"
+    },
+    "StarboardLowHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_low_right",
+      "role": "lever_low_right",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardLowHorizontalLever"
+    },
+    "StarboardLowFulcrumSpringWasher": {
+      "definition": "Def_RearControlFulcrum_washer",
+      "role": "washer",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        631.475,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardLowFulcrumSpringWasher"
+    },
+    "StarboardLowFulcrumCotter": {
+      "definition": "Def_RearControlFulcrum_cotter",
+      "role": "cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        636.1750000000001,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardLowFulcrumCotter"
+    },
+    "StarboardLowFulcrumRivet1": {
+      "definition": "Def_RearControlFulcrum_rivet",
+      "role": "rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.25,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -470.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardLowFulcrumRivet1"
+    },
+    "StarboardLowFulcrumRivet2": {
+      "definition": "Def_RearControlFulcrum_rivet",
+      "role": "rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.25,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -429.3625,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardLowFulcrumRivet2"
+    },
+    "PortLowFulcrumBracket": {
+      "definition": "Def_RearControlFulcrum_bracket",
+      "role": "bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowControlFulcrum"
+      ],
+      "prototype_occurrence": "PortLowFulcrumBracket"
+    },
+    "PortLowHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_low_left",
+      "role": "lever_low_left",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowControlFulcrum"
+      ],
+      "prototype_occurrence": "PortLowHorizontalLever"
+    },
+    "PortLowFulcrumSpringWasher": {
+      "definition": "Def_RearControlFulcrum_washer",
+      "role": "washer",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        631.475,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowControlFulcrum"
+      ],
+      "prototype_occurrence": "PortLowFulcrumSpringWasher"
+    },
+    "PortLowFulcrumCotter": {
+      "definition": "Def_RearControlFulcrum_cotter",
+      "role": "cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        636.1750000000001,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowControlFulcrum"
+      ],
+      "prototype_occurrence": "PortLowFulcrumCotter"
+    },
+    "PortLowFulcrumRivet1": {
+      "definition": "Def_RearControlFulcrum_rivet",
+      "role": "rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.25,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        429.3625,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowControlFulcrum"
+      ],
+      "prototype_occurrence": "PortLowFulcrumRivet1"
+    },
+    "PortLowFulcrumRivet2": {
+      "definition": "Def_RearControlFulcrum_rivet",
+      "role": "rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.25,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        470.6375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        609.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowControlFulcrum"
+      ],
+      "prototype_occurrence": "PortLowFulcrumRivet2"
+    }
+  },
+  "new_assemblies": [
+    "StarboardTrackControlFulcrum",
+    "PortTrackControlFulcrum",
+    "StarboardLowControlFulcrum",
+    "PortLowControlFulcrum"
+  ],
+  "added_children": {
+    "Definitions": [
+      "Def_RearControlFulcrum_bracket",
+      "Def_RearControlFulcrum_washer",
+      "Def_RearControlFulcrum_cotter",
+      "Def_RearControlFulcrum_rivet",
+      "Def_RearControlFulcrum_lever_track",
+      "Def_RearControlFulcrum_lever_low_left",
+      "Def_RearControlFulcrum_lever_low_right"
+    ],
+    "RearControlChannel": [
+      "StarboardTrackControlFulcrum",
+      "PortTrackControlFulcrum",
+      "StarboardLowControlFulcrum",
+      "PortLowControlFulcrum"
+    ],
+    "StarboardTrackControlFulcrum": [
+      "StarboardTrackFulcrumBracket",
+      "StarboardTrackHorizontalLever",
+      "StarboardTrackFulcrumSpringWasher",
+      "StarboardTrackFulcrumCotter",
+      "StarboardTrackFulcrumRivet1",
+      "StarboardTrackFulcrumRivet2"
+    ],
+    "PortTrackControlFulcrum": [
+      "PortTrackFulcrumBracket",
+      "PortTrackHorizontalLever",
+      "PortTrackFulcrumSpringWasher",
+      "PortTrackFulcrumCotter",
+      "PortTrackFulcrumRivet1",
+      "PortTrackFulcrumRivet2"
+    ],
+    "StarboardLowControlFulcrum": [
+      "StarboardLowFulcrumBracket",
+      "StarboardLowHorizontalLever",
+      "StarboardLowFulcrumSpringWasher",
+      "StarboardLowFulcrumCotter",
+      "StarboardLowFulcrumRivet1",
+      "StarboardLowFulcrumRivet2"
+    ],
+    "PortLowControlFulcrum": [
+      "PortLowFulcrumBracket",
+      "PortLowHorizontalLever",
+      "PortLowFulcrumSpringWasher",
+      "PortLowFulcrumCotter",
+      "PortLowFulcrumRivet1",
+      "PortLowFulcrumRivet2"
+    ]
+  },
+  "new_definitions": [
+    "Def_RearControlFulcrum_bracket",
+    "Def_RearControlFulcrum_washer",
+    "Def_RearControlFulcrum_cotter",
+    "Def_RearControlFulcrum_rivet",
+    "Def_RearControlFulcrum_lever_track",
+    "Def_RearControlFulcrum_lever_low_left",
+    "Def_RearControlFulcrum_lever_low_right"
+  ],
+  "shared_definitions": {},
+  "changed_definitions": [
+    "Def_RearControlMount_channel"
+  ],
+  "changed_receiver_feature": "ReconstructedRearControlMount",
+  "affected_occurrences": [
+    "PortLowFulcrumBracket",
+    "PortLowFulcrumCotter",
+    "PortLowFulcrumRivet1",
+    "PortLowFulcrumRivet2",
+    "PortLowFulcrumSpringWasher",
+    "PortLowHorizontalLever",
+    "PortTrackFulcrumBracket",
+    "PortTrackFulcrumCotter",
+    "PortTrackFulcrumRivet1",
+    "PortTrackFulcrumRivet2",
+    "PortTrackFulcrumSpringWasher",
+    "PortTrackHorizontalLever",
+    "StarboardLowFulcrumBracket",
+    "StarboardLowFulcrumCotter",
+    "StarboardLowFulcrumRivet1",
+    "StarboardLowFulcrumRivet2",
+    "StarboardLowFulcrumSpringWasher",
+    "StarboardLowHorizontalLever",
+    "StarboardTrackFulcrumBracket",
+    "StarboardTrackFulcrumCotter",
+    "StarboardTrackFulcrumRivet1",
+    "StarboardTrackFulcrumRivet2",
+    "StarboardTrackFulcrumSpringWasher",
+    "StarboardTrackHorizontalLever",
+    "RearControlChannelStock"
+  ],
+  "expected_physical_occurrences": 3226,
+  "expected_definition_count": 558,
+  "expected_assembly_count": 347,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "channel_complete": false,
+  "packet_complete": false
+}
