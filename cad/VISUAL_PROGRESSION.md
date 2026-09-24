@@ -1080,3 +1080,17 @@ native files. Standard tank011 is unchanged; section cuts affect display only.
 | [intermediate_snapshot_iso_powertrain_registration_004](intermediate_snapshot_iso_powertrain_registration_004.png) | `ac97261c5b9200c4b73676940ba65dffea53469096257a1b7cb8e4ab62c58726` |
 | [intermediate_snapshot_detail_chain_casing_registration_001](intermediate_snapshot_detail_chain_casing_registration_001.png) | `72f3e34f5233fde884fe3b551bc3afe89be8010b547ac17bc9e916af8f772daf` |
 | [intermediate_snapshot_source_chain_casing_registration_001](intermediate_snapshot_source_chain_casing_registration_001.png) | `05913612effbd444115f32b901b565f0951a92bebac5f569bc458fa36f5ed9b4` |
+
+
+## High-speed forward fittings and lining hardware — 24 September 2026
+
+Four inspected views bring the progression to 208, preserving all 204 earlier images.
+Standard tank011 remains unchanged; the new casing section is a display cut.
+Source registration is unchanged. Full high-speed controls/supports remain pending.
+
+| View | SHA-256 |
+| --- | --- |
+| [intermediate_snapshot_iso_transmission_high_brake_front_trial_001.png](intermediate_snapshot_iso_transmission_high_brake_front_trial_001.png) | `7cec0e1f2acb3dfb98ecd8568775756c00906c7e7511eeb07ec31d29f138afed` |
+| [intermediate_snapshot_detail_transmission_high_brake_front_trial_001.png](intermediate_snapshot_detail_transmission_high_brake_front_trial_001.png) | `087c8cac01e4d4785fe1a1e81845bf90f5e7deb0edb18b214d0d8aa1f4aeb851` |
+| [intermediate_snapshot_source_transmission_high_brake_front_trial_001.png](intermediate_snapshot_source_transmission_high_brake_front_trial_001.png) | `82e8544614c6e6f0cb2172db04709663b4520a9256d73bce2d48973541f36511` |
+| [intermediate_snapshot_section_transmission_high_brake_front_trial_001.png](intermediate_snapshot_section_transmission_high_brake_front_trial_001.png) | `0504636aba096e42c35fec6f9398aafc9860ede2483f53e5558b2b5a53873003` |

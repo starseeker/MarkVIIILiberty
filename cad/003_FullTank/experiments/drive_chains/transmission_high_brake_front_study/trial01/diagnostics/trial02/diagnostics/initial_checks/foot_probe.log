@@ -1,0 +1,6 @@
+Long 0 area 5055.131230294908 miss 63.45969694865682 faces 1 valid True bounds BoundBox (1986.06, 205.081, 1019.16, 1991.61, 214.019, 1026.31) center Vector (1988.8663356730415, 209.5500005464527, 1022.7591237698675)
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/.work/high-brake-front/probe_foot_coverage.py", line 14, in <module>
+    print(role,i,'area',f.Area,'miss',miss.Area,'faces',len(miss.Faces),'valid',miss.isValid(),'bounds',bb,'center',miss.CenterOfMass,flush=True)
+                                                                                                                    ^^^^^^^^^^^^^^^^^
+AttributeError: 'Part.Compound' object has no attribute 'CenterOfMass'

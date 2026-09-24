@@ -1,0 +1,33 @@
+{
+  "current_stage": "material",
+  "error": "Missing declared file: /home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_high_brake_joint_study/trial01/PowertrainWithHighBrakeFront.FCStd",
+  "metrics": {
+    "executed": 3,
+    "execution_seconds": 80.68238397402456,
+    "failures": 1,
+    "model_invocations": 0,
+    "orchestrating_assistant_usage": "not measured by deterministic runner",
+    "reused": 0,
+    "reused_prior_execution_seconds": 0.0
+  },
+  "plan": "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/plans/high_brake_front_development.json",
+  "plan_sha256": "416558285adc6808f8fbb320bf2524f265c37aa32969139789c8f7c35dbb72a1",
+  "stages": [
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_front01/records/build/latest.json",
+      "id": "build",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_front01/records/extract/latest.json",
+      "id": "extract",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_front01/records/check/latest.json",
+      "id": "check",
+      "status": "passed"
+    }
+  ],
+  "status": "failed"
+}

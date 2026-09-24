@@ -11,6 +11,25 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — high-speed forward fittings and lining hardware
+
+The [forward checkpoint](experiments/drive_chains/transmission_high_brake_front_study/trial01/README.md)
+adds four end fittings, 12 steel rivets, 34 copper rivets and 2 brass screws. The
+native development has **3,091 occurrences /519 definitions /314 assemblies**.
+Source stock is retained. The inferred rear casing bridge now clears the rivet
+tails, with bounded material preservation and remaining bridge stock verified.
+
+All 16 stages pass: 104 component checks, 28 material/support checks,
+504 development pairs,507 preserved definitions,71 STEP comparisons, retained
+standard context, exact reproduction and a 1 mm fitting-stock variation. Full lining
+support is checked with explicit countersink-pocket and axial-overhang exceptions.
+Failed trials, the curved-face seam diagnostic and original source discrepancies
+are retained. The fixed source registration is reused.
+
+Four inspected views bring progression to **208 images**, preserving all 204 prior
+images. Pins, levers, adjustment, anchor supports and high-speed stops remain;
+standard tank011 is unchanged and the full tank goal remains active.
+
 ## 24 September 2026 — high-speed rear brake joints populated
 
 The [rear joint checkpoint](experiments/drive_chains/transmission_high_brake_joint_study/trial01/README.md)

@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "native_sha256": "c34346d75ef3b69199867b390d97b88644da1d2566cd00579437b99e17707e20",
+  "parameter_native_sha256": "fff7f95948c9ac6f9d00a0605020bb5dd6ec494953138af15530cdf58eafa773",
+  "checker_sha256": "56b655025e54efb110c712dc78c739b6fa520ef808b7da076576a52ca605c1a2",
+  "checks": [
+    {
+      "name": "Only estimated fitting stock increases one millimeter",
+      "passed": true
+    },
+    {
+      "name": "All definition metadata unchanged",
+      "passed": true
+    },
+    {
+      "name": "long_end actual outer radius or shank seat follows stock",
+      "passed": true,
+      "values_mm": [
+        211.93125000000023,
+        212.93125000000006
+      ]
+    },
+    {
+      "name": "short_end actual outer radius or shank seat follows stock",
+      "passed": true,
+      "values_mm": [
+        211.93124999999944,
+        212.93125000000092
+      ]
+    },
+    {
+      "name": "steel_rivet actual outer radius or shank seat follows stock",
+      "passed": true,
+      "values_mm": [
+        14.181249999999999,
+        15.18125
+      ]
+    },
+    {
+      "name": "lining_front_1 actual outer radius or shank seat follows stock",
+      "passed": true,
+      "values_mm": [
+        20.53125,
+        21.53125
+      ]
+    },
+    {
+      "name": "Every occurrence identity owner and frame unchanged",
+      "passed": true
+    }
+  ],
+  "changed_brep_definitions": [
+    "Def_HighBrakeFront_long_end",
+    "Def_HighBrakeFront_steel_rivet",
+    "Def_HighBrakeFront_lining_front_1",
+    "Def_HighBrakeFront_short_end"
+  ],
+  "scope": "One millimeter estimated forward fitting-stock sensitivity. Source lining and rivet stock are fixed; both candidates pass independent stock, seat, support and interference checks."
+}

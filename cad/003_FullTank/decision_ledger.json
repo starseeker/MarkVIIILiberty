@@ -234,6 +234,51 @@
           "sha256": "50d9d86f050d0af5ddfe74d23bb705942b8115c74415913bb25b984feab65ea9"
         }
       ]
+    },
+    {
+      "id": "high_speed_brake_front_and_lining",
+      "status": "reviewed_approximation",
+      "scope": "Forward fittings, catalogue lining hardware, bounded backing/anchor/case changes, whole lining support with explicit exceptions, preservation, STEP, context, exact reproduction and forward-stock sensitivity.",
+      "reason": "Catalogue stock/counts and handbook free-end connections constrain the reconstructed hardware. Independent saved-solid and exchange checks pass.",
+      "uncertainty": "Unnumbered riveted fitting interpretation, fork width, head forms, M361 extension and M263 rear bridge relief are inferred. No source or load-strength claim for the relief.",
+      "limits": [
+        "Forward fitting shape, fork width, pin bores and fastener head forms are estimates.",
+        "Source rivet stock-length datum remains uncertain; formed tails conserve the selected under-head stock model.",
+        "Brass screw threads represented by nominal shank and receiving bore, without helices.",
+        "M356 pins/cotters, lever members, adjustment, anchor supports and stops remain to populate.",
+        "M263 rear bridge clearance is an interface-driven estimate; casting shape and strength are not recovered from the source.",
+        "Centered printed lining stock overhangs the image-derived drum by0.589643mm per edge. Full support is verified within the drum width; backing contact excludes the three steel-head recesses per band.",
+        "SNL continuous lining composition differs from HB six-segment nomenclature.",
+        "Inherited brake-stop identity, transverse architecture and complete service/control paths remain conditional."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "basis": "Original SNL9/HB100/HB133 and SNL22 review; four inspected views and all16 qualification stages."
+      },
+      "reopen_when": [
+        "Identified forward fitting, lever, pin or case-bridge drawing supplies dimensions.",
+        "Pins, controls, anchor supports or stops contradict the reserved interfaces or band clocking.",
+        "Historical configuration, lining allocation or service evidence contradicts the reconstruction."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/sources.json",
+          "sha256": "3cf6ec12d7e663d51d6938d180f23c357d358a6c01643bf71227988a7401960f"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/controls.json",
+          "sha256": "8f2b1d7a732e0e31df01c80165989e8eda4e0bfbef32bdbc76901417ef6a96b5"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_study/joint_source_registration.json",
+          "sha256": "d91559b8b0cf3b998444661f2e15b422e648e72530feaaca55c3f3f3f4891647"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_front_study/trial01/qualification.json",
+          "sha256": "72f9d9651281acd1fee2c7e3ad9bd027f18ad2769152ede3b0ed7700735a312e"
+        }
+      ]
     }
   ]
 }

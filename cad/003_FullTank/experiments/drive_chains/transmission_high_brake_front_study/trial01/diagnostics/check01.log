@@ -1,0 +1,11 @@
+Checks 103 pairs 357 passed False
+{'name': 'long printed lining BRep and metadata unchanged', 'passed': False}
+{'name': 'short printed lining BRep and metadata unchanged', 'passed': False}
+{'name': 'PortHighSpeedBrakeLong complete curved fitting bearing', 'passed': False}
+{'name': 'StarboardHighSpeedBrakeLong complete curved fitting bearing', 'passed': False}
+{'name': 'No changed or new material interference', 'passed': False, 'pairs': 357, 'collisions': [{'first': 'CenterTransmissionCore_bevel_case', 'second': 'PortHighSpeedBrakeLongLiningFastener10', 'volume_mm3': 143.6872843162567}, {'first': 'CenterTransmissionCore_bevel_case', 'second': 'PortHighSpeedBrakeLongLiningFastener11', 'volume_mm3': 154.6389246291149}, {'first': 'CenterTransmissionCore_bevel_case', 'second': 'StarboardHighSpeedBrakeLongLiningFastener10', 'volume_mm3': 143.6872843162567}, {'first': 'CenterTransmissionCore_bevel_case', 'second': 'StarboardHighSpeedBrakeLongLiningFastener11', 'volume_mm3': 154.63892462911485}, {'first': 'PortHighSpeedBrakeLongBand', 'second': 'PortHighSpeedBrakeLongFrontEnd', 'volume_mm3': 176.19024956830924}, {'first': 'PortHighSpeedBrakeLongFrontEnd', 'second': 'PortHighSpeedBrakeLongLining', 'volume_mm3': 0.740825894583035}, {'first': 'PortHighSpeedBrakeShortBand', 'second': 'PortHighSpeedBrakeShortFrontEnd', 'volume_mm3': 238.46271931924895}, {'first': 'PortHighSpeedBrakeShortFrontEnd', 'second': 'PortHighSpeedBrakeShortLining', 'volume_mm3': 4.649497525329869}, {'first': 'StarboardHighSpeedBrakeLongBand', 'second': 'StarboardHighSpeedBrakeLongFrontEnd', 'volume_mm3': 176.1902495683092}, {'first': 'StarboardHighSpeedBrakeLongFrontEnd', 'second': 'StarboardHighSpeedBrakeLongLining', 'volume_mm3': 0.740825894583035}, {'first': 'StarboardHighSpeedBrakeShortBand', 'second': 'StarboardHighSpeedBrakeShortFrontEnd', 'volume_mm3': 238.46271931924696}, {'first': 'StarboardHighSpeedBrakeShortFrontEnd', 'second': 'StarboardHighSpeedBrakeShortLining', 'volume_mm3': 4.649497525329869}], 'invalid': []}
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_transmission_high_brake_front.py", line 110, in <module>
+    assert result['passed']
+           ~~~~~~^^^^^^^^^^
+AssertionError

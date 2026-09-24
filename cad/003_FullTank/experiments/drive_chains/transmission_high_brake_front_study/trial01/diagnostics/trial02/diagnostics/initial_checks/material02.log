@@ -1,0 +1,33 @@
+Long backing changes confined to fastener recesses True
+Short backing changes confined to fastener recesses True
+M361 extension and rivet recess are the only material changes True
+M361 complete extension stock outside rivet recess retained True
+Port continuous case clearance envelope empty True
+Port former bridge fails new hardware clearance True
+Port continuous minimum bridge stock retained True
+Starboard continuous case clearance envelope empty True
+Starboard former bridge fails new hardware clearance True
+Starboard continuous minimum bridge stock retained True
+Case changes only remove the two bounded bridge recesses True
+Case remains one connected closed solid True
+PortHighSpeedBrakeLong entire backing contact outside steel-head recesses False
+PortHighSpeedBrakeLong displaced backing loses contact True
+PortHighSpeedBrakeLong entire drum-width friction surface supported True
+PortHighSpeedBrakeLong displaced drum loses contact True
+PortHighSpeedBrakeShort entire backing contact outside steel-head recesses False
+PortHighSpeedBrakeShort displaced backing loses contact True
+PortHighSpeedBrakeShort entire drum-width friction surface supported True
+PortHighSpeedBrakeShort displaced drum loses contact True
+StarboardHighSpeedBrakeLong entire backing contact outside steel-head recesses False
+StarboardHighSpeedBrakeLong displaced backing loses contact True
+StarboardHighSpeedBrakeLong entire drum-width friction surface supported True
+StarboardHighSpeedBrakeLong displaced drum loses contact True
+StarboardHighSpeedBrakeShort entire backing contact outside steel-head recesses False
+StarboardHighSpeedBrakeShort displaced backing loses contact True
+StarboardHighSpeedBrakeShort entire drum-width friction surface supported True
+StarboardHighSpeedBrakeShort displaced drum loses contact True
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_transmission_high_brake_front_material.py", line 113, in <module>
+    assert result['passed'],[v['name'] for v in checks if not v['passed']]
+           ~~~~~~^^^^^^^^^^
+AssertionError: ['PortHighSpeedBrakeLong entire backing contact outside steel-head recesses', 'PortHighSpeedBrakeShort entire backing contact outside steel-head recesses', 'StarboardHighSpeedBrakeLong entire backing contact outside steel-head recesses', 'StarboardHighSpeedBrakeShort entire backing contact outside steel-head recesses']

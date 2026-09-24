@@ -1,0 +1,21 @@
+build: running
+build: passed
+extract: running
+extract: passed
+check: running
+check: passed
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/pipeline.py", line 382, in <module>
+    main()
+  File "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/pipeline.py", line 370, in main
+    print(json.dumps(run(a.plan, a.id), indent=2))
+                     ^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/pipeline.py", line 294, in run
+    sig = signature(stage, plan, variables, rt)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/pipeline.py", line 177, in signature
+    inputs=files(stage['inputs'], variables), runtime=runtime_record, runtime_spec=plan['runtime'],
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/pipeline.py", line 40, in files
+    raise ValueError('Missing declared file: '+expanded)
+ValueError: Missing declared file: /home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_high_brake_joint_study/trial01/PowertrainWithHighBrakeFront.FCStd
