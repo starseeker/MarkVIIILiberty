@@ -1,0 +1,1540 @@
+{
+  "version": 1,
+  "mode": "local_development",
+  "id": "brake_stop_replay",
+  "description": "Rebuild and independently verify the trial04 static development assembly; explicit review still required.",
+  "python_paths": [
+    "{root}/cad/003_FullTank/experiments/drive_chains",
+    "{root}/cad/003_FullTank",
+    "{root}/tools/cad_packets"
+  ],
+  "common_inputs": [
+    "{root}/tools/cad_pipeline/runtime_probe.py",
+    "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py"
+  ],
+  "environment_keys": [
+    "MARKVIII_FREECAD_ROOT",
+    "MARKVIII_QT_ROOT",
+    "CC",
+    "CXX",
+    "PATH",
+    "LANG",
+    "LC_ALL"
+  ],
+  "runtime": {
+    "command": [
+      "{python}",
+      "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+      "--workdir",
+      "{run}/runtime/probe",
+      "{root}/tools/cad_pipeline/runtime_probe.py"
+    ],
+    "checks": [
+      {
+        "pointer": "/freecad/0",
+        "equals": "1"
+      },
+      {
+        "pointer": "/freecad/1",
+        "equals": "1"
+      },
+      {
+        "pointer": "/freecad/2",
+        "equals": "1"
+      },
+      {
+        "pointer": "/occ",
+        "equals": "7.8.0"
+      },
+      {
+        "pointer": "/gui_up",
+        "equals": false
+      }
+    ],
+    "files": [
+      "/snap/freecad/current/usr/lib/AssemblyApp.so",
+      "/snap/freecad/current/usr/lib/FreeCAD.so",
+      "/snap/freecad/current/usr/lib/Part.so",
+      "/snap/freecad/current/usr/lib/Sketcher.so",
+      "/snap/freecad/current/usr/lib/_PartDesign.so",
+      "/snap/freecad/current/usr/lib/libTKBO.so",
+      "/snap/freecad/current/usr/lib/libTKBRep.so",
+      "/snap/freecad/current/usr/lib/libTKBin.so",
+      "/snap/freecad/current/usr/lib/libTKBinL.so",
+      "/snap/freecad/current/usr/lib/libTKBinTObj.so",
+      "/snap/freecad/current/usr/lib/libTKBinXCAF.so",
+      "/snap/freecad/current/usr/lib/libTKBool.so",
+      "/snap/freecad/current/usr/lib/libTKCAF.so",
+      "/snap/freecad/current/usr/lib/libTKCDF.so",
+      "/snap/freecad/current/usr/lib/libTKDCAF.so",
+      "/snap/freecad/current/usr/lib/libTKDE.so",
+      "/snap/freecad/current/usr/lib/libTKDECascade.so",
+      "/snap/freecad/current/usr/lib/libTKDEGLTF.so",
+      "/snap/freecad/current/usr/lib/libTKDEIGES.so",
+      "/snap/freecad/current/usr/lib/libTKDEOBJ.so",
+      "/snap/freecad/current/usr/lib/libTKDEPLY.so",
+      "/snap/freecad/current/usr/lib/libTKDESTEP.so",
+      "/snap/freecad/current/usr/lib/libTKDESTL.so",
+      "/snap/freecad/current/usr/lib/libTKDEVRML.so",
+      "/snap/freecad/current/usr/lib/libTKDraw.so",
+      "/snap/freecad/current/usr/lib/libTKExpress.so",
+      "/snap/freecad/current/usr/lib/libTKFeat.so",
+      "/snap/freecad/current/usr/lib/libTKFillet.so",
+      "/snap/freecad/current/usr/lib/libTKG2d.so",
+      "/snap/freecad/current/usr/lib/libTKG3d.so",
+      "/snap/freecad/current/usr/lib/libTKGeomAlgo.so",
+      "/snap/freecad/current/usr/lib/libTKGeomBase.so",
+      "/snap/freecad/current/usr/lib/libTKHLR.so",
+      "/snap/freecad/current/usr/lib/libTKLCAF.so",
+      "/snap/freecad/current/usr/lib/libTKMath.so",
+      "/snap/freecad/current/usr/lib/libTKMesh.so",
+      "/snap/freecad/current/usr/lib/libTKMeshVS.so",
+      "/snap/freecad/current/usr/lib/libTKOffset.so",
+      "/snap/freecad/current/usr/lib/libTKOpenGl.so",
+      "/snap/freecad/current/usr/lib/libTKOpenGlTest.so",
+      "/snap/freecad/current/usr/lib/libTKPrim.so",
+      "/snap/freecad/current/usr/lib/libTKQADraw.so",
+      "/snap/freecad/current/usr/lib/libTKRWMesh.so",
+      "/snap/freecad/current/usr/lib/libTKService.so",
+      "/snap/freecad/current/usr/lib/libTKShHealing.so",
+      "/snap/freecad/current/usr/lib/libTKStd.so",
+      "/snap/freecad/current/usr/lib/libTKStdL.so",
+      "/snap/freecad/current/usr/lib/libTKTObj.so",
+      "/snap/freecad/current/usr/lib/libTKTObjDRAW.so",
+      "/snap/freecad/current/usr/lib/libTKTopAlgo.so",
+      "/snap/freecad/current/usr/lib/libTKTopTest.so",
+      "/snap/freecad/current/usr/lib/libTKV3d.so",
+      "/snap/freecad/current/usr/lib/libTKVCAF.so",
+      "/snap/freecad/current/usr/lib/libTKViewerTest.so",
+      "/snap/freecad/current/usr/lib/libTKXCAF.so",
+      "/snap/freecad/current/usr/lib/libTKXDEDRAW.so",
+      "/snap/freecad/current/usr/lib/libTKXMesh.so",
+      "/snap/freecad/current/usr/lib/libTKXSBase.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAW.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWDE.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWGLTF.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWIGES.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWOBJ.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWPLY.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWSTEP.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWSTL.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWVRML.so",
+      "/snap/freecad/current/usr/lib/libTKXml.so",
+      "/snap/freecad/current/usr/lib/libTKXmlL.so",
+      "/snap/freecad/current/usr/lib/libTKXmlTObj.so",
+      "/snap/freecad/current/usr/lib/libTKXmlXCAF.so",
+      "/snap/freecad/current/usr/lib/libTKernel.so",
+      "/snap/kf6-core24/current/usr/lib/x86_64-linux-gnu/libQt6Core.so.6",
+      "/usr/bin/cc"
+    ]
+  },
+  "stages": [
+    {
+      "id": "build",
+      "needs": [],
+      "reentrant": false,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/build",
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "--output",
+        "{run}/candidate",
+        "--mount-controls",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/PowertrainWithBrakeFront.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/definition_preservation_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/exchange_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/independent_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/1d9baefe72e94afd2b7589f3d9833bbe917d345f806853dec3bc2cd3d7ee4758.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/71ac8913775b80e50e949a5c2c2c73acfb8191cb2977bd83129a573bfe4e33f6.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/7e83a77ad0b19e5e7f3ad215d23a0d48cba54716887ad68422a16e53ff8e1324.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/da08a26ecb600726f82ee005a512bde9dd8523396a5c41577459c97a6eab2896.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/manifest.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_mount_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_review/source_stack_analysis.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_stud_controls.json",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate101.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate102.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate123.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate134.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate135.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate73.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate78.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate95.png",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p041.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p122.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p167.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p191.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p205.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p252.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p253.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p303.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p304.jpg"
+      ],
+      "outputs": [
+        "{run}/candidate/PowertrainWithBrakeStops.FCStd",
+        "{run}/candidate/report.json",
+        "{run}/candidate/changed_shapes/*.brep",
+        "{run}/candidate/frozen_inputs/*"
+      ]
+    },
+    {
+      "id": "extract",
+      "needs": [
+        "build"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/extract",
+        "{root}/cad/003_FullTank/experiments/drive_chains/pump_integration_worker.py",
+        "extract",
+        "--input",
+        "{run}/candidate/PowertrainWithBrakeStops.FCStd",
+        "--output",
+        "{run}/candidate/isolated/manifest.json"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/pump_integration_worker.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/pump_integration_worker.py",
+        "{run}/candidate/PowertrainWithBrakeStops.FCStd"
+      ],
+      "outputs": [
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/isolated/breps/*.brep"
+      ]
+    },
+    {
+      "id": "inspect",
+      "needs": [
+        "extract"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/inspect",
+        "{root}/cad/003_FullTank/experiments/drive_chains/inspect_transmission_brake_stop_trial.py",
+        "--candidate",
+        "{run}/candidate"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/inspect_transmission_brake_stop_trial.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/inspect_transmission_brake_stop_trial.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/PowertrainWithBrakeFront.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/definition_preservation_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/exchange_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/independent_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/*.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/1d9baefe72e94afd2b7589f3d9833bbe917d345f806853dec3bc2cd3d7ee4758.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/71ac8913775b80e50e949a5c2c2c73acfb8191cb2977bd83129a573bfe4e33f6.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/7e83a77ad0b19e5e7f3ad215d23a0d48cba54716887ad68422a16e53ff8e1324.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/da08a26ecb600726f82ee005a512bde9dd8523396a5c41577459c97a6eab2896.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/manifest.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_mount_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_review/source_stack_analysis.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_stud_controls.json",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate101.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate102.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate123.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate134.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate135.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate73.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate78.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate95.png",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p041.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p122.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p167.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p191.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p205.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p252.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p253.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p303.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p304.jpg",
+        "{run}/candidate/PowertrainWithBrakeStops.FCStd",
+        "{run}/candidate/isolated/breps/*.brep",
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/report.json"
+      ],
+      "outputs": [
+        "{run}/candidate/trial_diagnostics.json"
+      ],
+      "receipts": [
+        {
+          "file": "{run}/candidate/trial_diagnostics.json",
+          "checks": [
+            {
+              "pointer": "/diagnostic_clear",
+              "equals": true
+            },
+            {
+              "pointer": "/native_sha256",
+              "sha256_file": "{run}/candidate/PowertrainWithBrakeStops.FCStd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mount",
+      "needs": [
+        "extract"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/mount",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_mount.py",
+        "--candidate",
+        "{run}/candidate"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_mount.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_mount.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/PowertrainWithBrakeFront.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/definition_preservation_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/exchange_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/independent_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/*.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/1d9baefe72e94afd2b7589f3d9833bbe917d345f806853dec3bc2cd3d7ee4758.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/71ac8913775b80e50e949a5c2c2c73acfb8191cb2977bd83129a573bfe4e33f6.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/7e83a77ad0b19e5e7f3ad215d23a0d48cba54716887ad68422a16e53ff8e1324.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/da08a26ecb600726f82ee005a512bde9dd8523396a5c41577459c97a6eab2896.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/manifest.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_mount_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_review/source_stack_analysis.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_stud_controls.json",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate101.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate102.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate123.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate134.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate135.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate73.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate78.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate95.png",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p041.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p122.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p167.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p191.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p205.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p252.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p253.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p303.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p304.jpg",
+        "{run}/candidate/PowertrainWithBrakeStops.FCStd",
+        "{run}/candidate/isolated/breps/*.brep",
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/report.json"
+      ],
+      "outputs": [
+        "{run}/candidate/mount_checks.json"
+      ],
+      "receipts": [
+        {
+          "file": "{run}/candidate/mount_checks.json",
+          "checks": [
+            {
+              "pointer": "/passed",
+              "equals": true
+            },
+            {
+              "pointer": "/native_sha256",
+              "sha256_file": "{run}/candidate/PowertrainWithBrakeStops.FCStd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joints",
+      "needs": [
+        "extract"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/joints",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_joints.py",
+        "--candidate",
+        "{run}/candidate"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_joints.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_joints.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/PowertrainWithBrakeFront.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/definition_preservation_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/exchange_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/independent_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/*.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/1d9baefe72e94afd2b7589f3d9833bbe917d345f806853dec3bc2cd3d7ee4758.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/71ac8913775b80e50e949a5c2c2c73acfb8191cb2977bd83129a573bfe4e33f6.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/7e83a77ad0b19e5e7f3ad215d23a0d48cba54716887ad68422a16e53ff8e1324.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/da08a26ecb600726f82ee005a512bde9dd8523396a5c41577459c97a6eab2896.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/manifest.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_mount_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_review/source_stack_analysis.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_stud_controls.json",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate101.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate102.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate123.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate134.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate135.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate73.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate78.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate95.png",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p041.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p122.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p167.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p191.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p205.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p252.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p253.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p303.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p304.jpg",
+        "{run}/candidate/PowertrainWithBrakeStops.FCStd",
+        "{run}/candidate/isolated/breps/*.brep",
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/report.json"
+      ],
+      "outputs": [
+        "{run}/candidate/joint_checks.json"
+      ],
+      "receipts": [
+        {
+          "file": "{run}/candidate/joint_checks.json",
+          "checks": [
+            {
+              "pointer": "/passed",
+              "equals": true
+            },
+            {
+              "pointer": "/native_sha256",
+              "sha256_file": "{run}/candidate/PowertrainWithBrakeStops.FCStd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "standard",
+      "needs": [
+        "extract"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/standard",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_context.py",
+        "--candidate",
+        "{run}/candidate",
+        "--standard-manifest",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/standard_context_manifest.json"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_context.py"
+      ],
+      "inputs": [
+        "{root}/.work/following-frame/standard-context/breps/battery.brep",
+        "{root}/.work/following-frame/standard-context/breps/carburetor.brep",
+        "{root}/.work/following-frame/standard-context/breps/clutch.brep",
+        "{root}/.work/following-frame/standard-context/breps/drive_backing_plate.brep",
+        "{root}/.work/following-frame/standard-context/breps/drive_backing_rivet.brep",
+        "{root}/.work/following-frame/standard-context/breps/drive_bearing_screw.brep",
+        "{root}/.work/following-frame/standard-context/breps/drive_inner_bearing.brep",
+        "{root}/.work/following-frame/standard-context/breps/drive_inner_rivet.brep",
+        "{root}/.work/following-frame/standard-context/breps/drive_key.brep",
+        "{root}/.work/following-frame/standard-context/breps/drive_locking_plate.brep",
+        "{root}/.work/following-frame/standard-context/breps/drive_locking_screw.brep",
+        "{root}/.work/following-frame/standard-context/breps/drive_outer_bearing.brep",
+        "{root}/.work/following-frame/standard-context/breps/drive_rim.brep",
+        "{root}/.work/following-frame/standard-context/breps/drive_shaft.brep",
+        "{root}/.work/following-frame/standard-context/breps/driver_seat.brep",
+        "{root}/.work/following-frame/standard-context/breps/engine.brep",
+        "{root}/.work/following-frame/standard-context/breps/fan.brep",
+        "{root}/.work/following-frame/standard-context/breps/fuel_tank.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_engine_back.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_floor_1.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_floor_2.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_floor_3.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_floor_4.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_floor_5.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_floor_6.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_floor_7.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_floor_8.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_floor_fuel.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_front_slope.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_fuel_back.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_aft_sponson.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_door_aft_surround.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_door_header.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_door_lower.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_door_sill.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_door_upper.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_engine_access_leaf.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_engine_side_1.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_engine_side_2.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_engine_side_3.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_front_lower.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_front_sponson.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_front_upper.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_inner_front_lower.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_inner_front_sponson.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_inner_front_upper.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_inner_fuel_side.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_inner_rear_end.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_inner_skirt_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_inner_skirt_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_outer_skirt_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_outer_skirt_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_over_sponson.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_rear_end.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_rear_wing.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_roof_driver.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_roof_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_roof_track_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_under_sponson_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_port_under_sponson_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_roof_aft_upper.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_roof_after_inlet.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_roof_before_inlet.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_roof_engine_cover.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_roof_fuel.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_aft_sponson.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_door_aft_surround.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_door_header.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_door_lower.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_door_sill.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_door_upper.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_engine_access_leaf.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_engine_side_1.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_engine_side_2.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_engine_side_3.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_front_lower.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_front_sponson.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_front_upper.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_inner_front_lower.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_inner_front_sponson.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_inner_front_upper.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_inner_fuel_side.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_inner_rear_end.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_inner_skirt_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_inner_skirt_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_outer_skirt_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_outer_skirt_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_over_sponson.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_rear_end.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_rear_wing.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_roof_driver.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_roof_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_roof_track_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_under_sponson_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/hull_starboard_under_sponson_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/idler_adjusting_screw.brep",
+        "{root}/.work/following-frame/standard-context/breps/idler_bracket.brep",
+        "{root}/.work/following-frame/standard-context/breps/idler_cap_screw.brep",
+        "{root}/.work/following-frame/standard-context/breps/idler_copper.brep",
+        "{root}/.work/following-frame/standard-context/breps/idler_guard.brep",
+        "{root}/.work/following-frame/standard-context/breps/idler_locking_screw.brep",
+        "{root}/.work/following-frame/standard-context/breps/idler_nut.brep",
+        "{root}/.work/following-frame/standard-context/breps/idler_plate.brep",
+        "{root}/.work/following-frame/standard-context/breps/idler_plate_rivet.brep",
+        "{root}/.work/following-frame/standard-context/breps/idler_shaft.brep",
+        "{root}/.work/following-frame/standard-context/breps/idler_washer.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_inlet_blade.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_inlet_cover.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_inlet_front_frame.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_inlet_front_retainer.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_inlet_guard_port.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_inlet_guard_starboard.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_inlet_packing_plate.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_inlet_packing_strip.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_inlet_rear_frame.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_inlet_rear_retainer.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_outlet_blade.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_outlet_cover.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_outlet_front_frame.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_outlet_front_retainer.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_outlet_guard_port.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_outlet_guard_starboard.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_outlet_port_frame.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_outlet_rear_frame.brep",
+        "{root}/.work/following-frame/standard-context/breps/louver_outlet_rear_retainer.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_attachment_bolt.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2078.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2079.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2080.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2081a.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2081b.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2082a.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2082b.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2083a.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2083b.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2084a.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2084b.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2085_negative.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2085_positive.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2175_negative.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2175_positive.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2176_negative.brep",
+        "{root}/.work/following-frame/standard-context/breps/lower_support_m2176_positive.brep",
+        "{root}/.work/following-frame/standard-context/breps/pinion_casting.brep",
+        "{root}/.work/following-frame/standard-context/breps/pinion_cotter.brep",
+        "{root}/.work/following-frame/standard-context/breps/pinion_inner_bearing.brep",
+        "{root}/.work/following-frame/standard-context/breps/pinion_inner_rivet.brep",
+        "{root}/.work/following-frame/standard-context/breps/pinion_pin.brep",
+        "{root}/.work/following-frame/standard-context/breps/pinion_pin_plug.brep",
+        "{root}/.work/following-frame/standard-context/breps/pinion_roller.brep",
+        "{root}/.work/following-frame/standard-context/breps/pinion_shaft.brep",
+        "{root}/.work/following-frame/standard-context/breps/pinion_shaft_inner_plug.brep",
+        "{root}/.work/following-frame/standard-context/breps/pinion_shaft_outer_plug.brep",
+        "{root}/.work/following-frame/standard-context/breps/radiator.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_bush.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_lower.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_nut.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_pin.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_plug.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_ring.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_spring.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_spring_plate.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_tube.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_ubolt.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_upper.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_upper_plug.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_upper_support.brep",
+        "{root}/.work/following-frame/standard-context/breps/roller_washer.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_back.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_back_side.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_back_wing.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_floor.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_front_lower.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_front_upper.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_front_vertical.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_front_wing.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_roof.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_shield_bottom_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_shield_bottom_middle.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_shield_bottom_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_shield_top_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_shield_top_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_side.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_side_lower.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_side_upper.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_sloping_bottom.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_port_sloping_side.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_back.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_back_side.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_back_wing.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_floor.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_front_lower.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_front_upper.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_front_vertical.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_front_wing.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_roof.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_shield_bottom_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_shield_bottom_middle.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_shield_bottom_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_shield_top_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_shield_top_middle.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_shield_top_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_side.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_side_lower.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_side_upper.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_sloping_bottom.brep",
+        "{root}/.work/following-frame/standard-context/breps/sponson_starboard_sloping_side.brep",
+        "{root}/.work/following-frame/standard-context/breps/stowage.brep",
+        "{root}/.work/following-frame/standard-context/breps/track_bushing.brep",
+        "{root}/.work/following-frame/standard-context/breps/track_cotter.brep",
+        "{root}/.work/following-frame/standard-context/breps/track_link_left.brep",
+        "{root}/.work/following-frame/standard-context/breps/track_link_right.brep",
+        "{root}/.work/following-frame/standard-context/breps/track_path.brep",
+        "{root}/.work/following-frame/standard-context/breps/track_pin.brep",
+        "{root}/.work/following-frame/standard-context/breps/track_rivet.brep",
+        "{root}/.work/following-frame/standard-context/breps/track_shoe.brep",
+        "{root}/.work/following-frame/standard-context/breps/transmission.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_driver_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_driver_roof.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_front_center.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_lookout_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_lookout_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_lookout_roof.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_port_driver_side.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_port_lookout_side.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_port_main_flap.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_port_main_junction.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_port_main_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_port_main_roof.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_port_main_side_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_port_main_side_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_port_main_wing.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_port_roof_door.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_starboard_driver_side.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_starboard_lookout_side.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_starboard_main_flap.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_starboard_main_junction.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_starboard_main_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_starboard_main_roof.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_starboard_main_side_front.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_starboard_main_side_rear.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_starboard_main_wing.brep",
+        "{root}/.work/following-frame/standard-context/breps/upper_starboard_roof_door.brep",
+        "{root}/.work/following-frame/standard-context/breps/wheel_boss.brep",
+        "{root}/.work/following-frame/standard-context/breps/wheel_bush.brep",
+        "{root}/.work/following-frame/standard-context/breps/wheel_diaphragm_x.brep",
+        "{root}/.work/following-frame/standard-context/breps/wheel_diaphragm_y.brep",
+        "{root}/.work/following-frame/standard-context/breps/wheel_disk.brep",
+        "{root}/.work/following-frame/standard-context/breps/wheel_rim.brep",
+        "{root}/.work/following-frame/standard-context/breps/wheel_rivet_long.brep",
+        "{root}/.work/following-frame/standard-context/breps/wheel_rivet_rim.brep",
+        "{root}/.work/following-frame/standard-context/breps/wheel_rivet_short.brep",
+        "{root}/cad/003_FullTank/build/native/MarkVIII.FCStd",
+        "{root}/cad/003_FullTank/build/native/library/CoolingVentilation.FCStd",
+        "{root}/cad/003_FullTank/build/native/library/CrewControlsAndEquipment.FCStd",
+        "{root}/cad/003_FullTank/build/native/library/Drivetrain.FCStd",
+        "{root}/cad/003_FullTank/build/native/library/ElectricalInstruments.FCStd",
+        "{root}/cad/003_FullTank/build/native/library/FuelPressure.FCStd",
+        "{root}/cad/003_FullTank/build/native/library/HullStructure.FCStd",
+        "{root}/cad/003_FullTank/build/native/library/Powerplant.FCStd",
+        "{root}/cad/003_FullTank/build/native/library/RunningGear.FCStd",
+        "{root}/cad/003_FullTank/build/native/library/Sponsons.FCStd",
+        "{root}/cad/003_FullTank/build/native/subsystems/ArmamentRepresentation.FCStd",
+        "{root}/cad/003_FullTank/build/native/subsystems/CoolingVentilation.FCStd",
+        "{root}/cad/003_FullTank/build/native/subsystems/CrewControlsAndEquipment.FCStd",
+        "{root}/cad/003_FullTank/build/native/subsystems/Drivetrain.FCStd",
+        "{root}/cad/003_FullTank/build/native/subsystems/ElectricalInstruments.FCStd",
+        "{root}/cad/003_FullTank/build/native/subsystems/FuelPressure.FCStd",
+        "{root}/cad/003_FullTank/build/native/subsystems/HullStructure.FCStd",
+        "{root}/cad/003_FullTank/build/native/subsystems/Powerplant.FCStd",
+        "{root}/cad/003_FullTank/build/native/subsystems/RunningGear.FCStd",
+        "{root}/cad/003_FullTank/build/native/subsystems/Sponsons.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_context.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/standard_context_manifest.json",
+        "{run}/candidate/PowertrainWithBrakeStops.FCStd",
+        "{run}/candidate/isolated/breps/*.brep",
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/report.json"
+      ],
+      "outputs": [
+        "{run}/candidate/standard_context_checks.json"
+      ],
+      "receipts": [
+        {
+          "file": "{run}/candidate/standard_context_checks.json",
+          "checks": [
+            {
+              "pointer": "/passed",
+              "equals": true
+            },
+            {
+              "pointer": "/native_sha256",
+              "sha256_file": "{run}/candidate/PowertrainWithBrakeStops.FCStd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "preserve",
+      "needs": [
+        "mount",
+        "joints"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_preservation.py",
+        "--candidate",
+        "{run}/candidate"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_preservation.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/pump_integration_worker.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_preservation.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/PowertrainWithBrakeFront.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/*.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/manifest.json",
+        "{run}/candidate/PowertrainWithBrakeStops.FCStd",
+        "{run}/candidate/isolated/breps/*.brep",
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/joint_checks.json",
+        "{run}/candidate/mount_checks.json",
+        "{run}/candidate/report.json"
+      ],
+      "outputs": [
+        "{run}/candidate/definition_preservation_checks.json"
+      ],
+      "receipts": [
+        {
+          "file": "{run}/candidate/definition_preservation_checks.json",
+          "checks": [
+            {
+              "pointer": "/passed",
+              "equals": true
+            },
+            {
+              "pointer": "/native_sha256",
+              "sha256_file": "{run}/candidate/PowertrainWithBrakeStops.FCStd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exchange",
+      "needs": [
+        "inspect"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/exchange",
+        "{root}/cad/003_FullTank/experiments/drive_chains/exchange_transmission_brake_stops.py",
+        "--candidate",
+        "{run}/candidate"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/exchange_transmission_brake_stops.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/exchange_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/lib/occt_mass_properties.cpp",
+        "{run}/candidate/PowertrainWithBrakeStops.FCStd",
+        "{run}/candidate/isolated/breps/*.brep",
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/report.json"
+      ],
+      "outputs": [
+        "{run}/candidate/exchange_checks.json",
+        "{run}/candidate/BrakeStopDefinitions.step",
+        "{run}/candidate/BrakeStopInstallation.step"
+      ],
+      "receipts": [
+        {
+          "file": "{run}/candidate/exchange_checks.json",
+          "checks": [
+            {
+              "pointer": "/passed",
+              "equals": true
+            },
+            {
+              "pointer": "/native_sha256",
+              "sha256_file": "{run}/candidate/PowertrainWithBrakeStops.FCStd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "render",
+      "needs": [
+        "inspect"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/render",
+        "{root}/cad/003_FullTank/experiments/drive_chains/render_transmission_brake_stops.py",
+        "--candidate",
+        "{run}/candidate"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/render_transmission_brake_stops.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/render_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_suspension_study/trial02/report.json",
+        "{root}/cad/003_FullTank/lib/raster.c",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate101.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate102.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate123.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate134.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate135.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate73.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate78.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate95.png",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p041.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p122.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p167.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p191.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p205.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p252.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p253.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p303.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p304.jpg",
+        "{run}/candidate/PowertrainWithBrakeStops.FCStd",
+        "{run}/candidate/isolated/breps/*.brep",
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/report.json"
+      ],
+      "outputs": [
+        "{run}/candidate/isometric.png",
+        "{run}/candidate/support_detail.png",
+        "{run}/candidate/lowspeed_source_overlay.png",
+        "{run}/candidate/track_source_overlay.png",
+        "{run}/candidate/render_receipt.json"
+      ]
+    },
+    {
+      "id": "compare",
+      "needs": [
+        "extract"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/compare",
+        "{root}/cad/003_FullTank/experiments/drive_chains/compare_transmission_brake_stops.py",
+        "--candidate",
+        "{run}/candidate"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/compare_transmission_brake_stops.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/compare_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/PowertrainWithBrakeFront.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/definition_preservation_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/exchange_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/independent_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/1d9baefe72e94afd2b7589f3d9833bbe917d345f806853dec3bc2cd3d7ee4758.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/71ac8913775b80e50e949a5c2c2c73acfb8191cb2977bd83129a573bfe4e33f6.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/7e83a77ad0b19e5e7f3ad215d23a0d48cba54716887ad68422a16e53ff8e1324.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/da08a26ecb600726f82ee005a512bde9dd8523396a5c41577459c97a6eab2896.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/manifest.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_mount_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_review/source_stack_analysis.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_suspension_study/trial02/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_stud_controls.json",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate101.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate102.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate123.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate134.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate135.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate73.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate78.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate95.png",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p041.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p122.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p167.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p191.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p205.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p252.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p253.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p303.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p304.jpg",
+        "{run}/candidate/PowertrainWithBrakeStops.FCStd",
+        "{run}/candidate/isolated/breps/*.brep",
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/report.json"
+      ],
+      "outputs": [
+        "{run}/candidate/source_comparison.json"
+      ]
+    },
+    {
+      "id": "rebuild",
+      "needs": [
+        "build"
+      ],
+      "reentrant": false,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/rebuild",
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "--output",
+        "{run}/reproduction",
+        "--mount-controls",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/PowertrainWithBrakeFront.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/definition_preservation_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/exchange_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/independent_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/1d9baefe72e94afd2b7589f3d9833bbe917d345f806853dec3bc2cd3d7ee4758.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/71ac8913775b80e50e949a5c2c2c73acfb8191cb2977bd83129a573bfe4e33f6.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/7e83a77ad0b19e5e7f3ad215d23a0d48cba54716887ad68422a16e53ff8e1324.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/da08a26ecb600726f82ee005a512bde9dd8523396a5c41577459c97a6eab2896.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/manifest.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_mount_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_review/source_stack_analysis.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_stud_controls.json",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate101.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate102.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate123.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate134.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate135.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate73.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate78.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate95.png",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p041.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p122.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p167.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p191.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p205.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p252.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p253.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p303.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p304.jpg"
+      ],
+      "outputs": [
+        "{run}/reproduction/PowertrainWithBrakeStops.FCStd",
+        "{run}/reproduction/report.json",
+        "{run}/reproduction/changed_shapes/*.brep",
+        "{run}/reproduction/frozen_inputs/*"
+      ]
+    },
+    {
+      "id": "rebuild_extract",
+      "needs": [
+        "rebuild"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/rebuild_extract",
+        "{root}/cad/003_FullTank/experiments/drive_chains/pump_integration_worker.py",
+        "extract",
+        "--input",
+        "{run}/reproduction/PowertrainWithBrakeStops.FCStd",
+        "--output",
+        "{run}/reproduction/isolated/manifest.json"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/pump_integration_worker.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/pump_integration_worker.py",
+        "{run}/reproduction/PowertrainWithBrakeStops.FCStd"
+      ],
+      "outputs": [
+        "{run}/reproduction/isolated/manifest.json",
+        "{run}/reproduction/isolated/breps/*.brep"
+      ]
+    },
+    {
+      "id": "reproduction",
+      "needs": [
+        "extract",
+        "rebuild_extract"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_powertrain_frame_reproduction.py",
+        "--candidate",
+        "{run}/candidate",
+        "--reproduction",
+        "{run}/reproduction"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_powertrain_frame_reproduction.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_powertrain_frame_reproduction.py",
+        "{run}/candidate/PowertrainWithBrakeStops.FCStd",
+        "{run}/candidate/isolated/breps/*.brep",
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/report.json",
+        "{run}/reproduction/PowertrainWithBrakeStops.FCStd",
+        "{run}/reproduction/isolated/manifest.json",
+        "{run}/reproduction/report.json"
+      ],
+      "outputs": [
+        "{run}/candidate/reproduction_checks.json"
+      ],
+      "receipts": [
+        {
+          "file": "{run}/candidate/reproduction_checks.json",
+          "checks": [
+            {
+              "pointer": "/passed",
+              "equals": true
+            },
+            {
+              "pointer": "/native_sha256",
+              "sha256_file": "{run}/candidate/PowertrainWithBrakeStops.FCStd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parameter_build",
+      "needs": [
+        "build"
+      ],
+      "reentrant": false,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/parameter_build",
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "--output",
+        "{run}/parameter",
+        "--controls",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/parameter_evidence/parameter_controls.json",
+        "--mount-controls",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/parameter_evidence/parameter_mount_controls.json"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/PowertrainWithBrakeFront.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/definition_preservation_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/exchange_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/independent_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/1d9baefe72e94afd2b7589f3d9833bbe917d345f806853dec3bc2cd3d7ee4758.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/71ac8913775b80e50e949a5c2c2c73acfb8191cb2977bd83129a573bfe4e33f6.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/7e83a77ad0b19e5e7f3ad215d23a0d48cba54716887ad68422a16e53ff8e1324.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/da08a26ecb600726f82ee005a512bde9dd8523396a5c41577459c97a6eab2896.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/manifest.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_mount_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_review/source_stack_analysis.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/parameter_evidence/parameter_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/parameter_evidence/parameter_mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_stud_controls.json",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate101.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate102.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate123.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate134.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate135.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate73.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate78.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate95.png",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p041.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p122.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p167.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p191.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p205.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p252.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p253.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p303.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p304.jpg"
+      ],
+      "outputs": [
+        "{run}/parameter/PowertrainWithBrakeStops.FCStd",
+        "{run}/parameter/report.json",
+        "{run}/parameter/changed_shapes/*.brep",
+        "{run}/parameter/frozen_inputs/*"
+      ]
+    },
+    {
+      "id": "parameter_extract",
+      "needs": [
+        "parameter_build"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/parameter_extract",
+        "{root}/cad/003_FullTank/experiments/drive_chains/pump_integration_worker.py",
+        "extract",
+        "--input",
+        "{run}/parameter/PowertrainWithBrakeStops.FCStd",
+        "--output",
+        "{run}/parameter/isolated/manifest.json"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/pump_integration_worker.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/pump_integration_worker.py",
+        "{run}/parameter/PowertrainWithBrakeStops.FCStd"
+      ],
+      "outputs": [
+        "{run}/parameter/isolated/manifest.json",
+        "{run}/parameter/isolated/breps/*.brep"
+      ]
+    },
+    {
+      "id": "parameter_mount",
+      "needs": [
+        "parameter_extract"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/parameter_mount",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_mount.py",
+        "--candidate",
+        "{run}/parameter"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_mount.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_mount.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/PowertrainWithBrakeFront.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/definition_preservation_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/exchange_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/independent_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/*.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/1d9baefe72e94afd2b7589f3d9833bbe917d345f806853dec3bc2cd3d7ee4758.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/71ac8913775b80e50e949a5c2c2c73acfb8191cb2977bd83129a573bfe4e33f6.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/7e83a77ad0b19e5e7f3ad215d23a0d48cba54716887ad68422a16e53ff8e1324.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/da08a26ecb600726f82ee005a512bde9dd8523396a5c41577459c97a6eab2896.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/manifest.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_mount_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_review/source_stack_analysis.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/parameter_evidence/parameter_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/parameter_evidence/parameter_mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_stud_controls.json",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate101.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate102.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate123.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate134.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate135.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate73.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate78.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate95.png",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p041.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p122.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p167.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p191.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p205.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p252.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p253.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p303.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p304.jpg",
+        "{run}/parameter/PowertrainWithBrakeStops.FCStd",
+        "{run}/parameter/isolated/breps/*.brep",
+        "{run}/parameter/isolated/manifest.json",
+        "{run}/parameter/report.json"
+      ],
+      "outputs": [
+        "{run}/parameter/mount_checks.json"
+      ],
+      "receipts": [
+        {
+          "file": "{run}/parameter/mount_checks.json",
+          "checks": [
+            {
+              "pointer": "/passed",
+              "equals": true
+            },
+            {
+              "pointer": "/native_sha256",
+              "sha256_file": "{run}/parameter/PowertrainWithBrakeStops.FCStd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parameter_joints",
+      "needs": [
+        "parameter_extract"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/parameter_joints",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_joints.py",
+        "--candidate",
+        "{run}/parameter"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_joints.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_stop_joints.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/PowertrainWithBrakeFront.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/definition_preservation_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/exchange_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/independent_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/*.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/1d9baefe72e94afd2b7589f3d9833bbe917d345f806853dec3bc2cd3d7ee4758.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/71ac8913775b80e50e949a5c2c2c73acfb8191cb2977bd83129a573bfe4e33f6.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/7e83a77ad0b19e5e7f3ad215d23a0d48cba54716887ad68422a16e53ff8e1324.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/da08a26ecb600726f82ee005a512bde9dd8523396a5c41577459c97a6eab2896.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/manifest.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_mount_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_review/source_stack_analysis.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/parameter_evidence/parameter_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/parameter_evidence/parameter_mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_stud_controls.json",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate101.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate102.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate123.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate134.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate135.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate73.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate78.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate95.png",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p041.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p122.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p167.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p191.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p205.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p252.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p253.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p303.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p304.jpg",
+        "{run}/parameter/PowertrainWithBrakeStops.FCStd",
+        "{run}/parameter/isolated/breps/*.brep",
+        "{run}/parameter/isolated/manifest.json",
+        "{run}/parameter/report.json"
+      ],
+      "outputs": [
+        "{run}/parameter/joint_checks.json"
+      ],
+      "receipts": [
+        {
+          "file": "{run}/parameter/joint_checks.json",
+          "checks": [
+            {
+              "pointer": "/passed",
+              "equals": true
+            },
+            {
+              "pointer": "/native_sha256",
+              "sha256_file": "{run}/parameter/PowertrainWithBrakeStops.FCStd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "parameter_inspect",
+      "needs": [
+        "parameter_extract"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 2400,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/parameter_inspect",
+        "{root}/cad/003_FullTank/experiments/drive_chains/inspect_transmission_brake_stop_trial.py",
+        "--candidate",
+        "{run}/parameter"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/inspect_transmission_brake_stop_trial.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/inspect_transmission_brake_stop_trial.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/PowertrainWithBrakeFront.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/definition_preservation_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/exchange_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/independent_checks.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/*.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/1d9baefe72e94afd2b7589f3d9833bbe917d345f806853dec3bc2cd3d7ee4758.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/71ac8913775b80e50e949a5c2c2c73acfb8191cb2977bd83129a573bfe4e33f6.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/7e83a77ad0b19e5e7f3ad215d23a0d48cba54716887ad68422a16e53ff8e1324.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/breps/da08a26ecb600726f82ee005a512bde9dd8523396a5c41577459c97a6eab2896.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/manifest.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_mount_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_review/source_stack_analysis.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/parameter_evidence/parameter_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/parameter_evidence/parameter_mount_controls.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_stud_controls.json",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate101.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate102.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate123.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate134.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate135.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate73.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate78.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate95.png",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p041.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p122.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p167.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p191.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p205.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p252.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p253.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p303.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p304.jpg",
+        "{run}/parameter/PowertrainWithBrakeStops.FCStd",
+        "{run}/parameter/isolated/breps/*.brep",
+        "{run}/parameter/isolated/manifest.json",
+        "{run}/parameter/report.json"
+      ],
+      "outputs": [
+        "{run}/parameter/trial_diagnostics.json"
+      ],
+      "receipts": [
+        {
+          "file": "{run}/parameter/trial_diagnostics.json",
+          "checks": [
+            {
+              "pointer": "/diagnostic_clear",
+              "equals": true
+            },
+            {
+              "pointer": "/native_sha256",
+              "sha256_file": "{run}/parameter/PowertrainWithBrakeStops.FCStd"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

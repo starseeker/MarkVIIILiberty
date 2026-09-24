@@ -50,7 +50,19 @@ locations; generated exchange files retain their exact verified bytes.
    task and missing usage for two timeouts; it cannot establish an aggregate
    token-cost ratio or justify a broad model/effort change.
 
-The export lesson has been added to the FreeCAD reconstruction skill. The wider
-runner and reporting changes above are recommendations, not an implemented
-replacement for the current controller. No percentage saving is claimed without
-a representative measured comparison.
+The deterministic runner, compact status/recovery records, dependency-bound reuse,
+decision ledger and approximation/reopening rule are now implemented. The
+[real replay](../benchmarks/cad_pipeline/20260924/README.md) passed all 18 stages,
+selectively reran one corrected comparison dependency, then reused all 18; its
+geometry/properties exactly match the prior qualified trial. Eleven runner tests
+cover failure, invalidation and recovery. The existing model-routing controller is
+unchanged; no lower reasoning effort was adopted.
+
+The [camera workflow](../tools/source_camera/README.md) now retains immutable fits,
+native-bound landmark locations and independent holdouts. Controlled numerical,
+native and raster tests pass; the first historical camera still needs a trusted
+landmark review. Numerical fitting itself was milliseconds in the noise-free
+control, so preserving source/landmark reasoning is likely the larger benefit.
+
+Stage execution/reuse/failure metrics are recorded. End-to-end assistant token
+cost and reviewer time remain unmeasured; no percentage saving is claimed.

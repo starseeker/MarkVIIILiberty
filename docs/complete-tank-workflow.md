@@ -254,6 +254,34 @@ Finish this cycle before multiplying the result through the tank:
    documented approximation, needing revision, or blocked with a specific cause.
    Update dependent work. Retain superseded evidence decisions in the history.
 
+Use the [deterministic development runner](../tools/cad_pipeline/README.md) for
+declared build/check/export/render stages. Its qualified brake-stop replay is an
+example plan, not a substitute for auditing each packet's data, native shapes,
+placements, neighbors, code and runtime dependencies. Reuse requires matching
+evidence and receipt assertions. Keep source/visual decisions separate from a
+successful process exit. Read [CURRENT_WORK.json](../cad/003_FullTank/CURRENT_WORK.json)
+first after a restart, then inspect the actual worker lock and verify evidence.
+
+For source comparisons, classify the projection before scaling or fitting. Use
+the [source-camera workflow](../tools/source_camera/README.md) for perspective,
+orthographic/axonometric or explicitly oblique views. Bind trusted landmarks to
+saved definition geometry and composed frames; reserve independent holdouts.
+New unrelated geometry uses the existing camera. Reassess holdouts and explicitly
+review changed anchors, source pixels or conflicting evidence before refitting;
+retain old fits and before/after residuals. Do not use camera freedom to conceal
+geometry disagreement. Standard progression views keep their established cameras.
+
+A documented approximation is complete **within its recorded scope** once its
+source review, interfaces, uncertainty, limitations and applicable checks are
+recorded. Keep that decision in the
+[decision ledger](../cad/003_FullTank/decision_ledger.json), with dependencies and
+specific reopening triggers. Proceed with dependent work rather than repeating
+the same speculation. New geometry is outside an old decision's scope until its
+relevant interfaces/dependencies are reviewed. Unresolved part identity, quantity,
+configuration and final integration obligations remain open; an approximate local
+shape does not close them. The ledger checker reports stale dependencies and never
+automatically accepts a decision or promotes a checkpoint.
+
 Routine reversible modeling and checks proceed under the project's existing
 authorization. Technical review is part of producing the deliverable, not an
 automatic request for user permission at every step. Ask for direction when a

@@ -1,0 +1,102 @@
+{
+  "run": "brake_stop_pipeline01",
+  "all_18_stages_passed": true,
+  "reference_trial": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04",
+  "reference_native_sha256": "5da8d72278f3a0059eaac8f8a3967bb86e4b821da52262d7433d008832bf4994",
+  "replay_native_sha256": "21ff8a3cad89ea651985bf22ea0ed9210e1df477717659368c2b07c449fac4cd",
+  "reference_equivalence": {
+    "archived_brep_bytes": true,
+    "persistent_properties": true,
+    "object_types": true
+  },
+  "archive_brep_count": 1537,
+  "persistent_property_count": 139961,
+  "manifest_sha256": "cd0b53ffcdfb18820e7be93ad584be49f7b390d1279ad0792c8c503792c7197c",
+  "invocations": [
+    {
+      "file": "invocation_001.json",
+      "metrics": {
+        "executed": 18,
+        "execution_seconds": 872.1720896530896,
+        "failures": 0,
+        "model_invocations": 0,
+        "orchestrating_assistant_usage": "not measured by deterministic runner",
+        "reused": 0,
+        "reused_prior_execution_seconds": 0.0
+      }
+    },
+    {
+      "file": "invocation_002.json",
+      "metrics": {
+        "executed": 1,
+        "execution_seconds": 0.21433286101091653,
+        "failures": 0,
+        "model_invocations": 0,
+        "orchestrating_assistant_usage": "not measured by deterministic runner",
+        "reused": 17,
+        "reused_prior_execution_seconds": 871.9577607260435
+      }
+    },
+    {
+      "file": "invocation_003.json",
+      "metrics": {
+        "executed": 0,
+        "execution_seconds": 0.0,
+        "failures": 0,
+        "model_invocations": 0,
+        "orchestrating_assistant_usage": "not measured by deterministic runner",
+        "reused": 18,
+        "reused_prior_execution_seconds": 872.1720935870544
+      }
+    }
+  ],
+  "checker_results": {
+    "trial_diagnostics": {
+      "sha256": "577481b2d02c921f8d42850e998eecf20e24ede2649a2c417af1561e93c358fc",
+      "passed": true,
+      "check_count": 0,
+      "broad_phase_pairs": 592,
+      "collisions": 0,
+      "invalid_common_results": 0
+    },
+    "mount_checks": {
+      "sha256": "4039689d9fd23e83e75a532e05aa6a9ff8273cc07bd5713e1018beec578364e9",
+      "passed": true,
+      "check_count": 55
+    },
+    "joint_checks": {
+      "sha256": "6e429836bfc204b7ae81f6ae70d176262c150ad4f5b7c95005a7319ba6c93b11",
+      "passed": true,
+      "check_count": 71
+    },
+    "standard_context_checks": {
+      "sha256": "3efaecff714f838e8df6def768abb96b3f019395445ca7f4f5212dde1be6ec38",
+      "passed": true,
+      "check_count": 0,
+      "standard_context_count": 5316
+    },
+    "definition_preservation_checks": {
+      "sha256": "0b7a50e461f1060be4f7b3ae16c0f36f1c5f7509c747e8d23c537d7ff4366306",
+      "passed": true,
+      "check_count": 490,
+      "definition_count": 490,
+      "exact_count": 464,
+      "strict_count": 26
+    },
+    "exchange_checks": {
+      "sha256": "52793fd294d1f8ea5c97c045c269ad157d5fea05fd375a9535e3bb10e351a204",
+      "passed": true,
+      "check_count": 89
+    },
+    "reproduction_checks": {
+      "sha256": "212eef1424b90e876c4517bb2ad38040d9818bb1d119ab9118ae476fff05e2c7",
+      "passed": true,
+      "check_count": 6
+    }
+  },
+  "orchestrating_assistant_usage": "unknown; not measured by runner",
+  "corrections": [
+    "Added omitted suspension-report dependency to comparison stage after the first replay; second invocation reran only that stage."
+  ],
+  "qualification": "Local deterministic replay and selective reuse; not historical acceptance or full-tank release"
+}

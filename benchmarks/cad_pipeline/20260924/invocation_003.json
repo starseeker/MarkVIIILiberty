@@ -1,0 +1,107 @@
+{
+  "current_stage": null,
+  "metrics": {
+    "executed": 0,
+    "execution_seconds": 0.0,
+    "failures": 0,
+    "model_invocations": 0,
+    "orchestrating_assistant_usage": "not measured by deterministic runner",
+    "reused": 18,
+    "reused_prior_execution_seconds": 872.1720935870544
+  },
+  "plan": "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/plans/brake_stop_replay.json",
+  "plan_sha256": "cd0b53ffcdfb18820e7be93ad584be49f7b390d1279ad0792c8c503792c7197c",
+  "stages": [
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/build/latest.json",
+      "id": "build",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/extract/latest.json",
+      "id": "extract",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/inspect/latest.json",
+      "id": "inspect",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/mount/latest.json",
+      "id": "mount",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/joints/latest.json",
+      "id": "joints",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/standard/latest.json",
+      "id": "standard",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/preserve/latest.json",
+      "id": "preserve",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/exchange/latest.json",
+      "id": "exchange",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/render/latest.json",
+      "id": "render",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/compare/latest.json",
+      "id": "compare",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/rebuild/latest.json",
+      "id": "rebuild",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/rebuild_extract/latest.json",
+      "id": "rebuild_extract",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/reproduction/latest.json",
+      "id": "reproduction",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/parameter_build/latest.json",
+      "id": "parameter_build",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/parameter_extract/latest.json",
+      "id": "parameter_extract",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/parameter_mount/latest.json",
+      "id": "parameter_mount",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/parameter_joints/latest.json",
+      "id": "parameter_joints",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/brake_stop_pipeline01/records/parameter_inspect/latest.json",
+      "id": "parameter_inspect",
+      "status": "reused"
+    }
+  ],
+  "status": "mechanical_stages_passed_review_required"
+}

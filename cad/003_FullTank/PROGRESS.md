@@ -11,6 +11,30 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — deterministic reuse and source-camera workflow
+
+Implemented the staged CAD runner and compact recovery pointer in
+[CURRENT_WORK.json](CURRENT_WORK.json). The real brake-stop replay passes all 18
+stages and exactly reproduces the prior trial04's 1,537 archived BReps and 139,961
+persistent properties. After an explicit comparison-dependency correction,
+17 stages reused and one reran; a subsequent invocation reused all 18 and read-only
+freshness verification passed. See the [measured replay](../../benchmarks/cad_pipeline/20260924/README.md).
+No model/effort downgrade or production promotion occurred.
+
+Added immutable camera fitting and native-bound source rendering with separate
+holdouts, reviewed refits and reciprocal perspective depth. A known-camera control
+using real transmission geometry passes and reuses byte-identical renderings.
+Historical plate79 still needs trusted landmark review; HB134/135 registration
+and standard progression cameras remain unchanged. The
+[decision ledger](decision_ledger.json) retains scoped approximations while keeping
+identity and source gaps open. No new physical geometry or progression snapshot
+is claimed for these tooling controls; total remains 196.
+
+Returned to the standard-geometry queue: directly inspected original SNL218 and
+HB101 for the four SH687A adjusting-spring spacers. The catalogue confirms quantity
+and the literal stock notation; form, datum meaning and installed location need a
+bounded source/interface packet before geometry is added.
+
 ## 24 September 2026 — brake-stop mounting and joint validation
 
 The [trial04 revision](experiments/drive_chains/transmission_brake_stop_study/trial04/README.md)

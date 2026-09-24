@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "scope": "Local development decisions; no automatic checkpoint promotion or historical identity resolution.",
+  "decisions": [
+    {
+      "id": "brake_stop_casting_profile",
+      "status": "reviewed_approximation",
+      "scope": "Retain trial04 rounded lower cap bosses/webs while developing adjacent standard components.",
+      "reason": "Source-relative mounting review replaced an explicitly estimated lower stud station and overly bulky trial03 casting. Trial04 static mount, joint, material preservation, exchange and parameter checks pass.",
+      "uncertainty": "Unprinted cast profiles remain estimated. The 6.35 to 7 mm bracket-stock and -137 to -142 mm lower-stud perturbations are tested engineering variations, not historical confidence bounds.",
+      "limits": [
+        "Historical contour accuracy unresolved",
+        "Full service removal path unresolved",
+        "Does not promote the full brake-stop packet or standard tank"
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "basis": "Retained trial04 source comparisons, four inspected images, and qualification receipt e52eedb9"
+      },
+      "reopen_when": [
+        "New legible casting section or dimension",
+        "Changed bearing/cap/stud interface",
+        "Source comparison contradiction exceeding the stated pick uncertainty",
+        "Failed dependent geometric or service check"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+          "sha256": "62798438b5f0c4ea256066b02586ada3348211f4c612ea5b08f4f9e2bd3ae4e2"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/controls.json",
+          "sha256": "09baf84b6906f9d8159f8fac788ca95a5f3b477a4214f5d01f1f781c97349a01"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json",
+          "sha256": "ecfb8cb11e879d069982236ff3e7821ac966ecbbe977ef351a55ec2eac4dc44d"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/qualification.json",
+          "sha256": "4f266016d6dbb65a407a30d8cbf3f4e489cdafb4ce8b7f4f746a4100f0898d9d"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/mount_checks.json",
+          "sha256": "ef8ac3892b88067cc222ddde11a463f248e77e233f5fe44fad7c9066f1f86418"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/joint_checks.json",
+          "sha256": "13b041697b2da298b4b2a4b1f76b4b2c08a536b0f37716b1c99d75c2cea51bfd"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/source_comparison.json",
+          "sha256": "4aee114fa350f3f73139e2281bdb151e242390f5fb65abaceed9a3087132fb43"
+        }
+      ]
+    },
+    {
+      "id": "brake_stop_shared_crossbar",
+      "status": "reviewed_approximation",
+      "scope": "Retain the two shared bars and diagonal supports as an explicit experimental geometry hypothesis for dependent component development.",
+      "reason": "Two catalogue bars/support assemblies and four band adjusters support this quantity-consistent layout; no inspected transverse source proves it.",
+      "uncertainty": "Crossbar transverse shape and M341/M342 correspondence to the illustrated MX95/MX96 supports remain unresolved. No numerical historical confidence interval is supportable.",
+      "limits": [
+        "Geometry hypothesis only",
+        "Inventory aliases remain separately open",
+        "Final source/configuration reconciliation required before release"
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "basis": "P01 transmission brake-stop packet and trial04 qualification/source residuals"
+      },
+      "reopen_when": [
+        "New transverse source or assembly description",
+        "Changed bearing mount or brake-band positions",
+        "Control linkage or removal-path contradiction"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+          "sha256": "62798438b5f0c4ea256066b02586ada3348211f4c612ea5b08f4f9e2bd3ae4e2"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/controls.json",
+          "sha256": "09baf84b6906f9d8159f8fac788ca95a5f3b477a4214f5d01f1f781c97349a01"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_controls.json",
+          "sha256": "ecfb8cb11e879d069982236ff3e7821ac966ecbbe977ef351a55ec2eac4dc44d"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/qualification.json",
+          "sha256": "4f266016d6dbb65a407a30d8cbf3f4e489cdafb4ce8b7f4f746a4100f0898d9d"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/mount_checks.json",
+          "sha256": "ef8ac3892b88067cc222ddde11a463f248e77e233f5fe44fad7c9066f1f86418"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/joint_checks.json",
+          "sha256": "13b041697b2da298b4b2a4b1f76b4b2c08a536b0f37716b1c99d75c2cea51bfd"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/source_comparison.json",
+          "sha256": "4aee114fa350f3f73139e2281bdb151e242390f5fb65abaceed9a3087132fb43"
+        }
+      ]
+    },
+    {
+      "id": "brake_stop_part_identity",
+      "status": "open_identity",
+      "scope": "Final catalogue-to-installed-part reconciliation.",
+      "reason": "SNL M341/M342 and HB MX95/MX96 labels have not been proven aliases.",
+      "uncertainty": "Same physical design, variant, or distinct component relationship unknown.",
+      "limits": [
+        "Do not assert alias or duplicate installed inventory to eliminate the discrepancy"
+      ],
+      "reopen_when": [
+        "A source explicitly relates marks or identifies an alternative configuration"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json",
+          "sha256": "62798438b5f0c4ea256066b02586ada3348211f4c612ea5b08f4f9e2bd3ae4e2"
+        }
+      ]
+    },
+    {
+      "id": "handbook_79_camera_landmarks",
+      "status": "open_evidence",
+      "scope": "First historical perspective-camera review for the transmission photograph.",
+      "reason": "Plate79 shows a halftone photographic view with depth; it should not inherit a side-view orthographic calibration. A trusted nonplanar landmark set and independent holdouts have not yet been established.",
+      "uncertainty": "Perspective/crop parameters and some projected silhouette-to-feature identities remain unmeasured; estimated geometry could bias a fit.",
+      "limits": [
+        "No fitted historical camera yet",
+        "No geometry changes justified by this classification",
+        "Synthetic camera controls are not historical evidence"
+      ],
+      "reopen_when": [
+        "At least eight distributed identifiable fitting landmarks and three independent holdouts with defensible 3D locators",
+        "New geometry or source evidence clarifies previously hidden datum identities"
+      ],
+      "dependencies": [
+        {
+          "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+          "sha256": "4d8e75e309a53fe89b185c80cafdf70b05780591b5d7baac53bd830eff667944"
+        }
+      ]
+    }
+  ]
+}

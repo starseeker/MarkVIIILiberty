@@ -42,6 +42,22 @@ Reserve unprinted profiles, wall thicknesses, fastener details and fits as named
 approximations with useful bounds. Keep physical fit allowance, historical
 uncertainty, and numerical Boolean tolerance in separate fields.
 
+Classify each view before comparing geometry: photographic perspective,
+orthographic/axonometric, explicitly oblique, or schematic/mixed. An apparent
+profile disagreement can be a projection mismatch. Fit a camera only to reviewed
+landmark identities and saved CAD coordinates, and retain independent holdouts.
+Planar landmarks alone cannot establish an unconstrained general camera. A low
+fit residual does not prove either the camera or estimated geometry is correct.
+
+Version image bytes/crop, fitting picks, anchor coordinates, projection assumptions
+and solver settings. New unrelated geometry normally reuses that camera. Changed
+anchor definitions require locator review; new holdout contradictions trigger
+diagnosis before any refit. Keep the old fit and a reason for changing it. Do not
+silently turn failed holdouts into fitting points. The MarkVIII source-camera
+controls exercise fixed-camera reuse, native-frame binding and perspective depth;
+they are synthetic controls, not historical calibration evidence. Mesh previews
+still require separate native-solid and interface qualification.
+
 Check the model against the evidence and its neighbors, rather than only against
 the same parameter table used to build it. Review silhouettes and sections that
 show the disputed feature. Track definition coverage, installed occurrence
