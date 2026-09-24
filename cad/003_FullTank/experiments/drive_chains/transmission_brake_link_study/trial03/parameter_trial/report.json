@@ -1,0 +1,874 @@
+{
+  "native_file": "PowertrainWithBrakeLinks.FCStd",
+  "native_sha256": "139e70990729d29329d7b36f5834fa4c1ea39d4b5bbaf927b0ba1aa67541eada",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_brake_band_study/trial01/PowertrainWithBrakeBands.FCStd",
+  "source_native_sha256": "aedec4424da134ac0e14bfa8342d6daef866bd9429adac1fb9978bfd8aefe96f",
+  "input_hashes": {
+    ".work/transmission-brake-links/parameter_controls.json": "3a403b5a7266182d67f2d910d5d9b454abde4e6244eb22ac088f2329ee36c41f",
+    "cad/003_FullTank/experiments/drive_chains/build_transmission_brake_links.py": "12a742e870a90f4939d1cf1681402e803c470dddadb70197a145b74ddd689388",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_band_study/controls.json": "3cabcb60867b2b01bfb2c16b8ad61cbd91d3d6303d6f3b3e1354c7c1561dcc2c",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_band_study/trial01/definition_preservation_checks.json": "962bb5de5ffb846271d1c1704c5d4669d9d0b09189b7a12a3b0603b6648aec3e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_band_study/trial01/exchange_adaptive_checks.json": "0a11f2d3c2ddd558e0c999aa991c1c7d5d85379e5cd83e270fdf41f3d82bae2f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_band_study/trial01/independent_checks.json": "dc7d1401cf3538e0467a9bbfcba4595cbbdd202af330e044e8607ae2fb13585a",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_band_study/trial01/isolated/manifest.json": "9f9e477aeef0aee34f7e3ffb1580f8652266eba254cc47a1973848c8ef6feb6c",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_band_study/trial01/report.json": "19c2e27bedbda5d67df73492f1e3afb5d4044d048a94eb8b72b6e7c6bc9a07bd",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_link_parts.py": "86154ec3abb7503cccf3cb675937d70b6d24fce91cbf74bdd87ae5c8fcd84ea8",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_link_study/sources.json": "30a27e65f5c9cc92e2d821aa9d943529950aef3982b7b29711195d326b6a3e26",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_suspension_study/trial02/report.json": "68620871fb9a0e05ab0abde3e65ffa208cdc4b5f1885a8bcf873562ba2958c5f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_core_parts.py": "b7b3150e42529535f842871e81c4c580a15b25ce123e997da3ef5437041d7ff1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_parts.py": "a0ef001b84b6593093fa1ffe1aff650a2253646e0facba5610a7d4600a0da228",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_installation_parts.py": "3aa0f82af289688b8453ac25dbe1c53bf84924880a0e03adb51328431a3eef7f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_parts.py": "35c677472dad5a90701bedbd6c06b3fb01f2b0fda494efc00be48a64db35d3a6",
+    "cad/003_FullTank/experiments/drive_chains/transmission_output_parts.py": "f5733f343308c7a7179cc6273b0c62162ba2b84ee09eeb6f68a31e31ebc2ed20",
+    "cad/003_FullTank/experiments/drive_chains/transmission_stud_parts.py": "cdeda621c79bf68a95f3cb03f173e60c75a66f2d63331c0e334418840f6fd3bb",
+    "cad/003_FullTank/experiments/drive_chains/transmission_support_parts.py": "378d460b581c26154940ced9b9f4a8d8ca514fb97b05f24a2ac13c8c8b595405",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b"
+  },
+  "controls": {
+    "upper_head_radius": 29.0,
+    "lower_head_radius": 22.0,
+    "web_width": 19.05,
+    "lower_stock": 12.7,
+    "clevis_cheek_stock": 6.35,
+    "clevis_side_gap": 0.15,
+    "clevis_bottom_clearance": 0.5,
+    "clevis_bridge_depth": 10.0,
+    "neck_taper_length": 20.0,
+    "lower_pin_diameter": 24.0,
+    "lower_bore_allowance": 0.15,
+    "suspension_pin_diameter": 24.0,
+    "pin_end_extension": 14.0,
+    "cotter_station_overhang": 4.6,
+    "cotter_diameter": 6.35,
+    "cotter_length": 38.1,
+    "cotter_hole_allowance": 0.15,
+    "cotter_center_spacing": 3.302,
+    "crown_radius": 12.0,
+    "cotter_head_gap": 0.8,
+    "cotter_exit_gap": 0.8,
+    "cotter_bend_radius": 3.0,
+    "cotter_bend_angle": 35.0,
+    "cotter_eye_radius": 4.0,
+    "cotter_eye_rise": 3.0,
+    "cotter_eye_join_overlap": 0.03,
+    "upper_bore_allowance": 0.15,
+    "lower_frame_clearance": 2.5,
+    "link_band_side_clearance": 2.0,
+    "web_bow": 15.0
+  },
+  "dimensions": {
+    "clevis_half_width_mm": 12.85,
+    "clevis_inner_half_width_mm": 6.5,
+    "clevis_slot_bottom_mm": -26.431623931623932,
+    "lower_eye_relative_mm": [
+      -7.246862026861891,
+      0.0,
+      -252.29486631082705
+    ],
+    "lower_anchor_radius_mm": 326.64857142857136,
+    "diaphragm_front_x_mm": 1480.3460706171923,
+    "pin_length_mm": 53.7,
+    "cotter_y_mm": 17.45,
+    "pin_center_distance_mm": 252.39892348430186,
+    "web_centerline_control_points_mm": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        -22.24686202686189,
+        0,
+        -37.844229946624054
+      ],
+      [
+        -22.24686202686189,
+        0,
+        -214.45063636420298
+      ],
+      [
+        -7.246862026861891,
+        0.0,
+        -252.29486631082705
+      ]
+    ]
+  },
+  "cotter": {
+    "straight_length_mm": 25.6,
+    "bend_arc_length_mm": 1.832595714594046,
+    "tail_length_mm": 10.667404285405954,
+    "total_leg_centerline_mm": 38.1,
+    "tail_endpoints": [
+      [
+        0.0,
+        23.258955336700577,
+        -8.31211560227205
+      ],
+      [
+        0.0,
+        23.258955336700577,
+        8.31211560227205
+      ]
+    ],
+    "wire_radius_mm": 1.5239999999999998,
+    "under_eye_y_mm": -12.8,
+    "bend_start_y_mm": 12.8,
+    "exact_stock_volume_conserved": false,
+    "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+  },
+  "interfaces": {
+    "PortLowSpeed": {
+      "bracket": "PortLowSpeedBracket",
+      "upper_mm": [
+        1512.0929326440541,
+        476.24571428571426,
+        1152.8978074872975
+      ],
+      "band_width_mm": 101.6,
+      "band_center_y_mm": 535.3957142857142,
+      "support_axial_shift_mm": -59.15,
+      "lower_mm": [
+        1504.8460706171923,
+        476.24571428571426,
+        900.6029411764705
+      ],
+      "lower_bore_diameter_mm": 24.3
+    },
+    "PortTrack": {
+      "bracket": "PortTrackBracket",
+      "upper_mm": [
+        1512.0929326440541,
+        723.714285714286,
+        1152.8978074872975
+      ],
+      "band_width_mm": 76.19999999999999,
+      "band_center_y_mm": 770.164285714286,
+      "support_axial_shift_mm": -46.449999999999996,
+      "lower_mm": [
+        1504.8460706171923,
+        723.714285714286,
+        900.6029411764705
+      ],
+      "lower_bore_diameter_mm": 24.3
+    },
+    "StarboardLowSpeed": {
+      "bracket": "StarboardLowSpeedBracket",
+      "upper_mm": [
+        1512.0929326440541,
+        -476.24571428571426,
+        1152.8978074872975
+      ],
+      "band_width_mm": 101.6,
+      "band_center_y_mm": -535.3957142857142,
+      "support_axial_shift_mm": 59.15,
+      "lower_mm": [
+        1504.8460706171923,
+        -476.24571428571426,
+        900.6029411764705
+      ],
+      "lower_bore_diameter_mm": 24.3
+    },
+    "StarboardTrack": {
+      "bracket": "StarboardTrackBracket",
+      "upper_mm": [
+        1512.0929326440541,
+        -723.7142857142858,
+        1152.8978074872975
+      ],
+      "band_width_mm": 76.19999999999999,
+      "band_center_y_mm": -770.1642857142858,
+      "support_axial_shift_mm": 46.449999999999996,
+      "lower_mm": [
+        1504.8460706171923,
+        -723.7142857142858,
+        900.6029411764705
+      ],
+      "lower_bore_diameter_mm": 24.3
+    }
+  },
+  "changed_definitions": [],
+  "new_definitions": [
+    "Def_BrakeLink_cotter",
+    "Def_BrakeLink_link",
+    "Def_BrakeLink_pin"
+  ],
+  "new_assemblies": [],
+  "expected_new_occurrences": {
+    "PortLowSpeedSuspensionLink": {
+      "definition": "Def_BrakeLink_link",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        476.24571428571426,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortLowSpeedBrakeSupport"
+      ]
+    },
+    "PortLowSpeedSuspensionPin": {
+      "definition": "Def_BrakeLink_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        476.24571428571426,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortLowSpeedBrakeSupport"
+      ]
+    },
+    "PortLowSpeedSuspensionCotter1": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        458.79571428571427,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortLowSpeedBrakeSupport"
+      ]
+    },
+    "PortLowSpeedSuspensionCotter2": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        493.69571428571425,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortLowSpeedBrakeSupport"
+      ]
+    },
+    "PortTrackSuspensionLink": {
+      "definition": "Def_BrakeLink_link",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        723.714285714286,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortTrackBrakeSupport"
+      ]
+    },
+    "PortTrackSuspensionPin": {
+      "definition": "Def_BrakeLink_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        723.714285714286,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortTrackBrakeSupport"
+      ]
+    },
+    "PortTrackSuspensionCotter1": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        706.264285714286,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortTrackBrakeSupport"
+      ]
+    },
+    "PortTrackSuspensionCotter2": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        741.164285714286,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortTrackBrakeSupport"
+      ]
+    },
+    "StarboardLowSpeedSuspensionLink": {
+      "definition": "Def_BrakeLink_link",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        -476.24571428571426,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardLowSpeedBrakeSupport"
+      ]
+    },
+    "StarboardLowSpeedSuspensionPin": {
+      "definition": "Def_BrakeLink_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        -476.24571428571426,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardLowSpeedBrakeSupport"
+      ]
+    },
+    "StarboardLowSpeedSuspensionCotter1": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        -493.69571428571425,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardLowSpeedBrakeSupport"
+      ]
+    },
+    "StarboardLowSpeedSuspensionCotter2": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        -458.79571428571427,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardLowSpeedBrakeSupport"
+      ]
+    },
+    "StarboardTrackSuspensionLink": {
+      "definition": "Def_BrakeLink_link",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        -723.7142857142858,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardTrackBrakeSupport"
+      ]
+    },
+    "StarboardTrackSuspensionPin": {
+      "definition": "Def_BrakeLink_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        -723.7142857142858,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardTrackBrakeSupport"
+      ]
+    },
+    "StarboardTrackSuspensionCotter1": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        -741.1642857142858,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardTrackBrakeSupport"
+      ]
+    },
+    "StarboardTrackSuspensionCotter2": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        -706.2642857142857,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardTrackBrakeSupport"
+      ]
+    }
+  },
+  "expected_repositioned_occurrences": {
+    "PortLowSpeedBracket": {
+      "definition": "Def_BrakeSuspension_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        476.24571428571426,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortLowSpeedBrakeSupport"
+      ]
+    },
+    "PortTrackBracket": {
+      "definition": "Def_BrakeSuspension_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        723.714285714286,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortTrackBrakeSupport"
+      ]
+    },
+    "PortTrackStop": {
+      "definition": "Def_BrakeSuspension_stop",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1604.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        723.714285714286,
+        0.0,
+        0.0,
+        1.0,
+        1219.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortTrackBrakeSupport"
+      ]
+    },
+    "StarboardLowSpeedBracket": {
+      "definition": "Def_BrakeSuspension_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        -476.24571428571426,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardLowSpeedBrakeSupport"
+      ]
+    },
+    "StarboardTrackBracket": {
+      "definition": "Def_BrakeSuspension_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        -723.7142857142858,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872975,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardTrackBrakeSupport"
+      ]
+    },
+    "StarboardTrackStop": {
+      "definition": "Def_BrakeSuspension_stop",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1604.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        -723.7142857142858,
+        0.0,
+        0.0,
+        1.0,
+        1219.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardTrackBrakeSupport"
+      ]
+    }
+  },
+  "assembly_shifts_mm": {
+    "PortLowSpeedBrakeSupport": [
+      0,
+      -59.15,
+      0
+    ],
+    "PortTrackBrakeSupport": [
+      0,
+      -46.449999999999996,
+      0
+    ],
+    "StarboardLowSpeedBrakeSupport": [
+      0,
+      59.15,
+      0
+    ],
+    "StarboardTrackBrakeSupport": [
+      0,
+      46.449999999999996,
+      0
+    ]
+  },
+  "added_children": {
+    "PortLowSpeedBrakeSupport": [
+      "PortLowSpeedSuspensionLink",
+      "PortLowSpeedSuspensionPin",
+      "PortLowSpeedSuspensionCotter1",
+      "PortLowSpeedSuspensionCotter2"
+    ],
+    "PortTrackBrakeSupport": [
+      "PortTrackSuspensionLink",
+      "PortTrackSuspensionPin",
+      "PortTrackSuspensionCotter1",
+      "PortTrackSuspensionCotter2"
+    ],
+    "StarboardLowSpeedBrakeSupport": [
+      "StarboardLowSpeedSuspensionLink",
+      "StarboardLowSpeedSuspensionPin",
+      "StarboardLowSpeedSuspensionCotter1",
+      "StarboardLowSpeedSuspensionCotter2"
+    ],
+    "StarboardTrackBrakeSupport": [
+      "StarboardTrackSuspensionLink",
+      "StarboardTrackSuspensionPin",
+      "StarboardTrackSuspensionCotter1",
+      "StarboardTrackSuspensionCotter2"
+    ]
+  },
+  "affected_occurrences": [
+    "PortLowSpeedBracket",
+    "PortLowSpeedSuspensionCotter1",
+    "PortLowSpeedSuspensionCotter2",
+    "PortLowSpeedSuspensionLink",
+    "PortLowSpeedSuspensionPin",
+    "PortTrackBracket",
+    "PortTrackStop",
+    "PortTrackSuspensionCotter1",
+    "PortTrackSuspensionCotter2",
+    "PortTrackSuspensionLink",
+    "PortTrackSuspensionPin",
+    "StarboardLowSpeedBracket",
+    "StarboardLowSpeedSuspensionCotter1",
+    "StarboardLowSpeedSuspensionCotter2",
+    "StarboardLowSpeedSuspensionLink",
+    "StarboardLowSpeedSuspensionPin",
+    "StarboardTrackBracket",
+    "StarboardTrackStop",
+    "StarboardTrackSuspensionCotter1",
+    "StarboardTrackSuspensionCotter2",
+    "StarboardTrackSuspensionLink",
+    "StarboardTrackSuspensionPin"
+  ],
+  "expected_physical_occurrences": 2775,
+  "expected_definition_count": 474,
+  "expected_assembly_count": 268,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "lower_attachment_pending": true,
+  "standard_assembly_modified": false
+}

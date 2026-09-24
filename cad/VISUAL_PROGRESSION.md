@@ -1,5 +1,17 @@
 # Mark VIII visual progression
 
+The suspension-link study adds an
+[isometric](intermediate_snapshot_iso_transmission_brake_links_001.png),
+[link detail](intermediate_snapshot_detail_transmission_brake_links_001.png),
+[low-speed overlay](intermediate_snapshot_source_low_brake_links_001.png) and
+[track overlay](intermediate_snapshot_source_track_brake_links_001.png).
+Four curved-web links, individual pivots and eight split pins now fit beside
+the bands. Lower anchors remain absent. Native/context, STEP, preservation,
+reproduction and parameter checks pass; the source-count and hidden-layout
+uncertainties remain explicit. All 174 prior images and 29 native baselines are
+preserved: **178 images total**. See the
+[trial record](003_FullTank/experiments/drive_chains/transmission_brake_link_study/trial03/README.md).
+
 The brake-band trial adds an
 [isometric](intermediate_snapshot_iso_transmission_brake_bands_001.png),
 [separate band detail](intermediate_snapshot_detail_transmission_brake_bands_001.png),

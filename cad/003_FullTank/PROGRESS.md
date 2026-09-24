@@ -11,6 +11,31 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — brake suspension links and pivots populated
+
+The [link study](experiments/drive_chains/transmission_brake_link_study/trial03/README.md)
+adds four M337 links, four individual M339 pins and eight split pins. The
+development model now has **2,775 physical occurrences, 474 definitions and
+268 assemblies**. Six support pieces move to the inboard band sides, replacing
+the earlier estimated centered placement; the frame and bands retain their
+geometry. Cubic B-spline web profiles approximate the handbook link contour.
+The earlier two-pin source count and hidden transverse arrangement remain
+unresolved; lower anchors and foot fastening are not installed.
+
+All **106 native/context checks, 92 development material pairs and 25 STEP
+comparisons pass**. All 471 inherited definitions are preserved (448 exact,
+23 strict material matches). Fresh reproduction matches 1,448 BReps and 129,795
+persistent properties. A bow/clearance variation passes the same checks and
+retains all 471 inherited nominal BReps. Four inspected images bring the visual
+progression to **178**, preserving 174 prior images and 29 native baselines.
+
+The rejected centered layout intersected the diaphragm. Inboard placement clears
+it without changing the frame, while source overlays retain the drawing/model
+registration residual. Next: rear anchor brackets/pins and riveted joints,
+front ears, adjustment/control hardware and support fastening; then remaining
+frame/hull joints and broader engine/interior coverage. Standard tank011 remains
+unchanged; full-tank completion and poses remain ahead.
+
 ## 24 September 2026 — segmented transmission brake bands populated
 
 The [brake-band trial](experiments/drive_chains/transmission_brake_band_study/trial01/README.md)

@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-24",
+  "freecad": [
+    "1",
+    "1",
+    "1",
+    "44227 +647 (Git)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "tag: 1.1.1",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
+  "occ": "7.8.0",
+  "readiness": "Runtime and saved work recovered; candidate requires geometry revision before acceptance.",
+  "parent_native_sha256": "aedec4424da134ac0e14bfa8342d6daef866bd9429adac1fb9978bfd8aefe96f",
+  "candidate_native_sha256": "7c709b30ff8aa721ae10424d708ced62e06f9ba1b23171178ff0a0ead3e13ec1",
+  "previous_checker_terminal_exit_code": 1,
+  "candidate_accepted": false,
+  "straight_cylindrical_face_count": 6,
+  "distinct_straight_leg_axes_yz_mm": [
+    [
+      -0.0,
+      -1.651
+    ],
+    [
+      -0.0,
+      1.651
+    ]
+  ],
+  "straight_leg_material_witnesses": [
+    {
+      "sign": -1,
+      "missing_mm3": 0.0,
+      "missing_faces": 0,
+      "cut_leg_negative_rejected": true
+    },
+    {
+      "sign": 1,
+      "missing_mm3": 0.0,
+      "missing_faces": 0,
+      "cut_leg_negative_rejected": true
+    }
+  ],
+  "actual_interferences": [
+    {
+      "first": "PortLowSpeedSuspensionLink",
+      "second": "TransmissionFrame_MiddleDiaphragm",
+      "common_mm3": 3184.144419184613,
+      "passed": false,
+      "intersection_bounds_mm": [
+        1472.3460706171923,
+        529.0457142857142,
+        878.8385431769711,
+        1480.3460706171923,
+        541.7457142857143,
+        956.9635337695817
+      ]
+    },
+    {
+      "first": "StarboardLowSpeedSuspensionLink",
+      "second": "TransmissionFrame_MiddleDiaphragm",
+      "common_mm3": 3184.144419184612,
+      "passed": false,
+      "intersection_bounds_mm": [
+        1472.3460706171923,
+        -541.7457142857143,
+        878.8385431769711,
+        1480.3460706171923,
+        -529.0457142857142,
+        956.9635337695817
+      ]
+    }
+  ],
+  "next_step": "Review lower M337/M348/M353 anchor geometry and source transverse placement jointly with the retained middle diaphragm. Preserve failed trial01. Do not cut the frame or shrink source dimensions merely to clear the candidate."
+}
