@@ -1,5 +1,18 @@
 # Mark VIII visual progression
 
+The front-brake candidate adds an
+[isometric](intermediate_snapshot_iso_transmission_brake_front_001.png),
+[inner detail](intermediate_snapshot_detail_transmission_brake_front_001.png),
+[outer detail](intermediate_snapshot_detail_transmission_brake_front_outer_001.png),
+[low-speed overlay](intermediate_snapshot_source_low_brake_front_001.png) and
+[track overlay](intermediate_snapshot_source_track_brake_front_001.png).
+Eight ears and retained pins now carry four screw/spring/swivel/nut/lever
+mechanisms. Native fit, STEP, preservation, reproduction and parameter checks pass.
+Spring mass integration uses verified, independently refined solid partitions. Fixed registration keeps
+the remaining source-position discrepancies visible. All 183 prior images are
+preserved: **188 images total**. See the
+[trial record](003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/README.md).
+
 The rear-anchor study adds an
 [isometric](intermediate_snapshot_iso_transmission_brake_anchors_001.png),
 [inner detail](intermediate_snapshot_detail_transmission_brake_anchors_001.png),

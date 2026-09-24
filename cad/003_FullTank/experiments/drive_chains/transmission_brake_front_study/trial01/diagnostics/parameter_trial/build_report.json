@@ -1,0 +1,4608 @@
+{
+  "native_file": "PowertrainWithBrakeFront.FCStd",
+  "native_sha256": "7b0a1bdd66d68b6de2bbf585c1c28f753f05298a5e00259d48ae20f05ac7e016",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/PowertrainWithBrakeAnchors.FCStd",
+  "source_native_sha256": "7ced1af98fa1c1a2b594f37363ba474b745376184d98481632c772cba84c38b4",
+  "input_hashes": {
+    ".work/transmission-brake-front/parameter_controls.json": "3262a68fa6f0f759811034bb5426b161830b0c6b7824b1d3b8f5e4229fd65131",
+    "cad/003_FullTank/experiments/drive_chains/build_transmission_brake_front.py": "08958a007cc0f6dd40acab1e82884fcf960105d014d2c1b6e33ad3c292facf41",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py": "d29c6b065009e36257bb54dbcf7fc9c1a49950e9e092194b9549b0a03069aa77",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/definition_preservation_checks.json": "8b213fa5962368f5bf9b4d8c28515d24bf0c3a63f44189800da4ebf7f271cefd",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/exchange_checks.json": "f3aac74fbee59bb311763458d91b19e0edf150bf25c3a3c53557ae41d3cc6438",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/independent_checks.json": "23a2303256febfbffd9ab5114b6e03699cc2261032cd9e7f864c1c49da1c15e3",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/isolated/manifest.json": "6f7a85d52fd8f59f3a46f4f20c44f954dbd1fa11926f173d6d43fdc8250310f3",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/report.json": "c6056d29fe504ca83846d6049dfcd1d48579158c9ef7c430becfaaa5be82416d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_band_parts.py": "c68c3c8d379580346d63caaec0a07266fa9dc4a51a7a4e22c7b06d8dcbb15136",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_front_layout.py": "430919730aae4a6545b5691901cf631aea4d36f4e8a66755ebd94a031eb4e692",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_front_parts.py": "73352d879f26d00e4f9cfb430ba56bc4119810b5dfae2c929183a1afc631394e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/sources.json": "f3b11f64effb65dd19e7805d0d9f1b2877c2530c39bdfc49607912a395f4c835",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py": "97cb213e7707b3cce73b0bca7e5fa8b76345ff841e8fab767c3d16cf350a803e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_output_parts.py": "f5733f343308c7a7179cc6273b0c62162ba2b84ee09eeb6f68a31e31ebc2ed20",
+    "cad/003_FullTank/experiments/drive_chains/transmission_support_parts.py": "378d460b581c26154940ced9b9f4a8d8ca514fb97b05f24a2ac13c8c8b595405",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b"
+  },
+  "controls": {
+    "foot_stock": 6.35,
+    "low_foot_sweep_deg": 16.0,
+    "track_foot_sweep_deg": 18.0,
+    "lug_y": 31.75,
+    "lug_stock": 6.35,
+    "lug_radius": 19.05,
+    "lug_web_width": 18.0,
+    "lug_web_theta_deg": 13.0,
+    "pin_height": 72.0,
+    "pin_radial_offset": 40.0,
+    "pin_diameter": 24.0,
+    "pin_bore_allowance": 0.15,
+    "eye_side_clearance": 0.15,
+    "pin_axial_clearance": 0.15,
+    "pin_head_radius": 17.0,
+    "pin_head_stock": 4.0,
+    "cotter_station_overhang": 4.6,
+    "pin_end_beyond_cotter": 4.6,
+    "cotter_hole_radius": 3.325,
+    "swivel_forward_offset": 75.0,
+    "swivel_radius": 22.225,
+    "swivel_width": 44.45,
+    "swivel_flat_distance": 16.0,
+    "swivel_gap": 31.75,
+    "swivel_bore_allowance": 0.15,
+    "lever_head_radius": 31.75,
+    "lever_eye_radius": 20.0,
+    "lever_web_width": 36.0,
+    "lever_leg_width": 32.0,
+    "lever_leg_stock": 12.7,
+    "lever_leg_root_x": 42.0,
+    "lever_leg_root_z": -12.0,
+    "lever_end_x": -25.0,
+    "lever_end_z": -220.0,
+    "lever_end_radius": 18.0,
+    "lever_end_bore_radius": 6.5,
+    "lever_slot_start_x": 42.0,
+    "screw_eye_radius": 19.05,
+    "screw_radius": 6.35,
+    "screw_length": 210.0,
+    "screw_shoulder_radius": 14.2875,
+    "screw_shoulder_stock": 4.0,
+    "screw_shoulder_distance": 30.0,
+    "thread_bore_allowance": 0.15,
+    "spring_mean_radius": 11.1125,
+    "spring_wire_radius": 1.5875,
+    "spring_turns": 12.0,
+    "nut_neck_radius": 10.0,
+    "nut_neck_length": 16.0,
+    "nut_wing_length": 50.8,
+    "nut_wing_width": 12.7,
+    "nut_wing_stock": 6.35,
+    "nut_hex_radius": 12.0,
+    "nut_hex_length": 8.0
+  },
+  "details": {
+    "brakes": {
+      "low": {
+        "pin_x_mm": 345.3110828025217,
+        "upper_pin_mm": [
+          345.3110828025217,
+          0.0,
+          72.0
+        ],
+        "lower_pin_mm": [
+          345.3110828025217,
+          0,
+          -72.0
+        ],
+        "swivel_mm": [
+          420.3110828025217,
+          0,
+          -72.0
+        ],
+        "foot_start_rad": 0.045666840338042025,
+        "foot_end_rad": 0.32491952065713475,
+        "lining_joints": [
+          {
+            "segment": 1,
+            "hole": 1,
+            "frame": [
+              0.1081576418466541,
+              0.0,
+              0.9941337558448415,
+              297.1962863098154,
+              -0.0,
+              1.0,
+              0.0,
+              -31.75,
+              -0.9941337558448415,
+              -0.0,
+              0.1081576418466541,
+              32.333727030057105,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "segment": 1,
+            "hole": 2,
+            "frame": [
+              0.1081576418466541,
+              0.0,
+              0.9941337558448415,
+              297.1962863098154,
+              -0.0,
+              1.0,
+              0.0,
+              0.0,
+              -0.9941337558448415,
+              -0.0,
+              0.1081576418466541,
+              32.333727030057105,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "segment": 1,
+            "hole": 3,
+            "frame": [
+              0.1081576418466541,
+              0.0,
+              0.9941337558448415,
+              297.1962863098154,
+              -0.0,
+              1.0,
+              0.0,
+              31.75,
+              -0.9941337558448415,
+              -0.0,
+              0.1081576418466541,
+              32.333727030057105,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "steel_joints": [
+          {
+            "index": 1,
+            "angle_deg": 4.6165172150675895,
+            "y_mm": -15.875,
+            "frame": [
+              0.080486272194363,
+              0.0,
+              0.996755717309038,
+              305.5430056946192,
+              0.0,
+              1.0,
+              0.0,
+              -15.875,
+              -0.996755717309038,
+              0.0,
+              0.080486272194363,
+              24.6720606627796,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 2,
+            "angle_deg": 4.6165172150675895,
+            "y_mm": 15.875,
+            "frame": [
+              0.080486272194363,
+              0.0,
+              0.996755717309038,
+              305.5430056946192,
+              0.0,
+              1.0,
+              0.0,
+              15.875,
+              -0.996755717309038,
+              0.0,
+              0.080486272194363,
+              24.6720606627796,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 3,
+            "angle_deg": 8.61651721506759,
+            "y_mm": -15.875,
+            "frame": [
+              0.14982037570429807,
+              0.0,
+              0.988713231945352,
+              303.0776823374482,
+              0.0,
+              1.0,
+              0.0,
+              -15.875,
+              -0.988713231945352,
+              0.0,
+              0.14982037570429807,
+              45.92556341745633,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 4,
+            "angle_deg": 8.61651721506759,
+            "y_mm": 15.875,
+            "frame": [
+              0.14982037570429807,
+              0.0,
+              0.988713231945352,
+              303.0776823374482,
+              0.0,
+              1.0,
+              0.0,
+              15.875,
+              -0.988713231945352,
+              0.0,
+              0.14982037570429807,
+              45.92556341745633,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 5,
+            "angle_deg": 12.616517215067589,
+            "y_mm": -15.875,
+            "frame": [
+              0.2184245694036936,
+              0.0,
+              0.9758538351007342,
+              299.1357949771913,
+              0.0,
+              1.0,
+              0.0,
+              -15.875,
+              -0.9758538351007342,
+              0.0,
+              0.2184245694036936,
+              66.95532144358471,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 6,
+            "angle_deg": 12.616517215067589,
+            "y_mm": 15.875,
+            "frame": [
+              0.2184245694036936,
+              0.0,
+              0.9758538351007342,
+              299.1357949771913,
+              0.0,
+              1.0,
+              0.0,
+              15.875,
+              -0.9758538351007342,
+              0.0,
+              0.2184245694036936,
+              66.95532144358471,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 7,
+            "angle_deg": 16.61651721506759,
+            "y_mm": -15.875,
+            "frame": [
+              0.28596462055691496,
+              0.0,
+              0.9582401764639905,
+              293.73654809283045,
+              0.0,
+              1.0,
+              0.0,
+              -15.875,
+              -0.9582401764639905,
+              0.0,
+              0.28596462055691496,
+              87.65887987396533,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 8,
+            "angle_deg": 16.61651721506759,
+            "y_mm": 15.875,
+            "frame": [
+              0.28596462055691496,
+              0.0,
+              0.9582401764639905,
+              293.73654809283045,
+              0.0,
+              1.0,
+              0.0,
+              15.875,
+              -0.9582401764639905,
+              0.0,
+              0.28596462055691496,
+              87.65887987396533,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "band_outer_radius_mm": 312.7375,
+        "band_width_mm": 101.6
+      },
+      "track": {
+        "pin_x_mm": 351.79515723820026,
+        "upper_pin_mm": [
+          351.79515723820026,
+          0.0,
+          72.0
+        ],
+        "lower_pin_mm": [
+          351.79515723820026,
+          0,
+          -72.0
+        ],
+        "swivel_mm": [
+          426.79515723820026,
+          0,
+          -72.0
+        ],
+        "foot_start_rad": 0.06126908919463947,
+        "foot_end_rad": 0.3754283545536188,
+        "lining_joints": [
+          {
+            "segment": 1,
+            "hole": 1,
+            "frame": [
+              0.1223748472645797,
+              0.0,
+              0.9924839528964541,
+              303.00535081928746,
+              -0.0,
+              1.0,
+              0.0,
+              -19.049999999999997,
+              -0.9924839528964541,
+              -0.0,
+              0.1223748472645797,
+              37.361040869876284,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "segment": 1,
+            "hole": 2,
+            "frame": [
+              0.1223748472645797,
+              0.0,
+              0.9924839528964541,
+              303.00535081928746,
+              -0.0,
+              1.0,
+              0.0,
+              0.0,
+              -0.9924839528964541,
+              -0.0,
+              0.1223748472645797,
+              37.361040869876284,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "segment": 1,
+            "hole": 3,
+            "frame": [
+              0.1223748472645797,
+              0.0,
+              0.9924839528964541,
+              303.00535081928746,
+              -0.0,
+              1.0,
+              0.0,
+              19.049999999999997,
+              -0.9924839528964541,
+              -0.0,
+              0.1223748472645797,
+              37.361040869876284,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "steel_joints": [
+          {
+            "index": 1,
+            "angle_deg": 11.510460225463438,
+            "y_mm": -12.7,
+            "frame": [
+              0.19954683141473717,
+              0.0,
+              0.9798882906088522,
+              306.59479752787723,
+              0.0,
+              1.0,
+              0.0,
+              -12.7,
+              -0.9798882906088522,
+              0.0,
+              0.19954683141473717,
+              62.4357092142786,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 2,
+            "angle_deg": 11.510460225463438,
+            "y_mm": 12.7,
+            "frame": [
+              0.19954683141473717,
+              0.0,
+              0.9798882906088522,
+              306.59479752787723,
+              0.0,
+              1.0,
+              0.0,
+              12.7,
+              -0.9798882906088522,
+              0.0,
+              0.19954683141473717,
+              62.4357092142786,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 3,
+            "angle_deg": 15.510460225463438,
+            "y_mm": -12.7,
+            "frame": [
+              0.26741429717863185,
+              0.0,
+              0.9635816486756369,
+              301.4926530999983,
+              0.0,
+              1.0,
+              0.0,
+              -12.7,
+              -0.9635816486756369,
+              0.0,
+              0.26741429717863185,
+              83.67059090847917,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 4,
+            "angle_deg": 15.510460225463438,
+            "y_mm": 12.7,
+            "frame": [
+              0.26741429717863185,
+              0.0,
+              0.9635816486756369,
+              301.4926530999983,
+              0.0,
+              1.0,
+              0.0,
+              12.7,
+              -0.9635816486756369,
+              0.0,
+              0.26741429717863185,
+              83.67059090847917,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 5,
+            "angle_deg": 19.510460225463437,
+            "y_mm": -12.7,
+            "frame": [
+              0.33397894736706335,
+              0.0,
+              0.9425805338089623,
+              294.9216667721517,
+              0.0,
+              1.0,
+              0.0,
+              -12.7,
+              -0.9425805338089623,
+              0.0,
+              0.33397894736706335,
+              104.49783789431201,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 6,
+            "angle_deg": 19.510460225463437,
+            "y_mm": 12.7,
+            "frame": [
+              0.33397894736706335,
+              0.0,
+              0.9425805338089623,
+              294.9216667721517,
+              0.0,
+              1.0,
+              0.0,
+              12.7,
+              -0.9425805338089623,
+              0.0,
+              0.33397894736706335,
+              104.49783789431201,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "band_outer_radius_mm": 319.08750000000003,
+        "band_width_mm": 76.19999999999999
+      }
+    },
+    "eye_width_mm": 56.85,
+    "outer_lug_width_mm": 69.85,
+    "pin_head_seat_y_mm": -35.074999999999996,
+    "cotter_y_mm": 39.525,
+    "pin_tip_y_mm": 44.125,
+    "screw_rotation": [
+      -0.0,
+      0.9713171686341644,
+      0.0,
+      0.23778763196707753
+    ],
+    "upper_eye_to_swivel_mm": 162.3607095328177,
+    "spring": {
+      "installed_height_mm": 116.36070953281771,
+      "pitch_mm": 9.432142461068143,
+      "mean_radius_mm": 11.1125,
+      "wire_radius_mm": 1.5875,
+      "generated_centerline_length_mm": 880.7013022889555,
+      "ends": "Planar ground ends cut from extended helix; source section/turn count estimated."
+    },
+    "thread_representation": "Nominal cylindrical male/female surfaces, no thread helix.",
+    "swivel_retention": "Crossed adjusting screw constrains axial travel; precise historical end retention remains unresolved."
+  },
+  "changed_definitions": [
+    "Def_BrakeBand_low_band",
+    "Def_BrakeBand_track_band"
+  ],
+  "new_definitions": [
+    "Def_BrakeFront_lever",
+    "Def_BrakeFront_low_ear",
+    "Def_BrakeFront_nut",
+    "Def_BrakeFront_pin",
+    "Def_BrakeFront_screw",
+    "Def_BrakeFront_spring",
+    "Def_BrakeFront_swivel",
+    "Def_BrakeFront_track_ear"
+  ],
+  "nonphysical_features": [
+    "BrakeFrontSpringCenterline"
+  ],
+  "expected_new_occurrences": {
+    "PortLowSpeedBrakeUpperFrontEar": {
+      "definition": "Def_BrakeFront_low_ear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper",
+        "PortLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeUpperFrontSteelRivet1": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.080486272194363,
+        0.0,
+        0.996755717309038,
+        2137.037647740383,
+        0.0,
+        1.0,
+        0.0,
+        519.5207142857142,
+        -0.996755717309038,
+        0.0,
+        0.080486272194363,
+        925.2750018392501,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper",
+        "PortLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeUpperFrontSteelRivet2": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.080486272194363,
+        0.0,
+        0.996755717309038,
+        2137.037647740383,
+        0.0,
+        1.0,
+        0.0,
+        551.2707142857142,
+        -0.996755717309038,
+        0.0,
+        0.080486272194363,
+        925.2750018392501,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper",
+        "PortLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeUpperFrontSteelRivet3": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.14982037570429807,
+        0.0,
+        0.988713231945352,
+        2134.5723243832117,
+        0.0,
+        1.0,
+        0.0,
+        519.5207142857142,
+        -0.988713231945352,
+        0.0,
+        0.14982037570429807,
+        946.5285045939269,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper",
+        "PortLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeUpperFrontSteelRivet4": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.14982037570429807,
+        0.0,
+        0.988713231945352,
+        2134.5723243832117,
+        0.0,
+        1.0,
+        0.0,
+        551.2707142857142,
+        -0.988713231945352,
+        0.0,
+        0.14982037570429807,
+        946.5285045939269,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper",
+        "PortLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeUpperFrontSteelRivet5": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.21842456940369337,
+        0.0,
+        0.9758538351007344,
+        2130.630437022955,
+        0.0,
+        1.0,
+        0.0,
+        519.5207142857142,
+        -0.9758538351007344,
+        0.0,
+        0.21842456940369337,
+        967.5582626200552,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper",
+        "PortLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeUpperFrontSteelRivet6": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.21842456940369337,
+        0.0,
+        0.9758538351007344,
+        2130.630437022955,
+        0.0,
+        1.0,
+        0.0,
+        551.2707142857142,
+        -0.9758538351007344,
+        0.0,
+        0.21842456940369337,
+        967.5582626200552,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper",
+        "PortLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeUpperFrontSteelRivet7": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.28596462055691496,
+        0.0,
+        0.9582401764639905,
+        2125.2311901385942,
+        0.0,
+        1.0,
+        0.0,
+        519.5207142857142,
+        -0.9582401764639905,
+        0.0,
+        0.28596462055691496,
+        988.2618210504359,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper",
+        "PortLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeUpperFrontSteelRivet8": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.28596462055691496,
+        0.0,
+        0.9582401764639905,
+        2125.2311901385942,
+        0.0,
+        1.0,
+        0.0,
+        551.2707142857142,
+        -0.9582401764639905,
+        0.0,
+        0.28596462055691496,
+        988.2618210504359,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper",
+        "PortLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeLowerFrontEar": {
+      "definition": "Def_BrakeFront_low_ear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        535.3957142857142,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeLowerFrontSteelRivet1": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.080486272194363,
+        0.0,
+        0.996755717309038,
+        2137.037647740383,
+        1.2206736987343374e-16,
+        -1.0,
+        -9.856725561812919e-18,
+        551.2707142857142,
+        0.996755717309038,
+        1.224646799147353e-16,
+        -0.08048627219436288,
+        875.9308805136909,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeLowerFrontSteelRivet2": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.080486272194363,
+        0.0,
+        0.996755717309038,
+        2137.037647740383,
+        1.2206736987343374e-16,
+        -1.0,
+        -9.856725561812919e-18,
+        519.5207142857142,
+        0.996755717309038,
+        1.224646799147353e-16,
+        -0.08048627219436288,
+        875.9308805136909,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeLowerFrontSteelRivet3": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.14982037570429807,
+        0.0,
+        0.988713231945352,
+        2134.5723243832117,
+        1.2108244947765098e-16,
+        -1.0000000000000004,
+        -1.834770435533228e-17,
+        551.2707142857142,
+        0.988713231945352,
+        1.2246467991473535e-16,
+        -0.14982037570429863,
+        854.6773777590141,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeLowerFrontSteelRivet4": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.14982037570429807,
+        0.0,
+        0.988713231945352,
+        2134.5723243832117,
+        1.2108244947765098e-16,
+        -1.0000000000000004,
+        -1.834770435533228e-17,
+        519.5207142857142,
+        0.988713231945352,
+        1.2246467991473535e-16,
+        -0.14982037570429863,
+        854.6773777590141,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeLowerFrontSteelRivet5": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.21842456940369337,
+        0.0,
+        0.9758538351007344,
+        2130.630437022955,
+        1.1950762755917835e-16,
+        -1.0000000000000004,
+        -2.6749294977537217e-17,
+        551.2707142857142,
+        0.9758538351007344,
+        1.2246467991473535e-16,
+        -0.2184245694036937,
+        833.6476197328858,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeLowerFrontSteelRivet6": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.21842456940369337,
+        0.0,
+        0.9758538351007344,
+        2130.630437022955,
+        1.1950762755917835e-16,
+        -1.0000000000000004,
+        -2.6749294977537217e-17,
+        519.5207142857142,
+        0.9758538351007344,
+        1.2246467991473535e-16,
+        -0.2184245694036937,
+        833.6476197328858,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeLowerFrontSteelRivet7": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.28596462055691496,
+        0.0,
+        0.9582401764639905,
+        2125.2311901385942,
+        1.173505764921021e-16,
+        -1.0,
+        -3.502056572344133e-17,
+        551.2707142857142,
+        0.9582401764639905,
+        1.2246467991473532e-16,
+        -0.2859646205569151,
+        812.9440613025051,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeLowerFrontSteelRivet8": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.28596462055691496,
+        0.0,
+        0.9582401764639905,
+        2125.2311901385942,
+        1.173505764921021e-16,
+        -1.0,
+        -3.502056572344133e-17,
+        519.5207142857142,
+        0.9582401764639905,
+        1.2246467991473532e-16,
+        -0.2859646205569151,
+        812.9440613025051,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortLowSpeedBrakeUpperFrontPin": {
+      "definition": "Def_BrakeFront_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2176.8057248482855,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        972.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "PortLowSpeedBrakeUpperFrontCotter": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2176.8057248482855,
+        0.0,
+        1.0,
+        0.0,
+        574.9207142857142,
+        0.0,
+        0.0,
+        1.0,
+        972.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "PortLowSpeedBrakeLowerFrontPin": {
+      "definition": "Def_BrakeFront_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2176.8057248482855,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "PortLowSpeedBrakeLowerFrontCotter": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2176.8057248482855,
+        0.0,
+        1.0,
+        0.0,
+        574.9207142857142,
+        0.0,
+        0.0,
+        1.0,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "PortLowSpeedBrakeAdjustingScrew": {
+      "definition": "Def_BrakeFront_screw",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2176.8057248482855,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        972.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "PortLowSpeedBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2176.8057248482855,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "PortLowSpeedBrakeSwivel": {
+      "definition": "Def_BrakeFront_swivel",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2251.8057248482855,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "PortLowSpeedBrakeAdjustingNut": {
+      "definition": "Def_BrakeFront_nut",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2259.196675549677,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        814.4123158297989,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "PortLowSpeedBrakeAdjustingSpring": {
+      "definition": "Def_BrakeFront_spring",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2190.6637574133943,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        945.9955186514611,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "PortTrackBrakeUpperFrontEar": {
+      "definition": "Def_BrakeFront_track_ear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeUpper",
+        "PortTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeUpperFrontSteelRivet1": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.19954683141473717,
+        0.0,
+        0.9798882906088522,
+        2138.089439573641,
+        0.0,
+        1.0,
+        0.0,
+        757.4642857142859,
+        -0.9798882906088522,
+        0.0,
+        0.19954683141473717,
+        963.0386503907491,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeUpper",
+        "PortTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeUpperFrontSteelRivet2": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.19954683141473717,
+        0.0,
+        0.9798882906088522,
+        2138.089439573641,
+        0.0,
+        1.0,
+        0.0,
+        782.864285714286,
+        -0.9798882906088522,
+        0.0,
+        0.19954683141473717,
+        963.0386503907491,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeUpper",
+        "PortTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeUpperFrontSteelRivet3": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.26741429717863185,
+        0.0,
+        0.9635816486756368,
+        2132.987295145762,
+        0.0,
+        1.0,
+        0.0,
+        757.4642857142859,
+        -0.9635816486756368,
+        0.0,
+        0.26741429717863185,
+        984.2735320849497,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeUpper",
+        "PortTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeUpperFrontSteelRivet4": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.26741429717863185,
+        0.0,
+        0.9635816486756368,
+        2132.987295145762,
+        0.0,
+        1.0,
+        0.0,
+        782.864285714286,
+        -0.9635816486756368,
+        0.0,
+        0.26741429717863185,
+        984.2735320849497,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeUpper",
+        "PortTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeUpperFrontSteelRivet5": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.33397894736706335,
+        0.0,
+        0.9425805338089625,
+        2126.4163088179153,
+        0.0,
+        1.0,
+        0.0,
+        757.4642857142859,
+        -0.9425805338089625,
+        0.0,
+        0.33397894736706335,
+        1005.1007790707826,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeUpper",
+        "PortTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeUpperFrontSteelRivet6": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.33397894736706335,
+        0.0,
+        0.9425805338089625,
+        2126.4163088179153,
+        0.0,
+        1.0,
+        0.0,
+        782.864285714286,
+        -0.9425805338089625,
+        0.0,
+        0.33397894736706335,
+        1005.1007790707826,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeUpper",
+        "PortTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeLowerFrontEar": {
+      "definition": "Def_BrakeFront_track_ear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        770.1642857142859,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeLowerFrontSteelRivet1": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.19954683141473717,
+        0.0,
+        0.9798882906088522,
+        2138.089439573641,
+        1.2000170586161024e-16,
+        -1.0,
+        -2.4437438837205444e-17,
+        782.864285714286,
+        0.9798882906088522,
+        1.2246467991473532e-16,
+        -0.19954683141473728,
+        838.1672319621919,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeLowerFrontSteelRivet2": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.19954683141473717,
+        0.0,
+        0.9798882906088522,
+        2138.089439573641,
+        1.2000170586161024e-16,
+        -1.0,
+        -2.4437438837205444e-17,
+        757.4642857142859,
+        0.9798882906088522,
+        1.2246467991473532e-16,
+        -0.19954683141473728,
+        838.1672319621919,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeLowerFrontSteelRivet3": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.26741429717863185,
+        0.0,
+        0.9635816486756368,
+        2132.987295145762,
+        1.180047181767748e-16,
+        -1.0,
+        -3.274880630860506e-17,
+        782.8642857142859,
+        0.9635816486756368,
+        1.2246467991473532e-16,
+        -0.26741429717863174,
+        816.9323502679913,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeLowerFrontSteelRivet4": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.26741429717863185,
+        0.0,
+        0.9635816486756368,
+        2132.987295145762,
+        1.180047181767748e-16,
+        -1.0,
+        -3.274880630860506e-17,
+        757.4642857142859,
+        0.9635816486756368,
+        1.2246467991473532e-16,
+        -0.26741429717863174,
+        816.9323502679913,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeLowerFrontSteelRivet5": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.33397894736706335,
+        0.0,
+        0.9425805338089625,
+        2126.4163088179153,
+        1.1543282336677494e-16,
+        -1.0000000000000004,
+        -4.0900624887567675e-17,
+        782.8642857142859,
+        0.9425805338089625,
+        1.2246467991473535e-16,
+        -0.3339789473670638,
+        796.1051032821584,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeLowerFrontSteelRivet6": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.33397894736706335,
+        0.0,
+        0.9425805338089625,
+        2126.4163088179153,
+        1.1543282336677494e-16,
+        -1.0000000000000004,
+        -4.0900624887567675e-17,
+        757.4642857142859,
+        0.9425805338089625,
+        1.2246467991473535e-16,
+        -0.3339789473670638,
+        796.1051032821584,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "PortTrackBrakeUpperFrontPin": {
+      "definition": "Def_BrakeFront_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2183.289799283964,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        972.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeFrontMechanism"
+      ]
+    },
+    "PortTrackBrakeUpperFrontCotter": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2183.289799283964,
+        0.0,
+        1.0,
+        0.0,
+        809.6892857142859,
+        0.0,
+        0.0,
+        1.0,
+        972.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeFrontMechanism"
+      ]
+    },
+    "PortTrackBrakeLowerFrontPin": {
+      "definition": "Def_BrakeFront_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2183.289799283964,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeFrontMechanism"
+      ]
+    },
+    "PortTrackBrakeLowerFrontCotter": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2183.289799283964,
+        0.0,
+        1.0,
+        0.0,
+        809.6892857142859,
+        0.0,
+        0.0,
+        1.0,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeFrontMechanism"
+      ]
+    },
+    "PortTrackBrakeAdjustingScrew": {
+      "definition": "Def_BrakeFront_screw",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2183.289799283964,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        972.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeFrontMechanism"
+      ]
+    },
+    "PortTrackBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2183.289799283964,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeFrontMechanism"
+      ]
+    },
+    "PortTrackBrakeSwivel": {
+      "definition": "Def_BrakeFront_swivel",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2258.289799283964,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeFrontMechanism"
+      ]
+    },
+    "PortTrackBrakeAdjustingNut": {
+      "definition": "Def_BrakeFront_nut",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2265.6807499853553,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        814.4123158297989,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeFrontMechanism"
+      ]
+    },
+    "PortTrackBrakeAdjustingSpring": {
+      "definition": "Def_BrakeFront_spring",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2197.147831849073,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        945.9955186514611,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeFrontMechanism"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperFrontEar": {
+      "definition": "Def_BrakeFront_low_ear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper",
+        "StarboardLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet1": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.080486272194363,
+        0.0,
+        0.996755717309038,
+        2137.037647740383,
+        0.0,
+        1.0,
+        0.0,
+        -551.2707142857142,
+        -0.996755717309038,
+        0.0,
+        0.080486272194363,
+        925.2750018392501,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper",
+        "StarboardLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet2": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.080486272194363,
+        0.0,
+        0.996755717309038,
+        2137.037647740383,
+        0.0,
+        1.0,
+        0.0,
+        -519.5207142857142,
+        -0.996755717309038,
+        0.0,
+        0.080486272194363,
+        925.2750018392501,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper",
+        "StarboardLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet3": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.14982037570429807,
+        0.0,
+        0.988713231945352,
+        2134.5723243832117,
+        0.0,
+        1.0,
+        0.0,
+        -551.2707142857142,
+        -0.988713231945352,
+        0.0,
+        0.14982037570429807,
+        946.5285045939269,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper",
+        "StarboardLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet4": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.14982037570429807,
+        0.0,
+        0.988713231945352,
+        2134.5723243832117,
+        0.0,
+        1.0,
+        0.0,
+        -519.5207142857142,
+        -0.988713231945352,
+        0.0,
+        0.14982037570429807,
+        946.5285045939269,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper",
+        "StarboardLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet5": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.21842456940369337,
+        0.0,
+        0.9758538351007344,
+        2130.630437022955,
+        0.0,
+        1.0,
+        0.0,
+        -551.2707142857142,
+        -0.9758538351007344,
+        0.0,
+        0.21842456940369337,
+        967.5582626200552,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper",
+        "StarboardLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet6": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.21842456940369337,
+        0.0,
+        0.9758538351007344,
+        2130.630437022955,
+        0.0,
+        1.0,
+        0.0,
+        -519.5207142857142,
+        -0.9758538351007344,
+        0.0,
+        0.21842456940369337,
+        967.5582626200552,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper",
+        "StarboardLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet7": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.28596462055691496,
+        0.0,
+        0.9582401764639905,
+        2125.2311901385942,
+        0.0,
+        1.0,
+        0.0,
+        -551.2707142857142,
+        -0.9582401764639905,
+        0.0,
+        0.28596462055691496,
+        988.2618210504359,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper",
+        "StarboardLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet8": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.28596462055691496,
+        0.0,
+        0.9582401764639905,
+        2125.2311901385942,
+        0.0,
+        1.0,
+        0.0,
+        -519.5207142857142,
+        -0.9582401764639905,
+        0.0,
+        0.28596462055691496,
+        988.2618210504359,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper",
+        "StarboardLowSpeedBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerFrontEar": {
+      "definition": "Def_BrakeFront_low_ear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -535.3957142857142,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet1": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.080486272194363,
+        0.0,
+        0.996755717309038,
+        2137.037647740383,
+        1.2206736987343374e-16,
+        -1.0,
+        -9.856725561812919e-18,
+        -519.5207142857142,
+        0.996755717309038,
+        1.224646799147353e-16,
+        -0.08048627219436288,
+        875.9308805136909,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet2": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.080486272194363,
+        0.0,
+        0.996755717309038,
+        2137.037647740383,
+        1.2206736987343374e-16,
+        -1.0,
+        -9.856725561812919e-18,
+        -551.2707142857142,
+        0.996755717309038,
+        1.224646799147353e-16,
+        -0.08048627219436288,
+        875.9308805136909,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet3": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.14982037570429807,
+        0.0,
+        0.988713231945352,
+        2134.5723243832117,
+        1.2108244947765098e-16,
+        -1.0000000000000004,
+        -1.834770435533228e-17,
+        -519.5207142857142,
+        0.988713231945352,
+        1.2246467991473535e-16,
+        -0.14982037570429863,
+        854.6773777590141,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet4": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.14982037570429807,
+        0.0,
+        0.988713231945352,
+        2134.5723243832117,
+        1.2108244947765098e-16,
+        -1.0000000000000004,
+        -1.834770435533228e-17,
+        -551.2707142857142,
+        0.988713231945352,
+        1.2246467991473535e-16,
+        -0.14982037570429863,
+        854.6773777590141,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet5": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.21842456940369337,
+        0.0,
+        0.9758538351007344,
+        2130.630437022955,
+        1.1950762755917835e-16,
+        -1.0000000000000004,
+        -2.6749294977537217e-17,
+        -519.5207142857142,
+        0.9758538351007344,
+        1.2246467991473535e-16,
+        -0.2184245694036937,
+        833.6476197328858,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet6": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.21842456940369337,
+        0.0,
+        0.9758538351007344,
+        2130.630437022955,
+        1.1950762755917835e-16,
+        -1.0000000000000004,
+        -2.6749294977537217e-17,
+        -551.2707142857142,
+        0.9758538351007344,
+        1.2246467991473535e-16,
+        -0.2184245694036937,
+        833.6476197328858,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet7": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.28596462055691496,
+        0.0,
+        0.9582401764639905,
+        2125.2311901385942,
+        1.173505764921021e-16,
+        -1.0,
+        -3.502056572344133e-17,
+        -519.5207142857142,
+        0.9582401764639905,
+        1.2246467991473532e-16,
+        -0.2859646205569151,
+        812.9440613025051,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet8": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.28596462055691496,
+        0.0,
+        0.9582401764639905,
+        2125.2311901385942,
+        1.173505764921021e-16,
+        -1.0,
+        -3.502056572344133e-17,
+        -551.2707142857142,
+        0.9582401764639905,
+        1.2246467991473532e-16,
+        -0.2859646205569151,
+        812.9440613025051,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperFrontPin": {
+      "definition": "Def_BrakeFront_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2176.8057248482855,
+        0.0,
+        -1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        -1.0,
+        972.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperFrontCotter": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2176.8057248482855,
+        0.0,
+        -1.0,
+        0.0,
+        -574.9207142857142,
+        0.0,
+        0.0,
+        -1.0,
+        972.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerFrontPin": {
+      "definition": "Def_BrakeFront_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2176.8057248482855,
+        0.0,
+        -1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        -1.0,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerFrontCotter": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2176.8057248482855,
+        0.0,
+        -1.0,
+        0.0,
+        -574.9207142857142,
+        0.0,
+        0.0,
+        -1.0,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "StarboardLowSpeedBrakeAdjustingScrew": {
+      "definition": "Def_BrakeFront_screw",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2176.8057248482855,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        972.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "StarboardLowSpeedBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2176.8057248482855,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "StarboardLowSpeedBrakeSwivel": {
+      "definition": "Def_BrakeFront_swivel",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2251.8057248482855,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "StarboardLowSpeedBrakeAdjustingNut": {
+      "definition": "Def_BrakeFront_nut",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2259.196675549677,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        814.4123158297989,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "StarboardLowSpeedBrakeAdjustingSpring": {
+      "definition": "Def_BrakeFront_spring",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2190.6637574133943,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        945.9955186514611,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "StarboardTrackBrakeUpperFrontEar": {
+      "definition": "Def_BrakeFront_track_ear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeUpper",
+        "StarboardTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeUpperFrontSteelRivet1": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.19954683141473717,
+        0.0,
+        0.9798882906088522,
+        2138.089439573641,
+        0.0,
+        1.0,
+        0.0,
+        -782.864285714286,
+        -0.9798882906088522,
+        0.0,
+        0.19954683141473717,
+        963.0386503907491,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeUpper",
+        "StarboardTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeUpperFrontSteelRivet2": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.19954683141473717,
+        0.0,
+        0.9798882906088522,
+        2138.089439573641,
+        0.0,
+        1.0,
+        0.0,
+        -757.4642857142859,
+        -0.9798882906088522,
+        0.0,
+        0.19954683141473717,
+        963.0386503907491,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeUpper",
+        "StarboardTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeUpperFrontSteelRivet3": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.26741429717863185,
+        0.0,
+        0.9635816486756368,
+        2132.987295145762,
+        0.0,
+        1.0,
+        0.0,
+        -782.864285714286,
+        -0.9635816486756368,
+        0.0,
+        0.26741429717863185,
+        984.2735320849497,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeUpper",
+        "StarboardTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeUpperFrontSteelRivet4": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.26741429717863185,
+        0.0,
+        0.9635816486756368,
+        2132.987295145762,
+        0.0,
+        1.0,
+        0.0,
+        -757.4642857142859,
+        -0.9635816486756368,
+        0.0,
+        0.26741429717863185,
+        984.2735320849497,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeUpper",
+        "StarboardTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeUpperFrontSteelRivet5": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.33397894736706335,
+        0.0,
+        0.9425805338089625,
+        2126.4163088179153,
+        0.0,
+        1.0,
+        0.0,
+        -782.864285714286,
+        -0.9425805338089625,
+        0.0,
+        0.33397894736706335,
+        1005.1007790707826,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeUpper",
+        "StarboardTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeUpperFrontSteelRivet6": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.33397894736706335,
+        0.0,
+        0.9425805338089625,
+        2126.4163088179153,
+        0.0,
+        1.0,
+        0.0,
+        -757.4642857142859,
+        -0.9425805338089625,
+        0.0,
+        0.33397894736706335,
+        1005.1007790707826,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeUpper",
+        "StarboardTrackBrakeUpperFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeLowerFrontEar": {
+      "definition": "Def_BrakeFront_track_ear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -770.1642857142859,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeLowerFrontSteelRivet1": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.19954683141473717,
+        0.0,
+        0.9798882906088522,
+        2138.089439573641,
+        1.2000170586161024e-16,
+        -1.0,
+        -2.4437438837205444e-17,
+        -757.4642857142859,
+        0.9798882906088522,
+        1.2246467991473532e-16,
+        -0.19954683141473728,
+        838.1672319621919,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeLowerFrontSteelRivet2": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.19954683141473717,
+        0.0,
+        0.9798882906088522,
+        2138.089439573641,
+        1.2000170586161024e-16,
+        -1.0,
+        -2.4437438837205444e-17,
+        -782.864285714286,
+        0.9798882906088522,
+        1.2246467991473532e-16,
+        -0.19954683141473728,
+        838.1672319621919,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeLowerFrontSteelRivet3": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.26741429717863185,
+        0.0,
+        0.9635816486756368,
+        2132.987295145762,
+        1.180047181767748e-16,
+        -1.0,
+        -3.274880630860506e-17,
+        -757.464285714286,
+        0.9635816486756368,
+        1.2246467991473532e-16,
+        -0.26741429717863174,
+        816.9323502679913,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeLowerFrontSteelRivet4": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.26741429717863185,
+        0.0,
+        0.9635816486756368,
+        2132.987295145762,
+        1.180047181767748e-16,
+        -1.0,
+        -3.274880630860506e-17,
+        -782.864285714286,
+        0.9635816486756368,
+        1.2246467991473532e-16,
+        -0.26741429717863174,
+        816.9323502679913,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeLowerFrontSteelRivet5": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.33397894736706335,
+        0.0,
+        0.9425805338089625,
+        2126.4163088179153,
+        1.1543282336677494e-16,
+        -1.0000000000000004,
+        -4.0900624887567675e-17,
+        -757.464285714286,
+        0.9425805338089625,
+        1.2246467991473535e-16,
+        -0.3339789473670638,
+        796.1051032821584,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeLowerFrontSteelRivet6": {
+      "definition": "Def_BrakeAnchor_steel_rivet",
+      "frame": [
+        0.33397894736706335,
+        0.0,
+        0.9425805338089625,
+        2126.4163088179153,
+        1.1543282336677494e-16,
+        -1.0000000000000004,
+        -4.0900624887567675e-17,
+        -782.864285714286,
+        0.9425805338089625,
+        1.2246467991473535e-16,
+        -0.3339789473670638,
+        796.1051032821584,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerFrontEarJoint"
+      ]
+    },
+    "StarboardTrackBrakeUpperFrontPin": {
+      "definition": "Def_BrakeFront_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2183.289799283964,
+        0.0,
+        -1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        -1.0,
+        972.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeFrontMechanism"
+      ]
+    },
+    "StarboardTrackBrakeUpperFrontCotter": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2183.289799283964,
+        0.0,
+        -1.0,
+        0.0,
+        -809.6892857142859,
+        0.0,
+        0.0,
+        -1.0,
+        972.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeFrontMechanism"
+      ]
+    },
+    "StarboardTrackBrakeLowerFrontPin": {
+      "definition": "Def_BrakeFront_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2183.289799283964,
+        0.0,
+        -1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        -1.0,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeFrontMechanism"
+      ]
+    },
+    "StarboardTrackBrakeLowerFrontCotter": {
+      "definition": "Def_BrakeLink_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2183.289799283964,
+        0.0,
+        -1.0,
+        0.0,
+        -809.6892857142859,
+        0.0,
+        0.0,
+        -1.0,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeFrontMechanism"
+      ]
+    },
+    "StarboardTrackBrakeAdjustingScrew": {
+      "definition": "Def_BrakeFront_screw",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2183.289799283964,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        972.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeFrontMechanism"
+      ]
+    },
+    "StarboardTrackBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2183.289799283964,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeFrontMechanism"
+      ]
+    },
+    "StarboardTrackBrakeSwivel": {
+      "definition": "Def_BrakeFront_swivel",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2258.289799283964,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        828.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeFrontMechanism"
+      ]
+    },
+    "StarboardTrackBrakeAdjustingNut": {
+      "definition": "Def_BrakeFront_nut",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2265.6807499853553,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        814.4123158297989,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeFrontMechanism"
+      ]
+    },
+    "StarboardTrackBrakeAdjustingSpring": {
+      "definition": "Def_BrakeFront_spring",
+      "frame": [
+        -0.8869140841669796,
+        0.0,
+        0.4619344188369689,
+        2197.147831849073,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        -0.4619344188369689,
+        0.0,
+        -0.8869140841669796,
+        945.9955186514611,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeFrontMechanism"
+      ]
+    }
+  },
+  "expected_revised_occurrences": {
+    "PortLowSpeedBrakeUpperBand": {
+      "definition": "Def_BrakeBand_low_band",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper"
+      ]
+    },
+    "PortLowSpeedBrakeUpperSegment1Rivet1": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1081576418466541,
+        0.0,
+        0.9941337558448415,
+        2128.6909283555788,
+        -0.0,
+        1.0,
+        0.0,
+        503.64571428571423,
+        -0.9941337558448415,
+        -0.0,
+        0.1081576418466541,
+        932.9366682065277,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper",
+        "PortLowSpeedBrakeUpperSegment1"
+      ]
+    },
+    "PortLowSpeedBrakeUpperSegment1Rivet2": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1081576418466541,
+        0.0,
+        0.9941337558448415,
+        2128.6909283555788,
+        -0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        -0.9941337558448415,
+        -0.0,
+        0.1081576418466541,
+        932.9366682065277,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper",
+        "PortLowSpeedBrakeUpperSegment1"
+      ]
+    },
+    "PortLowSpeedBrakeUpperSegment1Rivet3": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1081576418466541,
+        0.0,
+        0.9941337558448415,
+        2128.6909283555788,
+        -0.0,
+        1.0,
+        0.0,
+        567.1457142857142,
+        -0.9941337558448415,
+        -0.0,
+        0.1081576418466541,
+        932.9366682065277,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeUpper",
+        "PortLowSpeedBrakeUpperSegment1"
+      ]
+    },
+    "PortLowSpeedBrakeLowerBand": {
+      "definition": "Def_BrakeBand_low_band",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        535.3957142857142,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower"
+      ]
+    },
+    "PortLowSpeedBrakeLowerSegment1Rivet1": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1081576418466541,
+        0.0,
+        0.9941337558448415,
+        2128.6909283555788,
+        1.2174627220197216e-16,
+        -1.0,
+        -1.3245490989083082e-17,
+        567.1457142857142,
+        0.9941337558448415,
+        1.2246467991473532e-16,
+        -0.10815764184665433,
+        868.2692141464133,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerSegment1"
+      ]
+    },
+    "PortLowSpeedBrakeLowerSegment1Rivet2": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1081576418466541,
+        0.0,
+        0.9941337558448415,
+        2128.6909283555788,
+        1.2174627220197216e-16,
+        -1.0,
+        -1.3245490989083082e-17,
+        535.3957142857142,
+        0.9941337558448415,
+        1.2246467991473532e-16,
+        -0.10815764184665433,
+        868.2692141464133,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerSegment1"
+      ]
+    },
+    "PortLowSpeedBrakeLowerSegment1Rivet3": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1081576418466541,
+        0.0,
+        0.9941337558448415,
+        2128.6909283555788,
+        1.2174627220197216e-16,
+        -1.0,
+        -1.3245490989083082e-17,
+        503.64571428571423,
+        0.9941337558448415,
+        1.2246467991473532e-16,
+        -0.10815764184665433,
+        868.2692141464133,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerSegment1"
+      ]
+    },
+    "PortTrackBrakeUpperBand": {
+      "definition": "Def_BrakeBand_track_band",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeUpper"
+      ]
+    },
+    "PortTrackBrakeUpperSegment1Rivet1": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1223748472645797,
+        0.0,
+        0.9924839528964541,
+        2134.499992865051,
+        -0.0,
+        1.0,
+        0.0,
+        751.114285714286,
+        -0.9924839528964541,
+        -0.0,
+        0.1223748472645797,
+        937.9639820463468,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeUpper",
+        "PortTrackBrakeUpperSegment1"
+      ]
+    },
+    "PortTrackBrakeUpperSegment1Rivet2": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1223748472645797,
+        0.0,
+        0.9924839528964541,
+        2134.499992865051,
+        -0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        -0.9924839528964541,
+        -0.0,
+        0.1223748472645797,
+        937.9639820463468,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeUpper",
+        "PortTrackBrakeUpperSegment1"
+      ]
+    },
+    "PortTrackBrakeUpperSegment1Rivet3": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1223748472645797,
+        0.0,
+        0.9924839528964541,
+        2134.499992865051,
+        -0.0,
+        1.0,
+        0.0,
+        789.2142857142859,
+        -0.9924839528964541,
+        -0.0,
+        0.1223748472645797,
+        937.9639820463468,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeUpper",
+        "PortTrackBrakeUpperSegment1"
+      ]
+    },
+    "PortTrackBrakeLowerBand": {
+      "definition": "Def_BrakeBand_track_band",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        770.1642857142859,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower"
+      ]
+    },
+    "PortTrackBrakeLowerSegment1Rivet1": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1223748472645797,
+        0.0,
+        0.9924839528964541,
+        2134.499992865051,
+        1.215442296119755e-16,
+        -1.0,
+        -1.4986596499871372e-17,
+        789.2142857142859,
+        0.9924839528964541,
+        1.2246467991473532e-16,
+        -0.12237484726457981,
+        863.2419003065942,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerSegment1"
+      ]
+    },
+    "PortTrackBrakeLowerSegment1Rivet2": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1223748472645797,
+        0.0,
+        0.9924839528964541,
+        2134.499992865051,
+        1.215442296119755e-16,
+        -1.0,
+        -1.4986596499871372e-17,
+        770.1642857142859,
+        0.9924839528964541,
+        1.2246467991473532e-16,
+        -0.12237484726457981,
+        863.2419003065942,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerSegment1"
+      ]
+    },
+    "PortTrackBrakeLowerSegment1Rivet3": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1223748472645797,
+        0.0,
+        0.9924839528964541,
+        2134.499992865051,
+        1.215442296119755e-16,
+        -1.0,
+        -1.4986596499871372e-17,
+        751.114285714286,
+        0.9924839528964541,
+        1.2246467991473532e-16,
+        -0.12237484726457981,
+        863.2419003065942,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerSegment1"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperBand": {
+      "definition": "Def_BrakeBand_low_band",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperSegment1Rivet1": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1081576418466541,
+        0.0,
+        0.9941337558448415,
+        2128.6909283555788,
+        -0.0,
+        1.0,
+        0.0,
+        -567.1457142857142,
+        -0.9941337558448415,
+        -0.0,
+        0.1081576418466541,
+        932.9366682065277,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper",
+        "StarboardLowSpeedBrakeUpperSegment1"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperSegment1Rivet2": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1081576418466541,
+        0.0,
+        0.9941337558448415,
+        2128.6909283555788,
+        -0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        -0.9941337558448415,
+        -0.0,
+        0.1081576418466541,
+        932.9366682065277,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper",
+        "StarboardLowSpeedBrakeUpperSegment1"
+      ]
+    },
+    "StarboardLowSpeedBrakeUpperSegment1Rivet3": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1081576418466541,
+        0.0,
+        0.9941337558448415,
+        2128.6909283555788,
+        -0.0,
+        1.0,
+        0.0,
+        -503.64571428571423,
+        -0.9941337558448415,
+        -0.0,
+        0.1081576418466541,
+        932.9366682065277,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeUpper",
+        "StarboardLowSpeedBrakeUpperSegment1"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerBand": {
+      "definition": "Def_BrakeBand_low_band",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -535.3957142857142,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerSegment1Rivet1": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1081576418466541,
+        0.0,
+        0.9941337558448415,
+        2128.6909283555788,
+        1.2174627220197216e-16,
+        -1.0,
+        -1.3245490989083082e-17,
+        -503.64571428571423,
+        0.9941337558448415,
+        1.2246467991473532e-16,
+        -0.10815764184665433,
+        868.2692141464133,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerSegment1"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerSegment1Rivet2": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1081576418466541,
+        0.0,
+        0.9941337558448415,
+        2128.6909283555788,
+        1.2174627220197216e-16,
+        -1.0,
+        -1.3245490989083082e-17,
+        -535.3957142857142,
+        0.9941337558448415,
+        1.2246467991473532e-16,
+        -0.10815764184665433,
+        868.2692141464133,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerSegment1"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerSegment1Rivet3": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1081576418466541,
+        0.0,
+        0.9941337558448415,
+        2128.6909283555788,
+        1.2174627220197216e-16,
+        -1.0,
+        -1.3245490989083082e-17,
+        -567.1457142857142,
+        0.9941337558448415,
+        1.2246467991473532e-16,
+        -0.10815764184665433,
+        868.2692141464133,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerSegment1"
+      ]
+    },
+    "StarboardTrackBrakeUpperBand": {
+      "definition": "Def_BrakeBand_track_band",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeUpper"
+      ]
+    },
+    "StarboardTrackBrakeUpperSegment1Rivet1": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1223748472645797,
+        0.0,
+        0.9924839528964541,
+        2134.499992865051,
+        -0.0,
+        1.0,
+        0.0,
+        -789.2142857142859,
+        -0.9924839528964541,
+        -0.0,
+        0.1223748472645797,
+        937.9639820463468,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeUpper",
+        "StarboardTrackBrakeUpperSegment1"
+      ]
+    },
+    "StarboardTrackBrakeUpperSegment1Rivet2": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1223748472645797,
+        0.0,
+        0.9924839528964541,
+        2134.499992865051,
+        -0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        -0.9924839528964541,
+        -0.0,
+        0.1223748472645797,
+        937.9639820463468,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeUpper",
+        "StarboardTrackBrakeUpperSegment1"
+      ]
+    },
+    "StarboardTrackBrakeUpperSegment1Rivet3": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1223748472645797,
+        0.0,
+        0.9924839528964541,
+        2134.499992865051,
+        -0.0,
+        1.0,
+        0.0,
+        -751.114285714286,
+        -0.9924839528964541,
+        -0.0,
+        0.1223748472645797,
+        937.9639820463468,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeUpper",
+        "StarboardTrackBrakeUpperSegment1"
+      ]
+    },
+    "StarboardTrackBrakeLowerBand": {
+      "definition": "Def_BrakeBand_track_band",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -770.1642857142859,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower"
+      ]
+    },
+    "StarboardTrackBrakeLowerSegment1Rivet1": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1223748472645797,
+        0.0,
+        0.9924839528964541,
+        2134.499992865051,
+        1.215442296119755e-16,
+        -1.0,
+        -1.4986596499871372e-17,
+        -751.114285714286,
+        0.9924839528964541,
+        1.2246467991473532e-16,
+        -0.12237484726457981,
+        863.2419003065942,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerSegment1"
+      ]
+    },
+    "StarboardTrackBrakeLowerSegment1Rivet2": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1223748472645797,
+        0.0,
+        0.9924839528964541,
+        2134.499992865051,
+        1.215442296119755e-16,
+        -1.0,
+        -1.4986596499871372e-17,
+        -770.1642857142859,
+        0.9924839528964541,
+        1.2246467991473532e-16,
+        -0.12237484726457981,
+        863.2419003065942,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerSegment1"
+      ]
+    },
+    "StarboardTrackBrakeLowerSegment1Rivet3": {
+      "definition": "Def_BrakeAnchor_long_copper_rivet",
+      "frame": [
+        0.1223748472645797,
+        0.0,
+        0.9924839528964541,
+        2134.499992865051,
+        1.215442296119755e-16,
+        -1.0,
+        -1.4986596499871372e-17,
+        -789.2142857142859,
+        0.9924839528964541,
+        1.2246467991473532e-16,
+        -0.12237484726457981,
+        863.2419003065942,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerSegment1"
+      ]
+    }
+  },
+  "assembly_revisions": {},
+  "added_children": {
+    "Definitions": [
+      "BrakeFrontSpringCenterline"
+    ],
+    "PortLowSpeedBrakeUpper": [
+      "PortLowSpeedBrakeUpperFrontEarJoint"
+    ],
+    "PortLowSpeedBrakeLower": [
+      "PortLowSpeedBrakeLowerFrontEarJoint"
+    ],
+    "PortLowSpeedBrake": [
+      "PortLowSpeedBrakeFrontMechanism"
+    ],
+    "PortTrackBrakeUpper": [
+      "PortTrackBrakeUpperFrontEarJoint"
+    ],
+    "PortTrackBrakeLower": [
+      "PortTrackBrakeLowerFrontEarJoint"
+    ],
+    "PortTrackBrake": [
+      "PortTrackBrakeFrontMechanism"
+    ],
+    "StarboardLowSpeedBrakeUpper": [
+      "StarboardLowSpeedBrakeUpperFrontEarJoint"
+    ],
+    "StarboardLowSpeedBrakeLower": [
+      "StarboardLowSpeedBrakeLowerFrontEarJoint"
+    ],
+    "StarboardLowSpeedBrake": [
+      "StarboardLowSpeedBrakeFrontMechanism"
+    ],
+    "StarboardTrackBrakeUpper": [
+      "StarboardTrackBrakeUpperFrontEarJoint"
+    ],
+    "StarboardTrackBrakeLower": [
+      "StarboardTrackBrakeLowerFrontEarJoint"
+    ],
+    "StarboardTrackBrake": [
+      "StarboardTrackBrakeFrontMechanism"
+    ],
+    "PortLowSpeedBrakeUpperFrontEarJoint": [
+      "PortLowSpeedBrakeUpperFrontEar",
+      "PortLowSpeedBrakeUpperFrontSteelRivet1",
+      "PortLowSpeedBrakeUpperFrontSteelRivet2",
+      "PortLowSpeedBrakeUpperFrontSteelRivet3",
+      "PortLowSpeedBrakeUpperFrontSteelRivet4",
+      "PortLowSpeedBrakeUpperFrontSteelRivet5",
+      "PortLowSpeedBrakeUpperFrontSteelRivet6",
+      "PortLowSpeedBrakeUpperFrontSteelRivet7",
+      "PortLowSpeedBrakeUpperFrontSteelRivet8"
+    ],
+    "PortLowSpeedBrakeLowerFrontEarJoint": [
+      "PortLowSpeedBrakeLowerFrontEar",
+      "PortLowSpeedBrakeLowerFrontSteelRivet1",
+      "PortLowSpeedBrakeLowerFrontSteelRivet2",
+      "PortLowSpeedBrakeLowerFrontSteelRivet3",
+      "PortLowSpeedBrakeLowerFrontSteelRivet4",
+      "PortLowSpeedBrakeLowerFrontSteelRivet5",
+      "PortLowSpeedBrakeLowerFrontSteelRivet6",
+      "PortLowSpeedBrakeLowerFrontSteelRivet7",
+      "PortLowSpeedBrakeLowerFrontSteelRivet8"
+    ],
+    "PortLowSpeedBrakeFrontMechanism": [
+      "PortLowSpeedBrakeUpperFrontPin",
+      "PortLowSpeedBrakeUpperFrontCotter",
+      "PortLowSpeedBrakeLowerFrontPin",
+      "PortLowSpeedBrakeLowerFrontCotter",
+      "PortLowSpeedBrakeAdjustingScrew",
+      "PortLowSpeedBrakeLever",
+      "PortLowSpeedBrakeSwivel",
+      "PortLowSpeedBrakeAdjustingNut",
+      "PortLowSpeedBrakeAdjustingSpring"
+    ],
+    "PortTrackBrakeUpperFrontEarJoint": [
+      "PortTrackBrakeUpperFrontEar",
+      "PortTrackBrakeUpperFrontSteelRivet1",
+      "PortTrackBrakeUpperFrontSteelRivet2",
+      "PortTrackBrakeUpperFrontSteelRivet3",
+      "PortTrackBrakeUpperFrontSteelRivet4",
+      "PortTrackBrakeUpperFrontSteelRivet5",
+      "PortTrackBrakeUpperFrontSteelRivet6"
+    ],
+    "PortTrackBrakeLowerFrontEarJoint": [
+      "PortTrackBrakeLowerFrontEar",
+      "PortTrackBrakeLowerFrontSteelRivet1",
+      "PortTrackBrakeLowerFrontSteelRivet2",
+      "PortTrackBrakeLowerFrontSteelRivet3",
+      "PortTrackBrakeLowerFrontSteelRivet4",
+      "PortTrackBrakeLowerFrontSteelRivet5",
+      "PortTrackBrakeLowerFrontSteelRivet6"
+    ],
+    "PortTrackBrakeFrontMechanism": [
+      "PortTrackBrakeUpperFrontPin",
+      "PortTrackBrakeUpperFrontCotter",
+      "PortTrackBrakeLowerFrontPin",
+      "PortTrackBrakeLowerFrontCotter",
+      "PortTrackBrakeAdjustingScrew",
+      "PortTrackBrakeLever",
+      "PortTrackBrakeSwivel",
+      "PortTrackBrakeAdjustingNut",
+      "PortTrackBrakeAdjustingSpring"
+    ],
+    "StarboardLowSpeedBrakeUpperFrontEarJoint": [
+      "StarboardLowSpeedBrakeUpperFrontEar",
+      "StarboardLowSpeedBrakeUpperFrontSteelRivet1",
+      "StarboardLowSpeedBrakeUpperFrontSteelRivet2",
+      "StarboardLowSpeedBrakeUpperFrontSteelRivet3",
+      "StarboardLowSpeedBrakeUpperFrontSteelRivet4",
+      "StarboardLowSpeedBrakeUpperFrontSteelRivet5",
+      "StarboardLowSpeedBrakeUpperFrontSteelRivet6",
+      "StarboardLowSpeedBrakeUpperFrontSteelRivet7",
+      "StarboardLowSpeedBrakeUpperFrontSteelRivet8"
+    ],
+    "StarboardLowSpeedBrakeLowerFrontEarJoint": [
+      "StarboardLowSpeedBrakeLowerFrontEar",
+      "StarboardLowSpeedBrakeLowerFrontSteelRivet1",
+      "StarboardLowSpeedBrakeLowerFrontSteelRivet2",
+      "StarboardLowSpeedBrakeLowerFrontSteelRivet3",
+      "StarboardLowSpeedBrakeLowerFrontSteelRivet4",
+      "StarboardLowSpeedBrakeLowerFrontSteelRivet5",
+      "StarboardLowSpeedBrakeLowerFrontSteelRivet6",
+      "StarboardLowSpeedBrakeLowerFrontSteelRivet7",
+      "StarboardLowSpeedBrakeLowerFrontSteelRivet8"
+    ],
+    "StarboardLowSpeedBrakeFrontMechanism": [
+      "StarboardLowSpeedBrakeUpperFrontPin",
+      "StarboardLowSpeedBrakeUpperFrontCotter",
+      "StarboardLowSpeedBrakeLowerFrontPin",
+      "StarboardLowSpeedBrakeLowerFrontCotter",
+      "StarboardLowSpeedBrakeAdjustingScrew",
+      "StarboardLowSpeedBrakeLever",
+      "StarboardLowSpeedBrakeSwivel",
+      "StarboardLowSpeedBrakeAdjustingNut",
+      "StarboardLowSpeedBrakeAdjustingSpring"
+    ],
+    "StarboardTrackBrakeUpperFrontEarJoint": [
+      "StarboardTrackBrakeUpperFrontEar",
+      "StarboardTrackBrakeUpperFrontSteelRivet1",
+      "StarboardTrackBrakeUpperFrontSteelRivet2",
+      "StarboardTrackBrakeUpperFrontSteelRivet3",
+      "StarboardTrackBrakeUpperFrontSteelRivet4",
+      "StarboardTrackBrakeUpperFrontSteelRivet5",
+      "StarboardTrackBrakeUpperFrontSteelRivet6"
+    ],
+    "StarboardTrackBrakeLowerFrontEarJoint": [
+      "StarboardTrackBrakeLowerFrontEar",
+      "StarboardTrackBrakeLowerFrontSteelRivet1",
+      "StarboardTrackBrakeLowerFrontSteelRivet2",
+      "StarboardTrackBrakeLowerFrontSteelRivet3",
+      "StarboardTrackBrakeLowerFrontSteelRivet4",
+      "StarboardTrackBrakeLowerFrontSteelRivet5",
+      "StarboardTrackBrakeLowerFrontSteelRivet6"
+    ],
+    "StarboardTrackBrakeFrontMechanism": [
+      "StarboardTrackBrakeUpperFrontPin",
+      "StarboardTrackBrakeUpperFrontCotter",
+      "StarboardTrackBrakeLowerFrontPin",
+      "StarboardTrackBrakeLowerFrontCotter",
+      "StarboardTrackBrakeAdjustingScrew",
+      "StarboardTrackBrakeLever",
+      "StarboardTrackBrakeSwivel",
+      "StarboardTrackBrakeAdjustingNut",
+      "StarboardTrackBrakeAdjustingSpring"
+    ]
+  },
+  "new_assemblies": [
+    "PortLowSpeedBrakeUpperFrontEarJoint",
+    "PortLowSpeedBrakeLowerFrontEarJoint",
+    "PortLowSpeedBrakeFrontMechanism",
+    "PortTrackBrakeUpperFrontEarJoint",
+    "PortTrackBrakeLowerFrontEarJoint",
+    "PortTrackBrakeFrontMechanism",
+    "StarboardLowSpeedBrakeUpperFrontEarJoint",
+    "StarboardLowSpeedBrakeLowerFrontEarJoint",
+    "StarboardLowSpeedBrakeFrontMechanism",
+    "StarboardTrackBrakeUpperFrontEarJoint",
+    "StarboardTrackBrakeLowerFrontEarJoint",
+    "StarboardTrackBrakeFrontMechanism"
+  ],
+  "affected_occurrences": [
+    "PortLowSpeedBrakeAdjustingNut",
+    "PortLowSpeedBrakeAdjustingScrew",
+    "PortLowSpeedBrakeAdjustingSpring",
+    "PortLowSpeedBrakeLever",
+    "PortLowSpeedBrakeLowerBand",
+    "PortLowSpeedBrakeLowerFrontCotter",
+    "PortLowSpeedBrakeLowerFrontEar",
+    "PortLowSpeedBrakeLowerFrontPin",
+    "PortLowSpeedBrakeLowerFrontSteelRivet1",
+    "PortLowSpeedBrakeLowerFrontSteelRivet2",
+    "PortLowSpeedBrakeLowerFrontSteelRivet3",
+    "PortLowSpeedBrakeLowerFrontSteelRivet4",
+    "PortLowSpeedBrakeLowerFrontSteelRivet5",
+    "PortLowSpeedBrakeLowerFrontSteelRivet6",
+    "PortLowSpeedBrakeLowerFrontSteelRivet7",
+    "PortLowSpeedBrakeLowerFrontSteelRivet8",
+    "PortLowSpeedBrakeLowerSegment1Rivet1",
+    "PortLowSpeedBrakeLowerSegment1Rivet2",
+    "PortLowSpeedBrakeLowerSegment1Rivet3",
+    "PortLowSpeedBrakeSwivel",
+    "PortLowSpeedBrakeUpperBand",
+    "PortLowSpeedBrakeUpperFrontCotter",
+    "PortLowSpeedBrakeUpperFrontEar",
+    "PortLowSpeedBrakeUpperFrontPin",
+    "PortLowSpeedBrakeUpperFrontSteelRivet1",
+    "PortLowSpeedBrakeUpperFrontSteelRivet2",
+    "PortLowSpeedBrakeUpperFrontSteelRivet3",
+    "PortLowSpeedBrakeUpperFrontSteelRivet4",
+    "PortLowSpeedBrakeUpperFrontSteelRivet5",
+    "PortLowSpeedBrakeUpperFrontSteelRivet6",
+    "PortLowSpeedBrakeUpperFrontSteelRivet7",
+    "PortLowSpeedBrakeUpperFrontSteelRivet8",
+    "PortLowSpeedBrakeUpperSegment1Rivet1",
+    "PortLowSpeedBrakeUpperSegment1Rivet2",
+    "PortLowSpeedBrakeUpperSegment1Rivet3",
+    "PortTrackBrakeAdjustingNut",
+    "PortTrackBrakeAdjustingScrew",
+    "PortTrackBrakeAdjustingSpring",
+    "PortTrackBrakeLever",
+    "PortTrackBrakeLowerBand",
+    "PortTrackBrakeLowerFrontCotter",
+    "PortTrackBrakeLowerFrontEar",
+    "PortTrackBrakeLowerFrontPin",
+    "PortTrackBrakeLowerFrontSteelRivet1",
+    "PortTrackBrakeLowerFrontSteelRivet2",
+    "PortTrackBrakeLowerFrontSteelRivet3",
+    "PortTrackBrakeLowerFrontSteelRivet4",
+    "PortTrackBrakeLowerFrontSteelRivet5",
+    "PortTrackBrakeLowerFrontSteelRivet6",
+    "PortTrackBrakeLowerSegment1Rivet1",
+    "PortTrackBrakeLowerSegment1Rivet2",
+    "PortTrackBrakeLowerSegment1Rivet3",
+    "PortTrackBrakeSwivel",
+    "PortTrackBrakeUpperBand",
+    "PortTrackBrakeUpperFrontCotter",
+    "PortTrackBrakeUpperFrontEar",
+    "PortTrackBrakeUpperFrontPin",
+    "PortTrackBrakeUpperFrontSteelRivet1",
+    "PortTrackBrakeUpperFrontSteelRivet2",
+    "PortTrackBrakeUpperFrontSteelRivet3",
+    "PortTrackBrakeUpperFrontSteelRivet4",
+    "PortTrackBrakeUpperFrontSteelRivet5",
+    "PortTrackBrakeUpperFrontSteelRivet6",
+    "PortTrackBrakeUpperSegment1Rivet1",
+    "PortTrackBrakeUpperSegment1Rivet2",
+    "PortTrackBrakeUpperSegment1Rivet3",
+    "StarboardLowSpeedBrakeAdjustingNut",
+    "StarboardLowSpeedBrakeAdjustingScrew",
+    "StarboardLowSpeedBrakeAdjustingSpring",
+    "StarboardLowSpeedBrakeLever",
+    "StarboardLowSpeedBrakeLowerBand",
+    "StarboardLowSpeedBrakeLowerFrontCotter",
+    "StarboardLowSpeedBrakeLowerFrontEar",
+    "StarboardLowSpeedBrakeLowerFrontPin",
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet1",
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet2",
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet3",
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet4",
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet5",
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet6",
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet7",
+    "StarboardLowSpeedBrakeLowerFrontSteelRivet8",
+    "StarboardLowSpeedBrakeLowerSegment1Rivet1",
+    "StarboardLowSpeedBrakeLowerSegment1Rivet2",
+    "StarboardLowSpeedBrakeLowerSegment1Rivet3",
+    "StarboardLowSpeedBrakeSwivel",
+    "StarboardLowSpeedBrakeUpperBand",
+    "StarboardLowSpeedBrakeUpperFrontCotter",
+    "StarboardLowSpeedBrakeUpperFrontEar",
+    "StarboardLowSpeedBrakeUpperFrontPin",
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet1",
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet2",
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet3",
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet4",
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet5",
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet6",
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet7",
+    "StarboardLowSpeedBrakeUpperFrontSteelRivet8",
+    "StarboardLowSpeedBrakeUpperSegment1Rivet1",
+    "StarboardLowSpeedBrakeUpperSegment1Rivet2",
+    "StarboardLowSpeedBrakeUpperSegment1Rivet3",
+    "StarboardTrackBrakeAdjustingNut",
+    "StarboardTrackBrakeAdjustingScrew",
+    "StarboardTrackBrakeAdjustingSpring",
+    "StarboardTrackBrakeLever",
+    "StarboardTrackBrakeLowerBand",
+    "StarboardTrackBrakeLowerFrontCotter",
+    "StarboardTrackBrakeLowerFrontEar",
+    "StarboardTrackBrakeLowerFrontPin",
+    "StarboardTrackBrakeLowerFrontSteelRivet1",
+    "StarboardTrackBrakeLowerFrontSteelRivet2",
+    "StarboardTrackBrakeLowerFrontSteelRivet3",
+    "StarboardTrackBrakeLowerFrontSteelRivet4",
+    "StarboardTrackBrakeLowerFrontSteelRivet5",
+    "StarboardTrackBrakeLowerFrontSteelRivet6",
+    "StarboardTrackBrakeLowerSegment1Rivet1",
+    "StarboardTrackBrakeLowerSegment1Rivet2",
+    "StarboardTrackBrakeLowerSegment1Rivet3",
+    "StarboardTrackBrakeSwivel",
+    "StarboardTrackBrakeUpperBand",
+    "StarboardTrackBrakeUpperFrontCotter",
+    "StarboardTrackBrakeUpperFrontEar",
+    "StarboardTrackBrakeUpperFrontPin",
+    "StarboardTrackBrakeUpperFrontSteelRivet1",
+    "StarboardTrackBrakeUpperFrontSteelRivet2",
+    "StarboardTrackBrakeUpperFrontSteelRivet3",
+    "StarboardTrackBrakeUpperFrontSteelRivet4",
+    "StarboardTrackBrakeUpperFrontSteelRivet5",
+    "StarboardTrackBrakeUpperFrontSteelRivet6",
+    "StarboardTrackBrakeUpperSegment1Rivet1",
+    "StarboardTrackBrakeUpperSegment1Rivet2",
+    "StarboardTrackBrakeUpperSegment1Rivet3"
+  ],
+  "expected_physical_occurrences": 2957,
+  "expected_definition_count": 492,
+  "expected_assembly_count": 288,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "stops_and_control_rods_pending": true,
+  "coupling_detail_unresolved": true,
+  "standard_assembly_modified": false
+}

@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "box",
+      "passed": true,
+      "volume_error_mm3": 0,
+      "centroid_error_mm": 0.0
+    },
+    {
+      "name": "placed_box",
+      "passed": true,
+      "volume_error_mm3": 3.637978807091713e-12,
+      "centroid_error_mm": 0.0
+    },
+    {
+      "name": "cylinder",
+      "passed": true,
+      "volume_error_mm3": 7.275957614183426e-12,
+      "centroid_error_mm": 2.4609368345608868e-15
+    },
+    {
+      "name": "intact",
+      "passed": true,
+      "certificate": {
+        "missing_faces": 0,
+        "added_faces": 0,
+        "missing_mm3": 0.0,
+        "added_mm3": 0.0,
+        "max_adjacent_overlap_mm3": 0.0,
+        "passed": true
+      }
+    },
+    {
+      "name": "missing_section",
+      "passed": true,
+      "certificate": {
+        "missing_faces": 6,
+        "added_faces": 0,
+        "missing_mm3": 6000.0,
+        "added_mm3": 0.0,
+        "max_adjacent_overlap_mm3": 0.0,
+        "passed": false
+      }
+    },
+    {
+      "name": "duplicate_section",
+      "passed": true,
+      "certificate": {
+        "missing_faces": 0,
+        "added_faces": 0,
+        "missing_mm3": 0.0,
+        "added_mm3": 0.0,
+        "max_adjacent_overlap_mm3": 6000.0,
+        "passed": false
+      }
+    },
+    {
+      "name": "displaced_section",
+      "passed": true,
+      "certificate": {
+        "missing_faces": 6,
+        "added_faces": 6,
+        "missing_mm3": 3.0,
+        "added_mm3": 3.000000000000469,
+        "max_adjacent_overlap_mm3": 0.0,
+        "passed": false
+      }
+    }
+  ],
+  "provenance": {
+    "adapter_sha256": "c80394e757336500520c23f2085502ef95fffb836835dbc5e8a57b9e41235887",
+    "mass_provenance": {
+      "adapter_sha256": "8f92c1d73aafda1f53d5c130e783d0939a8688964b97b8814bcace080ab8d7d7",
+      "source_sha256": "320bbdb62b127d9476ad743e553a5bdaa63c46b7294008b34a310040d9a4984f",
+      "binary_sha256": "3f0fd07070cc2be22943b945db3f6e4c71b3ea0789f370dddb9d4e21fc6bc722",
+      "runtime_root": "/snap/freecad/2741",
+      "compile_command": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-I/snap/freecad/2741/usr/include/opencascade",
+        "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/occt_mass_properties.cpp",
+        "-L/snap/freecad/2741/usr/lib",
+        "-lTKTopAlgo",
+        "-lTKBRep",
+        "-lTKG3d",
+        "-lTKMath",
+        "-lTKernel",
+        "-o",
+        "/home/cyapp/MarkVIIILiberty/.work/transmission-brake-front/partition-qualification/mass/occt_mass_properties"
+      ],
+      "header_sha256": "a1d5c195f2234cbdc748ebbdd4af499d59e4b96ea235cde9ba74878e5d7d3056",
+      "library_sha256": "e484214d874d21b7dfdcb44d20d903a9c213e0d96f68c459ecb7e5369a32ef04"
+    },
+    "initial_intervals": 4,
+    "max_subdivision_depth": 8,
+    "refinement": "Bisect every converged interval once, subdividing further if required."
+  }
+}

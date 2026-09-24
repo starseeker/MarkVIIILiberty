@@ -157,6 +157,18 @@ faces and area; a displaced-foot negative still failed. Keep separate material
 interference checks. The [retained probe and initial failure](../../../cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/diagnostics/seat_coverage/README.md)
 demonstrate the distinction between a physical surface and its face subdivision.
 
+A stable mass result can still fail its integrator's reported-error requirement.
+On this runtime, a ground-end helical spring failed both whole-face Gauss and
+Gauss-Kronrod error targets despite matching native/STEP material. Integrating
+verified disjoint solid sections reached the original thresholds; independently
+refining every section corroborated the aggregate mass and centroid. Validate
+coverage, absence of overlap, each section's convergence and aggregate refinement
+before using this method. Keep the original/exported solid unchanged. The
+[spring diagnostic](../../../cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/diagnostics/spring_mass/README.md)
+includes analytic controls and missing, duplicate and displaced-section negatives;
+`lib/partitioned_mass.py` implements the tested measurement option. This is an
+explicit diagnostic alternative, not a reason to partition every shape.
+
 Treat kernel bounding boxes as enclosures, not guaranteed exact size measurements.
 On this runtime, a retained cross-drilled stud reports a 19.058984 mm bounding-box
 width, while its axial cylinder faces have radius 9.525 mm and no material lies

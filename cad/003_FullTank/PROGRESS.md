@@ -11,6 +11,35 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — front brake adjustment mechanisms populated
+
+The [front-brake trial](experiments/drive_chains/transmission_brake_front_study/trial01/README.md)
+adds 100 physical parts: eight ears, eight pins and cotters, 56 steel rivets and
+four sets of screw, spring, swivel, nut and lever. It contains **2,957 physical
+occurrences, 492 definitions and 288 assemblies**. Eight backings gain front
+attachment holes, and 24 lining rivets use longer stock. All inherited frames
+remain fixed.
+
+All **119 native checks and 996 development material pairs pass**. The retained
+standard context has 5,316 occurrences and no nearby affected pair. All 482
+unchanged definitions are preserved; a fresh rebuild reproduces 1,504 BReps and
+137,434 persistent properties. A pivot-height/stand-off variation passes the
+native checks and preserves all 482 unchanged nominal definitions.
+
+All **142 STEP comparisons pass**. Five spring pairs required verified,
+independently refined solid partitions for mass integration; the original
+material, centroid and convergence thresholds are preserved. The other 137
+passing pairs remain unchanged. The front-brake checkpoint is the new locally
+qualified development parent; historical layout and service qualification remain
+open.
+
+Five new views bring the progression to **188 images**, preserving all 183 prior
+images. Fixed-datum handbook overlays retain the forward/low pivot station
+residuals; local joint fit does not establish historical accuracy. Hidden fork,
+swivel and spring dimensions remain estimates. Stops, control rods, high-speed
+brakes and broader engine/interior completion remain ahead; standard tank011
+and the priority of geometry before poses are unchanged.
+
 ## 24 September 2026 — rear brake anchors and riveted feet populated
 
 The [rear-anchor trial](experiments/drive_chains/transmission_brake_anchor_study/trial01/README.md)

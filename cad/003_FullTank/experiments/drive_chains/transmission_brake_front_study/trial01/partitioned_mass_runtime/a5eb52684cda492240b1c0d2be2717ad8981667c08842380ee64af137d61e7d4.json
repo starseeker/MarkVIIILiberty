@@ -1,0 +1,5542 @@
+{
+  "method": "Adaptive Gauss on verified, independently refined disjoint partitions",
+  "canonical_brep_sha256": "a5eb52684cda492240b1c0d2be2717ad8981667c08842380ee64af137d61e7d4",
+  "provenance": {
+    "adapter_sha256": "c80394e757336500520c23f2085502ef95fffb836835dbc5e8a57b9e41235887",
+    "mass_provenance": {
+      "adapter_sha256": "8f92c1d73aafda1f53d5c130e783d0939a8688964b97b8814bcace080ab8d7d7",
+      "source_sha256": "320bbdb62b127d9476ad743e553a5bdaa63c46b7294008b34a310040d9a4984f",
+      "binary_sha256": "3f0fd07070cc2be22943b945db3f6e4c71b3ea0789f370dddb9d4e21fc6bc722",
+      "runtime_root": "/snap/freecad/2741",
+      "compile_command": [
+        "g++",
+        "-std=c++17",
+        "-O2",
+        "-I/snap/freecad/2741/usr/include/opencascade",
+        "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/occt_mass_properties.cpp",
+        "-L/snap/freecad/2741/usr/lib",
+        "-lTKTopAlgo",
+        "-lTKBRep",
+        "-lTKG3d",
+        "-lTKMath",
+        "-lTKernel",
+        "-o",
+        "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/spring_exchange_mass_runtime/occt_mass_properties"
+      ],
+      "header_sha256": "a1d5c195f2234cbdc748ebbdd4af499d59e4b96ea235cde9ba74878e5d7d3056",
+      "library_sha256": "e484214d874d21b7dfdcb44d20d903a9c213e0d96f68c459ecb7e5369a32ef04"
+    },
+    "initial_intervals": 4,
+    "max_subdivision_depth": 8,
+    "refinement": "Bisect every converged interval once, subdividing further if required."
+  },
+  "partitions": [
+    {
+      "label": "initial",
+      "count": 15,
+      "volume_mm3": 6873.8731035269,
+      "centroid_mm": [
+        1.9169483033398562e-09,
+        0.22209766244186857,
+        56.4119008788075
+      ],
+      "integration_absolute_volume_delta_mm3": 5.125262987348833e-07,
+      "integration_centroid_delta_mm": 1.4809104977814052e-09,
+      "material_certificate": {
+        "missing_faces": 0,
+        "added_faces": 0,
+        "missing_mm3": 0.0,
+        "added_mm3": 0.0,
+        "max_adjacent_overlap_mm3": 0.0,
+        "passed": true
+      },
+      "passed": true,
+      "pieces": [
+        {
+          "interval": [
+            -3.6877755210820737,
+            11.33714278949472
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 4.599615749937377e-11,
+                "volume": 686.7179622291225,
+                "centroid": [
+                  0.4788095726149949,
+                  1.61652382786383,
+                  5.708096661582748
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.531764103308371e-13,
+                "volume": 686.7179622246265,
+                "centroid": [
+                  0.4788095725922327,
+                  1.6165238279459389,
+                  5.708096661575538
+                ]
+              }
+            ],
+            "brep_sha256": "6dd5adff15b266f65fd9110aa084342520592cd2af786400e88478615afc9c90",
+            "volume_convergence_mm3": 4.495973371376749e-09,
+            "centroid_convergence_mm": 8.550996141009178e-11,
+            "converged": true,
+            "volume_mm3": 686.7179622246265,
+            "centroid_mm": [
+              0.4788095725922327,
+              1.6165238279459389,
+              5.708096661575538
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            11.33714278949472,
+            18.849601944783117
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 7.602434891946033e-11,
+                "volume": 458.36972897255987,
+                "centroid": [
+                  -0.2693471754374761,
+                  -1.9438917897207029,
+                  15.09337217398689
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.613997509134081e-13,
+                "volume": 458.3697289056879,
+                "centroid": [
+                  -0.2693471741337772,
+                  -1.9438917898108559,
+                  15.093372174176604
+                ]
+              }
+            ],
+            "brep_sha256": "6d0d65cde699fbc0ee0530d2f359d5571708b7c91698607b6f22982938b77376",
+            "volume_convergence_mm3": 6.687196218990721e-08,
+            "centroid_convergence_mm": 1.3205113407925619e-09,
+            "converged": true,
+            "volume_mm3": 458.3697289056879,
+            "centroid_mm": [
+              -0.2693471741337772,
+              -1.9438917898108559,
+              15.093372174176604
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            18.849601944783117,
+            20.727716733605217
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 8.838654265298701e-12,
+                "volume": 114.59244633974623,
+                "centroid": [
+                  0.4510820546103379,
+                  8.900398117512763,
+                  19.788659351231267
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.614203681126394e-13,
+                "volume": 114.59244634306623,
+                "centroid": [
+                  0.45108205446706945,
+                  8.900398117530003,
+                  19.78865935125667
+                ]
+              }
+            ],
+            "brep_sha256": "13556846b8940cc2c11555f14d383551450fbbaee07b1ede1c6c2f81b3f20d97",
+            "volume_convergence_mm3": 3.319996721984353e-09,
+            "centroid_convergence_mm": 1.465206744455236e-10,
+            "converged": true,
+            "volume_mm3": 114.59244634306623,
+            "centroid_mm": [
+              0.45108205446706945,
+              8.900398117530003,
+              19.78865935125667
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            20.727716733605217,
+            22.605831522427316
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.3879199181184278e-12,
+                "volume": 114.59244638866545,
+                "centroid": [
+                  -8.43102013794077,
+                  2.8876392065116825,
+                  21.666774120114148
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.363199241538064e-13,
+                "volume": 114.59244638743832,
+                "centroid": [
+                  -8.431020137956008,
+                  2.887639206460282,
+                  21.666774120123545
+                ]
+              }
+            ],
+            "brep_sha256": "362981127334345467505bfc0da2d5a1d49562fb3df65ffe2c7bb174710725ee",
+            "volume_convergence_mm3": 1.2271357263671234e-09,
+            "centroid_convergence_mm": 5.442898465468714e-11,
+            "converged": true,
+            "volume_mm3": 114.59244638743832,
+            "centroid_mm": [
+              -8.431020137956008,
+              2.887639206460282,
+              21.666774120123545
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            22.605831522427316,
+            26.362061100071514
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 8.853750085167069e-12,
+                "volume": 229.18483895397782,
+                "centroid": [
+                  0.25907391098040267,
+                  -7.112817520195872,
+                  24.483946347182137
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.363221777864679e-13,
+                "volume": 229.1848389541347,
+                "centroid": [
+                  0.25907391098460913,
+                  -7.112817520187195,
+                  24.483946347183256
+                ]
+              }
+            ],
+            "brep_sha256": "09af8e8029c64afe6fff508e76bce8c0b137ce9641e2dda13deee92327ef88d3",
+            "volume_convergence_mm3": 1.5688783605583012e-10,
+            "centroid_convergence_mm": 9.70723546737185e-12,
+            "converged": true,
+            "volume_mm3": 229.1848389541347,
+            "centroid_mm": [
+              0.25907391098460913,
+              -7.112817520187195,
+              24.483946347183256
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            26.362061100071514,
+            41.38697941064831
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 7.953483316977104e-11,
+                "volume": 916.7394694715061,
+                "centroid": [
+                  -0.34770357269378693,
+                  1.627347781670301,
+                  33.87452011808309
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 9.626830910446996e-13,
+                "volume": 916.7394694796884,
+                "centroid": [
+                  -0.3477035727330911,
+                  1.6273477817362583,
+                  33.87452011804658
+                ]
+              }
+            ],
+            "brep_sha256": "d098c080ad35c6d87eb1cdf4d4de1fd867b18003b037ecf8302258d394210d90",
+            "volume_convergence_mm3": 8.182269084500149e-09,
+            "centroid_convergence_mm": 8.501756550823638e-11,
+            "converged": true,
+            "volume_mm3": 916.7394694796884,
+            "centroid_mm": [
+              -0.3477035727330911,
+              1.6273477817362583,
+              33.87452011804658
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            41.38697941064831,
+            45.14320898829251
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 9.122923994396109e-11,
+                "volume": 229.18487328121228,
+                "centroid": [
+                  2.670343761006758,
+                  -6.5976190028407995,
+                  43.265094082930446
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 8.28621928205318e-13,
+                "volume": 229.18487328655246,
+                "centroid": [
+                  2.670343760875395,
+                  -6.59761900289234,
+                  43.26509408290995
+                ]
+              }
+            ],
+            "brep_sha256": "ac9b226cece1a41ecf8fd0413395933e01771aaf7f6e06bf7b4930c9fe955a58",
+            "volume_convergence_mm3": 5.340183406588039e-09,
+            "centroid_convergence_mm": 1.4259317951963104e-10,
+            "converged": true,
+            "volume_mm3": 229.18487328655246,
+            "centroid_mm": [
+              2.670343760875395,
+              -6.59761900289234,
+              43.26509408290995
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            45.14320898829251,
+            48.899438565936705
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.4791461414317984e-11,
+                "volume": 229.1848599737512,
+                "centroid": [
+                  1.2328617581053063,
+                  7.0099455678027995,
+                  47.021323875699025
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 5.557076507919603e-13,
+                "volume": 229.18485997018036,
+                "centroid": [
+                  1.2328617582498824,
+                  7.009945567874694,
+                  47.021323875684395
+                ]
+              }
+            ],
+            "brep_sha256": "7d2dfcf0275b41a0ab7e3b26f549c71000c0fb1d84243014ec0f65004f88ee35",
+            "volume_convergence_mm3": 3.5708467294170987e-09,
+            "centroid_convergence_mm": 1.6212684499787908e-10,
+            "converged": true,
+            "volume_mm3": 229.18485997018036,
+            "centroid_mm": [
+              1.2328617582498824,
+              7.009945567874694,
+              47.021323875684395
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            48.899438565936705,
+            50.77755335475881
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 6.766033813218998e-11,
+                "volume": 114.59244851234159,
+                "centroid": [
+                  -8.747565300456404,
+                  -1.7031418824320717,
+                  49.83849597308452
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 8.33466200046397e-13,
+                "volume": 114.59244851613349,
+                "centroid": [
+                  -8.74756530051219,
+                  -1.7031418823410456,
+                  49.83849597305964
+                ]
+              }
+            ],
+            "brep_sha256": "9a36389488ce8967e56a49403217f7153882e0131bf2905c13526e07b77c95a6",
+            "volume_convergence_mm3": 3.791896574512066e-09,
+            "centroid_convergence_mm": 1.0961980082623343e-10,
+            "converged": true,
+            "volume_mm3": 114.59244851613349,
+            "centroid_mm": [
+              -8.74756530051219,
+              -1.7031418823410456,
+              49.83849597305964
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            50.77755335475881,
+            52.655668143580904
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.4000002965626345e-12,
+                "volume": 114.59241965191752,
+                "centroid": [
+                  -0.7747742547773425,
+                  -8.878080408354881,
+                  51.71661072425574
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.601995039764432e-13,
+                "volume": 114.59241965286893,
+                "centroid": [
+                  -0.7747742548406914,
+                  -8.878080408288813,
+                  51.71661072423918
+                ]
+              }
+            ],
+            "brep_sha256": "a11018990fd2d284d997edc812a1ccdea81bfae5aeddbc964576f38916881816",
+            "volume_convergence_mm3": 9.51402512328059e-10,
+            "centroid_convergence_mm": 9.301696682863388e-11,
+            "converged": true,
+            "volume_mm3": 114.59241965286893,
+            "centroid_mm": [
+              -0.7747742548406914,
+              -8.878080408288813,
+              51.71661072423918
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            52.655668143580904,
+            56.4118977212251
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 9.731810403732825e-12,
+                "volume": 229.18486469494826,
+                "centroid": [
+                  6.841643223438068,
+                  1.9624502471938512,
+                  54.53378304050413
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.353608957565454e-13,
+                "volume": 229.18486469425406,
+                "centroid": [
+                  6.841643223456238,
+                  1.962450247162856,
+                  54.533783040500396
+                ]
+              }
+            ],
+            "brep_sha256": "c132098b23214e9f5b90cca10d65936242f15b0c8d3a4e7f010060427da9ead4",
+            "volume_convergence_mm3": 6.942002528376179e-10,
+            "centroid_convergence_mm": 3.612202763447438e-11,
+            "converged": true,
+            "volume_mm3": 229.18486469425406,
+            "centroid_mm": [
+              6.841643223456238,
+              1.962450247162856,
+              54.533783040500396
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            56.4118977212251,
+            71.4368160318019
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 9.994502432366687e-11,
+                "volume": 916.7394673609366,
+                "centroid": [
+                  -1.4959227623160798,
+                  -0.7289521034540923,
+                  63.92435691753528
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.567201436197792e-13,
+                "volume": 916.7394673390298,
+                "centroid": [
+                  -1.495922762711535,
+                  -0.7289521034169543,
+                  63.924356917505996
+                ]
+              }
+            ],
+            "brep_sha256": "a38625f11f26033af95369e1ce833e6976576d802dbac78b7f366682367e9215",
+            "volume_convergence_mm3": 2.190677150792908e-08,
+            "centroid_convergence_mm": 3.9827311586140354e-10,
+            "converged": true,
+            "volume_mm3": 916.7394673390298,
+            "centroid_mm": [
+              -1.495922762711535,
+              -0.7289521034169543,
+              63.924356917505996
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            71.4368160318019,
+            78.9492751870903
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 6.846102838557821e-11,
+                "volume": 458.36973508260286,
+                "centroid": [
+                  -0.6695684074423348,
+                  1.8447051685001983,
+                  75.19304572134732
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.567198214718874e-13,
+                "volume": 458.3697350465139,
+                "centroid": [
+                  -0.6695684071117189,
+                  1.8447051692727352,
+                  75.19304572127449
+                ]
+              }
+            ],
+            "brep_sha256": "2aaef1e0c7c228f0bb735f1d01b975f2bd3afb8ad8c0590ae77d05b03546020f",
+            "volume_convergence_mm3": 3.6088977140025236e-08,
+            "centroid_convergence_mm": 8.434598098342073e-10,
+            "converged": true,
+            "volume_mm3": 458.3697350465139,
+            "centroid_mm": [
+              -0.6695684071117189,
+              1.8447051692727352,
+              75.19304572127449
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            78.9492751870903,
+            86.46173434237869
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 5.560834334809477e-11,
+                "volume": 458.36973497198903,
+                "centroid": [
+                  1.3649896393629295,
+                  1.4099873628180568,
+                  82.7055049351298
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 7.208752979235182e-13,
+                "volume": 458.36973500708393,
+                "centroid": [
+                  1.3649896386723575,
+                  1.4099873632060698,
+                  82.7055049353187
+                ]
+              }
+            ],
+            "brep_sha256": "3925a225961f565f3c5a70ccd5e25ebb131c8ce0c26101902ac1dfb2ff2506da",
+            "volume_convergence_mm3": 3.5094899430987425e-08,
+            "centroid_convergence_mm": 8.14327243427941e-10,
+            "converged": true,
+            "volume_mm3": 458.36973500708393,
+            "centroid_mm": [
+              1.3649896386723575,
+              1.4099873632060698,
+              82.7055049353187
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            86.46173434237869,
+            116.51157096353228
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 9.705813209967016e-11,
+                "volume": 1603.4578080404742,
+                "centroid": [
+                  0.4051960208910817,
+                  -0.03757877210552365,
+                  99.60235226747666
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 8.989265111994271e-13,
+                "volume": 1603.4578077196413,
+                "centroid": [
+                  0.4051960220736998,
+                  -0.037578772341312815,
+                  99.60235226813515
+                ]
+              }
+            ],
+            "brep_sha256": "a4f6573da1b2482dd186228ae7a5c604260a34b9f84819676350f9b92a2fa7f8",
+            "volume_convergence_mm3": 3.208328962500673e-07,
+            "centroid_convergence_mm": 1.3739683677489673e-09,
+            "converged": true,
+            "volume_mm3": 1603.4578077196413,
+            "centroid_mm": [
+              0.4051960220736998,
+              -0.037578772341312815,
+              99.60235226813515
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        }
+      ]
+    },
+    {
+      "label": "refined",
+      "count": 39,
+      "volume_mm3": 6873.873101447546,
+      "centroid_mm": [
+        3.4555791320692003e-10,
+        0.22209766571034428,
+        56.41190087634761
+      ],
+      "integration_absolute_volume_delta_mm3": 2.477998251038116e-07,
+      "integration_centroid_delta_mm": 3.8172168442712253e-10,
+      "material_certificate": {
+        "missing_faces": 0,
+        "added_faces": 0,
+        "missing_mm3": 0.0,
+        "added_mm3": 0.0,
+        "max_adjacent_overlap_mm3": 0.0,
+        "passed": true
+      },
+      "passed": true,
+      "pieces": [
+        {
+          "interval": [
+            -3.6877755210820737,
+            3.8246836342063233
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 6.615373874503587e-13,
+                "volume": 228.3482355309857,
+                "centroid": [
+                  -1.8309458615029277,
+                  7.056746191578196,
+                  1.9487405019991773
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 3.849584945354384e-13,
+                "volume": 228.34823553098533,
+                "centroid": [
+                  -1.830945861502859,
+                  7.056746191578204,
+                  1.948740501999174
+                ]
+              }
+            ],
+            "brep_sha256": "278f8cd7bfde67a4e0d95f891b266c41cfe5e6dc987208b9d44d5737a6c23de2",
+            "volume_convergence_mm3": 3.694822225952521e-13,
+            "centroid_convergence_mm": 6.915611213418187e-14,
+            "converged": true,
+            "volume_mm3": 228.34823553098533,
+            "centroid_mm": [
+              -1.830945861502859,
+              7.056746191578204,
+              1.948740501999174
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            3.8246836342063233,
+            5.7027984230284225
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 2.5327125654320967e-12,
+                "volume": 114.59243426605985,
+                "centroid": [
+                  -7.287698179824269,
+                  -5.129328855284487,
+                  4.763741103658846
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 4.3044040182704695e-13,
+                "volume": 114.59243426552706,
+                "centroid": [
+                  -7.287698179857697,
+                  -5.129328855255137,
+                  4.763741103652161
+                ]
+              }
+            ],
+            "brep_sha256": "4c8601f25f368a57c705b15282ddf50d2441ded955b15093501517a507e1389d",
+            "volume_convergence_mm3": 5.327933649823535e-10,
+            "centroid_convergence_mm": 4.498403638715563e-11,
+            "converged": true,
+            "volume_mm3": 114.59243426552706,
+            "centroid_mm": [
+              -7.287698179857697,
+              -5.129328855255137,
+              4.763741103652161
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            5.7027984230284225,
+            7.580913211850522
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 3.784799781470912e-11,
+                "volume": 114.59244691530053,
+                "centroid": [
+                  2.9211212434212395,
+                  -8.419481419526486,
+                  6.641855828276398
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 7.999432680454501e-13,
+                "volume": 114.59244691620493,
+                "centroid": [
+                  2.921121243419001,
+                  -8.419481419528365,
+                  6.641855828247055
+                ]
+              }
+            ],
+            "brep_sha256": "353a496415068ee254523082fc9c66af649fc35fc3c917a9a413ac69cb8dc400",
+            "volume_convergence_mm3": 9.044072157848859e-10,
+            "centroid_convergence_mm": 2.9488858717549286e-11,
+            "converged": true,
+            "volume_mm3": 114.59244691620493,
+            "centroid_mm": [
+              2.921121243419001,
+              -8.419481419528365,
+              6.641855828247055
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            7.580913211850522,
+            11.33714278949472
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 9.346029717097509e-12,
+                "volume": 229.18484490311056,
+                "centroid": [
+                  5.442231706017702,
+                  4.5870907343437475,
+                  9.459027928108263
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.531989283393589e-13,
+                "volume": 229.18484490359873,
+                "centroid": [
+                  5.442231706010989,
+                  4.5870907343179095,
+                  9.459027928103193
+                ]
+              }
+            ],
+            "brep_sha256": "f1c989ab6b9f7ea4ffc7ef451370a26c1ec602474895d58095a595619ce8ed32",
+            "volume_convergence_mm3": 4.881712811766192e-10,
+            "centroid_convergence_mm": 2.717290260079658e-11,
+            "converged": true,
+            "volume_mm3": 229.18484490359873,
+            "centroid_mm": [
+              5.442231706010989,
+              4.5870907343179095,
+              9.459027928103193
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            11.33714278949472,
+            13.21525757831682
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 2.941206509092172e-12,
+                "volume": 114.59244138747418,
+                "centroid": [
+                  -7.803405023997198,
+                  4.304348800913959,
+                  12.276200228918905
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.53180899360247e-13,
+                "volume": 114.59244138702901,
+                "centroid": [
+                  -7.803405023985424,
+                  4.3043488009398505,
+                  12.276200228916233
+                ]
+              }
+            ],
+            "brep_sha256": "1a16b4592998782dec16f77135daaad757d7e59555ef16040c66732695dcffc5",
+            "volume_convergence_mm3": 4.4516923480841797e-10,
+            "centroid_convergence_mm": 2.8567750450982674e-11,
+            "converged": true,
+            "volume_mm3": 114.59244138702901,
+            "centroid_mm": [
+              -7.803405023985424,
+              4.3043488009398505,
+              12.276200228916233
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            13.21525757831682,
+            15.093372367138919
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 7.939329823726664e-11,
+                "volume": 114.59244820977418,
+                "centroid": [
+                  -6.289077643631054,
+                  -6.314118513335603,
+                  14.154314985567156
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 5.431133762019319e-13,
+                "volume": 114.59244820835599,
+                "centroid": [
+                  -6.289077643586512,
+                  -6.314118513349661,
+                  14.154314985575391
+                ]
+              }
+            ],
+            "brep_sha256": "2ee9580a9d139e6e638c0fc1b8e667b0558098dffced3fed42b24fe12717e15c",
+            "volume_convergence_mm3": 1.4181864571582992e-09,
+            "centroid_convergence_mm": 4.742837889256337e-11,
+            "converged": true,
+            "volume_mm3": 114.59244820835599,
+            "centroid_mm": [
+              -6.289077643586512,
+              -6.314118513349661,
+              14.154314985575391
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            15.093372367138919,
+            18.849601944783117
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.5137695710253282e-11,
+                "volume": 229.1848389517487,
+                "centroid": [
+                  6.5075484825943,
+                  -2.8828987369422054,
+                  16.971487134189207
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.613997509134043e-13,
+                "volume": 229.18483895624314,
+                "centroid": [
+                  6.507548482333065,
+                  -2.882898736954762,
+                  16.971487134137718
+                ]
+              }
+            ],
+            "brep_sha256": "971a2dcc87a36f73969f942259f113f09a0ea92a73663cdf31270892ef18326f",
+            "volume_convergence_mm3": 4.494438599067507e-09,
+            "centroid_convergence_mm": 2.6655732977333215e-10,
+            "converged": true,
+            "volume_mm3": 229.18483895624314,
+            "centroid_mm": [
+              6.507548482333065,
+              -2.882898736954762,
+              16.971487134137718
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            18.849601944783117,
+            19.78865933919417
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 8.717988880371267e-13,
+                "volume": 57.2962233343598,
+                "centroid": [
+                  3.4288970490690085,
+                  8.749477495214801,
+                  19.319130663865135
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.613791337142469e-13,
+                "volume": 57.29622334198133,
+                "centroid": [
+                  3.4288970480925443,
+                  8.749477495397489,
+                  19.3191306639041
+                ]
+              }
+            ],
+            "brep_sha256": "0434b9d84171b8d57838df600055b31e4b8d75a96669625532747553e08ef86c",
+            "volume_convergence_mm3": 7.62153007372035e-09,
+            "centroid_convergence_mm": 9.941707872378912e-10,
+            "converged": true,
+            "volume_mm3": 57.29622334198133,
+            "centroid_mm": [
+              3.4288970480925443,
+              8.749477495397489,
+              19.3191306639041
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            19.78865933919417,
+            20.727716733605217
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 9.587239237839503e-12,
+                "volume": 57.2962230221222,
+                "centroid": [
+                  -2.52673293395599,
+                  9.051318738580118,
+                  20.25818803576982
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 7.710369514498957e-13,
+                "volume": 57.29622302378379,
+                "centroid": [
+                  -2.5267329340357922,
+                  9.051318738598196,
+                  20.25818803578987
+                ]
+              }
+            ],
+            "brep_sha256": "ec6f30ac6c99fb8d4495c843e1b300c643941bdde34251108f676ba8d04c0535",
+            "volume_convergence_mm3": 1.661589976720279e-09,
+            "centroid_convergence_mm": 8.424546125274994e-11,
+            "converged": true,
+            "volume_mm3": 57.29622302378379,
+            "centroid_mm": [
+              -2.5267329340357922,
+              9.051318738598196,
+              20.25818803578987
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            20.727716733605217,
+            21.666774128016264
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 8.717511661521834e-13,
+                "volume": 57.2962233333871,
+                "centroid": [
+                  -7.4649012786210855,
+                  5.7084146658081,
+                  21.197245431738576
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.22428569890583e-13,
+                "volume": 57.29622333310106,
+                "centroid": [
+                  -7.4649012786230635,
+                  5.708414665793438,
+                  21.197245431743898
+                ]
+              }
+            ],
+            "brep_sha256": "3eb4d7eccb13496023a0f5e6a5d603ac727470d2956e48183149ada4b8eac594",
+            "volume_convergence_mm3": 2.8603608370758593e-10,
+            "centroid_convergence_mm": 1.5722957170235495e-11,
+            "converged": true,
+            "volume_mm3": 57.29622333310106,
+            "centroid_mm": [
+              -7.4649012786230635,
+              5.708414665793438,
+              21.197245431743898
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            21.666774128016264,
+            22.605831522427316
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.0046373649401044e-12,
+                "volume": 57.29622315900338,
+                "centroid": [
+                  -9.397138988338265,
+                  0.06686376472059154,
+                  22.13630280559672
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.363199241537922e-13,
+                "volume": 57.29622315902855,
+                "centroid": [
+                  -9.39713898833725,
+                  0.06686376472337235,
+                  22.13630280559695
+                ]
+              }
+            ],
+            "brep_sha256": "1824bf5ae9f29a7c0ccdd7a08c2321e74c10e7ac523329ba3a6e99087dc04344",
+            "volume_convergence_mm3": 2.516742370062275e-11,
+            "centroid_convergence_mm": 2.9690192876681966e-12,
+            "converged": true,
+            "volume_mm3": 57.29622315902855,
+            "centroid_mm": [
+              -9.39713898833725,
+              0.06686376472337235,
+              22.13630280559695
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            22.605831522427316,
+            24.483946311249415
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.6817114930275524e-12,
+                "volume": 114.59241901578677,
+                "centroid": [
+                  -5.10032712752232,
+                  -7.308025103981241,
+                  23.544888942749523
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.363221777864906e-13,
+                "volume": 114.59241901578692,
+                "centroid": [
+                  -5.100327127522296,
+                  -7.3080251039812305,
+                  23.544888942749502
+                ]
+              }
+            ],
+            "brep_sha256": "904f19b4cfa3d668e58b19076c8244e9c680accd813cf0f05d24234f015e9bcf",
+            "volume_convergence_mm3": 1.4210854715202004e-13,
+            "centroid_convergence_mm": 3.380916224435687e-14,
+            "converged": true,
+            "volume_mm3": 114.59241901578692,
+            "centroid_mm": [
+              -5.100327127522296,
+              -7.3080251039812305,
+              23.544888942749502
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            24.483946311249415,
+            26.362061100071514
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.6720957237732763e-12,
+                "volume": 114.59241975506578,
+                "centroid": [
+                  5.618474873949042,
+                  -6.917609926386115,
+                  25.42300373772458
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 4.515601425814347e-13,
+                "volume": 114.59241975505427,
+                "centroid": [
+                  5.618474873948713,
+                  -6.917609926387393,
+                  25.423003737724454
+                ]
+              }
+            ],
+            "brep_sha256": "15faf9e72472825dcafe8c2ba444a9694460e70e50d16aa83d6ce8abe0aff6d5",
+            "volume_convergence_mm3": 1.1510792319313623e-11,
+            "centroid_convergence_mm": 1.3258445309219247e-12,
+            "converged": true,
+            "volume_mm3": 114.59241975505427,
+            "centroid_mm": [
+              5.618474873948713,
+              -6.917609926387393,
+              25.423003737724454
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            26.362061100071514,
+            33.87452025535991
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 3.613606570795661e-11,
+                "volume": 458.36973516771974,
+                "centroid": [
+                  -1.364983537569368,
+                  1.4099932800716284,
+                  30.118290510188046
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 5.9034293675479e-13,
+                "volume": 458.3697351501856,
+                "centroid": [
+                  -1.3649835379137414,
+                  1.4099932801403514,
+                  30.118290510177083
+                ]
+              }
+            ],
+            "brep_sha256": "1f1178120e784cc3d1ed4a121ae2049c942b72291958b8228a1c506d6ae49a7c",
+            "volume_convergence_mm3": 1.7534148355480283e-08,
+            "centroid_convergence_mm": 3.513347522240317e-10,
+            "converged": true,
+            "volume_mm3": 458.3697351501856,
+            "centroid_mm": [
+              -1.3649835379137414,
+              1.4099932801403514,
+              30.118290510177083
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            33.87452025535991,
+            41.38697941064831
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 8.366017942190308e-11,
+                "volume": 458.369734704123,
+                "centroid": [
+                  0.6695763972517647,
+                  1.8447022835968265,
+                  37.63074972625264
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.298462612152663e-13,
+                "volume": 458.3697346819636,
+                "centroid": [
+                  0.6695763969651217,
+                  1.8447022840803515,
+                  37.63074972634756
+                ]
+              }
+            ],
+            "brep_sha256": "bcc7ef563fe063b1b4cd2ddf7c97483da4899760b7aca8669c8b4fb89a1e28b8",
+            "volume_convergence_mm3": 2.215938366134651e-08,
+            "centroid_convergence_mm": 5.700619849715508e-10,
+            "converged": true,
+            "volume_mm3": 458.3697346819636,
+            "centroid_mm": [
+              0.6695763969651217,
+              1.8447022840803515,
+              37.63074972634756
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            41.38697941064831,
+            43.26509419947041
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.638480255865621e-11,
+                "volume": 114.5924469354283,
+                "centroid": [
+                  -2.300861001200315,
+                  -8.60968383581577,
+                  42.32603681600038
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 8.597786660083189e-13,
+                "volume": 114.5924469367797,
+                "centroid": [
+                  -2.300861001217541,
+                  -8.609683835831774,
+                  42.32603681599832
+                ]
+              }
+            ],
+            "brep_sha256": "10a45933bc506fe5461e5672b5ffcaa834b5c973a136413a5a4ce26ce8ca4899",
+            "volume_convergence_mm3": 1.3513954399968497e-09,
+            "centroid_convergence_mm": 2.3602775402063962e-11,
+            "converged": true,
+            "volume_mm3": 114.5924469367797,
+            "centroid_mm": [
+              -2.300861001217541,
+              -8.609683835831774,
+              42.32603681599832
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            43.26509419947041,
+            45.14320898829251
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.674033068642192e-12,
+                "volume": 114.59242571698232,
+                "centroid": [
+                  7.641549423894638,
+                  -4.58555379413362,
+                  44.20415152009098
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.496039587315531e-13,
+                "volume": 114.5924257166254,
+                "centroid": [
+                  7.641549423920781,
+                  -4.5855537941205124,
+                  44.204151520099636
+                ]
+              }
+            ],
+            "brep_sha256": "e3a644fc3e29d5a315f7ac61d61e7301619238419e53e62fab837714f439f441",
+            "volume_convergence_mm3": 3.569198270270135e-10,
+            "centroid_convergence_mm": 3.0498350914603375e-11,
+            "converged": true,
+            "volume_mm3": 114.5924257166254,
+            "centroid_mm": [
+              7.641549423920781,
+              -4.5855537941205124,
+              44.204151520099636
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            45.14320898829251,
+            47.0213237771146
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.6634313311974226e-12,
+                "volume": 114.59241916243927,
+                "centroid": [
+                  6.514748888569726,
+                  6.081002426079166,
+                  46.08226635486698
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 5.149210468744756e-13,
+                "volume": 114.59241916243805,
+                "centroid": [
+                  6.514748888569694,
+                  6.081002426079181,
+                  46.08226635486701
+                ]
+              }
+            ],
+            "brep_sha256": "9c5d21e70863ce699a15b9adcb8420cbc575c7d9c3c16c6baf8ce94a84ab7acd",
+            "volume_convergence_mm3": 1.2221335055073723e-12,
+            "centroid_convergence_mm": 4.507888299247583e-14,
+            "converged": true,
+            "volume_mm3": 114.59241916243805,
+            "centroid_mm": [
+              6.514748888569694,
+              6.081002426079181,
+              46.08226635486701
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            47.0213237771146,
+            48.899438565936705
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.919271855132138e-12,
+                "volume": 114.5924409966612,
+                "centroid": [
+                  -4.049024354160494,
+                  7.938888496227813,
+                  47.960381213778135
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 5.557024964738536e-13,
+                "volume": 114.59244099864517,
+                "centroid": [
+                  -4.049024354253467,
+                  7.938888496156023,
+                  47.960381213780394
+                ]
+              }
+            ],
+            "brep_sha256": "d28912707c2346073b074dc0e471e37c9cd886549629a607f20bf3c4655fb8fd",
+            "volume_convergence_mm3": 1.9839774267893517e-09,
+            "centroid_convergence_mm": 1.1748529640661081e-10,
+            "converged": true,
+            "volume_mm3": 114.59244099864517,
+            "centroid_mm": [
+              -4.049024354253467,
+              7.938888496156023,
+              47.960381213780394
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            48.899438565936705,
+            49.83849596034776
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 5.012501480210338e-11,
+                "volume": 57.296223028013294,
+                "centroid": [
+                  -9.317388344723659,
+                  1.2235363721688732,
+                  49.36896726274945
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.686172196298637e-13,
+                "volume": 57.29622302882354,
+                "centroid": [
+                  -9.317388344744202,
+                  1.223536372176402,
+                  49.36896726272944
+                ]
+              }
+            ],
+            "brep_sha256": "083c2471b39bdbf8d6dc25b7f65cac425d7bae6ffb54106aa99513088abddc47",
+            "volume_convergence_mm3": 8.102460924419574e-10,
+            "centroid_convergence_mm": 2.9649239195266933e-11,
+            "converged": true,
+            "volume_mm3": 57.29622302882354,
+            "centroid_mm": [
+              -9.317388344744202,
+              1.223536372176402,
+              49.36896726272944
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            49.83849596034776,
+            50.77755335475881
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.4173571090907596e-12,
+                "volume": 57.29622534528406,
+                "centroid": [
+                  -8.177742274036776,
+                  -4.629820000455165,
+                  50.30802466272931
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.602007925402099e-13,
+                "volume": 57.29622534590254,
+                "centroid": [
+                  -8.17774227406502,
+                  -4.62982000040397,
+                  50.30802466271811
+                ]
+              }
+            ],
+            "brep_sha256": "446a89dbba6d7c4f8a9a082ccc26023057b2157da5d3967ba92aaa7f686969ba",
+            "volume_convergence_mm3": 6.184848189150216e-10,
+            "centroid_convergence_mm": 5.95323842522955e-11,
+            "converged": true,
+            "volume_mm3": 57.29622534590254,
+            "centroid_mm": [
+              -8.17774227406502,
+              -4.62982000040397,
+              50.30802466271811
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            50.77755335475881,
+            51.71661074916986
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 9.289656384921437e-13,
+                "volume": 57.296212761228986,
+                "centroid": [
+                  -3.7451170250533776,
+                  -8.618864173423004,
+                  51.247082029932024
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.602007925401603e-13,
+                "volume": 57.29621276168149,
+                "centroid": [
+                  -3.7451170250975836,
+                  -8.618864173363997,
+                  51.24708202991951
+                ]
+              }
+            ],
+            "brep_sha256": "83b4db6c4de5979675bcb29f134be99b036559edb9f60c1f3c6afd9c2af4e5fc",
+            "volume_convergence_mm3": 4.525020358414622e-10,
+            "centroid_convergence_mm": 7.478344178002446e-11,
+            "converged": true,
+            "volume_mm3": 57.29621276168149,
+            "centroid_mm": [
+              -3.7451170250975836,
+              -8.618864173363997,
+              51.24708202991951
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            51.71661074916986,
+            52.655668143580904
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 8.719369035211084e-13,
+                "volume": 57.296206854105904,
+                "centroid": [
+                  2.1955687997658866,
+                  -9.137296661800656,
+                  52.186139463430166
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.353609309694748e-13,
+                "volume": 57.29620685410656,
+                "centroid": [
+                  2.195568799765864,
+                  -9.13729666180069,
+                  52.186139463430145
+                ]
+              }
+            ],
+            "brep_sha256": "e09ffe34a39f841180799adf855acde80670156d043d7578158e7cb3b974ff92",
+            "volume_convergence_mm3": 6.536993168992922e-13,
+            "centroid_convergence_mm": 4.589614180044339e-14,
+            "converged": true,
+            "volume_mm3": 57.29620685410656,
+            "centroid_mm": [
+              2.195568799765864,
+              -9.13729666180069,
+              52.186139463430145
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            52.655668143580904,
+            54.533782932403
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.6683336250508226e-12,
+                "volume": 114.59241896657056,
+                "centroid": [
+                  8.32031955645337,
+                  -3.1926244495193834,
+                  53.59472551806702
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.353608957565454e-13,
+                "volume": 114.59241896657116,
+                "centroid": [
+                  8.320319556453391,
+                  -3.1926244495193736,
+                  53.59472551806701
+                ]
+              }
+            ],
+            "brep_sha256": "ec4a2fd2513bad2f623335e762991beacef7b0f3bfd016cde6a40539eef06314",
+            "volume_convergence_mm3": 5.968558980384842e-13,
+            "centroid_convergence_mm": 2.7418687836503485e-14,
+            "converged": true,
+            "volume_mm3": 114.59241896657116,
+            "centroid_mm": [
+              8.320319556453391,
+              -3.1926244495193736,
+              53.59472551806701
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            54.533782932403,
+            56.4118977212251
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.6785459131290194e-12,
+                "volume": 114.59244616510844,
+                "centroid": [
+                  5.3629672221907745,
+                  7.117523705414859,
+                  55.47284033989532
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.228275511878712e-13,
+                "volume": 114.592446165356,
+                "centroid": [
+                  5.362967222182241,
+                  7.117523705421026,
+                  55.47284033989542
+                ]
+              }
+            ],
+            "brep_sha256": "853e996c365b06ad4da1d4fddd586dead439ec235a1c02cd72c2abd5404adff7",
+            "volume_convergence_mm3": 2.475530891388189e-10,
+            "centroid_convergence_mm": 1.0528996741430196e-11,
+            "converged": true,
+            "volume_mm3": 114.592446165356,
+            "centroid_mm": [
+              5.362967222182241,
+              7.117523705421026,
+              55.47284033989542
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            56.4118977212251,
+            60.1681272988693
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 2.9959801217431536e-12,
+                "volume": 229.1848661079714,
+                "centroid": [
+                  -6.841634715601993,
+                  1.962479840364455,
+                  58.290012407587724
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.190276896932721e-13,
+                "volume": 229.1848661817383,
+                "centroid": [
+                  -6.841634713669022,
+                  1.9624798429143275,
+                  58.29001240695778
+                ]
+              }
+            ],
+            "brep_sha256": "3d36f6db45d648e76dfcebc46ae11f1aa32d747a0aa95bebe984f930b96a6b88",
+            "volume_convergence_mm3": 7.376689836746664e-08,
+            "centroid_convergence_mm": 3.2611438310708755e-09,
+            "converged": true,
+            "volume_mm3": 229.1848661817383,
+            "centroid_mm": [
+              -6.841634713669022,
+              1.9624798429143275,
+              58.29001240695778
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            60.1681272988693,
+            63.9243568765135
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 4.515271661682083e-11,
+                "volume": 229.1848673293075,
+                "centroid": [
+                  4.761147385168468,
+                  -5.290631312587245,
+                  62.04624221525017
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 9.325283158861445e-13,
+                "volume": 229.18486732908462,
+                "centroid": [
+                  4.7611473850771056,
+                  -5.290631312613638,
+                  62.04624221527003
+                ]
+              }
+            ],
+            "brep_sha256": "f191582d55ce76ff8196e8e572e57928919ed4cfa577258aabf0c9ea06186d23",
+            "volume_convergence_mm3": 2.2288304535322823e-10,
+            "centroid_convergence_mm": 9.714990592472861e-11,
+            "converged": true,
+            "volume_mm3": 229.18486732908462,
+            "centroid_mm": [
+              4.7611473850771056,
+              -5.290631312613638,
+              62.04624221527003
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            63.9243568765135,
+            67.68058645415769
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.1557006844263009e-11,
+                "volume": 229.18486166404477,
+                "centroid": [
+                  -1.232831393812661,
+                  7.009950858773791,
+                  65.80247156950072
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.561489087817425e-13,
+                "volume": 229.18486166945087,
+                "centroid": [
+                  -1.232831393599047,
+                  7.009950858668812,
+                  65.80247156944232
+                ]
+              }
+            ],
+            "brep_sha256": "546bcc5c07f037819d4a2aa99f4b15f37bd97b514768839d437ce410e170a9f7",
+            "volume_convergence_mm3": 5.406093350757146e-09,
+            "centroid_convergence_mm": 2.450769524212855e-10,
+            "converged": true,
+            "volume_mm3": 229.18486166945087,
+            "centroid_mm": [
+              -1.232831393599047,
+              7.009950858668812,
+              65.80247156944232
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            67.68058645415769,
+            69.5587012429798
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 2.855214306273631e-12,
+                "volume": 114.59242569201382,
+                "centroid": [
+                  -7.641569267792192,
+                  -4.585520724666752,
+                  68.61964392826803
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 4.993878062286328e-13,
+                "volume": 114.59242569199465,
+                "centroid": [
+                  -7.641569267792955,
+                  -4.5855207246682665,
+                  68.61964392826928
+                ]
+              }
+            ],
+            "brep_sha256": "6ff445b2f0fb1c22c74e0e49ba8858336994df74b1908890d557f6353efb0e30",
+            "volume_convergence_mm3": 1.9170443010807503e-11,
+            "centroid_convergence_mm": 2.1072655846166237e-12,
+            "converged": true,
+            "volume_mm3": 114.59242569199465,
+            "centroid_mm": [
+              -7.641569267792955,
+              -4.5855207246682665,
+              68.61964392826928
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            69.5587012429798,
+            71.4368160318019
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.780087645281326e-11,
+                "volume": 114.59244683225165,
+                "centroid": [
+                  2.300823757780263,
+                  -8.609693781693752,
+                  70.49775863068824
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.567198214718224e-13,
+                "volume": 114.59244683260917,
+                "centroid": [
+                  2.3008237577824535,
+                  -8.609693781697004,
+                  70.49775863070305
+                ]
+              }
+            ],
+            "brep_sha256": "c5e272cf0505f76a7ce372a7aad53db13b28808a17bc1e6ed327c01dfd88b118",
+            "volume_convergence_mm3": 3.57516682925052e-10,
+            "centroid_convergence_mm": 1.5318167076439247e-11,
+            "converged": true,
+            "volume_mm3": 114.59244683260917,
+            "centroid_mm": [
+              2.3008237577824535,
+              -8.609693781697004,
+              70.49775863070305
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            71.4368160318019,
+            75.1930456094461
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.2552901847202274e-11,
+                "volume": 229.18485379433196,
+                "centroid": [
+                  5.761542151311277,
+                  4.178984898005213,
+                  73.3149307211838
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.567201436198298e-13,
+                "volume": 229.18485379689713,
+                "centroid": [
+                  5.761542151288371,
+                  4.178984897883198,
+                  73.31493072116206
+                ]
+              }
+            ],
+            "brep_sha256": "aaf7254de27107f265e5a468f37133f06dbd3fe7f627feeb4aee6e63c0b5e16f",
+            "volume_convergence_mm3": 2.5651729629316833e-09,
+            "centroid_convergence_mm": 1.2603635028720387e-10,
+            "converged": true,
+            "volume_mm3": 229.18485379689713,
+            "centroid_mm": [
+              5.761542151288371,
+              4.178984897883198,
+              73.31493072116206
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            75.1930456094461,
+            77.0711603982682
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 2.508093911847089e-12,
+                "volume": 114.5924341637434,
+                "centroid": [
+                  -7.469562691506497,
+                  4.860678275535799,
+                  76.13210308177698
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.426970504569929e-13,
+                "volume": 114.59243416158603,
+                "centroid": [
+                  -7.469562691474413,
+                  4.860678275692421,
+                  76.13210308176892
+                ]
+              }
+            ],
+            "brep_sha256": "f1717d8a19581c602306ebed120309c5e07d2dcd6a1181b84c7f7adfd4dd5522",
+            "volume_convergence_mm3": 2.1573782760242466e-09,
+            "centroid_convergence_mm": 1.6007772699910814e-10,
+            "converged": true,
+            "volume_mm3": 114.59243416158603,
+            "centroid_mm": [
+              -7.469562691474413,
+              4.860678275692421,
+              76.13210308176892
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            77.0711603982682,
+            78.9492751870903
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.0833077621178162e-11,
+                "volume": 114.59244679668186,
+                "centroid": [
+                  -6.731793712444327,
+                  -5.839826266798758,
+                  78.01021780396255
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 4.839930004700954e-13,
+                "volume": 114.59244679144867,
+                "centroid": [
+                  -6.731793712323792,
+                  -5.839826266762176,
+                  78.01021780396869
+                ]
+              }
+            ],
+            "brep_sha256": "8eaab5152660112e7be4008e8d1031c41ca9e08b65e654dd2fd19cd5595939d7",
+            "volume_convergence_mm3": 5.2331898814372835e-09,
+            "centroid_convergence_mm": 1.2611389292427504e-10,
+            "converged": true,
+            "volume_mm3": 114.59244679144867,
+            "centroid_mm": [
+              -6.731793712323792,
+              -5.839826266762176,
+              78.01021780396869
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            78.9492751870903,
+            82.70550476473448
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.2805367900948893e-12,
+                "volume": 229.18484522907596,
+                "centroid": [
+                  6.2805572534630665,
+                  -3.3487143343374886,
+                  80.8273899014534
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.636889488332265e-13,
+                "volume": 229.18484522495356,
+                "centroid": [
+                  6.280557253693822,
+                  -3.348714334300859,
+                  80.82738990150338
+                ]
+              }
+            ],
+            "brep_sha256": "0e5a7f6ec393b9ec4caee9d506efb3d7400feaa06422ab921d71ca8150c31d11",
+            "volume_convergence_mm3": 4.122398422623519e-09,
+            "centroid_convergence_mm": 2.3893081611613484e-10,
+            "converged": true,
+            "volume_mm3": 229.18484522495356,
+            "centroid_mm": [
+              6.280557253693822,
+              -3.348714334300859,
+              80.82738990150338
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            82.70550476473448,
+            86.46173434237869
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 4.492789657654933e-11,
+                "volume": 229.18488944794365,
+                "centroid": [
+                  -3.550577046221378,
+                  6.168688141064906,
+                  84.58361961646644
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.636889488333274e-13,
+                "volume": 229.18488945109692,
+                "centroid": [
+                  -3.5505770462552104,
+                  6.168688141069401,
+                  84.5836196164818
+                ]
+              }
+            ],
+            "brep_sha256": "8c0d4f0f6473679904e9ff3832fe0c858805d0926302ee99cd0a86034ed9dbd9",
+            "volume_convergence_mm3": 3.153274974465603e-09,
+            "centroid_convergence_mm": 3.7427693186160635e-11,
+            "converged": true,
+            "volume_mm3": 229.18488945109692,
+            "centroid_mm": [
+              -3.5505770462552104,
+              6.168688141069401,
+              84.5836196164818
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            86.46173434237869,
+            90.2179639200229
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 5.371048596763929e-12,
+                "volume": 229.18483913779448,
+                "centroid": [
+                  -0.2591046531832581,
+                  -7.112816389795624,
+                  88.33984910688437
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 6.060746665967432e-13,
+                "volume": 229.18483914279426,
+                "centroid": [
+                  -0.25910465331412263,
+                  -7.112816389524594,
+                  88.33984910682413
+                ]
+              }
+            ],
+            "brep_sha256": "5abd2992c1c8340e42841fa96da45fd397e58cc138c727ef302ec240c77dfc8e",
+            "volume_convergence_mm3": 4.9997765927400906e-09,
+            "centroid_convergence_mm": 3.069386101593309e-10,
+            "converged": true,
+            "volume_mm3": 229.18483914279426,
+            "centroid_mm": [
+              -0.25910465331412263,
+              -7.112816389524594,
+              88.33984910682413
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            90.2179639200229,
+            93.97419349766709
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 4.182197065862243e-11,
+                "volume": 229.18489300556817,
+                "centroid": [
+                  3.9899945191999047,
+                  5.894001424840478,
+                  92.09607871788268
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 9.76651109640065e-13,
+                "volume": 229.18489301835658,
+                "centroid": [
+                  3.9899945193128827,
+                  5.894001425012462,
+                  92.09607871788364
+                ]
+              }
+            ],
+            "brep_sha256": "e123dba221350884e76bce60f72be4f8f3a58ade58de8a8aa46d04613106d0d4",
+            "volume_convergence_mm3": 1.2788405001629144e-08,
+            "centroid_convergence_mm": 2.0577547245639898e-10,
+            "converged": true,
+            "volume_mm3": 229.18489301835658,
+            "centroid_mm": [
+              3.9899945193128827,
+              5.894001425012462,
+              92.09607871788364
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            93.97419349766709,
+            101.48665265295548
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 1.7661906906078888e-11,
+                "volume": 458.36972900479657,
+                "centroid": [
+                  0.2693387625726643,
+                  -1.9438929561821623,
+                  97.7304232726231
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 9.246537628582876e-13,
+                "volume": 458.3697289395764,
+                "centroid": [
+                  0.2693387612942395,
+                  -1.943892956267599,
+                  97.73042327243746
+                ]
+              }
+            ],
+            "brep_sha256": "c20d5bf08444c660016718702665a16c9bf64f6dcc11e87b1e851d5398bab0ad",
+            "volume_convergence_mm3": 6.522014928123099e-08,
+            "centroid_convergence_mm": 1.294654513240877e-09,
+            "converged": true,
+            "volume_mm3": 458.3697289395764,
+            "centroid_mm": [
+              0.2693387612942395,
+              -1.943892956267599,
+              97.73042327243746
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        },
+        {
+          "interval": [
+            101.48665265295548,
+            116.51157096353228
+          ],
+          "measure": {
+            "occ": "7.8.0",
+            "results": [
+              {
+                "requested_error": 1e-10,
+                "reported_error": 4.5068875712218446e-11,
+                "volume": 686.7183456545806,
+                "centroid": [
+                  -0.4788071179368271,
+                  1.6165277964472453,
+                  107.11570193692934
+                ]
+              },
+              {
+                "requested_error": 1e-12,
+                "reported_error": 7.184378579531349e-13,
+                "volume": 686.7183456501997,
+                "centroid": [
+                  -0.47880711791445335,
+                  1.6165277965280906,
+                  107.11570193693642
+                ]
+              }
+            ],
+            "brep_sha256": "386956e8cb8352b577fe4248140a325cf28168670ca90449fc3ba99f80b09ad0",
+            "volume_convergence_mm3": 4.380922291602474e-09,
+            "centroid_convergence_mm": 8.418216570697395e-11,
+            "converged": true,
+            "volume_mm3": 686.7183456501997,
+            "centroid_mm": [
+              -0.47880711791445335,
+              1.6165277965280906,
+              107.11570193693642
+            ],
+            "method": "BRepGProp::VolumeProperties adaptive Gauss"
+          }
+        }
+      ]
+    }
+  ],
+  "attempts": [
+    {
+      "interval": [
+        -3.6877755210820737,
+        26.362061100071514
+      ],
+      "depth": 0,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.2550936175706377e-10,
+            "volume": 1603.4574233165872,
+            "centroid": [
+              -0.4051983428873634,
+              -0.03757823208830862,
+              13.221446324206887
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.0358552167798853e-12,
+            "volume": 1603.457422987326,
+            "centroid": [
+              -0.40519834341206784,
+              -0.03757823247869176,
+              13.221446323891048
+            ]
+          }
+        ],
+        "brep_sha256": "32edba24e76a241b915861c0d92bdda7e6ab76144be20b673a96643b7799e0a7",
+        "volume_convergence_mm3": 3.29261183651397e-07,
+        "centroid_convergence_mm": 7.262702889765292e-10,
+        "converged": false,
+        "volume_mm3": 1603.457422987326,
+        "centroid_mm": [
+          -0.40519834341206784,
+          -0.03757823247869176,
+          13.221446323891048
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        -3.6877755210820737,
+        11.33714278949472
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 4.599615749937377e-11,
+            "volume": 686.7179622291225,
+            "centroid": [
+              0.4788095726149949,
+              1.61652382786383,
+              5.708096661582748
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.531764103308371e-13,
+            "volume": 686.7179622246265,
+            "centroid": [
+              0.4788095725922327,
+              1.6165238279459389,
+              5.708096661575538
+            ]
+          }
+        ],
+        "brep_sha256": "6dd5adff15b266f65fd9110aa084342520592cd2af786400e88478615afc9c90",
+        "volume_convergence_mm3": 4.495973371376749e-09,
+        "centroid_convergence_mm": 8.550996141009178e-11,
+        "converged": true,
+        "volume_mm3": 686.7179622246265,
+        "centroid_mm": [
+          0.4788095725922327,
+          1.6165238279459389,
+          5.708096661575538
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        11.33714278949472,
+        26.362061100071514
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.3079641810622035e-10,
+            "volume": 916.7394607745523,
+            "centroid": [
+              -1.067397503044533,
+              -1.2766452278875193,
+              18.84960176222393
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.2362397220757861e-12,
+            "volume": 916.7394607769414,
+            "centroid": [
+              -1.0673975027051277,
+              -1.276645227090996,
+              18.84960176266065
+            ]
+          }
+        ],
+        "brep_sha256": "af6333719e5e2d26ab878a32bd98a4cf5a2fac4aebaf3389f0ddaca0c626cf9a",
+        "volume_convergence_mm3": 2.389128894719761e-09,
+        "centroid_convergence_mm": 9.697270252010001e-10,
+        "converged": false,
+        "volume_mm3": 916.7394607769414,
+        "centroid_mm": [
+          -1.0673975027051277,
+          -1.276645227090996,
+          18.84960176266065
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        11.33714278949472,
+        18.849601944783117
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 7.602434891946033e-11,
+            "volume": 458.36972897255987,
+            "centroid": [
+              -0.2693471754374761,
+              -1.9438917897207029,
+              15.09337217398689
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.613997509134081e-13,
+            "volume": 458.3697289056879,
+            "centroid": [
+              -0.2693471741337772,
+              -1.9438917898108559,
+              15.093372174176604
+            ]
+          }
+        ],
+        "brep_sha256": "6d0d65cde699fbc0ee0530d2f359d5571708b7c91698607b6f22982938b77376",
+        "volume_convergence_mm3": 6.687196218990721e-08,
+        "centroid_convergence_mm": 1.3205113407925619e-09,
+        "converged": true,
+        "volume_mm3": 458.3697289056879,
+        "centroid_mm": [
+          -0.2693471741337772,
+          -1.9438917898108559,
+          15.093372174176604
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        18.849601944783117,
+        26.362061100071514
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.3350760470300447e-10,
+            "volume": 458.36973199471385,
+            "centroid": [
+              -1.8654478352659416,
+              -0.6093986658974838,
+              22.605831318485112
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 8.523359346710644e-13,
+            "volume": 458.36973199440973,
+            "centroid": [
+              -1.8654478353556754,
+              -0.6093986659172892,
+              22.60583131844897
+            ]
+          }
+        ],
+        "brep_sha256": "8af9400fcb8068dc24a41d15620aaabbd6034ba0d1af8a8580a36bd9869f79a8",
+        "volume_convergence_mm3": 3.041122909053229e-10,
+        "centroid_convergence_mm": 9.87452791459457e-11,
+        "converged": false,
+        "volume_mm3": 458.36973199440973,
+        "centroid_mm": [
+          -1.8654478353556754,
+          -0.6093986659172892,
+          22.60583131844897
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        18.849601944783117,
+        22.605831522427316
+      ],
+      "depth": 3,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.1417109203721548e-10,
+            "volume": 229.18489275608815,
+            "centroid": [
+              -3.9899690622950765,
+              5.894018652962173,
+              20.727716739571623
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.613791337142173e-13,
+            "volume": 229.18489278141,
+            "centroid": [
+              -3.9899690625057787,
+              5.89401865329298,
+              20.727716739601608
+            ]
+          }
+        ],
+        "brep_sha256": "8470e22e3dade25ac93ea10eff5be36c3e006828461c2a7d9c682cca8e4499ed",
+        "volume_convergence_mm3": 2.5321867269667564e-08,
+        "centroid_convergence_mm": 3.9335405786801283e-10,
+        "converged": false,
+        "volume_mm3": 229.18489278141,
+        "centroid_mm": [
+          -3.9899690625057787,
+          5.89401865329298,
+          20.727716739601608
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        18.849601944783117,
+        20.727716733605217
+      ],
+      "depth": 4,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 8.838654265298701e-12,
+            "volume": 114.59244633974623,
+            "centroid": [
+              0.4510820546103379,
+              8.900398117512763,
+              19.788659351231267
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.614203681126394e-13,
+            "volume": 114.59244634306623,
+            "centroid": [
+              0.45108205446706945,
+              8.900398117530003,
+              19.78865935125667
+            ]
+          }
+        ],
+        "brep_sha256": "13556846b8940cc2c11555f14d383551450fbbaee07b1ede1c6c2f81b3f20d97",
+        "volume_convergence_mm3": 3.319996721984353e-09,
+        "centroid_convergence_mm": 1.465206744455236e-10,
+        "converged": true,
+        "volume_mm3": 114.59244634306623,
+        "centroid_mm": [
+          0.45108205446706945,
+          8.900398117530003,
+          19.78865935125667
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        20.727716733605217,
+        22.605831522427316
+      ],
+      "depth": 4,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.3879199181184278e-12,
+            "volume": 114.59244638866545,
+            "centroid": [
+              -8.43102013794077,
+              2.8876392065116825,
+              21.666774120114148
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.363199241538064e-13,
+            "volume": 114.59244638743832,
+            "centroid": [
+              -8.431020137956008,
+              2.887639206460282,
+              21.666774120123545
+            ]
+          }
+        ],
+        "brep_sha256": "362981127334345467505bfc0da2d5a1d49562fb3df65ffe2c7bb174710725ee",
+        "volume_convergence_mm3": 1.2271357263671234e-09,
+        "centroid_convergence_mm": 5.442898465468714e-11,
+        "converged": true,
+        "volume_mm3": 114.59244638743832,
+        "centroid_mm": [
+          -8.431020137956008,
+          2.887639206460282,
+          21.666774120123545
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        22.605831522427316,
+        26.362061100071514
+      ],
+      "depth": 3,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 8.853750085167069e-12,
+            "volume": 229.18483895397782,
+            "centroid": [
+              0.25907391098040267,
+              -7.112817520195872,
+              24.483946347182137
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.363221777864679e-13,
+            "volume": 229.1848389541347,
+            "centroid": [
+              0.25907391098460913,
+              -7.112817520187195,
+              24.483946347183256
+            ]
+          }
+        ],
+        "brep_sha256": "09af8e8029c64afe6fff508e76bce8c0b137ce9641e2dda13deee92327ef88d3",
+        "volume_convergence_mm3": 1.5688783605583012e-10,
+        "centroid_convergence_mm": 9.70723546737185e-12,
+        "converged": true,
+        "volume_mm3": 229.1848389541347,
+        "centroid_mm": [
+          0.25907391098460913,
+          -7.112817520187195,
+          24.483946347183256
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        26.362061100071514,
+        56.4118977212251
+      ],
+      "depth": 0,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.1990263229223432e-10,
+            "volume": 1833.478936921168,
+            "centroid": [
+              0.5741080059412419,
+              0.4491945911916037,
+              41.38697931229361
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 4.4608207976978695e-12,
+            "volume": 1833.4789369936184,
+            "centroid": [
+              0.5741080061895628,
+              0.44919459221190783,
+              41.38697931253459
+            ]
+          }
+        ],
+        "brep_sha256": "f3123f8f663fadd8db2cf6fdf2aa6d5d5eb778456e5b84fe9aa1cf5a3cb0d419",
+        "volume_convergence_mm3": 7.245034794323146e-08,
+        "centroid_convergence_mm": 1.0773835940584255e-09,
+        "converged": false,
+        "volume_mm3": 1833.4789369936184,
+        "centroid_mm": [
+          0.5741080061895628,
+          0.44919459221190783,
+          41.38697931253459
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        26.362061100071514,
+        41.38697941064831
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 7.953483316977104e-11,
+            "volume": 916.7394694715061,
+            "centroid": [
+              -0.34770357269378693,
+              1.627347781670301,
+              33.87452011808309
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 9.626830910446996e-13,
+            "volume": 916.7394694796884,
+            "centroid": [
+              -0.3477035727330911,
+              1.6273477817362583,
+              33.87452011804658
+            ]
+          }
+        ],
+        "brep_sha256": "d098c080ad35c6d87eb1cdf4d4de1fd867b18003b037ecf8302258d394210d90",
+        "volume_convergence_mm3": 8.182269084500149e-09,
+        "centroid_convergence_mm": 8.501756550823638e-11,
+        "converged": true,
+        "volume_mm3": 916.7394694796884,
+        "centroid_mm": [
+          -0.3477035727330911,
+          1.6273477817362583,
+          33.87452011804658
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        41.38697941064831,
+        56.4118977212251
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.2429618672394853e-10,
+            "volume": 916.7394671656193,
+            "centroid": [
+              1.4959196048036265,
+              -0.7289585892336601,
+              48.89943852247641
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.298436840501839e-13,
+            "volume": 916.7394671070517,
+            "centroid": [
+              1.4959196054334647,
+              -0.7289585888156531,
+              48.89943852281615
+            ]
+          }
+        ],
+        "brep_sha256": "fb103268d7b3808dbf62ae08018966e368efa166610eb6ef774f17d70592dd42",
+        "volume_convergence_mm3": 5.8567593441694044e-08,
+        "centroid_convergence_mm": 8.287632220846065e-10,
+        "converged": false,
+        "volume_mm3": 916.7394671070517,
+        "centroid_mm": [
+          1.4959196054334647,
+          -0.7289585888156531,
+          48.89943852281615
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        41.38697941064831,
+        48.899438565936705
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.0435383998257522e-10,
+            "volume": 458.3697338748698,
+            "centroid": [
+              1.951602779238342,
+              0.20616308558971075,
+              45.1432089257046
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.298462612152709e-13,
+            "volume": 458.3697338228088,
+            "centroid": [
+              1.9516027801151954,
+              0.20616308670301428,
+              45.143208926044004
+            ]
+          }
+        ],
+        "brep_sha256": "b3d102a87c61bbe28bef71662616e6c9358ad0546e8fc332414ae7de12b88fb0",
+        "volume_convergence_mm3": 5.2060954658372793e-08,
+        "centroid_convergence_mm": 1.4572276754769592e-09,
+        "converged": false,
+        "volume_mm3": 458.3697338228088,
+        "centroid_mm": [
+          1.9516027801151954,
+          0.20616308670301428,
+          45.143208926044004
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        41.38697941064831,
+        45.14320898829251
+      ],
+      "depth": 3,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 9.122923994396109e-11,
+            "volume": 229.18487328121228,
+            "centroid": [
+              2.670343761006758,
+              -6.5976190028407995,
+              43.265094082930446
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 8.28621928205318e-13,
+            "volume": 229.18487328655246,
+            "centroid": [
+              2.670343760875395,
+              -6.59761900289234,
+              43.26509408290995
+            ]
+          }
+        ],
+        "brep_sha256": "ac9b226cece1a41ecf8fd0413395933e01771aaf7f6e06bf7b4930c9fe955a58",
+        "volume_convergence_mm3": 5.340183406588039e-09,
+        "centroid_convergence_mm": 1.4259317951963104e-10,
+        "converged": true,
+        "volume_mm3": 229.18487328655246,
+        "centroid_mm": [
+          2.670343760875395,
+          -6.59761900289234,
+          43.26509408290995
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        45.14320898829251,
+        48.899438565936705
+      ],
+      "depth": 3,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.4791461414317984e-11,
+            "volume": 229.1848599737512,
+            "centroid": [
+              1.2328617581053063,
+              7.0099455678027995,
+              47.021323875699025
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 5.557076507919603e-13,
+            "volume": 229.18485997018036,
+            "centroid": [
+              1.2328617582498824,
+              7.009945567874694,
+              47.021323875684395
+            ]
+          }
+        ],
+        "brep_sha256": "7d2dfcf0275b41a0ab7e3b26f549c71000c0fb1d84243014ec0f65004f88ee35",
+        "volume_convergence_mm3": 3.5708467294170987e-09,
+        "centroid_convergence_mm": 1.6212684499787908e-10,
+        "converged": true,
+        "volume_mm3": 229.18485997018036,
+        "centroid_mm": [
+          1.2328617582498824,
+          7.009945567874694,
+          47.021323875684395
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        48.899438565936705,
+        56.4118977212251
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 5.228433906353252e-11,
+            "volume": 458.3697337680363,
+            "centroid": [
+              1.0402364309357715,
+              -1.6640802630610916,
+              52.65566812074938
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.1716040081084822e-12,
+            "volume": 458.3697337454555,
+            "centroid": [
+              1.0402364315318404,
+              -1.6640802633432854,
+              52.655668120938046
+            ]
+          }
+        ],
+        "brep_sha256": "eba486be606c8bf3e182b7c7a185d0c2ca1f78247d490600de7fb67f317cc774",
+        "volume_convergence_mm3": 2.258082076878054e-08,
+        "centroid_convergence_mm": 6.859485527662084e-10,
+        "converged": false,
+        "volume_mm3": 458.3697337454555,
+        "centroid_mm": [
+          1.0402364315318404,
+          -1.6640802633432854,
+          52.655668120938046
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        48.899438565936705,
+        52.655668143580904
+      ],
+      "depth": 3,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 3.760745462857146e-11,
+            "volume": 229.18486874659513,
+            "centroid": [
+              -4.761170275122479,
+              -5.290610700109899,
+              50.77755323185672
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.1595732844599171e-12,
+            "volume": 229.18486875192573,
+            "centroid": [
+              -4.761170275223139,
+              -5.290610699964338,
+              50.77755323181818
+            ]
+          }
+        ],
+        "brep_sha256": "514ed0d2a8768574befccccaa93255841acb3159850d6133ad9d2d03c7ed7e56",
+        "volume_convergence_mm3": 5.330605290509993e-09,
+        "centroid_convergence_mm": 1.8112347782681257e-10,
+        "converged": false,
+        "volume_mm3": 229.18486875192573,
+        "centroid_mm": [
+          -4.761170275223139,
+          -5.290610699964338,
+          50.77755323181818
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        48.899438565936705,
+        50.77755335475881
+      ],
+      "depth": 4,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 6.766033813218998e-11,
+            "volume": 114.59244851234159,
+            "centroid": [
+              -8.747565300456404,
+              -1.7031418824320717,
+              49.83849597308452
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 8.33466200046397e-13,
+            "volume": 114.59244851613349,
+            "centroid": [
+              -8.74756530051219,
+              -1.7031418823410456,
+              49.83849597305964
+            ]
+          }
+        ],
+        "brep_sha256": "9a36389488ce8967e56a49403217f7153882e0131bf2905c13526e07b77c95a6",
+        "volume_convergence_mm3": 3.791896574512066e-09,
+        "centroid_convergence_mm": 1.0961980082623343e-10,
+        "converged": true,
+        "volume_mm3": 114.59244851613349,
+        "centroid_mm": [
+          -8.74756530051219,
+          -1.7031418823410456,
+          49.83849597305964
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        50.77755335475881,
+        52.655668143580904
+      ],
+      "depth": 4,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.4000002965626345e-12,
+            "volume": 114.59241965191752,
+            "centroid": [
+              -0.7747742547773425,
+              -8.878080408354881,
+              51.71661072425574
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.601995039764432e-13,
+            "volume": 114.59241965286893,
+            "centroid": [
+              -0.7747742548406914,
+              -8.878080408288813,
+              51.71661072423918
+            ]
+          }
+        ],
+        "brep_sha256": "a11018990fd2d284d997edc812a1ccdea81bfae5aeddbc964576f38916881816",
+        "volume_convergence_mm3": 9.51402512328059e-10,
+        "centroid_convergence_mm": 9.301696682863388e-11,
+        "converged": true,
+        "volume_mm3": 114.59241965286893,
+        "centroid_mm": [
+          -0.7747742548406914,
+          -8.878080408288813,
+          51.71661072423918
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        52.655668143580904,
+        56.4118977212251
+      ],
+      "depth": 3,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 9.731810403732825e-12,
+            "volume": 229.18486469494826,
+            "centroid": [
+              6.841643223438068,
+              1.9624502471938512,
+              54.53378304050413
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.353608957565454e-13,
+            "volume": 229.18486469425406,
+            "centroid": [
+              6.841643223456238,
+              1.962450247162856,
+              54.533783040500396
+            ]
+          }
+        ],
+        "brep_sha256": "c132098b23214e9f5b90cca10d65936242f15b0c8d3a4e7f010060427da9ead4",
+        "volume_convergence_mm3": 6.942002528376179e-10,
+        "centroid_convergence_mm": 3.612202763447438e-11,
+        "converged": true,
+        "volume_mm3": 229.18486469425406,
+        "centroid_mm": [
+          6.841643223456238,
+          1.962450247162856,
+          54.533783040500396
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        56.4118977212251,
+        86.46173434237869
+      ],
+      "depth": 0,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.2370862622815554e-10,
+            "volume": 1833.47893751496,
+            "centroid": [
+              -0.574106065647168,
+              0.449197076226993,
+              71.43681613295718
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 4.853145086221037e-12,
+            "volume": 1833.4789374355528,
+            "centroid": [
+              -0.5741060656466137,
+              0.44919707661303065,
+              71.43681613283776
+            ]
+          }
+        ],
+        "brep_sha256": "e3c24a28aecfba85547b5a65f69edf50e80ab3512d38c652907414e1795ac7a6",
+        "volume_convergence_mm3": 7.940730029076803e-08,
+        "centroid_convergence_mm": 4.040854243598647e-10,
+        "converged": false,
+        "volume_mm3": 1833.4789374355528,
+        "centroid_mm": [
+          -0.5741060656466137,
+          0.44919707661303065,
+          71.43681613283776
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        56.4118977212251,
+        71.4368160318019
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 9.994502432366687e-11,
+            "volume": 916.7394673609366,
+            "centroid": [
+              -1.4959227623160798,
+              -0.7289521034540923,
+              63.92435691753528
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.567201436197792e-13,
+            "volume": 916.7394673390298,
+            "centroid": [
+              -1.495922762711535,
+              -0.7289521034169543,
+              63.924356917505996
+            ]
+          }
+        ],
+        "brep_sha256": "a38625f11f26033af95369e1ce833e6976576d802dbac78b7f366682367e9215",
+        "volume_convergence_mm3": 2.190677150792908e-08,
+        "centroid_convergence_mm": 3.9827311586140354e-10,
+        "converged": true,
+        "volume_mm3": 916.7394673390298,
+        "centroid_mm": [
+          -1.495922762711535,
+          -0.7289521034169543,
+          63.924356917505996
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        71.4368160318019,
+        86.46173434237869
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 9.426229389067729e-11,
+            "volume": 916.7394700681465,
+            "centroid": [
+              0.34771061229249556,
+              1.627346263313447,
+              78.94927533026285
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.291710416027472e-12,
+            "volume": 916.7394700743442,
+            "centroid": [
+              0.347710612210654,
+              1.6273462635569875,
+              78.94927533045819
+            ]
+          }
+        ],
+        "brep_sha256": "c38571eb28ac795ed3298a6b619ef3df4b4502aab43bfd02172e92f7c368ad19",
+        "volume_convergence_mm3": 6.1977516452316195e-09,
+        "centroid_convergence_mm": 3.2275172926587147e-10,
+        "converged": false,
+        "volume_mm3": 916.7394700743442,
+        "centroid_mm": [
+          0.347710612210654,
+          1.6273462635569875,
+          78.94927533045819
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        71.4368160318019,
+        78.9492751870903
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 6.846102838557821e-11,
+            "volume": 458.36973508260286,
+            "centroid": [
+              -0.6695684074423348,
+              1.8447051685001983,
+              75.19304572134732
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.567198214718874e-13,
+            "volume": 458.3697350465139,
+            "centroid": [
+              -0.6695684071117189,
+              1.8447051692727352,
+              75.19304572127449
+            ]
+          }
+        ],
+        "brep_sha256": "2aaef1e0c7c228f0bb735f1d01b975f2bd3afb8ad8c0590ae77d05b03546020f",
+        "volume_convergence_mm3": 3.6088977140025236e-08,
+        "centroid_convergence_mm": 8.434598098342073e-10,
+        "converged": true,
+        "volume_mm3": 458.3697350465139,
+        "centroid_mm": [
+          -0.6695684071117189,
+          1.8447051692727352,
+          75.19304572127449
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        78.9492751870903,
+        86.46173434237869
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 5.560834334809477e-11,
+            "volume": 458.36973497198903,
+            "centroid": [
+              1.3649896393629295,
+              1.4099873628180568,
+              82.7055049351298
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 7.208752979235182e-13,
+            "volume": 458.36973500708393,
+            "centroid": [
+              1.3649896386723575,
+              1.4099873632060698,
+              82.7055049353187
+            ]
+          }
+        ],
+        "brep_sha256": "3925a225961f565f3c5a70ccd5e25ebb131c8ce0c26101902ac1dfb2ff2506da",
+        "volume_convergence_mm3": 3.5094899430987425e-08,
+        "centroid_convergence_mm": 8.14327243427941e-10,
+        "converged": true,
+        "volume_mm3": 458.36973500708393,
+        "centroid_mm": [
+          1.3649896386723575,
+          1.4099873632060698,
+          82.7055049353187
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        86.46173434237869,
+        116.51157096353228
+      ],
+      "depth": 0,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 9.705813209967016e-11,
+            "volume": 1603.4578080404742,
+            "centroid": [
+              0.4051960208910817,
+              -0.03757877210552365,
+              99.60235226747666
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 8.989265111994271e-13,
+            "volume": 1603.4578077196413,
+            "centroid": [
+              0.4051960220736998,
+              -0.037578772341312815,
+              99.60235226813515
+            ]
+          }
+        ],
+        "brep_sha256": "a4f6573da1b2482dd186228ae7a5c604260a34b9f84819676350f9b92a2fa7f8",
+        "volume_convergence_mm3": 3.208328962500673e-07,
+        "centroid_convergence_mm": 1.3739683677489673e-09,
+        "converged": true,
+        "volume_mm3": 1603.4578077196413,
+        "centroid_mm": [
+          0.4051960220736998,
+          -0.037578772341312815,
+          99.60235226813515
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        -3.6877755210820737,
+        3.8246836342063233
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 6.615373874503587e-13,
+            "volume": 228.3482355309857,
+            "centroid": [
+              -1.8309458615029277,
+              7.056746191578196,
+              1.9487405019991773
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 3.849584945354384e-13,
+            "volume": 228.34823553098533,
+            "centroid": [
+              -1.830945861502859,
+              7.056746191578204,
+              1.948740501999174
+            ]
+          }
+        ],
+        "brep_sha256": "278f8cd7bfde67a4e0d95f891b266c41cfe5e6dc987208b9d44d5737a6c23de2",
+        "volume_convergence_mm3": 3.694822225952521e-13,
+        "centroid_convergence_mm": 6.915611213418187e-14,
+        "converged": true,
+        "volume_mm3": 228.34823553098533,
+        "centroid_mm": [
+          -1.830945861502859,
+          7.056746191578204,
+          1.948740501999174
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        3.8246836342063233,
+        11.33714278949472
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 4.767586387901704e-11,
+            "volume": 458.3697269701271,
+            "centroid": [
+              1.6294714655582394,
+              -1.0936577234556364,
+              7.580913069262292
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.1568068405566119e-12,
+            "volume": 458.3697269494591,
+            "centroid": [
+              1.629471465653255,
+              -1.093657723170586,
+              7.580913069297811
+            ]
+          }
+        ],
+        "brep_sha256": "45c309e3796db48d66969fdecfd0053305882343e9e25ba1f29a492aa47a47c0",
+        "volume_convergence_mm3": 2.066798288069549e-08,
+        "centroid_convergence_mm": 3.025612513136802e-10,
+        "converged": false,
+        "volume_mm3": 458.3697269494591,
+        "centroid_mm": [
+          1.629471465653255,
+          -1.093657723170586,
+          7.580913069297811
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        3.8246836342063233,
+        7.580913211850522
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 5.152282863519789e-11,
+            "volume": 229.18488171423186,
+            "centroid": [
+              -2.1832881690596917,
+              -6.77440524523377,
+              5.702798521112325
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.135266080934168e-12,
+            "volume": 229.18488171721046,
+            "centroid": [
+              -2.1832881690064707,
+              -6.774405245290823,
+              5.702798521108702
+            ]
+          }
+        ],
+        "brep_sha256": "d8deeabf88e6f702ad3b8e97e7763b039e8d5029bd5804344227325ed1934d16",
+        "volume_convergence_mm3": 2.97859514830634e-09,
+        "centroid_convergence_mm": 7.810667614747412e-11,
+        "converged": false,
+        "volume_mm3": 229.18488171721046,
+        "centroid_mm": [
+          -2.1832881690064707,
+          -6.774405245290823,
+          5.702798521108702
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        3.8246836342063233,
+        5.7027984230284225
+      ],
+      "depth": 3,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 2.5327125654320967e-12,
+            "volume": 114.59243426605985,
+            "centroid": [
+              -7.287698179824269,
+              -5.129328855284487,
+              4.763741103658846
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 4.3044040182704695e-13,
+            "volume": 114.59243426552706,
+            "centroid": [
+              -7.287698179857697,
+              -5.129328855255137,
+              4.763741103652161
+            ]
+          }
+        ],
+        "brep_sha256": "4c8601f25f368a57c705b15282ddf50d2441ded955b15093501517a507e1389d",
+        "volume_convergence_mm3": 5.327933649823535e-10,
+        "centroid_convergence_mm": 4.498403638715563e-11,
+        "converged": true,
+        "volume_mm3": 114.59243426552706,
+        "centroid_mm": [
+          -7.287698179857697,
+          -5.129328855255137,
+          4.763741103652161
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        5.7027984230284225,
+        7.580913211850522
+      ],
+      "depth": 3,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 3.784799781470912e-11,
+            "volume": 114.59244691530053,
+            "centroid": [
+              2.9211212434212395,
+              -8.419481419526486,
+              6.641855828276398
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 7.999432680454501e-13,
+            "volume": 114.59244691620493,
+            "centroid": [
+              2.921121243419001,
+              -8.419481419528365,
+              6.641855828247055
+            ]
+          }
+        ],
+        "brep_sha256": "353a496415068ee254523082fc9c66af649fc35fc3c917a9a413ac69cb8dc400",
+        "volume_convergence_mm3": 9.044072157848859e-10,
+        "centroid_convergence_mm": 2.9488858717549286e-11,
+        "converged": true,
+        "volume_mm3": 114.59244691620493,
+        "centroid_mm": [
+          2.921121243419001,
+          -8.419481419528365,
+          6.641855828247055
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        7.580913211850522,
+        11.33714278949472
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 9.346029717097509e-12,
+            "volume": 229.18484490311056,
+            "centroid": [
+              5.442231706017702,
+              4.5870907343437475,
+              9.459027928108263
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.531989283393589e-13,
+            "volume": 229.18484490359873,
+            "centroid": [
+              5.442231706010989,
+              4.5870907343179095,
+              9.459027928103193
+            ]
+          }
+        ],
+        "brep_sha256": "f1c989ab6b9f7ea4ffc7ef451370a26c1ec602474895d58095a595619ce8ed32",
+        "volume_convergence_mm3": 4.881712811766192e-10,
+        "centroid_convergence_mm": 2.717290260079658e-11,
+        "converged": true,
+        "volume_mm3": 229.18484490359873,
+        "centroid_mm": [
+          5.442231706010989,
+          4.5870907343179095,
+          9.459027928103193
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        11.33714278949472,
+        15.093372367138919
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.0852497508593263e-10,
+            "volume": 229.1848897573329,
+            "centroid": [
+              -7.046241314905064,
+              -1.0048850362371795,
+              13.215257639215856
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.531899138498046e-13,
+            "volume": 229.18488971597048,
+            "centroid": [
+              -7.046241314361391,
+              -1.0048850357115726,
+              13.215257639148861
+            ]
+          }
+        ],
+        "brep_sha256": "45add2929ff5e1ba1f11e9ff0047f04fd219fc6d6a024edc8a0f428a1654a193",
+        "volume_convergence_mm3": 4.1362426372870686e-08,
+        "centroid_convergence_mm": 7.591646317494055e-10,
+        "converged": false,
+        "volume_mm3": 229.18488971597048,
+        "centroid_mm": [
+          -7.046241314361391,
+          -1.0048850357115726,
+          13.215257639148861
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        11.33714278949472,
+        13.21525757831682
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 2.941206509092172e-12,
+            "volume": 114.59244138747418,
+            "centroid": [
+              -7.803405023997198,
+              4.304348800913959,
+              12.276200228918905
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.53180899360247e-13,
+            "volume": 114.59244138702901,
+            "centroid": [
+              -7.803405023985424,
+              4.3043488009398505,
+              12.276200228916233
+            ]
+          }
+        ],
+        "brep_sha256": "1a16b4592998782dec16f77135daaad757d7e59555ef16040c66732695dcffc5",
+        "volume_convergence_mm3": 4.4516923480841797e-10,
+        "centroid_convergence_mm": 2.8567750450982674e-11,
+        "converged": true,
+        "volume_mm3": 114.59244138702901,
+        "centroid_mm": [
+          -7.803405023985424,
+          4.3043488009398505,
+          12.276200228916233
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        13.21525757831682,
+        15.093372367138919
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 7.939329823726664e-11,
+            "volume": 114.59244820977418,
+            "centroid": [
+              -6.289077643631054,
+              -6.314118513335603,
+              14.154314985567156
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 5.431133762019319e-13,
+            "volume": 114.59244820835599,
+            "centroid": [
+              -6.289077643586512,
+              -6.314118513349661,
+              14.154314985575391
+            ]
+          }
+        ],
+        "brep_sha256": "2ee9580a9d139e6e638c0fc1b8e667b0558098dffced3fed42b24fe12717e15c",
+        "volume_convergence_mm3": 1.4181864571582992e-09,
+        "centroid_convergence_mm": 4.742837889256337e-11,
+        "converged": true,
+        "volume_mm3": 114.59244820835599,
+        "centroid_mm": [
+          -6.289077643586512,
+          -6.314118513349661,
+          14.154314985575391
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        15.093372367138919,
+        18.849601944783117
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.5137695710253282e-11,
+            "volume": 229.1848389517487,
+            "centroid": [
+              6.5075484825943,
+              -2.8828987369422054,
+              16.971487134189207
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.613997509134043e-13,
+            "volume": 229.18483895624314,
+            "centroid": [
+              6.507548482333065,
+              -2.882898736954762,
+              16.971487134137718
+            ]
+          }
+        ],
+        "brep_sha256": "971a2dcc87a36f73969f942259f113f09a0ea92a73663cdf31270892ef18326f",
+        "volume_convergence_mm3": 4.494438599067507e-09,
+        "centroid_convergence_mm": 2.6655732977333215e-10,
+        "converged": true,
+        "volume_mm3": 229.18483895624314,
+        "centroid_mm": [
+          6.507548482333065,
+          -2.882898736954762,
+          16.971487134137718
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        18.849601944783117,
+        19.78865933919417
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 8.717988880371267e-13,
+            "volume": 57.2962233343598,
+            "centroid": [
+              3.4288970490690085,
+              8.749477495214801,
+              19.319130663865135
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.613791337142469e-13,
+            "volume": 57.29622334198133,
+            "centroid": [
+              3.4288970480925443,
+              8.749477495397489,
+              19.3191306639041
+            ]
+          }
+        ],
+        "brep_sha256": "0434b9d84171b8d57838df600055b31e4b8d75a96669625532747553e08ef86c",
+        "volume_convergence_mm3": 7.62153007372035e-09,
+        "centroid_convergence_mm": 9.941707872378912e-10,
+        "converged": true,
+        "volume_mm3": 57.29622334198133,
+        "centroid_mm": [
+          3.4288970480925443,
+          8.749477495397489,
+          19.3191306639041
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        19.78865933919417,
+        20.727716733605217
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 9.587239237839503e-12,
+            "volume": 57.2962230221222,
+            "centroid": [
+              -2.52673293395599,
+              9.051318738580118,
+              20.25818803576982
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 7.710369514498957e-13,
+            "volume": 57.29622302378379,
+            "centroid": [
+              -2.5267329340357922,
+              9.051318738598196,
+              20.25818803578987
+            ]
+          }
+        ],
+        "brep_sha256": "ec6f30ac6c99fb8d4495c843e1b300c643941bdde34251108f676ba8d04c0535",
+        "volume_convergence_mm3": 1.661589976720279e-09,
+        "centroid_convergence_mm": 8.424546125274994e-11,
+        "converged": true,
+        "volume_mm3": 57.29622302378379,
+        "centroid_mm": [
+          -2.5267329340357922,
+          9.051318738598196,
+          20.25818803578987
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        20.727716733605217,
+        21.666774128016264
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 8.717511661521834e-13,
+            "volume": 57.2962233333871,
+            "centroid": [
+              -7.4649012786210855,
+              5.7084146658081,
+              21.197245431738576
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.22428569890583e-13,
+            "volume": 57.29622333310106,
+            "centroid": [
+              -7.4649012786230635,
+              5.708414665793438,
+              21.197245431743898
+            ]
+          }
+        ],
+        "brep_sha256": "3eb4d7eccb13496023a0f5e6a5d603ac727470d2956e48183149ada4b8eac594",
+        "volume_convergence_mm3": 2.8603608370758593e-10,
+        "centroid_convergence_mm": 1.5722957170235495e-11,
+        "converged": true,
+        "volume_mm3": 57.29622333310106,
+        "centroid_mm": [
+          -7.4649012786230635,
+          5.708414665793438,
+          21.197245431743898
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        21.666774128016264,
+        22.605831522427316
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.0046373649401044e-12,
+            "volume": 57.29622315900338,
+            "centroid": [
+              -9.397138988338265,
+              0.06686376472059154,
+              22.13630280559672
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.363199241537922e-13,
+            "volume": 57.29622315902855,
+            "centroid": [
+              -9.39713898833725,
+              0.06686376472337235,
+              22.13630280559695
+            ]
+          }
+        ],
+        "brep_sha256": "1824bf5ae9f29a7c0ccdd7a08c2321e74c10e7ac523329ba3a6e99087dc04344",
+        "volume_convergence_mm3": 2.516742370062275e-11,
+        "centroid_convergence_mm": 2.9690192876681966e-12,
+        "converged": true,
+        "volume_mm3": 57.29622315902855,
+        "centroid_mm": [
+          -9.39713898833725,
+          0.06686376472337235,
+          22.13630280559695
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        22.605831522427316,
+        24.483946311249415
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.6817114930275524e-12,
+            "volume": 114.59241901578677,
+            "centroid": [
+              -5.10032712752232,
+              -7.308025103981241,
+              23.544888942749523
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.363221777864906e-13,
+            "volume": 114.59241901578692,
+            "centroid": [
+              -5.100327127522296,
+              -7.3080251039812305,
+              23.544888942749502
+            ]
+          }
+        ],
+        "brep_sha256": "904f19b4cfa3d668e58b19076c8244e9c680accd813cf0f05d24234f015e9bcf",
+        "volume_convergence_mm3": 1.4210854715202004e-13,
+        "centroid_convergence_mm": 3.380916224435687e-14,
+        "converged": true,
+        "volume_mm3": 114.59241901578692,
+        "centroid_mm": [
+          -5.100327127522296,
+          -7.3080251039812305,
+          23.544888942749502
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        24.483946311249415,
+        26.362061100071514
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.6720957237732763e-12,
+            "volume": 114.59241975506578,
+            "centroid": [
+              5.618474873949042,
+              -6.917609926386115,
+              25.42300373772458
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 4.515601425814347e-13,
+            "volume": 114.59241975505427,
+            "centroid": [
+              5.618474873948713,
+              -6.917609926387393,
+              25.423003737724454
+            ]
+          }
+        ],
+        "brep_sha256": "15faf9e72472825dcafe8c2ba444a9694460e70e50d16aa83d6ce8abe0aff6d5",
+        "volume_convergence_mm3": 1.1510792319313623e-11,
+        "centroid_convergence_mm": 1.3258445309219247e-12,
+        "converged": true,
+        "volume_mm3": 114.59241975505427,
+        "centroid_mm": [
+          5.618474873948713,
+          -6.917609926387393,
+          25.423003737724454
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        26.362061100071514,
+        33.87452025535991
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 3.613606570795661e-11,
+            "volume": 458.36973516771974,
+            "centroid": [
+              -1.364983537569368,
+              1.4099932800716284,
+              30.118290510188046
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 5.9034293675479e-13,
+            "volume": 458.3697351501856,
+            "centroid": [
+              -1.3649835379137414,
+              1.4099932801403514,
+              30.118290510177083
+            ]
+          }
+        ],
+        "brep_sha256": "1f1178120e784cc3d1ed4a121ae2049c942b72291958b8228a1c506d6ae49a7c",
+        "volume_convergence_mm3": 1.7534148355480283e-08,
+        "centroid_convergence_mm": 3.513347522240317e-10,
+        "converged": true,
+        "volume_mm3": 458.3697351501856,
+        "centroid_mm": [
+          -1.3649835379137414,
+          1.4099932801403514,
+          30.118290510177083
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        33.87452025535991,
+        41.38697941064831
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 8.366017942190308e-11,
+            "volume": 458.369734704123,
+            "centroid": [
+              0.6695763972517647,
+              1.8447022835968265,
+              37.63074972625264
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.298462612152663e-13,
+            "volume": 458.3697346819636,
+            "centroid": [
+              0.6695763969651217,
+              1.8447022840803515,
+              37.63074972634756
+            ]
+          }
+        ],
+        "brep_sha256": "bcc7ef563fe063b1b4cd2ddf7c97483da4899760b7aca8669c8b4fb89a1e28b8",
+        "volume_convergence_mm3": 2.215938366134651e-08,
+        "centroid_convergence_mm": 5.700619849715508e-10,
+        "converged": true,
+        "volume_mm3": 458.3697346819636,
+        "centroid_mm": [
+          0.6695763969651217,
+          1.8447022840803515,
+          37.63074972634756
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        41.38697941064831,
+        43.26509419947041
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.638480255865621e-11,
+            "volume": 114.5924469354283,
+            "centroid": [
+              -2.300861001200315,
+              -8.60968383581577,
+              42.32603681600038
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 8.597786660083189e-13,
+            "volume": 114.5924469367797,
+            "centroid": [
+              -2.300861001217541,
+              -8.609683835831774,
+              42.32603681599832
+            ]
+          }
+        ],
+        "brep_sha256": "10a45933bc506fe5461e5672b5ffcaa834b5c973a136413a5a4ce26ce8ca4899",
+        "volume_convergence_mm3": 1.3513954399968497e-09,
+        "centroid_convergence_mm": 2.3602775402063962e-11,
+        "converged": true,
+        "volume_mm3": 114.5924469367797,
+        "centroid_mm": [
+          -2.300861001217541,
+          -8.609683835831774,
+          42.32603681599832
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        43.26509419947041,
+        45.14320898829251
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.674033068642192e-12,
+            "volume": 114.59242571698232,
+            "centroid": [
+              7.641549423894638,
+              -4.58555379413362,
+              44.20415152009098
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.496039587315531e-13,
+            "volume": 114.5924257166254,
+            "centroid": [
+              7.641549423920781,
+              -4.5855537941205124,
+              44.204151520099636
+            ]
+          }
+        ],
+        "brep_sha256": "e3a644fc3e29d5a315f7ac61d61e7301619238419e53e62fab837714f439f441",
+        "volume_convergence_mm3": 3.569198270270135e-10,
+        "centroid_convergence_mm": 3.0498350914603375e-11,
+        "converged": true,
+        "volume_mm3": 114.5924257166254,
+        "centroid_mm": [
+          7.641549423920781,
+          -4.5855537941205124,
+          44.204151520099636
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        45.14320898829251,
+        47.0213237771146
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.6634313311974226e-12,
+            "volume": 114.59241916243927,
+            "centroid": [
+              6.514748888569726,
+              6.081002426079166,
+              46.08226635486698
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 5.149210468744756e-13,
+            "volume": 114.59241916243805,
+            "centroid": [
+              6.514748888569694,
+              6.081002426079181,
+              46.08226635486701
+            ]
+          }
+        ],
+        "brep_sha256": "9c5d21e70863ce699a15b9adcb8420cbc575c7d9c3c16c6baf8ce94a84ab7acd",
+        "volume_convergence_mm3": 1.2221335055073723e-12,
+        "centroid_convergence_mm": 4.507888299247583e-14,
+        "converged": true,
+        "volume_mm3": 114.59241916243805,
+        "centroid_mm": [
+          6.514748888569694,
+          6.081002426079181,
+          46.08226635486701
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        47.0213237771146,
+        48.899438565936705
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.919271855132138e-12,
+            "volume": 114.5924409966612,
+            "centroid": [
+              -4.049024354160494,
+              7.938888496227813,
+              47.960381213778135
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 5.557024964738536e-13,
+            "volume": 114.59244099864517,
+            "centroid": [
+              -4.049024354253467,
+              7.938888496156023,
+              47.960381213780394
+            ]
+          }
+        ],
+        "brep_sha256": "d28912707c2346073b074dc0e471e37c9cd886549629a607f20bf3c4655fb8fd",
+        "volume_convergence_mm3": 1.9839774267893517e-09,
+        "centroid_convergence_mm": 1.1748529640661081e-10,
+        "converged": true,
+        "volume_mm3": 114.59244099864517,
+        "centroid_mm": [
+          -4.049024354253467,
+          7.938888496156023,
+          47.960381213780394
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        48.899438565936705,
+        49.83849596034776
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 5.012501480210338e-11,
+            "volume": 57.296223028013294,
+            "centroid": [
+              -9.317388344723659,
+              1.2235363721688732,
+              49.36896726274945
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.686172196298637e-13,
+            "volume": 57.29622302882354,
+            "centroid": [
+              -9.317388344744202,
+              1.223536372176402,
+              49.36896726272944
+            ]
+          }
+        ],
+        "brep_sha256": "083c2471b39bdbf8d6dc25b7f65cac425d7bae6ffb54106aa99513088abddc47",
+        "volume_convergence_mm3": 8.102460924419574e-10,
+        "centroid_convergence_mm": 2.9649239195266933e-11,
+        "converged": true,
+        "volume_mm3": 57.29622302882354,
+        "centroid_mm": [
+          -9.317388344744202,
+          1.223536372176402,
+          49.36896726272944
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        49.83849596034776,
+        50.77755335475881
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.4173571090907596e-12,
+            "volume": 57.29622534528406,
+            "centroid": [
+              -8.177742274036776,
+              -4.629820000455165,
+              50.30802466272931
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.602007925402099e-13,
+            "volume": 57.29622534590254,
+            "centroid": [
+              -8.17774227406502,
+              -4.62982000040397,
+              50.30802466271811
+            ]
+          }
+        ],
+        "brep_sha256": "446a89dbba6d7c4f8a9a082ccc26023057b2157da5d3967ba92aaa7f686969ba",
+        "volume_convergence_mm3": 6.184848189150216e-10,
+        "centroid_convergence_mm": 5.95323842522955e-11,
+        "converged": true,
+        "volume_mm3": 57.29622534590254,
+        "centroid_mm": [
+          -8.17774227406502,
+          -4.62982000040397,
+          50.30802466271811
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        50.77755335475881,
+        51.71661074916986
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 9.289656384921437e-13,
+            "volume": 57.296212761228986,
+            "centroid": [
+              -3.7451170250533776,
+              -8.618864173423004,
+              51.247082029932024
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.602007925401603e-13,
+            "volume": 57.29621276168149,
+            "centroid": [
+              -3.7451170250975836,
+              -8.618864173363997,
+              51.24708202991951
+            ]
+          }
+        ],
+        "brep_sha256": "83b4db6c4de5979675bcb29f134be99b036559edb9f60c1f3c6afd9c2af4e5fc",
+        "volume_convergence_mm3": 4.525020358414622e-10,
+        "centroid_convergence_mm": 7.478344178002446e-11,
+        "converged": true,
+        "volume_mm3": 57.29621276168149,
+        "centroid_mm": [
+          -3.7451170250975836,
+          -8.618864173363997,
+          51.24708202991951
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        51.71661074916986,
+        52.655668143580904
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 8.719369035211084e-13,
+            "volume": 57.296206854105904,
+            "centroid": [
+              2.1955687997658866,
+              -9.137296661800656,
+              52.186139463430166
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.353609309694748e-13,
+            "volume": 57.29620685410656,
+            "centroid": [
+              2.195568799765864,
+              -9.13729666180069,
+              52.186139463430145
+            ]
+          }
+        ],
+        "brep_sha256": "e09ffe34a39f841180799adf855acde80670156d043d7578158e7cb3b974ff92",
+        "volume_convergence_mm3": 6.536993168992922e-13,
+        "centroid_convergence_mm": 4.589614180044339e-14,
+        "converged": true,
+        "volume_mm3": 57.29620685410656,
+        "centroid_mm": [
+          2.195568799765864,
+          -9.13729666180069,
+          52.186139463430145
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        52.655668143580904,
+        54.533782932403
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.6683336250508226e-12,
+            "volume": 114.59241896657056,
+            "centroid": [
+              8.32031955645337,
+              -3.1926244495193834,
+              53.59472551806702
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.353608957565454e-13,
+            "volume": 114.59241896657116,
+            "centroid": [
+              8.320319556453391,
+              -3.1926244495193736,
+              53.59472551806701
+            ]
+          }
+        ],
+        "brep_sha256": "ec4a2fd2513bad2f623335e762991beacef7b0f3bfd016cde6a40539eef06314",
+        "volume_convergence_mm3": 5.968558980384842e-13,
+        "centroid_convergence_mm": 2.7418687836503485e-14,
+        "converged": true,
+        "volume_mm3": 114.59241896657116,
+        "centroid_mm": [
+          8.320319556453391,
+          -3.1926244495193736,
+          53.59472551806701
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        54.533782932403,
+        56.4118977212251
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.6785459131290194e-12,
+            "volume": 114.59244616510844,
+            "centroid": [
+              5.3629672221907745,
+              7.117523705414859,
+              55.47284033989532
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.228275511878712e-13,
+            "volume": 114.592446165356,
+            "centroid": [
+              5.362967222182241,
+              7.117523705421026,
+              55.47284033989542
+            ]
+          }
+        ],
+        "brep_sha256": "853e996c365b06ad4da1d4fddd586dead439ec235a1c02cd72c2abd5404adff7",
+        "volume_convergence_mm3": 2.475530891388189e-10,
+        "centroid_convergence_mm": 1.0528996741430196e-11,
+        "converged": true,
+        "volume_mm3": 114.592446165356,
+        "centroid_mm": [
+          5.362967222182241,
+          7.117523705421026,
+          55.47284033989542
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        56.4118977212251,
+        63.9243568765135
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 5.474154248348122e-11,
+            "volume": 458.36973334995935,
+            "centroid": [
+              -1.0402436566779028,
+              -1.6640757641721118,
+              60.16812732067757
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.0568904753466513e-12,
+            "volume": 458.3697332986193,
+            "centroid": [
+              -1.040243657427403,
+              -1.66407576525082,
+              60.168127320736744
+            ]
+          }
+        ],
+        "brep_sha256": "c22b313becefaca374a2f78b5e6c55e56744c4d7204fd882c0adc1ff178ccdeb",
+        "volume_convergence_mm3": 5.1340066420380026e-08,
+        "centroid_convergence_mm": 1.3148625879415202e-09,
+        "converged": false,
+        "volume_mm3": 458.3697332986193,
+        "centroid_mm": [
+          -1.040243657427403,
+          -1.66407576525082,
+          60.168127320736744
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        56.4118977212251,
+        60.1681272988693
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 2.9959801217431536e-12,
+            "volume": 229.1848661079714,
+            "centroid": [
+              -6.841634715601993,
+              1.962479840364455,
+              58.290012407587724
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.190276896932721e-13,
+            "volume": 229.1848661817383,
+            "centroid": [
+              -6.841634713669022,
+              1.9624798429143275,
+              58.29001240695778
+            ]
+          }
+        ],
+        "brep_sha256": "3d36f6db45d648e76dfcebc46ae11f1aa32d747a0aa95bebe984f930b96a6b88",
+        "volume_convergence_mm3": 7.376689836746664e-08,
+        "centroid_convergence_mm": 3.2611438310708755e-09,
+        "converged": true,
+        "volume_mm3": 229.1848661817383,
+        "centroid_mm": [
+          -6.841634713669022,
+          1.9624798429143275,
+          58.29001240695778
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        60.1681272988693,
+        63.9243568765135
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 4.515271661682083e-11,
+            "volume": 229.1848673293075,
+            "centroid": [
+              4.761147385168468,
+              -5.290631312587245,
+              62.04624221525017
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 9.325283158861445e-13,
+            "volume": 229.18486732908462,
+            "centroid": [
+              4.7611473850771056,
+              -5.290631312613638,
+              62.04624221527003
+            ]
+          }
+        ],
+        "brep_sha256": "f191582d55ce76ff8196e8e572e57928919ed4cfa577258aabf0c9ea06186d23",
+        "volume_convergence_mm3": 2.2288304535322823e-10,
+        "centroid_convergence_mm": 9.714990592472861e-11,
+        "converged": true,
+        "volume_mm3": 229.18486732908462,
+        "centroid_mm": [
+          4.7611473850771056,
+          -5.290631312613638,
+          62.04624221527003
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        63.9243568765135,
+        71.4368160318019
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.3507931991145278e-10,
+            "volume": 458.36973346824254,
+            "centroid": [
+              -1.9516018862152331,
+              0.2061715463363308,
+              67.68058651646533
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.2024340848092904e-12,
+            "volume": 458.3697334197419,
+            "centroid": [
+              -1.9516018870463028,
+              0.20617154736040127,
+              67.6805865161334
+            ]
+          }
+        ],
+        "brep_sha256": "e62e34dd9bbb2139383afb7086d476eef76b5e73f6fe9e9f427be6cfea142963",
+        "volume_convergence_mm3": 4.8500623961444944e-08,
+        "centroid_convergence_mm": 1.3599889453750618e-09,
+        "converged": false,
+        "volume_mm3": 458.3697334197419,
+        "centroid_mm": [
+          -1.9516018870463028,
+          0.20617154736040127,
+          67.6805865161334
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        63.9243568765135,
+        67.68058645415769
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.1557006844263009e-11,
+            "volume": 229.18486166404477,
+            "centroid": [
+              -1.232831393812661,
+              7.009950858773791,
+              65.80247156950072
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.561489087817425e-13,
+            "volume": 229.18486166945087,
+            "centroid": [
+              -1.232831393599047,
+              7.009950858668812,
+              65.80247156944232
+            ]
+          }
+        ],
+        "brep_sha256": "546bcc5c07f037819d4a2aa99f4b15f37bd97b514768839d437ce410e170a9f7",
+        "volume_convergence_mm3": 5.406093350757146e-09,
+        "centroid_convergence_mm": 2.450769524212855e-10,
+        "converged": true,
+        "volume_mm3": 229.18486166945087,
+        "centroid_mm": [
+          -1.232831393599047,
+          7.009950858668812,
+          65.80247156944232
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        67.68058645415769,
+        71.4368160318019
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.1061925252218747e-10,
+            "volume": 229.18487230824243,
+            "centroid": [
+              -2.6703722892769206,
+              -6.5976074495319255,
+              69.55870136844426
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.567198214718475e-13,
+            "volume": 229.1848723209902,
+            "centroid": [
+              -2.6703722889703188,
+              -6.5976074496420845,
+              69.55870136850898
+            ]
+          }
+        ],
+        "brep_sha256": "eee6e27de67f59cb0c08f491339f3b9e1d85b08a264f2a4c1698c99315d26ab6",
+        "volume_convergence_mm3": 1.2747761957143666e-08,
+        "centroid_convergence_mm": 3.321564269721803e-10,
+        "converged": false,
+        "volume_mm3": 229.1848723209902,
+        "centroid_mm": [
+          -2.6703722889703188,
+          -6.5976074496420845,
+          69.55870136850898
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        67.68058645415769,
+        69.5587012429798
+      ],
+      "depth": 3,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 2.855214306273631e-12,
+            "volume": 114.59242569201382,
+            "centroid": [
+              -7.641569267792192,
+              -4.585520724666752,
+              68.61964392826803
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 4.993878062286328e-13,
+            "volume": 114.59242569199465,
+            "centroid": [
+              -7.641569267792955,
+              -4.5855207246682665,
+              68.61964392826928
+            ]
+          }
+        ],
+        "brep_sha256": "6ff445b2f0fb1c22c74e0e49ba8858336994df74b1908890d557f6353efb0e30",
+        "volume_convergence_mm3": 1.9170443010807503e-11,
+        "centroid_convergence_mm": 2.1072655846166237e-12,
+        "converged": true,
+        "volume_mm3": 114.59242569199465,
+        "centroid_mm": [
+          -7.641569267792955,
+          -4.5855207246682665,
+          68.61964392826928
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        69.5587012429798,
+        71.4368160318019
+      ],
+      "depth": 3,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.780087645281326e-11,
+            "volume": 114.59244683225165,
+            "centroid": [
+              2.300823757780263,
+              -8.609693781693752,
+              70.49775863068824
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.567198214718224e-13,
+            "volume": 114.59244683260917,
+            "centroid": [
+              2.3008237577824535,
+              -8.609693781697004,
+              70.49775863070305
+            ]
+          }
+        ],
+        "brep_sha256": "c5e272cf0505f76a7ce372a7aad53db13b28808a17bc1e6ed327c01dfd88b118",
+        "volume_convergence_mm3": 3.57516682925052e-10,
+        "centroid_convergence_mm": 1.5318167076439247e-11,
+        "converged": true,
+        "volume_mm3": 114.59244683260917,
+        "centroid_mm": [
+          2.3008237577824535,
+          -8.609693781697004,
+          70.49775863070305
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        71.4368160318019,
+        75.1930456094461
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.2552901847202274e-11,
+            "volume": 229.18485379433196,
+            "centroid": [
+              5.761542151311277,
+              4.178984898005213,
+              73.3149307211838
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.567201436198298e-13,
+            "volume": 229.18485379689713,
+            "centroid": [
+              5.761542151288371,
+              4.178984897883198,
+              73.31493072116206
+            ]
+          }
+        ],
+        "brep_sha256": "aaf7254de27107f265e5a468f37133f06dbd3fe7f627feeb4aee6e63c0b5e16f",
+        "volume_convergence_mm3": 2.5651729629316833e-09,
+        "centroid_convergence_mm": 1.2603635028720387e-10,
+        "converged": true,
+        "volume_mm3": 229.18485379689713,
+        "centroid_mm": [
+          5.761542151288371,
+          4.178984897883198,
+          73.31493072116206
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        75.1930456094461,
+        78.9492751870903
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.2193149370537957e-10,
+            "volume": 229.18488137567678,
+            "centroid": [
+              -7.100678189308527,
+              -0.4895743128681441,
+              77.07116049851514
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.426880359673499e-13,
+            "volume": 229.18488136463472,
+            "centroid": [
+              -7.100678189220792,
+              -0.4895743126305589,
+              77.07116049848088
+            ]
+          }
+        ],
+        "brep_sha256": "4291d024b74579c08e18ecf30c413afe115681c5e3e258fb3e70e1c99694e6cf",
+        "volume_convergence_mm3": 1.10420614873874e-08,
+        "centroid_convergence_mm": 2.555740757463799e-10,
+        "converged": false,
+        "volume_mm3": 229.18488136463472,
+        "centroid_mm": [
+          -7.100678189220792,
+          -0.4895743126305589,
+          77.07116049848088
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        75.1930456094461,
+        77.0711603982682
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 2.508093911847089e-12,
+            "volume": 114.5924341637434,
+            "centroid": [
+              -7.469562691506497,
+              4.860678275535799,
+              76.13210308177698
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.426970504569929e-13,
+            "volume": 114.59243416158603,
+            "centroid": [
+              -7.469562691474413,
+              4.860678275692421,
+              76.13210308176892
+            ]
+          }
+        ],
+        "brep_sha256": "f1717d8a19581c602306ebed120309c5e07d2dcd6a1181b84c7f7adfd4dd5522",
+        "volume_convergence_mm3": 2.1573782760242466e-09,
+        "centroid_convergence_mm": 1.6007772699910814e-10,
+        "converged": true,
+        "volume_mm3": 114.59243416158603,
+        "centroid_mm": [
+          -7.469562691474413,
+          4.860678275692421,
+          76.13210308176892
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        77.0711603982682,
+        78.9492751870903
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.0833077621178162e-11,
+            "volume": 114.59244679668186,
+            "centroid": [
+              -6.731793712444327,
+              -5.839826266798758,
+              78.01021780396255
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 4.839930004700954e-13,
+            "volume": 114.59244679144867,
+            "centroid": [
+              -6.731793712323792,
+              -5.839826266762176,
+              78.01021780396869
+            ]
+          }
+        ],
+        "brep_sha256": "8eaab5152660112e7be4008e8d1031c41ca9e08b65e654dd2fd19cd5595939d7",
+        "volume_convergence_mm3": 5.2331898814372835e-09,
+        "centroid_convergence_mm": 1.2611389292427504e-10,
+        "converged": true,
+        "volume_mm3": 114.59244679144867,
+        "centroid_mm": [
+          -6.731793712323792,
+          -5.839826266762176,
+          78.01021780396869
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        78.9492751870903,
+        82.70550476473448
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.2805367900948893e-12,
+            "volume": 229.18484522907596,
+            "centroid": [
+              6.2805572534630665,
+              -3.3487143343374886,
+              80.8273899014534
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.636889488332265e-13,
+            "volume": 229.18484522495356,
+            "centroid": [
+              6.280557253693822,
+              -3.348714334300859,
+              80.82738990150338
+            ]
+          }
+        ],
+        "brep_sha256": "0e5a7f6ec393b9ec4caee9d506efb3d7400feaa06422ab921d71ca8150c31d11",
+        "volume_convergence_mm3": 4.122398422623519e-09,
+        "centroid_convergence_mm": 2.3893081611613484e-10,
+        "converged": true,
+        "volume_mm3": 229.18484522495356,
+        "centroid_mm": [
+          6.280557253693822,
+          -3.348714334300859,
+          80.82738990150338
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        82.70550476473448,
+        86.46173434237869
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 4.492789657654933e-11,
+            "volume": 229.18488944794365,
+            "centroid": [
+              -3.550577046221378,
+              6.168688141064906,
+              84.58361961646644
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.636889488333274e-13,
+            "volume": 229.18488945109692,
+            "centroid": [
+              -3.5505770462552104,
+              6.168688141069401,
+              84.5836196164818
+            ]
+          }
+        ],
+        "brep_sha256": "8c0d4f0f6473679904e9ff3832fe0c858805d0926302ee99cd0a86034ed9dbd9",
+        "volume_convergence_mm3": 3.153274974465603e-09,
+        "centroid_convergence_mm": 3.7427693186160635e-11,
+        "converged": true,
+        "volume_mm3": 229.18488945109692,
+        "centroid_mm": [
+          -3.5505770462552104,
+          6.168688141069401,
+          84.5836196164818
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        86.46173434237869,
+        101.48665265295548
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.0864104690046974e-10,
+            "volume": 916.7394612532673,
+            "centroid": [
+              1.067391980533415,
+              -1.2766498351792657,
+              93.97419369024794
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 9.676822091489234e-13,
+            "volume": 916.739461219197,
+            "centroid": [
+              1.0673919803665999,
+              -1.276649834720164,
+              93.974193690004
+            ]
+          }
+        ],
+        "brep_sha256": "af9487282d1465b3bd8a4df111c4e76bd7e3edf5ba9236dcff666b24ded1e706",
+        "volume_convergence_mm3": 3.407035364944022e-08,
+        "centroid_convergence_mm": 5.459945862361685e-10,
+        "converged": false,
+        "volume_mm3": 916.739461219197,
+        "centroid_mm": [
+          1.0673919803665999,
+          -1.276649834720164,
+          93.974193690004
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        86.46173434237869,
+        93.97419349766709
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.2908226395279572e-10,
+            "volume": 458.3697323878447,
+            "centroid": [
+              1.8654451893017823,
+              -0.6094067270594491,
+              90.21796412883371
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 8.006002730961653e-13,
+            "volume": 458.36973239859617,
+            "centroid": [
+              1.8654451891255073,
+              -0.6094067268974586,
+              90.21796412877349
+            ]
+          }
+        ],
+        "brep_sha256": "a078db8a7ebadc2602ca014d1f673c859a417a5ddae78aa1db123622b858240d",
+        "volume_convergence_mm3": 1.075147793017095e-08,
+        "centroid_convergence_mm": 2.468621667687639e-10,
+        "converged": false,
+        "volume_mm3": 458.36973239859617,
+        "centroid_mm": [
+          1.8654451891255073,
+          -0.6094067268974586,
+          90.21796412877349
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        86.46173434237869,
+        90.2179639200229
+      ],
+      "depth": 3,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 5.371048596763929e-12,
+            "volume": 229.18483913779448,
+            "centroid": [
+              -0.2591046531832581,
+              -7.112816389795624,
+              88.33984910688437
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 6.060746665967432e-13,
+            "volume": 229.18483914279426,
+            "centroid": [
+              -0.25910465331412263,
+              -7.112816389524594,
+              88.33984910682413
+            ]
+          }
+        ],
+        "brep_sha256": "5abd2992c1c8340e42841fa96da45fd397e58cc138c727ef302ec240c77dfc8e",
+        "volume_convergence_mm3": 4.9997765927400906e-09,
+        "centroid_convergence_mm": 3.069386101593309e-10,
+        "converged": true,
+        "volume_mm3": 229.18483914279426,
+        "centroid_mm": [
+          -0.25910465331412263,
+          -7.112816389524594,
+          88.33984910682413
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        90.2179639200229,
+        93.97419349766709
+      ],
+      "depth": 3,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 4.182197065862243e-11,
+            "volume": 229.18489300556817,
+            "centroid": [
+              3.9899945191999047,
+              5.894001424840478,
+              92.09607871788268
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 9.76651109640065e-13,
+            "volume": 229.18489301835658,
+            "centroid": [
+              3.9899945193128827,
+              5.894001425012462,
+              92.09607871788364
+            ]
+          }
+        ],
+        "brep_sha256": "e123dba221350884e76bce60f72be4f8f3a58ade58de8a8aa46d04613106d0d4",
+        "volume_convergence_mm3": 1.2788405001629144e-08,
+        "centroid_convergence_mm": 2.0577547245639898e-10,
+        "converged": true,
+        "volume_mm3": 229.18489301835658,
+        "centroid_mm": [
+          3.9899945193128827,
+          5.894001425012462,
+          92.09607871788364
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        93.97419349766709,
+        101.48665265295548
+      ],
+      "depth": 2,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.7661906906078888e-11,
+            "volume": 458.36972900479657,
+            "centroid": [
+              0.2693387625726643,
+              -1.9438929561821623,
+              97.7304232726231
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 9.246537628582876e-13,
+            "volume": 458.3697289395764,
+            "centroid": [
+              0.2693387612942395,
+              -1.943892956267599,
+              97.73042327243746
+            ]
+          }
+        ],
+        "brep_sha256": "c20d5bf08444c660016718702665a16c9bf64f6dcc11e87b1e851d5398bab0ad",
+        "volume_convergence_mm3": 6.522014928123099e-08,
+        "centroid_convergence_mm": 1.294654513240877e-09,
+        "converged": true,
+        "volume_mm3": 458.3697289395764,
+        "centroid_mm": [
+          0.2693387612942395,
+          -1.943892956267599,
+          97.73042327243746
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "interval": [
+        101.48665265295548,
+        116.51157096353228
+      ],
+      "depth": 1,
+      "measure": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 4.5068875712218446e-11,
+            "volume": 686.7183456545806,
+            "centroid": [
+              -0.4788071179368271,
+              1.6165277964472453,
+              107.11570193692934
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 7.184378579531349e-13,
+            "volume": 686.7183456501997,
+            "centroid": [
+              -0.47880711791445335,
+              1.6165277965280906,
+              107.11570193693642
+            ]
+          }
+        ],
+        "brep_sha256": "386956e8cb8352b577fe4248140a325cf28168670ca90449fc3ba99f80b09ad0",
+        "volume_convergence_mm3": 4.380922291602474e-09,
+        "centroid_convergence_mm": 8.418216570697395e-11,
+        "converged": true,
+        "volume_mm3": 686.7183456501997,
+        "centroid_mm": [
+          -0.47880711791445335,
+          1.6165277965280906,
+          107.11570193693642
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    }
+  ],
+  "volume_convergence_mm3": 2.0793540898011997e-06,
+  "centroid_convergence_mm": 4.382153481226622e-09,
+  "volume_mm3": 6873.873101447546,
+  "canonical_centroid_mm": [
+    3.4555791320692003e-10,
+    0.22209766571034428,
+    56.41190087634761
+  ],
+  "converged": true
+}
