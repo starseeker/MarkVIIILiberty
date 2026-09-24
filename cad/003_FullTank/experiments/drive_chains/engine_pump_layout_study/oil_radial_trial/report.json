@@ -1,0 +1,3945 @@
+{
+  "status": "Incomplete oil-pump development assembly",
+  "complete_pump": false,
+  "complete_engine": false,
+  "complete_tank": false,
+  "native_file": "OilPump.FCStd",
+  "native_sha256": "ccf6d68d162809f47a290692aa5c79ef38721066928fdadecf6b3a5eaa0fe3d3",
+  "physical_count": 146,
+  "definition_count": 40,
+  "definition_order": [
+    "lower_driving_gear",
+    "lower_idler_gear",
+    "upper_driving_gear",
+    "upper_idler_gear",
+    "shaft",
+    "long_pin",
+    "short_pin",
+    "upper_bush",
+    "lower_bush",
+    "partition",
+    "dowel",
+    "lower_body",
+    "upper_body",
+    "relief_seat",
+    "relief_valve",
+    "relief_cage",
+    "relief_shim",
+    "relief_spring",
+    "upper_plug",
+    "body_plug",
+    "cover",
+    "cover_gasket",
+    "drain_plug",
+    "drain_gasket",
+    "upper_filter_frame",
+    "upper_side_screen",
+    "upper_end_screen",
+    "lower_filter_frame",
+    "lower_side_screen",
+    "lower_end_screen",
+    "screen_nut",
+    "screen_lock",
+    "fastener_washer",
+    "fastener_nut",
+    "fastener_cotter",
+    "upper_body_bolt",
+    "cover_body_bolt",
+    "relief_lock_wire",
+    "mount_stud",
+    "mount_gasket"
+  ],
+  "identities": {
+    "lower_driving_gear": {
+      "source_records": [
+        "HB:nomenclature:203:007"
+      ],
+      "source_part_mark": "8186"
+    },
+    "lower_idler_gear": {
+      "source_records": [
+        "HB:nomenclature:203:008"
+      ],
+      "source_part_mark": "8178"
+    },
+    "upper_driving_gear": {
+      "source_records": [
+        "HB:nomenclature:203:013"
+      ],
+      "source_part_mark": "8187"
+    },
+    "upper_idler_gear": {
+      "source_records": [
+        "HB:nomenclature:203:012"
+      ],
+      "source_part_mark": "8177"
+    },
+    "shaft": {
+      "source_records": [
+        "HB:nomenclature:203:021"
+      ],
+      "source_part_mark": "8184"
+    },
+    "long_pin": {
+      "source_records": [
+        "HB:nomenclature:203:010"
+      ],
+      "source_part_mark": "8383"
+    },
+    "short_pin": {
+      "source_records": [
+        "HB:nomenclature:203:011"
+      ],
+      "source_part_mark": "8179"
+    },
+    "upper_bush": {
+      "source_records": [
+        "HB:nomenclature:203:016"
+      ],
+      "source_part_mark": "8201"
+    },
+    "lower_bush": {
+      "source_records": [
+        "HB:nomenclature:203:006"
+      ],
+      "source_part_mark": "8185"
+    },
+    "partition": {
+      "source_records": [
+        "HB:nomenclature:203:009",
+        "HB:printed86:separating plate 8188"
+      ],
+      "source_part_mark": "8138"
+    },
+    "dowel": {
+      "source_records": [
+        "HB:nomenclature:203:045"
+      ],
+      "source_part_mark": "174"
+    },
+    "lower_body": {
+      "source_records": [
+        "HB:nomenclature:203:002"
+      ],
+      "source_part_mark": "8190"
+    },
+    "upper_body": {
+      "source_records": [
+        "HB:nomenclature:203:014"
+      ],
+      "source_part_mark": "8189"
+    },
+    "relief_seat": {
+      "source_records": [
+        "HB:nomenclature:203:022"
+      ],
+      "source_part_mark": "8368"
+    },
+    "relief_valve": {
+      "source_records": [
+        "HB:nomenclature:203:025"
+      ],
+      "source_part_mark": "8192"
+    },
+    "relief_cage": {
+      "source_records": [
+        "HB:nomenclature:203:023"
+      ],
+      "source_part_mark": "8384"
+    },
+    "relief_shim": {
+      "source_records": [
+        "SNL:160:005"
+      ],
+      "source_part_mark": "LQ65A"
+    },
+    "relief_spring": {
+      "source_records": [
+        "HB:nomenclature:203:024"
+      ],
+      "source_part_mark": "8191"
+    },
+    "upper_plug": {
+      "source_records": [
+        "HB:nomenclature:203:015"
+      ],
+      "source_part_mark": "8221"
+    },
+    "body_plug": {
+      "source_records": [
+        "HB:nomenclature:203:003"
+      ],
+      "source_part_mark": "161"
+    },
+    "cover": {
+      "source_records": [
+        "HB:nomenclature:203:031"
+      ],
+      "source_part_mark": "8381"
+    },
+    "cover_gasket": {
+      "source_records": [
+        "HB:nomenclature:203:034"
+      ],
+      "source_part_mark": "8382"
+    },
+    "drain_plug": {
+      "source_records": [
+        "HB:nomenclature:203:032"
+      ],
+      "source_part_mark": "8133"
+    },
+    "drain_gasket": {
+      "source_records": [
+        "HB:nomenclature:203:033"
+      ],
+      "source_part_mark": "158"
+    },
+    "upper_filter_frame": {
+      "source_records": [
+        "HB:nomenclature:203:040"
+      ],
+      "source_part_mark": "8534"
+    },
+    "upper_side_screen": {
+      "source_records": [
+        "HB:nomenclature:203:041"
+      ],
+      "source_part_mark": "8533"
+    },
+    "upper_end_screen": {
+      "source_records": [
+        "HB:nomenclature:203:042"
+      ],
+      "source_part_mark": "8532"
+    },
+    "lower_filter_frame": {
+      "source_records": [
+        "HB:nomenclature:203:028"
+      ],
+      "source_part_mark": "8203"
+    },
+    "lower_side_screen": {
+      "source_records": [
+        "HB:nomenclature:203:029"
+      ],
+      "source_part_mark": "8466"
+    },
+    "lower_end_screen": {
+      "source_records": [
+        "HB:nomenclature:203:030"
+      ],
+      "source_part_mark": "8465"
+    },
+    "screen_nut": {
+      "source_records": [
+        "HB:nomenclature:203:043"
+      ],
+      "source_part_mark": "8535"
+    },
+    "screen_lock": {
+      "source_records": [
+        "HB:nomenclature:203:044"
+      ],
+      "source_part_mark": "8536"
+    },
+    "fastener_washer": {
+      "source_records": [
+        "HB:nomenclature:203:018"
+      ],
+      "source_part_mark": "111"
+    },
+    "fastener_nut": {
+      "source_records": [
+        "HB:nomenclature:203:019"
+      ],
+      "source_part_mark": "101"
+    },
+    "fastener_cotter": {
+      "source_records": [
+        "HB:nomenclature:203:020"
+      ],
+      "source_part_mark": "106"
+    },
+    "upper_body_bolt": {
+      "source_records": [
+        "HB:nomenclature:203:017"
+      ],
+      "source_part_mark": "118"
+    },
+    "cover_body_bolt": {
+      "source_records": [
+        "HB:nomenclature:203:035"
+      ],
+      "source_part_mark": "116"
+    },
+    "relief_lock_wire": {
+      "source_records": [
+        "HB:nomenclature:203:026",
+        "SNL:160:014",
+        "HB:printed87:relief cage to uncottered bolt118"
+      ],
+      "source_part_mark": "177"
+    },
+    "mount_stud": {
+      "source_records": [
+        "HB:nomenclature:196:052",
+        "SNL:237:025"
+      ],
+      "source_part_mark": "132"
+    },
+    "mount_gasket": {
+      "source_records": [
+        "HB:nomenclature:199:004"
+      ],
+      "source_part_mark": "8348"
+    }
+  },
+  "occurrences": [
+    {
+      "key": "lower_driving_gear",
+      "name": "EngineOilPump_LowerDrivingGear",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "lower_idler_gear",
+      "name": "EngineOilPump_LowerIdler1",
+      "xyz": [
+        0,
+        -24.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.13052619222005157,
+        0.9914448613738104
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "upper_driving_gear",
+      "name": "EngineOilPump_UpperDrivingGear",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "upper_idler_gear",
+      "name": "EngineOilPump_UpperIdler1",
+      "xyz": [
+        0,
+        -24.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.13052619222005157,
+        0.9914448613738104
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "upper_idler_gear",
+      "name": "EngineOilPump_UpperIdler2",
+      "xyz": [
+        0,
+        24.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.13052619222005157,
+        0.9914448613738104
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "shaft",
+      "name": "EngineOilPump_DrivingShaft",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "long_pin",
+      "name": "EngineOilPump_LongIdlerPin",
+      "xyz": [
+        0,
+        -24.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "short_pin",
+      "name": "EngineOilPump_ShortIdlerPin",
+      "xyz": [
+        0,
+        24.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "upper_bush",
+      "name": "EngineOilPump_UpperBush",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpUpperBody"
+    },
+    {
+      "key": "lower_bush",
+      "name": "EngineOilPump_LowerBush",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "partition",
+      "name": "EngineOilPump_SeparatingPlate",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "dowel",
+      "name": "EngineOilPump_LocatingDowel1",
+      "xyz": [
+        -20.0,
+        -30.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "dowel",
+      "name": "EngineOilPump_LocatingDowel2",
+      "xyz": [
+        20.0,
+        30.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "lower_body",
+      "name": "EngineOilPump_LowerBody",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "upper_body",
+      "name": "EngineOilPump_UpperBody",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpUpperBody"
+    },
+    {
+      "key": "relief_seat",
+      "name": "EngineOilPump_ReliefSeat",
+      "xyz": [
+        18.0,
+        -18.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRelief"
+    },
+    {
+      "key": "relief_valve",
+      "name": "EngineOilPump_ReliefValve",
+      "xyz": [
+        18.0,
+        -18.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRelief"
+    },
+    {
+      "key": "relief_cage",
+      "name": "EngineOilPump_ReliefCage",
+      "xyz": [
+        18.0,
+        -18.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRelief"
+    },
+    {
+      "key": "relief_shim",
+      "name": "EngineOilPump_ReliefShim",
+      "xyz": [
+        18.0,
+        -18.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRelief"
+    },
+    {
+      "key": "relief_spring",
+      "name": "EngineOilPump_ReliefSpring",
+      "xyz": [
+        18.0,
+        -18.0,
+        -39.0762
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRelief"
+    },
+    {
+      "key": "upper_plug",
+      "name": "EngineOilPump_UpperPassagePlug1",
+      "xyz": [
+        37.0,
+        -12.0,
+        35.5762
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpUpperBody"
+    },
+    {
+      "key": "upper_plug",
+      "name": "EngineOilPump_UpperPassagePlug2",
+      "xyz": [
+        -37.0,
+        12.0,
+        35.5762
+      ],
+      "rotation": [
+        0.0,
+        -0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpUpperBody"
+    },
+    {
+      "key": "body_plug",
+      "name": "EngineOilPump_LowerBodyPlug",
+      "xyz": [
+        0,
+        -74.0,
+        -20.0
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "cover",
+      "name": "EngineOilPump_BottomCover",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "cover_gasket",
+      "name": "EngineOilPump_CoverGasket",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "drain_plug",
+      "name": "EngineOilPump_DrainPlug",
+      "xyz": [
+        32.0,
+        0,
+        -90.7
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "drain_gasket",
+      "name": "EngineOilPump_DrainGasket",
+      "xyz": [
+        32.0,
+        0,
+        -90.7
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "upper_filter_frame",
+      "name": "EngineOilPump_UpperFilterFrame",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "upper_side_screen",
+      "name": "EngineOilPump_UpperSideScreen",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "upper_end_screen",
+      "name": "EngineOilPump_UpperEndScreen",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "lower_filter_frame",
+      "name": "EngineOilPump_LowerFilterFrame",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "lower_side_screen",
+      "name": "EngineOilPump_LowerSideScreen",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "lower_end_screen",
+      "name": "EngineOilPump_LowerEndScreen",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "screen_nut",
+      "name": "EngineOilPump_UpperScreenNut",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "screen_lock",
+      "name": "EngineOilPump_UpperScreenNutLock",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "upper_body_bolt",
+      "name": "EngineOilPump_UpperJoint1Bolt",
+      "xyz": [
+        -22.0,
+        -37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint1HeadWasher",
+      "xyz": [
+        -22.0,
+        -37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint1NutWasher",
+      "xyz": [
+        -22.0,
+        -37.0,
+        -14.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_UpperJoint1Nut",
+      "xyz": [
+        -22.0,
+        -37.0,
+        -15.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_UpperJoint1Cotter",
+      "xyz": [
+        -22.0,
+        -37.0,
+        -20.575000000000003
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "upper_body_bolt",
+      "name": "EngineOilPump_UpperJoint2Bolt",
+      "xyz": [
+        -22.0,
+        37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint2HeadWasher",
+      "xyz": [
+        -22.0,
+        37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint2NutWasher",
+      "xyz": [
+        -22.0,
+        37.0,
+        -14.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_UpperJoint2Nut",
+      "xyz": [
+        -22.0,
+        37.0,
+        -15.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_UpperJoint2Cotter",
+      "xyz": [
+        -22.0,
+        37.0,
+        -20.575000000000003
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "upper_body_bolt",
+      "name": "EngineOilPump_UpperJoint3Bolt",
+      "xyz": [
+        22.0,
+        -37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint3HeadWasher",
+      "xyz": [
+        22.0,
+        -37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint3NutWasher",
+      "xyz": [
+        22.0,
+        -37.0,
+        -14.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_UpperJoint3Nut",
+      "xyz": [
+        22.0,
+        -37.0,
+        -15.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "upper_body_bolt",
+      "name": "EngineOilPump_UpperJoint4Bolt",
+      "xyz": [
+        22.0,
+        37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint4HeadWasher",
+      "xyz": [
+        22.0,
+        37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint4NutWasher",
+      "xyz": [
+        22.0,
+        37.0,
+        -14.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_UpperJoint4Nut",
+      "xyz": [
+        22.0,
+        37.0,
+        -15.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_UpperJoint4Cotter",
+      "xyz": [
+        22.0,
+        37.0,
+        -20.575000000000003
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint1Bolt",
+      "xyz": [
+        77.5,
+        0.0,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint1HeadWasher",
+      "xyz": [
+        77.5,
+        0.0,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint1NutWasher",
+      "xyz": [
+        77.5,
+        0.0,
+        -78.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint1Nut",
+      "xyz": [
+        77.5,
+        0.0,
+        -79.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint1Cotter",
+      "xyz": [
+        77.5,
+        0.0,
+        -85.05
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint2Bolt",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint2HeadWasher",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint2NutWasher",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -78.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint2Nut",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -79.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint2Cotter",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -85.05
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint3Bolt",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint3HeadWasher",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint3NutWasher",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -78.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint3Nut",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -79.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint3Cotter",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -85.05
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint4Bolt",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint4HeadWasher",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint4NutWasher",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -78.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint4Nut",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -79.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint4Cotter",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -85.05
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint5Bolt",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint5HeadWasher",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint5NutWasher",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -78.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint5Nut",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -79.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint5Cotter",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -85.05
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint6Bolt",
+      "xyz": [
+        -77.5,
+        9.491012693391987e-15,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint6HeadWasher",
+      "xyz": [
+        -77.5,
+        9.491012693391987e-15,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint6NutWasher",
+      "xyz": [
+        -77.5,
+        9.491012693391987e-15,
+        -78.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint6Nut",
+      "xyz": [
+        -77.5,
+        9.491012693391987e-15,
+        -79.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint6Cotter",
+      "xyz": [
+        -77.5,
+        9.491012693391987e-15,
+        -85.05
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint7Bolt",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint7HeadWasher",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint7NutWasher",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -78.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint7Nut",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -79.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint7Cotter",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -85.05
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint8Bolt",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint8HeadWasher",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint8NutWasher",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -78.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint8Nut",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -79.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint8Cotter",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -85.05
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint9Bolt",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint9HeadWasher",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint9NutWasher",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -78.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint9Nut",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -79.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint9Cotter",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -85.05
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint10Bolt",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint10HeadWasher",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -67.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint10NutWasher",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -78.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint10Nut",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -79.7
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint10Cotter",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -85.05
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "relief_lock_wire",
+      "name": "EngineOilPump_ReliefLockWire",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRelief"
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint1Stud",
+      "xyz": [
+        77.5,
+        0.0,
+        0.4
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint1Washer",
+      "xyz": [
+        77.5,
+        0.0,
+        -9.7125
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint1Nut",
+      "xyz": [
+        77.5,
+        0.0,
+        -10.7125
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint1Cotter",
+      "xyz": [
+        77.5,
+        0.0,
+        -16.0625
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint2Stud",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        0.4
+      ],
+      "rotation": [
+        -0.2185080122244105,
+        0.6724985119639573,
+        0.21850801222441052,
+        0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint2Washer",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -9.7125
+      ],
+      "rotation": [
+        -0.2185080122244105,
+        0.6724985119639573,
+        0.21850801222441052,
+        0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint2Nut",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -10.7125
+      ],
+      "rotation": [
+        -0.2185080122244105,
+        0.6724985119639573,
+        0.21850801222441052,
+        0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint2Cotter",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -16.0625
+      ],
+      "rotation": [
+        -0.2185080122244105,
+        0.6724985119639573,
+        0.21850801222441052,
+        0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint3Stud",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        0.4
+      ],
+      "rotation": [
+        -0.4156269377774534,
+        0.5720614028176843,
+        0.41562693777745346,
+        0.5720614028176844
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint3Washer",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -9.7125
+      ],
+      "rotation": [
+        -0.4156269377774534,
+        0.5720614028176843,
+        0.41562693777745346,
+        0.5720614028176844
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint3Nut",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -10.7125
+      ],
+      "rotation": [
+        -0.4156269377774534,
+        0.5720614028176843,
+        0.41562693777745346,
+        0.5720614028176844
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint3Cotter",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -16.0625
+      ],
+      "rotation": [
+        -0.4156269377774534,
+        0.5720614028176843,
+        0.41562693777745346,
+        0.5720614028176844
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint4Stud",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        0.4
+      ],
+      "rotation": [
+        -0.5720614028176843,
+        0.4156269377774534,
+        0.5720614028176844,
+        0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint4Washer",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -9.7125
+      ],
+      "rotation": [
+        -0.5720614028176843,
+        0.4156269377774534,
+        0.5720614028176844,
+        0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint4Nut",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -10.7125
+      ],
+      "rotation": [
+        -0.5720614028176843,
+        0.4156269377774534,
+        0.5720614028176844,
+        0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint4Cotter",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -16.0625
+      ],
+      "rotation": [
+        -0.5720614028176843,
+        0.4156269377774534,
+        0.5720614028176844,
+        0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint5Stud",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        0.4
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        0.21850801222441055,
+        0.6724985119639574,
+        0.21850801222441057
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint5Washer",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -9.7125
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        0.21850801222441055,
+        0.6724985119639574,
+        0.21850801222441057
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint5Nut",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -10.7125
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        0.21850801222441055,
+        0.6724985119639574,
+        0.21850801222441057
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint5Cotter",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -16.0625
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        0.21850801222441055,
+        0.6724985119639574,
+        0.21850801222441057
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint6Stud",
+      "xyz": [
+        -94.0,
+        0.0,
+        0.4
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        4.329780281177466e-17,
+        0.7071067811865476,
+        4.329780281177467e-17
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint6Washer",
+      "xyz": [
+        -94.0,
+        0.0,
+        -9.7125
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        4.329780281177466e-17,
+        0.7071067811865476,
+        4.329780281177467e-17
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint6Nut",
+      "xyz": [
+        -94.0,
+        0.0,
+        -10.7125
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        4.329780281177466e-17,
+        0.7071067811865476,
+        4.329780281177467e-17
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint6Cotter",
+      "xyz": [
+        -94.0,
+        0.0,
+        -16.0625
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        4.329780281177466e-17,
+        0.7071067811865476,
+        4.329780281177467e-17
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint7Stud",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        0.4
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        -0.21850801222441046,
+        0.6724985119639574,
+        -0.2185080122244105
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint7Washer",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -9.7125
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        -0.21850801222441046,
+        0.6724985119639574,
+        -0.2185080122244105
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint7Nut",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -10.7125
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        -0.21850801222441046,
+        0.6724985119639574,
+        -0.2185080122244105
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint7Cotter",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -16.0625
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        -0.21850801222441046,
+        0.6724985119639574,
+        -0.2185080122244105
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint8Stud",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        0.4
+      ],
+      "rotation": [
+        -0.5720614028176844,
+        -0.41562693777745335,
+        0.5720614028176845,
+        -0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint8Washer",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -9.7125
+      ],
+      "rotation": [
+        -0.5720614028176844,
+        -0.41562693777745335,
+        0.5720614028176845,
+        -0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint8Nut",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -10.7125
+      ],
+      "rotation": [
+        -0.5720614028176844,
+        -0.41562693777745335,
+        0.5720614028176845,
+        -0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint8Cotter",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -16.0625
+      ],
+      "rotation": [
+        -0.5720614028176844,
+        -0.41562693777745335,
+        0.5720614028176845,
+        -0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint9Stud",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        0.4
+      ],
+      "rotation": [
+        -0.41562693777745346,
+        -0.5720614028176841,
+        0.4156269377774535,
+        -0.5720614028176843
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint9Washer",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -9.7125
+      ],
+      "rotation": [
+        -0.41562693777745346,
+        -0.5720614028176841,
+        0.4156269377774535,
+        -0.5720614028176843
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint9Nut",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -10.7125
+      ],
+      "rotation": [
+        -0.41562693777745346,
+        -0.5720614028176841,
+        0.4156269377774535,
+        -0.5720614028176843
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint9Cotter",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -16.0625
+      ],
+      "rotation": [
+        -0.41562693777745346,
+        -0.5720614028176841,
+        0.4156269377774535,
+        -0.5720614028176843
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint10Stud",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        0.4
+      ],
+      "rotation": [
+        -0.21850801222441057,
+        -0.6724985119639573,
+        0.2185080122244106,
+        -0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint10Washer",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -9.7125
+      ],
+      "rotation": [
+        -0.21850801222441057,
+        -0.6724985119639573,
+        0.2185080122244106,
+        -0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint10Nut",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -10.7125
+      ],
+      "rotation": [
+        -0.21850801222441057,
+        -0.6724985119639573,
+        0.2185080122244106,
+        -0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint10Cotter",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -16.0625
+      ],
+      "rotation": [
+        -0.21850801222441057,
+        -0.6724985119639573,
+        0.2185080122244106,
+        -0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_gasket",
+      "name": "EngineOilPump_MountGasket",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:004"
+      ]
+    }
+  ],
+  "groups": [
+    "EngineOilPumpLowerBody",
+    "EngineOilPumpUpperBody",
+    "EngineOilPumpRotors",
+    "EngineOilPumpRelief",
+    "EngineOilPumpStrainers",
+    "EngineOilPumpFasteners",
+    "EngineOilPumpMounting"
+  ],
+  "controls": {
+    "gear_teeth": 12,
+    "gear_module": 2.0,
+    "gear_pressure_angle": 25.0,
+    "gear_thinning": 0.08,
+    "gear_flank_samples": 64,
+    "upper_addendum": 2.0,
+    "upper_dedendum": 2.5,
+    "lower_addendum": 1.2,
+    "lower_dedendum": 1.5,
+    "upper_gear_width": 23.0,
+    "lower_gear_width": 18.0,
+    "gear_diametrical_clearance": 0.1016,
+    "gear_endplay": 0.0762,
+    "partition_stock": 3.0,
+    "shaft_core_radius": 5.5,
+    "shaft_lobe_radius": 6.75,
+    "shaft_lobe_width": 3.0,
+    "shaft_lobe_count": 4,
+    "shaft_gear_gap": 0.025,
+    "shaft_journal_radius": 7.95,
+    "shaft_upper_bush_gap": 0.025,
+    "shaft_bottom_z": -33.0,
+    "shaft_collar_z": 70.0,
+    "shaft_collar_stock": 2.0,
+    "shaft_collar_radius": 9.5,
+    "shaft_coupling_low": 132.0,
+    "shaft_coupling_high": 153.0,
+    "coupling_core_radius": 7.95,
+    "coupling_tip_radius": 9.45,
+    "coupling_lobe_width": 2.9,
+    "coupling_lobes": 6,
+    "shaft_tip_gap": 0.2,
+    "upper_bush_radius": 11.0,
+    "upper_bush_bottom": 26.5,
+    "upper_bush_top": 69.8,
+    "upper_bush_flange_radius": 14.0,
+    "upper_bush_flange_stock": 2.0,
+    "lower_bush_radius": 8.0,
+    "lower_bush_bottom": -33.0,
+    "lower_bush_top": -18.0762,
+    "bush_cast_gap": 0.025,
+    "idler_pin_radius": 5.0,
+    "idler_pin_gap": 0.025,
+    "pin_upper_embed": 3.0,
+    "pin_lower_embed": 6.0,
+    "upper_body_flange_stock": 6.0,
+    "upper_body_half_x": 30.0,
+    "upper_body_half_y": 46.0,
+    "upper_body_corner_radius": 8.0,
+    "upper_body_wall": 5.0,
+    "upper_body_top_stock": 4.0,
+    "upper_boss_radius": 15.0,
+    "upper_boss_top": 68.0,
+    "upper_bolt_x": 22.0,
+    "upper_bolt_y": 37.0,
+    "bolt_diameter": 6.35,
+    "bolt_hole_gap": 0.05,
+    "lower_body_radius": 72.0,
+    "lower_body_wall": 5.0,
+    "mount_flange_radius": 84.5,
+    "mount_flange_stock": 9.7125,
+    "mount_nose_x": -102.0,
+    "mount_nose_half_width": 26.0,
+    "lower_body_bottom": -74.0,
+    "bottom_flange_stock": 6.0,
+    "body_gear_wall": 5.0,
+    "body_gear_bottom_stock": 8.0,
+    "lower_bush_boss_radius": 11.0,
+    "filter_outer_radius": 61.0,
+    "upper_filter_top": 55.0,
+    "filter_frame_stock": 2.0,
+    "lower_filter_top": -31.0,
+    "cover_gasket_stock": 0.4,
+    "cover_stock": 4.3,
+    "cover_dish_depth": 5.0,
+    "body_plug_radius": 4.7625,
+    "body_plug_length": 9.5,
+    "upper_plug_radius": 5.0,
+    "upper_plug_length": 8.0,
+    "upper_plug_gap": 0.025,
+    "dowel_diameter": 4.7625,
+    "dowel_length": 9.525,
+    "dowel_y": 30.0,
+    "dowel_x": 20.0,
+    "dowel_count": 2,
+    "relief_x": 18.0,
+    "relief_y": -18.0,
+    "relief_radius": 14.0,
+    "relief_seat_radius": 11.0,
+    "relief_seat_stock": 3.0,
+    "relief_throat_radius": 6.0,
+    "relief_stem_radius": 2.5,
+    "relief_head_radius": 7.5,
+    "relief_head_stock": 2.0,
+    "relief_valve_stem_length": 18.0,
+    "relief_spring_radius": 5.0,
+    "relief_spring_wire_radius": 0.65,
+    "relief_spring_turns": 5.0,
+    "relief_spring_length": 14.0,
+    "relief_cage_wall": 2.0,
+    "relief_cage_hex_af": 27.0,
+    "relief_shim_stock": 0.3,
+    "thread_gap": 0.05,
+    "drain_diameter": 15.875,
+    "drain_head_af": 20.6375,
+    "drain_head_stock": 6.0,
+    "drain_thread_length": 12.0,
+    "drain_gasket_stock": 1.0,
+    "pump_mount_z": -262.859375,
+    "pump_axis_x": 1243.87630083555,
+    "mount_stud_radius": 77.5,
+    "mount_nose_stud_x": -94.0,
+    "mount_count": 10,
+    "mount_hole_radius": 3.25,
+    "pressure_port_x": -72.0,
+    "pressure_port_y": -9.0,
+    "return_inlet_port_x": -72.0,
+    "return_inlet_port_y": 9.0,
+    "port_radius": 4.5,
+    "mount_nose_overlap": 12.0,
+    "upper_bolt_head_nut_span": 22.225,
+    "washer_stock": 1.0,
+    "passage_wall": 3.0,
+    "crossover_lift": 5.5,
+    "drain_x": 32.0,
+    "drain_boss_drop": 6.0,
+    "relief_cage_floor_stock": 3.0,
+    "filter_center_land_radius": 20.0,
+    "filter_side_posts": 8,
+    "filter_end_spokes": 4,
+    "filter_spoke_half_angle": 5.0,
+    "filter_post_half_angle": 3.0,
+    "filter_rim_width": 4.0,
+    "upper_filter_dome_depth": 13.0,
+    "screen_stock": 0.3,
+    "screen_circumference_cells": 84,
+    "screen_height_cells": 7,
+    "screen_rib_width": 0.5,
+    "screen_face_pitch": 7.5,
+    "screen_lock_stock": 0.5,
+    "screen_nut_af": 36.0,
+    "screen_nut_height": 6.0,
+    "screen_lock_tab_width": 4.0,
+    "upper_bolt_length": 33.3375,
+    "cover_bolt_length": 23.8125,
+    "cover_bolt_head_nut_span": 12.7,
+    "fastener_cotter_diameter": 1.5875,
+    "fastener_cotter_length": 12.7,
+    "upper_wire_locked_bolt": 3,
+    "fastener_nut_stock": 6.35,
+    "fastener_nut_af": 11.1125,
+    "fastener_crown_radius": 5.0,
+    "fastener_castle_depth": 2.0,
+    "fastener_washer_radius": 6.35,
+    "fastener_head_af": 11.1125,
+    "fastener_head_stock": 3.96875,
+    "pressure_route_x": 34.0,
+    "pressure_route_y": -50.0,
+    "pressure_turn_x": -43.0,
+    "return_route_x": -35.0,
+    "return_route_y": 52.0,
+    "lower_filter_ceiling_stock": 3.0,
+    "fastener_head_clearance_gap": 0.2,
+    "relief_lock_wire_diameter": 1.2065,
+    "relief_lock_stock_length": 203.2,
+    "relief_lock_pair_gap": 0.2,
+    "relief_lock_tail_turns": 2,
+    "relief_lock_cage_hole_x": 9.0,
+    "relief_lock_bend_radius": 1.5,
+    "relief_lock_hole_radius": 0.75,
+    "upper_nut_access_radius": 8.5,
+    "mount_nose_tip_radius": 8.0,
+    "mount_gasket_stock": 0.4,
+    "mount_opening_radius": 65.5,
+    "mount_gasket_port_gap": 0.25,
+    "mount_stud_length": 36.5125,
+    "mount_stud_embed": 11.1125,
+    "mount_stud_outer_thread": 14.2875,
+    "mount_case_nut_span": 11.1125,
+    "mount_nut_seat_gap": 0.2
+  },
+  "datums": {
+    "gear_bands": {
+      "lower": [
+        -18.0381,
+        -0.0381
+      ],
+      "upper": [
+        3.0381,
+        26.0381
+      ]
+    },
+    "gear_profiles": {
+      "lower": {
+        "teeth": 12,
+        "pitch_radius_mm": 12.0,
+        "base_radius_mm": 10.875693444439799,
+        "root_radius_mm": 10.5,
+        "tip_radius_mm": 13.2,
+        "pressure_angle_deg": 25.0,
+        "pitch_tooth_thinning_mm": 0.08,
+        "flank_samples": 64,
+        "max_flank_fit_error_mm": 3.458777424988211e-07,
+        "spline_degrees": [
+          3
+        ]
+      },
+      "upper": {
+        "teeth": 12,
+        "pitch_radius_mm": 12.0,
+        "base_radius_mm": 10.875693444439799,
+        "root_radius_mm": 9.5,
+        "tip_radius_mm": 14.0,
+        "pressure_angle_deg": 25.0,
+        "pitch_tooth_thinning_mm": 0.08,
+        "flank_samples": 64,
+        "max_flank_fit_error_mm": 5.660896852344657e-07,
+        "spline_degrees": [
+          3
+        ]
+      }
+    },
+    "gear_center_spacing": 24.0,
+    "gear_cavity_floor": -18.0762,
+    "gear_cavity_roof": 26.0762,
+    "upper_body_top": 30.0762,
+    "upper_bolt_centers": [
+      [
+        -22.0,
+        -37.0
+      ],
+      [
+        -22.0,
+        37.0
+      ],
+      [
+        22.0,
+        -37.0
+      ],
+      [
+        22.0,
+        37.0
+      ]
+    ],
+    "selected_source_clearances": {
+      "diametrical": 0.1016,
+      "axial": 0.0762
+    },
+    "missing": [
+      "Two remaining source lock wires",
+      "Receiving case, stud engagement and standard-context qualification",
+      "External connections and source-profile/port refinement"
+    ],
+    "passages": {
+      "pressure": [
+        [
+          12,
+          -12.0,
+          -9
+        ],
+        [
+          34.0,
+          -12.0,
+          -9
+        ],
+        [
+          34.0,
+          -50.0,
+          -9
+        ],
+        [
+          -43.0,
+          -50.0,
+          -9
+        ],
+        [
+          -72.0,
+          -9.0,
+          -9
+        ],
+        [
+          -72.0,
+          -9.0,
+          1
+        ]
+      ],
+      "front_sump": [
+        [
+          -72.0,
+          9.0,
+          1
+        ],
+        [
+          -72.0,
+          9.0,
+          -22
+        ],
+        [
+          -40,
+          28,
+          -22
+        ],
+        [
+          30,
+          28,
+          -22
+        ],
+        [
+          30,
+          12.0,
+          -22
+        ],
+        [
+          30,
+          12.0,
+          14
+        ],
+        [
+          13,
+          12.0,
+          14
+        ]
+      ],
+      "filtered_supply": [
+        [
+          -30,
+          -12.0,
+          -40
+        ],
+        [
+          -30,
+          -12.0,
+          -9
+        ],
+        [
+          -13,
+          -12.0,
+          -9
+        ]
+      ],
+      "common_return": [
+        [
+          -13,
+          12.0,
+          14
+        ],
+        [
+          -30,
+          12.0,
+          14
+        ],
+        [
+          -30,
+          12.0,
+          -9
+        ],
+        [
+          -35.0,
+          40,
+          -9
+        ],
+        [
+          -35.0,
+          52.0,
+          -9
+        ],
+        [
+          0,
+          52.0,
+          -9
+        ],
+        [
+          0,
+          76.0,
+          -9
+        ]
+      ],
+      "relief": [
+        [
+          12,
+          -12.0,
+          -9
+        ],
+        [
+          18.0,
+          -18.0,
+          -9
+        ],
+        [
+          18.0,
+          -18.0,
+          -19.0762
+        ]
+      ],
+      "crossover": [
+        [
+          13,
+          -12.0,
+          14
+        ],
+        [
+          13,
+          -12.0,
+          35.5762
+        ],
+        [
+          30,
+          -12.0,
+          35.5762
+        ],
+        [
+          30,
+          12.0,
+          35.5762
+        ],
+        [
+          -13,
+          12.0,
+          35.5762
+        ],
+        [
+          -13,
+          12.0,
+          14
+        ]
+      ],
+      "rear_sump": [
+        [
+          -44,
+          -12.0,
+          14
+        ],
+        [
+          -13,
+          -12.0,
+          14
+        ]
+      ],
+      "tank_supply": [
+        [
+          0,
+          -77.0,
+          -44
+        ],
+        [
+          0,
+          -65.0,
+          -44
+        ]
+      ]
+    },
+    "cover_bolt_centers": [
+      [
+        77.5,
+        0.0
+      ],
+      [
+        62.698817064058424,
+        45.55335705266667
+      ],
+      [
+        23.948817064058428,
+        73.7068800128744
+      ],
+      [
+        -23.948817064058417,
+        73.70688001287441
+      ],
+      [
+        -62.69881706405842,
+        45.55335705266668
+      ],
+      [
+        -77.5,
+        9.491012693391987e-15
+      ],
+      [
+        -62.69881706405844,
+        -45.55335705266666
+      ],
+      [
+        -23.948817064058435,
+        -73.7068800128744
+      ],
+      [
+        23.94881706405841,
+        -73.70688001287441
+      ],
+      [
+        62.69881706405842,
+        -45.553357052666684
+      ]
+    ],
+    "cover_top": -74.4,
+    "cover_inner_center": -79.4,
+    "drain_seat": [
+      32.0,
+      0,
+      -89.7
+    ],
+    "relief_seat": [
+      18.0,
+      -18.0,
+      -20.0762
+    ],
+    "relief_spring_span": [
+      -39.0762,
+      -25.0762
+    ],
+    "relief_cage_span": [
+      -42.3762,
+      -23.1262
+    ],
+    "crossover_height": 35.5762,
+    "strainers": {
+      "representation": "Separate open frames and coarse perforated BRep gauze; microscopic weave and actual mesh count unestablished",
+      "baskets": {
+        "upper": {
+          "side_span": [
+            1.0,
+            41.0
+          ],
+          "end_apertures": 140,
+          "frame_estimate": {
+            "spokes": 4,
+            "side_posts": 8
+          }
+        },
+        "lower": {
+          "side_span": [
+            -73.4,
+            -32.0
+          ],
+          "end_apertures": 160,
+          "frame_estimate": {
+            "spokes": 4,
+            "side_posts": 8
+          }
+        }
+      }
+    },
+    "fastener_joints": {
+      "upper": {
+        "count": 4,
+        "head_bearing_z": 7.0,
+        "nut_bearing_z": -15.225000000000001,
+        "head_to_nut_span_mm": 22.225,
+        "bolt_length_mm": 33.3375,
+        "cotter_station_from_head_mm": 27.575000000000003,
+        "centers": [
+          [
+            -22.0,
+            -37.0
+          ],
+          [
+            -22.0,
+            37.0
+          ],
+          [
+            22.0,
+            -37.0
+          ],
+          [
+            22.0,
+            37.0
+          ]
+        ]
+      },
+      "cover": {
+        "count": 10,
+        "head_bearing_z": -67.0,
+        "nut_bearing_z": -79.7,
+        "head_to_nut_span_mm": 12.7,
+        "bolt_length_mm": 23.8125,
+        "cotter_station_from_head_mm": 18.049999999999997,
+        "centers": [
+          [
+            77.5,
+            0.0
+          ],
+          [
+            62.698817064058424,
+            45.55335705266667
+          ],
+          [
+            23.948817064058428,
+            73.7068800128744
+          ],
+          [
+            -23.948817064058417,
+            73.70688001287441
+          ],
+          [
+            -62.69881706405842,
+            45.55335705266668
+          ],
+          [
+            -77.5,
+            9.491012693391987e-15
+          ],
+          [
+            -62.69881706405844,
+            -45.55335705266666
+          ],
+          [
+            -23.948817064058435,
+            -73.7068800128744
+          ],
+          [
+            23.94881706405841,
+            -73.70688001287441
+          ],
+          [
+            62.69881706405842,
+            -45.553357052666684
+          ]
+        ]
+      }
+    },
+    "fastener_cotter": {
+      "straight_length_mm": 10.3,
+      "bend_arc_length_mm": 0.42760566673861067,
+      "tail_length_mm": 1.9723943332613878,
+      "total_leg_centerline_mm": 12.7,
+      "tail_endpoints": [
+        [
+          0.0,
+          7.167194355680822,
+          -1.67066248174877
+        ],
+        [
+          0.0,
+          7.167194355680822,
+          1.67066248174877
+        ]
+      ],
+      "wire_radius_mm": 0.38099999999999995,
+      "under_eye_y_mm": -5.15,
+      "bend_start_y_mm": 5.15,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "relief_lock": {
+      "height_mm": 27.121684794255998,
+      "pitch_mm": 13.560842397127999,
+      "route_points": [
+        [
+          28.0,
+          -28.0,
+          -49.17295
+        ],
+        [
+          33.70479597972118,
+          -29.858844487781855,
+          -49.17295000000007
+        ],
+        [
+          22.0,
+          -44.0,
+          -36.0
+        ],
+        [
+          22.0,
+          -44.0,
+          -20.575000000000003
+        ],
+        [
+          22.0,
+          -30.0,
+          -20.575000000000003
+        ],
+        [
+          22.0,
+          -30.0,
+          -36.0
+        ],
+        [
+          27.0,
+          -34.0,
+          -40.8762
+        ],
+        [
+          27.0,
+          -2.0,
+          -40.8762
+        ],
+        [
+          33.0,
+          -2.0,
+          -46.8762
+        ],
+        [
+          33.70479597972118,
+          -26.141155512218145,
+          -50.57944999999992
+        ],
+        [
+          28.0,
+          -28.0,
+          -50.579449999999994
+        ]
+      ],
+      "centerline_length_mm": 203.20000000040363,
+      "stock_length_mm": 203.2,
+      "wire_diameter_mm": 1.2065,
+      "offcut_length_mm": 0.0,
+      "coil_radius_mm": 0.7032499999999999,
+      "bolt_hole_center": [
+        22.0,
+        -37.0,
+        -20.575000000000003
+      ],
+      "cage_hole_center": [
+        27.0,
+        -18.0,
+        -40.8762
+      ],
+      "tail_base": [
+        28.0,
+        -28.0,
+        -49.8762
+      ],
+      "source_attachment": "HB87(f): cage to the upper-body bolt left without cotter",
+      "route_is_estimated": true,
+      "mechanical_preload_simulated": false
+    },
+    "mounting": {
+      "centers": [
+        [
+          77.5,
+          0.0
+        ],
+        [
+          62.698817064058424,
+          45.55335705266667
+        ],
+        [
+          23.948817064058428,
+          73.7068800128744
+        ],
+        [
+          -23.948817064058417,
+          73.70688001287441
+        ],
+        [
+          -62.69881706405842,
+          45.55335705266668
+        ],
+        [
+          -94.0,
+          0.0
+        ],
+        [
+          -62.69881706405844,
+          -45.55335705266666
+        ],
+        [
+          -23.948817064058435,
+          -73.7068800128744
+        ],
+        [
+          23.94881706405841,
+          -73.70688001287441
+        ],
+        [
+          62.69881706405842,
+          -45.553357052666684
+        ]
+      ],
+      "case_face_z": 0.4,
+      "pump_face_z": 0.0,
+      "nut_bearing_z": -10.7125,
+      "stud_span_z": [
+        -25.000000000000004,
+        11.512500000000001
+      ],
+      "case_engagement_mm": 11.1125,
+      "inner_thread_span_z": [
+        0.4,
+        11.512500000000001
+      ],
+      "outer_thread_span_z": [
+        -25.000000000000004,
+        -10.712500000000004
+      ],
+      "cotter_z": -16.0625,
+      "head_to_nut_span_mm": 11.1125,
+      "flange_stock_mm": 9.7125,
+      "nut_seat_relief_radius_mm": 6.615804866369717,
+      "nut_seat_relief_low_z": -17.2625,
+      "case_opening_radius_mm": 65.5,
+      "pattern": "Nine equally spaced circular stations plus the forward station moved to the nose; LIB28",
+      "selected_stud": "HB196 132: 1/4-28 x 1-7/16in; SNL237 1-9/16in retained as alternative",
+      "thread_end_lengths": "Transferred from SNL237; compatibility inference for shorter HB stock, not printed HB end lengths",
+      "case_fit_qualified": false
+    }
+  },
+  "source_assets": {
+    "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/assets/figure_024_original.png": "329b78ff8d72a9e144a2d7f5e9e06441f9f682a4534266aed862af0d0470d2cd",
+    "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/assets/figure_025_original.png": "0b13662ef1443aca0f012ab2dcb030c3434ff52b88048fdf72773926077c9fff",
+    "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/assets/figure_027_original.png": "48e6abd2af698cf2db155dc1ca6bd745652f45c61ae07cbf8f8982a9f1d477ac",
+    "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/assets/figure_028_original.png": "1a9d59d302990ce385968025f1fc17002b7c883a2b4d00d08195f8b6bc7eecaa",
+    "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/assets/figure_029_original.png": "b0d181af2fb52afcb64768feb06578ff4bb560cfd3a473e1c98907ea973d1f90",
+    "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/assets/figure_030_original.png": "4395ad7cc897cb1e85ef44b5b425df9794e3efc51e40fe610c31f8ff9b8bdc1b",
+    "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/assets/figure_033_original.png": "9a646aeab54fa0ea6bb6796a5a630dbe78ab4c0fb6f35a5ca7f11f81bd9ec48f",
+    "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/assets/figure_034_original.png": "a9d0813fa7b7863be93a53cbb774bcd6ff24d7492ae7e20b499e118a6f52fce3",
+    "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/assets/figure_096_original.png": "9136d8cce5ea90fab3d78945f9f2361f396a1e5695f17154d3ec4ab479b77de3",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p159.jpg": "ebf14c26d76705f55483e5e478c45decaf9db79a8b0eaeb42ebb142900cd1275",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p160.jpg": "0ffa4b5a79352336b9b9b426cf71488064f2475b0b766633a8e80b29492b8d40",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p305.jpg": "2f6f348f1300e7495982e93d1e8717112ef9a00f984ba7ad69f991f92885438b",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII102.jpg": "3aebe634fb9386c0e9a9ee4e2221e647e98cf08544b443615653dc99c81fb89e",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p020.jpg": "5efe21181b428ccf6c9f832450b85cb752f7d415e92683603f6dd612baccc673",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p024.jpg": "9520220c5b2f0a380ce576d94a1c2daefa966f398dd946300804d71b30280d0c",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p227.jpg": "ad6c41fdbca5f1e57bc2adbce29c5e3eb3036acf3093aa6d8f67a2e67fda5364",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII044.jpg": "175e580c5c3f1c8782d70cec41d69ef999239da0298c1cd87b8163b0b4006e26",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII057.jpg": "e4863718237bc3d9db41223daa392ddc6afdfcc0ae29a963fd8b3b5b59d87dd4",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII099.jpg": "c0646be91f3a0df9e955c3565a3078e4528623d2bfddb976b0a36f7156f63a09",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII100.jpg": "c02e86cf1f159c87bdf29ddce457dec5fd3757609a2e52e8d98908b89860721b",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p237.jpg": "45a2feae5164952f18e7e8bf2af3db4f08958be14fb2a1ef451551b4a5987b88"
+  },
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/engine_oil_pump_build.py": "b2b554fd3810a21d928eb51d4795fcd002d18e1b829ef8b47aab69461b6b95e7",
+    "cad/003_FullTank/experiments/drive_chains/engine_oil_pump_assembly.py": "ece9a39b030ec6077561343cb5e0a816c75726cb2723a33fbc47bc27fa4af918",
+    "cad/003_FullTank/experiments/drive_chains/engine_oil_pump_parts.py": "ea7ea432b3dbfc7fead93040f0a33eea99ec8cdbeaa181fd87573194cc51257a",
+    "cad/003_FullTank/experiments/drive_chains/engine_oil_pump_services.py": "c092a60e2e38d058d0d019cb4235c4642fc217741ad776641d364d6998eca209",
+    "cad/003_FullTank/experiments/drive_chains/engine_oil_pump_strainers.py": "60fbe778525c549203440ba4aa20f866aa6cf7f5a338bb924b17aaaa43ed85e3",
+    "cad/003_FullTank/experiments/drive_chains/engine_oil_pump_hardware.py": "1d42f2880d8041bc67dd3de79a557f8383838524b09c1fa49a947324430b0656",
+    "cad/003_FullTank/experiments/drive_chains/engine_water_pump_parts.py": "4255b454520106f87dcd9e9ee11fb6db09ac334f0b9c130d04dbfbdbfcbb8ca9",
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_layout_study/oil_radial_trial_controls.json": "72612b33c96aa02e38d3b0ba58caaec55134324846a6aa95d000fea0d6bc9726",
+    "cad/003_FullTank/experiments/drive_chains/engine_oil_pump_sources.json": "a5cd121e9dd8e3d326e79549ea865b8ff9ba767bc7429ae5f5ce2a8b32420246",
+    "cad/003_FullTank/experiments/drive_chains/engine_crossmember_parts.py": "72426ba028c260d72035600436c0bfc36c01169f722e5faed9a877906e2e74c4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_planet_parts.py": "dbda95f02c30dd6707e9d2db206468256f10014a14197676b01df25d6553e570",
+    "cad/003_FullTank/experiments/drive_chains/transmission_stud_parts.py": "cdeda621c79bf68a95f3cb03f173e60c75a66f2d63331c0e334418840f6fd3bb",
+    "cad/003_FullTank/experiments/drive_chains/transmission_core_parts.py": "b7b3150e42529535f842871e81c4c580a15b25ce123e997da3ef5437041d7ff1",
+    "cad/003_FullTank/experiments/drive_chains/engine_oil_pump_lock.py": "c20231f6d018777fb7b2d01e48e30531ca608d21201fa5f55b5d1cc73e1c10e4",
+    "cad/003_FullTank/experiments/drive_chains/engine_water_pump_lock.py": "4589029e2f72fa25a659d1e6786bd61776847d093956a30eb6fa22d44c18e363",
+    "cad/003_FullTank/experiments/drive_chains/engine_oil_pump_mounting.py": "dcf849d25fc29ab9a27954ac9ec616ed843b4e6ee5bd71cf5936819450fd7fa7"
+  },
+  "audits": [
+    {
+      "definition": "upper_filter_frame",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 14224.443237193977,
+      "max_tolerance_mm": 1.0000050504722651e-07
+    },
+    {
+      "definition": "upper_side_screen",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 809.5383281924223,
+      "max_tolerance_mm": 1.0000010272197169e-07
+    },
+    {
+      "definition": "upper_end_screen",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2189.2548455281194,
+      "max_tolerance_mm": 8.018795341401646e-07
+    },
+    {
+      "definition": "lower_filter_frame",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 15612.062861823477,
+      "max_tolerance_mm": 1.000002558015527e-07
+    },
+    {
+      "definition": "lower_side_screen",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 820.5666562189217,
+      "max_tolerance_mm": 1.0000010448844399e-07
+    },
+    {
+      "definition": "lower_end_screen",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 895.4863166375208,
+      "max_tolerance_mm": 1.3402383691845857e-06
+    },
+    {
+      "definition": "screen_nut",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2464.7419997094617,
+      "max_tolerance_mm": 1.0000000368618686e-07
+    },
+    {
+      "definition": "screen_lock",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 204.53386480002578,
+      "max_tolerance_mm": 1.5000000577315972e-07
+    },
+    {
+      "definition": "lower_driving_gear",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 5968.744734378386,
+      "max_tolerance_mm": 1.500000692786204e-07
+    },
+    {
+      "definition": "lower_idler_gear",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6544.465162553461,
+      "max_tolerance_mm": 1.000000044408921e-07
+    },
+    {
+      "definition": "upper_driving_gear",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 7353.57598756943,
+      "max_tolerance_mm": 1.5000006927791673e-07
+    },
+    {
+      "definition": "upper_idler_gear",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 8089.218756904258,
+      "max_tolerance_mm": 1.0000000439625888e-07
+    },
+    {
+      "definition": "shaft",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 32167.67169954478,
+      "max_tolerance_mm": 1.50001e-07
+    },
+    {
+      "definition": "long_pin",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4174.579734016653,
+      "max_tolerance_mm": 1e-07
+    },
+    {
+      "definition": "short_pin",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2754.878305896157,
+      "max_tolerance_mm": 1e-07
+    },
+    {
+      "definition": "upper_bush",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 8279.331091772423,
+      "max_tolerance_mm": 1.0000000716072334e-07
+    },
+    {
+      "definition": "lower_bush",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1569.429349538184,
+      "max_tolerance_mm": 1.0000000135323471e-07
+    },
+    {
+      "definition": "partition",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3887.9473224602893,
+      "max_tolerance_mm": 1.0000025525203208e-07
+    },
+    {
+      "definition": "dowel",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 169.67772908450394,
+      "max_tolerance_mm": 1e-07
+    },
+    {
+      "definition": "lower_body",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 452750.60322341166,
+      "max_tolerance_mm": 1.775878616111484e-05
+    },
+    {
+      "definition": "upper_body",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 78712.74135866745,
+      "max_tolerance_mm": 8.426100547172025e-07
+    },
+    {
+      "definition": "relief_seat",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 801.1061266653973,
+      "max_tolerance_mm": 1.0000000146957615e-07
+    },
+    {
+      "definition": "relief_valve",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 706.8583470577034,
+      "max_tolerance_mm": 1.000000006123234e-07
+    },
+    {
+      "definition": "relief_cage",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4045.143941073561,
+      "max_tolerance_mm": 1.0000082431199862e-07
+    },
+    {
+      "definition": "relief_shim",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 53.700028625973225,
+      "max_tolerance_mm": 1.000000006490628e-07
+    },
+    {
+      "definition": "relief_spring",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 225.66385687158575,
+      "max_tolerance_mm": 1.716160264510552e-05
+    },
+    {
+      "definition": "upper_plug",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 628.3185307179585,
+      "max_tolerance_mm": 1e-07
+    },
+    {
+      "definition": "body_plug",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 676.9295228568134,
+      "max_tolerance_mm": 1e-07
+    },
+    {
+      "definition": "cover",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 97735.93873528834,
+      "max_tolerance_mm": 2.5629435352012576e-07
+    },
+    {
+      "definition": "cover_gasket",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3198.926719517856,
+      "max_tolerance_mm": 1.000000164102671e-07
+    },
+    {
+      "definition": "drain_plug",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 4588.265912951733,
+      "max_tolerance_mm": 1.0000000176941794e-07
+    },
+    {
+      "definition": "drain_gasket",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 247.2551228099677,
+      "max_tolerance_mm": 1.0000000195637325e-07
+    },
+    {
+      "definition": "upper_filter_frame",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 14224.443237193977,
+      "max_tolerance_mm": 1.0000050504722651e-07
+    },
+    {
+      "definition": "upper_side_screen",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 809.5383281924223,
+      "max_tolerance_mm": 1.0000010272197169e-07
+    },
+    {
+      "definition": "upper_end_screen",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2189.2548455281194,
+      "max_tolerance_mm": 8.018795341401646e-07
+    },
+    {
+      "definition": "lower_filter_frame",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 15612.062861823477,
+      "max_tolerance_mm": 1.000002558015527e-07
+    },
+    {
+      "definition": "lower_side_screen",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 820.5666562189217,
+      "max_tolerance_mm": 1.0000010448844399e-07
+    },
+    {
+      "definition": "lower_end_screen",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 895.4863166375208,
+      "max_tolerance_mm": 1.3402383691845857e-06
+    },
+    {
+      "definition": "screen_nut",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 2464.7419997094617,
+      "max_tolerance_mm": 1.0000000368618686e-07
+    },
+    {
+      "definition": "screen_lock",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 204.53386480002578,
+      "max_tolerance_mm": 1.5000000577315972e-07
+    },
+    {
+      "definition": "fastener_washer",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 94.00234268163211,
+      "max_tolerance_mm": 1.0000000078989718e-07
+    },
+    {
+      "definition": "fastener_nut",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 375.31128059739746,
+      "max_tolerance_mm": 1.5000000244249065e-07
+    },
+    {
+      "definition": "fastener_cotter",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 14.079989397363361,
+      "max_tolerance_mm": 1.000001e-06
+    },
+    {
+      "definition": "upper_body_bolt",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1465.121568073989,
+      "max_tolerance_mm": 1.0000000723265779e-07
+    },
+    {
+      "definition": "cover_body_bolt",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1163.4721654753123,
+      "max_tolerance_mm": 1.000000013506446e-07
+    },
+    {
+      "definition": "relief_lock_wire",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 232.31017794229152,
+      "max_tolerance_mm": 3.187422350769909e-07
+    },
+    {
+      "definition": "mount_stud",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 1141.239645899366,
+      "max_tolerance_mm": 1.000000038007914e-07
+    },
+    {
+      "definition": "mount_gasket",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 3546.5538952318425,
+      "max_tolerance_mm": 1.0000169919279561e-07
+    }
+  ]
+}

@@ -1,5 +1,23 @@
 # Mark VIII visual progression
 
+The 23 September source-profile revision adds an
+[isometric](intermediate_snapshot_iso_engine_oil_pump_source_001.png) and
+[handbook overlay](intermediate_snapshot_detail_engine_oil_pump_source_overlay_001.png).
+The isolated 146-part pump has a smaller casing and revised bottom profile,
+following conditional HB45 measurements. All 402 native checks, 482 material
+pairs and seven source-envelope checks pass; fresh reproduction matches.
+STEP qualification is pending. All 145 previous snapshots remain unchanged,
+giving **147 total**. The overlay shows actual CAD outlines (old red, revised
+blue); its local scales and proposed mounting level remain conditional.
+The old crankcase receiver and engine-to-floor registration still need revision.
+Standard tank011 is unchanged. See the
+[source and layout study](003_FullTank/experiments/drive_chains/engine_pump_layout_study/README.md).
+
+| New image | SHA256 |
+|---|---|
+| Source-profile isometric | `61c6c88743ae04602a4a24cd44d953797b2eda0ae1d4f3f13898e6e6ab3d1c6a` |
+| Handbook overlay | `e62d87ade49b21ecd7d541801f70b337a3c86899663b27819fad75800fa58dd5` |
+
 The 23 September oil-pump mounting checkpoint adds an
 [isometric](intermediate_snapshot_iso_engine_oil_pump_mounting_001.png) and
 [mounting plan](intermediate_snapshot_detail_engine_oil_pump_mounting_001.png).

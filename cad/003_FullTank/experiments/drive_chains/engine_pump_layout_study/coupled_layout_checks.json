@@ -1,0 +1,629 @@
+{
+  "status": "Coupled source layout diagnostic; receiving case and global installation unqualified",
+  "source_constraints_sha256": "08a69f5aec445b08be150fb0c078b7a4e4cee087c0a17faa1aff142f7a3dc01d",
+  "checker_sha256": "353d7564fc4b70257a0a2150edc9d724238c3c8c9766e1e06829a6c0d13faf54",
+  "native_inputs": {
+    "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_oil_pump_mounting_study/OilPump.FCStd": "e5419509462638da113259503261f57433e765a29eda9633c1b35f96695c442f",
+    "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_water_pump_connections_study/DrivetrainWithWaterPump.FCStd": "7cae6a94d058e4d9497d207a06cf49d28891214e7e4fe4a73fc1a4a9516ad3fb",
+    "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/engine_pump_layout_study/lower_drive_trial/DrivetrainWithLowerDriveStudy.FCStd": "2faee74a2504fb50944b594810733cf1412064419bbaa1c521253a865fe3a594"
+  },
+  "oil_occurrences": 146,
+  "water_and_lower_drive_occurrences": 94,
+  "water_raise_mm": 12.550000000000011,
+  "oil_pose": [
+    1.0,
+    0.0,
+    0.0,
+    1243.87630083555,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    -262.859375,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "pump_to_drive_pairs": [
+    {
+      "a": "EngineOilPump_DrivingShaft",
+      "b": "EngineLowerDrive_IntegralDriver",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_DrivingShaft",
+      "b": "EngineLowerDrive_DistributorBush",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_DrivingShaft",
+      "b": "EngineLowerDrive_FlywheelBush",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_DrivingShaft",
+      "b": "EngineLowerDrive_FlywheelHousing",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_DrivingShaft",
+      "b": "EngineLowerDrive_DistributorHousing",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_LowerBody",
+      "b": "EngineWaterPump_BodyCasting",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperBody",
+      "b": "EngineWaterPump_GearedShaft",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperBody",
+      "b": "EngineWaterPump_bearing_outer",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperBody",
+      "b": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperPassagePlug1",
+      "b": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperFilterFrame",
+      "b": "EngineWaterPump_GearedShaft",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperFilterFrame",
+      "b": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperSideScreen",
+      "b": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperEndScreen",
+      "b": "EngineWaterPump_GearedShaft",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperEndScreen",
+      "b": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint1Stud",
+      "b": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint1Washer",
+      "b": "EngineWaterPump_BodyCasting",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint2Stud",
+      "b": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint10Stud",
+      "b": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountGasket",
+      "b": "EngineWaterPump_BodyCasting",
+      "overlap_mm3": 0.0,
+      "clear": true
+    }
+  ],
+  "pump_to_drive_collisions": [],
+  "obsolete_case_pairs": [
+    {
+      "a": "EngineOilPump_LowerDrivingGear",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_LowerIdler1",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperDrivingGear",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperIdler1",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperIdler2",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_DrivingShaft",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_LongIdlerPin",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_ShortIdlerPin",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperBush",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_SeparatingPlate",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_LocatingDowel1",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_LocatingDowel2",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_LowerBody",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 49.1232894773442,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_UpperBody",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperPassagePlug1",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperPassagePlug2",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperFilterFrame",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 702.1657050349038,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_UpperSideScreen",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 93.071920652081,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_UpperEndScreen",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 108.39320400188183,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_UpperScreenNut",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperScreenNutLock",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperJoint1Bolt",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperJoint1HeadWasher",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperJoint2Bolt",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperJoint2HeadWasher",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperJoint3Bolt",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 157.7791541777811,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_UpperJoint3HeadWasher",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_UpperJoint4Bolt",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 157.77915417778266,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_UpperJoint4HeadWasher",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint1Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.2590919929585546,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_MountJoint1Washer",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint1Nut",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint2Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint2Washer",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint2Nut",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint3Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint3Washer",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint3Nut",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint4Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 64.82890562938732,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_MountJoint4Washer",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint4Nut",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint5Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint5Washer",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint5Nut",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint6Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint6Washer",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint6Nut",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint7Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint7Washer",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint7Nut",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint8Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 64.82890562917545,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_MountJoint8Washer",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint8Nut",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint9Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint9Washer",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint9Nut",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint10Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint10Washer",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountJoint10Nut",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.0,
+      "clear": true
+    },
+    {
+      "a": "EngineOilPump_MountGasket",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 3.36701819689999,
+      "clear": false
+    }
+  ],
+  "obsolete_case_collisions": [
+    {
+      "a": "EngineOilPump_LowerBody",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 49.1232894773442,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_UpperFilterFrame",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 702.1657050349038,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_UpperSideScreen",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 93.071920652081,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_UpperEndScreen",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 108.39320400188183,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_UpperJoint3Bolt",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 157.7791541777811,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_UpperJoint4Bolt",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 157.77915417778266,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_MountJoint1Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 0.2590919929585546,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_MountJoint4Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 64.82890562938732,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_MountJoint8Stud",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 64.82890562917545,
+      "clear": false
+    },
+    {
+      "a": "EngineOilPump_MountGasket",
+      "b": "EngineCase_lower",
+      "overlap_mm3": 3.36701819689999,
+      "clear": false
+    }
+  ],
+  "floor_hypotheses": [
+    {
+      "name": "inherited_drivetrain",
+      "floor_top_engine_z_mm": -316.1835104357658,
+      "envelope_gap_mm": -43.37586456423418,
+      "material_pairs": [
+        {
+          "a": "EngineOilPump_LowerBody",
+          "overlap_mm3": 17270.29642580984
+        },
+        {
+          "a": "EngineOilPump_LowerFilterFrame",
+          "overlap_mm3": 794.1946228275333
+        },
+        {
+          "a": "EngineOilPump_LowerSideScreen",
+          "overlap_mm3": 141.16070472590218
+        }
+      ],
+      "collisions": [
+        {
+          "a": "EngineOilPump_LowerBody",
+          "overlap_mm3": 17270.29642580984
+        },
+        {
+          "a": "EngineOilPump_LowerFilterFrame",
+          "overlap_mm3": 794.1946228275333
+        },
+        {
+          "a": "EngineOilPump_LowerSideScreen",
+          "overlap_mm3": 141.16070472590218
+        }
+      ]
+    },
+    {
+      "name": "floor_referenced_SNL2_hypothesis",
+      "floor_top_engine_z_mm": -373.48121442125205,
+      "envelope_gap_mm": 13.92183942125206,
+      "material_pairs": [],
+      "collisions": []
+    }
+  ],
+  "source_documents_unchanged": true,
+  "standard_assembly_modified": false,
+  "installation_qualified": false,
+  "limitations": [
+    "Oil-pump radial geometry remains the prior oversized study.",
+    "Only oil-pump interactions are checked here. Revised drive against stale case/water mounts and complete tank is not qualified.",
+    "Floor-relative engine elevation remains hypothetical; clutch, supports, controls and chain geometry need coordinated registration.",
+    "Receiving case shown unchanged to expose the remaining conflicts; stud seating is not established."
+  ]
+}

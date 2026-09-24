@@ -11,6 +11,26 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — source-constrained pump proportions
+
+The [pump-layout study](experiments/drive_chains/engine_pump_layout_study/README.md)
+applies HB printed68 Plate45's printed water-pump axis drop (171.45 mm) and oil
+connection levels, with its **aviation mounting** applicability explicit. Local
+image measurements reject the former oversized oil casing. The revised
+146-component pump has a 144 mm body, 169 mm flange and shallower chamber with a
+deeper bottom dish. **402 saved-native checks, 482 material pairs and seven
+conditional source-envelope checks pass**. Fresh reproduction matches 81 BReps
+and 7,376 properties. Rejected gallery/wall trials are retained. Pump STEP and
+combined installation qualification remain pending.
+
+The revised lower drive passes 37 component checks and all 27 strict STEP
+comparisons; its obsolete case interfaces remain unqualified. Seven pump views
+and a before/after handbook overlay were inspected. Two snapshots bring the
+progression to **147**, preserving all prior images and standard native files.
+Global engine/drivetrain height, receiving case, remaining wires/connections
+and source refinements still need work. Standard tank011 remains unchanged at
+5,326 physical occurrences; the full tank is incomplete.
+
 ## 23 September 2026 — oil-pump mounting and installation conflict
 
 The [oil-pump checkpoint](packets/P01-engine-oil-pump.md) now has **146 physical

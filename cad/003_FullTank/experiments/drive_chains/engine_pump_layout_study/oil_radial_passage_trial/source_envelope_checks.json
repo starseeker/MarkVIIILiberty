@@ -1,0 +1,100 @@
+{
+  "candidate": {
+    "native_sha256": "e6e439ca75fe8c3749b78a68cf24c7658ff42652858a5548e80c2aa664c7aad5",
+    "measured": {
+      "body": 144.0,
+      "flange": 169.0,
+      "supply_z": -306.859375,
+      "return_z": -271.859375
+    },
+    "checks": [
+      {
+        "name": "body_native_diameter",
+        "actual_mm": 144.0,
+        "source_pick_interval_mm": [
+          137.0263157894737,
+          151.47636363636366
+        ],
+        "passed": true
+      },
+      {
+        "name": "flange_native_diameter",
+        "actual_mm": 169.0,
+        "source_pick_interval_mm": [
+          161.38654970760234,
+          176.72242424242427
+        ],
+        "passed": true
+      },
+      {
+        "name": "supply_z_proposed_engine_level",
+        "actual_mm": -306.859375,
+        "target_mm": -306.78437499999995,
+        "comparison_tolerance_mm": 0.1,
+        "passed": true,
+        "note": "Conditional connection identification and proposed metadata pose, not a physically installed pump."
+      },
+      {
+        "name": "return_z_proposed_engine_level",
+        "actual_mm": -271.859375,
+        "target_mm": -271.859375,
+        "comparison_tolerance_mm": 0.1,
+        "passed": true,
+        "note": "Conditional connection identification and proposed metadata pose, not a physically installed pump."
+      }
+    ],
+    "passed": true
+  },
+  "prior_negative_control": {
+    "native_sha256": "e5419509462638da113259503261f57433e765a29eda9633c1b35f96695c442f",
+    "measured": {
+      "body": 188.0,
+      "flange": 212.0,
+      "supply_z": -326.0,
+      "return_z": -291.0
+    },
+    "checks": [
+      {
+        "name": "body_native_diameter",
+        "actual_mm": 188.0,
+        "source_pick_interval_mm": [
+          137.0263157894737,
+          151.47636363636366
+        ],
+        "passed": false
+      },
+      {
+        "name": "flange_native_diameter",
+        "actual_mm": 212.0,
+        "source_pick_interval_mm": [
+          161.38654970760234,
+          176.72242424242427
+        ],
+        "passed": false
+      },
+      {
+        "name": "supply_z_proposed_engine_level",
+        "actual_mm": -326.0,
+        "target_mm": -306.78437499999995,
+        "comparison_tolerance_mm": 0.1,
+        "passed": false,
+        "note": "Conditional connection identification and proposed metadata pose, not a physically installed pump."
+      },
+      {
+        "name": "return_z_proposed_engine_level",
+        "actual_mm": -291.0,
+        "target_mm": -271.859375,
+        "comparison_tolerance_mm": 0.1,
+        "passed": false,
+        "note": "Conditional connection identification and proposed metadata pose, not a physically installed pump."
+      }
+    ],
+    "passed": false
+  },
+  "prior_rejected": true,
+  "source_constraints_sha256": "08a69f5aec445b08be150fb0c078b7a4e4cee087c0a17faa1aff142f7a3dc01d",
+  "checker_sha256": "350260a260431575927b8b928910df867d1b989ec2f1d253e567b4231f5c5b12",
+  "scope": "Conditional HB45 body/flange envelopes and proposed oil-connection levels only",
+  "installation_qualified": false,
+  "passed": true
+}

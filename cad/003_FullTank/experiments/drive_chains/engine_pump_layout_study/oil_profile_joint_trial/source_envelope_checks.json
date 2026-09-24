@@ -1,0 +1,167 @@
+{
+  "candidate": {
+    "native_sha256": "cbe470a469e90f179814cb2d8148da382135c7af8cfd9f44a0c9fc663ae22aad",
+    "measured": {
+      "body": 144.0,
+      "flange": 169.0,
+      "supply_z": -306.859375,
+      "return_z": -271.859375,
+      "body_bottom": 326.359375,
+      "cover_rim_bottom": 331.059375,
+      "drain_tip": 360.059375
+    },
+    "checks": [
+      {
+        "name": "body_native_diameter",
+        "actual_mm": 144.0,
+        "source_pick_interval_mm": [
+          137.0263157894737,
+          151.47636363636366
+        ],
+        "passed": true
+      },
+      {
+        "name": "flange_native_diameter",
+        "actual_mm": 169.0,
+        "source_pick_interval_mm": [
+          161.38654970760234,
+          176.72242424242427
+        ],
+        "passed": true
+      },
+      {
+        "name": "supply_z_proposed_engine_level",
+        "actual_mm": -306.859375,
+        "target_mm": -306.78437499999995,
+        "comparison_tolerance_mm": 0.1,
+        "passed": true,
+        "note": "Conditional connection identification and proposed metadata pose, not a physically installed pump."
+      },
+      {
+        "name": "return_z_proposed_engine_level",
+        "actual_mm": -271.859375,
+        "target_mm": -271.859375,
+        "comparison_tolerance_mm": 0.1,
+        "passed": true,
+        "note": "Conditional connection identification and proposed metadata pose, not a physically installed pump."
+      },
+      {
+        "name": "body_bottom_depth_below_crankshaft",
+        "actual_mm": 326.359375,
+        "source_pick_interval_mm": [
+          311.99673088592226,
+          330.56016406249995
+        ],
+        "passed": true,
+        "note": "Conditional local image-scaled depth, using proposed pose."
+      },
+      {
+        "name": "cover_rim_bottom_depth_below_crankshaft",
+        "actual_mm": 331.059375,
+        "source_pick_interval_mm": [
+          319.442953580097,
+          338.22977343749994
+        ],
+        "passed": true,
+        "note": "Conditional local image-scaled depth, using proposed pose."
+      },
+      {
+        "name": "drain_tip_depth_below_crankshaft",
+        "actual_mm": 360.059375,
+        "source_pick_interval_mm": [
+          349.97246662621353,
+          369.67517187499993
+        ],
+        "passed": true,
+        "note": "Conditional local image-scaled depth, using proposed pose."
+      }
+    ],
+    "passed": true
+  },
+  "prior_negative_control": {
+    "native_sha256": "e5419509462638da113259503261f57433e765a29eda9633c1b35f96695c442f",
+    "measured": {
+      "body": 188.0,
+      "flange": 212.0,
+      "supply_z": -326.0,
+      "return_z": -291.0,
+      "body_bottom": 356.0,
+      "cover_rim_bottom": 360.7,
+      "drain_tip": 378.7
+    },
+    "checks": [
+      {
+        "name": "body_native_diameter",
+        "actual_mm": 188.0,
+        "source_pick_interval_mm": [
+          137.0263157894737,
+          151.47636363636366
+        ],
+        "passed": false
+      },
+      {
+        "name": "flange_native_diameter",
+        "actual_mm": 212.0,
+        "source_pick_interval_mm": [
+          161.38654970760234,
+          176.72242424242427
+        ],
+        "passed": false
+      },
+      {
+        "name": "supply_z_proposed_engine_level",
+        "actual_mm": -326.0,
+        "target_mm": -306.78437499999995,
+        "comparison_tolerance_mm": 0.1,
+        "passed": false,
+        "note": "Conditional connection identification and proposed metadata pose, not a physically installed pump."
+      },
+      {
+        "name": "return_z_proposed_engine_level",
+        "actual_mm": -291.0,
+        "target_mm": -271.859375,
+        "comparison_tolerance_mm": 0.1,
+        "passed": false,
+        "note": "Conditional connection identification and proposed metadata pose, not a physically installed pump."
+      },
+      {
+        "name": "body_bottom_depth_below_crankshaft",
+        "actual_mm": 356.0,
+        "source_pick_interval_mm": [
+          311.99673088592226,
+          330.56016406249995
+        ],
+        "passed": false,
+        "note": "Conditional local image-scaled depth, using proposed pose."
+      },
+      {
+        "name": "cover_rim_bottom_depth_below_crankshaft",
+        "actual_mm": 360.7,
+        "source_pick_interval_mm": [
+          319.442953580097,
+          338.22977343749994
+        ],
+        "passed": false,
+        "note": "Conditional local image-scaled depth, using proposed pose."
+      },
+      {
+        "name": "drain_tip_depth_below_crankshaft",
+        "actual_mm": 378.7,
+        "source_pick_interval_mm": [
+          349.97246662621353,
+          369.67517187499993
+        ],
+        "passed": false,
+        "note": "Conditional local image-scaled depth, using proposed pose."
+      }
+    ],
+    "passed": false
+  },
+  "prior_rejected": true,
+  "source_constraints_sha256": "08a69f5aec445b08be150fb0c078b7a4e4cee087c0a17faa1aff142f7a3dc01d",
+  "checker_sha256": "f34aebb7a959384016826ce1bea4d191bc38407ddb548d16ed4a9c92a821ae0b",
+  "scope": "Conditional HB45 body/flange envelopes and proposed oil-connection levels only",
+  "installation_qualified": false,
+  "profile_sources_sha256": "888bc37801ac582e6843358aba955cc85220c985f23f713d9bb546d83e4c3378",
+  "passed": true
+}

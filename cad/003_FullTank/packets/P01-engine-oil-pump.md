@@ -5,6 +5,12 @@ The oil pump is a separate component study in engine-aligned coordinates, with
 its crankcase mating face at local Z=0. It is **not yet installed or qualified
 against the engine and standard tank**. The full engine and tank remain incomplete.
 
+Latest candidate: [source-profile revision](../experiments/drive_chains/engine_pump_layout_study/oil_profile_joint_trial/OilPump.FCStd).
+It passes **402 native checks, 482 material pairs, seven conditional source
+envelope checks and fresh reproduction**. STEP qualification is running.
+See the source reconciliation below; the earlier qualified mounting checkpoint
+is retained as a distinct geometry version.
+
 ## Geometry and identity
 
 The current reconstruction represents five gears, their common driving shaft,
@@ -37,7 +43,8 @@ whole-tank count.
 - HB86 and HB113 support selected **0.004 inch diametrical gear clearance** and
   **0.003 inch end play** (0.1016 and 0.0762 mm). Their broader inspection ranges
   remain recorded. The gear tooth count, module and profiles are estimates:
-  twelve teeth at module 3, with deeper upper teeth and shorter lower teeth.
+  twelve teeth at module 2 in the source-profile revision (formerly module 3),
+  with deeper upper teeth and shorter lower teeth.
   A previous threshold-based image tooth count was rejected.
 - LIB27–30 show a two-gear pressure stage below a three-gear duplex scavenge
   stage. The source describes the crossing passage above the scavenge housing.
@@ -256,3 +263,55 @@ remaining wires, external connection selection and unequal passage/profile
 refinement. Continue the other engine systems and standard integration after
 the combined geometry is qualified. The complete engine and tank remain
 unfinished; poses remain deferred.
+
+## Source-profile and coupled-layout revision — 23 September 2026
+
+HB **printed68, Plate45** supplies a 6¾-inch crankshaft-to-water-pump axis drop
+(171.45 mm) and oil-connection drops of 10 45/64 and 12 5/64 inches. Its caption
+explicitly says **aviation mounting**. These are conditional tank-engine
+constraints, not proof of the tank installation. The
+[source record](../experiments/drive_chains/engine_pump_layout_study/source_constraints.json)
+retains the originals, literal values, local X/Y scales, ±3-pixel picks and a
+failed held-out camshaft-height check; one global metric scale is not supported.
+
+Independent local image envelopes put the body near 144.1 mm diameter and the
+flange near 168.9 mm. The selected revision uses **144/169 mm**, replacing the
+earlier 188/212 mm estimates. Provisional connection identities give a pump
+mount level of −262.859375 mm, with 0.075 mm discrepancy at the second connection.
+These proposed coordinates remain metadata in the standalone pump document.
+
+The smaller casing required explicit changes to estimated gear size, gallery
+routes, relief-unit location, strainer diameter and mounting pattern. Source
+gear clearances, fastener lengths and joint spans remain unchanged. Rejected
+trials retain their collisions, gallery-web failures and cover-joint wall failure.
+The selected chamber depth of 63.5 mm keeps the cover-head wall witness 1.03125 mm
+below the supply passage, while a 16 mm dish retains the measured lower profile.
+All **402 native checks and 482 material pairs pass**. Seven source-envelope
+checks pass and reject the old candidate in all seven cases. These source
+comparisons retain drawing and configuration uncertainty beyond pixel bounds.
+
+Fresh rebuilding matches all **81 serialized shapes, 629 object types and 7,376
+properties**, excluding only new UUIDs. The candidate retains 146 occurrences
+and 40 definitions, with 181 controls. Seven views and the
+[actual-shape overlay](../experiments/drive_chains/engine_pump_layout_study/oil_profile_joint_trial/source_review/hb45_overlay.png)
+were inspected. Two new snapshots bring the progression to **147**; all 145
+earlier images, 20 standard natives and four prior subsystem natives are unchanged.
+The newly applied source evidence is retained in the study's hashed supplements.
+
+The rebuilt lower drive passes 37 component checks and all 27 strict STEP pairs.
+Its three pre-receiver case clashes remain explicit. The revised oil pump
+clears all **17 nearby pairs** against the shifted water pump and rebuilt drive,
+but still has **five clashes with the old case**. Its lowest envelope is
+43.8759 mm below the floor at the inherited engine datum. The SNL2 floor-relative
+registration hypothesis gives 13.4218 mm nominal clearance, with ±35.57 mm
+pixel-only uncertainty; it is not a selected global datum. Both actual-solid
+[layout sections](../experiments/drive_chains/engine_pump_layout_study/oil_profile_joint_trial/layout/)
+were inspected. Neither case stud seating nor complete installation is qualified.
+
+The selected pump's full 186-pair STEP check is running; its changed screens
+require fresh comparisons. Next reconstruct the receiver around the revised
+footprint, reapply the water-pump pads, and reconcile the global drivetrain
+registration and dependent interfaces. Two wires, external connection selection,
+unequal passage sizing and exact cast profiles remain open. The standard tank
+is unchanged. Reproduction commands and retained failures are in the
+[study notes](../experiments/drive_chains/engine_pump_layout_study/README.md).

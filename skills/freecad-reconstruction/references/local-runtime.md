@@ -55,3 +55,20 @@ Sandbox errors have a different cause from CAD errors. A Codex PATH-alias warnin
 means an optional runtime write failed; verify the actual process exit and tool
 operation. A successful `--version` is not proof that a model run can initialize.
 Use the controller's restrictive-profile preflight before candidate execution.
+
+## Long native and STEP checks
+
+Keep output and progress under a durable work directory and retain the tool's
+job handle. A quiet log or a process absent from another sandbox's PID namespace
+does not establish completion; obtain the terminal result before restarting a
+job. Distinguish an interrupted check from a geometric failure.
+
+One lower-drive exchange worker on this runtime used about 10.2 GiB RSS.
+Copying the required saved shapes and composed occurrence poses, then closing
+the large parent document before comparison, preserved all 27 strict results;
+closing the document did not immediately imply lower RSS. Serialize similarly
+large checks when memory is constrained. The
+[retained diagnostic](../../../cad/003_FullTank/experiments/drive_chains/engine_pump_layout_study/lower_drive_trial/checker_memory_revision.json)
+records unchanged acceptance predicates and identical completed legacy results.
+The preceding process terminations did not establish their cause; do not label
+them out-of-memory failures without supporting evidence.
