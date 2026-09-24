@@ -7,19 +7,19 @@
   "accepted_development_parent": "front-brake checkpoint 169c3da",
   "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01",
   "latest_native_sha256": "b174c7b0a36ec23731b57743aa64efa715ff25a11873d2cd1b10538bda1dc175",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/qualification.json",
-  "current_pipeline_run": "high_brake_mechanism02",
-  "pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/pipeline_evidence",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/qualification.json",
+  "current_pipeline_run": "high_brake_support01",
+  "pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
-    "python3 tools/cad_pipeline/pipeline.py status high_brake_mechanism02",
-    "python3 tools/cad_pipeline/pipeline.py verify high_brake_mechanism02",
+    "python3 tools/cad_pipeline/pipeline.py status high_brake_support01",
+    "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01",
     "python3 tools/cad_pipeline/decisions.py cad/003_FullTank/decision_ledger.json"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Qualify the complete high-speed support/stop packet with the existing pipeline, retaining all scoped evidence and the fixed source registration. Then continue operating controls, remaining interiors and full standard integration; poses deferred.",
+  "next_action": "Develop the rear operating-control interfaces from the recorded six brake bores. Resolve M569B/M568A fork/pin length datums and test the high-speed joint, then place the M4128 rear control channel, spring brackets and bell cranks before routing M575 and the other rear rods. Continue the complete tank workflow; poses deferred.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -31,17 +31,17 @@
     "High-speed lining variant: HB six M364 versus SNL two MX109 plus two M364",
     "Forward fittings, rear anchor extension and case bridge relief are estimated; lining support has documented recess/overhang exceptions; complete high-speed mechanism remains open.",
     "Operating lever/saddle, pin stock and spring sections remain inferred. Support, anchor-retention and all named stop/clip parts are populated; operating controls and full service paths remain open.",
-    "Receiving webs, M362 shelf, strap stock/bends, transverse MX76 pitch and M365 clip wrap are estimates. Upper pitch now shares the saved MX61 plate. All six M400/nut pairs and eight of ten MX60 screws are located. Complete support-packet qualification remains open."
+    "Receiving webs, M362 shelf, strap stock/bends, transverse MX76 pitch and M365 clip wrap are estimates. Upper pitch now shares the saved MX61 plate. All six M400/nut pairs and eight of ten MX60 screws are located. Combined local static support qualification now passes; full service and standard integration remain open."
   ],
   "visual_progression_count": 219,
-  "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/README.md",
+  "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
   "latest_locally_qualified_checkpoint": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01",
-    "native_sha256": "7f7eb9f687ed458d7bcfba599af6333be4899fb6477581ce2fd0075b01158b96",
-    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01",
+    "native_sha256": "b174c7b0a36ec23731b57743aa64efa715ff25a11873d2cd1b10538bda1dc175",
+    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/qualification.json"
   },
-  "qualification_scope": "Paired operating levers, source-counted rivets, free-end pin/cotter joints and spring adjustment; static interfaces, preservation, STEP, context, exact reproduction and installed-height sensitivity.",
-  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study",
+  "qualification_scope": "Combined receiving webs, M362/M363 anchor retention, M366/M398/M399 stops, M365 clips and selected handbook mounting/adjustment hardware. Existing scoped native/STEP/variation evidence plus relocated final native, complete local material context and combined STEP export.",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study",
   "active_development_candidate": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01",
     "native_sha256": "b174c7b0a36ec23731b57743aa64efa715ff25a11873d2cd1b10538bda1dc175",
@@ -51,7 +51,7 @@
       "definitions": 542,
       "assemblies": 336
     },
-    "status": "Upper stops/clips and shared hardware pass native/STEP, variation, integration, preservation, catalogue, standard context and exact reproduction. Earlier receiver variation STEP now passes. Complete support-packet pipeline and promotion remain pending."
+    "status": "Locally qualified static support combination: all six pipeline stages pass, including combined STEP and native relocation. Development remains separate from standard-tank integration."
   },
-  "qualification_note": "The qualification/pipeline fields refer to the last fully qualified operating-mechanism parent. The active upper-stop candidate has separate scoped evidence and is not yet promoted."
+  "qualification_note": "Combined support static checks and source review pass. Operating controls, complete service paths and standard-tank integration remain open."
 }

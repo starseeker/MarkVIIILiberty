@@ -6,13 +6,14 @@ The latest [upper-stop and clip increment](upper02/README.md) has
 M399/M398 stops and M365 clips now join the retained pins, bottom stops and
 supports. Sixteen added occurrences reuse four hardware definitions. Native/STEP,
 stock variation, integration, preservation, catalogue, context and exact rebuild
-checks pass. The [bottom-stop predecessor](bottom_stops03/README.md) and receiving
-evidence below remain available. Complete support-packet pipeline qualification,
-service/controls and standard-tank promotion are unfinished.
+checks pass. The [combined local static qualification](integrated_upper01/combined_qualification/README.md)
+now also passes all six pipeline stages, including complete affected material
+context, native relocation and combined STEP. The [bottom-stop predecessor](bottom_stops03/README.md) and receiving
+evidence below remain available. Operating controls, complete service paths and standard-tank promotion remain unfinished.
 
 The complete packet comprises two M362 anchor brackets, two M363 retained
 pins, two M365 clips, two each of M366/M398/M399 stops, six M400 stop screws,
-and their attachment hardware. The locally qualified parent remains the
+and their attachment hardware. The preceding locally qualified parent is the
 [operating-mechanism checkpoint](../transmission_high_brake_mechanism_study/trial01/README.md):
 3,121 physical occurrences, 529 shared definitions and 322 assemblies. The earlier
 [receiving candidate](integrated01/PowertrainWithHighBrakeReceivers.FCStd) has
@@ -149,15 +150,14 @@ the [measurement diagnostic](receivers04/diagnostics/README.md).
 
 ## Remaining construction and qualification
 
-1. Continue from `integrated_upper01`, retaining the fixed registration and all
-   tested lower/upper support interfaces. Complete the support-packet pipeline
-   using the bound scoped receipts; do not rerun unrelated qualified geometry.
-2. Assess the complete static support assembly and its selected source views.
-   Preserve the original and minimum-travel pin service probes; full gear
+1. Continue from the now locally qualified `integrated_upper01` model and the
+   [operating-control packet](../transmission_controls_study/README.md).
+2. Establish fork/pin joints, the rear control channel and spring/fulcrum supports
+   before extending the control rods. Keep the fixed brake registration.
+3. Preserve the original and minimum-travel service probes; complete gear
    extraction, tool handling and cotter removal remain separate open work.
-3. Continue operating controls and the complete tank workflow. Resolve the last
-   two catalogue MX60 screw locations when evidence supports them.
-4. Complete remaining interiors and full standard integration before pose work.
+4. Resolve the final two catalogue MX60 locations when evidence supports them.
+5. Complete remaining interiors and full standard integration before pose work.
 
 Run the read-only probe with a fresh absolute output path:
 

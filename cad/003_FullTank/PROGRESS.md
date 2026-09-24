@@ -11,6 +11,25 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — combined support qualification and control interfaces
+
+The [combined support qualification](experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/combined_qualification/README.md)
+passes all six pipeline stages. All 45 affected occurrences pass 431 material
+comparisons and 59 combined STEP comparisons. Native relocation verifies every
+installed link/frame; 38 scoped receipts and 528 inherited definition chains
+support reuse. Standard-tank files and context remain current. The complete
+HB133 overlay was inspected without a camera refit. Geometry and counts remain
+**3,165 physical occurrences / 542 definitions / 336 assemblies**.
+
+The [operating-control study](experiments/drive_chains/transmission_controls_study/README.md)
+records 99 source rows, 34 identities and six measured brake-control interfaces.
+The high-speed eye is 25.4 mm wide without a central slot; low/track eyes are
+12.7 mm wide. Source fork/pin variants and inconsistent length/application
+wording remain explicit. HB92/HB113/SNL6 contain rod-length breaks; HB104 is a
+separate photograph suitable for later perspective investigation. Rear fork
+joints and the M4128 channel/support layout precede full rod routes. The complete
+tank goal remains active, with standard integration and poses still later.
+
 ## 24 September 2026 — high-speed upper stops and clips
 
 The [upper-stop increment](experiments/drive_chains/transmission_high_brake_support_study/upper02/README.md)

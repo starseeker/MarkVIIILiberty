@@ -1,0 +1,42 @@
+{
+  "current_stage": null,
+  "metrics": {
+    "executed": 5,
+    "execution_seconds": 113.10006376198726,
+    "failures": 0,
+    "model_invocations": 0,
+    "orchestrating_assistant_usage": "not measured by deterministic runner",
+    "reused": 0,
+    "reused_prior_execution_seconds": 0.0
+  },
+  "plan": "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/plans/high_brake_support_qualification.json",
+  "plan_sha256": "e36a21b1bacfedfab482e63bbe6077175783393ca533ede21a961fabb20996bb",
+  "stages": [
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_support01/records/evidence/latest.json",
+      "id": "evidence",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_support01/records/native/latest.json",
+      "id": "native",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_support01/records/material/latest.json",
+      "id": "material",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_support01/records/exchange/latest.json",
+      "id": "exchange",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_support01/records/source/latest.json",
+      "id": "source",
+      "status": "passed"
+    }
+  ],
+  "status": "mechanical_stages_passed_review_required"
+}

@@ -1,0 +1,47 @@
+{
+  "current_stage": null,
+  "metrics": {
+    "executed": 1,
+    "execution_seconds": 0.5151027829851955,
+    "failures": 0,
+    "model_invocations": 0,
+    "orchestrating_assistant_usage": "not measured by deterministic runner",
+    "reused": 5,
+    "reused_prior_execution_seconds": 113.10006376198726
+  },
+  "plan": "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/plans/high_brake_support_qualification.json",
+  "plan_sha256": "43b0e1f36485b9c08a842a5a8876f61160eda6fae0bdd07cfdb2157a8aefc646",
+  "stages": [
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_support01/records/evidence/latest.json",
+      "id": "evidence",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_support01/records/native/latest.json",
+      "id": "native",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_support01/records/material/latest.json",
+      "id": "material",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_support01/records/exchange/latest.json",
+      "id": "exchange",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_support01/records/source/latest.json",
+      "id": "source",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_support01/records/standard/latest.json",
+      "id": "standard",
+      "status": "passed"
+    }
+  ],
+  "status": "mechanical_stages_passed_review_required"
+}

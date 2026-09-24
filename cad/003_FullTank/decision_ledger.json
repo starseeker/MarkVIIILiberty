@@ -324,9 +324,16 @@
     },
     {
       "id": "high_speed_brake_support_receivers",
-      "status": "open_evidence",
+      "status": "reviewed_approximation",
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "basis": "Combined support source overlay, retained registration and six current qualification stages; historical and service limitations remain open.",
+        "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/combined_qualification/visual_review.json",
+        "sha256": "77b038c51725332719a2dc60c39d047b7168ac108d991818ac5cb26e9a0f8d34"
+      },
       "scope": "M362/M363 support receivers, M365/M366/M398/M399 stops and retention hardware.",
-      "reason": "M362/M363 retention and M366/M398/M399 stops with M365 clips are populated in a tested development assembly. Shared upper/lower hardware and bounded upper drill revision pass saved native/STEP, variation, integration, preservation, catalogue, context and exact reproduction checks. Complete support-packet qualification and service/controls remain open.",
+      "reason": "Final receiving/retention/stop combination passes six deterministic pipeline stages and source review: relocated native, complete affected material context, combined STEP and current standard-context evidence. Existing source/stock/variant approximations remain explicit; suitable for continued standard reconstruction.",
       "uncertainty": "Hidden support depth and cast-web form unprinted. Handbook locking plates differ from later catalogue lock-washer applications; two of ten MX60 screw locations unresolved.",
       "limits": [
         "Fixed planar registration is reused; this illustration is not a recovered perspective camera.",
@@ -337,7 +344,7 @@
         "Preview cache target-frame error affected an unpublished isometric only; corrected saved-native views inspected.",
         "Eight of ten catalogue MX60 screws and all six M400/nut pairs are located; two MX60 locations remain unresolved.",
         "Upper pitch revised from65 to60mm to reuse the HB133 MX61 definition; unprinted stock, bends, hidden M365 wrap and pierced tongue are estimates.",
-        "Both M399 stock and earlier M362 bracket-stock variations pass native/STEP checks; full support-packet pipeline remains pending."
+        "Both M399 stock and earlier M362 bracket-stock variations pass native/STEP checks; combined local static support qualification passes; full service and standard integration remain separate."
       ],
       "reopen_when": [
         "Anchor pins, stops, controls or service evidence contradict the tested receiver/bracket interfaces.",
@@ -404,7 +411,58 @@
         {
           "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/variation02/exchange_refined01/exchange_checks.json",
           "sha256": "0fdf8382bad0617918dcbb43ceb8201979398a689b33a8d1f9f638b6bb253802"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/qualification.json",
+          "sha256": "197e2dfc3598fab38006fc686d923d6b7c3957cb89eaaff017e161e48156427f"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/combined_qualification/visual_review.json",
+          "sha256": "77b038c51725332719a2dc60c39d047b7168ac108d991818ac5cb26e9a0f8d34"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/combined_qualification/publication_checks.json",
+          "sha256": "5ef83ea8075f184bd77160db8ac5eb1f817540ac169cbda9846deec26545d50e"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/support_qualification_contract.json",
+          "sha256": "ff440f18b08ce149d7ebf857ad76a66787244e0e4ec1ae1f31be4d6a10402c08"
         }
+      ]
+    },
+    {
+      "id": "transmission_rear_control_connections",
+      "status": "open_evidence",
+      "scope": "Rear high/low/track control connections, M4128 rear channel and spring/fulcrum brackets.",
+      "reason": "Six saved control bores located; source fork/pin variants, segmented plan/side layout and separate rod-end photograph recorded. Establish mating joints and channel stations before rod routes.",
+      "uncertainty": "Pin/fork length datums, current bore estimates, M575 application wording, channel position and broken-view rod lengths need interpretation.",
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/sources.json",
+          "sha256": "708b68c68f9d489d9e5b7bf765fa6de0ef45da0f0156e5cb4b11d2b965091998"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/inventory_audit.json",
+          "sha256": "8e85a8e13e78c35fa61ce112cd416e9948e18d5f6ceade0f4e49085d76fd5b13"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/context01/report.json",
+          "sha256": "6b7120783e1dfe6a665e7e18aa5838e7c5bfdfac5f761863db3e00ae49b2a5ff"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/source_reproduction.json",
+          "sha256": "9305f952f48905758b3b131464b8a2ed6657f0fecdb57a66c534ea7e8830afc5"
+        }
+      ],
+      "limits": [
+        "No source camera fit or new control geometry claimed.",
+        "HB92/HB113/SNL6 are related broken views, not independent cameras.",
+        "Current high-speed eye is25.4mm wide with no central slot; lower/track eyes12.7mm.",
+        "M568A pin length differs between physical and aggregate catalogue entries."
+      ],
+      "reopen_when": [
+        "Additional source data resolves pin/fork dimensions or the rear control-channel mounting.",
+        "A mating prototype contradicts the current lever or frame interfaces."
       ]
     }
   ]
