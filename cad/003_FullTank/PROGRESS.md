@@ -11,6 +11,22 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — brake-stop mounting and joint validation
+
+The [trial04 revision](experiments/drive_chains/transmission_brake_stop_study/trial04/README.md)
+repositions the previously estimated lower cap studs using relative handbook
+picks and source-length hardware. Paired rounded bosses and connecting webs
+replace the overly bulky trial03 casting. The native assembly remains at
+3,001 physical occurrences,503 definitions and295 groups.
+
+All55 mounting and71 joint/ownership checks pass. The592 development pairs have
+no detected interference, and the76 affected components have no nearby retained
+standard-tank pair. STEP diagnostics are investigating a tolerance-growth failure
+in the track lug's combined export; isolated export of the unchanged lug passes.
+The candidate remains experimental pending the remaining qualification work.
+Four reviewed views bring the progression to196 images; prior snapshots and
+native baselines are preserved. Standard tank011 remains unchanged.
+
 ## 24 September 2026 — experimental brake-stop geometry populated
 
 The [brake-stop packet](packets/P01-transmission-brake-stops.md) now contains a

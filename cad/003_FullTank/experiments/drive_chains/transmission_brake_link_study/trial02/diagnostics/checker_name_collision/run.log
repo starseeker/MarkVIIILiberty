@@ -1,0 +1,92 @@
+Exactly six support occurrences repositioned True
+Four links, four separate pivots and eight split pins added True
+Declared support shifts and new frames correct; other frames and all owners retained True
+Only specified support assembly translations and new children True
+All inherited definition identities retained True
+M337 source identity retained True
+M339 source identity retained True
+Split pin 1/4 x 1-1/2 source identity retained True
+M337 valid single solid True
+M339 valid single solid True
+split pin valid single solid True
+Upper fork has two coaxial bore faces; lower eye has one True
+Upper cheek 1 stock True
+Upper cheek 2 stock True
+Lower eye stock True
+Lower eye forward station True
+Lower eye vertical station True
+upper link bore completely open True
+upper filled-bore negative control rejected True
+lower link bore completely open True
+lower filled-bore negative control rejected True
+Pin overall length True
+Pin retains the estimated 24 mm nominal shaft True
+Two split-pin cross holes retained True
+Cross-hole axis at -17.45 True
+Cross hole open at -17.45 True
+Cross-hole axis at 17.45 True
+Cross hole open at 17.45 True
+Printed quarter-inch folded cotter envelope True
+Printed one-and-half-inch cotter leg stock True
+Cotter has two straight leg axes despite trimmed face splits True
+Complete straight cotter leg -1 True
+Cut cotter leg negative rejected -1 True
+Complete straight cotter leg 1 True
+Cut cotter leg negative rejected 1 True
+Saved folded shank envelope across Z True
+Cotter splayed tail 1 survives forming True
+Cotter splayed tail 2 survives forming True
+PortLowSpeed pivot centered on saved bracket bore True
+PortLowSpeed link centered on saved bracket bore True
+PortLowSpeed estimated pivot radial allowance True
+PortLowSpeed fork cheek clearance to bracket True
+PortLowSpeed fork does not remove or intersect bracket stock True
+PortLowSpeed axial retention witness -1 True
+PortLowSpeed axial retention witness 1 True
+PortLowSpeed lower strap lies inboard of actual band side False
+PortLowSpeed lower-eye rear envelope clears diaphragm plane True
+PortLowSpeed upper station X retained True
+PortLowSpeed upper station Z retained True
+PortLowSpeed actual link clears diaphragm True
+PortTrack pivot centered on saved bracket bore True
+PortTrack link centered on saved bracket bore True
+PortTrack estimated pivot radial allowance True
+PortTrack fork cheek clearance to bracket True
+PortTrack fork does not remove or intersect bracket stock True
+PortTrack axial retention witness -1 True
+PortTrack axial retention witness 1 True
+PortTrack lower strap lies inboard of actual band side False
+PortTrack lower-eye rear envelope clears diaphragm plane True
+PortTrack upper station X retained True
+PortTrack upper station Z retained True
+StarboardLowSpeed pivot centered on saved bracket bore True
+StarboardLowSpeed link centered on saved bracket bore True
+StarboardLowSpeed estimated pivot radial allowance True
+StarboardLowSpeed fork cheek clearance to bracket True
+StarboardLowSpeed fork does not remove or intersect bracket stock True
+StarboardLowSpeed axial retention witness -1 True
+StarboardLowSpeed axial retention witness 1 True
+StarboardLowSpeed lower strap lies inboard of actual band side False
+StarboardLowSpeed lower-eye rear envelope clears diaphragm plane True
+StarboardLowSpeed upper station X retained True
+StarboardLowSpeed upper station Z retained True
+StarboardLowSpeed actual link clears diaphragm True
+StarboardTrack pivot centered on saved bracket bore True
+StarboardTrack link centered on saved bracket bore True
+StarboardTrack estimated pivot radial allowance True
+StarboardTrack fork cheek clearance to bracket True
+StarboardTrack fork does not remove or intersect bracket stock True
+StarboardTrack axial retention witness -1 True
+StarboardTrack axial retention witness 1 True
+StarboardTrack lower strap lies inboard of actual band side False
+StarboardTrack lower-eye rear envelope clears diaphragm plane True
+StarboardTrack upper station X retained True
+StarboardTrack upper station Z retained True
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_links.py", line 135, in <module>
+    old_seat=seat_area(shape(name,'old'),shape('TransmissionFrame_TopChannel','old'))
+                       ^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_transmission_brake_links.py", line 55, in shape
+    row={'new':rows,'old':prior,'standard':tank}[scope][name];s=definition(row['definition'],scope);s.Placement=App.Placement(App.Matrix(*row['frame']));return s
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+KeyError: <Compound object at 0x77d720009180>

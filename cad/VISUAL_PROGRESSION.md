@@ -1,5 +1,17 @@
 # Mark VIII visual progression
 
+The revised brake-stop mounting adds an
+[isometric](intermediate_snapshot_iso_transmission_brake_stops_trial_002.png),
+[support detail](intermediate_snapshot_detail_transmission_brake_stops_trial_002.png),
+[low-speed overlay](intermediate_snapshot_source_low_brake_stops_trial_002.png) and
+[track overlay](intermediate_snapshot_source_track_brake_stops_trial_002.png).
+Trial04 replaces the earlier estimated lower bearing station and bulky casting
+with paired rounded bosses and connecting webs. The diagonal support follows
+the manual more closely, with the remaining source offsets documented.
+The candidate remains experimental. All192 prior images and31 recorded native
+baselines are preserved: **196 images total**. See the
+[trial04 record](003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/README.md).
+
 The experimental brake-stop study adds an
 [isometric](intermediate_snapshot_iso_transmission_brake_stops_trial_001.png),
 [support detail](intermediate_snapshot_detail_transmission_brake_stops_trial_001.png),

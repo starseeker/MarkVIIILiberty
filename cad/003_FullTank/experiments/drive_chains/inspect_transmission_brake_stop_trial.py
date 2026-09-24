@@ -14,7 +14,7 @@ rows={v['name']:v for v in m['occurrences']};cache={};world={};validity={};check
 for key,d in m['definitions'].items():
     path=Path(d['brep_path']);assert sha(path)==d['brep_sha256']
     s=Part.Shape();s.read(str(path));cache[key]=s
-    if key in r['new_definitions']:
+    if key in r['new_definitions']+r.get('changed_definitions',[]):
         validity[key]=dict(valid=s.isValid(),solid_count=len(s.Solids),closed=s.isClosed(),max_tolerance_mm=s.getTolerance(1),identity_frame=s.Placement.isIdentity())
 for name,row in rows.items():
     s=cache[row['definition']].copy();s.Placement=App.Placement(App.Matrix(*row['frame']));world[name]=s

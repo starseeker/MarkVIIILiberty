@@ -1,0 +1,31 @@
+{
+  "status": "experimental_lower_bearing_boss_revision",
+  "controls": {
+    "lower_stud_z": -137.0,
+    "split_half_gap": 0.05,
+    "replacement_top_z": -65.0,
+    "replacement_bottom_z": -200.0,
+    "replacement_rear_x": -96.0,
+    "socket_radius": 69.65,
+    "casting_half_width": 46.87142857142857,
+    "cap_upper_join_x": 60.0,
+    "lower_boss_height_above_axis": 27.0,
+    "lower_edge_margin": 20.0,
+    "lower_web_rear_x": -160.0,
+    "lower_web_rear_bottom_z": -170.0,
+    "lower_web_rear_top_z": -120.0,
+    "upper_web_join_x": 88.0,
+    "lower_web_knee_x": -95.0,
+    "stud_bore_clearance": 0.5,
+    "blind_end_gap": 0.3
+  },
+  "basis": {
+    "lower_stud_z": "Estimate from independent shaft-to-nut picks: HB134 -137.84 mm, HB135 -136.24 mm; each source pick has +/-5 px allowance.",
+    "lower_cap_seat_x": "Derived at build time from source MX36 length, complete coarse thread, existing nut/end projection/recess estimates and stop tab stock. 70.975 mm nominal; do not freely move it to match a drawing.",
+    "socket_radius": "Preserve actual inherited cylindrical socket: 69.65 mm.",
+    "casting_half_width": "Preserve inherited bearing axial material limits.",
+    "stud_allocation": "MX36 lower / MX10 upper is inferred; replaces the previous explicitly provisional inverse allocation.",
+    "all_other_controls": "Estimated local casting transition or inherited display/fit allowance. No source manufacturing drawing fixes these profiles."
+  },
+  "historical_geometry_qualified": false
+}

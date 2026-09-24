@@ -1,0 +1,203 @@
+{
+  "checks": [
+    {
+      "name": "All 2393 source occurrence identities retained",
+      "passed": true
+    },
+    {
+      "name": "Saved parentage and all composed frames match declared trial",
+      "passed": true,
+      "maximum_frame_error_mm": 1.1858451006202853e-12,
+      "failures": []
+    },
+    {
+      "name": "All definition identities and source metadata retained",
+      "passed": true,
+      "definitions": 461
+    },
+    {
+      "name": "Both saved chains retain every pitch and joint axis",
+      "passed": true,
+      "witnesses": 700,
+      "maximum_error_mm": 4.149180220086841e-12
+    },
+    {
+      "name": "Frame negative control rejects a 1 mm vertical shift",
+      "passed": true
+    },
+    {
+      "name": "Rephased output shaft retains drum and pinion spline clearance",
+      "passed": true,
+      "pairs": [
+        {
+          "shaft": "PortTransmissionOutput_shaft",
+          "neighbor": "PortTransmissionOutput_drum",
+          "common_mm3": 0.0,
+          "passed": true
+        },
+        {
+          "shaft": "PortTransmissionOutput_shaft",
+          "neighbor": "PortChain_TransmissionPinion",
+          "common_mm3": 0.0,
+          "passed": true
+        },
+        {
+          "shaft": "StarboardTransmissionOutput_shaft",
+          "neighbor": "StarboardTransmissionOutput_drum",
+          "common_mm3": 0.0,
+          "passed": true
+        },
+        {
+          "shaft": "StarboardTransmissionOutput_shaft",
+          "neighbor": "StarboardChain_TransmissionPinion",
+          "common_mm3": 0.0,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "name": "Negative control rejects translation without output spline rephasing",
+      "passed": true,
+      "common_mm3": 7708.263752215391
+    },
+    {
+      "name": "Saved oil pump envelope clears the unchanged floor",
+      "passed": true,
+      "measurements": [
+        {
+          "scope": "source",
+          "floor_top_z_mm": 533.0500000000003,
+          "pump_bottom_z_mm": 489.1741354357661,
+          "envelope_gap_mm": -43.87586456423418
+        },
+        {
+          "scope": "candidate",
+          "floor_top_z_mm": 533.0500000000003,
+          "pump_bottom_z_mm": 540.5435661764704,
+          "envelope_gap_mm": 7.4935661764701536
+        }
+      ],
+      "historical_height_uncertainty_mm": 35.569639468690696
+    },
+    {
+      "name": "Actual saved chain solids have no internal overlap",
+      "passed": true,
+      "pair_count": 886,
+      "failures": []
+    }
+  ],
+  "interfaces": [
+    {
+      "first": "EngineSuspension_LeftRail",
+      "second": "EngineSuspension_LeftPacking",
+      "measurements": [
+        {
+          "scope": "source",
+          "gap_mm": 157.43351043576615,
+          "common_mm3": 0.0
+        },
+        {
+          "scope": "candidate",
+          "gap_mm": 208.80294117647054,
+          "common_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "first": "EngineSuspension_RightRail",
+      "second": "EngineSuspension_RightPacking",
+      "measurements": [
+        {
+          "scope": "source",
+          "gap_mm": 157.43351043576615,
+          "common_mm3": 0.0
+        },
+        {
+          "scope": "candidate",
+          "gap_mm": 208.80294117647054,
+          "common_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "first": "EngineSuspension_LeftRail",
+      "second": "EngineSuspension_FrontPacking",
+      "measurements": [
+        {
+          "scope": "source",
+          "gap_mm": 221.28163097764914,
+          "common_mm3": 0.0
+        },
+        {
+          "scope": "candidate",
+          "gap_mm": 260.3438461802864,
+          "common_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "first": "PortFixedBearing_inner_bracket",
+      "second": "TransmissionFrame_TopChannel",
+      "measurements": [
+        {
+          "scope": "source",
+          "gap_mm": 5.805714285714203,
+          "common_mm3": 0.0
+        },
+        {
+          "scope": "candidate",
+          "gap_mm": 12.069993548724597,
+          "common_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "first": "PortFixedBearing_outer_bracket",
+      "second": "TransmissionFrame_TopChannel",
+      "measurements": [
+        {
+          "scope": "source",
+          "gap_mm": 0.0,
+          "common_mm3": 0.0
+        },
+        {
+          "scope": "candidate",
+          "gap_mm": 6.264279263010394,
+          "common_mm3": 0.0
+        }
+      ]
+    },
+    {
+      "first": "PortTransmissionOutput_shaft",
+      "second": "PortTransmissionCore_planet_disk",
+      "measurements": [
+        {
+          "scope": "source",
+          "gap_mm": 0.09999999999980856,
+          "common_mm3": 0.0
+        },
+        {
+          "scope": "candidate",
+          "gap_mm": 0.0,
+          "common_mm3": 2038.8435876658523
+        }
+      ]
+    },
+    {
+      "first": "StarboardTransmissionOutput_shaft",
+      "second": "StarboardTransmissionCore_planet_disk",
+      "measurements": [
+        {
+          "scope": "source",
+          "gap_mm": 0.09999999999988232,
+          "common_mm3": 0.0
+        },
+        {
+          "scope": "candidate",
+          "gap_mm": 0.0,
+          "common_mm3": 2038.843587662936
+        }
+      ]
+    }
+  ]
+}
