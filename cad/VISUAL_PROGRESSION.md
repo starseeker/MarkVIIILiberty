@@ -1,5 +1,17 @@
 # Mark VIII visual progression
 
+The frame-joint trial adds an
+[isometric](intermediate_snapshot_iso_transmission_frame_joints_001.png),
+[corner detail](intermediate_snapshot_detail_transmission_frame_joints_001.png)
+and [diaphragm view](intermediate_snapshot_detail_transmission_frame_diaphragm_001.png).
+Formed gusset returns and diaphragm overlaps now provide broad bearing faces;
+32 source-sized rivets join the channels and diaphragm. Their allocation and
+hidden joint forms remain explicit approximations. Local geometry, affected
+context, STEP, preservation, fresh reproduction and parameter checks pass.
+The rejected layout exposed tail-head clashes and is preserved in the study.
+All 164 earlier images and 26 recorded native baselines remain unchanged:
+**167 total**. See the [trial record](003_FullTank/experiments/drive_chains/transmission_frame_joint_study/trial03/README.md).
+
 The transmission bracket trial adds an
 [isometric](intermediate_snapshot_iso_transmission_bracket_mounts_001.png),
 [joint detail](intermediate_snapshot_detail_transmission_bracket_mounts_001.png)

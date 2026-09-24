@@ -1,0 +1,60 @@
+{
+  "controls": {
+    "frame_front_x": 1598.0817913541819,
+    "top_web_z": 1167.8698292220113,
+    "bottom_web_z": 586.8990512333966,
+    "channel_depth": 148,
+    "channel_height": 50,
+    "channel_stock": 8,
+    "channel_half_span": 1145,
+    "angle_leg_x": 50,
+    "angle_leg_y": 40,
+    "angle_stock": 8,
+    "gusset_stock": 8,
+    "gusset_width": 120,
+    "diaphragm_stock": 8,
+    "rear_stem_round_radius": 20,
+    "rear_stem_end_inset": 2.5,
+    "interface_witness_shift": 1,
+    "outer_angle_inset": 0,
+    "return_height": 90.0,
+    "rivet_diameter": 17.4625,
+    "rivet_stock_length": 38.1,
+    "rivet_head_ratio": 1.75,
+    "hole_radial_clearance": 0.15,
+    "rivet_points_from_rear": [
+      [
+        38,
+        27
+      ],
+      [
+        38,
+        63
+      ],
+      [
+        80,
+        25
+      ]
+    ],
+    "diaphragm_rivet_fractions": [
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "diaphragm_rivet_inset": 24.0
+  },
+  "basis": {
+    "return_height": "Estimated 80 mm return gives overlapping faces on the upright flange.",
+    "rivet_points_from_rear": "Three estimated positions within each existing gusset triangle; revised after four-per-corner tails fouled upright/diaphragm stock.",
+    "rivet_diameter": "11/16 inch, SNL97:006",
+    "rivet_stock_length": "1.5 inch, SNL97:006",
+    "rivet_head_ratio": "Estimated button-head diameter = 1.75 shank diameters.",
+    "hole_radial_clearance": "0.15 mm geometric fit allowance; not a manufacturing tolerance.",
+    "diaphragm_revision": "Move plate forward by angle stock and widen to overlap upright flange by angle_leg_y minus angle_stock; all occurrence frames fixed.",
+    "diaphragm_rivet_fractions": "Four estimated height stations on each diaphragm/upright overlap. Together with 24 gusset/channel rivets accounts for the printed 32 of this size.",
+    "diaphragm_rivet_inset": "Estimated axis 24 mm inward from each inner upright station, centered on the overlapping stock with full head bearing."
+  },
+  "historical_joint_layout_qualified": false,
+  "variation": "Increase gusset return by 10 mm and move channel/gusset hole axes forward by 2 mm; retain printed rivet stock and all occurrence frames."
+}

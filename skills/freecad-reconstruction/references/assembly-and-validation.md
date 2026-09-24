@@ -104,6 +104,15 @@ geometric, metadata and frame criteria. Unless exact archive-byte preservation
 is an actual requirement, avoid rewriting FCStd ZIP internals merely to make
 serialized hashes match. Such a repair adds another implementation to qualify.
 
+Capture object identifiers, metadata and other plain values before closing their
+document. On FreeCAD 1.1.1/OCC 7.8.0, reading an `App::Part.Name` through a retained
+Python object after `App.closeDocument()` raised `ReferenceError`, even though
+the native file had saved successfully. The frame-joint builder now captures its
+assembly-name list before closing; the fresh rebuild reproduces all persistent
+properties. The [initial failure](../../../cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_study/trial01/failure_status.json)
+and adjacent failed builder retain the tested case. Reopen the saved document
+and obtain fresh objects when later CAD access is required.
+
 For formed round wire, a valid fused solid can conceal self-interference: fusion
 removes the overlapping stock. Retain a nonphysical centerline and compare solid
 volume with cross-sectional area times its length. Check nonadjacent centerline

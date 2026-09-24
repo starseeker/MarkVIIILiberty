@@ -11,6 +11,29 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — frame overlaps and first rivet group reconstructed
+
+The [frame-joint trial](experiments/drive_chains/transmission_frame_joint_study/trial03/README.md)
+adds **32 rivets**: 24 at gusset/channel joints and eight at diaphragm/upright
+overlaps. Eight gussets acquire formed returns and the middle diaphragm acquires
+overlapping seats. The printed rivet stock volume is retained through upsetting.
+The development model has **2,505 physical occurrences, 464 definitions and 226
+assemblies**. Prior occurrence frames and MX1 bearing-pad contacts remain fixed.
+
+All **250 native checks, 238 development material pairs, one standard-context
+pair and 55 STEP comparisons pass**. All 454 unchanged definitions match the
+parent. Fresh reproduction matches 1,418 BReps and 119,075 persistent properties;
+a return-height/hole-position variation passes the same native/context checks.
+The rejected four-rivet corner layout and an interrupted preservation run remain
+documented. Three inspected progression images give **167 total**, preserving
+164 prior images and 26 recorded native baselines.
+
+The source gives this rivet group's size and count; allocation, formed returns,
+diaphragm overlap and head proportions remain explicit mechanical approximations.
+The remaining 46 frame rivets, upright/return fastening, M338/M385 brake supports,
+holding feet and complete hull attachment remain next. Standard tank011 is
+unchanged; full engine/interior coverage and final integration remain unfinished.
+
 ## 24 September 2026 — twenty transmission bracket joints populated and checked
 
 The [MX1 mounting trial](experiments/drive_chains/transmission_bracket_mount_study/trial01/README.md)
