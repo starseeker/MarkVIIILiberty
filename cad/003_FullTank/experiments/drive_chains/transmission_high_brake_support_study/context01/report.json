@@ -1,0 +1,156 @@
+{
+  "native_file": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/PowertrainWithHighBrakeMechanism.FCStd",
+  "native_sha256": "7f7eb9f687ed458d7bcfba599af6333be4899fb6477581ce2fd0075b01158b96",
+  "source_registration_sha256": "311f014e5f12beb874225901dff20706ed939600a4b2aece0fee7b601b64f9e2",
+  "source_sha256": "0a13d9442ba242f714d036290feb75f41520bd18951c9885c9209e185133b4a0",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/probe_transmission_high_brake_support.py": "45438d9737588fc97f7085602ea0ca7cacd38696947a8815aaaecf1c261151f6",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/report.json": "a9fca692bc0ce6f2d91be5d64787d19db67d7b0cb5fdf488f80ed7a3cb2135d7",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/isolated/manifest.json": "8224fd926712297f4550f546abbe14009d8b1d04da80c900ebb932ca0b3a9d22",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_bearing_controls.json": "d1642c2743bc08ba4cedfb5b5f83a52ffca0bd50a194b5f3f74284a2f745a32d",
+    "cad/003_FullTank/lib/camera_review.py": "b02ddcec81efff05b08fafa1144d69c13b067918439dd46e8abc7d4a31851611",
+    "cad/003_FullTank/lib/visual_review.py": "a8297dc8e18bc1f067fe629dbd5ccbf85484b608a6d874388738783ae6a7b178"
+  },
+  "selected_native_bindings_verified": true,
+  "selected_occurrences": [
+    "CenterTransmissionCore_bevel_case",
+    "PortHighSpeedBrakeAnchorEnd",
+    "TransmissionFrame_TopChannel",
+    "TransmissionFrame_BottomChannel",
+    "PortHighSpeedBrakeLongBand",
+    "PortHighSpeedBrakeLongLining",
+    "PortHighSpeedBrakeLongFrontEnd",
+    "PortHighSpeedBrakeShortBand",
+    "PortHighSpeedBrakeShortLining",
+    "PortHighSpeedBrakeShortFrontEnd"
+  ],
+  "sections": [
+    {
+      "name": "brake_midplane",
+      "station_world_y_mm": 222.25,
+      "edge_count": 4,
+      "brep_sha256": "8cf0f1387731b3707a814b4182071875e0e58f189a991798edfc01b2a99324f4"
+    },
+    {
+      "name": "bearing_midplane",
+      "station_world_y_mm": 279.2057142857143,
+      "edge_count": 20,
+      "brep_sha256": "469290e3a8968d6fee5deff495413b6908edb3cb8d62e2b6e84e51eb9ba7ca2a"
+    }
+  ],
+  "anchor_pin_center_world_mm": [
+    1755.2241500841396,
+    222.25,
+    691.0514867412129
+  ],
+  "anchor_pin_center_brake_mm": [
+    -76.27049196162397,
+    0.0,
+    -209.5514544352576
+  ],
+  "diagnostic_region_distances": [
+    {
+      "region": "top_foot_region",
+      "source_pixel": [
+        1090,
+        210
+      ],
+      "assumed_station": "brake_midplane",
+      "world_mm": [
+        1696.6463274390221,
+        222.25,
+        1167.3029411764705
+      ],
+      "case_distance_mm": 105.65532213102392,
+      "nearest_case_point_mm": [
+        1656.9587116028483,
+        125.0,
+        1155.8846337777918
+      ]
+    },
+    {
+      "region": "bottom_foot_region",
+      "source_pixel": [
+        1110,
+        1420
+      ],
+      "assumed_station": "brake_midplane",
+      "world_mm": [
+        1688.084529686213,
+        222.25,
+        649.3141771315267
+      ],
+      "case_distance_mm": 88.30573257715152,
+      "nearest_case_point_mm": [
+        1688.084529686213,
+        138.79221039936297,
+        620.4576395540001
+      ]
+    },
+    {
+      "region": "top_foot_region",
+      "source_pixel": [
+        1090,
+        210
+      ],
+      "assumed_station": "bearing_midplane",
+      "world_mm": [
+        1696.6463274390221,
+        279.2057142857143,
+        1167.3029411764705
+      ],
+      "case_distance_mm": 156.6238490984506,
+      "nearest_case_point_mm": [
+        1696.6463274390221,
+        137.8547155499432,
+        1234.7634871482774
+      ]
+    },
+    {
+      "region": "bottom_foot_region",
+      "source_pixel": [
+        1110,
+        1420
+      ],
+      "assumed_station": "bearing_midplane",
+      "world_mm": [
+        1688.084529686213,
+        279.2057142857143,
+        649.3141771315267
+      ],
+      "case_distance_mm": 143.1864838833656,
+      "nearest_case_point_mm": [
+        1688.084529686213,
+        139.4698299213744,
+        618.0691489222714
+      ]
+    }
+  ],
+  "image_hashes": {
+    "case_sections_source.png": "4ea64654019f68683eb932b48602e3710b506ae3068ac2d697a803def13fd71f",
+    "support_context.png": "8a6c3675c2f14a15da350dc6cf7d07666667c0ba866cbc00fc99e98f473a7222"
+  },
+  "runtime": {
+    "freecad": [
+      "1",
+      "1",
+      "1",
+      "44227 +647 (Git)",
+      "Unknown",
+      "2026/04/14 22:09:59",
+      "tag: 1.1.1",
+      "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+    ],
+    "occ": "7.8.0"
+  },
+  "camera_refit": false,
+  "geometry_modified": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "limits": [
+    "Source region picks are approximate, not bolt-center measurements.",
+    "Source projection and hidden transverse depths remain uncertain.",
+    "Existing M263 already has estimated geometry; the section comparison identifies receiving work, not a camera error.",
+    "Nearest-point distances do not establish bearing area, material stock or safe screw engagement."
+  ]
+}

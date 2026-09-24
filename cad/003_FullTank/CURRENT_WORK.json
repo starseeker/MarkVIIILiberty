@@ -19,7 +19,7 @@
     "python3 tools/cad_pipeline/decisions.py cad/003_FullTank/decision_ledger.json"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Populate M362/M363 high-speed anchor supports and M365 clips and M366/M398/M399 stops with their hardware. Then control rods, frame/hull joints, engine/interior population, inventory reconciliation and full standard integration; poses remain deferred.",
+  "next_action": "Resolve high-speed bracket receiving web and transverse depth using the support context study, then populate M362/M363 supports and M365/M366/M398/M399 stops and hardware. Preserve retained pin and bearing frames. Then control rods, remaining interiors and full standard integration; poses remain deferred.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -30,14 +30,16 @@
     "High-speed backing stock/clocking and long-hole pattern estimated",
     "High-speed lining variant: HB six M364 versus SNL two MX109 plus two M364",
     "Forward fittings, rear anchor extension and case bridge relief are estimated; lining support has documented recess/overhang exceptions; complete high-speed mechanism remains open.",
-    "High-speed operating lever/saddle, M356 pin/cotter stock and spring sections are inferred; anchor supports, stops, control rods and service paths remain pending."
+    "High-speed operating lever/saddle, M356 pin/cotter stock and spring sections are inferred; anchor supports, stops, control rods and service paths remain pending.",
+    "High-speed bracket receiving webs/depth unresolved; HB133 locking plates versus SNL271 lock-washer configuration retained separately. Eight of ten MX60 screws provisionally located; two unallocated."
   ],
   "visual_progression_count": 211,
-  "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/README.md",
+  "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/README.md",
   "latest_locally_qualified_checkpoint": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01",
     "native_sha256": "7f7eb9f687ed458d7bcfba599af6333be4899fb6477581ce2fd0075b01158b96",
     "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/qualification.json"
   },
-  "qualification_scope": "Paired operating levers, source-counted rivets, free-end pin/cotter joints and spring adjustment; static interfaces, preservation, STEP, context, exact reproduction and installed-height sensitivity."
+  "qualification_scope": "Paired operating levers, source-counted rivets, free-end pin/cotter joints and spring adjustment; static interfaces, preservation, STEP, context, exact reproduction and installed-height sensitivity.",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study"
 }

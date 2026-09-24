@@ -11,6 +11,21 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — high-speed support evidence and receiving context
+
+The [support study](experiments/drive_chains/transmission_high_brake_support_study/README.md)
+records source counts, service connections, anchor cotter stock and nominal
+hardware sizes. It preserves the handbook locking plates and later catalogue
+lock washers as distinct configuration evidence. Eight MX60 screws are provisionally
+located by the illustration; two of the catalogue total ten remain unallocated.
+
+A read-only, native-bound section probe reuses the HB133 registration. At the
+brake and bearing depths it exposes missing receiving material near the illustrated
+support feet; the case-web/bracket depth hypothesis must be developed before
+installation. Existing cotter and washer identities were audited for possible
+reuse. No CAD geometry or progression image was added. The qualified parent
+remains 3,121 occurrences /529 definitions /322 assemblies; the full goal is active.
+
 ## 24 September 2026 — high-speed operating mechanisms
 
 The [mechanism checkpoint](experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/README.md)
