@@ -1,0 +1,293 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Seven saved links remain local after relocation",
+      "passed": true
+    },
+    {
+      "name": "Starboard owns one guide and two rivets",
+      "passed": true
+    },
+    {
+      "name": "Port owns one guide and two rivets",
+      "passed": true
+    },
+    {
+      "name": "Bracket and rivet source records persist",
+      "passed": true
+    },
+    {
+      "name": "Two guides and four rivets share three definitions",
+      "passed": true
+    },
+    {
+      "name": "channel is one valid closed solid with bounded tolerance",
+      "passed": true,
+      "tolerance_mm": 1.00000185e-07
+    },
+    {
+      "name": "bracket is one valid closed solid with bounded tolerance",
+      "passed": true,
+      "tolerance_mm": 1.00000008e-07
+    },
+    {
+      "name": "rivet is one valid closed solid with bounded tolerance",
+      "passed": true,
+      "tolerance_mm": 1.00000009e-07
+    },
+    {
+      "name": "Channel loses exactly four receiving passages and gains no material",
+      "passed": true,
+      "removed_mm3": 3371.400156199871
+    },
+    {
+      "name": "Four complete channel bores retain their specified diameter",
+      "passed": true,
+      "expected_mm3": 3371.4001561998866
+    },
+    {
+      "name": "Starboard guide bore is an actual full-length cylindrical face",
+      "passed": true
+    },
+    {
+      "name": "Starboard nominal three-quarter-inch rod envelope passes guide",
+      "passed": true,
+      "nominal_radial_gap_mm": 0.47499999999999964,
+      "scope": "Guide passage only; complete M575 route, spring and thread fit remain open."
+    },
+    {
+      "name": "Starboard bracket has the recorded plate stock",
+      "passed": true
+    },
+    {
+      "name": "Starboard rear-flange seating exists",
+      "passed": true,
+      "bearing_area_mm2": 2154.837920771659
+    },
+    {
+      "name": "Starboard rivet1 retains both complete head annuli",
+      "passed": true,
+      "factory_bearing_mm2": 255.2156240698528,
+      "tail_bearing_mm2": 255.2156240698528
+    },
+    {
+      "name": "Starboard rivet1 shank clears both holes",
+      "passed": true
+    },
+    {
+      "name": "Starboard rivet1 mounting annulus fully supported",
+      "passed": true,
+      "unsupported_mm2": 0.0
+    },
+    {
+      "name": "Starboard rivet2 retains both complete head annuli",
+      "passed": true,
+      "factory_bearing_mm2": 255.2156240698528,
+      "tail_bearing_mm2": 255.2156240698528
+    },
+    {
+      "name": "Starboard rivet2 shank clears both holes",
+      "passed": true
+    },
+    {
+      "name": "Starboard rivet2 mounting annulus fully supported",
+      "passed": true,
+      "unsupported_mm2": 0.0
+    },
+    {
+      "name": "Port guide bore is an actual full-length cylindrical face",
+      "passed": true
+    },
+    {
+      "name": "Port nominal three-quarter-inch rod envelope passes guide",
+      "passed": true,
+      "nominal_radial_gap_mm": 0.47499999999999964,
+      "scope": "Guide passage only; complete M575 route, spring and thread fit remain open."
+    },
+    {
+      "name": "Port bracket has the recorded plate stock",
+      "passed": true
+    },
+    {
+      "name": "Port rear-flange seating exists",
+      "passed": true,
+      "bearing_area_mm2": 2154.837920771659
+    },
+    {
+      "name": "Port rivet1 retains both complete head annuli",
+      "passed": true,
+      "factory_bearing_mm2": 255.2156240698528,
+      "tail_bearing_mm2": 255.2156240698528
+    },
+    {
+      "name": "Port rivet1 shank clears both holes",
+      "passed": true
+    },
+    {
+      "name": "Port rivet1 mounting annulus fully supported",
+      "passed": true,
+      "unsupported_mm2": 0.0
+    },
+    {
+      "name": "Port rivet2 retains both complete head annuli",
+      "passed": true,
+      "factory_bearing_mm2": 255.2156240698528,
+      "tail_bearing_mm2": 255.2156240698528
+    },
+    {
+      "name": "Port rivet2 shank clears both holes",
+      "passed": true
+    },
+    {
+      "name": "Port rivet2 mounting annulus fully supported",
+      "passed": true,
+      "unsupported_mm2": 0.0
+    },
+    {
+      "name": "Rivet retains source three-quarter-inch stock and factory head",
+      "passed": true,
+      "actual_mm3": 4505.5009204767375,
+      "expected_mm3": 4505.500920476743
+    },
+    {
+      "name": "All local material pairs clear",
+      "passed": true
+    }
+  ],
+  "material_pairs": [
+    {
+      "first": "RearControlChannelStock",
+      "second": "StarboardHighSpringBracket",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "RearControlChannelStock",
+      "second": "StarboardHighSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "RearControlChannelStock",
+      "second": "StarboardHighSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "RearControlChannelStock",
+      "second": "PortHighSpringBracket",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "RearControlChannelStock",
+      "second": "PortHighSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "RearControlChannelStock",
+      "second": "PortHighSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardHighSpringBracket",
+      "second": "StarboardHighSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardHighSpringBracket",
+      "second": "StarboardHighSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardHighSpringBracket",
+      "second": "PortHighSpringBracket",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardHighSpringBracket",
+      "second": "PortHighSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardHighSpringBracket",
+      "second": "PortHighSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardHighSpringRivet1",
+      "second": "StarboardHighSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardHighSpringRivet1",
+      "second": "PortHighSpringBracket",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardHighSpringRivet1",
+      "second": "PortHighSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardHighSpringRivet1",
+      "second": "PortHighSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardHighSpringRivet2",
+      "second": "PortHighSpringBracket",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardHighSpringRivet2",
+      "second": "PortHighSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardHighSpringRivet2",
+      "second": "PortHighSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortHighSpringBracket",
+      "second": "PortHighSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortHighSpringBracket",
+      "second": "PortHighSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortHighSpringRivet1",
+      "second": "PortHighSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    }
+  ],
+  "native_sha256": "394e6719bd97fbee18be2d6d682669ce7f2643e14e465e113a9399649016852f",
+  "parent_native_sha256": "d4f9a5bd2294b0e41755b3fce3e47197bf4d04f165e1c4ec918246ba2edec2c2",
+  "manifest_sha256": "98f756397850c0595688eb863063d397529a3deff699e55187698b18456846e3",
+  "checker_sha256": "d98a6ece2d3216fa4fbc180e158a55af50ed3dd5a5187f9b5561ea25e4d257ec",
+  "scope": "Saved rear-flange guide pair, source rivets and receiving channel; complete rod and spring routes not qualified.",
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

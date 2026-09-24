@@ -1,0 +1,455 @@
+{
+  "native_sha256": "70255f94a6aa0eb77212429f0f49725a073d31b67d9b65862330a5138aec982d",
+  "extractor_sha256": "4bbc349b40b5fc628a0cd5c1b497faee4716cf0a0092b2ec30085953f0d2862e",
+  "definitions": {
+    "Def_HighSpringGuide_channel": {
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "properties": {
+        "SourceRecords": "[\"SNL:63:010\"]",
+        "SourcePartMark": "M4128"
+      },
+      "brep_sha256": "d7c1ae49324885cebd9edf3a09c991a0eff1f1757c138b406831a7faa72b467b",
+      "brep_path": "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring01/isolated/breps/d7c1ae49324885cebd9edf3a09c991a0eff1f1757c138b406831a7faa72b467b.brep",
+      "archive_entry": "Def_HighSpringGuide_channel.Shape.brp"
+    },
+    "Def_HighSpringGuide_bracket": {
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "properties": {
+        "SourceRecords": "[\"SNL:39:008\", \"SNL:63:009\"]",
+        "SourcePartMark": "M4135"
+      },
+      "brep_sha256": "1637e2aba8bec4de66307a7acf0c0f55688f45c67af22c4089b675a18fb21378",
+      "brep_path": "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring01/isolated/breps/1637e2aba8bec4de66307a7acf0c0f55688f45c67af22c4089b675a18fb21378.brep",
+      "archive_entry": "Def_HighSpringGuide_bracket.Shape.brp"
+    },
+    "Def_HighSpringGuide_rivet": {
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "properties": {
+        "SourceRecords": "[\"SNL:169:011\"]",
+        "SourcePartMark": "1/2 x 3/4 inch button-head rivet"
+      },
+      "brep_sha256": "f7b317eefb3a73455d439d9220b71863350ed9d28b2da39d91bee6de7291e732",
+      "brep_path": "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring01/isolated/breps/f7b317eefb3a73455d439d9220b71863350ed9d28b2da39d91bee6de7291e732.brep",
+      "archive_entry": "Def_HighSpringGuide_rivet.Shape.brp"
+    }
+  },
+  "occurrences": [
+    {
+      "name": "RearControlChannelStock",
+      "object": "RearControlChannelStock",
+      "definition": "Def_HighSpringGuide_channel",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root"
+      ]
+    },
+    {
+      "name": "StarboardHighSpringBracket",
+      "object": "StarboardHighSpringBracket",
+      "definition": "Def_HighSpringGuide_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2390.0,
+        0.0,
+        1.0,
+        0.0,
+        -222.25,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "StarboardHighSpringSupport"
+      ]
+    },
+    {
+      "name": "StarboardHighSpringRivet1",
+      "object": "StarboardHighSpringRivet1",
+      "definition": "Def_HighSpringGuide_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2434.45,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -241.3,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        590.2,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "StarboardHighSpringSupport"
+      ]
+    },
+    {
+      "name": "StarboardHighSpringRivet2",
+      "object": "StarboardHighSpringRivet2",
+      "definition": "Def_HighSpringGuide_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2434.45,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -203.2,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        590.2,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "StarboardHighSpringSupport"
+      ]
+    },
+    {
+      "name": "PortHighSpringBracket",
+      "object": "PortHighSpringBracket",
+      "definition": "Def_HighSpringGuide_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2390.0,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "PortHighSpringSupport"
+      ]
+    },
+    {
+      "name": "PortHighSpringRivet1",
+      "object": "PortHighSpringRivet1",
+      "definition": "Def_HighSpringGuide_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2434.45,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        203.2,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        590.2,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "PortHighSpringSupport"
+      ]
+    },
+    {
+      "name": "PortHighSpringRivet2",
+      "object": "PortHighSpringRivet2",
+      "definition": "Def_HighSpringGuide_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2434.45,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        241.3,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        590.2,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "PortHighSpringSupport"
+      ]
+    }
+  ],
+  "assemblies": {
+    "Root": {
+      "local": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "children": [
+        "RearControlChannelStock",
+        "StarboardHighSpringSupport",
+        "PortHighSpringSupport"
+      ],
+      "proposed_engine_pose": null
+    },
+    "Definitions": {
+      "local": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "children": [
+        "Def_HighSpringGuide_bracket",
+        "Def_HighSpringGuide_rivet",
+        "Def_HighSpringGuide_channel"
+      ],
+      "proposed_engine_pose": null
+    },
+    "StarboardHighSpringSupport": {
+      "local": [
+        1.0,
+        0.0,
+        0.0,
+        2390.0,
+        0.0,
+        1.0,
+        0.0,
+        -222.25,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "world": [
+        1.0,
+        0.0,
+        0.0,
+        2390.0,
+        0.0,
+        1.0,
+        0.0,
+        -222.25,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "children": [
+        "StarboardHighSpringBracket",
+        "StarboardHighSpringRivet1",
+        "StarboardHighSpringRivet2"
+      ],
+      "proposed_engine_pose": null
+    },
+    "PortHighSpringSupport": {
+      "local": [
+        1.0,
+        0.0,
+        0.0,
+        2390.0,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "world": [
+        1.0,
+        0.0,
+        0.0,
+        2390.0,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "children": [
+        "PortHighSpringBracket",
+        "PortHighSpringRivet1",
+        "PortHighSpringRivet2"
+      ],
+      "proposed_engine_pose": null
+    }
+  }
+}

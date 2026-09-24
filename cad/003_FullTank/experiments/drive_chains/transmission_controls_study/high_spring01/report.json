@@ -1,0 +1,274 @@
+{
+  "native_file": "RearHighSpringBrackets.FCStd",
+  "native_sha256": "70255f94a6aa0eb77212429f0f49725a073d31b67d9b65862330a5138aec982d",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_integrated01/PowertrainWithRearControlFulcrums.FCStd",
+  "parent_native_sha256": "d4f9a5bd2294b0e41755b3fce3e47197bf4d04f165e1c4ec918246ba2edec2c2",
+  "parent_manifest_sha256": "3101649d06671fba5d6552029fbef9151314cb2b3e1810f54cc43a0207e9be81",
+  "controls": {
+    "parent": "fulcrum_integrated01",
+    "channel_stock": 6.35,
+    "bracket": {
+      "stock": 6.35,
+      "guide_height": 23.07794117647063,
+      "tab_radius": 19.05,
+      "inside_radius": 6.35,
+      "guide_diameter": 20.0,
+      "foot_length": 63.5,
+      "foot_width": 63.5,
+      "rivet_x": 44.45,
+      "rivet_y": [
+        -19.05,
+        19.05
+      ]
+    },
+    "rivet": {
+      "diameter": 12.7,
+      "stock_length": 19.05,
+      "hole_diameter": 13.0,
+      "factory_ratio": 1.75,
+      "factory_height_ratio": 0.7,
+      "upset_ratio": 1.75
+    },
+    "stations": {
+      "Starboard": [
+        2390.0,
+        -222.25,
+        583.85
+      ],
+      "Port": [
+        2390.0,
+        222.25,
+        583.85
+      ]
+    }
+  },
+  "details": {
+    "rivet": {
+      "grip_mm": 12.7,
+      "factory_radius_mm": 11.112499999999999,
+      "upset_radius_mm": 11.112499999999999,
+      "upset_height_mm": 3.9771284652748733,
+      "upset_stock_volume_mm3": 804.3981230672778
+    },
+    "channel_hole_axes": [
+      {
+        "station": "Starboard",
+        "world_mm": [
+          2434.45,
+          -241.3,
+          583.85
+        ]
+      },
+      {
+        "station": "Starboard",
+        "world_mm": [
+          2434.45,
+          -203.2,
+          583.85
+        ]
+      },
+      {
+        "station": "Port",
+        "world_mm": [
+          2434.45,
+          203.2,
+          583.85
+        ]
+      },
+      {
+        "station": "Port",
+        "world_mm": [
+          2434.45,
+          241.3,
+          583.85
+        ]
+      }
+    ]
+  },
+  "specs": {
+    "RearControlChannelStock": {
+      "role": "channel",
+      "owner": "Root",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardHighSpringBracket": {
+      "role": "bracket",
+      "owner": "StarboardHighSpringSupport",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2390.0,
+        0.0,
+        1.0,
+        0.0,
+        -222.25,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardHighSpringRivet1": {
+      "role": "rivet",
+      "owner": "StarboardHighSpringSupport",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2434.45,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -241.3,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        590.2,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardHighSpringRivet2": {
+      "role": "rivet",
+      "owner": "StarboardHighSpringSupport",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2434.45,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -203.2,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        590.2,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortHighSpringBracket": {
+      "role": "bracket",
+      "owner": "PortHighSpringSupport",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2390.0,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortHighSpringRivet1": {
+      "role": "rivet",
+      "owner": "PortHighSpringSupport",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2434.45,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        203.2,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        590.2,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortHighSpringRivet2": {
+      "role": "rivet",
+      "owner": "PortHighSpringSupport",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2434.45,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        241.3,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        590.2,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "record_ids": {
+    "bracket": [
+      "SNL:39:008",
+      "SNL:63:009"
+    ],
+    "rivet": [
+      "SNL:169:011"
+    ],
+    "channel": [
+      "SNL:63:010"
+    ]
+  },
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/trial_rear_high_spring_brackets.py": "304483b8a063f886c3237bc87d769f7de9a868d51f61f8024e2b09beda99fe4f",
+    "cad/003_FullTank/experiments/drive_chains/rear_high_spring_bracket_parts.py": "0b06e308382bb9877d460fb52bc9f87d02bacf3461d29e4104479050b02b6cbd",
+    "cad/003_FullTank/experiments/drive_chains/rear_control_channel_mount_parts.py": "4d8eec7292a635e762f19c3c9c8224b875ac3397f5c26de1f1d63740749d4aae",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py": "97cb213e7707b3cce73b0bca7e5fa8b76345ff841e8fab767c3d16cf350a803e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py": "320daa2f0c98a8916cd09adc680ad11e1daf360c005bcaeddc1c9d66286a994b",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring_controls01.json": "67bcd148bcd3614396e67b171c31485949e56db11aed14c483c22e911fd7b8ca",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json": "8a4816e18595d639ef7ff3c771475d27ddcde8faf01d88dcdde87aa7cc963156",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_integrated01/qualification.json": "9a1fa5c0fe6ec9185ace831c2717433769c1a884bc4d4011b8ce93116ac25560",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_integrated01/isolated/manifest.json": "3101649d06671fba5d6552029fbef9151314cb2b3e1810f54cc43a0207e9be81"
+  },
+  "new_physical_occurrences": 6,
+  "prototype_physical_occurrences": 7,
+  "prototype_definition_count": 3,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "geometry_integrated": false
+}

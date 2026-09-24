@@ -700,6 +700,86 @@
           "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
         }
       ]
+    },
+    {
+      "id": "rear_control_short_connection_identity_correction",
+      "status": "reviewed_approximation",
+      "scope": "Four short brake-connection identities; additive correction to the retained fulcrum interface probe.",
+      "reason": "Original SNL194/195 distinguish SH946D/SH946E connecting rods from M578/M573 long rear rods; SNL86/87 specify M569C versus M569A forks.",
+      "uncertainty": "Functional HB M577/M572 correspondence is inferred; exact interchangeability and historical rod dimensions are not established.",
+      "limits": [
+        "Old measured eye coordinates/pin axes remain valid; old hashed receipt is retained.",
+        "The short connections remain unmodeled. M569A length datum and M568A length conflict remain open."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring_source_review01.json",
+        "sha256": "514920c15297341e37fd8850dcb059bf3a625036c65dd01f05d35db8350d199f"
+      },
+      "reopen_when": [
+        "Stronger source or variant evidence changes SH946D/SH946E functional correspondence or end-fork application."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
+          "sha256": "8a4816e18595d639ef7ff3c771475d27ddcde8faf01d88dcdde87aa7cc963156"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring_source_review01.json",
+          "sha256": "514920c15297341e37fd8850dcb059bf3a625036c65dd01f05d35db8350d199f"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_integrated01/operating_interfaces.json",
+          "sha256": "41290a0b8229ad411f56ae0852283fda3316b8411cca360f52dd71fb4f3b23de"
+        }
+      ]
+    },
+    {
+      "id": "rear_high_spring_guides_local_route",
+      "status": "reviewed_approximation",
+      "scope": "Two M4135 guides/four rivets and local M575 clearance witnesses; unintegrated study.",
+      "reason": "Source rivet quantities and actual neighboring material constrain four retained layouts. Final nominal and stock variant clear both guide and local rod/spring envelopes.",
+      "uncertainty": "Guide profile, stock, attachment orientation and asymmetric port offset remain estimates; the fixed source overlay retains height/bend disagreement.",
+      "limits": [
+        "M4135 attachment form and asymmetric station remain approximate pending stronger source evidence.",
+        "The32mm spring envelope does not determine spring diameter, free length, installed length or winding/end form.",
+        "No full M575 route, center linkage, movement or service claim.",
+        "M4136, M4129 and short SH946D/SH946E assemblies remain subsequent work.",
+        "Existing21.867px source control-bore discrepancy remains unresolved; no camera refit.",
+        "The unchanged side overlay retains a route below the drawn rod level and a different bend. Local material clearance does not establish historical agreement.",
+        "Bracket/rod feasibility is conditional on the current estimated clutch geometry; complete M575 rods, physical springs, remote interfaces, movement and service are unqualified.",
+        "The selected nominal guide pair is an unintegrated seven-occurrence prototype, including its receiving channel. Full development counts remain 3226/558/347."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring04/visual_review.json",
+        "sha256": "cc61421b62dacbf4eb6c4d8f2fa15ddc0316fbe42e0bc1c523b67ec070276faa"
+      },
+      "reopen_when": [
+        "New source evidence changes guide topology, stock, rod route or spring interfaces.",
+        "Clutch, brake fork, receiving channel or neighboring support geometry changes.",
+        "New independently supported source landmarks contradict the fixed registration; diagnose before refitting."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring_study_receipt01.json",
+          "sha256": "ed03818519063967c314ad61f21a62e8cb20a548d82136d43dcb3f8ea7f631c4"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring04/visual_review.json",
+          "sha256": "cc61421b62dacbf4eb6c4d8f2fa15ddc0316fbe42e0bc1c523b67ec070276faa"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring_source_review01.json",
+          "sha256": "514920c15297341e37fd8850dcb059bf3a625036c65dd01f05d35db8350d199f"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json",
+          "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
+        }
+      ]
     }
   ]
 }

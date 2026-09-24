@@ -20,10 +20,20 @@ transfers into the full development hierarchy. Its source overlay reuses the
 unchanged local SNL6 registration and preserves the existing control-bore
 discrepancy. Four new images bring visual progression to 229.
 
-The [saved interface measurements](fulcrum_integrated01/operating_interfaces.json)
-locate eight new vertical rod eyes and reverify four transverse brake eyes. The
-next M573/M578 connections need differently oriented end forks; endpoint chords
-do not establish clear routes or finished rod lengths.
+The [M4135 guide study](high_spring04/README.md) now has two locally checked
+brackets, four rivets and local rod/spring clearance witnesses. This seven-part
+prototype is not integrated; the full counts above remain unchanged. Nominal and
+thicker stock pass native/interface/context/STEP checks. Three new reviewed images
+bring progression to 232, preserving earlier views and the unchanged source camera.
+
+**Source identity correction:** the four short connections in the
+[saved interface measurements](fulcrum_integrated01/operating_interfaces.json)
+are SH946D (track, M569C forks) and SH946E (low-speed, M569A forks), functionally
+corresponding to handbook M577 and M572. Their coordinates and perpendicular end
+pin axes remain valid. M578/M573 identify the longer rear rods to the center
+controls. The additive [source packet](spring_sources01/sources.json) preserves
+the correction and original evidence; the old receipt remains immutable.
+Endpoint chords do not establish clear routes or finished rod lengths.
 
 [sources.json](sources.json) retains 99 source rows associated with 34 identities,
 handbook operating/adjustment text, literal dimensional constraints and source

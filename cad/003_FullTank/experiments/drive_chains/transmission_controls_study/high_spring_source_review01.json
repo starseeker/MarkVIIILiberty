@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-24",
+  "reviewer": "Codex",
+  "sources_sha256": "8a4816e18595d639ef7ff3c771475d27ddcde8faf01d88dcdde87aa7cc963156",
+  "reviewed_source_images": {
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p086.jpg": "91792d997a9e79704c8e2dfeb2bff8895e6e46f9d6132d79ff58b114f2adfd86",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p087.jpg": "a7a3af6c7859fad419d59df5437210047d8c5a3ad5ca237d862c3a782fd720c3",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p169.jpg": "28dc08082dcd381f36faedcc86661364f05acaa2f85d10eb22399999559f1af5",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p194.jpg": "3b3603f9fff0b172b1392a8c43b1c048cfd1c4e68d75e58365228288f3d45e5c",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p195.jpg": "a4716d9388da51a44f8403e33db3f05198b992e0ad4dc516afe51f385961b014",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate104.png": "dd631db969b4de5d83996434fc26af8d672f8e6ae247fef074f771957ccd77ff",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea"
+  },
+  "source_classification": {
+    "HB104": "Photograph; rear controls with transmission removed; mounting details partially obscured. No camera calibration.",
+    "SNL6": "Segmented plan/side arrangement; existing local side registration reused. No global rod-length or transverse calibration.",
+    "HB12": "Separate front-control detail in the figure index; not a rear spring-support section."
+  },
+  "route_identity_correction": "The four chords in fulcrum_integrated01/operating_interfaces.json measure short brake connections. SH946D/M569C replaces its M578 assignment; SH946E/M569A replaces its M573 assignment. Coordinates and pin axes remain valid. HB M577/M572 correspondence is functional inference, not certified interchangeability.",
+  "catalogue_support": "Original SNL169 lists four half-inch by3/4inch rivets applied two per M4135. SNL194/195 distinguish connecting rods from the long rear rods; original SNL86/87 confirms their different fork applications.",
+  "hypotheses": [
+    "Represent M4135 as a6.35mm plate on the rear vertical channel flange with two mounting rivets and a20mm guide hole above it. Stock, contour, guide diameter and attachment orientation are estimates.",
+    "Keep the channel, all existing clutch parts and original source registration fixed. Guide centerZ606.927941mm follows the existing high-brake eye height.",
+    "Starboard guideY-222.25mm; port guideY273.05mm is50.8mm outboard of its brake-eye line. Asymmetric current clutch geometry motivates the offset. This is not established by a dimensioned source.",
+    "The port offset requires a smooth M575 transition and a clear forward route. The local19.05mm rod and32mm spring clearance envelopes test feasibility only; the whole rod, actual spring and center linkage remain unfinished."
+  ],
+  "revisions": [
+    {
+      "candidate": "high_spring01",
+      "result": "Top-mounted foot and port guide collide with five retained material pairs; native and failed checks retained."
+    },
+    {
+      "candidate": "high_spring02",
+      "result": "Rear-flange guide still collides with the left casting at the straightY222.25 lane. Actual material sections identify the obstruction."
+    },
+    {
+      "candidate": "high_spring03",
+      "result": "Port offset38.1mm clears the bracket and passes native/STEP checks, but the forward rod witness clips the auxiliary fork-pin tip by29.163969mm3."
+    },
+    {
+      "candidate": "high_spring04",
+      "result": "Port offset50.8mm submitted to bracket and coupled route checks; acceptance is recorded separately from this hypothesis review."
+    }
+  ],
+  "limits": [
+    "M4135 attachment form and asymmetric station remain approximate pending stronger source evidence.",
+    "The32mm spring envelope does not determine spring diameter, free length, installed length or winding/end form.",
+    "No full M575 route, center linkage, movement or service claim.",
+    "M4136, M4129 and short SH946D/SH946E assemblies remain subsequent work.",
+    "Existing21.867px source control-bore discrepancy remains unresolved; no camera refit."
+  ],
+  "source_camera_refitted": false,
+  "historical_geometry_qualified": false
+}

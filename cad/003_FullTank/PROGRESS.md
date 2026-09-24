@@ -11,6 +11,33 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — rear high-speed guides and corrected short connections
+
+[The M4135 study](experiments/drive_chains/transmission_controls_study/high_spring04/README.md)
+retains two guide brackets, four source-listed rivets and a revised receiving
+channel in a separate native: **7 occurrences / 3 definitions, not integrated**.
+Full development remains **3,226 occurrences / 558 definitions / 347 groups**.
+Four layouts are preserved, including a bracket that cleared its neighbors but
+whose rod envelope clipped an auxiliary pin. The final layout uses an estimated
+50.8 mm outward port offset, conditional on the current clutch reconstruction.
+
+Nominal and thicker stock each pass 32 native/interface checks, 21 local material
+pairs, two surrounding pairs and ten strict STEP comparisons. Local rod/spring
+clearance witnesses each pass 29 pairs; they are not completed rods or springs.
+Fresh nominal native generation reproduces nine archive BReps and 659 persistent
+properties; the 53-row source packet reproduces byte for byte.
+
+Original catalogue pages correct the four short connections to **SH946D/M569C**
+and **SH946E/M569A**, functionally corresponding to HB M577/M572. Earlier M578/M573
+labels belong to the long rear rods. Existing measured coordinates remain valid;
+the old interface receipt is retained with an additive correction.
+
+The unchanged SNL6 camera still exposes a rod-height/bend mismatch and the earlier
+21.867 px control-bore discrepancy. Clearance success does not resolve those
+historical questions. Three saved views bring progression to **232**, preserving
+all 229 earlier images. Next: M4136/M4129 topology, corrected short connections and
+complete rear rods/springs before connected-family integration. Full goal active.
+
 ## 24 September 2026 — four retained rear-control fulcrum units
 
 [The fulcrum checkpoint](experiments/drive_chains/transmission_controls_study/fulcrum_integrated01/README.md)
@@ -34,8 +61,9 @@ they are not independent holdouts. Four saved images bring progression to **229*
 preserving all 225 earlier images. Standard tank011 remains unchanged.
 
 Eight new vertical rod eyes and four inherited transverse brake eyes are measured
-from the saved native. M573/M578 end forks need a quarter-turn orientation
-difference; eye-center chords are not finished rod lengths or clearance results.
+from the saved native. The short-connection end forks need a quarter-turn orientation difference;
+eye-center chords are not finished rod lengths or clearance results. The later
+source correction above assigns SH946D/SH946E to these four connections.
 Next: M4129 attachment, M4135/M4136 spring supports, and complete rear rods with
 their joints, spring interfaces and clearances. Full standard-tank goal remains active.
 

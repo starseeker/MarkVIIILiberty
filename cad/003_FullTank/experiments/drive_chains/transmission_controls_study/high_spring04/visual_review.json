@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-24",
+  "reviewer": "Codex",
+  "disposition": "reviewed_local_static_approximation_pending_family_integration",
+  "native_sha256": "83a0440f18fcf101111e6e50b32c177520f8a22c67802a2c2c51fad9783ea89a",
+  "source_review_sha256": "514920c15297341e37fd8850dcb059bf3a625036c65dd01f05d35db8350d199f",
+  "render_receipts": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring04/render_receipt.json": "8bd7c6ad5ff120a563a6d6bbbe9e604684a99cfa88c0588659db121495cab0c7",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring_routes04/render_receipt.json": "b36712d3157501449f29b6abe3fd1a3ca3270959a2da422f0008c5e8b18cb110"
+  },
+  "reviewed_images": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring04/high_spring_isometric.png": "bcc2da1cf90b6840833ed32aca20b9b3a76686a425e97d352b718e3915ae30c2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring04/high_spring_detail.png": "8a62941260baaab6174dcd0d47b4e880ff52453535bde5bd01ab172027b5f274",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring_routes04/route_isometric.png": "39f7bbd4a221a33c0cc556caeca9b6cd494000d55febbf5d2953758369bd3c68",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring_routes04/route_detail.png": "f5f0dbc93bf454cf3be45689c17024e925149157a2df38b068d9f2d980ca8e12",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring_routes04/route_source_detail.png": "e12d6dd00f998bd6648b578942f9910c950573680dc411a0b5ea0cb25c153470"
+  },
+  "observations": [
+    "Two rear-flange guides and four rivets are visible in the saved contextual isometric; the detail exposes the guide bore, narrowed upper tab and supported rivet layout.",
+    "The local gold rod envelopes follow the saved fork socket directions, pass through the guide bores and clear the nearby clutch support and auxiliary pin in the checked standard position.",
+    "The source overlay still places the provisional rod below the drawn rod level and shows a different bend. This is an unresolved geometric/source interpretation, not a reason to optimize the camera against estimated points."
+  ],
+  "source_registration_sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe",
+  "source_camera_refitted": false,
+  "camera_reuse_reason": "New guide stations and rod paths are estimated construction geometry, not independent landmarks. The original source pixels and existing registration anchors have not changed.",
+  "reverify_camera_when": [
+    "A revised supported brake/control anchor changes its local position or source identity.",
+    "New identifiable source features provide independent depth constraints or show coherent disagreement across several well-supported components."
+  ],
+  "refit_policy": "Keep new geometry in the saved camera first. Reverify affected picks/anchors; add new independent holdouts. Adopt a versioned refit only with a documented reason and old/new comparison against the same geometry and holdouts.",
+  "local_static_checks_passed": true,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "complete_rod_qualified": false,
+  "limits": [
+    "M4135 attachment form and asymmetric station remain approximate pending stronger source evidence.",
+    "The32mm spring envelope does not determine spring diameter, free length, installed length or winding/end form.",
+    "No full M575 route, center linkage, movement or service claim.",
+    "M4136, M4129 and short SH946D/SH946E assemblies remain subsequent work.",
+    "Existing21.867px source control-bore discrepancy remains unresolved; no camera refit.",
+    "The unchanged side overlay retains a route below the drawn rod level and a different bend. Local material clearance does not establish historical agreement.",
+    "Bracket/rod feasibility is conditional on the current estimated clutch geometry; complete M575 rods, physical springs, remote interfaces, movement and service are unqualified.",
+    "The selected nominal guide pair is an unintegrated seven-occurrence prototype, including its receiving channel. Full development counts remain 3226/558/347."
+  ]
+}

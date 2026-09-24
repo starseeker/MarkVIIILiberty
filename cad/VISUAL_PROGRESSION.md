@@ -1214,3 +1214,20 @@ See the [checkpoint evidence](003_FullTank/experiments/drive_chains/transmission
 | [intermediate_snapshot_iso_rear_control_fulcrums_001.png](intermediate_snapshot_iso_rear_control_fulcrums_001.png) | `483b07757973cb22319c2b987d577650d068529b2fe17c2e56adaafb0a67ec76` |
 | [intermediate_snapshot_detail_rear_control_fulcrum_001.png](intermediate_snapshot_detail_rear_control_fulcrum_001.png) | `2a3a19c4502710ba861e303b4df72c97d6dff27ea713c1d8ec8607a7d4f1ec76` |
 | [intermediate_snapshot_source_rear_control_fulcrums_001.png](intermediate_snapshot_source_rear_control_fulcrums_001.png) | `bcc69cc17e749f0dca1ca5da203a86993204861eab486b0a0dd6d3e37da0ab8a` |
+
+
+## Rear high-speed spring guides and local route study — 24 September 2026
+
+The [guide prototype](003_FullTank/experiments/drive_chains/transmission_controls_study/high_spring04/README.md)
+adds two M4135 supports and four rivets to a revised receiving channel, pending
+family integration. The detail and source views contain local rod clearance
+witnesses and outlined spring envelopes, not completed rods or springs. The fixed
+source projection retains an unresolved rod-height/bend discrepancy. Standard
+tank011 remains unchanged. Three images bring progression to **232**, with all
+229 earlier images preserved.
+
+| View | SHA-256 |
+|---|---|
+| [intermediate_snapshot_iso_rear_high_spring_guides_001.png](intermediate_snapshot_iso_rear_high_spring_guides_001.png) | `bcc2da1cf90b6840833ed32aca20b9b3a76686a425e97d352b718e3915ae30c2` |
+| [intermediate_snapshot_detail_rear_high_spring_route_001.png](intermediate_snapshot_detail_rear_high_spring_route_001.png) | `f5f0dbc93bf454cf3be45689c17024e925149157a2df38b068d9f2d980ca8e12` |
+| [intermediate_snapshot_source_rear_high_spring_route_001.png](intermediate_snapshot_source_rear_high_spring_route_001.png) | `e12d6dd00f998bd6648b578942f9910c950573680dc411a0b5ea0cb25c153470` |

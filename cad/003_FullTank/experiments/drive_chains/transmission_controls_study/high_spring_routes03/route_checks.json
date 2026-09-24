@@ -1,0 +1,327 @@
+{
+  "passed": false,
+  "routes": {
+    "Starboard": {
+      "fork_occurrence": "StarboardHighSpeedBrakeControlFork",
+      "fork_definition_sha256": "dbab5cffaca2f02438ca4343896c4ce85c96b6ba42b53e9d0645096d11d16d0a",
+      "rod_start_world_mm": [
+        2088.5783538397422,
+        -222.25000000000006,
+        602.9672234663922
+      ],
+      "initial_tangent": [
+        0.9781476007338058,
+        0.0,
+        -0.2079116908177594
+      ],
+      "bezier_poles_world_mm": [
+        [
+          2138.4149740971297,
+          -222.25000000000006,
+          592.3741228192274
+        ],
+        [
+          2182.431616130151,
+          -222.25000000000006,
+          583.0180967324283
+        ],
+        [
+          2205.0,
+          -222.25,
+          606.9279411764707
+        ],
+        [
+          2250.0,
+          -222.25,
+          606.9279411764707
+        ]
+      ],
+      "guide_center_world_mm": [
+        2317.4500000000003,
+        -222.25,
+        606.9279411764707
+      ],
+      "forward_limit_world_mm": [
+        2467.4500000000003,
+        -222.25,
+        606.9279411764707
+      ],
+      "diameter_mm": 19.05,
+      "sampled_minimum_centerline_radius_mm": 91.3503299351476,
+      "radius_sample_count": 1001,
+      "spring_envelope_radius_mm": 16.0,
+      "spring_envelope_length_mm": 67.45000000000027,
+      "scope": "Local route witness only; sampled radius is not a rigorous minimum or forming limit. Spring envelope dimensions are clearance hypotheses, not source dimensions."
+    },
+    "Port": {
+      "fork_occurrence": "PortHighSpeedBrakeControlFork",
+      "fork_definition_sha256": "dbab5cffaca2f02438ca4343896c4ce85c96b6ba42b53e9d0645096d11d16d0a",
+      "rod_start_world_mm": [
+        2088.5783538397422,
+        222.25,
+        602.9672234663923
+      ],
+      "initial_tangent": [
+        0.9781476007338059,
+        0.0,
+        -0.20791169081775812
+      ],
+      "bezier_poles_world_mm": [
+        [
+          2138.4149740971297,
+          222.25,
+          592.3741228192275
+        ],
+        [
+          2182.431616130151,
+          222.25,
+          583.0180967324284
+        ],
+        [
+          2205.0,
+          260.35,
+          606.9279411764707
+        ],
+        [
+          2250.0,
+          260.35,
+          606.9279411764707
+        ]
+      ],
+      "guide_center_world_mm": [
+        2317.4500000000003,
+        260.35,
+        606.9279411764707
+      ],
+      "forward_limit_world_mm": [
+        2467.4500000000003,
+        260.35,
+        606.9279411764707
+      ],
+      "diameter_mm": 19.05,
+      "sampled_minimum_centerline_radius_mm": 59.17787111546108,
+      "radius_sample_count": 1001,
+      "spring_envelope_radius_mm": 16.0,
+      "spring_envelope_length_mm": 67.45000000000027,
+      "scope": "Local route witness only; sampled radius is not a rigorous minimum or forming limit. Spring envelope dimensions are clearance hypotheses, not source dimensions."
+    }
+  },
+  "pairs": [
+    {
+      "first": "StarboardRodEnvelope",
+      "second": "StarboardHighSpeedBrakeLeverLeft",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardRodEnvelope",
+      "second": "StarboardHighSpeedBrakeLeverRight",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardRodEnvelope",
+      "second": "StarboardHighSpeedBrakeControlFork",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardRodEnvelope",
+      "second": "StarboardHighSpeedBrakeControlNut",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardRodEnvelope",
+      "second": "RearControlChannelStock",
+      "origin": "guide_trial",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardRodEnvelope",
+      "second": "StarboardHighSpringBracket",
+      "origin": "guide_trial",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardRodEnvelope",
+      "second": "StarboardHighSpringRivet1",
+      "origin": "guide_trial",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardRodEnvelope",
+      "second": "StarboardHighSpringRivet2",
+      "origin": "guide_trial",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardSpringEnvelope",
+      "second": "StarboardHighSpringBracket",
+      "origin": "guide_trial",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "ClutchSupport_LeftMount4",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "ClutchSupport_LeftBracket",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "ClutchSupport_AuxLever2",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "ClutchSupport_RearAuxRod",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "ClutchSupport_MainFork",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "ClutchSupport_MainRodNut",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "ClutchSupport_AuxFork",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "ClutchSupport_AuxForkPin",
+      "origin": "development",
+      "common_mm3": 29.163968595928075,
+      "passed": false
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "ClutchSupport_AuxRodNut",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "PortHighSpeedBrakeLeverLeft",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "PortHighSpeedBrakeLeverRight",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "PortHighSpeedBrakeControlFork",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "PortHighSpeedBrakeControlNut",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "PortLowHorizontalLever",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "RearControlChannelStock",
+      "origin": "guide_trial",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "PortHighSpringBracket",
+      "origin": "guide_trial",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "PortHighSpringRivet1",
+      "origin": "guide_trial",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortRodEnvelope",
+      "second": "PortHighSpringRivet2",
+      "origin": "guide_trial",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortSpringEnvelope",
+      "second": "PortLowHorizontalLever",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortSpringEnvelope",
+      "second": "PortHighSpringBracket",
+      "origin": "guide_trial",
+      "common_mm3": 0,
+      "passed": true
+    }
+  ],
+  "trial_native_sha256": "321737705186ce4370a44c45bac04b8dacae9fd6ee87d3fc6ccce90e2aafaf6c",
+  "parent_native_sha256": "d4f9a5bd2294b0e41755b3fce3e47197bf4d04f165e1c4ec918246ba2edec2c2",
+  "standard_manifest_sha256": "58fb0a1b010c314dd8fc69758e9aeada05ce97f325c21d6801d7288cd6be753b",
+  "probe_sha256": "53bd6446a6c489db0030afdd978bf3b0262a73f154e08fff0f4e8ae376898cfd",
+  "geometry_hashes": {
+    "StarboardSpringEnvelope.brep": "5ba576e4f6f63b857bacdfa54b276586a874e2b768e8cbdb1715f7561f3aee14",
+    "PortSpringEnvelope.brep": "0ec46a3b0e1d537de96ace455668cd3c81797674aa07a1e16019498a8709787a",
+    "PortRodEnvelope.brep": "785b4d8fe46504c129e9c244b07a8010062b0ce36245b4e5e26d18a8b6e5b913",
+    "StarboardRodEnvelope.brep": "f6ea4417cf92989d9896357ba38a891a783e39f5b47ff3851e6458cfe1d39ac7"
+  },
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "scope": "Four local clearance envelopes against all retained parent/standard solids and the guide trial. Does not establish complete M575 rods, spring design, remote control connections or operation."
+}
