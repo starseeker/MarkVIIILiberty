@@ -1,0 +1,135 @@
+{
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_layout_study/lower_drive_trial/DrivetrainWithLowerDriveStudy.FCStd": "2faee74a2504fb50944b594810733cf1412064419bbaa1c521253a865fe3a594",
+    "cad/003_FullTank/experiments/drive_chains/engine_water_pump_connections_study/DrivetrainWithWaterPump.FCStd": "7cae6a94d058e4d9497d207a06cf49d28891214e7e4fe4a73fc1a4a9516ad3fb",
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/trial01/PumpReceiver.FCStd": "1c2cabf053ae3a08c7d73a5c873f6df1c5defb37d864f2c84b2ae0c538b0343e"
+  },
+  "probe_sha256": "d7086a3cb25d0316f3c5418031d73ef10741a10f86d4ffe25fe240d8ec7880ad",
+  "drive_water_pairs": [
+    {
+      "a": "EngineLowerDrive_IntegralDriver",
+      "b": "EngineWaterPump_GearedShaft",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_IntegralDriver",
+      "b": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_DistributorHousing",
+      "b": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_HousingRetainingScrew",
+      "b": "EngineWaterPump_BodyCasting",
+      "overlap_mm3": 0.0,
+      "passed": true
+    },
+    {
+      "a": "EngineLowerDrive_HousingRetainingScrew",
+      "b": "EngineWaterPump_BearingRetainer",
+      "overlap_mm3": 0.0,
+      "passed": true
+    }
+  ],
+  "collisions": [],
+  "screw_bounds_mm": {
+    "x": [
+      1269.87630083555,
+      1357.42630083555
+    ],
+    "y": [
+      -8.248891971046778,
+      8.248891971046778
+    ],
+    "z": [
+      -103.04597467727835,
+      -88.75847467727836
+    ]
+  },
+  "overlap_bounds_mm": {
+    "x": [
+      1346.0,
+      1357.42630083555
+    ],
+    "y": [
+      -7.155100220599383,
+      7.155100220599411
+    ],
+    "z": [
+      -103.04597467727835,
+      -97.44999999999999
+    ]
+  },
+  "overlap_mm3": 445.8987479712009,
+  "source_screw": {
+    "upper_teeth": 22,
+    "lower_teeth": 21,
+    "pump_mate_teeth": 21,
+    "module": 3.5,
+    "upper_face": 10.0,
+    "lower_face": 7.0,
+    "pressure_angle_deg": 20.0,
+    "tooth_thinning": 0.1,
+    "flank_samples": 128,
+    "root_embed": 0.1,
+    "pump_axis_drop": 171.45,
+    "shaft_radius": 16.0,
+    "bore_radius": 8.0,
+    "spline_count": 6,
+    "spline_depth": 1.5,
+    "spline_width": 3.0,
+    "spline_length": 24.0,
+    "endplay": 0.1651,
+    "diametrical_clearance": 0.0508,
+    "bush_radius": 18.5,
+    "bush_flange_radius": 20.5,
+    "bush_flange_stock": 2.5,
+    "bush_housing_gap": 0.05,
+    "housing_radius": 43.0,
+    "housing_end_stock": 8.0,
+    "housing_end_relief": 0.1,
+    "window_half_width": 24.0,
+    "window_corner_radius": 4.0,
+    "center_bridge_stock": 10.0,
+    "clamp_offset": 29.0,
+    "clamp_grip": 14.0,
+    "clamp_head_af": 11.1125,
+    "clamp_head_stock": 4.0,
+    "clamp_diameter": 6.35,
+    "clamp_length": 23.8125,
+    "clamp_thread_length": 14.2875,
+    "nut_af": 11.1125,
+    "nut_stock": 6.35,
+    "nut_crown_radius": 4.6,
+    "castle_depth": 2.4,
+    "washer_radius": 6.5,
+    "washer_stock": 1.0,
+    "fastener_gap": 0.05,
+    "cotter_diameter": 1.5875,
+    "cotter_length": 12.7,
+    "cotter_hole_gap": 0.08,
+    "dowel_diameter": 4.7625,
+    "dowel_length": 9.525,
+    "dowel_tip_radius": 16.5,
+    "dowel_end_offset": 5.0,
+    "oil_port_diameter": 2.5,
+    "oil_groove_radius": 0.7,
+    "retaining_screw_diameter": 9.525,
+    "retaining_screw_length": 82.55,
+    "retaining_tip_radius": 26.0,
+    "retaining_head_af": 14.2875,
+    "retaining_head_stock": 5.0,
+    "lower_tooth_phase_deg": 0.0,
+    "upper_cup_radius": 34.0,
+    "upper_cup_depth": 6.0,
+    "clamp_relief_margin": 1.5
+  },
+  "drive_mid_z": -95.90222467727838,
+  "source_head_seat_x": 1352.42630083555
+}

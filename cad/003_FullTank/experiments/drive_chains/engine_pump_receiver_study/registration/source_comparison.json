@@ -1,0 +1,53 @@
+{
+  "source_sha256": "7f08a90732b5adb3a14d73f3438f1803de0230a54f9a4e27364ebdf35c91677b",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/station_candidates.json": "55fdc2927ae93fe63d1ee23e9a5660034a9378a626ddd154e91a7d427a160afc",
+    "cad/003_FullTank/data/calibrations.json": "fb555b36854a6526575760b723d605d6eb10842b850c413dd8b2234f93f562b7",
+    "cad/003_FullTank/data/parameters.json": "846d19fc3f2f0ac129224bc024039ae75fa3b4c36226872047aadbc798b6276b"
+  },
+  "script_sha256": "6f1fb82d587f5a33f4557d20f71c2b093ec5d84bac67e3630f9ae1caa18b83c4",
+  "image_sha256": "7fac0cd8bcd0dc28942d9d56c8a0ec087f2aeb2a4c43bc6c6f95d9e0977ad446",
+  "comparisons": {
+    "ground": {
+      "transmission_axis_pixel": [
+        1411.1180689253508,
+        443.08342935791075
+      ],
+      "fixed_pinion_axis_pixel": [
+        1614.2864352582624,
+        422.087915772228
+      ],
+      "modeled_floor_top_pixel_y": 505.08342935791,
+      "source_floor_line_pixel_y": 512,
+      "transmission_pick_residual_px": [
+        -1.8819310746491738,
+        -7.916570642089255
+      ],
+      "transmission_within_pick_box": false
+    },
+    "local_floor": {
+      "transmission_axis_pixel": [
+        1411.1180689253508,
+        450.0
+      ],
+      "fixed_pinion_axis_pixel": [
+        1614.2864352582624,
+        429.00448641431706
+      ],
+      "modeled_floor_top_pixel_y": 512.0,
+      "source_floor_line_pixel_y": 512,
+      "transmission_pick_residual_px": [
+        -1.8819310746491738,
+        -1.0
+      ],
+      "transmission_within_pick_box": true
+    }
+  },
+  "interpretation": [
+    "The mean-axis trial is within the source transmission pick box only when registered locally to the floor.",
+    "A uniform local-floor registration shifts the fixed roller-pinion projection too; it cannot be accepted as a new whole-vehicle transform.",
+    "Keep dimensioned floor clearance, local engine-source measurements and fixed final-drive geometry as separate constraints; drawing accuracy and floor-line interpretation remain uncertain."
+  ],
+  "historical_installation_qualified": false,
+  "standard_assembly_modified": false
+}

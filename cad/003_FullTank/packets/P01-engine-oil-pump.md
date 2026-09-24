@@ -1,5 +1,12 @@
 # P01 — Oil-pump reconstruction in development
 
+Current receiving-case work is recorded in the
+[coupled receiver study](../experiments/drive_chains/engine_pump_receiver_study/README.md).
+The local case passes native/STEP/reproduction checks and is present with both
+pumps in a saved 2,393-component development hierarchy. Its complete hierarchy
+verification and the source-profile pump's STEP qualification remain in progress.
+The inherited floor conflict is still open; the standard tank is unchanged.
+
 This continues the [water-pump checkpoint](P01-engine-water-pump-connections.md).
 The oil pump is a separate component study in engine-aligned coordinates, with
 its crankcase mating face at local Z=0. It is **not yet installed or qualified

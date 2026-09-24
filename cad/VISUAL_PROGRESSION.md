@@ -1,5 +1,21 @@
 # Mark VIII visual progression
 
+The 23 September coupled-receiver checkpoint adds an
+[isometric](intermediate_snapshot_iso_engine_coupled_pumps_001.png) and
+[section](intermediate_snapshot_detail_engine_coupled_pumps_001.png).
+The receiving case passes 44 local checks, 77 case-contact comparisons,
+22 cross-component comparisons, both STEP frames and a fresh rebuild. These views
+combine the saved case with actual source pump/drive geometry; verification of
+the merged 2,393-component native is still running. Global floor registration and
+the oil manifold circuit remain unresolved. All 147 earlier images and the
+standard native files are preserved, giving **149 total**. Standard tank011
+remains unchanged. See the [receiver study](003_FullTank/experiments/drive_chains/engine_pump_receiver_study/README.md).
+
+| New image | SHA256 |
+|---|---|
+| intermediate_snapshot_iso_engine_coupled_pumps_001.png | `62736de4754fb934db11ff681f38048ce3f183a1e30293e68bc5c3e455ce2aec` |
+| intermediate_snapshot_detail_engine_coupled_pumps_001.png | `23e385b2317bb15770adeb912ae691e6f6954612a949520d5cce91834cc3686b` |
+
 The 23 September source-profile revision adds an
 [isometric](intermediate_snapshot_iso_engine_oil_pump_source_001.png) and
 [handbook overlay](intermediate_snapshot_detail_engine_oil_pump_source_overlay_001.png).

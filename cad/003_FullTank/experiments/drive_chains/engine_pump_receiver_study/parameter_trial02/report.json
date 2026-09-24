@@ -1,0 +1,340 @@
+{
+  "status": "unqualified_coupled_receiver_trial",
+  "native_file": "PumpReceiver.FCStd",
+  "native_sha256": "ea15a9217b910fabce2cd1ad9ecfd1e1be09b0ea3ec34a04dc14381cc6cabadf",
+  "controls": {
+    "receiver": {
+      "bay_front_x": 1176.0,
+      "bay_rear_x": 1294.0,
+      "bay_half_width": 90.0,
+      "bay_top_z": -38.0,
+      "case_wall": 8.0,
+      "oil_mount_z": -262.459375,
+      "oil_center_x": 1243.87630083555,
+      "oil_flange_radius": 84.5,
+      "oil_open_radius": 65.5,
+      "oil_well_top_z": -140.0,
+      "pump_tunnel_front_x": 1278.0,
+      "pump_mount_x": 1368.0,
+      "pump_boss_radius": 64.0,
+      "pump_open_radius": 56.0,
+      "lug_end_inset": 8.0,
+      "lug_radial_clearance": 0.05,
+      "lug_wall": 6.0,
+      "screw_boss_start_offset": 36.0,
+      "screw_boss_root_radius": 38.0,
+      "screw_boss_seat_radius": 12.5,
+      "screw_radial_clearance": 0.05,
+      "oil_entry_radial_relief": 3.5,
+      "lug_lower_end_inset": 18.0
+    },
+    "oil_nose_pad_stock": 16.0,
+    "oil_stud_radial_clearance": 0.025,
+    "oil_stud_blind_extra": 0.5,
+    "oil_port_top_z": -140.0,
+    "status": "Second four-control receiver variation; preserve full gasket bearing footprint",
+    "basis": {
+      "receiver": "Retain existing estimated bay/lug/screw geometry while applying the source-profile pump and171.45mm drive drop.",
+      "oil_mount_z": "Selected pump mounting plane plus0.4mm gasket; conditional HB45 connection levels.",
+      "oil_center_x": "Common driver/oil-pump shaft axis; LIB28 plan and LIB107 section. LIB96 perspective offset is not independent dimensional evidence.",
+      "oil_flange_radius": "Match source-profile169mm oil-pump flange. Image-scaled estimate, not printed stock.",
+      "oil_open_radius": "Match qualified pump gasket opening;65.5mm is an estimated interface allowance.",
+      "oil_nose_pad_stock": "15mm estimated stock behind nose joint, leaving3.3875mm above selected11.1125mm engagement and0.5mm blind allowance.",
+      "oil_port_top_z": "Open vertical receiving passages through the well; missing manifold tubes and their isolation/routing remain unqualified.",
+      "screw_recess": "Trial01 water-pad stock refilled screw bore and head envelope. Reapply bore after pads; head recess uses circumscribed printed14.2875mm AF head plus0.5mm radial/axial clearances and leaves10.0737mm to water gasket plane. Estimated casting/access, not source dimension.",
+      "parameter_trial": "The first .08mm stud-hole clearance removed .408721mm3 beneath the fixed gasket footprint. Retain that failed trial; use .025mm radial clearance for the positive variation, preserving the printed stud stock and unchanged bearing test."
+    },
+    "screw_head_radial_gap": 0.75,
+    "screw_head_axial_gap": 0.75
+  },
+  "datums": {
+    "lower": {
+      "lug_axis": [
+        1243.87630083555,
+        0,
+        0
+      ],
+      "lug_span": [
+        -113.46428116392175,
+        -68.34016819063503
+      ],
+      "lug_bore_radius": 43.05,
+      "screw_head_seat": [
+        1352.42630083555,
+        0,
+        -95.90222467727838
+      ],
+      "oil_mount_center": [
+        1243.87630083555,
+        0,
+        -262.459375
+      ],
+      "oil_open_radius": 65.5,
+      "oil_axis_offset": 0.0,
+      "pump_axis": [
+        0,
+        0,
+        -171.45
+      ],
+      "pump_mount_center": [
+        1368.0,
+        0,
+        -171.45
+      ],
+      "pump_open_radius": 56.0,
+      "historically_measured": false,
+      "complete_pump_fit_checked": false,
+      "refinement": "rejected optional cleanup: invalid topology or increased kernel tolerance",
+      "tolerance_before_cleanup_mm": 5.1000010000000005e-06,
+      "attempted_cleanup_tolerance_mm": 1e-05
+    },
+    "water": {
+      "case_definition_pump_frame": [
+        1.0,
+        0.0,
+        0.0,
+        1243.87630083555,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        -171.45,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "blind_depth_mm": 17.16875,
+      "flange_stock_mm": 22.0,
+      "pump_open_radius_mm": 56.0,
+      "estimated_casting": true
+    },
+    "screw_recess": {
+      "radius_mm": 8.998891971046778,
+      "span_x_mm": [
+        1352.42630083555,
+        1358.17630083555
+      ],
+      "axis_z_mm": -95.90222467727838,
+      "rear_wall_to_water_mount_mm": 9.82369916445009,
+      "estimated_access": true
+    },
+    "oil": {
+      "axis": [
+        1243.87630083555,
+        0
+      ],
+      "case_face_z": -262.459375,
+      "stud_centers": [
+        [
+          1321.37630083555,
+          0.0
+        ],
+        [
+          1306.5751178996084,
+          45.55335705266667
+        ],
+        [
+          1267.8251178996084,
+          73.7068800128744
+        ],
+        [
+          1219.9274837714916,
+          73.70688001287441
+        ],
+        [
+          1181.1774837714916,
+          45.55335705266668
+        ],
+        [
+          1149.87630083555,
+          0.0
+        ],
+        [
+          1181.1774837714916,
+          -45.55335705266666
+        ],
+        [
+          1219.9274837714916,
+          -73.7068800128744
+        ],
+        [
+          1267.8251178996084,
+          -73.70688001287441
+        ],
+        [
+          1306.5751178996084,
+          -45.553357052666684
+        ]
+      ],
+      "stud_engagement_mm": 11.1125,
+      "ports": [
+        {
+          "name": "pressure",
+          "axis": [
+            1171.87630083555,
+            -9.0
+          ],
+          "radius_mm": 4.5,
+          "open_span_z_mm": [
+            -262.459375,
+            -140.0
+          ]
+        },
+        {
+          "name": "return_inlet",
+          "axis": [
+            1171.87630083555,
+            9.0
+          ],
+          "radius_mm": 4.5,
+          "open_span_z_mm": [
+            -262.459375,
+            -140.0
+          ]
+        }
+      ],
+      "manifold_tubes_modeled": false,
+      "hydraulic_circuit_qualified": false
+    }
+  },
+  "stages": [
+    {
+      "stage": "receiver_outer_well",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 15751379.444195123,
+      "max_tolerance_mm": 5.1000010000000005e-06
+    },
+    {
+      "stage": "receiver_pump_boss",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 16423950.156651283,
+      "max_tolerance_mm": 5.1000010000000005e-06
+    },
+    {
+      "stage": "receiver_pump_openings",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11811442.768147377,
+      "max_tolerance_mm": 5.1000010000000005e-06
+    },
+    {
+      "stage": "receiver_lug_and_screw_support",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 12244649.433060942,
+      "max_tolerance_mm": 5.1000010000000005e-06
+    },
+    {
+      "stage": "receiver_machined",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11956708.35739003,
+      "max_tolerance_mm": 5.1000010000000005e-06
+    },
+    {
+      "stage": "receiver_finished",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11956708.35739003,
+      "max_tolerance_mm": 5.1000010000000005e-06
+    },
+    {
+      "stage": "oil_nose_and_opening",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11996656.055079082,
+      "max_tolerance_mm": 5.1000010000000005e-06
+    },
+    {
+      "stage": "oil_studs_and_sockets",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 11977337.552913783,
+      "max_tolerance_mm": 5.1000010000000005e-06
+    },
+    {
+      "stage": "water_mounting_pads",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 12104675.971415114,
+      "max_tolerance_mm": 5.1000010000000005e-06
+    },
+    {
+      "stage": "retaining_screw_final_machining",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 12103984.664767355,
+      "max_tolerance_mm": 5.1000010000000005e-06
+    }
+  ],
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_build.py": "e6d25808238136b62d6e4b4ad7ba153f0370a8d198a94697ae81f2fdc853522f",
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receivers.py": "18bf07101dbe1919be576c7b8ac832698d8cf86f1c47bbbfcccb8c16833be081",
+    "cad/003_FullTank/experiments/drive_chains/engine_lower_drive_receivers.py": "b727720837ffeced3d84b961818463264f7c4b71526891179c3ee912f49ee2c8",
+    "cad/003_FullTank/experiments/drive_chains/engine_oil_pump_parts.py": "ea7ea432b3dbfc7fead93040f0a33eea99ec8cdbeaa181fd87573194cc51257a",
+    "cad/003_FullTank/experiments/drive_chains/engine_water_pump_mounting.py": "3c793bcedbccb3ff9fb4c591e1c5335cbbce744e03343797e2535165634c53c5",
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/parameter_controls02.json": "b1761a1c6678771223a91103e777a33be6076fdb10a2a3914d19ba7e01a67a41",
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/source_review.json": "232b1572ce93ba723559977914780308db1ce0198ffae439663a136c87770d65"
+  },
+  "parent_natives": {
+    "drive": {
+      "path": "cad/003_FullTank/experiments/drive_chains/engine_pump_layout_study/lower_drive_trial/DrivetrainWithLowerDriveStudy.FCStd",
+      "sha256": "2faee74a2504fb50944b594810733cf1412064419bbaa1c521253a865fe3a594"
+    },
+    "oil": {
+      "path": "cad/003_FullTank/experiments/drive_chains/engine_pump_layout_study/oil_profile_joint_trial/OilPump.FCStd",
+      "sha256": "cbe470a469e90f179814cb2d8148da382135c7af8cfd9f44a0c9fc663ae22aad"
+    },
+    "water": {
+      "path": "cad/003_FullTank/experiments/drive_chains/engine_water_pump_connections_study/DrivetrainWithWaterPump.FCStd",
+      "sha256": "7cae6a94d058e4d9497d207a06cf49d28891214e7e4fe4a73fc1a4a9516ad3fb"
+    }
+  },
+  "parent_reports": {
+    "drive": {
+      "path": "cad/003_FullTank/experiments/drive_chains/engine_pump_layout_study/lower_drive_trial/report.json",
+      "sha256": "c0da54f23e0d4469c72e6b7e0edc49ee3f4308251f05067b4b9e4a15d2eaee72"
+    },
+    "oil": {
+      "path": "cad/003_FullTank/experiments/drive_chains/engine_pump_layout_study/oil_profile_joint_trial/report.json",
+      "sha256": "433665661d2e78d5ff98e1f328dadc505600016ea9202a6e88b0b8b0c0fae638"
+    },
+    "water": {
+      "path": "cad/003_FullTank/experiments/drive_chains/engine_water_pump_connections_study/report.json",
+      "sha256": "43da03d81d8f3b51a3b65e07b4975021ed833aae567218aa3cd64fb214739e84"
+    }
+  },
+  "engine_origin": [
+    2906.8055512712617,
+    0.0,
+    849.2335104357661
+  ],
+  "physical_occurrences": 1,
+  "local_mechanical_qualified": false,
+  "hydraulic_circuit_qualified": false,
+  "standard_assembly_modified": false,
+  "installation_qualified": false,
+  "complete_engine": false,
+  "complete_tank": false,
+  "step_hashes": {
+    "PumpReceiverInstallation.step": "ced3f9d66c30fe6e62dcc1125f4c56acc0f8388c699d1f5c4c48176820d4bffb",
+    "PumpReceiverDefinition.step": "3edf72cb4a53071546125abaffcbf3137566d8aafc854636dca53474d660554b"
+  },
+  "freecad": [
+    "1",
+    "1",
+    "1",
+    "44227 +647 (Git)",
+    "Unknown",
+    "2026/04/14 22:09:59",
+    "tag: 1.1.1",
+    "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+  ],
+  "occ": "7.8.0"
+}

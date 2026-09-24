@@ -11,6 +11,33 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — coupled pump receiver and datum study
+
+The [coupled receiver](experiments/drive_chains/engine_pump_receiver_study/README.md)
+now matches the smaller oil pump and printed 171.45 mm water-drive spacing.
+Nominal and four-control variation pass **44 native checks, 77 case pairs and
+22 cross-component pairs, plus both strict STEP frames**.
+Fresh reproduction matches both shapes and 162 properties.
+The first variation is retained as a rejected gasket-support test. Three local
+views were inspected and two snapshots saved: **149 total**, preserving all
+147 earlier images and standard native files.
+
+A saved development hierarchy contains 2,393 physical occurrences. Independent
+material/frame verification remains in progress; an interrupted checker is
+replaced by workers that release memory between comparisons, retaining the same
+acceptance expression and exact-pair evidence. The standard tank remains at
+5,326 physical occurrences. The source-profile pump's full STEP check is also
+still running.
+
+The floor conflict remains unresolved. Three source-relative axis hypotheses
+now satisfy the fixed-phase 50-link chain closure mathematically. The mean-axis
+trial moves the powertrain +6.264 mm forward and +51.369 mm upward, leaving
+7.494 mm under the pump. No hypothesis is installed; source registration,
+supports, transmission, controls and actual chain/casing fits still need work.
+The next oil-distribution inventory identifies 18 prospective constituents,
+including one large and six small bearing-feed tubes, with two explicit source
+conflicts. The full engine and tank remain unfinished.
+
 ## 23 September 2026 — source-constrained pump proportions
 
 The [pump-layout study](experiments/drive_chains/engine_pump_layout_study/README.md)

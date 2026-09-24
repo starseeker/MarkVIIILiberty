@@ -1,0 +1,4902 @@
+{
+  "status": "development_hierarchy_global_installation_unqualified",
+  "native_file": "DrivetrainWithBothPumps.FCStd",
+  "native_sha256": "115f55ec0db465e764d24225c33460b601b73fdff8f6525156e05cc991b8796e",
+  "receiver_native_sha256": "c83cb6e8b01ac0d4621bd4409e5a2db47fe9fbf280567c707ce53f7b2bc66781",
+  "receiver_report": "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/trial02/report.json",
+  "parent_natives": {
+    "drive": {
+      "path": "cad/003_FullTank/experiments/drive_chains/engine_pump_layout_study/lower_drive_trial/DrivetrainWithLowerDriveStudy.FCStd",
+      "sha256": "2faee74a2504fb50944b594810733cf1412064419bbaa1c521253a865fe3a594"
+    },
+    "oil": {
+      "path": "cad/003_FullTank/experiments/drive_chains/engine_pump_layout_study/oil_profile_joint_trial/OilPump.FCStd",
+      "sha256": "cbe470a469e90f179814cb2d8148da382135c7af8cfd9f44a0c9fc663ae22aad"
+    },
+    "water": {
+      "path": "cad/003_FullTank/experiments/drive_chains/engine_water_pump_connections_study/DrivetrainWithWaterPump.FCStd",
+      "sha256": "7cae6a94d058e4d9497d207a06cf49d28891214e7e4fe4a73fc1a4a9516ad3fb"
+    }
+  },
+  "parent_reports": {
+    "drive": {
+      "path": "cad/003_FullTank/experiments/drive_chains/engine_pump_layout_study/lower_drive_trial/report.json",
+      "sha256": "c0da54f23e0d4469c72e6b7e0edc49ee3f4308251f05067b4b9e4a15d2eaee72"
+    },
+    "oil": {
+      "path": "cad/003_FullTank/experiments/drive_chains/engine_pump_layout_study/oil_profile_joint_trial/report.json",
+      "sha256": "433665661d2e78d5ff98e1f328dadc505600016ea9202a6e88b0b8b0c0fae638"
+    },
+    "water": {
+      "path": "cad/003_FullTank/experiments/drive_chains/engine_water_pump_connections_study/report.json",
+      "sha256": "43da03d81d8f3b51a3b65e07b4975021ed833aae567218aa3cd64fb214739e84"
+    }
+  },
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/engine_pumps_integrate.py": "c9ef3ae3468c2a0094707a23ba9e17b6cd7f3580eb24ec0048d96033d668eea5",
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/trial02/independent_checks.json": "49083026286d5ce2fc5b6004df83ec0fb2c69ed4cfb44d3c9fb5fee827087a0d"
+  },
+  "physical_occurrences": 2393,
+  "new_oil_occurrences": 146,
+  "new_oil_definitions": 40,
+  "definitions": {
+    "lower_driving_gear": "Def_EngineOilPump_lower_driving_gear",
+    "lower_idler_gear": "Def_EngineOilPump_lower_idler_gear",
+    "upper_driving_gear": "Def_EngineOilPump_upper_driving_gear",
+    "upper_idler_gear": "Def_EngineOilPump_upper_idler_gear",
+    "shaft": "Def_EngineOilPump_shaft",
+    "long_pin": "Def_EngineOilPump_long_pin",
+    "short_pin": "Def_EngineOilPump_short_pin",
+    "upper_bush": "Def_EngineOilPump_upper_bush",
+    "lower_bush": "Def_EngineOilPump_lower_bush",
+    "partition": "Def_EngineOilPump_partition",
+    "dowel": "Def_EngineOilPump_dowel",
+    "lower_body": "Def_EngineOilPump_lower_body",
+    "upper_body": "Def_EngineOilPump_upper_body",
+    "relief_seat": "Def_EngineOilPump_relief_seat",
+    "relief_valve": "Def_EngineOilPump_relief_valve",
+    "relief_cage": "Def_EngineOilPump_relief_cage",
+    "relief_shim": "Def_EngineOilPump_relief_shim",
+    "relief_spring": "Def_EngineOilPump_relief_spring",
+    "upper_plug": "Def_EngineOilPump_upper_plug",
+    "body_plug": "Def_EngineOilPump_body_plug",
+    "cover": "Def_EngineOilPump_cover",
+    "cover_gasket": "Def_EngineOilPump_cover_gasket",
+    "drain_plug": "Def_EngineOilPump_drain_plug",
+    "drain_gasket": "Def_EngineOilPump_drain_gasket",
+    "upper_filter_frame": "Def_EngineOilPump_upper_filter_frame",
+    "upper_side_screen": "Def_EngineOilPump_upper_side_screen",
+    "upper_end_screen": "Def_EngineOilPump_upper_end_screen",
+    "lower_filter_frame": "Def_EngineOilPump_lower_filter_frame",
+    "lower_side_screen": "Def_EngineOilPump_lower_side_screen",
+    "lower_end_screen": "Def_EngineOilPump_lower_end_screen",
+    "screen_nut": "Def_EngineOilPump_screen_nut",
+    "screen_lock": "Def_EngineOilPump_screen_lock",
+    "fastener_washer": "Def_EngineOilPump_fastener_washer",
+    "fastener_nut": "Def_EngineOilPump_fastener_nut",
+    "fastener_cotter": "Def_EngineOilPump_fastener_cotter",
+    "upper_body_bolt": "Def_EngineOilPump_upper_body_bolt",
+    "cover_body_bolt": "Def_EngineOilPump_cover_body_bolt",
+    "relief_lock_wire": "Def_EngineOilPump_relief_lock_wire",
+    "mount_stud": "Def_EngineOilPump_mount_stud",
+    "mount_gasket": "Def_EngineOilPump_mount_gasket"
+  },
+  "oil_occurrences": [
+    {
+      "key": "lower_driving_gear",
+      "name": "EngineOilPump_LowerDrivingGear",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "lower_idler_gear",
+      "name": "EngineOilPump_LowerIdler1",
+      "xyz": [
+        0,
+        -24.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.13052619222005157,
+        0.9914448613738104
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "upper_driving_gear",
+      "name": "EngineOilPump_UpperDrivingGear",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "upper_idler_gear",
+      "name": "EngineOilPump_UpperIdler1",
+      "xyz": [
+        0,
+        -24.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.13052619222005157,
+        0.9914448613738104
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "upper_idler_gear",
+      "name": "EngineOilPump_UpperIdler2",
+      "xyz": [
+        0,
+        24.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.13052619222005157,
+        0.9914448613738104
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "shaft",
+      "name": "EngineOilPump_DrivingShaft",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "long_pin",
+      "name": "EngineOilPump_LongIdlerPin",
+      "xyz": [
+        0,
+        -24.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "short_pin",
+      "name": "EngineOilPump_ShortIdlerPin",
+      "xyz": [
+        0,
+        24.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRotors"
+    },
+    {
+      "key": "upper_bush",
+      "name": "EngineOilPump_UpperBush",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpUpperBody"
+    },
+    {
+      "key": "lower_bush",
+      "name": "EngineOilPump_LowerBush",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "partition",
+      "name": "EngineOilPump_SeparatingPlate",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "dowel",
+      "name": "EngineOilPump_LocatingDowel1",
+      "xyz": [
+        -20.0,
+        -30.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "dowel",
+      "name": "EngineOilPump_LocatingDowel2",
+      "xyz": [
+        20.0,
+        30.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "lower_body",
+      "name": "EngineOilPump_LowerBody",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "upper_body",
+      "name": "EngineOilPump_UpperBody",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpUpperBody"
+    },
+    {
+      "key": "relief_seat",
+      "name": "EngineOilPump_ReliefSeat",
+      "xyz": [
+        23.0,
+        -12.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRelief"
+    },
+    {
+      "key": "relief_valve",
+      "name": "EngineOilPump_ReliefValve",
+      "xyz": [
+        23.0,
+        -12.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRelief"
+    },
+    {
+      "key": "relief_cage",
+      "name": "EngineOilPump_ReliefCage",
+      "xyz": [
+        23.0,
+        -12.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRelief"
+    },
+    {
+      "key": "relief_shim",
+      "name": "EngineOilPump_ReliefShim",
+      "xyz": [
+        23.0,
+        -12.0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRelief"
+    },
+    {
+      "key": "relief_spring",
+      "name": "EngineOilPump_ReliefSpring",
+      "xyz": [
+        23.0,
+        -12.0,
+        -39.0762
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRelief"
+    },
+    {
+      "key": "upper_plug",
+      "name": "EngineOilPump_UpperPassagePlug1",
+      "xyz": [
+        37.0,
+        -12.0,
+        35.5762
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpUpperBody"
+    },
+    {
+      "key": "upper_plug",
+      "name": "EngineOilPump_UpperPassagePlug2",
+      "xyz": [
+        -37.0,
+        12.0,
+        35.5762
+      ],
+      "rotation": [
+        0.0,
+        -0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpUpperBody"
+    },
+    {
+      "key": "body_plug",
+      "name": "EngineOilPump_LowerBodyPlug",
+      "xyz": [
+        0,
+        -74.0,
+        -20.0
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0.0,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "cover",
+      "name": "EngineOilPump_BottomCover",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "cover_gasket",
+      "name": "EngineOilPump_CoverGasket",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "drain_plug",
+      "name": "EngineOilPump_DrainPlug",
+      "xyz": [
+        32.0,
+        0,
+        -91.2
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "drain_gasket",
+      "name": "EngineOilPump_DrainGasket",
+      "xyz": [
+        32.0,
+        0,
+        -91.2
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpLowerBody"
+    },
+    {
+      "key": "upper_filter_frame",
+      "name": "EngineOilPump_UpperFilterFrame",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "upper_side_screen",
+      "name": "EngineOilPump_UpperSideScreen",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "upper_end_screen",
+      "name": "EngineOilPump_UpperEndScreen",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "lower_filter_frame",
+      "name": "EngineOilPump_LowerFilterFrame",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "lower_side_screen",
+      "name": "EngineOilPump_LowerSideScreen",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "lower_end_screen",
+      "name": "EngineOilPump_LowerEndScreen",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "screen_nut",
+      "name": "EngineOilPump_UpperScreenNut",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "screen_lock",
+      "name": "EngineOilPump_UpperScreenNutLock",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpStrainers"
+    },
+    {
+      "key": "upper_body_bolt",
+      "name": "EngineOilPump_UpperJoint1Bolt",
+      "xyz": [
+        -22.0,
+        -37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint1HeadWasher",
+      "xyz": [
+        -22.0,
+        -37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint1NutWasher",
+      "xyz": [
+        -22.0,
+        -37.0,
+        -14.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_UpperJoint1Nut",
+      "xyz": [
+        -22.0,
+        -37.0,
+        -15.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_UpperJoint1Cotter",
+      "xyz": [
+        -22.0,
+        -37.0,
+        -20.575000000000003
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "upper_body_bolt",
+      "name": "EngineOilPump_UpperJoint2Bolt",
+      "xyz": [
+        -22.0,
+        37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint2HeadWasher",
+      "xyz": [
+        -22.0,
+        37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint2NutWasher",
+      "xyz": [
+        -22.0,
+        37.0,
+        -14.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_UpperJoint2Nut",
+      "xyz": [
+        -22.0,
+        37.0,
+        -15.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_UpperJoint2Cotter",
+      "xyz": [
+        -22.0,
+        37.0,
+        -20.575000000000003
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "upper_body_bolt",
+      "name": "EngineOilPump_UpperJoint3Bolt",
+      "xyz": [
+        22.0,
+        -37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint3HeadWasher",
+      "xyz": [
+        22.0,
+        -37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint3NutWasher",
+      "xyz": [
+        22.0,
+        -37.0,
+        -14.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_UpperJoint3Nut",
+      "xyz": [
+        22.0,
+        -37.0,
+        -15.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "upper_body_bolt",
+      "name": "EngineOilPump_UpperJoint4Bolt",
+      "xyz": [
+        22.0,
+        37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint4HeadWasher",
+      "xyz": [
+        22.0,
+        37.0,
+        7.0
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_UpperJoint4NutWasher",
+      "xyz": [
+        22.0,
+        37.0,
+        -14.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_UpperJoint4Nut",
+      "xyz": [
+        22.0,
+        37.0,
+        -15.225000000000001
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_UpperJoint4Cotter",
+      "xyz": [
+        22.0,
+        37.0,
+        -20.575000000000003
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint1Bolt",
+      "xyz": [
+        77.5,
+        0.0,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint1HeadWasher",
+      "xyz": [
+        77.5,
+        0.0,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint1NutWasher",
+      "xyz": [
+        77.5,
+        0.0,
+        -68.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint1Nut",
+      "xyz": [
+        77.5,
+        0.0,
+        -69.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint1Cotter",
+      "xyz": [
+        77.5,
+        0.0,
+        -74.55
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint2Bolt",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint2HeadWasher",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint2NutWasher",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -68.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint2Nut",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -69.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint2Cotter",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -74.55
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint3Bolt",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint3HeadWasher",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint3NutWasher",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -68.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint3Nut",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -69.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint3Cotter",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -74.55
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint4Bolt",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint4HeadWasher",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint4NutWasher",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -68.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint4Nut",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -69.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint4Cotter",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -74.55
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint5Bolt",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint5HeadWasher",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint5NutWasher",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -68.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint5Nut",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -69.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint5Cotter",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -74.55
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint6Bolt",
+      "xyz": [
+        -77.5,
+        9.491012693391987e-15,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint6HeadWasher",
+      "xyz": [
+        -77.5,
+        9.491012693391987e-15,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint6NutWasher",
+      "xyz": [
+        -77.5,
+        9.491012693391987e-15,
+        -68.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint6Nut",
+      "xyz": [
+        -77.5,
+        9.491012693391987e-15,
+        -69.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint6Cotter",
+      "xyz": [
+        -77.5,
+        9.491012693391987e-15,
+        -74.55
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint7Bolt",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint7HeadWasher",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint7NutWasher",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -68.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint7Nut",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -69.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint7Cotter",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -74.55
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint8Bolt",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint8HeadWasher",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint8NutWasher",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -68.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint8Nut",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -69.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint8Cotter",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -74.55
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint9Bolt",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint9HeadWasher",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint9NutWasher",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -68.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint9Nut",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -69.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint9Cotter",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -74.55
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "cover_body_bolt",
+      "name": "EngineOilPump_CoverJoint10Bolt",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint10HeadWasher",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -56.5
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_CoverJoint10NutWasher",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -68.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_CoverJoint10Nut",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -69.2
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_CoverJoint10Cotter",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -74.55
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpFasteners"
+    },
+    {
+      "key": "relief_lock_wire",
+      "name": "EngineOilPump_ReliefLockWire",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpRelief"
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint1Stud",
+      "xyz": [
+        77.5,
+        0.0,
+        0.4
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint1Washer",
+      "xyz": [
+        77.5,
+        0.0,
+        -9.7125
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint1Nut",
+      "xyz": [
+        77.5,
+        0.0,
+        -10.7125
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint1Cotter",
+      "xyz": [
+        77.5,
+        0.0,
+        -16.0625
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint2Stud",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        0.4
+      ],
+      "rotation": [
+        -0.2185080122244105,
+        0.6724985119639573,
+        0.21850801222441052,
+        0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint2Washer",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -9.7125
+      ],
+      "rotation": [
+        -0.2185080122244105,
+        0.6724985119639573,
+        0.21850801222441052,
+        0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint2Nut",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -10.7125
+      ],
+      "rotation": [
+        -0.2185080122244105,
+        0.6724985119639573,
+        0.21850801222441052,
+        0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint2Cotter",
+      "xyz": [
+        62.698817064058424,
+        45.55335705266667,
+        -16.0625
+      ],
+      "rotation": [
+        -0.2185080122244105,
+        0.6724985119639573,
+        0.21850801222441052,
+        0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint3Stud",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        0.4
+      ],
+      "rotation": [
+        -0.4156269377774534,
+        0.5720614028176843,
+        0.41562693777745346,
+        0.5720614028176844
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint3Washer",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -9.7125
+      ],
+      "rotation": [
+        -0.4156269377774534,
+        0.5720614028176843,
+        0.41562693777745346,
+        0.5720614028176844
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint3Nut",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -10.7125
+      ],
+      "rotation": [
+        -0.4156269377774534,
+        0.5720614028176843,
+        0.41562693777745346,
+        0.5720614028176844
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint3Cotter",
+      "xyz": [
+        23.948817064058428,
+        73.7068800128744,
+        -16.0625
+      ],
+      "rotation": [
+        -0.4156269377774534,
+        0.5720614028176843,
+        0.41562693777745346,
+        0.5720614028176844
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint4Stud",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        0.4
+      ],
+      "rotation": [
+        -0.5720614028176843,
+        0.4156269377774534,
+        0.5720614028176844,
+        0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint4Washer",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -9.7125
+      ],
+      "rotation": [
+        -0.5720614028176843,
+        0.4156269377774534,
+        0.5720614028176844,
+        0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint4Nut",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -10.7125
+      ],
+      "rotation": [
+        -0.5720614028176843,
+        0.4156269377774534,
+        0.5720614028176844,
+        0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint4Cotter",
+      "xyz": [
+        -23.948817064058417,
+        73.70688001287441,
+        -16.0625
+      ],
+      "rotation": [
+        -0.5720614028176843,
+        0.4156269377774534,
+        0.5720614028176844,
+        0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint5Stud",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        0.4
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        0.21850801222441055,
+        0.6724985119639574,
+        0.21850801222441057
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint5Washer",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -9.7125
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        0.21850801222441055,
+        0.6724985119639574,
+        0.21850801222441057
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint5Nut",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -10.7125
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        0.21850801222441055,
+        0.6724985119639574,
+        0.21850801222441057
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint5Cotter",
+      "xyz": [
+        -62.69881706405842,
+        45.55335705266668,
+        -16.0625
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        0.21850801222441055,
+        0.6724985119639574,
+        0.21850801222441057
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint6Stud",
+      "xyz": [
+        -94.0,
+        0.0,
+        0.4
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        4.329780281177466e-17,
+        0.7071067811865476,
+        4.329780281177467e-17
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint6Washer",
+      "xyz": [
+        -94.0,
+        0.0,
+        -9.7125
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        4.329780281177466e-17,
+        0.7071067811865476,
+        4.329780281177467e-17
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint6Nut",
+      "xyz": [
+        -94.0,
+        0.0,
+        -10.7125
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        4.329780281177466e-17,
+        0.7071067811865476,
+        4.329780281177467e-17
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint6Cotter",
+      "xyz": [
+        -94.0,
+        0.0,
+        -16.0625
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        4.329780281177466e-17,
+        0.7071067811865476,
+        4.329780281177467e-17
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint7Stud",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        0.4
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        -0.21850801222441046,
+        0.6724985119639574,
+        -0.2185080122244105
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint7Washer",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -9.7125
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        -0.21850801222441046,
+        0.6724985119639574,
+        -0.2185080122244105
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint7Nut",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -10.7125
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        -0.21850801222441046,
+        0.6724985119639574,
+        -0.2185080122244105
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint7Cotter",
+      "xyz": [
+        -62.69881706405844,
+        -45.55335705266666,
+        -16.0625
+      ],
+      "rotation": [
+        -0.6724985119639573,
+        -0.21850801222441046,
+        0.6724985119639574,
+        -0.2185080122244105
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint8Stud",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        0.4
+      ],
+      "rotation": [
+        -0.5720614028176844,
+        -0.41562693777745335,
+        0.5720614028176845,
+        -0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint8Washer",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -9.7125
+      ],
+      "rotation": [
+        -0.5720614028176844,
+        -0.41562693777745335,
+        0.5720614028176845,
+        -0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint8Nut",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -10.7125
+      ],
+      "rotation": [
+        -0.5720614028176844,
+        -0.41562693777745335,
+        0.5720614028176845,
+        -0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint8Cotter",
+      "xyz": [
+        -23.948817064058435,
+        -73.7068800128744,
+        -16.0625
+      ],
+      "rotation": [
+        -0.5720614028176844,
+        -0.41562693777745335,
+        0.5720614028176845,
+        -0.41562693777745346
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint9Stud",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        0.4
+      ],
+      "rotation": [
+        -0.41562693777745346,
+        -0.5720614028176841,
+        0.4156269377774535,
+        -0.5720614028176843
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint9Washer",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -9.7125
+      ],
+      "rotation": [
+        -0.41562693777745346,
+        -0.5720614028176841,
+        0.4156269377774535,
+        -0.5720614028176843
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint9Nut",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -10.7125
+      ],
+      "rotation": [
+        -0.41562693777745346,
+        -0.5720614028176841,
+        0.4156269377774535,
+        -0.5720614028176843
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint9Cotter",
+      "xyz": [
+        23.94881706405841,
+        -73.70688001287441,
+        -16.0625
+      ],
+      "rotation": [
+        -0.41562693777745346,
+        -0.5720614028176841,
+        0.4156269377774535,
+        -0.5720614028176843
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_stud",
+      "name": "EngineOilPump_MountJoint10Stud",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        0.4
+      ],
+      "rotation": [
+        -0.21850801222441057,
+        -0.6724985119639573,
+        0.2185080122244106,
+        -0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:196:052"
+      ]
+    },
+    {
+      "key": "fastener_washer",
+      "name": "EngineOilPump_MountJoint10Washer",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -9.7125
+      ],
+      "rotation": [
+        -0.21850801222441057,
+        -0.6724985119639573,
+        0.2185080122244106,
+        -0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:003"
+      ]
+    },
+    {
+      "key": "fastener_nut",
+      "name": "EngineOilPump_MountJoint10Nut",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -10.7125
+      ],
+      "rotation": [
+        -0.21850801222441057,
+        -0.6724985119639573,
+        0.2185080122244106,
+        -0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:015"
+      ]
+    },
+    {
+      "key": "fastener_cotter",
+      "name": "EngineOilPump_MountJoint10Cotter",
+      "xyz": [
+        62.69881706405842,
+        -45.553357052666684,
+        -16.0625
+      ],
+      "rotation": [
+        -0.21850801222441057,
+        -0.6724985119639573,
+        0.2185080122244106,
+        -0.6724985119639574
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:005"
+      ]
+    },
+    {
+      "key": "mount_gasket",
+      "name": "EngineOilPump_MountGasket",
+      "xyz": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "EngineOilPumpMounting",
+      "source_records": [
+        "HB:nomenclature:199:004"
+      ]
+    }
+  ],
+  "changed_parent_ids": [
+    "EngineCase_lower",
+    "EngineLowerDrive_BushDowel",
+    "EngineLowerDrive_ClampBolt1",
+    "EngineLowerDrive_ClampBolt2",
+    "EngineLowerDrive_ClampCotter1",
+    "EngineLowerDrive_ClampCotter2",
+    "EngineLowerDrive_ClampNut1",
+    "EngineLowerDrive_ClampNut2",
+    "EngineLowerDrive_DistributorBush",
+    "EngineLowerDrive_DistributorHousing",
+    "EngineLowerDrive_FlywheelBush",
+    "EngineLowerDrive_FlywheelHousing",
+    "EngineLowerDrive_HeadWasher1",
+    "EngineLowerDrive_HeadWasher2",
+    "EngineLowerDrive_HousingRetainingScrew",
+    "EngineLowerDrive_IntegralDriver",
+    "EngineLowerDrive_NutWasher1",
+    "EngineLowerDrive_NutWasher2",
+    "EngineWaterPump_BearingBall1",
+    "EngineWaterPump_BearingBall2",
+    "EngineWaterPump_BearingBall3",
+    "EngineWaterPump_BearingBall4",
+    "EngineWaterPump_BearingBall5",
+    "EngineWaterPump_BearingBall6",
+    "EngineWaterPump_BearingBall7",
+    "EngineWaterPump_BearingRetainer",
+    "EngineWaterPump_BodyCasting",
+    "EngineWaterPump_CoverCotter1",
+    "EngineWaterPump_CoverCotter2",
+    "EngineWaterPump_CoverCotter3",
+    "EngineWaterPump_CoverCotter4",
+    "EngineWaterPump_CoverCotter5",
+    "EngineWaterPump_CoverCotter6",
+    "EngineWaterPump_CoverCotter7",
+    "EngineWaterPump_CoverCotter8",
+    "EngineWaterPump_CoverGasket",
+    "EngineWaterPump_CoverNut1",
+    "EngineWaterPump_CoverNut2",
+    "EngineWaterPump_CoverNut3",
+    "EngineWaterPump_CoverNut4",
+    "EngineWaterPump_CoverNut5",
+    "EngineWaterPump_CoverNut6",
+    "EngineWaterPump_CoverNut7",
+    "EngineWaterPump_CoverNut8",
+    "EngineWaterPump_CoverStud1",
+    "EngineWaterPump_CoverStud2",
+    "EngineWaterPump_CoverStud3",
+    "EngineWaterPump_CoverStud4",
+    "EngineWaterPump_CoverStud5",
+    "EngineWaterPump_CoverStud6",
+    "EngineWaterPump_CoverStud7",
+    "EngineWaterPump_CoverStud8",
+    "EngineWaterPump_CoverWasher1",
+    "EngineWaterPump_CoverWasher2",
+    "EngineWaterPump_CoverWasher3",
+    "EngineWaterPump_CoverWasher4",
+    "EngineWaterPump_CoverWasher5",
+    "EngineWaterPump_CoverWasher6",
+    "EngineWaterPump_CoverWasher7",
+    "EngineWaterPump_CoverWasher8",
+    "EngineWaterPump_DrainGasket",
+    "EngineWaterPump_DrainLockWire",
+    "EngineWaterPump_DrainPlug",
+    "EngineWaterPump_FrontGland",
+    "EngineWaterPump_FrontPacking",
+    "EngineWaterPump_GearedShaft",
+    "EngineWaterPump_GlandSpring",
+    "EngineWaterPump_Impeller",
+    "EngineWaterPump_ImpellerCotter",
+    "EngineWaterPump_ImpellerKey",
+    "EngineWaterPump_ImpellerNut",
+    "EngineWaterPump_InletCover",
+    "EngineWaterPump_MountCotter1",
+    "EngineWaterPump_MountCotter2",
+    "EngineWaterPump_MountCotter3",
+    "EngineWaterPump_MountCotter4",
+    "EngineWaterPump_MountNut1",
+    "EngineWaterPump_MountNut2",
+    "EngineWaterPump_MountNut3",
+    "EngineWaterPump_MountNut4",
+    "EngineWaterPump_MountStud1",
+    "EngineWaterPump_MountStud2",
+    "EngineWaterPump_MountStud3",
+    "EngineWaterPump_MountStud4",
+    "EngineWaterPump_MountWasher1",
+    "EngineWaterPump_MountWasher2",
+    "EngineWaterPump_MountWasher3",
+    "EngineWaterPump_MountWasher4",
+    "EngineWaterPump_RearGland",
+    "EngineWaterPump_RearPacking",
+    "EngineWaterPump_RetainerAdjustmentShim",
+    "EngineWaterPump_RetainerBodyGasket",
+    "EngineWaterPump_bearing_cage",
+    "EngineWaterPump_bearing_inner",
+    "EngineWaterPump_bearing_outer"
+  ],
+  "preserved_parent_ids": [
+    "AirPump_AirHoleCover",
+    "AirPump_Drain_plug",
+    "AirPump_End1_0_plug",
+    "AirPump_End1_1_plug",
+    "AirPump_End_1_0_plug",
+    "AirPump_End_1_1_plug",
+    "AirPump_FrontBearing",
+    "AirPump_FrontBearingScrew1",
+    "AirPump_FrontBearingScrew2",
+    "AirPump_FrontBearingScrew3",
+    "AirPump_FrontBush",
+    "AirPump_Oil50_plug",
+    "AirPump_Oil_50_plug",
+    "AirPump_Port1_check_nut",
+    "AirPump_Port1_cylinder",
+    "AirPump_Port1_displacement_plug",
+    "AirPump_Port1_piston",
+    "AirPump_Port1_screw1",
+    "AirPump_Port1_screw2",
+    "AirPump_Port1_spring",
+    "AirPump_Port2_check_nut",
+    "AirPump_Port2_cylinder",
+    "AirPump_Port2_displacement_plug",
+    "AirPump_Port2_piston",
+    "AirPump_Port2_screw1",
+    "AirPump_Port2_screw2",
+    "AirPump_Port2_spring",
+    "AirPump_RearBearing",
+    "AirPump_RearBearingScrew1",
+    "AirPump_RearBearingScrew2",
+    "AirPump_RearBearingScrew3",
+    "AirPump_RearBush",
+    "AirPump_Starboard1_check_nut",
+    "AirPump_Starboard1_cylinder",
+    "AirPump_Starboard1_displacement_plug",
+    "AirPump_Starboard1_piston",
+    "AirPump_Starboard1_screw1",
+    "AirPump_Starboard1_screw2",
+    "AirPump_Starboard1_spring",
+    "AirPump_Starboard2_check_nut",
+    "AirPump_Starboard2_cylinder",
+    "AirPump_Starboard2_displacement_plug",
+    "AirPump_Starboard2_piston",
+    "AirPump_Starboard2_screw1",
+    "AirPump_Starboard2_screw2",
+    "AirPump_Starboard2_spring",
+    "AirPump_base",
+    "AirPump_key",
+    "AirPump_pulley",
+    "AirPump_shaft",
+    "AirPump_shaft_nut",
+    "CaseMount_LowerPort_cotter",
+    "CaseMount_LowerPort_nut",
+    "CaseMount_LowerPort_stud",
+    "CaseMount_LowerPort_washer",
+    "CaseMount_LowerStarboard_cotter",
+    "CaseMount_LowerStarboard_nut",
+    "CaseMount_LowerStarboard_stud",
+    "CaseMount_LowerStarboard_washer",
+    "CaseMount_UpperPort_cotter",
+    "CaseMount_UpperPort_nut",
+    "CaseMount_UpperPort_stud",
+    "CaseMount_UpperPort_washer",
+    "CaseMount_UpperStarboard_cotter",
+    "CaseMount_UpperStarboard_nut",
+    "CaseMount_UpperStarboard_stud",
+    "CaseMount_UpperStarboard_washer",
+    "CenterBevelDrive_clutch",
+    "CenterBevelDrive_pinion",
+    "CenterTransmissionCore_bevel_case",
+    "CenterTransmissionCore_bevel_cover",
+    "CenterTransmissionCore_cross_shaft",
+    "CentralCaseJoint_bolt0",
+    "CentralCaseJoint_bolt1",
+    "CentralCaseJoint_bolt10",
+    "CentralCaseJoint_bolt11",
+    "CentralCaseJoint_bolt12",
+    "CentralCaseJoint_bolt13",
+    "CentralCaseJoint_bolt2",
+    "CentralCaseJoint_bolt3",
+    "CentralCaseJoint_bolt4",
+    "CentralCaseJoint_bolt5",
+    "CentralCaseJoint_bolt6",
+    "CentralCaseJoint_bolt7",
+    "CentralCaseJoint_bolt8",
+    "CentralCaseJoint_bolt9",
+    "CentralCaseJoint_cotter0",
+    "CentralCaseJoint_cotter1",
+    "CentralCaseJoint_cotter10",
+    "CentralCaseJoint_cotter11",
+    "CentralCaseJoint_cotter12",
+    "CentralCaseJoint_cotter13",
+    "CentralCaseJoint_cotter2",
+    "CentralCaseJoint_cotter3",
+    "CentralCaseJoint_cotter4",
+    "CentralCaseJoint_cotter5",
+    "CentralCaseJoint_cotter6",
+    "CentralCaseJoint_cotter7",
+    "CentralCaseJoint_cotter8",
+    "CentralCaseJoint_cotter9",
+    "CentralCaseJoint_gasketLower",
+    "CentralCaseJoint_gasketUpper",
+    "CentralCaseJoint_nut0",
+    "CentralCaseJoint_nut1",
+    "CentralCaseJoint_nut10",
+    "CentralCaseJoint_nut11",
+    "CentralCaseJoint_nut12",
+    "CentralCaseJoint_nut13",
+    "CentralCaseJoint_nut2",
+    "CentralCaseJoint_nut3",
+    "CentralCaseJoint_nut4",
+    "CentralCaseJoint_nut5",
+    "CentralCaseJoint_nut6",
+    "CentralCaseJoint_nut7",
+    "CentralCaseJoint_nut8",
+    "CentralCaseJoint_nut9",
+    "ClutchBrake_Anchor",
+    "ClutchBrake_AnchorBolt1",
+    "ClutchBrake_AnchorBolt2",
+    "ClutchBrake_AnchorLock1",
+    "ClutchBrake_AnchorLock2",
+    "ClutchBrake_AnchorNut1",
+    "ClutchBrake_AnchorNut2",
+    "ClutchBrake_AnchorRivet1",
+    "ClutchBrake_AnchorRivet2",
+    "ClutchBrake_AnchorRivet3",
+    "ClutchBrake_AnchorRivet4",
+    "ClutchBrake_AnchorRivet5",
+    "ClutchBrake_AnchorRivet6",
+    "ClutchBrake_BandCotter",
+    "ClutchBrake_BandPin",
+    "ClutchBrake_BellCotter",
+    "ClutchBrake_BellCrank",
+    "ClutchBrake_BellNut",
+    "ClutchBrake_BellPin",
+    "ClutchBrake_Carrier",
+    "ClutchBrake_EyeAdjust1",
+    "ClutchBrake_EyeAdjust2",
+    "ClutchBrake_EyeJam1",
+    "ClutchBrake_EyeJam2",
+    "ClutchBrake_EyeWasher1",
+    "ClutchBrake_EyeWasher2",
+    "ClutchBrake_Eyebolt",
+    "ClutchBrake_RodCotter",
+    "ClutchBrake_RodNut1",
+    "ClutchBrake_RodNut2",
+    "ClutchBrake_RodNut3",
+    "ClutchBrake_RodNut4",
+    "ClutchBrake_RodPin",
+    "ClutchBrake_Spring",
+    "ClutchBrake_StopRod",
+    "ClutchCollar_Screw1",
+    "ClutchCollar_Screw2",
+    "ClutchCollar_Screw3",
+    "ClutchCollar_Screw4",
+    "ClutchCollar_Screw5",
+    "ClutchCollar_Screw6",
+    "ClutchCollar_bush",
+    "ClutchCollar_collar",
+    "ClutchCollar_ring",
+    "ClutchCollar_wire",
+    "ClutchCone_Cup1",
+    "ClutchCone_Cup2",
+    "ClutchCone_Cup3",
+    "ClutchCone_Cup4",
+    "ClutchCone_Cup5",
+    "ClutchCone_Cup6",
+    "ClutchCone_LiningRivet01",
+    "ClutchCone_LiningRivet02",
+    "ClutchCone_LiningRivet03",
+    "ClutchCone_LiningRivet04",
+    "ClutchCone_LiningRivet05",
+    "ClutchCone_LiningRivet06",
+    "ClutchCone_LiningRivet07",
+    "ClutchCone_LiningRivet08",
+    "ClutchCone_LiningRivet09",
+    "ClutchCone_LiningRivet10",
+    "ClutchCone_LiningRivet11",
+    "ClutchCone_LiningRivet12",
+    "ClutchCone_LiningRivet13",
+    "ClutchCone_LiningRivet14",
+    "ClutchCone_LiningRivet15",
+    "ClutchCone_LiningRivet16",
+    "ClutchCone_LiningRivet17",
+    "ClutchCone_LiningRivet18",
+    "ClutchCone_LiningRivet19",
+    "ClutchCone_LiningRivet20",
+    "ClutchCone_LiningRivet21",
+    "ClutchCone_LiningRivet22",
+    "ClutchCone_LiningRivet23",
+    "ClutchCone_LiningRivet24",
+    "ClutchCone_LiningRivet25",
+    "ClutchCone_LiningRivet26",
+    "ClutchCone_LiningRivet27",
+    "ClutchCone_LiningRivet28",
+    "ClutchCone_LiningRivet29",
+    "ClutchCone_LiningRivet30",
+    "ClutchCone_LiningRivet31",
+    "ClutchCone_LiningRivet32",
+    "ClutchCone_LiningRivet33",
+    "ClutchCone_LiningRivet34",
+    "ClutchCone_LiningRivet35",
+    "ClutchCone_LiningRivet36",
+    "ClutchCone_LiningRivet37",
+    "ClutchCone_LiningRivet38",
+    "ClutchCone_LiningRivet39",
+    "ClutchCone_LiningRivet40",
+    "ClutchCone_LiningRivet41",
+    "ClutchCone_LiningRivet42",
+    "ClutchCone_LiningRivet43",
+    "ClutchCone_Plug",
+    "ClutchCone_Plunger1",
+    "ClutchCone_Plunger2",
+    "ClutchCone_Plunger3",
+    "ClutchCone_Plunger4",
+    "ClutchCone_Plunger5",
+    "ClutchCone_Plunger6",
+    "ClutchCone_Spring1",
+    "ClutchCone_Spring2",
+    "ClutchCone_Spring3",
+    "ClutchCone_Spring4",
+    "ClutchCone_Spring5",
+    "ClutchCone_Spring6",
+    "ClutchCone_SupportRivet1",
+    "ClutchCone_SupportRivet2",
+    "ClutchCone_SupportRivet3",
+    "ClutchCone_SupportRivet4",
+    "ClutchCone_SupportRivet5",
+    "ClutchCone_SupportRivet6",
+    "ClutchCone_cone",
+    "ClutchCone_lining",
+    "ClutchCone_ring",
+    "ClutchDrive_HalfCover1",
+    "ClutchDrive_HalfCover2",
+    "ClutchDrive_Set1_Bolt",
+    "ClutchDrive_Set1_Nut",
+    "ClutchDrive_Set1_Washer",
+    "ClutchDrive_Set2_Bolt",
+    "ClutchDrive_Set2_Nut",
+    "ClutchDrive_Set2_Washer",
+    "ClutchDrive_Set3_Bolt",
+    "ClutchDrive_Set3_Nut",
+    "ClutchDrive_Set3_Washer",
+    "ClutchDrive_Set4_Bolt",
+    "ClutchDrive_Set4_Nut",
+    "ClutchDrive_Set4_Washer",
+    "ClutchDrive_Set5_Bolt",
+    "ClutchDrive_Set5_Nut",
+    "ClutchDrive_Set5_Washer",
+    "ClutchDrive_Set6_Bolt",
+    "ClutchDrive_Set6_Nut",
+    "ClutchDrive_Set6_Washer",
+    "ClutchDrive_Set7_Bolt",
+    "ClutchDrive_Set7_Nut",
+    "ClutchDrive_Set7_Washer",
+    "ClutchDrive_Set8_Bolt",
+    "ClutchDrive_Set8_Nut",
+    "ClutchDrive_Set8_Washer",
+    "ClutchDrive_belt",
+    "ClutchDrive_box",
+    "ClutchDrive_drum",
+    "ClutchDrive_shaft",
+    "ClutchDrum_Screw1",
+    "ClutchDrum_Screw2",
+    "ClutchDrum_Screw3",
+    "ClutchDrum_Screw4",
+    "ClutchDrum_Screw5",
+    "ClutchDrum_Screw6",
+    "ClutchDrum_drum",
+    "ClutchDrum_flywheel",
+    "ClutchDrum_wire",
+    "ClutchRetention_Wire",
+    "ClutchStack_Key1",
+    "ClutchStack_Key2",
+    "ClutchStack_Key3",
+    "ClutchStack_Key4",
+    "ClutchStack_bearing",
+    "ClutchStack_sleeve",
+    "ClutchStack_snap",
+    "ClutchStack_support",
+    "ClutchStack_thrust",
+    "ClutchStopBand_FoldRivet1",
+    "ClutchStopBand_FoldRivet2",
+    "ClutchStopBand_FoldRivet3",
+    "ClutchStopBand_LiningRivet01",
+    "ClutchStopBand_LiningRivet02",
+    "ClutchStopBand_LiningRivet03",
+    "ClutchStopBand_LiningRivet04",
+    "ClutchStopBand_LiningRivet05",
+    "ClutchStopBand_LiningRivet06",
+    "ClutchStopBand_LiningRivet07",
+    "ClutchStopBand_LiningRivet08",
+    "ClutchStopBand_LiningRivet09",
+    "ClutchStopBand_LiningRivet10",
+    "ClutchStopBand_LiningRivet11",
+    "ClutchStopBand_LiningRivet12",
+    "ClutchStopBand_LiningRivet13",
+    "ClutchStopBand_LiningRivet14",
+    "ClutchStopBand_band",
+    "ClutchStopBand_lining",
+    "ClutchSupport_AuxFork",
+    "ClutchSupport_AuxForkCotter",
+    "ClutchSupport_AuxForkPin",
+    "ClutchSupport_AuxKey1",
+    "ClutchSupport_AuxKey2",
+    "ClutchSupport_AuxLever1",
+    "ClutchSupport_AuxLever2",
+    "ClutchSupport_AuxRodNut",
+    "ClutchSupport_AuxShaft",
+    "ClutchSupport_AuxTaper1",
+    "ClutchSupport_AuxTaper2",
+    "ClutchSupport_LeftBracket",
+    "ClutchSupport_LeftMount1",
+    "ClutchSupport_LeftMount2",
+    "ClutchSupport_LeftMount3",
+    "ClutchSupport_LeftMount4",
+    "ClutchSupport_MainFork",
+    "ClutchSupport_MainForkCotter",
+    "ClutchSupport_MainForkPin",
+    "ClutchSupport_MainRodNut",
+    "ClutchSupport_MainSetScrew",
+    "ClutchSupport_RearAuxRod",
+    "ClutchSupport_RightBracket",
+    "ClutchSupport_RightMount1",
+    "ClutchSupport_RightMount2",
+    "ClutchSupport_RightMount3",
+    "ClutchSupport_RightMount4",
+    "ClutchThrowout_LeftBall01",
+    "ClutchThrowout_LeftBall02",
+    "ClutchThrowout_LeftBall03",
+    "ClutchThrowout_LeftBall04",
+    "ClutchThrowout_LeftBall05",
+    "ClutchThrowout_LeftBall06",
+    "ClutchThrowout_LeftBall07",
+    "ClutchThrowout_LeftBall08",
+    "ClutchThrowout_LeftBall09",
+    "ClutchThrowout_LeftBall10",
+    "ClutchThrowout_LeftBall11",
+    "ClutchThrowout_LeftBall12",
+    "ClutchThrowout_LeftBall13",
+    "ClutchThrowout_LeftBall14",
+    "ClutchThrowout_LeftBall15",
+    "ClutchThrowout_LeftBall16",
+    "ClutchThrowout_LeftBall17",
+    "ClutchThrowout_LeftBall18",
+    "ClutchThrowout_LeftBall19",
+    "ClutchThrowout_LeftBall20",
+    "ClutchThrowout_LeftBall21",
+    "ClutchThrowout_LeftBall22",
+    "ClutchThrowout_LeftBall23",
+    "ClutchThrowout_LeftBall24",
+    "ClutchThrowout_LeftBearingCage",
+    "ClutchThrowout_LeftBearingInner",
+    "ClutchThrowout_LeftBearingOuter",
+    "ClutchThrowout_LeftInnerWasher",
+    "ClutchThrowout_LeftLever",
+    "ClutchThrowout_LeftLockwasher",
+    "ClutchThrowout_LeftNut",
+    "ClutchThrowout_LeftOuterWasher",
+    "ClutchThrowout_LeftPin",
+    "ClutchThrowout_LeftPinLockNut",
+    "ClutchThrowout_LeftPinLockScrew",
+    "ClutchThrowout_LeftRetainerWasher",
+    "ClutchThrowout_MainKey1",
+    "ClutchThrowout_MainKey2",
+    "ClutchThrowout_MainKey3",
+    "ClutchThrowout_OperatingLever",
+    "ClutchThrowout_RightBall01",
+    "ClutchThrowout_RightBall02",
+    "ClutchThrowout_RightBall03",
+    "ClutchThrowout_RightBall04",
+    "ClutchThrowout_RightBall05",
+    "ClutchThrowout_RightBall06",
+    "ClutchThrowout_RightBall07",
+    "ClutchThrowout_RightBall08",
+    "ClutchThrowout_RightBall09",
+    "ClutchThrowout_RightBall10",
+    "ClutchThrowout_RightBall11",
+    "ClutchThrowout_RightBall12",
+    "ClutchThrowout_RightBall13",
+    "ClutchThrowout_RightBall14",
+    "ClutchThrowout_RightBall15",
+    "ClutchThrowout_RightBall16",
+    "ClutchThrowout_RightBall17",
+    "ClutchThrowout_RightBall18",
+    "ClutchThrowout_RightBall19",
+    "ClutchThrowout_RightBall20",
+    "ClutchThrowout_RightBall21",
+    "ClutchThrowout_RightBall22",
+    "ClutchThrowout_RightBall23",
+    "ClutchThrowout_RightBall24",
+    "ClutchThrowout_RightBearingCage",
+    "ClutchThrowout_RightBearingInner",
+    "ClutchThrowout_RightBearingOuter",
+    "ClutchThrowout_RightInnerWasher",
+    "ClutchThrowout_RightLever",
+    "ClutchThrowout_RightLockwasher",
+    "ClutchThrowout_RightNut",
+    "ClutchThrowout_RightOuterWasher",
+    "ClutchThrowout_RightPin",
+    "ClutchThrowout_RightPinLockNut",
+    "ClutchThrowout_RightPinLockScrew",
+    "ClutchThrowout_RightRetainerWasher",
+    "ClutchThrowout_Shaft",
+    "ClutchThrust_Ball01",
+    "ClutchThrust_Ball02",
+    "ClutchThrust_Ball03",
+    "ClutchThrust_Ball04",
+    "ClutchThrust_Ball05",
+    "ClutchThrust_Ball06",
+    "ClutchThrust_Ball07",
+    "ClutchThrust_Ball08",
+    "ClutchThrust_Ball09",
+    "ClutchThrust_Ball10",
+    "ClutchThrust_Ball11",
+    "ClutchThrust_Ball12",
+    "ClutchThrust_Ball13",
+    "ClutchThrust_Ball14",
+    "ClutchThrust_Ball15",
+    "ClutchThrust_Ball16",
+    "ClutchThrust_Ball17",
+    "ClutchThrust_Ball18",
+    "ClutchThrust_Ball19",
+    "ClutchThrust_Ball20",
+    "ClutchThrust_Ball21",
+    "ClutchThrust_Ball22",
+    "ClutchThrust_Ball23",
+    "ClutchThrust_Ball24",
+    "ClutchThrust_Ball25",
+    "ClutchThrust_Ball26",
+    "ClutchThrust_Ball27",
+    "ClutchThrust_Ball28",
+    "ClutchThrust_Ball29",
+    "ClutchThrust_Ball30",
+    "ClutchThrust_Cage",
+    "ClutchThrust_Stop",
+    "EngineCase_upper",
+    "EngineCrank_FlywheelKey",
+    "EngineCrank_FlywheelKeyScrew",
+    "EngineCrank_Forging",
+    "EngineCrank_Main1_lower",
+    "EngineCrank_Main1_lower_Dowel",
+    "EngineCrank_Main1_upper",
+    "EngineCrank_Main1_upper_Dowel",
+    "EngineCrank_Main2_lower",
+    "EngineCrank_Main2_lower_Dowel",
+    "EngineCrank_Main2_upper",
+    "EngineCrank_Main2_upper_Dowel",
+    "EngineCrank_Main3_lower",
+    "EngineCrank_Main3_lower_Dowel",
+    "EngineCrank_Main3_upper",
+    "EngineCrank_Main3_upper_Dowel",
+    "EngineCrank_Main4_lower",
+    "EngineCrank_Main4_lower_Dowel",
+    "EngineCrank_Main4_upper",
+    "EngineCrank_Main4_upper_Dowel",
+    "EngineCrank_Main5_lower",
+    "EngineCrank_Main5_lower_Dowel",
+    "EngineCrank_Main5_upper",
+    "EngineCrank_Main5_upper_Dowel",
+    "EngineCrank_Main6_lower",
+    "EngineCrank_Main6_lower_Dowel",
+    "EngineCrank_Main6_upper",
+    "EngineCrank_Main6_upper_Dowel",
+    "EngineCrank_Main7_lower",
+    "EngineCrank_Main7_lower_Dowel",
+    "EngineCrank_Main7_upper",
+    "EngineCrank_Main7_upper_Dowel",
+    "EngineCrank_OutputCotter",
+    "EngineCrank_OutputNut",
+    "EngineCrank_ThrustCenter",
+    "EngineCrank_ThrustLeftBall01",
+    "EngineCrank_ThrustLeftBall02",
+    "EngineCrank_ThrustLeftBall03",
+    "EngineCrank_ThrustLeftBall04",
+    "EngineCrank_ThrustLeftBall05",
+    "EngineCrank_ThrustLeftBall06",
+    "EngineCrank_ThrustLeftBall07",
+    "EngineCrank_ThrustLeftBall08",
+    "EngineCrank_ThrustLeftBall09",
+    "EngineCrank_ThrustLeftBall10",
+    "EngineCrank_ThrustLeftBall11",
+    "EngineCrank_ThrustLeftBall12",
+    "EngineCrank_ThrustLeftBall13",
+    "EngineCrank_ThrustLeftBall14",
+    "EngineCrank_ThrustLeftBall15",
+    "EngineCrank_ThrustLeftBall16",
+    "EngineCrank_ThrustLeftBall17",
+    "EngineCrank_ThrustLeftBall18",
+    "EngineCrank_ThrustLeftBall19",
+    "EngineCrank_ThrustLeftBall20",
+    "EngineCrank_ThrustLeftCage",
+    "EngineCrank_ThrustLeftRace",
+    "EngineCrank_ThrustLeftSleeve",
+    "EngineCrank_ThrustNut",
+    "EngineCrank_ThrustRightBall01",
+    "EngineCrank_ThrustRightBall02",
+    "EngineCrank_ThrustRightBall03",
+    "EngineCrank_ThrustRightBall04",
+    "EngineCrank_ThrustRightBall05",
+    "EngineCrank_ThrustRightBall06",
+    "EngineCrank_ThrustRightBall07",
+    "EngineCrank_ThrustRightBall08",
+    "EngineCrank_ThrustRightBall09",
+    "EngineCrank_ThrustRightBall10",
+    "EngineCrank_ThrustRightBall11",
+    "EngineCrank_ThrustRightBall12",
+    "EngineCrank_ThrustRightBall13",
+    "EngineCrank_ThrustRightBall14",
+    "EngineCrank_ThrustRightBall15",
+    "EngineCrank_ThrustRightBall16",
+    "EngineCrank_ThrustRightBall17",
+    "EngineCrank_ThrustRightBall18",
+    "EngineCrank_ThrustRightBall19",
+    "EngineCrank_ThrustRightBall20",
+    "EngineCrank_ThrustRightCage",
+    "EngineCrank_ThrustRightRace",
+    "EngineCrank_ThrustRightSleeve",
+    "EngineFrame_FrontChannel",
+    "EngineFrame_FrontCleat",
+    "EngineFrame_FrontFloorRivet1",
+    "EngineFrame_FrontFloorRivet2",
+    "EngineFrame_FrontFloorRivet3",
+    "EngineFrame_FrontFloorRivet4",
+    "EngineFrame_FrontFloorRivet5",
+    "EngineFrame_FrontWebRivet1",
+    "EngineFrame_FrontWebRivet2",
+    "EngineFrame_LeftFloorRivet1",
+    "EngineFrame_LeftFloorRivet2",
+    "EngineFrame_LeftGusset",
+    "EngineFrame_LeftWebRivet1",
+    "EngineFrame_LeftWebRivet2",
+    "EngineFrame_RearChannel",
+    "EngineFrame_RearFloorRivet1",
+    "EngineFrame_RearFloorRivet2",
+    "EngineFrame_RearFloorRivet3",
+    "EngineFrame_RearFloorRivet4",
+    "EngineFrame_RearFloorRivet5",
+    "EngineFrame_RightFloorRivet1",
+    "EngineFrame_RightFloorRivet2",
+    "EngineFrame_RightGusset",
+    "EngineFrame_RightWebRivet1",
+    "EngineFrame_RightWebRivet2",
+    "EngineGear_Bolt1",
+    "EngineGear_Bolt2",
+    "EngineGear_Bolt3",
+    "EngineGear_Bolt4",
+    "EngineGear_Bolt5",
+    "EngineGear_Bolt6",
+    "EngineGear_Cotter1",
+    "EngineGear_Cotter2",
+    "EngineGear_Cotter3",
+    "EngineGear_Cotter4",
+    "EngineGear_Cotter5",
+    "EngineGear_Cotter6",
+    "EngineGear_DrivingBevel",
+    "EngineGear_Nut1",
+    "EngineGear_Nut2",
+    "EngineGear_Nut3",
+    "EngineGear_Nut4",
+    "EngineGear_Nut5",
+    "EngineGear_Nut6",
+    "EngineGear_ThinShim",
+    "EngineGear_ThrustLockScrew",
+    "EngineGear_ThrustLockWire",
+    "EngineSuspension_FrontBracket",
+    "EngineSuspension_FrontPacking",
+    "EngineSuspension_FrontPivotBolt",
+    "EngineSuspension_FrontPivotLock",
+    "EngineSuspension_FrontPivotNut",
+    "EngineSuspension_LeftBase1Bolt",
+    "EngineSuspension_LeftBase1Lock",
+    "EngineSuspension_LeftBase1Nut",
+    "EngineSuspension_LeftBase2Bolt",
+    "EngineSuspension_LeftBase2Lock",
+    "EngineSuspension_LeftBase2Nut",
+    "EngineSuspension_LeftBevel1",
+    "EngineSuspension_LeftBevel2",
+    "EngineSuspension_LeftBracket",
+    "EngineSuspension_LeftCap",
+    "EngineSuspension_LeftCapLock",
+    "EngineSuspension_LeftFrontRailBolt",
+    "EngineSuspension_LeftFrontRailLock",
+    "EngineSuspension_LeftFrontRailNut",
+    "EngineSuspension_LeftPacking",
+    "EngineSuspension_LeftRail",
+    "EngineSuspension_LeftRail1Bolt",
+    "EngineSuspension_LeftRail1Lock",
+    "EngineSuspension_LeftRail1Nut",
+    "EngineSuspension_LeftRail2Bolt",
+    "EngineSuspension_LeftRail2Lock",
+    "EngineSuspension_LeftRail2Nut",
+    "EngineSuspension_LeftRail3Bolt",
+    "EngineSuspension_LeftRail3Lock",
+    "EngineSuspension_LeftRail3Nut",
+    "EngineSuspension_LeftRail4Bolt",
+    "EngineSuspension_LeftRail4Lock",
+    "EngineSuspension_LeftRail4Nut",
+    "EngineSuspension_RightBase1Bolt",
+    "EngineSuspension_RightBase1Lock",
+    "EngineSuspension_RightBase1Nut",
+    "EngineSuspension_RightBase2Bolt",
+    "EngineSuspension_RightBase2Lock",
+    "EngineSuspension_RightBase2Nut",
+    "EngineSuspension_RightBevel1",
+    "EngineSuspension_RightBevel2",
+    "EngineSuspension_RightBracket",
+    "EngineSuspension_RightCap",
+    "EngineSuspension_RightCapLock",
+    "EngineSuspension_RightFrontRailBolt",
+    "EngineSuspension_RightFrontRailLock",
+    "EngineSuspension_RightFrontRailNut",
+    "EngineSuspension_RightPacking",
+    "EngineSuspension_RightRail",
+    "EngineSuspension_RightRail1Bolt",
+    "EngineSuspension_RightRail1Lock",
+    "EngineSuspension_RightRail1Nut",
+    "EngineSuspension_RightRail2Bolt",
+    "EngineSuspension_RightRail2Lock",
+    "EngineSuspension_RightRail2Nut",
+    "EngineSuspension_RightRail3Bolt",
+    "EngineSuspension_RightRail3Lock",
+    "EngineSuspension_RightRail3Nut",
+    "EngineSuspension_RightRail4Bolt",
+    "EngineSuspension_RightRail4Lock",
+    "EngineSuspension_RightRail4Nut",
+    "FrontClutch_Coupling",
+    "FrontClutch_LowerFlange",
+    "FrontClutch_Set1_Bolt",
+    "FrontClutch_Set1_Nut",
+    "FrontClutch_Set1_Washer",
+    "FrontClutch_Set2_Bolt",
+    "FrontClutch_Set2_Nut",
+    "FrontClutch_Set2_Washer",
+    "FrontClutch_Spring",
+    "FrontClutch_UpperFlange",
+    "InputBearing0_cage",
+    "InputBearing0_cup",
+    "InputBearing0_inner_race",
+    "InputBearing0_roller00",
+    "InputBearing0_roller01",
+    "InputBearing0_roller02",
+    "InputBearing0_roller03",
+    "InputBearing0_roller04",
+    "InputBearing0_roller05",
+    "InputBearing0_roller06",
+    "InputBearing0_roller07",
+    "InputBearing0_roller08",
+    "InputBearing0_roller09",
+    "InputBearing0_roller10",
+    "InputBearing0_roller11",
+    "InputBearing0_roller12",
+    "InputBearing0_roller13",
+    "InputBearing0_roller14",
+    "InputBearing0_roller15",
+    "InputBearing1_cage",
+    "InputBearing1_cup",
+    "InputBearing1_inner_race",
+    "InputBearing1_roller00",
+    "InputBearing1_roller01",
+    "InputBearing1_roller02",
+    "InputBearing1_roller03",
+    "InputBearing1_roller04",
+    "InputBearing1_roller05",
+    "InputBearing1_roller06",
+    "InputBearing1_roller07",
+    "InputBearing1_roller08",
+    "InputBearing1_roller09",
+    "InputBearing1_roller10",
+    "InputBearing1_roller11",
+    "InputBearing1_roller12",
+    "InputBearing1_roller13",
+    "InputBearing1_roller14",
+    "InputBearing1_roller15",
+    "InputHousing_cotter",
+    "InputHousing_coupling",
+    "InputHousing_disk",
+    "InputHousing_felt",
+    "InputHousing_flange_shim00",
+    "InputHousing_flange_shim01",
+    "InputHousing_flange_shim02",
+    "InputHousing_flange_shim03",
+    "InputHousing_flange_shim04",
+    "InputHousing_flange_shim05",
+    "InputHousing_flange_shim06",
+    "InputHousing_flange_shim07",
+    "InputHousing_flange_shim08",
+    "InputHousing_flange_shim09",
+    "InputHousing_flange_shim10",
+    "InputHousing_flange_shim11",
+    "InputHousing_flange_shim12",
+    "InputHousing_flange_shim13",
+    "InputHousing_flange_shim14",
+    "InputHousing_flange_shim15",
+    "InputHousing_gland",
+    "InputHousing_gland_bolt0",
+    "InputHousing_gland_bolt1",
+    "InputHousing_gland_bolt2",
+    "InputHousing_gland_bolt3",
+    "InputHousing_gland_nut0_0",
+    "InputHousing_gland_nut0_1",
+    "InputHousing_gland_nut1_0",
+    "InputHousing_gland_nut1_1",
+    "InputHousing_gland_nut2_0",
+    "InputHousing_gland_nut2_1",
+    "InputHousing_gland_nut3_0",
+    "InputHousing_gland_nut3_1",
+    "InputHousing_housing",
+    "InputHousing_nut",
+    "InputHousing_spacer",
+    "InputHousing_spacer_shim00",
+    "InputHousing_spacer_shim01",
+    "InputHousing_spacer_shim02",
+    "InputHousing_spacer_shim03",
+    "InputHousing_spacer_shim04",
+    "InputHousing_spacer_shim05",
+    "InputHousing_spacer_shim06",
+    "InputHousing_spacer_shim07",
+    "InputHousing_spacer_shim08",
+    "InputHousing_spacer_shim09",
+    "InputHousing_spacer_shim10",
+    "InputHousing_spacer_shim11",
+    "InputHousing_spacer_shim12",
+    "InputHousing_washer",
+    "InputInstallation_cup_body",
+    "InputInstallation_cup_cap",
+    "InputInstallation_elbow",
+    "InputInstallation_mount_cotter0",
+    "InputInstallation_mount_cotter1",
+    "InputInstallation_mount_cotter2",
+    "InputInstallation_mount_cotter3",
+    "InputInstallation_mount_nut0",
+    "InputInstallation_mount_nut1",
+    "InputInstallation_mount_nut2",
+    "InputInstallation_mount_nut3",
+    "InputInstallation_mount_stud0",
+    "InputInstallation_mount_stud1",
+    "InputInstallation_mount_stud2",
+    "InputInstallation_mount_stud3",
+    "InputInstallation_nipple",
+    "LowerVertical_bearing",
+    "LowerVertical_bolt",
+    "LowerVertical_bolt_cotter",
+    "LowerVertical_bolt_nut",
+    "LowerVertical_stud",
+    "LowerVertical_stud_cotter",
+    "LowerVertical_stud_nut",
+    "PortBevelDrive_clutch_ring",
+    "PortBevelDrive_rivet_long0",
+    "PortBevelDrive_rivet_long1",
+    "PortBevelDrive_rivet_long2",
+    "PortBevelDrive_rivet_long3",
+    "PortBevelDrive_rivet_long4",
+    "PortBevelDrive_rivet_long5",
+    "PortBevelDrive_rivet_short0",
+    "PortBevelDrive_rivet_short1",
+    "PortBevelDrive_rivet_short2",
+    "PortBevelDrive_rivet_short3",
+    "PortBevelDrive_rivet_short4",
+    "PortBevelDrive_rivet_short5",
+    "PortBevelDrive_shim",
+    "PortBevelDrive_wheel",
+    "PortBevelWheelSupports_dowel",
+    "PortBevelWheelSupports_inner_bush",
+    "PortBevelWheelSupports_outer_bush",
+    "PortBevelWheelSupports_retainer",
+    "PortBevelWheelSupports_screw",
+    "PortBevelWheelSupports_sleeve",
+    "PortBrakeBearing_bush",
+    "PortBrakeBearing_cap",
+    "PortBrakeBearing_cotter0",
+    "PortBrakeBearing_cotter1",
+    "PortBrakeBearing_dowel",
+    "PortBrakeBearing_nut0",
+    "PortBrakeBearing_nut1",
+    "PortBrakeBearing_stud0",
+    "PortBrakeBearing_stud1",
+    "PortCasingCap_BodyInnerCleat",
+    "PortCasingCap_BodyInnerCleatRivet00",
+    "PortCasingCap_BodyInnerCleatRivet01",
+    "PortCasingCap_BodyInnerCleatRivet02",
+    "PortCasingCap_BodyOuterCleat",
+    "PortCasingCap_BodyOuterCleatRivet00",
+    "PortCasingCap_BodyOuterCleatRivet01",
+    "PortCasingCap_BodyOuterCleatRivet02",
+    "PortCasingCap_BodyRoofCleat",
+    "PortCasingCap_BodyRoofCleatRivet00",
+    "PortCasingCap_BodyRoofCleatRivet01",
+    "PortCasingCap_BodyRoofCleatRivet02",
+    "PortCasingCap_CapInnerCleat",
+    "PortCasingCap_CapInnerCleatRivet00",
+    "PortCasingCap_CapInnerCleatRivet01",
+    "PortCasingCap_CapInnerCleatRivet02",
+    "PortCasingCap_CapOuterCleat",
+    "PortCasingCap_CapOuterCleatRivet00",
+    "PortCasingCap_CapOuterCleatRivet01",
+    "PortCasingCap_CapOuterCleatRivet02",
+    "PortCasingCap_CapRoofCleat",
+    "PortCasingCap_CapRoofCleatRivet00",
+    "PortCasingCap_CapRoofCleatRivet01",
+    "PortCasingCap_CapRoofCleatRivet02",
+    "PortCasingCap_InnerBoltSet00Bolt",
+    "PortCasingCap_InnerBoltSet00Nut",
+    "PortCasingCap_InnerBoltSet00Washer",
+    "PortCasingCap_InnerBoltSet01Bolt",
+    "PortCasingCap_InnerBoltSet01Nut",
+    "PortCasingCap_InnerBoltSet01Washer",
+    "PortCasingCap_InnerBoltSet02Bolt",
+    "PortCasingCap_InnerBoltSet02Nut",
+    "PortCasingCap_InnerBoltSet02Washer",
+    "PortCasingCap_InnerPacking",
+    "PortCasingCap_OuterBoltSet00Bolt",
+    "PortCasingCap_OuterBoltSet00Nut",
+    "PortCasingCap_OuterBoltSet00Washer",
+    "PortCasingCap_OuterBoltSet01Bolt",
+    "PortCasingCap_OuterBoltSet01Nut",
+    "PortCasingCap_OuterBoltSet01Washer",
+    "PortCasingCap_OuterBoltSet02Bolt",
+    "PortCasingCap_OuterBoltSet02Nut",
+    "PortCasingCap_OuterBoltSet02Washer",
+    "PortCasingCap_OuterPacking",
+    "PortCasingCap_RoofBoltSet00Bolt",
+    "PortCasingCap_RoofBoltSet00Nut",
+    "PortCasingCap_RoofBoltSet00Washer",
+    "PortCasingSupport_LeftBracket",
+    "PortCasingSupport_LeftHullSet00Bolt",
+    "PortCasingSupport_LeftHullSet00Nut",
+    "PortCasingSupport_LeftHullSet00Washer",
+    "PortCasingSupport_LeftHullSet01Bolt",
+    "PortCasingSupport_LeftHullSet01Nut",
+    "PortCasingSupport_LeftHullSet01Washer",
+    "PortCasingSupport_LeftRivet00",
+    "PortCasingSupport_LeftRivet01",
+    "PortCasingSupport_LeftRivet02",
+    "PortCasingSupport_LeftRivet03",
+    "PortCasingSupport_LeftRivet04",
+    "PortCasingSupport_LeftRivet05",
+    "PortCasingSupport_LeftRivet06",
+    "PortCasingSupport_RightBracket",
+    "PortCasingSupport_RightHullSet00Bolt",
+    "PortCasingSupport_RightHullSet00Nut",
+    "PortCasingSupport_RightHullSet00Washer",
+    "PortCasingSupport_RightHullSet01Bolt",
+    "PortCasingSupport_RightHullSet01Nut",
+    "PortCasingSupport_RightHullSet01Washer",
+    "PortCasingSupport_RightRivet00",
+    "PortCasingSupport_RightRivet01",
+    "PortCasingSupport_RightRivet02",
+    "PortCasingSupport_RightRivet03",
+    "PortCasingSupport_RightRivet04",
+    "PortCasingSupport_RightRivet05",
+    "PortCasingSupport_RightRivet06",
+    "PortCasingTrim_BodyLeftBeading",
+    "PortCasingTrim_BodyLeftBeadingRivet00",
+    "PortCasingTrim_BodyLeftBeadingRivet01",
+    "PortCasingTrim_BodyLeftBeadingRivet02",
+    "PortCasingTrim_BodyLeftBeadingRivet03",
+    "PortCasingTrim_BodyLeftBeadingRivet04",
+    "PortCasingTrim_BodyLeftRegister",
+    "PortCasingTrim_BodyLeftRegisterRivet00",
+    "PortCasingTrim_BodyLeftRegisterRivet01",
+    "PortCasingTrim_BodyLeftRegisterRivet02",
+    "PortCasingTrim_BodyLeftRegisterRivet03",
+    "PortCasingTrim_BodyRightBeading",
+    "PortCasingTrim_BodyRightBeadingRivet00",
+    "PortCasingTrim_BodyRightBeadingRivet01",
+    "PortCasingTrim_BodyRightBeadingRivet02",
+    "PortCasingTrim_BodyRightBeadingRivet03",
+    "PortCasingTrim_BodyRightBeadingRivet04",
+    "PortCasingTrim_BodyRightRegister",
+    "PortCasingTrim_BodyRightRegisterRivet00",
+    "PortCasingTrim_BodyRightRegisterRivet01",
+    "PortCasingTrim_BodyRightRegisterRivet02",
+    "PortCasingTrim_BodyRightRegisterRivet03",
+    "PortCasingTrim_CapLeftBeading",
+    "PortCasingTrim_CapLeftBeadingRivet00",
+    "PortCasingTrim_CapLeftBeadingRivet01",
+    "PortCasingTrim_CapLeftBeadingRivet02",
+    "PortCasingTrim_CapLeftBeadingRivet03",
+    "PortCasingTrim_CapLeftBeadingRivet04",
+    "PortCasingTrim_CapLeftRegister",
+    "PortCasingTrim_CapLeftRegisterRivet00",
+    "PortCasingTrim_CapLeftRegisterRivet01",
+    "PortCasingTrim_CapLeftRegisterRivet02",
+    "PortCasingTrim_CapLeftRegisterRivet03",
+    "PortCasingTrim_CapRightBeading",
+    "PortCasingTrim_CapRightBeadingRivet00",
+    "PortCasingTrim_CapRightBeadingRivet01",
+    "PortCasingTrim_CapRightBeadingRivet02",
+    "PortCasingTrim_CapRightBeadingRivet03",
+    "PortCasingTrim_CapRightBeadingRivet04",
+    "PortCasingTrim_CapRightRegister",
+    "PortCasingTrim_CapRightRegisterRivet00",
+    "PortCasingTrim_CapRightRegisterRivet01",
+    "PortCasingTrim_CapRightRegisterRivet02",
+    "PortCasingTrim_CapRightRegisterRivet03",
+    "PortCasingWall_Angle",
+    "PortCasingWall_CaseRivet00",
+    "PortCasingWall_CaseRivet01",
+    "PortCasingWall_CaseRivet02",
+    "PortCasingWall_CaseRivet03",
+    "PortCasingWall_CaseRivet04",
+    "PortCasingWall_CaseRivet05",
+    "PortCasingWall_CaseRivet06",
+    "PortCasingWall_CaseRivet07",
+    "PortCasingWall_CaseRivet08",
+    "PortCasingWall_CaseRivet09",
+    "PortCasingWall_CaseRivet10",
+    "PortCasingWall_CaseRivet11",
+    "PortCasingWall_CaseRivet12",
+    "PortCasingWall_CaseRivet13",
+    "PortCasingWall_CaseRivet14",
+    "PortCasingWall_CaseRivet15",
+    "PortCasingWall_CaseRivet16",
+    "PortCasingWall_WallRivet00",
+    "PortCasingWall_WallRivet01",
+    "PortCasingWall_WallRivet02",
+    "PortCasingWall_WallRivet03",
+    "PortCasingWall_WallRivet04",
+    "PortCasingWall_WallRivet05",
+    "PortCasingWall_WallRivet06",
+    "PortCasingWall_WallRivet07",
+    "PortCasingWall_WallRivet08",
+    "PortCasingWall_WallRivet09",
+    "PortCasingWall_WallRivet10",
+    "PortCasing_Body",
+    "PortCasing_Cap",
+    "PortChain_Joint00_Bush",
+    "PortChain_Joint00_Cotter",
+    "PortChain_Joint00_Pin",
+    "PortChain_Joint01_Bush",
+    "PortChain_Joint01_Cotter",
+    "PortChain_Joint01_Pin",
+    "PortChain_Joint02_Bush",
+    "PortChain_Joint02_Cotter",
+    "PortChain_Joint02_Pin",
+    "PortChain_Joint03_Bush",
+    "PortChain_Joint03_Cotter",
+    "PortChain_Joint03_Pin",
+    "PortChain_Joint04_Bush",
+    "PortChain_Joint04_Cotter",
+    "PortChain_Joint04_Pin",
+    "PortChain_Joint05_Bush",
+    "PortChain_Joint05_Cotter",
+    "PortChain_Joint05_Pin",
+    "PortChain_Joint06_Bush",
+    "PortChain_Joint06_Cotter",
+    "PortChain_Joint06_Pin",
+    "PortChain_Joint07_Bush",
+    "PortChain_Joint07_Cotter",
+    "PortChain_Joint07_Pin",
+    "PortChain_Joint08_Bush",
+    "PortChain_Joint08_Cotter",
+    "PortChain_Joint08_Pin",
+    "PortChain_Joint09_Bush",
+    "PortChain_Joint09_Cotter",
+    "PortChain_Joint09_Pin",
+    "PortChain_Joint10_Bush",
+    "PortChain_Joint10_Cotter",
+    "PortChain_Joint10_Pin",
+    "PortChain_Joint11_Bush",
+    "PortChain_Joint11_Cotter",
+    "PortChain_Joint11_Pin",
+    "PortChain_Joint12_Bush",
+    "PortChain_Joint12_Cotter",
+    "PortChain_Joint12_Pin",
+    "PortChain_Joint13_Bush",
+    "PortChain_Joint13_Cotter",
+    "PortChain_Joint13_Pin",
+    "PortChain_Joint14_Bush",
+    "PortChain_Joint14_Cotter",
+    "PortChain_Joint14_Pin",
+    "PortChain_Joint15_Bush",
+    "PortChain_Joint15_Cotter",
+    "PortChain_Joint15_Pin",
+    "PortChain_Joint16_Bush",
+    "PortChain_Joint16_Cotter",
+    "PortChain_Joint16_Pin",
+    "PortChain_Joint17_Bush",
+    "PortChain_Joint17_Cotter",
+    "PortChain_Joint17_Pin",
+    "PortChain_Joint18_Bush",
+    "PortChain_Joint18_Cotter",
+    "PortChain_Joint18_Pin",
+    "PortChain_Joint19_Bush",
+    "PortChain_Joint19_Cotter",
+    "PortChain_Joint19_Pin",
+    "PortChain_Joint20_Bush",
+    "PortChain_Joint20_Cotter",
+    "PortChain_Joint20_Pin",
+    "PortChain_Joint21_Bush",
+    "PortChain_Joint21_Cotter",
+    "PortChain_Joint21_Pin",
+    "PortChain_Joint22_Bush",
+    "PortChain_Joint22_Cotter",
+    "PortChain_Joint22_Pin",
+    "PortChain_Joint23_Bush",
+    "PortChain_Joint23_Cotter",
+    "PortChain_Joint23_Pin",
+    "PortChain_Joint24_Bush",
+    "PortChain_Joint24_Cotter",
+    "PortChain_Joint24_Pin",
+    "PortChain_Joint25_Bush",
+    "PortChain_Joint25_Cotter",
+    "PortChain_Joint25_Pin",
+    "PortChain_Joint26_Bush",
+    "PortChain_Joint26_Cotter",
+    "PortChain_Joint26_Pin",
+    "PortChain_Joint27_Bush",
+    "PortChain_Joint27_Cotter",
+    "PortChain_Joint27_Pin",
+    "PortChain_Joint28_Bush",
+    "PortChain_Joint28_Cotter",
+    "PortChain_Joint28_Pin",
+    "PortChain_Joint29_Bush",
+    "PortChain_Joint29_Cotter",
+    "PortChain_Joint29_Pin",
+    "PortChain_Joint30_Bush",
+    "PortChain_Joint30_Cotter",
+    "PortChain_Joint30_Pin",
+    "PortChain_Joint31_Bush",
+    "PortChain_Joint31_Cotter",
+    "PortChain_Joint31_Pin",
+    "PortChain_Joint32_Bush",
+    "PortChain_Joint32_Cotter",
+    "PortChain_Joint32_Pin",
+    "PortChain_Joint33_Bush",
+    "PortChain_Joint33_Cotter",
+    "PortChain_Joint33_Pin",
+    "PortChain_Joint34_Bush",
+    "PortChain_Joint34_Cotter",
+    "PortChain_Joint34_Pin",
+    "PortChain_Joint35_Bush",
+    "PortChain_Joint35_Cotter",
+    "PortChain_Joint35_Pin",
+    "PortChain_Joint36_Bush",
+    "PortChain_Joint36_Cotter",
+    "PortChain_Joint36_Pin",
+    "PortChain_Joint37_Bush",
+    "PortChain_Joint37_Cotter",
+    "PortChain_Joint37_Pin",
+    "PortChain_Joint38_Bush",
+    "PortChain_Joint38_Cotter",
+    "PortChain_Joint38_Pin",
+    "PortChain_Joint39_Bush",
+    "PortChain_Joint39_Cotter",
+    "PortChain_Joint39_Pin",
+    "PortChain_Joint40_Bush",
+    "PortChain_Joint40_Cotter",
+    "PortChain_Joint40_Pin",
+    "PortChain_Joint41_Bush",
+    "PortChain_Joint41_Cotter",
+    "PortChain_Joint41_Pin",
+    "PortChain_Joint42_Bush",
+    "PortChain_Joint42_Cotter",
+    "PortChain_Joint42_Pin",
+    "PortChain_Joint43_Bush",
+    "PortChain_Joint43_Cotter",
+    "PortChain_Joint43_Pin",
+    "PortChain_Joint44_Bush",
+    "PortChain_Joint44_Cotter",
+    "PortChain_Joint44_Pin",
+    "PortChain_Joint45_Bush",
+    "PortChain_Joint45_Cotter",
+    "PortChain_Joint45_Pin",
+    "PortChain_Joint46_Bush",
+    "PortChain_Joint46_Cotter",
+    "PortChain_Joint46_Pin",
+    "PortChain_Joint47_Bush",
+    "PortChain_Joint47_Cotter",
+    "PortChain_Joint47_Pin",
+    "PortChain_Joint48_Bush",
+    "PortChain_Joint48_Cotter",
+    "PortChain_Joint48_Pin",
+    "PortChain_Joint49_Bush",
+    "PortChain_Joint49_Cotter",
+    "PortChain_Joint49_Pin",
+    "PortChain_Link00_Inboard",
+    "PortChain_Link00_Outboard",
+    "PortChain_Link01_Inboard",
+    "PortChain_Link01_Outboard",
+    "PortChain_Link02_Inboard",
+    "PortChain_Link02_Outboard",
+    "PortChain_Link03_Inboard",
+    "PortChain_Link03_Outboard",
+    "PortChain_Link04_Inboard",
+    "PortChain_Link04_Outboard",
+    "PortChain_Link05_Inboard",
+    "PortChain_Link05_Outboard",
+    "PortChain_Link06_Inboard",
+    "PortChain_Link06_Outboard",
+    "PortChain_Link07_Inboard",
+    "PortChain_Link07_Outboard",
+    "PortChain_Link08_Inboard",
+    "PortChain_Link08_Outboard",
+    "PortChain_Link09_Inboard",
+    "PortChain_Link09_Outboard",
+    "PortChain_Link10_Inboard",
+    "PortChain_Link10_Outboard",
+    "PortChain_Link11_Inboard",
+    "PortChain_Link11_Outboard",
+    "PortChain_Link12_Inboard",
+    "PortChain_Link12_Outboard",
+    "PortChain_Link13_Inboard",
+    "PortChain_Link13_Outboard",
+    "PortChain_Link14_Inboard",
+    "PortChain_Link14_Outboard",
+    "PortChain_Link15_Inboard",
+    "PortChain_Link15_Outboard",
+    "PortChain_Link16_Inboard",
+    "PortChain_Link16_Outboard",
+    "PortChain_Link17_Inboard",
+    "PortChain_Link17_Outboard",
+    "PortChain_Link18_Inboard",
+    "PortChain_Link18_Outboard",
+    "PortChain_Link19_Inboard",
+    "PortChain_Link19_Outboard",
+    "PortChain_Link20_Inboard",
+    "PortChain_Link20_Outboard",
+    "PortChain_Link21_Inboard",
+    "PortChain_Link21_Outboard",
+    "PortChain_Link22_Inboard",
+    "PortChain_Link22_Outboard",
+    "PortChain_Link23_Inboard",
+    "PortChain_Link23_Outboard",
+    "PortChain_Link24_Inboard",
+    "PortChain_Link24_Outboard",
+    "PortChain_Link25_Inboard",
+    "PortChain_Link25_Outboard",
+    "PortChain_Link26_Inboard",
+    "PortChain_Link26_Outboard",
+    "PortChain_Link27_Inboard",
+    "PortChain_Link27_Outboard",
+    "PortChain_Link28_Inboard",
+    "PortChain_Link28_Outboard",
+    "PortChain_Link29_Inboard",
+    "PortChain_Link29_Outboard",
+    "PortChain_Link30_Inboard",
+    "PortChain_Link30_Outboard",
+    "PortChain_Link31_Inboard",
+    "PortChain_Link31_Outboard",
+    "PortChain_Link32_Inboard",
+    "PortChain_Link32_Outboard",
+    "PortChain_Link33_Inboard",
+    "PortChain_Link33_Outboard",
+    "PortChain_Link34_Inboard",
+    "PortChain_Link34_Outboard",
+    "PortChain_Link35_Inboard",
+    "PortChain_Link35_Outboard",
+    "PortChain_Link36_Inboard",
+    "PortChain_Link36_Outboard",
+    "PortChain_Link37_Inboard",
+    "PortChain_Link37_Outboard",
+    "PortChain_Link38_Inboard",
+    "PortChain_Link38_Outboard",
+    "PortChain_Link39_Inboard",
+    "PortChain_Link39_Outboard",
+    "PortChain_Link40_Inboard",
+    "PortChain_Link40_Outboard",
+    "PortChain_Link41_Inboard",
+    "PortChain_Link41_Outboard",
+    "PortChain_Link42_Inboard",
+    "PortChain_Link42_Outboard",
+    "PortChain_Link43_Inboard",
+    "PortChain_Link43_Outboard",
+    "PortChain_Link44_Inboard",
+    "PortChain_Link44_Outboard",
+    "PortChain_Link45_Inboard",
+    "PortChain_Link45_Outboard",
+    "PortChain_Link46_Inboard",
+    "PortChain_Link46_Outboard",
+    "PortChain_Link47_Inboard",
+    "PortChain_Link47_Outboard",
+    "PortChain_Link48_Inboard",
+    "PortChain_Link48_Outboard",
+    "PortChain_Link49_Inboard",
+    "PortChain_Link49_Outboard",
+    "PortChain_RollerPinion",
+    "PortChain_TransmissionPinion",
+    "PortFixedBearing_inner_Oil_elbow",
+    "PortFixedBearing_inner_Oil_nut",
+    "PortFixedBearing_inner_Oil_sleeve",
+    "PortFixedBearing_inner_Oil_wool",
+    "PortFixedBearing_inner_Stud01_Cotter",
+    "PortFixedBearing_inner_Stud01_Nut",
+    "PortFixedBearing_inner_Stud01_Stud",
+    "PortFixedBearing_inner_Stud02_Cotter",
+    "PortFixedBearing_inner_Stud02_Nut",
+    "PortFixedBearing_inner_Stud02_Stud",
+    "PortFixedBearing_inner_Stud03_Cotter",
+    "PortFixedBearing_inner_Stud03_Nut",
+    "PortFixedBearing_inner_Stud03_Stud",
+    "PortFixedBearing_inner_Stud04_Cotter",
+    "PortFixedBearing_inner_Stud04_Nut",
+    "PortFixedBearing_inner_Stud04_Stud",
+    "PortFixedBearing_inner_bracket",
+    "PortFixedBearing_inner_cap",
+    "PortFixedBearing_inner_cover_pin",
+    "PortFixedBearing_inner_lid",
+    "PortFixedBearing_inner_lining_back",
+    "PortFixedBearing_inner_lining_front",
+    "PortFixedBearing_outer_Oil_elbow",
+    "PortFixedBearing_outer_Oil_nut",
+    "PortFixedBearing_outer_Oil_sleeve",
+    "PortFixedBearing_outer_Oil_wool",
+    "PortFixedBearing_outer_Stud01_Cotter",
+    "PortFixedBearing_outer_Stud01_Nut",
+    "PortFixedBearing_outer_Stud01_Stud",
+    "PortFixedBearing_outer_Stud02_Cotter",
+    "PortFixedBearing_outer_Stud02_Nut",
+    "PortFixedBearing_outer_Stud02_Stud",
+    "PortFixedBearing_outer_Stud03_Cotter",
+    "PortFixedBearing_outer_Stud03_Nut",
+    "PortFixedBearing_outer_Stud03_Stud",
+    "PortFixedBearing_outer_Stud04_Cotter",
+    "PortFixedBearing_outer_Stud04_Nut",
+    "PortFixedBearing_outer_Stud04_Stud",
+    "PortFixedBearing_outer_bracket",
+    "PortFixedBearing_outer_cap",
+    "PortFixedBearing_outer_cover_pin",
+    "PortFixedBearing_outer_lid",
+    "PortFixedBearing_outer_lining_back",
+    "PortFixedBearing_outer_lining_front",
+    "PortPlanetSupports_bolt0",
+    "PortPlanetSupports_bolt1",
+    "PortPlanetSupports_bolt2",
+    "PortPlanetSupports_bolt_cotter0",
+    "PortPlanetSupports_bolt_cotter1",
+    "PortPlanetSupports_bolt_cotter2",
+    "PortPlanetSupports_bolt_nut0",
+    "PortPlanetSupports_bolt_nut1",
+    "PortPlanetSupports_bolt_nut2",
+    "PortPlanetSupports_bronze0",
+    "PortPlanetSupports_bronze1",
+    "PortPlanetSupports_bronze2",
+    "PortPlanetSupports_cotter0",
+    "PortPlanetSupports_cotter1",
+    "PortPlanetSupports_cotter2",
+    "PortPlanetSupports_nut0",
+    "PortPlanetSupports_nut1",
+    "PortPlanetSupports_nut2",
+    "PortPlanetSupports_pin0",
+    "PortPlanetSupports_pin1",
+    "PortPlanetSupports_pin2",
+    "PortPlanetSupports_pin_ring",
+    "PortPlanetSupports_plug0",
+    "PortPlanetSupports_plug1",
+    "PortPlanetSupports_plug2",
+    "PortPlanetSupports_steel0",
+    "PortPlanetSupports_steel1",
+    "PortPlanetSupports_steel2",
+    "PortPlanetTrain_gasket0",
+    "PortPlanetTrain_gasket1",
+    "PortPlanetTrain_planet0",
+    "PortPlanetTrain_planet1",
+    "PortPlanetTrain_planet2",
+    "PortPlanetTrain_retainer",
+    "PortPlanetTrain_ring",
+    "PortPlanetTrain_sun",
+    "PortPlanetTrain_washer",
+    "PortSmallPlanetSupports_bolt0",
+    "PortSmallPlanetSupports_bolt1",
+    "PortSmallPlanetSupports_bolt2",
+    "PortSmallPlanetSupports_bolt_cotter0",
+    "PortSmallPlanetSupports_bolt_cotter1",
+    "PortSmallPlanetSupports_bolt_cotter2",
+    "PortSmallPlanetSupports_bolt_nut0",
+    "PortSmallPlanetSupports_bolt_nut1",
+    "PortSmallPlanetSupports_bolt_nut2",
+    "PortSmallPlanetSupports_bronze0",
+    "PortSmallPlanetSupports_bronze1",
+    "PortSmallPlanetSupports_bronze2",
+    "PortSmallPlanetSupports_cotter0",
+    "PortSmallPlanetSupports_cotter1",
+    "PortSmallPlanetSupports_cotter2",
+    "PortSmallPlanetSupports_nut0",
+    "PortSmallPlanetSupports_nut1",
+    "PortSmallPlanetSupports_nut2",
+    "PortSmallPlanetSupports_pin0",
+    "PortSmallPlanetSupports_pin1",
+    "PortSmallPlanetSupports_pin2",
+    "PortSmallPlanetSupports_pin_ring",
+    "PortSmallPlanetSupports_plug0",
+    "PortSmallPlanetSupports_plug1",
+    "PortSmallPlanetSupports_plug2",
+    "PortSmallPlanetSupports_steel0",
+    "PortSmallPlanetSupports_steel1",
+    "PortSmallPlanetSupports_steel2",
+    "PortSmallPlanetTrain_disk",
+    "PortSmallPlanetTrain_planet0",
+    "PortSmallPlanetTrain_planet1",
+    "PortSmallPlanetTrain_planet2",
+    "PortSmallPlanetTrain_ring",
+    "PortSmallPlanetTrain_rivet0",
+    "PortSmallPlanetTrain_rivet1",
+    "PortSmallPlanetTrain_rivet10",
+    "PortSmallPlanetTrain_rivet11",
+    "PortSmallPlanetTrain_rivet12",
+    "PortSmallPlanetTrain_rivet13",
+    "PortSmallPlanetTrain_rivet14",
+    "PortSmallPlanetTrain_rivet15",
+    "PortSmallPlanetTrain_rivet2",
+    "PortSmallPlanetTrain_rivet3",
+    "PortSmallPlanetTrain_rivet4",
+    "PortSmallPlanetTrain_rivet5",
+    "PortSmallPlanetTrain_rivet6",
+    "PortSmallPlanetTrain_rivet7",
+    "PortSmallPlanetTrain_rivet8",
+    "PortSmallPlanetTrain_rivet9",
+    "PortSmallPlanetTrain_sun",
+    "PortSmallPlanetTrain_sun_bush",
+    "PortSunRetention_ring",
+    "PortThrustBearing_ball00",
+    "PortThrustBearing_ball01",
+    "PortThrustBearing_ball02",
+    "PortThrustBearing_ball03",
+    "PortThrustBearing_ball04",
+    "PortThrustBearing_ball05",
+    "PortThrustBearing_ball06",
+    "PortThrustBearing_ball07",
+    "PortThrustBearing_ball08",
+    "PortThrustBearing_ball09",
+    "PortThrustBearing_ball10",
+    "PortThrustBearing_ball11",
+    "PortThrustBearing_ball12",
+    "PortThrustBearing_ball13",
+    "PortThrustBearing_ball14",
+    "PortThrustBearing_ball15",
+    "PortThrustBearing_cage",
+    "PortThrustBearing_rotating_race",
+    "PortThrustBearing_stationary_race",
+    "PortTransmissionBearing_InnerBush",
+    "PortTransmissionBearing_InnerDowel",
+    "PortTransmissionBearing_InnerRing",
+    "PortTransmissionBearing_OuterBush",
+    "PortTransmissionBearing_OuterDowel",
+    "PortTransmissionBearing_OuterRing",
+    "PortTransmissionCore_brake_case",
+    "PortTransmissionCore_high_drum",
+    "PortTransmissionCore_plain_case",
+    "PortTransmissionCore_planet_disk",
+    "PortTransmissionOutput_drum",
+    "PortTransmissionOutput_shaft",
+    "PumpMount_Port_Base1_Bolt",
+    "PumpMount_Port_Base1_Nut",
+    "PumpMount_Port_Base1_Washer",
+    "PumpMount_Port_Base2_Bolt",
+    "PumpMount_Port_Base2_Nut",
+    "PumpMount_Port_Base2_Washer",
+    "PumpMount_Port_Bracket",
+    "PumpMount_Port_MX102_JamNut",
+    "PumpMount_Port_MX98_Cotter",
+    "PumpMount_Port_MX98_Nut",
+    "PumpMount_Port_MX98_Stud",
+    "PumpMount_Port_MX99_HalfNut",
+    "PumpMount_Port_MX99_LowerWasher",
+    "PumpMount_Port_MX99_SmallNut",
+    "PumpMount_Port_MX99_Stud",
+    "PumpMount_Port_MX99_UpperWasher",
+    "PumpMount_Starboard_Base1_Bolt",
+    "PumpMount_Starboard_Base1_Nut",
+    "PumpMount_Starboard_Base1_Washer",
+    "PumpMount_Starboard_Base2_Bolt",
+    "PumpMount_Starboard_Base2_Nut",
+    "PumpMount_Starboard_Base2_Washer",
+    "PumpMount_Starboard_Bracket",
+    "PumpMount_Starboard_MX102_JamNut",
+    "PumpMount_Starboard_MX98_Cotter",
+    "PumpMount_Starboard_MX98_Nut",
+    "PumpMount_Starboard_MX98_Stud",
+    "PumpMount_Starboard_MX99_HalfNut",
+    "PumpMount_Starboard_MX99_LowerWasher",
+    "PumpMount_Starboard_MX99_SmallNut",
+    "PumpMount_Starboard_MX99_Stud",
+    "PumpMount_Starboard_MX99_UpperWasher",
+    "ReversingControl_cap",
+    "ReversingControl_cotter",
+    "ReversingControl_fork",
+    "ReversingControl_nut",
+    "ReversingControl_plunger",
+    "ReversingControl_rod",
+    "ReversingControl_spring",
+    "ShaftClosure_Gear_CastleNut",
+    "ShaftClosure_Gear_Cotter",
+    "ShaftClosure_Gear_LeftCap",
+    "ShaftClosure_Gear_LeftGasket",
+    "ShaftClosure_Gear_LeftSeal",
+    "ShaftClosure_Gear_PlainNut",
+    "ShaftClosure_Gear_RightCap",
+    "ShaftClosure_Gear_RightGasket",
+    "ShaftClosure_Gear_RightSeal",
+    "ShaftClosure_Gear_Stud",
+    "ShaftClosure_Gear_Washer",
+    "ShaftClosure_Main2_CastleNut",
+    "ShaftClosure_Main2_Cotter",
+    "ShaftClosure_Main2_LeftCap",
+    "ShaftClosure_Main2_LeftGasket",
+    "ShaftClosure_Main2_LeftSeal",
+    "ShaftClosure_Main2_PlainNut",
+    "ShaftClosure_Main2_RightCap",
+    "ShaftClosure_Main2_RightGasket",
+    "ShaftClosure_Main2_RightSeal",
+    "ShaftClosure_Main2_Stud",
+    "ShaftClosure_Main2_Washer",
+    "ShaftClosure_Main3_CastleNut",
+    "ShaftClosure_Main3_Cotter",
+    "ShaftClosure_Main3_LeftCap",
+    "ShaftClosure_Main3_LeftGasket",
+    "ShaftClosure_Main3_LeftSeal",
+    "ShaftClosure_Main3_PlainNut",
+    "ShaftClosure_Main3_RightCap",
+    "ShaftClosure_Main3_RightGasket",
+    "ShaftClosure_Main3_RightSeal",
+    "ShaftClosure_Main3_Stud",
+    "ShaftClosure_Main3_Washer",
+    "ShaftClosure_Main4_CastleNut",
+    "ShaftClosure_Main4_Cotter",
+    "ShaftClosure_Main4_LeftCap",
+    "ShaftClosure_Main4_LeftGasket",
+    "ShaftClosure_Main4_LeftSeal",
+    "ShaftClosure_Main4_PlainNut",
+    "ShaftClosure_Main4_RightCap",
+    "ShaftClosure_Main4_RightGasket",
+    "ShaftClosure_Main4_RightSeal",
+    "ShaftClosure_Main4_Stud",
+    "ShaftClosure_Main4_Washer",
+    "ShaftClosure_Main5_CastleNut",
+    "ShaftClosure_Main5_Cotter",
+    "ShaftClosure_Main5_LeftCap",
+    "ShaftClosure_Main5_LeftGasket",
+    "ShaftClosure_Main5_LeftSeal",
+    "ShaftClosure_Main5_PlainNut",
+    "ShaftClosure_Main5_RightCap",
+    "ShaftClosure_Main5_RightGasket",
+    "ShaftClosure_Main5_RightSeal",
+    "ShaftClosure_Main5_Stud",
+    "ShaftClosure_Main5_Washer",
+    "ShaftClosure_Main6_CastleNut",
+    "ShaftClosure_Main6_Cotter",
+    "ShaftClosure_Main6_LeftCap",
+    "ShaftClosure_Main6_LeftGasket",
+    "ShaftClosure_Main6_LeftSeal",
+    "ShaftClosure_Main6_PlainNut",
+    "ShaftClosure_Main6_RightCap",
+    "ShaftClosure_Main6_RightGasket",
+    "ShaftClosure_Main6_RightSeal",
+    "ShaftClosure_Main6_Stud",
+    "ShaftClosure_Main6_Washer",
+    "ShaftClosure_NosePlug",
+    "ShaftClosure_OilPlug1",
+    "ShaftClosure_OilPlug2",
+    "ShaftClosure_OilPlug3",
+    "ShaftClosure_OilPlug4",
+    "ShaftClosure_OilPlug5",
+    "ShaftClosure_OilPlug6",
+    "ShaftClosure_Pin1_CastleNut",
+    "ShaftClosure_Pin1_Cotter",
+    "ShaftClosure_Pin1_LeftCap",
+    "ShaftClosure_Pin1_LeftGasket",
+    "ShaftClosure_Pin1_LeftSeal",
+    "ShaftClosure_Pin1_PlainNut",
+    "ShaftClosure_Pin1_RightCap",
+    "ShaftClosure_Pin1_RightGasket",
+    "ShaftClosure_Pin1_RightSeal",
+    "ShaftClosure_Pin1_Stud",
+    "ShaftClosure_Pin1_Washer",
+    "ShaftClosure_Pin2_CastleNut",
+    "ShaftClosure_Pin2_Cotter",
+    "ShaftClosure_Pin2_LeftCap",
+    "ShaftClosure_Pin2_LeftGasket",
+    "ShaftClosure_Pin2_LeftSeal",
+    "ShaftClosure_Pin2_PlainNut",
+    "ShaftClosure_Pin2_RightCap",
+    "ShaftClosure_Pin2_RightGasket",
+    "ShaftClosure_Pin2_RightSeal",
+    "ShaftClosure_Pin2_Stud",
+    "ShaftClosure_Pin2_Washer",
+    "ShaftClosure_Pin3_CastleNut",
+    "ShaftClosure_Pin3_Cotter",
+    "ShaftClosure_Pin3_LeftCap",
+    "ShaftClosure_Pin3_LeftGasket",
+    "ShaftClosure_Pin3_LeftSeal",
+    "ShaftClosure_Pin3_PlainNut",
+    "ShaftClosure_Pin3_RightCap",
+    "ShaftClosure_Pin3_RightGasket",
+    "ShaftClosure_Pin3_RightSeal",
+    "ShaftClosure_Pin3_Stud",
+    "ShaftClosure_Pin3_Washer",
+    "ShaftClosure_Pin4_CastleNut",
+    "ShaftClosure_Pin4_Cotter",
+    "ShaftClosure_Pin4_LeftCap",
+    "ShaftClosure_Pin4_LeftGasket",
+    "ShaftClosure_Pin4_LeftSeal",
+    "ShaftClosure_Pin4_PlainNut",
+    "ShaftClosure_Pin4_RightCap",
+    "ShaftClosure_Pin4_RightGasket",
+    "ShaftClosure_Pin4_RightSeal",
+    "ShaftClosure_Pin4_Stud",
+    "ShaftClosure_Pin4_Washer",
+    "ShaftClosure_Pin5_CastleNut",
+    "ShaftClosure_Pin5_Cotter",
+    "ShaftClosure_Pin5_LeftCap",
+    "ShaftClosure_Pin5_LeftGasket",
+    "ShaftClosure_Pin5_LeftSeal",
+    "ShaftClosure_Pin5_PlainNut",
+    "ShaftClosure_Pin5_RightCap",
+    "ShaftClosure_Pin5_RightGasket",
+    "ShaftClosure_Pin5_RightSeal",
+    "ShaftClosure_Pin5_Stud",
+    "ShaftClosure_Pin5_Washer",
+    "ShaftClosure_Pin6_CastleNut",
+    "ShaftClosure_Pin6_Cotter",
+    "ShaftClosure_Pin6_LeftCap",
+    "ShaftClosure_Pin6_LeftGasket",
+    "ShaftClosure_Pin6_LeftSeal",
+    "ShaftClosure_Pin6_PlainNut",
+    "ShaftClosure_Pin6_RightCap",
+    "ShaftClosure_Pin6_RightGasket",
+    "ShaftClosure_Pin6_RightSeal",
+    "ShaftClosure_Pin6_Stud",
+    "ShaftClosure_Pin6_Washer",
+    "StarboardBevelDrive_clutch_ring",
+    "StarboardBevelDrive_rivet_long0",
+    "StarboardBevelDrive_rivet_long1",
+    "StarboardBevelDrive_rivet_long2",
+    "StarboardBevelDrive_rivet_long3",
+    "StarboardBevelDrive_rivet_long4",
+    "StarboardBevelDrive_rivet_long5",
+    "StarboardBevelDrive_rivet_short0",
+    "StarboardBevelDrive_rivet_short1",
+    "StarboardBevelDrive_rivet_short2",
+    "StarboardBevelDrive_rivet_short3",
+    "StarboardBevelDrive_rivet_short4",
+    "StarboardBevelDrive_rivet_short5",
+    "StarboardBevelDrive_shim",
+    "StarboardBevelDrive_wheel",
+    "StarboardBevelWheelSupports_dowel",
+    "StarboardBevelWheelSupports_inner_bush",
+    "StarboardBevelWheelSupports_outer_bush",
+    "StarboardBevelWheelSupports_retainer",
+    "StarboardBevelWheelSupports_screw",
+    "StarboardBevelWheelSupports_sleeve",
+    "StarboardBrakeBearing_bush",
+    "StarboardBrakeBearing_cap",
+    "StarboardBrakeBearing_cotter0",
+    "StarboardBrakeBearing_cotter1",
+    "StarboardBrakeBearing_dowel",
+    "StarboardBrakeBearing_nut0",
+    "StarboardBrakeBearing_nut1",
+    "StarboardBrakeBearing_stud0",
+    "StarboardBrakeBearing_stud1",
+    "StarboardCasingCap_BodyInnerCleat",
+    "StarboardCasingCap_BodyInnerCleatRivet00",
+    "StarboardCasingCap_BodyInnerCleatRivet01",
+    "StarboardCasingCap_BodyInnerCleatRivet02",
+    "StarboardCasingCap_BodyOuterCleat",
+    "StarboardCasingCap_BodyOuterCleatRivet00",
+    "StarboardCasingCap_BodyOuterCleatRivet01",
+    "StarboardCasingCap_BodyOuterCleatRivet02",
+    "StarboardCasingCap_BodyRoofCleat",
+    "StarboardCasingCap_BodyRoofCleatRivet00",
+    "StarboardCasingCap_BodyRoofCleatRivet01",
+    "StarboardCasingCap_BodyRoofCleatRivet02",
+    "StarboardCasingCap_CapInnerCleat",
+    "StarboardCasingCap_CapInnerCleatRivet00",
+    "StarboardCasingCap_CapInnerCleatRivet01",
+    "StarboardCasingCap_CapInnerCleatRivet02",
+    "StarboardCasingCap_CapOuterCleat",
+    "StarboardCasingCap_CapOuterCleatRivet00",
+    "StarboardCasingCap_CapOuterCleatRivet01",
+    "StarboardCasingCap_CapOuterCleatRivet02",
+    "StarboardCasingCap_CapRoofCleat",
+    "StarboardCasingCap_CapRoofCleatRivet00",
+    "StarboardCasingCap_CapRoofCleatRivet01",
+    "StarboardCasingCap_CapRoofCleatRivet02",
+    "StarboardCasingCap_InnerBoltSet00Bolt",
+    "StarboardCasingCap_InnerBoltSet00Nut",
+    "StarboardCasingCap_InnerBoltSet00Washer",
+    "StarboardCasingCap_InnerBoltSet01Bolt",
+    "StarboardCasingCap_InnerBoltSet01Nut",
+    "StarboardCasingCap_InnerBoltSet01Washer",
+    "StarboardCasingCap_InnerBoltSet02Bolt",
+    "StarboardCasingCap_InnerBoltSet02Nut",
+    "StarboardCasingCap_InnerBoltSet02Washer",
+    "StarboardCasingCap_InnerPacking",
+    "StarboardCasingCap_OuterBoltSet00Bolt",
+    "StarboardCasingCap_OuterBoltSet00Nut",
+    "StarboardCasingCap_OuterBoltSet00Washer",
+    "StarboardCasingCap_OuterBoltSet01Bolt",
+    "StarboardCasingCap_OuterBoltSet01Nut",
+    "StarboardCasingCap_OuterBoltSet01Washer",
+    "StarboardCasingCap_OuterBoltSet02Bolt",
+    "StarboardCasingCap_OuterBoltSet02Nut",
+    "StarboardCasingCap_OuterBoltSet02Washer",
+    "StarboardCasingCap_OuterPacking",
+    "StarboardCasingCap_RoofBoltSet00Bolt",
+    "StarboardCasingCap_RoofBoltSet00Nut",
+    "StarboardCasingCap_RoofBoltSet00Washer",
+    "StarboardCasingSupport_LeftBracket",
+    "StarboardCasingSupport_LeftHullSet00Bolt",
+    "StarboardCasingSupport_LeftHullSet00Nut",
+    "StarboardCasingSupport_LeftHullSet00Washer",
+    "StarboardCasingSupport_LeftHullSet01Bolt",
+    "StarboardCasingSupport_LeftHullSet01Nut",
+    "StarboardCasingSupport_LeftHullSet01Washer",
+    "StarboardCasingSupport_LeftRivet00",
+    "StarboardCasingSupport_LeftRivet01",
+    "StarboardCasingSupport_LeftRivet02",
+    "StarboardCasingSupport_LeftRivet03",
+    "StarboardCasingSupport_LeftRivet04",
+    "StarboardCasingSupport_LeftRivet05",
+    "StarboardCasingSupport_LeftRivet06",
+    "StarboardCasingSupport_RightBracket",
+    "StarboardCasingSupport_RightHullSet00Bolt",
+    "StarboardCasingSupport_RightHullSet00Nut",
+    "StarboardCasingSupport_RightHullSet00Washer",
+    "StarboardCasingSupport_RightHullSet01Bolt",
+    "StarboardCasingSupport_RightHullSet01Nut",
+    "StarboardCasingSupport_RightHullSet01Washer",
+    "StarboardCasingSupport_RightRivet00",
+    "StarboardCasingSupport_RightRivet01",
+    "StarboardCasingSupport_RightRivet02",
+    "StarboardCasingSupport_RightRivet03",
+    "StarboardCasingSupport_RightRivet04",
+    "StarboardCasingSupport_RightRivet05",
+    "StarboardCasingSupport_RightRivet06",
+    "StarboardCasingTrim_BodyLeftBeading",
+    "StarboardCasingTrim_BodyLeftBeadingRivet00",
+    "StarboardCasingTrim_BodyLeftBeadingRivet01",
+    "StarboardCasingTrim_BodyLeftBeadingRivet02",
+    "StarboardCasingTrim_BodyLeftBeadingRivet03",
+    "StarboardCasingTrim_BodyLeftBeadingRivet04",
+    "StarboardCasingTrim_BodyLeftRegister",
+    "StarboardCasingTrim_BodyLeftRegisterRivet00",
+    "StarboardCasingTrim_BodyLeftRegisterRivet01",
+    "StarboardCasingTrim_BodyLeftRegisterRivet02",
+    "StarboardCasingTrim_BodyLeftRegisterRivet03",
+    "StarboardCasingTrim_BodyRightBeading",
+    "StarboardCasingTrim_BodyRightBeadingRivet00",
+    "StarboardCasingTrim_BodyRightBeadingRivet01",
+    "StarboardCasingTrim_BodyRightBeadingRivet02",
+    "StarboardCasingTrim_BodyRightBeadingRivet03",
+    "StarboardCasingTrim_BodyRightBeadingRivet04",
+    "StarboardCasingTrim_BodyRightRegister",
+    "StarboardCasingTrim_BodyRightRegisterRivet00",
+    "StarboardCasingTrim_BodyRightRegisterRivet01",
+    "StarboardCasingTrim_BodyRightRegisterRivet02",
+    "StarboardCasingTrim_BodyRightRegisterRivet03",
+    "StarboardCasingTrim_CapLeftBeading",
+    "StarboardCasingTrim_CapLeftBeadingRivet00",
+    "StarboardCasingTrim_CapLeftBeadingRivet01",
+    "StarboardCasingTrim_CapLeftBeadingRivet02",
+    "StarboardCasingTrim_CapLeftBeadingRivet03",
+    "StarboardCasingTrim_CapLeftBeadingRivet04",
+    "StarboardCasingTrim_CapLeftRegister",
+    "StarboardCasingTrim_CapLeftRegisterRivet00",
+    "StarboardCasingTrim_CapLeftRegisterRivet01",
+    "StarboardCasingTrim_CapLeftRegisterRivet02",
+    "StarboardCasingTrim_CapLeftRegisterRivet03",
+    "StarboardCasingTrim_CapRightBeading",
+    "StarboardCasingTrim_CapRightBeadingRivet00",
+    "StarboardCasingTrim_CapRightBeadingRivet01",
+    "StarboardCasingTrim_CapRightBeadingRivet02",
+    "StarboardCasingTrim_CapRightBeadingRivet03",
+    "StarboardCasingTrim_CapRightBeadingRivet04",
+    "StarboardCasingTrim_CapRightRegister",
+    "StarboardCasingTrim_CapRightRegisterRivet00",
+    "StarboardCasingTrim_CapRightRegisterRivet01",
+    "StarboardCasingTrim_CapRightRegisterRivet02",
+    "StarboardCasingTrim_CapRightRegisterRivet03",
+    "StarboardCasingWall_Angle",
+    "StarboardCasingWall_CaseRivet00",
+    "StarboardCasingWall_CaseRivet01",
+    "StarboardCasingWall_CaseRivet02",
+    "StarboardCasingWall_CaseRivet03",
+    "StarboardCasingWall_CaseRivet04",
+    "StarboardCasingWall_CaseRivet05",
+    "StarboardCasingWall_CaseRivet06",
+    "StarboardCasingWall_CaseRivet07",
+    "StarboardCasingWall_CaseRivet08",
+    "StarboardCasingWall_CaseRivet09",
+    "StarboardCasingWall_CaseRivet10",
+    "StarboardCasingWall_CaseRivet11",
+    "StarboardCasingWall_CaseRivet12",
+    "StarboardCasingWall_CaseRivet13",
+    "StarboardCasingWall_CaseRivet14",
+    "StarboardCasingWall_CaseRivet15",
+    "StarboardCasingWall_CaseRivet16",
+    "StarboardCasingWall_WallRivet00",
+    "StarboardCasingWall_WallRivet01",
+    "StarboardCasingWall_WallRivet02",
+    "StarboardCasingWall_WallRivet03",
+    "StarboardCasingWall_WallRivet04",
+    "StarboardCasingWall_WallRivet05",
+    "StarboardCasingWall_WallRivet06",
+    "StarboardCasingWall_WallRivet07",
+    "StarboardCasingWall_WallRivet08",
+    "StarboardCasingWall_WallRivet09",
+    "StarboardCasingWall_WallRivet10",
+    "StarboardCasing_Body",
+    "StarboardCasing_Cap",
+    "StarboardChain_Joint00_Bush",
+    "StarboardChain_Joint00_Cotter",
+    "StarboardChain_Joint00_Pin",
+    "StarboardChain_Joint01_Bush",
+    "StarboardChain_Joint01_Cotter",
+    "StarboardChain_Joint01_Pin",
+    "StarboardChain_Joint02_Bush",
+    "StarboardChain_Joint02_Cotter",
+    "StarboardChain_Joint02_Pin",
+    "StarboardChain_Joint03_Bush",
+    "StarboardChain_Joint03_Cotter",
+    "StarboardChain_Joint03_Pin",
+    "StarboardChain_Joint04_Bush",
+    "StarboardChain_Joint04_Cotter",
+    "StarboardChain_Joint04_Pin",
+    "StarboardChain_Joint05_Bush",
+    "StarboardChain_Joint05_Cotter",
+    "StarboardChain_Joint05_Pin",
+    "StarboardChain_Joint06_Bush",
+    "StarboardChain_Joint06_Cotter",
+    "StarboardChain_Joint06_Pin",
+    "StarboardChain_Joint07_Bush",
+    "StarboardChain_Joint07_Cotter",
+    "StarboardChain_Joint07_Pin",
+    "StarboardChain_Joint08_Bush",
+    "StarboardChain_Joint08_Cotter",
+    "StarboardChain_Joint08_Pin",
+    "StarboardChain_Joint09_Bush",
+    "StarboardChain_Joint09_Cotter",
+    "StarboardChain_Joint09_Pin",
+    "StarboardChain_Joint10_Bush",
+    "StarboardChain_Joint10_Cotter",
+    "StarboardChain_Joint10_Pin",
+    "StarboardChain_Joint11_Bush",
+    "StarboardChain_Joint11_Cotter",
+    "StarboardChain_Joint11_Pin",
+    "StarboardChain_Joint12_Bush",
+    "StarboardChain_Joint12_Cotter",
+    "StarboardChain_Joint12_Pin",
+    "StarboardChain_Joint13_Bush",
+    "StarboardChain_Joint13_Cotter",
+    "StarboardChain_Joint13_Pin",
+    "StarboardChain_Joint14_Bush",
+    "StarboardChain_Joint14_Cotter",
+    "StarboardChain_Joint14_Pin",
+    "StarboardChain_Joint15_Bush",
+    "StarboardChain_Joint15_Cotter",
+    "StarboardChain_Joint15_Pin",
+    "StarboardChain_Joint16_Bush",
+    "StarboardChain_Joint16_Cotter",
+    "StarboardChain_Joint16_Pin",
+    "StarboardChain_Joint17_Bush",
+    "StarboardChain_Joint17_Cotter",
+    "StarboardChain_Joint17_Pin",
+    "StarboardChain_Joint18_Bush",
+    "StarboardChain_Joint18_Cotter",
+    "StarboardChain_Joint18_Pin",
+    "StarboardChain_Joint19_Bush",
+    "StarboardChain_Joint19_Cotter",
+    "StarboardChain_Joint19_Pin",
+    "StarboardChain_Joint20_Bush",
+    "StarboardChain_Joint20_Cotter",
+    "StarboardChain_Joint20_Pin",
+    "StarboardChain_Joint21_Bush",
+    "StarboardChain_Joint21_Cotter",
+    "StarboardChain_Joint21_Pin",
+    "StarboardChain_Joint22_Bush",
+    "StarboardChain_Joint22_Cotter",
+    "StarboardChain_Joint22_Pin",
+    "StarboardChain_Joint23_Bush",
+    "StarboardChain_Joint23_Cotter",
+    "StarboardChain_Joint23_Pin",
+    "StarboardChain_Joint24_Bush",
+    "StarboardChain_Joint24_Cotter",
+    "StarboardChain_Joint24_Pin",
+    "StarboardChain_Joint25_Bush",
+    "StarboardChain_Joint25_Cotter",
+    "StarboardChain_Joint25_Pin",
+    "StarboardChain_Joint26_Bush",
+    "StarboardChain_Joint26_Cotter",
+    "StarboardChain_Joint26_Pin",
+    "StarboardChain_Joint27_Bush",
+    "StarboardChain_Joint27_Cotter",
+    "StarboardChain_Joint27_Pin",
+    "StarboardChain_Joint28_Bush",
+    "StarboardChain_Joint28_Cotter",
+    "StarboardChain_Joint28_Pin",
+    "StarboardChain_Joint29_Bush",
+    "StarboardChain_Joint29_Cotter",
+    "StarboardChain_Joint29_Pin",
+    "StarboardChain_Joint30_Bush",
+    "StarboardChain_Joint30_Cotter",
+    "StarboardChain_Joint30_Pin",
+    "StarboardChain_Joint31_Bush",
+    "StarboardChain_Joint31_Cotter",
+    "StarboardChain_Joint31_Pin",
+    "StarboardChain_Joint32_Bush",
+    "StarboardChain_Joint32_Cotter",
+    "StarboardChain_Joint32_Pin",
+    "StarboardChain_Joint33_Bush",
+    "StarboardChain_Joint33_Cotter",
+    "StarboardChain_Joint33_Pin",
+    "StarboardChain_Joint34_Bush",
+    "StarboardChain_Joint34_Cotter",
+    "StarboardChain_Joint34_Pin",
+    "StarboardChain_Joint35_Bush",
+    "StarboardChain_Joint35_Cotter",
+    "StarboardChain_Joint35_Pin",
+    "StarboardChain_Joint36_Bush",
+    "StarboardChain_Joint36_Cotter",
+    "StarboardChain_Joint36_Pin",
+    "StarboardChain_Joint37_Bush",
+    "StarboardChain_Joint37_Cotter",
+    "StarboardChain_Joint37_Pin",
+    "StarboardChain_Joint38_Bush",
+    "StarboardChain_Joint38_Cotter",
+    "StarboardChain_Joint38_Pin",
+    "StarboardChain_Joint39_Bush",
+    "StarboardChain_Joint39_Cotter",
+    "StarboardChain_Joint39_Pin",
+    "StarboardChain_Joint40_Bush",
+    "StarboardChain_Joint40_Cotter",
+    "StarboardChain_Joint40_Pin",
+    "StarboardChain_Joint41_Bush",
+    "StarboardChain_Joint41_Cotter",
+    "StarboardChain_Joint41_Pin",
+    "StarboardChain_Joint42_Bush",
+    "StarboardChain_Joint42_Cotter",
+    "StarboardChain_Joint42_Pin",
+    "StarboardChain_Joint43_Bush",
+    "StarboardChain_Joint43_Cotter",
+    "StarboardChain_Joint43_Pin",
+    "StarboardChain_Joint44_Bush",
+    "StarboardChain_Joint44_Cotter",
+    "StarboardChain_Joint44_Pin",
+    "StarboardChain_Joint45_Bush",
+    "StarboardChain_Joint45_Cotter",
+    "StarboardChain_Joint45_Pin",
+    "StarboardChain_Joint46_Bush",
+    "StarboardChain_Joint46_Cotter",
+    "StarboardChain_Joint46_Pin",
+    "StarboardChain_Joint47_Bush",
+    "StarboardChain_Joint47_Cotter",
+    "StarboardChain_Joint47_Pin",
+    "StarboardChain_Joint48_Bush",
+    "StarboardChain_Joint48_Cotter",
+    "StarboardChain_Joint48_Pin",
+    "StarboardChain_Joint49_Bush",
+    "StarboardChain_Joint49_Cotter",
+    "StarboardChain_Joint49_Pin",
+    "StarboardChain_Link00_Inboard",
+    "StarboardChain_Link00_Outboard",
+    "StarboardChain_Link01_Inboard",
+    "StarboardChain_Link01_Outboard",
+    "StarboardChain_Link02_Inboard",
+    "StarboardChain_Link02_Outboard",
+    "StarboardChain_Link03_Inboard",
+    "StarboardChain_Link03_Outboard",
+    "StarboardChain_Link04_Inboard",
+    "StarboardChain_Link04_Outboard",
+    "StarboardChain_Link05_Inboard",
+    "StarboardChain_Link05_Outboard",
+    "StarboardChain_Link06_Inboard",
+    "StarboardChain_Link06_Outboard",
+    "StarboardChain_Link07_Inboard",
+    "StarboardChain_Link07_Outboard",
+    "StarboardChain_Link08_Inboard",
+    "StarboardChain_Link08_Outboard",
+    "StarboardChain_Link09_Inboard",
+    "StarboardChain_Link09_Outboard",
+    "StarboardChain_Link10_Inboard",
+    "StarboardChain_Link10_Outboard",
+    "StarboardChain_Link11_Inboard",
+    "StarboardChain_Link11_Outboard",
+    "StarboardChain_Link12_Inboard",
+    "StarboardChain_Link12_Outboard",
+    "StarboardChain_Link13_Inboard",
+    "StarboardChain_Link13_Outboard",
+    "StarboardChain_Link14_Inboard",
+    "StarboardChain_Link14_Outboard",
+    "StarboardChain_Link15_Inboard",
+    "StarboardChain_Link15_Outboard",
+    "StarboardChain_Link16_Inboard",
+    "StarboardChain_Link16_Outboard",
+    "StarboardChain_Link17_Inboard",
+    "StarboardChain_Link17_Outboard",
+    "StarboardChain_Link18_Inboard",
+    "StarboardChain_Link18_Outboard",
+    "StarboardChain_Link19_Inboard",
+    "StarboardChain_Link19_Outboard",
+    "StarboardChain_Link20_Inboard",
+    "StarboardChain_Link20_Outboard",
+    "StarboardChain_Link21_Inboard",
+    "StarboardChain_Link21_Outboard",
+    "StarboardChain_Link22_Inboard",
+    "StarboardChain_Link22_Outboard",
+    "StarboardChain_Link23_Inboard",
+    "StarboardChain_Link23_Outboard",
+    "StarboardChain_Link24_Inboard",
+    "StarboardChain_Link24_Outboard",
+    "StarboardChain_Link25_Inboard",
+    "StarboardChain_Link25_Outboard",
+    "StarboardChain_Link26_Inboard",
+    "StarboardChain_Link26_Outboard",
+    "StarboardChain_Link27_Inboard",
+    "StarboardChain_Link27_Outboard",
+    "StarboardChain_Link28_Inboard",
+    "StarboardChain_Link28_Outboard",
+    "StarboardChain_Link29_Inboard",
+    "StarboardChain_Link29_Outboard",
+    "StarboardChain_Link30_Inboard",
+    "StarboardChain_Link30_Outboard",
+    "StarboardChain_Link31_Inboard",
+    "StarboardChain_Link31_Outboard",
+    "StarboardChain_Link32_Inboard",
+    "StarboardChain_Link32_Outboard",
+    "StarboardChain_Link33_Inboard",
+    "StarboardChain_Link33_Outboard",
+    "StarboardChain_Link34_Inboard",
+    "StarboardChain_Link34_Outboard",
+    "StarboardChain_Link35_Inboard",
+    "StarboardChain_Link35_Outboard",
+    "StarboardChain_Link36_Inboard",
+    "StarboardChain_Link36_Outboard",
+    "StarboardChain_Link37_Inboard",
+    "StarboardChain_Link37_Outboard",
+    "StarboardChain_Link38_Inboard",
+    "StarboardChain_Link38_Outboard",
+    "StarboardChain_Link39_Inboard",
+    "StarboardChain_Link39_Outboard",
+    "StarboardChain_Link40_Inboard",
+    "StarboardChain_Link40_Outboard",
+    "StarboardChain_Link41_Inboard",
+    "StarboardChain_Link41_Outboard",
+    "StarboardChain_Link42_Inboard",
+    "StarboardChain_Link42_Outboard",
+    "StarboardChain_Link43_Inboard",
+    "StarboardChain_Link43_Outboard",
+    "StarboardChain_Link44_Inboard",
+    "StarboardChain_Link44_Outboard",
+    "StarboardChain_Link45_Inboard",
+    "StarboardChain_Link45_Outboard",
+    "StarboardChain_Link46_Inboard",
+    "StarboardChain_Link46_Outboard",
+    "StarboardChain_Link47_Inboard",
+    "StarboardChain_Link47_Outboard",
+    "StarboardChain_Link48_Inboard",
+    "StarboardChain_Link48_Outboard",
+    "StarboardChain_Link49_Inboard",
+    "StarboardChain_Link49_Outboard",
+    "StarboardChain_RollerPinion",
+    "StarboardChain_TransmissionPinion",
+    "StarboardFixedBearing_inner_Oil_elbow",
+    "StarboardFixedBearing_inner_Oil_nut",
+    "StarboardFixedBearing_inner_Oil_sleeve",
+    "StarboardFixedBearing_inner_Oil_wool",
+    "StarboardFixedBearing_inner_Stud01_Cotter",
+    "StarboardFixedBearing_inner_Stud01_Nut",
+    "StarboardFixedBearing_inner_Stud01_Stud",
+    "StarboardFixedBearing_inner_Stud02_Cotter",
+    "StarboardFixedBearing_inner_Stud02_Nut",
+    "StarboardFixedBearing_inner_Stud02_Stud",
+    "StarboardFixedBearing_inner_Stud03_Cotter",
+    "StarboardFixedBearing_inner_Stud03_Nut",
+    "StarboardFixedBearing_inner_Stud03_Stud",
+    "StarboardFixedBearing_inner_Stud04_Cotter",
+    "StarboardFixedBearing_inner_Stud04_Nut",
+    "StarboardFixedBearing_inner_Stud04_Stud",
+    "StarboardFixedBearing_inner_bracket",
+    "StarboardFixedBearing_inner_cap",
+    "StarboardFixedBearing_inner_cover_pin",
+    "StarboardFixedBearing_inner_lid",
+    "StarboardFixedBearing_inner_lining_back",
+    "StarboardFixedBearing_inner_lining_front",
+    "StarboardFixedBearing_outer_Oil_elbow",
+    "StarboardFixedBearing_outer_Oil_nut",
+    "StarboardFixedBearing_outer_Oil_sleeve",
+    "StarboardFixedBearing_outer_Oil_wool",
+    "StarboardFixedBearing_outer_Stud01_Cotter",
+    "StarboardFixedBearing_outer_Stud01_Nut",
+    "StarboardFixedBearing_outer_Stud01_Stud",
+    "StarboardFixedBearing_outer_Stud02_Cotter",
+    "StarboardFixedBearing_outer_Stud02_Nut",
+    "StarboardFixedBearing_outer_Stud02_Stud",
+    "StarboardFixedBearing_outer_Stud03_Cotter",
+    "StarboardFixedBearing_outer_Stud03_Nut",
+    "StarboardFixedBearing_outer_Stud03_Stud",
+    "StarboardFixedBearing_outer_Stud04_Cotter",
+    "StarboardFixedBearing_outer_Stud04_Nut",
+    "StarboardFixedBearing_outer_Stud04_Stud",
+    "StarboardFixedBearing_outer_bracket",
+    "StarboardFixedBearing_outer_cap",
+    "StarboardFixedBearing_outer_cover_pin",
+    "StarboardFixedBearing_outer_lid",
+    "StarboardFixedBearing_outer_lining_back",
+    "StarboardFixedBearing_outer_lining_front",
+    "StarboardPlanetSupports_bolt0",
+    "StarboardPlanetSupports_bolt1",
+    "StarboardPlanetSupports_bolt2",
+    "StarboardPlanetSupports_bolt_cotter0",
+    "StarboardPlanetSupports_bolt_cotter1",
+    "StarboardPlanetSupports_bolt_cotter2",
+    "StarboardPlanetSupports_bolt_nut0",
+    "StarboardPlanetSupports_bolt_nut1",
+    "StarboardPlanetSupports_bolt_nut2",
+    "StarboardPlanetSupports_bronze0",
+    "StarboardPlanetSupports_bronze1",
+    "StarboardPlanetSupports_bronze2",
+    "StarboardPlanetSupports_cotter0",
+    "StarboardPlanetSupports_cotter1",
+    "StarboardPlanetSupports_cotter2",
+    "StarboardPlanetSupports_nut0",
+    "StarboardPlanetSupports_nut1",
+    "StarboardPlanetSupports_nut2",
+    "StarboardPlanetSupports_pin0",
+    "StarboardPlanetSupports_pin1",
+    "StarboardPlanetSupports_pin2",
+    "StarboardPlanetSupports_pin_ring",
+    "StarboardPlanetSupports_plug0",
+    "StarboardPlanetSupports_plug1",
+    "StarboardPlanetSupports_plug2",
+    "StarboardPlanetSupports_steel0",
+    "StarboardPlanetSupports_steel1",
+    "StarboardPlanetSupports_steel2",
+    "StarboardPlanetTrain_gasket0",
+    "StarboardPlanetTrain_gasket1",
+    "StarboardPlanetTrain_planet0",
+    "StarboardPlanetTrain_planet1",
+    "StarboardPlanetTrain_planet2",
+    "StarboardPlanetTrain_retainer",
+    "StarboardPlanetTrain_ring",
+    "StarboardPlanetTrain_sun",
+    "StarboardPlanetTrain_washer",
+    "StarboardSmallPlanetSupports_bolt0",
+    "StarboardSmallPlanetSupports_bolt1",
+    "StarboardSmallPlanetSupports_bolt2",
+    "StarboardSmallPlanetSupports_bolt_cotter0",
+    "StarboardSmallPlanetSupports_bolt_cotter1",
+    "StarboardSmallPlanetSupports_bolt_cotter2",
+    "StarboardSmallPlanetSupports_bolt_nut0",
+    "StarboardSmallPlanetSupports_bolt_nut1",
+    "StarboardSmallPlanetSupports_bolt_nut2",
+    "StarboardSmallPlanetSupports_bronze0",
+    "StarboardSmallPlanetSupports_bronze1",
+    "StarboardSmallPlanetSupports_bronze2",
+    "StarboardSmallPlanetSupports_cotter0",
+    "StarboardSmallPlanetSupports_cotter1",
+    "StarboardSmallPlanetSupports_cotter2",
+    "StarboardSmallPlanetSupports_nut0",
+    "StarboardSmallPlanetSupports_nut1",
+    "StarboardSmallPlanetSupports_nut2",
+    "StarboardSmallPlanetSupports_pin0",
+    "StarboardSmallPlanetSupports_pin1",
+    "StarboardSmallPlanetSupports_pin2",
+    "StarboardSmallPlanetSupports_pin_ring",
+    "StarboardSmallPlanetSupports_plug0",
+    "StarboardSmallPlanetSupports_plug1",
+    "StarboardSmallPlanetSupports_plug2",
+    "StarboardSmallPlanetSupports_steel0",
+    "StarboardSmallPlanetSupports_steel1",
+    "StarboardSmallPlanetSupports_steel2",
+    "StarboardSmallPlanetTrain_disk",
+    "StarboardSmallPlanetTrain_planet0",
+    "StarboardSmallPlanetTrain_planet1",
+    "StarboardSmallPlanetTrain_planet2",
+    "StarboardSmallPlanetTrain_ring",
+    "StarboardSmallPlanetTrain_rivet0",
+    "StarboardSmallPlanetTrain_rivet1",
+    "StarboardSmallPlanetTrain_rivet10",
+    "StarboardSmallPlanetTrain_rivet11",
+    "StarboardSmallPlanetTrain_rivet12",
+    "StarboardSmallPlanetTrain_rivet13",
+    "StarboardSmallPlanetTrain_rivet14",
+    "StarboardSmallPlanetTrain_rivet15",
+    "StarboardSmallPlanetTrain_rivet2",
+    "StarboardSmallPlanetTrain_rivet3",
+    "StarboardSmallPlanetTrain_rivet4",
+    "StarboardSmallPlanetTrain_rivet5",
+    "StarboardSmallPlanetTrain_rivet6",
+    "StarboardSmallPlanetTrain_rivet7",
+    "StarboardSmallPlanetTrain_rivet8",
+    "StarboardSmallPlanetTrain_rivet9",
+    "StarboardSmallPlanetTrain_sun",
+    "StarboardSmallPlanetTrain_sun_bush",
+    "StarboardSunRetention_ring",
+    "StarboardThrustBearing_ball00",
+    "StarboardThrustBearing_ball01",
+    "StarboardThrustBearing_ball02",
+    "StarboardThrustBearing_ball03",
+    "StarboardThrustBearing_ball04",
+    "StarboardThrustBearing_ball05",
+    "StarboardThrustBearing_ball06",
+    "StarboardThrustBearing_ball07",
+    "StarboardThrustBearing_ball08",
+    "StarboardThrustBearing_ball09",
+    "StarboardThrustBearing_ball10",
+    "StarboardThrustBearing_ball11",
+    "StarboardThrustBearing_ball12",
+    "StarboardThrustBearing_ball13",
+    "StarboardThrustBearing_ball14",
+    "StarboardThrustBearing_ball15",
+    "StarboardThrustBearing_cage",
+    "StarboardThrustBearing_rotating_race",
+    "StarboardThrustBearing_stationary_race",
+    "StarboardTransmissionBearing_InnerBush",
+    "StarboardTransmissionBearing_InnerDowel",
+    "StarboardTransmissionBearing_InnerRing",
+    "StarboardTransmissionBearing_OuterBush",
+    "StarboardTransmissionBearing_OuterDowel",
+    "StarboardTransmissionBearing_OuterRing",
+    "StarboardTransmissionCore_brake_case",
+    "StarboardTransmissionCore_high_drum",
+    "StarboardTransmissionCore_plain_case",
+    "StarboardTransmissionCore_planet_disk",
+    "StarboardTransmissionOutput_drum",
+    "StarboardTransmissionOutput_shaft",
+    "TransmissionFrame_BottomChannel",
+    "TransmissionFrame_LeftInnerAngle",
+    "TransmissionFrame_LeftInnerBottomGusset",
+    "TransmissionFrame_LeftInnerTopGusset",
+    "TransmissionFrame_LeftOuterAngle",
+    "TransmissionFrame_LeftOuterBottomGusset",
+    "TransmissionFrame_LeftOuterTopGusset",
+    "TransmissionFrame_MiddleDiaphragm",
+    "TransmissionFrame_RightInnerAngle",
+    "TransmissionFrame_RightInnerBottomGusset",
+    "TransmissionFrame_RightInnerTopGusset",
+    "TransmissionFrame_RightOuterAngle",
+    "TransmissionFrame_RightOuterBottomGusset",
+    "TransmissionFrame_RightOuterTopGusset",
+    "TransmissionFrame_TopChannel",
+    "UpperVertical_bearing",
+    "UpperVertical_bolt",
+    "UpperVertical_bolt_cotter",
+    "UpperVertical_bolt_nut",
+    "UpperVertical_stud",
+    "UpperVertical_stud_cotter",
+    "UpperVertical_stud_nut",
+    "VerticalControl_key0",
+    "VerticalControl_key1",
+    "VerticalControl_lower_lever",
+    "VerticalControl_shaft",
+    "VerticalControl_upper_lever",
+    "hull_engine_back",
+    "hull_floor_5",
+    "hull_floor_6",
+    "hull_floor_7",
+    "hull_port_inner_rear_end",
+    "hull_port_rear_wing",
+    "hull_starboard_inner_rear_end",
+    "hull_starboard_rear_wing"
+  ],
+  "preserved_parent_count": 2152,
+  "parent_definition_byte_changes": [
+    "Def_ClutchBrake_carrier",
+    "Def_ClutchCone_spring",
+    "Def_ClutchDrive_belt",
+    "Def_ClutchRetention_wire",
+    "Def_ClutchStopBand_lining",
+    "Def_FrontClutch_spring",
+    "Def_TransmissionInput_cage",
+    "Def_TransmissionPin_bolt_nut",
+    "Def_TransmissionPin_nut",
+    "Def_TransmissionSmallSupport_bolt_nut",
+    "Def_TransmissionSmallSupport_nut"
+  ],
+  "oil_definition_byte_changes": [
+    "lower_driving_gear",
+    "lower_idler_gear",
+    "upper_driving_gear",
+    "upper_idler_gear",
+    "shaft",
+    "upper_bush",
+    "lower_bush",
+    "partition",
+    "lower_body",
+    "upper_body",
+    "relief_seat",
+    "relief_valve",
+    "relief_cage",
+    "relief_shim",
+    "relief_spring",
+    "cover",
+    "cover_gasket",
+    "drain_plug",
+    "drain_gasket",
+    "upper_filter_frame",
+    "upper_side_screen",
+    "upper_end_screen",
+    "lower_filter_frame",
+    "lower_side_screen",
+    "lower_end_screen",
+    "screen_nut",
+    "screen_lock",
+    "fastener_washer",
+    "fastener_nut",
+    "fastener_cotter",
+    "upper_body_bolt",
+    "cover_body_bolt",
+    "relief_lock_wire",
+    "mount_stud",
+    "mount_gasket"
+  ],
+  "material_preservation_verified": false,
+  "engine_origin": [
+    2906.8055512712617,
+    0.0,
+    849.2335104357661
+  ],
+  "oil_pose": [
+    1.0,
+    0.0,
+    0.0,
+    1243.87630083555,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    -262.859375,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "water_pose": [
+    1.0,
+    0.0,
+    0.0,
+    1243.87630083555,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    -171.45,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "inherited_floor_envelope_gap_mm": -43.87586456423418,
+  "source_documents_unchanged": true,
+  "standard_assembly_modified": false,
+  "installation_qualified": false,
+  "hydraulic_circuit_qualified": false,
+  "complete_engine": false,
+  "complete_tank": false,
+  "pending": [
+    "Independent saved hierarchy/definition/frame verification and context checks",
+    "Receiver STEP qualification and final installed exchange after global registration",
+    "Engine/drivetrain elevation and supports, clutch, transmission, controls and chain interfaces",
+    "Oil manifold circuit, remaining wires/connections and other engine/tank systems"
+  ]
+}

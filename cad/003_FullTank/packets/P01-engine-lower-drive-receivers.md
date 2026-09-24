@@ -1,5 +1,13 @@
 # P01 — lower distribution drive receiving casting
 
+**Superseded geometry interpretation:** the newer
+[coupled receiver study](../experiments/drive_chains/engine_pump_receiver_study/README.md)
+retracts the metric offset inferred from the oblique LIB96 view. Plan/section
+evidence supports a common oil-pump/driver axis. It also applies the conditional
+printed 171.45 mm water-axis drop and smaller source-profile pump. This packet
+and its native remain an archived earlier hypothesis; its offset and 184 mm drop
+are not the current reconstruction choice.
+
 Status: **receiver development candidate; full installation unqualified**,
 23 September 2026. This extends the [lower-drive component study](P01-engine-lower-distribution.md).
 Standard geometry and identifiable interiors remain the priority before poses.

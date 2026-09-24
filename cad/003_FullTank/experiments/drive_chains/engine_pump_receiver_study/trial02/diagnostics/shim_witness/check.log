@@ -1,0 +1,48 @@
+one valid case solid True
+source constituent coverage True
+all local constituents clear case material True
+all three local subassemblies mutually clear True
+whole oil gasket has case bearing material True
+EngineOilPump_MountJoint1Stud receiving sleeve True
+EngineOilPump_MountJoint1Stud blind end material True
+EngineOilPump_MountJoint2Stud receiving sleeve True
+EngineOilPump_MountJoint2Stud blind end material True
+EngineOilPump_MountJoint3Stud receiving sleeve True
+EngineOilPump_MountJoint3Stud blind end material True
+EngineOilPump_MountJoint4Stud receiving sleeve True
+EngineOilPump_MountJoint4Stud blind end material True
+EngineOilPump_MountJoint5Stud receiving sleeve True
+EngineOilPump_MountJoint5Stud blind end material True
+EngineOilPump_MountJoint6Stud receiving sleeve True
+EngineOilPump_MountJoint6Stud blind end material True
+EngineOilPump_MountJoint7Stud receiving sleeve True
+EngineOilPump_MountJoint7Stud blind end material True
+EngineOilPump_MountJoint8Stud receiving sleeve True
+EngineOilPump_MountJoint8Stud blind end material True
+EngineOilPump_MountJoint9Stud receiving sleeve True
+EngineOilPump_MountJoint9Stud blind end material True
+EngineOilPump_MountJoint10Stud receiving sleeve True
+EngineOilPump_MountJoint10Stud blind end material True
+whole water-pump shim has case bearing material False
+EngineWaterPump_MountStud1 case sleeve True
+EngineWaterPump_MountStud2 case sleeve True
+EngineWaterPump_MountStud3 case sleeve True
+EngineWaterPump_MountStud4 case sleeve True
+two actual gasket fluid ports True
+oil socket 0 open through receiver True
+oil socket 0 has separating wall True
+oil socket 1 open through receiver True
+oil socket 1 has separating wall True
+driver receiver cylinder at actual axis True
+continuous supporting lug at three levels True
+retaining screw head seat supported True
+sixteen-piece driver fits withdrawal envelope True
+driver envelope clears case downward True
+removed material confined to receiver region True
+added material confined to receiver region True
+receiver revision adds and removes actual material True
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_engine_pump_receiver.py", line 207, in <module>
+    assert result['local_mechanical_passed']
+           ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
