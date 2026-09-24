@@ -1,0 +1,55 @@
+{
+  "passed": true,
+  "checks": {
+    "controls": true,
+    "details": true,
+    "joints": true,
+    "specs": true,
+    "input_hashes": true,
+    "parent_native_sha256": true,
+    "parent_qualification_sha256": true,
+    "all_archive_breps_exact": true,
+    "all_object_types_exact": true,
+    "all_property_keys_exact": true,
+    "only_four_new_assembly_uuids_may_differ": true,
+    "all_exported_definition_breps_exact": true
+  },
+  "native_sha256": "dc4b1655605555493e726b75de938449f03a3a256e3498be3150efe876bdda5c",
+  "reproduction_native_sha256": "1d31840b6e70bdac60be6b0b01b271a3d48b8b587a30df86668d8bd59b6d1c94",
+  "checker_sha256": "bd1f763bcbed2ea33e0ffd7ccfee00a5d56d50282fdb54933d7e140039a441ec",
+  "archive_brep_count": 12,
+  "persistent_property_count": 764,
+  "changed_property_keys": [
+    [
+      "Definitions",
+      "Uid"
+    ],
+    [
+      "PortControlJoint",
+      "Uid"
+    ],
+    [
+      "Root",
+      "Uid"
+    ],
+    [
+      "StarboardControlJoint",
+      "Uid"
+    ]
+  ],
+  "new_assembly_uuids": [
+    [
+      "f33af3b8-865f-4395-9de9-c0207ecda597",
+      "e3d5b4a6-5c6e-4585-9552-ff0e6cd18a05",
+      "fc960937-d04d-4437-8e5c-8d656a5ca895",
+      "5cf9544d-0c22-4421-85d0-ab856a5479ce"
+    ],
+    [
+      "0b19fdad-e051-4822-bbbd-ba55d4ecad1c",
+      "7a00e88f-0491-44a2-a740-89b154cdcb63",
+      "9afeafed-f04d-4a89-843e-89aeb78151db",
+      "320d7a58-2088-45e9-83b3-7bc4659e1ca4"
+    ]
+  ],
+  "scope": "Fresh parameter-driven fork/pin/cotter construction and nut reuse. Every saved shape, frame, stable property and input must reproduce; only four newly generated assembly UUIDs may differ."
+}

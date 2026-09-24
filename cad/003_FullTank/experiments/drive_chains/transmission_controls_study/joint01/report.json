@@ -1,0 +1,634 @@
+{
+  "native_file": "HighSpeedControlJoints.FCStd",
+  "native_sha256": "dc4b1655605555493e726b75de938449f03a3a256e3498be3150efe876bdda5c",
+  "parent_native_sha256": "b174c7b0a36ec23731b57743aa64efa715ff25a11873d2cd1b10538bda1dc175",
+  "parent_manifest_sha256": "49100999c70bc1f12a3ff3020901db373f975843892b56b1c6435b6f30ba58ec",
+  "parent_qualification_sha256": "197e2dfc3598fab38006fc686d923d6b7c3957cb89eaaff017e161e48156427f",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/trial_transmission_control_joint.py": "e9d0591841c842125710b11305a72531161213de50238def783457d0a3f76c40",
+    "cad/003_FullTank/experiments/drive_chains/transmission_control_joint_parts.py": "938f971e625d2da1d072efb910efc7525bbb63aeb8f8a62d7ac966ed6dff13aa",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_installation_parts.py": "3aa0f82af289688b8453ac25dbe1c53bf84924880a0e03adb51328431a3eef7f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_speed_joint_controls.json": "b4463fa140cf82b885e242b33cbe1149fb6d7bb2e9bdd2f836a11fa4251553fa",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/sources.json": "708b68c68f9d489d9e5b7bf765fa6de0ef45da0f0156e5cb4b11d2b965091998",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/inventory_audit.json": "8e85a8e13e78c35fa61ce112cd416e9948e18d5f6ceade0f4e49085d76fd5b13",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/context01/report.json": "6b7120783e1dfe6a665e7e18aa5838e7c5bfdfac5f761863db3e00ae49b2a5ff",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/qualification.json": "197e2dfc3598fab38006fc686d923d6b7c3957cb89eaaff017e161e48156427f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/isolated/manifest.json": "49100999c70bc1f12a3ff3020901db373f975843892b56b1c6435b6f30ba58ec",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b"
+  },
+  "controls": {
+    "fork_length": 38.1,
+    "fork_length_datum": "pin_center_to_rod_seat",
+    "ear_radius": 14.2875,
+    "ear_stock": 4.7625,
+    "lever_width": 25.4,
+    "side_clearance": 0.25,
+    "throat_end": 16.5,
+    "ear_shoulder": 22.0,
+    "socket_radius": 12.7,
+    "pin_diameter": 15.875,
+    "pin_bore_radial_gap": 0.15,
+    "pin_length": 41.275,
+    "pin_head_radius": 11.1125,
+    "pin_head_stock": 3.175,
+    "cotter_station_beyond_fork": 2.3,
+    "cotter_diameter": 3.175,
+    "cotter_hole_radial_gap": 0.1,
+    "cotter_length": 25.4,
+    "cotter_center_spacing": 1.651,
+    "crown_radius": 7.9375,
+    "cotter_head_gap": 0.8,
+    "cotter_exit_gap": 0.8,
+    "cotter_bend_radius": 2.0,
+    "cotter_bend_angle": 35.0,
+    "cotter_eye_radius": 3.0,
+    "cotter_eye_rise": 2.0,
+    "cotter_eye_join_overlap": 0.03,
+    "rod_diameter": 19.05,
+    "thread_envelope_radial_gap": 0.1,
+    "minimum_thread_engagement": 19.05,
+    "fork_pitch_deg": -12.0,
+    "shared_nut_definition": "Def_ClutchBrake_rod_nut",
+    "shared_nut_height": 12.7,
+    "shared_nut_af": 28.575
+  },
+  "details": {
+    "fork_outer_width_mm": 35.425,
+    "fork_gap_mm": 25.9,
+    "rod_seat_x_mm": 38.1,
+    "overall_fork_length_mm": 52.3875,
+    "thread_envelope_length_mm": 21.6,
+    "pin_head_seat_y_mm": -17.7125,
+    "pin_tip_y_mm": 23.5625,
+    "cotter_station_y_mm": 20.0125,
+    "cotter": {
+      "straight_length_mm": 17.475,
+      "bend_arc_length_mm": 1.2217304763960306,
+      "tail_length_mm": 6.703269523603966,
+      "total_leg_centerline_mm": 25.4,
+      "tail_endpoints": [
+        [
+          0.0,
+          15.375649806382377,
+          -5.032033356671354
+        ],
+        [
+          0.0,
+          15.375649806382377,
+          5.032033356671354
+        ]
+      ],
+      "wire_radius_mm": 0.7619999999999999,
+      "under_eye_y_mm": -8.7375,
+      "bend_start_y_mm": 8.7375,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "local_frames": {
+      "fork": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "pin": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cotter": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        20.0125,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nut": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        38.1,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "joints": {
+    "Port": {
+      "frame": [
+        0.9781476007338057,
+        0.0,
+        0.20791169081775934,
+        2069.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.20791169081775934,
+        0.0,
+        0.9781476007338057,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "interface": {
+        "id": "PortHighSpeedBrakeControl",
+        "center_world_mm": [
+          2069.9446420457634,
+          222.25,
+          606.9279411764705
+        ],
+        "pin_axis_world": [
+          0,
+          1,
+          0
+        ],
+        "bore_diameter_mm": 16.175,
+        "outer_width_mm": 25.399999999999977,
+        "inter_member_gap_mm": 0.0,
+        "bearing_intervals": [
+          {
+            "occurrence": "PortHighSpeedBrakeLeverLeft",
+            "range_y_mm": [
+              209.55,
+              222.25
+            ]
+          },
+          {
+            "occurrence": "PortHighSpeedBrakeLeverRight",
+            "range_y_mm": [
+              222.25,
+              234.95
+            ]
+          }
+        ],
+        "selection": "Lowest transverse cylinder with the currently modeled control-bore radius; visual/source identity must be reviewed before mating."
+      }
+    },
+    "Starboard": {
+      "frame": [
+        0.9781476007338057,
+        0.0,
+        -0.20791169081775934,
+        2069.9446420457634,
+        0.0,
+        -1.0000000000000004,
+        -0.0,
+        -222.25000000000006,
+        -0.20791169081775934,
+        0.0,
+        -0.9781476007338059,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "interface": {
+        "id": "StarboardHighSpeedBrakeControl",
+        "center_world_mm": [
+          2069.9446420457634,
+          -222.25000000000006,
+          606.9279411764705
+        ],
+        "pin_axis_world": [
+          0,
+          1,
+          0
+        ],
+        "bore_diameter_mm": 16.175,
+        "outer_width_mm": 25.399999999999977,
+        "inter_member_gap_mm": 0.0,
+        "bearing_intervals": [
+          {
+            "occurrence": "StarboardHighSpeedBrakeLeverLeft",
+            "range_y_mm": [
+              -234.95000000000005,
+              -222.25000000000006
+            ]
+          },
+          {
+            "occurrence": "StarboardHighSpeedBrakeLeverRight",
+            "range_y_mm": [
+              -222.25000000000006,
+              -209.55000000000007
+            ]
+          }
+        ],
+        "selection": "Lowest transverse cylinder with the currently modeled control-bore radius; visual/source identity must be reviewed before mating."
+      }
+    }
+  },
+  "specs": {
+    "PortFork": {
+      "role": "fork",
+      "frame": [
+        0.9781476007338057,
+        0.0,
+        0.20791169081775934,
+        2069.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.20791169081775934,
+        0.0,
+        0.9781476007338057,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortControlJoint"
+    },
+    "PortPin": {
+      "role": "pin",
+      "frame": [
+        0.9781476007338057,
+        0.0,
+        0.20791169081775934,
+        2069.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.20791169081775934,
+        0.0,
+        0.9781476007338057,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortControlJoint"
+    },
+    "PortCotter": {
+      "role": "cotter",
+      "frame": [
+        0.9781476007338057,
+        0.0,
+        0.20791169081775934,
+        2069.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        242.2625,
+        -0.20791169081775934,
+        0.0,
+        0.9781476007338057,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        20.0125,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortControlJoint"
+    },
+    "PortNut": {
+      "role": "nut",
+      "frame": [
+        -0.2079116908177594,
+        0.0,
+        0.9781476007338059,
+        2107.2120656337215,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.9781476007338059,
+        0.0,
+        -0.2079116908177594,
+        599.0065057563139,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        38.1,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortControlJoint"
+    },
+    "StarboardFork": {
+      "role": "fork",
+      "frame": [
+        0.9781476007338057,
+        0.0,
+        -0.20791169081775934,
+        2069.9446420457634,
+        0.0,
+        -1.0000000000000004,
+        -0.0,
+        -222.25000000000006,
+        -0.20791169081775934,
+        0.0,
+        -0.9781476007338059,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardControlJoint"
+    },
+    "StarboardPin": {
+      "role": "pin",
+      "frame": [
+        0.9781476007338057,
+        0.0,
+        -0.20791169081775934,
+        2069.9446420457634,
+        0.0,
+        -1.0000000000000004,
+        -0.0,
+        -222.25000000000006,
+        -0.20791169081775934,
+        0.0,
+        -0.9781476007338059,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardControlJoint"
+    },
+    "StarboardCotter": {
+      "role": "cotter",
+      "frame": [
+        0.9781476007338057,
+        0.0,
+        -0.20791169081775934,
+        2069.9446420457634,
+        0.0,
+        -1.0000000000000004,
+        -0.0,
+        -242.26250000000005,
+        -0.20791169081775934,
+        0.0,
+        -0.9781476007338059,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        20.0125,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardControlJoint"
+    },
+    "StarboardNut": {
+      "role": "nut",
+      "frame": [
+        0.20791169081775918,
+        0.0,
+        0.9781476007338057,
+        2107.2120656337215,
+        0.0,
+        -1.0,
+        0.0,
+        -222.25000000000006,
+        0.9781476007338057,
+        0.0,
+        -0.2079116908177594,
+        599.0065057563139,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "local_frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        38.1,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardControlJoint"
+    }
+  },
+  "shared_definitions": {
+    "nut": "Def_ClutchBrake_rod_nut"
+  },
+  "record_ids": {
+    "fork": [
+      "SNL:87:003"
+    ],
+    "pin": [
+      "SNL:136:007"
+    ],
+    "cotter": [
+      "SNL:136:008"
+    ],
+    "nut": [
+      "SNL:195:008"
+    ]
+  },
+  "runtime": {
+    "freecad": [
+      "1",
+      "1",
+      "1",
+      "44227 +647 (Git)",
+      "Unknown",
+      "2026/04/14 22:09:59",
+      "tag: 1.1.1",
+      "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+    ],
+    "occ": "7.8.0"
+  },
+  "geometry_integrated": false,
+  "packet_complete": false,
+  "limits": [
+    "Fork ear stock, rounded profile, bridge and socket transition",
+    "Pin diameter inherited from the current brake-eye hypothesis, head stock and cross-hole station",
+    "Thread diameters represented by nominal cylindrical envelopes; no helices",
+    "Plain nut uses the existing dimensionally compatible3/4inch definition; source identities remain on occurrences",
+    "Fork pitch -12degrees anticipates the locally rising rear rod; revisit against channel/rod route"
+  ],
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

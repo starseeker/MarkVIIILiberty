@@ -1,0 +1,58 @@
+{
+  "status": "rear_high_speed_control_joint_trial",
+  "controls": {
+    "fork_length": 38.1,
+    "fork_length_datum": "pin_center_to_rod_seat",
+    "ear_radius": 14.2875,
+    "ear_stock": 5.2625,
+    "lever_width": 25.4,
+    "side_clearance": 0.25,
+    "throat_end": 16.5,
+    "ear_shoulder": 22.0,
+    "socket_radius": 12.7,
+    "pin_diameter": 15.875,
+    "pin_bore_radial_gap": 0.15,
+    "pin_length": 41.275,
+    "pin_head_radius": 11.1125,
+    "pin_head_stock": 3.175,
+    "cotter_station_beyond_fork": 2.3,
+    "cotter_diameter": 3.175,
+    "cotter_hole_radial_gap": 0.1,
+    "cotter_length": 25.4,
+    "cotter_center_spacing": 1.651,
+    "crown_radius": 7.9375,
+    "cotter_head_gap": 0.8,
+    "cotter_exit_gap": 0.8,
+    "cotter_bend_radius": 2.0,
+    "cotter_bend_angle": 35.0,
+    "cotter_eye_radius": 3.0,
+    "cotter_eye_rise": 2.0,
+    "cotter_eye_join_overlap": 0.03,
+    "rod_diameter": 19.05,
+    "thread_envelope_radial_gap": 0.1,
+    "minimum_thread_engagement": 19.05,
+    "fork_pitch_deg": -12.0,
+    "shared_nut_definition": "Def_ClutchBrake_rod_nut",
+    "shared_nut_height": 12.7,
+    "shared_nut_af": 28.575
+  },
+  "source_dimensions": {
+    "fork_length": "SNL:87:003 prints 1\u00bd inch without datum. Selected pin-axis to threaded-face distance is a hypothesis. Overall-length interpretation is retained as a separate diagnostic.",
+    "pin_length": "SNL:136:007 physical M568A prints 1\u215d inch; underhead-to-tip datum assumed. SNL:71:031 calls M568A 1\u215e inch, an unresolved conflict.",
+    "cotter": "SNL:136:008 prints \u215b x1 inch. Formed legs each preserve stated under-eye centerline length; circular twin-wire/eye form is approximate.",
+    "rod_thread": "SNL:195:008 specifies two \u00be inch plain nuts per M575 assembly. One is at this rear fork; the other belongs to its future forward joint."
+  },
+  "interpretation": "Assign the two M569B forks to the wider brake-lever ends of the two M575 rear rods and M569C to their forward ends. This follows specific application and quantity, not a proven explicit end label.",
+  "engineering_allowances": "0.25mm side clearance and0.15mm radial pin fit are design allowances. One nominal rod diameter of engagement is a chosen modeling criterion, not a historical dimension or structural certification.",
+  "unprinted_estimates": [
+    "Fork ear stock, rounded profile, bridge and socket transition",
+    "Pin diameter inherited from the current brake-eye hypothesis, head stock and cross-hole station",
+    "Thread diameters represented by nominal cylindrical envelopes; no helices",
+    "Plain nut uses the existing dimensionally compatible3/4inch definition; source identities remain on occurrences",
+    "Fork pitch -12degrees anticipates the locally rising rear rod; revisit against channel/rod route"
+  ],
+  "configuration": "Static standard reconstruction; no motion or full service qualification.",
+  "trial_change": {
+    "ear_stock": 5.2625
+  }
+}

@@ -5,21 +5,21 @@
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
   "accepted_development_parent": "front-brake checkpoint 169c3da",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01",
-  "latest_native_sha256": "b174c7b0a36ec23731b57743aa64efa715ff25a11873d2cd1b10538bda1dc175",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/qualification.json",
-  "current_pipeline_run": "high_brake_support01",
-  "pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01",
+  "latest_native_sha256": "8073615bc719325e9b7e30e629be9fc5da15702e345fb704d3d98488633cb308",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/qualification.json",
+  "current_pipeline_run": null,
+  "pipeline_receipt": null,
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
-    "python3 tools/cad_pipeline/pipeline.py status high_brake_support01",
-    "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01",
-    "python3 tools/cad_pipeline/decisions.py cad/003_FullTank/decision_ledger.json"
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_transmission_control_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01",
+    "python3 tools/cad_pipeline/decisions.py cad/003_FullTank/decision_ledger.json",
+    "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Develop the rear operating-control interfaces from the recorded six brake bores. Resolve M569B/M568A fork/pin length datums and test the high-speed joint, then place the M4128 rear control channel, spring brackets and bell cranks before routing M575 and the other rear rods. Continue the complete tank workflow; poses deferred.",
+  "next_action": "Locate the M4128 rear control channel, cleats, spring brackets and brake fulcrums against the hull/floor and transmission. Establish M563 spring and low/track bell-crank stations, then route M575 between fixed endpoints. Revisit the estimated rear fork pitch if needed. Continue the complete standard tank; poses deferred.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -31,27 +31,32 @@
     "High-speed lining variant: HB six M364 versus SNL two MX109 plus two M364",
     "Forward fittings, rear anchor extension and case bridge relief are estimated; lining support has documented recess/overhang exceptions; complete high-speed mechanism remains open.",
     "Operating lever/saddle, pin stock and spring sections remain inferred. Support, anchor-retention and all named stop/clip parts are populated; operating controls and full service paths remain open.",
-    "Receiving webs, M362 shelf, strap stock/bends, transverse MX76 pitch and M365 clip wrap are estimates. Upper pitch now shares the saved MX61 plate. All six M400/nut pairs and eight of ten MX60 screws are located. Combined local static support qualification now passes; full service and standard integration remain open."
+    "Receiving webs, M362 shelf, strap stock/bends, transverse MX76 pitch and M365 clip wrap are estimates. Upper pitch now shares the saved MX61 plate. All six M400/nut pairs and eight of ten MX60 screws are located. Combined local static support qualification now passes; full service and standard integration remain open.",
+    "M569B38.1mm length datum and M568A41.275/47.625mm conflict remain open. Rear fork pitch is an estimate pending full M575 route.",
+    "Classic U.S. Standard nut exterior is provisional because catalogue wording may specify thread series without finish. Older smaller3/4inch clutch nuts require separate source/finish review."
   ],
-  "visual_progression_count": 219,
+  "visual_progression_count": 222,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
   "latest_locally_qualified_checkpoint": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01",
-    "native_sha256": "b174c7b0a36ec23731b57743aa64efa715ff25a11873d2cd1b10538bda1dc175",
-    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01",
+    "native_sha256": "8073615bc719325e9b7e30e629be9fc5da15702e345fb704d3d98488633cb308",
+    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/qualification.json"
   },
-  "qualification_scope": "Combined receiving webs, M362/M363 anchor retention, M366/M398/M399 stops, M365 clips and selected handbook mounting/adjustment hardware. Existing scoped native/STEP/variation evidence plus relocated final native, complete local material context and combined STEP export.",
+  "qualification_scope": "Two rear high-speed brake joints with selected classic U.S. Standard nuts. Inherits qualified fork/pin/cotter and whole-parent preservation evidence; the final nut revision preserves all545 parent definitions and changes exactly two occurrence targets.",
   "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study",
   "active_development_candidate": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01",
-    "native_sha256": "b174c7b0a36ec23731b57743aa64efa715ff25a11873d2cd1b10538bda1dc175",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/development_checkpoint.json",
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01",
+    "native_sha256": "8073615bc719325e9b7e30e629be9fc5da15702e345fb704d3d98488633cb308",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/qualification.json",
     "counts": {
-      "occurrences": 3165,
-      "definitions": 542,
-      "assemblies": 336
+      "occurrences": 3173,
+      "definitions": 546,
+      "assemblies": 338
     },
-    "status": "Locally qualified static support combination: all six pipeline stages pass, including combined STEP and native relocation. Development remains separate from standard-tank integration."
+    "status": "Locally qualified rear high-speed fork/pin/cotter joints with separate classic U.S. Standard nuts. Complete control rods and standard-tank integration remain open."
   },
-  "qualification_note": "Combined support static checks and source review pass. Operating controls, complete service paths and standard-tank integration remain open."
+  "qualification_note": "Joint interfaces, selected retention, material, STEP, all-link relocation, inherited definitions and fresh generator/integration rebuilds pass. Historical fork/pin datums, nut finish, full service and standard integration remain open.",
+  "parent_pipeline_run": "high_brake_support01",
+  "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
+  "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_transmission_control_checkpoint.py"
 }

@@ -1,0 +1,33 @@
+{
+  "reviewer": "Codex",
+  "date": "2026-09-24",
+  "catalogue_record": "SNL:195:008",
+  "catalogue_wording": "NUT, plain, U. S. Std., hexagon, \u00be",
+  "period_reference": {
+    "title": "Joshua Rose, Mechanical Drawing Self-Taught, United States standard dimensions of bolts and nuts, pp116\u2013118",
+    "url": "https://www.gutenberg.org/files/23319/23319-h/23319-h.htm",
+    "scope": "Forged or unfinished bolts and nuts; finish applicability to this tank is inferred.",
+    "nominal_diameter_in": 0.75,
+    "threads_per_inch": 10,
+    "width_across_flats_in": 1.25,
+    "nut_height_in": 0.75
+  },
+  "selected_controls": {
+    "nominal_diameter_mm": 19.05,
+    "across_flats_mm": 31.75,
+    "height_mm": 19.05,
+    "bore_radial_allowance_mm": 0.1
+  },
+  "rejected_reuse": {
+    "definition": "Def_ClutchBrake_rod_nut",
+    "across_flats_mm": 28.575,
+    "height_mm": 12.7,
+    "reason": "Fits nominal rod diameter but its smaller envelope lacks support from the reviewed classic U.S. Standard nut table. Preserve that inherited definition for its existing applications."
+  },
+  "uncertainty": [
+    "Catalogue wording may identify the thread series without specifying outside finish. The classic U.S. Standard exterior is selected as the better documented current hypothesis.",
+    "Nominal cylindrical thread envelope only;10TPI metadata does not represent an actual modeled helix.",
+    "Edge chamfers and finish remain unmodeled manufacturing details."
+  ],
+  "status": "source_led_nut_revision"
+}

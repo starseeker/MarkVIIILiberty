@@ -434,7 +434,7 @@
       "id": "transmission_rear_control_connections",
       "status": "open_evidence",
       "scope": "Rear high/low/track control connections, M4128 rear channel and spring/fulcrum brackets.",
-      "reason": "Six saved control bores located; source fork/pin variants, segmented plan/side layout and separate rod-end photograph recorded. Establish mating joints and channel stations before rod routes.",
+      "reason": "Six brake interfaces are recorded and two rear high-speed joints are populated as reviewed approximations. Channel, spring/fulcrum stations and full rod routes remain open; establish these before extending long rods.",
       "uncertainty": "Pin/fork length datums, current bore estimates, M575 application wording, channel position and broken-view rod lengths need interpretation.",
       "dependencies": [
         {
@@ -455,7 +455,7 @@
         }
       ],
       "limits": [
-        "No source camera fit or new control geometry claimed.",
+        "Rear high-speed joints are populated; no historical photographic camera calibration or complete control linkage is claimed.",
         "HB92/HB113/SNL6 are related broken views, not independent cameras.",
         "Current high-speed eye is25.4mm wide with no central slot; lower/track eyes12.7mm.",
         "M568A pin length differs between physical and aggregate catalogue entries."
@@ -463,6 +463,83 @@
       "reopen_when": [
         "Additional source data resolves pin/fork dimensions or the rear control-channel mounting.",
         "A mating prototype contradicts the current lever or frame interfaces."
+      ]
+    },
+    {
+      "id": "rear_high_speed_control_joints",
+      "status": "reviewed_approximation",
+      "scope": "Two brake-end M569B/M568A fork/pin/cotter connections and selected U.S. Standard nuts; full M575 rods remain incomplete.",
+      "reason": "Saved interfaces, source identities, material, retention, STEP, parameter variation, inherited geometry and fresh rebuilds pass. Period nut proportions replaced an unsupported smaller reuse hypothesis.",
+      "uncertainty": "Fork length datum, M568A source length conflict, pin stock/head side, forged profiles and fork pitch remain inferred. Catalogue U.S. Standard wording does not explicitly settle outside finish.",
+      "limits": [
+        "M569B38.1mm length datum and M568A41.275/47.625mm conflict remain unresolved historically.",
+        "Catalogue U.S. Standard wording may specify thread series without fixing outside finish; classic forged/unfinished nut dimensions are the current hypothesis.",
+        "Inherited smaller3/4inch clutch nuts require their own source/finish review before final release.",
+        "Fork pitch/profile and pin stock/head side remain estimates.",
+        "M4128 channel, spring/fulcrum brackets, M575 rods and forward joints, other controls, full service and standard integration remain pending."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "basis": "Three prototype views, two saved integrated brake views, explicit source alternatives and retained nut correction.",
+        "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/visual_review.json",
+        "sha256": "4a678f06fd4362473c5e5a50a4b643a48ff675daff94a0637210d37ad28d1bbe"
+      },
+      "reopen_when": [
+        "Rear channel or full M575 route contradicts the estimated fork pitch or rod interface.",
+        "Better source resolves M569B or M568A length datum, head side, fork profile or nut finish.",
+        "Saved lever control-eye stock/bore or mating geometry changes.",
+        "Dependent material, retention or service check fails."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/sources.json",
+          "sha256": "708b68c68f9d489d9e5b7bf765fa6de0ef45da0f0156e5cb4b11d2b965091998"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/high_speed_joint_controls.json",
+          "sha256": "b4463fa140cf82b885e242b33cbe1149fb6d7bb2e9bdd2f836a11fa4251553fa"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_standard_nut_review.json",
+          "sha256": "91ab5fa583f71ca286896c86d56e34473ffd96ba3bdf6cfe715bb73b2e14fa4d"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/joint01/visual_review.json",
+          "sha256": "93fe0607b22d9f46847eeedea7bf5db67f014093ae7979de1c7b6609cf7dafd1"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/joint01/generator_reproduction_checks.json",
+          "sha256": "37f4288604847801cb15959dc002a5fafc76e66b2b5f30d85a0b36b1dbc24e7b"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/qualification.json",
+          "sha256": "1a24742a89ee8944e4f2dc761960468c2e7dfe1012a0be6d9947ab581a1ddf19"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/visual_review.json",
+          "sha256": "4a678f06fd4362473c5e5a50a4b643a48ff675daff94a0637210d37ad28d1bbe"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/independent_checks.json",
+          "sha256": "3a98c86c8bb447d114ef3e38f1f09747c06e45f161a516cdd15e1bab0942c50f"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/variation_checks.json",
+          "sha256": "256c0a1ad5f7f2d7c3636178aa84a8856a58fd7adc90fde2235d711cbf46180e"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/PowertrainWithUSControlNuts.FCStd",
+          "sha256": "8073615bc719325e9b7e30e629be9fc5da15702e345fb704d3d98488633cb308"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_control_joint_parts.py",
+          "sha256": "938f971e625d2da1d072efb910efc7525bbb63aeb8f8a62d7ac966ed6dff13aa"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/revise_transmission_control_nuts.py",
+          "sha256": "67d9c48c693acfc6e6036cebd9c04b368c880550cf9e05bc6c8d5b9db7be3001"
+        }
       ]
     }
   ]

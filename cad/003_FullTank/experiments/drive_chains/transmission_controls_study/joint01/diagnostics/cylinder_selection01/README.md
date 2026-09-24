@@ -1,0 +1,1 @@
+The initial cylinder selector counted concentric outer-eye surfaces as well as inner bores. Both receivers and forks have two outer surfaces and two bore surfaces. Select by the independently measured bore radius before checking the two bearing intervals. No geometry or acceptance tolerance changed. The original failing result is retained here.

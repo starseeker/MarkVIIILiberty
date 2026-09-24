@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "role": "fork",
+      "record": "SNL:87:003",
+      "occurrences": [
+        "PortHighSpeedBrakeControlFork",
+        "StarboardHighSpeedBrakeControlFork"
+      ],
+      "passed": true
+    },
+    {
+      "role": "pin",
+      "record": "SNL:136:007",
+      "occurrences": [
+        "PortHighSpeedBrakeControlPin",
+        "StarboardHighSpeedBrakeControlPin"
+      ],
+      "passed": true
+    },
+    {
+      "role": "cotter",
+      "record": "SNL:136:008",
+      "occurrences": [
+        "PortHighSpeedBrakeControlCotter",
+        "StarboardHighSpeedBrakeControlCotter"
+      ],
+      "passed": true
+    },
+    {
+      "occurrence": "PortHighSpeedBrakeControlNut",
+      "passed": true
+    },
+    {
+      "assembly": "PortHighSpeedBrakeControlJoint",
+      "passed": true
+    },
+    {
+      "occurrence": "StarboardHighSpeedBrakeControlNut",
+      "passed": true
+    },
+    {
+      "assembly": "StarboardHighSpeedBrakeControlJoint",
+      "passed": true
+    },
+    {
+      "name": "Incomplete M575 rod aggregate not counted as an added physical part",
+      "passed": true
+    }
+  ],
+  "native_sha256": "fda3d73f97e4f321c4563ca6c05ce3d7fe72da600d6d4b4043ee87ed4f2cc119",
+  "sources_sha256": "708b68c68f9d489d9e5b7bf765fa6de0ef45da0f0156e5cb4b11d2b965091998",
+  "checker_sha256": "5361f4ccc166ae76207a280b41e28736862af2601aa9e8b328735b3140d438fd",
+  "limits": [
+    "Two M569B forks assigned to the two brake ends as a documented hypothesis.",
+    "Two remaining M575 plain nuts belong to future forward joints; full rod assemblies remain incomplete.",
+    "M568A1⅝-inch component length selected;1⅞-inch aggregate conflict remains open."
+  ]
+}

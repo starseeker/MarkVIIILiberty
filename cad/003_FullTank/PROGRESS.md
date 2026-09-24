@@ -11,6 +11,31 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — rear high-speed control joints
+
+[The current native checkpoint](experiments/drive_chains/transmission_controls_study/us_nuts01/README.md)
+populates two M569B forks, two M568A pins, two split pins and two plain nuts:
+**3,173 physical occurrences /546 definitions /338 assembly groups**. Fork and
+pin length datums remain explicit hypotheses. The shorter overall-fork-length
+interpretation fails the chosen socket-engagement requirement with the retained
+profile; it remains a recorded alternative, not a disproven historical design.
+
+Nominal and thicker-ear trials pass42 saved checks,18 material comparisons and12
+STEP comparisons each. Integration passes17 checks and preserves542 definitions.
+A period-source check replaced the smaller reused nut with a separate classic
+U.S. Standard envelope. That revision passes16 checks,6 material pairs,3 STEP
+comparisons,8 updated variation checks and preservation of545 definitions
+(526 exact /19 strict). All3,173 native links reopen after relocation; fresh
+full builds reproduce shapes, frames, ownership and persistent properties.
+Nut finish applicability and older clutch nut proportions remain open evidence.
+
+Three new views bring progression to **222 images**, including the retained
+small-nut trial and its source-led correction. Exact extracted-shape links avoid
+about348MiB of duplicates across the two stages and their local reproductions.
+The read-only control-checkpoint verifier checks current dependency hashes before
+reusing receipts. Standard tank011 is unchanged. Next: M4128 rear control channel,
+cleats, spring and lever supports, then full M575 and other control routes.
+
 ## 24 September 2026 — combined support qualification and control interfaces
 
 The [combined support qualification](experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/combined_qualification/README.md)

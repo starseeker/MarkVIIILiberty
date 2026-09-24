@@ -1,16 +1,20 @@
 # Transmission operating controls — evidence and receiving interfaces
 
-Continue from the locally qualified
+Current assembly: [PowertrainWithUSControlNuts.FCStd](us_nuts01/PowertrainWithUSControlNuts.FCStd),
+with3,173 physical occurrences /546 definitions /338 assembly groups.
+The [rear-joint checkpoint](us_nuts01/README.md) follows the locally qualified
 [brake-support assembly](../transmission_high_brake_support_study/integrated_upper01/qualification.json).
 This packet covers the rear control channel, brake return springs, control rod
-ends and subsequent connections toward the center and driver controls. Geometry
-for these identified control families has not yet been added.
+ends and subsequent connections toward the center and driver controls. Two rear high-speed fork/pin/cotter joints and their plain nuts are now installed.
+The channel, rods and return springs remain pending.
 
 [sources.json](sources.json) retains 99 source rows associated with 34 identities,
 handbook operating/adjustment text, literal dimensional constraints and source
-hashes. The [native identity audit](inventory_audit.json) finds no existing
-matches for these selected identities. Unmarked generic parts can escape that
-audit, so check physical ownership again before integration. The evidence and
+hashes. The original [native identity audit](inventory_audit.json) found no matching
+definitions in the brake-support parent. It is retained as an input checkpoint;
+new fork/pin/cotter identities are checked in [the integrated catalogue audit](integrated01/catalogue_checks.json).
+Unmarked generic parts can escape the original audit, so check physical ownership
+again before subsequent integration. The evidence and
 audit reproduce byte for byte with `prepare_transmission_control_sources.py`.
 
 ## Receiving geometry
@@ -70,18 +74,38 @@ fitting it becomes useful. HB12 shows the front control-shaft detail and must
 not set the rear channel's scale. Existing HB133 brake registration remains valid
 within its documented diagnostic scope.
 
+## Rear high-speed joints now populated
+
+M569B is provisionally assigned to the wider brake ends of M575. The selected
+38.1mm fork length is measured from pin center to socket face, giving21.6mm of
+threaded socket. Treating38.1mm as overall length leaves7.3125mm with the same
+throat/profile, which fails the chosen one-diameter engagement criterion. This
+comparison does not prove the historical datum. M568A uses the physical-row
+41.275mm length with an assumed underhead datum; the47.625mm aggregate conflict
+remains open. See [the reviewed alternatives](joint01/visual_review.json).
+
+The first joint trial reused a smaller3/4inch nut. A subsequent
+[period-standard review](us_standard_nut_review.json) selected a separate classic
+U.S. Standard nut envelope,31.75mm across flats and19.05mm thick. Catalogue wording
+may specify thread series without fixing the outside finish, so that choice
+remains provisional. The existing clutch nut definition is preserved for its
+original applications; it should be reviewed against those sources separately.
+
+Both fork stock variants pass saved material and STEP checks. The larger nuts
+also fit the thicker-ear variation. The old small-nut trial and its images remain
+visible evidence of the correction. All thread geometry is a nominal cylindrical
+envelope; parameter edits require regenerating the scripted part model.
+
 ## Next construction
 
-1. Review M569B/M568A length datums and test a complete fork/pin/cotter/jam-nut
-   joint against the saved high-speed eye. Preserve explicit source alternatives.
-2. Locate M4128 and its cleats/brackets against the hull/floor and transmission
-   structure. Establish the rear return-spring and low/track bell-crank axes.
-3. Reconstruct M575 rear rod bends and spring interfaces between those fixed
-   endpoints, then connect the center rods. Avoid scaling across drawn breaks.
-4. Verify actual material, bearing/retention, neighboring routes, native/STEP
-   export, parameter changes and source views before integrating each increment.
-5. Continue the other rear controls and their connections to the existing clutch
-   and transmission, then center/front controls and remaining tank interiors.
-
-The full standard tank remains the priority. No pose variants or operating-motion
-claims are introduced by this interface study.
+1. Locate M4128 and its cleats/brackets against the hull/floor and transmission
+   structure. Establish rear return-spring and low/track bell-crank axes.
+2. Reconstruct M575 rear rod bends and spring interfaces between fixed endpoints,
+   then connect the center rods. Revisit the estimated-12degree rear fork pitch
+   if the complete route warrants it. Avoid scaling across drawn length breaks.
+3. Develop the other rear control joints, retaining their specific fork/pin
+   variants rather than scaling the high-speed fork indiscriminately.
+4. Verify material, bearing/retention, neighboring routes, native/STEP export,
+   parameter changes and source views before integrating each increment.
+5. Continue center/front controls and remaining tank interiors, then complete
+   standard-tank integration. Pose variants remain deferred.

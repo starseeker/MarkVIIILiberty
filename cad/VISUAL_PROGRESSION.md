@@ -1151,3 +1151,30 @@ Standard tank011 is unchanged.
 | [intermediate_snapshot_iso_transmission_high_brake_bottom_stops_trial_001.png](intermediate_snapshot_iso_transmission_high_brake_bottom_stops_trial_001.png) | `2470d041329e410a935e69bea35bd5106173b47c349d5b9f5d17a20a40fabe87` |
 | [intermediate_snapshot_detail_transmission_high_brake_bottom_stops_trial_001.png](intermediate_snapshot_detail_transmission_high_brake_bottom_stops_trial_001.png) | `f9e50d9ec0e543d5f94c98b89a4c117e1895e942b3f7b61d2b3f2a36c1f276c5` |
 | [intermediate_snapshot_source_transmission_high_brake_bottom_stops_trial_001.png](intermediate_snapshot_source_transmission_high_brake_bottom_stops_trial_001.png) | `a3dad554984952e310784f35a695a419c25558302318b45649b1a675e91ba1ed` |
+
+
+## Rear high-speed control joints — 24 September 2026
+
+Two reviewed views bring progression to **221 images**, preserving all219 earlier
+images. The assembled brake pair now contains168 occurrences. The close-up
+shows a prototype receiver cut for visibility; the saved physical lever is intact.
+Fork/pin length datums and manufactured profiles remain documented approximations.
+The standard tank011 and established view directions are unchanged.
+
+| View | SHA-256 |
+| --- | --- |
+| [intermediate_snapshot_iso_transmission_control_joints_001.png](intermediate_snapshot_iso_transmission_control_joints_001.png) | `10f4fd7532bbfb4ea57035ce2886ebcbc8c6cee580fd7689d27eab54f0e7ada4` |
+| [intermediate_snapshot_detail_transmission_control_joint_001.png](intermediate_snapshot_detail_transmission_control_joint_001.png) | `b33163c750f0f54e879f5ab032d641abaef2783db2ef7af32f4c755c9ee719ea` |
+
+
+## Rear control nut source revision — 24 September 2026
+
+The [updated isometric](intermediate_snapshot_iso_transmission_control_joints_us_nuts_001.png)
+shows the larger classic U.S. Standard nuts selected after the period-standard
+review. The two preceding joint images retain the smaller provisional nuts.
+Progression now has **222 images**, with every earlier image preserved.
+The new native retains3,173 physical occurrences and has546 definitions.
+Catalogue finish applicability remains uncertain; the inherited clutch hardware
+is unchanged. No source camera refit.
+
+SHA-256: `5fcd3d8faddeb571ff6c02312317b85e3ed9de8fca44cb268a24aa134448b9b0`.
