@@ -1,0 +1,70 @@
+{
+  "status": "bottom_stop_and_anchor_retention_reconstruction_trial",
+  "controls": {
+    "pin_diameter": 15.875,
+    "pin_head_radius": 11.1125,
+    "pin_head_stock": 3.175,
+    "pin_under_head_length": 57.15,
+    "cotter_diameter": 4.7625,
+    "cotter_length": 50.8,
+    "cotter_center_spacing": 2.4765,
+    "cotter_axial_gap": 0.75,
+    "cotter_hole_gap": 0.1,
+    "cotter_head_gap": 0.8,
+    "cotter_exit_gap": 1.5,
+    "cotter_bend_radius": 3.175,
+    "cotter_bend_angle": 60.0,
+    "cotter_eye_radius": 3.5,
+    "cotter_eye_rise": 2.0,
+    "cotter_eye_join_overlap": 0.03,
+    "bottom_plane_origin": [
+      0.0,
+      0.0,
+      -223.5
+    ],
+    "bottom_slope_deg": 9.0,
+    "bottom_limits": [
+      -93.0,
+      112.0
+    ],
+    "bottom_width": 50.8,
+    "bottom_stock": 6.35,
+    "mount_station": -40.0,
+    "mount_y": 14.0,
+    "receiver_length": 31.75,
+    "receiver_width": 22.225,
+    "receiver_stock": 20.6375,
+    "receiver_rib_width": 9.525,
+    "mount_diameter": 12.7,
+    "mount_length": 25.4,
+    "mount_head_af": 19.05,
+    "mount_head_stock": 7.9375,
+    "mount_bore_gap": 0.15,
+    "blind_gap": 0.3,
+    "lock_stock": 1.5875,
+    "lock_length": 22.225,
+    "lock_tab_half_length": 4.0,
+    "lock_tab_height": 6.35,
+    "stop_stations": [
+      -83.0,
+      100.0
+    ],
+    "stop_screw_diameter": 9.525,
+    "stop_screw_length": 50.8,
+    "stop_head_af": 14.2875,
+    "stop_head_stock": 6.35,
+    "stop_nut_af": 14.2875,
+    "stop_nut_stock": 7.9375,
+    "stop_bore_gap": 0.1,
+    "stop_tip_gap": 0.25
+  },
+  "source_controlled": {
+    "cotter_diameter": "SNL:137:004, split pin 3/16 x 2 inches.",
+    "cotter_length": "SNL:137:004; modeled as each leg's under-eye developed centerline length. Historical length datum is not independently established.",
+    "mount_diameter": "MX76 nominal 1/2 inch inferred from SNL270:003 and SNL271:001 lock-washer application.",
+    "stop_screw_diameter": "M400 nominal 3/8 inch inferred from its SNL205:023 SAE nut."
+  },
+  "source_arrangement": "HB133 and HB154: M366 bolts to M362; M363 retained with cotter and drifted out during brake removal. Two MX76 per brake are placed transversely on one receiving shelf; hidden transverse pitch is a hypothesis. HB MX77 common locking plate is selected separately from the later SNL lock-washer alternative.",
+  "all_other_fields": "Named estimates from source arrangement and actual retained interfaces; not manufactured dimensions or structural qualification. Pin heads face outboard in this candidate.",
+  "rib_clearance_review": "The first15.875mm branch intersected the retained long lining-rivet tail by21.223617mm3 per brake. The proposed cast branch alone is narrowed to9.525mm; retain rivet stock, bracket eye and shelf receivers unchanged."
+}

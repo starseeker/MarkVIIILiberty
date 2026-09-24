@@ -1,0 +1,32 @@
+{
+  "runtime": {
+    "freecad": [
+      "1",
+      "1",
+      "1",
+      "44227 +647 (Git)",
+      "Unknown",
+      "2026/04/14 22:09:59",
+      "tag: 1.1.1",
+      "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+    ],
+    "occ": "7.8.0"
+  },
+  "cause": "One mesh-cache key per role was paired with different world-posed targets. Repeated meshes were reused at the first target frame.",
+  "initial_builder": {
+    "path": "input_trial_transmission_high_brake_stops.py",
+    "sha256": "efe408d428c61476a1770c61033213ce272812de69cd69d7a968921afbdffbd6"
+  },
+  "initial_isometric_sha256": "fd3417df8a74aabb88af41e7e405f833032e359100367bc32cc5b9bff7b2395a",
+  "corrected_builder_sha256": "77e5527cecd8558cb4ccaf21ff7f367749c841a8e7e254a56e289ce2c7074c17",
+  "saved_native_renderer_sha256": "4184d6ca2b6797828cff8fa693b4f1ca81b917602cba02a61ce6a05977e366fb",
+  "corrected_isometric_sha256": "2470d041329e410a935e69bea35bd5106173b47c349d5b9f5d17a20a40fabe87",
+  "corrected_detail_sha256": "f9e50d9ec0e543d5f94c98b89a4c117e1895e942b3f7b61d2b3f2a36c1f276c5",
+  "fix": "Use one saved identity-frame definition shape per cache key and apply each actual occurrence placement.",
+  "native_sha256": "f1e87dfceb95794fbe447461c71c136fba003771d6f5dd57e6804424a73fe1cb",
+  "geometry_changed": false,
+  "source_registration_changed": false,
+  "source_overlay_changed": false,
+  "initial_preview_rejected": true,
+  "corrected_views_inspected": true
+}

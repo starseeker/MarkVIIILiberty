@@ -1,0 +1,60 @@
+{
+  "date": "2026-09-24",
+  "status": "development_candidate",
+  "native_file": "PowertrainWithHighBrakeBottomStops.FCStd",
+  "native_sha256": "f18d44e167afbdd1f800b965d97016f70c82efcbb43f1919cdd5f6f08088df0d",
+  "source_native_sha256": "66be1f55632f92533de0ccfcc920522c1a05370f02352caf963d562cc6955792",
+  "completed_receipts": {
+    "bottom_stops03/report.json": "5abd06848951984e91952361b929b6fe3bfc85400f9e299adb435262ef90056e",
+    "bottom_stops03/independent_checks.json": "73fdb9d26f143bc63cbb75a27f171fa3ef1fc36eac40e9b5f90228b3dd1d563f",
+    "bottom_stops03/exchange_checks.json": "a89730409ecf1d10f0d7d0c0b9b3610f809b4ddefcc3fbec5d10280026ce49d8",
+    "bottom_stops03/service_minimum/pin_service_probe.json": "6297322098a7f07733156df5b63190a2a4596eb07bb836880310603476815a12",
+    "bottom_variation01/report.json": "52fda7681e8ac84f231c2eadc357a5db87073f5361489543bc1bc9acc78af769",
+    "bottom_variation01/independent_checks.json": "8b078a4de60a1fdaa6220efbce9f9b68546ce7e8c2fe1a06206b9e7d7daadc67",
+    "bottom_variation01/exchange_checks.json": "ce977687399bbc9540880cc814138935472a39815cfb631708c7ee9af1828e63",
+    "integrated_bottom01/independent_checks.json": "4f91f146df6511b3dc8d8c5f89c94472aa531784470b6d3d897eda39622db4f2",
+    "integrated_bottom01/definition_preservation_checks.json": "ffb4e619711f1637d2d183b89db5d2e0c0fe85988a94e4e55facb6debdb62999",
+    "integrated_bottom01/catalogue_checks.json": "64eedb33374bd768fc80b64a5de8520ff5934d1cab1df0c5a2aa86dd55fe20c9",
+    "integrated_bottom01/standard_context_checks.json": "be3f703e8f01e4085a5f7534b8f47405ce18e5a1a14c78d6bb2425f2cd9bb85f",
+    "integrated_bottom01/reproduction_checks.json": "6a131317feeaaa4bfb05ee8b771f3931c4d353813907859e8d2a64a96b1d8b86",
+    "integrated_bottom01/snapshot_preservation.json": "40783f2aff741a56d033b81f836d1debaf0057a3f723b337753e0f44888a4575"
+  },
+  "visual_review_sha256": "07a45010dba7c755d8bae7c3591237d86a55541026926a366fc14d9123b58e2f",
+  "frozen_validation": {
+    "exchange_transmission_high_brake_stops.py": "7fb023ca593a1af1af05dca463af6b2908fd1c2e2d4680a702e8bd014eed8505",
+    "render_transmission_high_brake_stops.py": "4184d6ca2b6797828cff8fa693b4f1ca81b917602cba02a61ce6a05977e366fb",
+    "transmission_high_brake_stop_parts.py": "c2ed17ebe07658ae77663a617334f9a5de23d35b1549db6a9db27fceff0d9429",
+    "check_transmission_high_brake_stops.py": "6b8f8aa06ad21984d418838e7b8c3d05195c8bbb5b5ebd61ff7313fe676ec5f9",
+    "check_transmission_high_brake_stop_catalogue.py": "9a04a9168ed2b1bcf19addbca42af369506cc39df69b9ebe1325250470f8c127",
+    "check_transmission_high_brake_joint_context.py": "7be21bbe8bf4b3b4edac3854a5af01ccc0c5897b4009b8446fae0c646cfaaf66",
+    "build_transmission_high_brake_stops.py": "8939eda465a22c7fe127408979606464a05dc565e8f86f6c1705a4bb3e712e30",
+    "check_transmission_high_brake_stops_integration.py": "f632501742eb1b0d4d2beecf8bf00be9cc1b0966b6cf855ed4acc11755dd176d",
+    "trial_transmission_high_brake_stops.py": "77e5527cecd8558cb4ccaf21ff7f367749c841a8e7e254a56e289ce2c7074c17",
+    "check_transmission_high_brake_stops_preservation.py": "0a9262c18839b96888a9a4c15a8197453c1e7102d8651e8708ead37f2cd3d771",
+    "pump_integration_worker.py": "4bbc349b40b5fc628a0cd5c1b497faee4716cf0a0092b2ec30085953f0d2862e",
+    "check_powertrain_frame_reproduction.py": "a349209113d5a5c5c2673979e3f6172f55023118e9e1a92ad01b4e4be94ea558",
+    "probe_transmission_high_brake_anchor_service.py": "47f8785ae7632c0bd7c5c677eb17a77862d043732c25b8c0315ace11f94dca42"
+  },
+  "counts": {
+    "occurrences": 3149,
+    "definitions": 539,
+    "assemblies": 332
+  },
+  "scope": "M363 retained pins/cotters, M366 bottom stops, mounting/adjustment hardware and bounded M362 shelf additions. Saved native/STEP, variation and integration checks pass.",
+  "retained_failed_service_probe": {
+    "path": "bottom_stops03/pin_service_probe.json",
+    "sha256": "641577bb822e5ee2792169d5d5afcc96bfa17f88d59ba3c018fd5196a432765a",
+    "limit": "80mm withdrawal and100mm drift approach collide; minimum required withdrawal and25mm approach pass. Complete tool handling/service remains unverified."
+  },
+  "pending": [
+    "M399/M398 top/back stops and M365 clips",
+    "Upper MX60 mounting hardware and remaining two M400/nut pairs",
+    "Inherited receiver bracket-stock variation STEP and complete support-packet pipeline",
+    "Complete service procedure and control rods",
+    "Remaining interiors and standard-tank integration"
+  ],
+  "packet_complete": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false
+}

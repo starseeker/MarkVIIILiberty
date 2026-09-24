@@ -1,11 +1,20 @@
-# High-speed brake supports and stops — receiving-web reconstruction
+# High-speed brake supports and stops — development reconstruction
 
-The next geometry packet comprises two M362 anchor brackets, two M363 retained
+The latest [anchor-retention and bottom-stop increment](bottom_stops03/README.md)
+has **3,149 occurrences /539 definitions /332 assemblies** in
+[integrated_bottom01](integrated_bottom01/PowertrainWithHighBrakeBottomStops.FCStd).
+It adds M363 pins/cotters, M366 stops and mounting/adjustment hardware, with a
+bounded extension of M362. Its native/STEP, variation, integration, preservation,
+catalogue and fresh nominal rebuild checks pass. Top/back stops and clips remain
+next; full support-packet qualification and standard-tank promotion remain open.
+The receiving-web evidence and predecessor below are retained separately.
+
+The complete packet comprises two M362 anchor brackets, two M363 retained
 pins, two M365 clips, two each of M366/M398/M399 stops, six M400 stop screws,
 and their attachment hardware. The locally qualified parent remains the
 [operating-mechanism checkpoint](../transmission_high_brake_mechanism_study/trial01/README.md):
-3,121 physical occurrences, 529 shared definitions and 322 assemblies. The new
-[integrated candidate](integrated01/PowertrainWithHighBrakeReceivers.FCStd) has
+3,121 physical occurrences, 529 shared definitions and 322 assemblies. The earlier
+[receiving candidate](integrated01/PowertrainWithHighBrakeReceivers.FCStd) has
 **3,129 occurrences /532 definitions /324 assemblies**: revised case receiving
 webs, two M362 brackets, two shared locking plates and four lower MX60 screws.
 It is a development candidate; the complete support/stop packet is unfinished.
@@ -136,15 +145,15 @@ improves the source silhouette and is the current geometry. Its initial STEP
 failure concerned numerical mass convergence, not material preservation; see
 the [measurement diagnostic](receivers04/diagnostics/README.md).
 
-## Next construction and qualification
+## Remaining construction and qualification
 
-1. Retain the reviewed receiver/bracket candidate and its fixed source registration;
-   finish the separate preservation and full-packet gates before promotion.
-2. Add M363 and its source-sized cotter around the retained M361/M362 joint.
-   Check stock convention, pin retention and the stated removal direction.
-3. Add the M366 bottom stop and paired MX76 attachment, then top/back stops,
-   M365 clip and three M400/nut pairs per brake. Keep screw adjustment clearance
-   distinct from numerical Boolean tolerance.
+1. Continue from `integrated_bottom01`, retaining the fixed registration, tested
+   pin joint and M362/M366 receiving interfaces. Preserve the failed larger
+   service envelopes alongside the passing minimum-travel probe.
+2. Add M399 top stops, M398 back stops and M365 clips; establish their shared
+   upper mounting stack against the existing receiving feet and MX60 holes.
+3. Complete the upper MX60/locking-plate hardware and final M400/nut pair per
+   brake. Keep screw adjustment clearance distinct from Boolean tolerance.
 4. Bind counts to physical identities and keep assembly identities separate.
    Reconcile eight provisional MX60 occurrences with the catalogue total ten.
 5. Verify saved native material, pin/bore axes, positive support area, receiving

@@ -1,0 +1,562 @@
+{
+  "native_file": "PowertrainWithHighBrakeReceivers.FCStd",
+  "native_sha256": "66be1f55632f92533de0ccfcc920522c1a05370f02352caf963d562cc6955792",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/PowertrainWithHighBrakeMechanism.FCStd",
+  "source_native_sha256": "7f7eb9f687ed458d7bcfba599af6333be4899fb6477581ce2fd0075b01158b96",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_transmission_high_brake_receivers.py": "771aa721678bf59213c85823b11ab24f1d5e2428d6807164e6566edccfcac88b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py": "d29c6b065009e36257bb54dbcf7fc9c1a49950e9e092194b9549b0a03069aa77",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_band_parts.py": "c68c3c8d379580346d63caaec0a07266fa9dc4a51a7a4e22c7b06d8dcbb15136",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py": "320daa2f0c98a8916cd09adc680ad11e1daf360c005bcaeddc1c9d66286a994b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py": "97cb213e7707b3cce73b0bca7e5fa8b76345ff841e8fab767c3d16cf350a803e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_parts.py": "a0ef001b84b6593093fa1ffe1aff650a2253646e0facba5610a7d4600a0da228",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/isolated/manifest.json": "8224fd926712297f4550f546abbe14009d8b1d04da80c900ebb932ca0b3a9d22",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/qualification.json": "21751b00d4104642b76430ba13cf3512cbad47d283350744348571f1f68eaf75",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/report.json": "a9fca692bc0ce6f2d91be5d64787d19db67d7b0cb5fdf488f80ed7a3cb2135d7",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_parts.py": "bc1f30fa9f995a7460aa96be54b40fd3756abd2c5eff7c9db7f0e1d7e2b09cf3",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/controls.json": "cfa251ef9bf57ea3880feda4adfa8eb161b4d0612bd20598be59ce42cc48150e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/receivers04/ReceivingWebStudy.FCStd": "a1beac88a2faabdf348ed18336acba877f7f7f61030c2941ec5d3a8386e49b8f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/receivers04/exchange_refined02/exchange_checks.json": "f33171bb93edf7cf7430baea4cee65df6361f34e1481fa3d4c6feb6a83c768ff",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/receivers04/receiver_interface_checks.json": "6a7b48a6a2b3d68124e1f5acce278be5d6f0e9f8e713b31b088dbca71667fd72",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/receivers04/report.json": "5b84d5fe3449f3cbeb45de94b52e59027911d0b08c7ce93a90419178ff121139",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/source_registration.json": "311f014e5f12beb874225901dff20706ed939600a4b2aece0fee7b601b64f9e2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/sources.json": "5edf19a1dd8756d3a20db1b58970a3aea09feda625ba59717bd902c26b1c12af",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/variation02/receiver_interface_checks.json": "21e7480f1e8b56588ce43b7405a27d8de0926e9732b7a068b0aa5e920bc56e74",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/variation02/report.json": "1b0fc6a8177d9440a80bce303ba7ed331dd7bbbefe83e48933150b52d0a47f2b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_output_parts.py": "f5733f343308c7a7179cc6273b0c62162ba2b84ee09eeb6f68a31e31ebc2ed20",
+    "cad/003_FullTank/experiments/drive_chains/transmission_support_parts.py": "378d460b581c26154940ced9b9f4a8d8ca514fb97b05f24a2ac13c8c8b595405",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b"
+  },
+  "controls": {
+    "anchor_center": [
+      -76.27049196162397,
+      0.0,
+      -209.5514544352576
+    ],
+    "brake_station": 222.25,
+    "bearing_station": 279.2057142857143,
+    "frame_front_x": -227.1485714285713,
+    "top_frame_web_z": 318.63631878624517,
+    "bottom_frame_web_z": -262.33445920236954,
+    "channel_height": 50.0,
+    "top_origin": [
+      -77.0,
+      0.0,
+      223.0
+    ],
+    "top_slope_deg": 45.0,
+    "bottom_slope_deg": 33.0,
+    "bottom_seat_normal": -7.5,
+    "top_case_foot_limits": [
+      0.0,
+      185.0
+    ],
+    "bottom_case_foot_limits": [
+      25.0,
+      150.0
+    ],
+    "top_bolt_stations": [
+      45.0,
+      110.0
+    ],
+    "bottom_bolt_stations": [
+      52.0,
+      112.0
+    ],
+    "top_rib_station": 5.0,
+    "bottom_rib_station": 35.0,
+    "case_foot_stock": 19.05,
+    "web_stock": 12.7,
+    "rib_width": 12.7,
+    "rib_root_x": -8.0,
+    "rib_root_z": 126.0,
+    "tie_start_y": 130.0,
+    "tie_depth": 20.0,
+    "bracket_foot_limits": [
+      25.0,
+      137.0
+    ],
+    "bracket_width": 50.8,
+    "bracket_stock": 6.35,
+    "fork_gap": 19.55,
+    "fork_outer_width": 47.625,
+    "eye_radius": 14.2875,
+    "fork_web_reach": 32.0,
+    "fork_web_width": 22.225,
+    "band_clearance_radius": 212.18125,
+    "pin_bore_radius": 8.0875,
+    "mount_screw_diameter": 15.875,
+    "mount_screw_length": 22.225,
+    "mount_head_af": 23.8125,
+    "mount_head_stock": 10.31875,
+    "mount_bore_radius": 8.0875,
+    "lock_plate_stock": 1.5875,
+    "lock_plate_end_margin": 17.4625,
+    "lock_tab_half_length": 4.7625,
+    "lock_tab_height": 6.35,
+    "blind_gap": 0.3
+  },
+  "details": {
+    "mounts": {
+      "top": {
+        "origin": [
+          -77.0,
+          0.0,
+          223.0
+        ],
+        "tangent": [
+          -0.7071067811865476,
+          0.0,
+          0.7071067811865475
+        ],
+        "normal": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "seat_normal_mm": 0.0,
+        "bolt_seat_frames": [
+          [
+            -0.7071067811865475,
+            0.0,
+            0.7071067811865476,
+            -108.81980515339464,
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.7071067811865476,
+            0.0,
+            0.7071067811865475,
+            254.81980515339464,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.7071067811865475,
+            0.0,
+            0.7071067811865476,
+            -154.78174593052023,
+            0.0,
+            -1.0,
+            0.0,
+            0.0,
+            0.7071067811865476,
+            0.0,
+            0.7071067811865475,
+            300.78174593052023,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "bottom": {
+        "origin": [
+          -76.27049196162397,
+          0.0,
+          -209.5514544352576
+        ],
+        "tangent": [
+          -0.838670567945424,
+          0.0,
+          -0.5446390350150271
+        ],
+        "normal": [
+          0.5446390350150271,
+          0.0,
+          -0.838670567945424
+        ],
+        "seat_normal_mm": -7.5,
+        "bolt_seat_frames": [
+          [
+            -0.838670567945424,
+            0.0,
+            0.5446390350150271,
+            -123.96615425739874,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -0.5446390350150271,
+            0.0,
+            -0.838670567945424,
+            -231.58265499644833,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.838670567945424,
+            0.0,
+            0.5446390350150271,
+            -174.28638833412415,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -0.5446390350150271,
+            0.0,
+            -0.838670567945424,
+            -264.26099709734996,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "anchor_center_brake_mm": [
+      -76.27049196162397,
+      0.0,
+      -209.5514544352576
+    ],
+    "case_foot_count": 4,
+    "case_rib_count": 4,
+    "case_tie_count": 4,
+    "limitations": [
+      "Unprinted receiver and bracket sections are conditional estimates.",
+      "Integral case side ribs and transverse receiving seats are a reconstruction hypothesis.",
+      "Mounting threads use nominal envelopes and clearance bores.",
+      "Common locking strip and formed tabs are an HB133-led estimate; exact bend radii and production variant unresolved.",
+      "This initial scope precedes the anchor pin and stop members."
+    ]
+  },
+  "interfaces": {
+    "PortHighSpeedBrake": {
+      "receiver": "PortTransmissionCore_high_drum",
+      "drum_station_mm": 222.25,
+      "center_world_mm": [
+        1831.4946420457636,
+        222.25,
+        900.6029411764705
+      ],
+      "axial_outboard_shift_mm": 0.0,
+      "drum_face_bounds_mm": [
+        199.02714285714285,
+        245.47285714285715
+      ]
+    },
+    "StarboardHighSpeedBrake": {
+      "receiver": "StarboardTransmissionCore_high_drum",
+      "drum_station_mm": 222.25,
+      "center_world_mm": [
+        1831.4946420457636,
+        -222.25000000000006,
+        900.6029411764705
+      ],
+      "axial_outboard_shift_mm": 0.0,
+      "drum_face_bounds_mm": [
+        199.02714285714285,
+        245.47285714285715
+      ]
+    }
+  },
+  "band_controls": {
+    "inner_radius": 190.5,
+    "lining_stock": 6.35,
+    "width": 47.625,
+    "short_flat_length": 346.075,
+    "long_flat_length": 695.325,
+    "hole_diameter": 7.14375,
+    "end_margin": 38.1,
+    "hole_pitch": 53.975,
+    "edge_margin": 12.7,
+    "straight_bore_depth": 3.175,
+    "countersink_included_angle_deg": 70,
+    "steel_stock": 2.38125,
+    "steel_hole_radius": 3.325,
+    "steel_terminal_margin": 2.0,
+    "joint_clock_deg": 246.0,
+    "joint_lining_gap": 4.0,
+    "axial_outboard_shift": 0.0
+  },
+  "expected_new_occurrences": {
+    "PortHighSpeedBrakeAnchorBracket": {
+      "definition": "Def_HighBrakeSupport_anchor_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeAnchorSupportAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeAnchorLockPlate": {
+      "definition": "Def_HighBrakeSupport_anchor_lock_plate",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeAnchorSupportAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeAnchorMountScrew1": {
+      "definition": "Def_HighBrakeSupport_mount_screw",
+      "frame": [
+        -0.838670567945424,
+        0.0,
+        0.5446390350150271,
+        1711.8515601287966,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.5446390350150271,
+        0.0,
+        -0.838670567945424,
+        662.3633385469553,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeAnchorSupportAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeAnchorMountScrew2": {
+      "definition": "Def_HighBrakeSupport_mount_screw",
+      "frame": [
+        -0.838670567945424,
+        0.0,
+        0.5446390350150271,
+        1661.531326052071,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.5446390350150271,
+        0.0,
+        -0.838670567945424,
+        629.6849964460537,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeAnchorSupportAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeAnchorBracket": {
+      "definition": "Def_HighBrakeSupport_anchor_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeAnchorSupportAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeAnchorLockPlate": {
+      "definition": "Def_HighBrakeSupport_anchor_lock_plate",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeAnchorSupportAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeAnchorMountScrew1": {
+      "definition": "Def_HighBrakeSupport_mount_screw",
+      "frame": [
+        -0.838670567945424,
+        0.0,
+        0.5446390350150271,
+        1711.8515601287966,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        -0.5446390350150271,
+        0.0,
+        -0.838670567945424,
+        662.3633385469553,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeAnchorSupportAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeAnchorMountScrew2": {
+      "definition": "Def_HighBrakeSupport_mount_screw",
+      "frame": [
+        -0.838670567945424,
+        0.0,
+        0.5446390350150271,
+        1661.531326052071,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        -0.5446390350150271,
+        0.0,
+        -0.838670567945424,
+        629.6849964460537,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeAnchorSupportAssembly"
+      ]
+    }
+  },
+  "new_assemblies": [
+    "PortHighSpeedBrakeAnchorSupportAssembly",
+    "StarboardHighSpeedBrakeAnchorSupportAssembly"
+  ],
+  "added_children": {
+    "Definitions": [
+      "Def_HighBrakeSupport_anchor_bracket",
+      "Def_HighBrakeSupport_anchor_lock_plate",
+      "Def_HighBrakeSupport_mount_screw"
+    ],
+    "PortHighSpeedBrake": [
+      "PortHighSpeedBrakeAnchorSupportAssembly"
+    ],
+    "PortHighSpeedBrakeAnchorSupportAssembly": [
+      "PortHighSpeedBrakeAnchorBracket",
+      "PortHighSpeedBrakeAnchorLockPlate",
+      "PortHighSpeedBrakeAnchorMountScrew1",
+      "PortHighSpeedBrakeAnchorMountScrew2"
+    ],
+    "StarboardHighSpeedBrake": [
+      "StarboardHighSpeedBrakeAnchorSupportAssembly"
+    ],
+    "StarboardHighSpeedBrakeAnchorSupportAssembly": [
+      "StarboardHighSpeedBrakeAnchorBracket",
+      "StarboardHighSpeedBrakeAnchorLockPlate",
+      "StarboardHighSpeedBrakeAnchorMountScrew1",
+      "StarboardHighSpeedBrakeAnchorMountScrew2"
+    ]
+  },
+  "new_definitions": [
+    "Def_HighBrakeSupport_anchor_bracket",
+    "Def_HighBrakeSupport_anchor_lock_plate",
+    "Def_HighBrakeSupport_mount_screw"
+  ],
+  "changed_definitions": [
+    "Def_TransmissionCore_bevel_case"
+  ],
+  "affected_occurrences": [
+    "CenterTransmissionCore_bevel_case",
+    "PortHighSpeedBrakeAnchorBracket",
+    "PortHighSpeedBrakeAnchorLockPlate",
+    "PortHighSpeedBrakeAnchorMountScrew1",
+    "PortHighSpeedBrakeAnchorMountScrew2",
+    "StarboardHighSpeedBrakeAnchorBracket",
+    "StarboardHighSpeedBrakeAnchorLockPlate",
+    "StarboardHighSpeedBrakeAnchorMountScrew1",
+    "StarboardHighSpeedBrakeAnchorMountScrew2"
+  ],
+  "expected_physical_occurrences": 3129,
+  "expected_definition_count": 532,
+  "expected_assembly_count": 324,
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/receivers04",
+  "prototype_native_sha256": "a1beac88a2faabdf348ed18336acba877f7f7f61030c2941ec5d3a8386e49b8f",
+  "limits": [
+    "Unprinted receiver and bracket sections are conditional estimates.",
+    "Integral case side ribs and transverse receiving seats are a reconstruction hypothesis.",
+    "Mounting threads use nominal envelopes and clearance bores.",
+    "Common locking strip and formed tabs are an HB133-led estimate; exact bend radii and production variant unresolved.",
+    "This initial scope precedes the anchor pin and stop members."
+  ],
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "packet_complete": false
+}

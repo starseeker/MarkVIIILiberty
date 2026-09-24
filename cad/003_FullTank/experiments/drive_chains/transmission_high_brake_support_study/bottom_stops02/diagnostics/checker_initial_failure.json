@@ -1,0 +1,6 @@
+{
+  "cause": "The diagnostic section plane used makePlane with an unverified in-plane orientation; it missed the cotter and produced an empty section.",
+  "error": "RuntimeError: Bnd_Box is void",
+  "geometry_changed": false,
+  "remedy": "Use an explicit X=0 rectangle spanning both Y and Z around the cotter."
+}

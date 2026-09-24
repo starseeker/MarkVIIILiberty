@@ -11,6 +11,29 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — high-speed anchor retention and bottom stops
+
+The [bottom-stop increment](experiments/drive_chains/transmission_high_brake_support_study/bottom_stops03/README.md)
+adds20 parts and eight assembly groups: **3,149 occurrences /539 definitions
+/332 assemblies**. M363 pins/cotters, M366 stops, MX76/MX77 mounting hardware and
+four M400/nut pairs are installed; M362 gains an estimated receiving shelf.
+Printed cotter stock is retained. A rejected cast rib intersected a retained
+lining-rivet tail; only the proposed rib was narrowed to provide clearance.
+
+Nominal and1mm stop-stock variation pass75 native checks and30 STEP comparisons
+each. The nominal trial also passes142 nearby pairs. Integration passes35 checks,
+preservation of531 unchanged definitions (512 exact/19 strict),13 saved catalogue
+checks, retained tank context and exact fresh nominal reproduction. The required
+57.65mm pin withdrawal and25mm drift approach clear selected epicyclic neighbors;
+larger assumed envelopes fail and remain documented. Full service work is open.
+
+Three inspected views bring progression to **216 images**, preserving213 earlier
+views. A tessellation-cache caller error in an unpublished preview was corrected;
+native and STEP placements were unaffected. Source registration remains fixed.
+M399/M398 top/back stops, M365 clips and remaining upper hardware are next.
+Full support qualification and standard-tank integration remain pending;
+the operating-mechanism checkpoint remains the last fully qualified parent.
+
 ## 24 September 2026 — high-speed receiving webs and anchor mounts
 
 The [receiving candidate](experiments/drive_chains/transmission_high_brake_support_study/README.md)

@@ -60,6 +60,17 @@ the terminal baseline during verification. The [retained implementation and
 comparison](../../../cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/assembly_trial02/diagnostics/render_loop/README.md)
 document this control-flow failure; image existence alone did not prove completion.
 
+When sharing tessellation by definition, supply the same canonical definition
+shape for every occurrence and apply its installed placement separately. A
+bottom-stop preview supplied world-posed targets under a shared definition key;
+the renderer reused the first mesh and drew repeated parts at that first pose.
+Native and STEP geometry were correct. Using identity-frame targets restored both
+sides without changing geometry or the camera. Inspect repeated occurrences,
+not just one exemplar; a transform calculation alone does not prove that its
+cached input belongs to the right frame. The
+[retained preview diagnostic](../../../cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/bottom_stops03/diagnostics/render_cache.json)
+records this caller-contract failure and the corrected saved-native views.
+
 Sandbox errors have a different cause from CAD errors. A Codex PATH-alias warning
 means an optional runtime write failed; verify the actual process exit and tool
 operation. A successful `--version` is not proof that a model run can initialize.

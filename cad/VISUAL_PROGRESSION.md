@@ -1120,3 +1120,19 @@ are drawn as outlines in the isometric. Hidden stock and cast sections are estim
 | --- | --- |
 | [intermediate_snapshot_iso_transmission_high_brake_receivers_trial_001.png](intermediate_snapshot_iso_transmission_high_brake_receivers_trial_001.png) | `8ca161612b7520c84f33e6ab56bad4f806e209a15e94d819720a6e8fc4443e1a` |
 | [intermediate_snapshot_source_transmission_high_brake_receivers_trial_001.png](intermediate_snapshot_source_transmission_high_brake_receivers_trial_001.png) | `d5af0dedef67878d5116f5e4e617dfc6e22682a994f4a9307eec5e95b7e24dbb` |
+
+
+## High-speed anchor retention and bottom stops — 24 September 2026
+
+Three inspected prototype views bring progression to **216 images**, preserving
+all 213 earlier images. Source registration remains fixed. The integrated candidate
+has3,149 occurrences; top/back stops, clips and full support qualification remain
+pending. The corrected isometric shows both sides. Selected retained neighbors
+are outlines; these views omit other inherited parts, including MX60 anchor mounts.
+Standard tank011 is unchanged.
+
+| View | SHA-256 |
+| --- | --- |
+| [intermediate_snapshot_iso_transmission_high_brake_bottom_stops_trial_001.png](intermediate_snapshot_iso_transmission_high_brake_bottom_stops_trial_001.png) | `2470d041329e410a935e69bea35bd5106173b47c349d5b9f5d17a20a40fabe87` |
+| [intermediate_snapshot_detail_transmission_high_brake_bottom_stops_trial_001.png](intermediate_snapshot_detail_transmission_high_brake_bottom_stops_trial_001.png) | `f9e50d9ec0e543d5f94c98b89a4c117e1895e942b3f7b61d2b3f2a36c1f276c5` |
+| [intermediate_snapshot_source_transmission_high_brake_bottom_stops_trial_001.png](intermediate_snapshot_source_transmission_high_brake_bottom_stops_trial_001.png) | `a3dad554984952e310784f35a695a419c25558302318b45649b1a675e91ba1ed` |
