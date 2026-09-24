@@ -541,6 +541,53 @@
           "sha256": "67d9c48c693acfc6e6036cebd9c04b368c880550cf9e05bc6c8d5b9db7be3001"
         }
       ]
+    },
+    {
+      "id": "rear_control_channel_stock_and_local_projection",
+      "status": "open_evidence",
+      "scope": "M4128 unfinished stock, rear mounting quantities and local SNL6 side registration.",
+      "reason": "Original drawings support inverted-U topology and the isolated stock clears existing floor/support material. New pin disagreement and conflicting counts require targeted evidence review before mounted assembly integration.",
+      "uncertainty": "Section, span, station, cleat orientation and rivet grip remain estimated; related diagrams cannot independently settle M4131/M1431 or control-pin geometry.",
+      "limits": [
+        "Stock passes local section/floor/material and exchange checks only; no complete channel mounting or historical geometry qualification.",
+        "Three outer drum check points are correlated silhouette checks; no nonplanar photographic camera fitted.",
+        "Control-bore discrepancy21.867px is not refitted away.",
+        "SNL four rear fulcrums and four left/two right cleats are the next hypothesis; HB five fulcrums/two left cleats and the center identity remain explicit.",
+        "Narrow clearance under left clutch support and M581 route/lever identity require review when populating brackets."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_stock01/visual_review.json",
+        "sha256": "d48fdce5a0bc95181060f2b976d5824b01a9b349fd916f0da3c9112f9a884b3a"
+      },
+      "reopen_when": [
+        "Channel, floor, clutch support or receiving lever shape/placement changes.",
+        "Additional view, real dimension, or mounted hardware contradicts current section/station or source-circle identity.",
+        "New bracket stations or rod route clarify the local control-pin discrepancy or M581 connection."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_study_receipt01.json",
+          "sha256": "2b405daad01889fc067b7323ee015e1b8cdb5f4c62df1cf806250aa40368a6b8"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json",
+          "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_sources01/source_review.json",
+          "sha256": "faac468e6ecde0c1346efc1a2a15dfbcc81b2d6be4a38cf1faca45bac81b3f3c"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_stock01/visual_review.json",
+          "sha256": "d48fdce5a0bc95181060f2b976d5824b01a9b349fd916f0da3c9112f9a884b3a"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_projection01/assessment.json",
+          "sha256": "20a09d55919c8de0c141f872e758da5ccc193dc230ea69a747f977444c506e33"
+        }
+      ]
     }
   ]
 }

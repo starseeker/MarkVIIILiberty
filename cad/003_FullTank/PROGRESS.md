@@ -11,6 +11,31 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — rear channel stock and local source registration
+
+[The rear-channel study](experiments/drive_chains/transmission_controls_study/channel_stock01/README.md)
+retains 45 source rows and confirms two original handbook/SNL quantity conflicts.
+The intact rear side view supports a downward-open channel. A separate native
+stock prototype uses a provisional 152.4 × 50.8 mm section, 2,200 mm span and
+6.35 mm stock, seated on the measured floor at X = 2,400 mm. It has no mounting
+holes, cleats or attached brackets yet and is **not integrated** into the tank.
+
+Nominal and 0.5 mm thicker-stock trials each pass 13 native/interface checks,
+three neighboring material pairs and two strict STEP comparisons. Fresh nominal
+regeneration reproduces both archive BReps and stable definition/link properties.
+The initial single-object STEP export lost its placement; an explicit task-local
+export setting resolves the retained failure without geometry or tolerance changes.
+That tested lesson is recorded in the FreeCAD reconstruction skill.
+
+A fixed, conditional SNL6 side registration agrees with the outer drum silhouette
+within 2.8 pixels but retains a 21.867-pixel high-speed control-bore discrepancy.
+Those outer checks are correlated, and the drawing has rod-length breaks; no
+historical perspective-camera calibration is claimed. The stock variation reuses
+exactly the same registration. Next: cleat/fulcrum stations, floor bolts, channel
+rivets, spring supports, and targeted lever/rod review. Current integrated counts
+remain **3,173 occurrences /546 definitions /338 groups**; progression stays222.
+The complete standard-tank goal remains active.
+
 ## 24 September 2026 — rear high-speed control joints
 
 [The current native checkpoint](experiments/drive_chains/transmission_controls_study/us_nuts01/README.md)

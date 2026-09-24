@@ -98,6 +98,13 @@ envelope; parameter edits require regenerating the scripted part model.
 
 ## Next construction
 
+The [rear-channel stock study](channel_stock01/README.md) now establishes a
+conditional local SNL6 registration, measured floor context and a separately
+saved downward-open channel prototype. Two stock variants pass local native,
+floor/material and STEP checks. This does not add an installed channel to the
+powertrain. The preserved 21.867-pixel control-bore discrepancy calls for targeted
+lever/rod review without changing the registration.
+
 1. Locate M4128 and its cleats/brackets against the hull/floor and transmission
    structure. Establish rear return-spring and low/track bell-crank axes.
 2. Reconstruct M575 rear rod bends and spring interfaces between fixed endpoints,

@@ -1,0 +1,81 @@
+{
+  "source_image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png",
+  "source_sha256": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+  "image_size_px": [
+    1688,
+    1075
+  ],
+  "projection_classification": "Local side-view diagnostic registration on the intact rear segment; related schematic plan/side drawing, not a photographic camera.",
+  "center_px": [
+    1551,
+    819
+  ],
+  "inner_circle_extrema_px": {
+    "left": [
+      1488,
+      819
+    ],
+    "right": [
+      1614,
+      819
+    ],
+    "top": [
+      1551,
+      753
+    ],
+    "bottom": [
+      1551,
+      884
+    ]
+  },
+  "pixels_per_mm": 0.33727034120734906,
+  "calibration_basis": "Mean picked horizontal126px and vertical131px inner-circle diameters assigned the printed high-speed drum diameter381mm. Circle identity is a conditional high-drum interpretation; check outer drum independently.",
+  "pick_uncertainty_px": 6,
+  "axis_world_mm": [
+    1831.4946420457636,
+    0,
+    900.6029411764705
+  ],
+  "diagnostic_picks": {
+    "outer_drum_top": [
+      1551,
+      719
+    ],
+    "outer_drum_bottom": [
+      1551,
+      920
+    ],
+    "outer_drum_right": [
+      1652,
+      819
+    ],
+    "high_speed_control_pin": [
+      1490,
+      908
+    ],
+    "channel_side_top_forward": [
+      1339,
+      922
+    ],
+    "channel_side_top_rear": [
+      1388,
+      922
+    ],
+    "channel_side_bottom": [
+      1363.5,
+      939
+    ]
+  },
+  "channel_side_interpretation": "Single intact section only; source X-right runs rearward. Channel stock approximately145mm wide by50mm deep under this conditional local scale.",
+  "reuse_rule": "Preserve this registration and the source picks for subsequent channel/rod trials. Current CAD changes are reassessed without refitting; circle identity or new dimensional evidence requires a separate reviewed version.",
+  "limits": [
+    "No scale is transferred across rod-length breaks or into the plan view.",
+    "Six-pixel diagnostic pick allowance includes thick/dotted outlines; not a manufacturing tolerance or calibrated camera confidence interval.",
+    "High-drum diameter sets scale and cannot be independently validated by it.",
+    "New high-speed pin and outer drum checks do not participate in setting this registration.",
+    "Channel corners derived from this view are construction estimates, not independent holdouts for the future channel.",
+    "M581 lever identity and existing clutch-auxiliary station require a separate route review."
+  ],
+  "camera_fit": false,
+  "historical_geometry_qualified": false
+}

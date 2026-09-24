@@ -235,6 +235,18 @@ shells or invalid topology as a successful empty difference. See the
 
 ## Acceptance and exchange
 
+Single-object STEP export can discard the object's placement. In FreeCAD
+1.1.1/OCC 7.8, a channel's definition export passed while its installed export
+returned the same origin-centered solid. Setting
+`App.ParamGet('User parameter:BaseApp/Preferences/Mod/Import').SetBool('ExportKeepPlacement', True)`
+in the task-local runtime preserved the translation; both stock variants then
+passed the unchanged material, tolerance and mass checks. A three-case probe
+confirmed that the similarly named Part/STEP preference group did not control
+this option. Set export intent explicitly and compare installed coordinates
+after reopening; do not move the imported solid to make a check pass. See the
+[retained failure and probe](../../../cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_stock01/diagnostics/single_object_placement_default/README.md)
+and the official [export preferences](https://github.com/FreeCAD/FreeCAD-documentation/blob/main/wiki/Import_Export_Preferences.md).
+
 If a part passes isolated STEP exchange but fails inside a combined export,
 inspect the representation and uncertainty contexts before changing geometry.
 On FreeCAD 1.1.1/OCC 7.8.0, a flat `TopoShape.exportStep()` compound shared one

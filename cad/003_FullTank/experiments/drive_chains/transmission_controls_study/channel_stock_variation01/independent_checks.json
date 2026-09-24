@@ -1,0 +1,100 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Saved local definition, one physical occurrence and direct root ownership",
+      "passed": true
+    },
+    {
+      "name": "Actual saved metadata identifies unfinished M4128 stock",
+      "passed": true
+    },
+    {
+      "name": "Saved placement equals documented floor/station datum",
+      "passed": true
+    },
+    {
+      "name": "One valid closed solid within unchanged kernel tolerance",
+      "passed": true
+    },
+    {
+      "name": "Saved envelope and transverse centered span",
+      "passed": true
+    },
+    {
+      "name": "Independent web and leg material agree in both directions",
+      "passed": true,
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0
+    },
+    {
+      "name": "Underside void remains open over the complete length",
+      "passed": true
+    },
+    {
+      "name": "Independent prismatic mass and centroid",
+      "passed": true,
+      "volume_mm3": 3621320.9999999995,
+      "centroid_mm": [
+        3.1558733590976144e-15,
+        2.1397174734857203e-13,
+        38.08386392009985
+      ]
+    },
+    {
+      "name": "Whole stock lies within measured context region",
+      "passed": true
+    },
+    {
+      "name": "Channel material clears all neighboring development and retained standard solids",
+      "passed": true,
+      "pairs": 3,
+      "failed": []
+    },
+    {
+      "name": "Both lower flanges bear on actual floor upper face",
+      "passed": true,
+      "area_mm2": 30139.999999999975,
+      "expected_mm2": 30140.0
+    },
+    {
+      "name": "Lifted stock loses floor bearing",
+      "passed": true
+    },
+    {
+      "name": "Floor intrusion negative control is detected",
+      "passed": true,
+      "common_mm3": 30140.000000015505
+    }
+  ],
+  "material_pairs": [
+    {
+      "other": "hull_floor_7",
+      "origin": "development",
+      "common_mm3": 0,
+      "valid_common": true,
+      "passed": true
+    },
+    {
+      "other": "hull_port_inner_skirt_rear",
+      "origin": "retained_standard",
+      "common_mm3": 0,
+      "valid_common": true,
+      "passed": true
+    },
+    {
+      "other": "hull_starboard_inner_skirt_rear",
+      "origin": "retained_standard",
+      "common_mm3": 0,
+      "valid_common": true,
+      "passed": true
+    }
+  ],
+  "native_sha256": "a8bef1185190dea1d5237ff13f89b07b489c59826541ef3021943d23e7560171",
+  "parent_native_sha256": "8073615bc719325e9b7e30e629be9fc5da15702e345fb704d3d98488633cb308",
+  "checker_sha256": "e9a60deb7cc5f902b4e170a09a2c92df89ebbb1a17c7d9db9d3d1ade73c2b605",
+  "context_sha256": "e1e21b6f6342e12864e2d6a7c0c0285eedf34ae45f2c46003914424592a57b4c",
+  "scope": "Unfinished channel stock section, floor bearing and all solids within the independently measured enclosing region. No cleat/rivet/hole qualification.",
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

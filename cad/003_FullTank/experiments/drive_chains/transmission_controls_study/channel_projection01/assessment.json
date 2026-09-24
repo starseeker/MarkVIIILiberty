@@ -1,0 +1,205 @@
+{
+  "registration_sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe",
+  "registration_reused_without_refit": true,
+  "camera": {
+    "projection": "orthographic",
+    "image_size_px": [
+      1688,
+      1075
+    ],
+    "world_to_camera_rotation": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        -1,
+        0
+      ]
+    ],
+    "origin_world_mm": [
+      1831.4946420457636,
+      0,
+      900.6029411764705
+    ],
+    "scale_px_per_mm": 0.33727034120734906,
+    "principal_px": [
+      1551,
+      819
+    ]
+  },
+  "source_sha256": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+  "native_sha256": "8073615bc719325e9b7e30e629be9fc5da15702e345fb704d3d98488633cb308",
+  "channel_native_sha256": "01f2045cd6e86fa4dafade58faa6882f6add98a0461427bdc79c6070fee4e9b4",
+  "reviewer_script_sha256": "c4da0848dc2b3574d68a771e6e31471622b521b42426a56d01937fe8a943b888",
+  "anchor_bindings": [
+    {
+      "occurrence": "PortTransmissionCore_high_drum",
+      "definition_sha256": "2b86be519420bbbd3ce490247fd6aae381295388026d50c8c6982f895e9e768d",
+      "frame": [
+        0.9853012270441983,
+        0.0,
+        0.17082591134016278,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -0.17082591134016278,
+        0.0,
+        0.9853012270441983,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "occurrence": "PortTransmissionOutput_drum",
+      "definition_sha256": "a56a27f92cab202f26ffac6bfa53947bd03cf9df5190144482a9005360f8074f",
+      "frame": [
+        0.9386799970289825,
+        0.0,
+        0.34478959261797515,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        882.6500000000002,
+        -0.34478959261797515,
+        0.0,
+        0.9386799970289825,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "occurrence": "PortHighSpeedBrakeLeverLeft",
+      "definition_sha256": "19947dc981b0930d7e0fc9d9a2fbaaf12efab562a372dcea9955c497b37c79c3",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "outer_drum_top",
+      "pixel_pick": [
+        1551,
+        719
+      ],
+      "world_mm": [
+        1831.4946420457636,
+        733.2392857142859,
+        1205.4029411764704
+      ],
+      "projected_px": [
+        1551.0,
+        716.2
+      ],
+      "residual_px": 2.7999999999999545,
+      "within_diagnostic_pick_allowance": true,
+      "use": "check_only_not_fitting"
+    },
+    {
+      "id": "outer_drum_bottom",
+      "pixel_pick": [
+        1551,
+        920
+      ],
+      "world_mm": [
+        1831.4946420457636,
+        733.2392857142859,
+        595.8029411764705
+      ],
+      "projected_px": [
+        1551.0,
+        921.8
+      ],
+      "residual_px": 1.7999999999999545,
+      "within_diagnostic_pick_allowance": true,
+      "use": "check_only_not_fitting"
+    },
+    {
+      "id": "outer_drum_right",
+      "pixel_pick": [
+        1652,
+        819
+      ],
+      "world_mm": [
+        1526.6946420457637,
+        733.2392857142859,
+        900.6029411764705
+      ],
+      "projected_px": [
+        1653.8,
+        819.0
+      ],
+      "residual_px": 1.7999999999999545,
+      "within_diagnostic_pick_allowance": true,
+      "use": "check_only_not_fitting"
+    },
+    {
+      "id": "high_speed_control_pin",
+      "pixel_pick": [
+        1490,
+        908
+      ],
+      "world_mm": [
+        2069.9446420457634,
+        208.55,
+        606.9279411764705
+      ],
+      "projected_px": [
+        1470.5778871391076,
+        918.0478674540682
+      ],
+      "residual_px": 21.86728397299868,
+      "within_diagnostic_pick_allowance": false,
+      "use": "check_only_not_fitting"
+    }
+  ],
+  "images": {
+    "source_overlay.png": "10722fac3de8a1e2284506922b6aafa0e3df39f88bed505952a7d3c402e5ea56",
+    "rear_side_detail.png": "437e9ddb1bd9aa594c67182158465a4eba8d3994818e1620904268c81457e25e"
+  },
+  "detail_pixel_transform": {
+    "crop_original_px": [
+      1140,
+      690,
+      1680,
+      950
+    ],
+    "display_scale": 3
+  },
+  "historical_geometry_qualified": false,
+  "camera_fitted": false,
+  "scope": "Fixed conditional local side comparison only. Existing drum diameter provides registration scale; outside drum and control bore are checks. Channel shape was estimated using this source and is not an independent validation feature.",
+  "diagnostic_note": "A control-pin mismatch is retained for source/lever/rod diagnosis. Do not refit the registration to make it vanish; uncertain component geometry and schematic projection remain competing causes."
+}
