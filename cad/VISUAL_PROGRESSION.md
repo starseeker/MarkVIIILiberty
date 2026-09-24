@@ -1,5 +1,18 @@
 # Mark VIII visual progression
 
+The brake-band trial adds an
+[isometric](intermediate_snapshot_iso_transmission_brake_bands_001.png),
+[separate band detail](intermediate_snapshot_detail_transmission_brake_bands_001.png),
+[low-speed lining comparison](intermediate_snapshot_source_low_brake_lining_001.png)
+and [track lining comparison](intermediate_snapshot_source_track_brake_lining_001.png).
+Four brake pairs now have separate steel backing, segmented lining and copper
+rivets. Source comparisons show saved-native arcs and flattened bore stations
+alongside HB97/98. Band ears, anchors, links and fastening remain missing.
+Native/context, STEP with adaptive mass integration, preservation, reproduction
+and parameter checks pass. All 170 earlier images and 28 recorded native baselines
+remain unchanged: **174 total**. See the
+[trial record](003_FullTank/experiments/drive_chains/transmission_brake_band_study/trial01/README.md).
+
 The brake suspension trial adds an
 [isometric](intermediate_snapshot_iso_transmission_brake_suspension_001.png),
 [underside detail](intermediate_snapshot_detail_transmission_brake_suspension_001.png)

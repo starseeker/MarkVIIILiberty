@@ -11,6 +11,36 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — segmented transmission brake bands populated
+
+The [brake-band trial](experiments/drive_chains/transmission_brake_band_study/trial01/README.md)
+adds eight steel half-bands, 24 lining segments and 216 copper rivets. The
+development assembly now has **2,759 physical occurrences, 471 definitions and
+268 assemblies**. Printed handbook lining radii revise two provisional drum
+friction lands while preserving their interiors, end interfaces and placements.
+The earlier segmented arrangement is explicitly distinguished from later SNL
+long strips. Steel stock, split geometry, rivet details and shoulder profiles
+remain documented estimates; ears, anchors, linkage and fastening are unfinished.
+
+All **154 native/context checks, 1,090 development material pairs and 259 STEP
+comparisons pass**. The full retained standard context contains 5,316 occurrences
+and no possible affected pair. All 464 unchanged definitions are preserved:
+446 exact BReps and 18 strict comparisons. Fresh reproduction matches 1,439 BReps
+and 129,129 persistent properties. A thicker-band/wider-seam variation passes the
+same native/context checks and preserves all 466 inherited nominal definitions.
+
+Default FreeCAD mass integration produced false centroid discrepancies on
+perforated curved bands. Adaptive integration qualifies the unchanged STEP solids
+with the original material and centroid limits; failed diagnostics are retained.
+The reusable adapter and FreeCAD skill now document that finding. Four inspected
+progression snapshots give **174 total**, preserving all 170 earlier images and
+28 recorded native baselines.
+
+Next: band end ears and anchors, M337 links, the unresolved M339 pin arrangement,
+adjustment mechanism and support fastening; then remaining frame/hull attachments
+and broader engine/interior coverage. Standard tank011 is unchanged; poses stay
+deferred and the complete-tank goal remains unfinished.
+
 ## 24 September 2026 — brake suspension brackets and stops populated
 
 The [brake suspension trial](experiments/drive_chains/transmission_brake_suspension_study/trial02/README.md)

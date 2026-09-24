@@ -134,6 +134,20 @@ removed the contact and failed the unchanged area criterion. The
 [reproducer and measurements](../../../cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_support_trial01/contact_probe.py)
 record the tested case. Zero distance alone does not establish a bearing area.
 
+Default mass/area integration can also disagree for identical, heavily trimmed
+curved faces. On FreeCAD 1.1.1/OCC 7.8.0, a drilled brake band passed strict
+native/STEP material comparisons but its default volumes differed by 915 mm³
+and its centroids by 0.040 mm. Adaptive OCCT integration of the unchanged BReps
+converged in both files; a separate Gauss-Kronrod calculation corroborated it.
+Use a verified higher-accuracy measurement when diagnosing this symptom, while
+retaining validity, material, tolerance and convergence checks. Do not enlarge
+geometric tolerances or alter sound geometry just to match default mass values.
+The project's [adapter and focused qualification](../../../cad/003_FullTank/experiments/drive_chains/transmission_brake_band_study/trial01/diagnostics/adaptive_mass/README.md)
+record the tested case. Similarly, two fully seated cylindrical lining faces
+gave slightly different integrated areas after re-trimming. Matching analytic
+supports plus empty uncovered-face differences, with displaced negative controls,
+proved coverage directly; an area estimate alone was insufficient.
+
 Treat kernel bounding boxes as enclosures, not guaranteed exact size measurements.
 On this runtime, a retained cross-drilled stud reports a 19.058984 mm bounding-box
 width, while its axial cylinder faces have radius 9.525 mm and no material lies
