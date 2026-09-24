@@ -1,0 +1,359 @@
+{
+  "native_file": "PowertrainWithBrakeSpacers.FCStd",
+  "native_sha256": "9abdab05d466d51744002cce3dc442e27c1f02dd6266724821ca1f02f4e9b937",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/PowertrainWithBrakeStops.FCStd",
+  "source_native_sha256": "5da8d72278f3a0059eaac8f8a3967bb86e4b821da52262d7433d008832bf4994",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_transmission_brake_spacers.py": "8af4be1eda573a71f7e2e5e9462021507e32fd47c13625a71308033634c78e22",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_front_parts.py": "73352d879f26d00e4f9cfb430ba56bc4119810b5dfae2c929183a1afc631394e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/report.json": "2e7c0ca2d038d7939788c54bec9463f99d36aefcf6212892b534f1a2b12f1ce2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/controls.json": "970bf3af3b4967337906e8b46be4eca406138f2aeaf1c1395f806187cb0c9d06",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/sources.json": "6f9cc743993c867d34292d06852eeed60f5059868e269a49b57ec50e8448ea80",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/report.json": "4486ac1f1254758f8878b6f6c711742feff7cae91619d7fda0ea5a0fdd9ff52f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/qualification.json": "4f266016d6dbb65a407a30d8cbf3f4e489cdafb4ce8b7f4f746a4100f0898d9d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/isolated/manifest.json": "6109534a83d03189855168b9fc835410c43bc05981ff99f63b6dbc3705f22fad",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/isolated/breps/fdd7373ce9e0bb9ebade5dbeecab6752bdf0d5f419c9bbcfe82ed3b99f5be548.brep": "fdd7373ce9e0bb9ebade5dbeecab6752bdf0d5f419c9bbcfe82ed3b99f5be548",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b"
+  },
+  "controls": {
+    "spacer_outer_diameter": 25.4,
+    "spacer_length": 31.75,
+    "spacer_bore_radius": 6.5
+  },
+  "spring_controls": {
+    "foot_stock": 6.35,
+    "low_foot_sweep_deg": 16.0,
+    "track_foot_sweep_deg": 18.0,
+    "lug_y": 31.75,
+    "lug_stock": 6.35,
+    "lug_radius": 19.05,
+    "lug_web_width": 18.0,
+    "lug_web_theta_deg": 13.0,
+    "pin_height": 70.0,
+    "pin_radial_offset": 38.0,
+    "pin_diameter": 24.0,
+    "pin_bore_allowance": 0.15,
+    "eye_side_clearance": 0.15,
+    "pin_axial_clearance": 0.15,
+    "pin_head_radius": 17.0,
+    "pin_head_stock": 4.0,
+    "cotter_station_overhang": 4.6,
+    "pin_end_beyond_cotter": 4.6,
+    "cotter_hole_radius": 3.325,
+    "swivel_forward_offset": 75.0,
+    "swivel_radius": 22.225,
+    "swivel_width": 44.45,
+    "swivel_flat_distance": 16.0,
+    "swivel_gap": 31.75,
+    "swivel_bore_allowance": 0.15,
+    "lever_head_radius": 31.75,
+    "lever_eye_radius": 20.0,
+    "lever_web_width": 36.0,
+    "lever_leg_width": 32.0,
+    "lever_leg_stock": 12.7,
+    "lever_leg_root_x": 42.0,
+    "lever_leg_root_z": -12.0,
+    "lever_end_x": -25.0,
+    "lever_end_z": -220.0,
+    "lever_end_radius": 18.0,
+    "lever_end_bore_radius": 6.5,
+    "lever_slot_start_x": 42.0,
+    "screw_eye_radius": 19.05,
+    "screw_radius": 6.35,
+    "screw_length": 210.0,
+    "screw_shoulder_radius": 14.2875,
+    "screw_shoulder_stock": 4.0,
+    "screw_shoulder_distance": 30.0,
+    "thread_bore_allowance": 0.15,
+    "spring_mean_radius": 11.1125,
+    "spring_wire_radius": 1.5875,
+    "spring_turns": 12.0,
+    "nut_neck_radius": 10.0,
+    "nut_neck_length": 16.0,
+    "nut_wing_length": 50.8,
+    "nut_wing_width": 12.7,
+    "nut_wing_stock": 6.35,
+    "nut_hex_radius": 12.0,
+    "nut_hex_length": 8.0
+  },
+  "details": {
+    "old_spring_height_mm": 112.8238017426859,
+    "new_spring_height_mm": 81.0738017426859,
+    "spring": {
+      "installed_height_mm": 81.0738017426859,
+      "pitch_mm": 6.491566811890492,
+      "mean_radius_mm": 11.1125,
+      "wire_radius_mm": 1.5875,
+      "generated_centerline_length_mm": 876.5377331554157,
+      "ends": "Planar ground ends cut from extended helix; source section/turn count estimated."
+    }
+  },
+  "changed_definitions": [
+    "Def_BrakeFront_spring"
+  ],
+  "new_definitions": [
+    "Def_BrakeSpringSpacer"
+  ],
+  "nonphysical_features": [
+    "BrakeFrontSpringCenterline"
+  ],
+  "expected_new_occurrences": {
+    "PortLowSpeedBrakeAdjustingSpringSpacer": {
+      "definition": "Def_BrakeSpringSpacer",
+      "frame": [
+        -0.8814799700287825,
+        0.0,
+        0.47222141251541894,
+        2227.627308402731,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        -0.47222141251541894,
+        0.0,
+        -0.8814799700287825,
+        872.6936097453448,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "PortTrackBrakeAdjustingSpringSpacer": {
+      "definition": "Def_BrakeSpringSpacer",
+      "frame": [
+        -0.8814799700287825,
+        0.0,
+        0.47222141251541894,
+        2234.1052943177788,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        -0.47222141251541894,
+        0.0,
+        -0.8814799700287825,
+        872.6936097453448,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeFrontMechanism"
+      ]
+    },
+    "StarboardLowSpeedBrakeAdjustingSpringSpacer": {
+      "definition": "Def_BrakeSpringSpacer",
+      "frame": [
+        -0.8814799700287825,
+        0.0,
+        0.47222141251541894,
+        2227.627308402731,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        -0.47222141251541894,
+        0.0,
+        -0.8814799700287825,
+        872.6936097453448,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "StarboardTrackBrakeAdjustingSpringSpacer": {
+      "definition": "Def_BrakeSpringSpacer",
+      "frame": [
+        -0.8814799700287825,
+        0.0,
+        0.47222141251541894,
+        2234.1052943177788,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        -0.47222141251541894,
+        0.0,
+        -0.8814799700287825,
+        872.6936097453448,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeFrontMechanism"
+      ]
+    }
+  },
+  "expected_revised_occurrences": {
+    "PortLowSpeedBrakeAdjustingSpring": {
+      "definition": "Def_BrakeFront_spring",
+      "frame": [
+        -0.8814799700287821,
+        0.0,
+        0.47222141251541877,
+        2189.342523225805,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        -0.47222141251541877,
+        0.0,
+        -0.8814799700287821,
+        944.158542075607,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "PortTrackBrakeAdjustingSpring": {
+      "definition": "Def_BrakeFront_spring",
+      "frame": [
+        -0.8814799700287821,
+        0.0,
+        0.47222141251541877,
+        2195.8205091408527,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        -0.47222141251541877,
+        0.0,
+        -0.8814799700287821,
+        944.158542075607,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeFrontMechanism"
+      ]
+    },
+    "StarboardLowSpeedBrakeAdjustingSpring": {
+      "definition": "Def_BrakeFront_spring",
+      "frame": [
+        -0.8814799700287821,
+        0.0,
+        0.47222141251541877,
+        2189.342523225805,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        -0.47222141251541877,
+        0.0,
+        -0.8814799700287821,
+        944.158542075607,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ]
+    },
+    "StarboardTrackBrakeAdjustingSpring": {
+      "definition": "Def_BrakeFront_spring",
+      "frame": [
+        -0.8814799700287821,
+        0.0,
+        0.47222141251541877,
+        2195.8205091408527,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        -0.47222141251541877,
+        0.0,
+        -0.8814799700287821,
+        944.158542075607,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeFrontMechanism"
+      ]
+    }
+  },
+  "added_children": {
+    "PortLowSpeedBrakeFrontMechanism": [
+      "PortLowSpeedBrakeAdjustingSpringSpacer"
+    ],
+    "PortTrackBrakeFrontMechanism": [
+      "PortTrackBrakeAdjustingSpringSpacer"
+    ],
+    "StarboardLowSpeedBrakeFrontMechanism": [
+      "StarboardLowSpeedBrakeAdjustingSpringSpacer"
+    ],
+    "StarboardTrackBrakeFrontMechanism": [
+      "StarboardTrackBrakeAdjustingSpringSpacer"
+    ]
+  },
+  "new_assemblies": [],
+  "affected_occurrences": [
+    "PortLowSpeedBrakeAdjustingSpring",
+    "PortLowSpeedBrakeAdjustingSpringSpacer",
+    "PortTrackBrakeAdjustingSpring",
+    "PortTrackBrakeAdjustingSpringSpacer",
+    "StarboardLowSpeedBrakeAdjustingSpring",
+    "StarboardLowSpeedBrakeAdjustingSpringSpacer",
+    "StarboardTrackBrakeAdjustingSpring",
+    "StarboardTrackBrakeAdjustingSpringSpacer"
+  ],
+  "expected_physical_occurrences": 3005,
+  "expected_definition_count": 504,
+  "expected_assembly_count": 295,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "inherited_limits": [
+    "M341/M342 versus MX95/MX96 identity mapping",
+    "Shared crossbar transverse arrangement remains a documented hypothesis",
+    "Historical countersunk rivet stock-length datum",
+    "Fixed source-registration residuals and estimated casting profile",
+    "Full installation/removal paths and mechanism controls"
+  ]
+}

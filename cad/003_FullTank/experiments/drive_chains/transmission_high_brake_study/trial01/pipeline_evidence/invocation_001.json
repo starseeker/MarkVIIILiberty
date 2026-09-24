@@ -1,0 +1,28 @@
+{
+  "current_stage": "check",
+  "error": "Stage check failed; see /home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_bands01/records/check/attempt_001/run.log",
+  "metrics": {
+    "executed": 3,
+    "execution_seconds": 51.21728810103377,
+    "failures": 1,
+    "model_invocations": 0,
+    "orchestrating_assistant_usage": "not measured by deterministic runner",
+    "reused": 0,
+    "reused_prior_execution_seconds": 0.0
+  },
+  "plan": "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/plans/high_brake_band_development.json",
+  "plan_sha256": "69601b43d9f3f7957b19b492e3c484c702edba42b312e0a09cf730d7a0459547",
+  "stages": [
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_bands01/records/build/latest.json",
+      "id": "build",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_bands01/records/extract/latest.json",
+      "id": "extract",
+      "status": "passed"
+    }
+  ],
+  "status": "failed"
+}

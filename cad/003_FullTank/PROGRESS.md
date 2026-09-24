@@ -11,6 +11,26 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — preliminary high-speed brake bands
+
+The [high-speed trial](experiments/drive_chains/transmission_high_brake_study/trial01/README.md)
+adds eight lining/backing leaves: **3,013 physical occurrences, 508 definitions and
+302 assemblies**. All 344 preliminary native checks and 106 development pairs
+pass. The countersink opening direction and signed cone angle are checked after
+correcting the initial checker convention; geometry was unchanged.
+
+Original SNL119 supplies the long/short lining stock dimensions. Its continuous
+MX109 plus M364 composition differs from HB's six-M364 arrangement; the trial
+explicitly selects SNL. An estimated thick backing collided with the retained
+case wall. The current thin backing estimate clears it; failed centered and
+outboard-shift trials are preserved. No case or drum was revised.
+
+Two inspected snapshots bring the progression to **201 images**, preserving all
+199 previous images. This is partial geometry: end ears, anchors, lever/adjustment
+pieces, stops and hardware remain. Full face coverage, material preservation,
+STEP, rebuild and variation qualification also remain. The spacer checkpoint is
+the latest locally qualified predecessor; standard tank011 remains unchanged.
+
 ## 24 September 2026 — four brake spring spacers populated
 
 The [spacer checkpoint](experiments/drive_chains/transmission_brake_spacer_study/trial01/README.md)

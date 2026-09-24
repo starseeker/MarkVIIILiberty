@@ -1,0 +1,288 @@
+{
+  "version": 1,
+  "mode": "local_development",
+  "id": "high_brake_band_development",
+  "description": "Preliminary high-speed band and lining geometry. Four stages only; no full qualification or automatic promotion.",
+  "python_paths": [
+    "{root}/cad/003_FullTank/experiments/drive_chains",
+    "{root}/cad/003_FullTank",
+    "{root}/tools/cad_packets"
+  ],
+  "common_inputs": [
+    "{root}/tools/cad_pipeline/runtime_probe.py",
+    "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py"
+  ],
+  "environment_keys": [
+    "MARKVIII_FREECAD_ROOT",
+    "MARKVIII_QT_ROOT",
+    "CC",
+    "CXX",
+    "PATH",
+    "LANG",
+    "LC_ALL"
+  ],
+  "runtime": {
+    "command": [
+      "{python}",
+      "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+      "--workdir",
+      "{run}/runtime/probe",
+      "{root}/tools/cad_pipeline/runtime_probe.py"
+    ],
+    "checks": [
+      {
+        "pointer": "/freecad/0",
+        "equals": "1"
+      },
+      {
+        "pointer": "/freecad/1",
+        "equals": "1"
+      },
+      {
+        "pointer": "/freecad/2",
+        "equals": "1"
+      },
+      {
+        "pointer": "/occ",
+        "equals": "7.8.0"
+      },
+      {
+        "pointer": "/gui_up",
+        "equals": false
+      }
+    ],
+    "files": [
+      "/snap/freecad/current/usr/lib/AssemblyApp.so",
+      "/snap/freecad/current/usr/lib/FreeCAD.so",
+      "/snap/freecad/current/usr/lib/Part.so",
+      "/snap/freecad/current/usr/lib/Sketcher.so",
+      "/snap/freecad/current/usr/lib/_PartDesign.so",
+      "/snap/freecad/current/usr/lib/libTKBO.so",
+      "/snap/freecad/current/usr/lib/libTKBRep.so",
+      "/snap/freecad/current/usr/lib/libTKBin.so",
+      "/snap/freecad/current/usr/lib/libTKBinL.so",
+      "/snap/freecad/current/usr/lib/libTKBinTObj.so",
+      "/snap/freecad/current/usr/lib/libTKBinXCAF.so",
+      "/snap/freecad/current/usr/lib/libTKBool.so",
+      "/snap/freecad/current/usr/lib/libTKCAF.so",
+      "/snap/freecad/current/usr/lib/libTKCDF.so",
+      "/snap/freecad/current/usr/lib/libTKDCAF.so",
+      "/snap/freecad/current/usr/lib/libTKDE.so",
+      "/snap/freecad/current/usr/lib/libTKDECascade.so",
+      "/snap/freecad/current/usr/lib/libTKDEGLTF.so",
+      "/snap/freecad/current/usr/lib/libTKDEIGES.so",
+      "/snap/freecad/current/usr/lib/libTKDEOBJ.so",
+      "/snap/freecad/current/usr/lib/libTKDEPLY.so",
+      "/snap/freecad/current/usr/lib/libTKDESTEP.so",
+      "/snap/freecad/current/usr/lib/libTKDESTL.so",
+      "/snap/freecad/current/usr/lib/libTKDEVRML.so",
+      "/snap/freecad/current/usr/lib/libTKDraw.so",
+      "/snap/freecad/current/usr/lib/libTKExpress.so",
+      "/snap/freecad/current/usr/lib/libTKFeat.so",
+      "/snap/freecad/current/usr/lib/libTKFillet.so",
+      "/snap/freecad/current/usr/lib/libTKG2d.so",
+      "/snap/freecad/current/usr/lib/libTKG3d.so",
+      "/snap/freecad/current/usr/lib/libTKGeomAlgo.so",
+      "/snap/freecad/current/usr/lib/libTKGeomBase.so",
+      "/snap/freecad/current/usr/lib/libTKHLR.so",
+      "/snap/freecad/current/usr/lib/libTKLCAF.so",
+      "/snap/freecad/current/usr/lib/libTKMath.so",
+      "/snap/freecad/current/usr/lib/libTKMesh.so",
+      "/snap/freecad/current/usr/lib/libTKMeshVS.so",
+      "/snap/freecad/current/usr/lib/libTKOffset.so",
+      "/snap/freecad/current/usr/lib/libTKOpenGl.so",
+      "/snap/freecad/current/usr/lib/libTKOpenGlTest.so",
+      "/snap/freecad/current/usr/lib/libTKPrim.so",
+      "/snap/freecad/current/usr/lib/libTKQADraw.so",
+      "/snap/freecad/current/usr/lib/libTKRWMesh.so",
+      "/snap/freecad/current/usr/lib/libTKService.so",
+      "/snap/freecad/current/usr/lib/libTKShHealing.so",
+      "/snap/freecad/current/usr/lib/libTKStd.so",
+      "/snap/freecad/current/usr/lib/libTKStdL.so",
+      "/snap/freecad/current/usr/lib/libTKTObj.so",
+      "/snap/freecad/current/usr/lib/libTKTObjDRAW.so",
+      "/snap/freecad/current/usr/lib/libTKTopAlgo.so",
+      "/snap/freecad/current/usr/lib/libTKTopTest.so",
+      "/snap/freecad/current/usr/lib/libTKV3d.so",
+      "/snap/freecad/current/usr/lib/libTKVCAF.so",
+      "/snap/freecad/current/usr/lib/libTKViewerTest.so",
+      "/snap/freecad/current/usr/lib/libTKXCAF.so",
+      "/snap/freecad/current/usr/lib/libTKXDEDRAW.so",
+      "/snap/freecad/current/usr/lib/libTKXMesh.so",
+      "/snap/freecad/current/usr/lib/libTKXSBase.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAW.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWDE.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWGLTF.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWIGES.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWOBJ.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWPLY.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWSTEP.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWSTL.so",
+      "/snap/freecad/current/usr/lib/libTKXSDRAWVRML.so",
+      "/snap/freecad/current/usr/lib/libTKXml.so",
+      "/snap/freecad/current/usr/lib/libTKXmlL.so",
+      "/snap/freecad/current/usr/lib/libTKXmlTObj.so",
+      "/snap/freecad/current/usr/lib/libTKXmlXCAF.so",
+      "/snap/freecad/current/usr/lib/libTKernel.so",
+      "/snap/kf6-core24/current/usr/lib/x86_64-linux-gnu/libQt6Core.so.6",
+      "/usr/bin/cc"
+    ]
+  },
+  "stages": [
+    {
+      "id": "build",
+      "needs": [],
+      "reentrant": false,
+      "timeout_seconds": 1200,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/build",
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_high_brake_bands.py",
+        "--output",
+        "{run}/candidate"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/build_transmission_high_brake_bands.py"
+      ],
+      "inputs": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/PowertrainWithBrakeSpacers.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/qualification.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/isolated/manifest.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/isolated/breps/2b86be519420bbbd3ce490247fd6aae381295388026d50c8c6982f895e9e768d.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_high_brake_study/source_inventory.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_high_brake_study/band_controls.json",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/proofs/checkpoint08/source-153-156.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p008.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p009.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p118.jpg",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate99.png",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p119.jpg",
+        "{root}/references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p302.jpg",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate100.png",
+        "{root}/references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate133.png"
+      ],
+      "outputs": [
+        "{run}/candidate/PowertrainWithHighBrakeBands.FCStd",
+        "{run}/candidate/report.json",
+        "{run}/candidate/changed_shapes/*.brep",
+        "{run}/candidate/frozen_inputs/*"
+      ]
+    },
+    {
+      "id": "extract",
+      "needs": [
+        "build"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 600,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/extract",
+        "{root}/cad/003_FullTank/experiments/drive_chains/pump_integration_worker.py",
+        "extract",
+        "--input",
+        "{run}/candidate/PowertrainWithHighBrakeBands.FCStd",
+        "--output",
+        "{run}/candidate/isolated/manifest.json"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/pump_integration_worker.py"
+      ],
+      "inputs": [
+        "{run}/candidate/PowertrainWithHighBrakeBands.FCStd"
+      ],
+      "outputs": [
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/isolated/breps/*.brep"
+      ]
+    },
+    {
+      "id": "check",
+      "needs": [
+        "extract"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 1200,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/check",
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_high_brake_bands.py",
+        "--candidate",
+        "{run}/candidate"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/check_transmission_high_brake_bands.py"
+      ],
+      "inputs": [
+        "{run}/candidate/PowertrainWithHighBrakeBands.FCStd",
+        "{run}/candidate/report.json",
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/isolated/breps/*.brep",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/PowertrainWithBrakeSpacers.FCStd",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/report.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/qualification.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/isolated/manifest.json",
+        "{root}/cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/isolated/breps/2b86be519420bbbd3ce490247fd6aae381295388026d50c8c6982f895e9e768d.brep"
+      ],
+      "outputs": [
+        "{run}/candidate/independent_checks.json"
+      ],
+      "receipts": [
+        {
+          "file": "{run}/candidate/independent_checks.json",
+          "checks": [
+            {
+              "pointer": "/passed",
+              "equals": true
+            },
+            {
+              "pointer": "/native_sha256",
+              "sha256_file": "{run}/candidate/PowertrainWithHighBrakeBands.FCStd"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "render",
+      "needs": [
+        "check"
+      ],
+      "reentrant": true,
+      "timeout_seconds": 900,
+      "command": [
+        "{python}",
+        "{root}/skills/freecad-reconstruction/scripts/freecad_headless.py",
+        "--workdir",
+        "{run}/runtime/render",
+        "{root}/cad/003_FullTank/experiments/drive_chains/render_transmission_high_brake_bands.py",
+        "--candidate",
+        "{run}/candidate"
+      ],
+      "python_sources": [
+        "{root}/cad/003_FullTank/experiments/drive_chains/render_transmission_high_brake_bands.py"
+      ],
+      "inputs": [
+        "{run}/candidate/PowertrainWithHighBrakeBands.FCStd",
+        "{run}/candidate/report.json",
+        "{run}/candidate/isolated/manifest.json",
+        "{run}/candidate/isolated/breps/*.brep",
+        "{root}/cad/003_FullTank/lib/raster.c"
+      ],
+      "outputs": [
+        "{run}/candidate/isometric.png",
+        "{run}/candidate/isometric.svg",
+        "{run}/candidate/high_brake_detail.png",
+        "{run}/candidate/high_brake_detail.svg",
+        "{run}/candidate/render_receipt.json"
+      ]
+    }
+  ]
+}

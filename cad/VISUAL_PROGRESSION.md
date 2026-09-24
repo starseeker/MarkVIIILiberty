@@ -1,5 +1,13 @@
 # Mark VIII visual progression
 
+The preliminary high-speed brake bands add an
+[isometric](intermediate_snapshot_iso_transmission_high_brake_bands_trial_001.png) and
+[detail](intermediate_snapshot_detail_transmission_high_brake_bands_trial_001.png).
+Eight source-sized lining/backing pieces now surround the two central drums;
+end fittings and hardware remain absent. Preliminary native checks pass; full
+qualification is pending. All 199 prior images remain: **201 images total**.
+See the [trial](003_FullTank/experiments/drive_chains/transmission_high_brake_study/trial01/README.md).
+
 The brake spring-spacer checkpoint adds an
 [isometric](intermediate_snapshot_iso_transmission_brake_spacers_trial_001.png),
 [detail](intermediate_snapshot_detail_transmission_brake_spacers_trial_001.png) and

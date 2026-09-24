@@ -1,0 +1,800 @@
+{
+  "native_file": "PowertrainWithHighBrakeBands.FCStd",
+  "native_sha256": "7229b22d53e9dabf9e44615ace9a0a52058138e26348cdb32666cc80b66bf103",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/PowertrainWithBrakeSpacers.FCStd",
+  "source_native_sha256": "9abdab05d466d51744002cce3dc442e27c1f02dd6266724821ca1f02f4e9b937",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_transmission_high_brake_bands.py": "f1dcf393a6823a71917f729494ccb6b22c94c6a0061ea731729ed130bdf3bd47",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_band_parts.py": "d181b22b9333edc49f06e2810565a9f5f064af788d70bf912f93d24744492423",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_band_parts.py": "c68c3c8d379580346d63caaec0a07266fa9dc4a51a7a4e22c7b06d8dcbb15136",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py": "97cb213e7707b3cce73b0bca7e5fa8b76345ff841e8fab767c3d16cf350a803e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_study/band_controls.json": "f29a9bcb8688879cb53bd55b773e1c935bc706d8c14d2487c911d164610dbac2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_study/source_inventory.json": "45e6fc5f3e57e7bceea2b3d2ea0fdf586160a7b8356695ab5a098380eb36fdd7",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/report.json": "d1389068ad2862ca80c48731650f2b1ead2e9004f789f982e48f23ae1cd73e07",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/qualification.json": "41faf9ec95d4c3b88ec1888add3583a88f84616ad5b18b95be8fa9d34ee599bd",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/isolated/manifest.json": "1ec699b8c8fe8fb222b8fdbd773b29fe5119e0736626064dd7aaafa909eeac48",
+    "cad/003_FullTank/lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1"
+  },
+  "controls": {
+    "inner_radius": 190.5,
+    "lining_stock": 6.35,
+    "width": 47.625,
+    "short_flat_length": 346.075,
+    "long_flat_length": 695.325,
+    "hole_diameter": 7.14375,
+    "end_margin": 38.1,
+    "hole_pitch": 53.975,
+    "edge_margin": 12.7,
+    "straight_bore_depth": 3.175,
+    "countersink_included_angle_deg": 70,
+    "steel_stock": 2.38125,
+    "steel_hole_radius": 3.325,
+    "steel_terminal_margin": 2.0,
+    "joint_clock_deg": 246.0,
+    "joint_lining_gap": 4.0,
+    "axial_outboard_shift": 0.0
+  },
+  "details": {
+    "long": {
+      "flat_length_mm": 695.325,
+      "sweep_rad": 3.5901639344262297,
+      "neutral_radius_mm": 193.675,
+      "holes": [
+        {
+          "group": 0,
+          "index": 0,
+          "along_mm": 38.1,
+          "axial_mm": -11.1125,
+          "theta_rad": 0.19672131147540983,
+          "frame": [
+            0.1954549356833949,
+            0.0,
+            0.9807126837749168,
+            186.82576625912165,
+            0.0,
+            1.0,
+            0.0,
+            -11.1125,
+            -0.9807126837749168,
+            0.0,
+            0.1954549356833949,
+            37.234165247686704,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 0,
+          "index": 1,
+          "along_mm": 92.075,
+          "axial_mm": 11.1125,
+          "theta_rad": 0.47540983606557374,
+          "frame": [
+            0.45770287299036294,
+            0.0,
+            0.8891052131532958,
+            169.37454310570286,
+            0.0,
+            1.0,
+            0.0,
+            11.1125,
+            -0.8891052131532958,
+            0.0,
+            0.45770287299036294,
+            87.19239730466415,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 0,
+          "index": 2,
+          "along_mm": 146.05,
+          "axial_mm": -11.1125,
+          "theta_rad": 0.7540983606557378,
+          "frame": [
+            0.6846317519158898,
+            0.0,
+            0.7288891302993752,
+            138.85337932203097,
+            0.0,
+            1.0,
+            0.0,
+            -11.1125,
+            -0.7288891302993752,
+            0.0,
+            0.6846317519158898,
+            130.42234873997702,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 0,
+          "index": 3,
+          "along_mm": 200.025,
+          "axial_mm": 11.1125,
+          "theta_rad": 1.0327868852459017,
+          "frame": [
+            0.8587303991722894,
+            0.0,
+            0.512427654930333,
+            97.61746826422845,
+            0.0,
+            1.0,
+            0.0,
+            11.1125,
+            -0.512427654930333,
+            0.0,
+            0.8587303991722894,
+            163.58814104232113,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 0,
+          "index": 4,
+          "along_mm": 254.0,
+          "axial_mm": -11.1125,
+          "theta_rad": 1.3114754098360655,
+          "frame": [
+            0.966564334336914,
+            0.0,
+            0.2564242336204562,
+            48.848816504696934,
+            0.0,
+            1.0,
+            0.0,
+            -11.1125,
+            -0.2564242336204562,
+            0.0,
+            0.966564334336914,
+            184.13050569118212,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 0,
+          "index": 5,
+          "along_mm": 307.975,
+          "axial_mm": 11.1125,
+          "theta_rad": 1.5901639344262295,
+          "frame": [
+            0.9998124537498786,
+            -0.0,
+            -0.0193663968421304,
+            -3.6892985984261655,
+            0.0,
+            1.0,
+            -0.0,
+            11.1125,
+            0.0193663968421304,
+            0.0,
+            0.9998124537498786,
+            190.46427243935187,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 1,
+          "index": 0,
+          "along_mm": 387.3500000000001,
+          "axial_mm": -11.1125,
+          "theta_rad": 2.0000000000000004,
+          "frame": [
+            0.9092974268256815,
+            -0.0,
+            -0.41614683654714285,
+            -79.2759723622307,
+            0.0,
+            1.0,
+            -0.0,
+            -11.1125,
+            0.41614683654714285,
+            0.0,
+            0.9092974268256815,
+            173.22115981029233,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 1,
+          "index": 1,
+          "along_mm": 441.3250000000001,
+          "axial_mm": 11.1125,
+          "theta_rad": 2.2786885245901645,
+          "frame": [
+            0.7597341269969513,
+            -0.0,
+            -0.6502338473781416,
+            -123.86954792553595,
+            0.0,
+            1.0,
+            -0.0,
+            11.1125,
+            0.6502338473781416,
+            0.0,
+            0.7597341269969513,
+            144.7293511929192,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 1,
+          "index": 2,
+          "along_mm": 495.30000000000007,
+          "axial_mm": -11.1125,
+          "theta_rad": 2.557377049180328,
+          "frame": [
+            0.5515452524357163,
+            -0.0,
+            -0.8341449721215263,
+            -158.90461718915077,
+            0.0,
+            1.0,
+            -0.0,
+            -11.1125,
+            0.8341449721215263,
+            0.0,
+            0.5515452524357163,
+            105.06937058900395,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 1,
+          "index": 3,
+          "along_mm": 549.2750000000001,
+          "axial_mm": 11.1125,
+          "theta_rad": 2.836065573770492,
+          "frame": [
+            0.30079588695269,
+            -0.0,
+            -0.9536885416069255,
+            -181.67766717611931,
+            0.0,
+            1.0,
+            -0.0,
+            11.1125,
+            0.9536885416069255,
+            0.0,
+            0.30079588695269,
+            57.30161646448743,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 1,
+          "index": 4,
+          "along_mm": 603.2500000000001,
+          "axial_mm": -11.1125,
+          "theta_rad": 3.114754098360656,
+          "frame": [
+            0.026835333340627376,
+            -0.0,
+            -0.9996398675945741,
+            -190.43139477676635,
+            0.0,
+            1.0,
+            -0.0,
+            -11.1125,
+            0.9996398675945741,
+            0.0,
+            0.026835333340627376,
+            5.112131001389571,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 1,
+          "index": 5,
+          "along_mm": 657.2250000000001,
+          "axial_mm": 11.1125,
+          "theta_rad": 3.39344262295082,
+          "frame": [
+            -0.2491959931699108,
+            0.0,
+            -0.968453074231303,
+            -184.49031064106325,
+            0.0,
+            1.0,
+            0.0,
+            11.1125,
+            0.968453074231303,
+            -0.0,
+            -0.2491959931699108,
+            -47.471836698867975,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "steel_extra_sweep_rad": 0.01032657803020524,
+      "stock_volume_before_holes_mm3": 210279.31734375
+    },
+    "short": {
+      "flat_length_mm": 346.075,
+      "sweep_rad": 1.786885245901639,
+      "neutral_radius_mm": 193.675,
+      "holes": [
+        {
+          "group": 0,
+          "index": 0,
+          "along_mm": 38.1,
+          "axial_mm": -11.1125,
+          "theta_rad": 0.19672131147540983,
+          "frame": [
+            0.1954549356833949,
+            0.0,
+            0.9807126837749168,
+            186.82576625912165,
+            0.0,
+            1.0,
+            0.0,
+            -11.1125,
+            -0.9807126837749168,
+            0.0,
+            0.1954549356833949,
+            37.234165247686704,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 0,
+          "index": 1,
+          "along_mm": 92.075,
+          "axial_mm": 11.1125,
+          "theta_rad": 0.47540983606557374,
+          "frame": [
+            0.45770287299036294,
+            0.0,
+            0.8891052131532958,
+            169.37454310570286,
+            0.0,
+            1.0,
+            0.0,
+            11.1125,
+            -0.8891052131532958,
+            0.0,
+            0.45770287299036294,
+            87.19239730466415,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 0,
+          "index": 2,
+          "along_mm": 146.05,
+          "axial_mm": -11.1125,
+          "theta_rad": 0.7540983606557378,
+          "frame": [
+            0.6846317519158898,
+            0.0,
+            0.7288891302993752,
+            138.85337932203097,
+            0.0,
+            1.0,
+            0.0,
+            -11.1125,
+            -0.7288891302993752,
+            0.0,
+            0.6846317519158898,
+            130.42234873997702,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 0,
+          "index": 3,
+          "along_mm": 200.025,
+          "axial_mm": 11.1125,
+          "theta_rad": 1.0327868852459017,
+          "frame": [
+            0.8587303991722894,
+            0.0,
+            0.512427654930333,
+            97.61746826422845,
+            0.0,
+            1.0,
+            0.0,
+            11.1125,
+            -0.512427654930333,
+            0.0,
+            0.8587303991722894,
+            163.58814104232113,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 0,
+          "index": 4,
+          "along_mm": 254.0,
+          "axial_mm": -11.1125,
+          "theta_rad": 1.3114754098360655,
+          "frame": [
+            0.966564334336914,
+            0.0,
+            0.2564242336204562,
+            48.848816504696934,
+            0.0,
+            1.0,
+            0.0,
+            -11.1125,
+            -0.2564242336204562,
+            0.0,
+            0.966564334336914,
+            184.13050569118212,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        {
+          "group": 0,
+          "index": 5,
+          "along_mm": 307.975,
+          "axial_mm": 11.1125,
+          "theta_rad": 1.5901639344262295,
+          "frame": [
+            0.9998124537498786,
+            -0.0,
+            -0.0193663968421304,
+            -3.6892985984261655,
+            0.0,
+            1.0,
+            -0.0,
+            11.1125,
+            0.0193663968421304,
+            0.0,
+            0.9998124537498786,
+            190.46427243935187,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      ],
+      "steel_extra_sweep_rad": 0.01032657803020524,
+      "stock_volume_before_holes_mm3": 104659.56890624997
+    },
+    "placement_angles_rad": {
+      "long": 0.6930194474496161,
+      "short": 4.303836537936256
+    },
+    "lining_seam_mm": 4.0
+  },
+  "interfaces": {
+    "PortHighSpeedBrake": {
+      "receiver": "PortTransmissionCore_high_drum",
+      "drum_station_mm": 222.25,
+      "center_world_mm": [
+        1831.4946420457636,
+        222.25,
+        900.6029411764705
+      ],
+      "axial_outboard_shift_mm": 0.0,
+      "drum_face_bounds_mm": [
+        199.02714285714285,
+        245.47285714285715
+      ]
+    },
+    "StarboardHighSpeedBrake": {
+      "receiver": "StarboardTransmissionCore_high_drum",
+      "drum_station_mm": 222.25,
+      "center_world_mm": [
+        1831.4946420457636,
+        -222.25000000000006,
+        900.6029411764705
+      ],
+      "axial_outboard_shift_mm": 0.0,
+      "drum_face_bounds_mm": [
+        199.02714285714285,
+        245.47285714285715
+      ]
+    }
+  },
+  "expected_new_occurrences": {
+    "PortHighSpeedBrakeLongBand": {
+      "definition": "Def_HighBrake_long_band",
+      "frame": [
+        0.7693205115995994,
+        0.0,
+        -0.6388630138238797,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.6388630138238797,
+        0.0,
+        0.7693205115995994,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeLongAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeLongLining": {
+      "definition": "Def_HighBrake_long_lining",
+      "frame": [
+        0.7693205115995994,
+        0.0,
+        -0.6388630138238797,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.6388630138238797,
+        0.0,
+        0.7693205115995994,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeLongAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeShortBand": {
+      "definition": "Def_HighBrake_short_band",
+      "frame": [
+        -0.3972813256478209,
+        0.0,
+        0.9176968716801372,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.9176968716801372,
+        0.0,
+        -0.3972813256478209,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeShortAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeShortLining": {
+      "definition": "Def_HighBrake_short_lining",
+      "frame": [
+        -0.3972813256478209,
+        0.0,
+        0.9176968716801372,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.9176968716801372,
+        0.0,
+        -0.3972813256478209,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeShortAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeLongBand": {
+      "definition": "Def_HighBrake_long_band",
+      "frame": [
+        0.7693205115995994,
+        0.0,
+        -0.6388630138238797,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.6388630138238797,
+        0.0,
+        0.7693205115995994,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeLongAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeLongLining": {
+      "definition": "Def_HighBrake_long_lining",
+      "frame": [
+        0.7693205115995994,
+        0.0,
+        -0.6388630138238797,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.6388630138238797,
+        0.0,
+        0.7693205115995994,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeLongAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeShortBand": {
+      "definition": "Def_HighBrake_short_band",
+      "frame": [
+        -0.3972813256478209,
+        0.0,
+        0.9176968716801372,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        -0.9176968716801372,
+        0.0,
+        -0.3972813256478209,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeShortAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeShortLining": {
+      "definition": "Def_HighBrake_short_lining",
+      "frame": [
+        -0.3972813256478209,
+        0.0,
+        0.9176968716801372,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        -0.9176968716801372,
+        0.0,
+        -0.3972813256478209,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeShortAssembly"
+      ]
+    }
+  },
+  "affected_occurrences": [
+    "PortHighSpeedBrakeLongBand",
+    "PortHighSpeedBrakeLongLining",
+    "PortHighSpeedBrakeShortBand",
+    "PortHighSpeedBrakeShortLining",
+    "StarboardHighSpeedBrakeLongBand",
+    "StarboardHighSpeedBrakeLongLining",
+    "StarboardHighSpeedBrakeShortBand",
+    "StarboardHighSpeedBrakeShortLining"
+  ],
+  "new_assemblies": [
+    "TransmissionHighSpeedBrakes",
+    "PortHighSpeedBrake",
+    "PortHighSpeedBrakeLongAssembly",
+    "PortHighSpeedBrakeShortAssembly",
+    "StarboardHighSpeedBrake",
+    "StarboardHighSpeedBrakeLongAssembly",
+    "StarboardHighSpeedBrakeShortAssembly"
+  ],
+  "new_definitions": [
+    "Def_HighBrake_long_lining",
+    "Def_HighBrake_long_band",
+    "Def_HighBrake_short_lining",
+    "Def_HighBrake_short_band"
+  ],
+  "changed_definitions": [],
+  "expected_physical_occurrences": 3013,
+  "expected_definition_count": 508,
+  "expected_assembly_count": 302,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "packet_complete": false,
+  "limits": [
+    "End attachments, lining/steel hardware, anchors, adjuster, lever and stops remain absent.",
+    "SNL continuous long strip differs from HB segmented lining count.",
+    "Centered printed lining width overhangs the image-derived drum face by0.589643 mm per edge.",
+    "Long hole pattern, band stock, clocking and neutral bending datum estimated."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "controls": {
+    "inner_radius": 190.5,
+    "lining_stock": 6.35,
+    "width": 47.625,
+    "short_flat_length": 346.075,
+    "long_flat_length": 695.325,
+    "hole_diameter": 7.14375,
+    "end_margin": 38.1,
+    "hole_pitch": 53.975,
+    "edge_margin": 12.7,
+    "straight_bore_depth": 3.175,
+    "countersink_included_angle_deg": 70,
+    "steel_stock": 2.38125,
+    "steel_hole_radius": 3.325,
+    "steel_terminal_margin": 2.0,
+    "joint_clock_deg": 246.0,
+    "joint_lining_gap": 4.0,
+    "axial_outboard_shift": 0.0
+  },
+  "printed_fields": [
+    "inner_radius",
+    "lining_stock",
+    "width",
+    "short_flat_length",
+    "long_flat_length",
+    "hole_diameter",
+    "end_margin",
+    "hole_pitch",
+    "edge_margin"
+  ],
+  "interpreted_fields": [
+    "straight_bore_depth",
+    "countersink_included_angle_deg"
+  ],
+  "estimated_fields": [
+    "steel_stock",
+    "steel_hole_radius",
+    "steel_terminal_margin",
+    "joint_clock_deg",
+    "joint_lining_gap",
+    "axial_outboard_shift"
+  ],
+  "long_hole_pattern": "Repeat the short pattern at short_flat_length + (long_flat_length - 2*short_flat_length); not directly dimensioned.",
+  "scope": "Initial band and lining solids, with lining holes. Ears, anchors, end reinforcement and hardware pending. Source stock lengths preserved on the middle radius.",
+  "steel_stock_reason": "Initial estimated3/16 inch backing crossed the retained rear case wall. Source figure depicts a thin flexible strap without a printed thickness. Trial uses estimated3/32 inch, preserving source lining stock and centered axial datum; this remains an approximation requiring source/interface review."
+}

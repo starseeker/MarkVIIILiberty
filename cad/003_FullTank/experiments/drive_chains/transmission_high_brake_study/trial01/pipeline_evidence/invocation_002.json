@@ -1,0 +1,37 @@
+{
+  "current_stage": null,
+  "metrics": {
+    "executed": 2,
+    "execution_seconds": 43.49304294702597,
+    "failures": 0,
+    "model_invocations": 0,
+    "orchestrating_assistant_usage": "not measured by deterministic runner",
+    "reused": 2,
+    "reused_prior_execution_seconds": 23.475036518007983
+  },
+  "plan": "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/plans/high_brake_band_development.json",
+  "plan_sha256": "69601b43d9f3f7957b19b492e3c484c702edba42b312e0a09cf730d7a0459547",
+  "stages": [
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_bands01/records/build/latest.json",
+      "id": "build",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_bands01/records/extract/latest.json",
+      "id": "extract",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_bands01/records/check/latest.json",
+      "id": "check",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_bands01/records/render/latest.json",
+      "id": "render",
+      "status": "passed"
+    }
+  ],
+  "status": "mechanical_stages_passed_review_required"
+}

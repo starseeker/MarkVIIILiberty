@@ -813,6 +813,45 @@
       "part_ids": [
         "P_3cd3ca863714e589"
       ]
+    },
+    {
+      "record_id": "SNL:119:017",
+      "source_id": "SNL",
+      "printed_page": "119",
+      "row_no": 17,
+      "record_type": "catalogue_entry",
+      "source_path": "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_105_124.py",
+      "description": "LINING, brake, 1⅞″ wide, ¼″ thick, ft. (Raybestos or equal) (2 pieces 27⅜″ long\n   required for lining MX109; 2 pieces 13⅝″ long required for lining M364)",
+      "raw_json": "{\"brit\": \"\", \"ident\": \"3\", \"item\": \"LINING, brake, 1⅞″ wide, ¼″ thick, ft. (Raybestos or equal) (2 pieces 27⅜″ long\\n   required for lining MX109; 2 pieces 13⅝″ long required for lining M364)\", \"mfr\": \"\", \"note\": \"(mh)&\", \"ord\": \"\", \"page\": \"119\", \"path\": \"references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_105_124.py\", \"plate\": \"30\", \"price\": \".45 P\", \"qty\": \"—\", \"row\": 17, \"source\": \"SNL\"}",
+      "part_ids": [
+        "P_5d9c2ec58294ee90"
+      ]
+    },
+    {
+      "record_id": "HB:legend:155:003",
+      "source_id": "HB",
+      "printed_page": "155",
+      "row_no": 3,
+      "record_type": "legend",
+      "source_path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/tables_batch08.json",
+      "description": "High-speed brake lining.",
+      "raw_json": "{\"callout\": \"3\", \"description\": \"High-speed brake lining.\", \"mark\": \"M–364\", \"page\": \"155\", \"path\": \"references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/tables_batch08.json\", \"quantity\": \"\", \"record_type\": \"legend\", \"row\": 3, \"source\": \"HB\"}",
+      "part_ids": [
+        "P_f1586a9f1bf61129"
+      ]
+    },
+    {
+      "record_id": "HB:nomenclature:207:059",
+      "source_id": "HB",
+      "printed_page": "207",
+      "row_no": 59,
+      "record_type": "nomenclature",
+      "source_path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/tables_batch11.json",
+      "description": "High-speed brake lining.",
+      "raw_json": "{\"description\": \"High-speed brake lining.\", \"mark\": \"M-364\", \"page\": \"207\", \"path\": \"references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/tables_batch11.json\", \"quantity\": \"6\", \"raw\": {\"lines\": [{\"baseline\": 1837.091, \"source_baseline\": 1839.0, \"source_box\": [562, 1817, 866, 1843], \"source_line_index\": 96, \"text\": \"High-speed brake lining.\"}], \"part\": \"M-364\", \"quantity\": \"6\", \"source_line_indices\": [96]}, \"record_type\": \"nomenclature\", \"row\": 59, \"section\": \"EPICYCLIC GEAR—Continued\", \"source\": \"HB\"}",
+      "part_ids": [
+        "P_f1586a9f1bf61129"
+      ]
     }
   ],
   "figures": [
@@ -878,6 +917,26 @@
       "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate99.png",
       "sha256": "eb8aaa67de20a52cfb57c3eb60e2d9839f4c56897d95b269cee544f4f1474e73",
       "scope": "Direct full lining diagram inspection; printed radius, width, flat length and staggered six-hole pattern"
+    },
+    {
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p119.jpg",
+      "sha256": "399302cf717c41c05ea8fbe07046b1c3bbbccdbddbff80b850bacbcaa913d332",
+      "scope": "Original stock entry directly inspected: 1⅞ inch width, ¼ inch thickness, two pieces27⅜ inches for MX109 and two13⅝ inches for M364."
+    },
+    {
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p302.jpg",
+      "sha256": "2d01bc326e50fdf7e905df25d87e94acc48b7044d8ef98a45dc4d040f79a4000",
+      "scope": "Original SNL30 pictorial assembled view; same illustration family as HB100, not independent geometry evidence."
+    },
+    {
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate100.png",
+      "sha256": "ee03081643a5400e3d502d40376240ff41efc0e89637c4cd664e322c54f421d7",
+      "scope": "Complete pictorial section inspected; separate adjustment, anchors and stops."
+    },
+    {
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate133.png",
+      "sha256": "0a13d9442ba242f714d036290feb75f41520bd18951c9885c9209e185133b4a0",
+      "scope": "Complete lettered pictorial section inspected; same illustration as HB100."
     }
   ],
   "parent_inventory": [
@@ -893,7 +952,7 @@
   "scope": "Complete two high-speed brake assemblies: bands/linings/anchors, adjustment mechanism, stops and their hardware; rod interfaces before later full controls.",
   "unresolved": [
     "M355A/M355B are now confirmed as paired members of each lever assembly; their separated profiles, riveted joint and local faces still need geometric reconstruction.",
-    "HB plate100 identifies M364 brake lining; SNL distinguishes MX109 long lining and M364 short lining. Reconcile which source contours and quantities cover each band before construction.",
+    "HB six M364 versus SNL two MX109 plus two M364 are differing lining compositions; selecting SNL for this packet does not resolve the historical change date.",
     "MX78A/MX78B spring washers and listed diameters must be included",
     "Source spring, rivet counts, stop joints and band endpoints need explicit construction constraints"
   ],
@@ -948,8 +1007,26 @@
       "length_inch": 13.625,
       "width_inch": 1.875
     },
-    "section_review_pending": "The section shows 1/8-inch callouts and a 35-degree countersink indication; confirm the precise datum/depth/angle assignments from the original before constructing stock or recesses.",
-    "identity_inference": "Six lining fasteners agree with the SNL short-band composition (five copper rivets plus one brass flat-head screw); long-band lining has twelve copper fasteners. This suggests plate99 describes the short M364 lining, but does not prove the long MX109 contour.",
-    "parent_interface_note": "Existing core report gives high-drum diameter381 mm, matching twice7.5 inches. Its image-derived axial faces differ by46.445714 mm; printed lining width47.625 mm requires checking actual saved drum/contact width and any small overhang before changing either part."
-  }
+    "identity_inference": "SNL119 explicitly distinguishes one continuous MX109 long strip per side and one M364 short strip; HB nomenclature lists six M364 and repeats that label around HB100. Retain as a configuration/source difference, not an alias proof.",
+    "parent_interface_note": "Existing core report gives high-drum diameter381 mm, matching twice7.5 inches. Its image-derived axial faces differ by46.445714 mm; printed lining width47.625 mm requires checking actual saved drum/contact width and any small overhang before changing either part.",
+    "printed_stock_thickness_inch": 0.25,
+    "printed_straight_bore_depth_inch": 0.125,
+    "printed_countersink_depth_inch": 0.125,
+    "countersink_included_angle_deg": 70,
+    "section_interpretation": "HB99 two 1/8 inch axial thickness dimensions sum to SNL119 printed1/4 stock; 35 degrees is between the hole axis and cone side, hence70 included. Original complete section read before construction.",
+    "long_lining_flat_length_inch": 27.375,
+    "long_hole_pattern_hypothesis": "Two repeated six-hole HB99 groups separated by1/8 inch extra material; length27⅜=2×13⅝+⅛. Twelve rivets supported by SNL9; exact long-hole spacing remains inferred."
+  },
+  "source_hashes": {
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/proofs/checkpoint08/source-153-156.jpg": "9a4af9b89cbc48d1af49fefe8eb9c07efda59edb0f51874967ec9886a9870daf",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p008.jpg": "5e9a0abbb3a608a1051a37a1aba22059dc58f615935132e58a752f6683fd1693",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p009.jpg": "53cc196f03fbf8514df6c5e7e03fd0995188f652efa1a2f5773b0f0670f9834d",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p118.jpg": "63f47dc89a838431b7208ab9f0d72da4b3ecbc16718c9aaf7b1975463016bc8c",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate99.png": "eb8aaa67de20a52cfb57c3eb60e2d9839f4c56897d95b269cee544f4f1474e73",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p119.jpg": "399302cf717c41c05ea8fbe07046b1c3bbbccdbddbff80b850bacbcaa913d332",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p302.jpg": "2d01bc326e50fdf7e905df25d87e94acc48b7044d8ef98a45dc4d040f79a4000",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate100.png": "ee03081643a5400e3d502d40376240ff41efc0e89637c4cd664e322c54f421d7",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate133.png": "0a13d9442ba242f714d036290feb75f41520bd18951c9885c9209e185133b4a0"
+  },
+  "selected_lining_variant": "SNL119 continuous long MX109 plus short M364, two of each. HB six-segment alternative retained, not combined in installed BOM."
 }
