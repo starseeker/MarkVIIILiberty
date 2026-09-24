@@ -1,0 +1,23 @@
+{
+  "date": "2026-09-24",
+  "reviewer": "Codex",
+  "disposition": "rejected_local_lever_edge_interference",
+  "native_sha256": "691f75861616daac3ce380d3a3f92fcf376ee6a5d14a95fdece51fa81a223fe9",
+  "context_checks_sha256": "a3d552b05720c78f2f0450bbf65a4b8378a0448239d29a25647a64242784c1cb",
+  "render_receipt_sha256": "7fa099e6ac50b835cbc4084de7eed1e2c670bf2e9f587d1874406bf6313bd3e8",
+  "observations": [
+    "Widening the U and moving its base rearward clears the outer fulcrum feet and rivets. A48.259244mm3 overlap remains at the starboard low-speed lever.",
+    "The fixed side overlay places the raised attachment below the depicted M564 spring line. This remains a source/geometry disagreement; the side view cannot constrain transverse span or validate the chosen hook-hole topology. The widened span remains a mechanical reconstruction estimate.",
+    "Move the support6mm forward within the free interval between the low-speed lever edge and track-fulcrum foot; keep earlier failed geometry and the camera."
+  ],
+  "failed_pairs": [
+    {
+      "first": "StarboardLowSpringBracket",
+      "second": "StarboardLowHorizontalLever",
+      "origin": "development",
+      "common_mm3": 48.259244273226614,
+      "passed": false
+    }
+  ],
+  "geometry_integrated": false
+}

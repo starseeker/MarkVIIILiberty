@@ -1231,3 +1231,19 @@ tank011 remains unchanged. Three images bring progression to **232**, with all
 | [intermediate_snapshot_iso_rear_high_spring_guides_001.png](intermediate_snapshot_iso_rear_high_spring_guides_001.png) | `bcc2da1cf90b6840833ed32aca20b9b3a76686a425e97d352b718e3915ae30c2` |
 | [intermediate_snapshot_detail_rear_high_spring_route_001.png](intermediate_snapshot_detail_rear_high_spring_route_001.png) | `f5f0dbc93bf454cf3be45689c17024e925149157a2df38b068d9f2d980ca8e12` |
 | [intermediate_snapshot_source_rear_high_spring_route_001.png](intermediate_snapshot_source_rear_high_spring_route_001.png) | `e12d6dd00f998bd6648b578942f9910c950573680dc411a0b5ea0cb25c153470` |
+
+
+## Shared low-speed/foot-brake spring supports — 24 September 2026
+
+The [M4136 prototype](003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring04/README.md)
+contains two U-shaped supports and four source-listed rivets, pending family
+integration. The detail and source images show provisional short-rod cores and
+outlined spring corridors; forks, washers and hooks remain unfinished. The source
+registration is unchanged and its remaining discrepancies are retained. Three
+images bring progression to **235**, preserving all 232 earlier views.
+
+| View | SHA-256 |
+|---|---|
+| [intermediate_snapshot_iso_rear_low_spring_supports_001.png](intermediate_snapshot_iso_rear_low_spring_supports_001.png) | `80f7d784fee0ef7030381bfc1f7a6b4ef65634576a7544f7dd7ac28471b6bb58` |
+| [intermediate_snapshot_detail_rear_low_spring_routes_001.png](intermediate_snapshot_detail_rear_low_spring_routes_001.png) | `7df8de0e24133fb4f1a2da6e849d2ea188e685ef18f082e8b2a54580ee4f2ce2` |
+| [intermediate_snapshot_source_rear_low_spring_routes_001.png](intermediate_snapshot_source_rear_low_spring_routes_001.png) | `afad6828536596506b9ba0da3be2c02f4078800ac98781f22a47059855785344` |

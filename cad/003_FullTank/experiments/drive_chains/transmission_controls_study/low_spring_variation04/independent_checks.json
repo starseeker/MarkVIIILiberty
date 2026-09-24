@@ -1,0 +1,310 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Seven saved links remain local after relocation",
+      "passed": true
+    },
+    {
+      "name": "Starboard owns one guide and two rivets",
+      "passed": true
+    },
+    {
+      "name": "Port owns one guide and two rivets",
+      "passed": true
+    },
+    {
+      "name": "Bracket and rivet source records persist",
+      "passed": true
+    },
+    {
+      "name": "Two guides and four rivets share three definitions",
+      "passed": true
+    },
+    {
+      "name": "channel is one valid closed solid with bounded tolerance",
+      "passed": true,
+      "tolerance_mm": 1.00000185e-07
+    },
+    {
+      "name": "bracket is one valid closed solid with bounded tolerance",
+      "passed": true,
+      "tolerance_mm": 2.66560075e-07
+    },
+    {
+      "name": "rivet is one valid closed solid with bounded tolerance",
+      "passed": true,
+      "tolerance_mm": 1.00000018e-07
+    },
+    {
+      "name": "Channel loses exactly four receiving passages and gains no material",
+      "passed": true,
+      "removed_mm3": 3371.400156199866
+    },
+    {
+      "name": "Four complete channel bores retain their specified diameter",
+      "passed": true,
+      "expected_mm3": 3371.4001561998866
+    },
+    {
+      "name": "Starboard anchor-1 is an actual full-stock cylindrical passage",
+      "passed": true
+    },
+    {
+      "name": "Starboard anchor-1 admits a provisional spring wire",
+      "passed": true,
+      "scope": "Straight3.175mm wire passage only; complete spring hook and route pending."
+    },
+    {
+      "name": "Starboard anchor1 is an actual full-stock cylindrical passage",
+      "passed": true
+    },
+    {
+      "name": "Starboard anchor1 admits a provisional spring wire",
+      "passed": true,
+      "scope": "Straight3.175mm wire passage only; complete spring hook and route pending."
+    },
+    {
+      "name": "Starboard U remains open above its transverse base",
+      "passed": true
+    },
+    {
+      "name": "Starboard transverse base bears on the channel roof",
+      "passed": true,
+      "bearing_area_mm2": 11831.285420771661
+    },
+    {
+      "name": "Starboard rivet1 retains both complete bearing annuli",
+      "passed": true,
+      "factory_bearing_mm2": 255.21562406985285,
+      "tail_bearing_mm2": 658.9981464756715
+    },
+    {
+      "name": "Starboard rivet1 shank clears both holes",
+      "passed": true
+    },
+    {
+      "name": "Starboard rivet1 mounting annulus is fully supported",
+      "passed": true,
+      "unsupported_mm2": 0.0
+    },
+    {
+      "name": "Starboard rivet2 retains both complete bearing annuli",
+      "passed": true,
+      "factory_bearing_mm2": 255.21562406985285,
+      "tail_bearing_mm2": 658.9981464756715
+    },
+    {
+      "name": "Starboard rivet2 shank clears both holes",
+      "passed": true
+    },
+    {
+      "name": "Starboard rivet2 mounting annulus is fully supported",
+      "passed": true,
+      "unsupported_mm2": 0.0
+    },
+    {
+      "name": "Port anchor-1 is an actual full-stock cylindrical passage",
+      "passed": true
+    },
+    {
+      "name": "Port anchor-1 admits a provisional spring wire",
+      "passed": true,
+      "scope": "Straight3.175mm wire passage only; complete spring hook and route pending."
+    },
+    {
+      "name": "Port anchor1 is an actual full-stock cylindrical passage",
+      "passed": true
+    },
+    {
+      "name": "Port anchor1 admits a provisional spring wire",
+      "passed": true,
+      "scope": "Straight3.175mm wire passage only; complete spring hook and route pending."
+    },
+    {
+      "name": "Port U remains open above its transverse base",
+      "passed": true
+    },
+    {
+      "name": "Port transverse base bears on the channel roof",
+      "passed": true,
+      "bearing_area_mm2": 11831.285420771661
+    },
+    {
+      "name": "Port rivet1 retains both complete bearing annuli",
+      "passed": true,
+      "factory_bearing_mm2": 255.21562406985285,
+      "tail_bearing_mm2": 658.9981464756715
+    },
+    {
+      "name": "Port rivet1 shank clears both holes",
+      "passed": true
+    },
+    {
+      "name": "Port rivet1 mounting annulus is fully supported",
+      "passed": true,
+      "unsupported_mm2": 0.0
+    },
+    {
+      "name": "Port rivet2 retains both complete bearing annuli",
+      "passed": true,
+      "factory_bearing_mm2": 255.21562406985285,
+      "tail_bearing_mm2": 658.9981464756715
+    },
+    {
+      "name": "Port rivet2 shank clears both holes",
+      "passed": true
+    },
+    {
+      "name": "Port rivet2 mounting annulus is fully supported",
+      "passed": true,
+      "unsupported_mm2": 0.0
+    },
+    {
+      "name": "Rivet retains source one-and-seven-eighth-inch stock and factory head",
+      "passed": true,
+      "actual_mm3": 8125.292474279502,
+      "expected_mm3": 8125.292474279493
+    },
+    {
+      "name": "All local material pairs clear",
+      "passed": true
+    }
+  ],
+  "material_pairs": [
+    {
+      "first": "RearControlChannelStock",
+      "second": "StarboardLowSpringBracket",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "RearControlChannelStock",
+      "second": "StarboardLowSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "RearControlChannelStock",
+      "second": "StarboardLowSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "RearControlChannelStock",
+      "second": "PortLowSpringBracket",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "RearControlChannelStock",
+      "second": "PortLowSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "RearControlChannelStock",
+      "second": "PortLowSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardLowSpringBracket",
+      "second": "StarboardLowSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardLowSpringBracket",
+      "second": "StarboardLowSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardLowSpringBracket",
+      "second": "PortLowSpringBracket",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardLowSpringBracket",
+      "second": "PortLowSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardLowSpringBracket",
+      "second": "PortLowSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardLowSpringRivet1",
+      "second": "StarboardLowSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardLowSpringRivet1",
+      "second": "PortLowSpringBracket",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardLowSpringRivet1",
+      "second": "PortLowSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardLowSpringRivet1",
+      "second": "PortLowSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardLowSpringRivet2",
+      "second": "PortLowSpringBracket",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardLowSpringRivet2",
+      "second": "PortLowSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "StarboardLowSpringRivet2",
+      "second": "PortLowSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortLowSpringBracket",
+      "second": "PortLowSpringRivet1",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortLowSpringBracket",
+      "second": "PortLowSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "PortLowSpringRivet1",
+      "second": "PortLowSpringRivet2",
+      "common_mm3": 0,
+      "passed": true
+    }
+  ],
+  "native_sha256": "f799c4e1a040e2a902905ec02ff9864cfe465daa684c59242dea0e8d2bb7ac3c",
+  "receiver_native_sha256": "83a0440f18fcf101111e6e50b32c177520f8a22c67802a2c2c51fad9783ea89a",
+  "parent_native_sha256": "d4f9a5bd2294b0e41755b3fce3e47197bf4d04f165e1c4ec918246ba2edec2c2",
+  "manifest_sha256": "4ee23faf281923505465c4f86051fbeb36c605287dfde9e7d2b24d0cfb62ae83",
+  "checker_sha256": "23c87cf17c0af4c11781940e37564de6bab43429578c0e82652f9713d688db28",
+  "scope": "Saved U-shaped spring-anchor pair, source rivets and receiving channel; complete spring hooks, rods and routes not qualified.",
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-24",
+  "reviewer": "Codex",
+  "disposition": "rejected_coupled_spring_corridors",
+  "native_sha256": "bb17fb8bc02aaa5aad8e242c514b5286b519d3deebbb4aeed2b925cc974dbc18",
+  "route_checks_sha256": "64b3b22568e87823dd8d48e70cb818db00b6a670a8e4f95bf2adc982aaa33aa2",
+  "failed_pairs": [
+    {
+      "first": "StarboardLowSpringCore",
+      "second": "StarboardLowHorizontalLever",
+      "origin": "development",
+      "common_mm3": 164.04498678523362,
+      "passed": false
+    },
+    {
+      "first": "PortLowSpringCore",
+      "second": "PortLowHorizontalLever",
+      "origin": "development",
+      "common_mm3": 655.8990875119852,
+      "passed": false
+    }
+  ],
+  "observations": [
+    "All bracket native/context/STEP checks pass, but the provisional low-speed spring cores cross the horizontal levers on both sides.",
+    "The prior fixed-source overlay independently places the chosen upper attachment below the M564 drawing line. Increase the U end height before changing the camera or existing lever geometry. Exact height and spring diameter/target remain estimates."
+  ],
+  "geometry_integrated": false,
+  "unused_variant": "variation03 is generated and extracted only; no independent qualification is claimed."
+}

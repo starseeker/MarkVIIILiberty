@@ -780,6 +780,49 @@
           "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
         }
       ]
+    },
+    {
+      "id": "rear_low_foot_spring_supports_and_corridors",
+      "status": "reviewed_approximation",
+      "scope": "Two unintegrated M4136 supports, four source-listed rivets and provisional short-rod/M564 spring corridors.",
+      "reason": "Original SNL170 confirms the mounting rivets. Photograph/plan support a U-like member; retained collisions and the fixed-source spring-height discrepancy motivated wider openings, revised root stations and raised ends. Both stock variants pass bounded static/native/STEP checks.",
+      "uncertainty": "Exact section, attachment topology, M4129 grip stack, spring holes and spring/washer/fork geometry remain estimates. A clear corridor does not establish a complete rod or spring.",
+      "limits": [
+        "U section, span, height, root stations, hook-hole topology and rivet stock/head interpretation are estimates. M4129 relationship and alternative grip stacks remain open.",
+        "Rod cores and M564 corridors exclude38.1mm fork regions and25.4mm spring-hook regions. Their envelope diameters and25mm washer-target offsets are provisional; full physical rods, forks, hooks, washers and springs are unqualified.",
+        "Fixed SNL6 projection places the raised attachments nearer the M564 spring band, but current corridors slope toward lower measured brake pins while the illustration appears more nearly level. Historical disagreement remains.",
+        "No photographic camera calibration, strength, motion, service or complete standard assembly claim. Both spring-support prototypes remain unintegrated; full development stays3226/558/347."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring04/visual_review.json",
+        "sha256": "3219011822ae8b5e41ad6b2e9307c0143fda89573ba3444c98ec26185ef90532"
+      },
+      "reopen_when": [
+        "M4129 evidence changes the receiving stack or attachment ownership.",
+        "Actual fork, washer, spring-hook or rod reconstruction changes the tested corridor or anchor requirements.",
+        "Channel, fulcrum, brake-lever or nearby geometry changes.",
+        "New independently supported landmarks contradict the source projection; diagnose before any refit."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring_study_receipt01.json",
+          "sha256": "41f296bcda85335cc346e5cc96012c049f001d972dcf502c2ff223630f7f5c0b"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring04/visual_review.json",
+          "sha256": "3219011822ae8b5e41ad6b2e9307c0143fda89573ba3444c98ec26185ef90532"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring_source_review04.json",
+          "sha256": "5c8b99f13f245bf1bdc010b5cfa4a33167e6c496ced787ef8a911fe7165f6987"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json",
+          "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
+        }
+      ]
     }
   ]
 }

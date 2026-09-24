@@ -1,0 +1,43 @@
+{
+  "controls": {
+    "receiver": "high_spring04",
+    "channel_stock": 6.35,
+    "bracket": {
+      "width_x": 38.1,
+      "outer_span_y": 317.5,
+      "stock": 6.35,
+      "height": 114.3,
+      "inside_bend_radius": 6.35,
+      "anchor_hole_diameter": 6.65,
+      "anchor_height": 101.6,
+      "rivet_y": [
+        -63.5,
+        63.5
+      ]
+    },
+    "rivet": {
+      "diameter": 12.7,
+      "stock_length": 47.625,
+      "hole_diameter": 13.0,
+      "factory_ratio": 1.75,
+      "factory_height_ratio": 0.7,
+      "upset_ratio": 2.5
+    },
+    "stations": {
+      "Starboard": [
+        2368.0,
+        -650.875,
+        583.85
+      ],
+      "Port": [
+        2368.0,
+        650.875,
+        583.85
+      ]
+    }
+  },
+  "source_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
+  "source_packet_sha256": "8a4816e18595d639ef7ff3c771475d27ddcde8faf01d88dcdde87aa7cc963156",
+  "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring_source_review04.json",
+  "revision_reason": "Raise U ends38.1mm to address both actual low-spring corridor/lever interference and the fixed-source attachment-height discrepancy. Keep existing controls, camera and clearance predicates unchanged."
+}

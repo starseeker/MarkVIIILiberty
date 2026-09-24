@@ -11,6 +11,33 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — shared low-speed/foot-brake spring supports
+
+[The M4136 study](experiments/drive_chains/transmission_controls_study/low_spring04/README.md)
+adds two U-shaped supports and four source-listed rivets to a revised receiving
+channel in a separate native: **7 occurrences / 3 definitions, not integrated**.
+Full development stays **3,226 occurrences / 558 definitions / 347 groups**.
+The original SNL170 scan confirms two half-inch by 1⅞-inch rivets per bracket.
+The mounting stack, section, station and hook geometry remain approximations.
+
+Four layouts preserve the reasoning: the first crossed the track-fulcrum feet;
+a wider, rearward U left a smaller low-lever clash; a further station change
+cleared the bracket but its proposed springs still crossed the low levers.
+Raising the ends cleared those corridors and moved the upper attachment nearer
+the spring level in the unchanged source view. The remaining spring inclination
+and endpoint-height mismatch is documented; no camera refit was performed.
+
+Nominal and thicker stock each pass 36 native/interface checks, 21 local pairs,
+eight surrounding pairs, ten strict STEP comparisons and 27 corridor comparisons.
+Fresh nominal generation reproduces nine archive BReps and 662 persistent
+properties, with no property differences. The rod and spring cores remain
+clearance witnesses: fork regions, hooks and physical washers are unfinished.
+
+Three saved images bring progression to **235**, preserving all 232 earlier views.
+Next: M4129 mounting topology, actual short-connection forks, M567 washers and
+M564 spring ends, followed by the remaining rods and family integration.
+Standard tank011 remains unchanged; the complete standard-tank goal stays active.
+
 ## 24 September 2026 — rear high-speed guides and corrected short connections
 
 [The M4135 study](experiments/drive_chains/transmission_controls_study/high_spring04/README.md)

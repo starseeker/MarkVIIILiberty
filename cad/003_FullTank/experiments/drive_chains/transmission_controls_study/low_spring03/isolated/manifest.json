@@ -1,0 +1,455 @@
+{
+  "native_sha256": "bb17fb8bc02aaa5aad8e242c514b5286b519d3deebbb4aeed2b925cc974dbc18",
+  "extractor_sha256": "4bbc349b40b5fc628a0cd5c1b497faee4716cf0a0092b2ec30085953f0d2862e",
+  "definitions": {
+    "Def_LowSpringAnchor_channel": {
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "properties": {
+        "SourceRecords": "[\"SNL:63:010\"]",
+        "SourcePartMark": "M4128"
+      },
+      "brep_sha256": "b5273e88b30f00c580d9c53376b7c476cd1f8af776a2eb3f2d21b8296bff8812",
+      "brep_path": "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring03/isolated/breps/b5273e88b30f00c580d9c53376b7c476cd1f8af776a2eb3f2d21b8296bff8812.brep",
+      "archive_entry": "Def_LowSpringAnchor_channel.Shape.brp"
+    },
+    "Def_LowSpringAnchor_bracket": {
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "properties": {
+        "SourceRecords": "[\"SNL:38:001\", \"SNL:63:008\"]",
+        "SourcePartMark": "M4136"
+      },
+      "brep_sha256": "8cbf4556c4cde23c283f8b71e83c877340e3cbb457cf019e49808e5993e8a1da",
+      "brep_path": "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring03/isolated/breps/8cbf4556c4cde23c283f8b71e83c877340e3cbb457cf019e49808e5993e8a1da.brep",
+      "archive_entry": "Def_LowSpringAnchor_bracket.Shape.brp"
+    },
+    "Def_LowSpringAnchor_rivet": {
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "properties": {
+        "SourceRecords": "[\"SNL:170:005\"]",
+        "SourcePartMark": "1/2 x 1-7/8 inch button-head rivet"
+      },
+      "brep_sha256": "0c4014ff6a7d9d0f5e5276c63a5c37f9858daf84de23a61e6db3538f66f8becd",
+      "brep_path": "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring03/isolated/breps/0c4014ff6a7d9d0f5e5276c63a5c37f9858daf84de23a61e6db3538f66f8becd.brep",
+      "archive_entry": "Def_LowSpringAnchor_rivet.Shape.brp"
+    }
+  },
+  "occurrences": [
+    {
+      "name": "RearControlChannelStock",
+      "object": "RearControlChannelStock",
+      "definition": "Def_LowSpringAnchor_channel",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root"
+      ]
+    },
+    {
+      "name": "StarboardLowSpringBracket",
+      "object": "StarboardLowSpringBracket",
+      "definition": "Def_LowSpringAnchor_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        1.0,
+        0.0,
+        -650.875,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "StarboardLowSpringSupport"
+      ]
+    },
+    {
+      "name": "StarboardLowSpringRivet1",
+      "object": "StarboardLowSpringRivet1",
+      "definition": "Def_LowSpringAnchor_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -714.375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        590.2,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "StarboardLowSpringSupport"
+      ]
+    },
+    {
+      "name": "StarboardLowSpringRivet2",
+      "object": "StarboardLowSpringRivet2",
+      "definition": "Def_LowSpringAnchor_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -587.375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        590.2,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "StarboardLowSpringSupport"
+      ]
+    },
+    {
+      "name": "PortLowSpringBracket",
+      "object": "PortLowSpringBracket",
+      "definition": "Def_LowSpringAnchor_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        1.0,
+        0.0,
+        650.875,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "PortLowSpringSupport"
+      ]
+    },
+    {
+      "name": "PortLowSpringRivet1",
+      "object": "PortLowSpringRivet1",
+      "definition": "Def_LowSpringAnchor_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        587.375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        590.2,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "PortLowSpringSupport"
+      ]
+    },
+    {
+      "name": "PortLowSpringRivet2",
+      "object": "PortLowSpringRivet2",
+      "definition": "Def_LowSpringAnchor_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        714.375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        590.2,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "PortLowSpringSupport"
+      ]
+    }
+  ],
+  "assemblies": {
+    "Root": {
+      "local": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "children": [
+        "RearControlChannelStock",
+        "StarboardLowSpringSupport",
+        "PortLowSpringSupport"
+      ],
+      "proposed_engine_pose": null
+    },
+    "Definitions": {
+      "local": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "world": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "children": [
+        "Def_LowSpringAnchor_bracket",
+        "Def_LowSpringAnchor_rivet",
+        "Def_LowSpringAnchor_channel"
+      ],
+      "proposed_engine_pose": null
+    },
+    "StarboardLowSpringSupport": {
+      "local": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        1.0,
+        0.0,
+        -650.875,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "world": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        1.0,
+        0.0,
+        -650.875,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "children": [
+        "StarboardLowSpringBracket",
+        "StarboardLowSpringRivet1",
+        "StarboardLowSpringRivet2"
+      ],
+      "proposed_engine_pose": null
+    },
+    "PortLowSpringSupport": {
+      "local": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        1.0,
+        0.0,
+        650.875,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "world": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        1.0,
+        0.0,
+        650.875,
+        0.0,
+        0.0,
+        1.0,
+        583.85,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "children": [
+        "PortLowSpringBracket",
+        "PortLowSpringRivet1",
+        "PortLowSpringRivet2"
+      ],
+      "proposed_engine_pose": null
+    }
+  }
+}

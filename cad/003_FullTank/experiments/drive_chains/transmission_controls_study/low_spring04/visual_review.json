@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-24",
+  "reviewer": "Codex",
+  "disposition": "reviewed_local_static_approximation_pending_connected_interfaces",
+  "native_sha256": "981c9cbd7afc4d3f5157075abc1dd03e60e9fe7685f7654ea36f59ccda6285b9",
+  "source_review_sha256": "5c8b99f13f245bf1bdc010b5cfa4a33167e6c496ced787ef8a911fe7165f6987",
+  "reviewed_images": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring04/low_spring_isometric.png": "80f7d784fee0ef7030381bfc1f7a6b4ef65634576a7544f7dd7ac28471b6bb58",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring04/low_spring_detail.png": "86f4656d9d7b3143459be31a8fdd30fb0b42fc395d7af7d60c9ddb7f01fe8f87",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring_routes04/route_detail.png": "7df8de0e24133fb4f1a2da6e849d2ea188e685ef18f082e8b2a54580ee4f2ce2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring_routes04/route_source_detail.png": "afad6828536596506b9ba0da3be2c02f4078800ac98781f22a47059855785344"
+  },
+  "render_receipts": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring04/render_receipt.json": "69694da7bdf23aabbda53f34c6791be0ed7491bc0315d85a7d41c7f515c9bd6a",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring_routes04/render_receipt.json": "289778631b91fdd44ec7d91cfba70673eed93d6917a88ef6562903078657065c"
+  },
+  "observations": [
+    "The saved isometric exposes both U-shaped brackets, with a wider opening around the existing short-connection lanes and fulcrum feet.",
+    "The detailed anchor view exposes both hook passages, internal bends and the two factory/upset rivet heads. The receiving channel is omitted in this detail; its stock occupies the apparent gap between the base and upset heads.",
+    "Gold rod cores stop short of their future forks. Outlined spring corridors rise from the existing brake-pin region toward the raised anchors; they do not represent finished springs or hooks.",
+    "Raising the ends clears the two failed low-spring/lever contacts and moves the upper attachment toward the fixed-source M564 spring level. The remaining spring inclination/end-height discrepancy is retained."
+  ],
+  "source_registration_sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe",
+  "source_camera_refitted": false,
+  "camera_reuse_reason": "The source image and original registration anchors are unchanged. New spring/rod witnesses and bracket dimensions are estimated geometry, not independent fitting or validation landmarks.",
+  "reverify_camera_when": [
+    "Supported brake/lever anchor identities or measured geometry change.",
+    "Independent depth landmarks or coherent disagreement across well-supported parts warrant a projection review."
+  ],
+  "local_static_checks_passed": true,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "complete_rods_or_springs_qualified": false,
+  "limits": [
+    "U section, span, height, root stations, hook-hole topology and rivet stock/head interpretation are estimates. M4129 relationship and alternative grip stacks remain open.",
+    "Rod cores and M564 corridors exclude38.1mm fork regions and25.4mm spring-hook regions. Their envelope diameters and25mm washer-target offsets are provisional; full physical rods, forks, hooks, washers and springs are unqualified.",
+    "Fixed SNL6 projection places the raised attachments nearer the M564 spring band, but current corridors slope toward lower measured brake pins while the illustration appears more nearly level. Historical disagreement remains.",
+    "No photographic camera calibration, strength, motion, service or complete standard assembly claim. Both spring-support prototypes remain unintegrated; full development stays3226/558/347."
+  ]
+}

@@ -20,6 +20,14 @@ transfers into the full development hierarchy. Its source overlay reuses the
 unchanged local SNL6 registration and preserves the existing control-bore
 discrepancy. Four new images bring visual progression to 229.
 
+The [M4136 shared spring-support study](low_spring04/README.md) now adds a second
+locally checked seven-occurrence prototype. Nominal and thicker stock pass
+native/interface/context/STEP checks and provisional rod/spring corridor checks.
+The raised ends address retained lever interference and a source-height mismatch;
+remaining spring inclination and endpoint differences stay explicit. Both support
+studies await connected-family integration. Three more views bring progression
+to 235, preserving the earlier images and fixed camera.
+
 The [M4135 guide study](high_spring04/README.md) now has two locally checked
 brackets, four rivets and local rod/spring clearance witnesses. This seven-part
 prototype is not integrated; the full counts above remain unchanged. Nominal and
