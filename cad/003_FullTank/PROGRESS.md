@@ -40,6 +40,14 @@ rivets and return/upright joints, holding feet, packing and hull attachment;
 then remaining engine/tank interiors and final integration. Standard tank011
 remains unchanged and poses remain deferred.
 
+The older coupled-pump render job has now completed successfully. Its renderer
+was generating three views inside a 242-part loading loop. Moving rendering after
+collection reduces 726 view renders to three; all three final PNGs are byte-identical
+to the old terminal outputs. The [diagnostic record](experiments/drive_chains/engine_pump_receiver_study/assembly_trial02/diagnostics/render_loop/README.md)
+retains both receipts and the old implementation. The FreeCAD runtime guidance
+records the lesson. This fixes rendering overhead without promoting the old
+pump registration or adding a progression milestone.
+
 ## 24 September 2026 — frame overlaps and first rivet group reconstructed
 
 The [frame-joint trial](experiments/drive_chains/transmission_frame_joint_study/trial03/README.md)

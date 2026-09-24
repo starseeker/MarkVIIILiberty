@@ -51,6 +51,15 @@ native shape tessellation in software and verifies placements. It can produce
 isometric and section views without GUI rendering. Keep review cuts and display
 transparency separate from the saved physical model.
 
+Collect the complete selected geometry before rendering views or publishing a
+final receipt. A pump-review renderer accidentally nested its three-view pass
+inside a 242-occurrence loading loop, issuing 726 renders and repeatedly replacing
+incomplete intermediate images. Moving that pass after collection produced three
+byte-identical final PNGs on this runtime. A separate output directory preserved
+the terminal baseline during verification. The [retained implementation and
+comparison](../../../cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/assembly_trial02/diagnostics/render_loop/README.md)
+document this control-flow failure; image existence alone did not prove completion.
+
 Sandbox errors have a different cause from CAD errors. A Codex PATH-alias warning
 means an optional runtime write failed; verify the actual process exit and tool
 operation. A successful `--version` is not proof that a model run can initialize.
