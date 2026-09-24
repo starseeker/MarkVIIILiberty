@@ -5,8 +5,8 @@
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
   "accepted_development_parent": "front-brake checkpoint 169c3da",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_bottom01",
-  "latest_native_sha256": "f18d44e167afbdd1f800b965d97016f70c82efcbb43f1919cdd5f6f08088df0d",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01",
+  "latest_native_sha256": "b174c7b0a36ec23731b57743aa64efa715ff25a11873d2cd1b10538bda1dc175",
   "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/qualification.json",
   "current_pipeline_run": "high_brake_mechanism02",
   "pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/pipeline_evidence",
@@ -19,7 +19,7 @@
     "python3 tools/cad_pipeline/decisions.py cad/003_FullTank/decision_ledger.json"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Populate M399 top stops, M398 back stops and M365 clips; resolve their shared upper mounting stack and add upper MX60/locking plates plus remaining two M400/nut pairs. Preserve tested anchor, shelf, case and frame interfaces. Finish receiver variation STEP/full support-packet qualification, then controls, remaining interiors and full standard integration; poses deferred.",
+  "next_action": "Qualify the complete high-speed support/stop packet with the existing pipeline, retaining all scoped evidence and the fixed source registration. Then continue operating controls, remaining interiors and full standard integration; poses deferred.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -30,10 +30,10 @@
     "High-speed backing stock/clocking and long-hole pattern estimated",
     "High-speed lining variant: HB six M364 versus SNL two MX109 plus two M364",
     "Forward fittings, rear anchor extension and case bridge relief are estimated; lining support has documented recess/overhang exceptions; complete high-speed mechanism remains open.",
-    "Operating lever/saddle, M356 stock and spring sections remain inferred. M363/M366 lower joints are now populated; M399/M398/M365 upper stops/clips, control rods and full service paths remain pending.",
-    "Receiving webs, M362 shelf, transverse MX76 pitch and cast stock are estimates. HB locking plates and SNL lock washers remain alternatives; four lower MX60 installed, four upper reserved, two catalogue locations unallocated. Four of six M400/nut pairs installed. Minimum pin withdrawal passes; larger assumed withdrawal/drift envelopes collide. Complete support packet remains open."
+    "Operating lever/saddle, pin stock and spring sections remain inferred. Support, anchor-retention and all named stop/clip parts are populated; operating controls and full service paths remain open.",
+    "Receiving webs, M362 shelf, strap stock/bends, transverse MX76 pitch and M365 clip wrap are estimates. Upper pitch now shares the saved MX61 plate. All six M400/nut pairs and eight of ten MX60 screws are located. Complete support-packet qualification remains open."
   ],
-  "visual_progression_count": 216,
+  "visual_progression_count": 219,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/README.md",
   "latest_locally_qualified_checkpoint": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01",
@@ -43,15 +43,15 @@
   "qualification_scope": "Paired operating levers, source-counted rivets, free-end pin/cotter joints and spring adjustment; static interfaces, preservation, STEP, context, exact reproduction and installed-height sensitivity.",
   "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study",
   "active_development_candidate": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_bottom01",
-    "native_sha256": "f18d44e167afbdd1f800b965d97016f70c82efcbb43f1919cdd5f6f08088df0d",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_bottom01/development_checkpoint.json",
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01",
+    "native_sha256": "b174c7b0a36ec23731b57743aa64efa715ff25a11873d2cd1b10538bda1dc175",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/development_checkpoint.json",
     "counts": {
-      "occurrences": 3149,
-      "definitions": 539,
-      "assemblies": 332
+      "occurrences": 3165,
+      "definitions": 542,
+      "assemblies": 336
     },
-    "status": "Anchor-retention/bottom-stop increment passes saved interfaces, STEP, variation, integration, preservation, catalogue, standard context and fresh nominal reproduction. Top/back stops, clips and complete support qualification remain pending."
+    "status": "Upper stops/clips and shared hardware pass native/STEP, variation, integration, preservation, catalogue, standard context and exact reproduction. Earlier receiver variation STEP now passes. Complete support-packet pipeline and promotion remain pending."
   },
-  "qualification_note": "The qualification/pipeline fields refer to the last fully qualified operating-mechanism parent. The active bottom-stop candidate has separate scoped evidence and is not promoted."
+  "qualification_note": "The qualification/pipeline fields refer to the last fully qualified operating-mechanism parent. The active upper-stop candidate has separate scoped evidence and is not yet promoted."
 }

@@ -11,6 +11,30 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — high-speed upper stops and clips
+
+The [upper-stop increment](experiments/drive_chains/transmission_high_brake_support_study/upper02/README.md)
+adds sixteen occurrences, three definitions and four groups: **3,165 physical
+occurrences / 542 definitions / 336 assemblies**. M399/M398 stops and M365 clips
+reuse the existing MX60, MX61 and M400/nut definitions. The upper case hole pitch
+changes locally from 65 to 60 mm to match the common MX61 plate. Stock, bends
+and the hidden clip retention remain explicit reconstruction hypotheses.
+
+Nominal and +1 mm M399 stock trials each pass 291 material pairs, 96 saved native
+checks and 25 STEP comparisons. Integration passes 30 checks, preservation of
+538 unchanged definitions (514 exact / 24 strict), 13 catalogue checks, retained
+standard context and all six fresh-rebuild checks. The earlier receiver bracket
+variation now also passes its 13 STEP checks. Default case-mass failures and the
+qualified refined measurements are retained; geometry and limits are unchanged.
+
+All six M400/nut pairs and eight of ten MX60 screws are located. The first upper
+trial caught a screw contacting a thicker band end omitted from its adjustment
+targets; the corrected setting includes that retained end without trimming it.
+Three reviewed snapshots bring progression to **219**, including the assembled
+160-occurrence brake pair. Source registration remains unchanged. Complete
+support-packet pipeline qualification is next, followed by operating controls,
+remaining interiors and standard integration. The full tank goal remains active.
+
 ## 24 September 2026 — high-speed anchor retention and bottom stops
 
 The [bottom-stop increment](experiments/drive_chains/transmission_high_brake_support_study/bottom_stops03/README.md)

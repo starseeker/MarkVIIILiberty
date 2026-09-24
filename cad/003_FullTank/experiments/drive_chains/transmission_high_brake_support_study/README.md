@@ -1,13 +1,14 @@
 # High-speed brake supports and stops — development reconstruction
 
-The latest [anchor-retention and bottom-stop increment](bottom_stops03/README.md)
-has **3,149 occurrences /539 definitions /332 assemblies** in
-[integrated_bottom01](integrated_bottom01/PowertrainWithHighBrakeBottomStops.FCStd).
-It adds M363 pins/cotters, M366 stops and mounting/adjustment hardware, with a
-bounded extension of M362. Its native/STEP, variation, integration, preservation,
-catalogue and fresh nominal rebuild checks pass. Top/back stops and clips remain
-next; full support-packet qualification and standard-tank promotion remain open.
-The receiving-web evidence and predecessor below are retained separately.
+The latest [upper-stop and clip increment](upper02/README.md) has
+**3,165 occurrences / 542 definitions / 336 assemblies** in
+[integrated_upper01](integrated_upper01/PowertrainWithHighBrakeUpperStops.FCStd).
+M399/M398 stops and M365 clips now join the retained pins, bottom stops and
+supports. Sixteen added occurrences reuse four hardware definitions. Native/STEP,
+stock variation, integration, preservation, catalogue, context and exact rebuild
+checks pass. The [bottom-stop predecessor](bottom_stops03/README.md) and receiving
+evidence below remain available. Complete support-packet pipeline qualification,
+service/controls and standard-tank promotion are unfinished.
 
 The complete packet comprises two M362 anchor brackets, two M363 retained
 pins, two M365 clips, two each of M366/M398/M399 stops, six M400 stop screws,
@@ -53,8 +54,8 @@ to reconcile the documents. Exact survey identities for MX61/MX77 and the HB133
 nut mark MX23 have not been found; the SNL 3/8-inch nut has its own valid identity.
 
 [inventory_audit.json](inventory_audit.json) checks the saved native definition
-metadata and installed leaves. None of the marked support/stop definitions is
-already installed. Two existing definitions share the catalogue identity for
+metadata and installed leaves. At packet opening, none of the marked support/stop definitions was
+already installed; this audit predates the subsequent geometry increments. Two existing definitions share the catalogue identity for
 the 3/16 × 2-inch cotter (seven occurrences); review their stock convention and
 installed envelope before choosing reuse. Two existing half-inch lock-washer
 definitions are also identified. Identity matches alone do not qualify geometry
@@ -108,8 +109,9 @@ Top and bottom geometry uses the actual asymmetric frame heights.
 M362 is a fork around the retained M361 anchor eye. The nominal 5/8-inch MX60
 shanks, bracket/plate stack and blind-hole depth are coupled. The common MX61
 strip has two formed locking tabs against head flats. Its stock and bend form,
-bracket hidden section, web thicknesses and bolt pitch are estimates. Upper
-receiving holes intentionally await the stop assembly. The new parts use shared
+bracket hidden section, web thicknesses and bolt pitch are estimates. The initial upper
+receiving holes preceded the stop assembly; the latest candidate revises their
+estimated pitch to share the saved MX61 plate. The new parts use shared
 definitions and separate port/starboard assembly groups; MX61 has no invented
 catalogue identifier.
 
@@ -127,7 +129,7 @@ illustration does not establish exact hidden depths or a photographic camera.
 | [receivers04/report.json](receivers04/report.json) | 22 checks pass, including 226 nearby development pairs, bounded case additions, retained anchor axis and positive bearing interfaces with displaced negatives. |
 | [receiver_interface_checks.json](receivers04/receiver_interface_checks.json) | 28 checks pass: four new frame contacts, four displaced negatives, eight blind passages, eight back-stock witnesses and four inherited stud clearances. |
 | [exchange_refined02](receivers04/exchange_refined02/exchange_checks.json) | 13 strict comparisons pass for four definitions and nine installed shapes. Case mass uses qualified tighter quadrature after a recorded convergence failure; material and tolerance limits are unchanged. |
-| [variation02](variation02/report.json) | A 1 mm increase in bracket stock moves the plate/heads and updates blind-hole depth; 22 prototype and 28 saved-interface checks pass. This variation has not yet had its own STEP gate. |
+| [variation02](variation02/report.json) | A 1 mm increase in bracket stock moves the plate/heads and updates blind-hole depth; 22 prototype and 28 saved-interface checks pass. [Its STEP gate now passes all 13 comparisons](variation02/exchange_refined01/exchange_checks.json), with the original mass-convergence failure retained. |
 | [integrated01](integrated01/independent_checks.json) | 18 saved integration checks pass: counts, hierarchy, retained frames and strict material/placement transfer from the tested prototype. |
 | [definition preservation](integrated01/definition_preservation_checks.json) | All 528 unchanged inherited definitions pass: 502 exact BReps and 26 strict material comparisons. The first worker was interrupted; the completed resume retains hash-bound results. |
 | [standard context](integrated01/standard_context_checks.json) | All nine affected occurrences checked against 5,316 retained tank occurrences; the one nearby material pair passes. Replaced stand-ins are explicitly excluded. |
@@ -141,27 +143,21 @@ Standard tank011 and the qualified operating-mechanism parent remain unchanged.
 Retained failed trials explain the geometry changes: receivers01 had bracket-tail
 interference with the seat; receivers02 had mounting holes that stopped inside
 the locking plate. Both were corrected before receivers03 passed. Receivers04
-improves the source silhouette and is the current geometry. Its initial STEP
+improves the source silhouette and is the retained receiving-stage geometry. Its initial STEP
 failure concerned numerical mass convergence, not material preservation; see
 the [measurement diagnostic](receivers04/diagnostics/README.md).
 
 ## Remaining construction and qualification
 
-1. Continue from `integrated_bottom01`, retaining the fixed registration, tested
-   pin joint and M362/M366 receiving interfaces. Preserve the failed larger
-   service envelopes alongside the passing minimum-travel probe.
-2. Add M399 top stops, M398 back stops and M365 clips; establish their shared
-   upper mounting stack against the existing receiving feet and MX60 holes.
-3. Complete the upper MX60/locking-plate hardware and final M400/nut pair per
-   brake. Keep screw adjustment clearance distinct from Boolean tolerance.
-4. Bind counts to physical identities and keep assembly identities separate.
-   Reconcile eight provisional MX60 occurrences with the catalogue total ten.
-5. Verify saved native material, pin/bore axes, positive support area, receiving
-   stock and new/retained interference. Preserve unchanged definitions and frames;
-   qualify any bounded case changes independently.
-6. Check STEP exchange, fresh reproduction, a useful coupled parameter change,
-   retained standard-tank context and fixed-source visual comparisons. Publish
-   progression snapshots when the geometry produces a significant improvement.
+1. Continue from `integrated_upper01`, retaining the fixed registration and all
+   tested lower/upper support interfaces. Complete the support-packet pipeline
+   using the bound scoped receipts; do not rerun unrelated qualified geometry.
+2. Assess the complete static support assembly and its selected source views.
+   Preserve the original and minimum-travel pin service probes; full gear
+   extraction, tool handling and cotter removal remain separate open work.
+3. Continue operating controls and the complete tank workflow. Resolve the last
+   two catalogue MX60 screw locations when evidence supports them.
+4. Complete remaining interiors and full standard integration before pose work.
 
 Run the read-only probe with a fresh absolute output path:
 

@@ -1,0 +1,67 @@
+{
+  "source_image": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate133.png",
+  "source_sha256": "0a13d9442ba242f714d036290feb75f41520bd18951c9885c9209e185133b4a0",
+  "projection_classification": "Pictorial section with local depth. This is a fixed planar diagnostic registration, not a recovered photographic camera.",
+  "center_px": [
+    775,
+    833
+  ],
+  "pixels_per_mm": 2.335958005249344,
+  "calibration_basis": "Picked inner lining circle center and approximate445-pixel radius assigned the printed190.5-mm lining radius. This scale cannot independently validate that radius.",
+  "pick_uncertainty_px": 6,
+  "calibration_fit": false,
+  "camera_refit": false,
+  "diagnostic_picks": {
+    "anchor_pin_center_px": [
+      944,
+      1320
+    ],
+    "upper_free_pin_center_px": [
+      277,
+      719
+    ],
+    "lower_free_pin_center_px": [
+      282,
+      957
+    ]
+  },
+  "limits": [
+    "Source is a repeated pictorial illustration, not three independent views.",
+    "Some new dimensions/clocking were inferred from this same view; residual agreement is not independent validation.",
+    "Out-of-plane depth cannot be inferred with this planar registration."
+  ],
+  "reuse_rule": "Retain this source registration unless a source-image or datum interpretation changes; document any revision. Do not refit to hide construction discrepancies.",
+  "additional_diagnostic_picks": {
+    "lever_rivet_centers_px": [
+      [
+        219,
+        722
+      ],
+      [
+        93,
+        781
+      ],
+      [
+        108,
+        1034
+      ],
+      [
+        204,
+        1454
+      ]
+    ],
+    "control_rod_pin_px": [
+      218,
+      1519
+    ],
+    "screw_top_px": [
+      63,
+      599
+    ]
+  },
+  "additional_pick_uncertainty_px": 8,
+  "additional_pick_basis": "Manual picks on original HB133; round feature centers and exposed screw tip. Projection remains the inherited planar diagnostic.",
+  "reused_from": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/source_registration.json",
+  "reused_registration_sha256": "60b1e975285f50e159015e7d22d351516442ced93738f977e20c1313bd909d2c",
+  "review_reason": "Support and stop development; retain image, center, scale and previous diagnostic picks. Newly identified features are checks first."
+}

@@ -1,0 +1,36 @@
+{
+  "status": "parameter_variation_top_stock_plus_1mm",
+  "controls": {
+    "top_bolt_stations": [
+      47.5,
+      107.5
+    ],
+    "strap_width": 31.75,
+    "top_stock": 7.35,
+    "back_stock": 3.175,
+    "foot_end": 130.0,
+    "top_arc_end_angle_deg": 45.0,
+    "tongue_length": 25.4,
+    "back_fold_radius": 12.7,
+    "back_fold_angle_deg": 100.0,
+    "back_straight_length": 65.0,
+    "back_heel_radius": 6.35,
+    "back_heel_angle_deg": 90.0,
+    "back_tip_gap": 0.25,
+    "clip_station": 17.4625,
+    "clip_length": 25.4,
+    "clip_stock": 3.175,
+    "clip_gap": 0.25,
+    "clip_bore_gap": 0.1,
+    "tongue_bore_radius": 6.35,
+    "stop_tip_gap": 0.25
+  },
+  "source_identity": {
+    "top_stop": "M399, SNL:223:005, two per vehicle",
+    "back_stop": "M398, SNL:223:003, two per vehicle",
+    "clip": "M365, SNL:66:022, two per vehicle"
+  },
+  "reuse_hypothesis": "HB133 marks both common locking plates MX61. Reuse the saved lower MX61 definition and its60mm hole pitch. Preserve the old upper pitch midpoint but move its two estimated stations by2.5mm each. Reuse MX60 screws and M400/nut definitions; verify actual engagement and stack rather than assume it.",
+  "all_other_fields": "Unprinted stock, bends, hidden width, clip wrap and stop setting are explicit estimates constrained by HB133 and actual saved interfaces. No perspective camera or manufactured profile is claimed.",
+  "configuration": "Handbook common locking plates; later SNL individual lock washers remain an alternative. Four upper MX60 occurrences will bring the located total to8 of catalogue10."
+}

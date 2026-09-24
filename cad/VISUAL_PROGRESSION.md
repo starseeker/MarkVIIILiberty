@@ -1,5 +1,20 @@
 # Mark VIII visual progression
 
+## High-speed upper stops and assembled brakes — 24 September 2026
+
+M399/M398 stops and M365 clips complete the named brake support members.
+The isometric shows all 160 brake occurrences with the drums in outline; the
+other views isolate the upper members and compare them under the unchanged
+HB133 registration. Hidden stock and clip form remain estimates. These three
+inspected views bring the archive to **219 images**, preserving all 216 earlier
+views. See the [checkpoint](003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/upper02/README.md).
+
+| View | SHA-256 |
+| --- | --- |
+| [intermediate_snapshot_iso_transmission_high_brake_supports_trial_001.png](intermediate_snapshot_iso_transmission_high_brake_supports_trial_001.png) | `23855a95ded9766c327e7a03c73dcb975eee0978033fa256ba7e528bdfd9995a` |
+| [intermediate_snapshot_detail_transmission_high_brake_upper_stops_trial_001.png](intermediate_snapshot_detail_transmission_high_brake_upper_stops_trial_001.png) | `6546a42b0fcc2cc0dbb7efcb7eeda9d6c97c3047ae330bfdbdcad70826f62a26` |
+| [intermediate_snapshot_source_transmission_high_brake_upper_stops_trial_001.png](intermediate_snapshot_source_transmission_high_brake_upper_stops_trial_001.png) | `12d0cf054a3d9fb05d22be85d97229f4dd563ec2b590047cda2273c1e919b7af` |
+
 ## High-speed rear brake joints — 24 September 2026
 
 M361 ends, separate rivets and six-screw couplings populate both high-speed brakes.
