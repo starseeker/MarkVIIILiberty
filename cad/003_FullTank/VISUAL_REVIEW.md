@@ -504,3 +504,22 @@ and [qualification transfer](releases/011-roller-pinions-transfer.json).
 | comparisons/pinion_drive_oblique.png | eaab45d3888028d024db63a1491aec464a4cc5985ea80d4b47481a58914aea6a |
 | comparisons/pinion_mount_detail.png | 19fbb47c92d28b031e6838159a35a30a713dc7ffc9d8a6eef92f79e6abc51cfc |
 | previews/isometric_transparent.png | 97f19ad3b616f3c5ed191a0cc1398c13f19ddfa89d1b31ada49f1b46c167605d |
+
+## Coupled powertrain registration — 23 September 2026
+
+Directly inspected the saved support trial's isometric, engine-support close-up
+and planetary detail. The rebuilt brackets visibly reach the raised rails and
+unchanged floor seats; the two three-planet stages retain their source-described
+carrier/ring relationship. The source coupling was checked against original
+HB120/122 and Plates73–75. This is a qualitative source-role comparison, not an
+independent metric validation of the proposed global station.
+
+The floor and old chain cases appear as context outlines. The casing disagreement
+and old transmission mounting frame remain unresolved; neither is visually
+presented as a completed fit. Cylinders and other missing engine constituents
+remain absent. Selective visibility changes no saved geometry or installed frame.
+All three views were copied without alteration to the progression, now 152 images.
+
+The [review receipt](experiments/drive_chains/engine_pump_receiver_study/registration/native_support_trial01/visual_review.json)
+binds native, source and image hashes; the [checkpoint](experiments/drive_chains/engine_pump_receiver_study/registration/native_support_trial01/README.md)
+records local checks and remaining acceptance gates. Standard tank011 is unchanged.

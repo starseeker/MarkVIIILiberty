@@ -11,6 +11,29 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — coupled planetary phases and rebuilt engine supports
+
+The [phase trial](experiments/drive_chains/engine_pump_receiver_study/registration/native_phase_trial01/README.md)
+propagates the output-shaft alignment through both planetary stages using the
+handbook's mechanical coupling. All nine criteria, twelve mesh checks and
+832 affected material comparisons pass; 142 occurrences are rephased.
+
+The subsequent [support trial](experiments/drive_chains/engine_pump_receiver_study/registration/native_support_trial01/README.md)
+rebuilds three engine brackets between retained floor attachments and the trial
+engine height. All four rail/bracket contacts are restored. **191 native checks,
+102 affected material pairs and all 64 support STEP comparisons pass.** A fresh
+build reproduces all 1,409 archived BReps and 113,542 persistent object properties.
+Three directly inspected images bring the progression to **152**, preserving all
+149 earlier images and 24 recorded native files. Standard tank011 is unchanged.
+
+The source merged pump hierarchy has now passed its eight independent criteria,
+including all 83 strict definition-material comparisons and all 2,393 occurrence
+frames. Its legacy render job remains active; its intermediate images are not
+accepted final reviews. The later registration trials still need strict checks
+of their save-normalized definitions. Chain casings, transmission frame/bearing
+seats, engine mounting holes and complete installation remain open. The chosen
+mean-axis station remains provisional, with ±35.57 mm source-pick uncertainty.
+
 ## 23 September 2026 — resumed powertrain placement trial
 
 The runtime and saved checkpoint were verified after resuming. A separate

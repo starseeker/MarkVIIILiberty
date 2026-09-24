@@ -115,6 +115,16 @@ twist retained the full source stock length and passed all three checks. The
 include a replay. Centerline sampling needs a spacing allowance; it is not an
 exact global minimum-distance proof or a simulation of wire deformation.
 
+For bearing contact, distinguish surface area from volumetric intersection.
+On FreeCAD 1.1.1/OCC 7.8.0, two touching 10 mm boxes have zero distance but their
+solid/solid `common()` is empty; intersecting their coincident faces gives the
+expected 100 mm². For planar seats, select the actual coplanar bearing faces and
+measure their intersection while checking solid overlap separately. The engine
+rail probe measured 52,454.767 mm² per side this way; lifting the flange 0.01 mm
+removed the contact and failed the unchanged area criterion. The
+[reproducer and measurements](../../../cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_support_trial01/contact_probe.py)
+record the tested case. Zero distance alone does not establish a bearing area.
+
 For freeform sections, establish a common coordinate system and corresponding
 curve directions before lofting or fitting surfaces. Retain source picks and
 control curves; check section residuals, seams, surface continuity where required,

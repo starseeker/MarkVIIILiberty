@@ -2,6 +2,10 @@
 
 23 September 2026. The **local receiving case is qualified**; the complete tank
 installation remains unfinished. The standard tank011 native files are unchanged.
+The latest [support and planetary checkpoint](registration/native_support_trial01/README.md)
+retains 2,393 development occurrences and resolves the local carrier alignment
+and engine rail/bracket gaps. Casings, transmission supports and station
+qualification remain open. Three new review images bring the progression to 152.
 
 `trial02/PumpReceiver.FCStd` reconstructs the receiver from the pre-receiver
 lower crankcase, using the source-profile oil pump and the 171.45 mm lower-drive
@@ -45,7 +49,9 @@ strict STEP frames. The failed first variation remains.
 `assembly_trial02/DrivetrainWithBothPumps.FCStd` contains **2,393 physical
 occurrences**, including 146 oil-pump constituents in 40 definitions. These are
 development assembly counts, not additions to the standard tank count.
-Its independent verification is still running. The earlier byte-equality
+Its independent verification now passes all eight criteria, all 83 strict
+definition-material comparisons and every source-derived occurrence frame.
+The earlier byte-equality
 assertion in `assembly_trial01` was too strict for native save normalization;
 archive internals have not been rewritten to force matching hashes.
 
@@ -60,7 +66,9 @@ occurrence coverage and composed frames are checked independently again.
 The current driver is `check_engine_pumps_isolated.py`; the earlier monolithic
 checker and its output are retained under `assembly_trial02/diagnostics/process247`.
 The source-profile pump's separate 186-pair STEP check subsequently completed;
-all 186 comparisons pass. Merged-hierarchy material verification remains active.
+all 186 comparisons pass. The merged-hierarchy driver is still producing its
+legacy render views; intermediate outputs are not accepted final visual reviews.
+Its completed `independent_checks.json` records the successful geometry checks.
 
 ## Global registration
 
@@ -90,13 +98,17 @@ A subsequent [saved placement diagnostic](registration/native_trial01/README.md)
 instantiates the common-axis hypothesis for measurement. Both chains pass 886
 material comparisons, but obsolete casings interfere, support contacts separate,
 and the new output-shaft phases require internal carrier/planet changes. This
-trial remains unqualified and the standard tank is unchanged.
+trial remains unqualified and the standard tank is unchanged. The subsequent
+[coupled phase trial](registration/native_phase_trial01/README.md) resolves the
+carrier/spline mismatch while preserving tooth meshes. The
+[support trial](registration/native_support_trial01/README.md) rebuilds three
+brackets to restore rail contact while retaining floor receivers and hardware.
 
-Next, regenerate chain occurrences, small-sprocket phase and casings for a
-selected trial; reconcile engine supports, transmission frame/bearings, clutch,
-controls and surrounding hull interfaces together. Preserve the printed floor
-clearance. A pump-only lift or arbitrary floor opening does not resolve these
-dependencies.
+Next, rebuild constant-stock chain casings and the transmission bearing/frame
+interfaces for the trial route, then check controls and surrounding hull
+interfaces together. Complete the outstanding definition-preservation checks
+before promoting any trial. Preserve the printed floor clearance and keep
+historical station acceptance separate from local mechanical fit.
 
 ## Reproduce
 

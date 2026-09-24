@@ -1,5 +1,25 @@
 # Mark VIII visual progression
 
+The 23 September powertrain-registration checkpoint adds an
+[isometric](intermediate_snapshot_iso_powertrain_registration_001.png),
+[engine-support detail](intermediate_snapshot_detail_engine_support_registration_001.png)
+and [planetary detail](intermediate_snapshot_detail_planetary_registration_001.png).
+The two coupled gear stages now align with the output shafts, and three rebuilt
+engine brackets restore rail contact at the provisional station. The phase trial
+passes nine criteria and 832 material pairs; supports pass 191 native checks,
+102 material pairs and all 64 STEP comparisons. Fresh nominal reproduction
+matches. These are local development views: obsolete chain casings, transmission
+frame interfaces and historical station choice remain open. All **149 earlier
+images** and recorded native baselines are preserved, giving **152 total**.
+Standard tank011 is unchanged. See the
+[checkpoint](003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_support_trial01/README.md).
+
+| New image | SHA256 |
+|---|---|
+| Powertrain registration isometric | `ad89e75878fb563295074e7960788749d37fcff4851163b1b1a8467ba9182793` |
+| Engine support registration detail | `63eff27e27db88217f97b7ce592ca0c5f20040b4b67e587835567f557240b448` |
+| Coupled planetary registration detail | `86756d1ba147fc77e9d4f8dede3bac8c1d5fda8c58b8a3f22c22af077344b324` |
+
 The 23 September coupled-receiver checkpoint adds an
 [isometric](intermediate_snapshot_iso_engine_coupled_pumps_001.png) and
 [section](intermediate_snapshot_detail_engine_coupled_pumps_001.png).

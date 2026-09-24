@@ -1,0 +1,186 @@
+{
+  "status": "large_planetary_gear_reconstruction",
+  "controls": {
+    "teeth_sun": {
+      "value": 18,
+      "unit": "count",
+      "basis": "printed_HB126"
+    },
+    "teeth_planet": {
+      "value": 27,
+      "unit": "count",
+      "basis": "printed_HB126"
+    },
+    "teeth_ring": {
+      "value": 72,
+      "unit": "count",
+      "basis": "printed_HB126"
+    },
+    "planets_per_side": {
+      "value": 3,
+      "unit": "count",
+      "basis": "HB122_and_SNL144_quantity"
+    },
+    "pitch_numerator": {
+      "value": 4,
+      "unit": "teeth/in",
+      "basis": "printed_HB126"
+    },
+    "pitch_denominator": {
+      "value": 5,
+      "unit": "teeth/in",
+      "basis": "printed_HB126"
+    },
+    "pressure_angle": {
+      "value": 20,
+      "unit": "deg",
+      "basis": "reconstruction_assumption"
+    },
+    "tooth_thinning": {
+      "value": 0.2,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "flank_samples": {
+      "value": 16,
+      "unit": "count",
+      "basis": "numerical_approximation_setting"
+    },
+    "gear_face_picks_px": {
+      "value": [
+        895,
+        967
+      ],
+      "unit": "pixel",
+      "basis": "conditional_Plate22_axial_trace"
+    },
+    "carrier_gear_gap": {
+      "value": 1.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "sun_hub_radius": {
+      "value": 44,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "spline_radial_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "spline_side_gap": {
+      "value": 0.1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "planet_bore_radius": {
+      "value": 27,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "ring_flange_stock": {
+      "value": 12,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "ring_flange_radius": {
+      "value": 270,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "ring_radial_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "ring_axial_gap": {
+      "value": 0.5,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "gasket_stock": {
+      "value": 0.2,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "retainer_stock": {
+      "value": 4,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "retainer_end_margin": {
+      "value": 2,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "retainer_outer_radius": {
+      "value": 38,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "retainer_inner_radius": {
+      "value": 25.2,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "retainer_groove_radius": {
+      "value": 25,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "retainer_groove_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "retainer_slot": {
+      "value": 3,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "sun_retainer_gap": {
+      "value": 0.15,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "washer_axial_gap": {
+      "value": 0.1,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "washer_inner_radius": {
+      "value": 55,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "washer_outer_radius": {
+      "value": 73,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "plain_case_wall_stock": {
+      "value": 14,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "plain_case_transition": {
+      "value": 8,
+      "unit": "mm",
+      "basis": "reconstruction_assumption"
+    },
+    "plain_case_old_outer_radius": {
+      "value": 243.84,
+      "unit": "mm",
+      "basis": "inherited_case_profile"
+    }
+  },
+  "involute_model": "Fellows-style two-pitch interpretation; numerator controls pitch circles and tooth thickness, denominator controls addendum25.4/5 and dedendum1.25*25.4/5. 20deg pressure angle is assumed for this tank, not printed in HB126. Radial root continuations, no generated cutter fillets. B-spline fit residual checked against dense analytic samples.",
+  "placement": "Common-axis port Y station inherited from carrier inner rim minus1.5mm gap; width52.2514mm from72sourcepixels. Ring gear clamped through an inferred12mm flange and two0.2mm gaskets in rabbets carved into current case halves. Only the plain-half local bore/outer shoulder grows to receive the print-controlled teeth.",
+  "limits": [
+    "Shaft/gear splines, bores, axial lengths, pin/bush clearances and tooth backlash are estimates. No strength, lubricant-film or manufactured fit qualification.",
+    "M284 pins, bushings and M285 pin ring remain pending. SNL251 namesM272bronze large bush while SNL43 catalogue and HB122 nameM282; do not silently merge those identities.",
+    "Case bolt circle, bolts and gasket holes remain pending. Current case rabbet/flange is a documented mechanical inference, not a traced manufacturing section.",
+    "M288washer fills the available carrier/bush interval with0.1mm face gaps; M256 clips retain sun hubs on newly grooved M255ends. Source does not give these inferred dimensions."
+  ]
+}
