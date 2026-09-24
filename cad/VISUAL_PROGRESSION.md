@@ -1,5 +1,27 @@
 # Mark VIII visual progression
 
+The transmission bracket trial adds an
+[isometric](intermediate_snapshot_iso_transmission_bracket_mounts_001.png),
+[joint detail](intermediate_snapshot_detail_transmission_bracket_mounts_001.png)
+and [handbook comparison](intermediate_snapshot_source_transmission_bracket_mounts_001.png).
+Twenty MX1 joints now have separate bolts, castle nuts, bevel washers and split
+pins. The source comparison uses the apparent removed-unit orientation with the
+input axis upward; saved CAD placements remain unchanged. All local geometry,
+affected-context, STEP and preservation checks pass, with parameter variation
+and fresh reproduction recorded. Hole pattern and receiving-pad geometry remain
+explicit hypotheses, and casting/profile and frame-hardware differences remain
+visible. All 161 earlier images and 25 recorded native baselines are preserved:
+**164 total**. See the [trial record](003_FullTank/experiments/drive_chains/transmission_bracket_mount_study/trial01/README.md).
+
+The preceding chain-casing checkpoint added its
+[isometric](intermediate_snapshot_iso_powertrain_registration_004.png),
+[section](intermediate_snapshot_detail_chain_casing_registration_001.png)
+and [source overlay](intermediate_snapshot_source_chain_casing_registration_001.png).
+Constant sheet stock, dependent openings and fastener interfaces were rebuilt at
+the conditional shaft station. This brought the progression to 161 images;
+source-height disagreement remains recorded. See the
+[casing record](003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_casing_trial01/README.md).
+
 The following-frame trial adds an
 [isometric](intermediate_snapshot_iso_powertrain_registration_003.png),
 [hull-interface view](intermediate_snapshot_detail_transmission_hull_registration_001.png)

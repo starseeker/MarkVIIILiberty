@@ -34,8 +34,10 @@ Nineteen definition BReps normalize differently from the immediate parent on sav
 The separate `check_following_frame_preservation.py` job compares all final
 definitions directly with the already checked merged-pump source, except the three
 intentionally rebuilt engine brackets, which are compared with their checked
-support source. Its final `definition_preservation_checks.json` is the authority
-for closing that gate; an unfinished progress file is not qualification.
+support source. It finished successfully on 24 September: **all 461 definitions
+pass**, comprising 408 exact BReps and 53 strict material comparisons. The final
+`definition_preservation_checks.json` closes this material-preservation gate;
+historical placement and complete installation remain unqualified.
 
 ## Sources and remaining interfaces
 

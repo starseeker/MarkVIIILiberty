@@ -1,0 +1,38 @@
+{
+  "status": "development_hypothesis_requires_source_and_saved_geometry_review",
+  "controls": {
+    "bolt_diameter": 19.05,
+    "bolt_under_head_length": 63.5,
+    "bolt_head_af": 28.575,
+    "bolt_head_height": 12.7,
+    "receiver_radial_clearance": 0.15,
+    "head_spotface_radius": 18.5,
+    "inner_row_offsets": [-40.0, 40.0],
+    "outer_row_offsets": [-76.0, 0.0, 76.0],
+    "flange_height_station": 25.0,
+    "cotter_diameter": 3.175,
+    "cotter_length": 38.1
+  },
+  "basis": {
+    "bolt_diameter": "Nominal shank inferred from the SNL28:004 three-quarter-inch SAE nut; no bolt diameter is separately printed in the MX1 row.",
+    "bolt_under_head_length": "Estimated 2.5 inch bolt stock; length is not located in SNL28. Must span the retained pad/channel/washer/nut stack with the cross hole inside a castle slot.",
+    "bolt_head_af": "Estimated head geometry, matching the existing nominal 3/4 inch hardware convention; not a printed head dimension.",
+    "bolt_head_height": "Estimated head geometry, not a printed dimension.",
+    "receiver_radial_clearance": "Geometric allowance for nominal, unmodeled threads; not a historical manufacturing tolerance.",
+    "head_spotface_radius": "Estimated local flat head seat clearing the central outside casting web. The source does not dimension a spotface.",
+    "inner_row_offsets": "Inferred distribution: two bolts per pad on each inside bracket, four per bracket. SNL gives total20, not this pattern.",
+    "outer_row_offsets": "Inferred distribution: three bolts per wider outside pad, six per bracket. Together with inside brackets gives the printed total20. Photograph does not uniquely resolve the hidden pattern.",
+    "flange_height_station": "Center of the inherited 50 mm channel flange; matching the current MX13 bevel washer seat.",
+    "cotter_diameter": "SNL28:005 printed 1/8 inch split pin.",
+    "cotter_length": "SNL28:005 printed 1.5 inch split pin; do not reuse the shorter MX5 pin."
+  },
+  "casting_revision": {
+    "method": "Move the inferred inside pad rear/front planes together onto the existing outside bracket/channel mounting plane, retain pad stock and rebuild the joining web, then replay all later detailed casting features.",
+    "shift_x_mm": -5.805714285714288,
+    "source_shift_px": -8.0,
+    "original_pick_allowance_px": 4.0,
+    "qualification": "Explicit mechanical-interface hypothesis exceeding the original single-edge pick allowance. It is not a source-dimension correction or a claim that the drawing proves coplanar mounting faces. No M386/M387 identity is assigned to this gap."
+  },
+  "historical_joint_layout_qualified": false,
+  "complete_frame_attachment": false
+}

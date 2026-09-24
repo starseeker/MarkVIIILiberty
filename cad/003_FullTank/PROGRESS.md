@@ -11,6 +11,31 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — twenty transmission bracket joints populated and checked
+
+The [MX1 mounting trial](experiments/drive_chains/transmission_bracket_mount_study/trial01/README.md)
+adds 80 bolt/nut/pin/washer occurrences, giving **2,473 physical occurrences,
+463 definitions and 215 assemblies**. Four receiving definitions change; existing
+occurrence frames stay fixed. All **257 native checks, 418 development material
+pairs, one retained standard-context pair and 94 STEP comparisons pass**.
+All 457 unchanged definitions match the parent. A variation of hole spacing and
+bolt length passes the same native/context checks. Fresh reproduction matches
+1,415 BReps and 117,408 stable properties; only 24 generated assembly UUIDs vary.
+
+The handbook comparison now uses the apparent removed-unit orientation, with
+the forward input axis upward. No physical pose changes. Casting silhouettes
+and incomplete frame hardware remain visible discrepancies. The source gives
+twenty joints, but the selected hole pattern, bolt length and inside-pad revision
+remain explicit hypotheses. Three inspected progression images give **164 total**,
+preserving all 161 prior images and 25 recorded native baselines.
+
+The older preservation jobs have finished: all 461 following-frame definitions
+and all 449 unchanged casing definitions pass. The initial bracket measurement,
+Boolean and generated-UUID failures are retained with their diagnoses. Next:
+holding interfaces, feet, frame hardware and casting-profile refinement, then
+remaining engine and tank interiors. Standard tank011 remains unchanged; the
+full model is incomplete and poses stay deferred.
+
 ## 23 September 2026 — constant-stock chain casings reconstructed
 
 The [casing trial](experiments/drive_chains/engine_pump_receiver_study/registration/native_casing_trial01/README.md)

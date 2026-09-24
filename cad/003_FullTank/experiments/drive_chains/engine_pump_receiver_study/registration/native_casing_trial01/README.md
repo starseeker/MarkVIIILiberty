@@ -39,10 +39,11 @@ affine deformation of finished stock is used.
   `check_powertrain_frame_reproduction.py` is reused; its generic receipt still
   calls the scope a transmission-support rebuild.
 
-Sixteen otherwise unchanged definitions serialize differently on saving and still
-require strict material-preservation checks. The parent following-frame model
-also has an inherited direct-source comparison running. Passing the local casing
-checks does not close either pending preservation gate.
+Preservation completed on 24 September: all **449 unchanged definitions** match
+the immediate parent (433 exact BReps and sixteen strict material comparisons).
+The parent's separate comparison also passed all 461 definitions, including 53
+strict comparisons. These results close the recorded definition-preservation
+gates; they do not establish historical placement or complete installation.
 
 The initial checker incorrectly required a rivet shank to touch the intermediate
 packing bore. Its 0.25 mm radial clearance equals the retained 0.5 mm diametral
@@ -82,12 +83,12 @@ review to the saved model and images.
 
 Use the repository headless launcher with absolute file arguments and a fresh
 output directory. Run `build_powertrain_casing_trial.py` with `--source` pointing
-to the following-frame native, `--standard-context` pointing to the extracted
+to the following-frame trial directory, `--standard-context` pointing to the extracted
 standard context, and `--output` pointing to the new directory. Its original
 generator dependencies and controls are frozen in `frozen_inputs`.
 
 Extract the saved result with `pump_integration_worker.py extract --input
-<native> --output <fresh>/isolated`. Then run `check_powertrain_casing_trial.py
+<native> --output <fresh>/isolated/manifest.json`. Then run `check_powertrain_casing_trial.py
 --candidate <fresh> --standard-context <context>`,
 `exchange_powertrain_casing_trial.py --candidate <fresh>` and
 `probe_powertrain_casing_stations.py --candidate <fresh>` through the launcher.
@@ -102,7 +103,8 @@ the actual checked versions. Existing standard extraction uses
 `extract_standard_tank_context.py` and the established external-link traversal.
 
 Continue source-led transmission holding interfaces, feet, packing and hardware.
-Complete the preservation checks before standard promotion, then continue the oil
-manifold, engine cylinders and remaining tank interiors. Historical station,
+The definition-preservation checks are complete; installation review remains
+required before standard promotion. Continue the oil manifold, engine cylinders
+and remaining tank interiors after these mounting tasks. Historical station,
 complete installation and full-tank completion are still unqualified; poses
 remain deferred.
