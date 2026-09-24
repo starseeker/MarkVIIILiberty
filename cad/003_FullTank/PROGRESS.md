@@ -11,6 +11,30 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — experimental brake-stop geometry populated
+
+The [brake-stop packet](packets/P01-transmission-brake-stops.md) now contains a
+44-component candidate: four lugs, twelve lug rivets, eight screws, eight nuts,
+two bars, two brackets and eight bar rivets. Trial02 has **3,001 physical
+occurrences, 503 definitions and 295 assemblies**. Four lower bands gain separate
+drilled definitions, and two existing stud/nut/cotter sets advance by the estimated
+mounting-tab stock. Upper backing definitions remain shared with the parent.
+
+The saved-native diagnostic finds eleven valid closed solid definitions, 57
+passing count/frame checks, no detected interference in 492 candidate pairs and
+eighteen positive planar contacts. Trial01's ten interferences are retained.
+Four inspected trial views bring the progression to **192 images**; all 188
+previous images and 31 recorded native baselines are preserved.
+
+**This is experimental, not a qualified development parent.** The shared
+crossbar, M341/M342 versus MX95/MX96 identity and bearing-cap attachment remain
+conditional. Under retained drawing registration the mounting nut projects
+38–52 mm rearward and 29–39 mm high relative to manual source picks. Full
+preservation, mounting/rivet checks, standard context, STEP, parameter and rebuild
+qualification remain ahead. The accepted front-brake checkpoint `169c3da` and
+standard tank011 remain unchanged. Four SH687A spring spacers identified in
+SNL252 also remain to be reconstructed.
+
 ## 24 September 2026 — front brake adjustment mechanisms populated
 
 The [front-brake trial](experiments/drive_chains/transmission_brake_front_study/trial01/README.md)

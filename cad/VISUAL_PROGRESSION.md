@@ -1,5 +1,18 @@
 # Mark VIII visual progression
 
+The experimental brake-stop study adds an
+[isometric](intermediate_snapshot_iso_transmission_brake_stops_trial_001.png),
+[support detail](intermediate_snapshot_detail_transmission_brake_stops_trial_001.png),
+[low-speed overlay](intermediate_snapshot_source_low_brake_stops_trial_001.png) and
+[track overlay](intermediate_snapshot_source_track_brake_stops_trial_001.png).
+Four lugs and eight adjusters now meet two shared crossbars on removable support
+brackets. Trial02 resolves the ten interferences found in trial01; its 492-pair
+development diagnostic detects no clashes. **The trial is not accepted**:
+transverse ownership, part-mark mapping, bearing-cap mounting and full qualification
+remain open. Fixed registration exposes the mounting-position discrepancy.
+All 188 previous images and 31 native baselines are preserved: **192 images total**.
+See the [trial record](003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial02/README.md).
+
 The front-brake candidate adds an
 [isometric](intermediate_snapshot_iso_transmission_brake_front_001.png),
 [inner detail](intermediate_snapshot_detail_transmission_brake_front_001.png),
