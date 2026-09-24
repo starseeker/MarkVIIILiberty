@@ -1,0 +1,39 @@
+{
+  "native_sha256": "0af27f181eaf30c4da5b5e291daf10cce1aa276a3def6c47fed40e6c6d6ae485",
+  "source_packet_sha256": "ab916f5e6bf945d7a1871242609423b32fd0d321f64782374018014747637d86",
+  "source_axis_check_sha256": "f028501de97b155ff73bf06b9a3b337215744c8612f3bc3cb308fc2fdcf3f4b5",
+  "directly_inspected_sources": [
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate134.png",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate135.png",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate79.png",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p304-geometry.png",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p294-geometry.png",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p097.jpg"
+  ],
+  "findings": [
+    "M338 identity and count agree between SNL96 and HB207; HB134/135 and SNL32 locate its pin below the upper channel.",
+    "HB135 labels M385 behind the track-brake link. Two stops allocated one per track brake; this is inferred from count and view.",
+    "HB134 channel registration predicts the source shaft 9.575922 mm aft and 15.269094 mm above the retained native shaft.",
+    "Ellipse fit to the source opening agrees with the manual center pick within four pixels; it does not resolve datum disagreement.",
+    "Shaft-referenced longitudinal bracket placement is mechanically clear but remains offset in the channel-registered source overlays.",
+    "Part thickness, transverse width, bore size, rounded hidden end and stop toe are estimates. Fastener pattern and connected brake linkage are not reconstructed.",
+    "The remaining source rivet stock lengths cannot be allocated merely by filling the existing thin-gusset joints. Allocation remains open alongside receiver design."
+  ],
+  "source_axis_residual": {
+    "predicted_axis_xz_mm": [
+      1821.918720189842,
+      915.8720355362882
+    ],
+    "actual_axis_xz_mm": [
+      1831.4946420457636,
+      900.6029411764705
+    ],
+    "residual_xz_mm": [
+      -9.575921855921706,
+      15.2690943598177
+    ],
+    "interpretation": "Held-out source shaft center disagrees with retained model registration; no physical frame is moved to hide it."
+  },
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

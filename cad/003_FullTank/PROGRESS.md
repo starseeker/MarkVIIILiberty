@@ -11,6 +11,35 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — brake suspension brackets and stops populated
+
+The [brake suspension trial](experiments/drive_chains/transmission_brake_suspension_study/trial02/README.md)
+adds four source-identified M338 brackets and two M385 stops. The development
+model now has **2,511 physical occurrences, 466 definitions and 231 assemblies**.
+All prior occurrence frames and all 464 inherited definitions are preserved.
+The supports seat on the upper channel; their foot fastening, suspension links,
+pins and brake bands remain incomplete.
+
+All **53 native/context checks, 14 development material pairs and eight STEP
+comparisons pass**. Standard-context filtering covers 5,316 retained physical
+occurrences and finds no possible pair with these six supports. Preservation
+uses 438 exact BReps and 26 strict material comparisons. Fresh reproduction
+matches 1,424 BReps and 119,708 persistent properties. A wider-foot/thicker-lug/
+lower-pin variation passes the same checks and preserves all inherited BReps.
+
+The first channel-registered layout collided with the diaphragm and stops.
+The revised bracket station follows the source pin-to-shaft separation; source
+registration still disagrees by 9.576 mm longitudinally and 15.269 mm vertically.
+Both the rejected trial and the visible source-overlay disagreement are retained.
+Profiles, stock and hidden joints remain explicit estimates, not historical
+qualification. Three inspected progression snapshots give **170 total**,
+preserving all 167 prior images and 27 recorded native baselines.
+
+Next: connected brake linkage/bands and support fastening, remaining 46 frame
+rivets and return/upright joints, holding feet, packing and hull attachment;
+then remaining engine/tank interiors and final integration. Standard tank011
+remains unchanged and poses remain deferred.
+
 ## 24 September 2026 — frame overlaps and first rivet group reconstructed
 
 The [frame-joint trial](experiments/drive_chains/transmission_frame_joint_study/trial03/README.md)

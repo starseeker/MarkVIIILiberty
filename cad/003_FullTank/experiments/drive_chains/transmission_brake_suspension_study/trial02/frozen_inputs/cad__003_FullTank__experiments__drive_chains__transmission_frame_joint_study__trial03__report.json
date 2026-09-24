@@ -1,0 +1,1928 @@
+{
+  "native_file": "PowertrainWithFrameJoints.FCStd",
+  "native_sha256": "aa8025f11119577f09f354571f3bc651dfde2e11353f7dad2d23f50c17641d49",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_bracket_mount_study/trial01/PowertrainWithBracketMounts.FCStd",
+  "source_native_sha256": "5b2b7a98dbc6c3bb7d56b484d27d9dba9731f3258f7b15af5d7e0a4ee0136969",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_transmission_frame_joint_trial.py": "4e0c421620299031c30f9a931efb64d005c54c65fcc5a8fc5d8e66853bcbe84e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_study/controls.json": "9320c02c016410705b99d6e8a98fe3f4b59708e213121bdd14f990b7931b2450",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_study/sources.json": "18ad401811a17e12fe06f99c7a0197abab257b35b88a0cb6eb3905cef6454440",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py": "97cb213e7707b3cce73b0bca7e5fa8b76345ff841e8fab767c3d16cf350a803e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_support_parts.py": "378d460b581c26154940ced9b9f4a8d8ca514fb97b05f24a2ac13c8c8b595405",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_bracket_mount_study/trial01/report.json": "ee7b2cae368ab5321a224ad3978240cc1b60065f3cd1fef0a34ee99caa42e591",
+    "cad/003_FullTank/experiments/drive_chains/transmission_bracket_mount_study/trial01/independent_checks.json": "1b8c0aa9b29c9d63c6022879ffc9904507e7679d32cee59791a3480354ae2b58",
+    "cad/003_FullTank/experiments/drive_chains/transmission_bracket_mount_study/trial01/definition_preservation_checks.json": "59e5a9b745bb04ee0702e36b4f930a62d28980be96c60d252710179a724e3a83"
+  },
+  "controls": {
+    "frame_front_x": 1598.0817913541819,
+    "top_web_z": 1167.8698292220113,
+    "bottom_web_z": 586.8990512333966,
+    "channel_depth": 148,
+    "channel_height": 50,
+    "channel_stock": 8,
+    "channel_half_span": 1145,
+    "angle_leg_x": 50,
+    "angle_leg_y": 40,
+    "angle_stock": 8,
+    "gusset_stock": 8,
+    "gusset_width": 120,
+    "diaphragm_stock": 8,
+    "rear_stem_round_radius": 20,
+    "rear_stem_end_inset": 2.5,
+    "interface_witness_shift": 1,
+    "outer_angle_inset": 0,
+    "return_height": 80.0,
+    "rivet_diameter": 17.4625,
+    "rivet_stock_length": 38.1,
+    "rivet_head_ratio": 1.75,
+    "hole_radial_clearance": 0.15,
+    "rivet_points_from_rear": [
+      [
+        36,
+        27
+      ],
+      [
+        36,
+        63
+      ],
+      [
+        78,
+        25
+      ]
+    ],
+    "diaphragm_rivet_fractions": [
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "diaphragm_rivet_inset": 24.0
+  },
+  "rivet": {
+    "diameter_mm": 17.4625,
+    "stock_length_mm": 38.1,
+    "grip_mm": 16,
+    "head_radius_mm": 15.279687499999998,
+    "factory_head_height_mm": 12.223749999999999,
+    "upset_height_mm": 11.978655852694832,
+    "upset_stock_volume_mm3": 5292.915897869603
+  },
+  "joints": [
+    {
+      "name": "TransmissionFrame_LeftInnerTopGussetRivet1",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_LeftInnerTopGussetJoints",
+      "gusset": "TransmissionFrame_LeftInnerTopGusset",
+      "channel": "TransmissionFrame_TopChannel",
+      "local_xy_mm": [
+        -104.0,
+        -27.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        647.37,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_LeftInnerTopGussetRivet2",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_LeftInnerTopGussetJoints",
+      "gusset": "TransmissionFrame_LeftInnerTopGusset",
+      "channel": "TransmissionFrame_TopChannel",
+      "local_xy_mm": [
+        -104.0,
+        -63.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        611.37,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_LeftInnerTopGussetRivet3",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_LeftInnerTopGussetJoints",
+      "gusset": "TransmissionFrame_LeftInnerTopGusset",
+      "channel": "TransmissionFrame_TopChannel",
+      "local_xy_mm": [
+        -62.0,
+        -25.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        649.37,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_LeftInnerBottomGussetRivet1",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_LeftInnerBottomGussetJoints",
+      "gusset": "TransmissionFrame_LeftInnerBottomGusset",
+      "channel": "TransmissionFrame_BottomChannel",
+      "local_xy_mm": [
+        -104.0,
+        27.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        647.37,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_LeftInnerBottomGussetRivet2",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_LeftInnerBottomGussetJoints",
+      "gusset": "TransmissionFrame_LeftInnerBottomGusset",
+      "channel": "TransmissionFrame_BottomChannel",
+      "local_xy_mm": [
+        -104.0,
+        63.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        611.37,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_LeftInnerBottomGussetRivet3",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_LeftInnerBottomGussetJoints",
+      "gusset": "TransmissionFrame_LeftInnerBottomGusset",
+      "channel": "TransmissionFrame_BottomChannel",
+      "local_xy_mm": [
+        -62.0,
+        25.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        649.37,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_LeftOuterTopGussetRivet1",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_LeftOuterTopGussetJoints",
+      "gusset": "TransmissionFrame_LeftOuterTopGusset",
+      "channel": "TransmissionFrame_TopChannel",
+      "local_xy_mm": [
+        -104.0,
+        -27.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        1118.0,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_LeftOuterTopGussetRivet2",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_LeftOuterTopGussetJoints",
+      "gusset": "TransmissionFrame_LeftOuterTopGusset",
+      "channel": "TransmissionFrame_TopChannel",
+      "local_xy_mm": [
+        -104.0,
+        -63.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        1082.0,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_LeftOuterTopGussetRivet3",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_LeftOuterTopGussetJoints",
+      "gusset": "TransmissionFrame_LeftOuterTopGusset",
+      "channel": "TransmissionFrame_TopChannel",
+      "local_xy_mm": [
+        -62.0,
+        -25.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        1120.0,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_LeftOuterBottomGussetRivet1",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_LeftOuterBottomGussetJoints",
+      "gusset": "TransmissionFrame_LeftOuterBottomGusset",
+      "channel": "TransmissionFrame_BottomChannel",
+      "local_xy_mm": [
+        -104.0,
+        27.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        1118.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_LeftOuterBottomGussetRivet2",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_LeftOuterBottomGussetJoints",
+      "gusset": "TransmissionFrame_LeftOuterBottomGusset",
+      "channel": "TransmissionFrame_BottomChannel",
+      "local_xy_mm": [
+        -104.0,
+        63.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        1082.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_LeftOuterBottomGussetRivet3",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_LeftOuterBottomGussetJoints",
+      "gusset": "TransmissionFrame_LeftOuterBottomGusset",
+      "channel": "TransmissionFrame_BottomChannel",
+      "local_xy_mm": [
+        -62.0,
+        25.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        1120.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_RightInnerTopGussetRivet1",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_RightInnerTopGussetJoints",
+      "gusset": "TransmissionFrame_RightInnerTopGusset",
+      "channel": "TransmissionFrame_TopChannel",
+      "local_xy_mm": [
+        -104.0,
+        27.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -647.37,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_RightInnerTopGussetRivet2",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_RightInnerTopGussetJoints",
+      "gusset": "TransmissionFrame_RightInnerTopGusset",
+      "channel": "TransmissionFrame_TopChannel",
+      "local_xy_mm": [
+        -104.0,
+        63.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -611.37,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_RightInnerTopGussetRivet3",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_RightInnerTopGussetJoints",
+      "gusset": "TransmissionFrame_RightInnerTopGusset",
+      "channel": "TransmissionFrame_TopChannel",
+      "local_xy_mm": [
+        -62.0,
+        25.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -649.37,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_RightInnerBottomGussetRivet1",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_RightInnerBottomGussetJoints",
+      "gusset": "TransmissionFrame_RightInnerBottomGusset",
+      "channel": "TransmissionFrame_BottomChannel",
+      "local_xy_mm": [
+        -104.0,
+        -27.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        -647.37,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_RightInnerBottomGussetRivet2",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_RightInnerBottomGussetJoints",
+      "gusset": "TransmissionFrame_RightInnerBottomGusset",
+      "channel": "TransmissionFrame_BottomChannel",
+      "local_xy_mm": [
+        -104.0,
+        -63.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        -611.37,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_RightInnerBottomGussetRivet3",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_RightInnerBottomGussetJoints",
+      "gusset": "TransmissionFrame_RightInnerBottomGusset",
+      "channel": "TransmissionFrame_BottomChannel",
+      "local_xy_mm": [
+        -62.0,
+        -25.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        -649.37,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_RightOuterTopGussetRivet1",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_RightOuterTopGussetJoints",
+      "gusset": "TransmissionFrame_RightOuterTopGusset",
+      "channel": "TransmissionFrame_TopChannel",
+      "local_xy_mm": [
+        -104.0,
+        27.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -1118.0,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_RightOuterTopGussetRivet2",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_RightOuterTopGussetJoints",
+      "gusset": "TransmissionFrame_RightOuterTopGusset",
+      "channel": "TransmissionFrame_TopChannel",
+      "local_xy_mm": [
+        -104.0,
+        63.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -1082.0,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_RightOuterTopGussetRivet3",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_RightOuterTopGussetJoints",
+      "gusset": "TransmissionFrame_RightOuterTopGusset",
+      "channel": "TransmissionFrame_TopChannel",
+      "local_xy_mm": [
+        -62.0,
+        25.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -1120.0,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_RightOuterBottomGussetRivet1",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_RightOuterBottomGussetJoints",
+      "gusset": "TransmissionFrame_RightOuterBottomGusset",
+      "channel": "TransmissionFrame_BottomChannel",
+      "local_xy_mm": [
+        -104.0,
+        -27.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        -1118.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_RightOuterBottomGussetRivet2",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_RightOuterBottomGussetJoints",
+      "gusset": "TransmissionFrame_RightOuterBottomGusset",
+      "channel": "TransmissionFrame_BottomChannel",
+      "local_xy_mm": [
+        -104.0,
+        -63.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        -1082.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "TransmissionFrame_RightOuterBottomGussetRivet3",
+      "kind": "gusset_channel",
+      "group": "TransmissionFrame_RightOuterBottomGussetJoints",
+      "gusset": "TransmissionFrame_RightOuterBottomGusset",
+      "channel": "TransmissionFrame_BottomChannel",
+      "local_xy_mm": [
+        -62.0,
+        -25.0
+      ],
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        -1120.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "FrameDiaphragmLeftRivet1",
+      "kind": "diaphragm_upright",
+      "group": "FrameDiaphragmLeftJoints",
+      "gusset": "TransmissionFrame_LeftInnerAngle",
+      "channel": "TransmissionFrame_MiddleDiaphragm",
+      "local_height_fraction": 0.2,
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        759.2626375718239,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "FrameDiaphragmLeftRivet2",
+      "kind": "diaphragm_upright",
+      "group": "FrameDiaphragmLeftJoints",
+      "gusset": "TransmissionFrame_LeftInnerAngle",
+      "channel": "TransmissionFrame_MiddleDiaphragm",
+      "local_height_fraction": 0.4,
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        872.2567931695469,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "FrameDiaphragmLeftRivet3",
+      "kind": "diaphragm_upright",
+      "group": "FrameDiaphragmLeftJoints",
+      "gusset": "TransmissionFrame_LeftInnerAngle",
+      "channel": "TransmissionFrame_MiddleDiaphragm",
+      "local_height_fraction": 0.6,
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        985.2509487672698,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "FrameDiaphragmLeftRivet4",
+      "kind": "diaphragm_upright",
+      "group": "FrameDiaphragmLeftJoints",
+      "gusset": "TransmissionFrame_LeftInnerAngle",
+      "channel": "TransmissionFrame_MiddleDiaphragm",
+      "local_height_fraction": 0.8,
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        1098.2451043649928,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "FrameDiaphragmRightRivet1",
+      "kind": "diaphragm_upright",
+      "group": "FrameDiaphragmRightJoints",
+      "gusset": "TransmissionFrame_RightInnerAngle",
+      "channel": "TransmissionFrame_MiddleDiaphragm",
+      "local_height_fraction": 0.2,
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        -650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        759.2626375718239,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "FrameDiaphragmRightRivet2",
+      "kind": "diaphragm_upright",
+      "group": "FrameDiaphragmRightJoints",
+      "gusset": "TransmissionFrame_RightInnerAngle",
+      "channel": "TransmissionFrame_MiddleDiaphragm",
+      "local_height_fraction": 0.4,
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        -650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        872.2567931695469,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "FrameDiaphragmRightRivet3",
+      "kind": "diaphragm_upright",
+      "group": "FrameDiaphragmRightJoints",
+      "gusset": "TransmissionFrame_RightInnerAngle",
+      "channel": "TransmissionFrame_MiddleDiaphragm",
+      "local_height_fraction": 0.6,
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        -650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        985.2509487672698,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "FrameDiaphragmRightRivet4",
+      "kind": "diaphragm_upright",
+      "group": "FrameDiaphragmRightJoints",
+      "gusset": "TransmissionFrame_RightInnerAngle",
+      "channel": "TransmissionFrame_MiddleDiaphragm",
+      "local_height_fraction": 0.8,
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        -650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        1098.2451043649928,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "changed_definitions": [
+    "Def_TransmissionFrame_bottom_channel",
+    "Def_TransmissionFrame_inner_angle_left",
+    "Def_TransmissionFrame_inner_angle_right",
+    "Def_TransmissionFrame_inner_gusset_left",
+    "Def_TransmissionFrame_inner_gusset_right",
+    "Def_TransmissionFrame_middle_diaphragm",
+    "Def_TransmissionFrame_outer_gusset_left",
+    "Def_TransmissionFrame_outer_gusset_right",
+    "Def_TransmissionFrame_top_channel"
+  ],
+  "new_definitions": [
+    "Def_FrameJoint_rivet_11_16_1_1_2"
+  ],
+  "expected_new_occurrences": {
+    "TransmissionFrame_LeftInnerTopGussetRivet1": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        647.37,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_LeftInnerTopGussetJoints"
+      ]
+    },
+    "TransmissionFrame_LeftInnerTopGussetRivet2": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        611.37,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_LeftInnerTopGussetJoints"
+      ]
+    },
+    "TransmissionFrame_LeftInnerTopGussetRivet3": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        649.37,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_LeftInnerTopGussetJoints"
+      ]
+    },
+    "TransmissionFrame_LeftInnerBottomGussetRivet1": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        647.37,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_LeftInnerBottomGussetJoints"
+      ]
+    },
+    "TransmissionFrame_LeftInnerBottomGussetRivet2": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        611.37,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_LeftInnerBottomGussetJoints"
+      ]
+    },
+    "TransmissionFrame_LeftInnerBottomGussetRivet3": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        649.37,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_LeftInnerBottomGussetJoints"
+      ]
+    },
+    "TransmissionFrame_LeftOuterTopGussetRivet1": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        1118.0,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_LeftOuterTopGussetJoints"
+      ]
+    },
+    "TransmissionFrame_LeftOuterTopGussetRivet2": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        1082.0,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_LeftOuterTopGussetJoints"
+      ]
+    },
+    "TransmissionFrame_LeftOuterTopGussetRivet3": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        1120.0,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_LeftOuterTopGussetJoints"
+      ]
+    },
+    "TransmissionFrame_LeftOuterBottomGussetRivet1": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        1118.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_LeftOuterBottomGussetJoints"
+      ]
+    },
+    "TransmissionFrame_LeftOuterBottomGussetRivet2": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        1082.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_LeftOuterBottomGussetJoints"
+      ]
+    },
+    "TransmissionFrame_LeftOuterBottomGussetRivet3": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        1120.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_LeftOuterBottomGussetJoints"
+      ]
+    },
+    "TransmissionFrame_RightInnerTopGussetRivet1": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -647.37,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_RightInnerTopGussetJoints"
+      ]
+    },
+    "TransmissionFrame_RightInnerTopGussetRivet2": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -611.37,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_RightInnerTopGussetJoints"
+      ]
+    },
+    "TransmissionFrame_RightInnerTopGussetRivet3": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -649.37,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_RightInnerTopGussetJoints"
+      ]
+    },
+    "TransmissionFrame_RightInnerBottomGussetRivet1": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        -647.37,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_RightInnerBottomGussetJoints"
+      ]
+    },
+    "TransmissionFrame_RightInnerBottomGussetRivet2": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        -611.37,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_RightInnerBottomGussetJoints"
+      ]
+    },
+    "TransmissionFrame_RightInnerBottomGussetRivet3": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        -649.37,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_RightInnerBottomGussetJoints"
+      ]
+    },
+    "TransmissionFrame_RightOuterTopGussetRivet1": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -1118.0,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_RightOuterTopGussetJoints"
+      ]
+    },
+    "TransmissionFrame_RightOuterTopGussetRivet2": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -1082.0,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_RightOuterTopGussetJoints"
+      ]
+    },
+    "TransmissionFrame_RightOuterTopGussetRivet3": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -1120.0,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1227.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_RightOuterTopGussetJoints"
+      ]
+    },
+    "TransmissionFrame_RightOuterBottomGussetRivet1": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        -1118.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_RightOuterBottomGussetJoints"
+      ]
+    },
+    "TransmissionFrame_RightOuterBottomGussetRivet2": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1500.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        -1082.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_RightOuterBottomGussetJoints"
+      ]
+    },
+    "TransmissionFrame_RightOuterBottomGussetRivet3": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1542.3460706171923,
+        0.0,
+        1.0,
+        1.2246467991473532e-16,
+        -1120.0,
+        0.0,
+        -1.2246467991473532e-16,
+        1.0,
+        630.268481974101,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "TransmissionFrame_RightOuterBottomGussetJoints"
+      ]
+    },
+    "FrameDiaphragmLeftRivet1": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        759.2626375718239,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "FrameDiaphragmLeftJoints"
+      ]
+    },
+    "FrameDiaphragmLeftRivet2": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        872.2567931695469,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "FrameDiaphragmLeftJoints"
+      ]
+    },
+    "FrameDiaphragmLeftRivet3": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        985.2509487672698,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "FrameDiaphragmLeftJoints"
+      ]
+    },
+    "FrameDiaphragmLeftRivet4": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        1098.2451043649928,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "FrameDiaphragmLeftJoints"
+      ]
+    },
+    "FrameDiaphragmRightRivet1": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        -650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        759.2626375718239,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "FrameDiaphragmRightJoints"
+      ]
+    },
+    "FrameDiaphragmRightRivet2": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        -650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        872.2567931695469,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "FrameDiaphragmRightJoints"
+      ]
+    },
+    "FrameDiaphragmRightRivet3": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        -650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        985.2509487672698,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "FrameDiaphragmRightJoints"
+      ]
+    },
+    "FrameDiaphragmRightRivet4": {
+      "definition": "Def_FrameJoint_rivet_11_16_1_1_2",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        1480.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        -650.37,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        1098.2451043649928,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "FrameGussetRivets",
+        "FrameDiaphragmRightJoints"
+      ]
+    }
+  },
+  "new_assemblies": [
+    "FrameGussetRivets",
+    "TransmissionFrame_LeftInnerTopGussetJoints",
+    "TransmissionFrame_LeftInnerBottomGussetJoints",
+    "TransmissionFrame_LeftOuterTopGussetJoints",
+    "TransmissionFrame_LeftOuterBottomGussetJoints",
+    "TransmissionFrame_RightInnerTopGussetJoints",
+    "TransmissionFrame_RightInnerBottomGussetJoints",
+    "TransmissionFrame_RightOuterTopGussetJoints",
+    "TransmissionFrame_RightOuterBottomGussetJoints",
+    "FrameDiaphragmLeftJoints",
+    "FrameDiaphragmRightJoints"
+  ],
+  "affected_occurrences": [
+    "FrameDiaphragmLeftRivet1",
+    "FrameDiaphragmLeftRivet2",
+    "FrameDiaphragmLeftRivet3",
+    "FrameDiaphragmLeftRivet4",
+    "FrameDiaphragmRightRivet1",
+    "FrameDiaphragmRightRivet2",
+    "FrameDiaphragmRightRivet3",
+    "FrameDiaphragmRightRivet4",
+    "TransmissionFrame_BottomChannel",
+    "TransmissionFrame_LeftInnerAngle",
+    "TransmissionFrame_LeftInnerBottomGusset",
+    "TransmissionFrame_LeftInnerBottomGussetRivet1",
+    "TransmissionFrame_LeftInnerBottomGussetRivet2",
+    "TransmissionFrame_LeftInnerBottomGussetRivet3",
+    "TransmissionFrame_LeftInnerTopGusset",
+    "TransmissionFrame_LeftInnerTopGussetRivet1",
+    "TransmissionFrame_LeftInnerTopGussetRivet2",
+    "TransmissionFrame_LeftInnerTopGussetRivet3",
+    "TransmissionFrame_LeftOuterBottomGusset",
+    "TransmissionFrame_LeftOuterBottomGussetRivet1",
+    "TransmissionFrame_LeftOuterBottomGussetRivet2",
+    "TransmissionFrame_LeftOuterBottomGussetRivet3",
+    "TransmissionFrame_LeftOuterTopGusset",
+    "TransmissionFrame_LeftOuterTopGussetRivet1",
+    "TransmissionFrame_LeftOuterTopGussetRivet2",
+    "TransmissionFrame_LeftOuterTopGussetRivet3",
+    "TransmissionFrame_MiddleDiaphragm",
+    "TransmissionFrame_RightInnerAngle",
+    "TransmissionFrame_RightInnerBottomGusset",
+    "TransmissionFrame_RightInnerBottomGussetRivet1",
+    "TransmissionFrame_RightInnerBottomGussetRivet2",
+    "TransmissionFrame_RightInnerBottomGussetRivet3",
+    "TransmissionFrame_RightInnerTopGusset",
+    "TransmissionFrame_RightInnerTopGussetRivet1",
+    "TransmissionFrame_RightInnerTopGussetRivet2",
+    "TransmissionFrame_RightInnerTopGussetRivet3",
+    "TransmissionFrame_RightOuterBottomGusset",
+    "TransmissionFrame_RightOuterBottomGussetRivet1",
+    "TransmissionFrame_RightOuterBottomGussetRivet2",
+    "TransmissionFrame_RightOuterBottomGussetRivet3",
+    "TransmissionFrame_RightOuterTopGusset",
+    "TransmissionFrame_RightOuterTopGussetRivet1",
+    "TransmissionFrame_RightOuterTopGussetRivet2",
+    "TransmissionFrame_RightOuterTopGussetRivet3",
+    "TransmissionFrame_TopChannel"
+  ],
+  "expected_physical_occurrences": 2505,
+  "expected_definition_count": 464,
+  "expected_assembly_count": 226,
+  "diaphragm_half_width_mm": 666.37,
+  "source_rivet_count": 78,
+  "populated_rivet_count": 32,
+  "remaining_rivet_count": 46,
+  "historical_joint_layout_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false
+}

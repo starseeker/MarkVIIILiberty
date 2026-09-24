@@ -1,5 +1,17 @@
 # Mark VIII visual progression
 
+The brake suspension trial adds an
+[isometric](intermediate_snapshot_iso_transmission_brake_suspension_001.png),
+[underside detail](intermediate_snapshot_detail_transmission_brake_suspension_001.png)
+and [handbook overlay](intermediate_snapshot_source_transmission_brake_suspension_001.png).
+Four M338 bracket lugs and two M385 stops now occupy their provisional frame
+stations. Open pin bores and separate channel seats are visible; connected brake
+linkage and foot fastening remain incomplete. Source overlays retain the datum
+and pin-position disagreement. Local geometry, affected-context, STEP,
+preservation, fresh reproduction and parameter checks pass. All 167 earlier
+images and 27 recorded native baselines remain unchanged: **170 total**.
+See the [trial record](003_FullTank/experiments/drive_chains/transmission_brake_suspension_study/trial02/README.md).
+
 The frame-joint trial adds an
 [isometric](intermediate_snapshot_iso_transmission_frame_joints_001.png),
 [corner detail](intermediate_snapshot_detail_transmission_frame_joints_001.png)

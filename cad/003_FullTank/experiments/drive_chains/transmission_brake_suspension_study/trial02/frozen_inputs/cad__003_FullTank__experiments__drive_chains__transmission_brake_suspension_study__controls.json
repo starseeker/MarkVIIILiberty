@@ -1,0 +1,65 @@
+{
+  "controls": {
+    "channel_depth": 148.0,
+    "source_channel_x_px": [
+      1136.0,
+      1370.0
+    ],
+    "source_channel_web_z_px": [
+      122.0,
+      1024.0
+    ],
+    "source_pin_px": [
+      1297.0,
+      225.0
+    ],
+    "source_foot_x_px": [
+      1190.0,
+      1338.0
+    ],
+    "source_lug_x_px": [
+      1253.0,
+      1335.0
+    ],
+    "source_axis_px": [
+      792.0,
+      593.0
+    ],
+    "source_foot_stock_px": 13.0,
+    "lug_stock": 12.7,
+    "foot_width": 60.0,
+    "pin_bore_diameter": 24.0,
+    "pin_bore_clearance": 0.15,
+    "stop_stock": 6.35,
+    "stop_width": 40.0,
+    "stop_toe_depth": 23.0,
+    "stop_source_top_bottom_px": [
+      133.0,
+      419.0
+    ],
+    "stop_source_frame_webs_px": [
+      133.0,
+      956.0
+    ],
+    "axial_offset": 0.0,
+    "pin_drop_adjustment": 0.0,
+    "longitudinal_datum": "shaft"
+  },
+  "basis": {
+    "scale": "HB134 pixel spans are registered to the retained 148 mm channel depth and saved upper/lower web separation. This is conditional registration, not printed metrology; image X increases aft.",
+    "source_axis_px": "Held-out visible shaft center; record its residual against the modeled shaft instead of forcing alignment. Pixel picks have an estimated +/-4 px allowance.",
+    "source_foot_x_px": "Upper foot extent read behind partly obscuring channel/link lines; profile approximated by a flat rectangular foot.",
+    "source_lug_x_px": "Visible lug width; circular bottom inferred behind the link head.",
+    "source_foot_stock_px": "13 source pixels; estimated foot thickness, not a printed stock dimension.",
+    "lug_stock": "12.7 mm estimated transverse thickness; cannot be measured from the available side view.",
+    "foot_width": "60 mm estimated transverse width; no width in side view.",
+    "pin_bore_diameter": "24 mm estimated intended pin diameter; M339 source gives identity/count but no located dimension.",
+    "pin_bore_clearance": "0.15 mm radial geometric allowance, not historical manufacturing tolerance.",
+    "stop": "L-section interpretation of M385 in HB135. Length scales from the visible tip to the registered frame web spacing; toe depth, transverse width and stock are estimated.",
+    "axial_offset": "Zero means align bracket and stop with the center of the corresponding cylindrical friction face; linkage stack not yet qualified.",
+    "pin_drop_adjustment": "Zero nominal. Explicit variation control for ambiguous hidden lug geometry.",
+    "longitudinal_datum": "Locate M338 pin longitudinally from the retained drum shaft and HB134 pin-to-shaft separation. The initial channel-referenced X placement collided with diaphragm/stops. The 9.576 mm datum disagreement remains explicit; not a historical fit claim."
+  },
+  "estimated_pixel_pick_allowance": 4,
+  "historical_geometry_qualified": false
+}

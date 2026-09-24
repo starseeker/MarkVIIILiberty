@@ -1,0 +1,344 @@
+{
+  "native_file": "PowertrainWithBrakeSuspension.FCStd",
+  "native_sha256": "0af27f181eaf30c4da5b5e291daf10cce1aa276a3def6c47fed40e6c6d6ae485",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_study/trial03/PowertrainWithFrameJoints.FCStd",
+  "source_native_sha256": "aa8025f11119577f09f354571f3bc651dfde2e11353f7dad2d23f50c17641d49",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_transmission_brake_suspension.py": "7901a584877228a643984dfac1d6a8493166d8bf1f36a9f47bf3891eebf6ac2b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_suspension_study/controls.json": "904a402ba01eb98eb8be8c4a27841a6b9bd75af18f2d3b00c48a308d6c1115ef",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_suspension_study/sources.json": "ab916f5e6bf945d7a1871242609423b32fd0d321f64782374018014747637d86",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_suspension_parts.py": "2fbff1af28c265a27dad3fb0289e890a999443a7fb0e2b7a27b070f699ab0075",
+    "cad/003_FullTank/experiments/drive_chains/transmission_support_parts.py": "378d460b581c26154940ced9b9f4a8d8ca514fb97b05f24a2ac13c8c8b595405",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/lib/evidence.py": "e0915e383fa09d91637af51c10a062c9cd30bc38a7cf763a74efdb218942568b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_study/trial03/report.json": "00b1d7e58ff4128fa4dd0cc9b74fa54f362998c5b674713816ef044b89222188",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_study/trial03/independent_checks.json": "c2a3dd650d8cfdfc13f2fb4093644bdf4383c07594ab75e7872c63e3c4b0ab0c",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_study/trial03/definition_preservation_checks.json": "6037c058133455f6155f7af55c54783d5200677b0805d87f39de5441ae072fd1"
+  },
+  "controls": {
+    "channel_depth": 148.0,
+    "source_channel_x_px": [
+      1136.0,
+      1370.0
+    ],
+    "source_channel_web_z_px": [
+      122.0,
+      1024.0
+    ],
+    "source_pin_px": [
+      1297.0,
+      225.0
+    ],
+    "source_foot_x_px": [
+      1190.0,
+      1338.0
+    ],
+    "source_lug_x_px": [
+      1253.0,
+      1335.0
+    ],
+    "source_axis_px": [
+      792.0,
+      593.0
+    ],
+    "source_foot_stock_px": 13.0,
+    "lug_stock": 12.7,
+    "foot_width": 60.0,
+    "pin_bore_diameter": 24.0,
+    "pin_bore_clearance": 0.15,
+    "stop_stock": 6.35,
+    "stop_width": 40.0,
+    "stop_toe_depth": 23.0,
+    "stop_source_top_bottom_px": [
+      133.0,
+      419.0
+    ],
+    "stop_source_frame_webs_px": [
+      133.0,
+      956.0
+    ],
+    "axial_offset": 0.0,
+    "pin_drop_adjustment": 0.0,
+    "longitudinal_datum": "shaft"
+  },
+  "dimensions": {
+    "scale_x_mm_px": 0.6324786324786325,
+    "scale_z_mm_px": 0.6440917716060028,
+    "pin_x_relative_channel_mm": -101.82905982905983,
+    "pin_drop_mm": 66.3414524754183,
+    "foot_rear_mm": -25.931623931623932,
+    "foot_front_mm": 67.67521367521368,
+    "foot_stock_mm": 8.373193030878037,
+    "lug_radius_mm": 25.931623931623932,
+    "stop_height_mm": 201.8926397384493,
+    "web_span_mm": 580.9707779886146
+  },
+  "interfaces": {
+    "PortLowSpeed": {
+      "occurrence": "PortTransmissionCore_brake_case",
+      "radius_mm": 288.83428571428567,
+      "axis_center_mm": [
+        1831.4946420457636,
+        590.1871428571428,
+        900.6029411764705
+      ],
+      "axial_limits_mm": [
+        480.6042857142857,
+        590.1871428571428
+      ],
+      "center_y_mm": 535.3957142857142,
+      "bracket_x_shift_from_channel_registration_mm": 9.575921855921706
+    },
+    "PortTrack": {
+      "occurrence": "PortTransmissionOutput_drum",
+      "radius_mm": 303.3485714285714,
+      "axis_center_mm": [
+        1831.4946420457636,
+        726.6214285714289,
+        900.6029411764705
+      ],
+      "axial_limits_mm": [
+        726.6214285714289,
+        813.7071428571431
+      ],
+      "center_y_mm": 770.164285714286,
+      "bracket_x_shift_from_channel_registration_mm": 9.575921855921706
+    },
+    "StarboardLowSpeed": {
+      "occurrence": "StarboardTransmissionCore_brake_case",
+      "radius_mm": 288.83428571428567,
+      "axis_center_mm": [
+        1831.4946420457636,
+        -590.1871428571428,
+        900.6029411764705
+      ],
+      "axial_limits_mm": [
+        -590.1871428571428,
+        -480.6042857142857
+      ],
+      "center_y_mm": -535.3957142857142,
+      "bracket_x_shift_from_channel_registration_mm": 9.575921855921706
+    },
+    "StarboardTrack": {
+      "occurrence": "StarboardTransmissionOutput_drum",
+      "radius_mm": 303.34857142857146,
+      "axis_center_mm": [
+        1831.4946420457636,
+        -726.6214285714287,
+        900.6029411764705
+      ],
+      "axial_limits_mm": [
+        -813.707142857143,
+        -726.6214285714287
+      ],
+      "center_y_mm": -770.1642857142858,
+      "bracket_x_shift_from_channel_registration_mm": 9.575921855921706
+    }
+  },
+  "source_axis_residual": {
+    "predicted_axis_xz_mm": [
+      1821.918720189842,
+      915.8720355362882
+    ],
+    "actual_axis_xz_mm": [
+      1831.4946420457636,
+      900.6029411764705
+    ],
+    "residual_xz_mm": [
+      -9.575921855921706,
+      15.2690943598177
+    ],
+    "interpretation": "Held-out source shaft center disagrees with retained model registration; no physical frame is moved to hide it."
+  },
+  "changed_definitions": [],
+  "new_definitions": [
+    "Def_BrakeSuspension_bracket",
+    "Def_BrakeSuspension_stop"
+  ],
+  "expected_new_occurrences": {
+    "PortLowSpeedBracket": {
+      "definition": "Def_BrakeSuspension_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872973,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortLowSpeedBrakeSupport"
+      ]
+    },
+    "PortTrackBracket": {
+      "definition": "Def_BrakeSuspension_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        770.164285714286,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872973,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortTrackBrakeSupport"
+      ]
+    },
+    "PortTrackStop": {
+      "definition": "Def_BrakeSuspension_stop",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1604.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        770.164285714286,
+        0.0,
+        0.0,
+        1.0,
+        1219.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "PortTrackBrakeSupport"
+      ]
+    },
+    "StarboardLowSpeedBracket": {
+      "definition": "Def_BrakeSuspension_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872973,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardLowSpeedBrakeSupport"
+      ]
+    },
+    "StarboardTrackBracket": {
+      "definition": "Def_BrakeSuspension_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1512.0929326440541,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142858,
+        0.0,
+        0.0,
+        1.0,
+        1152.8978074872973,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardTrackBrakeSupport"
+      ]
+    },
+    "StarboardTrackStop": {
+      "definition": "Def_BrakeSuspension_stop",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1604.3460706171923,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142858,
+        0.0,
+        0.0,
+        1.0,
+        1219.2392599627156,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionMountingFrame",
+        "TransmissionBrakeSuspension",
+        "StarboardTrackBrakeSupport"
+      ]
+    }
+  },
+  "new_assemblies": [
+    "TransmissionBrakeSuspension",
+    "PortLowSpeedBrakeSupport",
+    "PortTrackBrakeSupport",
+    "StarboardLowSpeedBrakeSupport",
+    "StarboardTrackBrakeSupport"
+  ],
+  "affected_occurrences": [
+    "PortLowSpeedBracket",
+    "PortTrackBracket",
+    "PortTrackStop",
+    "StarboardLowSpeedBracket",
+    "StarboardTrackBracket",
+    "StarboardTrackStop"
+  ],
+  "expected_physical_occurrences": 2511,
+  "expected_definition_count": 466,
+  "expected_assembly_count": 231,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "fastening_pending": true,
+  "standard_assembly_modified": false
+}
