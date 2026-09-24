@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "name": "Original case material retained",
+      "passed": true
+    },
+    {
+      "name": "Added material confined to declared receiving stock",
+      "passed": true
+    },
+    {
+      "name": "Actual saved anchor bore frame retained",
+      "passed": true
+    },
+    {
+      "name": "Port bracket has positive case-seat contact",
+      "passed": true,
+      "area_mm2": 5082.1065752729455
+    },
+    {
+      "name": "Port bracket clears retained M361 end",
+      "passed": true,
+      "common_volume_mm3": 0.0
+    },
+    {
+      "name": "Starboard bracket has positive case-seat contact",
+      "passed": true,
+      "area_mm2": 5082.1065752729455
+    },
+    {
+      "name": "Starboard bracket clears retained M361 end",
+      "passed": true,
+      "common_volume_mm3": 0.0
+    },
+    {
+      "name": "New receiver and bracket material clears retained assembly",
+      "passed": false,
+      "pairs": 209,
+      "collisions": [
+        {
+          "first": "Case",
+          "second": "PortAnchorBracket",
+          "volume_mm3": 709.9465625000039
+        },
+        {
+          "first": "Case",
+          "second": "StarboardAnchorBracket",
+          "volume_mm3": 709.946562500004
+        }
+      ],
+      "invalid": []
+    }
+  ]
+}

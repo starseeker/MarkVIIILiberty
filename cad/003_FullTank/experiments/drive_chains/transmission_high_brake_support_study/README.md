@@ -1,11 +1,14 @@
-# High-speed brake supports and stops — evidence and receiving-context study
+# High-speed brake supports and stops — receiving-web reconstruction
 
 The next geometry packet comprises two M362 anchor brackets, two M363 retained
 pins, two M365 clips, two each of M366/M398/M399 stops, six M400 stop screws,
 and their attachment hardware. The locally qualified parent remains the
 [operating-mechanism checkpoint](../transmission_high_brake_mechanism_study/trial01/README.md):
-3,121 physical occurrences, 529 shared definitions and 322 assemblies. This
-study has not added physical geometry or qualified the supports.
+3,121 physical occurrences, 529 shared definitions and 322 assemblies. The new
+[integrated candidate](integrated01/PowertrainWithHighBrakeReceivers.FCStd) has
+**3,129 occurrences /532 definitions /324 assemblies**: revised case receiving
+webs, two M362 brackets, two shared locking plates and four lower MX60 screws.
+It is a development candidate; the complete support/stop packet is unfinished.
 
 ## Reviewed evidence
 
@@ -83,13 +86,62 @@ and the bracket's transverse reach need an explicit geometry hypothesis.
 Use the service instructions, exterior photograph and sectional evidence to
 constrain it. A camera refit would not supply missing receiving material.
 
+## Receiving geometry and completed checks
+
+[controls.json](controls.json) records the explicit integral-case-web hypothesis.
+Four inclined feet, four thin diagonal ribs and four transverse ties connect
+the illustrated upper/lower seats to the retained case and frame. All old case
+material is preserved; additions stay within declared receiving-stock envelopes.
+Eight blind mounting holes have measured back stock. Outer ties start beyond
+the existing bearing-cap stud envelopes, whose clearance is checked separately.
+Top and bottom geometry uses the actual asymmetric frame heights.
+
+M362 is a fork around the retained M361 anchor eye. The nominal 5/8-inch MX60
+shanks, bracket/plate stack and blind-hole depth are coupled. The common MX61
+strip has two formed locking tabs against head flats. Its stock and bend form,
+bracket hidden section, web thicknesses and bolt pitch are estimates. Upper
+receiving holes intentionally await the stop assembly. The new parts use shared
+definitions and separate port/starboard assembly groups; MX61 has no invented
+catalogue identifier.
+
+The inspected [isometric](receivers04/receiver_isometric.png) shows the support
+architecture with selected retained neighbors in outline. The inspected
+[HB133 overlay](receivers04/receiver_source.png) shows case sections at the same
+two transverse stations as the evidence probe and the new bracket/hardware.
+The latest ribs attach nearer the illustrated bearing-cap junction than the
+earlier receivers03 trial. Source registration is unchanged. Residuals at the
+frame, case silhouette and bracket stock remain visible; this mixed section
+illustration does not establish exact hidden depths or a photographic camera.
+
+| Saved evidence | Result and scope |
+|---|---|
+| [receivers04/report.json](receivers04/report.json) | 22 checks pass, including 226 nearby development pairs, bounded case additions, retained anchor axis and positive bearing interfaces with displaced negatives. |
+| [receiver_interface_checks.json](receivers04/receiver_interface_checks.json) | 28 checks pass: four new frame contacts, four displaced negatives, eight blind passages, eight back-stock witnesses and four inherited stud clearances. |
+| [exchange_refined02](receivers04/exchange_refined02/exchange_checks.json) | 13 strict comparisons pass for four definitions and nine installed shapes. Case mass uses qualified tighter quadrature after a recorded convergence failure; material and tolerance limits are unchanged. |
+| [variation02](variation02/report.json) | A 1 mm increase in bracket stock moves the plate/heads and updates blind-hole depth; 22 prototype and 28 saved-interface checks pass. This variation has not yet had its own STEP gate. |
+| [integrated01](integrated01/independent_checks.json) | 18 saved integration checks pass: counts, hierarchy, retained frames and strict material/placement transfer from the tested prototype. |
+| [definition preservation](integrated01/definition_preservation_checks.json) | All 528 unchanged inherited definitions pass: 502 exact BReps and 26 strict material comparisons. The first worker was interrupted; the completed resume retains hash-bound results. |
+| [standard context](integrated01/standard_context_checks.json) | All nine affected occurrences checked against 5,316 retained tank occurrences; the one nearby material pair passes. Replaced stand-ins are explicitly excluded. |
+| [fresh reproduction](integrated01/reproduction_checks.json) | All six comparisons pass, including all 1,628 archive BReps and 147,688 persistent object properties. |
+
+The [development checkpoint](integrated01/development_checkpoint.json) binds
+these scoped results. They do not establish historical accuracy, structural
+strength or a complete service path. Full packet qualification and promotion remain pending.
+Standard tank011 and the qualified operating-mechanism parent remain unchanged.
+
+Retained failed trials explain the geometry changes: receivers01 had bracket-tail
+interference with the seat; receivers02 had mounting holes that stopped inside
+the locking plate. Both were corrected before receivers03 passed. Receivers04
+improves the source silhouette and is the current geometry. Its initial STEP
+failure concerned numerical mass convergence, not material preservation; see
+the [measurement diagnostic](receivers04/diagnostics/README.md).
+
 ## Next construction and qualification
 
-1. Establish upper/lower receiving planes and bolt axes against the actual case
-   and frame. Test an explicit integral-case-web hypothesis; record any bounded
-   case revision and preserve all existing bearing and hardware interfaces.
-2. Build the M362 fork around the retained M361 eye, then M363 and its source-sized
-   cotter. Check both pin retention and the stated removal direction.
+1. Retain the reviewed receiver/bracket candidate and its fixed source registration;
+   finish the separate preservation and full-packet gates before promotion.
+2. Add M363 and its source-sized cotter around the retained M361/M362 joint.
+   Check stock convention, pin retention and the stated removal direction.
 3. Add the M366 bottom stop and paired MX76 attachment, then top/back stops,
    M365 clip and three M400/nut pairs per brake. Keep screw adjustment clearance
    distinct from numerical Boolean tolerance.
@@ -108,6 +160,6 @@ Run the read-only probe with a fresh absolute output path:
 python3 skills/freecad-reconstruction/scripts/freecad_headless.py --workdir .work/high-brake-support/runtime cad/003_FullTank/experiments/drive_chains/probe_transmission_high_brake_support.py --output /absolute/new-context-directory
 ```
 
-The [report](context01/report.json) binds the completed probe, runtime and images.
-The qualified native and standard tank011 remain unchanged; there is no new
-progression image for this evidence-only stage. The complete tank goal is active.
+The [report](context01/report.json) retains the original evidence-only probe.
+The new prototype images are published separately as development progression
+views. The complete tank goal is active.

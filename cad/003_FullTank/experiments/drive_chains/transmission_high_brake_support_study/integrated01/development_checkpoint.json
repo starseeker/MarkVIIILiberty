@@ -1,0 +1,58 @@
+{
+  "date": "2026-09-24",
+  "status": "development_candidate",
+  "native_file": "PowertrainWithHighBrakeReceivers.FCStd",
+  "native_sha256": "66be1f55632f92533de0ccfcc920522c1a05370f02352caf963d562cc6955792",
+  "source_native_sha256": "7f7eb9f687ed458d7bcfba599af6333be4899fb6477581ce2fd0075b01158b96",
+  "completed_receipts": {
+    "receivers04/report.json": "5b84d5fe3449f3cbeb45de94b52e59027911d0b08c7ce93a90419178ff121139",
+    "receivers04/receiver_interface_checks.json": "6a7b48a6a2b3d68124e1f5acce278be5d6f0e9f8e713b31b088dbca71667fd72",
+    "receivers04/exchange_refined02/exchange_checks.json": "f33171bb93edf7cf7430baea4cee65df6361f34e1481fa3d4c6feb6a83c768ff",
+    "receivers04/diagnostics/refined_mass_controls/qualification.json": "ae4e81ec3f9a1e8ccb4815d967ca90021984ae9f470fe4766d42f068c490509e",
+    "variation02/report.json": "1b0fc6a8177d9440a80bce303ba7ed331dd7bbbefe83e48933150b52d0a47f2b",
+    "variation02/receiver_interface_checks.json": "21e7480f1e8b56588ce43b7405a27d8de0926e9732b7a068b0aa5e920bc56e74",
+    "integrated01/independent_checks.json": "dcc02f2cfd5c43ff0bdad4b5a32e7566f377d41fa6d447f6f7de9e8bd9372297",
+    "integrated01/definition_preservation_checks.json": "84e9b3583475cf6c184d3efa4180c4cd7f51b1cffb17560ef1b775d53f6e9b48",
+    "integrated01/standard_context_checks.json": "612aadf6f47302cf53b173a1fa6b96cbf8f9c45dd353ebad7c23b9cf5cc31b87",
+    "integrated01/reproduction_checks.json": "b0a09eeb3c550aef1924800819b9c966e9f633ceaf0ec901495b9afd1d9f1567",
+    "snapshot_preservation.json": "f372c656387551e156316e6ac74e6e9e6a771c190492ed5681f2617b39729a9f"
+  },
+  "visual_review_sha256": "11162e54916616ff7eb8a6de7d67b6cc633d5f50c394006b60ecce293db0b48e",
+  "source_registration_sha256": "311f014e5f12beb874225901dff20706ed939600a4b2aece0fee7b601b64f9e2",
+  "frozen_validation": {
+    "qualify_refined_kronrod_mass.py": "301c47f27d3c86245b6f8ce12383fcf6c772d6a91f2767bdd00ac925ab806db0",
+    "trial_transmission_high_brake_receivers.py": "58f26bbac37271b53cc9fc9a41075ee983d16a957e70faa48b19b4faf3c242e1",
+    "transmission_high_brake_support_parts.py": "bc1f30fa9f995a7460aa96be54b40fd3756abd2c5eff7c9db7f0e1d7e2b09cf3",
+    "mass_properties.py": "8f92c1d73aafda1f53d5c130e783d0939a8688964b97b8814bcace080ab8d7d7",
+    "occt_kronrod_mass.cpp": "20f39dda7f41b3b14269da6b897cdef47d12b7a6c22dfb7fb7039a18b5511d8f",
+    "check_transmission_high_brake_joint_context.py": "7be21bbe8bf4b3b4edac3854a5af01ccc0c5897b4009b8446fae0c646cfaaf66",
+    "check_transmission_high_brake_receiver_interfaces.py": "b44cf7dd7ffb19eeca739e57672b07295ee71f42555e5f4533e7dbb191c7fd25",
+    "build_transmission_high_brake_receivers.py": "771aa721678bf59213c85823b11ab24f1d5e2428d6807164e6566edccfcac88b",
+    "kronrod_mass.py": "537d669edfe05c2c1846022e4c93352d3929647c0f7226b41a9541b7d4d2fa9a",
+    "render_transmission_high_brake_receivers.py": "941cfbcf5c73561c68bb7a09315de6b94ea77a9b69c77b839f489138da9c88d9",
+    "check_transmission_high_brake_receivers_exchange.py": "2c0601937ad2ca7850e4df417df4618332ee63973ff4aaa3600b585da7a96fa6",
+    "pump_integration_worker.py": "4bbc349b40b5fc628a0cd5c1b497faee4716cf0a0092b2ec30085953f0d2862e",
+    "check_powertrain_frame_reproduction.py": "a349209113d5a5c5c2673979e3f6172f55023118e9e1a92ad01b4e4be94ea558",
+    "check_transmission_high_brake_receiver_preservation.py": "3bb3405353ebcbffb1b8963d12bca9e91f3203e62ffda3706cb0a85770b21de6",
+    "occt_mass_properties.cpp": "320bbdb62b127d9476ad743e553a5bdaa63c46b7294008b34a310040d9a4984f",
+    "check_transmission_high_brake_receiver_integration.py": "57141e6e611292466c90a9aca729bd1fac1cbc890291af5176801349a558466e",
+    "refined_kronrod_mass.py": "72f75b4cb6b58f90d5d6604450d8e9a80a9a352cd58f0a65da44922ce275ce78"
+  },
+  "counts": {
+    "occurrences": 3129,
+    "definitions": 532,
+    "assemblies": 324
+  },
+  "scope": "Receiving webs, M362 brackets, MX61 plates and four lower MX60 screws. Saved prototype geometry/STEP and integrated material/frames preserved; a fresh nominal integrated rebuild is exact.",
+  "pending": [
+    "M363 anchor pins and source-sized cotters",
+    "M365/M366/M398/M399 stops with remaining hardware",
+    "Full service paths and control rods",
+    "Parameter-variation STEP and complete support-packet pipeline qualification",
+    "Promotion to full standard tank"
+  ],
+  "packet_complete": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false
+}

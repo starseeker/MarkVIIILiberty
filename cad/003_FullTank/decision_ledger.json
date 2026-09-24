@@ -152,7 +152,7 @@
       "id": "brake_adjusting_spring_spacer",
       "status": "reviewed_approximation",
       "scope": "Retain four SH687A annuli and coupled shortened springs for dependent local standard-geometry development.",
-      "reason": "Original SNL218/252 establish identity, quantity four and literal 1 by 1¼ inch stock notation. Native seats/voids, preservation, STEP, context, reproduction and sensitivity pass.",
+      "reason": "Original SNL218/252 establish identity, quantity four and literal 1 by 1\u00bc inch stock notation. Native seats/voids, preservation, STEP, context, reproduction and sensitivity pass.",
       "uncertainty": "Assigning 25.4 mm to OD and 31.75 mm to length, choosing a 13 mm bore and locating at the swivel end are hypotheses. The varied dimensions are engineering sensitivity, not historical confidence bounds.",
       "limits": [
         "SH687A stock dimension roles, bore and swivel-side placement remain hypotheses.",
@@ -326,15 +326,18 @@
       "id": "high_speed_brake_support_receivers",
       "status": "open_evidence",
       "scope": "M362/M363 support receivers, M365/M366/M398/M399 stops and retention hardware.",
-      "reason": "Source counts and service connections recovered; native-bound sections expose missing receiving material at two plausible transverse stations. Establish the case-web and bracket reach hypothesis before installing hardware.",
+      "reason": "An explicit integral-case-web and M362 fork hypothesis supplies the missing receiving material. The reviewed receiver prototype passes native/interfaces/STEP, and the integrated candidate passes geometry transfer, unchanged-definition preservation, standard context and fresh nominal reproduction. Pins/stops and complete packet qualification remain open.",
       "uncertainty": "Hidden support depth and cast-web form unprinted. Handbook locking plates differ from later catalogue lock-washer applications; two of ten MX60 screw locations unresolved.",
       "limits": [
         "Fixed planar registration is reused; this illustration is not a recovered perspective camera.",
         "Approximate source-region distances are diagnostic, not bolt axes or bearing-area checks.",
-        "Reuse candidate cotters only after checking formed stock, length datum and installed clearance."
+        "Reuse candidate cotters only after checking formed stock, length datum and installed clearance.",
+        "Four lower MX60 screws installed; four upper positions await stops; two of catalogue ten remain unallocated.",
+        "Receiving case stock, hidden bracket section, bolt pitches and locking-tab bends are estimates. Existing bearing and anchor frames are preserved.",
+        "A1mm bracket-stock variation passes native checks; its STEP and complete support-packet qualification remain pending."
       ],
       "reopen_when": [
-        "A reviewed receiving-web hypothesis supplies physical support and passes preserved-interface checks.",
+        "Anchor pins, stops, controls or service evidence contradict the tested receiver/bracket interfaces.",
         "Independent source section or image resolves bracket depth or hardware variant.",
         "Catalogue reconciliation resolves remaining MX60 occurrences."
       ],
@@ -358,6 +361,18 @@
         {
           "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/context01/visual_review.json",
           "sha256": "e8920460af675764aafe468eeea5555cdabadbeab182abec46f2f59d98bf962c"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/controls.json",
+          "sha256": "cfa251ef9bf57ea3880feda4adfa8eb161b4d0612bd20598be59ce42cc48150e"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/receivers04/visual_review.json",
+          "sha256": "11162e54916616ff7eb8a6de7d67b6cc633d5f50c394006b60ecce293db0b48e"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated01/development_checkpoint.json",
+          "sha256": "40bc0455cafe6d4e46c2b8561b20c9d5b093ca46d47eab6f300aa8d790e7b01c"
         }
       ]
     }

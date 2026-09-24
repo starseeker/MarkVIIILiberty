@@ -1,0 +1,181 @@
+{
+  "native_sha256": "a1beac88a2faabdf348ed18336acba877f7f7f61030c2941ec5d3a8386e49b8f",
+  "probe_sha256": "40b3c75f04abd2e4033958faffb718482dab209741414e81eae3e27448bd166e",
+  "provenance": {
+    "adapter_sha256": "537d669edfe05c2c1846022e4c93352d3929647c0f7226b41a9541b7d4d2fa9a",
+    "convergence_adapter_sha256": "8f92c1d73aafda1f53d5c130e783d0939a8688964b97b8814bcace080ab8d7d7",
+    "source_sha256": "20f39dda7f41b3b14269da6b897cdef47d12b7a6c22dfb7fb7039a18b5511d8f",
+    "binary_sha256": "9f4a2794c68da6543fca75fc84c92ba40b4d85d4fba7aafe24de37cf1a32ff2a",
+    "runtime_root": "/snap/freecad/2741",
+    "compile_command": [
+      "g++",
+      "-std=c++17",
+      "-O2",
+      "-I/snap/freecad/2741/usr/include/opencascade",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/occt_kronrod_mass.cpp",
+      "-L/snap/freecad/2741/usr/lib",
+      "-lTKTopAlgo",
+      "-lTKBRep",
+      "-lTKG3d",
+      "-lTKMath",
+      "-lTKernel",
+      "-o",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/receivers04/diagnostics/case_mass/runtime/occt_kronrod_mass"
+    ],
+    "header_sha256": "a1d5c195f2234cbdc748ebbdd4af499d59e4b96ea235cde9ba74878e5d7d3056",
+    "library_sha256": "e484214d874d21b7dfdcb44d20d903a9c213e0d96f68c459ecb7e5369a32ef04",
+    "algorithm": "BRepGProp::VolumePropertiesGK; OnlyClosed, IsUseSpan and CGFlag enabled; inertia and shared-face skipping disabled"
+  },
+  "results": [
+    {
+      "scope": "Definitions",
+      "native": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 3.0940002435056864e-11,
+            "volume": 10314529.055551132,
+            "centroid": [
+              -149.12334189020874,
+              -6.137611280075153,
+              11.096030085939377
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 3.021090843881429e-13,
+            "volume": 10314529.05550468,
+            "centroid": [
+              -149.1233418902135,
+              -6.13761128015014,
+              11.096030085742473
+            ]
+          }
+        ],
+        "brep_sha256": "ef2bd70fe175c9111de2bd8564967a844116d37a17f66dd8f74041d0c8979a6e",
+        "volume_convergence_mm3": 4.645250737667084e-05,
+        "centroid_convergence_mm": 2.107533757612512e-10,
+        "converged": false,
+        "volume_mm3": 10314529.05550468,
+        "centroid_mm": [
+          -149.1233418902135,
+          -6.13761128015014,
+          11.096030085742473
+        ],
+        "method": "BRepGProp::VolumePropertiesGK adaptive Gauss-Kronrod with knot spans"
+      },
+      "step": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 3.09362271937977e-11,
+            "volume": 10314529.055433251,
+            "centroid": [
+              -149.12334189235673,
+              -6.1376112799069515,
+              11.096030079622427
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 3.0183753198315485e-13,
+            "volume": 10314529.055386795,
+            "centroid": [
+              -149.12334189236196,
+              -6.137611279981883,
+              11.096030079427294
+            ]
+          }
+        ],
+        "brep_sha256": "754fb1199aa2ecbb2d2499197b7c17a6b2b830d44f29c7b5216c519063958409",
+        "volume_convergence_mm3": 4.64562326669693e-05,
+        "centroid_convergence_mm": 2.0909050294940111e-10,
+        "converged": false,
+        "volume_mm3": 10314529.055386795,
+        "centroid_mm": [
+          -149.12334189236196,
+          -6.137611279981883,
+          11.096030079427294
+        ],
+        "method": "BRepGProp::VolumePropertiesGK adaptive Gauss-Kronrod with knot spans"
+      }
+    },
+    {
+      "scope": "Installed",
+      "native": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 3.094008541578587e-11,
+            "volume": 10314529.055551123,
+            "centroid": [
+              1682.371300155551,
+              -6.1376112800750855,
+              911.6989712624094
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 3.022320505935182e-13,
+            "volume": 10314529.055504676,
+            "centroid": [
+              1682.3713001555461,
+              -6.137611280150123,
+              911.6989712622125
+            ]
+          }
+        ],
+        "brep_sha256": "43cea1ee325e45dd2632fb378ae9ca12dcc7516664ee9e25123d6db643e34d97",
+        "volume_convergence_mm3": 4.6446919441223145e-05,
+        "centroid_convergence_mm": 2.107730536049982e-10,
+        "converged": false,
+        "volume_mm3": 10314529.055504676,
+        "centroid_mm": [
+          1682.3713001555461,
+          -6.137611280150123,
+          911.6989712622125
+        ],
+        "method": "BRepGProp::VolumePropertiesGK adaptive Gauss-Kronrod with knot spans"
+      },
+      "step": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 3.093597022512358e-11,
+            "volume": 10314529.055433266,
+            "centroid": [
+              1682.371300153643,
+              -6.137611279906917,
+              911.6989712560925
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 3.0158312105187895e-13,
+            "volume": 10314529.055386804,
+            "centroid": [
+              1682.3713001536382,
+              -6.13761127998188,
+              911.6989712558973
+            ]
+          }
+        ],
+        "brep_sha256": "46cbade424b9cc8e7fc44db25c6eee68712b4842187a529112ce3cf256e528ea",
+        "volume_convergence_mm3": 4.646182060241699e-05,
+        "centroid_convergence_mm": 2.0915408149907443e-10,
+        "converged": false,
+        "volume_mm3": 10314529.055386804,
+        "centroid_mm": [
+          1682.3713001536382,
+          -6.13761127998188,
+          911.6989712558973
+        ],
+        "method": "BRepGProp::VolumePropertiesGK adaptive Gauss-Kronrod with knot spans"
+      }
+    }
+  ]
+}

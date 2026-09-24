@@ -1,0 +1,111 @@
+{
+  "results": {
+    "native": {
+      "occ": "7.8.0",
+      "results": [
+        {
+          "requested_error": 1e-11,
+          "reported_error": 2.8702183501195176e-12,
+          "volume": 10314529.055504406,
+          "centroid": [
+            -149.12334189020265,
+            -6.137611280139206,
+            11.096030085746547
+          ]
+        },
+        {
+          "requested_error": 1e-12,
+          "reported_error": 3.021090843881429e-13,
+          "volume": 10314529.05550468,
+          "centroid": [
+            -149.1233418902135,
+            -6.13761128015014,
+            11.096030085742473
+          ]
+        },
+        {
+          "requested_error": 1e-13,
+          "reported_error": 4.036809195274813e-14,
+          "volume": 10314529.055506997,
+          "centroid": [
+            -149.12334189021348,
+            -6.137611280147714,
+            11.096030085746202
+          ]
+        },
+        {
+          "requested_error": 1e-14,
+          "reported_error": 1.3959572677976226e-14,
+          "volume": 10314529.055507073,
+          "centroid": [
+            -149.12334189021357,
+            -6.137611280147823,
+            11.096030085746802
+          ]
+        }
+      ]
+    },
+    "step": {
+      "occ": "7.8.0",
+      "results": [
+        {
+          "requested_error": 1e-11,
+          "reported_error": 2.8699635786976674e-12,
+          "volume": 10314529.055386527,
+          "centroid": [
+            -149.1233418923509,
+            -6.137611279970966,
+            11.096030079431257
+          ]
+        },
+        {
+          "requested_error": 1e-12,
+          "reported_error": 3.0183753198315485e-13,
+          "volume": 10314529.055386795,
+          "centroid": [
+            -149.12334189236196,
+            -6.137611279981883,
+            11.096030079427294
+          ]
+        },
+        {
+          "requested_error": 1e-13,
+          "reported_error": 3.987450928736798e-14,
+          "volume": 10314529.055389103,
+          "centroid": [
+            -149.12334189236208,
+            -6.137611279979447,
+            11.096030079430943
+          ]
+        },
+        {
+          "requested_error": 1e-14,
+          "reported_error": 1.3489135953445687e-14,
+          "volume": 10314529.055389179,
+          "centroid": [
+            -149.12334189236188,
+            -6.137611279979552,
+            11.09603007943155
+          ]
+        }
+      ]
+    }
+  },
+  "source_sha256": "833ccad72c1d68f84730b243524b2c794d87b414ca9d9d865d387b013eb303f6",
+  "binary_sha256": "56fb0d9d90f00cd6223c8966eec8f2da3a35cedf205872866b3c324ab6d13ac9",
+  "compile_command": [
+    "g++",
+    "-std=c++17",
+    "-O2",
+    "-I/snap/freecad/2741/usr/include/opencascade",
+    "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/receivers04/diagnostics/case_mass/refined_probe.cpp",
+    "-L/snap/freecad/2741/usr/lib",
+    "-lTKTopAlgo",
+    "-lTKBRep",
+    "-lTKG3d",
+    "-lTKMath",
+    "-lTKernel",
+    "-o",
+    "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/receivers04/diagnostics/case_mass/refinement_runtime/refined_probe"
+  ]
+}

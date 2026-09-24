@@ -1106,3 +1106,17 @@ The source registration and standard tank011 remain unchanged.
 | [intermediate_snapshot_iso_transmission_high_brake_mechanism_trial_001.png](intermediate_snapshot_iso_transmission_high_brake_mechanism_trial_001.png) | `60e1da1053f723677b6a223f4685dea90c88ed45e5570821fccdd6fe38465e2d` |
 | [intermediate_snapshot_detail_transmission_high_brake_mechanism_trial_001.png](intermediate_snapshot_detail_transmission_high_brake_mechanism_trial_001.png) | `45cb13e29422957b789a650ed6f3cbb7130f2eb953103b66e62f85c08c112762` |
 | [intermediate_snapshot_source_transmission_high_brake_mechanism_trial_001.png](intermediate_snapshot_source_transmission_high_brake_mechanism_trial_001.png) | `b7d9a7e81a29244e890ae5449f8deeca062f25db3d5a04acb1292ececae1cf39` |
+
+
+## High-speed brake receiving webs and anchor mounts — 24 September 2026
+
+Two inspected prototype views bring progression to **213 images**, preserving
+all 211 earlier images. The source registration remains fixed. The corresponding
+integrated development candidate has 3,129 occurrences; full support/stop packet
+qualification remains pending and standard tank011 is unchanged. Selected neighbors
+are drawn as outlines in the isometric. Hidden stock and cast sections are estimates.
+
+| View | SHA-256 |
+| --- | --- |
+| [intermediate_snapshot_iso_transmission_high_brake_receivers_trial_001.png](intermediate_snapshot_iso_transmission_high_brake_receivers_trial_001.png) | `8ca161612b7520c84f33e6ab56bad4f806e209a15e94d819720a6e8fc4443e1a` |
+| [intermediate_snapshot_source_transmission_high_brake_receivers_trial_001.png](intermediate_snapshot_source_transmission_high_brake_receivers_trial_001.png) | `d5af0dedef67878d5116f5e4e617dfc6e22682a994f4a9307eec5e95b7e24dbb` |

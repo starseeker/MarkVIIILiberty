@@ -11,6 +11,27 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — high-speed receiving webs and anchor mounts
+
+The [receiving candidate](experiments/drive_chains/transmission_high_brake_support_study/README.md)
+adds eight physical bracket/locking-plate/mount-screw occurrences and revised
+integral case receiving webs: **3,129 occurrences /532 definitions /324 assemblies**.
+The fixed HB133 comparison was inspected; hidden sections and cast stock remain
+explicit estimates. Two new images bring progression to **213**, preserving 211.
+
+The prototype passes 22 checks including 226 nearby pairs, 28 additional saved
+interface checks and 13 strict STEP comparisons. The integration passes 18
+geometry/frame/hierarchy checks, preservation of all 528 unchanged definitions
+(502 identical, 26 strict material comparisons), retained tank context and exact
+fresh nominal reproduction. A 1 mm bracket-stock variation passes its native
+checks. Tighter quadrature resolves a diagnosed case-mass convergence failure;
+nine independent controls pass without changing geometry or tolerance limits.
+
+This remains a development candidate: anchor pins/cotters, band stops and hardware,
+parameter-variation STEP and full support-packet qualification are unfinished.
+The last fully qualified parent remains the operating-mechanism checkpoint;
+standard tank011 is unchanged and the complete tank goal remains active.
+
 ## 24 September 2026 — high-speed support evidence and receiving context
 
 The [support study](experiments/drive_chains/transmission_high_brake_support_study/README.md)

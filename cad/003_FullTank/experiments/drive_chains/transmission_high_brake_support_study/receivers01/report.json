@@ -1,0 +1,285 @@
+{
+  "passed": false,
+  "checks": [
+    {
+      "name": "Original case material retained",
+      "passed": true
+    },
+    {
+      "name": "Added material confined to declared receiving stock",
+      "passed": true
+    },
+    {
+      "name": "Actual saved anchor bore frame retained",
+      "passed": true
+    },
+    {
+      "name": "Port bracket has positive case-seat contact",
+      "passed": true,
+      "area_mm2": 5082.1065752729455
+    },
+    {
+      "name": "Port bracket clears retained M361 end",
+      "passed": true,
+      "common_volume_mm3": 0.0
+    },
+    {
+      "name": "Starboard bracket has positive case-seat contact",
+      "passed": true,
+      "area_mm2": 5082.1065752729455
+    },
+    {
+      "name": "Starboard bracket clears retained M361 end",
+      "passed": true,
+      "common_volume_mm3": 0.0
+    },
+    {
+      "name": "New receiver and bracket material clears retained assembly",
+      "passed": false,
+      "pairs": 209,
+      "collisions": [
+        {
+          "first": "Case",
+          "second": "PortAnchorBracket",
+          "volume_mm3": 709.9465625000039
+        },
+        {
+          "first": "Case",
+          "second": "StarboardAnchorBracket",
+          "volume_mm3": 709.946562500004
+        }
+      ],
+      "invalid": []
+    }
+  ],
+  "controls": {
+    "anchor_center": [
+      -76.27049196162397,
+      0.0,
+      -209.5514544352576
+    ],
+    "brake_station": 222.25,
+    "bearing_station": 279.2057142857143,
+    "frame_front_x": -227.1485714285713,
+    "top_frame_web_z": 318.63631878624517,
+    "bottom_frame_web_z": -262.33445920236954,
+    "channel_height": 50.0,
+    "top_origin": [
+      -77.0,
+      0.0,
+      223.0
+    ],
+    "top_slope_deg": 45.0,
+    "bottom_slope_deg": 33.0,
+    "bottom_seat_normal": -7.5,
+    "top_case_foot_limits": [
+      0.0,
+      185.0
+    ],
+    "bottom_case_foot_limits": [
+      25.0,
+      150.0
+    ],
+    "top_bolt_stations": [
+      45.0,
+      110.0
+    ],
+    "bottom_bolt_stations": [
+      52.0,
+      112.0
+    ],
+    "top_rib_station": 100.0,
+    "bottom_rib_station": 100.0,
+    "case_foot_stock": 19.05,
+    "web_stock": 12.7,
+    "rib_width": 12.7,
+    "rib_root_x": -32.0,
+    "rib_root_z": 96.0,
+    "tie_start_y": 130.0,
+    "tie_depth": 20.0,
+    "bracket_foot_limits": [
+      25.0,
+      137.0
+    ],
+    "bracket_width": 50.8,
+    "bracket_stock": 6.35,
+    "fork_gap": 19.55,
+    "fork_outer_width": 47.625,
+    "eye_radius": 14.2875,
+    "fork_web_reach": 32.0,
+    "fork_web_width": 22.225,
+    "band_clearance_radius": 212.18125,
+    "pin_bore_radius": 8.0875,
+    "mount_screw_diameter": 15.875,
+    "mount_screw_length": 22.225,
+    "mount_head_af": 23.8125,
+    "mount_head_stock": 10.31875,
+    "mount_bore_radius": 8.0875,
+    "lock_plate_stock": 1.5875,
+    "blind_gap": 0.3
+  },
+  "details": {
+    "mounts": {
+      "top": {
+        "origin": [
+          -77.0,
+          0.0,
+          223.0
+        ],
+        "tangent": [
+          -0.7071067811865476,
+          0.0,
+          0.7071067811865475
+        ],
+        "normal": [
+          0.7071067811865475,
+          0.0,
+          0.7071067811865476
+        ],
+        "seat_normal_mm": 0.0,
+        "bolt_seat_frames": [
+          [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865476,
+            -108.81980515339464,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -0.7071067811865476,
+            0.0,
+            0.7071067811865475,
+            254.81980515339464,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            0.7071067811865475,
+            0.0,
+            0.7071067811865476,
+            -154.78174593052023,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -0.7071067811865476,
+            0.0,
+            0.7071067811865475,
+            300.78174593052023,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "bottom": {
+        "origin": [
+          -76.27049196162397,
+          0.0,
+          -209.5514544352576
+        ],
+        "tangent": [
+          -0.838670567945424,
+          0.0,
+          -0.5446390350150271
+        ],
+        "normal": [
+          0.5446390350150271,
+          0.0,
+          -0.838670567945424
+        ],
+        "seat_normal_mm": -7.5,
+        "bolt_seat_frames": [
+          [
+            -0.838670567945424,
+            -0.0,
+            0.544639035015027,
+            -123.96615425739874,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -0.544639035015027,
+            0.0,
+            -0.838670567945424,
+            -231.58265499644833,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          [
+            -0.838670567945424,
+            -0.0,
+            0.544639035015027,
+            -174.28638833412415,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            -0.544639035015027,
+            0.0,
+            -0.838670567945424,
+            -264.26099709734996,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "anchor_center_brake_mm": [
+      -76.27049196162397,
+      0.0,
+      -209.5514544352576
+    ],
+    "case_foot_count": 4,
+    "case_rib_count": 4,
+    "case_tie_count": 4,
+    "limitations": [
+      "Unprinted receiver and bracket sections are conditional estimates.",
+      "Integral case side ribs and transverse receiving seats are a reconstruction hypothesis.",
+      "Mounting threads use nominal envelopes and clearance bores.",
+      "This initial scope precedes the pin, locking plates and stop members."
+    ]
+  },
+  "parent_native_sha256": "7f7eb9f687ed458d7bcfba599af6333be4899fb6477581ce2fd0075b01158b96",
+  "prototype_native_sha256": "e7b84f7ad560344cd2c548bfe3ad4c8f82bab6bc4d64791c4ec20a11ca1a1605",
+  "source_registration_sha256": "311f014e5f12beb874225901dff20706ed939600a4b2aece0fee7b601b64f9e2",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/trial_transmission_high_brake_receivers.py": "3bd3b77dd46ba35e31f023e3bd9e2cc242c87a04d4227b97420c40d84408ac02",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/controls.json": "54409e92b18d693b67dfba837ec2b50a3c8ae08b7f47a187e321e124af041842",
+    "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_parts.py": "6448062c8e2e5d534b3c5ddb7f7390e841835f80b92d12133b2b887363831088"
+  },
+  "runtime": {
+    "freecad": [
+      "1",
+      "1",
+      "1",
+      "44227 +647 (Git)",
+      "Unknown",
+      "2026/04/14 22:09:59",
+      "tag: 1.1.1",
+      "0108fd4b4850cc46e625b60e53cea7a7bbe69f8d"
+    ],
+    "occ": "7.8.0"
+  },
+  "geometry_integrated": false,
+  "standard_assembly_modified": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "packet_complete": false,
+  "limits": [
+    "Unprinted receiver and bracket sections are conditional estimates.",
+    "Integral case side ribs and transverse receiving seats are a reconstruction hypothesis.",
+    "Mounting threads use nominal envelopes and clearance bores.",
+    "This initial scope precedes the pin, locking plates and stop members.",
+    "Locking plates, anchor pins/cotters and stops not present in this prototype.",
+    "STEP, rebuild, receiving-void preservation and parameter variation are not yet qualified."
+  ]
+}

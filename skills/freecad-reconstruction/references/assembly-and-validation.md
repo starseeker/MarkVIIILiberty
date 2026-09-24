@@ -193,6 +193,16 @@ check actual convergence and preserve separate material/tolerance tests. This
 changes measurement, not geometry, and is not a blanket replacement integrator.
 See the [lever diagnostics](../../../cad/003_FullTank/experiments/drive_chains/transmission_high_brake_mechanism_study/trial01/diagnostics/README.md).
 
+Distinguish relative integration error from absolute convergence. In the receiving
+case on the same runtime, Gauss–Kronrod met its reported-error targets while two
+requests differed by 4.65e-5 mm³, above the existing 1e-5 mm³ convergence limit.
+Tightening both quadrature requests made the unchanged native and STEP solids
+converge; independent analytic and rigid-transform controls included a similarly
+large curved solid. A still tighter request failed its reported-error predicate.
+Retain both tests rather than assuming tighter always succeeds. The
+[receiver diagnostic](../../../cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/receivers04/diagnostics/README.md)
+records an explicit measurement option; geometry and acceptance limits stay fixed.
+
 Treat kernel bounding boxes as enclosures, not guaranteed exact size measurements.
 On this runtime, a retained cross-drilled stud reports a 19.058984 mm bounding-box
 width, while its axial cylinder faces have radius 9.525 mm and no material lies
