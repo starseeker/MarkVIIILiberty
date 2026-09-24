@@ -523,3 +523,25 @@ All three views were copied without alteration to the progression, now 152 image
 The [review receipt](experiments/drive_chains/engine_pump_receiver_study/registration/native_support_trial01/visual_review.json)
 binds native, source and image hashes; the [checkpoint](experiments/drive_chains/engine_pump_receiver_study/registration/native_support_trial01/README.md)
 records local checks and remaining acceptance gates. Standard tank011 is unchanged.
+
+## Fixed-frame transmission supports — 23 September 2026
+
+Directly inspected four native-derived views: the isometric, bare support view,
+MX5 case-mount detail and SNL23 section overlay. The rebuilt supports and joints
+seat at the retained channels; bearing and case details remain present. The
+close-up crops only channel ends for display. The standard tank is unchanged.
+
+The source overlay is decisive for the next step: fixed channels project about
+55.8 pixels lower relative to the raised shaft than their previous relationship.
+Their new projections lie below broadly inspected web-face bands by roughly
+36–60 mm under the conditional bearing-based scale. This is a source disagreement,
+not an acceptance tolerance or proof that the drawing is exact. Existing long
+MX5 boss/silhouette disagreement remains. Mechanical fit does not establish the
+historical global station. Compare a frame that follows the shaft and evaluate
+its hull attachments before selecting the installation and rebuilding casings.
+
+The [review receipt](experiments/drive_chains/engine_pump_receiver_study/registration/native_frame_trial02/visual_review.json)
+and [source measurements](experiments/drive_chains/engine_pump_receiver_study/registration/native_frame_trial02/source_comparison.json)
+bind the actual viewed images, native file and unaltered source calibration.
+Three progression images preserve this hypothesis and its disagreement, bringing
+the total to155 without changing the152 earlier images.

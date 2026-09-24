@@ -1,0 +1,1637 @@
+{
+  "status": "saved_support_trial_pending_independent_checks",
+  "native_file": "PowertrainWithRebuiltEngineSupports.FCStd",
+  "native_sha256": "057457860568310beddc8a1efd571a102288e91da91da8ac2858494e3ef4b6d2",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_phase_trial01/PowertrainCoupledPhaseTrial.FCStd",
+  "source_native_sha256": "1df6836d8891d8a974b71a1107420828ba2d56c1d72da3dad5c794d4bfc5bc03",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_powertrain_support_trial.py": "8e4dff865790512166ed7b4420444cb8c5be3641502f0935dcb7e51c5222969c",
+    "cad/003_FullTank/experiments/drive_chains/engine_case_build/report.json": "58c1d886f3faf376b4749dd79f9684d2c4fac37a14a2346953dc10c0ca40e32d",
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_phase_trial01/report.json": "41ce4d7b4640fe9eb892a7b0736b32824180a8078dc9fb45025194ec20c2e5e6",
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_phase_trial01/independent_checks.json": "7da3a885e719d65a4bc0c2c2fcc470bd193602384ef96d8530c7c00244fe004c",
+    "cad/003_FullTank/experiments/drive_chains/engine_suspension_parts.py": "b3ae8ddce916bddc684d2abe97819aa1b07e4e090439b4dbf2a83c4a861f3026",
+    "cad/003_FullTank/experiments/drive_chains/engine_case_supports.py": "93d738ba256b55a979c95cff18290ea6d831bc9fa26f84f8fdb3ff2bd0086c72",
+    "cad/003_FullTank/experiments/drive_chains/engine_crossmember_parts.py": "72426ba028c260d72035600436c0bfc36c01169f722e5faed9a877906e2e74c4"
+  },
+  "controls": {
+    "rail_half_spacing": 215.9,
+    "engine_mount_z_offset_from_crankshaft": 0.0,
+    "rail_rear_x": 2940.0,
+    "rail_front_x": 4120.0,
+    "rail_width": 50.8,
+    "rail_height": 76.2,
+    "rail_web": 6.35,
+    "rail_flange": 9.525,
+    "packing_stock": 6.35,
+    "rear_top_pad_length": 160.0,
+    "rear_top_pad_stock": 12.7,
+    "rear_base_half_width": 60.0,
+    "rear_base_x_min": -38.0,
+    "rear_base_x_max": 30.0,
+    "rear_base_stock": 12.7,
+    "rear_web_stock": 6.35,
+    "rear_rib_y": 20.0,
+    "rear_rail_bolt_x": [
+      -52.5,
+      -17.5,
+      17.5,
+      52.5
+    ],
+    "rear_base_bolt_x": -5.0,
+    "rear_base_bolt_y": [
+      -42.0,
+      42.0
+    ],
+    "rear_channel_upper_taper_deg": 6.0,
+    "bevel_washer_side": 36.0,
+    "bevel_washer_center_stock": 6.35,
+    "front_hub_half_width": 35.0,
+    "front_hub_height": 30.0,
+    "front_hub_x_stock": 25.4,
+    "front_pad_x": 70.0,
+    "front_pad_length": 110.0,
+    "front_pad_stock": 12.7,
+    "front_bolt_x_offset": -28.0,
+    "front_cap_x_offset": 28.0,
+    "front_cap_boss_radius": 15.0,
+    "front_cap_boss_depth": 31.75,
+    "front_arm_depth": 22.0,
+    "hole_radial_allowance": 0.1,
+    "thread_radial_allowance": 0.05,
+    "cap_blind_extra_depth": 2.0,
+    "half_bolt_diameter": 12.7,
+    "half_bolt_length": 44.45,
+    "rear_bolt_diameter": 15.875,
+    "rear_bolt_length": 63.5,
+    "pivot_bolt_diameter": 19.05,
+    "pivot_bolt_length": 63.5,
+    "cap_diameter": 12.7,
+    "cap_length": 38.1,
+    "hex_across_flats_ratio": 1.5,
+    "head_height_ratio": 0.65,
+    "nut_height_ratio": 0.875,
+    "lock_stock_ratio": 0.25,
+    "lock_outer_radius_ratio": 0.85,
+    "lock_split_width": 1.0
+  },
+  "crossmember_controls": {
+    "front_x": 3850.0,
+    "rear_x": 3000.0,
+    "floor_top": 533.05,
+    "floor_stock": 6.0,
+    "floor_5_6_seam": 3970.0,
+    "floor_6_7_seam": 3190.0,
+    "channel_half_span": 1100.0,
+    "channel_depth": 88.9,
+    "channel_height": 76.2,
+    "channel_web": 9.525,
+    "channel_flange": 12.7,
+    "cleat_stock": 12.7,
+    "cleat_half_width": 60.0,
+    "cleat_overhang": 80.0,
+    "cleat_bottom": 14.0,
+    "cleat_rivet_y": 30.0,
+    "cleat_rivet_z": 35.0,
+    "gusset_stock": 9.525,
+    "gusset_half_width": 50.0,
+    "gusset_y": 980.0,
+    "gusset_length": 130.0,
+    "gusset_rivet_y": 28.0,
+    "gusset_web_rivet_z": 38.1,
+    "gusset_floor_rivet_x": 110.0,
+    "channel_floor_rivet_x": -10.0,
+    "channel_floor_rivet_y": [
+      -850.0,
+      -425.0,
+      0.0,
+      425.0,
+      850.0
+    ],
+    "hole_radial_allowance": 0.1,
+    "front_rivet_diameter": 15.875,
+    "front_rivet_blank_length": 53.975,
+    "rear_rivet_diameter": 17.4625,
+    "rear_rivet_blank_length": 53.975,
+    "floor_rivet_diameter": 17.4625,
+    "floor_rivet_blank_length": 47.625,
+    "head_radius_ratio": 0.875,
+    "head_height_ratio": 0.5,
+    "formed_radius_ratio": 1.0
+  },
+  "case_controls": {
+    "output_clearance_to_flywheel": 5.0,
+    "nose_to_first_row": 169.06875,
+    "cylinder_pitch": 165.1,
+    "bank_angle": 45.0,
+    "piston_bore": 127.0,
+    "cylinder_spigot_stock": 3.175,
+    "cylinder_spigot_clearance": 0.1,
+    "crankshaft_diameter": 66.675,
+    "main_bearing_shell_stock": 3.175,
+    "case_wall": 8.0,
+    "body_half_width": 174.0,
+    "deck_half_width": 166.0,
+    "deck_center_height": 240.0,
+    "mount_flange_half_width": 239.0,
+    "mount_flange_stock": 9.525,
+    "lower_flange_half_width": 184.0,
+    "lower_flange_stock": 9.525,
+    "body_start_before_first_row": 25.0,
+    "nose_half_width": 61.0,
+    "nose_second_web_spacing": 62.0,
+    "web_stock": 12.7,
+    "main_seat_width": 38.1,
+    "bearing_boss_radius": 53.0,
+    "bearing_stud_half_spacing": 50.8,
+    "bearing_stud_boss_radius": 12.7,
+    "bearing_stud_bore_radius": 6.45,
+    "mount_rib_stock": 6.35,
+    "mount_rib_pair_spacing": 17.0,
+    "gear_end_after_last_row": 125.0,
+    "gear_chamber_floor": 46.0,
+    "gear_vertical_bore_radius": 34.0,
+    "gear_inclined_bore_radius": 26.0,
+    "gear_oil_trap_radius": 9.0,
+    "lower_pan_depth": 165.0,
+    "lower_trough_depth": 190.0,
+    "gear_well_depth": 220.0,
+    "forward_well_radius": 41.0,
+    "forward_well_depth": 215.0,
+    "suspension_front_hub_height": 30.0,
+    "suspension_rail_front_x": 4120.0,
+    "oil_pump_receiver_radius": 65.0,
+    "oil_pump_receiver_after_last_row": 50.0,
+    "front_arm_mid_y": 120.0,
+    "front_arm_mid_drop": 25.0
+  },
+  "crankshaft_axis_z": 900.6029411764705,
+  "datums": {
+    "engine_mount_z": 900.6029411764705,
+    "rail_bottom_z": 824.4029411764704,
+    "rail_inner_gap": 381.0,
+    "engine_interface_conditional": true,
+    "bracket_profiles_estimated": true,
+    "joints": [
+      {
+        "name": "LeftRail1",
+        "hardware": "half",
+        "base": [
+          2947.5,
+          215.9,
+          811.7029411764704
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "grip": 22.225,
+        "receiver_keys": [
+          "left_bracket",
+          "left_rail"
+        ],
+        "thread_protrusion": 7.937500000000002
+      },
+      {
+        "name": "LeftRail2",
+        "hardware": "half",
+        "base": [
+          2982.5,
+          215.9,
+          811.7029411764704
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "grip": 22.225,
+        "receiver_keys": [
+          "left_bracket",
+          "left_rail"
+        ],
+        "thread_protrusion": 7.937500000000002
+      },
+      {
+        "name": "LeftRail3",
+        "hardware": "half",
+        "base": [
+          3017.5,
+          215.9,
+          811.7029411764704
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "grip": 22.225,
+        "receiver_keys": [
+          "left_bracket",
+          "left_rail"
+        ],
+        "thread_protrusion": 7.937500000000002
+      },
+      {
+        "name": "LeftRail4",
+        "hardware": "half",
+        "base": [
+          3052.5,
+          215.9,
+          811.7029411764704
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "grip": 22.225,
+        "receiver_keys": [
+          "left_bracket",
+          "left_rail"
+        ],
+        "thread_protrusion": 7.937500000000002
+      },
+      {
+        "name": "LeftBase1",
+        "hardware": "rear",
+        "base": [
+          2995.0,
+          173.9,
+          628.3
+        ],
+        "axis": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "grip": 42.24636208123094,
+        "receiver_keys": [
+          "left_bracket",
+          "rear_packing",
+          "EngineFrame_RearChannel"
+        ],
+        "thread_protrusion": 3.3942629187690585
+      },
+      {
+        "name": "LeftBase2",
+        "hardware": "rear",
+        "base": [
+          2995.0,
+          257.9,
+          628.3
+        ],
+        "axis": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "grip": 42.24636208123094,
+        "receiver_keys": [
+          "left_bracket",
+          "rear_packing",
+          "EngineFrame_RearChannel"
+        ],
+        "thread_protrusion": 3.3942629187690585
+      },
+      {
+        "name": "RightRail1",
+        "hardware": "half",
+        "base": [
+          2947.5,
+          -215.9,
+          811.7029411764704
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "grip": 22.225,
+        "receiver_keys": [
+          "right_bracket",
+          "right_rail"
+        ],
+        "thread_protrusion": 7.937500000000002
+      },
+      {
+        "name": "RightRail2",
+        "hardware": "half",
+        "base": [
+          2982.5,
+          -215.9,
+          811.7029411764704
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "grip": 22.225,
+        "receiver_keys": [
+          "right_bracket",
+          "right_rail"
+        ],
+        "thread_protrusion": 7.937500000000002
+      },
+      {
+        "name": "RightRail3",
+        "hardware": "half",
+        "base": [
+          3017.5,
+          -215.9,
+          811.7029411764704
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "grip": 22.225,
+        "receiver_keys": [
+          "right_bracket",
+          "right_rail"
+        ],
+        "thread_protrusion": 7.937500000000002
+      },
+      {
+        "name": "RightRail4",
+        "hardware": "half",
+        "base": [
+          3052.5,
+          -215.9,
+          811.7029411764704
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "grip": 22.225,
+        "receiver_keys": [
+          "right_bracket",
+          "right_rail"
+        ],
+        "thread_protrusion": 7.937500000000002
+      },
+      {
+        "name": "RightBase1",
+        "hardware": "rear",
+        "base": [
+          2995.0,
+          -257.9,
+          628.3
+        ],
+        "axis": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "grip": 42.24636208123094,
+        "receiver_keys": [
+          "right_bracket",
+          "rear_packing",
+          "EngineFrame_RearChannel"
+        ],
+        "thread_protrusion": 3.3942629187690585
+      },
+      {
+        "name": "RightBase2",
+        "hardware": "rear",
+        "base": [
+          2995.0,
+          -173.9,
+          628.3
+        ],
+        "axis": [
+          -0.0,
+          -0.0,
+          -1.0
+        ],
+        "grip": 42.24636208123094,
+        "receiver_keys": [
+          "right_bracket",
+          "rear_packing",
+          "EngineFrame_RearChannel"
+        ],
+        "thread_protrusion": 3.3942629187690585
+      },
+      {
+        "name": "LeftFrontRail",
+        "hardware": "half",
+        "base": [
+          3892.0,
+          215.9,
+          811.7029411764704
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "grip": 22.225,
+        "receiver_keys": [
+          "front_bracket",
+          "left_rail"
+        ],
+        "thread_protrusion": 7.937500000000002
+      },
+      {
+        "name": "LeftCap",
+        "hardware": "cap",
+        "base": [
+          3948.0,
+          215.9,
+          837.1029411764704
+        ],
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "grip": 12.7,
+        "thread_engagement": 25.400000000000002,
+        "blind_floor": 4.349999999999998,
+        "receiver_keys": [
+          "front_bracket",
+          "left_rail"
+        ]
+      },
+      {
+        "name": "RightFrontRail",
+        "hardware": "half",
+        "base": [
+          3892.0,
+          -215.9,
+          811.7029411764704
+        ],
+        "axis": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "grip": 22.225,
+        "receiver_keys": [
+          "front_bracket",
+          "right_rail"
+        ],
+        "thread_protrusion": 7.937500000000002
+      },
+      {
+        "name": "RightCap",
+        "hardware": "cap",
+        "base": [
+          3948.0,
+          -215.9,
+          837.1029411764704
+        ],
+        "axis": [
+          0,
+          0,
+          -1
+        ],
+        "grip": 12.7,
+        "thread_engagement": 25.400000000000002,
+        "blind_floor": 4.349999999999998,
+        "receiver_keys": [
+          "front_bracket",
+          "right_rail"
+        ]
+      },
+      {
+        "name": "FrontPivot",
+        "hardware": "pivot",
+        "base": [
+          3894.45,
+          0.0,
+          630.5999999999999
+        ],
+        "axis": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "grip": 38.099999999999994,
+        "receiver_keys": [
+          "EngineFrame_FrontCleat",
+          "front_bracket"
+        ],
+        "thread_protrusion": 3.968750000000007
+      }
+    ],
+    "hardware": {
+      "half": {
+        "diameter": 12.7,
+        "length": 44.45,
+        "head_height": 8.254999999999999,
+        "nut_height": 11.112499999999999,
+        "lock_stock": 3.175,
+        "head_af": 19.049999999999997
+      },
+      "rear": {
+        "diameter": 15.875,
+        "length": 63.5,
+        "head_height": 10.31875,
+        "nut_height": 13.890625,
+        "lock_stock": 3.96875,
+        "head_af": 23.8125
+      },
+      "pivot": {
+        "diameter": 19.05,
+        "length": 63.5,
+        "head_height": 12.3825,
+        "nut_height": 16.66875,
+        "lock_stock": 4.7625,
+        "head_af": 28.575000000000003
+      }
+    },
+    "receiver_positions": {
+      "EngineFrame_RearChannel": [
+        3000.0,
+        0.0,
+        533.05
+      ],
+      "EngineFrame_FrontCleat": [
+        3850.0,
+        0.0,
+        533.05
+      ],
+      "left_rail": [
+        2940.0,
+        215.9,
+        824.4029411764704
+      ],
+      "left_bracket": [
+        3000.0,
+        215.9,
+        533.05
+      ],
+      "right_rail": [
+        2940.0,
+        -215.9,
+        824.4029411764704
+      ],
+      "right_bracket": [
+        3000.0,
+        -215.9,
+        533.05
+      ],
+      "front_bracket": [
+        3850.0,
+        0.0,
+        533.05
+      ],
+      "front_packing": [
+        3850.0,
+        0.0,
+        533.05
+      ]
+    },
+    "rear_channel_upper_taper": 0.10510423526567647,
+    "rear_washer_bottom_world_z": 586.053637918769,
+    "rear_base_top_world_z": 628.3,
+    "front_pivot": [
+      3894.45,
+      0.0,
+      630.5999999999999
+    ],
+    "front_hub_bottom_world_z": 615.5999999999999,
+    "cap_boss_bottom_world_z": 792.6529411764704,
+    "catalogue_support_children": 72,
+    "aviation_reference_hole_count_per_side": 7,
+    "tank_bolt_set_count_per_rail": 6,
+    "engine_holes_drilled": false
+  },
+  "front_yoke_profile": {
+    "positive_y_arm_profile": [
+      [
+        35.0,
+        112.55
+      ],
+      [
+        120.0,
+        185.28794212218645
+      ],
+      [
+        190.5,
+        291.3529411764705
+      ],
+      [
+        241.3,
+        291.3529411764705
+      ],
+      [
+        241.3,
+        278.6529411764705
+      ],
+      [
+        190.5,
+        269.3529411764705
+      ],
+      [
+        120.0,
+        163.28794212218645
+      ],
+      [
+        35.0,
+        90.55
+      ]
+    ],
+    "extrusion_x": [
+      57.150000000000006,
+      82.55000000000001
+    ],
+    "mid_drop_from_straight_arm": 25.0,
+    "historical_profile_proven": false
+  },
+  "replacement_definitions": {
+    "EngineSuspension_LeftBracket": "Def_EngineSuspension_left_bracket",
+    "EngineSuspension_RightBracket": "Def_EngineSuspension_right_bracket",
+    "EngineSuspension_FrontBracket": "Def_EngineSuspension_front_bracket"
+  },
+  "support_occurrences": [
+    {
+      "key": "left_rail",
+      "name": "EngineSuspension_LeftRail",
+      "xyz": [
+        2940.0,
+        215.9,
+        824.4029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LongitudinalSupports"
+    },
+    {
+      "key": "left_bracket",
+      "name": "EngineSuspension_LeftBracket",
+      "xyz": [
+        3000.0,
+        215.9,
+        533.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "rear_packing",
+      "name": "EngineSuspension_LeftPacking",
+      "xyz": [
+        3000.0,
+        215.9,
+        533.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "right_rail",
+      "name": "EngineSuspension_RightRail",
+      "xyz": [
+        2940.0,
+        -215.9,
+        824.4029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LongitudinalSupports"
+    },
+    {
+      "key": "right_bracket",
+      "name": "EngineSuspension_RightBracket",
+      "xyz": [
+        3000.0,
+        -215.9,
+        533.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "rear_packing",
+      "name": "EngineSuspension_RightPacking",
+      "xyz": [
+        3000.0,
+        -215.9,
+        533.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "front_bracket",
+      "name": "EngineSuspension_FrontBracket",
+      "xyz": [
+        3850.0,
+        0.0,
+        533.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "front_packing",
+      "name": "EngineSuspension_FrontPacking",
+      "xyz": [
+        3850.0,
+        0.0,
+        533.05
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "half_bolt",
+      "name": "EngineSuspension_LeftRail1Bolt",
+      "xyz": [
+        2947.5,
+        215.9,
+        811.7029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "half_lock",
+      "name": "EngineSuspension_LeftRail1Lock",
+      "xyz": [
+        2947.5,
+        215.9,
+        833.9279411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "half_nut",
+      "name": "EngineSuspension_LeftRail1Nut",
+      "xyz": [
+        2947.5,
+        215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "half_bolt",
+      "name": "EngineSuspension_LeftRail2Bolt",
+      "xyz": [
+        2982.5,
+        215.9,
+        811.7029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "half_lock",
+      "name": "EngineSuspension_LeftRail2Lock",
+      "xyz": [
+        2982.5,
+        215.9,
+        833.9279411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "half_nut",
+      "name": "EngineSuspension_LeftRail2Nut",
+      "xyz": [
+        2982.5,
+        215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "half_bolt",
+      "name": "EngineSuspension_LeftRail3Bolt",
+      "xyz": [
+        3017.5,
+        215.9,
+        811.7029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "half_lock",
+      "name": "EngineSuspension_LeftRail3Lock",
+      "xyz": [
+        3017.5,
+        215.9,
+        833.9279411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "half_nut",
+      "name": "EngineSuspension_LeftRail3Nut",
+      "xyz": [
+        3017.5,
+        215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "half_bolt",
+      "name": "EngineSuspension_LeftRail4Bolt",
+      "xyz": [
+        3052.5,
+        215.9,
+        811.7029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "half_lock",
+      "name": "EngineSuspension_LeftRail4Lock",
+      "xyz": [
+        3052.5,
+        215.9,
+        833.9279411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "half_nut",
+      "name": "EngineSuspension_LeftRail4Nut",
+      "xyz": [
+        3052.5,
+        215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "bevel_washer",
+      "name": "EngineSuspension_LeftBevel1",
+      "xyz": [
+        2995.0,
+        173.9,
+        586.053637918769
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "rear_bolt",
+      "name": "EngineSuspension_LeftBase1Bolt",
+      "xyz": [
+        2995.0,
+        173.9,
+        628.3
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "rear_lock",
+      "name": "EngineSuspension_LeftBase1Lock",
+      "xyz": [
+        2995.0,
+        173.9,
+        586.053637918769
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "rear_nut",
+      "name": "EngineSuspension_LeftBase1Nut",
+      "xyz": [
+        2995.0,
+        173.9,
+        582.084887918769
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "bevel_washer",
+      "name": "EngineSuspension_LeftBevel2",
+      "xyz": [
+        2995.0,
+        257.9,
+        586.053637918769
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "rear_bolt",
+      "name": "EngineSuspension_LeftBase2Bolt",
+      "xyz": [
+        2995.0,
+        257.9,
+        628.3
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "rear_lock",
+      "name": "EngineSuspension_LeftBase2Lock",
+      "xyz": [
+        2995.0,
+        257.9,
+        586.053637918769
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "rear_nut",
+      "name": "EngineSuspension_LeftBase2Nut",
+      "xyz": [
+        2995.0,
+        257.9,
+        582.084887918769
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "LeftRearSuspension"
+    },
+    {
+      "key": "half_bolt",
+      "name": "EngineSuspension_RightRail1Bolt",
+      "xyz": [
+        2947.5,
+        -215.9,
+        811.7029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "half_lock",
+      "name": "EngineSuspension_RightRail1Lock",
+      "xyz": [
+        2947.5,
+        -215.9,
+        833.9279411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "half_nut",
+      "name": "EngineSuspension_RightRail1Nut",
+      "xyz": [
+        2947.5,
+        -215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "half_bolt",
+      "name": "EngineSuspension_RightRail2Bolt",
+      "xyz": [
+        2982.5,
+        -215.9,
+        811.7029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "half_lock",
+      "name": "EngineSuspension_RightRail2Lock",
+      "xyz": [
+        2982.5,
+        -215.9,
+        833.9279411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "half_nut",
+      "name": "EngineSuspension_RightRail2Nut",
+      "xyz": [
+        2982.5,
+        -215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "half_bolt",
+      "name": "EngineSuspension_RightRail3Bolt",
+      "xyz": [
+        3017.5,
+        -215.9,
+        811.7029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "half_lock",
+      "name": "EngineSuspension_RightRail3Lock",
+      "xyz": [
+        3017.5,
+        -215.9,
+        833.9279411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "half_nut",
+      "name": "EngineSuspension_RightRail3Nut",
+      "xyz": [
+        3017.5,
+        -215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "half_bolt",
+      "name": "EngineSuspension_RightRail4Bolt",
+      "xyz": [
+        3052.5,
+        -215.9,
+        811.7029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "half_lock",
+      "name": "EngineSuspension_RightRail4Lock",
+      "xyz": [
+        3052.5,
+        -215.9,
+        833.9279411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "half_nut",
+      "name": "EngineSuspension_RightRail4Nut",
+      "xyz": [
+        3052.5,
+        -215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "bevel_washer",
+      "name": "EngineSuspension_RightBevel1",
+      "xyz": [
+        2995.0,
+        -257.9,
+        586.053637918769
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "rear_bolt",
+      "name": "EngineSuspension_RightBase1Bolt",
+      "xyz": [
+        2995.0,
+        -257.9,
+        628.3
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "rear_lock",
+      "name": "EngineSuspension_RightBase1Lock",
+      "xyz": [
+        2995.0,
+        -257.9,
+        586.053637918769
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "rear_nut",
+      "name": "EngineSuspension_RightBase1Nut",
+      "xyz": [
+        2995.0,
+        -257.9,
+        582.084887918769
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "bevel_washer",
+      "name": "EngineSuspension_RightBevel2",
+      "xyz": [
+        2995.0,
+        -173.9,
+        586.053637918769
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "rear_bolt",
+      "name": "EngineSuspension_RightBase2Bolt",
+      "xyz": [
+        2995.0,
+        -173.9,
+        628.3
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "rear_lock",
+      "name": "EngineSuspension_RightBase2Lock",
+      "xyz": [
+        2995.0,
+        -173.9,
+        586.053637918769
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "rear_nut",
+      "name": "EngineSuspension_RightBase2Nut",
+      "xyz": [
+        2995.0,
+        -173.9,
+        582.084887918769
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "RightRearSuspension"
+    },
+    {
+      "key": "half_bolt",
+      "name": "EngineSuspension_LeftFrontRailBolt",
+      "xyz": [
+        3892.0,
+        215.9,
+        811.7029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "half_lock",
+      "name": "EngineSuspension_LeftFrontRailLock",
+      "xyz": [
+        3892.0,
+        215.9,
+        833.9279411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "half_nut",
+      "name": "EngineSuspension_LeftFrontRailNut",
+      "xyz": [
+        3892.0,
+        215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "cap",
+      "name": "EngineSuspension_LeftCap",
+      "xyz": [
+        3948.0,
+        215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "half_lock",
+      "name": "EngineSuspension_LeftCapLock",
+      "xyz": [
+        3948.0,
+        215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "half_bolt",
+      "name": "EngineSuspension_RightFrontRailBolt",
+      "xyz": [
+        3892.0,
+        -215.9,
+        811.7029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "half_lock",
+      "name": "EngineSuspension_RightFrontRailLock",
+      "xyz": [
+        3892.0,
+        -215.9,
+        833.9279411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "half_nut",
+      "name": "EngineSuspension_RightFrontRailNut",
+      "xyz": [
+        3892.0,
+        -215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "cap",
+      "name": "EngineSuspension_RightCap",
+      "xyz": [
+        3948.0,
+        -215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "half_lock",
+      "name": "EngineSuspension_RightCapLock",
+      "xyz": [
+        3948.0,
+        -215.9,
+        837.1029411764704
+      ],
+      "rotation": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "pivot_bolt",
+      "name": "EngineSuspension_FrontPivotBolt",
+      "xyz": [
+        3894.45,
+        0.0,
+        630.5999999999999
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "pivot_lock",
+      "name": "EngineSuspension_FrontPivotLock",
+      "xyz": [
+        3932.5499999999997,
+        0.0,
+        630.5999999999999
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "FrontSuspension"
+    },
+    {
+      "key": "pivot_nut",
+      "name": "EngineSuspension_FrontPivotNut",
+      "xyz": [
+        3937.3125,
+        0.0,
+        630.5999999999999
+      ],
+      "rotation": [
+        0.0,
+        0.7071067811865475,
+        0.0,
+        0.7071067811865476
+      ],
+      "assembly": "FrontSuspension"
+    }
+  ],
+  "expected_physical_occurrences": 2393,
+  "rail_policy": "Retain source rail stock, bores and longitudinal stations 2940..4120; raise to engine mounting plane. No floor/crossmember geometry changes.",
+  "floor_receivers_changed": false,
+  "standard_assembly_modified": false,
+  "historical_station_qualified": false,
+  "engine_mount_holes_complete": false,
+  "installation_qualified": false
+}

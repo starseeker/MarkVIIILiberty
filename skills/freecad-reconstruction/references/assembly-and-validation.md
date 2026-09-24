@@ -125,6 +125,14 @@ removed the contact and failed the unchanged area criterion. The
 [reproducer and measurements](../../../cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_support_trial01/contact_probe.py)
 record the tested case. Zero distance alone does not establish a bearing area.
 
+Treat kernel bounding boxes as enclosures, not guaranteed exact size measurements.
+On this runtime, a retained cross-drilled stud reports a 19.058984 mm bounding-box
+width, while its axial cylinder faces have radius 9.525 mm and no material lies
+outside the 19.05 mm nominal stock. Measure the defining surfaces and check the
+whole material envelope before declaring a dimensional error. The
+[saved checks and initial failure](../../../cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_frame_trial02/README.md)
+record this case. Conservative bounds remain useful for interference filtering.
+
 For freeform sections, establish a common coordinate system and corresponding
 curve directions before lofting or fitting surfaces. Retain source picks and
 control curves; check section residuals, seams, surface continuity where required,

@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-23",
+  "native_sha256": "278de3e1209f881c7214004e0716e9d134d932cd3f601463f3955ab5d0665263",
+  "source_image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p295-geometry.png",
+  "source_image_sha256": "0d845e3964faf559cc5dd3047625adf72226a6babb0af17c801b3a6006a34c53",
+  "calibration_sha256": "bbb69be3184cb7e24fb394e737cfb936fddffea2657f59bf2bcfef662833e002",
+  "source_bands_basis": "Broad manual brackets of the horizontal channel web faces in the inspected SNL Plate23 image; not metrology or acceptance tolerances.",
+  "measurements": [
+    {
+      "feature": "upper_channel_web",
+      "manually_inspected_source_band_y_px": [
+        151,
+        164
+      ],
+      "previous_relative_frame_projection_y_px": 147.08555105798814,
+      "fixed_frame_trial_projection_y_px": 202.8526663536431,
+      "new_residual_band_mm": [
+        47.76366751001475,
+        35.7888218310024
+      ],
+      "frame_follows_axis_prediction_y_px": 147.08555105798814
+    },
+    {
+      "feature": "lower_channel_web",
+      "manually_inspected_source_band_y_px": [
+        768,
+        790
+      ],
+      "previous_relative_frame_projection_y_px": 777.7926446023379,
+      "fixed_frame_trial_projection_y_px": 833.5597598979928,
+      "new_residual_band_mm": [
+        60.389846733197345,
+        40.124723276407224
+      ],
+      "frame_follows_axis_prediction_y_px": 777.7926446023379
+    }
+  ],
+  "findings": [
+    "The source overlay retains the prior bearing-based local calibration. The fixed-frame hypothesis lowers both projected channels relative to the shaft by about55.8pixels; it worsens source agreement despite passing local mechanical fit.",
+    "Long MX5 bosses remain forward of the visible casting-wing silhouette. This already documented approximation is not resolved by rebuilding the webs.",
+    "The section at Y118 is chosen to expose the actual mount; the handbook cutting plane and out-of-plane details are uncertain.",
+    "Moving the frame with the shaft would restore its previous relative projection mathematically. That alternative still needs saved-geometry, hull/floor and attachment checks."
+  ],
+  "decision": "Retain as a mechanically checked fixed-frame hypothesis; compare a frame-following-axis alternative before selecting the installation and rebuilding casings around it.",
+  "historical_station_qualified": false,
+  "installation_qualified": false
+}

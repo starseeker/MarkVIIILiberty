@@ -1,0 +1,1347 @@
+{
+  "status": "saved_frame_trial_pending_independent_checks",
+  "native_file": "PowertrainWithRebuiltTransmissionSupports.FCStd",
+  "native_sha256": "278de3e1209f881c7214004e0716e9d134d932cd3f601463f3955ab5d0665263",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_support_trial01/PowertrainWithRebuiltEngineSupports.FCStd",
+  "source_native_sha256": "057457860568310beddc8a1efd571a102288e91da91da8ac2858494e3ef4b6d2",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_powertrain_frame_trial.py": "f03f9e7d9cb008a7c05bbf35d8a843fccc9246907996ddc8807bf4c5b8ca4647",
+    "cad/003_FullTank/experiments/drive_chains/powertrain_frame_registration_parts.py": "80a4f5b595e073fcdefeb507b7e78e29aa2089bd19bbd1aadcdbdcdbaf6c9b29",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_parts.py": "a0ef001b84b6593093fa1ffe1aff650a2253646e0facba5610a7d4600a0da228",
+    "cad/003_FullTank/experiments/drive_chains/transmission_core_parts.py": "b7b3150e42529535f842871e81c4c580a15b25ce123e997da3ef5437041d7ff1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_support_parts.py": "378d460b581c26154940ced9b9f4a8d8ca514fb97b05f24a2ac13c8c8b595405",
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_support_trial01/report.json": "3eac46ebbb19a2f102e4b96485e5504136607a8e31c71928695c99a49554f3ec",
+    "cad/003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_support_trial01/independent_checks.json": "12766e4f6864d47caefd0152fe310d428b4f3b2e1d795eee9addd1f56d2250e2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_research.json": "01bdbf2777e9aadc1e879c7a66e9a1aabac228d2403db8c34e60023bf725a394",
+    "cad/003_FullTank/experiments/drive_chains/transmission_case_mount_parts.py": "febafeb4ace303f50c1c42f27de8691cd15e82fff3bf301d2be068d541074210",
+    "cad/003_FullTank/experiments/drive_chains/transmission_case_mount_trial_build/report.json": "ccebd6a7016cb118e2d7b1a64cbc734a84472bb7f5da8a2c490c2884d884e239",
+    "cad/003_FullTank/experiments/drive_chains/transmission_case_mount_trial_build/inputs/parent_case.brep": "d85ed93ca67bc85ed17e3e82c758f9b5d94829cc73a9c8ede74abd6b08b97804",
+    "cad/003_FullTank/experiments/drive_chains/transmission_support_clearance_build/report.json": "e4b0d6331d1308ef592e1513cb4196fe40b23b87c9d6c8e2c147f1df10402444",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_clearance_build/report.json": "7c2dd4ed9df023fc0b4bd5eda3b5d5cea103f533b4e6c573a2e58670d26f135d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_core_build/report.json": "5bf66506a358cd5b061b0785c5c713b556129cb58795b8ab04a4fbbc5fef6efa",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_clearance_build/inputs/transmission_frame_controls.json": "f0dd8b30049012bd54ea005f54c27b883c59ecda4c160ad1555ec43f38c83f94",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_clearance_build/inputs/transmission_support_controls.json": "48945a86e1bac76c9eda503383602b8fd36605e57a5b1311202e3cd006af4b78",
+    "cad/003_FullTank/experiments/drive_chains/transmission_core_build/inputs/transmission_core_controls.json": "13e91a9a7fbe79763b966ead84c53aab484a02a656abd5984bd473731460d77a"
+  },
+  "baseline_archives": {
+    "inner_minimal": {
+      "native": "cad/003_FullTank/experiments/drive_chains/transmission_support_clearance_build/TransmissionSupportCandidate.FCStd",
+      "native_sha256": "e9d96dff5328b2af32937f897cd4b417cf8c89bc8d2883a63ab7f8f9b552fa73",
+      "definition": "Def_FixedBearing_inner_bracket",
+      "brep_sha256": "2c4b9325de2abd32570a21824fbde089417f004249fb02b395a73dd8c0103d81"
+    },
+    "inner_original_base": {
+      "native": "cad/003_FullTank/experiments/drive_chains/transmission_frame_clearance_build/TransmissionFrameCandidate.FCStd",
+      "native_sha256": "207fdda3c1d630a08740553bf166872e8db5a136b556d085ce7be157116a6644",
+      "definition": "Def_FixedBearing_inner_bracket",
+      "brep_sha256": "c309f92339f016db60ac5262f7e65b50df35127f8a009c3d6ea304cb17b323eb"
+    },
+    "outer_minimal": {
+      "native": "cad/003_FullTank/experiments/drive_chains/transmission_support_clearance_build/TransmissionSupportCandidate.FCStd",
+      "native_sha256": "e9d96dff5328b2af32937f897cd4b417cf8c89bc8d2883a63ab7f8f9b552fa73",
+      "definition": "Def_FixedBearing_outer_bracket",
+      "brep_sha256": "b1d851204c54737f157cf32757dec0c500390c6060a277785d70a40bcca7d223"
+    },
+    "outer_original_base": {
+      "native": "cad/003_FullTank/experiments/drive_chains/transmission_frame_clearance_build/TransmissionFrameCandidate.FCStd",
+      "native_sha256": "207fdda3c1d630a08740553bf166872e8db5a136b556d085ce7be157116a6644",
+      "definition": "Def_FixedBearing_outer_bracket",
+      "brep_sha256": "1c75131387c5f630e45bf7f44233d3b8f7c4527aa004589b424a15ad7493425e"
+    },
+    "case_raw_original_base": {
+      "native": "cad/003_FullTank/experiments/drive_chains/transmission_core_build/TransmissionCoreCandidate.FCStd",
+      "native_sha256": "7467b79d02597ade07179c6f6595141f089c7ba4473b557e072c92544f35ffe2",
+      "definition": "Def_TransmissionCore_bevel_case",
+      "brep_sha256": "0c596e30064453a4266b4b0a0cd9d9779f172dc366e26d9898175fe39bf55357"
+    }
+  },
+  "baseline_brep_hashes": {
+    "inner_original_base.brep": "c309f92339f016db60ac5262f7e65b50df35127f8a009c3d6ea304cb17b323eb",
+    "case_raw_original_base.brep": "0c596e30064453a4266b4b0a0cd9d9779f172dc366e26d9898175fe39bf55357",
+    "outer_original_base.brep": "1c75131387c5f630e45bf7f44233d3b8f7c4527aa004589b424a15ad7493425e",
+    "outer_revised_base.brep": "b090b929f04a03d0756052d10d03524a044e4e26ed6c20e78d783dedd6cf0f6a",
+    "inner_revised_base.brep": "434d924bc7152c36c9d6b105d19adc370d0ca7abcfe1386a06a4ec73fdebc22d",
+    "inner_minimal.brep": "2c4b9325de2abd32570a21824fbde089417f004249fb02b395a73dd8c0103d81",
+    "case_detailed_before.brep": "7f77f7bc5fee59e0b36d3cc96a28fa01f53516ae58d044a0d6ae1e1b0cae8813",
+    "outer_minimal.brep": "b1d851204c54737f157cf32757dec0c500390c6060a277785d70a40bcca7d223",
+    "case_original_base.brep": "402215209b0dbe0a36dfaad5a03e7454195a00f14d5c80007bd53f434d7f6834",
+    "case_revised_base.brep": "cb140eb165cf685ddcfe84ebbe27232a6cd1e50f5ed45cec97bf02e960501aa6",
+    "outer_detailed_before.brep": "e7c58135c64f0ddefdfff3fdfb8b023258361197a383f47ef5cd25011d70c096",
+    "inner_detailed_before.brep": "74b5a89f2865f9af04e795b0c6507ec82ee67a4901e90a87bed507afc7fcda10"
+  },
+  "frame_controls": {
+    "frame_front_x": 1598.0817913541819,
+    "top_web_z": 1167.8698292220113,
+    "bottom_web_z": 586.8990512333966,
+    "channel_depth": 148,
+    "channel_height": 50,
+    "channel_stock": 8,
+    "channel_half_span": 1145,
+    "angle_leg_x": 50,
+    "angle_leg_y": 40,
+    "angle_stock": 8,
+    "gusset_stock": 8,
+    "gusset_width": 120,
+    "diaphragm_stock": 8,
+    "rear_stem_round_radius": 20,
+    "rear_stem_end_inset": 2.5,
+    "interface_witness_shift": 1,
+    "outer_angle_inset": 0
+  },
+  "support_controls": {
+    "running_gap": 0.15,
+    "lining_stock": 4,
+    "end_gap": 0.3,
+    "split_gap": 0.05,
+    "inner_cast_radius": 88,
+    "outer_cast_radius": 79,
+    "web_stock": 20,
+    "bracket_height": 170,
+    "rear_stem_height": 140,
+    "ear_radius": 18.5,
+    "ear_x_extent": 34,
+    "stud_diameter": 19.05,
+    "stud_hole_gap": 0.5,
+    "stud_y_inset": 16,
+    "cup_length": 70,
+    "cup_width": 66,
+    "cup_height": 60,
+    "cup_stock": 5,
+    "lid_stock": 3,
+    "lid_overhang": 2,
+    "lid_gap": 0.15,
+    "inner_cup_front": 158,
+    "outer_cup_front": 132
+  },
+  "core_controls": {
+    "planetary_profiles_px": {
+      "brake_case": [
+        [
+          765,
+          162
+        ],
+        [
+          916,
+          162
+        ],
+        [
+          916,
+          225
+        ],
+        [
+          891,
+          225
+        ],
+        [
+          891,
+          185
+        ],
+        [
+          778,
+          185
+        ],
+        [
+          778,
+          170
+        ],
+        [
+          765,
+          170
+        ]
+      ],
+      "plain_case": [
+        [
+          918,
+          162
+        ],
+        [
+          935,
+          162
+        ],
+        [
+          935,
+          224
+        ],
+        [
+          1080,
+          224
+        ],
+        [
+          1110,
+          236
+        ],
+        [
+          1126,
+          257
+        ],
+        [
+          1132,
+          431
+        ],
+        [
+          1148,
+          455
+        ],
+        [
+          1174,
+          455
+        ],
+        [
+          1174,
+          475
+        ],
+        [
+          1117,
+          475
+        ],
+        [
+          1110,
+          438
+        ],
+        [
+          1109,
+          270
+        ],
+        [
+          1096,
+          251
+        ],
+        [
+          1080,
+          243
+        ],
+        [
+          918,
+          243
+        ]
+      ],
+      "planet_disk": [
+        [
+          724,
+          458
+        ],
+        [
+          738,
+          455
+        ],
+        [
+          884,
+          228
+        ],
+        [
+          900,
+          228
+        ],
+        [
+          900,
+          250
+        ],
+        [
+          882,
+          265
+        ],
+        [
+          759,
+          454
+        ],
+        [
+          861.8,
+          454
+        ],
+        [
+          861.8,
+          487
+        ],
+        [
+          724,
+          487
+        ]
+      ]
+    },
+    "high_drum_faces_px": [
+      1240,
+      1304
+    ],
+    "high_drum_hub_end_px": 1180,
+    "high_drum_diameter": 381,
+    "high_drum_rim_stock": 12,
+    "high_drum_web_stock": 14,
+    "high_drum_hub_radius": 58,
+    "high_drum_bore_radius": 44.5,
+    "high_drum_spline_tip_radius": 50.5,
+    "high_drum_spline_width": 10,
+    "splines": 10,
+    "cross_shaft_root_radius": 28.8,
+    "cross_shaft_tip_radius": 34.8,
+    "cross_shaft_spline_width": 11,
+    "shaft_end_gap": 0.2,
+    "bevel_outline_segments": [
+      [
+        [
+          0,
+          225
+        ],
+        [
+          -60,
+          225
+        ],
+        [
+          -130,
+          225
+        ],
+        [
+          -172,
+          218
+        ]
+      ],
+      [
+        [
+          -172,
+          218
+        ],
+        [
+          -205,
+          212
+        ],
+        [
+          -220,
+          198
+        ],
+        [
+          -220,
+          166
+        ]
+      ],
+      [
+        [
+          -220,
+          166
+        ],
+        [
+          -220,
+          -166
+        ]
+      ],
+      [
+        [
+          -220,
+          -166
+        ],
+        [
+          -220,
+          -200
+        ],
+        [
+          -200,
+          -220
+        ],
+        [
+          -165,
+          -225
+        ]
+      ],
+      [
+        [
+          -165,
+          -225
+        ],
+        [
+          0,
+          -225
+        ]
+      ],
+      [
+        [
+          0,
+          -225
+        ],
+        [
+          98,
+          -225
+        ],
+        [
+          160,
+          -185
+        ],
+        [
+          196,
+          -122
+        ]
+      ],
+      [
+        [
+          196,
+          -122
+        ],
+        [
+          220,
+          -122
+        ]
+      ],
+      [
+        [
+          220,
+          -122
+        ],
+        [
+          220,
+          122
+        ]
+      ],
+      [
+        [
+          220,
+          122
+        ],
+        [
+          196,
+          122
+        ]
+      ],
+      [
+        [
+          196,
+          122
+        ],
+        [
+          150,
+          172
+        ],
+        [
+          108,
+          225
+        ],
+        [
+          0,
+          225
+        ]
+      ]
+    ],
+    "bevel_cavity_scale": 0.94,
+    "bevel_half_width": 125,
+    "bevel_end_stock": 12,
+    "bevel_split_gap": 0.3,
+    "input_boss_x": [
+      170,
+      248
+    ],
+    "input_boss_radius": 88,
+    "input_boss_bore_radius": 72,
+    "bevel_sleeve_bore_radius": 46,
+    "bevel_foot_depth": 20,
+    "bevel_web_front_reach": 150,
+    "bevel_web_inner_z": 170,
+    "bevel_web_stock": 14
+  },
+  "original_axis_mm": [
+    1825.2303627827532,
+    0.0,
+    849.2335104357661
+  ],
+  "shaft_axis_mm": [
+    1831.4946420457636,
+    0.0,
+    900.6029411764705
+  ],
+  "bracket_dimensions": {
+    "inner": {
+      "bore_radius_mm": 65.65,
+      "socket_radius_mm": 69.65,
+      "length_mm": 93.74285714285713,
+      "foot_aft_x_mm": -227.60713640586752,
+      "foot_front_x_mm": -203.6585649772961,
+      "foot_width_mm": 139.33714285714285,
+      "cup_back_x_mm": 88,
+      "cup_front_x_mm": 158,
+      "cup_top_z_mm": 30.0,
+      "stud_axes_yz_mm": [
+        [
+          -30.871428571428567,
+          -84
+        ],
+        [
+          -30.871428571428567,
+          84
+        ],
+        [
+          30.871428571428567,
+          -84
+        ],
+        [
+          30.871428571428567,
+          84
+        ]
+      ]
+    },
+    "outer": {
+      "bore_radius_mm": 55.15,
+      "socket_radius_mm": 59.15,
+      "length_mm": 130.0285714285714,
+      "foot_aft_x_mm": -233.4128506915818,
+      "foot_front_x_mm": -209.46427926301038,
+      "foot_width_mm": 227.14857142857142,
+      "cup_back_x_mm": 62,
+      "cup_front_x_mm": 132,
+      "cup_top_z_mm": 30.0,
+      "stud_axes_yz_mm": [
+        [
+          -49.014285714285705,
+          -75
+        ],
+        [
+          -49.014285714285705,
+          75
+        ],
+        [
+          49.014285714285705,
+          -75
+        ],
+        [
+          49.014285714285705,
+          75
+        ]
+      ]
+    }
+  },
+  "original_bracket_dimensions": {
+    "inner": {
+      "bore_radius_mm": 65.65,
+      "socket_radius_mm": 69.65,
+      "length_mm": 93.74285714285713,
+      "foot_aft_x_mm": -221.34285714285713,
+      "foot_front_x_mm": -197.3942857142857,
+      "foot_width_mm": 139.33714285714285,
+      "cup_back_x_mm": 88,
+      "cup_front_x_mm": 158,
+      "cup_top_z_mm": 30.0,
+      "stud_axes_yz_mm": [
+        [
+          -30.871428571428567,
+          -84
+        ],
+        [
+          -30.871428571428567,
+          84
+        ],
+        [
+          30.871428571428567,
+          -84
+        ],
+        [
+          30.871428571428567,
+          84
+        ]
+      ]
+    },
+    "outer": {
+      "bore_radius_mm": 55.15,
+      "socket_radius_mm": 59.15,
+      "length_mm": 130.0285714285714,
+      "foot_aft_x_mm": -227.14857142857142,
+      "foot_front_x_mm": -203.2,
+      "foot_width_mm": 227.14857142857142,
+      "cup_back_x_mm": 62,
+      "cup_front_x_mm": 132,
+      "cup_top_z_mm": 30.0,
+      "stud_axes_yz_mm": [
+        [
+          -49.014285714285705,
+          -75
+        ],
+        [
+          -49.014285714285705,
+          75
+        ],
+        [
+          49.014285714285705,
+          -75
+        ],
+        [
+          49.014285714285705,
+          75
+        ]
+      ]
+    }
+  },
+  "changes": {
+    "inner": {
+      "retained_saddle_difference_mm3": 0.0,
+      "lower_pad_limits_z_mm": [
+        -363.70388994307393,
+        -313.70388994307393
+      ],
+      "upper_pad_limits_z_mm": [
+        267.2668880455408,
+        317.2668880455408
+      ],
+      "required_inner_packing_gap_mm": 5.805714285714203,
+      "later_added_mm3": 125416.197045523,
+      "later_removed_mm3": 6425.990117885369
+    },
+    "outer": {
+      "retained_saddle_difference_mm3": 0.0,
+      "lower_pad_limits_z_mm": [
+        -363.70388994307393,
+        -313.70388994307393
+      ],
+      "upper_pad_limits_z_mm": [
+        267.2668880455408,
+        317.2668880455408
+      ],
+      "required_inner_packing_gap_mm": 0.0,
+      "later_added_mm3": 25704.908087292628,
+      "later_removed_mm3": 1134.1868127026771
+    },
+    "case": {
+      "later_added_mm3": 3321689.389126023,
+      "later_removed_mm3": 363423.5622731576,
+      "outline_xz_mm": [
+        [
+          -233.41285069158175,
+          -363.70388994307393
+        ],
+        [
+          -213.41285069158175,
+          -363.70388994307393
+        ],
+        [
+          -150,
+          -170
+        ],
+        [
+          -150,
+          170
+        ],
+        [
+          -213.41285069158175,
+          317.2668880455408
+        ],
+        [
+          -233.41285069158175,
+          317.2668880455408
+        ]
+      ],
+      "frame_local_mm": {
+        "rear": -233.41285069158175,
+        "top": 267.2668880455408,
+        "bottom": -313.70388994307393,
+        "height": 50
+      }
+    }
+  },
+  "replacement_definitions": {
+    "Def_FixedBearing_inner_bracket": [
+      "PortFixedBearing_inner_bracket",
+      "StarboardFixedBearing_inner_bracket"
+    ],
+    "Def_FixedBearing_outer_bracket": [
+      "PortFixedBearing_outer_bracket",
+      "StarboardFixedBearing_outer_bracket"
+    ],
+    "Def_TransmissionCore_bevel_case": [
+      "CenterTransmissionCore_bevel_case"
+    ]
+  },
+  "expected_physical_occurrences": 2393,
+  "mount_controls": {
+    "frame_front_x": -233.41285069158175,
+    "top_web_z": 267.2668880455408,
+    "bottom_web_z": -313.70388994307393,
+    "channel_depth": 148.0,
+    "channel_height": 50.0,
+    "channel_stock": 8.0,
+    "channel_half_span": 1145.0,
+    "flange_root_stock": 12.0,
+    "washer_root_allowance": 4.0,
+    "washer_width": 34.0,
+    "washer_height": 30.0,
+    "stud_flange_height": 25.0,
+    "stud_half_span": 118.0,
+    "boss_radius": 22.0,
+    "blind_gap": 0.3,
+    "blind_stock": 4.0,
+    "stud_diameter": 19.05,
+    "stud_length": 142.875,
+    "US_thread_length": 38.1,
+    "SAE_thread_length": 28.575,
+    "receiver_gap": 0.15,
+    "nut_height": 19.05,
+    "nut_slot_depth": 7.0,
+    "tip_projection": 3.175,
+    "cotter_diameter": 3.175,
+    "cotter_hole_gap": 0.15
+  },
+  "mount_datums": {
+    "mounts": [
+      {
+        "name": "UpperPort",
+        "channel": "Upper",
+        "y": 118.0,
+        "z": 292.2668880455408,
+        "channel_z": 267.2668880455408,
+        "placements": {
+          "stud": [
+            1.0,
+            0.0,
+            0.0,
+            -271.6378506915818,
+            0.0,
+            1.0,
+            0.0,
+            118.0,
+            0.0,
+            0.0,
+            1.0,
+            292.2668880455408,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "nut": [
+            -1.0,
+            -1.2246467991473532e-16,
+            0.0,
+            -249.41285069158175,
+            1.2246467991473532e-16,
+            -1.0,
+            0.0,
+            118.0,
+            0.0,
+            0.0,
+            1.0,
+            292.2668880455408,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cotter": [
+            -1.0,
+            -1.2246467991473532e-16,
+            0.0,
+            -264.96285069158176,
+            1.2246467991473532e-16,
+            -1.0,
+            0.0,
+            118.0,
+            0.0,
+            0.0,
+            1.0,
+            292.2668880455408,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "washer": [
+            1.0,
+            0.0,
+            0.0,
+            -249.41285069158175,
+            0.0,
+            1.0,
+            0.0,
+            118.0,
+            0.0,
+            0.0,
+            1.0,
+            292.2668880455408,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "name": "UpperStarboard",
+        "channel": "Upper",
+        "y": -118.0,
+        "z": 292.2668880455408,
+        "channel_z": 267.2668880455408,
+        "placements": {
+          "stud": [
+            1.0,
+            0.0,
+            0.0,
+            -271.6378506915818,
+            0.0,
+            1.0,
+            0.0,
+            -118.0,
+            0.0,
+            0.0,
+            1.0,
+            292.2668880455408,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "nut": [
+            -1.0,
+            -1.2246467991473532e-16,
+            0.0,
+            -249.41285069158175,
+            1.2246467991473532e-16,
+            -1.0,
+            0.0,
+            -118.0,
+            0.0,
+            0.0,
+            1.0,
+            292.2668880455408,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cotter": [
+            -1.0,
+            -1.2246467991473532e-16,
+            0.0,
+            -264.96285069158176,
+            1.2246467991473532e-16,
+            -1.0,
+            0.0,
+            -118.0,
+            0.0,
+            0.0,
+            1.0,
+            292.2668880455408,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "washer": [
+            1.0,
+            0.0,
+            0.0,
+            -249.41285069158175,
+            0.0,
+            1.0,
+            0.0,
+            -118.0,
+            0.0,
+            0.0,
+            1.0,
+            292.2668880455408,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "name": "LowerPort",
+        "channel": "Lower",
+        "y": 118.0,
+        "z": -338.70388994307393,
+        "channel_z": -313.70388994307393,
+        "placements": {
+          "stud": [
+            1.0,
+            0.0,
+            0.0,
+            -271.6378506915818,
+            0.0,
+            1.0,
+            0.0,
+            118.0,
+            0.0,
+            0.0,
+            1.0,
+            -338.70388994307393,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "nut": [
+            -1.0,
+            -1.2246467991473532e-16,
+            0.0,
+            -249.41285069158175,
+            1.2246467991473532e-16,
+            -1.0,
+            0.0,
+            118.0,
+            0.0,
+            0.0,
+            1.0,
+            -338.70388994307393,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cotter": [
+            -1.0,
+            -1.2246467991473532e-16,
+            0.0,
+            -264.96285069158176,
+            1.2246467991473532e-16,
+            -1.0,
+            0.0,
+            118.0,
+            0.0,
+            0.0,
+            1.0,
+            -338.70388994307393,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "washer": [
+            1.0,
+            0.0,
+            0.0,
+            -249.41285069158175,
+            0.0,
+            -1.0,
+            -1.2246467991473532e-16,
+            118.0,
+            0.0,
+            1.2246467991473532e-16,
+            -1.0,
+            -338.70388994307393,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      },
+      {
+        "name": "LowerStarboard",
+        "channel": "Lower",
+        "y": -118.0,
+        "z": -338.70388994307393,
+        "channel_z": -313.70388994307393,
+        "placements": {
+          "stud": [
+            1.0,
+            0.0,
+            0.0,
+            -271.6378506915818,
+            0.0,
+            1.0,
+            0.0,
+            -118.0,
+            0.0,
+            0.0,
+            1.0,
+            -338.70388994307393,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "nut": [
+            -1.0,
+            -1.2246467991473532e-16,
+            0.0,
+            -249.41285069158175,
+            1.2246467991473532e-16,
+            -1.0,
+            0.0,
+            -118.0,
+            0.0,
+            0.0,
+            1.0,
+            -338.70388994307393,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "cotter": [
+            -1.0,
+            -1.2246467991473532e-16,
+            0.0,
+            -264.96285069158176,
+            1.2246467991473532e-16,
+            -1.0,
+            0.0,
+            -118.0,
+            0.0,
+            0.0,
+            1.0,
+            -338.70388994307393,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "washer": [
+            1.0,
+            0.0,
+            0.0,
+            -249.41285069158175,
+            0.0,
+            -1.0,
+            -1.2246467991473532e-16,
+            -118.0,
+            0.0,
+            1.2246467991473532e-16,
+            -1.0,
+            -338.70388994307393,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        }
+      }
+    ],
+    "stud_tip_x": -271.6378506915818,
+    "stud_embedded_end_x": -128.76285069158178,
+    "cotter_axis_x": -264.96285069158176,
+    "nut_seat_x": -249.41285069158175,
+    "US_thread_x": [
+      -166.86285069158177,
+      -128.76285069158178
+    ],
+    "SAE_thread_x": [
+      -271.6378506915818,
+      -243.0628506915818
+    ],
+    "boss_front_x": -124.46285069158176,
+    "channel_slope": 0.09523809523809523,
+    "pin": {
+      "straight_length_mm": 28.5,
+      "bend_arc_length_mm": 1.5707963267948966,
+      "tail_length_mm": 4.854203673205101,
+      "total_leg_centerline_mm": 34.925,
+      "tail_endpoints": [
+        [
+          0.0,
+          19.346653896957072,
+          -4.861976772210879
+        ],
+        [
+          0.0,
+          19.346653896957072,
+          4.861976772210879
+        ]
+      ],
+      "wire_radius_mm": 0.7437499999999999,
+      "under_eye_y_mm": -14.0,
+      "bend_start_y_mm": 14.5,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "source_profile_fit_qualified": false
+  },
+  "mount_occurrence_frames": {
+    "CaseMount_UpperPort_stud": [
+      1.0,
+      0.0,
+      0.0,
+      1559.856791354182,
+      0.0,
+      1.0,
+      0.0,
+      118.0,
+      0.0,
+      0.0,
+      1.0,
+      1192.8698292220113,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_UpperPort_nut": [
+      -1.0,
+      0.0,
+      0.0,
+      1582.0817913541819,
+      0.0,
+      -1.0,
+      0.0,
+      118.0,
+      0.0,
+      0.0,
+      1.0,
+      1192.8698292220113,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_UpperPort_cotter": [
+      -1.0,
+      0.0,
+      0.0,
+      1566.531791354182,
+      0.0,
+      -1.0,
+      0.0,
+      118.0,
+      0.0,
+      0.0,
+      1.0,
+      1192.8698292220113,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_UpperPort_washer": [
+      1.0,
+      0.0,
+      0.0,
+      1582.0817913541819,
+      0.0,
+      1.0,
+      0.0,
+      118.0,
+      0.0,
+      0.0,
+      1.0,
+      1192.8698292220113,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_UpperStarboard_stud": [
+      1.0,
+      0.0,
+      0.0,
+      1559.856791354182,
+      0.0,
+      1.0,
+      0.0,
+      -118.0,
+      0.0,
+      0.0,
+      1.0,
+      1192.8698292220113,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_UpperStarboard_nut": [
+      -1.0,
+      0.0,
+      0.0,
+      1582.0817913541819,
+      0.0,
+      -1.0,
+      0.0,
+      -118.0,
+      0.0,
+      0.0,
+      1.0,
+      1192.8698292220113,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_UpperStarboard_cotter": [
+      -1.0,
+      0.0,
+      0.0,
+      1566.531791354182,
+      0.0,
+      -1.0,
+      0.0,
+      -118.0,
+      0.0,
+      0.0,
+      1.0,
+      1192.8698292220113,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_UpperStarboard_washer": [
+      1.0,
+      0.0,
+      0.0,
+      1582.0817913541819,
+      0.0,
+      1.0,
+      0.0,
+      -118.0,
+      0.0,
+      0.0,
+      1.0,
+      1192.8698292220113,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_LowerPort_stud": [
+      1.0,
+      0.0,
+      0.0,
+      1559.856791354182,
+      0.0,
+      1.0,
+      0.0,
+      118.0,
+      0.0,
+      0.0,
+      1.0,
+      561.8990512333966,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_LowerPort_nut": [
+      -1.0,
+      0.0,
+      0.0,
+      1582.0817913541819,
+      0.0,
+      -1.0,
+      0.0,
+      118.0,
+      0.0,
+      0.0,
+      1.0,
+      561.8990512333966,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_LowerPort_cotter": [
+      -1.0,
+      0.0,
+      0.0,
+      1566.531791354182,
+      0.0,
+      -1.0,
+      0.0,
+      118.0,
+      0.0,
+      0.0,
+      1.0,
+      561.8990512333966,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_LowerPort_washer": [
+      1.0,
+      0.0,
+      0.0,
+      1582.0817913541819,
+      0.0,
+      -1.0,
+      0.0,
+      118.0,
+      0.0,
+      0.0,
+      -1.0,
+      561.8990512333966,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_LowerStarboard_stud": [
+      1.0,
+      0.0,
+      0.0,
+      1559.856791354182,
+      0.0,
+      1.0,
+      0.0,
+      -118.0,
+      0.0,
+      0.0,
+      1.0,
+      561.8990512333966,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_LowerStarboard_nut": [
+      -1.0,
+      0.0,
+      0.0,
+      1582.0817913541819,
+      0.0,
+      -1.0,
+      0.0,
+      -118.0,
+      0.0,
+      0.0,
+      1.0,
+      561.8990512333966,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_LowerStarboard_cotter": [
+      -1.0,
+      0.0,
+      0.0,
+      1566.531791354182,
+      0.0,
+      -1.0,
+      0.0,
+      -118.0,
+      0.0,
+      0.0,
+      1.0,
+      561.8990512333966,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "CaseMount_LowerStarboard_washer": [
+      1.0,
+      0.0,
+      0.0,
+      1582.0817913541819,
+      0.0,
+      -1.0,
+      0.0,
+      -118.0,
+      0.0,
+      0.0,
+      -1.0,
+      561.8990512333966,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "channel_regeneration": {
+    "top": {
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0
+    },
+    "bottom": {
+      "missing_mm3": 0.0,
+      "added_mm3": 0.0
+    }
+  },
+  "frame_and_floor_unchanged": true,
+  "occurrence_frames_unchanged": false,
+  "source_interpretation": "HB125/126 and SNL Plate23 show fixed frame behind case and brackets. Rebuilt webs retain existing provisional frame planes; inner packing gap remains unresolved.",
+  "source_review": "Original MarkVIII063/064 and SNL p295-geometry directly inspected on 23 September 2026.",
+  "historical_station_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false
+}

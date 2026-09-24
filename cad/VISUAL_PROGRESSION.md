@@ -1,5 +1,23 @@
 # Mark VIII visual progression
 
+The fixed-frame transmission trial adds an
+[isometric](intermediate_snapshot_iso_powertrain_registration_002.png),
+[support detail](intermediate_snapshot_detail_transmission_support_registration_001.png)
+and [source overlay](intermediate_snapshot_source_transmission_registration_001.png).
+Rebuilt cast webs and the four MX5 joints pass local mechanical checks, including
+125 native criteria, 279 material pairs and 26 STEP comparisons. The overlay
+exposes worse channel-height agreement with SNL23, so historical frame placement
+is reopened before casing reconstruction. These images preserve the checked
+hypothesis and its disagreement, not a final installation. All 152 previous images
+and recorded native baselines remain unchanged: **155 total**. See the
+[trial record](003_FullTank/experiments/drive_chains/engine_pump_receiver_study/registration/native_frame_trial02/README.md).
+
+| New image | SHA256 |
+|---|---|
+| Fixed-frame powertrain isometric | `3e80490fbb410ad5f1201b9ea835c308efd2eb39065ce6e55cb7cace35a04e18` |
+| Transmission support detail | `5cc6c2c2165b3ed3d5d67b478d4c5c1fe8d95b414c844a73111464bac8150691` |
+| Source frame comparison | `a796c4aaf1429303ae2acc5354d3999f1f5d06bd66f3bffcc238f3751bc51564` |
+
 The 23 September powertrain-registration checkpoint adds an
 [isometric](intermediate_snapshot_iso_powertrain_registration_001.png),
 [engine-support detail](intermediate_snapshot_detail_engine_support_registration_001.png)

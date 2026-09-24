@@ -2,10 +2,14 @@
 
 23 September 2026. The **local receiving case is qualified**; the complete tank
 installation remains unfinished. The standard tank011 native files are unchanged.
-The latest [support and planetary checkpoint](registration/native_support_trial01/README.md)
+The [support and planetary checkpoint](registration/native_support_trial01/README.md)
 retains 2,393 development occurrences and resolves the local carrier alignment
 and engine rail/bracket gaps. Casings, transmission supports and station
-qualification remain open. Three new review images bring the progression to 152.
+qualification remain open. The subsequent
+[fixed-frame trial](registration/native_frame_trial02/README.md) closes local
+transmission support/MX5 interfaces but worsens channel-height agreement in its
+source overlay. Compare a frame that follows the shaft before choosing the
+installation. The progression now contains 155 images; the standard tank is unchanged.
 
 `trial02/PumpReceiver.FCStd` reconstructs the receiver from the pre-receiver
 lower crankcase, using the source-profile oil pump and the 171.45 mm lower-drive
@@ -104,11 +108,12 @@ carrier/spline mismatch while preserving tooth meshes. The
 [support trial](registration/native_support_trial01/README.md) rebuilds three
 brackets to restore rail contact while retaining floor receivers and hardware.
 
-Next, rebuild constant-stock chain casings and the transmission bearing/frame
-interfaces for the trial route, then check controls and surrounding hull
-interfaces together. Complete the outstanding definition-preservation checks
-before promoting any trial. Preserve the printed floor clearance and keep
-historical station acceptance separate from local mechanical fit.
+Next, compare fixed and shaft-following frame placements against the source and
+hull/floor attachments. Locally seated brackets alone do not settle this choice.
+Then rebuild constant-stock chain casings and check controls and surrounding hull
+interfaces together. Complete outstanding definition-preservation checks before
+promotion. Preserve the printed floor clearance and keep historical station
+acceptance separate from mechanical fit.
 
 ## Reproduce
 

@@ -11,6 +11,26 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — transmission frame hypothesis checked against sources
+
+The [fixed-frame trial](experiments/drive_chains/engine_pump_receiver_study/registration/native_frame_trial02/README.md)
+rebuilds four bearing brackets and central case webs, resetting all sixteen MX5
+joint constituents to the retained channels. **125 native checks, 279 material
+pairs and 26 STEP comparisons pass.** Two local variations each pass 37 checks.
+Fresh reproduction matches 1,409 archived BReps and 113,545 object properties.
+The detached-boss attempt and corrected diameter measurement are retained.
+
+The source overlay reopens frame placement: holding the frame fixed while raising
+the shaft lowers its relative projections about 55.8 pixels, worsening SNL23
+agreement. Compare a frame that follows the shaft against source sections and
+hull attachments before choosing the station and rebuilding casings. Inner
+packing/MX1 hardware, source ambiguities and strict preservation of save-normalized
+definitions remain open. Local mechanical fit is not historical qualification.
+
+Four views were inspected; three new progression images give **155 total**,
+preserving all 152 prior images and 24 recorded native files. Standard tank011
+remains unchanged at 5,326 physical occurrences. The full tank is incomplete.
+
 ## 23 September 2026 — coupled planetary phases and rebuilt engine supports
 
 The [phase trial](experiments/drive_chains/engine_pump_receiver_study/registration/native_phase_trial01/README.md)
