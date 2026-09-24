@@ -11,6 +11,25 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 23 September 2026 — resumed powertrain placement trial
+
+The runtime and saved checkpoint were verified after resuming. A separate
+[native registration diagnostic](experiments/drive_chains/engine_pump_receiver_study/registration/native_trial01/README.md)
+retains all 2,393 development occurrences and installs the mean-axis hypothesis
+for measurement only. Both chains pass all **886 nearby material comparisons**;
+the saved oil-pump envelope clears the unchanged floor by **7.494 mm**.
+
+The diagnostic exposes the next coupled changes: rephased shafts clash with
+their internal planet-carrier disks by 2,038.844 mm³ per side, 128 chain/casing
+pairs clash, and four engine rail/bracket contacts open by 51.369 mm. Internal
+transmission phases, casings and supports require coordinated reconstruction.
+The drawing's height uncertainty remains ±35.57 mm. Of 461 definitions, 401 retain
+exact BRep bytes and 60 require material-preservation checks after saving.
+Two diagnostic views were inspected; the standard tank and its 149-image visual
+progression remain unchanged. The source-profile oil pump's full STEP validation
+has now finished: **all 186 comparisons pass**. The merged-hierarchy material
+validator remains active.
+
 ## 23 September 2026 — coupled pump receiver and datum study
 
 The [coupled receiver](experiments/drive_chains/engine_pump_receiver_study/README.md)

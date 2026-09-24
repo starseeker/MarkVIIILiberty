@@ -4,7 +4,8 @@ Current receiving-case work is recorded in the
 [coupled receiver study](../experiments/drive_chains/engine_pump_receiver_study/README.md).
 The local case passes native/STEP/reproduction checks and is present with both
 pumps in a saved 2,393-component development hierarchy. Its complete hierarchy
-verification and the source-profile pump's STEP qualification remain in progress.
+verification remains in progress. The source-profile pump's full STEP check
+has completed: all 186 comparisons pass.
 The inherited floor conflict is still open; the standard tank is unchanged.
 
 This continues the [water-pump checkpoint](P01-engine-water-pump-connections.md).
@@ -14,7 +15,7 @@ against the engine and standard tank**. The full engine and tank remain incomple
 
 Latest candidate: [source-profile revision](../experiments/drive_chains/engine_pump_layout_study/oil_profile_joint_trial/OilPump.FCStd).
 It passes **402 native checks, 482 material pairs, seven conditional source
-envelope checks and fresh reproduction**. STEP qualification is running.
+envelope checks and fresh reproduction**. All 186 STEP comparisons now pass.
 See the source reconciliation below; the earlier qualified mounting checkpoint
 is retained as a distinct geometry version.
 
@@ -315,10 +316,12 @@ pixel-only uncertainty; it is not a selected global datum. Both actual-solid
 [layout sections](../experiments/drive_chains/engine_pump_layout_study/oil_profile_joint_trial/layout/)
 were inspected. Neither case stud seating nor complete installation is qualified.
 
-The selected pump's full 186-pair STEP check is running; its changed screens
-require fresh comparisons. Next reconstruct the receiver around the revised
-footprint, reapply the water-pump pads, and reconcile the global drivetrain
-registration and dependent interfaces. Two wires, external connection selection,
+The selected pump's full 186-pair STEP check has completed, including fresh
+comparisons for its changed screens. The subsequent receiver checkpoint above
+supplies the revised case and water-pump pads. Next reconcile the global drivetrain
+registration and dependent interfaces. The saved mean-axis diagnostic identifies
+internal output/carrier phase conflicts and required casing/support changes.
+Two wires, external connection selection,
 unequal passage sizing and exact cast profiles remain open. The standard tank
 is unchanged. Reproduction commands and retained failures are in the
 [study notes](../experiments/drive_chains/engine_pump_layout_study/README.md).

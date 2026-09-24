@@ -59,7 +59,8 @@ occurrence coverage and composed frames are checked independently again.
 
 The current driver is `check_engine_pumps_isolated.py`; the earlier monolithic
 checker and its output are retained under `assembly_trial02/diagnostics/process247`.
-The source-profile pump's separate 186-pair STEP check remains pending too.
+The source-profile pump's separate 186-pair STEP check subsequently completed;
+all 186 comparisons pass. Merged-hierarchy material verification remains active.
 
 ## Global registration
 
@@ -79,11 +80,17 @@ closure/phase checks pass. A vertical-only shift fails closure by 11–14 mm.
 | Transmission pick | 1830.879 / 894.675 | +5.649 / +45.441 | 1.565 |
 | Common horizontal mean | 1831.495 / 900.603 | +6.264 / +51.369 | 7.494 |
 
-No candidate is selected or installed. The source picks alone carry a ±35.57 mm
+No candidate is accepted for installation. The source picks alone carry a ±35.57 mm
 height bound. The [comparison](registration/registration_comparison.png) shows
 why local floor registration cannot replace the whole-vehicle transform: it
 aligns the transmission candidate but shifts the fixed final-drive projection.
 Drawing accuracy and floor-line interpretation remain explicit uncertainties.
+
+A subsequent [saved placement diagnostic](registration/native_trial01/README.md)
+instantiates the common-axis hypothesis for measurement. Both chains pass 886
+material comparisons, but obsolete casings interfere, support contacts separate,
+and the new output-shaft phases require internal carrier/planet changes. This
+trial remains unqualified and the standard tank is unchanged.
 
 Next, regenerate chain occurrences, small-sprocket phase and casings for a
 selected trial; reconcile engine supports, transmission frame/bearings, clutch,

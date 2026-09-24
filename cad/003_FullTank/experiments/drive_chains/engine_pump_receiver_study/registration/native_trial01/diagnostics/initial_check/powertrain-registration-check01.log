@@ -1,0 +1,18 @@
+All 2393 source occurrence identities retained True
+Saved parentage and all composed frames match declared trial True
+All saved definition BReps and source metadata unchanged False
+Both saved chains retain every pitch and joint axis True
+Frame negative control rejects a 1 mm vertical shift True
+Rephased output shaft retains drum and pinion spline clearance True
+Negative control rejects translation without output spline rephasing True
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_powertrain_registration_trial.py", line 183, in <module>
+    floor_top = max(shape(name, scope).BoundBox.ZMax for name in floor)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_powertrain_registration_trial.py", line 183, in <genexpr>
+    floor_top = max(shape(name, scope).BoundBox.ZMax for name in floor)
+                    ^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/check_powertrain_registration_trial.py", line 148, in shape
+    row = items[scope][name]
+          ~~~~~~~~~~~~^^^^^^
+KeyError: 'EngineContext_hull_floor_5'

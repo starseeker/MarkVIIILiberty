@@ -5,8 +5,9 @@ This is a **development study with unqualified installation** following the
 [source-profile candidate](oil_profile_joint_trial/OilPump.FCStd) passes
 402 saved-native checks, 482 material comparisons and seven conditional source
 envelope checks. Fresh reproduction matches 81 serialized shapes, 629 object
-types and 7,376 properties (excluding new UUIDs). Its STEP qualification remains
-pending. The standard tank is unchanged; source interpretation, standalone
+types and 7,376 properties (excluding new UUIDs). Its full STEP qualification
+subsequently completed: all 186 comparisons pass, including changed screens.
+The standard tank is unchanged; source interpretation, standalone
 part validity and installed fit are separate results.
 
 ## Newly applied source constraints
@@ -159,15 +160,14 @@ require absolute candidate paths because the launcher changes working directory.
 
 ## Next integration work
 
-1. Finish strict exchange and coupled-context checks of the selected smaller
-   oil-pump geometry; preserve rejected trials. Changed screens require new
-   direct STEP checks rather than reuse of the earlier screen qualification.
+1. Strict exchange is complete, including fresh checks for changed screens.
+   Finish the saved coupled-hierarchy verification; preserve rejected trials.
 2. Refine remaining vertical/cast profiles and unequal oil passages from the
    section drawings; the current lower cover/dish and broad filter ceiling remain
    estimates. Resolve the two remaining lock wires and external fittings.
-3. Reconstruct the case receiver from its pre-receiver parent around the new
-   pump axes and verified pump footprint; reapply the water-pump pads. Check
-   studs, both case oil ports, coupling engagement and service access explicitly.
+3. The subsequent coupled receiver study supplies a locally qualified case,
+   including pads, studs, oil sockets and coupling checks. Complete the upstream
+   oil circuit and outstanding installation/service-access qualification.
 4. Resolve global engine/drivetrain registration and all downstream interfaces,
    then qualify against the complete standard tank and integrate. Continue
    remaining engine/tank systems; standard geometry still precedes poses.
