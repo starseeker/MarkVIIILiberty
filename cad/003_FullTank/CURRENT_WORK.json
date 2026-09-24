@@ -5,15 +5,16 @@
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
   "accepted_development_parent": "front-brake checkpoint 169c3da",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01",
-  "latest_native_sha256": "54ccd2e9dbaa44bf0080d783860aed4be6241ad48030b65dd8cea992bcb9042e",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01/qualification.json",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01",
+  "latest_native_sha256": "c0d5300aa607b823565f8e733a8c9b0b857d4dac918a4406046742af7f8a4ee9",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01/qualification.json",
   "current_pipeline_run": null,
   "pipeline_receipt": null,
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_track_joint_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_support_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_low_spring_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_high_spring_study.py",
@@ -22,7 +23,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Develop actual SH946D/M569C and SH946E/M569A short connections, M567 washers and M564 spring ends. Complete M575 and long M573/M578 rear rods, center/front controls and remaining interiors. Bind inherited eye coordinates explicitly to the new native. Reuse the fixed SNL6 camera and retain source height/inclination discrepancies; full standard geometry stays active and poses deferred.",
+  "next_action": "Solve shared SH946D physical rod geometry with compatible joint angles and thread engagement on both sides. Reconcile source-shared M568A15.875mm versus current low-speed13mm receiver eyes before M569A/SH946E joints. Then M567 washers, M564 spring ends, M575 and long M573/M578 rods, center/front controls and remaining interiors. Reuse fixed SNL6 camera; preserve source discrepancies. Standard geometry before poses.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -47,35 +48,38 @@
     "New vertical rod eyes atZ625.125mm and inherited transverse brake eyes atZ610.602941mm need differently oriented end forks. Chord measurements do not qualify rod lengths, clear routes or spring operation.",
     "M4135 guide profile, stock, rear-flange attachment and50.8mm port offset are estimates; successful local clearance remains conditional on the current clutch reconstruction.",
     "Local M575 rod and32mm spring envelopes are witnesses only. Full routes, actual spring geometry and source height/bend disagreement remain unqualified.",
-    "M4136 U span/height/station, spring holes and large upset heads are estimates. M4129 shared-rivet grip stack is a checked static hypothesis, not established historical mounting. SH946D/SH946E rod cores and M564 corridors exclude fork/hook regions and use provisional washer targets; they are not completed physical parts."
+    "M4136 U span/height/station, spring holes and large upset heads are estimates. M4129 shared-rivet grip stack is a checked static hypothesis, not established historical mounting. SH946D/SH946E rod cores and M564 corridors exclude fork/hook regions and use provisional washer targets; they are not completed physical parts.",
+    "M569C44.45mm socket-face distance and22.225mm throat are estimates revised after four receiver collisions. M568C12.7mm diameter and head/cotter station are estimates;39.6875mm listed length is assumed under head.",
+    "Four track joints are installed but horizontal socket axes remain provisional; perpendicular pin axes and differing port/starboard endpoints need a common SH946D rod solution.",
+    "SNL136 assigns M568A to both M569A and M569B. Saved high-speed pin15.875mm conflicts with low-speed receiver13.0mm bores. Reconcile existing estimates; do not invent unexplained same-mark diameter variants."
   ],
-  "visual_progression_count": 238,
+  "visual_progression_count": 241,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
   "latest_locally_qualified_checkpoint": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01",
-    "native_sha256": "54ccd2e9dbaa44bf0080d783860aed4be6241ad48030b65dd8cea992bcb9042e",
-    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01",
+    "native_sha256": "c0d5300aa607b823565f8e733a8c9b0b857d4dac918a4406046742af7f8a4ee9",
+    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01/qualification.json"
   },
-  "qualification_scope": "Two M4135, two M4136, eight mounting rivets, two M4129 and two complete bolt sets installed. Checked prototype material transfers to the full hierarchy; channel/floor receiver changes preserve inherited frames. Full rods, springs, service and standard assembly remain open.",
-  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
+  "qualification_scope": "Four M569C/M568C/cotter/plain-nut end joints installed:16 added parts, three new shared definitions and one reused nut. Tested prototype material transferred to the full hierarchy, all inherited geometry and frames preserved. Rods, low-speed shared-pin reconciliation, springs and standard integration remain open.",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/short_joint_sources01/sources.json",
   "active_development_candidate": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01",
-    "status": "M4135/M4136 supports and estimated M4129 right cleats are installed:20 added parts,3,246 occurrences/564 definitions/353 groups. Nominal and thicker cleat stock each pass67 native checks,41 local pairs,20 surrounding pairs,32 strict STEP comparisons and27 provisional corridor pairs. Integration passes45 checks, preserves556 inherited definitions and reproduces1,724 BReps/155,376 properties. Progression238; standard tank011 unchanged. Cleat shape/shared stack, physical rods/springs and service remain open.",
-    "native_sha256": "54ccd2e9dbaa44bf0080d783860aed4be6241ad48030b65dd8cea992bcb9042e"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01",
+    "status": "Four M569C/M568C end joints installed:16 added parts,3,262 occurrences/567 definitions/359 groups. Nominal and thicker ears each pass76 native checks,28 local material pairs,30 surrounding pairs and20 strict STEP comparisons.33 integration checks preserve all inherited frames/properties and564 definitions; fresh integration reproduces1,733 BReps/156,452 properties. Progression241; fixed source camera and standard tank011 unchanged. Physical rods, final fork angles and low-speed shared-pin reconciliation remain open.",
+    "native_sha256": "c0d5300aa607b823565f8e733a8c9b0b857d4dac918a4406046742af7f8a4ee9"
   },
-  "qualification_note": "Prototype native/interface/context/STEP checks transfer through strict saved-material comparisons. All inherited physical frames and556 unchanged definitions are preserved; prototype and integration reproduce. Historical mounting and source discrepancies remain documented.",
+  "qualification_note": "Prototype material transfers strictly into the full hierarchy. All564 inherited definitions and all3246 earlier physical frames are preserved; nominal, ear-stock variation and fresh full rebuild pass. Historical geometry, rod closure and source discrepancies remain open.",
   "parent_pipeline_run": "high_brake_support01",
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
-  "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_rear_support_checkpoint.py",
+  "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_rear_track_joint_checkpoint.py",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family01",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01/qualification.json",
-    "status": "M4135/M4136 supports and estimated M4129 right cleats are installed:20 added parts,3,246 occurrences/564 definitions/353 groups. Nominal and thicker cleat stock each pass67 native checks,41 local pairs,20 surrounding pairs,32 strict STEP comparisons and27 provisional corridor pairs. Integration passes45 checks, preserves556 inherited definitions and reproduces1,724 BReps/155,376 properties. Progression238; standard tank011 unchanged. Cleat shape/shared stack, physical rods/springs and service remain open.",
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints02",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01/qualification.json",
+    "status": "Four M569C/M568C end joints installed:16 added parts,3,262 occurrences/567 definitions/359 groups. Nominal and thicker ears each pass76 native checks,28 local material pairs,30 surrounding pairs and20 strict STEP comparisons.33 integration checks preserve all inherited frames/properties and564 definitions; fresh integration reproduces1,733 BReps/156,452 properties. Progression241; fixed source camera and standard tank011 unchanged. Physical rods, final fork angles and low-speed shared-pin reconciliation remain open.",
     "geometry_integrated": true,
-    "nominal_and_stock_variation": "Each67 native checks/41 local pairs/20 context pairs/32 strict STEP comparisons/27 provisional corridor pairs; source bolt/rivet lengths retained.",
-    "source_camera": "Conditional local SNL6 registration reused unchanged; hidden cleat stack not camera evidence. Existing source spring height/inclination disagreement remains.",
-    "next_action": "Develop actual SH946D/M569C and SH946E/M569A short connections, M567 washers and M564 spring ends. Complete M575 and long M573/M578 rear rods, center/front controls and remaining interiors. Bind inherited eye coordinates explicitly to the new native. Reuse the fixed SNL6 camera and retain source height/inclination discrepancies; full standard geometry stays active and poses deferred.",
-    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_spring_study_receipt01.json"
+    "nominal_and_stock_variation": "Each76 native/interface checks,28 local pairs,30 surrounding pairs and20 strict STEP comparisons. Source39.6875mm pin retained; ear stock9.525/10.025mm.",
+    "source_camera": "Conditional SNL6 camera reused unchanged; new estimated fork geometry is not an independent landmark. Inherited silhouette and bore discrepancies remain.",
+    "next_action": "Solve shared SH946D physical rod geometry with compatible joint angles and thread engagement on both sides. Reconcile source-shared M568A15.875mm versus current low-speed13mm receiver eyes before M569A/SH946E joints. Then M567 washers, M564 spring ends, M575 and long M573/M578 rods, center/front controls and remaining interiors. Reuse fixed SNL6 camera; preserve source discrepancies. Standard geometry before poses.",
+    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01/qualification.json"
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",

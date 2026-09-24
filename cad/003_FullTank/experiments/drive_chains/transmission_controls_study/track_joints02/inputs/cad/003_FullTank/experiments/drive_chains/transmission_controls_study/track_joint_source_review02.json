@@ -1,0 +1,34 @@
+{
+  "reviewed_originals": [
+    "SNL86",
+    "SNL87",
+    "SNL136",
+    "SNL194",
+    "SNL Plate6"
+  ],
+  "selected": "Four M569C forks for two SH946D short track-brake connections; one M568C and one1/8x1inch split pin per fork, and two3/4inch plain U.S.Std.nuts per rod.",
+  "source_supported": [
+    "SNL86 applies two M569C forks per SH946D.",
+    "SNL136 explicitly applies M568C1-9/16inch pins and1/8x1inch cotters to M569C. Pin length datum is not stated.",
+    "SNL194 confirms two3/4inch nuts per SH946D assembly."
+  ],
+  "approximations": [
+    "D-profile fork ears,44.45mm pin-axis-to-socket-face length,9.525mm ear stock,22.225mm throat,28.575mm shoulder and12.7mm socket radius are estimates.",
+    "PinD12.7 matches the currently reconstructed track eyes; its head and cross-hole station are estimates. Listed39.6875mm length is modeled under head.",
+    "Nominal threaded envelopes,0.25mm side clearance,0.15mm pin radial clearance and0.1mm rod radial clearance are modeling choices.19.05mm socket engagement is a chosen fit criterion, not strength qualification.",
+    "Rear fork points forward alongX with transverse pin; fulcrum fork points rearward with vertical pin. These poses are initial joint states and must be revisited for a shared physical rod solution."
+  ],
+  "new_conflict": {
+    "mark": "M568A",
+    "observation": "SNL136 assigns the same pin to M569A and M569B. Current high-speed M568A definition has15.875mm shank but low-speed eyes have13.0mm bores. A same-mark diameter variant is not justified.",
+    "next_action": "Reconcile the shared pin and receiver estimates before constructing low-speed M569A joints; retain earlier high-speed geometry/evidence pending explicit revision."
+  },
+  "limits": [
+    "No rods, M567 washers or physical springs are added in this increment.",
+    "Source outline and pin diameter are not independently dimensioned.",
+    "Full adjustment, service and motion remain unqualified.",
+    "Source camera remains fixed; new estimated fork surfaces are not fitting landmarks."
+  ],
+  "supersedes": "track_joint_source_review01.json",
+  "revision_reason": "All four initial fork throats collide with the saved19.05mm-radius receiver ends. Extend estimated throat to22.225mm and socket face to44.45mm, retaining source pin stock, pin diameter, receiver geometry and all acceptance predicates."
+}

@@ -1,5 +1,19 @@
 # Mark VIII visual progression
 
+## Rear track-brake end joints installed — 24 September 2026
+
+Four M569C/M568C fork joints add16 parts to the development hierarchy. The
+isometric, joint detail and fixed-camera source comparison bring progression
+to **241 images**, preserving all238 earlier images. Rods remain pending;
+standard tank011 and source registration remain unchanged.
+
+| View | SHA-256 |
+|---|---|
+| [intermediate_snapshot_iso_rear_track_joints_001.png](intermediate_snapshot_iso_rear_track_joints_001.png) | `07a94ab50e50cda1d49c1b9452108d7a98c0e1a47e9b85a7a057346aeac1f34a` |
+| [intermediate_snapshot_detail_rear_track_joints_001.png](intermediate_snapshot_detail_rear_track_joints_001.png) | `5c8ab0d2edf5d2fbaa59d4779f4aed5ac57cec71571e12157db7d546fe4d452f` |
+| [intermediate_snapshot_source_rear_track_joints_001.png](intermediate_snapshot_source_rear_track_joints_001.png) | `ea407b49be61b317f2b9e33f310d9c399df55a71551324f6d09307280550f753` |
+
+
 ## Rear-control support family — 24 September 2026
 
 M4135/M4136 and the estimated M4129 shared-rivet attachments are installed in

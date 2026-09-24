@@ -1,11 +1,14 @@
 # Transmission operating controls — evidence and receiving interfaces
 
-Current assembly: [PowertrainWithRearControlSupports.FCStd](support_integrated01/PowertrainWithRearControlSupports.FCStd),
-with 3,246 physical occurrences / 564 used definitions / 353 assembly groups.
-The [support-family checkpoint](support_integrated01/README.md) installs M4135,
-M4136 and estimated M4129 attachments with source-counted hardware. Its checked
-shared-rivet mounting hypothesis and remaining source uncertainty are documented.
-Actual rods, return springs and complete service paths remain open.
+Current assembly: [PowertrainWithRearTrackJoints.FCStd](track_joints_integrated01/PowertrainWithRearTrackJoints.FCStd),
+with **3,262 physical occurrences / 567 used definitions / 359 assembly groups**.
+The [track-joint checkpoint](track_joints_integrated01/README.md) adds four M569C
+forks and their pins, cotters and shared plain nuts in two short-connection groups.
+The [preceding support-family checkpoint](support_integrated01/README.md) installed
+M4135, M4136 and estimated M4129 attachments. Actual rods, final fork angles,
+return springs and complete service paths remain open. SNL136's shared M568A
+application exposes a15.875mm pin versus13mm low-speed-eye conflict; resolve the
+existing estimates before constructing M569A joints.
 The [fulcrum checkpoint](fulcrum_integrated01/README.md) follows the
 [channel mounting checkpoint](channel_integrated01/README.md), the
 [rear-joint checkpoint](us_nuts01/README.md) and the locally qualified
@@ -14,7 +17,7 @@ This packet covers the rear control channel, brake return springs, control rod
 ends and subsequent connections toward the center and driver controls. Two rear high-speed fork/pin/cotter joints and their plain nuts are now installed.
 The channel, four M4130 mounting sets and four retained M4131/lever units are
 installed in the development assembly. M4135/M4136 and estimated M4129 attachments
-add20 further parts in the latest checkpoint; rods and return springs remain pending.
+added20 parts in the preceding checkpoint; four track end joints now add16 more. Rods and return springs remain pending.
 The preceding fulcrum units added24 physical occurrences:
 four brackets, four levers, four washers, four cotters and eight rivets.
 
@@ -30,12 +33,12 @@ locally checked seven-occurrence prototype. Nominal and thicker stock pass
 native/interface/context/STEP checks and provisional rod/spring corridor checks.
 The raised ends address retained lever interference and a source-height mismatch;
 remaining spring inclination and endpoint differences stay explicit. Both support
-studies await connected-family integration. Three more views bring progression
+studies were subsequently installed by the support-family checkpoint. Three more views bring progression
 to 235, preserving the earlier images and fixed camera.
 
 The [M4135 guide study](high_spring04/README.md) now has two locally checked
 brackets, four rivets and local rod/spring clearance witnesses. This seven-part
-prototype is not integrated; the full counts above remain unchanged. Nominal and
+prototype records the earlier isolated study; its support geometry is now integrated. Nominal and
 thicker stock pass native/interface/context/STEP checks. Three new reviewed images
 bring progression to 232, preserving earlier views and the unchanged source camera.
 

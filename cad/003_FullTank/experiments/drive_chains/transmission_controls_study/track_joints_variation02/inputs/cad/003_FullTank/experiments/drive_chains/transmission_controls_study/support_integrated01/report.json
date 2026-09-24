@@ -1,0 +1,795 @@
+{
+  "native_file": "PowertrainWithRearControlSupports.FCStd",
+  "native_sha256": "54ccd2e9dbaa44bf0080d783860aed4be6241ad48030b65dd8cea992bcb9042e",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_integrated01/PowertrainWithRearControlFulcrums.FCStd",
+  "source_native_sha256": "d4f9a5bd2294b0e41755b3fce3e47197bf4d04f165e1c4ec918246ba2edec2c2",
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family01",
+  "prototype_native_sha256": "5034752ae42d0a6e59631edc3aec4be9c12880b18e754e4688590944a76c35b3",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_rear_support_family.py": "84dfb623adb2cb759e8302babf8b14cb4996c4902080361bd501056219008921",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family01/report.json": "6b381a6ac2032d6f8a9dd33d0b67a8c0b4b8a41c6de8036959704b3a2aef3240",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family01/isolated/manifest.json": "294536dcc4cb0290ebde8de8ec3ef95646d7cd4e1309542eda70027c6f0330a9",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family01/RearSupportFamily.FCStd": "5034752ae42d0a6e59631edc3aec4be9c12880b18e754e4688590944a76c35b3",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family01/visual_review.json": "7a17fc6031ef79c554506d60501a16b238fccb882391c6dc26e3252e0d6a453b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family01/render_receipt.json": "63787595ce14fbe00cb14de2c9846022bf13b250f4bd5cb78441a70573063ec4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_integrated01/qualification.json": "9a1fa5c0fe6ec9185ace831c2717433769c1a884bc4d4011b8ce93116ac25560",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_integrated01/isolated/manifest.json": "3101649d06671fba5d6552029fbef9151314cb2b3e1810f54cc43a0207e9be81",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family01/independent_checks.json": "d6ea080c991e767acfeaa1d7bda715df78fc413a0b53dcc5efeeab95f548c94b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family01/context_checks.json": "45edfda1567503efb9cf617a8fb1038a390ba0a96de0ba82175478ccdb37e26e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family01/exchange_checks.json": "838ab86f4bd366b62b32297aa9983954ec427669ead837d73b3ec0ea2378d343",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family_variation01/independent_checks.json": "ccee288890f0a112a148fc2cd80e805e7e0a83f4a9f78e88b868481a2bb4d64f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family_variation01/context_checks.json": "cba0aeb08a621530553ed771a94c84f4ab87fd9bbaff91bf0b80ae8bef9799b2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family_variation01/exchange_checks.json": "db5456e9db52830f7db2e961b2c700b3eb30540fd6e8cc0dc5c2474ad5ae9926",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family01/reproduction_checks.json": "0ccdae7b2cc234262cc824f6994662a03861bddf71c8bb111d03d64c9a1d8aee",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family_routes01/route_checks.json": "26e472b6f57e9927b960a812fa2117bfc7d5a36ef2ddda617cc8dff0d4e13e19",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_family_routes_variation01/route_checks.json": "95bd6afb424e046edb1694f697d110a28202b498d8a627ab6b9f7e996138b4e0"
+  },
+  "controls": {
+    "parent": "fulcrum_integrated01",
+    "low": "low_spring04",
+    "high": "high_spring04",
+    "channel_height": 50.8,
+    "channel_stock": 6.35,
+    "floor_thickness": 6.0,
+    "lock_thickness": 3.175,
+    "low_bracket_stock": 6.35,
+    "cleat": {
+      "stock": 9.525,
+      "head_center_x": -108.2,
+      "head_width_x": 38.1,
+      "head_span_y": 177.8,
+      "neck_width": 38.1,
+      "foot_width": 101.6,
+      "foot_reach": 88.9,
+      "bolt_x": 44.45,
+      "bolt_y": 31.75,
+      "rivet_y": [
+        -63.5,
+        63.5
+      ]
+    },
+    "bolt": {
+      "diameter": 19.05,
+      "underhead_length": 41.275,
+      "head_af": 31.75,
+      "head_height": 12.7,
+      "hole_diameter": 19.35
+    },
+    "rivet": {
+      "diameter": 12.7,
+      "stock_length": 47.625,
+      "hole_diameter": 13.0,
+      "factory_ratio": 1.75,
+      "factory_height_ratio": 0.7,
+      "upset_ratio": 2.5
+    },
+    "stations": {
+      "Starboard": [
+        2476.2,
+        -650.875,
+        533.05
+      ],
+      "Port": [
+        2476.2,
+        650.875,
+        533.05
+      ]
+    }
+  },
+  "details": {
+    "rivet": {
+      "grip_mm": 22.225,
+      "factory_radius_mm": 11.112499999999999,
+      "upset_radius_mm": 15.875,
+      "upset_height_mm": 7.557146357127126,
+      "upset_stock_volume_mm3": 3217.59249226911
+    },
+    "floor_hole_centers_world_mm": [
+      [
+        2520.6499999999996,
+        -619.125,
+        533.05
+      ],
+      [
+        2520.6499999999996,
+        682.625,
+        533.05
+      ]
+    ]
+  },
+  "expected_new_occurrences": {
+    "StarboardHighSpringBracket": {
+      "definition": "Def_RearSupport_high_bracket",
+      "role": "high_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2317.4500000000003,
+        0.0,
+        1.0,
+        0.0,
+        -222.25,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardHighSpringSupport"
+      ],
+      "prototype_occurrence": "StarboardHighSpringBracket"
+    },
+    "StarboardHighSpringRivet1": {
+      "definition": "Def_RearSupport_high_rivet",
+      "role": "high_rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2317.4500000000003,
+        0.0,
+        1.0,
+        0.0,
+        -241.3,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardHighSpringSupport"
+      ],
+      "prototype_occurrence": "StarboardHighSpringRivet1"
+    },
+    "StarboardHighSpringRivet2": {
+      "definition": "Def_RearSupport_high_rivet",
+      "role": "high_rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2317.4500000000003,
+        0.0,
+        1.0,
+        0.0,
+        -203.2,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardHighSpringSupport"
+      ],
+      "prototype_occurrence": "StarboardHighSpringRivet2"
+    },
+    "PortHighSpringBracket": {
+      "definition": "Def_RearSupport_high_bracket",
+      "role": "high_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2317.4500000000003,
+        0.0,
+        1.0,
+        0.0,
+        273.05,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortHighSpringSupport"
+      ],
+      "prototype_occurrence": "PortHighSpringBracket"
+    },
+    "PortHighSpringRivet1": {
+      "definition": "Def_RearSupport_high_rivet",
+      "role": "high_rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2317.4500000000003,
+        0.0,
+        1.0,
+        0.0,
+        254.0,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortHighSpringSupport"
+      ],
+      "prototype_occurrence": "PortHighSpringRivet1"
+    },
+    "PortHighSpringRivet2": {
+      "definition": "Def_RearSupport_high_rivet",
+      "role": "high_rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2317.4500000000003,
+        0.0,
+        1.0,
+        0.0,
+        292.1,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortHighSpringSupport"
+      ],
+      "prototype_occurrence": "PortHighSpringRivet2"
+    },
+    "StarboardLowSpringBracket": {
+      "definition": "Def_RearSupport_low_bracket",
+      "role": "low_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        1.0,
+        0.0,
+        -650.875,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowSpringSupport"
+      ],
+      "prototype_occurrence": "StarboardLowSpringBracket"
+    },
+    "StarboardLowSpringRivet1": {
+      "definition": "Def_RearSupport_low_rivet",
+      "role": "low_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -714.375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        599.725,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowSpringSupport"
+      ],
+      "prototype_occurrence": "StarboardLowSpringRivet1"
+    },
+    "StarboardLowSpringRivet2": {
+      "definition": "Def_RearSupport_low_rivet",
+      "role": "low_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -587.375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        599.725,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowSpringSupport"
+      ],
+      "prototype_occurrence": "StarboardLowSpringRivet2"
+    },
+    "PortLowSpringBracket": {
+      "definition": "Def_RearSupport_low_bracket",
+      "role": "low_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        1.0,
+        0.0,
+        650.875,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowSpringSupport"
+      ],
+      "prototype_occurrence": "PortLowSpringBracket"
+    },
+    "PortLowSpringRivet1": {
+      "definition": "Def_RearSupport_low_rivet",
+      "role": "low_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        587.375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        599.725,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowSpringSupport"
+      ],
+      "prototype_occurrence": "PortLowSpringRivet1"
+    },
+    "PortLowSpringRivet2": {
+      "definition": "Def_RearSupport_low_rivet",
+      "role": "low_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        714.375,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        599.725,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowSpringSupport"
+      ],
+      "prototype_occurrence": "PortLowSpringRivet2"
+    },
+    "StarboardRightChannelCleat": {
+      "definition": "Def_RearSupport_cleat",
+      "role": "cleat",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2476.2,
+        0.0,
+        1.0,
+        0.0,
+        -650.875,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardRightChannelCleatMount"
+      ],
+      "prototype_occurrence": "StarboardRightChannelCleat"
+    },
+    "StarboardRightChannelCleatBolt": {
+      "definition": "Def_RearSupport_bolt",
+      "role": "bolt",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2520.6499999999996,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -619.125,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        542.5749999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardRightChannelCleatMount"
+      ],
+      "prototype_occurrence": "StarboardRightChannelCleatBolt"
+    },
+    "StarboardRightChannelCleatLockWasher": {
+      "definition": "Def_RearControlMount_lock",
+      "role": "lock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2520.6499999999996,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -619.125,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardRightChannelCleatMount"
+      ],
+      "prototype_occurrence": "StarboardRightChannelCleatLockWasher"
+    },
+    "StarboardRightChannelCleatNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2520.6499999999996,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -619.125,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        523.875,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardRightChannelCleatMount"
+      ],
+      "prototype_occurrence": "StarboardRightChannelCleatNut"
+    },
+    "PortRightChannelCleat": {
+      "definition": "Def_RearSupport_cleat",
+      "role": "cleat",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2476.2,
+        0.0,
+        1.0,
+        0.0,
+        650.875,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortRightChannelCleatMount"
+      ],
+      "prototype_occurrence": "PortRightChannelCleat"
+    },
+    "PortRightChannelCleatBolt": {
+      "definition": "Def_RearSupport_bolt",
+      "role": "bolt",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2520.6499999999996,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        682.625,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        542.5749999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortRightChannelCleatMount"
+      ],
+      "prototype_occurrence": "PortRightChannelCleatBolt"
+    },
+    "PortRightChannelCleatLockWasher": {
+      "definition": "Def_RearControlMount_lock",
+      "role": "lock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2520.6499999999996,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        682.625,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortRightChannelCleatMount"
+      ],
+      "prototype_occurrence": "PortRightChannelCleatLockWasher"
+    },
+    "PortRightChannelCleatNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2520.6499999999996,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        682.625,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        523.875,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortRightChannelCleatMount"
+      ],
+      "prototype_occurrence": "PortRightChannelCleatNut"
+    }
+  },
+  "new_assemblies": [
+    "PortHighSpringSupport",
+    "PortLowSpringSupport",
+    "PortRightChannelCleatMount",
+    "StarboardHighSpringSupport",
+    "StarboardLowSpringSupport",
+    "StarboardRightChannelCleatMount"
+  ],
+  "added_children": {
+    "Definitions": [
+      "Def_RearSupport_high_bracket",
+      "Def_RearSupport_high_rivet",
+      "Def_RearSupport_low_bracket",
+      "Def_RearSupport_low_rivet",
+      "Def_RearSupport_cleat",
+      "Def_RearSupport_bolt"
+    ],
+    "RearControlChannel": [
+      "PortHighSpringSupport",
+      "PortLowSpringSupport",
+      "PortRightChannelCleatMount",
+      "StarboardHighSpringSupport",
+      "StarboardLowSpringSupport",
+      "StarboardRightChannelCleatMount"
+    ],
+    "StarboardHighSpringSupport": [
+      "StarboardHighSpringBracket",
+      "StarboardHighSpringRivet1",
+      "StarboardHighSpringRivet2"
+    ],
+    "PortHighSpringSupport": [
+      "PortHighSpringBracket",
+      "PortHighSpringRivet1",
+      "PortHighSpringRivet2"
+    ],
+    "StarboardLowSpringSupport": [
+      "StarboardLowSpringBracket",
+      "StarboardLowSpringRivet1",
+      "StarboardLowSpringRivet2"
+    ],
+    "PortLowSpringSupport": [
+      "PortLowSpringBracket",
+      "PortLowSpringRivet1",
+      "PortLowSpringRivet2"
+    ],
+    "StarboardRightChannelCleatMount": [
+      "StarboardRightChannelCleat",
+      "StarboardRightChannelCleatBolt",
+      "StarboardRightChannelCleatLockWasher",
+      "StarboardRightChannelCleatNut"
+    ],
+    "PortRightChannelCleatMount": [
+      "PortRightChannelCleat",
+      "PortRightChannelCleatBolt",
+      "PortRightChannelCleatLockWasher",
+      "PortRightChannelCleatNut"
+    ]
+  },
+  "new_definitions": [
+    "Def_RearSupport_high_bracket",
+    "Def_RearSupport_high_rivet",
+    "Def_RearSupport_low_bracket",
+    "Def_RearSupport_low_rivet",
+    "Def_RearSupport_cleat",
+    "Def_RearSupport_bolt"
+  ],
+  "shared_definitions": {
+    "lock": "Def_RearControlMount_lock",
+    "nut": "Def_USStdControlNut"
+  },
+  "role_definitions": {
+    "channel": "Def_RearControlMount_channel",
+    "floor": "Def_ClutchSupport_floor_revision",
+    "lock": "Def_RearControlMount_lock",
+    "nut": "Def_USStdControlNut",
+    "high_bracket": "Def_RearSupport_high_bracket",
+    "high_rivet": "Def_RearSupport_high_rivet",
+    "low_bracket": "Def_RearSupport_low_bracket",
+    "low_rivet": "Def_RearSupport_low_rivet",
+    "cleat": "Def_RearSupport_cleat",
+    "bolt": "Def_RearSupport_bolt"
+  },
+  "added_inherited_properties": {
+    "Def_RearControlMount_channel": [
+      "SupportFamilySourceRecords",
+      "SupportFamilyUpdate"
+    ],
+    "Def_ClutchSupport_floor_revision": [
+      "SupportFamilySourceRecords",
+      "SupportFamilyUpdate"
+    ]
+  },
+  "changed_definitions": [
+    "Def_RearControlMount_channel",
+    "Def_ClutchSupport_floor_revision"
+  ],
+  "changed_receiver_features": {
+    "channel": "ReconstructedRearControlMount",
+    "floor": "ReconstructedSupport013"
+  },
+  "affected_occurrences": [
+    "PortHighSpringBracket",
+    "PortHighSpringRivet1",
+    "PortHighSpringRivet2",
+    "PortLowSpringBracket",
+    "PortLowSpringRivet1",
+    "PortLowSpringRivet2",
+    "PortRightChannelCleat",
+    "PortRightChannelCleatBolt",
+    "PortRightChannelCleatLockWasher",
+    "PortRightChannelCleatNut",
+    "StarboardHighSpringBracket",
+    "StarboardHighSpringRivet1",
+    "StarboardHighSpringRivet2",
+    "StarboardLowSpringBracket",
+    "StarboardLowSpringRivet1",
+    "StarboardLowSpringRivet2",
+    "StarboardRightChannelCleat",
+    "StarboardRightChannelCleatBolt",
+    "StarboardRightChannelCleatLockWasher",
+    "StarboardRightChannelCleatNut",
+    "RearControlChannelStock",
+    "hull_floor_7"
+  ],
+  "expected_physical_occurrences": 3246,
+  "expected_definition_count": 564,
+  "expected_assembly_count": 353,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "channel_complete": false,
+  "packet_complete": false
+}

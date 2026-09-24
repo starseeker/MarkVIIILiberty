@@ -867,6 +867,80 @@
           "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
         }
       ]
+    },
+    {
+      "status": "reviewed_approximation",
+      "scope": "Four M569C/M568C/cotter/plain-nut joints in two SH946D short-connection groups.",
+      "reason": "Source scans identify applications and pin/cotter lengths. Coaxial initial forks still collided with receiver outlines; a longer estimated throat/socket cleared all four while retaining source pin length and receiver geometry.",
+      "uncertainty": "Fork profile, stock, socket, pin diameter/head and length datum are approximations. Static clearance does not establish historical outline or complete rod connection.",
+      "limits": [
+        "M569C profile/throat/socket and M568C diameter/head are estimates; listed pin length datum is assumed under head.",
+        "Horizontal socket axes are provisional. Both SH946D occurrences require common rod geometry, angular closure and engagement; previous core corridors did not qualify full fork/rod interfaces.",
+        "SNL136 assigns M568A to M569A and M569B. Current15.875mm high-speed pin conflicts with13.0mm low-speed receiver bores; reconcile estimates before adding low-speed joints.",
+        "M567 washers, M564 springs, M575 and long rear rods, center/front controls, service and remaining interiors are unfinished.",
+        "Fixed SNL6 registration retains inherited lever silhouette, spring height/inclination and21.867px high-speed control-bore disagreement. No historical photographic camera fit is claimed."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01/visual_review.json",
+        "sha256": "73b0ed127801877bfee40faace470cea9b23875013c272e9439d55b95f011e03"
+      },
+      "reopen_when": [
+        "Common SH946D rod solution changes fork angles or engagement.",
+        "Source evidence changes fork form, length datum, pin diameter or hardware application.",
+        "Receiver eyes, channel/supports or neighboring parts change.",
+        "Independent landmarks contradict the reused camera; diagnose before targeted refitting."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01/qualification.json",
+          "sha256": "9a4959860284ee398a4501b983659d21a9d81b54fbe49acb5bb77c6a6bc283ae"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01/visual_review.json",
+          "sha256": "73b0ed127801877bfee40faace470cea9b23875013c272e9439d55b95f011e03"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joint_source_review02.json",
+          "sha256": "8595b7a97702d7f61d254019a3bdc358d1ef8b6f1ccdd8a94f76755af27f9bae"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json",
+          "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
+        }
+      ],
+      "id": "rear_track_short_connection_end_joints"
+    },
+    {
+      "id": "shared_m568a_low_speed_receiver_diameter",
+      "status": "open_evidence",
+      "scope": "Common M568A identity used by M569A low-speed and M569B high-speed rod forks.",
+      "reason": "Original SNL136 applies the same pin to both forks. Saved high-speed pin is15.875mm, while all four saved low-speed eyes are13mm.",
+      "uncertainty": "Both existing diameter estimates need source/family review; no independent dimension establishes which receiver/pin should change.",
+      "limits": [
+        "Do not accept a second M568A diameter without source variant evidence.",
+        "Current high-speed geometry and low-speed receiver geometry are retained until an explicit propagated revision.",
+        "Track M569C/M568C joints have a separate source identity and remain locally qualified."
+      ],
+      "reopen_when": [
+        "Before constructing M569A joints or SH946E rod closure.",
+        "New original dimensions or reliable scaled views establish the shared pin or receiver dimensions."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/short_joint_sources01/sources.json",
+          "sha256": "ed8c8a41c4a7fe1a328b47ed878f4f3068a406b4022c4537bddb4a8edc159cb6"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/short_joint_sources01/constraint_probe.json",
+          "sha256": "e8afaf11f974d09f121aa970856e54388b5dd181aa7356cd1565a46f2b02fe44"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joint_source_review02.json",
+          "sha256": "8595b7a97702d7f61d254019a3bdc358d1ef8b6f1ccdd8a94f76755af27f9bae"
+        }
+      ]
     }
   ]
 }

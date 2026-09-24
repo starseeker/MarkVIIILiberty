@@ -11,6 +11,27 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — rear track-brake end joints installed
+
+The [new development checkpoint](experiments/drive_chains/transmission_controls_study/track_joints_integrated01/README.md)
+adds four M569C forks, four M568C pins, four cotters and four plain nuts:
+**3,262 occurrences / 567 definitions / 359 groups**. Two short-connection
+assemblies each own two joint groups; nuts reuse the existing shared definition.
+Receiver geometry and all inherited placements remain unchanged.
+
+The first forks cleared their pin holes but struck all four lever-eye outlines.
+The retained failure motivated a longer estimated throat/socket; listed pin
+length remained unchanged. Nominal and thicker ears each pass76 native checks,
+28 local pairs,30 surrounding pairs and20 strict STEP comparisons.33 integration
+checks,564 inherited-definition checks and a fresh1,733-BRep/156,452-property
+rebuild pass. Sixteen strict comparisons were reused by exact hashes.
+
+Three inspected progression views bring the archive to241. The fixed SNL6 camera
+and inherited source discrepancies remain unchanged. Physical SH946D rods and
+final fork angles are next. Source review also exposed a shared M568A conflict:
+the high-speed pin is15.875mm, but low-speed eyes are13mm. Resolve that before
+accepting M569A joints. Standard tank011 is unchanged; full geometry remains open.
+
 ## 24 September 2026 — rear support family installed
 
 The [new development native](experiments/drive_chains/transmission_controls_study/support_integrated01/README.md)
