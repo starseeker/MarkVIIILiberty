@@ -1,0 +1,87 @@
+{
+  "current_stage": null,
+  "metrics": {
+    "executed": 10,
+    "execution_seconds": 302.81095502205426,
+    "failures": 0,
+    "model_invocations": 0,
+    "orchestrating_assistant_usage": "not measured by deterministic runner",
+    "reused": 4,
+    "reused_prior_execution_seconds": 101.32877473096596
+  },
+  "plan": "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/plans/high_brake_joint_development.json",
+  "plan_sha256": "9d347849d671fce93023a558c5f341ab90020a7541c7286c88556c28b0cc7769",
+  "stages": [
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/build/latest.json",
+      "id": "build",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/extract/latest.json",
+      "id": "extract",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/check/latest.json",
+      "id": "check",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/render/latest.json",
+      "id": "render",
+      "status": "reused"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/preserve/latest.json",
+      "id": "preserve",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/exchange/latest.json",
+      "id": "exchange",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/standard/latest.json",
+      "id": "standard",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/rebuild/latest.json",
+      "id": "rebuild",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/rebuild_extract/latest.json",
+      "id": "rebuild_extract",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/reproduction/latest.json",
+      "id": "reproduction",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/parameter_build/latest.json",
+      "id": "parameter_build",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/parameter_build_extract/latest.json",
+      "id": "parameter_build_extract",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/parameter_check/latest.json",
+      "id": "parameter_check",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/variation/latest.json",
+      "id": "variation",
+      "status": "passed"
+    }
+  ],
+  "status": "mechanical_stages_passed_review_required"
+}

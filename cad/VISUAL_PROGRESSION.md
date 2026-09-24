@@ -1,5 +1,20 @@
 # Mark VIII visual progression
 
+## High-speed rear brake joints — 24 September 2026
+
+M361 ends, separate rivets and six-screw couplings populate both high-speed brakes.
+The detail includes display cuts; the HB133 registration is fixed. Profiles and
+fastener details remain estimates, and the forward mechanism is unfinished.
+Three inspected views give **204 total**, preserving all 201 prior images.
+
+| View | SHA-256 |
+| --- | --- |
+| [intermediate_snapshot_iso_transmission_high_brake_joints_trial_001.png](intermediate_snapshot_iso_transmission_high_brake_joints_trial_001.png) | `17d8a61e6a2f8f2d535a3160c2dc0ee345731a7e8838872e41b1357f440eb9c1` |
+| [intermediate_snapshot_detail_transmission_high_brake_joints_trial_001.png](intermediate_snapshot_detail_transmission_high_brake_joints_trial_001.png) | `b57e0d7cad7b12bd8040283f4845e3babb364f8630558093749ae33f188077b1` |
+| [intermediate_snapshot_source_transmission_high_brake_joints_trial_001.png](intermediate_snapshot_source_transmission_high_brake_joints_trial_001.png) | `7b95a7b041d1e1eb503ff9d6463383df9fea9780cb8e374717f79c2506094e84` |
+
+## Earlier checkpoints
+
 The preliminary high-speed brake bands add an
 [isometric](intermediate_snapshot_iso_transmission_high_brake_bands_trial_001.png) and
 [detail](intermediate_snapshot_detail_transmission_high_brake_bands_trial_001.png).

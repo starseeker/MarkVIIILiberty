@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/.work/high-brake-joint/anchor_mass_probe.py", line 12, in <module>
+    r=p.measure(s,App.Placement(App.Vector(),App.Rotation(App.Vector(1,0,0),90)))
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/partitioned_mass.py", line 63, in measure
+    mid=(lo+hi)/2;refined+=interval(lo,mid,1)+interval(mid,hi,1)
+                           ^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/partitioned_mass.py", line 51, in interval
+    assert piece.isValid() and len(piece.Solids)==1 and piece.getTolerance(1)<=1e-4
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

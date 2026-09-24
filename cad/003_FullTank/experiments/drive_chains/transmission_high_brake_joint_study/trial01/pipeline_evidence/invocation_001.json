@@ -1,0 +1,43 @@
+{
+  "current_stage": "exchange",
+  "error": "Stage exchange failed; see /home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/exchange/attempt_001/run.log",
+  "metrics": {
+    "executed": 6,
+    "execution_seconds": 391.34196991298813,
+    "failures": 1,
+    "model_invocations": 0,
+    "orchestrating_assistant_usage": "not measured by deterministic runner",
+    "reused": 0,
+    "reused_prior_execution_seconds": 0.0
+  },
+  "plan": "/home/cyapp/MarkVIIILiberty/tools/cad_pipeline/plans/high_brake_joint_development.json",
+  "plan_sha256": "9e864858f431db4703a2485781784567b54cb40c6f86ea036e76ec8f009c94a0",
+  "stages": [
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/build/latest.json",
+      "id": "build",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/extract/latest.json",
+      "id": "extract",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/check/latest.json",
+      "id": "check",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/render/latest.json",
+      "id": "render",
+      "status": "passed"
+    },
+    {
+      "evidence": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/records/preserve/latest.json",
+      "id": "preserve",
+      "status": "passed"
+    }
+  ],
+  "status": "failed"
+}

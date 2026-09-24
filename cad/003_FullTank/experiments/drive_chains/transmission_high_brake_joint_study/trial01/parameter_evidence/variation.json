@@ -1,0 +1,165 @@
+{
+  "passed": true,
+  "native_sha256": "d6a48759522cde42e0444f810f892a56120d068aac59d4343a49ebd0212e95a2",
+  "parameter_native_sha256": "50620835e033e669fafd73a5d10dba825efae676db20436387fabfebf0cffe70",
+  "checker_sha256": "9acff2bcaa594e7b12b13d3eab1eed852b8c43fdd167e94cd6369cc6716bb54b",
+  "checks": [
+    {
+      "name": "Only intended control changes",
+      "passed": true
+    },
+    {
+      "name": "All 504 inherited BReps identical",
+      "passed": true
+    },
+    {
+      "name": "long_band material unchanged",
+      "passed": true
+    },
+    {
+      "name": "short_band material unchanged",
+      "passed": true
+    },
+    {
+      "name": "long_lining material unchanged",
+      "passed": true
+    },
+    {
+      "name": "short_lining material unchanged",
+      "passed": true
+    },
+    {
+      "name": "anchor_end actual outer_radius follows one millimeter increase",
+      "passed": true,
+      "values_mm": [
+        211.93125000000032,
+        212.93125000000032
+      ]
+    },
+    {
+      "name": "anchor_rivet actual shank_end follows one millimeter increase",
+      "passed": true,
+      "values_mm": [
+        14.181249999999999,
+        15.18125
+      ]
+    },
+    {
+      "name": "coupling_screw actual shank_length follows one millimeter increase",
+      "passed": true,
+      "values_mm": [
+        12.299999999999999,
+        13.299999999999999
+      ]
+    },
+    {
+      "name": "Only twelve coupling screws move",
+      "passed": true
+    },
+    {
+      "name": "Each moved head follows its radial stock by one millimeter",
+      "passed": true
+    },
+    {
+      "name": "All occurrence identities and owners preserved",
+      "passed": true
+    }
+  ],
+  "changed_brep_definitions": [
+    "Def_HighBrake_long_band",
+    "Def_HighBrake_anchor_end",
+    "Def_HighBrake_anchor_rivet",
+    "Def_HighBrake_coupling_screw"
+  ],
+  "moved_occurrences": [
+    "PortHighSpeedBrakeCouplingScrew1",
+    "PortHighSpeedBrakeCouplingScrew2",
+    "PortHighSpeedBrakeCouplingScrew3",
+    "PortHighSpeedBrakeCouplingScrew4",
+    "PortHighSpeedBrakeCouplingScrew5",
+    "PortHighSpeedBrakeCouplingScrew6",
+    "StarboardHighSpeedBrakeCouplingScrew1",
+    "StarboardHighSpeedBrakeCouplingScrew2",
+    "StarboardHighSpeedBrakeCouplingScrew3",
+    "StarboardHighSpeedBrakeCouplingScrew4",
+    "StarboardHighSpeedBrakeCouplingScrew5",
+    "StarboardHighSpeedBrakeCouplingScrew6"
+  ],
+  "nominal_controls": {
+    "short_lining_start_deg": 245.0,
+    "rear_tail_length": 50.0,
+    "rear_steel_gap": 1.0,
+    "anchor_start_margin_deg": 3.0,
+    "anchor_end_deg": 255.0,
+    "anchor_outer_stock": 12.7,
+    "long_end_pad_stock": 6.35,
+    "anchor_lug_angle_deg": 250.0,
+    "anchor_lug_radius": 223.0,
+    "anchor_eye_outer_radius": 14.2875,
+    "anchor_eye_bore_radius": 8.0875,
+    "anchor_eye_width": 19.05,
+    "anchor_web_width": 22.225,
+    "steel_shank_diameter": 7.9375,
+    "steel_hole_clearance": 0.15,
+    "steel_stock_length": 25.4,
+    "steel_head_radius": 6.35,
+    "steel_head_recess": 0.5,
+    "steel_countersink_angle_deg": 90.0,
+    "steel_tail_radius": 7.9375,
+    "steel_tail_spotface": 0.4,
+    "attachment_columns_mm": [
+      9.0,
+      26.0,
+      43.0
+    ],
+    "attachment_rows_mm": [
+      -12.7,
+      12.7
+    ],
+    "coupling_screw_diameter": 9.525,
+    "coupling_hole_radius": 4.9125,
+    "coupling_head_af": 14.2875,
+    "coupling_head_stock": 6.35,
+    "coupling_head_spotface": 0.4
+  },
+  "varied_controls": {
+    "short_lining_start_deg": 245.0,
+    "rear_tail_length": 50.0,
+    "rear_steel_gap": 1.0,
+    "anchor_start_margin_deg": 3.0,
+    "anchor_end_deg": 255.0,
+    "anchor_outer_stock": 13.7,
+    "long_end_pad_stock": 6.35,
+    "anchor_lug_angle_deg": 250.0,
+    "anchor_lug_radius": 223.0,
+    "anchor_eye_outer_radius": 14.2875,
+    "anchor_eye_bore_radius": 8.0875,
+    "anchor_eye_width": 19.05,
+    "anchor_web_width": 22.225,
+    "steel_shank_diameter": 7.9375,
+    "steel_hole_clearance": 0.15,
+    "steel_stock_length": 25.4,
+    "steel_head_radius": 6.35,
+    "steel_head_recess": 0.5,
+    "steel_countersink_angle_deg": 90.0,
+    "steel_tail_radius": 7.9375,
+    "steel_tail_spotface": 0.4,
+    "attachment_columns_mm": [
+      9.0,
+      26.0,
+      43.0
+    ],
+    "attachment_rows_mm": [
+      -12.7,
+      12.7
+    ],
+    "coupling_screw_diameter": 9.525,
+    "coupling_hole_radius": 4.9125,
+    "coupling_head_af": 14.2875,
+    "coupling_head_stock": 6.35,
+    "coupling_head_spotface": 0.4
+  },
+  "scope": "Engineering sensitivity, not a historical confidence interval; both candidates must pass independent local checks.",
+  "parameter_native_working_path": "/home/cyapp/MarkVIIILiberty/.work/cad-pipeline/high_brake_joints01/parameter/PowertrainWithHighBrakeJoints.FCStd",
+  "checker_receipt_sha256": "2352361cfc4838ce5951fdbc639355c0aead5e47bd02afa7cb2451fdc3a05cba"
+}

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/build_transmission_high_brake_joints.py", line 27, in <module>
+    shapes,details=parts(c,bc);native=out/'PowertrainWithHighBrakeJoints.FCStd';assert not native.exists()
+                   ^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_high_brake_joint_parts.py", line 98, in parts
+    assert s.isValid() and len(s.Solids)==1 and s.Solids[0].isClosed(),(name,s.isValid(),len(s.Solids))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('short_band', False, 1)

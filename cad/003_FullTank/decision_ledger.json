@@ -185,6 +185,55 @@
           "sha256": "41faf9ec95d4c3b88ec1888add3583a88f84616ad5b18b95be8fa9d34ee599bd"
         }
       ]
+    },
+    {
+      "id": "high_speed_brake_rear_joint",
+      "status": "reviewed_approximation",
+      "scope": "Rear M361 anchor end with six steel countersunk rivets and six coupling screws per high-speed brake; M367 aggregate hierarchy.",
+      "reason": "SNL composition and handbook uncoupling instructions support hardware count and source stock. Local geometry, exchange, preservation, reproduction and sensitivity checks pass.",
+      "uncertainty": "Stepped anchor section, thickened long-band terminal, eye profile, fastener lengths/heads and revised band clocking are estimates. HB and SNL lining variants remain distinct.",
+      "limits": [
+        "Unprinted terminal reinforcement and stepped anchor profile estimated.",
+        "Screw threads represented by nominal major-diameter solids and receiving clearance bores, not helices.",
+        "Source countersunk stock-length datum retains earlier uncertainty.",
+        "Free-end formed eyes and fasteners, external anchor bracket/pin, adjustment and stops pending.",
+        "Centered printed lining width overhangs image-derived drum face0.589643 mm per edge.",
+        "SNL continuous long-strip composition differs from HB six-segment count.",
+        "Free-end fittings and lining fasteners remain absent; whole lining support and the completed mechanism must be reassessed with those parts.",
+        "Inherited brake-stop identity, transverse arrangement and full control/service paths remain conditional."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "basis": "Original SNL/HB review, three inspected views and trial01 qualification."
+      },
+      "reopen_when": [
+        "New identified high-speed brake end or fastener drawing.",
+        "Free-end, anchor-support or lever reconstruction changes required band clocking or terminal interfaces.",
+        "Configuration, interference or service evidence contradicts the present allocation."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_study/joint_sources.json",
+          "sha256": "343fc7019d5ed8ec87642cad9303bf3897d03bf5b043115018ebed08faefbfdf"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_study/joint_controls.json",
+          "sha256": "f8c03a1a5fcb5ca9303ca23aac8b5af74c5505d270f813973a92e8d6efdad9b7"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_study/band_controls.json",
+          "sha256": "f29a9bcb8688879cb53bd55b773e1c935bc706d8c14d2487c911d164610dbac2"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_study/joint_source_registration.json",
+          "sha256": "d91559b8b0cf3b998444661f2e15b422e648e72530feaaca55c3f3f3f4891647"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_joint_study/trial01/qualification.json",
+          "sha256": "50d9d86f050d0af5ddfe74d23bb705942b8115c74415913bb25b984feab65ea9"
+        }
+      ]
     }
   ]
 }

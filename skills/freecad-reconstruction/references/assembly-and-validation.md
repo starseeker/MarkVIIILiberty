@@ -97,6 +97,18 @@ a tested local alternative, not a ban on sweeps. Check that fusions retain both
 legs; a connected, valid result can still have lost material. The project retains
 the [failure and focused probe](../../../cad/003_FullTank/experiments/drive_chains/clutch_support_build/diagnostics/README.md).
 
+A valid solid can still gain unintended material during a Boolean cut. In the
+high-speed brake joint study on this runtime, a countersink cut produced a valid
+single backing solid with material outside its annular stock. A single stock
+profile alone did not fix it. Rotating the circular cutter 90 degrees about its
+own axis changed its surface parameterization while preserving the intended
+material; that construction passed stock, interference and STEP checks. A
+separately constructed direct-axis cutter agreed in both material directions,
+without fuzzy tolerance. Treat parameterization as a diagnostic option, not an
+automatic repair: retain failed controls and independently verify the intended
+stock and voids. The [rear-joint diagnostics](../../../cad/003_FullTank/experiments/drive_chains/transmission_high_brake_joint_study/trial01/diagnostics/README.md)
+record the local result; they do not establish a general kernel root cause.
+
 A native save can normalize quaternion components in their last decimal places
 or change BRep bookkeeping without changing the geometry. Preserve the original
 parent file and its hash, then assess the new document against the declared

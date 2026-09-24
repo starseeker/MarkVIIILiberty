@@ -11,6 +11,28 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — high-speed rear brake joints populated
+
+The [rear joint checkpoint](experiments/drive_chains/transmission_high_brake_joint_study/trial01/README.md)
+adds M361 anchor ends, 12 steel rivets and 12 coupling screws to the source-sized
+high-speed linings/backings. M367 is represented by its component hierarchy.
+The development native has **3,039 physical occurrences,
+511 definitions and 306 assemblies**.
+
+All 14 stages pass: 406 native checks, 240 development pairs,
+504 preserved definitions, 41 STEP comparisons,
+retained standard context, exact reproduction and actual anchor-stock sensitivity.
+A rejected curved-band cut produced extra material despite passing validity;
+reparameterizing the circular cutters resolves it without changing stock.
+The anchor's numerical mass check uses verified, refined sections of the unchanged
+solid. Failed controls remain available in the checkpoint diagnostics.
+
+Three inspected views bring the progression to **204 images**, preserving all
+201 earlier images. The source registration is unchanged and retains the visible
+anchor-eye residual. Rear profiles and fastener details remain approximations;
+forward fittings, lining fasteners, supports, levers, adjustment and stops are next.
+Standard tank011 remains unchanged; the complete tank goal remains active.
+
 ## 24 September 2026 — preliminary high-speed brake bands
 
 The [high-speed trial](experiments/drive_chains/transmission_high_brake_study/trial01/README.md)
