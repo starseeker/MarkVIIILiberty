@@ -1,0 +1,84 @@
+{
+  "date": "2026-09-24",
+  "reviewer": "Codex",
+  "source_packet_sha256": "1795a5dad88e7f82c5568ddc263b0804df708ef40f538d6d8845265a7d20b4e1",
+  "source_review_sha256": "faac468e6ecde0c1346efc1a2a15dfbcc81b2d6be4a38cf1faca45bac81b3f3c",
+  "source_images": {
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate104.png": "dd631db969b4de5d83996434fc26af8d672f8e6ae247fef074f771957ccd77ff",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p293-geometry.png": "0d9bc7a612d9cbe2f9d4d5a4d7bbc3832b00f6ef9085aceebb601a3ec4804a6f"
+  },
+  "observations": [
+    "HB104 near cleat has a roughly triangular floor foot, one vertical floor fastener and three heads along the upright facing the removed transmission. Profile, stock, fastener head side and which piece mark it depicts remain interpreted.",
+    "SNL170:006 explicitly applies three rivets per M4130, total12. M4129 has a floor bolt application but no separate rivet application found; do not assign extra rivets to make a guessed attachment.",
+    "SNL33:005 points to Plate21, a compound-clutch section without a visible channel cleat. It does not establish M4129 attachment topology.",
+    "Source plan high/low/track controls are not dimensionally identical to the modeled lane spacing. Port is the lower side in the plan, consistent with its M581 clutch rod."
+  ],
+  "layout_basis": {
+    "cleat_stations_y_mm": [
+      -710,
+      -450,
+      450,
+      710
+    ],
+    "approximate_plan_fulcrum_pixels": [
+      [
+        1348,
+        143
+      ],
+      [
+        1405,
+        225
+      ],
+      [
+        1402,
+        511
+      ],
+      [
+        1345,
+        594
+      ]
+    ],
+    "transverse_registration": "Order-of-magnitude only: track clevis lanes123/617px and low lanes203/536px versus existing +/-770.1643/+/-535.3957mm suggest~0.318px/mm about369.75px. This conditional comparison guides nearby450/710mm support stations; it is not a new camera fit or independent historical dimension.",
+    "clearance_rule": "Retain channel stationX2400 and floorZ533.05 from stock trial; test actual cleat/bolt material instead of moving parent geometry."
+  },
+  "rivet_stock_review": {
+    "source": "SNL:170:006",
+    "diameter_mm": 12.7,
+    "source_stock_length_mm": 50.8,
+    "selected_stock_datum": "Unformed shank length below factory head; unresolved historically.",
+    "estimated_grip_mm": 15.875,
+    "alternatives": [
+      {
+        "upset_diameter_over_shank": 1.75,
+        "upset_radius_mm": 11.112499999999999,
+        "required_height_mm": 14.529169409555092,
+        "less_than_hemisphere": false,
+        "excess_shank_volume_mm3": 4424.189676870026
+      },
+      {
+        "upset_diameter_over_shank": 2.0,
+        "upset_radius_mm": 12.7,
+        "required_height_mm": 12.961865041561019,
+        "less_than_hemisphere": false,
+        "excess_shank_volume_mm3": 4424.189676870026
+      },
+      {
+        "upset_diameter_over_shank": 2.125,
+        "upset_radius_mm": 13.493749999999999,
+        "required_height_mm": 12.16930008059973,
+        "less_than_hemisphere": true,
+        "excess_shank_volume_mm3": 4424.189676870026
+      }
+    ],
+    "selected_upset_diameter_ratio": 2.125,
+    "reason": "Retain literal source stock volume and the thin photographed-angle hypothesis using an explicitly larger shop-formed tail, rather than deleting excess shank. This does not establish the manufactured head proportions.",
+    "limits": [
+      "The stock-length datum, cleat thickness and upset form remain open. A thicker cast cleat or different stock datum are alternatives.",
+      "Factory head retains1.75diameter ratio and0.7diameter height; unseen upset uses2.125diameter ratio. No rivet material trimming is assumed."
+    ]
+  },
+  "stage_scope": "Four riveted M4130 cleats and their complete floor fasteners, with receiving holes. M4129 attachment and spring/fulcrum assemblies remain subsequent work.",
+  "historical_geometry_qualified": false,
+  "camera_refit": false
+}

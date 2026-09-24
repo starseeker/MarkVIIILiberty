@@ -1178,3 +1178,20 @@ Catalogue finish applicability remains uncertain; the inherited clutch hardware
 is unchanged. No source camera refit.
 
 SHA-256: `5fcd3d8faddeb571ff6c02312317b85e3ed9de8fca44cb268a24aa134448b9b0`.
+
+
+## Rear control channel mounts — 24 September 2026
+
+Four M4130 cleats, twelve rivets and complete floor bolt sets now mount the rear
+channel in the development assembly. The isometric includes selected nearby
+clutch and engine-frame context with the floor in outline. The detail uses
+labeled display sections; the source overlay retains the same local SNL6
+registration and its open discrepancies. Geometry and historical assumptions
+are documented in the [checkpoint](003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01/README.md).
+Three reviewed images bring progression to **225**, preserving all222 prior images.
+
+| View | SHA-256 |
+| --- | --- |
+| [intermediate_snapshot_iso_rear_control_channel_mounts_001.png](intermediate_snapshot_iso_rear_control_channel_mounts_001.png) | `5a607bf5e1930c0eb68d1c57d39c849064a826e63f0f676a0b241dc5d2014545` |
+| [intermediate_snapshot_detail_rear_control_channel_mounts_001.png](intermediate_snapshot_detail_rear_control_channel_mounts_001.png) | `b0f2f06cfb675f3b84740de5613e1f4f8d94281d59d20414cfac8fdd7a163108` |
+| [intermediate_snapshot_source_rear_control_channel_mounts_001.png](intermediate_snapshot_source_rear_control_channel_mounts_001.png) | `430d7f76e55699471289b01ad5bdd487086d0aca9bd527f4dd5f159236674bbd` |

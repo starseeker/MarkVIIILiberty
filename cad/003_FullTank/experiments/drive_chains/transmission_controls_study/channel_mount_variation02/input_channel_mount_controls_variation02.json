@@ -1,0 +1,74 @@
+{
+  "controls": {
+    "channel": {
+      "width": 152.4,
+      "height": 50.8,
+      "stock": 6.35,
+      "length": 2200,
+      "placement": [
+        2400,
+        0,
+        533.05
+      ]
+    },
+    "cleat": {
+      "width": 101.6,
+      "reach": 88.9,
+      "stock": 10.025,
+      "height": 44.45,
+      "bolt_x": -44.45,
+      "bolt_y": -31.75,
+      "rivet_y": [
+        -31.75,
+        0,
+        31.75
+      ],
+      "rivet_z": 25.4,
+      "stations_y": [
+        -710,
+        -450,
+        450,
+        710
+      ]
+    },
+    "bolt": {
+      "diameter": 19.05,
+      "underhead_length": 50.8,
+      "head_af": 31.75,
+      "head_height": 12.7,
+      "hole_diameter": 19.35
+    },
+    "lock": {
+      "outer_radius": 16.6625,
+      "inner_radius": 9.725,
+      "thickness": 3.175,
+      "gap": 1.5
+    },
+    "rivet": {
+      "diameter": 12.7,
+      "stock_length": 50.8,
+      "hole_diameter": 13.0,
+      "factory_ratio": 1.75,
+      "factory_height_ratio": 0.7,
+      "upset_ratio": 2.125
+    },
+    "floor_thickness": 6.0,
+    "shared_nut_definition": "Def_USStdControlNut"
+  },
+  "source_review_sha256": "e1bfed42113c8f8df4ca22a97f0b54dca93d21a1ce1970ad3defcf2039144781",
+  "variation": "M4130 stock+0.5mm; retain source bolt/rivet lengths and adapt actual grip and formed tail.",
+  "layout_revision": {
+    "reason": "Initial head intersects nearest factory rivet by33.294mm3 nominal. Retain that failure; widen the estimated triangular foot and move its bolt outward. No channel, rivet, source-camera or parent geometry change.",
+    "original": {
+      "reach": 76.2,
+      "bolt_x": -31.75,
+      "bolt_y": -25.4
+    },
+    "revised": {
+      "reach": 88.9,
+      "bolt_x": -44.45,
+      "bolt_y": -31.75
+    },
+    "tool_clearance": "Check a25mm-radius vertical socket envelope independently; its radius is a review allowance, not a sourced tool dimension."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "pairs": [
+    {
+      "first": "RearControlChannelStock",
+      "second": "hull_port_inner_skirt_rear",
+      "origin": "retained_standard",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "RearControlChannelStock",
+      "second": "hull_starboard_inner_skirt_rear",
+      "origin": "retained_standard",
+      "common_mm3": 0,
+      "passed": true
+    },
+    {
+      "first": "Cleat1SocketEnvelope",
+      "second": "StarboardTrackBrakeLever",
+      "origin": "development",
+      "common_mm3": 0,
+      "passed": true
+    }
+  ],
+  "affected_count": 29,
+  "tool_envelope_count": 4,
+  "parent_occurrence_count": 3173,
+  "retained_standard_count": 5316,
+  "native_sha256": "ecbc682552e04a0c15802d0a3dddfff9bf212d73df49315426a5db40b759cbf9",
+  "parent_native_sha256": "8073615bc719325e9b7e30e629be9fc5da15702e345fb704d3d98488633cb308",
+  "standard_manifest_sha256": "58fb0a1b010c314dd8fc69758e9aeada05ce97f325c21d6801d7288cd6be753b",
+  "checker_sha256": "88b949063328f8697eb5a61ac465b667be0c5d94d4ee8b964dcbfa208259e084",
+  "scope": "All29 new channel/cleat/hardware occurrences and four conditional socket envelopes against all retained development and standard solids. Revised floor separately checked for exact holes and no added material; its local contacts included in independent_checks.json.",
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

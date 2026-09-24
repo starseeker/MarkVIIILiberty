@@ -1,12 +1,14 @@
 # Transmission operating controls — evidence and receiving interfaces
 
-Current assembly: [PowertrainWithUSControlNuts.FCStd](us_nuts01/PowertrainWithUSControlNuts.FCStd),
-with3,173 physical occurrences /546 definitions /338 assembly groups.
-The [rear-joint checkpoint](us_nuts01/README.md) follows the locally qualified
+Current assembly: [PowertrainWithRearChannelMounts.FCStd](channel_integrated01/PowertrainWithRearChannelMounts.FCStd),
+with3,202 physical occurrences /551 used definitions /343 assembly groups.
+The [channel mounting checkpoint](channel_integrated01/README.md) follows the
+[rear-joint checkpoint](us_nuts01/README.md) and the locally qualified
 [brake-support assembly](../transmission_high_brake_support_study/integrated_upper01/qualification.json).
 This packet covers the rear control channel, brake return springs, control rod
 ends and subsequent connections toward the center and driver controls. Two rear high-speed fork/pin/cotter joints and their plain nuts are now installed.
-The channel, rods and return springs remain pending.
+The channel and four M4130 cleat/bolt/rivet sets are installed in the development
+assembly. M4129 attachments, fulcrums, rods and return springs remain pending.
 
 [sources.json](sources.json) retains 99 source rows associated with 34 identities,
 handbook operating/adjustment text, literal dimensional constraints and source
@@ -98,15 +100,19 @@ envelope; parameter edits require regenerating the scripted part model.
 
 ## Next construction
 
-The [rear-channel stock study](channel_stock01/README.md) now establishes a
+The [rear-channel stock study](channel_stock01/README.md) established a
 conditional local SNL6 registration, measured floor context and a separately
 saved downward-open channel prototype. Two stock variants pass local native,
-floor/material and STEP checks. This does not add an installed channel to the
-powertrain. The preserved 21.867-pixel control-bore discrepancy calls for targeted
+floor/material and STEP checks. The subsequent
+[mounted increment](channel_integrated01/README.md) installs four M4130 cleats,
+four floor bolt sets and twelve rivets with receiving holes. It preserves the
+first interfering foot layout and tests a revised estimated profile in two stock
+thicknesses. The preserved 21.867-pixel control-bore discrepancy calls for targeted
 lever/rod review without changing the registration.
 
-1. Locate M4128 and its cleats/brackets against the hull/floor and transmission
-   structure. Establish rear return-spring and low/track bell-crank axes.
+1. Establish M4129 attachment topology, M4131 fulcrum stations and M4135/M4136
+   spring brackets on the mounted M4128. Check the narrow left clutch-support
+   clearance before adding top rivets, and retain conflicting source counts.
 2. Reconstruct M575 rear rod bends and spring interfaces between fixed endpoints,
    then connect the center rods. Revisit the estimated-12degree rear fork pitch
    if the complete route warrants it. Avoid scaling across drawn length breaks.

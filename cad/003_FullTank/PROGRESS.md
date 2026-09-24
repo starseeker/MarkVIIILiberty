@@ -11,6 +11,34 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — mounted rear channel and four M4130 cleats
+
+[The new powertrain checkpoint](experiments/drive_chains/transmission_controls_study/channel_integrated01/README.md)
+adds the channel, four cleats, four complete floor bolt sets and twelve rivets:
+**3,202 occurrences /551 used definitions /343 groups**. Four new floor holes
+preserve the receiving plate's earlier material and frame. The first estimated
+foot collided with its nearest rivet head; both failed stock variants are
+retained. A wider triangular foot and revised bolt position pass the unchanged
+contact gates and an additional conditional socket-envelope check.
+
+Nominal and +0.5 mm cleat stock each pass75 native/interface checks,57 local
+material pairs,3 surrounding pairs and37 strict STEP comparisons. Integration
+passes50 checks and preserves545 unchanged definitions (528 exact /17 strict).
+All3,202 links reopen after relocation; fresh generator and integration runs
+reproduce shapes, frames and stable properties. Ten prior strict comparisons
+were reused only for identical ordered BRep hashes and unchanged worker code.
+The native remains self-contained; duplicate extracted shapes reuse durable files.
+
+The new source overlay reuses the existing local SNL6 registration. It retains
+the21.867px control-bore discrepancy and cannot establish transverse cleat stations
+or calibrate the HB104 photograph. Source count, hand/profile and rivet stock-datum
+uncertainties remain explicit. Three reviewed images bring progression to **225**,
+preserving222 earlier images. Standard tank011 remains unchanged.
+
+Next: M4129 attachment topology, M4131 fulcrums, M4135/M4136 spring brackets and rear
+rod routes. Check the narrow clearance below the left clutch support, M581 identity
+and new source holdouts before any camera refit. Full standard-tank goal remains active.
+
 ## 24 September 2026 — rear channel stock and local source registration
 
 [The rear-channel study](experiments/drive_chains/transmission_controls_study/channel_stock01/README.md)

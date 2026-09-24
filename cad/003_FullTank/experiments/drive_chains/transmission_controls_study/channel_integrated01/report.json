@@ -1,0 +1,1060 @@
+{
+  "native_file": "PowertrainWithRearChannelMounts.FCStd",
+  "native_sha256": "f3d3005eaead46314acacb48c8a2d58ddf58e5a2f495f6a1dca887888f2db25a",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/PowertrainWithUSControlNuts.FCStd",
+  "source_native_sha256": "8073615bc719325e9b7e30e629be9fc5da15702e345fb704d3d98488633cb308",
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02",
+  "prototype_native_sha256": "ecbc682552e04a0c15802d0a3dddfff9bf212d73df49315426a5db40b759cbf9",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_rear_control_channel_mount.py": "177a3c83d319ddabe5713fb5942d727b8136542bf7bf940d95552b94aac5d729",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02/report.json": "5953cc31747d68c5190ba760269551cb58f7a695bd9bb178279874c80a14d4fa",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02/isolated/manifest.json": "a419f4ec68636ef23db4c87e998071f897bd1bb32c7d24af7697aababc2fa84d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02/RearControlChannelMount.FCStd": "ecbc682552e04a0c15802d0a3dddfff9bf212d73df49315426a5db40b759cbf9",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02/visual_review.json": "671e09839930430bf3f0f6b521abd530dc429c21dbdc4313dd966d9716dd99c2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02/render_receipt.json": "903adf6bf2c40cc3a009f65bc74cf07670881769605d256e60ddf7f25bab5c13",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/qualification.json": "1a24742a89ee8944e4f2dc761960468c2e7dfe1012a0be6d9947ab581a1ddf19",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/isolated/manifest.json": "9ebd2d191ad33920cb230fa3e5a273867820b59a7e9d030eba7edfd96070ad20",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02/independent_checks.json": "9451cecb6dfa4f9f92558179febaab4c351e5501609939b3efa55f626ee64434",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02/context_checks.json": "3f5aa39c962378270fd4a4e883091737925bbbafa6aa38fb8fdcc5b2ff95eb01",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02/exchange_checks.json": "84dd9bf9f51e20fb9d2b27ef9b4e91b8c90f6e787ba68a39369ccb48251bb789",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount_variation02/independent_checks.json": "6f1ca987b70af422b6e796fe1ce53c333ad2a9f0e68cc1c17dd8053a9d034e87",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount_variation02/context_checks.json": "49769bdfcc5166b841389a0477c29afa3a3fb20fac0068412ba4363f184fa68c",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount_variation02/exchange_checks.json": "893d5471a103b22e55443d5e968b629cc5f62bc33b06176decacd8f8f23ceebb",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02/reproduction_checks.json": "692126c5dd783758c444be4e28e4db57ddc19c87b51b6dc048c79d94165256e5"
+  },
+  "controls": {
+    "channel": {
+      "width": 152.4,
+      "height": 50.8,
+      "stock": 6.35,
+      "length": 2200,
+      "placement": [
+        2400,
+        0,
+        533.05
+      ]
+    },
+    "cleat": {
+      "width": 101.6,
+      "reach": 88.9,
+      "stock": 9.525,
+      "height": 44.45,
+      "bolt_x": -44.45,
+      "bolt_y": -31.75,
+      "rivet_y": [
+        -31.75,
+        0,
+        31.75
+      ],
+      "rivet_z": 25.4,
+      "stations_y": [
+        -710,
+        -450,
+        450,
+        710
+      ]
+    },
+    "bolt": {
+      "diameter": 19.05,
+      "underhead_length": 50.8,
+      "head_af": 31.75,
+      "head_height": 12.7,
+      "hole_diameter": 19.35
+    },
+    "lock": {
+      "outer_radius": 16.6625,
+      "inner_radius": 9.725,
+      "thickness": 3.175,
+      "gap": 1.5
+    },
+    "rivet": {
+      "diameter": 12.7,
+      "stock_length": 50.8,
+      "hole_diameter": 13.0,
+      "factory_ratio": 1.75,
+      "factory_height_ratio": 0.7,
+      "upset_ratio": 2.125
+    },
+    "floor_thickness": 6.0,
+    "shared_nut_definition": "Def_USStdControlNut"
+  },
+  "details": {
+    "rivet": {
+      "grip_mm": 15.875,
+      "factory_radius_mm": 11.112499999999999,
+      "upset_radius_mm": 13.493749999999999,
+      "upset_height_mm": 12.16930008059973,
+      "upset_stock_volume_mm3": 4424.189676870026
+    },
+    "floor_hole_centers_world_mm": [
+      [
+        2279.35,
+        -741.75,
+        533.05
+      ],
+      [
+        2279.35,
+        -481.75,
+        533.05
+      ],
+      [
+        2279.35,
+        418.25,
+        533.05
+      ],
+      [
+        2279.35,
+        678.25,
+        533.05
+      ]
+    ],
+    "floor_source_pose": [
+      1.0,
+      0.0,
+      0.0,
+      2628.6660043354777,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      527.05,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "expected_new_occurrences": {
+    "RearControlChannelStock": {
+      "definition": "Def_RearControlMount_channel",
+      "role": "channel",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel"
+      ],
+      "prototype_occurrence": "RearControlChannelStock"
+    },
+    "RearChannelLeftCleat1": {
+      "definition": "Def_RearControlMount_cleat",
+      "role": "cleat",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2323.8,
+        0.0,
+        1.0,
+        0.0,
+        -710.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat1Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat1"
+    },
+    "RearChannelLeftCleat1Bolt": {
+      "definition": "Def_RearControlMount_bolt",
+      "role": "bolt",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2279.3500000000004,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -741.75,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        542.5749999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat1Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat1Bolt"
+    },
+    "RearChannelLeftCleat1LockWasher": {
+      "definition": "Def_RearControlMount_lock",
+      "role": "lock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2279.3500000000004,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -741.75,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat1Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat1LockWasher"
+    },
+    "RearChannelLeftCleat1Nut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2279.3500000000004,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -741.75,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        523.875,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat1Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat1Nut"
+    },
+    "RearChannelLeftCleat1Rivet1": {
+      "definition": "Def_RearControlMount_rivet",
+      "role": "rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2314.275,
+        0.0,
+        1.0,
+        0.0,
+        -741.75,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat1Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat1Rivet1"
+    },
+    "RearChannelLeftCleat1Rivet2": {
+      "definition": "Def_RearControlMount_rivet",
+      "role": "rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2314.275,
+        0.0,
+        1.0,
+        0.0,
+        -710.0,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat1Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat1Rivet2"
+    },
+    "RearChannelLeftCleat1Rivet3": {
+      "definition": "Def_RearControlMount_rivet",
+      "role": "rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2314.275,
+        0.0,
+        1.0,
+        0.0,
+        -678.25,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat1Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat1Rivet3"
+    },
+    "RearChannelLeftCleat2": {
+      "definition": "Def_RearControlMount_cleat",
+      "role": "cleat",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2323.8,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat2Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat2"
+    },
+    "RearChannelLeftCleat2Bolt": {
+      "definition": "Def_RearControlMount_bolt",
+      "role": "bolt",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2279.3500000000004,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -481.75,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        542.5749999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat2Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat2Bolt"
+    },
+    "RearChannelLeftCleat2LockWasher": {
+      "definition": "Def_RearControlMount_lock",
+      "role": "lock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2279.3500000000004,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -481.75,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat2Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat2LockWasher"
+    },
+    "RearChannelLeftCleat2Nut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2279.3500000000004,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -481.75,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        523.875,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat2Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat2Nut"
+    },
+    "RearChannelLeftCleat2Rivet1": {
+      "definition": "Def_RearControlMount_rivet",
+      "role": "rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2314.275,
+        0.0,
+        1.0,
+        0.0,
+        -481.75,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat2Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat2Rivet1"
+    },
+    "RearChannelLeftCleat2Rivet2": {
+      "definition": "Def_RearControlMount_rivet",
+      "role": "rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2314.275,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat2Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat2Rivet2"
+    },
+    "RearChannelLeftCleat2Rivet3": {
+      "definition": "Def_RearControlMount_rivet",
+      "role": "rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2314.275,
+        0.0,
+        1.0,
+        0.0,
+        -418.25,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat2Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat2Rivet3"
+    },
+    "RearChannelLeftCleat3": {
+      "definition": "Def_RearControlMount_cleat",
+      "role": "cleat",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2323.8,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat3Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat3"
+    },
+    "RearChannelLeftCleat3Bolt": {
+      "definition": "Def_RearControlMount_bolt",
+      "role": "bolt",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2279.3500000000004,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        418.25,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        542.5749999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat3Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat3Bolt"
+    },
+    "RearChannelLeftCleat3LockWasher": {
+      "definition": "Def_RearControlMount_lock",
+      "role": "lock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2279.3500000000004,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        418.25,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat3Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat3LockWasher"
+    },
+    "RearChannelLeftCleat3Nut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2279.3500000000004,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        418.25,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        523.875,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat3Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat3Nut"
+    },
+    "RearChannelLeftCleat3Rivet1": {
+      "definition": "Def_RearControlMount_rivet",
+      "role": "rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2314.275,
+        0.0,
+        1.0,
+        0.0,
+        418.25,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat3Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat3Rivet1"
+    },
+    "RearChannelLeftCleat3Rivet2": {
+      "definition": "Def_RearControlMount_rivet",
+      "role": "rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2314.275,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat3Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat3Rivet2"
+    },
+    "RearChannelLeftCleat3Rivet3": {
+      "definition": "Def_RearControlMount_rivet",
+      "role": "rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2314.275,
+        0.0,
+        1.0,
+        0.0,
+        481.75,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat3Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat3Rivet3"
+    },
+    "RearChannelLeftCleat4": {
+      "definition": "Def_RearControlMount_cleat",
+      "role": "cleat",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2323.8,
+        0.0,
+        1.0,
+        0.0,
+        710.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat4Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat4"
+    },
+    "RearChannelLeftCleat4Bolt": {
+      "definition": "Def_RearControlMount_bolt",
+      "role": "bolt",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2279.3500000000004,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        678.25,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        542.5749999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat4Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat4Bolt"
+    },
+    "RearChannelLeftCleat4LockWasher": {
+      "definition": "Def_RearControlMount_lock",
+      "role": "lock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2279.3500000000004,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        678.25,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat4Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat4LockWasher"
+    },
+    "RearChannelLeftCleat4Nut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2279.3500000000004,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        678.25,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        523.875,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat4Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat4Nut"
+    },
+    "RearChannelLeftCleat4Rivet1": {
+      "definition": "Def_RearControlMount_rivet",
+      "role": "rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2314.275,
+        0.0,
+        1.0,
+        0.0,
+        678.25,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat4Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat4Rivet1"
+    },
+    "RearChannelLeftCleat4Rivet2": {
+      "definition": "Def_RearControlMount_rivet",
+      "role": "rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2314.275,
+        0.0,
+        1.0,
+        0.0,
+        710.0,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat4Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat4Rivet2"
+    },
+    "RearChannelLeftCleat4Rivet3": {
+      "definition": "Def_RearControlMount_rivet",
+      "role": "rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2314.275,
+        0.0,
+        1.0,
+        0.0,
+        741.75,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "RearChannelLeftCleat4Mount"
+      ],
+      "prototype_occurrence": "RearChannelLeftCleat4Rivet3"
+    }
+  },
+  "new_assemblies": [
+    "RearControlChannel",
+    "RearChannelLeftCleat1Mount",
+    "RearChannelLeftCleat2Mount",
+    "RearChannelLeftCleat3Mount",
+    "RearChannelLeftCleat4Mount"
+  ],
+  "added_children": {
+    "Definitions": [
+      "Def_RearControlMount_channel",
+      "Def_RearControlMount_cleat",
+      "Def_RearControlMount_bolt",
+      "Def_RearControlMount_lock",
+      "Def_RearControlMount_rivet"
+    ],
+    "Root": [
+      "RearControlChannel"
+    ],
+    "RearControlChannel": [
+      "RearChannelLeftCleat1Mount",
+      "RearChannelLeftCleat2Mount",
+      "RearChannelLeftCleat3Mount",
+      "RearChannelLeftCleat4Mount",
+      "RearControlChannelStock"
+    ],
+    "RearChannelLeftCleat1Mount": [
+      "RearChannelLeftCleat1",
+      "RearChannelLeftCleat1Bolt",
+      "RearChannelLeftCleat1LockWasher",
+      "RearChannelLeftCleat1Nut",
+      "RearChannelLeftCleat1Rivet1",
+      "RearChannelLeftCleat1Rivet2",
+      "RearChannelLeftCleat1Rivet3"
+    ],
+    "RearChannelLeftCleat2Mount": [
+      "RearChannelLeftCleat2",
+      "RearChannelLeftCleat2Bolt",
+      "RearChannelLeftCleat2LockWasher",
+      "RearChannelLeftCleat2Nut",
+      "RearChannelLeftCleat2Rivet1",
+      "RearChannelLeftCleat2Rivet2",
+      "RearChannelLeftCleat2Rivet3"
+    ],
+    "RearChannelLeftCleat3Mount": [
+      "RearChannelLeftCleat3",
+      "RearChannelLeftCleat3Bolt",
+      "RearChannelLeftCleat3LockWasher",
+      "RearChannelLeftCleat3Nut",
+      "RearChannelLeftCleat3Rivet1",
+      "RearChannelLeftCleat3Rivet2",
+      "RearChannelLeftCleat3Rivet3"
+    ],
+    "RearChannelLeftCleat4Mount": [
+      "RearChannelLeftCleat4",
+      "RearChannelLeftCleat4Bolt",
+      "RearChannelLeftCleat4LockWasher",
+      "RearChannelLeftCleat4Nut",
+      "RearChannelLeftCleat4Rivet1",
+      "RearChannelLeftCleat4Rivet2",
+      "RearChannelLeftCleat4Rivet3"
+    ]
+  },
+  "new_definitions": [
+    "Def_RearControlMount_channel",
+    "Def_RearControlMount_cleat",
+    "Def_RearControlMount_bolt",
+    "Def_RearControlMount_lock",
+    "Def_RearControlMount_rivet"
+  ],
+  "shared_definitions": {
+    "nut": "Def_USStdControlNut"
+  },
+  "changed_definitions": [
+    "Def_ClutchSupport_floor_revision"
+  ],
+  "changed_floor_feature": "ReconstructedSupport013",
+  "affected_occurrences": [
+    "RearChannelLeftCleat1",
+    "RearChannelLeftCleat1Bolt",
+    "RearChannelLeftCleat1LockWasher",
+    "RearChannelLeftCleat1Nut",
+    "RearChannelLeftCleat1Rivet1",
+    "RearChannelLeftCleat1Rivet2",
+    "RearChannelLeftCleat1Rivet3",
+    "RearChannelLeftCleat2",
+    "RearChannelLeftCleat2Bolt",
+    "RearChannelLeftCleat2LockWasher",
+    "RearChannelLeftCleat2Nut",
+    "RearChannelLeftCleat2Rivet1",
+    "RearChannelLeftCleat2Rivet2",
+    "RearChannelLeftCleat2Rivet3",
+    "RearChannelLeftCleat3",
+    "RearChannelLeftCleat3Bolt",
+    "RearChannelLeftCleat3LockWasher",
+    "RearChannelLeftCleat3Nut",
+    "RearChannelLeftCleat3Rivet1",
+    "RearChannelLeftCleat3Rivet2",
+    "RearChannelLeftCleat3Rivet3",
+    "RearChannelLeftCleat4",
+    "RearChannelLeftCleat4Bolt",
+    "RearChannelLeftCleat4LockWasher",
+    "RearChannelLeftCleat4Nut",
+    "RearChannelLeftCleat4Rivet1",
+    "RearChannelLeftCleat4Rivet2",
+    "RearChannelLeftCleat4Rivet3",
+    "RearControlChannelStock",
+    "hull_floor_7"
+  ],
+  "expected_physical_occurrences": 3202,
+  "expected_definition_count": 551,
+  "expected_assembly_count": 343,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "channel_complete": false,
+  "packet_complete": false
+}

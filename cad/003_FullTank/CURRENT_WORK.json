@@ -5,22 +5,23 @@
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
   "accepted_development_parent": "front-brake checkpoint 169c3da",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01",
-  "latest_native_sha256": "8073615bc719325e9b7e30e629be9fc5da15702e345fb704d3d98488633cb308",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/qualification.json",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01",
+  "latest_native_sha256": "f3d3005eaead46314acacb48c8a2d58ddf58e5a2f495f6a1dca887888f2db25a",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01/qualification.json",
   "current_pipeline_run": null,
   "pipeline_receipt": null,
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_control_mount_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_transmission_control_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_control_channel_study.py",
     "python3 tools/cad_pipeline/decisions.py cad/003_FullTank/decision_ledger.json",
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Continue M4128 mounting from the separately tested inverted-U stock study: establish M4130/M4129 cleat and M4131 fulcrum stations, real floor bolts/channel rivets and spring brackets. Reuse channel_local_registration01; retain21.867px high-speed bore disagreement for lever/rod review. Check narrow clearance below existing left clutch support and M581 lever identity before routing M575. Full standard tank remains active; poses deferred.",
+  "next_action": "Determine the two M4129 attachments, four M4131 fulcrum stations and M4135/M4136 spring brackets on the mounted M4128; then M575 and remaining rear rods. No M4129 rivet application identified. Reuse the saved local SNL6 registration and retain21.867px control-bore disagreement; review M581 identity and actual upper-bracket clearance below left clutch support. Full standard tank remains active; poses deferred.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -35,41 +36,43 @@
     "Receiving webs, M362 shelf, strap stock/bends, transverse MX76 pitch and M365 clip wrap are estimates. Upper pitch now shares the saved MX61 plate. All six M400/nut pairs and eight of ten MX60 screws are located. Combined local static support qualification now passes; full service and standard integration remain open.",
     "M569B38.1mm length datum and M568A41.275/47.625mm conflict remain open. Rear fork pitch is an estimate pending full M575 route.",
     "Classic U.S. Standard nut exterior is provisional because catalogue wording may specify thread series without finish. Older smaller3/4inch clutch nuts require separate source/finish review.",
-    "Rear channel section, X station, span and stock remain inferred; cleats, holes, fasteners, spring supports and fulcrums are not yet installed.",
+    "Rear channel section, stock, span and station remain inferred. Four M4130 cleats and complete fasteners are installed; M4129, spring supports, fulcrums and routes remain pending.",
     "HB190 left-cleat/fulcrum counts2/5 differ from SNL4/4; original scans confirmed. HB189 center M4131 versus diagram M1431 also remains unresolved.",
     "Fixed local SNL6 registration gives21.867px high-speed control-bore discrepancy versus correlated outer-drum checks1.8\u20132.8px. Diagnose lever/rod/source before refitting.",
-    "Chosen channel upper envelope is approximately0.57mm below the current left clutch-support lower bound. Bracket/rivet material must be checked against real surfaces before integrating."
+    "Chosen channel upper envelope is approximately0.57mm below the current left clutch-support lower bound. Bracket/rivet material must be checked against real surfaces before integrating.",
+    "M4130 cleat profile, same-hand orientation and transverse stations are approximate. Larger upset heads conserve interpreted source rivet stock; stock datum/thicker-cleat alternatives remain open.",
+    "Prototype controls02 is authoritative despite its generic ParameterUpdate metadata naming controls01. Integrated definitions carry the correct regeneration instruction."
   ],
-  "visual_progression_count": 222,
+  "visual_progression_count": 225,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
   "latest_locally_qualified_checkpoint": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01",
-    "native_sha256": "8073615bc719325e9b7e30e629be9fc5da15702e345fb704d3d98488633cb308",
-    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01",
+    "native_sha256": "f3d3005eaead46314acacb48c8a2d58ddf58e5a2f495f6a1dca887888f2db25a",
+    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01/qualification.json"
   },
-  "qualification_scope": "Two rear high-speed brake joints with selected classic U.S. Standard nuts. Inherits qualified fork/pin/cotter and whole-parent preservation evidence; the final nut revision preserves all545 parent definitions and changes exactly two occurrence targets.",
+  "qualification_scope": "M4128 channel and four M4130 cleats, four floor bolt/lockwasher/nut sets, twelve rivets, and four receiving floor holes. Prototype native/interface/context/STEP checks transfer through strict seven-definition and30-installed-shape comparisons; all inherited physical frames and545 unchanged definitions preserved.",
   "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study",
   "active_development_candidate": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01",
-    "native_sha256": "8073615bc719325e9b7e30e629be9fc5da15702e345fb704d3d98488633cb308",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/us_nuts01/qualification.json",
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01",
+    "native_sha256": "f3d3005eaead46314acacb48c8a2d58ddf58e5a2f495f6a1dca887888f2db25a",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01/qualification.json",
     "counts": {
-      "occurrences": 3173,
-      "definitions": 546,
-      "assemblies": 338
+      "occurrences": 3202,
+      "definitions": 551,
+      "assemblies": 343
     },
-    "status": "Locally qualified rear high-speed fork/pin/cotter joints with separate classic U.S. Standard nuts. Complete control rods and standard-tank integration remain open."
+    "status": "Locally checked channel with four M4130 mounts, floor bolt sets and twelve rivets. M4129, fulcrum/spring brackets, rod routes and standard integration remain open."
   },
-  "qualification_note": "Joint interfaces, selected retention, material, STEP, all-link relocation, inherited definitions and fresh generator/integration rebuilds pass. Historical fork/pin datums, nut finish, full service and standard integration remain open.",
+  "qualification_note": "Nominal and thicker-cleat native/interface/context/STEP checks, strict prototype-to-integration transfer, all-link relocation,545-definition preservation, persistent metadata audit and fresh generation/integration reproduce. Historical profile/hand/stock datums, remaining channel members and full standard integration stay open.",
   "parent_pipeline_run": "high_brake_support01",
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
-  "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_transmission_control_checkpoint.py",
+  "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_rear_control_mount_checkpoint.py",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_stock01",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_study_receipt01.json",
-    "status": "Unfinished isolated channel stock; not integrated into the qualified powertrain.",
-    "nominal_and_stock_variation": "Each13 native/interface checks,3 nearby material pairs,2 strict STEP comparisons pass; fresh nominal shape/property reproduction and fixed-registration reuse pass.",
-    "source_camera": "Conditional local SNL6 side registration only; no photographic camera fit.",
-    "next_action": "Continue M4128 mounting from the separately tested inverted-U stock study: establish M4130/M4129 cleat and M4131 fulcrum stations, real floor bolts/channel rivets and spring brackets. Reuse channel_local_registration01; retain21.867px high-speed bore disagreement for lever/rod review. Check narrow clearance below existing left clutch support and M581 lever identity before routing M575. Full standard tank remains active; poses deferred."
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01/qualification.json",
+    "status": "Nominal mounting prototype transferred into channel_integrated01; earlier interfering foot layouts preserved.",
+    "nominal_and_stock_variation": "Each75 native/interface checks,57 local pairs,3 context pairs and37 strict STEP comparisons. Fresh nominal prototype and full integration reproduce.",
+    "source_camera": "Conditional local SNL6 side registration reused unchanged; HB104 remains an uncalibrated photograph.",
+    "next_action": "Determine the two M4129 attachments, four M4131 fulcrum stations and M4135/M4136 spring brackets on the mounted M4128; then M575 and remaining rear rods. No M4129 rivet application identified. Reuse the saved local SNL6 registration and retain21.867px control-bore disagreement; review M581 identity and actual upper-bracket clearance below left clutch support. Full standard tank remains active; poses deferred."
   }
 }

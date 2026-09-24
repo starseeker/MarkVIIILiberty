@@ -588,6 +588,56 @@
           "sha256": "20a09d55919c8de0c141f872e758da5ccc193dc230ea69a747f977444c506e33"
         }
       ]
+    },
+    {
+      "id": "rear_control_channel_m4130_mounting",
+      "status": "reviewed_approximation",
+      "scope": "Four M4130 channel cleats, floor bolt/lock/nut sets, twelve source-listed rivets and receiving holes.",
+      "reason": "HB104 supports triangular foot/vertical bolt/three-head topology; SNL supplies four-cleat and fastener quantities. Revised estimated foot avoids retained head collisions and passes local/context/native/STEP checks in two stocks. Exact tested geometry is transferred into the development hierarchy.",
+      "uncertainty": "Cleat hand/profile/stations, rivet stock datum/upset form and commercial head finish remain hypotheses; handbook counts differ.",
+      "limits": [
+        "M4130 count follows SNL four; handbook two remains a documented source difference.",
+        "Cleat stock, width, reach, same-hand orientation, transverse stations and bolt/head finish remain approximations. Prototype ParameterUpdate text still names controls01; report/input_channel_mount_controls02.json is authoritative for this revision.",
+        "Large upset heads conserve the interpreted half-inch by two-inch rivet stock. Stock-length datum and thicker-cleat alternatives remain open; no mechanical strength or riveting process claim.",
+        "M4129 attachment, M4131 fulcrums, M4135/M4136 spring brackets and operating rods are not populated by this increment.",
+        "Complete service removal, load capacity, photographic camera fitting and standard-tank integration remain open.",
+        "M4129 attachment has no identified rivet application; determine its mounting topology before adding hardware.",
+        "The left clutch-support lower envelope is only about0.57mm above the channel. Upper brackets need actual-surface clearance checks.",
+        "Fixed local SNL6 registration retains21.867px control-bore discrepancy. M581 lever identity and complete rod route remain unresolved."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02/visual_review.json",
+        "sha256": "671e09839930430bf3f0f6b521abd530dc429c21dbdc4313dd966d9716dd99c2"
+      },
+      "reopen_when": [
+        "Cleat, channel, receiving floor, nearby clutch support or fastener geometry changes.",
+        "A clearer source changes stock datum, cleat count/hand, floor-fastener direction or support spacing.",
+        "Remaining fulcrum/spring/rod geometry contradicts this placement or provides independent source-camera depth landmarks."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_integrated01/qualification.json",
+          "sha256": "e9ccddb61ad9cc3058602b70e796b78072eb0c31bb8b84ac2ee4cb9659c2ed26"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount02/visual_review.json",
+          "sha256": "671e09839930430bf3f0f6b521abd530dc429c21dbdc4313dd966d9716dd99c2"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount_controls02.json",
+          "sha256": "cd9fade584f11bea63e3648945489476054f2287b05bae38a2ae94077088bf94"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_mount_source_review01.json",
+          "sha256": "e1bfed42113c8f8df4ca22a97f0b54dca93d21a1ce1970ad3defcf2039144781"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json",
+          "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
+        }
+      ]
     }
   ]
 }
