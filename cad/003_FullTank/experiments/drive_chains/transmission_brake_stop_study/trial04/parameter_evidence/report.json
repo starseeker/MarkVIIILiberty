@@ -1,0 +1,2524 @@
+{
+  "native_file": "PowertrainWithBrakeStops.FCStd",
+  "native_sha256": "6d3578b7a5bba5af66a99e788caf6e43a7cb409f0ca61c52ef7177888b7f5f95",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/PowertrainWithBrakeFront.FCStd",
+  "source_native_sha256": "2cbe4e5b6b5eb740c1a2e0ead86e2fc3349bb6e08122197316b145f16dff82be",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_transmission_brake_stops.py": "f0732130497eb04bb30ba67387f3d0cf43ca1cfef5ab6ad418d1320602530711",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py": "320daa2f0c98a8916cd09adc680ad11e1daf360c005bcaeddc1c9d66286a994b",
+    ".work/transmission-brake-stops/parameter_controls.json": "c7c21d394b4978a8a785cc01436ff09f842d1e9d5a71c40ac5b6b6dd03e0486f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/sources.json": "62798438b5f0c4ea256066b02586ada3348211f4c612ea5b08f4f9e2bd3ae4e2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py": "d29c6b065009e36257bb54dbcf7fc9c1a49950e9e092194b9549b0a03069aa77",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py": "97cb213e7707b3cce73b0bca7e5fa8b76345ff841e8fab767c3d16cf350a803e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/report.json": "2e7c0ca2d038d7939788c54bec9463f99d36aefcf6212892b534f1a2b12f1ce2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/isolated/manifest.json": "33239f8dc19c18c6b2192794f1812a1226f62458d222fcbb54398dd2499b5694",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_study/trial01/report.json": "c6056d29fe504ca83846d6049dfcd1d48579158c9ef7c430becfaaa5be82416d",
+    ".work/transmission-brake-stops/parameter_mount_controls.json": "c61ebc9141e8e8f30a5725002263c1b92d1195eb693bb7a3953cad063e1c9c42",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_mount_parts.py": "cea470ec02362c7e14c25bded9386791861734b6dc20f35cc8cdc10f7b9257db",
+    "cad/003_FullTank/experiments/drive_chains/transmission_stud_controls.json": "78571abe3bcc3a7c1b3a82d59e77ff68711bba316118f7b2635d25b6a1c2d9a9",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/mount_review/source_stack_analysis.json": "972a25d2e20a96365bad6c8fa469f597944b803bbd358f625985679b0e628bd8"
+  },
+  "controls": {
+    "angle_deg": -52.0,
+    "foot_start_delta_deg": -2.0,
+    "foot_end_delta_deg": 7.5,
+    "foot_stock": 6.35,
+    "seat_base_offset": 4.5,
+    "seat_height": 10.0,
+    "boss_u0": 25.0,
+    "boss_u1": 39.0,
+    "boss_width": 25.4,
+    "boss_base_offset": 2.0,
+    "boss_radial_margin": 12.7,
+    "lug_rivet_delta_deg": 3.0,
+    "lug_rivet_half_span": 25.4,
+    "lug_rivet_diameter": 6.35,
+    "lug_rivet_stock_length": 30.1625,
+    "lug_rivet_head_radius": 6.35,
+    "lug_rivet_tail_radius": 7.14375,
+    "hole_clearance": 0.15,
+    "screw_diameter": 12.7,
+    "screw_head_af": 19.05,
+    "screw_head_height": 8.0,
+    "tangent_screw_length": 49.0,
+    "radial_screw_length": 63.5,
+    "thread_bore_clearance": 0.15,
+    "nut_af": 19.05,
+    "nut_height": 8.0,
+    "bar_inner_radius": 348.0,
+    "bar_stock": 12.7,
+    "bar_half_width": 15.0,
+    "bar_end_margin": 25.4,
+    "bar_rivet_stock_length": 31.75,
+    "bar_rivet_half_width": 7.5,
+    "bar_rivet_half_span": 22.225,
+    "bracket_stock": 7.0,
+    "bracket_web_width": 25.4,
+    "bracket_foot_half_width": 22.0,
+    "bracket_foot_half_span": 31.75,
+    "mount_tab_half_height": 19.05,
+    "mount_tab_radius": 17.5,
+    "mount_bore_radius": 9.775
+  },
+  "details": {
+    "rotation": [
+      0.9455185755993168,
+      0.0,
+      0.32556815445715664,
+      0.0
+    ],
+    "brakes": {
+      "low": {
+        "outer_radius_mm": 312.7375,
+        "band_width_mm": 101.6,
+        "rivets": [
+          {
+            "index": 1,
+            "frame": [
+              0.9986295347545739,
+              0.0,
+              0.052335956242942495,
+              16.042933186821394,
+              0.0,
+              1.0,
+              0.0,
+              -25.4,
+              -0.052335956242942495,
+              0.0,
+              0.9986295347545739,
+              306.11740100983013,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 2,
+            "frame": [
+              0.9986295347545739,
+              0.0,
+              0.052335956242942495,
+              16.042933186821394,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              -0.052335956242942495,
+              0.0,
+              0.9986295347545739,
+              306.11740100983013,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 3,
+            "frame": [
+              0.9986295347545739,
+              0.0,
+              0.052335956242942495,
+              16.042933186821394,
+              0.0,
+              1.0,
+              0.0,
+              25.4,
+              -0.052335956242942495,
+              0.0,
+              0.9986295347545739,
+              306.11740100983013,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "radial_tip_w_mm": 322.7375,
+        "tangent_axis_w_mm": 354.35
+      },
+      "track": {
+        "outer_radius_mm": 319.08750000000003,
+        "band_width_mm": 76.19999999999999,
+        "rivets": [
+          {
+            "index": 1,
+            "frame": [
+              0.9986295347545739,
+              0.0,
+              0.052335956242942495,
+              16.37526650896409,
+              0.0,
+              1.0,
+              0.0,
+              -25.4,
+              -0.052335956242942495,
+              0.0,
+              0.9986295347545739,
+              312.4586985555217,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 2,
+            "frame": [
+              0.9986295347545739,
+              0.0,
+              0.052335956242942495,
+              16.37526650896409,
+              0.0,
+              1.0,
+              0.0,
+              0.0,
+              -0.052335956242942495,
+              0.0,
+              0.9986295347545739,
+              312.4586985555217,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          },
+          {
+            "index": 3,
+            "frame": [
+              0.9986295347545739,
+              0.0,
+              0.052335956242942495,
+              16.37526650896409,
+              0.0,
+              1.0,
+              0.0,
+              25.4,
+              -0.052335956242942495,
+              0.0,
+              0.9986295347545739,
+              312.4586985555217,
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          }
+        ],
+        "radial_tip_w_mm": 329.08750000000003,
+        "tangent_axis_w_mm": 354.35
+      }
+    },
+    "lug_rivet": {
+      "grip_mm": 12.149999999999999,
+      "head_depth_mm": 3.0250000000000004,
+      "tail_height_mm": 6.5094816590405635,
+      "tail_volume_mm3": 666.2411619696005
+    },
+    "bar_rivet": {
+      "diameter_mm": 6.35,
+      "stock_length_mm": 31.75,
+      "grip_mm": 19.7,
+      "head_radius_mm": 7.14375,
+      "factory_head_height_mm": 4.444999999999999,
+      "upset_height_mm": 4.256706387831912,
+      "upset_stock_volume_mm3": 381.614070195303
+    },
+    "bar_inner_radius_mm": 348.0,
+    "bar_outer_radius_mm": 360.7,
+    "band_half_span_mm": 117.38428571428585,
+    "bar_joint_offset_v_mm": 9.281428571428592,
+    "support_rivets": [
+      {
+        "index": 1,
+        "bracket_uvw_mm": [
+          -7.5,
+          -22.225,
+          341.0
+        ]
+      },
+      {
+        "index": 2,
+        "bracket_uvw_mm": [
+          -7.5,
+          22.225,
+          341.0
+        ]
+      },
+      {
+        "index": 3,
+        "bracket_uvw_mm": [
+          7.5,
+          -22.225,
+          341.0
+        ]
+      },
+      {
+        "index": 4,
+        "bracket_uvw_mm": [
+          7.5,
+          22.225,
+          341.0
+        ]
+      }
+    ],
+    "mounting_stud_shift_mm": 7.0,
+    "mount_tab_contact_xz_mm": [
+      70.32500000000005,
+      -142.0
+    ]
+  },
+  "source_identity_mapping": "M341/M342 catalogue geometry represented by an explicit hypothesis; not a resolved alias for MX95/MX96.",
+  "expected_new_occurrences": {
+    "PortBrakeStopBar": {
+      "definition": "Def_BrakeStop_M342_bar",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "PortBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        0.0,
+        652.7800000000001,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortBrakeStopBracket": {
+      "definition": "Def_BrakeStop_M341_bracket",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "PortBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        0.0,
+        643.4985714285715,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortBrakeStopBarRivet1": {
+      "definition": "Def_BrakeStop_bar_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "PortBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        2035.5251244797628,
+        0.0,
+        -1.0,
+        0.0,
+        665.7235714285715,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        627.2738131316358,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortBrakeStopBarRivet2": {
+      "definition": "Def_BrakeStop_bar_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "PortBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        2035.5251244797628,
+        0.0,
+        -1.0,
+        0.0,
+        621.2735714285715,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        627.2738131316358,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortBrakeStopBarRivet3": {
+      "definition": "Def_BrakeStop_bar_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "PortBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        2047.3452857838636,
+        0.0,
+        -1.0,
+        0.0,
+        665.7235714285715,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        636.5087352615208,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortBrakeStopBarRivet4": {
+      "definition": "Def_BrakeStop_bar_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "PortBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        2047.3452857838636,
+        0.0,
+        -1.0,
+        0.0,
+        621.2735714285715,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        636.5087352615208,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowSpeedBrakeStopLug": {
+      "definition": "Def_BrakeStop_low_lug",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        0.0,
+        535.3957142857142,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowSpeedBrakeStopLugRivet1": {
+      "definition": "Def_BrakeStop_lug_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.754709580222773,
+        0.0,
+        0.6560590289905062,
+        2032.6013366449413,
+        0.0,
+        -1.0,
+        0.0,
+        560.7957142857142,
+        0.6560590289905062,
+        0.0,
+        -0.754709580222773,
+        669.2561532289326,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowSpeedBrakeStopLugRivet2": {
+      "definition": "Def_BrakeStop_lug_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.754709580222773,
+        0.0,
+        0.6560590289905062,
+        2032.6013366449413,
+        0.0,
+        -1.0,
+        0.0,
+        535.3957142857142,
+        0.6560590289905062,
+        0.0,
+        -0.754709580222773,
+        669.2561532289326,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowSpeedBrakeStopLugRivet3": {
+      "definition": "Def_BrakeStop_lug_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.754709580222773,
+        0.0,
+        0.6560590289905062,
+        2032.6013366449413,
+        0.0,
+        -1.0,
+        0.0,
+        509.99571428571426,
+        0.6560590289905062,
+        0.0,
+        -0.754709580222773,
+        669.2561532289326,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowSpeedBrakeStopScrew": {
+      "definition": "Def_BrakeStop_M343_screw",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        2100.0869740582407,
+        0.0,
+        -1.0,
+        -0.0,
+        535.3957142857142,
+        -0.788010753606722,
+        0.0,
+        -0.6156614753256584,
+        660.7736650567706,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowSpeedBrakeStopScrewNut": {
+      "definition": "Def_BrakeStop_nut",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower",
+        "PortLowSpeedBrakeLowerStopJoint"
+      ],
+      "frame": [
+        -0.6156614753256584,
+        0.0,
+        0.7880107536067221,
+        2080.3867052180726,
+        0.0,
+        -1.0,
+        0.0,
+        535.3957142857142,
+        0.7880107536067221,
+        0.0,
+        0.6156614753256582,
+        645.3821281736292,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowSpeedBrakeStopBarSetScrew": {
+      "definition": "Def_BrakeStop_MX88_screw",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "PortBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        7.539678551159046e-17,
+        -0.6156614753256583,
+        2069.2861911218574,
+        6.162975822039155e-33,
+        1.0,
+        1.2246467991473532e-16,
+        535.3957142857142,
+        0.6156614753256583,
+        -9.650348470981658e-17,
+        0.788010753606722,
+        596.2436377302943,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowSpeedBrakeStopBarSetScrewNut": {
+      "definition": "Def_BrakeStop_nut",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "PortBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        2053.563736195729,
+        0.0,
+        -1.0,
+        0.0,
+        535.3957142857142,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        616.3674623505259,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackBrakeStopLug": {
+      "definition": "Def_BrakeStop_track_lug",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        0.0,
+        770.1642857142859,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackBrakeStopLugRivet1": {
+      "definition": "Def_BrakeStop_lug_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.754709580222773,
+        0.0,
+        0.6560590289905062,
+        2036.767311479031,
+        0.0,
+        -1.0,
+        0.0,
+        795.5642857142859,
+        0.6560590289905062,
+        0.0,
+        -0.754709580222773,
+        664.4637473945179,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackBrakeStopLugRivet2": {
+      "definition": "Def_BrakeStop_lug_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.754709580222773,
+        0.0,
+        0.6560590289905062,
+        2036.767311479031,
+        0.0,
+        -1.0,
+        0.0,
+        770.1642857142859,
+        0.6560590289905062,
+        0.0,
+        -0.754709580222773,
+        664.4637473945179,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackBrakeStopLugRivet3": {
+      "definition": "Def_BrakeStop_lug_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.754709580222773,
+        0.0,
+        0.6560590289905062,
+        2036.767311479031,
+        0.0,
+        -1.0,
+        0.0,
+        744.764285714286,
+        0.6560590289905062,
+        0.0,
+        -0.754709580222773,
+        664.4637473945179,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackBrakeStopScrew": {
+      "definition": "Def_BrakeStop_M343_screw",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        2100.0869740582407,
+        0.0,
+        -1.0,
+        -0.0,
+        770.1642857142859,
+        -0.788010753606722,
+        0.0,
+        -0.6156614753256584,
+        660.7736650567706,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackBrakeStopScrewNut": {
+      "definition": "Def_BrakeStop_nut",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower",
+        "PortTrackBrakeLowerStopJoint"
+      ],
+      "frame": [
+        -0.6156614753256584,
+        0.0,
+        0.7880107536067221,
+        2080.3867052180726,
+        0.0,
+        -1.0,
+        0.0,
+        770.1642857142859,
+        0.7880107536067221,
+        0.0,
+        0.6156614753256582,
+        645.3821281736292,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackBrakeStopBarSetScrew": {
+      "definition": "Def_BrakeStop_MX88_screw",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "PortBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        7.539678551159046e-17,
+        -0.6156614753256583,
+        2073.1956414901756,
+        6.162975822039155e-33,
+        1.0,
+        1.2246467991473532e-16,
+        770.1642857142859,
+        0.6156614753256583,
+        -9.650348470981658e-17,
+        0.788010753606722,
+        591.2397694448914,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortTrackBrakeStopBarSetScrewNut": {
+      "definition": "Def_BrakeStop_nut",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "PortBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        2053.563736195729,
+        0.0,
+        -1.0,
+        0.0,
+        770.1642857142859,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        616.3674623505259,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardBrakeStopBar": {
+      "definition": "Def_BrakeStop_M342_bar",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "StarboardBrakeStopSupport"
+      ],
+      "frame": [
+        -0.788010753606722,
+        -9.650348470981658e-17,
+        0.6156614753256583,
+        1831.4946420457636,
+        -1.2246467991473532e-16,
+        1.0,
+        6.162975822039155e-33,
+        -652.7800000000001,
+        -0.6156614753256583,
+        -7.539678551159046e-17,
+        -0.788010753606722,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardBrakeStopBracket": {
+      "definition": "Def_BrakeStop_M341_bracket",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "StarboardBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        0.0,
+        -643.4985714285715,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardBrakeStopBarRivet1": {
+      "definition": "Def_BrakeStop_bar_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "StarboardBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        2035.5251244797628,
+        0.0,
+        -1.0,
+        0.0,
+        -621.2735714285715,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        627.2738131316358,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardBrakeStopBarRivet2": {
+      "definition": "Def_BrakeStop_bar_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "StarboardBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        2035.5251244797628,
+        0.0,
+        -1.0,
+        0.0,
+        -665.7235714285715,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        627.2738131316358,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardBrakeStopBarRivet3": {
+      "definition": "Def_BrakeStop_bar_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "StarboardBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        2047.3452857838636,
+        0.0,
+        -1.0,
+        0.0,
+        -621.2735714285715,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        636.5087352615208,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardBrakeStopBarRivet4": {
+      "definition": "Def_BrakeStop_bar_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "StarboardBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        2047.3452857838636,
+        0.0,
+        -1.0,
+        0.0,
+        -665.7235714285715,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        636.5087352615208,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowSpeedBrakeStopLug": {
+      "definition": "Def_BrakeStop_low_lug",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        0.0,
+        -535.3957142857142,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowSpeedBrakeStopLugRivet1": {
+      "definition": "Def_BrakeStop_lug_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.754709580222773,
+        0.0,
+        0.6560590289905062,
+        2032.6013366449413,
+        0.0,
+        -1.0,
+        0.0,
+        -509.99571428571426,
+        0.6560590289905062,
+        0.0,
+        -0.754709580222773,
+        669.2561532289326,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowSpeedBrakeStopLugRivet2": {
+      "definition": "Def_BrakeStop_lug_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.754709580222773,
+        0.0,
+        0.6560590289905062,
+        2032.6013366449413,
+        0.0,
+        -1.0,
+        0.0,
+        -535.3957142857142,
+        0.6560590289905062,
+        0.0,
+        -0.754709580222773,
+        669.2561532289326,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowSpeedBrakeStopLugRivet3": {
+      "definition": "Def_BrakeStop_lug_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.754709580222773,
+        0.0,
+        0.6560590289905062,
+        2032.6013366449413,
+        0.0,
+        -1.0,
+        0.0,
+        -560.7957142857142,
+        0.6560590289905062,
+        0.0,
+        -0.754709580222773,
+        669.2561532289326,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowSpeedBrakeStopScrew": {
+      "definition": "Def_BrakeStop_M343_screw",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        2100.0869740582407,
+        0.0,
+        -1.0,
+        -0.0,
+        -535.3957142857142,
+        -0.788010753606722,
+        0.0,
+        -0.6156614753256584,
+        660.7736650567706,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowSpeedBrakeStopScrewNut": {
+      "definition": "Def_BrakeStop_nut",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower",
+        "StarboardLowSpeedBrakeLowerStopJoint"
+      ],
+      "frame": [
+        -0.6156614753256584,
+        0.0,
+        0.7880107536067221,
+        2080.3867052180726,
+        0.0,
+        -1.0,
+        0.0,
+        -535.3957142857142,
+        0.7880107536067221,
+        0.0,
+        0.6156614753256582,
+        645.3821281736292,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowSpeedBrakeStopBarSetScrew": {
+      "definition": "Def_BrakeStop_MX88_screw",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "StarboardBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        7.539678551159046e-17,
+        -0.6156614753256583,
+        2069.2861911218574,
+        6.162975822039155e-33,
+        1.0,
+        1.2246467991473532e-16,
+        -535.3957142857142,
+        0.6156614753256583,
+        -9.650348470981658e-17,
+        0.788010753606722,
+        596.2436377302943,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowSpeedBrakeStopBarSetScrewNut": {
+      "definition": "Def_BrakeStop_nut",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "StarboardBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        2053.563736195729,
+        0.0,
+        -1.0,
+        0.0,
+        -535.3957142857142,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        616.3674623505259,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackBrakeStopLug": {
+      "definition": "Def_BrakeStop_track_lug",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        0.0,
+        -770.1642857142859,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackBrakeStopLugRivet1": {
+      "definition": "Def_BrakeStop_lug_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.754709580222773,
+        0.0,
+        0.6560590289905062,
+        2036.767311479031,
+        0.0,
+        -1.0,
+        0.0,
+        -744.764285714286,
+        0.6560590289905062,
+        0.0,
+        -0.754709580222773,
+        664.4637473945179,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackBrakeStopLugRivet2": {
+      "definition": "Def_BrakeStop_lug_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.754709580222773,
+        0.0,
+        0.6560590289905062,
+        2036.767311479031,
+        0.0,
+        -1.0,
+        0.0,
+        -770.1642857142859,
+        0.6560590289905062,
+        0.0,
+        -0.754709580222773,
+        664.4637473945179,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackBrakeStopLugRivet3": {
+      "definition": "Def_BrakeStop_lug_rivet",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.754709580222773,
+        0.0,
+        0.6560590289905062,
+        2036.767311479031,
+        0.0,
+        -1.0,
+        0.0,
+        -795.5642857142859,
+        0.6560590289905062,
+        0.0,
+        -0.754709580222773,
+        664.4637473945179,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackBrakeStopScrew": {
+      "definition": "Def_BrakeStop_M343_screw",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerStopJoint"
+      ],
+      "frame": [
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        2100.0869740582407,
+        0.0,
+        -1.0,
+        -0.0,
+        -770.1642857142859,
+        -0.788010753606722,
+        0.0,
+        -0.6156614753256584,
+        660.7736650567706,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackBrakeStopScrewNut": {
+      "definition": "Def_BrakeStop_nut",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower",
+        "StarboardTrackBrakeLowerStopJoint"
+      ],
+      "frame": [
+        -0.6156614753256584,
+        0.0,
+        0.7880107536067221,
+        2080.3867052180726,
+        0.0,
+        -1.0,
+        0.0,
+        -770.1642857142859,
+        0.7880107536067221,
+        0.0,
+        0.6156614753256582,
+        645.3821281736292,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackBrakeStopBarSetScrew": {
+      "definition": "Def_BrakeStop_MX88_screw",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "StarboardBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        7.539678551159046e-17,
+        -0.6156614753256583,
+        2073.1956414901756,
+        6.162975822039155e-33,
+        1.0,
+        1.2246467991473532e-16,
+        -770.1642857142859,
+        0.6156614753256583,
+        -9.650348470981658e-17,
+        0.788010753606722,
+        591.2397694448914,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardTrackBrakeStopBarSetScrewNut": {
+      "definition": "Def_BrakeStop_nut",
+      "owners": [
+        "Root",
+        "TransmissionBrakeStops",
+        "StarboardBrakeStopSupport"
+      ],
+      "frame": [
+        0.788010753606722,
+        0.0,
+        0.6156614753256583,
+        2053.563736195729,
+        0.0,
+        -1.0,
+        0.0,
+        -770.1642857142859,
+        0.6156614753256583,
+        0.0,
+        -0.788010753606722,
+        616.3674623505259,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "expected_revised_occurrences": {
+    "PortFixedBearing_inner_Stud01_Stud": {
+      "name": "PortFixedBearing_inner_Stud01_Stud",
+      "object": "PortFixedBearing_inner_Stud01_Stud",
+      "definition": "Def_TransmissionCap_MX36",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1791.3446420457635,
+        0.0,
+        1.0,
+        0.0,
+        643.4985714285715,
+        0.0,
+        0.0,
+        1.0,
+        758.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing",
+        "PortInnerStud01Assembly"
+      ]
+    },
+    "PortFixedBearing_inner_Stud01_Nut": {
+      "name": "PortFixedBearing_inner_Stud01_Nut",
+      "object": "PortFixedBearing_inner_Stud01_Nut",
+      "definition": "Def_TransmissionCap_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1908.8196420457637,
+        0.0,
+        1.0,
+        0.0,
+        643.4985714285715,
+        0.0,
+        0.0,
+        1.0,
+        758.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing",
+        "PortInnerStud01Assembly"
+      ]
+    },
+    "PortFixedBearing_inner_Stud01_Cotter": {
+      "name": "PortFixedBearing_inner_Stud01_Cotter",
+      "object": "PortFixedBearing_inner_Stud01_Cotter",
+      "definition": "Def_TransmissionCap_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1924.3696420457636,
+        0.0,
+        -1.0,
+        0.0,
+        643.4985714285715,
+        0.0,
+        0.0,
+        -1.0,
+        758.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing",
+        "PortInnerStud01Assembly"
+      ]
+    },
+    "PortFixedBearing_inner_Stud02_Stud": {
+      "name": "PortFixedBearing_inner_Stud02_Stud",
+      "object": "PortFixedBearing_inner_Stud02_Stud",
+      "definition": "Def_TransmissionCap_MX10",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1759.5946420457635,
+        0.0,
+        1.0,
+        0.0,
+        643.4985714285715,
+        0.0,
+        0.0,
+        1.0,
+        984.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing",
+        "PortInnerStud02Assembly"
+      ]
+    },
+    "PortFixedBearing_inner_Stud02_Nut": {
+      "name": "PortFixedBearing_inner_Stud02_Nut",
+      "object": "PortFixedBearing_inner_Stud02_Nut",
+      "definition": "Def_TransmissionCap_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1861.1946420457637,
+        0.0,
+        1.0,
+        0.0,
+        643.4985714285715,
+        0.0,
+        0.0,
+        1.0,
+        984.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing",
+        "PortInnerStud02Assembly"
+      ]
+    },
+    "PortFixedBearing_inner_Stud02_Cotter": {
+      "name": "PortFixedBearing_inner_Stud02_Cotter",
+      "object": "PortFixedBearing_inner_Stud02_Cotter",
+      "definition": "Def_TransmissionCap_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1876.7446420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        643.4985714285715,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        984.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing",
+        "PortInnerStud02Assembly"
+      ]
+    },
+    "PortFixedBearing_inner_Stud03_Stud": {
+      "name": "PortFixedBearing_inner_Stud03_Stud",
+      "object": "PortFixedBearing_inner_Stud03_Stud",
+      "definition": "Def_TransmissionCap_MX36",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1784.3446420457635,
+        0.0,
+        1.0,
+        0.0,
+        705.2414285714285,
+        0.0,
+        0.0,
+        1.0,
+        758.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing",
+        "PortInnerStud03Assembly"
+      ]
+    },
+    "PortFixedBearing_inner_Stud03_Nut": {
+      "name": "PortFixedBearing_inner_Stud03_Nut",
+      "object": "PortFixedBearing_inner_Stud03_Nut",
+      "definition": "Def_TransmissionCap_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1901.8196420457637,
+        0.0,
+        1.0,
+        0.0,
+        705.2414285714285,
+        0.0,
+        0.0,
+        1.0,
+        758.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing",
+        "PortInnerStud03Assembly"
+      ]
+    },
+    "PortFixedBearing_inner_Stud03_Cotter": {
+      "name": "PortFixedBearing_inner_Stud03_Cotter",
+      "object": "PortFixedBearing_inner_Stud03_Cotter",
+      "definition": "Def_TransmissionCap_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1917.3696420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        705.2414285714285,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        758.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing",
+        "PortInnerStud03Assembly"
+      ]
+    },
+    "PortFixedBearing_inner_Stud04_Stud": {
+      "name": "PortFixedBearing_inner_Stud04_Stud",
+      "object": "PortFixedBearing_inner_Stud04_Stud",
+      "definition": "Def_TransmissionCap_MX10",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1759.5946420457635,
+        0.0,
+        1.0,
+        0.0,
+        705.2414285714285,
+        0.0,
+        0.0,
+        1.0,
+        984.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing",
+        "PortInnerStud04Assembly"
+      ]
+    },
+    "PortFixedBearing_inner_Stud04_Nut": {
+      "name": "PortFixedBearing_inner_Stud04_Nut",
+      "object": "PortFixedBearing_inner_Stud04_Nut",
+      "definition": "Def_TransmissionCap_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1861.1946420457637,
+        0.0,
+        1.0,
+        0.0,
+        705.2414285714285,
+        0.0,
+        0.0,
+        1.0,
+        984.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing",
+        "PortInnerStud04Assembly"
+      ]
+    },
+    "PortFixedBearing_inner_Stud04_Cotter": {
+      "name": "PortFixedBearing_inner_Stud04_Cotter",
+      "object": "PortFixedBearing_inner_Stud04_Cotter",
+      "definition": "Def_TransmissionCap_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1876.7446420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        705.2414285714285,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        984.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing",
+        "PortInnerStud04Assembly"
+      ]
+    },
+    "PortFixedBearing_inner_cap": {
+      "name": "PortFixedBearing_inner_cap",
+      "object": "PortFixedBearing_inner_cap",
+      "definition": "Def_FixedBearing_inner_cap",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        674.37,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing"
+      ]
+    },
+    "PortFixedBearing_inner_bracket": {
+      "name": "PortFixedBearing_inner_bracket",
+      "object": "PortFixedBearing_inner_bracket",
+      "definition": "Def_FixedBearing_inner_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        674.37,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "PortInnerFixedBearing"
+      ]
+    },
+    "StarboardFixedBearing_inner_Stud01_Stud": {
+      "name": "StarboardFixedBearing_inner_Stud01_Stud",
+      "object": "StarboardFixedBearing_inner_Stud01_Stud",
+      "definition": "Def_TransmissionCap_MX36",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1784.3446420457635,
+        0.0,
+        1.0,
+        0.0,
+        -705.2414285714285,
+        0.0,
+        0.0,
+        1.0,
+        758.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing",
+        "StarboardInnerStud01Assembly"
+      ]
+    },
+    "StarboardFixedBearing_inner_Stud01_Nut": {
+      "name": "StarboardFixedBearing_inner_Stud01_Nut",
+      "object": "StarboardFixedBearing_inner_Stud01_Nut",
+      "definition": "Def_TransmissionCap_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1901.8196420457637,
+        0.0,
+        1.0,
+        0.0,
+        -705.2414285714285,
+        0.0,
+        0.0,
+        1.0,
+        758.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing",
+        "StarboardInnerStud01Assembly"
+      ]
+    },
+    "StarboardFixedBearing_inner_Stud01_Cotter": {
+      "name": "StarboardFixedBearing_inner_Stud01_Cotter",
+      "object": "StarboardFixedBearing_inner_Stud01_Cotter",
+      "definition": "Def_TransmissionCap_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1917.3696420457636,
+        0.0,
+        1.0,
+        0.0,
+        -705.2414285714285,
+        0.0,
+        0.0,
+        1.0,
+        758.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing",
+        "StarboardInnerStud01Assembly"
+      ]
+    },
+    "StarboardFixedBearing_inner_Stud02_Stud": {
+      "name": "StarboardFixedBearing_inner_Stud02_Stud",
+      "object": "StarboardFixedBearing_inner_Stud02_Stud",
+      "definition": "Def_TransmissionCap_MX10",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1759.5946420457635,
+        0.0,
+        1.0,
+        0.0,
+        -705.2414285714285,
+        0.0,
+        0.0,
+        1.0,
+        984.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing",
+        "StarboardInnerStud02Assembly"
+      ]
+    },
+    "StarboardFixedBearing_inner_Stud02_Nut": {
+      "name": "StarboardFixedBearing_inner_Stud02_Nut",
+      "object": "StarboardFixedBearing_inner_Stud02_Nut",
+      "definition": "Def_TransmissionCap_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1861.1946420457637,
+        0.0,
+        1.0,
+        0.0,
+        -705.2414285714285,
+        0.0,
+        0.0,
+        1.0,
+        984.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing",
+        "StarboardInnerStud02Assembly"
+      ]
+    },
+    "StarboardFixedBearing_inner_Stud02_Cotter": {
+      "name": "StarboardFixedBearing_inner_Stud02_Cotter",
+      "object": "StarboardFixedBearing_inner_Stud02_Cotter",
+      "definition": "Def_TransmissionCap_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1876.7446420457636,
+        0.0,
+        1.0,
+        0.0,
+        -705.2414285714285,
+        0.0,
+        0.0,
+        1.0,
+        984.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing",
+        "StarboardInnerStud02Assembly"
+      ]
+    },
+    "StarboardFixedBearing_inner_Stud03_Stud": {
+      "name": "StarboardFixedBearing_inner_Stud03_Stud",
+      "object": "StarboardFixedBearing_inner_Stud03_Stud",
+      "definition": "Def_TransmissionCap_MX36",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1791.3446420457635,
+        0.0,
+        1.0,
+        0.0,
+        -643.4985714285713,
+        0.0,
+        0.0,
+        1.0,
+        758.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing",
+        "StarboardInnerStud03Assembly"
+      ]
+    },
+    "StarboardFixedBearing_inner_Stud03_Nut": {
+      "name": "StarboardFixedBearing_inner_Stud03_Nut",
+      "object": "StarboardFixedBearing_inner_Stud03_Nut",
+      "definition": "Def_TransmissionCap_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1908.8196420457637,
+        0.0,
+        1.0,
+        0.0,
+        -643.4985714285713,
+        0.0,
+        0.0,
+        1.0,
+        758.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing",
+        "StarboardInnerStud03Assembly"
+      ]
+    },
+    "StarboardFixedBearing_inner_Stud03_Cotter": {
+      "name": "StarboardFixedBearing_inner_Stud03_Cotter",
+      "object": "StarboardFixedBearing_inner_Stud03_Cotter",
+      "definition": "Def_TransmissionCap_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1924.3696420457636,
+        0.0,
+        1.0,
+        0.0,
+        -643.4985714285713,
+        0.0,
+        0.0,
+        1.0,
+        758.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing",
+        "StarboardInnerStud03Assembly"
+      ]
+    },
+    "StarboardFixedBearing_inner_Stud04_Stud": {
+      "name": "StarboardFixedBearing_inner_Stud04_Stud",
+      "object": "StarboardFixedBearing_inner_Stud04_Stud",
+      "definition": "Def_TransmissionCap_MX10",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1759.5946420457635,
+        0.0,
+        1.0,
+        0.0,
+        -643.4985714285713,
+        0.0,
+        0.0,
+        1.0,
+        984.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing",
+        "StarboardInnerStud04Assembly"
+      ]
+    },
+    "StarboardFixedBearing_inner_Stud04_Nut": {
+      "name": "StarboardFixedBearing_inner_Stud04_Nut",
+      "object": "StarboardFixedBearing_inner_Stud04_Nut",
+      "definition": "Def_TransmissionCap_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1861.1946420457637,
+        0.0,
+        1.0,
+        0.0,
+        -643.4985714285713,
+        0.0,
+        0.0,
+        1.0,
+        984.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing",
+        "StarboardInnerStud04Assembly"
+      ]
+    },
+    "StarboardFixedBearing_inner_Stud04_Cotter": {
+      "name": "StarboardFixedBearing_inner_Stud04_Cotter",
+      "object": "StarboardFixedBearing_inner_Stud04_Cotter",
+      "definition": "Def_TransmissionCap_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1876.7446420457636,
+        0.0,
+        1.0,
+        0.0,
+        -643.4985714285713,
+        0.0,
+        0.0,
+        1.0,
+        984.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing",
+        "StarboardInnerStud04Assembly"
+      ]
+    },
+    "StarboardFixedBearing_inner_cap": {
+      "name": "StarboardFixedBearing_inner_cap",
+      "object": "StarboardFixedBearing_inner_cap",
+      "definition": "Def_FixedBearing_inner_cap",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -674.3699999999999,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing"
+      ]
+    },
+    "StarboardFixedBearing_inner_bracket": {
+      "name": "StarboardFixedBearing_inner_bracket",
+      "object": "StarboardFixedBearing_inner_bracket",
+      "definition": "Def_FixedBearing_inner_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -674.3699999999999,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "FixedTransmissionBearings",
+        "StarboardInnerFixedBearing"
+      ]
+    },
+    "PortLowSpeedBrakeLowerBand": {
+      "name": "PortLowSpeedBrakeLowerBand",
+      "object": "PortLowSpeedBrakeLowerBand",
+      "definition": "Def_BrakeStop_low_lower_band",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        535.3957142857142,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeLower"
+      ]
+    },
+    "PortTrackBrakeLowerBand": {
+      "name": "PortTrackBrakeLowerBand",
+      "object": "PortTrackBrakeLowerBand",
+      "definition": "Def_BrakeStop_track_lower_band",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        770.1642857142859,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeLower"
+      ]
+    },
+    "StarboardLowSpeedBrakeLowerBand": {
+      "name": "StarboardLowSpeedBrakeLowerBand",
+      "object": "StarboardLowSpeedBrakeLowerBand",
+      "definition": "Def_BrakeStop_low_lower_band",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -535.3957142857142,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeLower"
+      ]
+    },
+    "StarboardTrackBrakeLowerBand": {
+      "name": "StarboardTrackBrakeLowerBand",
+      "object": "StarboardTrackBrakeLowerBand",
+      "definition": "Def_BrakeStop_track_lower_band",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -770.1642857142859,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeLower"
+      ]
+    }
+  },
+  "new_assemblies": [
+    "TransmissionBrakeStops",
+    "PortBrakeStopSupport",
+    "PortLowSpeedBrakeLowerStopJoint",
+    "PortTrackBrakeLowerStopJoint",
+    "StarboardBrakeStopSupport",
+    "StarboardLowSpeedBrakeLowerStopJoint",
+    "StarboardTrackBrakeLowerStopJoint"
+  ],
+  "new_definitions": [
+    "Def_BrakeStop_lug_rivet",
+    "Def_BrakeStop_bar_rivet",
+    "Def_BrakeStop_M343_screw",
+    "Def_BrakeStop_MX88_screw",
+    "Def_BrakeStop_nut",
+    "Def_BrakeStop_low_lug",
+    "Def_BrakeStop_low_lower_band",
+    "Def_BrakeStop_track_lug",
+    "Def_BrakeStop_track_lower_band",
+    "Def_BrakeStop_M341_bracket",
+    "Def_BrakeStop_M342_bar"
+  ],
+  "changed_definitions": [
+    "Def_FixedBearing_inner_cap",
+    "Def_FixedBearing_inner_bracket"
+  ],
+  "mount_revision": {
+    "lower_cap_seat_x_mm": 70.325,
+    "lower_stud_z_mm": -142.0,
+    "lower_unbracketed_stud_tail_x_mm": -47.14999999999999,
+    "mounted_coarse_thread_front_x_mm": -2.04999999999999,
+    "source_count_allocation": "Two MX36 lower and two MX10 upper per inside bearing; inferred allocation.",
+    "protected_socket_radius_mm": 69.65,
+    "replacement_region": {
+      "x_min": -96.0,
+      "z_min": -200.0,
+      "z_max": -65.0
+    },
+    "additional_lower_web_region": {
+      "x_min": -160.0,
+      "z_min": -170.0,
+      "z_max": -65.0
+    },
+    "historical_geometry_qualified": false
+  },
+  "affected_occurrences": [
+    "PortBrakeStopBar",
+    "PortBrakeStopBarRivet1",
+    "PortBrakeStopBarRivet2",
+    "PortBrakeStopBarRivet3",
+    "PortBrakeStopBarRivet4",
+    "PortBrakeStopBracket",
+    "PortFixedBearing_inner_Stud01_Cotter",
+    "PortFixedBearing_inner_Stud01_Nut",
+    "PortFixedBearing_inner_Stud01_Stud",
+    "PortFixedBearing_inner_Stud02_Cotter",
+    "PortFixedBearing_inner_Stud02_Nut",
+    "PortFixedBearing_inner_Stud02_Stud",
+    "PortFixedBearing_inner_Stud03_Cotter",
+    "PortFixedBearing_inner_Stud03_Nut",
+    "PortFixedBearing_inner_Stud03_Stud",
+    "PortFixedBearing_inner_Stud04_Cotter",
+    "PortFixedBearing_inner_Stud04_Nut",
+    "PortFixedBearing_inner_Stud04_Stud",
+    "PortFixedBearing_inner_bracket",
+    "PortFixedBearing_inner_cap",
+    "PortLowSpeedBrakeLowerBand",
+    "PortLowSpeedBrakeStopBarSetScrew",
+    "PortLowSpeedBrakeStopBarSetScrewNut",
+    "PortLowSpeedBrakeStopLug",
+    "PortLowSpeedBrakeStopLugRivet1",
+    "PortLowSpeedBrakeStopLugRivet2",
+    "PortLowSpeedBrakeStopLugRivet3",
+    "PortLowSpeedBrakeStopScrew",
+    "PortLowSpeedBrakeStopScrewNut",
+    "PortTrackBrakeLowerBand",
+    "PortTrackBrakeStopBarSetScrew",
+    "PortTrackBrakeStopBarSetScrewNut",
+    "PortTrackBrakeStopLug",
+    "PortTrackBrakeStopLugRivet1",
+    "PortTrackBrakeStopLugRivet2",
+    "PortTrackBrakeStopLugRivet3",
+    "PortTrackBrakeStopScrew",
+    "PortTrackBrakeStopScrewNut",
+    "StarboardBrakeStopBar",
+    "StarboardBrakeStopBarRivet1",
+    "StarboardBrakeStopBarRivet2",
+    "StarboardBrakeStopBarRivet3",
+    "StarboardBrakeStopBarRivet4",
+    "StarboardBrakeStopBracket",
+    "StarboardFixedBearing_inner_Stud01_Cotter",
+    "StarboardFixedBearing_inner_Stud01_Nut",
+    "StarboardFixedBearing_inner_Stud01_Stud",
+    "StarboardFixedBearing_inner_Stud02_Cotter",
+    "StarboardFixedBearing_inner_Stud02_Nut",
+    "StarboardFixedBearing_inner_Stud02_Stud",
+    "StarboardFixedBearing_inner_Stud03_Cotter",
+    "StarboardFixedBearing_inner_Stud03_Nut",
+    "StarboardFixedBearing_inner_Stud03_Stud",
+    "StarboardFixedBearing_inner_Stud04_Cotter",
+    "StarboardFixedBearing_inner_Stud04_Nut",
+    "StarboardFixedBearing_inner_Stud04_Stud",
+    "StarboardFixedBearing_inner_bracket",
+    "StarboardFixedBearing_inner_cap",
+    "StarboardLowSpeedBrakeLowerBand",
+    "StarboardLowSpeedBrakeStopBarSetScrew",
+    "StarboardLowSpeedBrakeStopBarSetScrewNut",
+    "StarboardLowSpeedBrakeStopLug",
+    "StarboardLowSpeedBrakeStopLugRivet1",
+    "StarboardLowSpeedBrakeStopLugRivet2",
+    "StarboardLowSpeedBrakeStopLugRivet3",
+    "StarboardLowSpeedBrakeStopScrew",
+    "StarboardLowSpeedBrakeStopScrewNut",
+    "StarboardTrackBrakeLowerBand",
+    "StarboardTrackBrakeStopBarSetScrew",
+    "StarboardTrackBrakeStopBarSetScrewNut",
+    "StarboardTrackBrakeStopLug",
+    "StarboardTrackBrakeStopLugRivet1",
+    "StarboardTrackBrakeStopLugRivet2",
+    "StarboardTrackBrakeStopLugRivet3",
+    "StarboardTrackBrakeStopScrew",
+    "StarboardTrackBrakeStopScrewNut"
+  ],
+  "expected_physical_occurrences": 3001,
+  "expected_definition_count": 503,
+  "expected_assembly_count": 295,
+  "status": "experimental_not_qualified",
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false
+}

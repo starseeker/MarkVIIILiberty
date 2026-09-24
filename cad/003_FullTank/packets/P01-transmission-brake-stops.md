@@ -9,7 +9,7 @@ The latest local candidate is
 [trial04](../experiments/drive_chains/transmission_brake_stop_study/trial04/README.md).
 It revises the previously estimated lower cap-stud station and stud allocation,
 retaining source stock lengths and the shaft socket. Rounded lower bosses and
-connecting webs replace trial03's overly bulky casting. Its55 mounting and71
+connecting webs replace trial03's overly bulky casting. Its 55 mounting and 71
 joint/ownership checks pass; historical casting profiles and the transverse
 arrangement remain conditional. The earlier trial02 account below is retained
 as the preceding experiment, not the current mounting geometry.

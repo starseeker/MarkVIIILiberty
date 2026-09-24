@@ -1,0 +1,95 @@
+{
+  "passed": true,
+  "nominal_native_sha256": "5da8d72278f3a0059eaac8f8a3967bb86e4b821da52262d7433d008832bf4994",
+  "variant_native_sha256": "6d3578b7a5bba5af66a99e788caf6e43a7cb409f0ca61c52ef7177888b7f5f95",
+  "variant_native": ".work/transmission-brake-stops/parameter04/PowertrainWithBrakeStops.FCStd",
+  "parameter_changes": {
+    "bracket_stock_mm": [
+      6.35,
+      7.0
+    ],
+    "lower_stud_z_mm": [
+      -137.0,
+      -142.0
+    ]
+  },
+  "nominal_unchanged_definitions_byte_preserved": 490,
+  "changed_definitions": [
+    "Def_BrakeStop_M341_bracket",
+    "Def_BrakeStop_M342_bar",
+    "Def_BrakeStop_bar_rivet",
+    "Def_FixedBearing_inner_bracket",
+    "Def_FixedBearing_inner_cap"
+  ],
+  "nut_frame_checks": [
+    {
+      "name": "PortFixedBearing_inner_Stud01_Nut",
+      "actual_delta_mm": [
+        2.2737367544323206e-13,
+        0.0,
+        -5.0
+      ],
+      "expected_delta_mm": [
+        0.0,
+        0.0,
+        -5.0
+      ],
+      "passed": true
+    },
+    {
+      "name": "PortFixedBearing_inner_Stud03_Nut",
+      "actual_delta_mm": [
+        -0.6499999999998636,
+        0.0,
+        -5.0
+      ],
+      "expected_delta_mm": [
+        -0.65,
+        0.0,
+        -5.0
+      ],
+      "passed": true
+    },
+    {
+      "name": "StarboardFixedBearing_inner_Stud01_Nut",
+      "actual_delta_mm": [
+        -0.6499999999998636,
+        0.0,
+        -5.0
+      ],
+      "expected_delta_mm": [
+        -0.65,
+        0.0,
+        -5.0
+      ],
+      "passed": true
+    },
+    {
+      "name": "StarboardFixedBearing_inner_Stud03_Nut",
+      "actual_delta_mm": [
+        2.2737367544323206e-13,
+        0.0,
+        -5.0
+      ],
+      "expected_delta_mm": [
+        0.0,
+        0.0,
+        -5.0
+      ],
+      "passed": true
+    }
+  ],
+  "validation_receipts": {
+    "mount_checks.json": "96971206a9993fde89e1c7f5af73f4ed6d1699a96669f0f33bcb4a7a2a17e64a",
+    "joint_checks.json": "60f4223400c0ff644cda5dad6c727eafd0f65f45fe12f4bb6bc53e7a1cd600f3",
+    "trial_diagnostics.json": "7076680559d24214fc30ce3403c63fd204ef1a392e2c9510cca0db08ff93066a"
+  },
+  "native_checks": {
+    "mount": 55,
+    "joint_and_ownership": 71,
+    "development_pairs": 592,
+    "collisions": 0
+  },
+  "scope": "Meaningful thickness and mounting-height variation; saved joints, frames and all development neighbors checked. No variant STEP or historical qualification.",
+  "installation_qualified": false
+}

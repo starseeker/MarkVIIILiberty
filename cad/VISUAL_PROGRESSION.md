@@ -8,7 +8,7 @@ The revised brake-stop mounting adds an
 Trial04 replaces the earlier estimated lower bearing station and bulky casting
 with paired rounded bosses and connecting webs. The diagonal support follows
 the manual more closely, with the remaining source offsets documented.
-The candidate remains experimental. All192 prior images and31 recorded native
+The candidate remains experimental. All 192 prior images and 31 recorded native
 baselines are preserved: **196 images total**. See the
 [trial04 record](003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/README.md).
 

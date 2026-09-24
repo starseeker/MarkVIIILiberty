@@ -201,6 +201,17 @@ shells or invalid topology as a successful empty difference. See the
 
 ## Acceptance and exchange
 
+If a part passes isolated STEP exchange but fails inside a combined export,
+inspect the representation and uncertainty contexts before changing geometry.
+On FreeCAD 1.1.1/OCC 7.8.0, a flat `TopoShape.exportStep()` compound shared one
+context and slightly increased one lug's imported tolerance. Exporting unchanged
+named feature objects through headless `Import.export()` retained separate
+component representations and passed all 89 original material, tolerance and
+converged-mass comparisons. Changing `write.step.assembly` alone did not affect
+that local flat-shape wrapper. Preserve the failed control, test the actual full
+export and keep acceptance limits unchanged. See the
+[brake-stop export diagnostic](../../../cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/diagnostics/README.md).
+
 Match isolated probes to the delivery pipeline's STEP settings before changing
 geometry in response to an exchange failure. In the local FreeCAD 1.1.1/OCC 7.8
 drain-wire probe, an export without surface curves reopened as a valid solid but
