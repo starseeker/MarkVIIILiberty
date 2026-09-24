@@ -1,5 +1,14 @@
 # Mark VIII visual progression
 
+The brake spring-spacer checkpoint adds an
+[isometric](intermediate_snapshot_iso_transmission_brake_spacers_trial_001.png),
+[detail](intermediate_snapshot_detail_transmission_brake_spacers_trial_001.png) and
+[source overlay](intermediate_snapshot_source_transmission_brake_spacers_trial_001.png).
+Four SH687A spacers now share the retained spring stacks. Local checks pass;
+stock interpretation and placement remain documented approximations. All 196
+prior images are preserved: **199 images total**. See the
+[checkpoint](003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/README.md).
+
 The revised brake-stop mounting adds an
 [isometric](intermediate_snapshot_iso_transmission_brake_stops_trial_002.png),
 [support detail](intermediate_snapshot_detail_transmission_brake_stops_trial_002.png),

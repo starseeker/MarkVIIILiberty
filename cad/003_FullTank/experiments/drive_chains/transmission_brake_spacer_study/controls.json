@@ -1,0 +1,29 @@
+{
+  "controls": {
+    "spacer_outer_diameter": 25.4,
+    "spacer_length": 31.75,
+    "spacer_bore_radius": 6.5
+  },
+  "source_numeric_values": [
+    "SNL218:013 prints 1 inch x 1 1/4 inches"
+  ],
+  "estimated_interpretations": [
+    "Assignment of the two dimensions to outside diameter/axial length",
+    "Bore radius and radial allowance",
+    "Spacer at swivel end of spring",
+    "Retained spring wire/radius/turn count and regenerated installed height"
+  ],
+  "parameter_trial": {
+    "spacer_bore_radius": 6.75,
+    "spacer_length": 32.75
+  },
+  "source_uncertainty": "Historical outer-size/length assignment and position unresolved; no fabricated confidence interval. Parameter variation tests interface robustness only.",
+  "fitting_allowance": {
+    "radial_screw_clearance_mm": 0.15
+  },
+  "numerical_tolerances": {
+    "material_mm3": 1e-05,
+    "frame_mm": 1e-07,
+    "gap_mm": 1e-05
+  }
+}

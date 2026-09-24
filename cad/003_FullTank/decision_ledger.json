@@ -147,6 +147,44 @@
           "sha256": "4d8e75e309a53fe89b185c80cafdf70b05780591b5d7baac53bd830eff667944"
         }
       ]
+    },
+    {
+      "id": "brake_adjusting_spring_spacer",
+      "status": "reviewed_approximation",
+      "scope": "Retain four SH687A annuli and coupled shortened springs for dependent local standard-geometry development.",
+      "reason": "Original SNL218/252 establish identity, quantity four and literal 1 by 1¼ inch stock notation. Native seats/voids, preservation, STEP, context, reproduction and sensitivity pass.",
+      "uncertainty": "Assigning 25.4 mm to OD and 31.75 mm to length, choosing a 13 mm bore and locating at the swivel end are hypotheses. The varied dimensions are engineering sensitivity, not historical confidence bounds.",
+      "limits": [
+        "SH687A stock dimension roles, bore and swivel-side placement remain hypotheses.",
+        "Inherited brake-stop part-mark identity and transverse arrangement remain conditional.",
+        "Source screw/swivel residuals remain visible in the unchanged HB134 registration.",
+        "Full controls, service/removal paths and strength remain unqualified.",
+        "Does not promote experimental inherited brake-stop geometry or standard tank011."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "basis": "Original source review, three inspected views and trial01 qualification."
+      },
+      "reopen_when": [
+        "New identified SH687A drawing or stock convention source.",
+        "Changed screw, spring, shoulder or swivel interface.",
+        "Configuration evidence or control/service checks contradict placement."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/sources.json",
+          "sha256": "6f9cc743993c867d34292d06852eeed60f5059868e269a49b57ec50e8448ea80"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/controls.json",
+          "sha256": "970bf3af3b4967337906e8b46be4eca406138f2aeaf1c1395f806187cb0c9d06"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/qualification.json",
+          "sha256": "41faf9ec95d4c3b88ec1888add3583a88f84616ad5b18b95be8fa9d34ee599bd"
+        }
+      ]
     }
   ]
 }

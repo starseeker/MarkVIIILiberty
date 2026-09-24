@@ -1,30 +1,22 @@
 # SH687A transmission brake adjusting-spring spacers
 
-Source/interface preparation for four missing components; no new geometry yet.
-Original SNL218 confirms SH687A, quantity four, and the literal notation
-`W. I., 1″ x 1¼″`. SNL252's transcribed transmission composition also lists four.
-The two printed numbers have not yet been assigned to diameter, length or nominal
-stock size. HB101/134 show the screw/spring/swivel arrangement without a resolved
-SH687A callout. [sources.json](sources.json) retains those distinctions.
+[Trial01](trial01/README.md) adds four source-identified spacers with an explicitly
+estimated form and position. It passes local static, STEP, preservation,
+reproduction and parameter checks. See the
+[work packet](../../../packets/P01-transmission-brake-spring-spacers.md) and
+[source distinctions](sources.json).
 
-The saved trial04 geometry contains four adjusting springs, each approximately
-112.823802 mm long, ending at the swivel's central seat to numerical tolerance.
-The independent [context audit](context.json) checks the actual saved BReps and
-frames. There is no empty axial gap to populate by simply adding a spacer. A
-reviewed spacer placement will require changing the currently estimated spring
-and/or shoulder arrangement, followed by interface and parameter checks.
+The saved parent spring filled the shoulder-to-swivel gap. The chosen annulus
+shortens its estimated installed length from 112.823802 to 81.073802 mm;
+other mechanism geometry and frames remain fixed. Catalogue stock notation does
+not prove the chosen diameter/length roles, bore or swivel-side position.
 
-The first diagnostic used ordinary `BoundBox` values. On this trimmed B-spline
-spring, those broad bounds overestimate the axial extent; the swivel's side
-journals also extend below its central seat. The retained current measurement
-uses `optimalBoundingBox(False, False)` and restricts the swivel search to the
-spring-radius cylinder. It is an axial occupancy check, not proof of complete
-annular contact. The initial broad-bounds diagnostic remains in
-`.work/brake-spacer/initial_broad_bounds.json` and must not be interpreted as a
-physical clash or spring length.
+The earlier [context audit](context.json) uses optimal trimmed-surface bounds and
+restricts the swivel to the spring-radius cylinder. Ordinary broad BRep bounds
+had overstated spring length; that initial diagnostic remains in
+`.work/brake-spacer/initial_broad_bounds.json`. Trial01 now checks actual annular
+contacts and independent voids, beyond the preparation's axial occupancy audit.
 
-Next inspect the original composition/context and any additional adjuster views,
-choose and document a defensible stock/placement hypothesis, then build the four
-owned occurrences and revise affected estimated spring geometry. Use the staged
-runner with explicitly declared dependencies. No source-camera refit or change to
-the existing standard assembly is warranted by this inventory discovery.
+The original HB134 pictorial-section registration is retained. No camera refit or
+standard tank011 update was made. Continue with complete high-speed brake bands,
+anchors, adjusters, stops and hardware before full controls and tank integration.

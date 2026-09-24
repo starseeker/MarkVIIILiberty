@@ -1,0 +1,55 @@
+{
+  "local_static_checks_passed": true,
+  "native_sha256": "5da8d72278f3a0059eaac8f8a3967bb86e4b821da52262d7433d008832bf4994",
+  "checks": {
+    "mount_checks.json": "ef8ac3892b88067cc222ddde11a463f248e77e233f5fe44fad7c9066f1f86418",
+    "joint_checks.json": "13b041697b2da298b4b2a4b1f76b4b2c08a536b0f37716b1c99d75c2cea51bfd",
+    "standard_context_checks.json": "2c8ba884c46420eb7fa99afca77fd1c45ffd71fd487f7c5b2e869bb0b9c33da4",
+    "definition_preservation_checks.json": "c5f4335a6be2a60d68c49c7d90129df1240d527b918c760e5f893e33a4a80079",
+    "reproduction_checks.json": "8043601cd4148fa0b6fc6328edcdea7e39de064142fa3ec4629231d8d10a5b89",
+    "parameter_checks.json": "cf08708335ed639a3eff7962454bfc4c484e556c28b31279321c8da55ed8079c",
+    "exchange_checks.json": "a421e976a8610a1640c6745c6e0665335fa0b802fb296bec8d42d2bd9eb5d5ab",
+    "trial_diagnostics.json": "4a6e6ee128db6e72a9f7d299fede1ce27392d56372a62a2646e5760a23a32496"
+  },
+  "frozen_validation_hashes": {
+    "compare_transmission_brake_stops.py": "bbd3c7753d7a7bc457909c68918360da84f6588442a2d84b9afe1ae273bb924a",
+    "exchange_transmission_brake_stops.py": "a522596b5f8c482d4465b35dc6f60a9af7f4f69a5a440fe740b0d2a291c1c546",
+    "check_transmission_brake_stop_mount.py": "14f232a5dc97c726616d5cbaa17706dd0736c77f13b559a5d85c35301ed68ad6",
+    "check_transmission_brake_stop_preservation.py": "bd0cc3a5aa2fd8c7bd098bd7b66ee2e50abde6f7d51e9cc280cd9bdd94357a2f",
+    "check_transmission_brake_stop_context.py": "6d40525be953f82670b3341217afa8a31eabe7237167db5c93a17f492445b81c",
+    "inspect_transmission_brake_stop_trial.py": "3568dee1b322a66e1baafb29345b91e7c982a8c33fd6bc8e91fa794a2cb54ea5",
+    "pump_integration_worker.py": "4bbc349b40b5fc628a0cd5c1b497faee4716cf0a0092b2ec30085953f0d2862e",
+    "check_powertrain_frame_reproduction.py": "a349209113d5a5c5c2673979e3f6172f55023118e9e1a92ad01b4e4be94ea558",
+    "check_transmission_brake_stop_joints.py": "3ece2d9c1bfd9ae1533a79c8a44c505f5ffa7e1fd630c896a98d3da5541e4978",
+    "render_transmission_brake_stops.py": "499e7679ae1f3c0cd3516e4199f29151d4042a04c11738cc4dfc689540aadc41"
+  },
+  "source_native_sha256": "2cbe4e5b6b5eb740c1a2e0ead86e2fc3349bb6e08122197316b145f16dff82be",
+  "source_inputs_match": true,
+  "step_hashes": {
+    "BrakeStopDefinitions.step": "2c76be66ef718aedf06e0e23f46d627e6a1f60696cad5b09c829892aa0c22c08",
+    "BrakeStopInstallation.step": "3e515b029208a51935b3bc78ec7bae180a7b2621df519e90cdf03bc9206f44b5"
+  },
+  "counts": {
+    "physical_occurrences": 3001,
+    "definitions": 503,
+    "assemblies": 295,
+    "mount_checks": 55,
+    "joint_checks": 71,
+    "development_pairs": 592,
+    "standard_context": 5316,
+    "step_comparisons": 89,
+    "unchanged_definitions": 490
+  },
+  "scope": "Local static geometry, joint retention, context, interchange, preservation, fresh reproduction and parameter variation. Not historical, strength or service-path qualification.",
+  "open_issues": [
+    "M341/M342 versus MX95/MX96 identity mapping",
+    "Shared crossbar transverse arrangement remains a documented hypothesis",
+    "Historical countersunk rivet stock-length datum",
+    "Fixed source-registration residuals and estimated casting profile",
+    "Full installation/removal paths and mechanism controls"
+  ],
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "accepted_development_parent": "front-brake 169c3da; no automatic promotion of this experimental source interpretation",
+  "standard_assembly_modified": false
+}

@@ -11,6 +11,30 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — four brake spring spacers populated
+
+The [spacer checkpoint](experiments/drive_chains/transmission_brake_spacer_study/trial01/README.md)
+adds four SH687A annuli and shortens the estimated spring while retaining other
+mechanism geometry and frames. The development assembly now has **3,005 physical
+occurrences, 504 definitions and 295 assemblies**.
+
+All 13 deterministic stages pass: 321 native checks, 28 development pairs, 502
+unchanged definitions, ten STEP comparisons, retained 5,316-component context,
+exact fresh reproduction and coupled length/bore sensitivity. The published
+manifest and BReps are independently bound to the saved native archive.
+
+Source-supported identity/quantity are separated from estimated stock roles,
+bore and swivel-side location. These are reviewed local approximations with
+explicit reopening triggers; inherited brake-stop identity and service limits
+remain. Three inspected views bring progression to **199 images**, preserving
+all 196 earlier images. Standard tank011 remains unchanged.
+
+Next: complete both high-speed brake assemblies. Original SNL composition confirms
+both left and right members belong to each lever, joined by four rivets. Bands,
+linings, anchors, adjustment pieces, stops and their hardware remain to build.
+Then continue controls, frame/hull joints, engine/interior completion, inventory
+reconciliation and full standard integration. Poses remain deferred.
+
 ## 24 September 2026 — deterministic reuse and source-camera workflow
 
 Implemented the staged CAD runner and compact recovery pointer in

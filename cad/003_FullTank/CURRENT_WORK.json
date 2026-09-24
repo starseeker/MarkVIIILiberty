@@ -5,28 +5,29 @@
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
   "accepted_development_parent": "front-brake checkpoint 169c3da",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04",
-  "latest_native_sha256": "5da8d72278f3a0059eaac8f8a3967bb86e4b821da52262d7433d008832bf4994",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_study/trial04/qualification.json",
-  "current_pipeline_run": "brake_stop_pipeline01",
-  "pipeline_receipt": "benchmarks/cad_pipeline/20260924/summary.json",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01",
+  "latest_native_sha256": "9abdab05d466d51744002cce3dc442e27c1f02dd6266724821ca1f02f4e9b937",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/qualification.json",
+  "current_pipeline_run": "brake_spacer02",
+  "pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/trial01/pipeline_evidence",
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
-    "python3 tools/cad_pipeline/pipeline.py status brake_stop_pipeline01",
-    "python3 tools/cad_pipeline/pipeline.py verify brake_stop_pipeline01",
+    "python3 tools/cad_pipeline/pipeline.py status brake_spacer02",
+    "python3 tools/cad_pipeline/pipeline.py verify brake_spacer02",
     "python3 tools/cad_pipeline/decisions.py cad/003_FullTank/decision_ledger.json"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Resolve SH687A spring-spacer form/location from original SNL218/252 and handbook context, then build and validate four instances as a bounded standard-geometry packet. Use the deterministic runner and ledger; do not reopen unchanged brake-stop estimates without their listed triggers.",
+  "next_action": "Build the two complete high-speed brake assemblies from reviewed SNL composition and HB99/100/133. Resolve lining section and actual drum interfaces before defining bands; include paired lever members, washers and all hardware. Retain scoped approximations and unchanged source cameras unless a listed review trigger occurs.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
     "Rivet stock-length datum",
     "Full removal paths and controls",
-    "Historical perspective landmark set not yet established"
+    "Historical perspective landmark set not yet established",
+    "SH687A stock interpretation, bore and installed side remain documented approximations"
   ],
-  "visual_progression_count": 196,
-  "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_brake_spacer_study/README.md"
+  "visual_progression_count": 199,
+  "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_study/source_inventory.json"
 }
