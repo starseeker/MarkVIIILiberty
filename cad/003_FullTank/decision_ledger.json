@@ -939,6 +939,61 @@
         {
           "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joint_source_review02.json",
           "sha256": "8595b7a97702d7f61d254019a3bdc358d1ef8b6f1ccdd8a94f76755af27f9bae"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/operating_interfaces.json",
+          "sha256": "b94d394539e49ee0439899f9d53e92ab38b887d869468a148cd79c6bf4c296f3"
+        }
+      ],
+      "subsequent_geometry_review": "Track-rod revision raises the two low-speed M330 eyes while preserving their 13 mm bores. M568A geometry and horizontal low-speed eyes are unchanged; diameter conflict remains."
+    },
+    {
+      "id": "rear_track_straight_rods_and_receiver_closure",
+      "status": "reviewed_approximation",
+      "scope": "Two SH946D rods plus propagated M330 distal-arm and M4132 short-arm/clocking revision.",
+      "reason": "SNL6 depicts straight short connections. Perpendicular end-pin axes and mismatched estimated eye levels prevented straight closure. Initial large lever rotations caused four material collisions; revised short arms with small symmetric angle changes close one shared rod shape on both sides.",
+      "uncertainty": "Rod length/internal section and receiver arm dimensions remain inferred. Catalogue supplies identity and hardware size, not these dimensions; static closure does not establish historical accuracy or motion.",
+      "limits": [
+        "SH946D solid19.05mm section and296.0460545mm length are inferred. HB M577 tube wording does not establish the selected1928 rod internal section. Threads remain nominal envelopes.",
+        "M330 lower-arm eye Z and M4132 short-arm radius are revised estimates. Small standard lever-angle changes propagate to the front long-rod eyes; full routes, mechanical advantage and motion remain unqualified.",
+        "All four M330 distal eyes and both M4132 pairs of rod eyes use the new operating_interfaces.json. Do not reuse their superseded coordinate values from earlier checkpoints.",
+        "M568A high-speed15.875mm pin versus13mm low-speed eyes remains unresolved; SH946E joints/rods are not added.",
+        "M567 washers, M564 springs, M575 and long rear rods, center/front controls, remaining interiors and standard integration are unfinished.",
+        "Fixed SNL6 camera retains inherited lever/profile and spring-height discrepancies; no new edge is promoted to fitting evidence and HB photographs remain uncalibrated."
+      ],
+      "supersedes_scope": "For the new development native only, replaces four M330 distal-eye positions and both M4132 pairs of rod-eye positions. Supersedes provisional track fork placements and absence of physical SH946D rods. Earlier native checkpoints and qualification evidence remain immutable.",
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/visual_review.json",
+        "sha256": "4f27b593c7ae62b28c6689fc165ea1ee30f4c6a633ddda1a6b4ed80eef66ef2b"
+      },
+      "reopen_when": [
+        "Source dimensions or section evidence resolve SH946D versus HB M577 tube construction.",
+        "Shared M330, M4132, pin or fork estimates change during low-speed or long-control closure.",
+        "Spring or long-rod geometry conflicts with the checked static arrangement.",
+        "Independent landmarks contradict the reused camera; diagnose geometry before refitting."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/qualification.json",
+          "sha256": "ce5f99f138de1371b93cea5a1a6e36d27d1e0058ed41abebf6e8afca76b49090"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/visual_review.json",
+          "sha256": "4f27b593c7ae62b28c6689fc165ea1ee30f4c6a633ddda1a6b4ed80eef66ef2b"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/operating_interfaces.json",
+          "sha256": "b94d394539e49ee0439899f9d53e92ab38b887d869468a148cd79c6bf4c296f3"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rod_source_review02.json",
+          "sha256": "372905edfdddd28c72ba30cefd36bbcb0f8b10e0b2f3d6eb227e15bc86c93a00"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json",
+          "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
         }
       ]
     }

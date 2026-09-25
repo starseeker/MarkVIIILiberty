@@ -11,6 +11,28 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — shared straight track-brake connecting rods
+
+The [new development checkpoint](experiments/drive_chains/transmission_controls_study/track_rods_integrated01/README.md)
+adds two SH946D rods with one shared definition: **3,264 occurrences / 568
+definitions / 359 groups**. The source-straight arrangement required revising
+estimated receivers: all four M330 distal eyes rise 14.52 mm, and both M4132 short
+arms shorten while their installed angles change 1.85°. Upper bearing interfaces,
+whole long-arm material and unrelated geometry are preserved.
+
+The first trial closed the rods but collided with adjacent levers and fork throats;
+its native and failure are retained. Final nominal and insertion variation each
+pass 90 native checks, 156 material pairs and 31 strict STEP comparisons. The full
+assembly passes 48 integration checks and preserves 565 other definitions
+(545 exact / 20 strict). A fresh rebuild reproduces 1,736 BReps and 156,588
+persistent properties; 16 prior strict comparisons were reused by exact hashes.
+
+Eight revised receiver-eye coordinates are bound to the new native. Four inspected
+views bring progression to 245. The fixed camera retains source silhouette and
+spring-height discrepancies; rod section and revised dimensions remain estimates.
+Next: low-speed shared-pin reconciliation and SH946E connections, then washers,
+springs and longer controls. Standard tank011 is unchanged; poses remain deferred.
+
 ## 24 September 2026 — rear track-brake end joints installed
 
 The [new development checkpoint](experiments/drive_chains/transmission_controls_study/track_joints_integrated01/README.md)

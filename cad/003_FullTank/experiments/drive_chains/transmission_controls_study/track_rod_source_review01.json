@@ -1,0 +1,25 @@
+{
+  "source_support": [
+    "SNL194:024 lists two SH946D short foot-brake connecting rods; adjacent assembly includes two3/4inch U.S.Standard nuts per rod.",
+    "SNL6 plan and side assembled views depict short M577 connections as straight. HB104 shows straight disconnected short ends qualitatively; its perspective is not dimensionally calibrated.",
+    "HB188 calls M577 a tube;1928 SNL calls SH946D a rod. Internal section is not established. Selected1928 reconstruction uses a nominal solid19.05mm rod with male thread envelopes, an explicit section estimate.",
+    "M330 is one shared lever for low-speed and track brakes. Original reconstruction lists lower-arm coordinates as estimated."
+  ],
+  "constraint_diagnosis": [
+    "Rear pin axis is transverseY and fulcrum pin axis is verticalZ; fork rod axes perpendicular to those pins share only worldX when a single straight rod connects them.",
+    "Current receiver centers differ inZ by14.5220588235295mm and inY by9.6092038981887mm port/11.4402919896003mm starboard. Rotating forks about their pins cannot close a straight rod.",
+    "Bending the rod to retain all provisional datums was rejected as the first choice because the available short-rod figures appear straight."
+  ],
+  "selected_trial": [
+    "Raise the estimated M330 distal eye14.5220588235295mm by shortening its lower arm; retain pivot, swivel and hardware interfaces. Propagate the one definition to all four low/track occurrences.",
+    "Rotate each M4132 horizontal lever about its existing journal to align its brake eye with the corresponding brake rod planeY. Front long-rod eyes follow these declared rotations and will be remeasured.",
+    "Relocate the four existing end-joint assemblies onto remeasured eye centers. Preserve fork/pin/cotter/nut definitions. Add two linked occurrences of one straight SH946D rod.",
+    "Use20.6375mm insertion per end, between the chosen19.05mm minimum and available22.225mm socket length. Rod length follows the connected geometry; it is not a printed measurement."
+  ],
+  "limits": [
+    "Lever arm length, standard angular state, rod section/length and thread details remain estimates. No motion, strength or full service qualification.",
+    "Source SNL6 registration stays fixed. Record remaining silhouette discrepancies; new estimated rod/lever geometry is not a camera-fit anchor.",
+    "M568A15.875mm versus13mm low-speed bore conflict remains open. No low-speed fork or physical rod is added."
+  ],
+  "historical_geometry_qualified": false
+}

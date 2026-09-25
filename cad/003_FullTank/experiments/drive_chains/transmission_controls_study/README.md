@@ -1,14 +1,17 @@
 # Transmission operating controls — evidence and receiving interfaces
 
-Current assembly: [PowertrainWithRearTrackJoints.FCStd](track_joints_integrated01/PowertrainWithRearTrackJoints.FCStd),
-with **3,262 physical occurrences / 567 used definitions / 359 assembly groups**.
-The [track-joint checkpoint](track_joints_integrated01/README.md) adds four M569C
-forks and their pins, cotters and shared plain nuts in two short-connection groups.
-The [preceding support-family checkpoint](support_integrated01/README.md) installed
-M4135, M4136 and estimated M4129 attachments. Actual rods, final fork angles,
-return springs and complete service paths remain open. SNL136's shared M568A
-application exposes a15.875mm pin versus13mm low-speed-eye conflict; resolve the
-existing estimates before constructing M569A joints.
+Current assembly: [PowertrainWithRearTrackRods.FCStd](track_rods_integrated01/PowertrainWithRearTrackRods.FCStd),
+with **3,264 physical occurrences / 568 used definitions / 359 assembly groups**.
+The [straight-rod checkpoint](track_rods_integrated01/README.md) installs two shared
+SH946D rods and revises the estimated M330 distal arms and M4132 short arms/clocking
+for closure. Upper bearing interfaces and complete long-arm shapes are preserved.
+[Eight revised eye coordinates](track_rods_integrated01/operating_interfaces.json)
+supersede their older values. Source camera and standard tank011 remain unchanged.
+The [preceding track-joint checkpoint](track_joints_integrated01/README.md) installed
+four forks and their pins, cotters and nuts; the [support-family checkpoint](support_integrated01/README.md)
+installed M4135/M4136 and estimated M4129 attachments. Low-speed connections,
+return springs, longer rods and service remain open. SNL136's shared M568A still
+has a modeled 15.875 mm pin versus 13 mm low-speed-eye conflict to reconcile.
 The [fulcrum checkpoint](fulcrum_integrated01/README.md) follows the
 [channel mounting checkpoint](channel_integrated01/README.md), the
 [rear-joint checkpoint](us_nuts01/README.md) and the locally qualified
@@ -17,7 +20,7 @@ This packet covers the rear control channel, brake return springs, control rod
 ends and subsequent connections toward the center and driver controls. Two rear high-speed fork/pin/cotter joints and their plain nuts are now installed.
 The channel, four M4130 mounting sets and four retained M4131/lever units are
 installed in the development assembly. M4135/M4136 and estimated M4129 attachments
-added20 parts in the preceding checkpoint; four track end joints now add16 more. Rods and return springs remain pending.
+added20 parts in the preceding checkpoint; four track end joints now add16 more. Two shared SH946D rods are now installed; other rods and return springs remain pending.
 The preceding fulcrum units added24 physical occurrences:
 four brackets, four levers, four washers, four cotters and eight rivets.
 
@@ -45,8 +48,8 @@ bring progression to 232, preserving earlier views and the unchanged source came
 **Source identity correction:** the four short connections in the
 [saved interface measurements](fulcrum_integrated01/operating_interfaces.json)
 are SH946D (track, M569C forks) and SH946E (low-speed, M569A forks), functionally
-corresponding to handbook M577 and M572. Their coordinates and perpendicular end
-pin axes remain valid. M578/M573 identify the longer rear rods to the center
+corresponding to handbook M577 and M572. Their perpendicular end-pin directions are retained. Eight coordinates now change
+with the straight-rod receiver revision; use the updated operating interfaces above. M578/M573 identify the longer rear rods to the center
 controls. The additive [source packet](spring_sources01/sources.json) preserves
 the correction and original evidence; the old receipt remains immutable.
 Endpoint chords do not establish clear routes or finished rod lengths.

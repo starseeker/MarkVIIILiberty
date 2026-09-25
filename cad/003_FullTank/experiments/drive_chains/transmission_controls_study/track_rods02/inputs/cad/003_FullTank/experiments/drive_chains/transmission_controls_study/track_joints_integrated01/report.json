@@ -1,0 +1,728 @@
+{
+  "native_file": "PowertrainWithRearTrackJoints.FCStd",
+  "native_sha256": "c0d5300aa607b823565f8e733a8c9b0b857d4dac918a4406046742af7f8a4ee9",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01/PowertrainWithRearControlSupports.FCStd",
+  "source_native_sha256": "54ccd2e9dbaa44bf0080d783860aed4be6241ad48030b65dd8cea992bcb9042e",
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints02",
+  "prototype_native_sha256": "a5fdf162cc5a9895e0635d0aec7b8f0668c71798ce62c7fe398733b031f5ec63",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_rear_track_joints.py": "92b7967cc71063425a830d03582fb7dcf4495c92e91c1cfc9b82618644ef3f7a",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints02/report.json": "97eaee1c0d28cb59bb6f67af24156dd8b1e4a2bd0c6f75651ce66083fb00e7a9",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints02/isolated/manifest.json": "fc552cdcce045aa536e08a7180a5577f6a6f0a61f5ff54af51f6191d693f3152",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints02/RearTrackRodJoints.FCStd": "a5fdf162cc5a9895e0635d0aec7b8f0668c71798ce62c7fe398733b031f5ec63",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints02/visual_review.json": "4563ff791feb4f9b426b005e9ea159942430eb704769123aee46eaa4bad0bd76",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints02/render_receipt.json": "cafd5ec91ecb9d26b2cc9f11336e9e6230719374109253d2311b4b055a341dcf",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01/qualification.json": "4b45ec8f2cdc770f3889c25e444f09d69e0e2f29aa41552ed64529d35fe9a809",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/support_integrated01/isolated/manifest.json": "651bb329780936767e0134147b2366e29bee50744c52ed7fa29400b1b341bb06",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints02/independent_checks.json": "933c0e7d5fe12ea285500197b879d87387cc24cc55b296886ebdc3f5d1548922",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints02/context_checks.json": "aa400e72bb49f80bacba8608ac8e1cbd572bd7a69de16ce405b8fcdc810bde72",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints02/exchange_checks.json": "3310a8ab65e4e17ed62da06a869f6b3ca0185df7ec8bf2f957f27b504e978b93",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_variation02/independent_checks.json": "f713dd45f16694f0f68c58cca3a02be1cf44286af0594996f7618bacaed70769",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_variation02/context_checks.json": "f144cebce9e4a96db6adb1b3a865a3bc7563714e687292afaa659e83cfd77b4a",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_variation02/exchange_checks.json": "92614a331e68a11e58441cb34425074f37ab86056872722845fc515add49f9c5",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints02/reproduction_checks.json": "9bea9be3de4b4134f0682556fd269503aa160dc207f8de3a47c529871664e520"
+  },
+  "controls": {
+    "fork_length": 44.45,
+    "fork_length_datum": "pin_center_to_rod_seat",
+    "ear_radius": 14.2875,
+    "ear_stock": 9.525,
+    "lever_width": 12.7,
+    "side_clearance": 0.25,
+    "throat_end": 22.225,
+    "ear_shoulder": 28.575,
+    "socket_radius": 12.7,
+    "pin_diameter": 12.7,
+    "pin_bore_radial_gap": 0.15,
+    "pin_length": 39.6875,
+    "pin_head_radius": 9.525,
+    "pin_head_stock": 3.175,
+    "cotter_station_beyond_fork": 2.3,
+    "cotter_diameter": 3.175,
+    "cotter_hole_radial_gap": 0.1,
+    "cotter_length": 25.4,
+    "cotter_center_spacing": 1.651,
+    "crown_radius": 6.35,
+    "cotter_head_gap": 0.8,
+    "cotter_exit_gap": 0.8,
+    "cotter_bend_radius": 2.0,
+    "cotter_bend_angle": 35.0,
+    "cotter_eye_radius": 3.0,
+    "cotter_eye_rise": 2.0,
+    "cotter_eye_join_overlap": 0.03,
+    "rod_diameter": 19.05,
+    "thread_envelope_radial_gap": 0.1,
+    "minimum_thread_engagement": 19.05,
+    "fork_pitch_deg": 0.0,
+    "shared_nut_definition": "Def_USStdControlNut",
+    "shared_nut_height": 19.05,
+    "shared_nut_af": 31.75
+  },
+  "details": {
+    "fork_outer_width_mm": 32.25,
+    "fork_gap_mm": 13.2,
+    "rod_seat_x_mm": 44.45,
+    "overall_fork_length_mm": 58.737500000000004,
+    "thread_envelope_length_mm": 22.225,
+    "pin_head_seat_y_mm": -16.125,
+    "pin_tip_y_mm": 23.5625,
+    "cotter_station_y_mm": 18.425,
+    "cotter": {
+      "straight_length_mm": 14.299999999999999,
+      "bend_arc_length_mm": 1.2217304763960306,
+      "tail_length_mm": 9.878269523603969,
+      "total_leg_centerline_mm": 25.4,
+      "tail_endpoints": [
+        [
+          0.0,
+          16.388957546999926,
+          -6.853138542085926
+        ],
+        [
+          0.0,
+          16.388957546999926,
+          6.853138542085926
+        ]
+      ],
+      "wire_radius_mm": 0.7619999999999999,
+      "under_eye_y_mm": -7.1499999999999995,
+      "bend_start_y_mm": 7.1499999999999995,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "local_frames": {
+      "fork": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "pin": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cotter": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        18.425,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nut": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        44.45,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "expected_new_occurrences": {
+    "StarboardTrackBrakeJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "role": "fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -770.1642857142859,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        610.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackBrakeJointFork"
+    },
+    "StarboardTrackBrakeJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "role": "pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -770.1642857142859,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        610.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackBrakeJointPin"
+    },
+    "StarboardTrackBrakeJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "role": "cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -788.5892857142859,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        610.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackBrakeJointCotter"
+    },
+    "StarboardTrackBrakeJointNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2201.10386676539,
+        1.2246467991473532e-16,
+        -1.0,
+        -2.465190328815662e-32,
+        -770.1642857142859,
+        1.0,
+        1.2246467991473532e-16,
+        -2.220446049250313e-16,
+        610.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackBrakeJointNut"
+    },
+    "StarboardTrackFulcrumJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "role": "fork",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2502.2619349214156,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        -781.6045777038862,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumJointFork"
+    },
+    "StarboardTrackFulcrumJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "role": "pin",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2502.2619349214156,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        -781.6045777038862,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumJointPin"
+    },
+    "StarboardTrackFulcrumJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "role": "cotter",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2502.2619349214156,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        -781.6045777038862,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        643.55,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumJointCotter"
+    },
+    "StarboardTrackFulcrumJointNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        -2.220446049250313e-16,
+        -5.551115123125783e-17,
+        -0.9999999999999999,
+        2457.8119349214157,
+        -1.0,
+        2.220446049250313e-16,
+        2.7755575615628914e-16,
+        -781.6045777038862,
+        1.1102230246251565e-16,
+        1.0,
+        0.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumJointNut"
+    },
+    "PortTrackBrakeJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "role": "fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        610.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "PortTrackBrakeJointFork"
+    },
+    "PortTrackBrakeJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "role": "pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        610.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "PortTrackBrakeJointPin"
+    },
+    "PortTrackBrakeJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "role": "cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        788.5892857142859,
+        0.0,
+        0.0,
+        1.0,
+        610.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "PortTrackBrakeJointCotter"
+    },
+    "PortTrackBrakeJointNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2201.10386676539,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        610.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "PortTrackBrakeJointNut"
+    },
+    "PortTrackFulcrumJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "role": "fork",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2506.8284205811838,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        779.7734896124746,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumJointFork"
+    },
+    "PortTrackFulcrumJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "role": "pin",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2506.8284205811838,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        779.7734896124746,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumJointPin"
+    },
+    "PortTrackFulcrumJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "role": "cotter",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2506.8284205811838,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        779.7734896124746,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        643.55,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumJointCotter"
+    },
+    "PortTrackFulcrumJointNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        -2.220446049250313e-16,
+        -5.551115123125783e-17,
+        -0.9999999999999999,
+        2462.378420581184,
+        -1.0,
+        2.220446049250313e-16,
+        2.7755575615628914e-16,
+        779.7734896124746,
+        1.1102230246251565e-16,
+        1.0,
+        0.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumJointNut"
+    }
+  },
+  "new_assemblies": [
+    "StarboardTrackShortConnection",
+    "StarboardTrackBrakeJoint",
+    "StarboardTrackFulcrumJoint",
+    "PortTrackShortConnection",
+    "PortTrackBrakeJoint",
+    "PortTrackFulcrumJoint"
+  ],
+  "added_children": {
+    "Definitions": [
+      "Def_TrackJoint_fork",
+      "Def_TrackJoint_pin",
+      "Def_TrackJoint_cotter"
+    ],
+    "RearControlChannel": [
+      "StarboardTrackShortConnection",
+      "PortTrackShortConnection"
+    ],
+    "StarboardTrackShortConnection": [
+      "StarboardTrackBrakeJoint",
+      "StarboardTrackFulcrumJoint"
+    ],
+    "StarboardTrackBrakeJoint": [
+      "StarboardTrackBrakeJointFork",
+      "StarboardTrackBrakeJointPin",
+      "StarboardTrackBrakeJointCotter",
+      "StarboardTrackBrakeJointNut"
+    ],
+    "StarboardTrackFulcrumJoint": [
+      "StarboardTrackFulcrumJointFork",
+      "StarboardTrackFulcrumJointPin",
+      "StarboardTrackFulcrumJointCotter",
+      "StarboardTrackFulcrumJointNut"
+    ],
+    "PortTrackShortConnection": [
+      "PortTrackBrakeJoint",
+      "PortTrackFulcrumJoint"
+    ],
+    "PortTrackBrakeJoint": [
+      "PortTrackBrakeJointFork",
+      "PortTrackBrakeJointPin",
+      "PortTrackBrakeJointCotter",
+      "PortTrackBrakeJointNut"
+    ],
+    "PortTrackFulcrumJoint": [
+      "PortTrackFulcrumJointFork",
+      "PortTrackFulcrumJointPin",
+      "PortTrackFulcrumJointCotter",
+      "PortTrackFulcrumJointNut"
+    ]
+  },
+  "new_definitions": [
+    "Def_TrackJoint_fork",
+    "Def_TrackJoint_pin",
+    "Def_TrackJoint_cotter"
+  ],
+  "shared_definitions": {
+    "nut": "Def_USStdControlNut"
+  },
+  "role_definitions": {
+    "nut": "Def_USStdControlNut",
+    "fork": "Def_TrackJoint_fork",
+    "pin": "Def_TrackJoint_pin",
+    "cotter": "Def_TrackJoint_cotter"
+  },
+  "added_inherited_properties": {},
+  "changed_definitions": [],
+  "affected_occurrences": [
+    "PortTrackBrakeJointCotter",
+    "PortTrackBrakeJointFork",
+    "PortTrackBrakeJointNut",
+    "PortTrackBrakeJointPin",
+    "PortTrackFulcrumJointCotter",
+    "PortTrackFulcrumJointFork",
+    "PortTrackFulcrumJointNut",
+    "PortTrackFulcrumJointPin",
+    "StarboardTrackBrakeJointCotter",
+    "StarboardTrackBrakeJointFork",
+    "StarboardTrackBrakeJointNut",
+    "StarboardTrackBrakeJointPin",
+    "StarboardTrackFulcrumJointCotter",
+    "StarboardTrackFulcrumJointFork",
+    "StarboardTrackFulcrumJointNut",
+    "StarboardTrackFulcrumJointPin"
+  ],
+  "expected_physical_occurrences": 3262,
+  "expected_definition_count": 567,
+  "expected_assembly_count": 359,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "channel_complete": false,
+  "packet_complete": false
+}

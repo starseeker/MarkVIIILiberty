@@ -1,5 +1,21 @@
 # Mark VIII visual progression
 
+## Straight rear track-brake connections — 24 September 2026
+
+Two SH946D rods share one definition. Revised M330 distal arms and M4132 short
+arms/clocking close the straight connections; upper bearing interfaces and long-arm
+geometry remain. Four views bring progression to **245 images**, preserving all
+241 earlier images. The fixed source camera retains known geometric discrepancies.
+These are development subsystem views; standard tank011 remains unchanged.
+
+| View | SHA-256 |
+|---|---|
+| [intermediate_snapshot_iso_rear_track_rods_001.png](intermediate_snapshot_iso_rear_track_rods_001.png) | `3cb2ee46d10aba39498596677b9e1194b75157d7ea76cc918ecaed0e2849988a` |
+| [intermediate_snapshot_detail_rear_track_rods_001.png](intermediate_snapshot_detail_rear_track_rods_001.png) | `241f7a4ffe4601f2a58f5d7c35a83a8a71046bcc1df4d2854520c755d4047eb6` |
+| [intermediate_snapshot_plan_rear_track_rods_001.png](intermediate_snapshot_plan_rear_track_rods_001.png) | `dd342678b651cc195fb2db7c4e42e6b57857818b212fc81306e450bc71c2a975` |
+| [intermediate_snapshot_source_rear_track_rods_001.png](intermediate_snapshot_source_rear_track_rods_001.png) | `e830b0df29a6aa449c0645c246418be321b0861e761519ffa4cc434f9cabe081` |
+
+
 ## Rear track-brake end joints installed — 24 September 2026
 
 Four M569C/M568C fork joints add16 parts to the development hierarchy. The
