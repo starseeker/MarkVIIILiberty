@@ -1,0 +1,547 @@
+{
+  "native_file": "PowertrainWithControlPinFamily.FCStd",
+  "native_sha256": "dbf3750df8788b664c8a015301248964aa2235ed9dfdaa62f7bd155180573d5f",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/PowertrainWithRearTrackRods.FCStd",
+  "source_native_sha256": "a6ebc72465dab6ddd4a8bea4185cb63c6d1cdf189c860c13356a37a30b0a1fc3",
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01",
+  "prototype_native_sha256": "f0dd2964d8c7ba721d4deb780de2fd15b6e38dc97df53dd157de63f5eb199396",
+  "controls": {
+    "pin_diameter_mm": 12.7,
+    "high_radial_gap_mm": 0.15
+  },
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_control_pin_family.py": "0b844b8544c706a9e41a4fe565da1043d04f33fcde6a51247e5e517a0a470129",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01/report.json": "19ca529149f51fe209b583d499b69b7d2ab055d747e0f6e75b6231082e6e7fad",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01/isolated/manifest.json": "045d1e25654ebc46554ea236a5eb9b6e94ff332a354ba78b8505e110b3871d65",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01/operating_interfaces.json": "4ce4966e9b4a77a6c6725a067dee222116e8d3f3ccdbab75a27c96d51d1b7882",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01/ControlPinFamily.FCStd": "f0dd2964d8c7ba721d4deb780de2fd15b6e38dc97df53dd157de63f5eb199396",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01/visual_review.json": "0bc5c9840446116d0e742231ca25e7084724f66e0c350bdb35a5fe3c284f4b86",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01/render_receipt.json": "8f67c5b53633edf8f810c029b50b684e690f772d39f1f6397fe1b568904cca69",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/qualification.json": "ce5f99f138de1371b93cea5a1a6e36d27d1e0058ed41abebf6e8afca76b49090",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/isolated/manifest.json": "8fb3d44d6914107dbf80c8759bad8a4af58c93045e698a0fc1ec34b4befed0db",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01/independent_checks.json": "01f0f23371fa1fa99790c9554c3a00d0ea088584dd89ffbd4eb8f209090fde9d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01/context_checks.json": "4023e3aa358da555ab02a53770af817af57bc417a3258c1affd28a1ca9c996b0",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01/exchange_checks.json": "9d901c26931cd9ddda81a1063bf82aabe5488ab72448ea49286a1449de4245f2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_variation01/independent_checks.json": "75b8d7d0692dd318bc9eb9d01ad383352675d43893fbd9355d5c7e1acba62bb6",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_variation01/context_checks.json": "a652a7835eff82cddb10a872f12ee0402ba59e92fd4f5da323b29d76bee46ca8",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_variation01/exchange_checks.json": "b138ae4c821484c0148dd1dd51d297c967850887b3a3a7b63a543de95e8e47fe",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01/reproduction_checks.json": "6d0290c69713d3b341e8cd3317a4772aee17f168bce64782136b9b8b50465a61"
+  },
+  "expected_affected_occurrences": {
+    "PortLowSpeedBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2175.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        830.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "receiver",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ],
+      "prototype_occurrence": "PortLowSpeedBrakeLever"
+    },
+    "StarboardLowSpeedBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2175.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        830.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "receiver",
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ],
+      "prototype_occurrence": "StarboardLowSpeedBrakeLever"
+    },
+    "PortHighSpeedBrakeLeverLeft": {
+      "definition": "Def_HighBrakeMechanism_lever_left",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "receiver",
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeOperatingLeverAssembly"
+      ],
+      "prototype_occurrence": "PortHighSpeedBrakeLeverLeft"
+    },
+    "PortHighSpeedBrakeLeverRight": {
+      "definition": "Def_HighBrakeMechanism_lever_right",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "receiver",
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeOperatingLeverAssembly"
+      ],
+      "prototype_occurrence": "PortHighSpeedBrakeLeverRight"
+    },
+    "PortHighSpeedBrakeControlFork": {
+      "definition": "Def_ControlJoint_fork",
+      "frame": [
+        0.9781476007338059,
+        0.0,
+        0.20791169081775812,
+        2069.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.20791169081775812,
+        0.0,
+        0.9781476007338059,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "fork",
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeControlJoint"
+      ],
+      "prototype_occurrence": "PortHighSpeedBrakeControlFork"
+    },
+    "PortHighSpeedBrakeControlPin": {
+      "definition": "Def_ControlJoint_pin",
+      "frame": [
+        0.9781476007338059,
+        0.0,
+        0.20791169081775812,
+        2069.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.20791169081775812,
+        0.0,
+        0.9781476007338059,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "pin",
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeControlJoint"
+      ],
+      "prototype_occurrence": "PortHighSpeedBrakeControlPin"
+    },
+    "PortHighSpeedBrakeControlCotter": {
+      "definition": "Def_ControlJoint_cotter",
+      "frame": [
+        0.9781476007338059,
+        0.0,
+        0.20791169081775812,
+        2069.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        242.2625,
+        -0.20791169081775812,
+        0.0,
+        0.9781476007338059,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "cotter",
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeControlJoint"
+      ],
+      "prototype_occurrence": "PortHighSpeedBrakeControlCotter"
+    },
+    "PortHighSpeedBrakeControlNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.20791169081775807,
+        0.0,
+        0.978147600733806,
+        2107.2120656337215,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -0.978147600733806,
+        0.0,
+        -0.20791169081775807,
+        599.0065057563139,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "nut",
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeControlJoint"
+      ],
+      "prototype_occurrence": "PortHighSpeedBrakeControlNut"
+    },
+    "StarboardHighSpeedBrakeLeverLeft": {
+      "definition": "Def_HighBrakeMechanism_lever_left",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "receiver",
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeOperatingLeverAssembly"
+      ],
+      "prototype_occurrence": "StarboardHighSpeedBrakeLeverLeft"
+    },
+    "StarboardHighSpeedBrakeLeverRight": {
+      "definition": "Def_HighBrakeMechanism_lever_right",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        1831.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        900.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "receiver",
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeOperatingLeverAssembly"
+      ],
+      "prototype_occurrence": "StarboardHighSpeedBrakeLeverRight"
+    },
+    "StarboardHighSpeedBrakeControlFork": {
+      "definition": "Def_ControlJoint_fork",
+      "frame": [
+        0.9781476007338056,
+        1.2801044796052354e-17,
+        -0.2079116908177594,
+        2069.9446420457634,
+        -1.2801044796052354e-17,
+        -1.0000000000000004,
+        -1.217938055844715e-16,
+        -222.25000000000006,
+        -0.2079116908177594,
+        1.217938055844715e-16,
+        -0.9781476007338059,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "fork",
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeControlJoint"
+      ],
+      "prototype_occurrence": "StarboardHighSpeedBrakeControlFork"
+    },
+    "StarboardHighSpeedBrakeControlPin": {
+      "definition": "Def_ControlJoint_pin",
+      "frame": [
+        0.9781476007338056,
+        1.2801044796052354e-17,
+        -0.2079116908177594,
+        2069.9446420457634,
+        -1.2801044796052354e-17,
+        -1.0000000000000004,
+        -1.217938055844715e-16,
+        -222.25000000000006,
+        -0.2079116908177594,
+        1.217938055844715e-16,
+        -0.9781476007338059,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "pin",
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeControlJoint"
+      ],
+      "prototype_occurrence": "StarboardHighSpeedBrakeControlPin"
+    },
+    "StarboardHighSpeedBrakeControlCotter": {
+      "definition": "Def_ControlJoint_cotter",
+      "frame": [
+        0.9781476007338056,
+        1.2801044796052354e-17,
+        -0.2079116908177594,
+        2069.9446420457634,
+        -1.2801044796052354e-17,
+        -1.0000000000000004,
+        -1.217938055844715e-16,
+        -242.26250000000005,
+        -0.2079116908177594,
+        1.217938055844715e-16,
+        -0.9781476007338059,
+        606.9279411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "cotter",
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeControlJoint"
+      ],
+      "prototype_occurrence": "StarboardHighSpeedBrakeControlCotter"
+    },
+    "StarboardHighSpeedBrakeControlNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.20791169081775918,
+        1.2801044796052329e-17,
+        0.9781476007338057,
+        2107.2120656337215,
+        1.2179380558447147e-16,
+        -1.0,
+        -1.2801044796052366e-17,
+        -222.25000000000006,
+        0.9781476007338057,
+        1.217938055844715e-16,
+        -0.2079116908177594,
+        599.0065057563139,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "nut",
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeControlJoint"
+      ],
+      "prototype_occurrence": "StarboardHighSpeedBrakeControlNut"
+    },
+    "StarboardLowHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_low_right",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "receiver",
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardLowHorizontalLever"
+    },
+    "PortLowHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_low_left",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "role": "receiver",
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowControlFulcrum"
+      ],
+      "prototype_occurrence": "PortLowHorizontalLever"
+    }
+  },
+  "affected_occurrences": [
+    "PortHighSpeedBrakeControlCotter",
+    "PortHighSpeedBrakeControlFork",
+    "PortHighSpeedBrakeControlNut",
+    "PortHighSpeedBrakeControlPin",
+    "PortHighSpeedBrakeLeverLeft",
+    "PortHighSpeedBrakeLeverRight",
+    "PortLowHorizontalLever",
+    "PortLowSpeedBrakeLever",
+    "StarboardHighSpeedBrakeControlCotter",
+    "StarboardHighSpeedBrakeControlFork",
+    "StarboardHighSpeedBrakeControlNut",
+    "StarboardHighSpeedBrakeControlPin",
+    "StarboardHighSpeedBrakeLeverLeft",
+    "StarboardHighSpeedBrakeLeverRight",
+    "StarboardLowHorizontalLever",
+    "StarboardLowSpeedBrakeLever"
+  ],
+  "changed_definitions": [
+    "Def_ControlJoint_pin",
+    "Def_ControlJoint_fork",
+    "Def_HighBrakeMechanism_lever_left",
+    "Def_HighBrakeMechanism_lever_right"
+  ],
+  "new_definitions": [],
+  "new_assemblies": [],
+  "expected_new_occurrences": {},
+  "added_children": {},
+  "changed_group_frames": {},
+  "placement_changed_objects": [],
+  "added_inherited_properties": {
+    "Def_ControlJoint_pin": [
+      "ControlPinFamilyUpdate"
+    ],
+    "Def_ControlJoint_fork": [
+      "ControlPinFamilyUpdate"
+    ],
+    "Def_HighBrakeMechanism_lever_left": [
+      "ControlPinFamilyUpdate"
+    ],
+    "Def_HighBrakeMechanism_lever_right": [
+      "ControlPinFamilyUpdate"
+    ]
+  },
+  "expected_physical_occurrences": 3264,
+  "expected_definition_count": 568,
+  "expected_assembly_count": 359,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "channel_complete": false,
+  "packet_complete": false
+}

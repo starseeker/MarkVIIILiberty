@@ -1,0 +1,88 @@
+{
+  "native_sha256": "54ccd2e9dbaa44bf0080d783860aed4be6241ad48030b65dd8cea992bcb9042e",
+  "trial_native_sha256": "d370a6e64148076b4e317ac6bc1b7a9d35261f65ed9f7226fe05103fd8bba4d5",
+  "probe_sha256": "ecf39f7f0cf062e91f3c80b5f437e255782c41a4b0b55e6ddf03c2b86338e2be",
+  "manifest_sha256": "651bb329780936767e0134147b2366e29bee50744c52ed7fa29400b1b341bb06",
+  "m568a_definition": "Def_ControlJoint_pin",
+  "m568a_shank_diameter_mm": 15.875,
+  "low_speed_receivers": [
+    {
+      "occurrence": "StarboardLowHorizontalLever",
+      "eye": "StarboardLowBrakeRodEye",
+      "bore_diameter_mm": 13.0
+    },
+    {
+      "occurrence": "PortLowHorizontalLever",
+      "eye": "PortLowBrakeRodEye",
+      "bore_diameter_mm": 13.0
+    },
+    {
+      "occurrence": "PortLowSpeedBrakeLever",
+      "eye": "PortLowSpeedBrakeControl",
+      "bore_diameter_mm": 13.0
+    },
+    {
+      "occurrence": "StarboardLowSpeedBrakeLever",
+      "eye": "StarboardLowSpeedBrakeControl",
+      "bore_diameter_mm": 13.0
+    }
+  ],
+  "diametral_conflict_mm": 2.875,
+  "initial_track_fork_intersections": [
+    {
+      "joint": "StarboardTrackBrakeJoint",
+      "receiver": "StarboardTrackBrakeLever",
+      "common_mm3": 276.8336909745293,
+      "common_bounds_joint_mm": [
+        16.5,
+        -6.350000000000069,
+        -14.287500000000023,
+        21.411808031364274,
+        6.350000000010134,
+        -7.23312691715833
+      ]
+    },
+    {
+      "joint": "StarboardTrackFulcrumJoint",
+      "receiver": "StarboardTrackHorizontalLever",
+      "common_mm3": 88.67674453414743,
+      "common_bounds_joint_mm": [
+        16.499999999999794,
+        -6.350000000000069,
+        -9.52116064467823,
+        18.71528243252268,
+        6.350000000000142,
+        14.287500000000044
+      ]
+    },
+    {
+      "joint": "PortTrackBrakeJoint",
+      "receiver": "PortTrackBrakeLever",
+      "common_mm3": 276.83369092712644,
+      "common_bounds_joint_mm": [
+        16.5,
+        -6.350000000000069,
+        7.23312691715833,
+        21.411808031364274,
+        6.350000000010134,
+        14.287500000000023
+      ]
+    },
+    {
+      "joint": "PortTrackFulcrumJoint",
+      "receiver": "PortTrackHorizontalLever",
+      "common_mm3": 170.5292087684016,
+      "common_bounds_joint_mm": [
+        16.49999999999978,
+        -6.350000000009198,
+        -14.287500000000023,
+        20.14151172399448,
+        6.350000000009137,
+        9.521160643624885
+      ]
+    }
+  ],
+  "interpretation": "Track fork throat intersects existing receiver ends. Shared M568A pin exceeds low-speed bores; same-mark diameter variants are not source-supported. Receiver/pin-family estimates require reconciliation.",
+  "geometry_modified": false,
+  "historical_geometry_qualified": false
+}

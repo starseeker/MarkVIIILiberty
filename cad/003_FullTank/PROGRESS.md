@@ -11,6 +11,27 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 24 September 2026 — shared control-pin family reconciled
+
+The [new checkpoint](experiments/drive_chains/transmission_controls_study/pin_family_integrated01/README.md)
+corrects four shared definitions while retaining **3,264 occurrences / 568 definitions /
+359 groups** and every installed frame. The estimated M568A shank is now 12.7 mm,
+with 13 mm high-speed fork and paired-lever bores, consistent with the unchanged
+low-speed eyes. Pin head, cross-hole, cotter and all material outside the declared
+annuli are preserved. This remains a documented diameter approximation.
+
+Nominal and clearance variation each pass 73 native checks, 143 material pairs
+and 25 strict STEP comparisons. Full integration passes 37 checks, preserves
+564 unrelated definitions and reproduces 1,736 BReps / 156,592 properties.
+Six eye measurements are bound to the new native; earlier track-rod coordinates
+remain unchanged. Two reviewed views bring progression to **247**.
+
+The one-inch M569A fork trial leaves only 3.175 mm of full socket with the current
+receiver-clearing profile; its rejected native is retained. The source length has
+no stated datum, so the fork profile, grip and datum still need joint resolution
+before installing low-speed connections. The source camera, prior discrepancies
+and standard tank011 are unchanged; poses remain deferred.
+
 ## 24 September 2026 — shared straight track-brake connecting rods
 
 The [new development checkpoint](experiments/drive_chains/transmission_controls_study/track_rods_integrated01/README.md)

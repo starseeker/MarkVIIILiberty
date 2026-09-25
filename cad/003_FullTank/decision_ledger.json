@@ -996,6 +996,60 @@
           "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
         }
       ]
+    },
+    {
+      "id": "shared_m568a_pin_family",
+      "status": "reviewed_approximation",
+      "scope": "Use one estimated12.7mm M568A pin for existing M569B joints and future M569A interfaces; revise current high-speed receiving bores to13mm while preserving frames and all other material.",
+      "reason": "SNL136 explicitly shares the piece mark. The former15.875mm pin intersects all four13mm low-speed eyes. Common12.7mm fits both families without enlarging the M330 eyes shared with completed track joints.",
+      "uncertainty": "Pin diameter, fit and under-head datum remain estimated. SNL136 gives 1 5/8 inches versus SNL71 at 1 7/8 inches; the specific physical row is selected and both values retained.",
+      "limits": [
+        "Does not resolve the M569A printed one-inch fork datum or its grip/profile. Retained trial fails the chosen engagement criterion; no low-speed joints/rods installed.",
+        "Static geometry only; other M568A applications and complete controls remain unmodeled.",
+        "Source camera remains fixed; no claim that its view establishes bore diameter."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-24",
+        "basis": "Original scans andHB104 inspected; independent native/material/STEP/variation/reproduction checks and reviewed isometric/half-section."
+      },
+      "reopen_when": [
+        "New legible pin or receiving-eye dimension",
+        "Better evidence for M569A length datum or fork section",
+        "A dependent low-speed fork, M565 or M771 fit contradicts this shared geometry",
+        "Changed receiver axes, stock, contact or retention requirements"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_source_review01.json",
+          "sha256": "940b234860d570cb549737465fdeb3ee939ef75a9e57d2fd6b4d0067b6d0adc8"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_controls01.json",
+          "sha256": "54bdb9aeeea36e531afaf9329f4e3c28b300a4d5a2350c3883401330f1a903fc"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01/qualification.json",
+          "sha256": "eef8774f787729a5c572c746406034fbdfe3c9516d363ff4e2b1e24f58613eac"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01/operating_interfaces.json",
+          "sha256": "e710dcd623dd7fe211150d6c3eb653c1d91ecd595897b9984621b279730ef1ff"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01/independent_checks.json",
+          "sha256": "01f0f23371fa1fa99790c9554c3a00d0ea088584dd89ffbd4eb8f209090fde9d"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01/diagnostics/low_fork_one_inch/report.json",
+          "sha256": "74ce98fe32b9506a86ff5cfe0986a21a79e363fd305c36655aab2d7683dff214"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json",
+          "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
+        }
+      ],
+      "supersedes": "The modeled diameter conflict in shared_m568a_low_speed_receiver_diameter is resolved within this estimate. Historical diameter evidence remains open; preserve the original conflict receipt."
     }
   ]
 }

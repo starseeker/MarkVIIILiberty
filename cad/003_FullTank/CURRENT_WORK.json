@@ -4,16 +4,17 @@
   "goal_status": "active",
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
-  "accepted_development_parent": "rear track-joint checkpoint f7effdd",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01",
-  "latest_native_sha256": "a6ebc72465dab6ddd4a8bea4185cb63c6d1cdf189c860c13356a37a30b0a1fc3",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/qualification.json",
+  "accepted_development_parent": "straight rear track-rod checkpoint 5b4358b",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01",
+  "latest_native_sha256": "dbf3750df8788b664c8a015301248964aa2235ed9dfdaa62f7bd155180573d5f",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01/qualification.json",
   "current_pipeline_run": null,
   "pipeline_receipt": null,
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_control_pin_family_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_track_rod_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_track_joint_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_support_checkpoint.py",
@@ -24,7 +25,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Reconcile the source-shared M568A 15.875 mm pin versus 13 mm low-speed receiver bores before building M569A joints and shared SH946E rods. Use the eight revised eye coordinates in track_rods_integrated01/operating_interfaces.json. Then M567 washers, M564 spring ends, M575 and long M573/M578 rods, center/front controls and remaining interiors. Reuse the fixed SNL6 camera and retain discrepancies; standard geometry before poses.",
+  "next_action": "Resolve M569A fork length datum, estimated profile, common M568A grip and low-speed rod alignment; then install four end joints and two SH946E rods. The one-inch pin-centre-to-face trial is rejected with the current receiver-clearing profile. Preserve the literal source length and document alternatives. Use pin_family_integrated01/operating_interfaces.json for high/low pin eyes and track_rods_integrated01/operating_interfaces.json for the unchanged eight M330/M4132 coordinates. Continue M567 washers, M564 springs, M575/long rods and center/front controls; standard geometry before poses.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -52,38 +53,40 @@
     "M4136 U span/height/station, spring holes and large upset heads are estimates. M4129 shared-rivet grip stack is a checked static hypothesis, not established historical mounting. SH946D/SH946E rod cores and M564 corridors exclude fork/hook regions and use provisional washer targets; they are not completed physical parts.",
     "M569C44.45mm socket-face distance and22.225mm throat are estimates revised after four receiver collisions. M568C12.7mm diameter and head/cotter station are estimates;39.6875mm listed length is assumed under head.",
     "Four track joints now close with two shared straight SH946D rods in a selected static state. Full motion and service remain unqualified.",
-    "SNL136 assigns M568A to both M569A and M569B. Saved high-speed pin15.875mm conflicts with low-speed receiver13.0mm bores. Reconcile existing estimates; do not invent unexplained same-mark diameter variants.",
     "SH946D solid19.05mm section and296.0460545mm length are inferred. HB M577 tube wording does not establish the selected1928 rod internal section. Threads remain nominal envelopes.",
     "M330 lower-arm eye Z and M4132 short-arm radius are revised estimates. Small standard lever-angle changes propagate to the front long-rod eyes; full routes, mechanical advantage and motion remain unqualified.",
-    "All four M330 distal eyes and both M4132 pairs of rod eyes use the new operating_interfaces.json. Do not reuse their superseded coordinate values from earlier checkpoints."
+    "All four M330 distal eyes and both M4132 pairs of rod eyes use track_rods_integrated01/operating_interfaces.json, unchanged by the pin-family correction. Do not reuse their superseded coordinate values from earlier checkpoints.",
+    "12.7mm common shank and13mm bores remain estimates. Specific SNL136 physical-pin length1 5/8in selected over conflicting SNL71 assembly1 7/8in; under-head datum inferred.",
+    "M569A printed1in length has no stated datum. A pin-centre-to-face interpretation with the current receiver-clearing profile leaves3.175mm full socket,4.175mm maximum cylindrical patch extent, below the chosen19.05mm engagement criterion. Rejected diagnostic retained; no low-speed forks or SH946E rods installed.",
+    "Low fork grip, profile, rod alignment and source-length interpretation require joint reconciliation. Do not make unexplained same-mark pin variants or silently change the printed fork length."
   ],
-  "visual_progression_count": 245,
+  "visual_progression_count": 247,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
   "latest_locally_qualified_checkpoint": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01",
-    "native_sha256": "a6ebc72465dab6ddd4a8bea4185cb63c6d1cdf189c860c13356a37a30b0a1fc3",
-    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01",
+    "native_sha256": "dbf3750df8788b664c8a015301248964aa2235ed9dfdaa62f7bd155180573d5f",
+    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01/qualification.json"
   },
-  "qualification_scope": "Two SH946D straight rods installed with one shared definition. Estimated M330 distal arms and M4132 short arms/clocking revised for closure; upper bearing interfaces, full M4132 front-arm material and all unrelated geometry preserved. Eight receiving-eye coordinates remeasured and bound to the new native. Static thread engagement and context checked; complete controls and standard integration remain open.",
-  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rod_sources01/sources.json",
+  "qualification_scope": "One common estimated M568A12.7mm shank and13mm high-speed fork/paired-lever bores. Four definitions revised only at the declared annuli; head, cross-hole, cotter, complete outside material, all frames and564 unrelated definitions preserved. Four actual low-speed eyes accept the same pin. Low-speed fork datum and complete controls remain open.",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_source_review01.json",
   "active_development_candidate": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01",
-    "status": "Two shared straight SH946D rods installed: 3,264 occurrences / 568 definitions / 359 groups. M330 distal arms and M4132 short arms/clocking revised for closure; upper bearing faces and complete M4132 front arms preserved. Nominal and insertion variant each pass 90 native checks, 156 material pairs and 31 strict STEP comparisons. Full integration passes 48 checks, preserves 565 other definitions and reproduces 1,736 BReps / 156,588 properties. Eight updated eye coordinates are bound to the new native. Progression 245; source camera and standard tank011 unchanged.",
-    "native_sha256": "a6ebc72465dab6ddd4a8bea4185cb63c6d1cdf189c860c13356a37a30b0a1fc3"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01",
+    "status": "Shared M568A diameter reconciled to an estimated12.7mm, with13mm high-speed fork and paired-lever bores. Four existing definitions revised;3,264 occurrences/568 definitions/359 groups and all frames retained. Nominal and clearance variant each pass73 native checks,143 material pairs and25 strict STEP comparisons. Full integration passes37 checks, preserves564 unrelated definitions (545 exact/19 strict) and reproduces1,736 BReps/156,592 properties. Six interfaces rebound; earlier track-rod coordinates unchanged. Progression247; camera and standardtank011 unchanged. Low-fork datum diagnostic retained; no low-speed joints/rods installed.",
+    "native_sha256": "dbf3750df8788b664c8a015301248964aa2235ed9dfdaa62f7bd155180573d5f"
   },
-  "qualification_note": "Two physical rods and two explicitly revised receiver definitions transfer strictly into the full hierarchy. All 565 unrelated definitions and all undeclared frames/properties are preserved. Eight revised interfaces supersede their older values. Native/STEP, insertion variation and fresh integration pass; historical dimensions, motion and service remain open.",
+  "qualification_note": "Four shared-definition interface corrections transfer strictly; all unrelated shapes, frames, owners and properties are preserved. Two high-speed bores and four low-speed eyes rebound to the saved native. M569A fork datum, low-speed joints/rods and complete controls remain unfinished.",
   "parent_pipeline_run": "high_brake_support01",
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
-  "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_rear_track_rod_checkpoint.py",
+  "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_control_pin_family_checkpoint.py",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods02",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/qualification.json",
-    "status": "Two shared straight SH946D rods installed: 3,264 occurrences / 568 definitions / 359 groups. M330 distal arms and M4132 short arms/clocking revised for closure; upper bearing faces and complete M4132 front arms preserved. Nominal and insertion variant each pass 90 native checks, 156 material pairs and 31 strict STEP comparisons. Full integration passes 48 checks, preserves 565 other definitions and reproduces 1,736 BReps / 156,588 properties. Eight updated eye coordinates are bound to the new native. Progression 245; source camera and standard tank011 unchanged.",
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family01",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01/qualification.json",
+    "status": "Shared M568A diameter reconciled to an estimated12.7mm, with13mm high-speed fork and paired-lever bores. Four existing definitions revised;3,264 occurrences/568 definitions/359 groups and all frames retained. Nominal and clearance variant each pass73 native checks,143 material pairs and25 strict STEP comparisons. Full integration passes37 checks, preserves564 unrelated definitions (545 exact/19 strict) and reproduces1,736 BReps/156,592 properties. Six interfaces rebound; earlier track-rod coordinates unchanged. Progression247; camera and standardtank011 unchanged. Low-fork datum diagnostic retained; no low-speed joints/rods installed.",
     "geometry_integrated": true,
-    "nominal_and_stock_variation": "Insertion 20.6375/19.55 mm; each 90 native checks, 156 whole-material comparisons and 31 strict STEP comparisons. Both sides share one rod definition in each trial.",
-    "source_camera": "SNL6 camera reused unchanged. Straight-rod appearance is qualitative evidence; revised lever dimensions remain estimates and are not fitting anchors.",
-    "next_action": "Reconcile the source-shared M568A 15.875 mm pin versus 13 mm low-speed receiver bores before building M569A joints and shared SH946E rods. Use the eight revised eye coordinates in track_rods_integrated01/operating_interfaces.json. Then M567 washers, M564 spring ends, M575 and long M573/M578 rods, center/front controls and remaining interiors. Reuse the fixed SNL6 camera and retain discrepancies; standard geometry before poses.",
-    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01/qualification.json"
+    "nominal_and_clearance_variation": "High pin-fit radial gap0.15/0.20mm; same12.7mm shank. Each73 native,143 context and25 STEP checks.",
+    "source_camera": "SNL6 local camera reused without refit; existing silhouette/station disagreement retained. Bore diameter remains a named estimate, not an image-derived measurement.",
+    "next_action": "Resolve M569A fork length datum, estimated profile, common M568A grip and low-speed rod alignment; then install four end joints and two SH946E rods. The one-inch pin-centre-to-face trial is rejected with the current receiver-clearing profile. Preserve the literal source length and document alternatives. Use pin_family_integrated01/operating_interfaces.json for high/low pin eyes and track_rods_integrated01/operating_interfaces.json for the unchanged eight M330/M4132 coordinates. Continue M567 washers, M564 springs, M575/long rods and center/front controls; standard geometry before poses.",
+    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/qualification.json"
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
@@ -92,5 +95,6 @@
     "subsequent_geometry_revision": "The identity correction is retained. Track-rod closure now supersedes eight M330/M4132 eye coordinate values; use revised_operating_interfaces."
   },
   "active_mounting_hypothesis": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/right_cleat_source_review01.json",
-  "revised_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/operating_interfaces.json"
+  "revised_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/operating_interfaces.json",
+  "pin_family_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01/operating_interfaces.json"
 }

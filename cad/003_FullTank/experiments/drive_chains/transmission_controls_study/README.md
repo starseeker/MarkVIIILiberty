@@ -1,17 +1,23 @@
 # Transmission operating controls — evidence and receiving interfaces
 
-Current assembly: [PowertrainWithRearTrackRods.FCStd](track_rods_integrated01/PowertrainWithRearTrackRods.FCStd),
+Current assembly: [PowertrainWithControlPinFamily.FCStd](pin_family_integrated01/PowertrainWithControlPinFamily.FCStd),
 with **3,264 physical occurrences / 568 used definitions / 359 assembly groups**.
-The [straight-rod checkpoint](track_rods_integrated01/README.md) installs two shared
-SH946D rods and revises the estimated M330 distal arms and M4132 short arms/clocking
-for closure. Upper bearing interfaces and complete long-arm shapes are preserved.
-[Eight revised eye coordinates](track_rods_integrated01/operating_interfaces.json)
-supersede their older values. Source camera and standard tank011 remain unchanged.
-The [preceding track-joint checkpoint](track_joints_integrated01/README.md) installed
-four forks and their pins, cotters and nuts; the [support-family checkpoint](support_integrated01/README.md)
-installed M4135/M4136 and estimated M4129 attachments. Low-speed connections,
-return springs, longer rods and service remain open. SNL136's shared M568A still
-has a modeled 15.875 mm pin versus 13 mm low-speed-eye conflict to reconcile.
+The [shared-pin correction](pin_family_integrated01/README.md) revises the estimated
+M568A shank to 12.7 mm and the high-speed fork/paired-lever bores to 13 mm, preserving
+all frames and the low-speed eyes. [Six pin interfaces](pin_family_integrated01/operating_interfaces.json)
+are rebound to this native. The M569A printed one-inch length still lacks a datum;
+a retained short-fork trial fails the chosen thread-engagement criterion.
+No low-speed forks or SH946E rods are installed yet.
+
+The [preceding straight-rod checkpoint](track_rods_integrated01/README.md) installed
+two shared SH946D rods and revised the estimated M330 distal arms and M4132 short
+arms/clocking for closure. Its [eight updated coordinates](track_rods_integrated01/operating_interfaces.json)
+remain unchanged by the pin-family correction and supersede their older values.
+The [track-joint checkpoint](track_joints_integrated01/README.md) installed four
+forks and their pins, cotters and nuts; the [support-family checkpoint](support_integrated01/README.md)
+installed M4135/M4136 and estimated M4129 attachments. Source camera and standard
+tank011 remain unchanged. Low-speed connections, return springs, longer rods and
+service remain open.
 The [fulcrum checkpoint](fulcrum_integrated01/README.md) follows the
 [channel mounting checkpoint](channel_integrated01/README.md), the
 [rear-joint checkpoint](us_nuts01/README.md) and the locally qualified

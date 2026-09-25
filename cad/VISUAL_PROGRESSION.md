@@ -1288,3 +1288,18 @@ images bring progression to **235**, preserving all 232 earlier views.
 | [intermediate_snapshot_iso_rear_low_spring_supports_001.png](intermediate_snapshot_iso_rear_low_spring_supports_001.png) | `80f7d784fee0ef7030381bfc1f7a6b4ef65634576a7544f7dd7ac28471b6bb58` |
 | [intermediate_snapshot_detail_rear_low_spring_routes_001.png](intermediate_snapshot_detail_rear_low_spring_routes_001.png) | `7df8de0e24133fb4f1a2da6e849d2ea188e685ef18f082e8b2a54580ee4f2ce2` |
 | [intermediate_snapshot_source_rear_low_spring_routes_001.png](intermediate_snapshot_source_rear_low_spring_routes_001.png) | `afad6828536596506b9ba0da3be2c02f4078800ac98781f22a47059855785344` |
+
+
+## Shared control-pin correction — 24 September 2026
+
+The [pin-family checkpoint](003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01/README.md)
+reconciles the shared M568A diameter estimate and high-speed receiving bores.
+All placements and outside profiles are preserved. The half-section is display
+clipping; physical CAD remains whole. Low-speed forks and rods remain pending
+source-datum reconciliation. Two views bring progression to **247**, preserving
+all 245 earlier images and the fixed source camera.
+
+| View | SHA-256 |
+|---|---|
+| [intermediate_snapshot_iso_control_pin_family_001.png](intermediate_snapshot_iso_control_pin_family_001.png) | `c9bcc10c763c4b59eb895a639d217fe3e55c4664d96fd895bc5708595cec0b36` |
+| [intermediate_snapshot_section_control_pin_family_001.png](intermediate_snapshot_section_control_pin_family_001.png) | `d837b5b89d4c2da7700d159110c9cb88709e14d3fc42a82c19d3be837f3e2f59` |

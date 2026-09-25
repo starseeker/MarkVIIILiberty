@@ -1,0 +1,1317 @@
+{
+  "native_file": "PowertrainWithRearTrackRods.FCStd",
+  "native_sha256": "a6ebc72465dab6ddd4a8bea4185cb63c6d1cdf189c860c13356a37a30b0a1fc3",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01/PowertrainWithRearTrackJoints.FCStd",
+  "source_native_sha256": "c0d5300aa607b823565f8e733a8c9b0b857d4dac918a4406046742af7f8a4ee9",
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods02",
+  "prototype_native_sha256": "4209adbc03ba24a71c0ccc0aaec4522eb87473d49dd6d5c47c741dc084d6aa27",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_rear_track_rods.py": "4e632b2b966ab74cf799b804ff93f136321425c8f53d92cbf8cc657992086dac",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods02/report.json": "77d7f063d2eff721328890c4507f232df3b0bc5de5f76120ea0cd77d02eadb93",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods02/isolated/manifest.json": "25b63be598f2ad93b3a3f409b9eb0a01d7e156769b4ada91a94446369a82501f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods02/operating_interfaces.json": "e1b84844abbfbfae5d0f6f6a02b17c59162f18a48602f44c91b42cf5152df671",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods02/RearTrackConnectingRods.FCStd": "4209adbc03ba24a71c0ccc0aaec4522eb87473d49dd6d5c47c741dc084d6aa27",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods02/visual_review.json": "23c57180c7e82bec47d490b80069c96b0005b70650cba8a02caeecbccbe16923",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods02/render_receipt.json": "e98227767000267a788fe1b06837154311d68824f9928563cf192efe6ef63989",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01/qualification.json": "9a4959860284ee398a4501b983659d21a9d81b54fbe49acb5bb77c6a6bc283ae",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_joints_integrated01/isolated/manifest.json": "a31232e2c653d6cd31019c06aac987ba1ab87d55b7332dc6beafd10664178f2e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods02/independent_checks.json": "20593ef014e9665b2589b6fd6ab4858a83b30a600e563dd282765e665ec1fc3d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods02/context_checks.json": "b0b419b0c50fea7f65f8eb8b427ba3a54cfe53b552e74930fb40ab2f0e77a039",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods02/exchange_checks.json": "089ddc80951d18681e488c6838babfe46b8e6105ca5ee72e8d47290407e01fc9",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_variation02/independent_checks.json": "3412c4bc1f68493f5394eeeac7587595897b028570a64efc2baee5d2e4b0815b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_variation02/context_checks.json": "5a45f0c5737a81d28f03288a2fa60ec9a32ee57d8a63aa1314d105673f29d0a9",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_variation02/exchange_checks.json": "936fe625d4129ac4f76720b3f48b8c9edf0c2f80c5ffbbe4d3773131643e3be8",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods02/reproduction_checks.json": "0ca90f3c789ed1156689101a22cc2bbd03477622e935fa5a9efa59e72b6ba8c9"
+  },
+  "controls": {
+    "rod_diameter_mm": 19.05,
+    "insertion_mm": 20.6375,
+    "minimum_insertion_mm": 19.05,
+    "socket_length_mm": 22.225,
+    "socket_face_x_mm": 44.45,
+    "nut_height_mm": 19.05,
+    "thread_length_mm": 44.45,
+    "lever_definition": "Def_BrakeFront_lever",
+    "lever_old_end_local_mm": [
+      -25,
+      0,
+      -220
+    ],
+    "track_arm_local_mm": [
+      0,
+      -76.2,
+      31.75
+    ],
+    "track_clock_deg": 21.85
+  },
+  "details": {
+    "track_lever_controls": {
+      "hub_radius": 25.4,
+      "hub_height": 38.1,
+      "stock": 12.7,
+      "end_radius": 19.05,
+      "bore_diameter": 32.05,
+      "end_bore_diameter": 13.0,
+      "web_width": 25.4,
+      "neck_radius": 19.05,
+      "lower_flange_stock": 3.175,
+      "top_flange_stock": 6.35,
+      "arm_bottom": 25.4
+    },
+    "old_track_profile": {
+      "brake": [
+        0,
+        -76.2
+      ],
+      "front": [
+        0,
+        203.2
+      ]
+    },
+    "new_track_profile": {
+      "brake": [
+        0,
+        -64.8209310532478
+      ],
+      "front": [
+        0,
+        203.2
+      ]
+    },
+    "new_track_arm_local_mm": [
+      0,
+      -64.8209310532478,
+      31.75
+    ],
+    "rod_length_mm": 296.046054521521,
+    "Starboard": {
+      "old_brake_eye": {
+        "center_mm": [
+          -25.0,
+          0.0,
+          -220.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "diameter_mm": 13.0,
+        "width_mm": 12.700000000000001
+      },
+      "brake_eye_world_mm": [
+        2156.6538667653904,
+        -770.1642857142859,
+        625.125
+      ],
+      "fulcrum_eye_world_mm": [
+        2500.3249212869114,
+        -770.1642857142859,
+        625.125
+      ],
+      "pivot_world_mm": [
+        2476.2,
+        -710.0,
+        593.375
+      ],
+      "lever_clock_deg": 21.850000000000005,
+      "previous_lever_frame": [
+        0.9396926207859085,
+        -0.3420201433256684,
+        0.0,
+        2476.2,
+        0.3420201433256684,
+        0.9396926207859085,
+        0.0,
+        -710.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "new_lever_frame": [
+        0.9281613938075555,
+        -0.37217795077787175,
+        0.0,
+        2476.2,
+        0.37217795077787175,
+        0.9281613938075555,
+        0.0,
+        -710.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "socket_seats_world_mm": {
+        "Brake": [
+          2201.10386676539,
+          -770.1642857142859,
+          625.125
+        ],
+        "Fulcrum": [
+          2455.8749212869116,
+          -770.1642857142859,
+          625.125
+        ]
+      },
+      "rod_start_world_mm": [
+        2180.4663667653904,
+        -770.1642857142859,
+        625.125
+      ],
+      "rod_finish_world_mm": [
+        2476.5124212869114,
+        -770.1642857142859,
+        625.125
+      ]
+    },
+    "Port": {
+      "old_brake_eye": {
+        "center_mm": [
+          -25.0,
+          0.0,
+          -220.0
+        ],
+        "axis": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "diameter_mm": 13.0,
+        "width_mm": 12.700000000000001
+      },
+      "brake_eye_world_mm": [
+        2156.6538667653904,
+        770.1642857142859,
+        625.125
+      ],
+      "fulcrum_eye_world_mm": [
+        2500.3249212869114,
+        770.1642857142859,
+        625.125
+      ],
+      "pivot_world_mm": [
+        2476.2,
+        710.0,
+        593.375
+      ],
+      "lever_clock_deg": 158.15,
+      "previous_lever_frame": [
+        -0.9156625933395612,
+        -0.40194777665596,
+        0.0,
+        2476.2,
+        0.40194777665596,
+        -0.9156625933395612,
+        0.0,
+        710.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "new_lever_frame": [
+        -0.9281613938075555,
+        -0.37217795077787164,
+        0.0,
+        2476.2,
+        0.37217795077787164,
+        -0.9281613938075555,
+        0.0,
+        710.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "socket_seats_world_mm": {
+        "Brake": [
+          2201.10386676539,
+          770.1642857142859,
+          625.125
+        ],
+        "Fulcrum": [
+          2455.8749212869116,
+          770.1642857142859,
+          625.125
+        ]
+      },
+      "rod_start_world_mm": [
+        2180.4663667653904,
+        770.1642857142859,
+        625.125
+      ],
+      "rod_finish_world_mm": [
+        2476.5124212869114,
+        770.1642857142859,
+        625.125
+      ]
+    },
+    "old_lever_controls": {
+      "foot_stock": 6.35,
+      "low_foot_sweep_deg": 16.0,
+      "track_foot_sweep_deg": 18.0,
+      "lug_y": 31.75,
+      "lug_stock": 6.35,
+      "lug_radius": 19.05,
+      "lug_web_width": 18.0,
+      "lug_web_theta_deg": 13.0,
+      "pin_height": 70.0,
+      "pin_radial_offset": 38.0,
+      "pin_diameter": 24.0,
+      "pin_bore_allowance": 0.15,
+      "eye_side_clearance": 0.15,
+      "pin_axial_clearance": 0.15,
+      "pin_head_radius": 17.0,
+      "pin_head_stock": 4.0,
+      "cotter_station_overhang": 4.6,
+      "pin_end_beyond_cotter": 4.6,
+      "cotter_hole_radius": 3.325,
+      "swivel_forward_offset": 75.0,
+      "swivel_radius": 22.225,
+      "swivel_width": 44.45,
+      "swivel_flat_distance": 16.0,
+      "swivel_gap": 31.75,
+      "swivel_bore_allowance": 0.15,
+      "lever_head_radius": 31.75,
+      "lever_eye_radius": 20.0,
+      "lever_web_width": 36.0,
+      "lever_leg_width": 32.0,
+      "lever_leg_stock": 12.7,
+      "lever_leg_root_x": 42.0,
+      "lever_leg_root_z": -12.0,
+      "lever_end_x": -25.0,
+      "lever_end_z": -220.0,
+      "lever_end_radius": 18.0,
+      "lever_end_bore_radius": 6.5,
+      "lever_slot_start_x": 42.0,
+      "screw_eye_radius": 19.05,
+      "screw_radius": 6.35,
+      "screw_length": 210.0,
+      "screw_shoulder_radius": 14.2875,
+      "screw_shoulder_stock": 4.0,
+      "screw_shoulder_distance": 30.0,
+      "thread_bore_allowance": 0.15,
+      "spring_mean_radius": 11.1125,
+      "spring_wire_radius": 1.5875,
+      "spring_turns": 12.0,
+      "nut_neck_radius": 10.0,
+      "nut_neck_length": 16.0,
+      "nut_wing_length": 50.8,
+      "nut_wing_width": 12.7,
+      "nut_wing_stock": 6.35,
+      "nut_hex_radius": 12.0,
+      "nut_hex_length": 8.0
+    },
+    "new_lever_controls": {
+      "foot_stock": 6.35,
+      "low_foot_sweep_deg": 16.0,
+      "track_foot_sweep_deg": 18.0,
+      "lug_y": 31.75,
+      "lug_stock": 6.35,
+      "lug_radius": 19.05,
+      "lug_web_width": 18.0,
+      "lug_web_theta_deg": 13.0,
+      "pin_height": 70.0,
+      "pin_radial_offset": 38.0,
+      "pin_diameter": 24.0,
+      "pin_bore_allowance": 0.15,
+      "eye_side_clearance": 0.15,
+      "pin_axial_clearance": 0.15,
+      "pin_head_radius": 17.0,
+      "pin_head_stock": 4.0,
+      "cotter_station_overhang": 4.6,
+      "pin_end_beyond_cotter": 4.6,
+      "cotter_hole_radius": 3.325,
+      "swivel_forward_offset": 75.0,
+      "swivel_radius": 22.225,
+      "swivel_width": 44.45,
+      "swivel_flat_distance": 16.0,
+      "swivel_gap": 31.75,
+      "swivel_bore_allowance": 0.15,
+      "lever_head_radius": 31.75,
+      "lever_eye_radius": 20.0,
+      "lever_web_width": 36.0,
+      "lever_leg_width": 32.0,
+      "lever_leg_stock": 12.7,
+      "lever_leg_root_x": 42.0,
+      "lever_leg_root_z": -12.0,
+      "lever_end_x": -25.0,
+      "lever_end_z": -205.4779411764705,
+      "lever_end_radius": 18.0,
+      "lever_end_bore_radius": 6.5,
+      "lever_slot_start_x": 42.0,
+      "screw_eye_radius": 19.05,
+      "screw_radius": 6.35,
+      "screw_length": 210.0,
+      "screw_shoulder_radius": 14.2875,
+      "screw_shoulder_stock": 4.0,
+      "screw_shoulder_distance": 30.0,
+      "thread_bore_allowance": 0.15,
+      "spring_mean_radius": 11.1125,
+      "spring_wire_radius": 1.5875,
+      "spring_turns": 12.0,
+      "nut_neck_radius": 10.0,
+      "nut_neck_length": 16.0,
+      "nut_wing_length": 50.8,
+      "nut_wing_width": 12.7,
+      "nut_wing_stock": 6.35,
+      "nut_hex_radius": 12.0,
+      "nut_hex_length": 8.0
+    },
+    "eye_height_change_mm": 14.522058823529505,
+    "original_receiver_reproduced": true,
+    "thread_representation": "Nominal cylindrical envelopes; no physical thread helix."
+  },
+  "expected_new_occurrences": {
+    "StarboardTrackConnectingRod": {
+      "definition": "Def_RearTrackRod",
+      "role": "rod",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2180.4663667653904,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection"
+      ],
+      "prototype_occurrence": "StarboardTrackConnectingRod"
+    },
+    "PortTrackConnectingRod": {
+      "definition": "Def_RearTrackRod",
+      "role": "rod",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2180.4663667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection"
+      ],
+      "prototype_occurrence": "PortTrackConnectingRod"
+    }
+  },
+  "expected_affected_occurrences": {
+    "StarboardTrackBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "role": "brake_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2181.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        830.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardTrackBrake",
+        "StarboardTrackBrakeFrontMechanism"
+      ],
+      "prototype_occurrence": "StarboardTrackBrakeLever"
+    },
+    "StarboardLowSpeedBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "role": "brake_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2175.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        830.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "StarboardLowSpeedBrake",
+        "StarboardLowSpeedBrakeFrontMechanism"
+      ],
+      "prototype_occurrence": "StarboardLowSpeedBrakeLever"
+    },
+    "StarboardTrackHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_track",
+      "role": "horizontal_lever",
+      "frame": [
+        0.9281613938075555,
+        -0.37217795077787175,
+        0.0,
+        2476.2,
+        0.37217795077787175,
+        0.9281613938075555,
+        0.0,
+        -710.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "StarboardTrackHorizontalLever"
+    },
+    "StarboardTrackBrakeJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "role": "fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        -1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackBrakeJointFork"
+    },
+    "StarboardTrackBrakeJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "role": "pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        -1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackBrakeJointPin"
+    },
+    "StarboardTrackBrakeJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "role": "cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        -1.0,
+        0.0,
+        -788.5892857142859,
+        0.0,
+        0.0,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackBrakeJointCotter"
+    },
+    "StarboardTrackBrakeJointNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2201.10386676539,
+        0.0,
+        -1.0,
+        0.0,
+        -770.1642857142859,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackBrakeJointNut"
+    },
+    "StarboardTrackFulcrumJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "role": "fork",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2500.3249212869114,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -770.1642857142859,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumJointFork"
+    },
+    "StarboardTrackFulcrumJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "role": "pin",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2500.3249212869114,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -770.1642857142859,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumJointPin"
+    },
+    "StarboardTrackFulcrumJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "role": "cotter",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2500.3249212869114,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -770.1642857142859,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        643.55,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumJointCotter"
+    },
+    "StarboardTrackFulcrumJointNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        0.0,
+        0.0,
+        -1.0,
+        2455.8749212869116,
+        -1.0,
+        0.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        1.0,
+        0.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "StarboardTrackFulcrumJointNut"
+    },
+    "StarboardTrackConnectingRod": {
+      "definition": "Def_RearTrackRod",
+      "role": "rod",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2180.4663667653904,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection"
+      ],
+      "prototype_occurrence": "StarboardTrackConnectingRod"
+    },
+    "PortTrackBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "role": "brake_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2181.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        830.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortTrackBrake",
+        "PortTrackBrakeFrontMechanism"
+      ],
+      "prototype_occurrence": "PortTrackBrakeLever"
+    },
+    "PortLowSpeedBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "role": "brake_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2175.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        830.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionBrakeBands",
+        "PortLowSpeedBrake",
+        "PortLowSpeedBrakeFrontMechanism"
+      ],
+      "prototype_occurrence": "PortLowSpeedBrakeLever"
+    },
+    "PortTrackHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_track",
+      "role": "horizontal_lever",
+      "frame": [
+        -0.9281613938075555,
+        -0.37217795077787164,
+        0.0,
+        2476.2,
+        0.37217795077787164,
+        -0.9281613938075555,
+        0.0,
+        710.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackControlFulcrum"
+      ],
+      "prototype_occurrence": "PortTrackHorizontalLever"
+    },
+    "PortTrackBrakeJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "role": "fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "PortTrackBrakeJointFork"
+    },
+    "PortTrackBrakeJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "role": "pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "PortTrackBrakeJointPin"
+    },
+    "PortTrackBrakeJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "role": "cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        788.5892857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "PortTrackBrakeJointCotter"
+    },
+    "PortTrackBrakeJointNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2201.10386676539,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackBrakeJoint"
+      ],
+      "prototype_occurrence": "PortTrackBrakeJointNut"
+    },
+    "PortTrackFulcrumJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "role": "fork",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2500.3249212869114,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        770.1642857142859,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumJointFork"
+    },
+    "PortTrackFulcrumJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "role": "pin",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2500.3249212869114,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        770.1642857142859,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumJointPin"
+    },
+    "PortTrackFulcrumJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "role": "cotter",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2500.3249212869114,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        770.1642857142859,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        643.55,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumJointCotter"
+    },
+    "PortTrackFulcrumJointNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "frame": [
+        0.0,
+        0.0,
+        -1.0,
+        2455.8749212869116,
+        -1.0,
+        0.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        1.0,
+        0.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackFulcrumJoint"
+      ],
+      "prototype_occurrence": "PortTrackFulcrumJointNut"
+    },
+    "PortTrackConnectingRod": {
+      "definition": "Def_RearTrackRod",
+      "role": "rod",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2180.4663667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection"
+      ],
+      "prototype_occurrence": "PortTrackConnectingRod"
+    }
+  },
+  "affected_occurrences": [
+    "PortLowSpeedBrakeLever",
+    "PortTrackBrakeJointCotter",
+    "PortTrackBrakeJointFork",
+    "PortTrackBrakeJointNut",
+    "PortTrackBrakeJointPin",
+    "PortTrackBrakeLever",
+    "PortTrackConnectingRod",
+    "PortTrackFulcrumJointCotter",
+    "PortTrackFulcrumJointFork",
+    "PortTrackFulcrumJointNut",
+    "PortTrackFulcrumJointPin",
+    "PortTrackHorizontalLever",
+    "StarboardLowSpeedBrakeLever",
+    "StarboardTrackBrakeJointCotter",
+    "StarboardTrackBrakeJointFork",
+    "StarboardTrackBrakeJointNut",
+    "StarboardTrackBrakeJointPin",
+    "StarboardTrackBrakeLever",
+    "StarboardTrackConnectingRod",
+    "StarboardTrackFulcrumJointCotter",
+    "StarboardTrackFulcrumJointFork",
+    "StarboardTrackFulcrumJointNut",
+    "StarboardTrackFulcrumJointPin",
+    "StarboardTrackHorizontalLever"
+  ],
+  "changed_definitions": [
+    "Def_BrakeFront_lever",
+    "Def_RearControlFulcrum_lever_track"
+  ],
+  "new_definitions": [
+    "Def_RearTrackRod"
+  ],
+  "new_assemblies": [],
+  "added_children": {
+    "Definitions": [
+      "Def_RearTrackRod"
+    ],
+    "StarboardTrackShortConnection": [
+      "StarboardTrackConnectingRod"
+    ],
+    "PortTrackShortConnection": [
+      "PortTrackConnectingRod"
+    ]
+  },
+  "added_inherited_properties": {
+    "Def_BrakeFront_lever": [
+      "TrackRodClosureUpdate"
+    ],
+    "Def_RearControlFulcrum_lever_track": [
+      "TrackRodClosureUpdate"
+    ]
+  },
+  "changed_group_frames": {
+    "StarboardTrackBrakeJoint": [
+      1.0,
+      0.0,
+      0.0,
+      2156.6538667653904,
+      0.0,
+      -1.0,
+      0.0,
+      -770.1642857142859,
+      0.0,
+      0.0,
+      -1.0,
+      625.125,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardTrackFulcrumJoint": [
+      -1.0,
+      0.0,
+      0.0,
+      2500.3249212869114,
+      0.0,
+      2.220446049250313e-16,
+      1.0,
+      -770.1642857142859,
+      0.0,
+      1.0,
+      -2.220446049250313e-16,
+      625.125,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortTrackBrakeJoint": [
+      1.0,
+      0.0,
+      0.0,
+      2156.6538667653904,
+      0.0,
+      1.0,
+      0.0,
+      770.1642857142859,
+      0.0,
+      0.0,
+      1.0,
+      625.125,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortTrackFulcrumJoint": [
+      -1.0,
+      0.0,
+      0.0,
+      2500.3249212869114,
+      0.0,
+      2.220446049250313e-16,
+      1.0,
+      770.1642857142859,
+      0.0,
+      1.0,
+      -2.220446049250313e-16,
+      625.125,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "changed_link_frames": {
+    "StarboardTrackHorizontalLever": [
+      0.9281613938075555,
+      -0.37217795077787175,
+      0.0,
+      2476.2,
+      0.37217795077787175,
+      0.9281613938075555,
+      0.0,
+      -710.0,
+      0.0,
+      0.0,
+      1.0,
+      593.375,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortTrackHorizontalLever": [
+      -0.9281613938075555,
+      -0.37217795077787164,
+      0.0,
+      2476.2,
+      0.37217795077787164,
+      -0.9281613938075555,
+      0.0,
+      710.0,
+      0.0,
+      0.0,
+      1.0,
+      593.375,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "placement_changed_objects": [
+    "PortTrackBrakeJoint",
+    "PortTrackFulcrumJoint",
+    "StarboardTrackBrakeJoint",
+    "StarboardTrackFulcrumJoint",
+    "StarboardTrackHorizontalLever",
+    "PortTrackHorizontalLever"
+  ],
+  "expected_physical_occurrences": 3264,
+  "expected_definition_count": 568,
+  "expected_assembly_count": 359,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "channel_complete": false,
+  "packet_complete": false
+}
