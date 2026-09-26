@@ -1,0 +1,25 @@
+{
+  "source_support": [
+    "SNL195:019 lists two SH946E low speed brake connecting rods; adjacent assembly includes two 3/4 inch U.S. Standard plain nuts per rod.",
+    "SNL6 plan and side assembled views depict short M572 connections as straight. HB104 shows horizontal levers with rods extending forward.",
+    "HB188 calls M572 a tube; 1928 SNL calls SH946E a rod. Internal section is not established. Selected 1928 reconstruction uses a nominal solid 19.05mm (3/4 inch) rod with male thread envelopes, an explicit section estimate.",
+    "M4133 and M4134 are left and right low speed brake horizontal levers. Original reconstruction in fulcrum_controls02 listed their brake arm coordinates as uncalibrated plan picks."
+  ],
+  "constraint_diagnosis": [
+    "Front low-speed brake pin axis is transverse Y and fulcrum pin axis is vertical Z; fork rod axes perpendicular to those pins share only world X when a straight rod connects them.",
+    "Front low-speed brake lever eyes lie at Z=625.125 mm and Y=±535.3957 mm. Rear fulcrum eyes in fulcrum_controls02 lay at Z=625.125 mm but differed in Y by +12.371 mm starboard and -3.504 mm port, with different longitudinal stations (dx=47.625 mm starboard vs 31.75 mm port). Rotating forks cannot close a straight rod without transverse and longitudinal alignment.",
+    "Bending the rod to retain provisional plan picks was rejected because available figures depict straight rods and SNL specifies two shared SH946E parts."
+  ],
+  "selected_trial": [
+    "Reconcile M4134 (Starboard) and M4133 (Port) horizontal lever brake arm profiles symmetrically to brake: [39.6875, -85.3957142857142] and [39.6875, 85.3957142857142]. This centers the longitudinal arm offset at x_b = 39.6875 mm (1-9/16 inch), the exact midpoint between prior Starboard (47.625 mm) and Port (31.75 mm) estimates, adjusting each side symmetrically by ±7.9375 mm (5/16 inch).",
+    "Relocate the rear fulcrum joint groups to eye centers [2338.0875, ±535.3957142857142, 625.125] with rotation XYZ(-1,0,0, 0,0,1, 0,1,0), aligning sockets coaxially along -X.",
+    "Construct single shared definition Def_RearLowRod (SH946E, 19.05 mm diameter) with 130.7616 mm length (nominal 20.6375 mm insertion per end, satisfying >= 19.05 mm minimum engagement within 25.4 mm socket). Add two linked occurrences of this rod.",
+    "Retain front and rear lock nuts (Def_USStdControlNut) seated against socket faces."
+  ],
+  "limits": [
+    "Lever arm length, symmetrical arm station, rod section/length and thread representation remain estimates. No motion, strength or full service qualification.",
+    "Source SNL6 registration stays fixed. Low-speed rods do not serve as camera-fit anchors.",
+    "Front control connections (M573 long rods) and M564 return springs remain pending in subsequent increments."
+  ],
+  "historical_geometry_qualified": false
+}

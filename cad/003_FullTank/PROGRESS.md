@@ -11,6 +11,29 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 25 September 2026 — rear low-speed straight connecting rods installed
+
+The [new development checkpoint](experiments/drive_chains/transmission_controls_study/low_rods_integrated01/README.md)
+adds two SH946E straight connecting rods with one shared definition (`Def_RearLowRod`):
+**3,282 occurrences / 570 definitions / 365 groups**. The straight-rod closure between
+front brake distal eyes (`[2150.17588, ±535.395714, 625.125]`) and rear fulcrum pivots
+(`[2298.4, ±450.0, 583.85]`) requires transverse rod axis offset at `Y = ±535.395714 mm`,
+`Z = 625.125 mm`. Fulcrum levers M4134 (Starboard) and M4133 (Port) brake arm profiles
+are reconciled symmetrically to `[39.6875, ∓85.395714] mm`, exactly bisecting the prior
+provisional picks (adjusting each by ±7.9375 mm / 5/16″). Both front-arm vectors, hub/journal,
+and mounting hardware remain unchanged.
+
+Each SH946E rod has 19.05 mm (3/4″) solid cylindrical section spanning the 89.4866 mm socket
+face gap with 20.6375 mm (13/16″) nominal thread engagement (≥ 19.05 mm required, < 25.4 mm throat),
+yielding 130.7616 mm overall length. Nominal and variation prototypes each pass 81 native checks,
+127 surrounding context pairs (0 collisions, > 7.68 mm clearance to M4136 spring brackets) and
+30 strict STEP comparisons. Full integration passes 47 checks, preserves 567 inherited definitions
+(549 exact / 18 strict material comparisons), and reproduces identically across 1,742 archive BReps
+and 157,648 persistent properties. Four inspected views bring visual progression to **254**.
+
+The next physical task is continuing M567 washers, M564 return springs, M575/M573 long rear rods,
+and center/front controls. Standard tank011 remains unchanged; poses remain deferred.
+
 ## 25 September 2026 — rear low-speed brake end joints installed
 
 The [new development checkpoint](experiments/drive_chains/transmission_controls_study/low_joints_integrated01/README.md)

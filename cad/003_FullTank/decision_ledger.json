@@ -1098,6 +1098,59 @@
           "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
         }
       ]
+    },
+    {
+      "id": "rear_low_straight_rods_and_receiver_closure",
+      "status": "reviewed_approximation",
+      "scope": "Two SH946E straight rods connecting front low-speed brake levers and rear fulcrum horizontal levers; symmetric reconciliation of M4134 and M4133 brake arm profiles to [39.6875, ∓85.395714] mm.",
+      "reason": "Straight-rod coaxial alignment between front brake distal eye [2150.17588, ±535.395714, 625.125] and rear fulcrum pivot [2298.4, ±450.0, 583.85] requires transverse rod offset 85.395714 mm. Longitudinal arm offset xb = 39.6875 mm (1-9/16 in) is the exact midpoint between prior provisional Starboard (47.625 mm) and Port (31.75 mm) plan picks, adjusting each symmetrically by ±7.9375 mm (5/16 in). Preserves all other lever geometry, front brake levers, upper bearing interfaces, and all surrounding context with zero collisions (> 7.68 mm clearance to M4136).",
+      "uncertainty": "Rod length (130.761619 mm) and solid 19.05 mm section remain inferred. HB M-572 tube wording remains an alternative requiring internal section evidence. Receiver arm profiles are estimated.",
+      "limits": [
+        "SH946E solid 19.05 mm section and 130.761619 mm length are inferred. HB M-572 tube wording does not establish the selected 1928 rod internal section. Threads remain nominal envelopes.",
+        "M4134/M4133 fulcrum lever brake arms reconciled to xb = 39.6875 mm (1-9/16 in), symmetrically adjusting prior provisional picks by ±7.9375 mm (5/16 in). Full routes, mechanical advantage, and motion remain unqualified.",
+        "Low-speed brake receiver eyes use the updated operating_interfaces.json. Do not reuse superseded coordinate values from earlier checkpoints.",
+        "M567 washers, M564 springs, M575 and long rear rods, center/front controls, remaining interiors, and standard integration are unfinished.",
+        "Fixed SNL6 camera retains inherited lever/profile and spring-height discrepancies; no new edge is promoted to fitting evidence and HB photographs remain uncalibrated."
+      ],
+      "supersedes_scope": "Reconciles the brake arm profiles of Def_RearControlFulcrum_lever_low_right (M4134) and Def_RearControlFulcrum_lever_low_left (M4133) in the integrated development native. Adds two SH946E physical rods (Def_RearLowRod). Earlier native checkpoints and qualification evidence remain immutable.",
+      "review": {
+        "reviewer": "Antigravity",
+        "date": "2026-09-25",
+        "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/visual_review.json",
+        "sha256": "ad71269cccd4a7f4b463a2a8c2380ba951ebf7a79c361ac02b754d1feb2e5f19"
+      },
+      "reopen_when": [
+        "Source dimensions or section evidence resolve SH946E versus HB M572 tube construction.",
+        "Shared fulcrum lever, pin, fork, or brake lever estimates change during long-control closure.",
+        "Spring or long-rod geometry conflicts with the checked static arrangement.",
+        "Independent landmarks contradict the reused camera; diagnose geometry before refitting."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/qualification.json",
+          "sha256": "5bc389c74a10260eebf75ea4e743835ca010748a1f43ded7dbfdf6ee0efab2f4"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/visual_review.json",
+          "sha256": "ad71269cccd4a7f4b463a2a8c2380ba951ebf7a79c361ac02b754d1feb2e5f19"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/operating_interfaces.json",
+          "sha256": "439963871257f3dddcfb966b9580e4682deffcc573b0d8c77e7fced1fe2eb1d2"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rod_source_review01.json",
+          "sha256": "48814e03869df5d0ac389d278359d30a2dcb3b7f8f59a3b65fb91df87bbfda20"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rod_controls01.json",
+          "sha256": "c5bfa859426ad9285b5da01231a3ac948a1df5a58919efb77c4e9379bfeec86f"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json",
+          "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
+        }
+      ]
     }
   ]
 }

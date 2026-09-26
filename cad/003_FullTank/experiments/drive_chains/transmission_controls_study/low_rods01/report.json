@@ -1,0 +1,793 @@
+{
+  "native_file": "RearLowConnectingRods.FCStd",
+  "native_sha256": "49d3c16ba0554f8d9bfb275841a3ccbe85e7ee26d1d26d89d1c61f1cfd4242ff",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01/PowertrainWithRearLowJoints.FCStd",
+  "parent_native_sha256": "0ac4995206bca411b0c19de3c46d5b90b4f06e3769ec01b8cdfff3d3faa020c3",
+  "parent_manifest_sha256": "6c24939a1eb276e6448ecfaf239203ef002ea518ea0eb821ef687308934fd13f",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/trial_rear_low_rods.py": "df3c5848c4e6a3dd4c93994d3f80873b0779d02706c1e7dac73e1d2b1d17b6b9",
+    "cad/003_FullTank/experiments/drive_chains/rear_control_fulcrum_parts.py": "64222d274069f436b187010ceabceadbf116c3a1958396093443e02aefc61221",
+    "cad/003_FullTank/experiments/drive_chains/rear_control_channel_mount_parts.py": "4d8eec7292a635e762f19c3c9c8224b875ac3397f5c26de1f1d63740749d4aae",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_installation_parts.py": "3aa0f82af289688b8453ac25dbe1c53bf84924880a0e03adb51328431a3eef7f",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/fulcrum_controls02.json": "84abce585858a741036691560d4bac0f23989c036043a165607f54fe1b6158cd",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rod_controls01.json": "c5bfa859426ad9285b5da01231a3ac948a1df5a58919efb77c4e9379bfeec86f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rod_sources01/sources.json": "ab91e7b13b7996f734c744b584644a42d889b4fccd96527cfc9f2a4d3c817321",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rod_source_review01.json": "48814e03869df5d0ac389d278359d30a2dcb3b7f8f59a3b65fb91df87bbfda20",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01/report.json": "8e3f46ca85d61eed29ed6700d95c8816f9c269720f7f4c93c7e339172560ec21",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01/isolated/manifest.json": "6c24939a1eb276e6448ecfaf239203ef002ea518ea0eb821ef687308934fd13f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01/qualification.json": "d1fea6d638ea98d0c64662cb601925c3cd38d93e7eac361d6445421420f61f50"
+  },
+  "controls": {
+    "rod_diameter_mm": 19.05,
+    "insertion_mm": 20.6375,
+    "minimum_insertion_mm": 19.05,
+    "socket_length_mm": 25.4,
+    "socket_face_x_mm": 49.2125,
+    "nut_height_mm": 19.05,
+    "thread_length_mm": 49.2125,
+    "lever_brake_arm_x_mm": 39.6875,
+    "lever_definition_starboard": "Def_RearControlFulcrum_lever_low_right",
+    "lever_definition_port": "Def_RearControlFulcrum_lever_low_left"
+  },
+  "details": {
+    "old_sb_profile": {
+      "brake": [
+        47.625,
+        -73.025
+      ],
+      "front": [
+        -114.3,
+        171.45
+      ]
+    },
+    "new_sb_profile": {
+      "brake": [
+        39.6875,
+        -85.3957142857142
+      ],
+      "front": [
+        -114.3,
+        171.45
+      ]
+    },
+    "old_pt_profile": {
+      "brake": [
+        31.75,
+        88.9
+      ],
+      "front": [
+        -107.95,
+        -158.75
+      ]
+    },
+    "new_pt_profile": {
+      "brake": [
+        39.6875,
+        85.3957142857142
+      ],
+      "front": [
+        -107.95,
+        -158.75
+      ]
+    },
+    "lever_controls": {
+      "hub_radius": 25.4,
+      "hub_height": 38.1,
+      "stock": 12.7,
+      "end_radius": 19.05,
+      "bore_diameter": 32.05,
+      "end_bore_diameter": 13.0,
+      "web_width": 25.4,
+      "neck_radius": 19.05,
+      "lower_flange_stock": 3.175,
+      "top_flange_stock": 6.35,
+      "arm_bottom": 25.4
+    },
+    "rod_length_mm": 130.76161914965678,
+    "Starboard": {
+      "front_eye_world_mm": [
+        2150.1758808503428,
+        -535.3957142857142,
+        625.125
+      ],
+      "rear_eye_world_mm": [
+        2338.0875,
+        -535.3957142857142,
+        625.125
+      ],
+      "socket_seats_world_mm": {
+        "Brake": [
+          2199.388380850343,
+          -535.3957142857142,
+          625.125
+        ],
+        "Fulcrum": [
+          2288.875,
+          -535.3957142857142,
+          625.125
+        ]
+      },
+      "rod_start_world_mm": [
+        2178.750880850343,
+        -535.3957142857142,
+        625.125
+      ],
+      "rod_finish_world_mm": [
+        2309.5125,
+        -535.3957142857142,
+        625.125
+      ],
+      "span_between_socket_faces_mm": 89.48661914965714,
+      "thread_engagement_mm": 20.6375
+    },
+    "Port": {
+      "front_eye_world_mm": [
+        2150.1758808503428,
+        535.3957142857142,
+        625.125
+      ],
+      "rear_eye_world_mm": [
+        2338.0875,
+        535.3957142857142,
+        625.125
+      ],
+      "socket_seats_world_mm": {
+        "Brake": [
+          2199.388380850343,
+          535.3957142857142,
+          625.125
+        ],
+        "Fulcrum": [
+          2288.875,
+          535.3957142857142,
+          625.125
+        ]
+      },
+      "rod_start_world_mm": [
+        2178.750880850343,
+        535.3957142857142,
+        625.125
+      ],
+      "rod_finish_world_mm": [
+        2309.5125,
+        535.3957142857142,
+        625.125
+      ],
+      "span_between_socket_faces_mm": 89.48661914965714,
+      "thread_engagement_mm": 20.6375
+    },
+    "controls": {
+      "rod_diameter_mm": 19.05,
+      "insertion_mm": 20.6375,
+      "minimum_insertion_mm": 19.05,
+      "socket_length_mm": 25.4,
+      "socket_face_x_mm": 49.2125,
+      "nut_height_mm": 19.05,
+      "thread_length_mm": 49.2125,
+      "lever_brake_arm_x_mm": 39.6875,
+      "lever_definition_starboard": "Def_RearControlFulcrum_lever_low_right",
+      "lever_definition_port": "Def_RearControlFulcrum_lever_low_left"
+    },
+    "insertion_mm": 20.6375,
+    "minimum_insertion_mm": 19.05,
+    "thread_representation": "Nominal cylindrical envelopes; no physical thread helix."
+  },
+  "specs": {
+    "StarboardLowSpeedBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "role": "brake_lever",
+      "owner": "Receivers",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2175.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        830.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_low_right",
+      "role": "horizontal_lever",
+      "owner": "Receivers",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowBrakeJointFork": {
+      "definition": "Def_LowJoint_fork",
+      "role": "fork",
+      "owner": "StarboardLowBrakeJoint",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -535.3957142857142,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowBrakeJointPin": {
+      "definition": "Def_ControlJoint_pin",
+      "role": "pin",
+      "owner": "StarboardLowBrakeJoint",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -535.3957142857142,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowBrakeJointCotter": {
+      "definition": "Def_ControlJoint_cotter",
+      "role": "cotter",
+      "owner": "StarboardLowBrakeJoint",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -555.4082142857143,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowBrakeJointNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "owner": "StarboardLowBrakeJoint",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2199.388380850343,
+        1.2246467991473532e-16,
+        -1.0,
+        -2.465190328815662e-32,
+        -535.3957142857142,
+        1.0,
+        1.2246467991473532e-16,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowFulcrumJointFork": {
+      "definition": "Def_LowJoint_fork",
+      "role": "fork",
+      "owner": "StarboardLowFulcrumJoint",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2338.0875,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -535.3957142857142,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowFulcrumJointPin": {
+      "definition": "Def_ControlJoint_pin",
+      "role": "pin",
+      "owner": "StarboardLowFulcrumJoint",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2338.0875,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -535.3957142857142,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowFulcrumJointCotter": {
+      "definition": "Def_ControlJoint_cotter",
+      "role": "cotter",
+      "owner": "StarboardLowFulcrumJoint",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2338.0875,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -535.3957142857142,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        645.1375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowFulcrumJointNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "owner": "StarboardLowFulcrumJoint",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        -1.0,
+        2288.875000000001,
+        -1.0,
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        -535.3957142857142,
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowConnectingRod": {
+      "definition": "Def_RearLowRod",
+      "role": "rod",
+      "owner": "StarboardLowShortConnection",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2178.750880850343,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowSpeedBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "role": "brake_lever",
+      "owner": "Receivers",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2175.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        830.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_low_left",
+      "role": "horizontal_lever",
+      "owner": "Receivers",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowBrakeJointFork": {
+      "definition": "Def_LowJoint_fork",
+      "role": "fork",
+      "owner": "PortLowBrakeJoint",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowBrakeJointPin": {
+      "definition": "Def_ControlJoint_pin",
+      "role": "pin",
+      "owner": "PortLowBrakeJoint",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowBrakeJointCotter": {
+      "definition": "Def_ControlJoint_cotter",
+      "role": "cotter",
+      "owner": "PortLowBrakeJoint",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        555.4082142857143,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowBrakeJointNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "owner": "PortLowBrakeJoint",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2199.388380850343,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowFulcrumJointFork": {
+      "definition": "Def_LowJoint_fork",
+      "role": "fork",
+      "owner": "PortLowFulcrumJoint",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2338.0875,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        535.3957142857142,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowFulcrumJointPin": {
+      "definition": "Def_ControlJoint_pin",
+      "role": "pin",
+      "owner": "PortLowFulcrumJoint",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2338.0875,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        535.3957142857142,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowFulcrumJointCotter": {
+      "definition": "Def_ControlJoint_cotter",
+      "role": "cotter",
+      "owner": "PortLowFulcrumJoint",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2338.0875,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        535.3957142857142,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        645.1375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowFulcrumJointNut": {
+      "definition": "Def_USStdControlNut",
+      "role": "nut",
+      "owner": "PortLowFulcrumJoint",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0000000000000002,
+        2288.875000000001,
+        -1.0000000000000002,
+        0.0,
+        0.0,
+        535.3957142857141,
+        2.220446049250313e-16,
+        1.0000000000000002,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowConnectingRod": {
+      "definition": "Def_RearLowRod",
+      "role": "rod",
+      "owner": "PortLowShortConnection",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2178.750880850343,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "joint_frames": {
+    "StarboardLowBrakeJoint": [
+      1.0,
+      0.0,
+      0.0,
+      2150.1758808503428,
+      0.0,
+      -1.0,
+      0.0,
+      -535.3957142857142,
+      0.0,
+      0.0,
+      -1.0,
+      625.125,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "StarboardLowFulcrumJoint": [
+      -1.0,
+      0.0,
+      0.0,
+      2338.0875,
+      0.0,
+      2.220446049250313e-16,
+      1.0,
+      -535.3957142857142,
+      0.0,
+      1.0,
+      -2.220446049250313e-16,
+      625.125,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortLowBrakeJoint": [
+      1.0,
+      0.0,
+      0.0,
+      2150.1758808503428,
+      0.0,
+      1.0,
+      0.0,
+      535.3957142857142,
+      0.0,
+      0.0,
+      1.0,
+      625.125,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "PortLowFulcrumJoint": [
+      -1.0,
+      0.0,
+      0.0,
+      2338.0875,
+      0.0,
+      2.220446049250313e-16,
+      1.0,
+      535.3957142857142,
+      0.0,
+      1.0,
+      -2.220446049250313e-16,
+      625.125,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "new_occurrences": [
+    "StarboardLowConnectingRod",
+    "PortLowConnectingRod"
+  ],
+  "changed_definitions": [
+    "Def_RearControlFulcrum_lever_low_right",
+    "Def_RearControlFulcrum_lever_low_left"
+  ],
+  "changed_occurrences": [
+    "PortLowBrakeJointCotter",
+    "PortLowBrakeJointFork",
+    "PortLowBrakeJointNut",
+    "PortLowBrakeJointPin",
+    "PortLowFulcrumJointCotter",
+    "PortLowFulcrumJointFork",
+    "PortLowFulcrumJointNut",
+    "PortLowFulcrumJointPin",
+    "PortLowHorizontalLever",
+    "PortLowSpeedBrakeLever",
+    "StarboardLowBrakeJointCotter",
+    "StarboardLowBrakeJointFork",
+    "StarboardLowBrakeJointNut",
+    "StarboardLowBrakeJointPin",
+    "StarboardLowFulcrumJointCotter",
+    "StarboardLowFulcrumJointFork",
+    "StarboardLowFulcrumJointNut",
+    "StarboardLowFulcrumJointPin",
+    "StarboardLowHorizontalLever",
+    "StarboardLowSpeedBrakeLever"
+  ],
+  "prototype_physical_occurrences": 22,
+  "prototype_definition_count": 8,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

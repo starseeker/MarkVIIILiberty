@@ -5,15 +5,16 @@
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
   "accepted_development_parent": "straight rear track-rod checkpoint 5b4358b",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01",
-  "latest_native_sha256": "0ac4995206bca411b0c19de3c46d5b90b4f06e3769ec01b8cdfff3d3faa020c3",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01/qualification.json",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01",
+  "latest_native_sha256": "9b36e8ca2124d0314825c66b905080f770a3d709a9503eb76a882147cd4e1f04",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/qualification.json",
   "current_pipeline_run": null,
   "pipeline_receipt": null,
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_low_rod_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_low_joint_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_pin_family_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_track_rod_checkpoint.py",
@@ -26,7 +27,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Connect the two SH946E straight rods between installed low-speed front brake and rear fulcrum joint sockets. Continue M567 washers, M564 springs, M575/long rods and center/front controls; standard geometry before poses.",
+  "next_action": "Continue M567 washers, M564 springs, M575/M573 long rear rods and center/front controls; standard geometry before poses.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -58,36 +59,36 @@
     "M330 lower-arm eye Z and M4132 short-arm radius are revised estimates. Small standard lever-angle changes propagate to the front long-rod eyes; full routes, mechanical advantage and motion remain unqualified.",
     "All four M330 distal eyes and both M4132 pairs of rod eyes use track_rods_integrated01/operating_interfaces.json, unchanged by the pin-family correction. Do not reuse their superseded coordinate values from earlier checkpoints.",
     "12.7mm common shank and13mm bores remain estimates. Specific SNL136 physical-pin length1 5/8in selected over conflicting SNL71 assembly1 7/8in; under-head datum inferred.",
-    "M569A printed 1in length datum interpreted under throat_to_rod_seat (25.4mm socket, 49.2125mm pin-center-to-face). Estimated throat 23.8125mm clears starboard fulcrum lever with 1.14mm margin. Four low-speed joints installed; SH946E rods remain pending.",
-    "Low fork grip, profile, rod alignment and source-length interpretation require joint reconciliation. Do not make unexplained same-mark pin variants or silently change the printed fork length."
+    "M569A printed 1in length datum interpreted under throat_to_rod_seat (25.4mm socket, 49.2125mm pin-center-to-face). Estimated throat 23.8125mm clears starboard fulcrum lever with 1.14mm margin.",
+    "Two SH946E straight rods installed with one shared definition (solid 19.05mm section, 130.7616mm length inferred). Horizontal fulcrum levers M4134 and M4133 reconciled symmetrically to xb = 39.6875mm (1-9/16 in), closing coaxial straight rods at Y = ±535.3957mm, Z = 625.125mm with zero collisions. M567 washers, M564 springs and long rear rods remain open."
   ],
-  "visual_progression_count": 250,
+  "visual_progression_count": 254,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
   "latest_locally_qualified_checkpoint": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01",
-    "native_sha256": "0ac4995206bca411b0c19de3c46d5b90b4f06e3769ec01b8cdfff3d3faa020c3",
-    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01",
+    "native_sha256": "9b36e8ca2124d0314825c66b905080f770a3d709a9503eb76a882147cd4e1f04",
+    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/qualification.json"
   },
-  "qualification_scope": "Four M569A/M568A/cotter/plain-nut low-speed end joints installed: 16 added parts, one new shared definition (Def_LowJoint_fork) and three reused definitions (Def_ControlJoint_pin, Def_ControlJoint_cotter, Def_USStdControlNut). Literal 1″ source length interpreted under throat_to_rod_seat datum (25.4mm socket). SH946E connecting rods and complete controls remain open.",
-  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joint_source_review01.json",
+  "qualification_scope": "Two SH946E straight rods installed with one shared definition (Def_RearLowRod). Horizontal fulcrum levers M4134 (Starboard) and M4133 (Port) brake arm profiles reconciled symmetrically to [39.6875, ±85.395714] mm for straight-rod closure; all other lever geometry, front brake levers, upper bearing interfaces, and all unrelated geometry preserved. Static thread engagement (>= 19.05 mm), context, and 567 inherited definitions preserved. Complete controls, springs, and standard integration remain open.",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rod_source_review01.json",
   "active_development_candidate": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01",
-    "status": "Four M569A/M568A/cotter/plain-nut low-speed end joints installed: 16 added parts, one new shared definition (Def_LowJoint_fork) and three reused definitions (Def_ControlJoint_pin, Def_ControlJoint_cotter, Def_USStdControlNut). Literal 1″ source length interpreted under throat_to_rod_seat datum (25.4mm socket, 49.2125mm pin-center-to-face). All 3,264 inherited occurrences and 568 definitions preserved (547 exact/21 strict). Progression 250; standard tank011 unchanged. Two SH946E physical rods connecting front and rear joints remain pending in low_rods increment.",
-    "native_sha256": "0ac4995206bca411b0c19de3c46d5b90b4f06e3769ec01b8cdfff3d3faa020c3"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01",
+    "status": "Two SH946E straight rods installed: 2 added parts, one new shared definition (Def_RearLowRod). M4133/M4134 fulcrum lever brake arms reconciled to xb = 39.6875 mm for straight-rod closure. All 3,280 inherited occurrences and 567 definitions preserved (549 exact/18 strict). Progression 254; standard tank011 unchanged. M567 washers, M564 springs, and long rods remain open.",
+    "native_sha256": "9b36e8ca2124d0314825c66b905080f770a3d709a9503eb76a882147cd4e1f04"
   },
-  "qualification_note": "Four M569A low-speed end joints transfer strictly from tested prototype low_joints01; all inherited shapes, frames, owners and properties are preserved. Two SH946E rods and complete controls remain unfinished.",
+  "qualification_note": "Two SH946E straight rods transfer strictly from tested prototype low_rods01; all inherited shapes, frames, owners and properties are preserved. M567 washers, M564 springs, M575/M573 long rods and complete controls remain unfinished.",
   "parent_pipeline_run": "high_brake_support01",
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
-  "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_rear_low_joint_checkpoint.py",
+  "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_rear_low_rod_checkpoint.py",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints01",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01/qualification.json",
-    "status": "Four M569A/M568A/cotter/plain-nut low-speed end joints installed: 16 added parts, one new shared definition (Def_LowJoint_fork) and three reused definitions (Def_ControlJoint_pin, Def_ControlJoint_cotter, Def_USStdControlNut). Literal 1″ source length interpreted under throat_to_rod_seat datum (25.4mm socket, 49.2125mm pin-center-to-face). All 3,264 inherited occurrences and 568 definitions preserved (547 exact/21 strict). Progression 250; standard tank011 unchanged. Two SH946E physical rods connecting front and rear joints remain pending in low_rods increment.",
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods01",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/qualification.json",
+    "status": "Two SH946E straight rods installed: 2 added parts, one new shared definition (Def_RearLowRod). M4133/M4134 fulcrum lever brake arms reconciled to xb = 39.6875 mm for straight-rod closure. All 3,280 inherited occurrences and 567 definitions preserved (549 exact/18 strict). Progression 254; standard tank011 unchanged. M567 washers, M564 springs, and long rods remain open.",
     "geometry_integrated": true,
-    "nominal_and_clearance_variation": "Nominal low_joint_controls01.json (throat_end 23.8125mm, radial gap 0.15mm) and variation low_joint_variation_controls01.json (radial gap 0.20mm, ear stock 11.1125mm). Each 78 native, 46 context and 20 STEP checks.",
+    "nominal_and_clearance_variation": "Nominal low_rod_controls01.json (nominal insertion 20.6375 mm, rod length 130.7616 mm) and variation low_rod_variation_controls01.json (insertion 19.55 mm, rod length 128.5866 mm). Each 81 native, 127 context and 30 STEP checks.",
     "source_camera": "SNL6 local camera reused without refit; existing silhouette/station disagreement retained.",
-    "next_action": "Connect the two SH946E straight rods between installed low-speed front brake and rear fulcrum joint sockets. Continue M567 washers, M564 springs, M575/long rods and center/front controls; standard geometry before poses.",
-    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01/qualification.json"
+    "next_action": "Continue M567 washers, M564 springs, M575/M573 long rear rods and center/front controls; standard geometry before poses.",
+    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01/qualification.json"
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
@@ -97,5 +98,6 @@
   },
   "active_mounting_hypothesis": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/right_cleat_source_review01.json",
   "revised_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/operating_interfaces.json",
-  "pin_family_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01/operating_interfaces.json"
+  "pin_family_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01/operating_interfaces.json",
+  "revised_low_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/operating_interfaces.json"
 }
