@@ -11,6 +11,31 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 25 September 2026 — rear low-speed brake end joints installed
+
+The [new development checkpoint](experiments/drive_chains/transmission_controls_study/low_joints_integrated01/README.md)
+adds four M569A forks, four M568A pins, four split pins and four plain nuts:
+**3,280 occurrences / 569 definitions / 365 groups**. Four nuts reuse `Def_USStdControlNut`,
+and the pins and cotters reuse `Def_ControlJoint_pin` and `Def_ControlJoint_cotter` from
+`pin_family_integrated01`. One new shared definition `Def_LowJoint_fork` serves all four
+low-speed joints.
+
+The literal 1″ length from SNL 87:002 is interpreted under the `throat_to_rod_seat` datum
+(providing a 25.4 mm full threaded socket meeting the ≥ 19.05 mm engagement criterion). An
+estimated throat depth of 23.8125 mm (15/16″) clears the starboard fulcrum lever arm entering
+at -56.89° (extending to 22.6738 mm) with 1.14 mm clean margin, giving a 49.2125 mm pin-center
+to rod-seat distance. The failed 1″ pin-center-to-face trial remains preserved as a diagnostic.
+
+Nominal and variation prototypes each pass 78 native checks, 28 material pairs, 46 surrounding
+context pairs and 20 strict STEP comparisons. Full integration passes 33 checks, preserves
+568 inherited definitions (547 exact / 21 strict) and reproduces 1,739 BReps / 157,512 properties.
+Seventeen prior comparisons were reused by exact hashes. Three inspected views bring visual
+progression to **250**.
+
+The next physical task is connecting the two SH946E straight rods between the installed front
+and rear sockets. Washers, springs, long rods and center/front controls follow; standard tank011
+remains unchanged; poses remain deferred.
+
 ## 24 September 2026 — shared control-pin family reconciled
 
 The [new checkpoint](experiments/drive_chains/transmission_controls_study/pin_family_integrated01/README.md)

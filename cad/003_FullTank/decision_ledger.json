@@ -1050,6 +1050,54 @@
         }
       ],
       "supersedes": "The modeled diameter conflict in shared_m568a_low_speed_receiver_diameter is resolved within this estimate. Historical diameter evidence remains open; preserve the original conflict receipt."
+    },
+    {
+      "id": "rear_low_control_end_joints",
+      "status": "reviewed_approximation",
+      "scope": "Four M569A control rod forks, four M568A pins, four 1/8 x 1 inch split pins and four 3/4 inch U.S. Standard plain nuts installed at the four low-speed brake control eyes.",
+      "reason": "Literal 1 inch length from SNL87:002 interpreted under throat_to_rod_seat datum (providing 25.4mm threaded socket >= 19.05mm engagement). Estimated throat depth of 23.8125mm (15/16″) clears the starboard fulcrum lever entering at -56.89° with 1.14mm clean margin, giving 49.2125mm pin-center to rod-seat distance. Shared 12.7mm M568A pin, cotter and nut match parent pin_family_integrated01 definitions.",
+      "uncertainty": "Fork throat depth, ear profile, pin diameter and nut exterior finish remain documented approximations; literal source length datum is inferred.",
+      "limits": [
+        "Does not close the two SH946E connecting rods; rod closure pending.",
+        "Static geometry only; motion, service and remaining interiors open.",
+        "Fixed source camera retains inherited silhouette and spring-height discrepancies."
+      ],
+      "review": {
+        "reviewer": "Antigravity",
+        "date": "2026-09-25",
+        "basis": "Original SNL87:002, SNL136:007, SNL136:008 and SNL195:019 reviewed. Independent native, context, exchange, reproduction, preservation and visual review checks all passed."
+      },
+      "reopen_when": [
+        "New legible M569A drawing or stated datum",
+        "SH946E rod closure requires changed socket depth or fork clocking",
+        "Receiver lever geometry or eye coordinate changes"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joint_source_review01.json",
+          "sha256": "75f8f8c50baa5e045eedf9656ee82a01f629990d8e9953e1b53bd8d058a17dd4"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joint_controls01.json",
+          "sha256": "a9c73bc423793f4583a49999cdaca42c6ce4fa20ac3a2ccb5703ddd6e18edbdb"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01/qualification.json",
+          "sha256": "d1fea6d638ea98d0c64662cb601925c3cd38d93e7eac361d6445421420f61f50"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints01/independent_checks.json",
+          "sha256": "c61f994ddbdfd6a535a2cb68dbefe59fd328861a8176b43d7976279a87faebf3"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints01/visual_review.json",
+          "sha256": "972dd9c0660fef541750ef8d8599181c7fc3f2757269991e082421560f73c68e"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json",
+          "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
+        }
+      ]
     }
   ]
 }

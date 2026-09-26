@@ -1,0 +1,51 @@
+{
+  "reviewed_originals": [
+    "SNL87",
+    "SNL136",
+    "SNL195",
+    "SNL Plate6",
+    "HB104"
+  ],
+  "selected": "Four M569A forks for two SH946E short low-speed brake connections; one common M568A 12.7mm pin and one 1/8 x 1 inch split pin per fork, and two 3/4 inch plain U.S. Std. nuts per rod.",
+  "source_supported": [
+    "SNL87:002 applies four M569A forks, length 1″, to SH946E (2 per rod).",
+    "SNL136:007 explicitly applies M568A 1-5/8 inch pins and 1/8x1 inch cotters to M569A and M569B. 41.275mm pin length datum is modeled under head.",
+    "SNL195:019 confirms two 3/4 inch plain nuts per SH946E connecting rod assembly.",
+    "Common 12.7mm pin shank and 13.0mm receiving bores reconciled in pin_family_integrated01."
+  ],
+  "fork_datum_resolution": {
+    "source_printed_length": "1 inch (25.4mm)",
+    "datum_conflict": "SNL87:002 prints length 1″ without a datum. Both front (Def_BrakeFront_lever) and rear (Def_RearControlFulcrum_lever_low_left/right) receivers have rounded tips of 18.0-19.05mm radius around the 13.0mm bore.",
+    "rejected_diagnostic": "A pin-centre-to-rod-seat interpretation with 22.225mm receiver-clearing throat leaves only 3.175mm of threaded socket, failing the 19.05mm (1 diameter) thread engagement criterion. That combination is rejected and preserved in LowForkDatumDiagnostic.",
+    "selected_hypothesis": "The 1 inch dimension describes the threaded shank / socket length (throat_to_rod_seat). Estimated throat depth of 23.8125mm (15/16″) clears the starboard fulcrum arm entering at -56.89° (extending to 22.6738mm) with 1.14mm margin. This provides 25.4mm of available thread envelope (satisfying >= 19.05mm engagement) and a pin-center to rod-seat distance of 49.2125mm (1-15/16″).",
+    "retained_alternatives": [
+      "Catalogue clerical abbreviation or error for 1-1/2″ or 1-3/4″ standard clevis.",
+      "Compact receiver eye profile allowing shorter throat.",
+      "Pin-centre-to-face with non-standard reduced thread engagement."
+    ]
+  },
+  "grip_stack": {
+    "pin_length_under_head_mm": 41.275,
+    "receiver_width_mm": 12.7,
+    "side_clearance_mm": 0.25,
+    "fork_gap_mm": 13.2,
+    "ear_stock_mm": 11.1125,
+    "fork_outer_width_mm": 35.425,
+    "cotter_station_beyond_fork_mm": 2.3,
+    "cotter_diameter_mm": 3.175,
+    "cotter_hole_center_mm": 37.725,
+    "pin_tip_margin_mm": 1.9625
+  },
+  "approximations": [
+    "D-profile fork ears, 11.1125mm ear stock, 23.8125mm throat, 28.575mm shoulder and 12.7mm socket radius are estimates.",
+    "Common M568A 12.7mm shank and 13.0mm fork bore match the reconciled pin family.",
+    "Nominal threaded envelopes, 0.25mm side clearance, 0.15mm pin radial clearance and 0.1mm rod radial clearance are modeling choices.",
+    "Joint poses place front forks with transverse horizontal pins (pointing in +X) and rear forks with vertical pins clocked along the horizontal rod vector toward the front brake eye to clear the lever arm without interference."
+  ],
+  "limits": [
+    "No rods, M567 washers or physical springs are added in this joint increment; rod closure follows in low_rods01.",
+    "Full motion, adjustment and service paths remain unqualified.",
+    "Source camera remains fixed; new estimated fork surfaces are not fitting landmarks."
+  ],
+  "historical_geometry_qualified": false
+}

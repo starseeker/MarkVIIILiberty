@@ -1,0 +1,161 @@
+{
+  "native_sha256": "dbf3750df8788b664c8a015301248964aa2235ed9dfdaa62f7bd155180573d5f",
+  "interfaces": [
+    {
+      "id": "PortHighSpeedBrakeControl",
+      "occurrences": [
+        "PortHighSpeedBrakeLeverLeft",
+        "PortHighSpeedBrakeLeverRight"
+      ],
+      "center_world_mm": [
+        2069.9446420457634,
+        222.25,
+        606.9279411764705
+      ],
+      "pin_axis_world": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "bore_diameter_mm": 13.0,
+      "bearing_width_mm": 25.4,
+      "definition_names": [
+        "Def_HighBrakeMechanism_lever_left",
+        "Def_HighBrakeMechanism_lever_right"
+      ],
+      "definition_hashes": {
+        "Def_HighBrakeMechanism_lever_left": "e66cf67f31fefc235f5ebee1f2884c8c9b5a5fcc0a05155147abcd4b1953258c",
+        "Def_HighBrakeMechanism_lever_right": "442a9df1bb5a979a9979468d781aff7ffae3adcfc74e67ba86acb53831fb49a8"
+      }
+    },
+    {
+      "id": "StarboardHighSpeedBrakeControl",
+      "occurrences": [
+        "StarboardHighSpeedBrakeLeverLeft",
+        "StarboardHighSpeedBrakeLeverRight"
+      ],
+      "center_world_mm": [
+        2069.9446420457634,
+        -222.25000000000006,
+        606.9279411764705
+      ],
+      "pin_axis_world": [
+        0.0,
+        -1.0000000000000002,
+        0.0
+      ],
+      "bore_diameter_mm": 13.0,
+      "bearing_width_mm": 25.4,
+      "definition_names": [
+        "Def_HighBrakeMechanism_lever_left",
+        "Def_HighBrakeMechanism_lever_right"
+      ],
+      "definition_hashes": {
+        "Def_HighBrakeMechanism_lever_left": "e66cf67f31fefc235f5ebee1f2884c8c9b5a5fcc0a05155147abcd4b1953258c",
+        "Def_HighBrakeMechanism_lever_right": "442a9df1bb5a979a9979468d781aff7ffae3adcfc74e67ba86acb53831fb49a8"
+      }
+    },
+    {
+      "id": "PortLowSpeedBrakeControl",
+      "occurrences": [
+        "PortLowSpeedBrakeLever"
+      ],
+      "center_world_mm": [
+        2150.1758808503428,
+        535.3957142857142,
+        625.125
+      ],
+      "pin_axis_world": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "bore_diameter_mm": 13.0,
+      "bearing_width_mm": 12.7,
+      "definition_names": [
+        "Def_BrakeFront_lever"
+      ],
+      "definition_hashes": {
+        "Def_BrakeFront_lever": "20d5c8abf90d6176679da613645c051af8fee254debcf231bf6bb9c43ee0afc6"
+      }
+    },
+    {
+      "id": "PortLowBrakeRodEye",
+      "occurrences": [
+        "PortLowHorizontalLever"
+      ],
+      "center_world_mm": [
+        2330.15,
+        538.9,
+        625.125
+      ],
+      "pin_axis_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bore_diameter_mm": 13.0,
+      "bearing_width_mm": 12.7,
+      "definition_names": [
+        "Def_RearControlFulcrum_lever_low_left"
+      ],
+      "definition_hashes": {
+        "Def_RearControlFulcrum_lever_low_left": "2e2bd4ea4eaebf425e6e3f2778f31aeae3108e52d0b52b840137de9a7f3a3ffd"
+      }
+    },
+    {
+      "id": "StarboardLowSpeedBrakeControl",
+      "occurrences": [
+        "StarboardLowSpeedBrakeLever"
+      ],
+      "center_world_mm": [
+        2150.1758808503428,
+        -535.3957142857142,
+        625.125
+      ],
+      "pin_axis_world": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "bore_diameter_mm": 13.0,
+      "bearing_width_mm": 12.7,
+      "definition_names": [
+        "Def_BrakeFront_lever"
+      ],
+      "definition_hashes": {
+        "Def_BrakeFront_lever": "20d5c8abf90d6176679da613645c051af8fee254debcf231bf6bb9c43ee0afc6"
+      }
+    },
+    {
+      "id": "StarboardLowBrakeRodEye",
+      "occurrences": [
+        "StarboardLowHorizontalLever"
+      ],
+      "center_world_mm": [
+        2346.025,
+        -523.025,
+        625.125
+      ],
+      "pin_axis_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "bore_diameter_mm": 13.0,
+      "bearing_width_mm": 12.7,
+      "definition_names": [
+        "Def_RearControlFulcrum_lever_low_right"
+      ],
+      "definition_hashes": {
+        "Def_RearControlFulcrum_lever_low_right": "cc2f66f77f45f3ffd2fa9db32c7d54b51c5013b6c03e340b71b13e88da3a744c"
+      }
+    }
+  ],
+  "checker_sha256": "a21e00fe7a6ca091023ba00a65ca12c88783aae2e3627520a9ebb4e543fa39b8",
+  "scope": "Two revised high-speed bore diameters and four unchanged low-speed eyes rebound to the integrated native; all frames retained. Earlier track-rod interfaces are unchanged. Low-speed forks and full routes pending.",
+  "prototype_native_sha256": "f0dd2964d8c7ba721d4deb780de2fd15b6e38dc97df53dd157de63f5eb199396",
+  "integration_checker_sha256": "c6e43cab5c1eb487a0557e34e08300ddec71a034d86d772b0132d40ad9309d43",
+  "inherited_track_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/operating_interfaces.json",
+  "inherited_track_interfaces_sha256": "b94d394539e49ee0439899f9d53e92ab38b887d869468a148cd79c6bf4c296f3"
+}
