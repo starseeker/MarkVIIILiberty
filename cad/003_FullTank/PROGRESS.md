@@ -11,6 +11,32 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — refine source-visible support outline and identify fitting gaps
+
+The [support fore-edge study](experiments/drive_chains/driver_support_outline_study/README.md)
+extends both plates and separate angles to the near-vertical boundary visible in
+the fixed source section. An initial trial placed two complete bolt heads across
+the floor bend; the corrected estimated mounting pair sits on the adjacent flat
+surface. No stock is shortened. Exactly five definitions and 24 hardware frames
+change relative to the verified coupled station; all rods, shafts, stays and seat
+geometry remain intact.
+
+Nominal and +5 mm fore-edge variants pass 1,075 material/joint checks, 31 additional
+contact/floor checks, eight explicit preservation/outline checks and all 1,174
+nearby pairs. Strict STEP checks cover the actual five-definition/29-occurrence
+delta: 34 comparisons each, with unaffected geometry bound to its prior
+qualification. A fresh build reproduces 391 BReps and 20,529 properties.
+[Another isometric snapshot](../intermediate_snapshot_iso_support_outline_study_20260927.png)
+records the corrected outline.
+
+The [remaining seat-fitting review](experiments/drive_chains/seat_adjustment_study/README.md)
+confirms SH291D handle and SH291F cleat references in original rivet rows, alongside
+the separate SH291C clip. Mounts and D/F quantities remain unresolved; no speculative
+parts or rivet totals are added. Next integrate the reviewed complete coupled
+station into the retained hierarchy, then populate identifiable foot/reverse
+controls. The native is a locally checked approximation, not yet a full-hierarchy
+checkpoint. Accepted development and progression 308 remain unchanged.
+
 ## 27 September 2026 — complete coupled driver/control station trial
 
 The [coupled study](experiments/drive_chains/coupled_driver_station_study/README.md)

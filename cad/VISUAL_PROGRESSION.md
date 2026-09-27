@@ -1481,3 +1481,12 @@ inside a wireframe bow. [Complete rod overview](003_FullTank/experiments/drive_c
 shows the connected existing routes. Nominal and variation pass mechanical checks;
 source-profile differences and missing controls remain explicit. Accepted
 progression remains308. See [provenance](003_FullTank/experiments/drive_chains/coupled_driver_station_study/snapshot_provenance.json).
+
+## 27 September 2026 — source-visible seat-support fore-edge (diagnostic)
+
+[Support-outline isometric](intermediate_snapshot_iso_support_outline_study_20260927.png)
+shows the extended plates/angles and corrected front mounting pairs. The fixed
+source overlay now follows the near-vertical fore-edge more closely. Nominal and
+fore-edge variation pass full-context and changed-part STEP checks; this remains
+a local approximation awaiting full-hierarchy integration. Accepted progression
+stays 308. [Snapshot provenance](003_FullTank/experiments/drive_chains/driver_support_outline_study/snapshot_provenance.json).

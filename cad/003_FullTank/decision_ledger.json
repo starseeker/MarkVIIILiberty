@@ -2260,6 +2260,75 @@
         "date": "2026-09-27",
         "basis": "Saved-native stock/joints, full context, strict STEP, variation/reproduction and six inspected views; differences retained."
       }
+    },
+    {
+      "id": "driver_support_fore_edge_20260927",
+      "status": "reviewed_approximation",
+      "scope": "M786/M787 fore-edge, M788 footprint and actual front mounts within the qualified coupled station.",
+      "reason": "The former shaft-derived foot gave a strongly diagonal fore-edge inconsistent with the visible section. Extend to the front stay margin; move full mounting stock away from the actual floor bend.",
+      "uncertainty": "Exact edge identity/margin, angle stock and mounting pitch remain estimates. This approval covers a local static reconstruction, not historical certainty.",
+      "limits": [
+        "Five definitions and24 hardware frames change; all120 other definitions and370 other frames retain the coupled baseline.",
+        "Nominal/+5mm:1075+31+8 checks,1174 clear context pairs,34 strict delta STEP comparisons each;391-BRep fresh reproduction.",
+        "Source registration remains fixed. M772 bend and seat/shaft uncertainties remain explicit; full hierarchy integration pending."
+      ],
+      "reopen_when": [
+        "New evidence identifies a different plate boundary or adjusting mechanism interface.",
+        "Integration or remaining controls contradict the current geometry."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_support_outline_study/study_receipt.json",
+          "sha256": "4595093d4a9a5da5df7d98bdb9aafb043162763b35b90d465076b41ce2fb0cb4"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_support_outline_study/README.md",
+          "sha256": "a8b7ab57859884ae10cd6cfc4d95d74b367a99877eddc3e963278ec8b948f601"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_support_outline_study/trial02/visual01/visual_review.json",
+          "sha256": "2ef586b1c0078a0f46922c3e02fa30866d0c8ed853f28969e5cf4a052dd3ba27"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Saved geometric evidence and directly inspected original/source comparison images."
+      }
+    },
+    {
+      "id": "seat_adjustment_family_gaps_20260927",
+      "status": "open_identity",
+      "scope": "SH291C clip, SH291D handle and SH291F cleat identity/mount/count reconciliation.",
+      "reason": "Original generic rivet rows confirm D/F names absent from the composed-of seat list and standalone alphabetical entries. Shared291 family suggests but does not prove an adjusting role.",
+      "uncertainty": "C quantity1 and88.9mm length are printed; D/F installed counts, profiles and all three mounts unresolved.",
+      "limits": [
+        "Do not equate C with the twoSH291X clips.",
+        "D/F application counts2/10 are rivets, not handle/cleat quantities; catalogue totals26/56 include unrelated uses.",
+        "No speculative geometry or camera fit. Continue supported geometry while retaining explicit inventory candidates."
+      ],
+      "reopen_when": [
+        "Better figure identification, mounting instructions or independent source resolves these parts."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/seat_adjustment_study/evidence_receipt.json",
+          "sha256": "9615be0283f141dad7c29a77ac261b4528afcbb195f0327ecee25225f97d7b66"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/seat_adjustment_study/README.md",
+          "sha256": "2ff1acd96e4f75651f5dba6ad9bacfbeeedee670f8ed39e1c3b2c012df2c027f"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/seat_adjustment_study/evidence01/report.json",
+          "sha256": "e28dbf18a0a9564db1c0d1c5942b7cdec8367ab4adcd28798a7ca59cfb661661"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Saved geometric evidence and directly inspected original/source comparison images."
+      }
     }
   ]
 }

@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "Exactly five changed definitions; all120 others byte-identical",
+      "passed": true
+    },
+    {
+      "name": "Only24 complete front mounting pieces move",
+      "passed": true
+    },
+    {
+      "name": "Port actual fore-edge follows declared variation",
+      "passed": true,
+      "actual_x_mm": 7701.363641618496,
+      "expected_x_mm": 7701.363641618496
+    },
+    {
+      "name": "Port3 whole floor-bolt head remains aft of bend",
+      "passed": true,
+      "forward_bound_mm": 7629.190864251103,
+      "bend_x_mm": 7669.825205518875
+    },
+    {
+      "name": "Port4 whole floor-bolt head remains aft of bend",
+      "passed": true,
+      "forward_bound_mm": 7659.190864251103,
+      "bend_x_mm": 7669.825205518875
+    },
+    {
+      "name": "Starboard actual fore-edge follows declared variation",
+      "passed": true,
+      "actual_x_mm": 7701.363641618496,
+      "expected_x_mm": 7701.363641618496
+    },
+    {
+      "name": "Starboard3 whole floor-bolt head remains aft of bend",
+      "passed": true,
+      "forward_bound_mm": 7629.190864251103,
+      "bend_x_mm": 7669.825205518875
+    },
+    {
+      "name": "Starboard4 whole floor-bolt head remains aft of bend",
+      "passed": true,
+      "forward_bound_mm": 7659.190864251103,
+      "bend_x_mm": 7669.825205518875
+    }
+  ],
+  "native_sha256": "695dd9058278cae65d13ed64cee29b55b9ef0faf4873761b9e2e1ab153fdb0bd",
+  "baseline_native_sha256": "54faa2a94046df78cc1a58e53c4d2a433b6e281624fc8c73e1b8fb4266c084a4",
+  "baseline_receipt_sha256": "8900d98c5323d6301923ed3f45a76b5e4b584563285340afc40d9fca5a3c63a7",
+  "checker_sha256": "50d9520612234976545397c88730780ac2ebc1e3433ac8cda4edeb48d1950765",
+  "changed_definitions": [
+    "Def_DriverContext_hull_floor_1",
+    "Def_DriverPortSupportPlate_MountStudy",
+    "Def_DriverStarboardSupportPlate_MountStudy",
+    "Def_SeatSupport_PortAngle_M788",
+    "Def_SeatSupport_StarboardAngle_M788"
+  ],
+  "changed_frames": [
+    "DriverPortSupportMount3Bolt",
+    "DriverPortSupportMount3Lock",
+    "DriverPortSupportMount3Nut",
+    "DriverPortSupportMount4Bolt",
+    "DriverPortSupportMount4Lock",
+    "DriverPortSupportMount4Nut",
+    "DriverSeatPortAngleFloor3Bolt",
+    "DriverSeatPortAngleFloor3Lock",
+    "DriverSeatPortAngleFloor3Nut",
+    "DriverSeatPortAngleFloor4Bolt",
+    "DriverSeatPortAngleFloor4Lock",
+    "DriverSeatPortAngleFloor4Nut",
+    "DriverSeatStarboardAngleFloor3Bolt",
+    "DriverSeatStarboardAngleFloor3Lock",
+    "DriverSeatStarboardAngleFloor3Nut",
+    "DriverSeatStarboardAngleFloor4Bolt",
+    "DriverSeatStarboardAngleFloor4Lock",
+    "DriverSeatStarboardAngleFloor4Nut",
+    "DriverStarboardSupportMount3Bolt",
+    "DriverStarboardSupportMount3Lock",
+    "DriverStarboardSupportMount3Nut",
+    "DriverStarboardSupportMount4Bolt",
+    "DriverStarboardSupportMount4Lock",
+    "DriverStarboardSupportMount4Nut"
+  ],
+  "scope": "Actual saved change set, unchanged rod/shaft/seat geometry and frames, fore-edge variation and complete bolt clearance from bend."
+}

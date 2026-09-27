@@ -1,0 +1,45 @@
+{
+  "native_sha256": "ccdf3e1393b4b3c247a8db96ba4e785d6cfc4bacef61a623ec951cf126e1fc7f",
+  "rejected_for_integration": true,
+  "context_findings": [
+    {
+      "first": "DriverSeatPortAngleFloor4Bolt",
+      "second": "DriverSeatPortSupportAngle",
+      "origin": "candidate",
+      "common_mm3": 28.444475097194402,
+      "common_valid": true,
+      "overlap_above_1e5": true,
+      "intersection_bounds_mm": [
+        7658.33498540886,
+        306.8999999999998,
+        819.015128547001,
+        7667.1386939801105,
+        325.95000000000005,
+        823.7616301146753
+      ]
+    },
+    {
+      "first": "DriverSeatStarboardAngleFloor4Bolt",
+      "second": "DriverSeatStarboardSupportAngle",
+      "origin": "candidate",
+      "common_mm3": 28.444475097194548,
+      "common_valid": true,
+      "overlap_above_1e5": true,
+      "intersection_bounds_mm": [
+        7658.33498540886,
+        -325.95000000000016,
+        819.015128547001,
+        7667.1386939801105,
+        -306.89999999999986,
+        823.7616301146754
+      ]
+    }
+  ],
+  "source_camera_refitted": false,
+  "images_inspected": {
+    "isometric.png": "e5a3d5ce4ca3519c1bf7202bd190fd1e9609561beac2aa281b2c72879d09ce93",
+    "source_section.png": "c9bad7cea926d2f9e1a05a930225a4781fedfe1bb3e4b19dfda90adf8c0b9077"
+  },
+  "finding": "Near-vertical fore-edge is closer to the visible source section, but each fourth full floor bolt head straddles the angle/floor bend. Two28.444475mm3 intersections; all other context clear.",
+  "next_revision": "Retain complete support outline and stock. Place front mounting pair30/60mm aft of the floor bend, preserving the unprinted30mm pair pitch. Regenerate the actual floor bores and all associated fasteners."
+}
