@@ -14,6 +14,7 @@
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_foot_profile_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_foot_reverse_evidence.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_support_outline_study.py",
@@ -47,7 +48,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Build the driver foot-control topology from coupled_driver_integration/integrated01 and driver_foot_reverse_study/evidence02. Trace M765/M769/M770/M795 and8M771 connectivity against SNL6/HB113 using existing local registrations and actual selector/shaft interfaces. Then construct complete connected stock, M767/M768 with1.5in cotter, M568A1.625in pin interpretation, and the two remaining shared M576 rods. Resolve SH946F end/other-end assignment before adding forks. Preserve complete M574/SH229A stock and inherited hierarchy. Follow with reverse lever/quadrant/M571, retaining original SNL118 M177 versus figure-family M777 identity discrepancy and HB150 length-datum uncertainty. No source-camera refit justified yet.",
+  "next_action": "Continue foot-control joint tracing from source_topology_review.json and rod_closure03/report.json. profile03 is CAD-qualified only and must not be integrated as a connected mechanism. Resolve M771 eight-member graph, M765 bridle, M770/M795 rear suspension and the M769 rear connection. Current direct socket needs2.3006deg reorientation and, under19.05mm insertions,90.264mm SH946F pin-to-face reach with unchanged shared1298.281517mm M576 stock; neither socket nor fork form is historically established. Reconcile fixed-plan placement before constructing complete rods. Use actual free66.675mm intermediate eyes;101.6mm eyes already carry M579. HB149 pedal35-1/4in overall,8x5in pad and I-section are now directly source-reviewed, with M764A applicability still provisional. Build complete connected stock/hardware and qualify before integration. Reverse controls follow. Preserve M574/SH229A stock, existing hierarchy and source-camera registrations.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -156,7 +157,8 @@
     "Coupled station trial02 preserves complete printed rod stock and real floor attachments, but remains a construction hypothesis at tentative mainX7461.419/Z990.022. Accepted operating_integrated01 remains unchanged.",
     "M772 delayed outward set retains printed hand/bell reach and actual grip/hub;60mm maximum middle-blade shift clears the front stay bolt by7.124mm but departs from schematic plan by19.871px. Ruled profile and transverse stock remain estimates.",
     "Current M786/M787 fore-edge is more diagonal than source section; complete adjustment fittings may affect this outline. SH291D/SH291F are newly discovered functional rivet references, not yet established seat-adjuster geometry.",
-    "Support outline trial02 supersedes the diagonal fore-edge with a reviewed near-vertical source-section approximation. Mounts avoid actual floor bend; all120 other canonical definitions and370 other occurrence frames remain unchanged relative to coupled trial02. No full-hierarchy integration yet."
+    "Support outline trial02 supersedes the diagonal fore-edge with a reviewed near-vertical source-section approximation. Mounts avoid actual floor bend; all120 other canonical definitions and370 other occurrence frames remain unchanged relative to coupled trial02. No full-hierarchy integration yet.",
+    "Unintegrated M769 profile study: bowed web constructed, but two-eye head, direct rod socket,70mm lanes and M771/M765/M770/M795 topology remain hypotheses. CAD/STEP/rebuild checks do not qualify this mechanism. See driver_foot_reverse_study/PROFILE_STUDY.md."
   ],
   "visual_progression_count": 308,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
@@ -255,5 +257,7 @@
     "receipt": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence_receipt.json",
     "status": "44 selected rows,31 collected source views/10 directly inspected,9 saved native interfaces;95 bound dependencies. Foot-brake neutral-selective topology and M177/M777 reverse identity discrepancy retained. Geometry not yet built.",
     "geometry_created": false
-  }
+  },
+  "active_profile_study": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/PROFILE_STUDY.md",
+  "active_profile_study_receipt": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/profile_study_receipt.json"
 }

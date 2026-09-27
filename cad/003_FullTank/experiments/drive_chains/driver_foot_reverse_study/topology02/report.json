@@ -1,0 +1,281 @@
+{
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_driver_foot_topology_views.py": "39f3fdd1e3695c0b480fe7100cad5d1967420360f11cb5be31ad0ad6610dd2d1",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate92.png": "50c33f9ae0e099f8bcf852742b69a10c4199e9a6375ea40b55032f87e4b07509",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate113.png": "5120b8febe3a6985e10f09685e954d8f192558f1d21e92d67d4447bbf762f897",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate12.png": "a2b3c37ec6546677a331933f9c48793787a515f622687b9d70e717f6517c9892",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/prepare_assets.py": "b09f18e3fb10b960d840dcea83138b747f3908b849fa4cff8e402c0ad8f7ba14",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII075.jpg": "b3405cf3ed8e4fe7771b4d0eb282b5e389bfea75fcac3011dd9f3eb6b625691b",
+    "cad/001_Survey/inputs/figure_index.json": "844e94991c885c45f1f9ad608bfba1411e44b7c5347df340b8c63cc0653ecdcf"
+  },
+  "images": [
+    {
+      "file": "hb92_unlabelled_driver_detail.png",
+      "sha256": "325ad5fcce79fe776833a06cf5161a9d45233399dfff7327f3e168e7d8743440",
+      "source": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate92.png",
+      "operations": [
+        "crop0,0,510,560",
+        "rotate90CCW",
+        "resize1400x1275"
+      ]
+    },
+    {
+      "file": "hb113_driver_side_detail.png",
+      "sha256": "3d4502864df692b11faf783735092608e08e54f35b8f142d08281bd8f51bb507",
+      "source": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate113.png",
+      "operations": [
+        "crop0,0,590,650",
+        "rotate90CCW",
+        "resize1300x1180"
+      ]
+    },
+    {
+      "file": "snl6_driver_plan_detail.png",
+      "sha256": "9bfd0b57dae479c5b36057da8bce14ebdc01a7bd29104c60717caa61c1e3bbf3",
+      "source": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png",
+      "operations": [
+        "crop0,100,590,490",
+        "resize1770x1170"
+      ]
+    },
+    {
+      "file": "hb12_lubrication_view.png",
+      "sha256": "e8a071ead88b82ed31b02ae1918b4f7fae60fe07e0825ef582902fff99dabdb7",
+      "source": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate12.png",
+      "operations": [
+        "original"
+      ]
+    },
+    {
+      "file": "hb149_original.png",
+      "sha256": "5fd746e9677fae80effa1cd623f018ff6a1b3d4f3cc3aa5b0d6bef1d3838c783",
+      "source": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII075.jpg",
+      "operations": [
+        "prepare_assets.page149",
+        "thumbnail1700x2200"
+      ]
+    }
+  ],
+  "relevant_figure_index": [
+    {
+      "source": "HB",
+      "page": "16",
+      "figure": "6",
+      "caption": "Driver\u2019s seat and controls, also showing ammunition storage",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "21",
+      "figure": "12",
+      "caption": "Control rods",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "24",
+      "figure": "16",
+      "caption": "Roller pinion lubrication",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "147",
+      "figure": "92",
+      "caption": "Layout of the control system, showing linkage and levers",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "151",
+      "figure": "95",
+      "caption": "Brake adjustment",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "152",
+      "figure": "97",
+      "caption": "Low-gear brake lining",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "153",
+      "figure": "98",
+      "caption": "Track brake lining",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "154",
+      "figure": "99",
+      "caption": "High-speed brake lining",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "155",
+      "figure": "100",
+      "caption": "High-speed brake",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "156",
+      "figure": "101",
+      "caption": "Track brake",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "157",
+      "figure": "102",
+      "caption": "Arrangement of low-gear brake",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "159",
+      "figure": "104",
+      "caption": "Control rod ends with epicyclic transmission removed from hull",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "187",
+      "figure": "113",
+      "caption": "Control system",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "226",
+      "figure": "133",
+      "caption": "High-speed brake",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "228",
+      "figure": "134",
+      "caption": "Low-speed brake",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "HB",
+      "page": "230",
+      "figure": "135",
+      "caption": "Track brake",
+      "path": "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "LIB",
+      "page": "33",
+      "figure": "26",
+      "caption": "Diagram of lubrication system",
+      "path": "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/data/transcription.json",
+      "kind": "illustration_index_unemended"
+    },
+    {
+      "source": "LIB",
+      "page": "49",
+      "figure": "42",
+      "caption": "Diagram of Zenith altitude control",
+      "path": "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/data/transcription.json",
+      "kind": "illustration_index_unemended"
+    },
+    {
+      "source": "LIB",
+      "page": "58",
+      "figure": "48",
+      "caption": "Diagram showing arrangement of H.C.7 altitude control",
+      "path": "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/data/transcription.json",
+      "kind": "illustration_index_unemended"
+    },
+    {
+      "source": "LIB",
+      "page": "59",
+      "figure": "49",
+      "caption": "Diagram showing positions of H.C.7 altitude control cock",
+      "path": "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/data/transcription.json",
+      "kind": "illustration_index_unemended"
+    },
+    {
+      "source": "LIB",
+      "page": "60",
+      "figure": "50",
+      "caption": "Photograph of H.C.7 altitude control cock",
+      "path": "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/data/transcription.json",
+      "kind": "illustration_index_unemended"
+    },
+    {
+      "source": "LIB",
+      "page": "143",
+      "figure": "98, 99",
+      "caption": "Adjustment of Zenith controls",
+      "path": "references/1918-09_12_Cylinder_Liberty_Aero_Engine/Liberty_Project/data/transcription.json",
+      "kind": "illustration_index_unemended"
+    },
+    {
+      "source": "SNL",
+      "page": "280",
+      "figure": "6",
+      "caption": "Control system\u2014Assembled views",
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/build_front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "SNL",
+      "page": "284",
+      "figure": "12",
+      "caption": "Engine control rods\u2014Assembled view",
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/build_front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "SNL",
+      "page": "302",
+      "figure": "30",
+      "caption": "High speed brake band\u2014Assembled view",
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/build_front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "SNL",
+      "page": "303",
+      "figure": "31",
+      "caption": "Track brake band\u2014Assembled view",
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/build_front_matter.py",
+      "kind": "plate_index"
+    },
+    {
+      "source": "SNL",
+      "page": "304",
+      "figure": "32",
+      "caption": "Low speed brake band\u2014Assembled view",
+      "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/build_front_matter.py",
+      "kind": "plate_index"
+    }
+  ],
+  "source_camera_refitted": false,
+  "geometry_created": false,
+  "scope": "Original source crops and enclosing pedal description; no new geometry or interpretation certified."
+}

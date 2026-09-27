@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "native_sha256": "bbccddda75434a49c4c6f8bd96badcc4665abc9a63c8dbed5b00ad85a568a1b5",
+  "parent_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+  "manifest_sha256": "e15221cd836beb557119a5b34d1b14e090ad8425d35f1314dabb38dcfa74b46f",
+  "standard_manifest_sha256": "58fb0a1b010c314dd8fc69758e9aeada05ce97f325c21d6801d7288cd6be753b",
+  "checker_sha256": "19c7c52ea5298d7a4d582df0f8e35fbee66e29879118df1306e6df2b9b4ca151",
+  "targets": [
+    "PortDriverFootLink",
+    "StarboardDriverFootLink"
+  ],
+  "context_occurrences": 8989,
+  "pairs": [
+    {
+      "first": "PortDriverFootLink",
+      "second": "PortDriverOperatingFulcrum",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "PortDriverFootLink",
+      "second": "hull_floor_1",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "PortDriverFootLink",
+      "second": "PortDriverOperatingHandle",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "StarboardDriverFootLink",
+      "second": "StarboardDriverOperatingFulcrum",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "StarboardDriverFootLink",
+      "second": "hull_floor_1",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "StarboardDriverFootLink",
+      "second": "StarboardDriverOperatingHandle",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    }
+  ],
+  "findings": [],
+  "no_mating_pair_exemptions": true,
+  "retained_development_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+  "scope": "Seat additions versus each other, saved coupled bow/driver prototype, full operating-controls development and physical standard context. No mating exemptions."
+}

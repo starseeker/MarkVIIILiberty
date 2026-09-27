@@ -11,6 +11,26 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — checked foot-link profile study; connections remain open
+
+The [M769 study](experiments/drive_chains/driver_foot_reverse_study/PROFILE_STUDY.md)
+adds two complete profile hypotheses in an isolated document, with six exact
+retained receivers and four nonphysical spline guides. Nominal and +1 mm web
+variants each pass 49 saved-material/property checks, six nearby pairs in an
+8,989-occurrence context and three strict STEP comparisons. A fresh build
+reproduces all 26 archive BReps and 966 properties. Qualified continuity-split
+integration resolves retained Gauss/GK measurement failures on unchanged geometry.
+
+Four inspected views and experimental snapshots show the open connections and
+fixed-plan discrepancy. The source joint graph, two-eye interpretation and direct
+rod socket are unproven; this is not promoted to the development assembly.
+Actual free intermediate eyes give a 54.210 mm socket-axis miss (2.3006°) and a
+90.264 mm hypothetical special-fork reach with the shared M576 stock. The occupied
+outer eyes are explicitly excluded. Original HB149 pedal dimensions and section
+are now reviewed, with later M764A applicability still provisional. Continue by
+resolving M771/M765/M770/M795 and the rear M769 connection. The coupled station
+remains authoritative; accepted visual progression stays at 314.
+
 ## 27 September 2026 — begin foot/reverse-control source packet
 
 The [next packet](experiments/drive_chains/driver_foot_reverse_study/README.md)

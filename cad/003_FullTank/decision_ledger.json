@@ -2399,6 +2399,42 @@
         "date": "2026-09-27",
         "basis": "Direct inspection of originalHB148/150 and SNL23/71/86/118/136/193 plus local control figures."
       }
+    },
+    {
+      "id": "driver_foot_link_profile_topology",
+      "status": "open_evidence",
+      "scope": "Retain M769 profile03 as an isolated CAD study; do not integrate it as a connected foot-brake mechanism.",
+      "reason": "Saved solids, stock variation, exact receivers, context, STEP and fresh reproduction pass. Fixed source views and rod closure leave the head, rear socket, transverse placement and neutral-selective linkage unresolved.",
+      "uncertainty": "8mm web,13mm bores,direct19mm socket,two-eye head and70mm lanes are inferred. HB149 pedal dimensions require laterM764A applicability review.90.264mm hypothetical fork reach is a computed requirement, not a catalogue dimension.",
+      "limits": [
+        "No connected mechanism or historical qualification",
+        "Authoritative coupled_driver_integration/integrated01 unchanged",
+        "No camera refit, inherited geometry revision or rod-stock change"
+      ],
+      "reopen_when": [
+        "Joint graph consistent with8M771 and neutral-selective braking",
+        "Resolved M769 rear attachment and SH946F form",
+        "Reconciled fixed-plan/source-leader identities",
+        "Changed shared M576 stock requires all five applications to be solved together"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/profile_study_receipt.json",
+          "sha256": "2fd19f560e60c38a95631a357e8136117df15b1259109fb25610da5548e42d45"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/source_topology_review.json",
+          "sha256": "c457b612c13df1cb42b401848a7c90c0afde31ffe38e87fbc6a626678c75b71a"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/rod_closure03/report.json",
+          "sha256": "77df3970eb3d121f7ac75bfcd044f4e72204914dd13c8099b658d41a47debec8"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/PROFILE_STUDY.md",
+          "sha256": "a6b6d0c6a2344a9d04db483729ae34ca9ab09f51f38472e47f716e891f4ce1a6"
+        }
+      ]
     }
   ]
 }

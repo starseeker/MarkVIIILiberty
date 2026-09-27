@@ -1,0 +1,49 @@
+{
+  "status": "unresolved_topology_with_qualified_cad_profile_study",
+  "parent_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+  "source_views_report_sha256": "9c160a6cb383f4a020781b055072af69d4adf83725aba98e7d7b99875a0ede73",
+  "directly_inspected_images": {
+    "hb92_unlabelled_driver_detail.png": "325ad5fcce79fe776833a06cf5161a9d45233399dfff7327f3e168e7d8743440",
+    "hb113_driver_side_detail.png": "3d4502864df692b11faf783735092608e08e54f35b8f142d08281bd8f51bb507",
+    "snl6_driver_plan_detail.png": "9bfd0b57dae479c5b36057da8bce14ebdc01a7bd29104c60717caa61c1e3bbf3",
+    "hb12_lubrication_view.png": "e8a071ead88b82ed31b02ae1918b4f7fae60fe07e0825ef582902fff99dabdb7",
+    "hb149_original.png": "5fd746e9677fae80effa1cd623f018ff6a1b3d4f3cc3aa5b0d6bef1d3838c783"
+  },
+  "additional_inspected_existing_images": {
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence02/hb148_original.png": "9d125413f45c6b486f103f71a0f4c05293fd746e0b8da8bef894fae3b75c5963",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence02/hb_plate92.png": "664a952b8e42e7545dcf17bf16da57dd5ba4a292d926f782a8744d3179d42cb4",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence02/hb_plate94.png": "ee1a57cbfd9433cf8c42c54c8479b8aadfca36cee6cf6f50e161dea741443086",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence02/snl071.png": "cfbf8df19d05fa25f1c86aa56d9defac7e34aeaaedf8d102481b5d6116774a0f"
+  },
+  "observations": [
+    "HB113 has twoM769 leaders in the bowed lower-link region. M765 is a separate bridle. This supports a bowed-link hypothesis but does not establish ownership of every overlapping outline.",
+    "Two visible front eye centers have been represented in one triangular head. Whether both belong to each M769, or overlap another part, still needs corroboration.",
+    "SNL71 lists8M771 and8M568A in the front assembly. A linkage graph must respect those quantities and the neutral-selective action described onHB148; no graph is certified here.",
+    "The unlabelled HB92 view clarifies outlines but shares the drawing lineage withHB113 and is not independent dimensional evidence.",
+    "Original HB149 describes a malleable-iron brake pedal,35-1/4in overall,8x5in pad,I-section and bell-crank action. Applicability to laterM764A versus handbookM764 remains provisional.",
+    "HB12 helps distinguish the central rear-shaft journal and outer swing-link journals, but does not uniquely resolve the hidden M765/M770/M795 joint stack."
+  ],
+  "pedal_source_dimensions_mm": {
+    "overall": 895.35,
+    "pad_length": 203.2,
+    "pad_width": 127.0
+  },
+  "pedal_dimension_status": "Literal HB149 dimensions; later M764A applicability and overall-length datum need reconciliation before construction.",
+  "profile_approximations": [
+    "two-eye head topology",
+    "concealed upper-web boundary and eight-mm stock",
+    "nineteen-mm blind direct-rod socket and nominal thread envelope",
+    "transverse plus/minus70mm stations"
+  ],
+  "rod_closure_report_sha256": "77df3970eb3d121f7ac75bfcd044f4e72204914dd13c8099b658d41a47debec8",
+  "next_constraints": [
+    "Preserve current1298.281517mm shared M576 stock unless all five applications are solved together.",
+    "The free intermediate connection is the66.675mm inner eye; the101.6mm outer eye already carries M579.",
+    "Current direct-socket hypothesis is54.210mm off the free-eye line, equivalent to2.3006deg. Under19.05mm insertion assumptions at both ends, the required single-fork pin-to-face reach is90.264mm. These calculations do not establish SH946F shape.",
+    "Trace M771 paired/serial membership, M765 bridle, M770 suspension and M795 sleeve before changing inherited selector interfaces or integrating links.",
+    "Reconcile the plan placement and rear connection with source leaders and the rod constraints; do not refit the camera merely to hide disagreement."
+  ],
+  "source_camera_refitted": false,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false
+}

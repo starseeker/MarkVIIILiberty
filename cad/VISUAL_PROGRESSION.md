@@ -1,5 +1,16 @@
 # Mark VIII visual progression
 
+## Experimental foot-link profiles — 27 September 2026
+
+Four study views retain the bowed M769 construction and its unresolved connections.
+These are isolated hypotheses; accepted assembly progression remains **314 images**.
+
+- [Isometric profiles](intermediate_snapshot_iso_foot_link_profile_study_001.png)
+- [Retained controls and open connections](intermediate_snapshot_context_foot_link_profile_study_001.png)
+- [Fixed side comparison](intermediate_snapshot_source_side_foot_link_profile_study_001.png)
+- [Fixed plan discrepancy](intermediate_snapshot_source_plan_foot_link_profile_study_001.png)
+
+
 ## Integrated coupled driver station — 27 September 2026
 
 Two new whole-union views plus four retained local/source views bring accepted

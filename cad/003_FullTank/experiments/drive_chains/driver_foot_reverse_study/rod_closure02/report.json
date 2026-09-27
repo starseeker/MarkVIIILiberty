@@ -1,0 +1,86 @@
+{
+  "candidate_native_sha256": "006c9fb5f2c00195b7c35d8ef6229c63f402db1d6ccca40575638ef7e16e73ae",
+  "parent_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+  "worker_sha256": "83fd0ea4f0dfb04175cb8e9dc890134b1ad0013f0ae0537ca435de12e0fa6699",
+  "registration_sha256": "fe730cf90ecfa0dbfea6559bcb40f4b53a4fd9869dec00e78fc590f053abe701",
+  "rod_definition": "Def_DriverClutchFrontRod_M576",
+  "rod_stock_length_mm": 1298.2815173876718,
+  "retained_occurrences": [
+    "DriverClutchFrontRod",
+    "PortDriverHighFrontRod",
+    "StarboardDriverHighFrontRod"
+  ],
+  "cases": [
+    {
+      "side": "Port",
+      "socket_mouth_world_mm": [
+        7113.125081109863,
+        70.0,
+        787.9120708092026
+      ],
+      "actual_socket_axis": [
+        -0.9923515659601277,
+        -0.0,
+        -0.1234437910001246
+      ],
+      "retained_lower_pin_axis_point_mm": [
+        5761.331961137004,
+        70.0,
+        640.7435322939596
+      ],
+      "mouth_to_pin_mm": 1359.7805771280405,
+      "retained_pin_distance_from_socket_axis_mm": 20.827537721671035,
+      "needed_socket_rotation_deg": 0.8776244450006333,
+      "proposed_straight_rod_direction": [
+        -0.9941259220130557,
+        0.0,
+        -0.10822962247782225
+      ],
+      "socket_plan_px": [
+        409.73702006954704,
+        362.1470514044173
+      ],
+      "nominal_socket_and_fork_insertion_mm": 19.05,
+      "required_single_fork_pin_to_face_mm": 99.5990597403686,
+      "interpretation": "If the link contains a direct rod socket, and both insertions are19.05mm, a straight unchanged M576 requires this fork pin-to-face reach. SH946F geometry is not established by this calculation."
+    },
+    {
+      "side": "Starboard",
+      "socket_mouth_world_mm": [
+        7113.125081109863,
+        -70.0,
+        787.9120708092026
+      ],
+      "actual_socket_axis": [
+        -0.9923515659601277,
+        -0.0,
+        -0.1234437910001246
+      ],
+      "retained_lower_pin_axis_point_mm": [
+        5761.331961137004,
+        -70.0,
+        640.7435322939596
+      ],
+      "mouth_to_pin_mm": 1359.7805771280405,
+      "retained_pin_distance_from_socket_axis_mm": 20.827537721671035,
+      "needed_socket_rotation_deg": 0.8776244450006333,
+      "proposed_straight_rod_direction": [
+        -0.9941259220130557,
+        0.0,
+        -0.10822962247782225
+      ],
+      "socket_plan_px": [
+        411.7413149872278,
+        315.8255688624624
+      ],
+      "nominal_socket_and_fork_insertion_mm": 19.05,
+      "required_single_fork_pin_to_face_mm": 99.5990597403686,
+      "interpretation": "If the link contains a direct rod socket, and both insertions are19.05mm, a straight unchanged M576 requires this fork pin-to-face reach. SH946F geometry is not established by this calculation."
+    }
+  ],
+  "source_camera_refitted": false,
+  "geometry_modified": false,
+  "stock_shortened": false,
+  "connections_closed": false,
+  "conclusion": "Current inferred socket axes do not aim at retained intermediate eyes. Both socket topology and special-fork form must be reviewed before rod construction; solve all five shared M576 applications together if stock changes."
+}

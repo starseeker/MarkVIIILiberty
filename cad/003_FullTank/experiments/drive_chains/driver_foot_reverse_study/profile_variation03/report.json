@@ -1,0 +1,521 @@
+{
+  "native_file": "ControlRebuildTrial.FCStd",
+  "native_sha256": "bbccddda75434a49c4c6f8bd96badcc4665abc9a63c8dbed5b00ad85a568a1b5",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/PowertrainControlRebuild.FCStd",
+  "parent_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+  "parent_manifest_sha256": "027f1aada1571473173d0631ec011cffcf81c2dd21335ed6060985a920f6b295",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_driver_foot_link_profile_v3.py": "158dca4587d665a82e48f682f5ed4720aa61427b4e89869d7ab8846f1d6b0b4e",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/foot_link_profile_controls01.json": "deaf3f00b4f0f74fd0f8c7d67151db1ae422e79140eb2fdd377d0100963bf67a",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_link_parts.py": "7273a3d6ee462c538868e02772902357d88527eef327469d38b5e75eecdaedd7",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io_v2.py": "84ab9a61290fbdbf32da469c0acab4582a6e6e7a0761583b6425263bc96f6465",
+    "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/report.json": "60ac3a28e8de35ea179b208c0c4147e33c99d6d03ce9572ac85e06d77aa99bfb",
+    "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/isolated/manifest.json": "027f1aada1571473173d0631ec011cffcf81c2dd21335ed6060985a920f6b295",
+    "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/qualification.json": "059811b34d2ece0b9147039cd916fa1406d8fb82160879fdca8c2888a680f094",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate113.png": "5120b8febe3a6985e10f09685e954d8f192558f1d21e92d67d4447bbf762f897",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence_receipt.json": "2fe22200e8682509ac08168be0a259546ad76f185a9cc18b99e439307ea9daad",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/source_review.json": "d00f97ed039bf6f4d076397cc8ef962ac727f848e45e5ebcdbca5dd5f4f6d7b0",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/receiver_probe01/report.json": "a603930c79d7b0bcdc243d5b07f52658921efaf5c2bfd04b8b29bf8896351a8d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/render_receipt.json": "e7c1b02077294c46f9d535e591e4393fdacad50584be4999773eb1307e2ece08"
+  },
+  "specs": {
+    "PortDriverFootLink": {
+      "definition": "Def_DriverFootLink_M769",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7414.347017905192,
+        0.0,
+        1.0,
+        0.0,
+        70.0,
+        0.0,
+        0.0,
+        1.0,
+        898.8935110665552,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverFootProfileHypothesis",
+      "role": "foot_link"
+    },
+    "StarboardDriverFootLink": {
+      "definition": "Def_DriverFootLink_M769",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7414.347017905192,
+        0.0,
+        1.0,
+        0.0,
+        -70.0,
+        0.0,
+        0.0,
+        1.0,
+        898.8935110665552,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverFootProfileHypothesis",
+      "role": "foot_link"
+    },
+    "DriverMainShaft": {
+      "definition": "Def_DriverMainShaft_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7461.418843930635,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        990.0216318785577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "Receivers",
+      "role": "receiver"
+    },
+    "DriverSwingShaft": {
+      "definition": "Def_DriverSwingShaft_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7054.8884598032855,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1010.0216318785577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "Receivers",
+      "role": "receiver"
+    },
+    "PortDriverOperatingFulcrum": {
+      "definition": "Def_DriverOperatingFulcrum_M747",
+      "frame": [
+        0.6600000000000001,
+        -0.0,
+        -0.7512655988397179,
+        7461.418843930635,
+        0.0,
+        1.0,
+        -0.0,
+        65.0,
+        0.7512655988397179,
+        0.0,
+        0.6600000000000001,
+        990.0216318785577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "Receivers",
+      "role": "receiver"
+    },
+    "StarboardDriverOperatingFulcrum": {
+      "definition": "Def_DriverOperatingFulcrum_M746",
+      "frame": [
+        0.6600000000000001,
+        -0.0,
+        -0.7512655988397179,
+        7461.418843930635,
+        0.0,
+        1.0,
+        -0.0,
+        -65.0,
+        0.7512655988397179,
+        0.0,
+        0.6600000000000001,
+        990.0216318785577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "Receivers",
+      "role": "receiver"
+    },
+    "PortFootIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5778.974615987964,
+        0.0,
+        1.0,
+        0.0,
+        70.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.7999999999998,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "Receivers",
+      "role": "receiver"
+    },
+    "StarboardFootIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5778.974615987964,
+        0.0,
+        1.0,
+        0.0,
+        -70.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.7999999999998,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "Receivers",
+      "role": "receiver"
+    }
+  },
+  "details": {
+    "front_eyes_mm": [
+      [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      [
+        -63.55262690659924,
+        0.0,
+        -2.6930539284544275
+      ]
+    ],
+    "socket_rear_mm": [
+      -301.2219367953299,
+      0.0,
+      -110.98144025735257
+    ],
+    "socket_front_mm": [
+      -263.413342132249,
+      0.0,
+      -106.27823182024783
+    ],
+    "socket_axis": [
+      -0.9923515659601276,
+      0.0,
+      -0.12344379100012459
+    ],
+    "web_stock_mm": 9.0,
+    "curve_records": {
+      "Upper": {
+        "degree": 3,
+        "knots": [
+          0.0,
+          57.793068415742404,
+          122.84494490603285,
+          190.57528456226808,
+          240.9847056387284,
+          274.73553016629666
+        ],
+        "multiplicities": [
+          4,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "poles": [
+          [
+            -29.332396557949725,
+            -4.5,
+            -27.43960097825531
+          ],
+          [
+            -40.923875868993235,
+            -4.5,
+            -43.02317495051653
+          ],
+          [
+            -70.1067459214994,
+            -4.500000000000001,
+            -72.44479537647275
+          ],
+          [
+            -126.19639967573906,
+            -4.5,
+            -103.15864895635045
+          ],
+          [
+            -186.2232028370431,
+            -4.500000000000001,
+            -121.24790094302658
+          ],
+          [
+            -237.18504466858124,
+            -4.5,
+            -113.20376084240813
+          ],
+          [
+            -263.80689589017356,
+            -4.5,
+            -103.91710869642387
+          ],
+          [
+            -274.05412167137047,
+            -4.5,
+            -99.44887002340651
+          ]
+        ]
+      },
+      "Lower": {
+        "degree": 3,
+        "knots": [
+          0.0,
+          64.294738507531,
+          134.41805332508295,
+          194.52812685011324,
+          249.11046924275882,
+          289.7232979457999
+        ],
+        "multiplicities": [
+          4,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "poles": [
+          [
+            -26.835632413153412,
+            -4.5,
+            -61.47864075737425
+          ],
+          [
+            -41.11459270366478,
+            -4.500000000000001,
+            -76.99437317544731
+          ],
+          [
+            -74.40553140210596,
+            -4.499999999999999,
+            -108.3970892593171
+          ],
+          [
+            -130.5699642269458,
+            -4.500000000000001,
+            -140.5311745426498
+          ],
+          [
+            -192.90977398275942,
+            -4.5,
+            -157.39221139149691
+          ],
+          [
+            -242.6967892591715,
+            -4.499999999999999,
+            -138.2368687600565
+          ],
+          [
+            -271.37116207721107,
+            -4.5,
+            -123.69167790632171
+          ],
+          [
+            -283.0144316898825,
+            -4.5,
+            -117.6714743429815
+          ]
+        ]
+      }
+    },
+    "controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01",
+      "parent_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+      "source_hashes": {
+        "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate113.png": "5120b8febe3a6985e10f09685e954d8f192558f1d21e92d67d4447bbf762f897",
+        "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+        "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence_receipt.json": "2fe22200e8682509ac08168be0a259546ad76f185a9cc18b99e439307ea9daad",
+        "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/source_review.json": "d00f97ed039bf6f4d076397cc8ef962ac727f848e45e5ebcdbca5dd5f4f6d7b0",
+        "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/receiver_probe01/report.json": "a603930c79d7b0bcdc243d5b07f52658921efaf5c2bfd04b8b29bf8896351a8d",
+        "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/render_receipt.json": "e7c1b02077294c46f9d535e591e4393fdacad50584be4999773eb1307e2ece08"
+      },
+      "side_main_px": [
+        315,
+        322
+      ],
+      "side_complex_scale": [
+        0.44045560892554364,
+        -0.002929394377361145
+      ],
+      "front_eyes_px": [
+        [
+          336,
+          362
+        ],
+        [
+          364,
+          363
+        ]
+      ],
+      "head_outline_px": [
+        [
+          328,
+          355
+        ],
+        [
+          365,
+          356
+        ],
+        [
+          373,
+          362
+        ],
+        [
+          373,
+          367
+        ],
+        [
+          364,
+          378
+        ],
+        [
+          347,
+          378
+        ],
+        [
+          329,
+          366
+        ]
+      ],
+      "web_upper_px": [
+        [
+          349,
+          374
+        ],
+        [
+          367,
+          392
+        ],
+        [
+          392,
+          406
+        ],
+        [
+          421,
+          413
+        ],
+        [
+          443,
+          410
+        ],
+        [
+          457,
+          405
+        ]
+      ],
+      "web_lower_px": [
+        [
+          348,
+          389
+        ],
+        [
+          369,
+          408
+        ],
+        [
+          396,
+          423
+        ],
+        [
+          422,
+          428
+        ],
+        [
+          445,
+          421
+        ],
+        [
+          461,
+          413
+        ]
+      ],
+      "socket_front_px": [
+        452,
+        408
+      ],
+      "socket_rear_px": [
+        469,
+        410
+      ],
+      "web_stock_mm": 9.0,
+      "eye_outer_radius_mm": 15.0,
+      "pin_bore_radius_mm": 6.5,
+      "socket_length_mm": 38.1,
+      "socket_outer_radius_mm": 15.875,
+      "socket_bore_radius_mm": 9.575,
+      "socket_depth_mm": 31.75,
+      "lane_mm": 70.0,
+      "source_pick_uncertainty_px": 4.0,
+      "status": "Unintegrated diagnostic geometry: traced/inferred profile, estimated stock/bores/socket; fixed camera construction is not independent source validation."
+    },
+    "stock_offset_mm": 1.0,
+    "origin_world_mm": [
+      7414.347017905192,
+      0.0,
+      898.8935110665552
+    ],
+    "retained_development_native": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/PowertrainControlRebuild.FCStd",
+    "retained_development_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+    "source_camera_refitted": false,
+    "scope": "Two identical M769 complete-solid profile hypotheses plus exact retained receiver context; not a complete foot mechanism.",
+    "open_interfaces": [
+      "M771 joint graph, upper anchors and interpretation of the two visible front eyes require topology reconciliation.",
+      "Socket-to-M576 stock/SH946F route not closed.",
+      "M765/M770/M795 central four-bar and pedal mounting remain unresolved."
+    ]
+  },
+  "new_occurrences": [
+    "PortDriverFootLink",
+    "StarboardDriverFootLink"
+  ],
+  "new_definitions": [
+    "Def_DriverFootLink_M769"
+  ],
+  "changed_definitions": [],
+  "new_assembly_specs": {},
+  "prototype_physical_occurrences": 8,
+  "prototype_definition_count": 6,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}
