@@ -2077,6 +2077,50 @@
         "date": "2026-09-27",
         "basis": "Direct original scans and four inspected evidence views."
       }
+    },
+    {
+      "id": "driver_seat_prototype_20260927",
+      "status": "open_evidence",
+      "scope": "Saved M791 seat-side geometry and complete catalogue bearings/clips/rivets/nails; support and historical placement unresolved.",
+      "reason": "Both tested widths preserve full fastener stock and pass material/contact, complete context and strict exchange checks. Source overlay and absent support members prevent installation acceptance.",
+      "uncertainty": "Seat width/fabrication, transverse form, cushion/back source profiles, bearing/clip estimates, adjustment topology, SH291C application and absolute shaft/seat relation.",
+      "limits": [
+        "227 local occurrences/88definitions including38 additions; no tank integration.",
+        "447 construction/interface checks,96 context pairs and45 strict STEP comparisons pass per width; fresh reproduction and39 mass controls pass.",
+        "Spline integration fix handles extrusion-basis knot breaks without changing geometry or acceptance limits.",
+        "Accepted development3582/635/442 and progression308 remain unchanged; saved snapshot is explicitly diagnostic."
+      ],
+      "reopen_when": [
+        "M786/M787/M788 support reconstruction establishes contradictory actual interfaces.",
+        "Source configuration or stronger imagery constrains seat profile, transverse size or shaft/seat position."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/study_receipt.json",
+          "sha256": "9028c88d1673318b3256cf74494d0937b0f13eae3960551962a58a8614989070"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/BUILD.md",
+          "sha256": "9de9b77975dff80c9b758650a494d0cb47fe51a6758438faf4a86dd8a6071f0a"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/trial06/visual03/visual_review.json",
+          "sha256": "ec326a3c8f6d0b7b70a6266007904111e7a63909ecef75c2a95bf790aa27d7a5"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/trial06/surface_records/report.json",
+          "sha256": "0846edfd29a7afd52d7ca5ab1fa8703eaabf496e30f9fd3593a78507f0db1a79"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/diagnostics/mass_controls02/qualification.json",
+          "sha256": "e8ae3d1d60bcb20285b200aff1bb2e5355372ba5a05940ca7411263b4f16bad1"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Saved native/STEP validation and inspected depth-buffered isometric, underside and fixed source section."
+      }
     }
   ]
 }

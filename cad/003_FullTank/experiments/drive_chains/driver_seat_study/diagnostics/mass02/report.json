@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "native_sha256": "b44b9acf37f1a72326d8e42780b13229f73e9513f9cb193106f253eecf8a51a3",
+  "checker_sha256": "ded867b2160308d4c1f1ed2d8addd3f4e009af16450a1d5cbbb263913d8e985d",
+  "analytic_controls_sha256": "e8ae3d1d60bcb20285b200aff1bb2e5355372ba5a05940ca7411263b4f16bad1",
+  "provenance": {
+    "adapter_sha256": "0d4e72c66325ff949bd6b572a35941d2ce25e37a8eca61b2ea44905c56403b15",
+    "source_sha256": "ce8248df98f4961f0bb29fefae225403e2117f883f38e44ccb6848c2c6da6c91",
+    "convergence_adapter_sha256": "8f92c1d73aafda1f53d5c130e783d0939a8688964b97b8814bcace080ab8d7d7",
+    "binary_sha256": "c5d8fa5adb2f62867619d894aa0c6e4b26b8dfd178cc9d5466bf85f78223fac1",
+    "runtime_root": "/snap/freecad/2741",
+    "compile_command": [
+      "g++",
+      "-std=c++17",
+      "-O2",
+      "-I/snap/freecad/2741/usr/include/opencascade",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/control_rebuild_surface_mass_v6.cpp",
+      "-L/snap/freecad/2741/usr/lib",
+      "-lTKTopAlgo",
+      "-lTKBRep",
+      "-lTKG3d",
+      "-lTKG2d",
+      "-lTKGeomAlgo",
+      "-lTKGeomBase",
+      "-lTKMath",
+      "-lTKernel",
+      "-o",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/driver_seat_study/diagnostics/mass02/runtime/tube_surface_mass"
+    ],
+    "algorithm": "Independent divergence integration; rectangular UV domains or exact pcurve-boundary Green integrals with numerical U antiderivative; planar Green boundary integrals; knot/continuity-span Gauss 16/32/64.",
+    "acceptance": "Original reported-error, absolute volume and centroid convergence predicates unchanged."
+  },
+  "checks": [
+    {
+      "name": "Def_DriverSeat_Frame",
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 24,
+        "algorithm": "divergence theorem; rectangular patches or nested Green integration of actual curved trims; planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 2.3471078796715803e-14,
+            "volume": 1004627.8853813002,
+            "centroid": [
+              -56.664854630800946,
+              -3.970614613352125e-16,
+              62.40329385260942
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.271186578014218e-14,
+            "volume": 1004627.8853813007,
+            "centroid": [
+              -56.66485463080095,
+              -1.4707532550816186e-15,
+              62.40329385260944
+            ]
+          }
+        ],
+        "brep_sha256": "ce5ade91b94bdfe2e16d1a9cee5af3081f899d652bc3670a046b163e1bd19704",
+        "volume_convergence_mm3": 4.656612873077393e-10,
+        "centroid_convergence_mm": 1.5924456152053737e-14,
+        "converged": true,
+        "volume_mm3": 1004627.8853813007,
+        "centroid_mm": [
+          -56.66485463080095,
+          -1.4707532550816186e-15,
+          62.40329385260944
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      }
+    },
+    {
+      "name": "Def_DriverSeat_BackPadding",
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 42,
+        "algorithm": "divergence theorem; rectangular patches or nested Green integration of actual curved trims; planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.811207228665599e-15,
+            "volume": 2598620.6777175134,
+            "centroid": [
+              -131.77287131851716,
+              6.443075061558837e-14,
+              157.50390135408816
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.4109189201319293e-15,
+            "volume": 2598620.677717515,
+            "centroid": [
+              -131.77287131851716,
+              1.597827929424142e-14,
+              157.50390135408816
+            ]
+          }
+        ],
+        "brep_sha256": "87d8ad89364b037890b951c28672eba0f7bd2f75781ea95cd637b0514870ec67",
+        "volume_convergence_mm3": 1.3969838619232178e-09,
+        "centroid_convergence_mm": 4.8452471321346946e-14,
+        "converged": true,
+        "volume_mm3": 2598620.677717515,
+        "centroid_mm": [
+          -131.77287131851716,
+          1.597827929424142e-14,
+          157.50390135408816
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      }
+    }
+  ]
+}

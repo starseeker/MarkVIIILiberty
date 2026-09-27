@@ -11,6 +11,28 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — seat-side prototype and spline exchange verified
+
+The [seat prototype](experiments/drive_chains/driver_seat_study/BUILD.md) adds
+**38 physical occurrences / 7 definitions**: the M791 frame and upholstery,
+four bearings, two clips, eight full-stock rivets and 21 nails. The local study
+contains **227 occurrences / 88 definitions**. Both 480 and 490 mm widths pass
+**447 material/contact checks, 96 context pairs and 45 strict STEP comparisons**;
+a fresh build reproduces all geometry, frames and stable properties.
+
+Curved frame/back mass verification exposed omitted basis-curve knot breaks on
+extruded surfaces. The V6 integrator fixes that specific issue and passes **39
+analytical/invalid-input controls**, including an exact spline extrusion. Original
+error bounds and native geometry are unchanged; failed receipts remain retained.
+Actual spline nets and ten nonphysical section guides are saved for refinement.
+
+The inspected section still shows a flatter/lower cushion, differing back curve
+and unresolved shaft height. Four bearing receivers await actual support members.
+Next complete M786/M787/M788 support connections before considering integration.
+A [diagnostic isometric](../intermediate_snapshot_iso_seat_study_20260927.png)
+preserves this visual stage. Accepted development remains **3,582 / 635 / 442**;
+accepted progression remains **308**. The source-only entry below is historical.
+
 ## 27 September 2026 — adjustable-seat source packet started
 
 The [seat packet](experiments/drive_chains/driver_seat_study/README.md) records

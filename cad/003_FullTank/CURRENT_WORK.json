@@ -14,6 +14,7 @@
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_seat_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_layout_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_bow_reconstruction_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_handle_profile_study.py",
@@ -39,7 +40,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Build the complete M791 seat prototype and actual SH289E/SH291X/M788 support interfaces from driver_seat_study/evidence01; use reviewed3/8x1-1/8in bearing rivets, not erroneous5/8 transcription. SH291C is a separate1-count3.5in record with unresolved application. Source pan is above old layout-only envelope; width/adjustment topology remain unmeasured. Reconcile seat and shaft position with the coupled bow study before integrating; neither Z975 nor Z970 is historical acceptance.",
+  "next_action": "Complete the physical M786/M787-to-SH289E seat support chain and two M788 angles with eight full41.275mm mounting bolts/nuts/locks. Use driver_seat_study/trial06 (227occurrences/88definitions) as the saved seat-side prototype; preserve its38 additions or explicitly rebuild a constrained interface. Reconcile remaining SNL2 profile and shaft-height discrepancies before integration; source camera unchanged. SH291C application and adjustment topology remain open.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -139,7 +140,8 @@
     "Front hull audit01: actual front_slope maps lower(442,421) to upper(345.47,237), while source central wall maps lower(316,392) to upper(404,240). Opposite rake confirmed in high-resolution original. Upper enclosure station and floor junction also need review. A source-plane replacement alone leaves current grips outside it; whole driver/bow layout and source configuration remain unresolved.",
     "Bow/enclosure trial02 tests HB35 main overall length including the27-inch driver projection. Printed feature sizes retained; main-body length2451.1mm and inferred longitudinal stations adjusted. Rake119.53deg, source120.48deg; no camera refit.40 plates pass construction/export/joints, but both current handles intersect4436.15mm3 each and all four complete handle hypotheses fail. No integration; source length endpoints, M2014/M2033 boundaries, floor allocation and absolute driver/control-state layout remain open.",
     "Coupled driver_layout_study: full M574 stock and fixed rear receivers close at main Z975/X7627.311900 and swing Z995/X7220.781516, with eight rebuilt floor mounting stacks. All mechanical checks pass including variationZ970; neither height is historically established. Source section shaft position and earlier47\u201349px grip discrepancy remain unresolved. M575/M578/M573 rear rods already exist; no missing-route reconstruction is needed.",
-    "Seat evidence01: original SNL207 bearing rivets read3/8x1-1/8in, corroborated by SNL167; frozen5/8 transcription overridden locally. SH291X two and SH291C one/3.5in are distinct records. Source-derived pan undersideZ1517.638 is124.494mm above old layout-envelope top; source picks are construction only. Seat width, bearing geometry, adjustment axis/travel and complete support interfaces remain open."
+    "Seat evidence01: original SNL207 bearing rivets read3/8x1-1/8in, corroborated by SNL167; frozen5/8 transcription overridden locally. SH291X two and SH291C one/3.5in are distinct records. Source-derived pan undersideZ1517.638 is124.494mm above old layout-envelope top; source picks are construction only. Seat width, bearing geometry, adjustment axis/travel and complete support interfaces remain open.",
+    "Seat trial06: M791 modeled as three constituent bodies plus fourSH289E/twoSH291X/eight rivets/21nails. Width480mm, back/cushion surfaces, bearing/clip forms and fastener patterns are documented estimates; tested width490mm. Four receiving bores remain open. Support chain, twoM788 angles and their eight41.275mm hardware stacks are unfinished; source cushion/back profile and shaft placement remain unresolved. No integration; accepted progression308 unchanged."
   ],
   "visual_progression_count": 308,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
@@ -156,19 +158,19 @@
     "geometry_integrated": true,
     "status": "Ten handle/fulcrum/pivot additions and four upper-selector revisions integrated: 3582 occurrences/635 definitions/442 groups. All protected lower geometry and inherited frames preserved. Source grip discrepancies and remaining mechanisms remain open."
   },
-  "qualification_note": "Withheld-control redo remains complete. Driver foundation, clutch/low/high receiving chains and full operating handles/pivots are mechanically checked development geometry. Four provisional upper selector shapes are revised for real handle engagement. Grip-tip source discrepancies 47\u201349px and the 13.53px high-eye discrepancy remain unqualified; 37-inch length datum, source scale/configuration and absolute driver/hull placement need review. Standard tank011 remains unchanged. The subsequent complete-profile study confirms a major source contradiction in the retained standard front hull: wall rake is reversed relative to SNL2. Existing mechanical receipts remain valid for their saved geometry but do not establish that boundary as historically correct. Bow/floor/enclosure reconstruction must be reopened before using the collision to settle driver geometry. The subsequent bow_reconstruction_study/trial02 has forty source-labelled replacement plates with passing construction/STEP/joint checks, but its two current-handle collisions and unresolved historical interpretation prevent integration. Accepted geometry and progression remain unchanged. The subsequent coupled driver_layout_study passes nominal/variation material, contact, full context, STEP and reproduction checks, but fixed source-view discrepancies prevent promotion. Accepted checkpoint and progression remain unchanged.",
+  "qualification_note": "Withheld-control redo remains complete. Driver foundation, clutch/low/high receiving chains and full operating handles/pivots are mechanically checked development geometry. Four provisional upper selector shapes are revised for real handle engagement. Grip-tip source discrepancies 47\u201349px and the 13.53px high-eye discrepancy remain unqualified; 37-inch length datum, source scale/configuration and absolute driver/hull placement need review. Standard tank011 remains unchanged. The subsequent complete-profile study confirms a major source contradiction in the retained standard front hull: wall rake is reversed relative to SNL2. Existing mechanical receipts remain valid for their saved geometry but do not establish that boundary as historically correct. Bow/floor/enclosure reconstruction must be reopened before using the collision to settle driver geometry. The subsequent bow_reconstruction_study/trial02 has forty source-labelled replacement plates with passing construction/STEP/joint checks, but its two current-handle collisions and unresolved historical interpretation prevent integration. Accepted geometry and progression remain unchanged. The subsequent coupled driver_layout_study passes nominal/variation material, contact, full context, STEP and reproduction checks, but fixed source-view discrepancies prevent promotion. Accepted checkpoint and progression remain unchanged. Seat-side trial06 now passes nominal/variation material, context, strict STEP and fresh reproduction checks; a diagnosed extrusion-basis knot integration omission is corrected in a separately qualified V6 adapter. Thirty-eight new seat occurrences remain local pending real support connections and historical placement review.",
   "parent_pipeline_run": "high_brake_support01",
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
   "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/driver_layout_study/trial01",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/driver_layout_study/study_receipt.json",
-    "native_sha256": "900f891942e3c7f94447d426b62cdc2873cac7094084362c1bd56c041223b2f6",
+    "path": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/trial06",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/study_receipt.json",
+    "native_sha256": "b44b9acf37f1a72326d8e42780b13229f73e9513f9cb193106f253eecf8a51a3",
     "geometry_integrated": false,
-    "status": "189-occurrence/81-definition coupled bow-driver study. Nominal Z975 and variation Z970 each pass521 material/contact checks,1022 context pairs and226 STEP comparisons; fresh reproduction passes. Complete printed stock retained and actual mounts seated. Source shaft/grip mismatch prevents historical acceptance.",
-    "source_review": "cad/003_FullTank/experiments/drive_chains/driver_layout_study/README.md",
+    "status": "Seat-side prototype: 38 additions,227 total occurrences/88definitions. Both widths pass447 saved-material/contact checks,96 context pairs and45 strict STEP comparisons; fresh reproduction and39 mass controls pass. Support installation and source-profile/absolute-position review remain open.",
+    "source_review": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/BUILD.md",
     "preceding_accepted_geometry": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
-    "next_action": "Build the complete M791 seat prototype and actual SH289E/SH291X/M788 support interfaces from driver_seat_study/evidence01; use reviewed3/8x1-1/8in bearing rivets, not erroneous5/8 transcription. SH291C is a separate1-count3.5in record with unresolved application. Source pan is above old layout-only envelope; width/adjustment topology remain unmeasured. Reconcile seat and shaft position with the coupled bow study before integrating; neither Z975 nor Z970 is historical acceptance."
+    "next_action": "Complete the physical M786/M787-to-SH289E seat support chain and two M788 angles with eight full41.275mm mounting bolts/nuts/locks. Use driver_seat_study/trial06 (227occurrences/88definitions) as the saved seat-side prototype; preserve its38 additions or explicitly rebuild a constrained interface. Reconcile remaining SNL2 profile and shaft-height discrepancies before integration; source camera unchanged. SH291C application and adjustment topology remain open."
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
@@ -200,5 +202,5 @@
   },
   "driver_part_verifier": "cad/003_FullTank/experiments/drive_chains/verify_driver_fulcrum_shaft.py",
   "open_limits_note": "Cumulative limits include superseded geometry. operating_integrated01 is authoritative for current handles/pivots and four upper selector arms; its protected lower linkage and all preceding world frames match high_integrated01. Historical source comparisons remain explicitly open. Older checkpoint files stay immutable.",
-  "active_seat_packet": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/README.md"
+  "active_seat_packet": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/BUILD.md"
 }

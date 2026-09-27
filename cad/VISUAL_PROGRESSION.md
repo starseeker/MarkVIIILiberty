@@ -1455,3 +1455,12 @@ the rejected earlier foot-control geometry; exact dimensions remain approximate.
 Inspected views of `intermediate_integrated01`, transferred through strict native
 shape/frame checks. Floor patch/section are display cuts only. M3019 floor
 mounting, dimensions and driver-derived shaft station remain approximate.
+
+## 27 September 2026 — seat-side reconstruction study (diagnostic)
+
+[Seat isometric](intermediate_snapshot_iso_seat_study_20260927.png) shows the
+verified seat-side prototype: curved steel/back upholstery, four bearings,
+eight rivets, two clips and 21 nails. Source-derived placement remains conditional;
+full support connections are unfinished. This study is separate from the
+accepted standard progression, which remains **308**. Provenance and image hashes
+are saved in [the study receipt](003_FullTank/experiments/drive_chains/driver_seat_study/snapshot_provenance.json).
