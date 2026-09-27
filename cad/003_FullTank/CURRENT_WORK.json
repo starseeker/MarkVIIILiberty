@@ -14,6 +14,7 @@
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_handle_profile_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_handle_gate_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01",
@@ -36,7 +37,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Test complete-stock operating-handle profiles under the existing overall-extent interpretation and a separately labelled 37-inch functional-radius hypothesis. Keep the fixed source comparisons and actual front-hull constraints; do not integrate an overlay improvement that fails mechanical checks. The uncertainty review rules out small shaft-end pick changes as a complete explanation (plan residual lower bounds 31.47/32.90px; conservative coordinate-square bounds 24.97/26.40px). If local hypotheses fail, review coupled driver/hull placement from independent evidence before revising inherited mounting/rod datums. Then continue trigger/pawl fittings, brake interconnection, reverse controls and complete seat support.",
+  "next_action": "Correct the front-hull reconstruction before tightening driver-control fits. The saved central front wall rises forward, while the original SNL2 section rises aft (native61.93deg versus source120.48deg); its lower junction and upper enclosure datums are coupled. Review HB35/HB43 enclosure dimension identities and SNL2/SNL7/HB6 plate, seat and floor context; build a source-led bow-wall/floor/roof correction with explicit assumptions and validate actual joints and retained context. Neither changing the wall alone nor arbitrarily moving the driver is proven to solve the grip conflict. Then rerun complete handle hypotheses and source-length rods, finish the driver seat/support, brake/reverse mechanisms and upper fittings.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -131,7 +132,9 @@
     "Operating handles: specific M776 source 1-inch cotters selected over generic 1-1/2-inch conflict; actual 25.4mm leg centerlines, full M768 1/2-inch nut stock, seating and retention checked. Eye form, nominal thread envelopes, exterior profiles and bolt dimensions remain inferred.",
     "Upper low-selector arms now have 45 mm outward offset and actual tangential drive walls matched to handle stock plus 0.45mm face clearance. The earlier radial-lip shapes and handle_gates01 dimensions are superseded; journals, oilways, lower links and frames are preserved.",
     "M738 37-inch datum is provisionally overall canonical radial part extent, not an established pivot-to-tip dimension. Source grip residuals 47.16/48.59px plan and 49.41px side exceed 5 px picks. Source cap-to-current-pivot reach 1014\u20131016mm differs from actual 922.49mm; fixed source views differ 35\u201339mm in X and inferred cap lies 44.59mm beyond current front plane. Review evidence before fixing upper fittings.",
-    "Handle datum review01: 5 px main-shaft endpoint and grip-pick allowances cannot remove the plan discrepancy; at least31.47/32.90px remains, or24.97/26.40px under a conservative per-coordinate interpretation. Original HB148 leaves the37-inch datum ambiguous. No camera refit, geometry change or source-pose acceptance."
+    "Handle datum review01: 5 px main-shaft endpoint and grip-pick allowances cannot remove the plan discrepancy; at least31.47/32.90px remains, or24.97/26.40px under a conservative per-coordinate interpretation. Original HB148 leaves the37-inch datum ambiguous. No camera refit, geometry change or source-pose acceptance.",
+    "Handle profiles01: all inherited frames and lower handle stock preserved. Pivot-reach interpretation clears current hull but retains43px source error. Functional-radius/source-direction hypothesis improves side residual to0.48px by construction but intersects current hull by6530.52mm3 per handle; no alternate handle accepted.",
+    "Front hull audit01: actual front_slope maps lower(442,421) to upper(345.47,237), while source central wall maps lower(316,392) to upper(404,240). Opposite rake confirmed in high-resolution original. Upper enclosure station and floor junction also need review. A source-plane replacement alone leaves current grips outside it; whole driver/bow layout and source configuration remain unresolved."
   ],
   "visual_progression_count": 308,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
@@ -141,28 +144,25 @@
     "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json"
   },
   "qualification_scope": "Ten additions: complete M738 handles, M746/M747 fulcrums and M776/M768/one-inch cotter joints. Four upper selector arms/jaws revised for actual handle engagement. All lower linkage material and inherited frames preserved. Fixed source cap discrepancies47-49px, ambiguous37-inch datum and13.53px high-eye discrepancy remain open. No historical position, control-state or motion qualification; remaining fittings unfinished",
-  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_datum_review01/report.json",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/front_hull_audit01/report.json",
   "active_development_candidate": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
     "native_sha256": "c8adadcb73bf9de0153cceb7e85e686bd63d5c6f1b198054e23811fdba8fede1",
     "geometry_integrated": true,
     "status": "Ten handle/fulcrum/pivot additions and four upper-selector revisions integrated: 3582 occurrences/635 definitions/442 groups. All protected lower geometry and inherited frames preserved. Source grip discrepancies and remaining mechanisms remain open."
   },
-  "qualification_note": "Withheld-control redo remains complete. Driver foundation, clutch/low/high receiving chains and full operating handles/pivots are mechanically checked development geometry. Four provisional upper selector shapes are revised for real handle engagement. Grip-tip source discrepancies 47\u201349px and the 13.53px high-eye discrepancy remain unqualified; 37-inch length datum, source scale/configuration and absolute driver/hull placement need review. Standard tank011 remains unchanged.",
+  "qualification_note": "Withheld-control redo remains complete. Driver foundation, clutch/low/high receiving chains and full operating handles/pivots are mechanically checked development geometry. Four provisional upper selector shapes are revised for real handle engagement. Grip-tip source discrepancies 47\u201349px and the 13.53px high-eye discrepancy remain unqualified; 37-inch length datum, source scale/configuration and absolute driver/hull placement need review. Standard tank011 remains unchanged. The subsequent complete-profile study confirms a major source contradiction in the retained standard front hull: wall rake is reversed relative to SNL2. Existing mechanical receipts remain valid for their saved geometry but do not establish that boundary as historically correct. Bow/floor/enclosure reconstruction must be reopened before using the collision to settle driver geometry.",
   "parent_pipeline_run": "high_brake_support01",
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
   "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating02",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json",
-    "geometry_integrated": true,
-    "status": "Ten additions: complete M738 handles, M746/M747 fulcrums and M776/M768/one-inch cotter joints. Four upper selector arms/jaws revised for actual handle engagement. All lower linkage material and inherited frames preserved. Fixed source cap discrepancies47-49px, ambiguous37-inch datum and13.53px high-eye discrepancy remain open. No historical position, control-state or motion qualification; remaining fittings unfinished",
-    "nominal_and_stock_variation": "419 local checks, 53 context pairs, 25 native/STEP comparisons each; fresh prototype/full reproduction; 624 undeclared inherited definitions preserved; six inspected views.",
-    "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_source_review02.json",
-    "source_comparison_diagnosis": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/source_comparison_diagnosis.json",
-    "source_landmarks": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_landmarks01.json",
-    "next_action": "Test complete-stock operating-handle profiles under the existing overall-extent interpretation and a separately labelled 37-inch functional-radius hypothesis. Keep the fixed source comparisons and actual front-hull constraints; do not integrate an overlay improvement that fails mechanical checks. The uncertainty review rules out small shaft-end pick changes as a complete explanation (plan residual lower bounds 31.47/32.90px; conservative coordinate-square bounds 24.97/26.40px). If local hypotheses fail, review coupled driver/hull placement from independent evidence before revising inherited mounting/rod datums. Then continue trigger/pawl fittings, brake interconnection, reverse controls and complete seat support.",
-    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_gates01/study_receipt.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/study_receipt.json",
+    "geometry_integrated": false,
+    "status": "Four complete handle hypotheses tested. Baseline and pivot-reach clear current context; both functional-radius profiles intersect the current front wall. No alternative promoted. The wider source audit identifies reversed wall rake and requires coupled hull/layout correction.",
+    "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/front_hull_audit01/README.md",
+    "preceding_accepted_geometry": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
+    "next_action": "Correct the front-hull reconstruction before tightening driver-control fits. The saved central front wall rises forward, while the original SNL2 section rises aft (native61.93deg versus source120.48deg); its lower junction and upper enclosure datums are coupled. Review HB35/HB43 enclosure dimension identities and SNL2/SNL7/HB6 plate, seat and floor context; build a source-led bow-wall/floor/roof correction with explicit assumptions and validate actual joints and retained context. Neither changing the wall alone nor arbitrarily moving the driver is proven to solve the grip conflict. Then rerun complete handle hypotheses and source-length rods, finish the driver seat/support, brake/reverse mechanisms and upper fittings."
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",

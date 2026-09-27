@@ -1,0 +1,42 @@
+{
+  "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
+  "parent_native_sha256": "c8adadcb73bf9de0153cceb7e85e686bd63d5c6f1b198054e23811fdba8fede1",
+  "context_prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating02",
+  "source_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_datum_review01/report.json": "c69eb71849ce985035e38c97150a2462729b4731d5d53b1d31dc5252a0a08398",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_datum_review01/README.md": "ced377e00e77f4a18d6c0888bb1b278727759aa4cd550594b4b98504625c24a4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json": "f7e6fef263abb1209d7fcebc4115af949f636cae24dfcf15038f66cd73148099",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/render_receipt.json": "e7c1b02077294c46f9d535e591e4393fdacad50584be4999773eb1307e2ece08",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/source_comparison_diagnosis.json": "3a0f57c97ed578110045f14d3171c14e8318725466d0a0727b60d22c362f7f3e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_source_review02.json": "e9cf382cef4d468c4a8cdd37a6490eeb4a31dc178b9e655b4fea0fff9104d008"
+  },
+  "hypotheses": {
+    "overall_control": {
+      "length_datum": "overall_radial_extent",
+      "upper_return_mm": 20.0,
+      "reason": "Reconstruct the accepted interpretation as an exact material control."
+    },
+    "pivot_reach": {
+      "length_datum": "second_pivot_to_grip_pole",
+      "upper_return_mm": 20.0,
+      "reason": "Competing 37-inch pivot-to-tip reading; not a claimed printed datum."
+    },
+    "functional_current": {
+      "length_datum": "main_shaft_axis_to_grip_pole",
+      "upper_return_mm": 20.0,
+      "reason": "Competing 37-inch main-shaft radial reach with the current upper return."
+    },
+    "functional_source": {
+      "length_datum": "main_shaft_axis_to_grip_pole",
+      "upper_return_mm": -38.39469205114719,
+      "reason": "Same functional-radius hypothesis with the upper return inferred from the unchanged HB113 cap direction; lower heel and selector region stay fixed. Source-driven construction, not a holdout."
+    }
+  },
+  "constraints": [
+    "All inherited frames and all non-handle definitions fixed.",
+    "Complete 12.7mm blade stock, 120mm grip and true pivot bore retained.",
+    "Below canonical X375, handle stock must match the accepted definition in both material directions.",
+    "No camera refit, hull subtraction, omitted collision pair or assumed integration success.",
+    "Rejected hypotheses remain available; STEP/full integration unnecessary for a disproved installation candidate."
+  ]
+}

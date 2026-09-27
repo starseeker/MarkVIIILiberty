@@ -1,5 +1,12 @@
 # Driver controls — active continuation
 
+Latest geometry study: [complete handle profiles](handle_profiles01/README.md),
+followed by a confirmed [front-hull rake contradiction](front_hull_audit01/README.md).
+Review the bow wall, floor junction and upper enclosure datums before treating
+current hull interference as proof against a handle interpretation. No alternative
+profile has been promoted; the operating checkpoint below remains the saved
+mechanical development baseline, with this additional historical limit explicit.
+
 Latest evidence follow-up: [handle datum and camera uncertainty](handle_datum_review01/README.md).
 Small endpoint-pick changes cannot settle the grip discrepancy. The printed
 37-inch datum remains ambiguous; the next experiment compares complete profile

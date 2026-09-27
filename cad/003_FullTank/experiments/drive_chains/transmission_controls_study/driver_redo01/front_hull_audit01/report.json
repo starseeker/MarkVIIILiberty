@@ -1,0 +1,113 @@
+{
+  "worker_sha256": "2eafce1b833f5d4b63633cc6629afbb278872ace22a2c942e29ad9c947e82c79",
+  "geometry_modified": false,
+  "source_camera_refitted": false,
+  "native_sha256": "c8adadcb73bf9de0153cceb7e85e686bd63d5c6f1b198054e23811fdba8fede1",
+  "standard_front_definition": "hull_front_slope",
+  "standard_front_brep_sha256": "3db491733b7dc25a152f713d8efc06f9641ba27fc357f6c617d5062eba118ad4",
+  "source_hashes": {
+    "cad/003_FullTank/data/calibrations.json": "fb555b36854a6526575760b723d605d6eb10842b850c413dd8b2234f93f562b7",
+    "cad/003_FullTank/data/parameters.json": "846d19fc3f2f0ac129224bc024039ae75fa3b4c36226872047aadbc798b6276b",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277_foldout-geometry.png": "7f08a90732b5adb3a14d73f3438f1803de0230a54f9a4e27364ebdf35c91677b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/standard_context_manifest.json": "58fb0a1b010c314dd8fc69758e9aeada05ce97f325c21d6801d7288cd6be753b",
+    "cad/003_FullTank/lib/hull_parts.py": "5c89659cd857899e184c74d2883ba936c86a6231db9779ebbf4a570b17c79079",
+    "cad/003_FullTank/lib/hull_geometry.py": "7d313b0fa533d770d1af106f16a546c54c0fc112bc331a2f9fb5c8f4a526a233",
+    "cad/003_FullTank/data/datums.json": "13123972fcf9875ff068eace2c5638e4edaabc920f5adb24e754224ed67fa946",
+    "cad/003_FullTank/experiments/drive_chains/clutch_stop_brake_sources/p277_foldout_original.jpg": "cee953e962ac47ce64f4b86b08a23a71a995df26ac63f0b63cd8398a390070fe",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json": "f7e6fef263abb1209d7fcebc4115af949f636cae24dfcf15038f66cd73148099",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/report.json": "37df533c9c5883b0bef0d1c521210c18250aa1d20cc36ed0b0b55529b30ad5b0"
+  },
+  "calibration": {
+    "key": "snl_2",
+    "mode": "conditional_metric",
+    "pixel_scales_mm": [
+      -6.0269942196531785,
+      -5.928273244781783
+    ],
+    "datum_pixel": [
+      1715,
+      595
+    ],
+    "limitations": "Flat scanned section; axes scaled independently using provisional handbook envelope. Positive X points left in image. Datum below rear drive center at image x=1715.",
+    "refitted": false
+  },
+  "native_face_endpoints_px": {
+    "lower": [
+      441.9999999999063,
+      421.0000000000051
+    ],
+    "upper": [
+      345.47442143727153,
+      236.99999999999972
+    ]
+  },
+  "source_wall_picks_px": {
+    "lower": [
+      316.0,
+      392.0
+    ],
+    "upper": [
+      404.0,
+      240.0
+    ],
+    "uncertainty_per_pick_px": 5.0
+  },
+  "native_upper_minus_lower_x_mm": 581.7591040456791,
+  "source_upper_minus_lower_x_mm": -530.3754913294806,
+  "rake_sign_contradiction": true,
+  "native_upward_rake_degrees": 61.92759936624946,
+  "source_upward_rake_degrees": 120.48057016142761,
+  "source_pole_plane_diagnostics": {
+    "overall_control": {
+      "profile_receipt_sha256": "8276ae90567614db44ef6a76c1b98db9cadc04dbd298085df118dfa991bfe7f6",
+      "pole_to_source_wall_plane_mm": {
+        "Port": -110.59777516412743,
+        "Starboard": -110.59777516412743
+      },
+      "note": "Distance to a source-derived plane only; not a new physical hull, clearance qualification or chosen model correction."
+    },
+    "pivot_reach": {
+      "profile_receipt_sha256": "a211075e920eb14b4246f0fef2ea53d0f59f052b005a6ed09a4fe043545bb226",
+      "pole_to_source_wall_plane_mm": {
+        "Port": -127.01311498171646,
+        "Starboard": -127.01311498171634
+      },
+      "note": "Distance to a source-derived plane only; not a new physical hull, clearance qualification or chosen model correction."
+    },
+    "functional_current": {
+      "profile_receipt_sha256": "78c4ad6fada8ee4601b780df3c2fbdad7395fef3ca3ada041912acb3b0b337fc",
+      "pole_to_source_wall_plane_mm": {
+        "Port": -201.06419191364753,
+        "Starboard": -201.06419191364753
+      },
+      "note": "Distance to a source-derived plane only; not a new physical hull, clearance qualification or chosen model correction."
+    },
+    "functional_source": {
+      "profile_receipt_sha256": "563bde55aee94ccf547c397a2874a3c181737b91f74bb7967df42e4828cea3db",
+      "pole_to_source_wall_plane_mm": {
+        "Port": -218.7787106488407,
+        "Starboard": -218.7787106488406
+      },
+      "note": "Distance to a source-derived plane only; not a new physical hull, clearance qualification or chosen model correction."
+    }
+  },
+  "original_scan_crop": {
+    "path": "cad/003_FullTank/experiments/drive_chains/clutch_stop_brake_sources/p277_foldout_original.jpg",
+    "box": [
+      1500,
+      1200,
+      3800,
+      3600
+    ],
+    "resize": [
+      1150,
+      1200
+    ]
+  },
+  "images": {
+    "original_front_crop.png": "cc21b4b8e8efccf8fc0ed0968c11c82c248b7cdf7e06016587d276c88aebb063",
+    "front_hull_audit.png": "f75f2c52ceef55299bd75afea9f9d89445c107b16d550672229b8a5ac29c6d6e"
+  },
+  "conclusion": "The saved central front plate rises forward; the reviewed central wall in the full longitudinal section rises aft. The high-resolution original scan confirms the source rake. Current front-plate/floor/enclosure geometry must be reviewed before using its interference to shorten handles or move the driver. The upper enclosure is independently dimensioned and also offset in this unchanged conditional registration; do not replace the whole shell with an unqualified tracing.",
+  "next_action": "Reconstruct the bow wall and its lower floor junction, reviewing the HB enclosure dimension identities and SNL2/SNL7/HB6 context together. Audit hull part identity and roof joins before integrating any correction. Then rerun complete driver profiles and retained hull/control context; leave the current checkpoint intact meanwhile."
+}

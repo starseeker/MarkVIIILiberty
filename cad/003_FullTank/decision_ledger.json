@@ -1666,6 +1666,152 @@
         "date": "2026-09-27",
         "basis": "Original scans and full figures, fixed-native measurements, analytic uncertainty bounds and inspected diagnostic."
       }
+    },
+    {
+      "id": "driver_handle_complete_profile_hypotheses",
+      "status": "open_evidence",
+      "scope": "Complete-stock alternatives for the unqualified37-inch handle datum.",
+      "reason": "All four constructions preserve inherited interfaces. Both functional-radius cases hit the current front hull; pivot reach leaves43px source discrepancy. No local alternative resolves the evidence.",
+      "uncertainty": "Length datum, source control state, unprinted profile and coupled absolute hull/driver layout.",
+      "limits": [
+        "Source-direction grip point is a construction constraint, not an independent holdout.",
+        "None of the alternatives is STEP-qualified or integrated.",
+        "Current front hull has a confirmed source-rake contradiction and is not authoritative historical ground truth."
+      ],
+      "reopen_when": [
+        "Bow/floor/enclosure correction changes physical boundary",
+        "Independent source evidence identifies handle datum or installed control state"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/study_receipt.json",
+          "sha256": "5f2261d8eda54c3026902e54bbee21a6cf4b0824de9e5694796315e703739adc"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/README.md",
+          "sha256": "6f5194a9722575e55850bc3d5f1b00249d6bd9c3fa1a24d3f7c592f0bff8a777"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/comparison02/render_receipt.json",
+          "sha256": "342a2b7bdda3386e29fe73346fcad6e543691ba3c84172343ca47bdc323dfeb5"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/comparison02/visual_review.json",
+          "sha256": "eb4f7414f5f038e7bdfdc39096b7d79a431430fb227073e13a98578fa05b4b48"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/front_hull_audit01/report.json",
+          "sha256": "8bd7be9881cdb3580c364f25b444815f68931c2a45f91a9b49d821c5daf2ca62"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/front_hull_audit01/visual_review.json",
+          "sha256": "021034a302b12ad9a533b6f382ce186997c134719e2934eb11aba0ed8b9ea13e"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/front_hull_audit01/README.md",
+          "sha256": "b910866410e7965b246d45ed1cfb968ae4af68081289b191a5ab973cf9980f89"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Four saved prototypes, independent material/frame/datum checks, broad context and three inspected comparisons."
+      }
+    },
+    {
+      "id": "driver_front_hull_rake_and_layout",
+      "status": "open_evidence",
+      "scope": "Confirmed front-wall rake contradiction and coupled bow/floor/enclosure reconstruction.",
+      "reason": "Saved wall rises forward at61.93deg; full SNL2 central wall rises aft at120.48deg. Original scan confirms orientation. Current upper enclosure and lower floor joins differ from the source context.",
+      "uncertainty": "Precise plate identity/seams, HB enclosure dimension endpoints, schematic component scale, driver control state and seat/support datums.",
+      "limits": [
+        "Audit uses the inherited conditional whole-tank calibration, with no refit.",
+        "Source picks do not define a qualified replacement hull.",
+        "Changing only the wall also leaves current grip poles outside its source plane."
+      ],
+      "reopen_when": [
+        "Bow wall/floor/roof and upper enclosure dimensions reviewed jointly",
+        "Source-supported driver/seat station and complete rods establish compatible layout"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/study_receipt.json",
+          "sha256": "5f2261d8eda54c3026902e54bbee21a6cf4b0824de9e5694796315e703739adc"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/README.md",
+          "sha256": "6f5194a9722575e55850bc3d5f1b00249d6bd9c3fa1a24d3f7c592f0bff8a777"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/comparison02/render_receipt.json",
+          "sha256": "342a2b7bdda3386e29fe73346fcad6e543691ba3c84172343ca47bdc323dfeb5"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/comparison02/visual_review.json",
+          "sha256": "eb4f7414f5f038e7bdfdc39096b7d79a431430fb227073e13a98578fa05b4b48"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/front_hull_audit01/report.json",
+          "sha256": "8bd7be9881cdb3580c364f25b444815f68931c2a45f91a9b49d821c5daf2ca62"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/front_hull_audit01/visual_review.json",
+          "sha256": "021034a302b12ad9a533b6f382ce186997c134719e2934eb11aba0ed8b9ea13e"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/front_hull_audit01/README.md",
+          "sha256": "b910866410e7965b246d45ed1cfb968ae4af68081289b191a5ab973cf9980f89"
+        },
+        {
+          "path": "cad/003_FullTank/data/calibrations.json",
+          "sha256": "fb555b36854a6526575760b723d605d6eb10842b850c413dd8b2234f93f562b7"
+        },
+        {
+          "path": "cad/003_FullTank/data/parameters.json",
+          "sha256": "846d19fc3f2f0ac129224bc024039ae75fa3b4c36226872047aadbc798b6276b"
+        },
+        {
+          "path": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277_foldout-geometry.png",
+          "sha256": "7f08a90732b5adb3a14d73f3438f1803de0230a54f9a4e27364ebdf35c91677b"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/standard_context_manifest.json",
+          "sha256": "58fb0a1b010c314dd8fc69758e9aeada05ce97f325c21d6801d7288cd6be753b"
+        },
+        {
+          "path": "cad/003_FullTank/lib/hull_parts.py",
+          "sha256": "5c89659cd857899e184c74d2883ba936c86a6231db9779ebbf4a570b17c79079"
+        },
+        {
+          "path": "cad/003_FullTank/lib/hull_geometry.py",
+          "sha256": "7d313b0fa533d770d1af106f16a546c54c0fc112bc331a2f9fb5c8f4a526a233"
+        },
+        {
+          "path": "cad/003_FullTank/data/datums.json",
+          "sha256": "13123972fcf9875ff068eace2c5638e4edaabc920f5adb24e754224ed67fa946"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/clutch_stop_brake_sources/p277_foldout_original.jpg",
+          "sha256": "cee953e962ac47ce64f4b86b08a23a71a995df26ac63f0b63cd8398a390070fe"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json",
+          "sha256": "f7e6fef263abb1209d7fcebc4115af949f636cae24dfcf15038f66cd73148099"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/report.json",
+          "sha256": "37df533c9c5883b0bef0d1c521210c18250aa1d20cc36ed0b0b55529b30ad5b0"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/audit_driver_front_hull.py",
+          "sha256": "2eafce1b833f5d4b63633cc6629afbb278872ace22a2c942e29ad9c947e82c79"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Actual saved standard front plate and enclosure overlaid on original whole-tank section; high-resolution scan checked."
+      }
     }
   ]
 }

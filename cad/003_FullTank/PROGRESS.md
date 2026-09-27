@@ -11,6 +11,26 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — full handle hypotheses expose front-hull rake error
+
+Four [complete handle prototypes](experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/README.md)
+preserve lower stock, all other definitions and all frames. Their independent
+construction checks pass. The baseline and pivot-reach interpretation pass
+19 context pairs each; both functional-radius hypotheses fail only at the current
+front wall (21 pairs each). The best side overlay is a construction fit and cuts
+through 6,530.52 mm³ of hull per handle; it is not promoted.
+
+A [whole-tank audit](experiments/drive_chains/transmission_controls_study/driver_redo01/front_hull_audit01/README.md)
+then confirms that the retained front wall has the opposite rake from the original
+section. Its floor junction and upper enclosure station require a coupled review.
+The current wall cannot serve as unquestioned historical ground truth for driver
+reconstruction. A source-wall change alone also does not resolve the grip layout.
+
+The accepted development native remains at **3,582 occurrences / 635 definitions /
+442 groups** and progression at **308 images**. Three profile comparisons and the
+whole-hull audit are saved as diagnostic evidence. Next correct/review the bow,
+floor and enclosure datums, then resume the dependent controls and full seat.
+
 ## 27 September 2026 — operating-handle datum and camera-uncertainty review
 
 The [source review](experiments/drive_chains/transmission_controls_study/driver_redo01/handle_datum_review01/README.md)
