@@ -1,0 +1,48 @@
+{
+  "source_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_source_rows01.json": "d09cbd460a23105d2e7e511290cc8ab56f478767c105c05c53bad01770aaee44",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_source_landmarks01.json": "af71f3a0fab4b8fa1271f1aa67c9e07efecdbbb5bf781484fd781ae009e09c8f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_layout_probe01.json": "23e5c759583724e9f818f2e60bdf3c5e554dae7efb76bfcd91e795bd7af37a05",
+    "cad/003_FullTank/experiments/drive_chains/probe_driver_low_layout.py": "febf143c17fa46b7bc379c4af8f8cc4e8dc33753a8965ad1b611687f0ff082dc",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handbook_text01.json": "407d5b883aef4edda37a81946aef5eeff13423673c6373af6ff1cf5bf73af846",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_registration01.json": "fe730cf90ecfa0dbfea6559bcb40f4b53a4fd9869dec00e78fc590f053abe701",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_integrated01/qualification.json": "1d788cca5765fbdf42018d99cdba347995c58db9255d4068fd3c79e5a49f32ca",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate92.png": "50c33f9ae0e099f8bcf852742b69a10c4199e9a6375ea40b55032f87e4b07509",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate113.png": "5120b8febe3a6985e10f09685e954d8f192558f1d21e92d67d4447bbf762f897",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate93.png": "65a46c3dfdf7ba25adaadf772ca627e67b003335355d4fd440064abbeaf48036",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/data/batch10_table_transcription.tsv": "4cdc95bbbe218264338cd9d8d9ed669b69f7c07167e7750c07844ed2cdf2af59",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_065_084.py": "e9d22e142aeac4c375806b9b56b7840612462299a8e9397ebee110d673b020f3",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_105_124.py": "c83ba4707e5582a0c6cc0d367130761347953a72e6c6a6b9b1f6d7a6bd7127ca",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_125_144.py": "41e1a2d5db10fae57f5e380d80423dba8ddc8036ce0bd500631b9239bf309fb2",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_185_204.py": "a92096e7622a26377ea3669752921441c602e30bdd6beb297d02a4ade4b5ddee",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_205_224.py": "4d1fc980e443a864a08b7bae1c517a03350e55401073ec40808b2bc5046d739f",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_265_276.py": "138f5d5e2fc13dbf5cc088ab5bf9c38f625a2d73a8b1061474b13b7f4619d326"
+  },
+  "reviewed": [
+    "HB113 close-up distinguishes M784 short eye[475,408], lower eye[468,442], M761 knee[487,386], and M763 lower eye[486,442] in the frozen local side registration. Previous M784 short/long picks partly conflated adjacent parts. Revise the actual shared M784 definition before continuing.",
+    "SNL119 gives two each M760 suspension, M762 connecting and M763 brake links. SNL137 supplies two M761 pins with3/16x1-1/4in split pins; SNL272 separately supplies two SH220A low-speed connecting-link washers.",
+    "M760 hangs from M783 to the large knee joint; M762 approaches that knee from the main-selector region and M763 descends from it to the M574 long-rod eye. This assembled-view interpretation replaces the provisional single front receiver.",
+    "M574 source49-1/2in stock is preserved with two real M569C socket offsets. Main and swing shaft station must follow the actual M763 receiver, not the discarded relative[35,180,-190] placeholder.",
+    "M568C pins remain the source family for M569C forks (SNL136). M568A pins are listed for M771 interconnection links and other forks; M568B is separately associated with M783. Do not allocate them to invented selector joints. Front M762-to-selector coupling remains explicitly unfinished.",
+    "SNL M756 left/M757 right differs from HB190 M756 starboard/M757 port. Review catalogue-era handed identity when building the selectors; neither is built in this increment.",
+    "Low01 rejected: the M763 continuous lateral set encroaches on the M760 knee, leaves0.14845mm3 of undrilled tilted web in the pin bore, and intersects the lower clevis. Low02 holds the first and last35mm of its web in the actual joint planes, puts the lateral set only in the middle and drills both bores through all fused material. Pin positions, source stock and neighbouring hardware stay fixed. Correct metadata locators: M761137:020, cotter141:010, M574195:011."
+  ],
+  "approximations": [
+    "Rounded M784 offsets[45,0,-218]/[61,0,-295], M761 knee[17,0,-168], and M763 receiver[20,0,-295] follow distinct reviewed local side picks to within about1px; picks have4px uncertainty and are not independent validation.",
+    "Select main/swing Z1300/1320 and136degree projected M772 arm angle from bounded layout probe: printed short/long stock closes, source hand-tip residual10.1281px and nose clearance11.4125mm. Absolute driver height and seat form remain unmeasured. Main shaft station is now derived from actual M763 geometry and complete M574 stock.",
+    "M760 section12.7mm with32mm upper/16mm lower bearing widths; M761 estimated19.05mm shank,57.15mm under-head length. A same-handed axial stack is selected for both lanes: M762 behind M760, M763 in front, then SH220A washer and source-sized cotter. Historical knee stack, clearances and pin dimensions are unprinted.",
+    "M762 is represented by an estimated curved flat link with10mm stock,28mm strap width,25mm rear eye and16mm front eye. Its open13mm front eye is provisionally placed10mm aft of the main shaft and150mm below M783; actual selector coupling, attachment and stock remain unfinished.",
+    "M763 has an estimated lateral set from its upper bearing to the common long-rod lane. Washer dimensions and radial oil holes are estimates. No separate grease nipples are inferred.",
+    "Nominal thread envelopes, fork insertion and clevis sections are inherited estimates. M576 clutch length changes with corrected M784/driver geometry; all five source applications still need reconciliation.",
+    "Only explicitly declared driver definitions/frames change. Original floor solids are restored before drilling the new mount pattern. Existing rear and intermediate controls remain fixed.",
+    "SH220A is seated against the M762 connecting-link eye, between it and M760. Move M762 toY=-16.35mm relative to each branch, washer seatY=-11.35, pin headseatY=-21.35 and cotterstationY=25.65. This is a source-name-consistent axial-stack hypothesis, not an established section."
+  ],
+  "constraints": [
+    "Do not alter source registrations to conceal changed joint identities.",
+    "Separate strict CAD/interface checks from historical interpretation.",
+    "Preserve full printed M574/M789B/M772 stock and complete joint pins/cotters/nuts.",
+    "M762 front selector coupling, remaining driver mechanisms, spring anchors, axial spacing, full seat support and motion remain open."
+  ],
+  "status": "Reviewed source topology for real low-speed receivers and corrected overlapping M784 eye identities; static reconstruction with unfinished selector coupling."
+}

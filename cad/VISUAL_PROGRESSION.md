@@ -1,5 +1,19 @@
 # Mark VIII visual progression
 
+## Low-speed front receivers and rods — 27 September 2026
+
+Five inspected views bring accepted progression to **292 images**. Two complete
+source-length M574 rods, three-part knee linkages, full pins/washers/keepers and
+corrected M784 eye assignments are shown. Source registrations are unchanged.
+M762 front coupling is deliberately identified as unfinished; exact sections,
+axial stack, driver height and source pose remain reconstruction estimates.
+
+- [Isometric](intermediate_snapshot_iso_driver_low_controls_001.png)
+- [Driver detail](intermediate_snapshot_detail_driver_low_controls_001.png)
+- [Source plan](intermediate_snapshot_source_plan_driver_low_controls_001.png)
+- [Source side](intermediate_snapshot_source_side_driver_low_controls_001.png)
+- [Low-speed section](intermediate_snapshot_section_driver_low_controls_001.png)
+
 ## Driver front clutch chain — 27 September 2026
 
 Five inspected views bring accepted progression to **287 images**. Four shared

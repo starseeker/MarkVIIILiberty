@@ -1,0 +1,9 @@
+{
+  "reason": "Initial journal-area check incorrectly required an uninterrupted cylindrical surface despite the explicitly modeled radial oil passage. Revision2 verifies full axial span and independently reconstructs the entire annular hub stock minus its oil passage, comparing both missing and extra material. No geometry or tolerance changes.",
+  "failed_checker": "cad/003_FullTank/experiments/drive_chains/check_driver_low_controls.py",
+  "corrected_checker": "cad/003_FullTank/experiments/drive_chains/check_driver_low_controls_v2.py",
+  "retained_failures": [
+    "low02/diagnostics/journal_area01",
+    "low_variation02/diagnostics/journal_area01"
+  ]
+}

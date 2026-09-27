@@ -4,16 +4,17 @@
   "goal_status": "active",
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
-  "accepted_development_parent": "Driver front clutch chain, 27 September 2026",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_integrated01",
-  "latest_native_sha256": "896c139ea13343b8b24d4c8e46a6fbe0c917fa03cdae82c9d850d047ffd1de58",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_integrated01/qualification.json",
+  "accepted_development_parent": "Low-speed front receivers and source-length rods, 27 September 2026",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01",
+  "latest_native_sha256": "8870b1b7524fe3e8a99df52ea16f5b1ddbd7d28775e973f89f4ad899893e2257",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01/qualification.json",
   "current_pipeline_run": null,
   "pipeline_receipt": null,
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_integrated01",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02",
@@ -31,7 +32,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Build actual M760 low-speed suspension links and M762/M763 low toggles; close the two source-length M574 rods against their real front receivers to confirm or reopen the provisional driver station. Continue selectors/high-reverse levers/M789A rods, brake interconnection, M775 axial spacers, M785 spring anchor and complete seat support. M576 has five total applications; reverse uses separate M571 pipe rod, giving eight front long connections. Retain the unchanged local source registrations and recorded hand/nose compromise.",
+  "next_action": "Resolve and build M756/M757 low-speed selectors and the actual M762 front coupling on the main shaft, retaining the two completed M574 rods and corrected M784/M763 eye identities. HB and SNL handed names conflict; explicitly select the catalogue-era convention. Continue high selectors/M789A rods, operating levers, M775 spacers/spring anchors, brake interconnection, reverse M571 pipe and complete seat supports. Absolute driver height, source pose and joint stack remain estimates.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -109,35 +110,41 @@
     "M784 three-eye topology, journal dimensions, web and oil passage are assembled-view interpretations; independent historical section/shape evidence remains open.",
     "M772 source-sized reach retained;170mm outward hand and126degree projected hand/bell angle selected. Source-plan residual11.4791px and nose clearance13.5145mm are recorded. More source-like angles intersect current nose; revisit driver station/pose when stronger evidence arrives, without refitting the camera to hide it.",
     "One complete M576 clutch stock1215.608440mm now installed; all five applications must share/reconcile source part identity. M571 reversing pipe is an additional front long connection, correcting earlier seven-rod scope.",
-    "The coarse driver-seat envelope is not a physical part or clearance proof. Full M786/M787 seat extensions, axial spacing hardware, springs, selectors and other driver mechanisms remain unfinished."
+    "The coarse driver-seat envelope is not a physical part or clearance proof. Full M786/M787 seat extensions, axial spacing hardware, springs, selectors and other driver mechanisms remain unfinished.",
+    "The prior driver front-clutch M784 eye picks were partly conflated with overlapping M763. low_source_landmarks01 separates actual M784 short/long[475,408]/[468,442], M761[487,386] and M763[486,442] in the unchanged local side projection. Earlier M784 offsets are superseded.",
+    "Actual low-speed receiver closure now sets main/swing X7579.893408/7173.363024 and Z1300/1320. Complete M574 stock1257.3mm is preserved; historical absolute height and full seat geometry remain unknown.",
+    "M760/M762/M763 profiles,19.05mm M761 diameter and57.15mm length, SH220A placement and same-handed axial stack are estimates. Source3/16x1-1/4in cotters are complete. M762 front coupling remains physically open until selectors are built.",
+    "New clutch estimate:136degree projected arm angle,47.3938degree elevation,10.1281px source-tip residual,11.4125mm nominal nose clearance; M576 stock1296.850963mm. Reconcile all five M576 applications and actual operating pose later.",
+    "HB190 and SNL differ on M756/M757 handed designation. Review the actual selector forms and record the chosen catalogue-era identity before integrating them."
   ],
-  "visual_progression_count": 282,
+  "visual_progression_count": 292,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
   "latest_locally_qualified_checkpoint": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01",
-    "native_sha256": "bd3425eb03c6f7eb979fdffa2dd26f82d2b9311413489f3b71968865444f8b6a",
-    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01",
+    "native_sha256": "8870b1b7524fe3e8a99df52ea16f5b1ddbd7d28775e973f89f4ad899893e2257",
+    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01/qualification.json"
   },
-  "qualification_scope": "SH944 short/long links, shaft, axial Woodruff keys, complete source-sized clamp/mount hardware, real floor receivers and M581 rear rod with distinct SH953E/M569C joint families, and complete93in SH229A center rod with M569C joints. Source center-rod stock length determines swing-bracket X. Nominal/variation, context, strict STEP and full-native preservation checks pass. Cast forms, mounting, key-size height and routing remain estimates.",
-  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_source_review03.json",
+  "qualification_scope": "30 additions: two each M760/M762/M763, full M761 pin/keeper and SH220A washer, complete source-length M574 rods with four physical clevis joints. Seven declared driver/floor/clutch definitions revised after source eye identities were separated. M762 front selector coupling, historical profiles/axial stack/pose, seat supports and other driver mechanisms remain unfinished Nominal and variation pass 366 local checks, 227 context pairs and 105 native/STEP comparisons each; full integration, preservation and fresh reproduction pass. Historical interpretation, complete controls and motion remain open.",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_source_review02.json",
   "active_development_candidate": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01",
-    "native_sha256": "bd3425eb03c6f7eb979fdffa2dd26f82d2b9311413489f3b71968865444f8b6a",
-    "status": "Partial driver foundation integrated after completed withheld redo:3475 occurrences/611 definitions/414 groups. 36 driver parts and two scoped floor imports; controls and complete seat supports remain open."
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01",
+    "native_sha256": "8870b1b7524fe3e8a99df52ea16f5b1ddbd7d28775e973f89f4ad899893e2257",
+    "status": "Low-speed receivers and complete M574 rods integrated: 3528 occurrences / 622 definitions / 426 groups. M784/M763 eye identities corrected. Actual M762 front selector connections and remaining driver mechanisms are unfinished."
   },
-  "qualification_note": "All140 original withheld additions have functional dispositions across six corrected increments,155 net physical additions. Source/casting/routing approximations remain explicit. Driver continuation remains open. Driver continuation has a separate checked five-part uninstalled M782 study; it is not promoted to the full model.",
+  "qualification_note": "All 140 additions in the original withheld commit have functional dispositions across six corrected increments. Driver continuation now includes installed support foundation, complete front clutch chain and low-speed receiving links/rods. This is a locally checked development assembly; the standard tank011 is unchanged. Historical sections, axial stack, absolute driver height and pose remain approximate.",
   "parent_pipeline_run": "high_brake_support01",
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
   "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01/qualification.json",
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low02",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01/qualification.json",
     "geometry_integrated": true,
-    "status": "Two shafts, complete end retainers, partial M786/M787 side plates and eight real sloped-floor mounting sets. Historical outlines and complete driver support/controls remain open.",
-    "nominal_and_stock_variation": "144 local checks,123 context pairs,47 strict STEP comparisons each; fresh prototype/full reproduction,602 inherited definitions preserved, four inspected views.",
+    "status": "30 additions: two each M760/M762/M763, full M761 pin/keeper and SH220A washer, complete source-length M574 rods with four physical clevis joints. Seven declared driver/floor/clutch definitions revised after source eye identities were separated. M762 front selector coupling, historical profiles/axial stack/pose, seat supports and other driver mechanisms remain unfinished",
+    "nominal_and_stock_variation": "366 local checks, 227 context pairs, 105 strict STEP comparisons each; fresh prototype/full reproduction; all 608 undeclared inherited definitions preserved; five inspected views.",
     "source_camera": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_registration01.json",
-    "next_action": "Reconstruct actual M784 swing links and M760 low-speed suspension receivers, then M789A/B short connections and driver lever/selector/brake interconnection. Preserve printed M574 stock and confirm or reopen the provisional driver station when real front receivers close. M786/M787 seat attachments and M785 spring anchor remain unfinished; M746/M747 are operating-lever fulcrums, not floor blocks.",
-    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/shaft01/part_qualification.json"
+    "source_landmarks": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_source_landmarks01.json",
+    "next_action": "Resolve and build M756/M757 low-speed selectors and the actual M762 front coupling on the main shaft, retaining the two completed M574 rods and corrected M784/M763 eye identities. HB and SNL handed names conflict; explicitly select the catalogue-era convention. Continue high selectors/M789A rods, operating levers, M775 spacers/spring anchors, brake interconnection, reverse M571 pipe and complete seat supports. Absolute driver height, source pose and joint stack remain estimates.",
+    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_integrated01/qualification.json"
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
@@ -145,7 +152,7 @@
     "selected": "Track: SH946D with M569C both ends, functional HB M577; low-speed: SH946E with M569A both ends, functional HB M572. M578/M573 are the long rear rods.",
     "subsequent_geometry_revision": "The identity correction is retained. Track-rod closure now supersedes eight M330/M4132 eye coordinate values; use revised_operating_interfaces."
   },
-  "active_mounting_hypothesis": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_source_review03.json",
+  "active_mounting_hypothesis": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_source_review02.json",
   "revised_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/operating_interfaces.json",
   "pin_family_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01/operating_interfaces.json",
   "revised_low_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/operating_interfaces.json",
@@ -167,5 +174,6 @@
     "withheld_redo_completion": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/withheld_redo_completion.json",
     "withheld_redo_status": "Corrected local static reconstruction complete; original branch remains preserved."
   },
-  "driver_part_verifier": "cad/003_FullTank/experiments/drive_chains/verify_driver_fulcrum_shaft.py"
+  "driver_part_verifier": "cad/003_FullTank/experiments/drive_chains/verify_driver_fulcrum_shaft.py",
+  "open_limits_note": "This cumulative history includes superseded assumptions. For current driver datums, eye identities, rod lengths and limits use low_integrated01/qualification.json and low_controls02.json; prior checkpoint files are preserved unchanged."
 }

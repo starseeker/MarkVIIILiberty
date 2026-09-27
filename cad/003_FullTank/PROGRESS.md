@@ -11,6 +11,24 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — low-speed front receivers and rods integrated
+
+The [checkpoint](experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01/README.md)
+contains **3,528 occurrences / 622 definitions / 426 groups**. Thirty additions
+include paired M760/M762/M763 links, full knee retention and source-length M574
+rods with all four clevis joints. Actual receivers replace the provisional driver
+points. M762 front selector coupling remains unfinished.
+
+A source close-up separated overlapping M784/M763 eyes, correcting the previous
+swing-link geometry with the same image registration. Seven definitions and 59
+driver frames are revised; all 608 undeclared inherited definitions are preserved.
+Nominal/variation pass 366 local checks, 227 context pairs and 105 STEP comparisons
+each. Fresh full reproduction passes. Five inspected views bring progression
+to **292**. Historical height, profiles and knee stack remain approximate.
+
+Next are the low selectors and actual M762 coupling, followed by the remaining
+operating controls and full seat support. Standard tank011 remains unchanged.
+
 ## 27 September 2026 — complete driver front clutch chain integrated
 
 The [new checkpoint](experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_integrated01/README.md)

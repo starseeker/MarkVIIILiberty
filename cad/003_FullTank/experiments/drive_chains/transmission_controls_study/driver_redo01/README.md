@@ -1,5 +1,17 @@
 # Driver controls — active continuation
 
+Current checkpoint: [low-speed front receivers and rods](low_integrated01/README.md),
+**3,528 occurrences / 622 definitions / 426 groups**. Thirty new parts complete
+the hanging low links and source-length long rods. The M762 front selector
+coupling is still open. Source review corrects previously conflated M784/M763
+picks; old eye coordinates and driver station are superseded.
+
+See [source review](low_source_review02.json), [retained trials](low_trials.md)
+and [current recovery state](../../../../CURRENT_WORK.json). Next build the low
+selectors and real front coupling, recording the HB/SNL handed-name conflict.
+
+The following notes describe the preceding checkpoint and remain historical.
+
 Current checkpoint: [complete driver front clutch chain](linkage_integrated01/README.md),
 **3,498 occurrences / 615 definitions / 419 groups**. Its23 additions include all
 four M784 links and the complete front clutch chain. The earlier
