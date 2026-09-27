@@ -2121,6 +2121,34 @@
         "date": "2026-09-27",
         "basis": "Saved native/STEP validation and inspected depth-buffered isometric, underside and fixed source section."
       }
+    },
+    {
+      "id": "driver_seat_stays_recovered_20260927",
+      "status": "open_evidence",
+      "scope": "Omitted seat stays, upper/lower mounting bolts, current bore conflict and M788 part boundary.",
+      "reason": "Direct original scans reveal printed upper bolts larger than the provisional bearing bores. Numerical seat-side checks did not establish historical receiver size or support completeness.",
+      "uncertainty": "Printed A/B upper-bolt application versus B/D stay identities; exact stay profiles, lower receiver positions, M788 ownership and absolute installation.",
+      "limits": [
+        "Two front B and two rear D stays selected provisionally from explicit p222 and p31 rows.",
+        "19.05x60.325mm upper and12.7x34.925mm lower bolts retain full printed stock.",
+        "Current16.3mm bores require rebuilding; proposed19.3mm clearance remains estimated.",
+        "No integration or geometry change;54 planned support occurrences remain unbuilt."
+      ],
+      "reopen_when": [
+        "Actual support geometry contradicts the conditional side-section picks or protected shaft/floor constraints.",
+        "Stronger source resolves A/B versus B/D or M788 mounting topology."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_seat_support_study/evidence_receipt.json",
+          "sha256": "1ea2bdfd80833d590b3fcec9b6fb9f167072777182fdb1bc01bfa36eade76be0"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Three inspected original scans/crops and HB6 topology view; source inventory and actual receiver consequences recorded."
+      }
     }
   ]
 }

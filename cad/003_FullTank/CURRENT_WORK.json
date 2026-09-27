@@ -40,7 +40,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Complete the physical M786/M787-to-SH289E seat support chain and two M788 angles with eight full41.275mm mounting bolts/nuts/locks. Use driver_seat_study/trial06 (227occurrences/88definitions) as the saved seat-side prototype; preserve its38 additions or explicitly rebuild a constrained interface. Reconcile remaining SNL2 profile and shaft-height discrepancies before integration; source camera unchanged. SH291C application and adjustment topology remain open.",
+  "next_action": "Revise the bearing bore for four full19.05x60.325mm seat bolts; build twoSH289B/twoSH289D stays and their four12.7x34.925mm lower bolts. Complete the twoM788 angles and eight12.7x41.275mm mounts; revise M786/M787 support extensions while preserving floor/shaft interfaces. Keep A/B versus B/D identity conflict explicit. See driver_seat_support_study/README.md. Resolve M788 versus currently folded M786/M787 foot ownership; the 54 proposed additions are not yet built. Keep full geometry/contact/STEP/source checks before integration.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -141,7 +141,8 @@
     "Bow/enclosure trial02 tests HB35 main overall length including the27-inch driver projection. Printed feature sizes retained; main-body length2451.1mm and inferred longitudinal stations adjusted. Rake119.53deg, source120.48deg; no camera refit.40 plates pass construction/export/joints, but both current handles intersect4436.15mm3 each and all four complete handle hypotheses fail. No integration; source length endpoints, M2014/M2033 boundaries, floor allocation and absolute driver/control-state layout remain open.",
     "Coupled driver_layout_study: full M574 stock and fixed rear receivers close at main Z975/X7627.311900 and swing Z995/X7220.781516, with eight rebuilt floor mounting stacks. All mechanical checks pass including variationZ970; neither height is historically established. Source section shaft position and earlier47\u201349px grip discrepancy remain unresolved. M575/M578/M573 rear rods already exist; no missing-route reconstruction is needed.",
     "Seat evidence01: original SNL207 bearing rivets read3/8x1-1/8in, corroborated by SNL167; frozen5/8 transcription overridden locally. SH291X two and SH291C one/3.5in are distinct records. Source-derived pan undersideZ1517.638 is124.494mm above old layout-envelope top; source picks are construction only. Seat width, bearing geometry, adjustment axis/travel and complete support interfaces remain open.",
-    "Seat trial06: M791 modeled as three constituent bodies plus fourSH289E/twoSH291X/eight rivets/21nails. Width480mm, back/cushion surfaces, bearing/clip forms and fastener patterns are documented estimates; tested width490mm. Four receiving bores remain open. Support chain, twoM788 angles and their eight41.275mm hardware stacks are unfinished; source cushion/back profile and shaft placement remain unresolved. No integration; accepted progression308 unchanged."
+    "Seat trial06: M791 modeled as three constituent bodies plus fourSH289E/twoSH291X/eight rivets/21nails. Width480mm, back/cushion surfaces, bearing/clip forms and fastener patterns are documented estimates; tested width490mm. Four receiving bores remain open. Support chain, twoM788 angles and their eight41.275mm hardware stacks are unfinished; source cushion/back profile and shaft placement remain unresolved. No integration; accepted progression308 unchanged.",
+    "Seat support discovery: initial packet omitted two front SH289B/two rear SH289D stays and their eight bolt/nut/lock stacks. Original SNL33 upper bolts are19.05x60.325mm, incompatible with the trial06 estimated16.3mm bores; revision required before connection. Lower bolts are12.7x34.925mm. Upper row names A/B; stay and lower-bolt rows B/D. This is a printed-source conflict, not a transcription correction. M788 angle/folded-foot allocation also needs reconstruction."
   ],
   "visual_progression_count": 308,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
@@ -151,7 +152,7 @@
     "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json"
   },
   "qualification_scope": "Ten additions: complete M738 handles, M746/M747 fulcrums and M776/M768/one-inch cotter joints. Four upper selector arms/jaws revised for actual handle engagement. All lower linkage material and inherited frames preserved. Fixed source cap discrepancies47-49px, ambiguous37-inch datum and13.53px high-eye discrepancy remain open. No historical position, control-state or motion qualification; remaining fittings unfinished",
-  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/evidence_receipt.json",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/driver_seat_support_study/evidence_receipt.json",
   "active_development_candidate": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
     "native_sha256": "c8adadcb73bf9de0153cceb7e85e686bd63d5c6f1b198054e23811fdba8fede1",
@@ -170,7 +171,7 @@
     "status": "Seat-side prototype: 38 additions,227 total occurrences/88definitions. Both widths pass447 saved-material/contact checks,96 context pairs and45 strict STEP comparisons; fresh reproduction and39 mass controls pass. Support installation and source-profile/absolute-position review remain open.",
     "source_review": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/BUILD.md",
     "preceding_accepted_geometry": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
-    "next_action": "Complete the physical M786/M787-to-SH289E seat support chain and two M788 angles with eight full41.275mm mounting bolts/nuts/locks. Use driver_seat_study/trial06 (227occurrences/88definitions) as the saved seat-side prototype; preserve its38 additions or explicitly rebuild a constrained interface. Reconcile remaining SNL2 profile and shaft-height discrepancies before integration; source camera unchanged. SH291C application and adjustment topology remain open."
+    "next_action": "Revise the bearing bore for four full19.05x60.325mm seat bolts; build twoSH289B/twoSH289D stays and their four12.7x34.925mm lower bolts. Complete the twoM788 angles and eight12.7x41.275mm mounts; revise M786/M787 support extensions while preserving floor/shaft interfaces. Keep A/B versus B/D identity conflict explicit. See driver_seat_support_study/README.md. Resolve M788 versus currently folded M786/M787 foot ownership; the 54 proposed additions are not yet built. Keep full geometry/contact/STEP/source checks before integration."
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
@@ -202,5 +203,6 @@
   },
   "driver_part_verifier": "cad/003_FullTank/experiments/drive_chains/verify_driver_fulcrum_shaft.py",
   "open_limits_note": "Cumulative limits include superseded geometry. operating_integrated01 is authoritative for current handles/pivots and four upper selector arms; its protected lower linkage and all preceding world frames match high_integrated01. Historical source comparisons remain explicitly open. Older checkpoint files stay immutable.",
-  "active_seat_packet": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/BUILD.md"
+  "active_seat_packet": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/BUILD.md",
+  "active_support_packet": "cad/003_FullTank/experiments/drive_chains/driver_seat_support_study/README.md"
 }

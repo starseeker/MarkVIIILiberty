@@ -1,0 +1,132 @@
+{
+  "upper_attachment": {
+    "source_id": "SNL:033:009",
+    "quantity": 4,
+    "diameter_mm": 19.05,
+    "stock_length_mm": 60.325,
+    "plain_nut": true,
+    "lock_washer": true,
+    "proposed_receiver_diameter_mm": 19.3,
+    "radial_clearance_mm": 0.125,
+    "receiver_fit_status": "Construction allowance, not a printed bore dimension.",
+    "length_datum": "Under head assumed; full printed length must remain."
+  },
+  "lower_attachment": {
+    "source_id": "SNL:031:005",
+    "quantity": 4,
+    "diameter_mm": 12.7,
+    "stock_length_mm": 34.925,
+    "plain_nut": true,
+    "lock_washer": true,
+    "allocation": "One bolt per stay; two front and two rear stays from p222.",
+    "receiver_diameter_estimate_mm": 13.0,
+    "length_datum": "Under head assumed."
+  },
+  "support_angles": {
+    "source_ids": [
+      "SNL:005:006",
+      "SNL:031:008"
+    ],
+    "quantity": 2,
+    "bolt_quantity": 8,
+    "bolt_diameter_mm": 12.7,
+    "bolt_stock_length_mm": 41.275,
+    "plain_nut_quantity": 8,
+    "lock_washer_quantity": 8
+  },
+  "current_bearing_conflict": {
+    "native_sha256": "b44b9acf37f1a72326d8e42780b13229f73e9513f9cb193106f253eecf8a51a3",
+    "definition": "Def_DriverSeat_Bearing_SH289E",
+    "old_estimated_diameter_mm": 16.3,
+    "printed_bolt_diameter_mm": 19.05,
+    "diametral_interference_mm": 2.75,
+    "disposition": "Rebuild four receiver occurrences through a revised shared definition before installing the full upper bolts. Do not reduce printed bolt stock."
+  },
+  "conditional_stay_endpoints": {
+    "front": {
+      "upper": {
+        "pixel": [
+          449.0,
+          345.0
+        ],
+        "uncertainty_px": 4.0,
+        "conditional_world_xz_mm": [
+          7630.174682080924,
+          1482.0683111954459
+        ],
+        "world_uncertainty_note": "Pixel pick uncertainty only; source scale, drawing distortion and configuration transfer add unquantified error."
+      },
+      "lower": {
+        "pixel": [
+          442.0,
+          389.0
+        ],
+        "uncertainty_px": 5.0,
+        "conditional_world_xz_mm": [
+          7672.363641618496,
+          1221.2242884250472
+        ],
+        "world_uncertainty_note": "Pixel pick uncertainty only; source scale, drawing distortion and configuration transfer add unquantified error."
+      },
+      "projected_center_distance_mm": 264.2338216843316,
+      "basis": "Inherited conditional section picks; lower feature identity is unproven. Transverse offset and stock remain unmeasured."
+    },
+    "rear": {
+      "upper": {
+        "pixel": [
+          490.0,
+          345.0
+        ],
+        "uncertainty_px": 4.0,
+        "conditional_world_xz_mm": [
+          7383.067919075143,
+          1482.0683111954459
+        ],
+        "world_uncertainty_note": "Pixel pick uncertainty only; source scale, drawing distortion and configuration transfer add unquantified error."
+      },
+      "lower": {
+        "pixel": [
+          495.0,
+          388.0
+        ],
+        "uncertainty_px": 5.0,
+        "conditional_world_xz_mm": [
+          7352.932947976878,
+          1227.152561669829
+        ],
+        "world_uncertainty_note": "Pixel pick uncertainty only; source scale, drawing distortion and configuration transfer add unquantified error."
+      },
+      "projected_center_distance_mm": 256.69077864095607,
+      "basis": "Inherited conditional section picks; lower feature identity is unproven. Transverse offset and stock remain unmeasured."
+    }
+  },
+  "identity_conflict": {
+    "bolt_row_literal_marks": [
+      "SH289A",
+      "SH289B"
+    ],
+    "stay_rows_literal_marks": [
+      "SH289B",
+      "SH289D"
+    ],
+    "lower_bolt_row_literal_marks": [
+      "SH289B",
+      "SH289D"
+    ],
+    "original_scans_agree_with_transcription": true,
+    "provisional_selection": "Two front SH289B and two rear SH289D from the explicit stay list, also corroborated by their lower bolts. Transfer the upper-bolt functional seat-to-stay application while retaining its contradictory A/B labels.",
+    "source_error_or_variant_resolved": false
+  },
+  "projected_topology": "Four upper bearing bolts and four lower stay bolts. Source picks suggest unequal front/rear slopes; no parallelogram motion or adjustment travel is qualified.",
+  "prior_packet_omission": "The initial seat packet selected assembly/bearing rows but omitted the separate alphabetical STAY rows and associated generic BOLT applications. Its estimated receiver diameter did not use the printed upper bolt size.",
+  "expected_new_support_occurrences": 54,
+  "expected_new_support_occurrence_breakdown": {
+    "stays": 4,
+    "stay_bolts_nuts_locks": 24,
+    "angles": 2,
+    "angle_bolts_nuts_locks": 24
+  },
+  "protected_interfaces": "Preserve full printed stock, real floor mounting and established shaft bores; revised support profiles must be checked against every neighboring physical part.",
+  "geometry_modified": false,
+  "source_camera_refitted": false
+}

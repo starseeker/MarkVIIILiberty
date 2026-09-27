@@ -11,6 +11,22 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — missing seat stays recovered from catalogue
+
+The [support packet](experiments/drive_chains/driver_seat_support_study/README.md)
+recovers two front SH289B and two rear SH289D stays omitted from the first seat
+packet. Original scans also establish four 19.05 × 60.325 mm upper seat bolts and
+four 12.7 × 34.925 mm lower bolts, each with nuts and locks. The upper bolts cannot
+fit the prototype's estimated 16.3 mm bores; revise the bearings before installing
+the connections. SNL33 literally names A/B stays, while SNL222 and the lower-bolt
+row name B/D; that printed conflict is retained.
+
+No new geometry is accepted here. Next build the four stays, rebuild actual
+receivers and resolve the separate M788 angles versus the earlier folded-foot
+hypothesis. Full stock, floor/shaft constraints and fixed source comparisons remain
+required. The preceding prototype's mechanical receipts remain valid for their
+saved geometry, but do not establish those bores as historically correct.
+
 ## 27 September 2026 — seat-side prototype and spline exchange verified
 
 The [seat prototype](experiments/drive_chains/driver_seat_study/BUILD.md) adds
