@@ -11,6 +11,21 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — low selectors and complete upper joints integrated
+
+The [checkpoint](experiments/drive_chains/transmission_controls_study/driver_redo01/selector_integrated01/README.md)
+contains **3,534 occurrences / 625 definitions / 428 groups**. Six additions
+provide two handed selector bodies and two complete M790 pin/cotter sets. The
+shared M762 is corrected to a diagonal upper connection: its previous bowed
+profile belonged to the foot-brake bridle. Existing shafts, knees and rods stay
+fixed; SNL handed names are selected with the HB conflict recorded.
+
+Nominal/variation each pass 307 local checks, 21 context pairs and 12 STEP
+comparisons. Full integration, all 621 unchanged definitions and fresh rebuilding
+pass. Five inspected views bring progression to **297**. Historical gate shape,
+axial stack and pose remain approximate. Next are high selectors/M789A rods and
+the remaining driver mechanisms. Standard tank011 is unchanged.
+
 ## 27 September 2026 — low-speed front receivers and rods integrated
 
 The [checkpoint](experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01/README.md)

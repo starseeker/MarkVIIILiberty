@@ -1,5 +1,17 @@
 # Driver controls — active continuation
 
+Current checkpoint: [low selectors and upper joints](selector_integrated01/README.md),
+**3,534 occurrences / 625 definitions / 428 groups**. The two low selectors now
+have complete M790 joints. M762 is corrected to the source's diagonal upper
+connection; the preceding bowed profile was the foot-brake bridle outline.
+Existing shaft stations, low knees and complete rods remain fixed.
+
+See [source review](selector_source_review01.json), [trial dispositions](selector_trials.md)
+and [current recovery state](../../../../CURRENT_WORK.json). Next build the high
+selectors and source-length M789A rods, then the remaining driver mechanisms.
+
+The following entries are historical checkpoints and include superseded assumptions.
+
 Current checkpoint: [low-speed front receivers and rods](low_integrated01/README.md),
 **3,528 occurrences / 622 definitions / 426 groups**. Thirty new parts complete
 the hanging low links and source-length long rods. The M762 front selector

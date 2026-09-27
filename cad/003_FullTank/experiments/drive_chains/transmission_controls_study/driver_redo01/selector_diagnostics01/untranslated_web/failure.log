@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/trial_driver_low_selectors.py", line 37, in <module>
+    trial(a.output,parent,shapes,specs,props,d,inputs,changed_definitions=['Def_DriverLowConnecting_M762'],assembly_groups=groups)
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/control_rebuild_io_v2.py", line 57, in trial
+    assert s.Placement.isIdentity() and s.isValid() and len(s.Solids)==1 and s.Solids[0].isClosed(),key
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Def_DriverLowConnecting_M762

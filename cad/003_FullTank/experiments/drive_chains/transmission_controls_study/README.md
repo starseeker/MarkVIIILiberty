@@ -1,10 +1,10 @@
 # Transmission operating controls — evidence and receiving interfaces
 
-Current development checkpoint: [low-speed front receivers and rods](driver_redo01/low_integrated01/README.md),
-3528 occurrences/622 definitions/426 groups. The preceding [completed control
+Current development checkpoint: [low selectors and complete upper joints](driver_redo01/selector_integrated01/README.md),
+3534 occurrences/625 definitions/428 groups. The preceding [completed control
 redo](redo01/clutch_swing_integrated02/README.md) closes the withheld commit's scope.
 See [CURRENT_WORK](../../../CURRENT_WORK.json) and [redo dispositions](redo01/withheld_redo_completion.json).
-Older stage notes below remain historical. Low-speed selectors/front coupling, remaining driver controls and complete
+Older stage notes below remain historical. High-speed selectors, remaining driver controls and complete
 seat supports are the active continuation.
 
 

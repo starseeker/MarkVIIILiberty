@@ -1,5 +1,18 @@
 # Mark VIII visual progression
 
+## Low selectors and corrected diagonal connections — 27 September 2026
+
+Five inspected views bring accepted progression to **297 images**. Two short
+side-opening selectors and complete M790 pin/cotter joints now connect diagonal
+M762 links to the retained low-speed knees. Source registrations are unchanged;
+profiles, axial stack and static pose remain reconstruction estimates.
+
+- [Isometric](intermediate_snapshot_iso_driver_low_selectors_001.png)
+- [Driver detail](intermediate_snapshot_detail_driver_low_selectors_001.png)
+- [Source plan](intermediate_snapshot_source_plan_driver_low_selectors_001.png)
+- [Source side](intermediate_snapshot_source_side_driver_low_selectors_001.png)
+- [Low-speed section](intermediate_snapshot_section_driver_low_selectors_001.png)
+
 ## Low-speed front receivers and rods — 27 September 2026
 
 Five inspected views bring accepted progression to **292 images**. Two complete

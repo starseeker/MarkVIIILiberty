@@ -1252,9 +1252,9 @@
     },
     {
       "id": "driver_low_speed_receivers",
-      "status": "reviewed_approximation",
+      "status": "open_evidence",
       "scope": "Real low-speed hanging links/retention and source-length rods, corrected M784 eye identities and declared driver revisions; selector coupling unfinished.",
-      "reason": "Distinct source circles replace conflated eye identities. Actual receiving solids close printed M574 stock; saved materials, native/STEP exchange, variants, context and full fresh rebuilding pass.",
+      "reason": "Distinct source circles replace conflated eye identities. Actual receiving solids close printed M574 stock; saved materials, native/STEP exchange, variants, context and full fresh rebuilding pass. Reopened in selector_source_review01: provisional bowed M762 confused M765 foot-brake bridle. The new diagonal M762 and real M790 connection supersede that part while retaining the other checked low-speed geometry and datums.",
       "uncertainty": "M762 front coupling, profiles/sections, same-handed knee stack, pin dimensions, absolute driver height and neutral pose remain unmeasured. Source points are construction picks.",
       "limits": [
         "No historical or motion qualification.",
@@ -1296,6 +1296,50 @@
         {
           "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01/visual_review.json",
           "sha256": "60f7652d78cb240832c7d77cf83c89825f4e6fab93ad04576e55aa6d5297eef8"
+        }
+      ]
+    },
+    {
+      "id": "driver_low_selectors",
+      "status": "reviewed_approximation",
+      "scope": "Handed low selectors, complete upper M790 joints and corrected diagonal M762; all other geometry retained.",
+      "reason": "Source leader/topology review separates the foot-brake bridle from the low connecting link. Saved materials, real bearing/cotter interfaces, variant, context, exchange, full preservation and fresh rebuild pass.",
+      "uncertainty": "Selector profiles/gate, M790 dimensions, axial stack, washer station and static pose are unprinted. HB/SNL handed names conflict; SNL convention selected.",
+      "limits": [
+        "Static reconstruction only; no motion, service or historical qualification.",
+        "Remaining driver controls, full seat support and complete standard tank integration remain open."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "HB113 leader close-up, HB93 pictorial jaw form, SNL source rows, five saved views and qualification receipts."
+      },
+      "reopen_when": [
+        "New source section, dimension or handed-part evidence",
+        "High selector/operating lever geometry contradicts jaw shape or axial stack",
+        "Spring, brake interconnection or seat geometry contradicts fit",
+        "Joint identity or source projection contradiction"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_source_review01.json",
+          "sha256": "22b562760b1fa077a3a03779cc88ac4d853ed0566a83b53fd7e0c387b20819f4"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_landmarks01.json",
+          "sha256": "343a738f3aef23e437c6c11f125f5b2082a379cdeaa7ca2ae3d217ead97c3ecb"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_controls01.json",
+          "sha256": "f2f6a11cb493f1e82e19a36333e233873c7d90aa3d3d190a1a2d75d8cb2afd41"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_integrated01/qualification.json",
+          "sha256": "2761661302f9d1540a07a6205858780a6d0ea7912b31dab8ca6f0b1100672403"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_integrated01/visual_review.json",
+          "sha256": "9b1f200b581c3dd89277e805ae5a6cb59aad4f0aead91da554d1d02e4bc23130"
         }
       ]
     }

@@ -1,0 +1,1199 @@
+{
+  "native_file": "PowertrainControlRebuild.FCStd",
+  "native_sha256": "f70c487ced639d193a90b668970e4f3b5760873047afc1782ca00104af45cffc",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01/PowertrainControlRebuild.FCStd",
+  "source_native_sha256": "8870b1b7524fe3e8a99df52ea16f5b1ddbd7d28775e973f89f4ad899893e2257",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01/PowertrainControlRebuild.FCStd",
+  "parent_native_sha256": "8870b1b7524fe3e8a99df52ea16f5b1ddbd7d28775e973f89f4ad899893e2257",
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector03",
+  "prototype_native_sha256": "3ec201826a09f4b662af666cf8a33e4be30d4392ad88208ad3ccc8b07adc57cf",
+  "variation": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_variation03",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_driver_low_selectors.py": "b2aa4f8ae0339f94c0f00076e584b1959c8a01fc73c729feb77208eea20a9bd0",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io_v2.py": "84ab9a61290fbdbf32da469c0acab4582a6e6e7a0761583b6425263bc96f6465",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector03/report.json": "d678a29df17e5d91505fec5144d394f92ac32e8e75d07b9bad7f237f3d3e6730",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector03/isolated/manifest.json": "0c1cefeb959726bc973c4b5695cad3626416845dbc893d86ae17074ebb77aca4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector03/ControlRebuildTrial.FCStd": "3ec201826a09f4b662af666cf8a33e4be30d4392ad88208ad3ccc8b07adc57cf",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_variation03/report.json": "7e369f60672d494efe8cfa5eaef5c69debb91256f0aa5da5b0f4094c39a9de0d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01/qualification.json": "a9c27aa1cf9a28bf55acc77b9b3b777979d65255aba610d70d5d5f77de35accf",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01/isolated/manifest.json": "3006f2b997d00addecbb7e559ffed3271c855c8b4e2678399785ef5485ed05c5",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector03/visual_review.json": "749f567bc1e8f72cad77111b9fd74de32ab4241f76ccd6f8409cd5b495a3429e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector03/render_receipt.json": "36241e0b6e23f6ffe959414b8b8efae5967e586fb79af57bcefcf04e1ae7868a",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector03/reproduction_checks.json": "d3850bf2b4d8d66cb889e5cfd10e3533eb55495198baf92b72f8dfc1e5fef3d1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector03/checks03/independent_checks.json": "6c2a960371480bd5e7d455165231181e9f801098cf1fe4047dcac06261fd2865",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector03/context_audit/report.json": "33c553dfbff6a17773d1fedf5f5ac3b81e51f3fc14175e48636a2ec8647c3fe5",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector03/exchange01/exchange_checks.json": "9550ec5913d11f453a1790613f956e3a8368f76c68b410926522bc5b58b8ba39",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_variation03/checks03/independent_checks.json": "c145c77f13b5d3343bca0fec76534b8320d70fd555c62e730be27f23f3704e69",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_variation03/context_audit/report.json": "768f39e2ab5e25de5deda39931079b884bbcfd1b6a377e25dd23b6ff31e01083",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_variation03/exchange01/exchange_checks.json": "ce5ab126073e6c2d0e490133cdce0a1ba775b98adaf95516ed47d42dc539f11c"
+  },
+  "details": {
+    "controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_integrated01",
+      "parent_native_sha256": "896c139ea13343b8b24d4c8e46a6fbe0c917fa03cdae82c9d850d047ffd1de58",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_source_review02.json",
+      "source_review_sha256": "dc93890d2bb9c09c5a7595dfb2a0e99c4efcf0a1f36a2948d5904c79c71366a8",
+      "foundation_prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03",
+      "main_shaft_z": 1300.0,
+      "swing_shaft_z": 1320.0,
+      "future_low_relative": [
+        20.0,
+        180.0,
+        -295.0
+      ],
+      "swing_front_eye": [
+        45.0,
+        0.0,
+        -218.0
+      ],
+      "swing_rear_eye": [
+        61.0,
+        0.0,
+        -295.0
+      ],
+      "swing_web_stock": 12.0,
+      "swing_journal_width": 32.0,
+      "swing_bore_diameter": 25.7,
+      "swing_eye_radius": 16.0,
+      "lever_stock": 12.7,
+      "lever_boss_width": 32.0,
+      "lever_bore_diameter": 38.3238,
+      "lever_included_angle_degrees": 136.0,
+      "clutch_hand_length": 723.9,
+      "clutch_bell_radius": 127.0,
+      "clutch_short_rod_length": 320.675,
+      "rod_radius": 9.525,
+      "fork_pin_to_stock_offset": 25.4,
+      "swing_lanes": {
+        "StarboardReverse": -235.0,
+        "StarboardHigh": -125.0,
+        "PortHigh": 125.0,
+        "PortClutch": 235.0
+      },
+      "lever_hand_outward_offset": 170.0,
+      "low_knee_relative": [
+        17.0,
+        0.0,
+        -168.0
+      ],
+      "low_rod_relative": [
+        20.0,
+        0.0,
+        -295.0
+      ],
+      "low_web_stock": 12.7,
+      "low_pin_radius": 9.525,
+      "low_pin_length": 57.15,
+      "connecting_y": -16.35,
+      "brake_boss_y": 14.55,
+      "pin_head_seat_y": -21.35,
+      "pin_keeper_y": 25.65,
+      "washer_seat_y": -11.35,
+      "low_keeper": {
+        "cotter_center_spacing": 2.48,
+        "cotter_diameter": 4.7625,
+        "crown_radius": 9.525,
+        "cotter_head_gap": 0.8,
+        "cotter_exit_gap": 0.8,
+        "cotter_bend_radius": 3,
+        "cotter_bend_angle": 35,
+        "cotter_length": 31.75,
+        "cotter_eye_radius": 3.5,
+        "cotter_eye_rise": 4,
+        "cotter_eye_join_overlap": 0.1
+      }
+    },
+    "foundation": {
+      "controls": {
+        "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02",
+        "parent_native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
+        "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_source_review03.json",
+        "source_review_sha256": "b42ec5885b43cc70441ac5bb75598eb9ad67e90a0d8d9966b80eac25a70c2984",
+        "registration": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_registration01.json",
+        "floor_probe": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_sources01/context_probe.json",
+        "receiver_report": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/report.json",
+        "plate_stock": 6.35,
+        "nut_seat_y": 288.925,
+        "swing_length": 628.65,
+        "main_shaft_z": 1300.0,
+        "future_low_pin_z": 1025.0,
+        "future_low_pin_relative_to_swing": [
+          20.0,
+          180.0,
+          -295.0
+        ],
+        "main_keeper": {
+          "cotter_center_spacing": 2.48,
+          "cotter_diameter": 4.7625,
+          "crown_radius": 14,
+          "cotter_head_gap": 0.8,
+          "cotter_exit_gap": 0.8,
+          "cotter_bend_radius": 4,
+          "cotter_bend_angle": 35,
+          "cotter_length": 38.1,
+          "cotter_eye_radius": 4,
+          "cotter_eye_rise": 6,
+          "cotter_eye_join_overlap": 0.25
+        },
+        "swing_keeper": {
+          "cotter_center_spacing": 2.48,
+          "cotter_diameter": 4.7625,
+          "crown_radius": 17.5,
+          "cotter_head_gap": 0.8,
+          "cotter_exit_gap": 0.8,
+          "cotter_bend_radius": 4,
+          "cotter_bend_angle": 35,
+          "cotter_length": 50.8,
+          "cotter_eye_radius": 4,
+          "cotter_eye_rise": 6,
+          "cotter_eye_join_overlap": 0.25
+        }
+      },
+      "shafts": {
+        "Main": {
+          "center_world_mm": [
+            7579.8934082721635,
+            0.0,
+            1300.0
+          ],
+          "nut_seat_station_mm": 288.925,
+          "keeper_station_mm": 305.425,
+          "nut_height_mm": 14,
+          "original_nut_seat_y_mm": 529.2271428571429,
+          "shoulder_station_mm": 282.575
+        },
+        "Swing": {
+          "center_world_mm": [
+            7173.363024144814,
+            0.0,
+            1320.0
+          ],
+          "nut_seat_station_mm": 288.925,
+          "keeper_station_mm": 298.925,
+          "nut_height_mm": 13,
+          "original_nut_seat_y_mm": 323.85,
+          "shoulder_station_mm": 282.575
+        }
+      },
+      "keeper": {
+        "Main": {
+          "straight_length_mm": 29.6,
+          "bend_arc_length_mm": 2.443460952792061,
+          "tail_length_mm": 6.056539047207939,
+          "total_leg_centerline_mm": 38.1,
+          "tail_endpoints": [
+            [
+              0.0,
+              22.05553208724067,
+              -5.437279906162522
+            ],
+            [
+              0.0,
+              22.05553208724067,
+              5.437279906162522
+            ]
+          ],
+          "wire_radius_mm": 1.14125,
+          "under_eye_y_mm": -14.8,
+          "bend_start_y_mm": 14.8,
+          "exact_stock_volume_conserved": false,
+          "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+        },
+        "Swing": {
+          "straight_length_mm": 36.6,
+          "bend_arc_length_mm": 2.443460952792061,
+          "tail_length_mm": 11.756539047207934,
+          "total_leg_centerline_mm": 50.8,
+          "tail_endpoints": [
+            [
+              0.0,
+              30.22469873968792,
+              -8.706665593363482
+            ],
+            [
+              0.0,
+              30.22469873968792,
+              8.706665593363482
+            ]
+          ],
+          "wire_radius_mm": 1.14125,
+          "under_eye_y_mm": -18.3,
+          "bend_start_y_mm": 18.3,
+          "exact_stock_volume_conserved": false,
+          "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+        }
+      },
+      "mounts": [
+        {
+          "stem": "DriverPortSupportMount1",
+          "plate": "DriverPortSupportPlate",
+          "floor": "hull_floor_2",
+          "floor_contact_world_mm": [
+            7133.363024144814,
+            316.425,
+            848.3198776984534
+          ],
+          "head_seat_world_mm": [
+            7131.256294547375,
+            316.425,
+            854.3102191247223
+          ],
+          "lock_seat_world_mm": [
+            7135.353634788064,
+            316.425,
+            842.6597125712702
+          ],
+          "nut_seat_world_mm": [
+            7136.406999586783,
+            316.425,
+            839.6645418581357
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverPortSupportMount2",
+          "plate": "DriverPortSupportPlate",
+          "floor": "hull_floor_2",
+          "floor_contact_world_mm": [
+            7163.363024144814,
+            316.425,
+            858.8705096951584
+          ],
+          "head_seat_world_mm": [
+            7161.256294547375,
+            316.425,
+            864.8608511214272
+          ],
+          "lock_seat_world_mm": [
+            7165.353634788064,
+            316.425,
+            853.2103445679752
+          ],
+          "nut_seat_world_mm": [
+            7166.406999586783,
+            316.425,
+            850.2151738548407
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverPortSupportMount3",
+          "plate": "DriverPortSupportPlate",
+          "floor": "hull_floor_1",
+          "floor_contact_world_mm": [
+            7499.8934082721635,
+            316.425,
+            977.2241176497399
+          ],
+          "head_seat_world_mm": [
+            7497.7866786747245,
+            316.425,
+            983.2144590760088
+          ],
+          "lock_seat_world_mm": [
+            7501.884018915413,
+            316.425,
+            971.5639525225567
+          ],
+          "nut_seat_world_mm": [
+            7502.937383714133,
+            316.425,
+            968.5687818094223
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverPortSupportMount4",
+          "plate": "DriverPortSupportPlate",
+          "floor": "hull_floor_1",
+          "floor_contact_world_mm": [
+            7529.8934082721635,
+            316.425,
+            987.774749646445
+          ],
+          "head_seat_world_mm": [
+            7527.7866786747245,
+            316.425,
+            993.7650910727139
+          ],
+          "lock_seat_world_mm": [
+            7531.884018915413,
+            316.425,
+            982.1145845192618
+          ],
+          "nut_seat_world_mm": [
+            7532.937383714133,
+            316.425,
+            979.1194138061273
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverStarboardSupportMount1",
+          "plate": "DriverStarboardSupportPlate",
+          "floor": "hull_floor_2",
+          "floor_contact_world_mm": [
+            7133.363024144814,
+            -316.425,
+            848.3198776984534
+          ],
+          "head_seat_world_mm": [
+            7131.256294547375,
+            -316.425,
+            854.3102191247223
+          ],
+          "lock_seat_world_mm": [
+            7135.353634788064,
+            -316.425,
+            842.6597125712702
+          ],
+          "nut_seat_world_mm": [
+            7136.406999586783,
+            -316.425,
+            839.6645418581357
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverStarboardSupportMount2",
+          "plate": "DriverStarboardSupportPlate",
+          "floor": "hull_floor_2",
+          "floor_contact_world_mm": [
+            7163.363024144814,
+            -316.425,
+            858.8705096951584
+          ],
+          "head_seat_world_mm": [
+            7161.256294547375,
+            -316.425,
+            864.8608511214272
+          ],
+          "lock_seat_world_mm": [
+            7165.353634788064,
+            -316.425,
+            853.2103445679752
+          ],
+          "nut_seat_world_mm": [
+            7166.406999586783,
+            -316.425,
+            850.2151738548407
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverStarboardSupportMount3",
+          "plate": "DriverStarboardSupportPlate",
+          "floor": "hull_floor_1",
+          "floor_contact_world_mm": [
+            7499.8934082721635,
+            -316.425,
+            977.2241176497399
+          ],
+          "head_seat_world_mm": [
+            7497.7866786747245,
+            -316.425,
+            983.2144590760088
+          ],
+          "lock_seat_world_mm": [
+            7501.884018915413,
+            -316.425,
+            971.5639525225567
+          ],
+          "nut_seat_world_mm": [
+            7502.937383714133,
+            -316.425,
+            968.5687818094223
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverStarboardSupportMount4",
+          "plate": "DriverStarboardSupportPlate",
+          "floor": "hull_floor_1",
+          "floor_contact_world_mm": [
+            7529.8934082721635,
+            -316.425,
+            987.774749646445
+          ],
+          "head_seat_world_mm": [
+            7527.7866786747245,
+            -316.425,
+            993.7650910727139
+          ],
+          "lock_seat_world_mm": [
+            7531.884018915413,
+            -316.425,
+            982.1145845192618
+          ],
+          "nut_seat_world_mm": [
+            7532.937383714133,
+            -316.425,
+            979.1194138061273
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        }
+      ],
+      "floor_normal": [
+        -0.33176844054162746,
+        -1e-16,
+        0.9433608545305326
+      ],
+      "plate_origin_world_mm": [
+        7173.363024144814,
+        0.0,
+        862.3873870273934
+      ],
+      "shaft_separation_mm": 406.53038412735026,
+      "future_low_pin_world_mm": [
+        7193.363024144814,
+        180.0,
+        1025.0
+      ],
+      "future_low_pin_status": "Unmodeled provisional target; no front rod or rocker counted.",
+      "scope": "Partial seat-support plates, two shaft interfaces and real floor attachment; seat mount extensions, lever fulcrums, controls and front rods remain pending."
+    },
+    "low_speed": {
+      "Port": {
+        "base_world_mm": [
+          7173.363024144814,
+          180.0,
+          1320.0
+        ],
+        "knee_world_mm": [
+          7190.363024144814,
+          180.0,
+          1152.0
+        ],
+        "rod_pin_world_mm": [
+          7193.363024144814,
+          180.0,
+          1025.0
+        ],
+        "stock_start_world_mm": [
+          5957.39246919493,
+          180.0,
+          681.9313810665924
+        ],
+        "axis_world": [
+          0.9635694667107539,
+          0.0,
+          0.26745818892446227
+        ],
+        "stock_length_mm": 1257.3,
+        "pin_span_mm": 1308.0999999999997,
+        "endpoints": [
+          {
+            "stem": "PortDriverLowRearJoint",
+            "pin_world_mm": [
+              5932.917804740477,
+              180.0,
+              675.137943067911
+            ],
+            "rod_axis_world": [
+              0.9635694667107539,
+              0.0,
+              0.26745818892446227
+            ],
+            "receiver": "PortLowIntermediateRocker"
+          },
+          {
+            "stem": "PortDriverLowForwardJoint",
+            "pin_world_mm": [
+              7193.363024144814,
+              180.0,
+              1025.0
+            ],
+            "rod_axis_world": [
+              -0.9635694667107539,
+              -0.0,
+              -0.26745818892446227
+            ],
+            "receiver": "PortDriverLowBrake"
+          }
+        ],
+        "selector_connection_world_mm": [
+          7489.8934082721635,
+          163.65,
+          1392.0
+        ]
+      },
+      "Starboard": {
+        "base_world_mm": [
+          7173.363024144814,
+          -180.0,
+          1320.0
+        ],
+        "knee_world_mm": [
+          7190.363024144814,
+          -180.0,
+          1152.0
+        ],
+        "rod_pin_world_mm": [
+          7193.363024144814,
+          -180.0,
+          1025.0
+        ],
+        "stock_start_world_mm": [
+          5957.39246919493,
+          -180.0,
+          681.9313810665924
+        ],
+        "axis_world": [
+          0.9635694667107539,
+          0.0,
+          0.26745818892446227
+        ],
+        "stock_length_mm": 1257.3,
+        "pin_span_mm": 1308.0999999999997,
+        "endpoints": [
+          {
+            "stem": "StarboardDriverLowRearJoint",
+            "pin_world_mm": [
+              5932.917804740477,
+              -180.0,
+              675.137943067911
+            ],
+            "rod_axis_world": [
+              0.9635694667107539,
+              0.0,
+              0.26745818892446227
+            ],
+            "receiver": "StarboardLowIntermediateRocker"
+          },
+          {
+            "stem": "StarboardDriverLowForwardJoint",
+            "pin_world_mm": [
+              7193.363024144814,
+              -180.0,
+              1025.0
+            ],
+            "rod_axis_world": [
+              -0.9635694667107539,
+              -0.0,
+              -0.26745818892446227
+            ],
+            "receiver": "StarboardDriverLowBrake"
+          }
+        ],
+        "selector_connection_world_mm": [
+          7489.8934082721635,
+          -196.35,
+          1392.0
+        ]
+      }
+    },
+    "low_parts": {
+      "knee": [
+        17.0,
+        0.0,
+        -168.0
+      ],
+      "rod": [
+        20.0,
+        0.0,
+        -295.0
+      ],
+      "connecting_front": [
+        316.53038412734986,
+        -16.35,
+        72.0
+      ],
+      "connecting_rear": [
+        17.0,
+        -16.35,
+        -168.0
+      ],
+      "brake_upper": [
+        17.0,
+        14.55,
+        -168.0
+      ],
+      "keeper": {
+        "straight_length_mm": 20.650000000000002,
+        "bend_arc_length_mm": 1.832595714594046,
+        "tail_length_mm": 9.267404285405952,
+        "total_leg_centerline_mm": 31.75,
+        "tail_endpoints": [
+          [
+            0.0,
+            19.637142474695988,
+            -7.098108591380583
+          ],
+          [
+            0.0,
+            19.637142474695988,
+            7.098108591380583
+          ]
+        ],
+        "wire_radius_mm": 1.14125,
+        "under_eye_y_mm": -10.325000000000001,
+        "bend_start_y_mm": 10.325000000000001,
+        "exact_stock_volume_conserved": false,
+        "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+      }
+    },
+    "swings": {
+      "StarboardReverse": {
+        "occurrence": "StarboardReverseDriverSwingLink",
+        "pivot_world_mm": [
+          7173.363024144814,
+          -235.0,
+          1320.0
+        ],
+        "front_pin_world_mm": [
+          7218.363024144814,
+          -235.0,
+          1102.0
+        ],
+        "rear_pin_world_mm": [
+          7234.363024144814,
+          -235.0,
+          1025.0
+        ]
+      },
+      "StarboardHigh": {
+        "occurrence": "StarboardHighDriverSwingLink",
+        "pivot_world_mm": [
+          7173.363024144814,
+          -125.0,
+          1320.0
+        ],
+        "front_pin_world_mm": [
+          7218.363024144814,
+          -125.0,
+          1102.0
+        ],
+        "rear_pin_world_mm": [
+          7234.363024144814,
+          -125.0,
+          1025.0
+        ]
+      },
+      "PortHigh": {
+        "occurrence": "PortHighDriverSwingLink",
+        "pivot_world_mm": [
+          7173.363024144814,
+          125.0,
+          1320.0
+        ],
+        "front_pin_world_mm": [
+          7218.363024144814,
+          125.0,
+          1102.0
+        ],
+        "rear_pin_world_mm": [
+          7234.363024144814,
+          125.0,
+          1025.0
+        ]
+      },
+      "PortClutch": {
+        "occurrence": "PortClutchDriverSwingLink",
+        "pivot_world_mm": [
+          7173.363024144814,
+          235.0,
+          1320.0
+        ],
+        "front_pin_world_mm": [
+          7218.363024144814,
+          235.0,
+          1102.0
+        ],
+        "rear_pin_world_mm": [
+          7234.363024144814,
+          235.0,
+          1025.0
+        ]
+      }
+    },
+    "clutch_hand_angle_degrees": 47.393760121370505,
+    "clutch_pivot_world_mm": [
+      7579.8934082721635,
+      235.0,
+      1300.0
+    ],
+    "clutch_bell_pin_world_mm": [
+      7582.982467891676,
+      235.0,
+      1173.0375736264186
+    ],
+    "rods": {
+      "Short": {
+        "mark": "M789B",
+        "stock_length_mm": 320.67499999999995,
+        "pin_span_mm": 371.47499999999997,
+        "stock_start_world_mm": [
+          7243.294268161693,
+          235.0,
+          1106.85726999155
+        ],
+        "axis_world": [
+          0.9815450400346245,
+          0.0,
+          0.19123110202952726
+        ],
+        "endpoints": [
+          {
+            "stem": "DriverClutchShortRearJoint",
+            "pin_world_mm": [
+              7218.363024144814,
+              235.0,
+              1102.0
+            ],
+            "rod_axis_world": [
+              0.9815450400346245,
+              0.0,
+              0.19123110202952726
+            ],
+            "receiver": "PortClutchDriverSwingLink"
+          },
+          {
+            "stem": "DriverClutchShortForwardJoint",
+            "pin_world_mm": [
+              7582.982467891676,
+              235.0,
+              1173.0375736264186
+            ],
+            "rod_axis_world": [
+              -0.9815450400346245,
+              -0.0,
+              -0.19123110202952726
+            ],
+            "receiver": "DriverClutchOperatingLever"
+          }
+        ]
+      },
+      "Front": {
+        "mark": "M576",
+        "stock_length_mm": 1296.8509629689563,
+        "pin_span_mm": 1347.6509629689563,
+        "stock_start_world_mm": [
+          5957.4469368979935,
+          235.0,
+          681.7320067314708
+        ],
+        "axis_world": [
+          0.965713864469161,
+          0.0,
+          0.2596088056519633
+        ],
+        "endpoints": [
+          {
+            "stem": "DriverClutchFrontRearJoint",
+            "pin_world_mm": [
+              5932.917804740477,
+              235.0,
+              675.137943067911
+            ],
+            "rod_axis_world": [
+              0.965713864469161,
+              0.0,
+              0.2596088056519633
+            ],
+            "receiver": "PortClutchIntermediateRocker"
+          },
+          {
+            "stem": "DriverClutchFrontForwardJoint",
+            "pin_world_mm": [
+              7234.363024144814,
+              235.0,
+              1025.0
+            ],
+            "rod_axis_world": [
+              -0.965713864469161,
+              -0.0,
+              -0.2596088056519633
+            ],
+            "receiver": "PortClutchDriverSwingLink"
+          }
+        ]
+      }
+    },
+    "scope": "Two low-speed selectors with complete M790 pins/cotters and corrected diagonal M762 links. Operating handles, high selectors, spacing, gates/stops and remaining driver controls are unfinished.",
+    "selector_controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01",
+      "parent_native_sha256": "8870b1b7524fe3e8a99df52ea16f5b1ddbd7d28775e973f89f4ad899893e2257",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_source_review01.json",
+      "source_review_sha256": "22b562760b1fa077a3a03779cc88ac4d853ed0566a83b53fd7e0c387b20819f4",
+      "context_prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low02",
+      "front_relative_to_main": [
+        -90,
+        0,
+        92
+      ],
+      "selector_y_relative_to_low": -4.8,
+      "selector_web_stock": 12.7,
+      "selector_journal_width": 24.0,
+      "selector_journal_radius": 19.1619,
+      "selector_hub_radius": 32.0,
+      "selector_gate_direction": [
+        0.66,
+        0,
+        0.751265598839718
+      ],
+      "selector_gate_lower_radius": 215.0,
+      "selector_gate_upper_radius": 285.0,
+      "selector_gate_lip_stock": 12.7,
+      "selector_gate_inward_depth": 45.0,
+      "selector_gate_halfwidth": 16.0,
+      "connecting_stock": 10.0,
+      "connecting_halfwidth": 14.0,
+      "connecting_eye_radius": 25.0,
+      "pin_radius": 9.525,
+      "pin_length": 31.75,
+      "pin_head_seat_y": 1.55,
+      "pin_keeper_y": -24.35,
+      "connecting_y": -16.35
+    },
+    "low_selectors": {
+      "Port": {
+        "pivot_world_mm": [
+          7579.8934082721635,
+          175.2,
+          1300.0
+        ],
+        "pin_world_mm": [
+          7489.8934082721635,
+          180.0,
+          1392.0
+        ],
+        "connecting_eye_world_mm": [
+          7489.8934082721635,
+          163.65,
+          1392.0
+        ],
+        "pin_head_seat_world_mm": [
+          7489.8934082721635,
+          181.55,
+          1392.0
+        ],
+        "pin_keeper_world_mm": [
+          7489.8934082721635,
+          155.65,
+          1392.0
+        ],
+        "mark": "M756"
+      },
+      "Starboard": {
+        "pivot_world_mm": [
+          7579.8934082721635,
+          -184.8,
+          1300.0
+        ],
+        "pin_world_mm": [
+          7489.8934082721635,
+          -180.0,
+          1392.0
+        ],
+        "connecting_eye_world_mm": [
+          7489.8934082721635,
+          -196.35,
+          1392.0
+        ],
+        "pin_head_seat_world_mm": [
+          7489.8934082721635,
+          -178.45,
+          1392.0
+        ],
+        "pin_keeper_world_mm": [
+          7489.8934082721635,
+          -204.35,
+          1392.0
+        ],
+        "mark": "M757"
+      }
+    }
+  },
+  "expected_new_occurrences": {
+    "PortDriverLowSelector": {
+      "definition": "Def_DriverLowSelector_M756",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7579.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        175.2,
+        0.0,
+        0.0,
+        1.0,
+        1300.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverLowControls",
+        "PortDriverLowBranch"
+      ]
+    },
+    "PortDriverLowSelectorPin": {
+      "definition": "Def_DriverLowSelectorJointPin_M790",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7489.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        1392.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverLowControls",
+        "PortDriverLowBranch",
+        "PortDriverLowSelectorJoint"
+      ]
+    },
+    "PortDriverLowSelectorKeeper": {
+      "definition": "Def_DriverLowSuspensionKeeper",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7489.8934082721635,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        155.65,
+        -0.0,
+        0.0,
+        1.0,
+        1392.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverLowControls",
+        "PortDriverLowBranch",
+        "PortDriverLowSelectorJoint"
+      ]
+    },
+    "StarboardDriverLowSelector": {
+      "definition": "Def_DriverLowSelector_M757",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7579.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        -184.8,
+        0.0,
+        0.0,
+        1.0,
+        1300.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverLowControls",
+        "StarboardDriverLowBranch"
+      ]
+    },
+    "StarboardDriverLowSelectorPin": {
+      "definition": "Def_DriverLowSelectorJointPin_M790",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7489.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        1392.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverLowControls",
+        "StarboardDriverLowBranch",
+        "StarboardDriverLowSelectorJoint"
+      ]
+    },
+    "StarboardDriverLowSelectorKeeper": {
+      "definition": "Def_DriverLowSuspensionKeeper",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7489.8934082721635,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        -204.35,
+        -0.0,
+        0.0,
+        1.0,
+        1392.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverLowControls",
+        "StarboardDriverLowBranch",
+        "StarboardDriverLowSelectorJoint"
+      ]
+    }
+  },
+  "expected_changed_occurrences": {},
+  "new_occurrences": [
+    "PortDriverLowSelector",
+    "PortDriverLowSelectorPin",
+    "PortDriverLowSelectorKeeper",
+    "StarboardDriverLowSelector",
+    "StarboardDriverLowSelectorPin",
+    "StarboardDriverLowSelectorKeeper"
+  ],
+  "new_definitions": [
+    "Def_DriverLowSelectorJointPin_M790",
+    "Def_DriverLowSelector_M756",
+    "Def_DriverLowSelector_M757"
+  ],
+  "changed_definitions": [
+    "Def_DriverLowConnecting_M762"
+  ],
+  "added_children": {
+    "Definitions": [
+      "Def_DriverLowSelectorJointPin_M790",
+      "Def_DriverLowSelector_M756",
+      "Def_DriverLowSelector_M757"
+    ],
+    "PortDriverLowBranch": [
+      "PortDriverLowSelectorJoint",
+      "PortDriverLowSelector"
+    ],
+    "StarboardDriverLowBranch": [
+      "StarboardDriverLowSelectorJoint",
+      "StarboardDriverLowSelector"
+    ],
+    "PortDriverLowSelectorJoint": [
+      "PortDriverLowSelectorPin",
+      "PortDriverLowSelectorKeeper"
+    ],
+    "StarboardDriverLowSelectorJoint": [
+      "StarboardDriverLowSelectorPin",
+      "StarboardDriverLowSelectorKeeper"
+    ]
+  },
+  "new_assembly_specs": {
+    "PortDriverLowSelectorJoint": {
+      "owner": "PortDriverLowBranch",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardDriverLowSelectorJoint": {
+      "owner": "StarboardDriverLowBranch",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "expected_physical_occurrences": 3534,
+  "expected_definition_count": 625,
+  "expected_assembly_count": 428,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "packet_complete": false
+}
