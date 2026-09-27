@@ -68,3 +68,25 @@ can proceed independently. Establish M638 near the driver from the printed M574
 length before full M575/M573/M579/clutch routes; Gemini X3700 is contradicted by
 its own X7280 driver layout and the source 49½-inch rod. See long_controls_sources.
 Full withheld commit and front-controls continuation remain required.
+
+Second accepted increment: `center_foot_integrated02` (3,324 / 580 / 372), native
+`1ea80885fc1ded9484fcc267d43c41476264e2e3be5fd92a3198cc616a323668`.
+Authoritative prototype `center_foot05`, variation `center_foot_variation05`,
+source_review02, v3 geometry/checker, exchange01. Each: 115 local checks,
+76 context pairs with no exemptions/findings, 37 strict STEP comparisons.
+Full native: 57 transfer checks, 574 unchanged definitions preserved, one floor
+revision limited to six declared holes, 1,772 archive BReps and 160,044 persistent
+properties identical in a fresh reproduction. Four progression views added: 262.
+
+The first four foot trials and integrated01 are rejected: closer HB92/SNL6 review
+showed that M640 has both rod eyes on the same side of its pivot and M641 pivots
+vertically. The equal opposite arms and transverse floor journal inherited from
+Gemini were wrong, although center_foot04 passed mechanical checks. See
+`center_foot_source_correction01.json`. Topology must be reviewed in at least two
+relevant source projections before treating material tests as acceptance evidence.
+Exact arm radii, cast form and neutral clocking remain approximations.
+
+Next: M638/M639 supports and eight single-ended M640 receivers, constrained by
+M574 front rod length and real support material; then complete rear routes and
+clutch, followed by the preserved driver-controls continuation. Do not stop after
+these two accepted increments: the user's complete withheld-commit redo remains active.

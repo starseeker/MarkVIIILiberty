@@ -11,6 +11,24 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 26 September 2026 — center foot controls and complete rear rods rebuilt
+
+The [new checkpoint](experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02/README.md)
+adds 30 installed parts, bringing development to **3,324 occurrences / 580 definitions /
+372 groups**. M641 has a retained vertical journal; M640 has both rod eyes on the
+same side of its pivot. Complete M578 rods use actual receiving bores and M568C
+pins. Six rivets pass through real floor holes with full grip and bearing surfaces.
+
+Both parameter settings pass 115 local, 76 context and 37 strict STEP checks.
+Full-native preservation and fresh reproduction pass. Four saved views bring
+accepted progression to **262**. Cast dimensions and neutral clocking are estimates.
+
+Closer source inspection rejected an earlier mechanically valid trial. This is
+recorded explicitly: passing collision and interchange checks does not establish
+correct historical topology. `center_foot05` / `center_foot_integrated02` supersede
+the earlier foot trials. The withheld-commit redo continues with M638/M639 and
+complete long routes before the driver-controls continuation; standard unchanged.
+
 ## 26 September 2026 — return springs and washers rebuilt
 
 The [new static development checkpoint](experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/README.md)

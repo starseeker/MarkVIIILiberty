@@ -1,0 +1,1529 @@
+{
+  "native_file": "PowertrainControlRebuild.FCStd",
+  "native_sha256": "2b8cfa67785aa029246f5f6cd5972aa9912999cd97b3737eb847db6a3820ebb0",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/PowertrainControlRebuild.FCStd",
+  "source_native_sha256": "e62ab97d8c480a780a87768816ec0140da2f7c363e369b519a1c2d7a8ab59f31",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/PowertrainControlRebuild.FCStd",
+  "parent_native_sha256": "e62ab97d8c480a780a87768816ec0140da2f7c363e369b519a1c2d7a8ab59f31",
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot04",
+  "prototype_native_sha256": "a454bda1a5918a32d7f16e7da204788effc9e8ec50e17b8735d3ef12ba67f11c",
+  "variation": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_variation04",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_control_rebuild_center_foot.py": "3c963808185ada81ac5d9d45acb9dca95290d8c1aa00e6542f1634d0f952e158",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io_v2.py": "84ab9a61290fbdbf32da469c0acab4582a6e6e7a0761583b6425263bc96f6465",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot04/report.json": "b3eb0ff6af827a1b8247a913d7a75bb8249a0a4f5cfb9b8c218cdebaebe68de2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot04/isolated/manifest.json": "0f402e27aefe3d7b559cebfa25486ce855259edb58b9b8d448dc1d1a3f257afe",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot04/ControlRebuildTrial.FCStd": "a454bda1a5918a32d7f16e7da204788effc9e8ec50e17b8735d3ef12ba67f11c",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_variation04/report.json": "2a55310610b3df8cb2183af569a9184ef870bda7c48fa2ebf09e51d7f79f569c",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/qualification.json": "56b5ad6c57157487fc96d35838daf297b4af32adab93a4eeaa85c1fde3ab1550",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/isolated/manifest.json": "3c94aeb550eaca77a6119ec4278b4688e4023b9bc790492dfb4337aedf4b845f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot04/visual_review.json": "48b0886256741855929f291256840d4cd0a05be4403e6cfdae2927567e133b75",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot04/render_receipt.json": "df46a0337bf01e73763835e77138b085560c124ba9c99e7b787c6c397105a6b7",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot04/reproduction_checks.json": "a15604f4db08bb3e77ea1e6c762e2adc776e71b85cc286a0793d5398f965f0b5",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot04/checks02/independent_checks.json": "a215dd6cc16e11f95359822a9f9f51b332fce2563597891bf6f3ad02c9591051",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot04/context_audit/report.json": "2734ab75527f5bc5181453c22195895cd3e49ec6a91b5a5d8cf6520347976e9f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot04/exchange01/exchange_checks.json": "685f59274e8b6fd414fed6b73622f4a2a45e6db8318e6dc740702fa0c68bab51",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_variation04/checks02/independent_checks.json": "b4eeac30d107d9dc015fe9c75c2a1513eaee517dc7f34b5f8835252d32e5ff03",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_variation04/context_audit/report.json": "1c24e67879756174b613a646653cfe0e01b6453b6b3a772838ad961147966b6d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_variation04/exchange01/exchange_checks.json": "8abe445b6c17442edec25aea5dfa07a7fff10fbe3d2eb99347381a1da6fa30e9"
+  },
+  "details": {
+    "rivet": {
+      "grip_mm": 18.7,
+      "factory_radius_mm": 13.096874999999999,
+      "upset_radius_mm": 14.843124999999999,
+      "upset_height_mm": 11.263590803025114,
+      "upset_stock_volume_mm3": 4646.270064193227
+    },
+    "keeper": {
+      "straight_length_mm": 27.0,
+      "bend_arc_length_mm": 2.443460952792061,
+      "tail_length_mm": 15.00653904720794,
+      "total_leg_centerline_mm": 44.45,
+      "tail_endpoints": [
+        [
+          0.0,
+          28.08694288362715,
+          -10.980789011504385
+        ],
+        [
+          0.0,
+          28.08694288362715,
+          10.980789011504385
+        ]
+      ],
+      "wire_radius_mm": 1.525,
+      "under_eye_y_mm": -13.5,
+      "bend_start_y_mm": 13.5,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "Starboard": {
+      "rear_pin_world_mm": [
+        2400.5734404019363,
+        -521.3976047783048,
+        625.125
+      ],
+      "center_pin_world_mm": [
+        3350.0,
+        -521.3976047783048,
+        625.125
+      ],
+      "rod_length_mm": 898.6265595980644,
+      "support_frame": [
+        1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        1.0,
+        0.0,
+        -521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "rocker_frame": [
+        1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        1.0,
+        0.0,
+        -521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        714.025,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "Port": {
+      "rear_pin_world_mm": [
+        2400.5734404019363,
+        521.3976047783046,
+        625.125
+      ],
+      "center_pin_world_mm": [
+        3350.0,
+        521.3976047783048,
+        625.125
+      ],
+      "rod_length_mm": 898.6265595980644,
+      "support_frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        3350.0,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "rocker_frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        3350.0,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        714.025,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01",
+      "parent_native_sha256": "e62ab97d8c480a780a87768816ec0140da2f7c363e369b519a1c2d7a8ab59f31",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_source_review01.json",
+      "source_review_sha256": "a3ae195686cd6b7677c2ea5fa9f8f9e1b5059817fa1224fd2cb2bbf54d6c0701",
+      "base_stock": 12.7,
+      "pivot_height": 180.975,
+      "journal_diameter": 25.4,
+      "journal_bore": 25.65,
+      "boss_diameter": 44.45,
+      "hub_width": 34.0,
+      "arm_radius": 88.9,
+      "eye_diameter": 25.4,
+      "eye_bore": 13.0,
+      "eye_width": 12.0,
+      "bracket_station_x": 3350.0,
+      "bracket_station_y": 521.3976047783048,
+      "floor_top": 533.05,
+      "floor_stock": 6.0,
+      "rod_diameter": 19.05,
+      "rod_insertion": 19.05,
+      "rivet": {
+        "diameter": 17.4625,
+        "stock_length": 38.1,
+        "hole_diameter": 17.7,
+        "factory_ratio": 1.5,
+        "upset_ratio": 1.7,
+        "factory_height_ratio": 0.5
+      },
+      "rivet_centers": [
+        [
+          -40,
+          -48
+        ],
+        [
+          40,
+          -48
+        ],
+        [
+          0,
+          -3
+        ]
+      ],
+      "keeper": {
+        "cotter_center_spacing": 3.3,
+        "cotter_diameter": 6.35,
+        "crown_radius": 12.7,
+        "cotter_head_gap": 0.8,
+        "cotter_exit_gap": 0.8,
+        "cotter_bend_radius": 4.0,
+        "cotter_bend_angle": 35.0,
+        "cotter_length": 44.45,
+        "cotter_eye_radius": 5.0,
+        "cotter_eye_rise": 7.0,
+        "cotter_eye_join_overlap": 0.25
+      },
+      "keeper_station_y": 20.5,
+      "keeper_hole_diameter": 6.65,
+      "foot_vertices": [
+        [
+          -90,
+          -68
+        ],
+        [
+          90,
+          -68
+        ],
+        [
+          0,
+          25
+        ]
+      ]
+    },
+    "joints": {
+      "StarboardFootRearJoint": {
+        "frame": [
+          1.0,
+          0.0,
+          0.0,
+          2400.5734404019363,
+          0.0,
+          2.220446049250313e-16,
+          -1.0,
+          -521.3976047783048,
+          0.0,
+          1.0,
+          2.220446049250313e-16,
+          625.125,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "receiver": "StarboardTrackHorizontalLever",
+        "center_world_mm": [
+          2400.5734404019363,
+          -521.3976047783048,
+          625.125
+        ],
+        "pin_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rod_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "rod": "StarboardRearFootRod"
+      },
+      "StarboardFootCenterJoint": {
+        "frame": [
+          -1.0,
+          0.0,
+          0.0,
+          3350.0,
+          0.0,
+          -1.0,
+          0.0,
+          -521.3976047783048,
+          0.0,
+          0.0,
+          1.0,
+          625.125,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "receiver": "StarboardCenterFootRocker",
+        "center_world_mm": [
+          3350.0,
+          -521.3976047783048,
+          625.125
+        ],
+        "pin_axis_world": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "rod_axis_world": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "rod": "StarboardRearFootRod"
+      },
+      "PortFootRearJoint": {
+        "frame": [
+          1.0,
+          0.0,
+          0.0,
+          2400.5734404019363,
+          0.0,
+          2.220446049250313e-16,
+          -1.0,
+          521.3976047783046,
+          0.0,
+          1.0,
+          2.220446049250313e-16,
+          625.125,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "receiver": "PortTrackHorizontalLever",
+        "center_world_mm": [
+          2400.5734404019363,
+          521.3976047783046,
+          625.125
+        ],
+        "pin_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rod_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "rod": "PortRearFootRod"
+      },
+      "PortFootCenterJoint": {
+        "frame": [
+          -1.0,
+          0.0,
+          0.0,
+          3350.0,
+          0.0,
+          1.0,
+          0.0,
+          521.3976047783048,
+          0.0,
+          0.0,
+          -1.0,
+          625.125,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "receiver": "PortCenterFootRocker",
+        "center_world_mm": [
+          3350.0,
+          521.3976047783048,
+          625.125
+        ],
+        "pin_axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "rod_axis_world": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "rod": "PortRearFootRod"
+      }
+    },
+    "mounts": [
+      {
+        "side": "Starboard",
+        "index": 1,
+        "center_world_mm": [
+          3310.0,
+          -569.3976047783048,
+          527.05
+        ],
+        "axis_world": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "side": "Starboard",
+        "index": 2,
+        "center_world_mm": [
+          3390.0,
+          -569.3976047783048,
+          527.05
+        ],
+        "axis_world": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "side": "Starboard",
+        "index": 3,
+        "center_world_mm": [
+          3350.0,
+          -524.3976047783048,
+          527.05
+        ],
+        "axis_world": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "side": "Port",
+        "index": 1,
+        "center_world_mm": [
+          3390.0,
+          569.3976047783048,
+          527.05
+        ],
+        "axis_world": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "side": "Port",
+        "index": 2,
+        "center_world_mm": [
+          3310.0,
+          569.3976047783048,
+          527.05
+        ],
+        "axis_world": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "side": "Port",
+        "index": 3,
+        "center_world_mm": [
+          3350.0,
+          524.3976047783048,
+          527.05
+        ],
+        "axis_world": [
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "floor_definition": "Def_EngineContext_hull_floor_6"
+  },
+  "expected_new_occurrences": {
+    "StarboardCenterFootBracket": {
+      "definition": "Def_CenterFootBracket_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        1.0,
+        0.0,
+        -521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl"
+      ]
+    },
+    "StarboardCenterFootRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        1.0,
+        0.0,
+        -521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        714.025,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl"
+      ]
+    },
+    "StarboardCenterFootKeeper": {
+      "definition": "Def_CenterFootKeeper_Redo",
+      "frame": [
+        0.0,
+        -1.1102230246251565e-16,
+        1.0,
+        3350.0,
+        1.0,
+        0.0,
+        -1.1102230246251565e-16,
+        -500.89760477830475,
+        -1.1102230246251565e-16,
+        1.0,
+        0.0,
+        714.025,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl"
+      ]
+    },
+    "StarboardCenterFootRivet1": {
+      "definition": "Def_CenterFootRivet_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3310.0,
+        0.0,
+        1.0,
+        0.0,
+        -569.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl"
+      ]
+    },
+    "StarboardCenterFootRivet2": {
+      "definition": "Def_CenterFootRivet_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3390.0,
+        0.0,
+        1.0,
+        0.0,
+        -569.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl"
+      ]
+    },
+    "StarboardCenterFootRivet3": {
+      "definition": "Def_CenterFootRivet_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        1.0,
+        0.0,
+        -524.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl"
+      ]
+    },
+    "StarboardRearFootRod": {
+      "definition": "Def_RearFootRod_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2425.973440401936,
+        0.0,
+        1.0,
+        0.0,
+        -521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl"
+      ]
+    },
+    "StarboardFootRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.5734404019363,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -521.3976047783048,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl",
+        "StarboardFootRearJoint"
+      ]
+    },
+    "StarboardFootRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.5734404019363,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -521.3976047783048,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl",
+        "StarboardFootRearJoint"
+      ]
+    },
+    "StarboardFootRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.5734404019363,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -521.3976047783048,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        643.55,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl",
+        "StarboardFootRearJoint"
+      ]
+    },
+    "StarboardFootRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2445.023440401936,
+        1.0,
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        -521.3976047783048,
+        -2.220446049250313e-16,
+        1.0,
+        0.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl",
+        "StarboardFootRearJoint"
+      ]
+    },
+    "StarboardFootCenterJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        -1.0,
+        0.0,
+        -521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl",
+        "StarboardFootCenterJoint"
+      ]
+    },
+    "StarboardFootCenterJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        -1.0,
+        0.0,
+        -521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl",
+        "StarboardFootCenterJoint"
+      ]
+    },
+    "StarboardFootCenterJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        -1.0,
+        0.0,
+        -539.8226047783047,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl",
+        "StarboardFootCenterJoint"
+      ]
+    },
+    "StarboardFootCenterJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -2.220446049250313e-16,
+        -0.0,
+        -1.0,
+        3305.55,
+        0.0,
+        -1.0,
+        0.0,
+        -521.3976047783048,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "StarboardCenterFootControl",
+        "StarboardFootCenterJoint"
+      ]
+    },
+    "PortCenterFootBracket": {
+      "definition": "Def_CenterFootBracket_Redo",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        3350.0,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl"
+      ]
+    },
+    "PortCenterFootRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        3350.0,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        714.025,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl"
+      ]
+    },
+    "PortCenterFootKeeper": {
+      "definition": "Def_CenterFootKeeper_Redo",
+      "frame": [
+        -2.220446049250313e-16,
+        5.551115123125783e-17,
+        -1.0,
+        3350.0,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        500.89760477830475,
+        -5.551115123125783e-17,
+        1.0,
+        1.1102230246251565e-16,
+        714.025,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl"
+      ]
+    },
+    "PortCenterFootRivet1": {
+      "definition": "Def_CenterFootRivet_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3390.0,
+        0.0,
+        1.0,
+        0.0,
+        569.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl"
+      ]
+    },
+    "PortCenterFootRivet2": {
+      "definition": "Def_CenterFootRivet_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3310.0,
+        0.0,
+        1.0,
+        0.0,
+        569.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl"
+      ]
+    },
+    "PortCenterFootRivet3": {
+      "definition": "Def_CenterFootRivet_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        1.0,
+        0.0,
+        524.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl"
+      ]
+    },
+    "PortRearFootRod": {
+      "definition": "Def_RearFootRod_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2425.973440401936,
+        0.0,
+        1.0,
+        0.0,
+        521.3976047783046,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl"
+      ]
+    },
+    "PortFootRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.5734404019363,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        521.3976047783046,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl",
+        "PortFootRearJoint"
+      ]
+    },
+    "PortFootRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.5734404019363,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        521.3976047783046,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl",
+        "PortFootRearJoint"
+      ]
+    },
+    "PortFootRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.5734404019363,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        521.3976047783046,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        643.55,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl",
+        "PortFootRearJoint"
+      ]
+    },
+    "PortFootRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2445.023440401936,
+        1.0,
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        521.3976047783046,
+        -2.220446049250313e-16,
+        1.0,
+        0.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl",
+        "PortFootRearJoint"
+      ]
+    },
+    "PortFootCenterJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        1.0,
+        0.0,
+        521.3976047783048,
+        0.0,
+        0.0,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl",
+        "PortFootCenterJoint"
+      ]
+    },
+    "PortFootCenterJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        1.0,
+        0.0,
+        521.3976047783048,
+        0.0,
+        0.0,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl",
+        "PortFootCenterJoint"
+      ]
+    },
+    "PortFootCenterJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        1.0,
+        0.0,
+        539.8226047783047,
+        0.0,
+        0.0,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl",
+        "PortFootCenterJoint"
+      ]
+    },
+    "PortFootCenterJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        3305.55,
+        0.0,
+        1.0,
+        0.0,
+        521.3976047783048,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "CenterFootControls",
+        "PortCenterFootControl",
+        "PortFootCenterJoint"
+      ]
+    }
+  },
+  "new_occurrences": [
+    "StarboardCenterFootBracket",
+    "StarboardCenterFootRocker",
+    "StarboardCenterFootKeeper",
+    "StarboardCenterFootRivet1",
+    "StarboardCenterFootRivet2",
+    "StarboardCenterFootRivet3",
+    "StarboardRearFootRod",
+    "StarboardFootRearJointFork",
+    "StarboardFootRearJointPin",
+    "StarboardFootRearJointCotter",
+    "StarboardFootRearJointNut",
+    "StarboardFootCenterJointFork",
+    "StarboardFootCenterJointPin",
+    "StarboardFootCenterJointCotter",
+    "StarboardFootCenterJointNut",
+    "PortCenterFootBracket",
+    "PortCenterFootRocker",
+    "PortCenterFootKeeper",
+    "PortCenterFootRivet1",
+    "PortCenterFootRivet2",
+    "PortCenterFootRivet3",
+    "PortRearFootRod",
+    "PortFootRearJointFork",
+    "PortFootRearJointPin",
+    "PortFootRearJointCotter",
+    "PortFootRearJointNut",
+    "PortFootCenterJointFork",
+    "PortFootCenterJointPin",
+    "PortFootCenterJointCotter",
+    "PortFootCenterJointNut"
+  ],
+  "new_definitions": [
+    "Def_CenterFootBracket_Redo",
+    "Def_CenterFootKeeper_Redo",
+    "Def_CenterFootRivet_Redo",
+    "Def_ControlRocker_Redo",
+    "Def_RearFootRod_Redo"
+  ],
+  "changed_definitions": [
+    "Def_EngineContext_hull_floor_6"
+  ],
+  "added_children": {
+    "Definitions": [
+      "Def_CenterFootBracket_Redo",
+      "Def_CenterFootKeeper_Redo",
+      "Def_CenterFootRivet_Redo",
+      "Def_ControlRocker_Redo",
+      "Def_RearFootRod_Redo"
+    ],
+    "Root": [
+      "CenterFootControls"
+    ],
+    "CenterFootControls": [
+      "StarboardCenterFootControl",
+      "PortCenterFootControl"
+    ],
+    "StarboardCenterFootControl": [
+      "StarboardFootRearJoint",
+      "StarboardFootCenterJoint",
+      "StarboardCenterFootBracket",
+      "StarboardCenterFootRocker",
+      "StarboardCenterFootKeeper",
+      "StarboardCenterFootRivet1",
+      "StarboardCenterFootRivet2",
+      "StarboardCenterFootRivet3",
+      "StarboardRearFootRod"
+    ],
+    "PortCenterFootControl": [
+      "PortFootRearJoint",
+      "PortFootCenterJoint",
+      "PortCenterFootBracket",
+      "PortCenterFootRocker",
+      "PortCenterFootKeeper",
+      "PortCenterFootRivet1",
+      "PortCenterFootRivet2",
+      "PortCenterFootRivet3",
+      "PortRearFootRod"
+    ],
+    "StarboardFootRearJoint": [
+      "StarboardFootRearJointFork",
+      "StarboardFootRearJointPin",
+      "StarboardFootRearJointCotter",
+      "StarboardFootRearJointNut"
+    ],
+    "StarboardFootCenterJoint": [
+      "StarboardFootCenterJointFork",
+      "StarboardFootCenterJointPin",
+      "StarboardFootCenterJointCotter",
+      "StarboardFootCenterJointNut"
+    ],
+    "PortFootRearJoint": [
+      "PortFootRearJointFork",
+      "PortFootRearJointPin",
+      "PortFootRearJointCotter",
+      "PortFootRearJointNut"
+    ],
+    "PortFootCenterJoint": [
+      "PortFootCenterJointFork",
+      "PortFootCenterJointPin",
+      "PortFootCenterJointCotter",
+      "PortFootCenterJointNut"
+    ]
+  },
+  "new_assembly_specs": {
+    "CenterFootControls": {
+      "owner": "Root",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardCenterFootControl": {
+      "owner": "CenterFootControls",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        1.0,
+        0.0,
+        -521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardFootRearJoint": {
+      "owner": "StarboardCenterFootControl",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.5734404019363,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -521.3976047783048,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardFootCenterJoint": {
+      "owner": "StarboardCenterFootControl",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        -1.0,
+        0.0,
+        -521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortCenterFootControl": {
+      "owner": "CenterFootControls",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        3350.0,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        521.3976047783048,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortFootRearJoint": {
+      "owner": "PortCenterFootControl",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2400.5734404019363,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        521.3976047783046,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortFootCenterJoint": {
+      "owner": "PortCenterFootControl",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3350.0,
+        0.0,
+        1.0,
+        0.0,
+        521.3976047783048,
+        0.0,
+        0.0,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "expected_physical_occurrences": 3324,
+  "expected_definition_count": 580,
+  "expected_assembly_count": 372,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "packet_complete": false
+}

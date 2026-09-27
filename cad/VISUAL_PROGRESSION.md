@@ -1319,3 +1319,15 @@ Gemini experimental images 255–286 retain separate provenance.
 | [intermediate_snapshot_detail_control_rebuild_springs_001.png](intermediate_snapshot_detail_control_rebuild_springs_001.png) | `1ffad1b5adabdb8c1d9a5553bdff66f5ea2ee7f3e7d1ccaaa0ee7af003f7db59` |
 | [intermediate_snapshot_plan_control_rebuild_springs_001.png](intermediate_snapshot_plan_control_rebuild_springs_001.png) | `d018dd10d6ea07ac46e079a68b77ff80e72c16fedfac45f471dab4ff149dd258` |
 | [intermediate_snapshot_source_control_rebuild_springs_001.png](intermediate_snapshot_source_control_rebuild_springs_001.png) | `cff1ec054837c7575ad1845d5d510b94a69a0e1e673773c0e137474d7436bcda` |
+
+## 26 September 2026 — corrected center foot controls (accepted total 262)
+
+- [Isometric](intermediate_snapshot_iso_control_rebuild_center_foot_001.png)
+- [Support detail](intermediate_snapshot_detail_control_rebuild_center_foot_001.png)
+- [Plan](intermediate_snapshot_plan_control_rebuild_center_foot_001.png)
+- [Journal section](intermediate_snapshot_section_control_rebuild_center_foot_001.png)
+
+These are inspected views of the qualified `center_foot_integrated02` development
+checkpoint, transferred through strict native shape/frame checks. Floor clipping
+is for display only. Vertical M641 journals and single-ended M640 arms supersede
+the rejected earlier foot-control geometry; exact dimensions remain approximate.

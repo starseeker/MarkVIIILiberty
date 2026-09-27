@@ -1,0 +1,18 @@
+{
+  "disposition": "withheld_source_geometry_error",
+  "affected_trials": [
+    "center_foot01",
+    "center_foot02",
+    "center_foot03",
+    "center_foot04",
+    "center_foot_integrated01"
+  ],
+  "reason": "Closer HB92 detail inspection contradicts inherited Gemini M640 equal opposite arms and M641 transverse journal. M641 is floor-mounted with vertical journal; source arm has two rod connections on the same side of its pivot. The intermediate shaft uses the same M640 with transverse journal and both rod eyes below its shaft.",
+  "physical_validation_note": "Center_foot04 passes local material, context, STEP and reproducibility; these establish CAD consistency only. Do not qualify or promote this geometry.",
+  "required_redo": [
+    "Reconstruct single-ended two-eye M640 from source-local proportions with explicit uncertainty.",
+    "Reconstruct M641 low vertical journal and retention, keeping actual floor bores/rivet grip.",
+    "Relocate and orient the actual M578 joints, closing to the retained M4132 eye.",
+    "Update source comparison and independent tests for the source-correct topology."
+  ]
+}

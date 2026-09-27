@@ -4,17 +4,17 @@
   "goal_status": "active",
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
-  "accepted_development_parent": "Rebuilt M564/M567 static checkpoint, 26 September 2026",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01",
-  "latest_native_sha256": "e62ab97d8c480a780a87768816ec0140da2f7c363e369b519a1c2d7a8ab59f31",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/qualification.json",
+  "accepted_development_parent": "Rebuilt M641/M640/M578 static checkpoint, 26 September 2026",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02",
+  "latest_native_sha256": "1ea80885fc1ded9484fcc267d43c41476264e2e3be5fd92a3198cc616a323668",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02/qualification.json",
   "current_pipeline_run": null,
   "pipeline_receipt": null,
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
-    "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py",
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_low_rod_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_low_joint_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_pin_family_checkpoint.py",
@@ -28,7 +28,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Continue the b19e16e5 redo from redo01/springs_integrated01. Rebuild M641/M640 center foot controls with actual floor-6 receiving holes and full mounting grip; constrain the intermediate shaft from printed M574 length before routing complete source-identified rear rods. Then finish clutch/forward controls and resume the preserved front-controls draft.",
+  "next_action": "Continue from redo01/center_foot_integrated02. Establish M638/M639 shaft supports using printed M574 length, eight correctly assigned single-ended M640 levers, actual receiving stock and full cap-screw grip. Then complete M575/M563, M573/M579 and SH944/M581 routes; finish withheld redo and resume the preserved driver-controls draft.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -62,35 +62,36 @@
     "12.7mm common shank and13mm bores remain estimates. Specific SNL136 physical-pin length1 5/8in selected over conflicting SNL71 assembly1 7/8in; under-head datum inferred.",
     "M569A printed 1in length datum interpreted under throat_to_rod_seat (25.4mm socket, 49.2125mm pin-center-to-face). Estimated throat 23.8125mm clears starboard fulcrum lever with 1.14mm margin.",
     "Two SH946E straight rods installed with one shared definition (solid 19.05mm section, 130.7616mm length inferred). Horizontal fulcrum levers M4134 and M4133 reconciled symmetrically to xb = 39.6875mm (1-9/16 in), closing coaxial straight rods at Y = \u00b1535.3957mm, Z = 625.125mm with zero collisions. M567 washers, M564 springs and long rear rods remain open.",
-    "M564 mounting hypotheses and installed extension states are now modeled and statically checked; exact hooks, free shape and spring properties remain unknown. The complete long-control layout must be rebuilt: printed 49\u00bd-inch M574 length contradicts Gemini X3700 intermediate-shaft placement against X7280 driver controls."
+    "M564 mounting hypotheses and installed extension states are now modeled and statically checked; exact hooks, free shape and spring properties remain unknown. The complete long-control layout must be rebuilt: printed 49\u00bd-inch M574 length contradicts Gemini X3700 intermediate-shaft placement against X7280 driver controls.",
+    "M640 same-side rod eyes and vertical M641 journal supersede Gemini and center_foot01\u201304 topology. Selected 76.2/101.6 mm arm radii, journal dimensions and clocking remain estimates. center_foot_integrated01 is rejected despite passing material tests; authoritative checkpoint is center_foot_integrated02."
   ],
-  "visual_progression_count": 258,
+  "visual_progression_count": 262,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
   "latest_locally_qualified_checkpoint": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01",
-    "native_sha256": "e62ab97d8c480a780a87768816ec0140da2f7c363e369b519a1c2d7a8ab59f31",
-    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02",
+    "native_sha256": "1ea80885fc1ded9484fcc267d43c41476264e2e3be5fd92a3198cc616a323668",
+    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02/qualification.json"
   },
-  "qualification_scope": "Four M564 return-spring installed states and eight compressed M567 washers. Explicit estimated attachment to fork sockets/jam nuts and M4136 bracket holes; complete wire stock, capture, nominal/variation material context, strict STEP exchange and additive full-native preservation checked. Historical shape and operating motion remain unqualified.",
+  "qualification_scope": "Two M641 vertical floor journals with rivet receiving holes; single-ended M640 rocking arms and complete M578 rear foot-brake rods. Nominal/variation saved-material, context, strict STEP, reproducibility and full-native preservation passed. Topology checked against HB92 and SNL6; dimensions and neutral clocking remain approximate.",
   "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_controls_sources/README.md",
   "active_development_candidate": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01",
-    "native_sha256": "e62ab97d8c480a780a87768816ec0140da2f7c363e369b519a1c2d7a8ab59f31",
-    "status": "Four M564 installed spring states and eight M567 washers added; 3294 occurrences, 575 definitions, 365 groups. All 570 inherited definitions preserved (551 byte-identical, 19 strict material checks). Full redo still underway."
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02",
+    "native_sha256": "1ea80885fc1ded9484fcc267d43c41476264e2e3be5fd92a3198cc616a323668",
+    "status": "M641 vertical journals, source-correct single-ended M640 arms and full M578 rear foot rods added; 3324 occurrences, 580 definitions, 372 groups. Inherited material preserved except six declared floor-6 holes. Remaining b19e16e5 redo active."
   },
-  "qualification_note": "First increment of withheld b19e16e5 redone; the remaining commit and front-controls continuation are unfinished.",
+  "qualification_note": "Spring/washer and center-foot/rear-rod increments of b19e16e5 redone. Remaining shaft, complete long rods, clutch and driver controls remain unfinished.",
   "parent_pipeline_run": "high_brake_support01",
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
   "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs03",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/qualification.json",
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot05",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02/qualification.json",
     "geometry_integrated": true,
-    "status": "Four M564 installed spring states and eight M567 washers added; 3294 occurrences, 575 definitions, 365 groups. All 570 inherited definitions preserved (551 byte-identical, 19 strict material checks). Full redo still underway.",
-    "nominal_and_clearance_variation": "2.6/2.4 mm spring wire and 1.5/1.4 mm washer stock; each 186 local, 68 context and 17 STEP checks.",
-    "source_camera": "Fixed SNL6 registration reused; inherited profile/spring-height mismatches remain.",
-    "next_action": "Continue the b19e16e5 redo from redo01/springs_integrated01. Rebuild M641/M640 center foot controls with actual floor-6 receiving holes and full mounting grip; constrain the intermediate shaft from printed M574 length before routing complete source-identified rear rods. Then finish clutch/forward controls and resume the preserved front-controls draft.",
-    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/qualification.json"
+    "status": "M641 vertical journals, source-correct single-ended M640 arms and full M578 rear foot rods added; 3324 occurrences, 580 definitions, 372 groups. Inherited material preserved except six declared floor-6 holes. Remaining b19e16e5 redo active.",
+    "nominal_and_clearance_variation": "12.7/13.7 mm base stock, 25.65/25.8 mm journal bore and 19.05/19.55 mm rod engagement; each 115 local, 76 context and 37 STEP checks.",
+    "source_camera": "Broken-length diagrams inspected locally; topology corrected without claiming a dimensional fit.",
+    "next_action": "Continue from redo01/center_foot_integrated02. Establish M638/M639 shaft supports using printed M574 length, eight correctly assigned single-ended M640 levers, actual receiving stock and full cap-screw grip. Then complete M575/M563, M573/M579 and SH944/M581 routes; finish withheld redo and resume the preserved driver-controls draft.",
+    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/qualification.json"
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
