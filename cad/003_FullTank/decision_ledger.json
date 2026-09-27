@@ -1200,6 +1200,55 @@
           "sha256": "4f87f2439177580fd06dc201b4e64a81a8156b1ee81a278b999e72dd2c18be2b"
         }
       ]
+    },
+    {
+      "id": "driver_front_clutch_linkage",
+      "status": "reviewed_approximation",
+      "scope": "Four M784 links and complete M772/M789B/M576 front clutch chain, with explicitly revised foundation height/station.",
+      "reason": "Actual source-depth links and complete printed-stock rod/joint interfaces replace the draft; saved solid, full-context, STEP, variation and reproduction checks pass.",
+      "uncertainty": "M784 topology/profile and driver station are interpretations.126degree projected hand/bell angle and170mm outward offset are source/clearance estimates.11.4791px plan residual and13.5145mm nominal nose clearance remain explicit.",
+      "limits": [
+        "Static reconstruction only; motion, service and historical neutral pose unqualified.",
+        "Low receivers must close actual M574 rods before fixing driver station.",
+        "Other driver mechanisms and complete seat support remain unfinished; standard tank011 unchanged."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Inspected five saved views, original SNL6/HB113 and catalogue rows; source-angle/nose diagnostic and all qualification receipts."
+      },
+      "reopen_when": [
+        "Actual low-speed front receivers cannot close printed M574 stock",
+        "New historical lever section, pose, shaft station or seat dimensions",
+        "New source landmark contradiction after diagnosing diagram pose/projection",
+        "Changed nose, support or adjacent driver component invalidates recorded clearances"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_source_review06.json",
+          "sha256": "784bf90bd5abc2366d70830b3743bea5ba0922925d09a7ceac7e20f4281e291b"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_controls06.json",
+          "sha256": "9569a369472930b41d77b19996d1635694d1954912a39bf29bb0fd4733dae4c3"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_handle_angle_probe01.json",
+          "sha256": "bbc9b836a342956a1aaf29ce51e8c9f954b0cc7cd2418edb4a7a4eccfc96d5fc"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_registration01.json",
+          "sha256": "fe730cf90ecfa0dbfea6559bcb40f4b53a4fd9869dec00e78fc590f053abe701"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_integrated01/qualification.json",
+          "sha256": "1d788cca5765fbdf42018d99cdba347995c58db9255d4068fd3c79e5a49f32ca"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_integrated01/visual_review.json",
+          "sha256": "5ea9ba41f47665a57acca78a59a8e8bef4524287e5b39580b5c7f0c1346ec4a6"
+        }
+      ]
     }
   ]
 }

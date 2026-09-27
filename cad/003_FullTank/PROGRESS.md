@@ -11,6 +11,27 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — complete driver front clutch chain integrated
+
+The [new checkpoint](experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_integrated01/README.md)
+contains **3,498 occurrences / 615 definitions / 419 groups**. It adds four shared
+M784 swing links, source-length M772 hand lever and M789B stock, a complete M576
+front clutch rod, and all four physical pinned clevis joints. Only declared driver
+support/floor geometry and36 foundation frames change; existing rear/center
+controls stay fixed. The withheld commit redo remains complete.
+
+Nominal and thicker-link variants each pass251 local checks,168 collision pairs
+and69 STEP comparisons. All607 undeclared inherited definitions are preserved;
+fresh full reproduction matches1,877 BReps and170,606 persistent properties.
+Five inspected images bring progression to **287**.
+
+Unchanged source registration exposed the missing outward hand and an overly
+steep first estimate. Closer source angles intersect the actual nose; the selected
+static estimate records11.48px source-tip residual and13.51mm nose clearance.
+Neither successful clearance nor construction-pick agreement proves historical
+shape/pose. Actual low-speed front receivers and complete seat supports remain
+next; they may reopen the provisional driver station. Standard tank011 is unchanged.
+
 ## 27 September 2026 — driver support foundation integrated
 
 The [new checkpoint](experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01/README.md)

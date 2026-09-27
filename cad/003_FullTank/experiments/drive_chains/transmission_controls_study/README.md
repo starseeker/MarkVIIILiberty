@@ -1,10 +1,10 @@
 # Transmission operating controls — evidence and receiving interfaces
 
-Current development checkpoint: [driver support foundation](driver_redo01/mount_integrated01/README.md),
-3475 occurrences/611 definitions/414 groups. The preceding [completed control
+Current development checkpoint: [driver front clutch chain](driver_redo01/linkage_integrated01/README.md),
+3498 occurrences/615 definitions/419 groups. The preceding [completed control
 redo](redo01/clutch_swing_integrated02/README.md) closes the withheld commit's scope.
 See [CURRENT_WORK](../../../CURRENT_WORK.json) and [redo dispositions](redo01/withheld_redo_completion.json).
-Older stage notes below remain historical. Driver links, controls and complete
+Older stage notes below remain historical. Actual low-speed front receivers, remaining driver controls and complete
 seat supports are the active continuation.
 
 

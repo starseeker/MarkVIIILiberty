@@ -1,5 +1,19 @@
 # Mark VIII visual progression
 
+## Driver front clutch chain — 27 September 2026
+
+Five inspected views bring accepted progression to **287 images**. Four shared
+swing links, source-sized hand lever/short rod, complete long rod and all four
+pinned clevis joints are shown. Fixed local plan registration is retained; side
+shaft anchors are construction picks. The measured handle/nose compromise,
+partial supports and unresolved historical profile remain documented.
+
+- [Isometric](intermediate_snapshot_iso_driver_front_clutch_001.png)
+- [Driver detail](intermediate_snapshot_detail_driver_front_clutch_001.png)
+- [Source plan](intermediate_snapshot_source_plan_driver_front_clutch_001.png)
+- [Source side](intermediate_snapshot_source_side_driver_front_clutch_001.png)
+- [Clutch section](intermediate_snapshot_section_driver_front_clutch_001.png)
+
 ## Driver support foundation — 27 September 2026
 
 Four inspected views bring accepted progression to **282 images**. Two shafts,

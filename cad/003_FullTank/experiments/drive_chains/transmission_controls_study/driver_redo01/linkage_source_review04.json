@@ -1,0 +1,48 @@
+{
+  "source_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_source_rows01.json": "5121f6892a536265b405004362c15548e7355ac1475a5a6623c22ec80673c9ff",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handbook_text01.json": "407d5b883aef4edda37a81946aef5eeff13423673c6373af6ff1cf5bf73af846",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_registration01.json": "fe730cf90ecfa0dbfea6559bcb40f4b53a4fd9869dec00e78fc590f053abe701",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01/qualification.json": "e08d48c6760445b4d10d6ff06bacc69f8f33ac025f083cb55c8a386fc1d76683",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate92.png": "50c33f9ae0e099f8bcf852742b69a10c4199e9a6375ea40b55032f87e4b07509",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate113.png": "5120b8febe3a6985e10f09685e954d8f192558f1d21e92d67d4447bbf762f897",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate12.png": "a2b3c37ec6546677a331933f9c48793787a515f622687b9d70e717f6517c9892",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p119.jpg": "399302cf717c41c05ea8fbe07046b1c3bbbccdbddbff80b850bacbcaa913d332",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p193.jpg": "4b088e18b8bef5411272d33ea741a04da3ccc1c0f15630b68d3f662b744d278c",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p116.jpg": "dd7af50386ccd9bac0da5745680942aa2d17de31a228b54306b32cbf0b7d0000",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_065_084.py": "e9d22e142aeac4c375806b9b56b7840612462299a8e9397ebee110d673b020f3",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_105_124.py": "c83ba4707e5582a0c6cc0d367130761347953a72e6c6a6b9b1f6d7a6bd7127ca",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_185_204.py": "a92096e7622a26377ea3669752921441c602e30bdd6beb297d02a4ade4b5ddee"
+  },
+  "reviewed": [
+    "HB92 and labelled HB113 front side views, plus SNL6, show M784 suspended below M783 with distinct short-rod and long-rod eyes. Four M784 serve reverse, high speed left/right and clutch. SNL119:029 gives four.",
+    "M772 SNL116 is the clutch operating lever. HB149 specifies723.9mm fulcrum-to-hand-end and127mm bell-crank end; pin-center interpretation of the latter is retained as an assumption.",
+    "SNL193 original scan explicitly gives12-5/8in front clutch rod assembly and M789B with two3/4in plain nuts; forks are separately inventoried. Interpret320.675mm as rod stock, not the full clevis-to-clevis span.",
+    "SNL193 M576 has five applications: high speed2, foot brake2, clutch1. Reverse has separate M571 front pipe rod (SNL195); total front long connections are eight, not seven. M571 remains required.",
+    "HB113/SNL6 distinguish M775 spring-link distance pieces from oil openings. No separate grease nipple is inferred.",
+    "Rejected linkage01: M77216mm eye stock intersects unchanged M569C13.2mm clear fork gap by1742.23mm3. Select estimated12.7mm forged lever stock; printed arm reaches and all fork/pin geometry remain unchanged. Correct M772 catalogue locator to SNL116:015 (the independent check rejected row017).",
+    "SNL6 plan clutch hand runs from approximately [292,412] at the main shaft toward tip[122,462]. Fixed main-shaft registration gives about174mm outward component (estimated pick uncertainty about20mm). Flat linkage02 hand omitted this feature. Use170mm outward radial hand component, keeping journal and bell in their common Y lane.",
+    "Linkage02 corrected source locator is stored as a JSON string in extracted SourceRecords. Checker v1 compared it directly with a list, yielding a false failure. Checker v2 decodes this native string before comparing the catalogue bindings; geometry acceptance thresholds unchanged.",
+    "Review of linkage03 fixed plan overlay shows approximately58px fore-aft hand-tip discrepancy, caused by assumed140degree projected hand/bell angle. The printed hand reach and local plan hand tip imply approximately44degrees elevation, corresponding to approximately122degrees projected hand/bell angle with the actual closed short-rod linkage. Trial04 tests this source-informed angle without moving the supports or joint receivers. These plan picks are construction evidence, not independent validation."
+  ],
+  "approximations": [
+    "M784 three-eye topology is interpreted from overlapping assembled views. Select journal25.7mm bore/32mm width,12mm web,16mm eye radii and13mm rod bores; front eye[70,0,-225] and rear eye[20,0,-292] relative to M783. These local offsets lie approximately within5px of the registered HB113 front side geometry. They are not printed dimensions.",
+    "Existing plan-derived shaft spacing406.530384mm is retained. The earlier hypothetical130mm receiver drop is inadequate for full M784 link depth. Raise main/swing axes to1240/1260mm, and provisionally relocate driver fore-aft using M574 stock and future low receiver[+35,+/-180,-190] relative to M783. The actual M760/M763 low linkage must confirm or reopen this datum.",
+    "Source hand/bell included angle and flat forged section are unprinted. Select approximately122degrees between the projected hand and bell arms and solve the static M772 angle against the complete source-sized M789B and two retained M569C socket offsets. The hand angle is checked against the fixed plan registration; source pose is approximate and motion remains unqualified.",
+    "M576 length is unprinted. Select one complete straight stock joining real clutch swing/intermediate eyes; record its inferred common-family stock length for the other four applications rather than inventing unrelated lengths.",
+    "Existing19.05mm nominal rod section,19.05mm socket insertion and smooth thread envelopes retained. Full source-sized fork pins/cotters/plain nuts reused unchanged.",
+    "Side-plate height/profile and floor bore pattern change with the revised shaft station. Original unmodified floor BReps are restored before drilling only the new eight holes; do not leave obsolete mount holes. Existing mounting stock and hardware remain unchanged.",
+    "Current driver seat is only a coarse layout envelope. Its actual frame/support/cushion must be rebuilt around complete controls; it is not physical clearance evidence.",
+    "M784 uses a solid tapered web between its three bores; no unsupported triangular lightening opening is introduced. Complete side-view profile remains an estimate.",
+    "The hand alone tilts outward by asin(170/723.9)=13.58degrees. This is an estimated formed lever, not a source dimension or kinematic pose. Printed723.9mm maximum radial hand reach is preserved. The catalogue planar pose has a longer fore-aft handle projection than the solved static model; do not refit the registration to conceal that mismatch."
+  ],
+  "constraints": [
+    "Local plan registration is reused, no fitting across broken rods. Compare HB113 side locally with source identity/pose limits; never refit solely to conceal a discrepancy.",
+    "Retain the accepted mount_integrated01 checkpoint unchanged; revise only declared support/floor definitions and driver frames in a new trial. All inherited rear/intermediate controls stay fixed.",
+    "Complete front clutch chain from M772 through M789B/M784 and one M576 to the accepted intermediate receiver before integration. All four M784 share one definition.",
+    "Preserve source hand length, bell arm, rod stock, full joint fasteners and real bearing bores after every union. No material-pair exemptions.",
+    "M760 and other low-speed parts, selectors, reverse lever/pipe rod, brake interconnection, stops, spring anchors and complete seat supports remain required."
+  ],
+  "status": "Reviewed source supports new complete front clutch chain and four swing-link parts; foundation placement requires a declared revision."
+}

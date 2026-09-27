@@ -1,10 +1,21 @@
 # Driver controls — active continuation
 
-Current checkpoint: [driver support foundation](mount_integrated01/README.md),
-**3,475 occurrences / 611 definitions / 414 groups**. The preceding
+Current checkpoint: [complete driver front clutch chain](linkage_integrated01/README.md),
+**3,498 occurrences / 615 definitions / 419 groups**. Its23 additions include all
+four M784 links and the complete front clutch chain. The earlier
+[driver foundation](mount_integrated01/README.md) and
 [completed withheld-control redo](../redo01/clutch_swing_integrated02/README.md)
-remains intact. The original driver draft is preserved on
+remain intact. The original driver draft is preserved on
 `review/gemini-front-controls-20260926`.
+
+The linkage increment passes251 local,168 context and69 STEP checks per stock
+setting; full integration/preservation/reproduction pass. Revised support heights
+admit the actual deeper links. [Source review](linkage_source_review06.json) and
+[trial dispositions](linkage_trials.md) record the handle/nose compromise and
+unresolved historical geometry. Five new inspected views bring progression to287.
+
+The following foundation notes describe the preceding checkpoint; its shaft
+station and plate heights are superseded by the new linkage hypothesis.
 
 The foundation adds 36 driver components: two transverse shafts, four reused
 nuts, four source-length split pins, two partial seat-support plates and eight
@@ -31,17 +42,17 @@ comparisons per setting. Its X7280/Z1020 station and19.05mm future support grip
 are superseded by the installed foundation hypothesis. Its frozen source notes
 are retained as history, including the subsequently corrected M746/M747 assignment.
 
-Next: reconstruct actual M784 swing-link and M760 low-speed suspension receivers,
-then M789A/B connections and the driver lever/selector/brake interconnection.
-Use the retained printed M574 length and actual receiving geometry to confirm or
-reopen the provisional driver station. M775 is a spring-link distance piece;
-HB12 oil points do not establish separate grease nipples. Complete seat support,
-M785 spring anchor, remaining controls and front rods are still required.
+Next: build M760 low-speed suspension links and M762/M763 toggles, then close the
+two M574 rods at their printed stock length. Actual receivers must confirm or
+reopen the provisional driver station. Continue selectors, M789A short rods,
+high/reverse and brake interconnection, M775 distance pieces, spring anchors and
+complete seat support. Five M576 applications plus two M574 and one M571 reverse
+pipe give eight front long connections; one M576 is now populated.
 
 Read-only recovery:
 
 ```sh
-python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01
+python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_integrated01
 ```
 
 Standard tank011 and the original Gemini files remain preserved. This checkpoint
