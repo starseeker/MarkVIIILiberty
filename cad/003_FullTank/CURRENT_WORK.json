@@ -4,16 +4,17 @@
   "goal_status": "active",
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
-  "accepted_development_parent": "Complete operating handles and pivot joints, 27 September 2026",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
-  "latest_native_sha256": "c8adadcb73bf9de0153cceb7e85e686bd63d5c6f1b198054e23811fdba8fede1",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json",
+  "accepted_development_parent": "Integrated coupled bow, driver controls and supported seat,27 September2026",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01",
+  "latest_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/qualification.json",
   "current_pipeline_run": null,
   "pipeline_receipt": null,
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_support_outline_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_seat_adjustment_evidence.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_coupled_driver_station_study.py",
@@ -45,7 +46,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Integrate driver_support_outline_study/trial02 as the complete coupled bow/driver/seat static approximation into operating_integrated01. Derive actual additions versus accepted development, preserve full existing hierarchy/frames and all unrelated material, replace corresponding standard-context bow/floor occurrences without duplication, retain nonphysical curve guides and explicit source limits. Verify the saved full union and its ownership/frames and render standard/context views before promotion. Then build remaining driver foot/reverse controls. SH291C/D/F remain explicit unresolved inventory candidates; do not invent their mounts or quantities.",
+  "next_action": "Continue driver_foot_reverse_study from coupled_driver_integration/integrated01. Review the extracted original sources and retained interfaces, then build the foot-brake bridle/pedal/suspension and eight M771 interconnections with existing speed selectors, two remaining shared M576 rods and their SH946F ends. Reconcile the reverse lever/quadrant and M571 pipe using HB150 dimensions and actual intermediate receiver. Preserve complete printed M574/SH229A stock and full inherited hierarchy; qualify each connected static addition before integration.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -214,7 +215,7 @@
     "withheld_redo_status": "Corrected local static reconstruction complete; original branch remains preserved."
   },
   "driver_part_verifier": "cad/003_FullTank/experiments/drive_chains/verify_driver_fulcrum_shaft.py",
-  "open_limits_note": "Cumulative limits include superseded geometry. operating_integrated01 is authoritative for current handles/pivots and four upper selector arms; its protected lower linkage and all preceding world frames match high_integrated01. Historical source comparisons remain explicitly open. Older checkpoint files stay immutable.",
+  "open_limits_note": "Cumulative limits include superseded geometry. coupled_driver_integration/integrated01 is authoritative: reviewed complete station integrated with92 new seat/support parts and38 bow context panels. All retained material, hierarchy, metadata and nonphysical guides verified. Shaft/source interpretation remains approximate; foot/reverse controls and unresolved seat fittings remain open.",
   "active_seat_packet": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/BUILD.md",
   "active_support_packet": "cad/003_FullTank/experiments/drive_chains/driver_seat_support_study/BUILD.md",
   "active_station_review": {
@@ -229,20 +230,23 @@
     "native": "cad/003_FullTank/experiments/drive_chains/coupled_driver_station_study/trial02/ControlRebuildTrial.FCStd",
     "native_sha256": "54faa2a94046df78cc1a58e53c4d2a433b6e281624fc8c73e1b8fb4266c084a4",
     "receipt": "cad/003_FullTank/experiments/drive_chains/coupled_driver_station_study/study_receipt.json",
-    "status": "Nominal/+5mm main-X builds mechanically checked:1075+31 checks,1168/1166 context pairs,329 STEP each,391-BRep fresh reproduction. Source discrepancies and remaining controls explicit; not integrated.",
-    "geometry_integrated": false
+    "status": "Nominal/+5mm main-X builds mechanically checked:1075+31 checks,1168/1166 context pairs,329 STEP each,391-BRep fresh reproduction. Source discrepancies and remaining controls explicit; not integrated. Subsequently integrated and independently verified in coupled_driver_integration/integrated01.",
+    "geometry_integrated": true,
+    "integration_checkpoint": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01"
   },
   "active_support_outline_study": {
     "path": "cad/003_FullTank/experiments/drive_chains/driver_support_outline_study",
     "native": "cad/003_FullTank/experiments/drive_chains/driver_support_outline_study/trial02/ControlRebuildTrial.FCStd",
     "native_sha256": "a80758a803785d5363e1e90e3077ef4d4ecf7ca7fd4525dff26b9b9218f1493a",
     "receipt": "cad/003_FullTank/experiments/drive_chains/driver_support_outline_study/study_receipt.json",
-    "status": "Reviewed local approximation; nominal/+5mm fore-edge variants pass1075+31+8 checks,1174 context pairs and34 delta STEP comparisons each.391-BRep fresh reproduction. Ready to integrate the complete coupled station; not integrated.",
-    "geometry_integrated": false
+    "status": "Reviewed local approximation; nominal/+5mm fore-edge variants pass1075+31+8 checks,1174 context pairs and34 delta STEP comparisons each.391-BRep fresh reproduction. Ready to integrate the complete coupled station; not integrated. Subsequently integrated and independently verified in coupled_driver_integration/integrated01.",
+    "geometry_integrated": true,
+    "integration_checkpoint": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01"
   },
   "active_seat_adjustment_review": {
     "path": "cad/003_FullTank/experiments/drive_chains/seat_adjustment_study",
     "receipt": "cad/003_FullTank/experiments/drive_chains/seat_adjustment_study/evidence_receipt.json",
     "status": "SH291C confirmed separate from SH291X. SH291D handle and SH291F cleat confirmed only as rivet applications; D/F quantities and all three mounts unresolved. No speculative geometry added."
-  }
+  },
+  "active_driver_foot_reverse_packet": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study"
 }

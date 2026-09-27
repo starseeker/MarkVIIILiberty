@@ -1,5 +1,18 @@
 # Mark VIII visual progression
 
+## Integrated coupled driver station — 27 September 2026
+
+Two new whole-union views plus four retained local/source views bring accepted
+progression to **314 images**. The supported seat and coupled control routes now
+belong to the full development hierarchy. Hull panels are outlined for visibility.
+
+- [Whole tank context](intermediate_snapshot_iso_coupled_driver_integrated_001.png)
+- [Full development](intermediate_snapshot_development_coupled_driver_integrated_001.png)
+- [Driver station](intermediate_snapshot_station_coupled_driver_integrated_001.png)
+- [Connections](intermediate_snapshot_connections_coupled_driver_integrated_001.png)
+- [Fixed source section](intermediate_snapshot_source_section_coupled_driver_integrated_001.png)
+- [Conditional clutch profile](intermediate_snapshot_clutch_source_coupled_driver_integrated_001.png)
+
 ## Complete operating handles and pivot joints — 27 September 2026
 
 Six inspected views bring progression to **308 images**. Both handles and complete

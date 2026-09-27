@@ -2329,6 +2329,41 @@
         "date": "2026-09-27",
         "basis": "Saved geometric evidence and directly inspected original/source comparison images."
       }
+    },
+    {
+      "id": "coupled_driver_station_integration_20260927",
+      "status": "reviewed_approximation",
+      "scope": "Full retained development union with reviewed bow/driver/seat geometry.",
+      "reason": "Integrate locally qualified connected geometry while preserving existing hierarchy and restoring full source metadata.",
+      "uncertainty": "Historical shaft identities, handle datum, M772 bend, seat curves and support patterns remain approximate.",
+      "limits": [
+        "3712 occurrences/689 definitions/456 groups;92 new tank parts plus38 bow-context replacements.",
+        "108 integration checks,743 material comparisons,31 guide comparisons; full1174-pair context transfer without exemptions.",
+        "Fresh2135-BRep/184974-property rebuild; standard tank011 unchanged; progression314.",
+        "Foot/reverse controls and SH291C/D/F inventory gaps remain open."
+      ],
+      "reopen_when": [
+        "Remaining controls or new source evidence contradict current station geometry."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/qualification.json",
+          "sha256": "059811b34d2ece0b9147039cd916fa1406d8fb82160879fdca8c2888a680f094"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/README.md",
+          "sha256": "c81cf13cbc027fd73e65cb84da34acd6b40a7924270328c9e2cac4bb0bfe214a"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/visual01/visual_review.json",
+          "sha256": "f980d6fe456fb24566cb5943ddab6fd7c50a4a87b145d9de1c898268b7ccb931"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Saved-native material/hierarchy/property checks, complete curve audit, source-qualified prototype transfer, fresh reproduction and inspected whole-union views."
+      }
     }
   ]
 }

@@ -11,6 +11,28 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — integrate the complete coupled driver station
+
+The [new development checkpoint](experiments/drive_chains/coupled_driver_integration/README.md)
+contains3,712 physical occurrences/689 definitions/456 assembly groups. It adds92
+seat/support parts and38 bow context panels, revises17 inherited definitions and
+226 frames, and preserves the other618 definitions and full existing hierarchy.
+Lost source/approximation metadata is restored from original packets. Eighteen
+construction guides are retained outside the BOM; all13 inherited guides survive.
+
+The saved/relocated union passes108 checks and743 material comparisons. The
+1,174-pair context audit transfers through complete material/frame equivalence;
+standard-context panels are replaced by name without duplicates. Complete curve
+signatures resolve native serialization differences with negative controls.
+A fresh build reproduces2,135 BReps and184,974 persistent properties. Qualification
+binds3,954 dependencies. Two new overview renders and four retained source/local
+views bring accepted progression to314. Standard tank011 remains unchanged.
+
+Continue with driver foot/reverse controls. The new source packet retains the
+neutral-selective foot-brake interconnection and the remaining shared M576 rod
+applications. Shaft identities, seat/support forms and M772 profile remain
+explicit approximations; full historical, motion and service qualification is open.
+
 ## 27 September 2026 — refine source-visible support outline and identify fitting gaps
 
 The [support fore-edge study](experiments/drive_chains/driver_support_outline_study/README.md)
