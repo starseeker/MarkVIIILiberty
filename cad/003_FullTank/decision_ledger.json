@@ -1867,6 +1867,45 @@
         "date": "2026-09-27",
         "basis": "Original HB35/HB43 scans, SNL section/armor identities, HB5/HB6 qualitative review and inspected native/STEP/material/contact/source comparisons."
       }
+    },
+    {
+      "id": "driver_bow_coupled_layout_20260927",
+      "status": "open_evidence",
+      "scope": "Complete-stock coupled driver layout, folded floor mounts and remaining historical shaft/seat position.",
+      "reason": "Two full-stock heights close against fixed rear receivers and corrected bow/floor with actual mounting contact; fixed source overlays still disagree, so mechanical feasibility cannot select historical placement.",
+      "uncertainty": "Absolute shaft/seat height, source control state,37-inch handle datum, enclosure length interpretation and full support/seat topology.",
+      "limits": [
+        "No source camera refit or shortened printed stock.",
+        "521 material/contact checks,1022 context pairs and226 STEP comparisons pass at each tested height; fresh reproduction passes.",
+        "No integration or accepted progression advance. Rear M575/M578/M573 rods already exist."
+      ],
+      "reopen_when": [
+        "M791/SH289E/SH291X/M788 seat evidence constrains complete M786/M787 support and shaft layout.",
+        "Control state and shaft/handle geometry reconcile fixed SNL2/SNL6 comparisons."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_layout_study/study_receipt.json",
+          "sha256": "ddb88100c9ca0d65d17fe67efe53f026bde8cb4e38d4c4b90f3d08fd045d7205"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_layout_study/source_review.json",
+          "sha256": "d2d35b3a0fe3f9bfd59c3d902487ee0daf798abb73ccec25b0d1d0052ab5ab11"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_layout_study/trial01/visual02/visual_review.json",
+          "sha256": "80a67ddc3508f71410f5ae68e1f565628d0248cca9eaa2d4cb4135b1d8af71d5"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_layout_study/README.md",
+          "sha256": "93b0f43e91b71226c05bae8934f889561fa06445842938879cab32904f887171"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Saved-material qualification and inspected fixed section, transparent isometric and mounting detail."
+      }
     }
   ]
 }

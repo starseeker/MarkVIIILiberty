@@ -11,6 +11,24 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — mechanically feasible coupled driver/bow study
+
+The [coupled layout study](experiments/drive_chains/driver_layout_study/README.md)
+contains **189 occurrences / 81 definitions**, complete printed rod and handle
+stock, forty conditional bow plates, and eight full mounting stacks seated on
+the corrected two-plane floor. The nominal main-shaft Z975 and Z970 variation
+both pass **521 material/contact checks, 1,022 context pairs without intersections,
+and 226 STEP comparisons**. A fresh nominal run reproduces every archived BRep,
+frame and stable persistent property. Nominal handles clear the bow by 8.898 mm.
+
+The fixed section overlay still places the shaft below the depicted source joint;
+the earlier 47–49 px local grip discrepancy is unchanged. These feasible heights
+are not accepted historical datums. Three inspected diagnostic views and all
+receipts are retained; development remains **3,582 / 635 / 442** and progression
+**308**. Next use the complete adjustable seat and support evidence to constrain
+the layout. M575/M578/M573 rear rods already exist; the prior missing-rods task
+note was incorrect and has been corrected.
+
 ## 27 September 2026 — source-led bow and enclosure prototype
 
 The [bow study](experiments/drive_chains/bow_reconstruction_study/README.md) supplies

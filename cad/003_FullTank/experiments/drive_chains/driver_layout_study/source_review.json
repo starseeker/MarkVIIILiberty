@@ -1,0 +1,43 @@
+{
+  "status": "mechanically_feasible_historical_position_unresolved",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/bow_reconstruction_study/study_receipt.json": "2f6de995035d7dfc82f177fc8ec01b738463b1760c39cd829d5f03e3bd3628d5",
+    "cad/003_FullTank/experiments/drive_chains/bow_reconstruction_study/source_review.json": "d83cc01f75c336088bbd7fddbd354606c21863cca56aa3f43f6e9ff853d8ca54",
+    "cad/003_FullTank/experiments/drive_chains/bow_reconstruction_study/trial02/BowEnclosureHypothesis.FCStd": "c620faf6ddea1605264ec9ab8af289b1f0aa0a8d3e576a83a4fe4e6ae97f152c",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_source_rows01.json": "d09cbd460a23105d2e7e511290cc8ab56f478767c105c05c53bad01770aaee44",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_source_review02.json": "dc93890d2bb9c09c5a7595dfb2a0e99c4efcf0a1f36a2948d5904c79c71366a8",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_source_review01.json": "7b60299b1b91bdf83f91285099c156abc359fa845e4a441bb3560de1d0190a42",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_datum_review01/README.md": "ced377e00e77f4a18d6c0888bb1b278727759aa4cd550594b4b98504625c24a4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handbook_text01.json": "407d5b883aef4edda37a81946aef5eeff13423673c6373af6ff1cf5bf73af846",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json": "f7e6fef263abb1209d7fcebc4115af949f636cae24dfcf15038f66cd73148099",
+    "cad/003_FullTank/data/calibrations.json": "fb555b36854a6526575760b723d605d6eb10842b850c413dd8b2234f93f562b7",
+    "cad/003_FullTank/data/parameters.json": "846d19fc3f2f0ac129224bc024039ae75fa3b4c36226872047aadbc798b6276b",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277_foldout-geometry.png": "7f08a90732b5adb3a14d73f3438f1803de0230a54f9a4e27364ebdf35c91677b"
+  },
+  "source_inventory_correction": "M575/M578/M573 rear rods are already installed in operating_integrated01; the previous next-action description was stale. Their receiving constraints remain fixed.",
+  "printed_stock_preserved_mm": {
+    "M574": 1257.3,
+    "M789A": 269.875,
+    "M789B": 320.675,
+    "half_inch_mount_bolt_underhead": 31.75
+  },
+  "construction_hypotheses": [
+    "Z975 nominal and Z970 variation are feasible samples from the complete-stock height probe, not historical dimensions.",
+    "M574 stock and fixed intermediate eyes determine the driver X station. Local main/swing separation and 72-part relative geometry remain unchanged.",
+    "Unprinted common M576 length is regenerated; three of five applications share one definition.",
+    "Support plates follow the actual two-plane floor with 6.35 mm normal foot stock and eight source-counted full mounting stacks. Outlines, bends, mounting stations and floor interpretation remain approximate."
+  ],
+  "source_findings": [
+    "Fixed SNL2 section comparison visibly places the candidate main shaft lower than the depicted joint; no numerical landmark qualification is claimed.",
+    "Local SNL6 47\u201349 px grip discrepancy is unchanged by the rigid translation.",
+    "Original HB148 says operating levers are 37 inches in length without an explicit datum. Overall-length interpretation remains provisional.",
+    "The HB35 inclusive-enclosure interpretation and M2014/M2033/floor identities remain open."
+  ],
+  "next_scope": [
+    "M791 adjustable seat; four SH289E bearings; two SH291X clips; M788 support angles; complete M786/M787 extensions.",
+    "Inspect SNL2, SNL7 and HB6, distinguish source control state and projection before accepting a shaft or seat station."
+  ],
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "source_camera_refitted": false
+}

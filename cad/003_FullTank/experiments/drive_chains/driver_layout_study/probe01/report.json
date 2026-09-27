@@ -1,0 +1,2403 @@
+{
+  "parent_native_sha256": "c8adadcb73bf9de0153cceb7e85e686bd63d5c6f1b198054e23811fdba8fede1",
+  "bow_native_sha256": "c620faf6ddea1605264ec9ab8af289b1f0aa0a8d3e576a83a4fe4e6ae97f152c",
+  "worker_sha256": "fc6f2e0ecb95361d0f554c97a39ab921b76d65ea87670f0937b2dbf471893130",
+  "parts_sha256": "1d57dacfe0d5f67aeba1bb7f4d80dc2fdd59f73af45425ec1bb52579b2d503da",
+  "records": [
+    {
+      "main_z_mm": 900.0,
+      "layout": {
+        "main_world_mm": [
+          7626.586971348447,
+          0.0,
+          900.0
+        ],
+        "swing_world_mm": [
+          7220.056587221097,
+          0.0,
+          920.0
+        ],
+        "driver_translation_mm": [
+          46.69356307628368,
+          0.0,
+          -400.0
+        ],
+        "rod_records": {
+          "PortDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.3000000000002,
+            "pin_span_mm": 1308.1000000000001,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7240.056587221097,
+              180.0,
+              625.0
+            ],
+            "axis_world": [
+              0.9992651803995264,
+              0.0,
+              -0.03832883041656678
+            ]
+          },
+          "PortDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.270787676989,
+            "pin_span_mm": 1349.0707876769889,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7281.056587221097,
+              125.0,
+              625.0
+            ],
+            "axis_world": [
+              0.9993091502648478,
+              0.0,
+              -0.037164797819279186
+            ]
+          },
+          "StarboardDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.3000000000002,
+            "pin_span_mm": 1308.1000000000001,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7240.056587221097,
+              -180.0,
+              625.0
+            ],
+            "axis_world": [
+              0.9992651803995264,
+              0.0,
+              -0.03832883041656678
+            ]
+          },
+          "StarboardDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.270787676989,
+            "pin_span_mm": 1349.0707876769889,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7281.056587221097,
+              -125.0,
+              625.0
+            ],
+            "axis_world": [
+              0.9993091502648478,
+              0.0,
+              -0.037164797819279186
+            ]
+          },
+          "DriverClutchFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.270787676989,
+            "pin_span_mm": 1349.0707876769889,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              235.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7281.056587221097,
+              235.0,
+              625.0
+            ],
+            "axis_world": [
+              0.9993091502648478,
+              0.0,
+              -0.037164797819279186
+            ]
+          }
+        },
+        "M576_common_stock_mm": 1298.270787676989,
+        "omitted_support_and_floor_occurrences": [
+          "DriverPortSupportPlate",
+          "DriverPortSupportMount1Bolt",
+          "DriverPortSupportMount1Lock",
+          "DriverPortSupportMount1Nut",
+          "DriverPortSupportMount2Bolt",
+          "DriverPortSupportMount2Lock",
+          "DriverPortSupportMount2Nut",
+          "DriverPortSupportMount3Bolt",
+          "DriverPortSupportMount3Lock",
+          "DriverPortSupportMount3Nut",
+          "DriverPortSupportMount4Bolt",
+          "DriverPortSupportMount4Lock",
+          "DriverPortSupportMount4Nut",
+          "DriverStarboardSupportPlate",
+          "DriverStarboardSupportMount1Bolt",
+          "DriverStarboardSupportMount1Lock",
+          "DriverStarboardSupportMount1Nut",
+          "DriverStarboardSupportMount2Bolt",
+          "DriverStarboardSupportMount2Lock",
+          "DriverStarboardSupportMount2Nut",
+          "DriverStarboardSupportMount3Bolt",
+          "DriverStarboardSupportMount3Lock",
+          "DriverStarboardSupportMount3Nut",
+          "DriverStarboardSupportMount4Bolt",
+          "DriverStarboardSupportMount4Lock",
+          "DriverStarboardSupportMount4Nut",
+          "hull_floor_1",
+          "hull_floor_2"
+        ],
+        "retained_internal_driver_occurrences": 72,
+        "changed_rod_and_joint_occurrences": 45
+      },
+      "occurrences": 117,
+      "pairs": 92,
+      "findings": [
+        {
+          "first": "StarboardReverseDriverSwingLink",
+          "second": "hull_floor_1",
+          "volume_mm3": 1907.5205767981247,
+          "passed": false
+        },
+        {
+          "first": "StarboardHighDriverSwingLink",
+          "second": "hull_floor_1",
+          "volume_mm3": 1907.5205767981247,
+          "passed": false
+        },
+        {
+          "first": "PortHighDriverSwingLink",
+          "second": "hull_floor_1",
+          "volume_mm3": 1907.5205767981247,
+          "passed": false
+        },
+        {
+          "first": "PortClutchDriverSwingLink",
+          "second": "hull_floor_1",
+          "volume_mm3": 1907.5205767981247,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchShortForwardJointFork",
+          "second": "hull_floor_1",
+          "volume_mm3": 70.54062135120755,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchShortForwardJointNut",
+          "second": "hull_floor_1",
+          "volume_mm3": 2439.501323586825,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchOperatingLever",
+          "second": "hull_floor_1",
+          "volume_mm3": 2454.665798072827,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchShortRod",
+          "second": "hull_floor_1",
+          "volume_mm3": 8409.99572210408,
+          "passed": false
+        },
+        {
+          "first": "PortDriverLowBrake",
+          "second": "hull_floor_2",
+          "volume_mm3": 1835.65087744459,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverLowBrake",
+          "second": "hull_floor_2",
+          "volume_mm3": 1835.6508774445872,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighShortForwardJointNut",
+          "second": "hull_floor_1",
+          "volume_mm3": 41.39629719125747,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighSelector",
+          "second": "hull_floor_1",
+          "volume_mm3": 2892.8604799178615,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighShortRod",
+          "second": "hull_floor_1",
+          "volume_mm3": 6199.056459887615,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighShortForwardJointNut",
+          "second": "hull_floor_1",
+          "volume_mm3": 41.396297191255684,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighSelector",
+          "second": "hull_floor_1",
+          "volume_mm3": 2892.860479917861,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighShortRod",
+          "second": "hull_floor_1",
+          "volume_mm3": 6199.056459887421,
+          "passed": false
+        },
+        {
+          "first": "PortDriverOperatingFulcrum",
+          "second": "hull_floor_1",
+          "volume_mm3": 5521.369015256055,
+          "passed": false
+        },
+        {
+          "first": "PortDriverOperatingHandle",
+          "second": "hull_floor_1",
+          "volume_mm3": 1567.7928896025257,
+          "passed": false
+        },
+        {
+          "first": "PortDriverOperatingBolt",
+          "second": "hull_floor_1",
+          "volume_mm3": 4544.235150566107,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverOperatingFulcrum",
+          "second": "hull_floor_1",
+          "volume_mm3": 5521.369015256226,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverOperatingHandle",
+          "second": "hull_floor_1",
+          "volume_mm3": 1567.7928896055257,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverOperatingBolt",
+          "second": "hull_floor_1",
+          "volume_mm3": 4544.235150567076,
+          "passed": false
+        },
+        {
+          "first": "PortDriverLowRod",
+          "second": "hull_floor_2",
+          "volume_mm3": 11565.331046853606,
+          "passed": false
+        },
+        {
+          "first": "PortDriverLowForwardJointFork",
+          "second": "hull_floor_2",
+          "volume_mm3": 3367.4243929326035,
+          "passed": false
+        },
+        {
+          "first": "PortDriverLowForwardJointNut",
+          "second": "hull_floor_2",
+          "volume_mm3": 2449.6784402495277,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighFrontRod",
+          "second": "hull_floor_2",
+          "volume_mm3": 11658.760884505169,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighFrontForwardJointFork",
+          "second": "hull_floor_2",
+          "volume_mm3": 229.32001980681326,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighFrontForwardJointNut",
+          "second": "hull_floor_2",
+          "volume_mm3": 2307.3150320109994,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverLowRod",
+          "second": "hull_floor_2",
+          "volume_mm3": 11565.331046853606,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverLowForwardJointFork",
+          "second": "hull_floor_2",
+          "volume_mm3": 3367.4243929326108,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverLowForwardJointNut",
+          "second": "hull_floor_2",
+          "volume_mm3": 2449.678440249526,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighFrontRod",
+          "second": "hull_floor_2",
+          "volume_mm3": 11658.760884506413,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighFrontForwardJointFork",
+          "second": "hull_floor_2",
+          "volume_mm3": 229.32001980672723,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighFrontForwardJointNut",
+          "second": "hull_floor_2",
+          "volume_mm3": 2307.315032010993,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchFrontRod",
+          "second": "hull_floor_2",
+          "volume_mm3": 11658.760884504802,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchFrontForwardJointFork",
+          "second": "hull_floor_2",
+          "volume_mm3": 229.32001980660942,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchFrontForwardJointNut",
+          "second": "hull_floor_2",
+          "volume_mm3": 2307.3150320110317,
+          "passed": false
+        }
+      ],
+      "tested_shell_clear": false,
+      "handles": {
+        "Port": {
+          "bow_distance_mm": 46.496390094474535,
+          "floor_distance_mm": 0.0
+        },
+        "Starboard": {
+          "bow_distance_mm": 46.49639009447508,
+          "floor_distance_mm": 0.0
+        }
+      }
+    },
+    {
+      "main_z_mm": 925.0,
+      "layout": {
+        "main_world_mm": [
+          7627.3066268565535,
+          0.0,
+          925.0
+        ],
+        "swing_world_mm": [
+          7220.776242729204,
+          0.0,
+          945.0
+        ],
+        "driver_translation_mm": [
+          47.41321858439005,
+          0.0,
+          -375.0
+        ],
+        "rod_records": {
+          "PortDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.2999999999995,
+            "pin_span_mm": 1308.0999999999995,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7240.776242729204,
+              180.0,
+              650.0
+            ],
+            "axis_world": [
+              0.9998153336814675,
+              0.0,
+              -0.01921714170775248
+            ]
+          },
+          "PortDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.2926587581278,
+            "pin_span_mm": 1349.0926587581278,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7281.776242729204,
+              125.0,
+              650.0
+            ],
+            "axis_world": [
+              0.9998263864473057,
+              0.0,
+              -0.018633222043511147
+            ]
+          },
+          "StarboardDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.2999999999995,
+            "pin_span_mm": 1308.0999999999995,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7240.776242729204,
+              -180.0,
+              650.0
+            ],
+            "axis_world": [
+              0.9998153336814675,
+              0.0,
+              -0.01921714170775248
+            ]
+          },
+          "StarboardDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.2926587581278,
+            "pin_span_mm": 1349.0926587581278,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7281.776242729204,
+              -125.0,
+              650.0
+            ],
+            "axis_world": [
+              0.9998263864473057,
+              0.0,
+              -0.018633222043511147
+            ]
+          },
+          "DriverClutchFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.2926587581278,
+            "pin_span_mm": 1349.0926587581278,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              235.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7281.776242729204,
+              235.0,
+              650.0
+            ],
+            "axis_world": [
+              0.9998263864473057,
+              0.0,
+              -0.018633222043511147
+            ]
+          }
+        },
+        "M576_common_stock_mm": 1298.2926587581278,
+        "omitted_support_and_floor_occurrences": [
+          "DriverPortSupportPlate",
+          "DriverPortSupportMount1Bolt",
+          "DriverPortSupportMount1Lock",
+          "DriverPortSupportMount1Nut",
+          "DriverPortSupportMount2Bolt",
+          "DriverPortSupportMount2Lock",
+          "DriverPortSupportMount2Nut",
+          "DriverPortSupportMount3Bolt",
+          "DriverPortSupportMount3Lock",
+          "DriverPortSupportMount3Nut",
+          "DriverPortSupportMount4Bolt",
+          "DriverPortSupportMount4Lock",
+          "DriverPortSupportMount4Nut",
+          "DriverStarboardSupportPlate",
+          "DriverStarboardSupportMount1Bolt",
+          "DriverStarboardSupportMount1Lock",
+          "DriverStarboardSupportMount1Nut",
+          "DriverStarboardSupportMount2Bolt",
+          "DriverStarboardSupportMount2Lock",
+          "DriverStarboardSupportMount2Nut",
+          "DriverStarboardSupportMount3Bolt",
+          "DriverStarboardSupportMount3Lock",
+          "DriverStarboardSupportMount3Nut",
+          "DriverStarboardSupportMount4Bolt",
+          "DriverStarboardSupportMount4Lock",
+          "DriverStarboardSupportMount4Nut",
+          "hull_floor_1",
+          "hull_floor_2"
+        ],
+        "retained_internal_driver_occurrences": 72,
+        "changed_rod_and_joint_occurrences": 45
+      },
+      "occurrences": 117,
+      "pairs": 98,
+      "findings": [
+        {
+          "first": "StarboardReverseDriverSwingLink",
+          "second": "hull_floor_1",
+          "volume_mm3": 1406.16351205317,
+          "passed": false
+        },
+        {
+          "first": "StarboardHighDriverSwingLink",
+          "second": "hull_floor_1",
+          "volume_mm3": 1406.16351205317,
+          "passed": false
+        },
+        {
+          "first": "PortHighDriverSwingLink",
+          "second": "hull_floor_1",
+          "volume_mm3": 1406.16351205317,
+          "passed": false
+        },
+        {
+          "first": "PortClutchDriverSwingLink",
+          "second": "hull_floor_1",
+          "volume_mm3": 1406.16351205317,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchShortForwardJointFork",
+          "second": "hull_floor_1",
+          "volume_mm3": 4383.011904163803,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchShortForwardJointPin",
+          "second": "hull_floor_1",
+          "volume_mm3": 3150.034997161328,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchShortForwardJointCotter",
+          "second": "hull_floor_1",
+          "volume_mm3": 89.9268473213807,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchShortForwardJointNut",
+          "second": "hull_floor_1",
+          "volume_mm3": 2529.6223596023137,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchOperatingLever",
+          "second": "hull_floor_1",
+          "volume_mm3": 1625.6360992299437,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchShortRod",
+          "second": "hull_floor_1",
+          "volume_mm3": 1372.4954972746195,
+          "passed": false
+        },
+        {
+          "first": "PortDriverLowBrake",
+          "second": "hull_floor_2",
+          "volume_mm3": 1965.1281563164862,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverLowBrake",
+          "second": "hull_floor_2",
+          "volume_mm3": 1965.1281563164862,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighShortForwardJointFork",
+          "second": "hull_floor_1",
+          "volume_mm3": 4199.552134934914,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighShortForwardJointCotter",
+          "second": "hull_floor_1",
+          "volume_mm3": 3.2397752969666227,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighShortForwardJointNut",
+          "second": "hull_floor_1",
+          "volume_mm3": 1631.644566010753,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighSelector",
+          "second": "hull_floor_1",
+          "volume_mm3": 3032.4075962472425,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighShortRod",
+          "second": "hull_floor_1",
+          "volume_mm3": 5334.470737689451,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighShortForwardJointFork",
+          "second": "hull_floor_1",
+          "volume_mm3": 4199.5521349348255,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighShortForwardJointCotter",
+          "second": "hull_floor_1",
+          "volume_mm3": 3.239775296965944,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighShortForwardJointNut",
+          "second": "hull_floor_1",
+          "volume_mm3": 1631.6445660107288,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighSelector",
+          "second": "hull_floor_1",
+          "volume_mm3": 3032.407596247242,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighShortRod",
+          "second": "hull_floor_1",
+          "volume_mm3": 5334.470737692295,
+          "passed": false
+        },
+        {
+          "first": "PortDriverLowRod",
+          "second": "hull_floor_2",
+          "volume_mm3": 0.051101401046537036,
+          "passed": false
+        },
+        {
+          "first": "PortDriverLowForwardJointFork",
+          "second": "hull_floor_2",
+          "volume_mm3": 5117.590749323297,
+          "passed": false
+        },
+        {
+          "first": "PortDriverLowForwardJointPin",
+          "second": "hull_floor_2",
+          "volume_mm3": 138.51389846512762,
+          "passed": false
+        },
+        {
+          "first": "PortDriverLowForwardJointNut",
+          "second": "hull_floor_2",
+          "volume_mm3": 904.5775018500058,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighFrontRod",
+          "second": "hull_floor_2",
+          "volume_mm3": 794.0355952051008,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighFrontForwardJointFork",
+          "second": "hull_floor_1",
+          "volume_mm3": 2634.1456601618675,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighFrontForwardJointFork",
+          "second": "hull_floor_2",
+          "volume_mm3": 2158.0198377597817,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighFrontForwardJointPin",
+          "second": "hull_floor_1",
+          "volume_mm3": 3077.5594538400746,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighFrontForwardJointCotter",
+          "second": "hull_floor_1",
+          "volume_mm3": 66.89618005723767,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighFrontForwardJointNut",
+          "second": "hull_floor_2",
+          "volume_mm3": 2522.4831159139303,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverLowRod",
+          "second": "hull_floor_2",
+          "volume_mm3": 0.051101401046537036,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverLowForwardJointFork",
+          "second": "hull_floor_2",
+          "volume_mm3": 5117.590749323296,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverLowForwardJointPin",
+          "second": "hull_floor_2",
+          "volume_mm3": 138.51389846512762,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverLowForwardJointNut",
+          "second": "hull_floor_2",
+          "volume_mm3": 904.5775018499942,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighFrontRod",
+          "second": "hull_floor_2",
+          "volume_mm3": 794.0355952046652,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighFrontForwardJointFork",
+          "second": "hull_floor_1",
+          "volume_mm3": 2634.1456601618675,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighFrontForwardJointFork",
+          "second": "hull_floor_2",
+          "volume_mm3": 2158.0198377597785,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighFrontForwardJointPin",
+          "second": "hull_floor_1",
+          "volume_mm3": 3077.5594538400774,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighFrontForwardJointCotter",
+          "second": "hull_floor_1",
+          "volume_mm3": 66.89618005723688,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighFrontForwardJointNut",
+          "second": "hull_floor_2",
+          "volume_mm3": 2522.483115913936,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchFrontRod",
+          "second": "hull_floor_2",
+          "volume_mm3": 794.035595204986,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchFrontForwardJointFork",
+          "second": "hull_floor_1",
+          "volume_mm3": 2634.145660161831,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchFrontForwardJointFork",
+          "second": "hull_floor_2",
+          "volume_mm3": 2158.0198377596375,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchFrontForwardJointPin",
+          "second": "hull_floor_1",
+          "volume_mm3": 3077.559453839795,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchFrontForwardJointCotter",
+          "second": "hull_floor_1",
+          "volume_mm3": 66.89618005796832,
+          "passed": false
+        },
+        {
+          "first": "DriverClutchFrontForwardJointNut",
+          "second": "hull_floor_2",
+          "volume_mm3": 2522.4831159139826,
+          "passed": false
+        }
+      ],
+      "tested_shell_clear": false,
+      "handles": {
+        "Port": {
+          "bow_distance_mm": 33.54774164245842,
+          "floor_distance_mm": 17.33581175125658
+        },
+        "Starboard": {
+          "bow_distance_mm": 33.54774164245857,
+          "floor_distance_mm": 17.33581175125658
+        }
+      }
+    },
+    {
+      "main_z_mm": 950.0,
+      "layout": {
+        "main_world_mm": [
+          7627.548181594571,
+          0.0,
+          950.0
+        ],
+        "swing_world_mm": [
+          7221.0177974672215,
+          0.0,
+          970.0
+        ],
+        "driver_translation_mm": [
+          47.65477332240789,
+          0.0,
+          -350.0
+        ],
+        "rod_records": {
+          "PortDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.3,
+            "pin_span_mm": 1308.1,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7241.0177974672215,
+              180.0,
+              675.0
+            ],
+            "axis_world": [
+              0.9999999944398326,
+              0.0,
+              -0.00010545299893816228
+            ]
+          },
+          "PortDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.2999997789611,
+            "pin_span_mm": 1349.099999778961,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7282.0177974672215,
+              125.0,
+              675.0
+            ],
+            "axis_world": [
+              0.9999999947726512,
+              0.0,
+              -0.00010224821579839219
+            ]
+          },
+          "StarboardDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.3,
+            "pin_span_mm": 1308.1,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7241.0177974672215,
+              -180.0,
+              675.0
+            ],
+            "axis_world": [
+              0.9999999944398326,
+              0.0,
+              -0.00010545299893816228
+            ]
+          },
+          "StarboardDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.2999997789611,
+            "pin_span_mm": 1349.099999778961,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7282.0177974672215,
+              -125.0,
+              675.0
+            ],
+            "axis_world": [
+              0.9999999947726512,
+              0.0,
+              -0.00010224821579839219
+            ]
+          },
+          "DriverClutchFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.2999997789611,
+            "pin_span_mm": 1349.099999778961,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              235.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7282.0177974672215,
+              235.0,
+              675.0
+            ],
+            "axis_world": [
+              0.9999999947726512,
+              0.0,
+              -0.00010224821579839219
+            ]
+          }
+        },
+        "M576_common_stock_mm": 1298.2999997789611,
+        "omitted_support_and_floor_occurrences": [
+          "DriverPortSupportPlate",
+          "DriverPortSupportMount1Bolt",
+          "DriverPortSupportMount1Lock",
+          "DriverPortSupportMount1Nut",
+          "DriverPortSupportMount2Bolt",
+          "DriverPortSupportMount2Lock",
+          "DriverPortSupportMount2Nut",
+          "DriverPortSupportMount3Bolt",
+          "DriverPortSupportMount3Lock",
+          "DriverPortSupportMount3Nut",
+          "DriverPortSupportMount4Bolt",
+          "DriverPortSupportMount4Lock",
+          "DriverPortSupportMount4Nut",
+          "DriverStarboardSupportPlate",
+          "DriverStarboardSupportMount1Bolt",
+          "DriverStarboardSupportMount1Lock",
+          "DriverStarboardSupportMount1Nut",
+          "DriverStarboardSupportMount2Bolt",
+          "DriverStarboardSupportMount2Lock",
+          "DriverStarboardSupportMount2Nut",
+          "DriverStarboardSupportMount3Bolt",
+          "DriverStarboardSupportMount3Lock",
+          "DriverStarboardSupportMount3Nut",
+          "DriverStarboardSupportMount4Bolt",
+          "DriverStarboardSupportMount4Lock",
+          "DriverStarboardSupportMount4Nut",
+          "hull_floor_1",
+          "hull_floor_2"
+        ],
+        "retained_internal_driver_occurrences": 72,
+        "changed_rod_and_joint_occurrences": 45
+      },
+      "occurrences": 117,
+      "pairs": 73,
+      "findings": [
+        {
+          "first": "PortDriverHighShortForwardJointFork",
+          "second": "hull_floor_1",
+          "volume_mm3": 2948.6119312491405,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighShortForwardJointPin",
+          "second": "hull_floor_1",
+          "volume_mm3": 61.7696988679847,
+          "passed": false
+        },
+        {
+          "first": "PortDriverHighSelector",
+          "second": "hull_floor_1",
+          "volume_mm3": 2041.716044754051,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighShortForwardJointFork",
+          "second": "hull_floor_1",
+          "volume_mm3": 2948.6119312491414,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighShortForwardJointPin",
+          "second": "hull_floor_1",
+          "volume_mm3": 61.769698867984886,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverHighSelector",
+          "second": "hull_floor_1",
+          "volume_mm3": 2041.716044754051,
+          "passed": false
+        }
+      ],
+      "tested_shell_clear": false,
+      "handles": {
+        "Port": {
+          "bow_distance_mm": 21.01508211100379,
+          "floor_distance_mm": 40.29615996434925
+        },
+        "Starboard": {
+          "bow_distance_mm": 21.01508211100365,
+          "floor_distance_mm": 40.29615996434925
+        }
+      }
+    },
+    {
+      "main_z_mm": 975.0,
+      "layout": {
+        "main_world_mm": [
+          7627.311900469729,
+          0.0,
+          975.0
+        ],
+        "swing_world_mm": [
+          7220.781516342379,
+          0.0,
+          995.0
+        ],
+        "driver_translation_mm": [
+          47.41849219756568,
+          0.0,
+          -325.0
+        ],
+        "rod_records": {
+          "PortDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.2999999999997,
+            "pin_span_mm": 1308.0999999999997,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7240.781516342379,
+              180.0,
+              700.0
+            ],
+            "axis_world": [
+              0.9998193651876026,
+              0.0,
+              0.019006235709876154
+            ]
+          },
+          "PortDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.2928190274217,
+            "pin_span_mm": 1349.0928190274217,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7281.781516342379,
+              125.0,
+              700.0
+            ],
+            "axis_world": [
+              0.9998301766770323,
+              0.0,
+              0.01842872230986476
+            ]
+          },
+          "StarboardDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.2999999999997,
+            "pin_span_mm": 1308.0999999999997,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7240.781516342379,
+              -180.0,
+              700.0
+            ],
+            "axis_world": [
+              0.9998193651876026,
+              0.0,
+              0.019006235709876154
+            ]
+          },
+          "StarboardDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.2928190274217,
+            "pin_span_mm": 1349.0928190274217,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7281.781516342379,
+              -125.0,
+              700.0
+            ],
+            "axis_world": [
+              0.9998301766770323,
+              0.0,
+              0.01842872230986476
+            ]
+          },
+          "DriverClutchFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.2928190274217,
+            "pin_span_mm": 1349.0928190274217,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              235.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7281.781516342379,
+              235.0,
+              700.0
+            ],
+            "axis_world": [
+              0.9998301766770323,
+              0.0,
+              0.01842872230986476
+            ]
+          }
+        },
+        "M576_common_stock_mm": 1298.2928190274217,
+        "omitted_support_and_floor_occurrences": [
+          "DriverPortSupportPlate",
+          "DriverPortSupportMount1Bolt",
+          "DriverPortSupportMount1Lock",
+          "DriverPortSupportMount1Nut",
+          "DriverPortSupportMount2Bolt",
+          "DriverPortSupportMount2Lock",
+          "DriverPortSupportMount2Nut",
+          "DriverPortSupportMount3Bolt",
+          "DriverPortSupportMount3Lock",
+          "DriverPortSupportMount3Nut",
+          "DriverPortSupportMount4Bolt",
+          "DriverPortSupportMount4Lock",
+          "DriverPortSupportMount4Nut",
+          "DriverStarboardSupportPlate",
+          "DriverStarboardSupportMount1Bolt",
+          "DriverStarboardSupportMount1Lock",
+          "DriverStarboardSupportMount1Nut",
+          "DriverStarboardSupportMount2Bolt",
+          "DriverStarboardSupportMount2Lock",
+          "DriverStarboardSupportMount2Nut",
+          "DriverStarboardSupportMount3Bolt",
+          "DriverStarboardSupportMount3Lock",
+          "DriverStarboardSupportMount3Nut",
+          "DriverStarboardSupportMount4Bolt",
+          "DriverStarboardSupportMount4Lock",
+          "DriverStarboardSupportMount4Nut",
+          "hull_floor_1",
+          "hull_floor_2"
+        ],
+        "retained_internal_driver_occurrences": 72,
+        "changed_rod_and_joint_occurrences": 45
+      },
+      "occurrences": 117,
+      "pairs": 73,
+      "findings": [],
+      "tested_shell_clear": true,
+      "handles": {
+        "Port": {
+          "bow_distance_mm": 8.898181009857487,
+          "floor_distance_mm": 63.44134885909706
+        },
+        "Starboard": {
+          "bow_distance_mm": 8.89818100985697,
+          "floor_distance_mm": 63.44134885909706
+        }
+      }
+    },
+    {
+      "main_z_mm": 1000.0,
+      "layout": {
+        "main_world_mm": [
+          7626.5975243603325,
+          0.0,
+          1000.0
+        ],
+        "swing_world_mm": [
+          7220.067140232983,
+          0.0,
+          1020.0
+        ],
+        "driver_translation_mm": [
+          46.70411608816903,
+          0.0,
+          -300.0
+        ],
+        "rod_records": {
+          "PortDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.2999999999995,
+            "pin_span_mm": 1308.0999999999995,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7240.067140232983,
+              180.0,
+              725.0
+            ],
+            "axis_world": [
+              0.9992732478346507,
+              0.0,
+              0.038117924418690476
+            ]
+          },
+          "PortDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.2711083965828,
+            "pin_span_mm": 1349.0711083965828,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7281.067140232983,
+              125.0,
+              725.0
+            ],
+            "axis_world": [
+              0.9993167351236419,
+              0.0,
+              0.0369602881729131
+            ]
+          },
+          "StarboardDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.2999999999995,
+            "pin_span_mm": 1308.0999999999995,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7240.067140232983,
+              -180.0,
+              725.0
+            ],
+            "axis_world": [
+              0.9992732478346507,
+              0.0,
+              0.038117924418690476
+            ]
+          },
+          "StarboardDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.2711083965828,
+            "pin_span_mm": 1349.0711083965828,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7281.067140232983,
+              -125.0,
+              725.0
+            ],
+            "axis_world": [
+              0.9993167351236419,
+              0.0,
+              0.0369602881729131
+            ]
+          },
+          "DriverClutchFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.2711083965828,
+            "pin_span_mm": 1349.0711083965828,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              235.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7281.067140232983,
+              235.0,
+              725.0
+            ],
+            "axis_world": [
+              0.9993167351236419,
+              0.0,
+              0.0369602881729131
+            ]
+          }
+        },
+        "M576_common_stock_mm": 1298.2711083965828,
+        "omitted_support_and_floor_occurrences": [
+          "DriverPortSupportPlate",
+          "DriverPortSupportMount1Bolt",
+          "DriverPortSupportMount1Lock",
+          "DriverPortSupportMount1Nut",
+          "DriverPortSupportMount2Bolt",
+          "DriverPortSupportMount2Lock",
+          "DriverPortSupportMount2Nut",
+          "DriverPortSupportMount3Bolt",
+          "DriverPortSupportMount3Lock",
+          "DriverPortSupportMount3Nut",
+          "DriverPortSupportMount4Bolt",
+          "DriverPortSupportMount4Lock",
+          "DriverPortSupportMount4Nut",
+          "DriverStarboardSupportPlate",
+          "DriverStarboardSupportMount1Bolt",
+          "DriverStarboardSupportMount1Lock",
+          "DriverStarboardSupportMount1Nut",
+          "DriverStarboardSupportMount2Bolt",
+          "DriverStarboardSupportMount2Lock",
+          "DriverStarboardSupportMount2Nut",
+          "DriverStarboardSupportMount3Bolt",
+          "DriverStarboardSupportMount3Lock",
+          "DriverStarboardSupportMount3Nut",
+          "DriverStarboardSupportMount4Bolt",
+          "DriverStarboardSupportMount4Lock",
+          "DriverStarboardSupportMount4Nut",
+          "hull_floor_1",
+          "hull_floor_2"
+        ],
+        "retained_internal_driver_occurrences": 72,
+        "changed_rod_and_joint_occurrences": 45
+      },
+      "occurrences": 117,
+      "pairs": 73,
+      "findings": [
+        {
+          "first": "PortDriverOperatingHandle",
+          "second": "hull_front_slope",
+          "volume_mm3": 236.06606156275097,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverOperatingHandle",
+          "second": "hull_front_slope",
+          "volume_mm3": 236.0660616923717,
+          "passed": false
+        }
+      ],
+      "tested_shell_clear": false,
+      "handles": {
+        "Port": {
+          "bow_distance_mm": 9.094947017729282e-13,
+          "floor_distance_mm": 86.77147867123827
+        },
+        "Starboard": {
+          "bow_distance_mm": 2.2737367544323206e-13,
+          "floor_distance_mm": 86.77147867123827
+        }
+      }
+    },
+    {
+      "main_z_mm": 1025.0,
+      "layout": {
+        "main_world_mm": [
+          7625.404268692832,
+          0.0,
+          1025.0
+        ],
+        "swing_world_mm": [
+          7218.8738845654825,
+          0.0,
+          1045.0
+        ],
+        "driver_translation_mm": [
+          45.510860420668905,
+          0.0,
+          -275.0
+        ],
+        "rod_records": {
+          "PortDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.3000000000002,
+            "pin_span_mm": 1308.1000000000001,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7238.8738845654825,
+              180.0,
+              750.0
+            ],
+            "axis_world": [
+              0.9983610425999585,
+              0.0,
+              0.05722961312750476
+            ]
+          },
+          "PortDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.234843340101,
+            "pin_span_mm": 1349.034843340101,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7279.8738845654825,
+              125.0,
+              750.0
+            ],
+            "axis_world": [
+              0.99845907351811,
+              0.0,
+              0.05549304919859342
+            ]
+          },
+          "StarboardDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.3000000000002,
+            "pin_span_mm": 1308.1000000000001,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7238.8738845654825,
+              -180.0,
+              750.0
+            ],
+            "axis_world": [
+              0.9983610425999585,
+              0.0,
+              0.05722961312750476
+            ]
+          },
+          "StarboardDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.234843340101,
+            "pin_span_mm": 1349.034843340101,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7279.8738845654825,
+              -125.0,
+              750.0
+            ],
+            "axis_world": [
+              0.99845907351811,
+              0.0,
+              0.05549304919859342
+            ]
+          },
+          "DriverClutchFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.234843340101,
+            "pin_span_mm": 1349.034843340101,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              235.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7279.8738845654825,
+              235.0,
+              750.0
+            ],
+            "axis_world": [
+              0.99845907351811,
+              0.0,
+              0.05549304919859342
+            ]
+          }
+        },
+        "M576_common_stock_mm": 1298.234843340101,
+        "omitted_support_and_floor_occurrences": [
+          "DriverPortSupportPlate",
+          "DriverPortSupportMount1Bolt",
+          "DriverPortSupportMount1Lock",
+          "DriverPortSupportMount1Nut",
+          "DriverPortSupportMount2Bolt",
+          "DriverPortSupportMount2Lock",
+          "DriverPortSupportMount2Nut",
+          "DriverPortSupportMount3Bolt",
+          "DriverPortSupportMount3Lock",
+          "DriverPortSupportMount3Nut",
+          "DriverPortSupportMount4Bolt",
+          "DriverPortSupportMount4Lock",
+          "DriverPortSupportMount4Nut",
+          "DriverStarboardSupportPlate",
+          "DriverStarboardSupportMount1Bolt",
+          "DriverStarboardSupportMount1Lock",
+          "DriverStarboardSupportMount1Nut",
+          "DriverStarboardSupportMount2Bolt",
+          "DriverStarboardSupportMount2Lock",
+          "DriverStarboardSupportMount2Nut",
+          "DriverStarboardSupportMount3Bolt",
+          "DriverStarboardSupportMount3Lock",
+          "DriverStarboardSupportMount3Nut",
+          "DriverStarboardSupportMount4Bolt",
+          "DriverStarboardSupportMount4Lock",
+          "DriverStarboardSupportMount4Nut",
+          "hull_floor_1",
+          "hull_floor_2"
+        ],
+        "retained_internal_driver_occurrences": 72,
+        "changed_rod_and_joint_occurrences": 45
+      },
+      "occurrences": 117,
+      "pairs": 73,
+      "findings": [
+        {
+          "first": "PortDriverOperatingHandle",
+          "second": "hull_front_slope",
+          "volume_mm3": 3618.6136603010873,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverOperatingHandle",
+          "second": "hull_front_slope",
+          "volume_mm3": 3618.613662926404,
+          "passed": false
+        }
+      ],
+      "tested_shell_clear": false,
+      "handles": {
+        "Port": {
+          "bow_distance_mm": 0.0,
+          "floor_distance_mm": 109.87892732158573
+        },
+        "Starboard": {
+          "bow_distance_mm": 0.0,
+          "floor_distance_mm": 109.87892732158573
+        }
+      }
+    },
+    {
+      "main_z_mm": 1050.0,
+      "layout": {
+        "main_world_mm": [
+          7623.730819122976,
+          0.0,
+          1050.0
+        ],
+        "swing_world_mm": [
+          7217.200434995626,
+          0.0,
+          1070.0
+        ],
+        "driver_translation_mm": [
+          43.837410850812375,
+          0.0,
+          -250.0
+        ],
+        "rod_records": {
+          "PortDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.2999999999995,
+            "pin_span_mm": 1308.0999999999995,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7237.200434995626,
+              180.0,
+              775.0
+            ],
+            "axis_world": [
+              0.9970817447099991,
+              0.0,
+              0.07634130183631911
+            ]
+          },
+          "PortDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.1839827369786,
+            "pin_span_mm": 1348.9839827369785,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7278.200434995626,
+              125.0,
+              775.0
+            ],
+            "axis_world": [
+              0.9972561924165182,
+              0.0,
+              0.07402760759951872
+            ]
+          },
+          "StarboardDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.2999999999995,
+            "pin_span_mm": 1308.0999999999995,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7237.200434995626,
+              -180.0,
+              775.0
+            ],
+            "axis_world": [
+              0.9970817447099991,
+              0.0,
+              0.07634130183631911
+            ]
+          },
+          "StarboardDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.1839827369786,
+            "pin_span_mm": 1348.9839827369785,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7278.200434995626,
+              -125.0,
+              775.0
+            ],
+            "axis_world": [
+              0.9972561924165182,
+              0.0,
+              0.07402760759951872
+            ]
+          },
+          "DriverClutchFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.1839827369786,
+            "pin_span_mm": 1348.9839827369785,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              235.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7278.200434995626,
+              235.0,
+              775.0
+            ],
+            "axis_world": [
+              0.9972561924165182,
+              0.0,
+              0.07402760759951872
+            ]
+          }
+        },
+        "M576_common_stock_mm": 1298.1839827369786,
+        "omitted_support_and_floor_occurrences": [
+          "DriverPortSupportPlate",
+          "DriverPortSupportMount1Bolt",
+          "DriverPortSupportMount1Lock",
+          "DriverPortSupportMount1Nut",
+          "DriverPortSupportMount2Bolt",
+          "DriverPortSupportMount2Lock",
+          "DriverPortSupportMount2Nut",
+          "DriverPortSupportMount3Bolt",
+          "DriverPortSupportMount3Lock",
+          "DriverPortSupportMount3Nut",
+          "DriverPortSupportMount4Bolt",
+          "DriverPortSupportMount4Lock",
+          "DriverPortSupportMount4Nut",
+          "DriverStarboardSupportPlate",
+          "DriverStarboardSupportMount1Bolt",
+          "DriverStarboardSupportMount1Lock",
+          "DriverStarboardSupportMount1Nut",
+          "DriverStarboardSupportMount2Bolt",
+          "DriverStarboardSupportMount2Lock",
+          "DriverStarboardSupportMount2Nut",
+          "DriverStarboardSupportMount3Bolt",
+          "DriverStarboardSupportMount3Lock",
+          "DriverStarboardSupportMount3Nut",
+          "DriverStarboardSupportMount4Bolt",
+          "DriverStarboardSupportMount4Lock",
+          "DriverStarboardSupportMount4Nut",
+          "hull_floor_1",
+          "hull_floor_2"
+        ],
+        "retained_internal_driver_occurrences": 72,
+        "changed_rod_and_joint_occurrences": 45
+      },
+      "occurrences": 117,
+      "pairs": 69,
+      "findings": [
+        {
+          "first": "PortDriverOperatingHandle",
+          "second": "hull_front_slope",
+          "volume_mm3": 4443.243719924213,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverOperatingHandle",
+          "second": "hull_front_slope",
+          "volume_mm3": 4443.243721725869,
+          "passed": false
+        }
+      ],
+      "tested_shell_clear": false,
+      "handles": {
+        "Port": {
+          "bow_distance_mm": 0.0,
+          "floor_distance_mm": 132.86904355623753
+        },
+        "Starboard": {
+          "bow_distance_mm": 0.0,
+          "floor_distance_mm": 132.86904355623753
+        }
+      }
+    },
+    {
+      "main_z_mm": 1100.0,
+      "layout": {
+        "main_world_mm": [
+          7618.935385377313,
+          0.0,
+          1100.0
+        ],
+        "swing_world_mm": [
+          7212.405001249963,
+          0.0,
+          1120.0
+        ],
+        "driver_translation_mm": [
+          39.04197710514927,
+          0.0,
+          -200.0
+        ],
+        "rod_records": {
+          "PortDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.3000000000004,
+            "pin_span_mm": 1308.1000000000004,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7232.405001249963,
+              180.0,
+              825.0
+            ],
+            "axis_world": [
+              0.9934157912311642,
+              0.0,
+              0.11456467925394767
+            ]
+          },
+          "PortDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.0382260722665,
+            "pin_span_mm": 1348.8382260722665,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7273.405001249963,
+              125.0,
+              825.0
+            ],
+            "axis_world": [
+              0.993808724129136,
+              0.0,
+              0.11110454466320845
+            ]
+          },
+          "StarboardDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.3000000000004,
+            "pin_span_mm": 1308.1000000000004,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7232.405001249963,
+              -180.0,
+              825.0
+            ],
+            "axis_world": [
+              0.9934157912311642,
+              0.0,
+              0.11456467925394767
+            ]
+          },
+          "StarboardDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.0382260722665,
+            "pin_span_mm": 1348.8382260722665,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7273.405001249963,
+              -125.0,
+              825.0
+            ],
+            "axis_world": [
+              0.993808724129136,
+              0.0,
+              0.11110454466320845
+            ]
+          },
+          "DriverClutchFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1298.0382260722665,
+            "pin_span_mm": 1348.8382260722665,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              235.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7273.405001249963,
+              235.0,
+              825.0
+            ],
+            "axis_world": [
+              0.993808724129136,
+              0.0,
+              0.11110454466320845
+            ]
+          }
+        },
+        "M576_common_stock_mm": 1298.0382260722665,
+        "omitted_support_and_floor_occurrences": [
+          "DriverPortSupportPlate",
+          "DriverPortSupportMount1Bolt",
+          "DriverPortSupportMount1Lock",
+          "DriverPortSupportMount1Nut",
+          "DriverPortSupportMount2Bolt",
+          "DriverPortSupportMount2Lock",
+          "DriverPortSupportMount2Nut",
+          "DriverPortSupportMount3Bolt",
+          "DriverPortSupportMount3Lock",
+          "DriverPortSupportMount3Nut",
+          "DriverPortSupportMount4Bolt",
+          "DriverPortSupportMount4Lock",
+          "DriverPortSupportMount4Nut",
+          "DriverStarboardSupportPlate",
+          "DriverStarboardSupportMount1Bolt",
+          "DriverStarboardSupportMount1Lock",
+          "DriverStarboardSupportMount1Nut",
+          "DriverStarboardSupportMount2Bolt",
+          "DriverStarboardSupportMount2Lock",
+          "DriverStarboardSupportMount2Nut",
+          "DriverStarboardSupportMount3Bolt",
+          "DriverStarboardSupportMount3Lock",
+          "DriverStarboardSupportMount3Nut",
+          "DriverStarboardSupportMount4Bolt",
+          "DriverStarboardSupportMount4Lock",
+          "DriverStarboardSupportMount4Nut",
+          "hull_floor_1",
+          "hull_floor_2"
+        ],
+        "retained_internal_driver_occurrences": 72,
+        "changed_rod_and_joint_occurrences": 45
+      },
+      "occurrences": 117,
+      "pairs": 69,
+      "findings": [
+        {
+          "first": "PortDriverOperatingHandle",
+          "second": "hull_front_slope",
+          "volume_mm3": 4443.54449160679,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverOperatingHandle",
+          "second": "hull_front_slope",
+          "volume_mm3": 4443.5444940814405,
+          "passed": false
+        }
+      ],
+      "tested_shell_clear": false,
+      "handles": {
+        "Port": {
+          "bow_distance_mm": 5.684341886080802e-14,
+          "floor_distance_mm": 179.51272148042722
+        },
+        "Starboard": {
+          "bow_distance_mm": 2.2737367544323206e-13,
+          "floor_distance_mm": 179.51272148042722
+        }
+      }
+    },
+    {
+      "main_z_mm": 1200.0,
+      "layout": {
+        "main_world_mm": [
+          7603.463205332067,
+          0.0,
+          1200.0
+        ],
+        "swing_world_mm": [
+          7196.932821204718,
+          0.0,
+          1220.0
+        ],
+        "driver_translation_mm": [
+          23.569797059903976,
+          0.0,
+          -100.0
+        ],
+        "rod_records": {
+          "PortDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.2999999999997,
+            "pin_span_mm": 1308.0999999999997,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7216.932821204718,
+              180.0,
+              925.0
+            ],
+            "axis_world": [
+              0.9815878116843064,
+              0.0,
+              0.19101143408920498
+            ]
+          },
+          "PortDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1297.5678434871054,
+            "pin_span_mm": 1348.3678434871053,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7257.932821204718,
+              125.0,
+              925.0
+            ],
+            "axis_world": [
+              0.9826806704597241,
+              0.0,
+              0.18530704224294153
+            ]
+          },
+          "StarboardDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.2999999999997,
+            "pin_span_mm": 1308.0999999999997,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7216.932821204718,
+              -180.0,
+              925.0
+            ],
+            "axis_world": [
+              0.9815878116843064,
+              0.0,
+              0.19101143408920498
+            ]
+          },
+          "StarboardDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1297.5678434871054,
+            "pin_span_mm": 1348.3678434871053,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7257.932821204718,
+              -125.0,
+              925.0
+            ],
+            "axis_world": [
+              0.9826806704597241,
+              0.0,
+              0.18530704224294153
+            ]
+          },
+          "DriverClutchFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1297.5678434871054,
+            "pin_span_mm": 1348.3678434871053,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              235.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7257.932821204718,
+              235.0,
+              925.0
+            ],
+            "axis_world": [
+              0.9826806704597241,
+              0.0,
+              0.18530704224294153
+            ]
+          }
+        },
+        "M576_common_stock_mm": 1297.5678434871054,
+        "omitted_support_and_floor_occurrences": [
+          "DriverPortSupportPlate",
+          "DriverPortSupportMount1Bolt",
+          "DriverPortSupportMount1Lock",
+          "DriverPortSupportMount1Nut",
+          "DriverPortSupportMount2Bolt",
+          "DriverPortSupportMount2Lock",
+          "DriverPortSupportMount2Nut",
+          "DriverPortSupportMount3Bolt",
+          "DriverPortSupportMount3Lock",
+          "DriverPortSupportMount3Nut",
+          "DriverPortSupportMount4Bolt",
+          "DriverPortSupportMount4Lock",
+          "DriverPortSupportMount4Nut",
+          "DriverStarboardSupportPlate",
+          "DriverStarboardSupportMount1Bolt",
+          "DriverStarboardSupportMount1Lock",
+          "DriverStarboardSupportMount1Nut",
+          "DriverStarboardSupportMount2Bolt",
+          "DriverStarboardSupportMount2Lock",
+          "DriverStarboardSupportMount2Nut",
+          "DriverStarboardSupportMount3Bolt",
+          "DriverStarboardSupportMount3Lock",
+          "DriverStarboardSupportMount3Nut",
+          "DriverStarboardSupportMount4Bolt",
+          "DriverStarboardSupportMount4Lock",
+          "DriverStarboardSupportMount4Nut",
+          "hull_floor_1",
+          "hull_floor_2"
+        ],
+        "retained_internal_driver_occurrences": 72,
+        "changed_rod_and_joint_occurrences": 45
+      },
+      "occurrences": 117,
+      "pairs": 59,
+      "findings": [
+        {
+          "first": "PortDriverOperatingHandle",
+          "second": "hull_front_slope",
+          "volume_mm3": 4443.544491606748,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverOperatingHandle",
+          "second": "hull_front_slope",
+          "volume_mm3": 4443.544494083359,
+          "passed": false
+        }
+      ],
+      "tested_shell_clear": false,
+      "handles": {
+        "Port": {
+          "bow_distance_mm": 5.684341886080802e-14,
+          "floor_distance_mm": 275.4937858992736
+        },
+        "Starboard": {
+          "bow_distance_mm": 2.2737367544323206e-13,
+          "floor_distance_mm": 275.4937858992736
+        }
+      }
+    },
+    {
+      "main_z_mm": 1300.0,
+      "layout": {
+        "main_world_mm": [
+          7579.8934082721635,
+          0.0,
+          1300.0
+        ],
+        "swing_world_mm": [
+          7173.363024144814,
+          0.0,
+          1320.0
+        ],
+        "driver_translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rod_records": {
+          "PortDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.2999999999997,
+            "pin_span_mm": 1308.0999999999997,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7193.363024144814,
+              180.0,
+              1025.0
+            ],
+            "axis_world": [
+              0.9635694667107539,
+              0.0,
+              0.26745818892446227
+            ]
+          },
+          "PortDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1296.8509629689563,
+            "pin_span_mm": 1347.6509629689563,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7234.363024144814,
+              125.0,
+              1025.0
+            ],
+            "axis_world": [
+              0.965713864469161,
+              0.0,
+              0.2596088056519633
+            ]
+          },
+          "StarboardDriverLowRod": {
+            "mark": "M574",
+            "stock_length_mm": 1257.2999999999997,
+            "pin_span_mm": 1308.0999999999997,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -180.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7193.363024144814,
+              -180.0,
+              1025.0
+            ],
+            "axis_world": [
+              0.9635694667107539,
+              0.0,
+              0.26745818892446227
+            ]
+          },
+          "StarboardDriverHighFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1296.8509629689563,
+            "pin_span_mm": 1347.6509629689563,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              -125.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7234.363024144814,
+              -125.0,
+              1025.0
+            ],
+            "axis_world": [
+              0.965713864469161,
+              0.0,
+              0.2596088056519633
+            ]
+          },
+          "DriverClutchFrontRod": {
+            "mark": "M576",
+            "stock_length_mm": 1296.8509629689563,
+            "pin_span_mm": 1347.6509629689563,
+            "fixed_pin_world_mm": [
+              5932.917804740477,
+              235.0,
+              675.137943067911
+            ],
+            "driver_pin_world_mm": [
+              7234.363024144814,
+              235.0,
+              1025.0
+            ],
+            "axis_world": [
+              0.965713864469161,
+              0.0,
+              0.2596088056519633
+            ]
+          }
+        },
+        "M576_common_stock_mm": 1296.8509629689563,
+        "omitted_support_and_floor_occurrences": [
+          "DriverPortSupportPlate",
+          "DriverPortSupportMount1Bolt",
+          "DriverPortSupportMount1Lock",
+          "DriverPortSupportMount1Nut",
+          "DriverPortSupportMount2Bolt",
+          "DriverPortSupportMount2Lock",
+          "DriverPortSupportMount2Nut",
+          "DriverPortSupportMount3Bolt",
+          "DriverPortSupportMount3Lock",
+          "DriverPortSupportMount3Nut",
+          "DriverPortSupportMount4Bolt",
+          "DriverPortSupportMount4Lock",
+          "DriverPortSupportMount4Nut",
+          "DriverStarboardSupportPlate",
+          "DriverStarboardSupportMount1Bolt",
+          "DriverStarboardSupportMount1Lock",
+          "DriverStarboardSupportMount1Nut",
+          "DriverStarboardSupportMount2Bolt",
+          "DriverStarboardSupportMount2Lock",
+          "DriverStarboardSupportMount2Nut",
+          "DriverStarboardSupportMount3Bolt",
+          "DriverStarboardSupportMount3Lock",
+          "DriverStarboardSupportMount3Nut",
+          "DriverStarboardSupportMount4Bolt",
+          "DriverStarboardSupportMount4Lock",
+          "DriverStarboardSupportMount4Nut",
+          "hull_floor_1",
+          "hull_floor_2"
+        ],
+        "retained_internal_driver_occurrences": 72,
+        "changed_rod_and_joint_occurrences": 45
+      },
+      "occurrences": 117,
+      "pairs": 35,
+      "findings": [
+        {
+          "first": "PortDriverOperatingHandle",
+          "second": "hull_front_slope",
+          "volume_mm3": 4436.153302986051,
+          "passed": false
+        },
+        {
+          "first": "StarboardDriverOperatingHandle",
+          "second": "hull_front_slope",
+          "volume_mm3": 4436.153303333806,
+          "passed": false
+        }
+      ],
+      "tested_shell_clear": false,
+      "handles": {
+        "Port": {
+          "bow_distance_mm": 0.0,
+          "floor_distance_mm": 375.18365173834104
+        },
+        "Starboard": {
+          "bow_distance_mm": 0.0,
+          "floor_distance_mm": 375.18365173834104
+        }
+      }
+    }
+  ],
+  "current_mount_gaps": [
+    {
+      "stem": "DriverPortSupportMount1",
+      "old_contact_world_mm": [
+        7133.363024144814,
+        316.425,
+        848.3198776984534
+      ],
+      "distance_to_new_floor_mm": 214.99261703104852
+    },
+    {
+      "stem": "DriverPortSupportMount2",
+      "old_contact_world_mm": [
+        7163.363024144814,
+        316.425,
+        858.8705096951584
+      ],
+      "distance_to_new_floor_mm": 222.18488055609853
+    },
+    {
+      "stem": "DriverPortSupportMount3",
+      "old_contact_world_mm": [
+        7499.8934082721635,
+        316.425,
+        977.2241176497399
+      ],
+      "distance_to_new_floor_mm": 212.91819829130566
+    },
+    {
+      "stem": "DriverPortSupportMount4",
+      "old_contact_world_mm": [
+        7529.8934082721635,
+        316.425,
+        987.774749646445
+      ],
+      "distance_to_new_floor_mm": 211.04261533818155
+    },
+    {
+      "stem": "DriverStarboardSupportMount1",
+      "old_contact_world_mm": [
+        7133.363024144814,
+        -316.425,
+        848.3198776984534
+      ],
+      "distance_to_new_floor_mm": 214.99261703104852
+    },
+    {
+      "stem": "DriverStarboardSupportMount2",
+      "old_contact_world_mm": [
+        7163.363024144814,
+        -316.425,
+        858.8705096951584
+      ],
+      "distance_to_new_floor_mm": 222.18488055609853
+    },
+    {
+      "stem": "DriverStarboardSupportMount3",
+      "old_contact_world_mm": [
+        7499.8934082721635,
+        -316.425,
+        977.2241176497399
+      ],
+      "distance_to_new_floor_mm": 212.91819829130566
+    },
+    {
+      "stem": "DriverStarboardSupportMount4",
+      "old_contact_world_mm": [
+        7529.8934082721635,
+        -316.425,
+        987.774749646445
+      ],
+      "distance_to_new_floor_mm": 211.04261533818155
+    }
+  ],
+  "source_camera_refitted": false,
+  "geometry_integrated": false,
+  "scope": "117 complete saved driver/rod/joint solids per height, with exact M574/short stock and one shared unprinted M576 length. No support/floor reconstruction or full internal/retained-context qualification. Height is a hypothesis, not a historical dimension.",
+  "source_inventory_correction": "M575/M578/M573 rear rods are already present in the accepted native. The preceding next-action wording that called them missing is superseded; these saved rear constraints are retained."
+}
