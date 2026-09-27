@@ -11,6 +11,25 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 26 September 2026 — intermediate shaft and eight receivers rebuilt
+
+The [new checkpoint](experiments/drive_chains/transmission_controls_study/redo01/intermediate_integrated01/README.md)
+contains **3,347 occurrences / 586 definitions / 385 groups**. M638 has three
+M639 bearings, two keepers and eight distinct M640 receivers. Complete mounting
+screws pass through actual floor/strip bores and engage bracket bosses. The
+floor/M3019 arrangement remains an explicit reconstruction hypothesis.
+
+The shaft station follows the printed M574 length and provisional driver datums;
+Gemini's X3700 is superseded by X5944.495797 mm. Nominal/variation checks pass,
+including101 local,53 context and29 STEP comparisons each. All inherited parts
+and frames survive; fresh reproduction matches all geometry and properties.
+Four views bring accepted progression to **266**. Standard tank011 stays unchanged.
+
+Next are full M575/M563 routes and physical spring seats, then M573/M579 and
+clutch routes, followed by the preserved driver-controls continuation. Complete
+withheld-commit redo remains active; current driver coordinates and mounting
+interpretations are approximate.
+
 ## 26 September 2026 — center foot controls and complete rear rods rebuilt
 
 The [new checkpoint](experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02/README.md)

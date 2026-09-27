@@ -1331,3 +1331,14 @@ These are inspected views of the qualified `center_foot_integrated02` developmen
 checkpoint, transferred through strict native shape/frame checks. Floor clipping
 is for display only. Vertical M641 journals and single-ended M640 arms supersede
 the rejected earlier foot-control geometry; exact dimensions remain approximate.
+
+## 26 September 2026 — intermediate receiver shaft (accepted total266)
+
+- [Isometric](intermediate_snapshot_iso_control_rebuild_intermediate_001.png)
+- [Front](intermediate_snapshot_front_control_rebuild_intermediate_001.png)
+- [Plan](intermediate_snapshot_plan_control_rebuild_intermediate_001.png)
+- [Mount section](intermediate_snapshot_section_control_rebuild_intermediate_001.png)
+
+Inspected views of `intermediate_integrated01`, transferred through strict native
+shape/frame checks. Floor patch/section are display cuts only. M3019 floor
+mounting, dimensions and driver-derived shaft station remain approximate.

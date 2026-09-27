@@ -90,3 +90,27 @@ Next: M638/M639 supports and eight single-ended M640 receivers, constrained by
 M574 front rod length and real support material; then complete rear routes and
 clutch, followed by the preserved driver-controls continuation. Do not stop after
 these two accepted increments: the user's complete withheld-commit redo remains active.
+
+Third accepted increment: `intermediate_integrated01` (3,347 / 586 / 385), native
+`6ea0cdc50a55cd8e86b8ab6bd49a54094b103d5bf17c7c7156f8125f8601d821`.
+Nominal `intermediate02`, variation `intermediate_variation02`, builder v2,
+source_review01. Each has 101 local checks, 53 context pairs and 29 STEP comparisons.
+All 580 inherited definitions preserved; 43 full transfer checks; fresh build
+reproduces 1,790 archive BReps and all 161,989 persistent properties. Four views
+bring progression to266. Standard remains unchanged; floor3 added as revised
+local development context with six holes, not duplicated vehicle material.
+
+X5944.495797 follows printed M5741257.3 mm core plus two25.4 mm pin/socket offsets
+against provisional driver [7220,+/-180,890]. M639 pedestals on two floor-supported
+M3019 strips, with2-inch cap screws entering from below, are explicit estimates;
+the real strip/casting/floor bearing and screw engagement now close mechanically.
+Eight source applications have separate physical M640 receivers: reverse1,
+clutch1, high2, low2, foot2. Axial rocker lanes await constraint by complete rods.
+
+Next high-route study: `high_alignment01` tests horizontal rear forks and a port
+guide shifted back into the rear-eye lane. Source SNL6/HB92 shows M563 seating
+between the rear fork nut and fixed guide; the old spring ended on a bare rod bend.
+This study uses explicitly nonphysical rod/spring envelopes, not accepted parts.
+Port guide movement also restores its old channel holes and cuts real new holes.
+Assess actual context before committing to complete rods/springs. Finish remaining
+withheld redo and driver-controls continuation; do not stop at this checkpoint.

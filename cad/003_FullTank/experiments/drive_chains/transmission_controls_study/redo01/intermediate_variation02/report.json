@@ -1,0 +1,1238 @@
+{
+  "native_file": "ControlRebuildTrial.FCStd",
+  "native_sha256": "01446c9e7ac2b85112183c1c8db5808ff9b291dce18109c3703c4cd8cc92f4d9",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02/PowertrainControlRebuild.FCStd",
+  "parent_native_sha256": "1ea80885fc1ded9484fcc267d43c41476264e2e3be5fd92a3198cc616a323668",
+  "parent_manifest_sha256": "be8a385f46491dc962ce81373594f567d1a7a7b634803cde56114d8c2319b251",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/trial_control_rebuild_intermediate_v2.py": "5da064f7d89c472ebb4c50e5e4c0bef6a31f5f1e047957018e52d8b8b26f35c0",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_intermediate_parts.py": "897a7cda1bd3390a103d202213323ac93754a4bdf03f40f1303177b5f47eb989",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io_v2.py": "84ab9a61290fbdbf32da469c0acab4582a6e6e7a0761583b6425263bc96f6465",
+    "cad/003_FullTank/experiments/drive_chains/rear_control_channel_mount_parts.py": "4d8eec7292a635e762f19c3c9c8224b875ac3397f5c26de1f1d63740749d4aae",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py": "97cb213e7707b3cce73b0bca7e5fa8b76345ff841e8fab767c3d16cf350a803e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_installation_parts.py": "3aa0f82af289688b8453ac25dbe1c53bf84924880a0e03adb51328431a3eef7f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/intermediate_variation01.json": "41f65384a6cb5050ece251ee43d804c34c3d04880b02e4dae60bac0917d1261f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/intermediate_source_review01.json": "ce055ebe96b46a5e21de5af2b74686facb246c303e9e02c62426a67f4ba3d0f7",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/intermediate_sources/floor3_original.brep": "8872a43837c96b4cf1d27941807b3960293f0ade43c364511d7102c85a08eb9f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02/qualification.json": "29e763130452668f90eda0b2039bba8526677eda0fc2f678adc0d707e565cf65",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02/isolated/manifest.json": "be8a385f46491dc962ce81373594f567d1a7a7b634803cde56114d8c2319b251"
+  },
+  "specs": {
+    "IntermediateControlShaft": {
+      "definition": "Def_ControlIntermediateShaft_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateControls",
+      "role": "shaft"
+    },
+    "StarboardReverseIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -235.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardReverseIntermediateControl",
+      "role": "rocker"
+    },
+    "StarboardLowIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowIntermediateControl",
+      "role": "rocker"
+    },
+    "StarboardHighIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardHighIntermediateControl",
+      "role": "rocker"
+    },
+    "StarboardFootIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -70.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardFootIntermediateControl",
+      "role": "rocker"
+    },
+    "PortFootIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        70.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortFootIntermediateControl",
+      "role": "rocker"
+    },
+    "PortHighIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortHighIntermediateControl",
+      "role": "rocker"
+    },
+    "PortLowIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowIntermediateControl",
+      "role": "rocker"
+    },
+    "PortClutchIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortClutchIntermediateControl",
+      "role": "rocker"
+    },
+    "RearIntermediateSupportStrip": {
+      "definition": "Def_M3019SupportStrip_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5904.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateControls",
+      "role": "strip"
+    },
+    "FrontIntermediateSupportStrip": {
+      "definition": "Def_M3019SupportStrip_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5984.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateControls",
+      "role": "strip"
+    },
+    "StarboardIntermediateShaftKeeper": {
+      "definition": "Def_IntermediateShaftKeeper_Redo",
+      "frame": [
+        0.0,
+        -1.1102230246251565e-16,
+        1.0,
+        5944.495796986419,
+        1.0,
+        0.0,
+        -1.1102230246251565e-16,
+        -301.25,
+        -1.1102230246251565e-16,
+        1.0,
+        0.0,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateControls",
+      "role": "keeper"
+    },
+    "PortIntermediateShaftKeeper": {
+      "definition": "Def_IntermediateShaftKeeper_Redo",
+      "frame": [
+        0.0,
+        -1.1102230246251565e-16,
+        1.0,
+        5944.495796986419,
+        1.0,
+        0.0,
+        -1.1102230246251565e-16,
+        301.25,
+        -1.1102230246251565e-16,
+        1.0,
+        0.0,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateControls",
+      "role": "keeper"
+    },
+    "IntermediateShaftMount1Bracket": {
+      "definition": "Def_IntermediateMountBracket_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -285.75,
+        0.0,
+        0.0,
+        1.0,
+        545.75,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateShaftMount1",
+      "role": "bracket"
+    },
+    "IntermediateShaftMount1RearCapScrew": {
+      "definition": "Def_IntermediateMountCapScrew_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5904.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -285.75,
+        0.0,
+        0.0,
+        1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateShaftMount1",
+      "role": "screw"
+    },
+    "IntermediateShaftMount1FrontCapScrew": {
+      "definition": "Def_IntermediateMountCapScrew_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5984.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -285.75,
+        0.0,
+        0.0,
+        1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateShaftMount1",
+      "role": "screw"
+    },
+    "IntermediateShaftMount2Bracket": {
+      "definition": "Def_IntermediateMountBracket_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        545.75,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateShaftMount2",
+      "role": "bracket"
+    },
+    "IntermediateShaftMount2RearCapScrew": {
+      "definition": "Def_IntermediateMountCapScrew_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5904.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateShaftMount2",
+      "role": "screw"
+    },
+    "IntermediateShaftMount2FrontCapScrew": {
+      "definition": "Def_IntermediateMountCapScrew_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5984.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateShaftMount2",
+      "role": "screw"
+    },
+    "IntermediateShaftMount3Bracket": {
+      "definition": "Def_IntermediateMountBracket_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        285.75,
+        0.0,
+        0.0,
+        1.0,
+        545.75,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateShaftMount3",
+      "role": "bracket"
+    },
+    "IntermediateShaftMount3RearCapScrew": {
+      "definition": "Def_IntermediateMountCapScrew_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5904.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        285.75,
+        0.0,
+        0.0,
+        1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateShaftMount3",
+      "role": "screw"
+    },
+    "IntermediateShaftMount3FrontCapScrew": {
+      "definition": "Def_IntermediateMountCapScrew_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5984.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        285.75,
+        0.0,
+        0.0,
+        1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateShaftMount3",
+      "role": "screw"
+    },
+    "hull_floor_3": {
+      "definition": "Def_IntermediateContext_hull_floor_3",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "IntermediateFloorContext",
+      "role": "floor"
+    }
+  },
+  "details": {
+    "bracket_height_mm": 195.05,
+    "cap_screw_engagement_mm": 32.099999999999994,
+    "keeper": {
+      "straight_length_mm": 27.0,
+      "bend_arc_length_mm": 2.443460952792061,
+      "tail_length_mm": 21.356539047207935,
+      "total_leg_centerline_mm": 50.8,
+      "tail_endpoints": [
+        [
+          0.0,
+          33.28855836486224,
+          -14.212999382333525
+        ],
+        [
+          0.0,
+          33.28855836486224,
+          14.212999382333525
+        ]
+      ],
+      "wire_radius_mm": 1.14125,
+      "under_eye_y_mm": -13.5,
+      "bend_start_y_mm": 13.5,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_integrated02",
+      "parent_native_sha256": "1ea80885fc1ded9484fcc267d43c41476264e2e3be5fd92a3198cc616a323668",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/intermediate_source_review01.json",
+      "source_review_sha256": "ce055ebe96b46a5e21de5af2b74686facb246c303e9e02c62426a67f4ba3d0f7",
+      "floor_source": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/intermediate_sources/floor3_original.brep",
+      "floor_source_sha256": "8872a43837c96b4cf1d27941807b3960293f0ade43c364511d7102c85a08eb9f",
+      "floor_top": 533.05,
+      "floor_stock": 6.0,
+      "shaft_diameter": 25.4,
+      "shaft_length": 635.0,
+      "shaft_height": 740.8,
+      "journal_bore": 25.8,
+      "bracket_width": 24.0,
+      "bracket_stations_y": [
+        -285.75,
+        0,
+        285.75
+      ],
+      "strip_thickness": 12.7,
+      "strip_width": 35.0,
+      "strip_length": 635.0,
+      "mount_pitch_x": 80.0,
+      "foot_length": 120.0,
+      "foot_width": 38.1,
+      "foot_stock": 12.7,
+      "mount_boss_diameter": 25.4,
+      "mount_boss_height": 38.1,
+      "mount_blind_depth": 32.8,
+      "mount_thread_envelope": 13.0,
+      "mount_clearance": 13.25,
+      "bolt_diameter": 12.7,
+      "bolt_length": 50.8,
+      "bolt_head_af": 22.225,
+      "bolt_head_height": 8.0,
+      "keeper_station_y": 301.25,
+      "keeper_bore": 5.2,
+      "keeper": {
+        "cotter_center_spacing": 2.48,
+        "cotter_diameter": 4.7625,
+        "crown_radius": 12.7,
+        "cotter_head_gap": 0.8,
+        "cotter_exit_gap": 0.8,
+        "cotter_bend_radius": 4.0,
+        "cotter_bend_angle": 35.0,
+        "cotter_length": 50.8,
+        "cotter_eye_radius": 4.0,
+        "cotter_eye_rise": 6.0,
+        "cotter_eye_join_overlap": 0.25
+      },
+      "rocker_definition": "Def_ControlRocker_Redo",
+      "rocker_inner_radius": 76.2,
+      "rocker_outer_radius": 101.6,
+      "rocker_clock_deg": 10.0,
+      "front_low_pin": [
+        7220,
+        180,
+        890
+      ],
+      "front_low_rod_length": 1257.3,
+      "fork_face_distance": 44.45,
+      "rod_insertion": 19.05,
+      "rocker_lanes": [
+        [
+          "StarboardReverse",
+          -235
+        ],
+        [
+          "StarboardLow",
+          -180
+        ],
+        [
+          "StarboardHigh",
+          -125
+        ],
+        [
+          "StarboardFoot",
+          -70
+        ],
+        [
+          "PortFoot",
+          70
+        ],
+        [
+          "PortHigh",
+          125
+        ],
+        [
+          "PortLow",
+          180
+        ],
+        [
+          "PortClutch",
+          235
+        ]
+      ]
+    },
+    "shaft_origin_world_mm": [
+      5944.495796986419,
+      0.0,
+      740.8
+    ],
+    "low_front_pin_distance_mm": 1308.1,
+    "receiving_interfaces": {
+      "StarboardReverse": {
+        "pivot_world_mm": [
+          5944.495796986419,
+          -235.0,
+          740.8
+        ],
+        "pin_axis_world": [
+          0,
+          1,
+          0
+        ],
+        "front_pin_world_mm": [
+          5931.263805848199,
+          -235.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          -235.0,
+          640.7435322939596
+        ]
+      },
+      "StarboardLow": {
+        "pivot_world_mm": [
+          5944.495796986419,
+          -180.0,
+          740.8
+        ],
+        "pin_axis_world": [
+          0,
+          1,
+          0
+        ],
+        "front_pin_world_mm": [
+          5931.263805848199,
+          -180.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          -180.0,
+          640.7435322939596
+        ]
+      },
+      "StarboardHigh": {
+        "pivot_world_mm": [
+          5944.495796986419,
+          -125.0,
+          740.8
+        ],
+        "pin_axis_world": [
+          0,
+          1,
+          0
+        ],
+        "front_pin_world_mm": [
+          5931.263805848199,
+          -125.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          -125.0,
+          640.7435322939596
+        ]
+      },
+      "StarboardFoot": {
+        "pivot_world_mm": [
+          5944.495796986419,
+          -70.0,
+          740.8
+        ],
+        "pin_axis_world": [
+          0,
+          1,
+          0
+        ],
+        "front_pin_world_mm": [
+          5931.263805848199,
+          -70.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          -70.0,
+          640.7435322939596
+        ]
+      },
+      "PortFoot": {
+        "pivot_world_mm": [
+          5944.495796986419,
+          70.0,
+          740.8
+        ],
+        "pin_axis_world": [
+          0,
+          1,
+          0
+        ],
+        "front_pin_world_mm": [
+          5931.263805848199,
+          70.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          70.0,
+          640.7435322939596
+        ]
+      },
+      "PortHigh": {
+        "pivot_world_mm": [
+          5944.495796986419,
+          125.0,
+          740.8
+        ],
+        "pin_axis_world": [
+          0,
+          1,
+          0
+        ],
+        "front_pin_world_mm": [
+          5931.263805848199,
+          125.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          125.0,
+          640.7435322939596
+        ]
+      },
+      "PortLow": {
+        "pivot_world_mm": [
+          5944.495796986419,
+          180.0,
+          740.8
+        ],
+        "pin_axis_world": [
+          0,
+          1,
+          0
+        ],
+        "front_pin_world_mm": [
+          5931.263805848199,
+          180.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          180.0,
+          640.7435322939596
+        ]
+      },
+      "PortClutch": {
+        "pivot_world_mm": [
+          5944.495796986419,
+          235.0,
+          740.8
+        ],
+        "pin_axis_world": [
+          0,
+          1,
+          0
+        ],
+        "front_pin_world_mm": [
+          5931.263805848199,
+          235.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          235.0,
+          640.7435322939596
+        ]
+      }
+    },
+    "mounts": [
+      {
+        "name": "IntermediateShaftMount1RearCapScrew",
+        "bracket": "IntermediateShaftMount1Bracket",
+        "strip": "RearIntermediateSupportStrip",
+        "underhead_world_mm": [
+          5904.495796986419,
+          -285.75,
+          527.05
+        ]
+      },
+      {
+        "name": "IntermediateShaftMount1FrontCapScrew",
+        "bracket": "IntermediateShaftMount1Bracket",
+        "strip": "FrontIntermediateSupportStrip",
+        "underhead_world_mm": [
+          5984.495796986419,
+          -285.75,
+          527.05
+        ]
+      },
+      {
+        "name": "IntermediateShaftMount2RearCapScrew",
+        "bracket": "IntermediateShaftMount2Bracket",
+        "strip": "RearIntermediateSupportStrip",
+        "underhead_world_mm": [
+          5904.495796986419,
+          0.0,
+          527.05
+        ]
+      },
+      {
+        "name": "IntermediateShaftMount2FrontCapScrew",
+        "bracket": "IntermediateShaftMount2Bracket",
+        "strip": "FrontIntermediateSupportStrip",
+        "underhead_world_mm": [
+          5984.495796986419,
+          0.0,
+          527.05
+        ]
+      },
+      {
+        "name": "IntermediateShaftMount3RearCapScrew",
+        "bracket": "IntermediateShaftMount3Bracket",
+        "strip": "RearIntermediateSupportStrip",
+        "underhead_world_mm": [
+          5904.495796986419,
+          285.75,
+          527.05
+        ]
+      },
+      {
+        "name": "IntermediateShaftMount3FrontCapScrew",
+        "bracket": "IntermediateShaftMount3Bracket",
+        "strip": "FrontIntermediateSupportStrip",
+        "underhead_world_mm": [
+          5984.495796986419,
+          285.75,
+          527.05
+        ]
+      }
+    ],
+    "external_context_replacements": [
+      "hull_floor_3"
+    ]
+  },
+  "new_occurrences": [
+    "IntermediateControlShaft",
+    "StarboardReverseIntermediateRocker",
+    "StarboardLowIntermediateRocker",
+    "StarboardHighIntermediateRocker",
+    "StarboardFootIntermediateRocker",
+    "PortFootIntermediateRocker",
+    "PortHighIntermediateRocker",
+    "PortLowIntermediateRocker",
+    "PortClutchIntermediateRocker",
+    "RearIntermediateSupportStrip",
+    "FrontIntermediateSupportStrip",
+    "StarboardIntermediateShaftKeeper",
+    "PortIntermediateShaftKeeper",
+    "IntermediateShaftMount1Bracket",
+    "IntermediateShaftMount1RearCapScrew",
+    "IntermediateShaftMount1FrontCapScrew",
+    "IntermediateShaftMount2Bracket",
+    "IntermediateShaftMount2RearCapScrew",
+    "IntermediateShaftMount2FrontCapScrew",
+    "IntermediateShaftMount3Bracket",
+    "IntermediateShaftMount3RearCapScrew",
+    "IntermediateShaftMount3FrontCapScrew",
+    "hull_floor_3"
+  ],
+  "new_definitions": [
+    "Def_ControlIntermediateShaft_Redo",
+    "Def_IntermediateContext_hull_floor_3",
+    "Def_IntermediateMountBracket_Redo",
+    "Def_IntermediateMountCapScrew_Redo",
+    "Def_IntermediateShaftKeeper_Redo",
+    "Def_M3019SupportStrip_Redo"
+  ],
+  "changed_definitions": [],
+  "new_assembly_specs": {
+    "IntermediateControls": {
+      "owner": "Root",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "IntermediateFloorContext": {
+      "owner": "Root",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardReverseIntermediateControl": {
+      "owner": "IntermediateControls",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -235.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowIntermediateControl": {
+      "owner": "IntermediateControls",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardHighIntermediateControl": {
+      "owner": "IntermediateControls",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardFootIntermediateControl": {
+      "owner": "IntermediateControls",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -70.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortFootIntermediateControl": {
+      "owner": "IntermediateControls",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        70.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortHighIntermediateControl": {
+      "owner": "IntermediateControls",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowIntermediateControl": {
+      "owner": "IntermediateControls",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortClutchIntermediateControl": {
+      "owner": "IntermediateControls",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693036,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        0.17364817766693036,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "IntermediateShaftMount1": {
+      "owner": "IntermediateControls",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -285.75,
+        0.0,
+        0.0,
+        1.0,
+        545.75,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "IntermediateShaftMount2": {
+      "owner": "IntermediateControls",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        545.75,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "IntermediateShaftMount3": {
+      "owner": "IntermediateControls",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        285.75,
+        0.0,
+        0.0,
+        1.0,
+        545.75,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "prototype_physical_occurrences": 23,
+  "prototype_definition_count": 7,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}
