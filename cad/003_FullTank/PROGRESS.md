@@ -11,6 +11,20 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — adjustable-seat source packet started
+
+The [seat packet](experiments/drive_chains/driver_seat_study/README.md) records
+M791, four SH289E bearings, two SH291X clips, upholstery nails and mounting stock.
+Original scans correct the bearing rivets from the transcribed **⅝ inch to ⅜ inch**
+while preserving 1⅛-inch length. The separate one-count SH291C clip has an88.9 mm
+printed length; equivalence with SH291X is not assumed.
+
+An inspected fixed-section overlay places the source pan124.494 mm above the
+old layout-only envelope. Neither that envelope nor the conditional Z975 shaft
+is a proven seat datum. Width, bearing forms and adjustment travel remain open.
+No seat solids are added yet; next build the source-labelled seat/support prototype
+and reconcile it with the complete control mechanism before integration.
+
 ## 27 September 2026 — mechanically feasible coupled driver/bow study
 
 The [coupled layout study](experiments/drive_chains/driver_layout_study/README.md)
