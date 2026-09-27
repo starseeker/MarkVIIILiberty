@@ -1,0 +1,77 @@
+{
+  "date": "2026-09-27",
+  "reviewer": "Codex",
+  "input_hashes": {
+    "cad/001_Survey/inputs/snl_rows.json": "40ea9863be0b56e3a738a2c45405100f697f921759d3f27255e9cd498bb3f13f",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII018.jpg": "2c2d9cc7c7c80ab6d5bca351d46ca20d60d9603155e9256da4321471b6f567b9",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII022.jpg": "c95a46b84d9909c3fed7fc9e3ff0ddf72addd9404a615f5fab5ddba621336290",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate129.png": "b3f1dff524bff23ea49c1abbfff69bdd395f4693bc4923200e98cd992df02688",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p277_foldout-geometry.png": "7f08a90732b5adb3a14d73f3438f1803de0230a54f9a4e27364ebdf35c91677b",
+    "cad/003_FullTank/experiments/drive_chains/clutch_stop_brake_sources/p277_foldout_original.jpg": "cee953e962ac47ce64f4b86b08a23a71a995df26ac63f0b63cd8398a390070fe",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate05.png": "3012422a87e11d8a68f1ff05680969404cbe20298dc78aafd5fc67866496d7cf",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate06.png": "69398f328ce9ec22bc1996893fb71b1547f16285f16640e9e03a23a87b1c26ea"
+  },
+  "inspected_original_spreads": {
+    "HB35": "MarkVIII018.jpg",
+    "HB43": "MarkVIII022.jpg"
+  },
+  "printed_dimensions_mm": {
+    "main_overall_length": 3136.9,
+    "driver_length": 685.8,
+    "main_width": 1028.7,
+    "main_height": 571.5,
+    "driver_width": 482.6,
+    "driver_height": 330.2
+  },
+  "confirmed": "Original HB35 says main turret length over all. HB43 identifies apertures and turret regions but supplies no explicit endpoints for that length.",
+  "hypothesis": "Inclusive length: main body 2451.1 plus driver projection 685.8 gives the printed3136.9. Preserve the old main-body center, infer longitudinal feature stations proportionally, and leave all printed feature sizes unscaled.",
+  "nonconfirmation": "The phrase over all alone does not establish the endpoint interpretation. The improved whole-section envelope is corroborative only within the original conditional scale and provisional configuration transfer.",
+  "source_plate_records": [
+    {
+      "record": "SNL:149:007",
+      "piece_mark": "M2033",
+      "ordnance": "333",
+      "item": "PLATE, front sloping",
+      "quantity": "(1)"
+    },
+    {
+      "record": "SNL:153:009",
+      "piece_mark": "M2014",
+      "ordnance": "345",
+      "item": "PLATE, sloping front",
+      "quantity": "(1)"
+    },
+    {
+      "record": "SNL:148:020",
+      "piece_mark": "M1931",
+      "ordnance": "516",
+      "item": "PLATE, floor, No. 1",
+      "quantity": "(1)"
+    },
+    {
+      "record": "SNL:148:021",
+      "piece_mark": "M1932",
+      "ordnance": "513",
+      "item": "PLATE, floor, No. 2",
+      "quantity": "(1)"
+    },
+    {
+      "record": "SNL:155:003",
+      "piece_mark": "M2073",
+      "ordnance": "343",
+      "item": "PLATE (under driver\u2019s turret)",
+      "quantity": "(1)"
+    },
+    {
+      "record": "SNL:169:009",
+      "piece_mark": "",
+      "ordnance": "",
+      "item": "RIVET, button head, 7/16\u2033 x 2\u00bc\u2033.  (For plate M2014 plate M2033 and bracket\n   M3068 (4); batten M2386 (1).)",
+      "quantity": "6"
+    }
+  ],
+  "identity_limit": "M2014 and M2033 are distinct rows and are co-mentioned in fastener applications. Their meeting/overlap and floor boundaries are not resolved by this study; no missing plate is falsely marked populated.",
+  "photograph_review": "HB5 qualitatively supports an aft-rising central bow. HB6 shows the seat/control arrangement inside it. Neither image is metrically calibrated here; neither establishes a new shaft datum.",
+  "source_camera_refitted": false,
+  "historical_geometry_qualified": false
+}

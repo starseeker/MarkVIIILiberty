@@ -11,6 +11,26 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — source-led bow and enclosure prototype
+
+The [bow study](experiments/drive_chains/bow_reconstruction_study/README.md) supplies
+**40 proposed replacement plates**, with corrected aft-rising wall, forward floors
+and actual mitered roof joints. The enclosure tests an explicit interpretation of
+HB35: 3136.9 mm overall includes the 685.8 mm driver projection. Printed feature
+sizes remain fixed. This improves the unchanged section comparison substantially;
+it does not settle the historical length endpoints or plate boundaries.
+
+The saved native passes **255 construction/export/preservation/variation checks**
+and **six physical contact checks**; all **40 STEP solids** preserve material and
+placement. An audit against all retained physical context finds **two collisions
+in 685 nearby pairs**, both unchanged handles against the bow (4436.15 mm³ each).
+All four complete handle hypotheses also fail against this revised boundary.
+
+The 48-occurrence local prototype, inspected transparent isometric, fixed section
+comparison and failed-fit receipts are preserved. No geometry is integrated and
+progression stays at **308**. Next reconcile absolute driver/seat datums, depicted
+control state and complete source-length rods before accepting a coupled correction.
+
 ## 27 September 2026 — full handle hypotheses expose front-hull rake error
 
 Four [complete handle prototypes](experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/README.md)

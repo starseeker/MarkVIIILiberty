@@ -1,0 +1,237 @@
+{
+  "bow_native_sha256": "c620faf6ddea1605264ec9ab8af289b1f0aa0a8d3e576a83a4fe4e6ae97f152c",
+  "worker_sha256": "da943113463207cc49bdb9079b98ac6d7fc9692bbe7d2b553334c2d2b1b09356",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/overall_control/ControlRebuildTrial.FCStd": "b46de52891333ce4c42a1331b6b0d60a092fbb4c49ed6a4644511cb647c2c193",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/overall_control/profile_checks02/report.json": "8276ae90567614db44ef6a76c1b98db9cadc04dbd298085df118dfa991bfe7f6",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/pivot_reach/ControlRebuildTrial.FCStd": "8983abd3e3d1d3e7f0d7a44c3b72f12c05a4bccd223e48b899378839e5ba1759",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/pivot_reach/profile_checks02/report.json": "a211075e920eb14b4246f0fef2ea53d0f59f052b005a6ed09a4fe043545bb226",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/functional_current/ControlRebuildTrial.FCStd": "b5ee5e9f404e2c4fce130b5c6dc648bbcbd0f568ac0eecb7be4c8ff261a3c35d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/functional_current/profile_checks02/report.json": "78c4ad6fada8ee4601b780df3c2fbdad7395fef3ca3ada041912acb3b0b337fc",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/functional_source/ControlRebuildTrial.FCStd": "81818056df16b88ec7ac7e8959f90cf4fc247909ab7237f515f04e1050e5cccf",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_profiles01/functional_source/profile_checks02/report.json": "563bde55aee94ccf547c397a2874a3c181737b91f74bb7967df42e4828cea3db"
+  },
+  "profile_results": {
+    "overall_control": {
+      "native_sha256": "b46de52891333ce4c42a1331b6b0d60a092fbb4c49ed6a4644511cb647c2c193",
+      "pairs": [
+        {
+          "handle": "PortDriverOperatingHandle",
+          "plate": "hull_floor_1",
+          "common_mm3": 0,
+          "passed": true
+        },
+        {
+          "handle": "PortDriverOperatingHandle",
+          "plate": "hull_front_slope",
+          "common_mm3": 4436.153302986171,
+          "passed": false
+        },
+        {
+          "handle": "StarboardDriverOperatingHandle",
+          "plate": "hull_floor_1",
+          "common_mm3": 0,
+          "passed": true
+        },
+        {
+          "handle": "StarboardDriverOperatingHandle",
+          "plate": "hull_front_slope",
+          "common_mm3": 4436.153303334703,
+          "passed": false
+        }
+      ],
+      "sides": {
+        "Port": {
+          "pole_world_mm": [
+            8122.136365152737,
+            274.5078024638183,
+            1947.5279995719748
+          ],
+          "pole_signed_interior_plane_mm": -109.35726968455117,
+          "unchanged_source_plan_discrepancy_px": 47.1593828719419,
+          "unchanged_source_side_discrepancy_px": 49.40841883029288,
+          "complete_handle_to_wall_distance_mm": 0.0
+        },
+        "Starboard": {
+          "pole_world_mm": [
+            8122.136365152737,
+            -274.50780246381856,
+            1947.5279995719748
+          ],
+          "pole_signed_interior_plane_mm": -109.35726968455117,
+          "unchanged_source_plan_discrepancy_px": 48.58782270702382,
+          "unchanged_source_side_discrepancy_px": 49.40841883029288,
+          "complete_handle_to_wall_distance_mm": 0.0
+        }
+      },
+      "passed": false
+    },
+    "pivot_reach": {
+      "native_sha256": "8983abd3e3d1d3e7f0d7a44c3b72f12c05a4bccd223e48b899378839e5ba1759",
+      "pairs": [
+        {
+          "handle": "PortDriverOperatingHandle",
+          "plate": "hull_floor_1",
+          "common_mm3": 0,
+          "passed": true
+        },
+        {
+          "handle": "PortDriverOperatingHandle",
+          "plate": "hull_front_slope",
+          "common_mm3": 2184.818285036388,
+          "passed": false
+        },
+        {
+          "handle": "StarboardDriverOperatingHandle",
+          "plate": "hull_floor_1",
+          "common_mm3": 0,
+          "passed": true
+        },
+        {
+          "handle": "StarboardDriverOperatingHandle",
+          "plate": "hull_front_slope",
+          "common_mm3": 2184.81828503647,
+          "passed": false
+        }
+      ],
+      "sides": {
+        "Port": {
+          "pole_world_mm": [
+            8133.5423227191895,
+            276.9365945804384,
+            1960.5111867560681
+          ],
+          "pole_signed_interior_plane_mm": -125.68084263177542,
+          "unchanged_source_plan_discrepancy_px": 43.356408013829004,
+          "unchanged_source_side_discrepancy_px": 43.093843136211525,
+          "complete_handle_to_wall_distance_mm": 0.0
+        },
+        "Starboard": {
+          "pole_world_mm": [
+            8133.5423227191895,
+            -276.93659458043874,
+            1960.511186756068
+          ],
+          "pole_signed_interior_plane_mm": -125.6808426317753,
+          "unchanged_source_plan_discrepancy_px": 44.74665836703804,
+          "unchanged_source_side_discrepancy_px": 43.09384313621154,
+          "complete_handle_to_wall_distance_mm": 0.0
+        }
+      },
+      "passed": false
+    },
+    "functional_current": {
+      "native_sha256": "b5ee5e9f404e2c4fce130b5c6dc648bbcbd0f568ac0eecb7be4c8ff261a3c35d",
+      "pairs": [
+        {
+          "handle": "PortDriverOperatingHandle",
+          "plate": "hull_floor_1",
+          "common_mm3": 0,
+          "passed": true
+        },
+        {
+          "handle": "PortDriverOperatingHandle",
+          "plate": "hull_front_slope",
+          "common_mm3": 2096.6832956340745,
+          "passed": false
+        },
+        {
+          "handle": "StarboardDriverOperatingHandle",
+          "plate": "hull_floor_1",
+          "common_mm3": 0,
+          "passed": true
+        },
+        {
+          "handle": "StarboardDriverOperatingHandle",
+          "plate": "hull_front_slope",
+          "common_mm3": 2096.6832956339686,
+          "passed": false
+        }
+      ],
+      "sides": {
+        "Port": {
+          "pole_world_mm": [
+            8184.99562497314,
+            287.893094651597,
+            2019.079513922879
+          ],
+          "pole_signed_interior_plane_mm": -199.31795094333705,
+          "unchanged_source_plan_discrepancy_px": 26.414930123192004,
+          "unchanged_source_side_discrepancy_px": 25.74123606034839,
+          "complete_handle_to_wall_distance_mm": 0.0
+        },
+        "Starboard": {
+          "pole_world_mm": [
+            8184.99562497314,
+            -287.8930946515973,
+            2019.079513922879
+          ],
+          "pole_signed_interior_plane_mm": -199.31795094333705,
+          "unchanged_source_plan_discrepancy_px": 27.49178656439813,
+          "unchanged_source_side_discrepancy_px": 25.74123606034839,
+          "complete_handle_to_wall_distance_mm": 0.0
+        }
+      },
+      "passed": false
+    },
+    "functional_source": {
+      "native_sha256": "81818056df16b88ec7ac7e8959f90cf4fc247909ab7237f515f04e1050e5cccf",
+      "pairs": [
+        {
+          "handle": "PortDriverOperatingHandle",
+          "plate": "hull_floor_1",
+          "common_mm3": 0,
+          "passed": true
+        },
+        {
+          "handle": "PortDriverOperatingHandle",
+          "plate": "hull_front_slope",
+          "common_mm3": 2018.4355688648182,
+          "passed": false
+        },
+        {
+          "handle": "StarboardDriverOperatingHandle",
+          "plate": "hull_floor_1",
+          "common_mm3": 0,
+          "passed": true
+        },
+        {
+          "handle": "StarboardDriverOperatingHandle",
+          "plate": "hull_front_slope",
+          "common_mm3": 2018.4355688647822,
+          "passed": false
+        }
+      ],
+      "sides": {
+        "Port": {
+          "pole_world_mm": [
+            8228.488171704612,
+            287.8127358380585,
+            1980.1094565200556
+          ],
+          "pole_signed_interior_plane_mm": -217.95189968125044,
+          "unchanged_source_plan_discrepancy_px": 12.142385189247987,
+          "unchanged_source_side_discrepancy_px": 0.47556654620258737,
+          "complete_handle_to_wall_distance_mm": 0.0
+        },
+        "Starboard": {
+          "pole_world_mm": [
+            8228.488171704612,
+            -287.8127358380588,
+            1980.1094565200553
+          ],
+          "pole_signed_interior_plane_mm": -217.95189968125032,
+          "unchanged_source_plan_discrepancy_px": 13.105936856947942,
+          "unchanged_source_side_discrepancy_px": 0.47556654620266914,
+          "complete_handle_to_wall_distance_mm": 0.0
+        }
+      },
+      "passed": false
+    }
+  },
+  "source_camera_refitted": false,
+  "geometry_changed": false,
+  "integration_accepted": false,
+  "scope": "Only the proposed shell changes from the earlier full-profile study; all four complete saved handle solids and their original frames are retained. Test each against all40 replacement plates. Prior unchanged-context findings and source discrepancies remain applicable.",
+  "next_action": "Reconcile absolute driver shaft/seat/support datums and the depicted control state with the source views and full connecting-rod lengths. Do not accept a shell penetration, shorten the handle to clear it, or refit the camera to suppress it."
+}
