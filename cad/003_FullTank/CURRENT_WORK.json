@@ -36,7 +36,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Reconcile the operating-handle 37-inch length datum and 47\u201349px fixed-source grip discrepancies before attaching trigger/grip fittings. Review original HB/SNL length wording, shaft-anchor feature identities, source configuration and absolute driver/hull placement; preserve prior camera fits and refit only for justified evidence. The current complete-stock handles/pivots and four upper-selector revisions are mechanically checked approximations. Then finish triggers/pawls/guides, separate gates/stops, brake interconnection and remaining M576 foot rods, springs/spacing, reverse M777/M789A/M571 controls and full seat support.",
+  "next_action": "Test complete-stock operating-handle profiles under the existing overall-extent interpretation and a separately labelled 37-inch functional-radius hypothesis. Keep the fixed source comparisons and actual front-hull constraints; do not integrate an overlay improvement that fails mechanical checks. The uncertainty review rules out small shaft-end pick changes as a complete explanation (plan residual lower bounds 31.47/32.90px; conservative coordinate-square bounds 24.97/26.40px). If local hypotheses fail, review coupled driver/hull placement from independent evidence before revising inherited mounting/rod datums. Then continue trigger/pawl fittings, brake interconnection, reverse controls and complete seat support.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -130,7 +130,8 @@
     "M776 pivot hardware: original SNL23 specifies M768 7/8-inch nut and 3/16 x 1-inch split pin; original SNL129 specifies 1/2-inch nut thickness. Generic SNL141 1-1/2-inch pin row also names M776. Resolve actual fit and document source selection; do not silently alter stock.",
     "Operating handles: specific M776 source 1-inch cotters selected over generic 1-1/2-inch conflict; actual 25.4mm leg centerlines, full M768 1/2-inch nut stock, seating and retention checked. Eye form, nominal thread envelopes, exterior profiles and bolt dimensions remain inferred.",
     "Upper low-selector arms now have 45 mm outward offset and actual tangential drive walls matched to handle stock plus 0.45mm face clearance. The earlier radial-lip shapes and handle_gates01 dimensions are superseded; journals, oilways, lower links and frames are preserved.",
-    "M738 37-inch datum is provisionally overall canonical radial part extent, not an established pivot-to-tip dimension. Source grip residuals 47.16/48.59px plan and 49.41px side exceed 5 px picks. Source cap-to-current-pivot reach 1014\u20131016mm differs from actual 922.49mm; fixed source views differ 35\u201339mm in X and inferred cap lies 44.59mm beyond current front plane. Review evidence before fixing upper fittings."
+    "M738 37-inch datum is provisionally overall canonical radial part extent, not an established pivot-to-tip dimension. Source grip residuals 47.16/48.59px plan and 49.41px side exceed 5 px picks. Source cap-to-current-pivot reach 1014\u20131016mm differs from actual 922.49mm; fixed source views differ 35\u201339mm in X and inferred cap lies 44.59mm beyond current front plane. Review evidence before fixing upper fittings.",
+    "Handle datum review01: 5 px main-shaft endpoint and grip-pick allowances cannot remove the plan discrepancy; at least31.47/32.90px remains, or24.97/26.40px under a conservative per-coordinate interpretation. Original HB148 leaves the37-inch datum ambiguous. No camera refit, geometry change or source-pose acceptance."
   ],
   "visual_progression_count": 308,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
@@ -140,7 +141,7 @@
     "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json"
   },
   "qualification_scope": "Ten additions: complete M738 handles, M746/M747 fulcrums and M776/M768/one-inch cotter joints. Four upper selector arms/jaws revised for actual handle engagement. All lower linkage material and inherited frames preserved. Fixed source cap discrepancies47-49px, ambiguous37-inch datum and13.53px high-eye discrepancy remain open. No historical position, control-state or motion qualification; remaining fittings unfinished",
-  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/source_comparison_diagnosis.json",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_datum_review01/report.json",
   "active_development_candidate": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
     "native_sha256": "c8adadcb73bf9de0153cceb7e85e686bd63d5c6f1b198054e23811fdba8fede1",
@@ -160,7 +161,7 @@
     "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_source_review02.json",
     "source_comparison_diagnosis": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/source_comparison_diagnosis.json",
     "source_landmarks": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_landmarks01.json",
-    "next_action": "Reconcile the operating-handle 37-inch length datum and 47\u201349px fixed-source grip discrepancies before attaching trigger/grip fittings. Review original HB/SNL length wording, shaft-anchor feature identities, source configuration and absolute driver/hull placement; preserve prior camera fits and refit only for justified evidence. The current complete-stock handles/pivots and four upper-selector revisions are mechanically checked approximations. Then finish triggers/pawls/guides, separate gates/stops, brake interconnection and remaining M576 foot rods, springs/spacing, reverse M777/M789A/M571 controls and full seat support.",
+    "next_action": "Test complete-stock operating-handle profiles under the existing overall-extent interpretation and a separately labelled 37-inch functional-radius hypothesis. Keep the fixed source comparisons and actual front-hull constraints; do not integrate an overlay improvement that fails mechanical checks. The uncertainty review rules out small shaft-end pick changes as a complete explanation (plan residual lower bounds 31.47/32.90px; conservative coordinate-square bounds 24.97/26.40px). If local hypotheses fail, review coupled driver/hull placement from independent evidence before revising inherited mounting/rod datums. Then continue trigger/pawl fittings, brake interconnection, reverse controls and complete seat support.",
     "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_gates01/study_receipt.json"
   },
   "source_identity_correction": {

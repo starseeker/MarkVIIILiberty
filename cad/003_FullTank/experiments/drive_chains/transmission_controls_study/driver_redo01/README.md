@@ -1,5 +1,10 @@
 # Driver controls — active continuation
 
+Latest evidence follow-up: [handle datum and camera uncertainty](handle_datum_review01/README.md).
+Small endpoint-pick changes cannot settle the grip discrepancy. The printed
+37-inch datum remains ambiguous; the next experiment compares complete profile
+hypotheses against fixed source and hull constraints.
+
 Current full checkpoint: [complete operating handles and pivot joints](operating_integrated01/README.md),
 **3,582 occurrences / 635 definitions / 442 groups**. Both complete handles,
 fulcrums and source-sized pivot joints now engage the refined upper selector arms.

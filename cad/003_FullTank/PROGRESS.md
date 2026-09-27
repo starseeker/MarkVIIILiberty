@@ -11,6 +11,17 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — operating-handle datum and camera-uncertainty review
+
+The [source review](experiments/drive_chains/transmission_controls_study/driver_redo01/handle_datum_review01/README.md)
+rules out small endpoint-pick changes as a complete explanation of the grip
+mismatch. Even with all declared 5 px pick allowances, the plan residual is at
+least **31.47/32.90 px**. A more generous coordinate-square allowance still leaves
+**24.97/26.40 px**. Original handbook wording leaves the 37-inch datum ambiguous.
+The fixed cameras and accepted 3,582-occurrence checkpoint remain unchanged;
+progression stays at **308 images**. Next compare complete handle-profile
+hypotheses against both source and hull constraints before fixing upper fittings.
+
 ## 27 September 2026 — complete operating handles and pivot joints
 
 The [checkpoint](experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/README.md)
