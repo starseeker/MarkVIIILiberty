@@ -11,6 +11,25 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — complete low-speed and center-foot rods rebuilt
+
+The [checkpoint](experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/README.md)
+contains **3,395 occurrences / 593 definitions / 403 groups**. Four complete
+M573/M579 rods and eight four-part joints connect the actual receivers. All ten
+M640 inner eyes use an estimated 66.675 mm radius to clear adjacent clevises;
+outer eyes, journals and inherited occurrence frames remain fixed. Low rods pass
+outside the engine supports; foot rods clear the water pump before entering their
+intermediate lanes. The printed M574 length still constrains the provisional driver.
+
+Both settings pass156 local checks and51 STEP comparisons; context checks cover
+240 nominal and239 variation pairs with no exemptions. All588 unchanged definitions
+are preserved. Fresh rebuilding matches1,811 archive BReps and165,031 persistent
+properties. Four inspected views bring accepted progression to **274**.
+
+Continue SH944/M581, remaining forward connections, then the preserved driver
+controls. The complete withheld-commit redo remains active; source dimensions,
+rod forms and neutral poses remain approximate. Standard tank011 is unchanged.
+
 ## 27 September 2026 — complete rear high-speed controls rebuilt
 
 The [new checkpoint](experiments/drive_chains/transmission_controls_study/redo01/high_integrated01/README.md)

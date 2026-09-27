@@ -1,0 +1,2336 @@
+{
+  "native_file": "ControlRebuildTrial.FCStd",
+  "native_sha256": "bb54d0eeba4d2b997bc5e6422887c3facbd32e4a484e77cc5beea0827dcf4f16",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high_integrated01/PowertrainControlRebuild.FCStd",
+  "parent_native_sha256": "8ab504fa6f8587448f04915b59e89a0f3ba1e46f1060c11546859c5172d8d31f",
+  "parent_manifest_sha256": "a62d2b84ef0638669d9602765b357174dfd0ef21f368f205c286daedea2ad4bc",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/trial_control_rebuild_long_rods.py": "508de7eefd5f61718f6d35fa6c1c774a4c9cb6015e74e7ae2d6e228712401aa9",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_controls01.json": "1387aabea9553d868868751b5a3a54f71e0dab735d98d0e72be90f261234f110",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_source_review01.json": "b6808020d67c8addccc14b9181efab37773155d95bcf614e276dd215ad20fc8f",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io_v2.py": "84ab9a61290fbdbf32da469c0acab4582a6e6e7a0761583b6425263bc96f6465",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_center_foot_parts_v3.py": "0a77af40eea8ed303ffe325a3252d14a2149e13def38f992e256725bed7de77f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/center_foot_controls05.json": "52fba1e69e8a053d8e28119fcce018151ee07a5661fe297a3d5df08cce24c4d1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high_integrated01/report.json": "e6923212035ee72095b4463cf27c75a9530a55978be3ce4646accba7d310e290",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high_integrated01/isolated/manifest.json": "a62d2b84ef0638669d9602765b357174dfd0ef21f368f205c286daedea2ad4bc",
+    "cad/003_FullTank/experiments/drive_chains/rear_control_channel_mount_parts.py": "4d8eec7292a635e762f19c3c9c8224b875ac3397f5c26de1f1d63740749d4aae",
+    "cad/003_FullTank/experiments/drive_chains/rear_control_channel_stock.py": "b9721b5228982b3f11fb90537c7b60d33ab741c1eb1e77b00a1cbee827b1e247",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_anchor_parts.py": "d29c6b065009e36257bb54dbcf7fc9c1a49950e9e092194b9549b0a03069aa77",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_band_parts.py": "c68c3c8d379580346d63caaec0a07266fa9dc4a51a7a4e22c7b06d8dcbb15136",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_stop_parts.py": "320daa2f0c98a8916cd09adc680ad11e1daf360c005bcaeddc1c9d66286a994b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_core_parts.py": "b7b3150e42529535f842871e81c4c580a15b25ce123e997da3ef5437041d7ff1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_joint_parts.py": "97cb213e7707b3cce73b0bca7e5fa8b76345ff841e8fab767c3d16cf350a803e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_parts.py": "a0ef001b84b6593093fa1ffe1aff650a2253646e0facba5610a7d4600a0da228",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_installation_parts.py": "3aa0f82af289688b8453ac25dbe1c53bf84924880a0e03adb51328431a3eef7f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_parts.py": "35c677472dad5a90701bedbd6c06b3fb01f2b0fda494efc00be48a64db35d3a6",
+    "cad/003_FullTank/experiments/drive_chains/transmission_output_parts.py": "f5733f343308c7a7179cc6273b0c62162ba2b84ee09eeb6f68a31e31ebc2ed20",
+    "cad/003_FullTank/experiments/drive_chains/transmission_stud_parts.py": "cdeda621c79bf68a95f3cb03f173e60c75a66f2d63331c0e334418840f6fd3bb",
+    "cad/003_FullTank/experiments/drive_chains/transmission_support_parts.py": "378d460b581c26154940ced9b9f4a8d8ca514fb97b05f24a2ac13c8c8b595405"
+  },
+  "specs": {
+    "StarboardCenterFootRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.7071067811865481,
+        -1.6653345369377348e-16,
+        -0.7071067811865475,
+        3350.0,
+        -0.7071067811865475,
+        -2.220446049250313e-16,
+        0.7071067811865479,
+        -521.3976047783048,
+        -1.6653345369377348e-16,
+        1.0000000000000002,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardCenterFootControl",
+      "role": "receiver"
+    },
+    "PortCenterFootRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        0.7071067811865474,
+        0.0,
+        -0.7071067811865477,
+        3350.0,
+        -0.7071067811865477,
+        -2.220446049250313e-16,
+        -0.7071067811865475,
+        521.3976047783048,
+        0.0,
+        1.0000000000000002,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortCenterFootControl",
+      "role": "receiver"
+    },
+    "StarboardReverseIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -235.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardReverseIntermediateControl",
+      "role": "receiver"
+    },
+    "StarboardLowIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowIntermediateControl",
+      "role": "receiver"
+    },
+    "StarboardHighIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardHighIntermediateControl",
+      "role": "receiver"
+    },
+    "StarboardFootIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -70.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardFootIntermediateControl",
+      "role": "receiver"
+    },
+    "PortFootIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        70.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortFootIntermediateControl",
+      "role": "receiver"
+    },
+    "PortHighIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortHighIntermediateControl",
+      "role": "receiver"
+    },
+    "PortLowIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowIntermediateControl",
+      "role": "receiver"
+    },
+    "PortClutchIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortClutchIntermediateControl",
+      "role": "receiver"
+    },
+    "StarboardLowHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_low_right",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowControlFulcrum",
+      "role": "receiver"
+    },
+    "StarboardRearLowRod": {
+      "definition": "Def_StarboardLowLongRod_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2209.5,
+        0.0,
+        1.0,
+        0.0,
+        -278.55,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLongLowControl",
+      "role": "rod"
+    },
+    "StarboardLowLongRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2184.1,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -278.55,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowLongRearJoint",
+      "role": "fork"
+    },
+    "StarboardLowLongRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2184.1,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -278.55,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowLongRearJoint",
+      "role": "pin"
+    },
+    "StarboardLowLongRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2184.1,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -278.55,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        643.55,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowLongRearJoint",
+      "role": "cotter"
+    },
+    "StarboardLowLongRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2228.5499999999997,
+        1.0,
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        -278.55,
+        -2.220446049250313e-16,
+        1.0,
+        0.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowLongRearJoint",
+      "role": "nut",
+      "source_records": [
+        "SNL:195:016"
+      ]
+    },
+    "StarboardLowLongIntermediateJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowLongIntermediateJoint",
+      "role": "fork"
+    },
+    "StarboardLowLongIntermediateJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowLongIntermediateJoint",
+      "role": "pin"
+    },
+    "StarboardLowLongIntermediateJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        -161.57500000000005,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowLongIntermediateJoint",
+      "role": "cotter"
+    },
+    "StarboardLowLongIntermediateJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        5882.403142135459,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowLongIntermediateJoint",
+      "role": "nut",
+      "source_records": [
+        "SNL:195:016"
+      ]
+    },
+    "StarboardCenterFootRod": {
+      "definition": "Def_StarboardFootLongRod_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3321.518463273585,
+        0.0,
+        1.0,
+        0.0,
+        -467.5160680518898,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLongFootControl",
+      "role": "rod"
+    },
+    "StarboardFootLongRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3296.118463273585,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -467.5160680518898,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardFootLongRearJoint",
+      "role": "fork"
+    },
+    "StarboardFootLongRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3296.118463273585,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -467.5160680518898,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardFootLongRearJoint",
+      "role": "pin"
+    },
+    "StarboardFootLongRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3296.118463273585,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -467.5160680518898,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        643.55,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardFootLongRearJoint",
+      "role": "cotter"
+    },
+    "StarboardFootLongRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        3340.5684632735847,
+        1.0,
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        -467.5160680518898,
+        -2.220446049250313e-16,
+        1.0,
+        0.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardFootLongRearJoint",
+      "role": "nut",
+      "source_records": [
+        "SNL:194:017"
+      ]
+    },
+    "StarboardFootLongIntermediateJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        -70.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardFootLongIntermediateJoint",
+      "role": "fork"
+    },
+    "StarboardFootLongIntermediateJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        -70.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardFootLongIntermediateJoint",
+      "role": "pin"
+    },
+    "StarboardFootLongIntermediateJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        -51.575000000000045,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardFootLongIntermediateJoint",
+      "role": "cotter"
+    },
+    "StarboardFootLongIntermediateJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        5882.403142135459,
+        0.0,
+        1.0,
+        0.0,
+        -70.0,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardFootLongIntermediateJoint",
+      "role": "nut",
+      "source_records": [
+        "SNL:194:017"
+      ]
+    },
+    "PortLowHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_low_left",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowControlFulcrum",
+      "role": "receiver"
+    },
+    "PortRearLowRod": {
+      "definition": "Def_PortLowLongRod_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2215.8500000000004,
+        0.0,
+        1.0,
+        0.0,
+        291.25,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLongLowControl",
+      "role": "rod"
+    },
+    "PortLowLongRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2190.4500000000003,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        291.25,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowLongRearJoint",
+      "role": "fork"
+    },
+    "PortLowLongRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2190.4500000000003,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        291.25,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowLongRearJoint",
+      "role": "pin"
+    },
+    "PortLowLongRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2190.4500000000003,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        291.25,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        643.55,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowLongRearJoint",
+      "role": "cotter"
+    },
+    "PortLowLongRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2234.9,
+        1.0,
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        291.25,
+        -2.220446049250313e-16,
+        1.0,
+        0.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowLongRearJoint",
+      "role": "nut",
+      "source_records": [
+        "SNL:195:016"
+      ]
+    },
+    "PortLowLongIntermediateJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowLongIntermediateJoint",
+      "role": "fork"
+    },
+    "PortLowLongIntermediateJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowLongIntermediateJoint",
+      "role": "pin"
+    },
+    "PortLowLongIntermediateJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        198.42499999999995,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowLongIntermediateJoint",
+      "role": "cotter"
+    },
+    "PortLowLongIntermediateJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        5882.403142135459,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowLongIntermediateJoint",
+      "role": "nut",
+      "source_records": [
+        "SNL:195:016"
+      ]
+    },
+    "PortCenterFootRod": {
+      "definition": "Def_PortFootLongRod_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3321.518463273585,
+        0.0,
+        1.0,
+        0.0,
+        467.5160680518898,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLongFootControl",
+      "role": "rod"
+    },
+    "PortFootLongRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3296.118463273585,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        467.5160680518898,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortFootLongRearJoint",
+      "role": "fork"
+    },
+    "PortFootLongRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3296.118463273585,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        467.5160680518898,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortFootLongRearJoint",
+      "role": "pin"
+    },
+    "PortFootLongRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3296.118463273585,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        467.5160680518898,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        643.55,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortFootLongRearJoint",
+      "role": "cotter"
+    },
+    "PortFootLongRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        3340.5684632735847,
+        1.0,
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        467.5160680518898,
+        -2.220446049250313e-16,
+        1.0,
+        0.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortFootLongRearJoint",
+      "role": "nut",
+      "source_records": [
+        "SNL:194:017"
+      ]
+    },
+    "PortFootLongIntermediateJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        70.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortFootLongIntermediateJoint",
+      "role": "fork"
+    },
+    "PortFootLongIntermediateJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        70.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortFootLongIntermediateJoint",
+      "role": "pin"
+    },
+    "PortFootLongIntermediateJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        88.42499999999995,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortFootLongIntermediateJoint",
+      "role": "cotter"
+    },
+    "PortFootLongIntermediateJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        5882.403142135459,
+        0.0,
+        1.0,
+        0.0,
+        70.0,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortFootLongIntermediateJoint",
+      "role": "nut",
+      "source_records": [
+        "SNL:194:017"
+      ]
+    }
+  },
+  "details": {
+    "StarboardRearLowRod": {
+      "rear_pin_world_mm": [
+        2184.1,
+        -278.55,
+        625.125
+      ],
+      "intermediate_pin_world_mm": [
+        5926.853142135459,
+        -180.0,
+        640.7435322939596
+      ],
+      "path_points_world_mm": [
+        [
+          2209.5,
+          -278.55,
+          625.125
+        ],
+        [
+          2770.0,
+          -278.55,
+          625.125
+        ],
+        [
+          3090.0,
+          -180.0,
+          655.0
+        ],
+        [
+          5740.0,
+          -180.0,
+          655.0
+        ],
+        [
+          5840.0,
+          -180.0,
+          640.7435322939596
+        ],
+        [
+          5901.4531421354595,
+          -180.0,
+          640.7435322939596
+        ]
+      ],
+      "bezier_poles_world_mm": [
+        [
+          [
+            2770.0,
+            -278.55,
+            625.125
+          ],
+          [
+            2876.6666666666665,
+            -278.55,
+            625.125
+          ],
+          [
+            2983.3333333333335,
+            -180.0,
+            655.0
+          ],
+          [
+            3090.0,
+            -180.0,
+            655.0
+          ]
+        ],
+        [
+          [
+            5740.0,
+            -180.0,
+            655.0
+          ],
+          [
+            5773.333333333333,
+            -180.0,
+            655.0
+          ],
+          [
+            5806.666666666667,
+            -180.0,
+            640.7435322939596
+          ],
+          [
+            5840.0,
+            -180.0,
+            640.7435322939596
+          ]
+        ]
+      ],
+      "centerline_length_mm": 3712.239995642743
+    },
+    "StarboardCenterFootRod": {
+      "rear_pin_world_mm": [
+        3296.118463273585,
+        -467.5160680518898,
+        625.125
+      ],
+      "intermediate_pin_world_mm": [
+        5926.853142135459,
+        -70.0,
+        640.7435322939596
+      ],
+      "path_points_world_mm": [
+        [
+          3321.518463273585,
+          -467.5160680518898,
+          625.125
+        ],
+        [
+          3440.0,
+          -467.5160680518898,
+          625.125
+        ],
+        [
+          4490.0,
+          -70.0,
+          625.125
+        ],
+        [
+          5740.0,
+          -70.0,
+          625.125
+        ],
+        [
+          5840.0,
+          -70.0,
+          640.7435322939596
+        ],
+        [
+          5901.4531421354595,
+          -70.0,
+          640.7435322939596
+        ]
+      ],
+      "bezier_poles_world_mm": [
+        [
+          [
+            3440.0,
+            -467.5160680518898,
+            625.125
+          ],
+          [
+            3790.0,
+            -467.5160680518898,
+            625.125
+          ],
+          [
+            4140.0,
+            -70.0,
+            625.125
+          ],
+          [
+            4490.0,
+            -70.0,
+            625.125
+          ]
+        ],
+        [
+          [
+            5740.0,
+            -70.0,
+            625.125
+          ],
+          [
+            5773.333333333333,
+            -70.0,
+            625.125
+          ],
+          [
+            5806.666666666667,
+            -70.0,
+            640.7435322939596
+          ],
+          [
+            5840.0,
+            -70.0,
+            640.7435322939596
+          ]
+        ]
+      ],
+      "centerline_length_mm": 2666.773114004922
+    },
+    "PortRearLowRod": {
+      "rear_pin_world_mm": [
+        2190.4500000000003,
+        291.25,
+        625.125
+      ],
+      "intermediate_pin_world_mm": [
+        5926.853142135459,
+        180.0,
+        640.7435322939596
+      ],
+      "path_points_world_mm": [
+        [
+          2215.8500000000004,
+          291.25,
+          625.125
+        ],
+        [
+          2770.0,
+          291.25,
+          625.125
+        ],
+        [
+          3090.0,
+          180.0,
+          655.0
+        ],
+        [
+          5740.0,
+          180.0,
+          655.0
+        ],
+        [
+          5840.0,
+          180.0,
+          640.7435322939596
+        ],
+        [
+          5901.4531421354595,
+          180.0,
+          640.7435322939596
+        ]
+      ],
+      "bezier_poles_world_mm": [
+        [
+          [
+            2770.0,
+            291.25,
+            625.125
+          ],
+          [
+            2876.6666666666665,
+            291.25,
+            625.125
+          ],
+          [
+            2983.3333333333335,
+            180.0,
+            655.0
+          ],
+          [
+            3090.0,
+            180.0,
+            655.0
+          ]
+        ],
+        [
+          [
+            5740.0,
+            180.0,
+            655.0
+          ],
+          [
+            5773.333333333333,
+            180.0,
+            655.0
+          ],
+          [
+            5806.666666666667,
+            180.0,
+            640.7435322939596
+          ],
+          [
+            5840.0,
+            180.0,
+            640.7435322939596
+          ]
+        ]
+      ],
+      "centerline_length_mm": 3710.4561555602095
+    },
+    "PortCenterFootRod": {
+      "rear_pin_world_mm": [
+        3296.118463273585,
+        467.5160680518898,
+        625.125
+      ],
+      "intermediate_pin_world_mm": [
+        5926.853142135459,
+        70.0,
+        640.7435322939596
+      ],
+      "path_points_world_mm": [
+        [
+          3321.518463273585,
+          467.5160680518898,
+          625.125
+        ],
+        [
+          3440.0,
+          467.5160680518898,
+          625.125
+        ],
+        [
+          4490.0,
+          70.0,
+          625.125
+        ],
+        [
+          5740.0,
+          70.0,
+          625.125
+        ],
+        [
+          5840.0,
+          70.0,
+          640.7435322939596
+        ],
+        [
+          5901.4531421354595,
+          70.0,
+          640.7435322939596
+        ]
+      ],
+      "bezier_poles_world_mm": [
+        [
+          [
+            3440.0,
+            467.5160680518898,
+            625.125
+          ],
+          [
+            3790.0,
+            467.5160680518898,
+            625.125
+          ],
+          [
+            4140.0,
+            70.0,
+            625.125
+          ],
+          [
+            4490.0,
+            70.0,
+            625.125
+          ]
+        ],
+        [
+          [
+            5740.0,
+            70.0,
+            625.125
+          ],
+          [
+            5773.333333333333,
+            70.0,
+            625.125
+          ],
+          [
+            5806.666666666667,
+            70.0,
+            640.7435322939596
+          ],
+          [
+            5840.0,
+            70.0,
+            640.7435322939596
+          ]
+        ]
+      ],
+      "centerline_length_mm": 2666.773114004922
+    },
+    "controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high_integrated01",
+      "parent_native_sha256": "8ab504fa6f8587448f04915b59e89a0f3ba1e46f1060c11546859c5172d8d31f",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_source_review01.json",
+      "source_review_sha256": "b6808020d67c8addccc14b9181efab37773155d95bcf614e276dd215ad20fc8f",
+      "inner_arm_radius": 76.2,
+      "bend_handle_fraction": 0.3333333333333333
+    },
+    "joints": {
+      "StarboardLowLongRearJoint": {
+        "receiver": "StarboardLowHorizontalLever",
+        "center_world_mm": [
+          2184.1,
+          -278.55,
+          625.125
+        ],
+        "pin_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rod_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "rod": "StarboardRearLowRod",
+        "frame": [
+          1.0,
+          0.0,
+          0.0,
+          2184.1,
+          0.0,
+          2.220446049250313e-16,
+          -1.0,
+          -278.55,
+          0.0,
+          1.0,
+          2.220446049250313e-16,
+          625.125,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "StarboardLowLongIntermediateJoint": {
+        "receiver": "StarboardLowIntermediateRocker",
+        "center_world_mm": [
+          5926.853142135459,
+          -180.0,
+          640.7435322939596
+        ],
+        "pin_axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "rod_axis_world": [
+          -1.0,
+          -0.0,
+          -0.0
+        ],
+        "rod": "StarboardRearLowRod",
+        "frame": [
+          -1.0,
+          0.0,
+          0.0,
+          5926.853142135459,
+          0.0,
+          1.0,
+          0.0,
+          -180.0,
+          0.0,
+          0.0,
+          -1.0,
+          640.7435322939596,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "StarboardFootLongRearJoint": {
+        "receiver": "StarboardCenterFootRocker",
+        "center_world_mm": [
+          3296.118463273585,
+          -467.5160680518898,
+          625.125
+        ],
+        "pin_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rod_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "rod": "StarboardCenterFootRod",
+        "frame": [
+          1.0,
+          0.0,
+          0.0,
+          3296.118463273585,
+          0.0,
+          2.220446049250313e-16,
+          -1.0,
+          -467.5160680518898,
+          0.0,
+          1.0,
+          2.220446049250313e-16,
+          625.125,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "StarboardFootLongIntermediateJoint": {
+        "receiver": "StarboardFootIntermediateRocker",
+        "center_world_mm": [
+          5926.853142135459,
+          -70.0,
+          640.7435322939596
+        ],
+        "pin_axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "rod_axis_world": [
+          -1.0,
+          -0.0,
+          -0.0
+        ],
+        "rod": "StarboardCenterFootRod",
+        "frame": [
+          -1.0,
+          0.0,
+          0.0,
+          5926.853142135459,
+          0.0,
+          1.0,
+          0.0,
+          -70.0,
+          0.0,
+          0.0,
+          -1.0,
+          640.7435322939596,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "PortLowLongRearJoint": {
+        "receiver": "PortLowHorizontalLever",
+        "center_world_mm": [
+          2190.4500000000003,
+          291.25,
+          625.125
+        ],
+        "pin_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rod_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "rod": "PortRearLowRod",
+        "frame": [
+          1.0,
+          0.0,
+          0.0,
+          2190.4500000000003,
+          0.0,
+          2.220446049250313e-16,
+          -1.0,
+          291.25,
+          0.0,
+          1.0,
+          2.220446049250313e-16,
+          625.125,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "PortLowLongIntermediateJoint": {
+        "receiver": "PortLowIntermediateRocker",
+        "center_world_mm": [
+          5926.853142135459,
+          180.0,
+          640.7435322939596
+        ],
+        "pin_axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "rod_axis_world": [
+          -1.0,
+          -0.0,
+          -0.0
+        ],
+        "rod": "PortRearLowRod",
+        "frame": [
+          -1.0,
+          0.0,
+          0.0,
+          5926.853142135459,
+          0.0,
+          1.0,
+          0.0,
+          180.0,
+          0.0,
+          0.0,
+          -1.0,
+          640.7435322939596,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "PortFootLongRearJoint": {
+        "receiver": "PortCenterFootRocker",
+        "center_world_mm": [
+          3296.118463273585,
+          467.5160680518898,
+          625.125
+        ],
+        "pin_axis_world": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "rod_axis_world": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "rod": "PortCenterFootRod",
+        "frame": [
+          1.0,
+          0.0,
+          0.0,
+          3296.118463273585,
+          0.0,
+          2.220446049250313e-16,
+          -1.0,
+          467.5160680518898,
+          0.0,
+          1.0,
+          2.220446049250313e-16,
+          625.125,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "PortFootLongIntermediateJoint": {
+        "receiver": "PortFootIntermediateRocker",
+        "center_world_mm": [
+          5926.853142135459,
+          70.0,
+          640.7435322939596
+        ],
+        "pin_axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "rod_axis_world": [
+          -1.0,
+          -0.0,
+          -0.0
+        ],
+        "rod": "PortCenterFootRod",
+        "frame": [
+          -1.0,
+          0.0,
+          0.0,
+          5926.853142135459,
+          0.0,
+          1.0,
+          0.0,
+          70.0,
+          0.0,
+          0.0,
+          -1.0,
+          640.7435322939596,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    "receiving_interfaces": {
+      "StarboardCenterFootRocker": {
+        "front_pin_world_mm": [
+          3296.118463273585,
+          -467.5160680518898,
+          625.125
+        ],
+        "rear_pin_world_mm": [
+          3278.157951031447,
+          -449.55555580975147,
+          625.125
+        ],
+        "axis_world": [
+          1.6653345369377348e-16,
+          -5.551115123125783e-17,
+          1.0
+        ]
+      },
+      "PortCenterFootRocker": {
+        "front_pin_world_mm": [
+          3296.118463273585,
+          467.5160680518898,
+          625.125
+        ],
+        "rear_pin_world_mm": [
+          3278.157951031447,
+          449.5555558097515,
+          625.125
+        ],
+        "axis_world": [
+          -1.1102230246251565e-16,
+          2.7755575615628914e-17,
+          1.0000000000000002
+        ]
+      },
+      "StarboardReverseIntermediateRocker": {
+        "front_pin_world_mm": [
+          5931.263805848199,
+          -235.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          -235.0,
+          640.7435322939596
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "StarboardLowIntermediateRocker": {
+        "front_pin_world_mm": [
+          5931.263805848199,
+          -180.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          -180.0,
+          640.7435322939596
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "StarboardHighIntermediateRocker": {
+        "front_pin_world_mm": [
+          5931.263805848199,
+          -125.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          -125.0,
+          640.7435322939596
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "StarboardFootIntermediateRocker": {
+        "front_pin_world_mm": [
+          5931.263805848199,
+          -70.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          -70.0,
+          640.7435322939596
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "PortFootIntermediateRocker": {
+        "front_pin_world_mm": [
+          5931.263805848199,
+          70.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          70.0,
+          640.7435322939596
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "PortHighIntermediateRocker": {
+        "front_pin_world_mm": [
+          5931.263805848199,
+          125.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          125.0,
+          640.7435322939596
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "PortLowIntermediateRocker": {
+        "front_pin_world_mm": [
+          5931.263805848199,
+          180.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          180.0,
+          640.7435322939596
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      },
+      "PortClutchIntermediateRocker": {
+        "front_pin_world_mm": [
+          5931.263805848199,
+          235.0,
+          665.7576492204697
+        ],
+        "rear_pin_world_mm": [
+          5926.853142135459,
+          235.0,
+          640.7435322939596
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    "provisional_driver_low_port_pin_mm": [
+      7220.0,
+      180.0,
+      890.0
+    ],
+    "M574_pin_distance_mm": 1308.1,
+    "notes": "M640 inner-eye radius and driver reference remain estimates. Printed M574 length retained; opposite-side driver pin mirrors Y."
+  },
+  "new_occurrences": [
+    "StarboardRearLowRod",
+    "StarboardLowLongRearJointFork",
+    "StarboardLowLongRearJointPin",
+    "StarboardLowLongRearJointCotter",
+    "StarboardLowLongRearJointNut",
+    "StarboardLowLongIntermediateJointFork",
+    "StarboardLowLongIntermediateJointPin",
+    "StarboardLowLongIntermediateJointCotter",
+    "StarboardLowLongIntermediateJointNut",
+    "StarboardCenterFootRod",
+    "StarboardFootLongRearJointFork",
+    "StarboardFootLongRearJointPin",
+    "StarboardFootLongRearJointCotter",
+    "StarboardFootLongRearJointNut",
+    "StarboardFootLongIntermediateJointFork",
+    "StarboardFootLongIntermediateJointPin",
+    "StarboardFootLongIntermediateJointCotter",
+    "StarboardFootLongIntermediateJointNut",
+    "PortRearLowRod",
+    "PortLowLongRearJointFork",
+    "PortLowLongRearJointPin",
+    "PortLowLongRearJointCotter",
+    "PortLowLongRearJointNut",
+    "PortLowLongIntermediateJointFork",
+    "PortLowLongIntermediateJointPin",
+    "PortLowLongIntermediateJointCotter",
+    "PortLowLongIntermediateJointNut",
+    "PortCenterFootRod",
+    "PortFootLongRearJointFork",
+    "PortFootLongRearJointPin",
+    "PortFootLongRearJointCotter",
+    "PortFootLongRearJointNut",
+    "PortFootLongIntermediateJointFork",
+    "PortFootLongIntermediateJointPin",
+    "PortFootLongIntermediateJointCotter",
+    "PortFootLongIntermediateJointNut"
+  ],
+  "new_definitions": [
+    "Def_PortFootLongRod_Redo",
+    "Def_PortLowLongRod_Redo",
+    "Def_StarboardFootLongRod_Redo",
+    "Def_StarboardLowLongRod_Redo"
+  ],
+  "changed_definitions": [],
+  "new_assembly_specs": {
+    "LongLowAndFootControls": {
+      "owner": "Root",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLongLowControl": {
+      "owner": "LongLowAndFootControls",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowLongRearJoint": {
+      "owner": "StarboardLongLowControl",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2184.1,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -278.55,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLowLongIntermediateJoint": {
+      "owner": "StarboardLongLowControl",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardLongFootControl": {
+      "owner": "LongLowAndFootControls",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardFootLongRearJoint": {
+      "owner": "StarboardLongFootControl",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3296.118463273585,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -467.5160680518898,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardFootLongIntermediateJoint": {
+      "owner": "StarboardLongFootControl",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        -70.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLongLowControl": {
+      "owner": "LongLowAndFootControls",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowLongRearJoint": {
+      "owner": "PortLongLowControl",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2190.4500000000003,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        291.25,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLowLongIntermediateJoint": {
+      "owner": "PortLongLowControl",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortLongFootControl": {
+      "owner": "LongLowAndFootControls",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortFootLongRearJoint": {
+      "owner": "PortLongFootControl",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3296.118463273585,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        467.5160680518898,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortFootLongIntermediateJoint": {
+      "owner": "PortLongFootControl",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        70.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "prototype_physical_occurrences": 48,
+  "prototype_definition_count": 11,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

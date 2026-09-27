@@ -158,3 +158,21 @@ and driver continuation are still required; do not stop after this increment.
 High checkpoint qualification completed: 1,072 bound dependencies; 87 installation
 checks, 578 preserved inherited definitions, exact fresh rebuild. Four inspected
 views bring progression to270. Commit this stage, then continue long rods.
+
+Fifth accepted increment: long_rods_integrated01, native
+`7b7efd440348db104f06456f4ed2ebc318c56d1b3f378fd584aa82f532325d96`,3395/593/403. Nominal long_rods03 and
+variation_trial01, builderv3. 156 local checks each,240/239 context,51 STEP each.
+All588 unchanged definitions preserved; fresh build1,811 BReps/165,031 properties.
+Four views bring progression274. All ten M640 inner radii66.675, outer101.6 fixed;
+rear forks yaw10deg inboard, low outer lanes+/-300 toX3160, foot transition endsX4700.
+Source assumptions stay explicit. Updated front interfaces/driver datum in report.details.
+
+Next SH944/M581: original Gemini wrongly equates SH944A with M4131 and cites
+wrong SNL pages. Correct selected_rows: SH944A37:008, bolts31:009(half x1.75in)
+and31:011(half x2.5in), SH944C/B119:025/026, keys115:013, shaft211:032,
+M581193:007, SH953E87:001, M569C86:022. HB92/SNL6 source side shows both
+clutch swing connections below their pivot; Gemini opposite-arm placement must
+be re-evaluated. Original Woodruff key disk axis is parallel to shaft: redo as
+axial/radial key segment with tangential thickness and true shaft/hub keyways.
+Complete four bracket bolt/nut/lock mounts into actual EngineFrame_RearChannel.
+Do not stop after this increment: whole withheld redo then driver continuation.

@@ -1,0 +1,21 @@
+{
+  "disposition": "reviewed_local_approximation",
+  "native_sha256": "7b7efd440348db104f06456f4ed2ebc318c56d1b3f378fd584aa82f532325d96",
+  "render_receipt_sha256": "2a052aa933fc293236ae3eaf0d3d8a4411bb51e66803ca470c5119b0203cb484",
+  "images": {
+    "isometric.png": "670479708f2f4a20d2678416a3e4f811d5a3304c490d70e8df231596c2759c80",
+    "plan.png": "ce13587a88ddb6b8870b8a36427ac5253f8249ac996d1512b4524c28bd7d5a14",
+    "foot_detail.png": "11011e00941990e43d0606e13edf12cf0f00b03dc22791a7f92f40f6edc4388c",
+    "route_detail.png": "0f7a7f59f0858dcd15d541b48df85cebc37e7366bb7083d76b0c7ffabb082b7b"
+  },
+  "review_method": "Previously inspected images transferred through strict full-native shape/frame checks.",
+  "findings": [
+    "Four continuous rod routes connect eight physical joints; both center-foot clevises clear each other.",
+    "M640 inner radius is a clearance-derived 66.675 mm estimate, not a source dimension. Existing outer eyes/journals and every inherited occurrence frame remain fixed.",
+    "Low rods pass outside engine supports; center-foot rods pass below high/low routes and outside the water-pump body before entering their lanes.",
+    "The first corridor crop accidentally ended before the pump; it is preserved under diagnostics/initial_views and superseded by the inspected corrected crop.",
+    "No whole-length historical camera fit or pose qualification is claimed."
+  ],
+  "source_review_sha256": "059858b13ec3b4194b4c711709a16c9b48553f9858ba5471f2cc793f4dd537a6",
+  "prototype_visual_review_sha256": "67fafda8193e3d4580ab51ef35ec9faad588f350c1e2a1749e93d067e1bfcee8"
+}

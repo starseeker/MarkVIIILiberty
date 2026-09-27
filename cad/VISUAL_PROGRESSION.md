@@ -1,5 +1,16 @@
 # Mark VIII visual progression
 
+## Complete low-speed and center-foot routes — 27 September 2026
+
+Four inspected views bring accepted progression to **274 images**. Complete
+M573/M579 rods, both center-foot clevises and engine-corridor clearance are visible.
+Rod bends, fork yaw and inner-eye spacing remain explicit reconstruction estimates.
+
+- [Isometric](intermediate_snapshot_iso_control_rebuild_long_rods_001.png)
+- [Plan](intermediate_snapshot_plan_control_rebuild_long_rods_001.png)
+- [Both center-foot joints](intermediate_snapshot_detail_control_rebuild_long_rods_001.png)
+- [Engine-support and water-pump corridor](intermediate_snapshot_route_control_rebuild_long_rods_001.png)
+
 ## Complete rear high-speed controls — 27 September 2026
 
 Four inspected subsystem views bring accepted progression to **270 images**.
