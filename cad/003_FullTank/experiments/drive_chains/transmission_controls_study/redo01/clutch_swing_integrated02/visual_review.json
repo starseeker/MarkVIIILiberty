@@ -1,0 +1,24 @@
+{
+  "disposition": "reviewed_local_approximation",
+  "native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
+  "render_receipt_sha256": "f857f2e0ea3735eb9e69ed792f079846b4c6789e14fdd29bc7801b61d8a94507",
+  "reviewed_images": {
+    "isometric.png": "dc5bb53daa2f990cafc565aaab2f3b4dbb3f1f105763a355d76f13fdfaf7e826",
+    "plan.png": "a94ba6a82fb1aa93f08e82792f0c8e208b46a951c663392fd7e2c5f0bfe51d0f",
+    "swing_detail.png": "6bc340b59a7b6f3dc7d721d034a6b81f489dd5239db5be9458a98fffce4d73b6",
+    "keyway_section.png": "253bfabdd0f348d43d64340a9cf15870da40e8c891f28e229d58f8f477f9aebe"
+  },
+  "source_review": "clutch_swing_source_review06.json",
+  "source_review_sha256": "094d7f264fe1bd5dd694e967780abea1b1e4b94bb3c8d97abafe99b9fd621449",
+  "findings": [
+    "Inspected isometric and plan: two complete clutch rods join actual rear, swing and intermediate receivers; center route rises over retained foot route. No extra false high-speed segment.",
+    "Inspected swing detail: separate downward keyed links, complete clamp stock, four through-floor bolt/nut/lock mounts. Floor is omitted from local image only.",
+    "Inspected display-only keyway section: key segment plane contains shaft axis, tangential width, actual shaft and hub slots. Saved geometry is not sectioned."
+  ],
+  "limits": [
+    "SH229A93in is interpreted as stock centerline length. Cast shapes, mounting, bends, standard pose and key-segment height remain estimates.",
+    "Local views selectively omit wider tank context. Context audit separately checks all nearby saved stock; no camera refit or motion/historical qualification."
+  ],
+  "prototype_visual_review_sha256": "a95802effd59e2028e58a8a884efe04a8337d5b104521b5d8c05202e28e6d484",
+  "review_method": "Previously inspected images transferred through strict full-native shape/frame checks."
+}

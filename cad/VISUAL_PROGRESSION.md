@@ -1,5 +1,16 @@
 # Mark VIII visual progression
 
+## Complete rear and center clutch routes — 27 September2026
+
+Four inspected views bring accepted progression to **278 images**. Source-length
+SH229A, completeM581, keyed SH944 links and full mount/clamp hardware are shown.
+The keyway view is an explicit display cut; saved solids remain complete.
+
+- [Isometric](intermediate_snapshot_iso_control_rebuild_clutch_swing_001.png)
+- [Plan](intermediate_snapshot_plan_control_rebuild_clutch_swing_001.png)
+- [Clutch swing assembly](intermediate_snapshot_detail_control_rebuild_clutch_swing_001.png)
+- [Axial Woodruff keyway section](intermediate_snapshot_section_control_rebuild_clutch_swing_001.png)
+
 ## Complete low-speed and center-foot routes — 27 September 2026
 
 Four inspected views bring accepted progression to **274 images**. Complete

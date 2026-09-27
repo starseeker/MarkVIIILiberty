@@ -1,0 +1,1644 @@
+{
+  "native_file": "PowertrainControlRebuild.FCStd",
+  "native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/PowertrainControlRebuild.FCStd",
+  "source_native_sha256": "7b7efd440348db104f06456f4ed2ebc318c56d1b3f378fd584aa82f532325d96",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/PowertrainControlRebuild.FCStd",
+  "parent_native_sha256": "7b7efd440348db104f06456f4ed2ebc318c56d1b3f378fd584aa82f532325d96",
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing08",
+  "prototype_native_sha256": "5a5c35b1463d0a5a340f48fa71456631d0d0fcd39955c37891e9443a366a68ef",
+  "variation": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_variation_trial05",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_control_rebuild_clutch_swing_v2.py": "6d6d35acc7f0c597927724d0a4269ce240b5191fcd4844cef45da6b0215b2ca3",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io_v2.py": "84ab9a61290fbdbf32da469c0acab4582a6e6e7a0761583b6425263bc96f6465",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing08/report.json": "08b2786695290a96dc5ed876ed15b6d3922eb3bb939c9cdb6be0426a53d122c6",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing08/isolated/manifest.json": "e52508605411a8e62970d0a8ddf70cf1ce3a26579538e185d2569b89a4e955e1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing08/ControlRebuildTrial.FCStd": "5a5c35b1463d0a5a340f48fa71456631d0d0fcd39955c37891e9443a366a68ef",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_variation_trial05/report.json": "f1d001dcb1fd9238c7fb38b76811ae87148b0d2a83a1b5b87d10a4c3d0626948",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/qualification.json": "d1cdbc3c26d433c7abf823e0d5ca6a6fd8950c32396ec646154cf2fe7cf6eaae",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/isolated/manifest.json": "a351640cd1022640c1dd2ead533c1d10a5aead21847218fb68aac14d7b19e614",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing08/visual_review.json": "a95802effd59e2028e58a8a884efe04a8337d5b104521b5d8c05202e28e6d484",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing08/render_receipt.json": "6e5d5e09a82d31a91b2464bbcbbd3bd4ee1f8218045c03faa727325dd54a083e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing08/reproduction_checks.json": "9be16f5bd1707ab7570ee5fbef84b13e40edfb26b6c7a25ca0ab5fa2440b6f00",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing08/checks03/independent_checks.json": "ed4ee7247e07eb52012962531e3aa5e64d7103fe9a64bfc62a72fd93ef85b4b3",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing08/context_audit/report.json": "be145d7d69f8977b2ef815e648c4f8a7cb0f37247ba5fac74b6e175efcc762cd",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing08/exchange01/exchange_checks.json": "7ba89bca118975148fdf7e56cf68330ec9d62ae9eeb2671ba82c65ada8c7839e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_variation_trial05/checks03/independent_checks.json": "825498683377c4a878d94bdf9003d26c0f5ee403bf1d9fe689a129c5114c2d51",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_variation_trial05/context_audit/report.json": "1b5fdb8810f3b40f2072fd18c24e6ed0e8b9667d93f96584816771807142bd0b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_variation_trial05/exchange01/exchange_checks.json": "50391dc4769b464869263f9d7e2ecbf68bd3045bcbe45b975d167ee27a08ef72"
+  },
+  "details": {
+    "Rear": {
+      "pin_world_mm": [
+        2354.9446420457634,
+        141.0,
+        622.6972938764704
+      ],
+      "fork_axis_world": [
+        0.8660254037844387,
+        0.0,
+        0.49999999999999994
+      ],
+      "fork_face_mm": 55,
+      "receiver": "ClutchSupport_AuxLever1"
+    },
+    "Forward": {
+      "pin_world_mm": [
+        3537.365454190669,
+        335.0,
+        667.7
+      ],
+      "fork_axis_world": [
+        -1.0,
+        -0.0,
+        -0.0
+      ],
+      "fork_face_mm": 44.45,
+      "receiver": "ClutchSwingShortLink"
+    },
+    "center_rod": {
+      "source_mark": "SH229A",
+      "printed_length_inches": 93,
+      "stock_centerline_length_mm": 2362.199999999998,
+      "joints": {
+        "Rear": {
+          "receiver": "ClutchSwingLongLink",
+          "center_world_mm": [
+            3537.365454190669,
+            365.0,
+            626.1
+          ],
+          "rod_axis_world": [
+            1.0,
+            0.0,
+            0.0
+          ],
+          "pin_axis_world": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        },
+        "Intermediate": {
+          "receiver": "PortClutchIntermediateRocker",
+          "center_world_mm": [
+            5926.853142135459,
+            235.0,
+            640.7435322939596
+          ],
+          "rod_axis_world": [
+            -1.0,
+            -0.0,
+            -0.0
+          ],
+          "pin_axis_world": [
+            0.0,
+            1.0,
+            0.0
+          ]
+        }
+      },
+      "path_points_world_mm": [
+        [
+          3562.765454190669,
+          365.0,
+          626.1
+        ],
+        [
+          3617.365454190669,
+          365.0,
+          626.1
+        ],
+        [
+          3740.0,
+          365.0,
+          675.0
+        ],
+        [
+          3840.0,
+          365.0,
+          675.0
+        ],
+        [
+          5650.0,
+          235.0,
+          675.0
+        ],
+        [
+          5750.0,
+          235.0,
+          675.0
+        ],
+        [
+          5846.853142135459,
+          235.0,
+          640.7435322939596
+        ],
+        [
+          5901.4531421354595,
+          235.0,
+          640.7435322939596
+        ]
+      ],
+      "derived_swing_station_x_mm": 3537.365454190669
+    },
+    "controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01",
+      "parent_native_sha256": "7b7efd440348db104f06456f4ed2ebc318c56d1b3f378fd584aa82f532325d96",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_source_review06.json",
+      "source_review_sha256": "094d7f264fe1bd5dd694e967780abea1b1e4b94bb3c8d97abafe99b9fd621449",
+      "center_y": 350,
+      "base_z": 533.05,
+      "base_stock": 12.7,
+      "journal_z": 715,
+      "shaft_radius": 12.7,
+      "shaft_length": 120,
+      "short_arm": 47.3,
+      "long_arm": 88.9,
+      "link_y_offsets": [
+        -15,
+        15
+      ],
+      "key_radius": 12.7,
+      "key_width": 6.35,
+      "key_height": 10.31,
+      "key_projection": 2.5,
+      "rear_fork_down_pitch_deg": -30,
+      "cheek_half_spacing": 45,
+      "rear_straight_pin_distance": 170,
+      "outboard_transition_end_x": 2700,
+      "center_rod_length_mm": 2362.2,
+      "center_rod_straight_pin_distance": 80,
+      "center_route_z": 675,
+      "station_x": 3537.365454190669
+    },
+    "mounts": [
+      {
+        "index": 1,
+        "head_seat_world_mm": [
+          3517.365454190669,
+          285.0,
+          545.75
+        ],
+        "lock_seat_world_mm": [
+          3517.365454190669,
+          285.0,
+          527.05
+        ],
+        "nut_seat_world_mm": [
+          3517.365454190669,
+          285.0,
+          523.875
+        ],
+        "source_length_mm": 44.45
+      },
+      {
+        "index": 2,
+        "head_seat_world_mm": [
+          3517.365454190669,
+          415.0,
+          545.75
+        ],
+        "lock_seat_world_mm": [
+          3517.365454190669,
+          415.0,
+          527.05
+        ],
+        "nut_seat_world_mm": [
+          3517.365454190669,
+          415.0,
+          523.875
+        ],
+        "source_length_mm": 44.45
+      },
+      {
+        "index": 3,
+        "head_seat_world_mm": [
+          3557.365454190669,
+          285.0,
+          545.75
+        ],
+        "lock_seat_world_mm": [
+          3557.365454190669,
+          285.0,
+          527.05
+        ],
+        "nut_seat_world_mm": [
+          3557.365454190669,
+          285.0,
+          523.875
+        ],
+        "source_length_mm": 44.45
+      },
+      {
+        "index": 4,
+        "head_seat_world_mm": [
+          3557.365454190669,
+          415.0,
+          545.75
+        ],
+        "lock_seat_world_mm": [
+          3557.365454190669,
+          415.0,
+          527.05
+        ],
+        "nut_seat_world_mm": [
+          3557.365454190669,
+          415.0,
+          523.875
+        ],
+        "source_length_mm": 44.45
+      }
+    ],
+    "pivot_world_mm": [
+      3537.365454190669,
+      350.0,
+      715.0
+    ],
+    "forward_link_receiver_world_mm": [
+      3537.365454190669,
+      365.0,
+      626.1
+    ],
+    "rod_path_points_world_mm": [
+      [
+        2386.078255311814,
+        141.0,
+        640.6722938764705
+      ],
+      [
+        2502.168960689118,
+        141.0,
+        707.6972938764704
+      ],
+      [
+        2700.0,
+        335.0,
+        710.0
+      ],
+      [
+        2830.0,
+        335.0,
+        710.0
+      ],
+      [
+        3120.0,
+        335.0,
+        667.7
+      ],
+      [
+        3511.965454190669,
+        335.0,
+        667.7
+      ]
+    ],
+    "rod_length_mm": 2362.199999999998
+  },
+  "expected_new_occurrences": {
+    "ClutchSwingBracket": {
+      "definition": "Def_ClutchSwingBracket_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        350.0,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingShaft": {
+      "definition": "Def_ClutchSwingShaft_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        350.0,
+        0.0,
+        0.0,
+        1.0,
+        715.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingMount1Bolt": {
+      "definition": "Def_ClutchSwingMountBolt_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3517.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        285.0,
+        0.0,
+        0.0,
+        -1.0,
+        545.75,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingMount1Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3517.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        285.0,
+        0.0,
+        0.0,
+        -1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingMount1Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3517.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        285.0,
+        0.0,
+        0.0,
+        -1.0,
+        523.875,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingMount2Bolt": {
+      "definition": "Def_ClutchSwingMountBolt_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3517.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        415.0,
+        0.0,
+        0.0,
+        -1.0,
+        545.75,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingMount2Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3517.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        415.0,
+        0.0,
+        0.0,
+        -1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingMount2Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3517.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        415.0,
+        0.0,
+        0.0,
+        -1.0,
+        523.875,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingMount3Bolt": {
+      "definition": "Def_ClutchSwingMountBolt_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3557.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        285.0,
+        0.0,
+        0.0,
+        -1.0,
+        545.75,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingMount3Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3557.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        285.0,
+        0.0,
+        0.0,
+        -1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingMount3Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3557.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        285.0,
+        0.0,
+        0.0,
+        -1.0,
+        523.875,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingMount4Bolt": {
+      "definition": "Def_ClutchSwingMountBolt_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3557.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        415.0,
+        0.0,
+        0.0,
+        -1.0,
+        545.75,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingMount4Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3557.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        415.0,
+        0.0,
+        0.0,
+        -1.0,
+        527.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingMount4Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3557.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        415.0,
+        0.0,
+        0.0,
+        -1.0,
+        523.875,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingShortLink": {
+      "definition": "Def_ClutchSwingShort_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        335.0,
+        0.0,
+        0.0,
+        1.0,
+        715.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingKey1": {
+      "definition": "Def_ClutchSwingKey_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        335.0,
+        0.0,
+        0.0,
+        1.0,
+        715.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingShortClampBolt": {
+      "definition": "Def_ClutchSwingClampBolt_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3567.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        335.0,
+        0.0,
+        0.0,
+        -1.0,
+        735.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingShortClampLock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3567.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        335.0,
+        0.0,
+        0.0,
+        -1.0,
+        695.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingShortClampNut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3567.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        335.0,
+        0.0,
+        0.0,
+        -1.0,
+        691.825,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingLongLink": {
+      "definition": "Def_ClutchSwingLong_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        365.0,
+        0.0,
+        0.0,
+        1.0,
+        715.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingKey2": {
+      "definition": "Def_ClutchSwingKey_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        365.0,
+        0.0,
+        0.0,
+        1.0,
+        715.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingLongClampBolt": {
+      "definition": "Def_ClutchSwingClampBolt_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3567.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        365.0,
+        0.0,
+        0.0,
+        -1.0,
+        735.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingLongClampLock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3567.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        365.0,
+        0.0,
+        0.0,
+        -1.0,
+        695.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchSwingLongClampNut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3567.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        365.0,
+        0.0,
+        0.0,
+        -1.0,
+        691.825,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchRearRodRearJointFork": {
+      "definition": "Def_ClutchSupport_fork",
+      "frame": [
+        0.8660254037844387,
+        -0.0,
+        -0.4999999999999999,
+        2354.9446420457634,
+        0.0,
+        1.0,
+        -0.0,
+        141.0,
+        0.4999999999999999,
+        0.0,
+        0.8660254037844387,
+        622.6972938764704,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchRearRodRearJoint"
+      ]
+    },
+    "ClutchRearRodRearJointPin": {
+      "definition": "Def_ClutchSupport_fork_pin",
+      "frame": [
+        0.8660254037844387,
+        -0.0,
+        -0.4999999999999999,
+        2354.9446420457634,
+        0.0,
+        1.0,
+        -0.0,
+        141.0,
+        0.4999999999999999,
+        0.0,
+        0.8660254037844387,
+        622.6972938764704,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchRearRodRearJoint"
+      ]
+    },
+    "ClutchRearRodRearJointCotter": {
+      "definition": "Def_ClutchSupport_fork_cotter",
+      "frame": [
+        0.8660254037844387,
+        -0.0,
+        -0.4999999999999999,
+        2354.9446420457634,
+        0.0,
+        1.0,
+        -0.0,
+        163.5,
+        0.4999999999999999,
+        0.0,
+        0.8660254037844387,
+        622.6972938764704,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchRearRodRearJoint"
+      ]
+    },
+    "ClutchRearRodRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.4999999999999998,
+        0.0,
+        0.8660254037844389,
+        2402.5760392539073,
+        0.0,
+        1.0,
+        0.0,
+        141.0,
+        -0.8660254037844389,
+        0.0,
+        0.4999999999999998,
+        650.1972938764703,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchRearRodRearJoint"
+      ]
+    },
+    "ClutchRearRodForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        335.0,
+        0.0,
+        0.0,
+        -1.0,
+        667.7,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchRearRodForwardJoint"
+      ]
+    },
+    "ClutchRearRodForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        335.0,
+        0.0,
+        0.0,
+        -1.0,
+        667.7,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchRearRodForwardJoint"
+      ]
+    },
+    "ClutchRearRodForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        353.42499999999995,
+        0.0,
+        0.0,
+        -1.0,
+        667.7,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchRearRodForwardJoint"
+      ]
+    },
+    "ClutchRearRodForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        3492.915454190669,
+        0.0,
+        1.0,
+        0.0,
+        335.0,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        667.7,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchRearRodForwardJoint"
+      ]
+    },
+    "ClutchRearRod": {
+      "definition": "Def_ClutchRearRod_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2386.078255311814,
+        0.0,
+        1.0,
+        0.0,
+        141.0,
+        0.0,
+        0.0,
+        1.0,
+        640.6722938764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls"
+      ]
+    },
+    "ClutchCenterRod": {
+      "definition": "Def_ClutchCenterRod_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3562.765454190669,
+        0.0,
+        1.0,
+        0.0,
+        365.0,
+        0.0,
+        0.0,
+        1.0,
+        626.1,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchCenterControl"
+      ]
+    },
+    "ClutchCenterRodRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        365.0,
+        0.0,
+        0.0,
+        1.0,
+        626.1,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchCenterControl",
+        "ClutchCenterRodRearJoint"
+      ]
+    },
+    "ClutchCenterRodRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        365.0,
+        0.0,
+        0.0,
+        1.0,
+        626.1,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchCenterControl",
+        "ClutchCenterRodRearJoint"
+      ]
+    },
+    "ClutchCenterRodRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        383.42499999999995,
+        0.0,
+        0.0,
+        1.0,
+        626.1,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchCenterControl",
+        "ClutchCenterRodRearJoint"
+      ]
+    },
+    "ClutchCenterRodRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        3581.815454190669,
+        0.0,
+        1.0,
+        0.0,
+        365.0,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        626.1,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchCenterControl",
+        "ClutchCenterRodRearJoint"
+      ]
+    },
+    "ClutchCenterRodIntermediateJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchCenterControl",
+        "ClutchCenterRodIntermediateJoint"
+      ]
+    },
+    "ClutchCenterRodIntermediateJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchCenterControl",
+        "ClutchCenterRodIntermediateJoint"
+      ]
+    },
+    "ClutchCenterRodIntermediateJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        253.42499999999995,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchCenterControl",
+        "ClutchCenterRodIntermediateJoint"
+      ]
+    },
+    "ClutchCenterRodIntermediateJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        5882.403142135459,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "ClutchSwingControls",
+        "ClutchCenterControl",
+        "ClutchCenterRodIntermediateJoint"
+      ]
+    }
+  },
+  "expected_changed_occurrences": {},
+  "new_occurrences": [
+    "ClutchSwingBracket",
+    "ClutchSwingShaft",
+    "ClutchSwingMount1Bolt",
+    "ClutchSwingMount1Lock",
+    "ClutchSwingMount1Nut",
+    "ClutchSwingMount2Bolt",
+    "ClutchSwingMount2Lock",
+    "ClutchSwingMount2Nut",
+    "ClutchSwingMount3Bolt",
+    "ClutchSwingMount3Lock",
+    "ClutchSwingMount3Nut",
+    "ClutchSwingMount4Bolt",
+    "ClutchSwingMount4Lock",
+    "ClutchSwingMount4Nut",
+    "ClutchSwingShortLink",
+    "ClutchSwingKey1",
+    "ClutchSwingShortClampBolt",
+    "ClutchSwingShortClampLock",
+    "ClutchSwingShortClampNut",
+    "ClutchSwingLongLink",
+    "ClutchSwingKey2",
+    "ClutchSwingLongClampBolt",
+    "ClutchSwingLongClampLock",
+    "ClutchSwingLongClampNut",
+    "ClutchRearRodRearJointFork",
+    "ClutchRearRodRearJointPin",
+    "ClutchRearRodRearJointCotter",
+    "ClutchRearRodRearJointNut",
+    "ClutchRearRodForwardJointFork",
+    "ClutchRearRodForwardJointPin",
+    "ClutchRearRodForwardJointCotter",
+    "ClutchRearRodForwardJointNut",
+    "ClutchRearRod",
+    "ClutchCenterRod",
+    "ClutchCenterRodRearJointFork",
+    "ClutchCenterRodRearJointPin",
+    "ClutchCenterRodRearJointCotter",
+    "ClutchCenterRodRearJointNut",
+    "ClutchCenterRodIntermediateJointFork",
+    "ClutchCenterRodIntermediateJointPin",
+    "ClutchCenterRodIntermediateJointCotter",
+    "ClutchCenterRodIntermediateJointNut"
+  ],
+  "new_definitions": [
+    "Def_ClutchCenterRod_Redo",
+    "Def_ClutchRearRod_Redo",
+    "Def_ClutchSwingBracket_Redo",
+    "Def_ClutchSwingClampBolt_Redo",
+    "Def_ClutchSwingKey_Redo",
+    "Def_ClutchSwingLong_Redo",
+    "Def_ClutchSwingMountBolt_Redo",
+    "Def_ClutchSwingShaft_Redo",
+    "Def_ClutchSwingShort_Redo"
+  ],
+  "changed_definitions": [
+    "Def_EngineContext_hull_floor_6"
+  ],
+  "added_children": {
+    "Definitions": [
+      "Def_ClutchCenterRod_Redo",
+      "Def_ClutchRearRod_Redo",
+      "Def_ClutchSwingBracket_Redo",
+      "Def_ClutchSwingClampBolt_Redo",
+      "Def_ClutchSwingKey_Redo",
+      "Def_ClutchSwingLong_Redo",
+      "Def_ClutchSwingMountBolt_Redo",
+      "Def_ClutchSwingShaft_Redo",
+      "Def_ClutchSwingShort_Redo"
+    ],
+    "Root": [
+      "ClutchSwingControls"
+    ],
+    "ClutchSwingControls": [
+      "ClutchRearRodRearJoint",
+      "ClutchRearRodForwardJoint",
+      "ClutchCenterControl",
+      "ClutchSwingBracket",
+      "ClutchSwingShaft",
+      "ClutchSwingMount1Bolt",
+      "ClutchSwingMount1Lock",
+      "ClutchSwingMount1Nut",
+      "ClutchSwingMount2Bolt",
+      "ClutchSwingMount2Lock",
+      "ClutchSwingMount2Nut",
+      "ClutchSwingMount3Bolt",
+      "ClutchSwingMount3Lock",
+      "ClutchSwingMount3Nut",
+      "ClutchSwingMount4Bolt",
+      "ClutchSwingMount4Lock",
+      "ClutchSwingMount4Nut",
+      "ClutchSwingShortLink",
+      "ClutchSwingKey1",
+      "ClutchSwingShortClampBolt",
+      "ClutchSwingShortClampLock",
+      "ClutchSwingShortClampNut",
+      "ClutchSwingLongLink",
+      "ClutchSwingKey2",
+      "ClutchSwingLongClampBolt",
+      "ClutchSwingLongClampLock",
+      "ClutchSwingLongClampNut",
+      "ClutchRearRod"
+    ],
+    "ClutchCenterControl": [
+      "ClutchCenterRodRearJoint",
+      "ClutchCenterRodIntermediateJoint",
+      "ClutchCenterRod"
+    ],
+    "ClutchRearRodRearJoint": [
+      "ClutchRearRodRearJointFork",
+      "ClutchRearRodRearJointPin",
+      "ClutchRearRodRearJointCotter",
+      "ClutchRearRodRearJointNut"
+    ],
+    "ClutchRearRodForwardJoint": [
+      "ClutchRearRodForwardJointFork",
+      "ClutchRearRodForwardJointPin",
+      "ClutchRearRodForwardJointCotter",
+      "ClutchRearRodForwardJointNut"
+    ],
+    "ClutchCenterRodRearJoint": [
+      "ClutchCenterRodRearJointFork",
+      "ClutchCenterRodRearJointPin",
+      "ClutchCenterRodRearJointCotter",
+      "ClutchCenterRodRearJointNut"
+    ],
+    "ClutchCenterRodIntermediateJoint": [
+      "ClutchCenterRodIntermediateJointFork",
+      "ClutchCenterRodIntermediateJointPin",
+      "ClutchCenterRodIntermediateJointCotter",
+      "ClutchCenterRodIntermediateJointNut"
+    ]
+  },
+  "new_assembly_specs": {
+    "ClutchSwingControls": {
+      "owner": "Root",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "ClutchRearRodRearJoint": {
+      "owner": "ClutchSwingControls",
+      "frame": [
+        0.8660254037844387,
+        -0.0,
+        -0.4999999999999999,
+        2354.9446420457634,
+        0.0,
+        1.0,
+        -0.0,
+        141.0,
+        0.4999999999999999,
+        0.0,
+        0.8660254037844387,
+        622.6972938764704,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "ClutchRearRodForwardJoint": {
+      "owner": "ClutchSwingControls",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        335.0,
+        0.0,
+        0.0,
+        -1.0,
+        667.7,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "ClutchCenterControl": {
+      "owner": "ClutchSwingControls",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "ClutchCenterRodRearJoint": {
+      "owner": "ClutchCenterControl",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        3537.365454190669,
+        0.0,
+        1.0,
+        0.0,
+        365.0,
+        0.0,
+        0.0,
+        1.0,
+        626.1,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "ClutchCenterRodIntermediateJoint": {
+      "owner": "ClutchCenterControl",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "expected_physical_occurrences": 3437,
+  "expected_definition_count": 602,
+  "expected_assembly_count": 409,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "packet_complete": false
+}

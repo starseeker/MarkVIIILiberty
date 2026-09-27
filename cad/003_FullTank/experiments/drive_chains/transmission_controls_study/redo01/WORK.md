@@ -176,3 +176,41 @@ be re-evaluated. Original Woodruff key disk axis is parallel to shaft: redo as
 axial/radial key segment with tangential thickness and true shaft/hub keyways.
 Complete four bracket bolt/nut/lock mounts into actual EngineFrame_RearChannel.
 Do not stop after this increment: whole withheld redo then driver continuation.
+
+Clutch work in progress after d1612733: latest successful context-only trial is
+clutch_swing05, builder trial_control_rebuild_clutch_swing_v4.py and parts_v2,
+controls05/source_review03. 33 new occurrences, 8 new definitions; floor6 revised
+only by four mounting bores. 35 prototype occurrences include floor and AuxLever1.
+All171 context pairs clear. NOT yet locally/STEP/variation/source/render qualified.
+No live tool session remains from these trials after session16977 exited0.
+
+SH944 floor-mount hypothesis: base [3350,350,533.05], shaft[3350,350,715],
+shaft120mm x25.4 alongY; cheekcentersY305/395, width10; arms short47.3 atY335,
+long88.9 atY365, both down. Actual source hardware4 half x1.75in mounts and2
+half x2.5in clamps; complete nuts/locks. Four floor holes real, no unlisted spacers.
+Woodruff key arc lies axial/radial planeYZ, tangential6.35 thicknessX, diameter25.4,
+height10.31 inferred (still needs dimensional review), projecting2.5 above shaft.
+Two actual circular shaft pockets and straight hub keyways; all clearance .025.
+Both links have split radial clamp at+X, boltaxisZ, full source63.5 shanks.
+
+M581 rear joint at existing AuxLever1 eye[2354.944642,141,622.697294], SH953E/F
+family, pitched30deg UP aboutY. New source3/4 USStd nut, not old smaller clutch nut.
+Rear pin-to-face55, insertion19.05; forwardM569C/M568C at[3350,335,667.7], axis-X.
+Rod path starts rear+axis35.95, continues to rear+axis170, cubic to[2700,335,710],
+line[2830,335,710], cubic[3120,335,667.7], ends[3324.6,335,667.7]. Full retained
+material clear, but source routing/station remains explicitly estimated.
+
+Rejected trials01(engine-frame mountX3000/Y60/Z728):9 intersections;
+02(floor mount, depressed route):5;03(upward route, early outboard bend):one
+carrier overlap;04(190mm straight departure):one stop-rod overlap;05(170mm):clear.
+ClutchBrake_Carrier boundsX2401.49..2505.49,Y69.28..237.7,Z655.6..743.87;
+StopRodX2418.72..2629.94,Y118.45..149.55,Z721.08..751.08;
+FlywheelX2674.69..2908.07,Y+/-251.6,Z649..1152. Source arrangement re-inspected;
+SNL115/119 scans confirm2 No15 keys andone short/long link. ModernLawson3038
+corroborates No15 one-inch diameter/quarter-inch thickness only; height unverified.
+No manufacturing or historical-fit claim. Continue local checks/variation/render/
+STEP/integration, then unresolved center-clutch route and forward/driver controls.
+
+Source omission recovered: SNL192:020 SH229A center clutch rod93in. Full scan inspected. clutch_swing05 and unchecked integrated01 are not acceptable final station despite local clearance. v5 combines M581/SH944/SH229A, solves bracketX from complete2362.2mm stock, preserves all retained receivers. Source04 and controls06; no accepted checkpoint changed.
+
+Sixth increment accepted:clutch_swing_integrated02 4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc,3437/602/409. Complete SH944/M581/SH229A,142local/53STEP each,215nominal/214variation context;592preserveddefs,1838freshBReps/167273properties. v7controls08/source06,var05. Source93in determines bracketX; all original140withheld additions disposed in withheld_redo_completion.json. Redo functional scope complete. Continue driver draft, beginning source-bound M782 shaft and real mounting; future forward rods are separate continuation.

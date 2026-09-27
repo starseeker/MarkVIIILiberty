@@ -11,6 +11,25 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September2026 — withheld control redo completed
+
+The [corrected checkpoint](experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/README.md)
+contains **3437 occurrences/602 definitions/409 groups**. All140 additions from
+withheld `b19e16e5` have functional dispositions across six qualified increments;
+the corrected assembly adds155 physical occurrences to the accepted prefix.
+Incorrect extra rod segments and duplicate reverse topology are replaced, while
+missing fasteners, receiving holes and retention are supplied.
+
+The final42-part increment completes SH944/M581/SH229A. SNL192 identifies the
+center clutch rod as SH229A,93in long; this moves the estimated swing-bracket
+station forward and supersedes the early X3350 trial. Both settings pass142 local and53 STEP checks; nominal215/variation214 context
+pairs are clear. All592 unchanged definitions are preserved; fresh
+rebuild matches1838 BReps and167273 persistent properties. Progression278.
+
+Proceed to driver controls from the preserved draft. Actual fulcrum mounting,
+selectors/toggles and front rods need reconstruction. Cast forms, routing, key
+height and neutral pose remain estimates; standardtank011 is unchanged.
+
 ## 27 September 2026 — complete low-speed and center-foot rods rebuilt
 
 The [checkpoint](experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/README.md)

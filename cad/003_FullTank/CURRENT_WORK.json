@@ -4,17 +4,17 @@
   "goal_status": "active",
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
-  "accepted_development_parent": "Rebuilt M573/M579 low/center-foot routes, 27 September 2026",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01",
-  "latest_native_sha256": "7b7efd440348db104f06456f4ed2ebc318c56d1b3f378fd584aa82f532325d96",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/qualification.json",
+  "accepted_development_parent": "Completed withheld control redo,27 September2026",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02",
+  "latest_native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/qualification.json",
   "current_pipeline_run": null,
   "pipeline_receipt": null,
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
-    "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01",
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_low_rod_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_low_joint_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_pin_family_checkpoint.py",
@@ -28,7 +28,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Rebuild SH944 clutch swing links, true Woodruff keyseats and complete clamp/mount hardware, plus M581. Reconcile remaining forward rod identities and connections, finish withheld b19e16e5 redo, then resume preserved driver-controls draft.",
+  "next_action": "Resume preserved driver/front-controls draft from verified source identities and actual interfaces. Start M782 fulcrum shaft/retainers and M746/M747 support geometry; reconstruct selector/toggle topology before connecting M574/M576 front rods.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -79,35 +79,52 @@
     "Source rod bend radii, casting sections, spring wire/rate/preload and M569B length datum are unproven estimates.",
     "Intermediate receivers use a provisional driver datum. Remaining M573/M579, SH944/M581 and driver controls are still required.",
     "M640 inner radius 66.675 mm supersedes 76.2 mm in all ten occurrences, to clear adjacent complete clevises. This spacing and 10-degree rear-fork yaw remain clearance-derived estimates.",
-    "Complete M573/M579 stock and joints now clear retained context. Exact installed bends, manufacturing radii and motion remain unqualified. Provisional driver low pin: [7223.251058784141, 180.0, 890.0]; printed M574 length preserved."
+    "Complete M573/M579 stock and joints now clear retained context. Exact installed bends, manufacturing radii and motion remain unqualified. Provisional driver low pin: [7223.251058784141, 180.0, 890.0]; printed M574 length preserved.",
+    "Static reconstruction only; no force/motion/service qualification.",
+    "Broken-length diagrams preclude whole-vehicle metric camera fitting.",
+    "Do not reuse Gemini wrong page citations, SH944A/M4131 equivalence, opposing link directions or incomplete clamp/foot hardware.",
+    "FiveM576 front rods and twoM574 low front rods belong to the preserved driver-controls continuation, not the withheld commit. They remain to be rebuilt with actual receiving geometry.",
+    "HB92/SNL6 older control-side illustrations place both clutch swing connections below a pivot; choose separate SNL short and long links in that orientation. Exact correspondence to the older M642/M643 illustration remains provisional.",
+    "Woodruff No.15 selected as 25.4 mm diameter, 6.35 mm tangential thickness, 10.31 mm segment height. These inferred size values need independent historical-size evidence; key plane contains shaft axis, unlike Gemini transverse groove.",
+    "19.05 mm rod stock, 19.05 mm insertion, installed bends, clearance allowances, nominal threads and neutral angles remain estimates.",
+    "Existing half-inch hardware exterior is reused; historical hex-finish dimensions are unresolved.",
+    "Trial01 rejects the Gemini-derived engine-crossmember mounting corridor: nine saved-material intersections, including case, flywheel and rear high-control route.",
+    "Trial02 rejected the depressed rear-fork/rod route through retained rear-channel material and too-close cheek spacing.",
+    "Rear fork now pitches30 degrees upward about its true receiving pin axis; rod rises above clutch controls and turns outboard before the flywheel. Shafts and inherited journals stay fixed. Cheeks are spaced90mm to admit complete fork/pin stock. Installed routing remains an unprinted estimate.",
+    "Mount SH944A on floor6 at Y350, journalZ715. X is solved against a complete2362.2mmSH229A rod, assuming printed93in is stock centerline length; bothM569C sockets have estimated19.05mm insertion. Smooth lateral route and source-length datum remain interpretation, not measured source shape.",
+    "The X3350 clutch_swing05 prototype and its unchecked integrated01 are rejected as final placement: unable to span the retained clutch intermediate eye using source93in stock. Rejected artifacts are retained.",
+    "Clutch_swing06 center rod crosses the accepted port center-foot rod. Route now rises toZ665 before that crossing, then returns to the retained intermediate eye; stationX re-solved to retain exact2362.2mm stock length. Elevation and bends are unprinted static estimates.",
+    "Trial07 still touches the foot rod aroundX3701; advance initial rise completion toX3740, reduce rear straight pin distance80mm, and chooseZ675 plateau. Its derived station still preserves93in stock.",
+    "The exact modern/historical No15 segment height remains unverified; 10.31mm is an estimate. Quarter-inch thickness and one-inch diameter have modern corroboration only.",
+    "SH229A selected from directly reviewed SNL192, superseding older HB M574 application. Printed93in interpreted as stock centerline length; fork engagement and bends remain estimates. Driver-control continuation and its front rods remain required."
   ],
-  "visual_progression_count": 274,
+  "visual_progression_count": 278,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
   "latest_locally_qualified_checkpoint": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01",
-    "native_sha256": "7b7efd440348db104f06456f4ed2ebc318c56d1b3f378fd584aa82f532325d96",
-    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02",
+    "native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
+    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/qualification.json"
   },
-  "qualification_scope": "Four complete M573/M579 rods with eight retained pin/fork/cotter/nut joints; revised shared M640 inner eye for two-clevis clearance. Nominal/variation saved-solid, context, STEP and full-native preservation checks pass. Rod forms and receiver dimensions remain estimates.",
-  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_controls_sources/README.md",
+  "qualification_scope": "SH944 short/long links, shaft, axial Woodruff keys, complete source-sized clamp/mount hardware, real floor receivers and M581 rear rod with distinct SH953E/M569C joint families, and complete93in SH229A center rod with M569C joints. Source center-rod stock length determines swing-bracket X. Nominal/variation, context, strict STEP and full-native preservation checks pass. Cast forms, mounting, key-size height and routing remain estimates.",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/source_review01.json",
   "active_development_candidate": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01",
-    "native_sha256": "7b7efd440348db104f06456f4ed2ebc318c56d1b3f378fd584aa82f532325d96",
-    "status": "Complete M573/M579 and eight joints qualified; shared M640 inner-eye radius 66.675 mm, outer receiver frames retained. 3395 occurrences / 593 definitions / 403 groups. Clutch and forward controls remain open."
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02",
+    "native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
+    "status": "Withheld b19e16e5 functions rebuilt across six qualified increments:3437 occurrences/602 definitions/409 groups. CompleteM581/SH229A clutch routes and keyed SH944 assembly accepted. Driver-controls continuation now active."
   },
-  "qualification_note": "Five rebuilt increments accepted. SH944/M581, remaining forward controls, and preserved driver-controls continuation are still required.",
+  "qualification_note": "All140 original withheld additions have functional dispositions across six corrected increments,155 net physical additions. Source/casting/routing approximations remain explicit. Driver continuation remains open.",
   "parent_pipeline_run": "high_brake_support01",
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
   "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods03",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/qualification.json",
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing08",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/qualification.json",
     "geometry_integrated": true,
-    "status": "Complete M573/M579 and eight joints qualified; shared M640 inner-eye radius 66.675 mm, outer receiver frames retained. 3395 occurrences / 593 definitions / 403 groups. Clutch and forward controls remain open.",
-    "nominal_and_clearance_variation": "156 local checks each; 240 nominal / 239 variation context pairs; 51 strict STEP comparisons each.",
-    "source_camera": "SNL194/195 scans and HB92/SNL6 arrangement reviewed; no whole-length calibration across broken rods.",
-    "next_action": "Rebuild SH944 clutch swing links, true Woodruff keyseats and complete clamp/mount hardware, plus M581. Reconcile remaining forward rod identities and connections, finish withheld b19e16e5 redo, then resume preserved driver-controls draft.",
-    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high_integrated01/qualification.json"
+    "status": "Withheld b19e16e5 functions rebuilt across six qualified increments:3437 occurrences/602 definitions/409 groups. CompleteM581/SH229A clutch routes and keyed SH944 assembly accepted. Driver-controls continuation now active.",
+    "nominal_and_clearance_variation": "142 local checks and53 strict STEP comparisons each;215 nominal/214 variation context pairs, no exemptions.",
+    "source_camera": "SNL192 scan confirmsSH229A93in center rod. Broken-length drawing used qualitatively; no camera refit.",
+    "next_action": "Resume preserved driver/front-controls draft from verified source identities and actual interfaces. Start M782 fulcrum shaft/retainers and M746/M747 support geometry; reconstruct selector/toggle topology before connecting M574/M576 front rods.",
+    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/qualification.json"
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
@@ -133,6 +150,8 @@
     "front_controls_recovery_commit": "9bb60922",
     "front_controls_disposition": "All 121 original files preserved unchanged. Useful parts/layout draft; rebuild joint geometry, placement, source binding and validation before acceptance. Nominal audit found 39 positive intersections in 396 pairs.",
     "restart_from": "low_rods_integrated01",
-    "retained_progression_note": "Main has accepted progression through 254. Gemini retains experimental images 255-286; retain their provenance and avoid silently reusing those numbers when salvaging the withheld work."
+    "retained_progression_note": "Main has accepted progression through 254. Gemini retains experimental images 255-286; retain their provenance and avoid silently reusing those numbers when salvaging the withheld work.",
+    "withheld_redo_completion": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/withheld_redo_completion.json",
+    "withheld_redo_status": "Corrected local static reconstruction complete; original branch remains preserved."
   }
 }
