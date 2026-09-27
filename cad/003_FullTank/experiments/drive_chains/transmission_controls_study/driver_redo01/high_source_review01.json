@@ -1,0 +1,37 @@
+{
+  "source_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_source_rows01.json": "cc1943a3fffe6a92e5cda029ae2d5ab73a8533e26bb7fa98e0f00153f840f9ad",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_layout01.json": "40172f0bbcc0876fa63647bcdd46ddd162f4c0a7fdf66559fe96c546f32d2e08",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handbook_text01.json": "407d5b883aef4edda37a81946aef5eeff13423673c6373af6ff1cf5bf73af846",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_source_views01/hb113_joint_detail.png": "4207c80fe5562c000841bf4a5d5c57f9339926b4f7b03dda3a7a5c0e75b3933a",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_source_views01/receipt.json": "422e5763fb422267d9642a69969f59c2b016998f55a11043b27f3696ac44d164",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_integrated01/qualification.json": "2761661302f9d1540a07a6205858780a6d0ea7912b31dab8ca6f0b1100672403",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate113.png": "5120b8febe3a6985e10f09685e954d8f192558f1d21e92d67d4447bbf762f897",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate93.png": "65a46c3dfdf7ba25adaadf772ca627e67b003335355d4fd440064abbeaf48036",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate92.png": "50c33f9ae0e099f8bcf852742b69a10c4199e9a6375ea40b55032f87e4b07509",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p194.jpg": "3b3603f9fff0b172b1392a8c43b1c048cfd1c4e68d75e58365228288f3d45e5c",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_185_204.py": "a92096e7622a26377ea3669752921441c602e30bdd6beb297d02a4ade4b5ddee",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_105_124.py": "c83ba4707e5582a0c6cc0d367130761347953a72e6c6a6b9b1f6d7a6bd7127ca",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_085_104.py": "42da624c65338b480ff77429245bd882b3d904d22f4299f38e065d3cebd71720",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_125_144.py": "41e1a2d5db10fae57f5e380d80423dba8ddc8036ce0bd500631b9239bf309fb2"
+  },
+  "reviewed": [
+    "SNL117 gives one M759 high selector left/port and one M758 right/starboard; HB190 agrees. HB93 shows short side-opening selector bodies, distinct from37in operating levers.",
+    "SNL194 original directly inspected: three M789A front-control connecting-rod assemblies, each10-5/8in stock; two modeled for the high selectors here. The reverse application remains for later reconstruction. M569C forks are explicitly listed for M789A in SNL86.",
+    "SNL193 lists five M576 rods. Actual high intermediate eyes and M784 rear eyes have identical X/Z spans to the installed clutch application. Reuse the same M576 definition and complete stock for these two high connections, leaving two foot applications unresolved.",
+    "HB113 lower main-side pin at[321,391] is a construction estimate for the high short connection. Complete printed stock and retained fork interfaces place the actual pin13.53px from it; this exceeds pick uncertainty and remains an open geometric discrepancy. The source is not refitted."
+  ],
+  "approximations": [
+    "Static high selector bell-eye location is solved from complete printed269.875mm M789A stock plus two25.4mm estimated fork socket offsets, choosing the point nearest the reviewed source pick. This is a mechanically fitting reconstruction estimate, not a validated historical pose.",
+    "Selector journal38.3238mm,24mm width,64mm OD;12.7mm upper web and bell-eye stock. The high gate is estimated at radii140..210mm with41mm outward lips, below the opposing low gate to keep their current static stocks clear. Operating-handle engagement remains unfinished.",
+    "M576 complete1296.850963mm shared stock remains inferred. Three of five applications will be populated; foot-rod routes must confirm/reopen common family geometry.",
+    "Source fork insertion, thread envelopes, pin fits, gate profile, upper inclination, neutral pose, clearances and all unprinted dimensions remain estimates."
+  ],
+  "constraints": [
+    "Add complete selectors, rods and all eight physical clevis joints; preserve every inherited definition and world frame.",
+    "Retain printed M789A stock, actual shared M576 material, full pins/nuts/cotters and open receiving bores. No collision exemptions or clipping.",
+    "Keep source discrepancy explicit and do not refit either local registration.",
+    "High/low operating handles, fulcrums, gate/stops, brake interconnection, springs, axial spacing, reverse controls and complete seat supports remain required."
+  ],
+  "status": "Source-reviewed high-control geometry trial with explicit source-position discrepancy; static validation pending."
+}

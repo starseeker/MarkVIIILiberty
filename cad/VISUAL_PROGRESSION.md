@@ -1,5 +1,18 @@
 # Mark VIII visual progression
 
+## High selectors and complete short/long rods — 27 September 2026
+
+Five inspected views bring accepted progression to **302 images**. Both high
+selectors now connect through complete printed-length M789A rods and shared
+M576 long rods. Every physical joint is represented. The fixed source overlay
+retains the 13.53 px high-eye discrepancy; historical placement remains open.
+
+- [Isometric](intermediate_snapshot_iso_driver_high_controls_001.png)
+- [Driver detail](intermediate_snapshot_detail_driver_high_controls_001.png)
+- [Source plan](intermediate_snapshot_source_plan_driver_high_controls_001.png)
+- [Source side](intermediate_snapshot_source_side_driver_high_controls_001.png)
+- [High-speed section](intermediate_snapshot_section_driver_high_controls_001.png)
+
 ## Low selectors and corrected diagonal connections — 27 September 2026
 
 Five inspected views bring accepted progression to **297 images**. Two short

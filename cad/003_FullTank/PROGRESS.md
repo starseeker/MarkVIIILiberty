@@ -11,6 +11,21 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — high selectors and complete rod connections integrated
+
+The [checkpoint](experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/README.md)
+contains **3,572 occurrences / 628 definitions / 439 groups**. Its 38 additions
+include both high selectors, two printed-length M789A rods, two shared M576 rods
+and all eight physical clevis joints. Every inherited shape and frame is preserved.
+Three M576 applications now use the exact same definition and complete stock.
+
+Nominal/variation each pass 432 local checks, 75 context pairs and 41 STEP
+comparisons; integration, all 625 inherited definitions and fresh rebuilding pass.
+Five inspected views bring progression to **302**. The fixed source comparison
+retains a 13.53 px high-eye discrepancy beyond the pick allowance; printed stock
+is preserved and historical placement remains open. Next are actual operating
+handles/fulcrums and selector engagement. Standard tank011 is unchanged.
+
 ## 27 September 2026 — low selectors and complete upper joints integrated
 
 The [checkpoint](experiments/drive_chains/transmission_controls_study/driver_redo01/selector_integrated01/README.md)

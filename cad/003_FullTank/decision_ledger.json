@@ -1342,6 +1342,91 @@
           "sha256": "9b1f200b581c3dd89277e805ae5a6cb59aad4f0aead91da554d1d02e4bc23130"
         }
       ]
+    },
+    {
+      "id": "driver_high_selectors_and_rods",
+      "status": "reviewed_approximation",
+      "scope": "High selectors and four complete rods/joint sets; three exact shared M576 applications.",
+      "reason": "Printed M789A stock closes through real receiving eyes. Native materials, interfaces, variant, context, STEP, inherited preservation and fresh rebuild pass.",
+      "uncertainty": "Historical selector form, jaw geometry, pose, axial stack and fork insertion remain estimated. Source eye position is separately open.",
+      "limits": [
+        "No historical-position, hand-engagement or motion qualification.",
+        "Remaining operator controls, full seat support and standard tank integration stay open."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Source rows, fixed comparison, five inspected images and full qualification receipts."
+      },
+      "reopen_when": [
+        "Operating handles/fulcrums contradict selector geometry",
+        "Remaining M576 applications contradict shared stock",
+        "New dimension or source identity evidence"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_source_review01.json",
+          "sha256": "7b60299b1b91bdf83f91285099c156abc359fa845e4a441bb3560de1d0190a42"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_layout01.json",
+          "sha256": "40172f0bbcc0876fa63647bcdd46ddd162f4c0a7fdf66559fe96c546f32d2e08"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_controls01.json",
+          "sha256": "82ab4dfbc3be38d5573c3f239bee47b1fea60883a918297752e70e0af26f551d"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/qualification.json",
+          "sha256": "45675a03211c34d01520c091534f0d8b957c4ea6fba603bdac5cb4d15e9f30b3"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/visual_review.json",
+          "sha256": "cab9b8b5c8c67ee9a46363de1963e5b76522a0a23f1eeb888978111831af1227"
+        }
+      ]
+    },
+    {
+      "id": "driver_high_selector_source_position",
+      "status": "open_evidence",
+      "scope": "13.525126px high-eye discrepancy under unchanged HB113 local registration.",
+      "reason": "The construction pick implies 351.381447 mm pin span; printed M789A plus retained fork offsets requires 320.675 mm. Complete stock is preserved, but source placement is not qualified.",
+      "uncertainty": "Selector pose, shaft-spacing calibration, fork insertion/length datum and mixed source depiction need diagnosis when actual operating-lever geometry is built.",
+      "limits": [
+        "Do not refit source registration merely to remove this discrepancy.",
+        "Do not claim collision checks or explicit discrepancy logging prove historical accuracy."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Saved receiving-bore projection and literal SNL194 stock."
+      },
+      "reopen_when": [
+        "Actual operating-lever/fulcrum geometry supplies pose constraints",
+        "Better source pin/shaft identity or dimension evidence"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_source_review01.json",
+          "sha256": "7b60299b1b91bdf83f91285099c156abc359fa845e4a441bb3560de1d0190a42"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_layout01.json",
+          "sha256": "40172f0bbcc0876fa63647bcdd46ddd162f4c0a7fdf66559fe96c546f32d2e08"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_controls01.json",
+          "sha256": "82ab4dfbc3be38d5573c3f239bee47b1fea60883a918297752e70e0af26f551d"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/qualification.json",
+          "sha256": "45675a03211c34d01520c091534f0d8b957c4ea6fba603bdac5cb4d15e9f30b3"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/visual_review.json",
+          "sha256": "cab9b8b5c8c67ee9a46363de1963e5b76522a0a23f1eeb888978111831af1227"
+        }
+      ]
     }
   ]
 }

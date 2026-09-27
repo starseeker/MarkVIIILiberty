@@ -1,5 +1,17 @@
 # Driver controls — active continuation
 
+Current checkpoint: [high selectors and complete rods](high_integrated01/README.md),
+**3,572 occurrences / 628 definitions / 439 groups**. Both high selectors, their
+source-length M789A rods and shared M576 long rods now have complete physical
+joints. Every preceding shape and frame remains fixed. The high-eye source
+position disagrees by 13.53 px and remains explicitly unresolved.
+
+See [source review](high_source_review01.json), [trial record](high_trials.md)
+and [current recovery state](../../../../CURRENT_WORK.json). Next build actual
+operating-lever fulcrums/handles and selector engagement, then remaining controls.
+
+The following entries are historical checkpoints and include superseded assumptions.
+
 Current checkpoint: [low selectors and upper joints](selector_integrated01/README.md),
 **3,534 occurrences / 625 definitions / 428 groups**. The two low selectors now
 have complete M790 joints. M762 is corrected to the source's diagonal upper
