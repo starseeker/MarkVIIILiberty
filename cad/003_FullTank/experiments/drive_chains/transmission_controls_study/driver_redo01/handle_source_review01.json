@@ -1,0 +1,29 @@
+{
+  "source_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_source_rows01.json": "2872215293a1a6f3f09e78456b25744b11c98daff57ca80cdc34b84d99877095",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_source_views01/receipt.json": "694cce888f5d82f047ea5282e8a6f5eb5e234176a40e572f02a14973dc8b9411",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_source_views01/hb113_side.png": "3d4502864df692b11faf783735092608e08e54f35b8f142d08281bd8f51bb507",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_source_views01/hb113_plan.png": "ae9fedbbf375f7010e732857ea14b5f809a4a2a4123e3a49297252fe72c62afa",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate93.png": "65a46c3dfdf7ba25adaadf772ca627e67b003335355d4fd440064abbeaf48036",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handbook_text01.json": "407d5b883aef4edda37a81946aef5eeff13423673c6373af6ff1cf5bf73af846",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p023.jpg": "54296ed0e4702d48ce72d42a22d0abe3fc8a05fb03d4e5cd7d7d1dc79ab7f0c1",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p129.jpg": "039364d1f8f9d7d415f10bd10e8daab265a21f03ec3dc314b5e751720ea9b58b",
+    "cad/001_Survey/inputs/snl_rows.json": "40ea9863be0b56e3a738a2c45405100f697f921759d3f27255e9cd498bb3f13f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/qualification.json": "45675a03211c34d01520c091534f0d8b957c4ea6fba603bdac5cb4d15e9f30b3"
+  },
+  "reviewed": [
+    "HB148 gives 37-inch carbon-steel operating levers and a gate formed by the two selectors. HB93 depicts lateral high/low selection; the handle and fulcrum are separate parts. Source lengths are not specified as centerline or pivot-to-tip measurements.",
+    "HB113 plan places M746/M747 inboard of the selector collars. Fulcrum collars belong to the main shaft, with a second handle pivot. Exact axial stations, second-pivot axis/offset and handle heel profile remain to be reconstructed.",
+    "Current selectors have radial end lips. A simple continuous radial stem in the nominal pocket necessarily crosses those lips; the previous empty-pocket check did not test a through-going operating handle. Tangential lips around a radial through-slot are the proposed interpretation of fore/aft actuation. Confirm it with complete handles and a source comparison before integration.",
+    "SNL23 original directly inspected: each M776 assembly includes M768 7/8-inch special nut and one 3/16 x 1-inch split pin. SNL129 original specifies crown, U.S. Std., 7/8 inch and 1/2-inch thickness for M767/M776. The generic SNL141 1-1/2-inch cotter row also names M776, so retain this conflict; do not silently lengthen a pin to fit an estimated crown.",
+    "SNL97 gives M747 left/port and M746 right/starboard; SNL117 gives M738B left and M738A right. Hardware and handle geometry are not yet accepted."
+  ],
+  "hypothesis": "Reorient only selector upper jaws: keep journals and all lower connections intact. Use a 32 mm radial band and 70 mm tangential envelope, with estimated 12.7 mm lips. Existing high/low gate centers 175/250 mm and axial reaches remain estimates. No actual handle is represented by the diagnostic through-stem.",
+  "constraints": [
+    "Preserve every occurrence frame and all material below the former upper-jaw radial threshold.",
+    "Do not count witness stems as tank parts or claim torque, motion, historical geometry or complete handle engagement from this study.",
+    "Do not refit either source registration or alter complete rods and existing source discrepancies.",
+    "Validate saved material, broad context and exchange before using the pilot in a complete operating-handle reconstruction."
+  ],
+  "status": "Conditional jaw-topology study; complete handles, fulcrums and hardware still required."
+}

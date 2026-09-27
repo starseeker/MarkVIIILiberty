@@ -1,0 +1,4420 @@
+{
+  "native_file": "ControlRebuildTrial.FCStd",
+  "native_sha256": "d7b0c0bbc1ca7be60a3f4397b81893bf2b491bb742fc6c357d53b4d0262458fa",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/PowertrainControlRebuild.FCStd",
+  "parent_native_sha256": "21a1f58f9ca15210ab26452271e263637d261c56036724d9707b02edda7d520f",
+  "parent_manifest_sha256": "12aa0eced141b1c4d67578a41a4a4ccddfd4fc16687bc7ee09bb56ca926cf728",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/trial_driver_handle_gates.py": "4d8de3d626126367354ca28473b609705ed21e05114b31615d7dd0c7965b4d81",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_gate_variation01.json": "fa74358de9911a1c2bc02e45271a6cba2c148b4b19ca0fb9b57aabe52067dcdf",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_source_review01.json": "907ce55bbc35377682a74a9ae1d8a80f2b58f77cdcb73dd5ba4b588334fbeb58",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high01/report.json": "ffe6ba931c3b8401698159e5691a43c166700bfa6827ff185c4cbd98a7a3b4c0",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/report.json": "03b5453017e6adc9ff09d4a5b19bf9b0435cf75fa76dd45609f8ed2da79233ac",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/isolated/manifest.json": "12aa0eced141b1c4d67578a41a4a4ccddfd4fc16687bc7ee09bb56ca926cf728",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io_v2.py": "84ab9a61290fbdbf32da469c0acab4582a6e6e7a0761583b6425263bc96f6465",
+    "cad/003_FullTank/experiments/drive_chains/driver_control_linkage_parts_v3.py": "35ccd619023fd76276c116c9177d4331b3cc83d794af6e808f9c48c886ce2d90",
+    "cad/003_FullTank/experiments/drive_chains/driver_handle_gate_parts.py": "3b1d8a4e7816d37b12ef3fe23cda1ee6666da0fb72d903e38efce01fb683bedd",
+    "cad/003_FullTank/experiments/drive_chains/driver_low_selector_parts.py": "24ba14e97a091328e7a680ee82e1f9fd3f1b491fe13f11632251b08d07843f8a"
+  },
+  "specs": {
+    "DriverMainShaft": {
+      "definition": "Def_DriverMainShaft_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7579.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1300.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverMainFulcrum",
+      "role": "shaft"
+    },
+    "DriverMainPortNut": {
+      "definition": "Def_TransmissionPin_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7579.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        -240.30214285714288,
+        0.0,
+        0.0,
+        1.0,
+        1300.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverMainFulcrum",
+      "role": "nut"
+    },
+    "DriverMainPortKeeper": {
+      "definition": "Def_DriverMainKeeper_MountStudy",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7579.8934082721635,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        305.425,
+        -0.0,
+        0.0,
+        1.0,
+        1300.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverMainFulcrum",
+      "role": "keeper"
+    },
+    "DriverMainStarboardNut": {
+      "definition": "Def_TransmissionPin_nut",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        7579.8934082721635,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        240.30214285714288,
+        0.0,
+        0.0,
+        1.0,
+        1300.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverMainFulcrum",
+      "role": "nut"
+    },
+    "DriverMainStarboardKeeper": {
+      "definition": "Def_DriverMainKeeper_MountStudy",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7579.8934082721635,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        -305.425,
+        -0.0,
+        0.0,
+        1.0,
+        1300.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverMainFulcrum",
+      "role": "keeper"
+    },
+    "DriverSwingShaft": {
+      "definition": "Def_DriverSwingShaft_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverRearSwing",
+      "role": "shaft"
+    },
+    "DriverSwingPortNut": {
+      "definition": "Def_TransmissionSmallSupport_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        612.7750000000001,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverRearSwing",
+      "role": "nut"
+    },
+    "DriverSwingPortKeeper": {
+      "definition": "Def_DriverSwingKeeper_MountStudy",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7173.363024144814,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        298.925,
+        -0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverRearSwing",
+      "role": "keeper"
+    },
+    "DriverSwingStarboardNut": {
+      "definition": "Def_TransmissionSmallSupport_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -612.7750000000001,
+        0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverRearSwing",
+      "role": "nut"
+    },
+    "DriverSwingStarboardKeeper": {
+      "definition": "Def_DriverSwingKeeper_MountStudy",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7173.363024144814,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        -298.925,
+        -0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverRearSwing",
+      "role": "keeper"
+    },
+    "DriverPortSupportPlate": {
+      "definition": "Def_DriverPortSupportPlate_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        862.3873870273934,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "plate"
+    },
+    "DriverPortSupportMount1Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7131.256294547375,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        854.3102191247223,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "bolt"
+    },
+    "DriverPortSupportMount1Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7135.353634788064,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        842.6597125712702,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "lock"
+    },
+    "DriverPortSupportMount1Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7136.406999586783,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        839.6645418581357,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "nut"
+    },
+    "DriverPortSupportMount2Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7161.256294547375,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        864.8608511214272,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "bolt"
+    },
+    "DriverPortSupportMount2Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7165.353634788064,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        853.2103445679752,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "lock"
+    },
+    "DriverPortSupportMount2Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7166.406999586783,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        850.2151738548407,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "nut"
+    },
+    "DriverPortSupportMount3Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7497.7866786747245,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        983.2144590760088,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "bolt"
+    },
+    "DriverPortSupportMount3Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7501.884018915413,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        971.5639525225567,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "lock"
+    },
+    "DriverPortSupportMount3Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7502.937383714133,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        968.5687818094223,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "nut"
+    },
+    "DriverPortSupportMount4Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7527.7866786747245,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        993.7650910727139,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "bolt"
+    },
+    "DriverPortSupportMount4Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7531.884018915413,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        982.1145845192618,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "lock"
+    },
+    "DriverPortSupportMount4Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7532.937383714133,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        979.1194138061273,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "nut"
+    },
+    "DriverStarboardSupportPlate": {
+      "definition": "Def_DriverStarboardSupportPlate_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        862.3873870273934,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "plate"
+    },
+    "DriverStarboardSupportMount1Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7131.256294547375,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        854.3102191247223,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "bolt"
+    },
+    "DriverStarboardSupportMount1Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7135.353634788064,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        842.6597125712702,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "lock"
+    },
+    "DriverStarboardSupportMount1Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7136.406999586783,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        839.6645418581357,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "nut"
+    },
+    "DriverStarboardSupportMount2Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7161.256294547375,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        864.8608511214272,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "bolt"
+    },
+    "DriverStarboardSupportMount2Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7165.353634788064,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        853.2103445679752,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "lock"
+    },
+    "DriverStarboardSupportMount2Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7166.406999586783,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        850.2151738548407,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "nut"
+    },
+    "DriverStarboardSupportMount3Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7497.7866786747245,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        983.2144590760088,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "bolt"
+    },
+    "DriverStarboardSupportMount3Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7501.884018915413,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        971.5639525225567,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "lock"
+    },
+    "DriverStarboardSupportMount3Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7502.937383714133,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        968.5687818094223,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "nut"
+    },
+    "DriverStarboardSupportMount4Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7527.7866786747245,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        993.7650910727139,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "bolt"
+    },
+    "DriverStarboardSupportMount4Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7531.884018915413,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        982.1145845192618,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "lock"
+    },
+    "DriverStarboardSupportMount4Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        0.0,
+        0.33176844054162735,
+        7532.937383714133,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.33176844054162735,
+        0.0,
+        -0.9433608545305325,
+        979.1194138061273,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverSupportPlates",
+      "role": "nut"
+    },
+    "hull_floor_1": {
+      "definition": "Def_DriverContext_hull_floor_1",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverFloorContext",
+      "role": "floor"
+    },
+    "hull_floor_2": {
+      "definition": "Def_DriverContext_hull_floor_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverFloorContext",
+      "role": "floor"
+    },
+    "StarboardReverseDriverSwingLink": {
+      "definition": "Def_DriverSwingLink_M784",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -235.0,
+        0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverRearSwing",
+      "role": "swing_link"
+    },
+    "StarboardHighDriverSwingLink": {
+      "definition": "Def_DriverSwingLink_M784",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverRearSwing",
+      "role": "swing_link"
+    },
+    "PortHighDriverSwingLink": {
+      "definition": "Def_DriverSwingLink_M784",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverRearSwing",
+      "role": "swing_link"
+    },
+    "PortClutchDriverSwingLink": {
+      "definition": "Def_DriverSwingLink_M784",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverRearSwing",
+      "role": "swing_link"
+    },
+    "DriverClutchOperatingLever": {
+      "definition": "Def_DriverClutchLever_M772",
+      "frame": [
+        0.7360233666112133,
+        0.0,
+        0.6769561313721115,
+        7579.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.6769561313721115,
+        0.0,
+        0.7360233666112133,
+        1300.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverFrontClutch",
+      "role": "lever"
+    },
+    "PortClutchIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortClutchIntermediateControl",
+      "role": "receiver"
+    },
+    "DriverClutchShortRod": {
+      "definition": "Def_DriverClutchShortRod_M789B",
+      "frame": [
+        0.9815450400346247,
+        -0.0,
+        -0.19123110202952598,
+        7243.294268161693,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.19123110202952598,
+        0.0,
+        0.9815450400346247,
+        1106.85726999155,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverFrontClutch",
+      "role": "rod"
+    },
+    "DriverClutchShortRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9815450400346215,
+        -0.0,
+        -0.19123110202954227,
+        7218.363024144814,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.19123110202954227,
+        0.0,
+        0.9815450400346215,
+        1102.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchShortRearJoint",
+      "role": "fork"
+    },
+    "DriverClutchShortRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9815450400346215,
+        -0.0,
+        -0.19123110202954227,
+        7218.363024144814,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.19123110202954227,
+        0.0,
+        0.9815450400346215,
+        1102.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchShortRearJoint",
+      "role": "pin"
+    },
+    "DriverClutchShortRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9815450400346215,
+        -0.0,
+        -0.19123110202954227,
+        7218.363024144814,
+        0.0,
+        1.0,
+        -0.0,
+        253.42499999999995,
+        0.19123110202954227,
+        0.0,
+        0.9815450400346215,
+        1102.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchShortRearJoint",
+      "role": "cotter"
+    },
+    "DriverClutchShortRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.1912311020295272,
+        0.0,
+        0.9815450400346244,
+        7261.992701174353,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.9815450400346244,
+        0.0,
+        0.1912311020295272,
+        1110.5002224852124,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchShortRearJoint",
+      "role": "nut"
+    },
+    "DriverClutchShortForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9815450400346246,
+        0.0,
+        0.19123110202952628,
+        7582.982467891676,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.19123110202952628,
+        0.0,
+        -0.9815450400346246,
+        1173.0375736264186,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchShortForwardJoint",
+      "role": "fork"
+    },
+    "DriverClutchShortForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9815450400346246,
+        0.0,
+        0.19123110202952628,
+        7582.982467891676,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.19123110202952628,
+        0.0,
+        -0.9815450400346246,
+        1173.0375736264186,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchShortForwardJoint",
+      "role": "pin"
+    },
+    "DriverClutchShortForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9815450400346246,
+        0.0,
+        0.19123110202952628,
+        7582.982467891676,
+        0.0,
+        1.0,
+        0.0,
+        253.42499999999995,
+        -0.19123110202952628,
+        0.0,
+        -0.9815450400346246,
+        1173.0375736264186,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchShortForwardJoint",
+      "role": "cotter"
+    },
+    "DriverClutchShortForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.19123110202952742,
+        -0.0,
+        -0.9815450400346246,
+        7539.352790862137,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.9815450400346246,
+        0.0,
+        -0.19123110202952742,
+        1164.5373511412063,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchShortForwardJoint",
+      "role": "nut"
+    },
+    "DriverClutchFrontRod": {
+      "definition": "Def_DriverClutchFrontRod_M576",
+      "frame": [
+        0.9657138644691613,
+        -0.0,
+        -0.25960880565196237,
+        5957.4469368979935,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.25960880565196237,
+        0.0,
+        0.9657138644691613,
+        681.7320067314708,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverFrontClutch",
+      "role": "rod"
+    },
+    "DriverClutchFrontRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9657138644691634,
+        -0.0,
+        -0.2596088056519544,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.2596088056519544,
+        0.0,
+        0.9657138644691634,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchFrontRearJoint",
+      "role": "fork"
+    },
+    "DriverClutchFrontRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9657138644691634,
+        -0.0,
+        -0.2596088056519544,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.2596088056519544,
+        0.0,
+        0.9657138644691634,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchFrontRearJoint",
+      "role": "pin"
+    },
+    "DriverClutchFrontRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9657138644691634,
+        -0.0,
+        -0.2596088056519544,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        253.42499999999995,
+        0.2596088056519544,
+        0.0,
+        0.9657138644691634,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchFrontRearJoint",
+      "role": "cotter"
+    },
+    "DriverClutchFrontRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.2596088056519633,
+        0.0,
+        0.9657138644691611,
+        5975.84378601613,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.9657138644691611,
+        0.0,
+        0.2596088056519633,
+        686.6775544791409,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchFrontRearJoint",
+      "role": "nut"
+    },
+    "DriverClutchFrontForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9657138644691594,
+        0.0,
+        0.2596088056519702,
+        7234.3630241448145,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.2596088056519702,
+        0.0,
+        -0.9657138644691594,
+        1025.0000000000002,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchFrontForwardJoint",
+      "role": "fork"
+    },
+    "DriverClutchFrontForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9657138644691594,
+        0.0,
+        0.2596088056519702,
+        7234.3630241448145,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.2596088056519702,
+        0.0,
+        -0.9657138644691594,
+        1025.0000000000002,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchFrontForwardJoint",
+      "role": "pin"
+    },
+    "DriverClutchFrontForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9657138644691594,
+        0.0,
+        0.2596088056519702,
+        7234.3630241448145,
+        0.0,
+        1.0,
+        0.0,
+        253.42499999999995,
+        -0.2596088056519702,
+        0.0,
+        -0.9657138644691594,
+        1025.0000000000002,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchFrontForwardJoint",
+      "role": "cotter"
+    },
+    "DriverClutchFrontForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.2596088056519641,
+        -0.0,
+        -0.965713864469161,
+        7191.437042869161,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.965713864469161,
+        0.0,
+        -0.2596088056519641,
+        1013.4603885887705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverClutchFrontForwardJoint",
+      "role": "nut"
+    },
+    "PortDriverLowSuspension": {
+      "definition": "Def_DriverLowSuspension_M760",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowBranch",
+      "role": "low_link"
+    },
+    "PortDriverLowConnecting": {
+      "definition": "Def_DriverLowConnecting_M762",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowBranch",
+      "role": "low_link"
+    },
+    "PortDriverLowBrake": {
+      "definition": "Def_DriverLowBrake_M763",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowBranch",
+      "role": "low_link"
+    },
+    "PortDriverLowPin": {
+      "definition": "Def_DriverLowSuspensionPin_M761",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7190.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        1152.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowBranch",
+      "role": "pin"
+    },
+    "PortDriverLowWasher": {
+      "definition": "Def_DriverLowLinkWasher_SH220A",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7190.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        168.65,
+        0.0,
+        0.0,
+        1.0,
+        1152.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowBranch",
+      "role": "washer"
+    },
+    "PortDriverLowKeeper": {
+      "definition": "Def_DriverLowSuspensionKeeper",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7190.363024144814,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        205.65,
+        -0.0,
+        0.0,
+        1.0,
+        1152.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowBranch",
+      "role": "keeper"
+    },
+    "PortLowIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowIntermediateControl",
+      "role": "receiver"
+    },
+    "PortDriverLowRod": {
+      "definition": "Def_DriverLowFrontRod_M574",
+      "frame": [
+        0.9635694667107539,
+        -0.0,
+        -0.2674581889244621,
+        5957.39246919493,
+        0.0,
+        1.0,
+        -0.0,
+        180.0,
+        0.2674581889244621,
+        0.0,
+        0.9635694667107539,
+        681.9313810665924,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowBranch",
+      "role": "rod"
+    },
+    "PortDriverLowRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9635694667107539,
+        -0.0,
+        -0.2674581889244621,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        180.0,
+        0.2674581889244621,
+        0.0,
+        0.9635694667107539,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowRearJoint",
+      "role": "fork"
+    },
+    "PortDriverLowRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9635694667107539,
+        -0.0,
+        -0.2674581889244621,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        180.0,
+        0.2674581889244621,
+        0.0,
+        0.9635694667107539,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowRearJoint",
+      "role": "pin"
+    },
+    "PortDriverLowRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9635694667107539,
+        -0.0,
+        -0.2674581889244621,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        198.42499999999995,
+        0.2674581889244621,
+        0.0,
+        0.9635694667107539,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowRearJoint",
+      "role": "cotter"
+    },
+    "PortDriverLowRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.2674581889244624,
+        0.0,
+        0.9635694667107539,
+        5975.74846753577,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        -0.9635694667107539,
+        0.0,
+        0.2674581889244624,
+        687.0264595656037,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowRearJoint",
+      "role": "nut"
+    },
+    "PortDriverLowForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9635694667107539,
+        0.0,
+        0.2674581889244623,
+        7193.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        -0.2674581889244623,
+        0.0,
+        -0.9635694667107539,
+        1025.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowForwardJoint",
+      "role": "fork"
+    },
+    "PortDriverLowForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9635694667107539,
+        0.0,
+        0.2674581889244623,
+        7193.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        -0.2674581889244623,
+        0.0,
+        -0.9635694667107539,
+        1025.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowForwardJoint",
+      "role": "pin"
+    },
+    "PortDriverLowForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9635694667107539,
+        0.0,
+        0.2674581889244623,
+        7193.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        198.42499999999995,
+        -0.2674581889244623,
+        0.0,
+        -0.9635694667107539,
+        1025.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowForwardJoint",
+      "role": "cotter"
+    },
+    "PortDriverLowForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.26745818892446205,
+        -0.0,
+        -0.9635694667107539,
+        7150.532361349521,
+        0.0,
+        1.0,
+        -0.0,
+        180.0,
+        0.9635694667107539,
+        0.0,
+        -0.26745818892446205,
+        1013.1114835023077,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowForwardJoint",
+      "role": "nut"
+    },
+    "StarboardDriverLowSuspension": {
+      "definition": "Def_DriverLowSuspension_M760",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowBranch",
+      "role": "low_link"
+    },
+    "StarboardDriverLowConnecting": {
+      "definition": "Def_DriverLowConnecting_M762",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowBranch",
+      "role": "low_link"
+    },
+    "StarboardDriverLowBrake": {
+      "definition": "Def_DriverLowBrake_M763",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7173.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        1320.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowBranch",
+      "role": "low_link"
+    },
+    "StarboardDriverLowPin": {
+      "definition": "Def_DriverLowSuspensionPin_M761",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7190.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        1152.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowBranch",
+      "role": "pin"
+    },
+    "StarboardDriverLowWasher": {
+      "definition": "Def_DriverLowLinkWasher_SH220A",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7190.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -191.35,
+        0.0,
+        0.0,
+        1.0,
+        1152.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowBranch",
+      "role": "washer"
+    },
+    "StarboardDriverLowKeeper": {
+      "definition": "Def_DriverLowSuspensionKeeper",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7190.363024144814,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        -154.35,
+        -0.0,
+        0.0,
+        1.0,
+        1152.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowBranch",
+      "role": "keeper"
+    },
+    "StarboardLowIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowIntermediateControl",
+      "role": "receiver"
+    },
+    "StarboardDriverLowRod": {
+      "definition": "Def_DriverLowFrontRod_M574",
+      "frame": [
+        0.9635694667107539,
+        -0.0,
+        -0.2674581889244621,
+        5957.39246919493,
+        0.0,
+        1.0,
+        -0.0,
+        -180.0,
+        0.2674581889244621,
+        0.0,
+        0.9635694667107539,
+        681.9313810665924,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowBranch",
+      "role": "rod"
+    },
+    "StarboardDriverLowRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9635694667107539,
+        -0.0,
+        -0.2674581889244621,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        -180.0,
+        0.2674581889244621,
+        0.0,
+        0.9635694667107539,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowRearJoint",
+      "role": "fork"
+    },
+    "StarboardDriverLowRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9635694667107539,
+        -0.0,
+        -0.2674581889244621,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        -180.0,
+        0.2674581889244621,
+        0.0,
+        0.9635694667107539,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowRearJoint",
+      "role": "pin"
+    },
+    "StarboardDriverLowRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9635694667107539,
+        -0.0,
+        -0.2674581889244621,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        -161.57500000000005,
+        0.2674581889244621,
+        0.0,
+        0.9635694667107539,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowRearJoint",
+      "role": "cotter"
+    },
+    "StarboardDriverLowRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.2674581889244624,
+        0.0,
+        0.9635694667107539,
+        5975.74846753577,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        -0.9635694667107539,
+        0.0,
+        0.2674581889244624,
+        687.0264595656037,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowRearJoint",
+      "role": "nut"
+    },
+    "StarboardDriverLowForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9635694667107539,
+        0.0,
+        0.2674581889244623,
+        7193.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        -0.2674581889244623,
+        0.0,
+        -0.9635694667107539,
+        1025.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowForwardJoint",
+      "role": "fork"
+    },
+    "StarboardDriverLowForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9635694667107539,
+        0.0,
+        0.2674581889244623,
+        7193.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        -0.2674581889244623,
+        0.0,
+        -0.9635694667107539,
+        1025.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowForwardJoint",
+      "role": "pin"
+    },
+    "StarboardDriverLowForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9635694667107539,
+        0.0,
+        0.2674581889244623,
+        7193.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -161.57500000000005,
+        -0.2674581889244623,
+        0.0,
+        -0.9635694667107539,
+        1025.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowForwardJoint",
+      "role": "cotter"
+    },
+    "StarboardDriverLowForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.26745818892446205,
+        -0.0,
+        -0.9635694667107539,
+        7150.532361349521,
+        0.0,
+        1.0,
+        -0.0,
+        -180.0,
+        0.9635694667107539,
+        0.0,
+        -0.26745818892446205,
+        1013.1114835023077,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowForwardJoint",
+      "role": "nut"
+    },
+    "PortDriverLowSelector": {
+      "definition": "Def_DriverLowSelector_M756",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7579.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        175.2,
+        0.0,
+        0.0,
+        1.0,
+        1300.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowBranch",
+      "role": "selector"
+    },
+    "PortDriverLowSelectorPin": {
+      "definition": "Def_DriverLowSelectorJointPin_M790",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7489.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        1392.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowSelectorJoint",
+      "role": "pin"
+    },
+    "PortDriverLowSelectorKeeper": {
+      "definition": "Def_DriverLowSuspensionKeeper",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7489.8934082721635,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        155.65,
+        -0.0,
+        0.0,
+        1.0,
+        1392.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverLowSelectorJoint",
+      "role": "keeper"
+    },
+    "StarboardDriverLowSelector": {
+      "definition": "Def_DriverLowSelector_M757",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7579.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        -184.8,
+        0.0,
+        0.0,
+        1.0,
+        1300.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowBranch",
+      "role": "selector"
+    },
+    "StarboardDriverLowSelectorPin": {
+      "definition": "Def_DriverLowSelectorJointPin_M790",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7489.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        1392.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowSelectorJoint",
+      "role": "pin"
+    },
+    "StarboardDriverLowSelectorKeeper": {
+      "definition": "Def_DriverLowSuspensionKeeper",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7489.8934082721635,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        -204.35,
+        -0.0,
+        0.0,
+        1.0,
+        1392.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverLowSelectorJoint",
+      "role": "keeper"
+    },
+    "PortDriverHighSelector": {
+      "definition": "Def_DriverHighSelector_M759",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7579.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        0.0,
+        0.0,
+        1.0,
+        1300.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighBranch",
+      "role": "selector"
+    },
+    "PortHighIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortHighIntermediateControl",
+      "role": "receiver"
+    },
+    "PortDriverHighShortRod": {
+      "definition": "Def_DriverFrontShortRod_M789A",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7243.587305823931,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        1104.9825515540465,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighBranch",
+      "role": "rod"
+    },
+    "PortDriverHighShortRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7218.363024144814,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        1102.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighShortRearJoint",
+      "role": "fork"
+    },
+    "PortDriverHighShortRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7218.363024144814,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        1102.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighShortRearJoint",
+      "role": "pin"
+    },
+    "PortDriverHighShortRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7218.363024144814,
+        0.0,
+        1.0,
+        -0.0,
+        143.42499999999995,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        1102.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighShortRearJoint",
+      "role": "cotter"
+    },
+    "PortDriverHighShortRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.11742328952939263,
+        0.0,
+        0.9930819558707612,
+        7262.5055170832675,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        -0.9930819558707612,
+        0.0,
+        0.11742328952939263,
+        1107.2194652195815,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighShortRearJoint",
+      "role": "nut"
+    },
+    "PortDriverHighShortForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9930819558707611,
+        0.0,
+        0.11742328952939345,
+        7536.81958034367,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        -0.11742328952939345,
+        0.0,
+        -0.9930819558707611,
+        1139.6547133698382,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighShortForwardJoint",
+      "role": "fork"
+    },
+    "PortDriverHighShortForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9930819558707611,
+        0.0,
+        0.11742328952939345,
+        7536.81958034367,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        -0.11742328952939345,
+        0.0,
+        -0.9930819558707611,
+        1139.6547133698382,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighShortForwardJoint",
+      "role": "pin"
+    },
+    "PortDriverHighShortForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9930819558707611,
+        0.0,
+        0.11742328952939345,
+        7536.81958034367,
+        0.0,
+        1.0,
+        0.0,
+        143.42499999999995,
+        -0.11742328952939345,
+        0.0,
+        -0.9930819558707611,
+        1139.6547133698382,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighShortForwardJoint",
+      "role": "cotter"
+    },
+    "PortDriverHighShortForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.1174232895293934,
+        -0.0,
+        -0.9930819558707612,
+        7492.677087405216,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.9930819558707612,
+        0.0,
+        -0.1174232895293934,
+        1134.435248150257,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighShortForwardJoint",
+      "role": "nut"
+    },
+    "PortDriverHighFrontRod": {
+      "definition": "Def_DriverClutchFrontRod_M576",
+      "frame": [
+        0.9657138644691613,
+        -0.0,
+        -0.25960880565196237,
+        5957.4469368979935,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.25960880565196237,
+        0.0,
+        0.9657138644691613,
+        681.7320067314708,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighBranch",
+      "role": "rod"
+    },
+    "PortDriverHighFrontRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9657138644691613,
+        -0.0,
+        -0.25960880565196237,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.25960880565196237,
+        0.0,
+        0.9657138644691613,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighFrontRearJoint",
+      "role": "fork"
+    },
+    "PortDriverHighFrontRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9657138644691613,
+        -0.0,
+        -0.25960880565196237,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.25960880565196237,
+        0.0,
+        0.9657138644691613,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighFrontRearJoint",
+      "role": "pin"
+    },
+    "PortDriverHighFrontRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9657138644691613,
+        -0.0,
+        -0.25960880565196237,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        143.42499999999995,
+        0.25960880565196237,
+        0.0,
+        0.9657138644691613,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighFrontRearJoint",
+      "role": "cotter"
+    },
+    "PortDriverHighFrontRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.25960880565196254,
+        0.0,
+        0.9657138644691613,
+        5975.843786016129,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        -0.9657138644691613,
+        0.0,
+        0.25960880565196254,
+        686.6775544791407,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighFrontRearJoint",
+      "role": "nut"
+    },
+    "PortDriverHighFrontForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9657138644691612,
+        0.0,
+        0.2596088056519631,
+        7234.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        -0.2596088056519631,
+        0.0,
+        -0.9657138644691612,
+        1025.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighFrontForwardJoint",
+      "role": "fork"
+    },
+    "PortDriverHighFrontForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9657138644691612,
+        0.0,
+        0.2596088056519631,
+        7234.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        -0.2596088056519631,
+        0.0,
+        -0.9657138644691612,
+        1025.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighFrontForwardJoint",
+      "role": "pin"
+    },
+    "PortDriverHighFrontForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9657138644691612,
+        0.0,
+        0.2596088056519631,
+        7234.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        143.42499999999995,
+        -0.2596088056519631,
+        0.0,
+        -0.9657138644691612,
+        1025.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighFrontForwardJoint",
+      "role": "cotter"
+    },
+    "PortDriverHighFrontForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.259608805651963,
+        -0.0,
+        -0.9657138644691611,
+        7191.43704286916,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.9657138644691611,
+        0.0,
+        -0.259608805651963,
+        1013.4603885887701,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortDriverHighFrontForwardJoint",
+      "role": "nut"
+    },
+    "StarboardDriverHighSelector": {
+      "definition": "Def_DriverHighSelector_M758",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7579.8934082721635,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        0.0,
+        0.0,
+        1.0,
+        1300.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighBranch",
+      "role": "selector"
+    },
+    "StarboardHighIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardHighIntermediateControl",
+      "role": "receiver"
+    },
+    "StarboardDriverHighShortRod": {
+      "definition": "Def_DriverFrontShortRod_M789A",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7243.587305823931,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        1104.9825515540465,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighBranch",
+      "role": "rod"
+    },
+    "StarboardDriverHighShortRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7218.363024144814,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        1102.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighShortRearJoint",
+      "role": "fork"
+    },
+    "StarboardDriverHighShortRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7218.363024144814,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        1102.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighShortRearJoint",
+      "role": "pin"
+    },
+    "StarboardDriverHighShortRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7218.363024144814,
+        0.0,
+        1.0,
+        -0.0,
+        -106.57500000000005,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        1102.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighShortRearJoint",
+      "role": "cotter"
+    },
+    "StarboardDriverHighShortRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.11742328952939263,
+        0.0,
+        0.9930819558707612,
+        7262.5055170832675,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        -0.9930819558707612,
+        0.0,
+        0.11742328952939263,
+        1107.2194652195815,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighShortRearJoint",
+      "role": "nut"
+    },
+    "StarboardDriverHighShortForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9930819558707611,
+        0.0,
+        0.11742328952939345,
+        7536.81958034367,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        -0.11742328952939345,
+        0.0,
+        -0.9930819558707611,
+        1139.6547133698382,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighShortForwardJoint",
+      "role": "fork"
+    },
+    "StarboardDriverHighShortForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9930819558707611,
+        0.0,
+        0.11742328952939345,
+        7536.81958034367,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        -0.11742328952939345,
+        0.0,
+        -0.9930819558707611,
+        1139.6547133698382,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighShortForwardJoint",
+      "role": "pin"
+    },
+    "StarboardDriverHighShortForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9930819558707611,
+        0.0,
+        0.11742328952939345,
+        7536.81958034367,
+        0.0,
+        1.0,
+        0.0,
+        -106.57500000000005,
+        -0.11742328952939345,
+        0.0,
+        -0.9930819558707611,
+        1139.6547133698382,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighShortForwardJoint",
+      "role": "cotter"
+    },
+    "StarboardDriverHighShortForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.1174232895293934,
+        -0.0,
+        -0.9930819558707612,
+        7492.677087405216,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.9930819558707612,
+        0.0,
+        -0.1174232895293934,
+        1134.435248150257,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighShortForwardJoint",
+      "role": "nut"
+    },
+    "StarboardDriverHighFrontRod": {
+      "definition": "Def_DriverClutchFrontRod_M576",
+      "frame": [
+        0.9657138644691613,
+        -0.0,
+        -0.25960880565196237,
+        5957.4469368979935,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.25960880565196237,
+        0.0,
+        0.9657138644691613,
+        681.7320067314708,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighBranch",
+      "role": "rod"
+    },
+    "StarboardDriverHighFrontRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9657138644691613,
+        -0.0,
+        -0.25960880565196237,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.25960880565196237,
+        0.0,
+        0.9657138644691613,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighFrontRearJoint",
+      "role": "fork"
+    },
+    "StarboardDriverHighFrontRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9657138644691613,
+        -0.0,
+        -0.25960880565196237,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.25960880565196237,
+        0.0,
+        0.9657138644691613,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighFrontRearJoint",
+      "role": "pin"
+    },
+    "StarboardDriverHighFrontRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9657138644691613,
+        -0.0,
+        -0.25960880565196237,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        -106.57500000000005,
+        0.25960880565196237,
+        0.0,
+        0.9657138644691613,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighFrontRearJoint",
+      "role": "cotter"
+    },
+    "StarboardDriverHighFrontRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.25960880565196254,
+        0.0,
+        0.9657138644691613,
+        5975.843786016129,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        -0.9657138644691613,
+        0.0,
+        0.25960880565196254,
+        686.6775544791407,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighFrontRearJoint",
+      "role": "nut"
+    },
+    "StarboardDriverHighFrontForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9657138644691612,
+        0.0,
+        0.2596088056519631,
+        7234.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        -0.2596088056519631,
+        0.0,
+        -0.9657138644691612,
+        1025.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighFrontForwardJoint",
+      "role": "fork"
+    },
+    "StarboardDriverHighFrontForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9657138644691612,
+        0.0,
+        0.2596088056519631,
+        7234.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        -0.2596088056519631,
+        0.0,
+        -0.9657138644691612,
+        1025.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighFrontForwardJoint",
+      "role": "pin"
+    },
+    "StarboardDriverHighFrontForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9657138644691612,
+        0.0,
+        0.2596088056519631,
+        7234.363024144814,
+        0.0,
+        1.0,
+        0.0,
+        -106.57500000000005,
+        -0.2596088056519631,
+        0.0,
+        -0.9657138644691612,
+        1025.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighFrontForwardJoint",
+      "role": "cotter"
+    },
+    "StarboardDriverHighFrontForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.259608805651963,
+        -0.0,
+        -0.9657138644691611,
+        7191.43704286916,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.9657138644691611,
+        0.0,
+        -0.259608805651963,
+        1013.4603885887701,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardDriverHighFrontForwardJoint",
+      "role": "nut"
+    }
+  },
+  "details": {
+    "controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/linkage_integrated01",
+      "parent_native_sha256": "896c139ea13343b8b24d4c8e46a6fbe0c917fa03cdae82c9d850d047ffd1de58",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_source_review02.json",
+      "source_review_sha256": "dc93890d2bb9c09c5a7595dfb2a0e99c4efcf0a1f36a2948d5904c79c71366a8",
+      "foundation_prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03",
+      "main_shaft_z": 1300.0,
+      "swing_shaft_z": 1320.0,
+      "future_low_relative": [
+        20.0,
+        180.0,
+        -295.0
+      ],
+      "swing_front_eye": [
+        45.0,
+        0.0,
+        -218.0
+      ],
+      "swing_rear_eye": [
+        61.0,
+        0.0,
+        -295.0
+      ],
+      "swing_web_stock": 12.0,
+      "swing_journal_width": 32.0,
+      "swing_bore_diameter": 25.7,
+      "swing_eye_radius": 16.0,
+      "lever_stock": 12.7,
+      "lever_boss_width": 32.0,
+      "lever_bore_diameter": 38.3238,
+      "lever_included_angle_degrees": 136.0,
+      "clutch_hand_length": 723.9,
+      "clutch_bell_radius": 127.0,
+      "clutch_short_rod_length": 320.675,
+      "rod_radius": 9.525,
+      "fork_pin_to_stock_offset": 25.4,
+      "swing_lanes": {
+        "StarboardReverse": -235.0,
+        "StarboardHigh": -125.0,
+        "PortHigh": 125.0,
+        "PortClutch": 235.0
+      },
+      "lever_hand_outward_offset": 170.0,
+      "low_knee_relative": [
+        17.0,
+        0.0,
+        -168.0
+      ],
+      "low_rod_relative": [
+        20.0,
+        0.0,
+        -295.0
+      ],
+      "low_web_stock": 12.7,
+      "low_pin_radius": 9.525,
+      "low_pin_length": 57.15,
+      "connecting_y": -16.35,
+      "brake_boss_y": 14.55,
+      "pin_head_seat_y": -21.35,
+      "pin_keeper_y": 25.65,
+      "washer_seat_y": -11.35,
+      "low_keeper": {
+        "cotter_center_spacing": 2.48,
+        "cotter_diameter": 4.7625,
+        "crown_radius": 9.525,
+        "cotter_head_gap": 0.8,
+        "cotter_exit_gap": 0.8,
+        "cotter_bend_radius": 3,
+        "cotter_bend_angle": 35,
+        "cotter_length": 31.75,
+        "cotter_eye_radius": 3.5,
+        "cotter_eye_rise": 4,
+        "cotter_eye_join_overlap": 0.1
+      }
+    },
+    "foundation": {
+      "controls": {
+        "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02",
+        "parent_native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
+        "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_source_review03.json",
+        "source_review_sha256": "b42ec5885b43cc70441ac5bb75598eb9ad67e90a0d8d9966b80eac25a70c2984",
+        "registration": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_registration01.json",
+        "floor_probe": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_sources01/context_probe.json",
+        "receiver_report": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/report.json",
+        "plate_stock": 6.35,
+        "nut_seat_y": 288.925,
+        "swing_length": 628.65,
+        "main_shaft_z": 1300.0,
+        "future_low_pin_z": 1025.0,
+        "future_low_pin_relative_to_swing": [
+          20.0,
+          180.0,
+          -295.0
+        ],
+        "main_keeper": {
+          "cotter_center_spacing": 2.48,
+          "cotter_diameter": 4.7625,
+          "crown_radius": 14,
+          "cotter_head_gap": 0.8,
+          "cotter_exit_gap": 0.8,
+          "cotter_bend_radius": 4,
+          "cotter_bend_angle": 35,
+          "cotter_length": 38.1,
+          "cotter_eye_radius": 4,
+          "cotter_eye_rise": 6,
+          "cotter_eye_join_overlap": 0.25
+        },
+        "swing_keeper": {
+          "cotter_center_spacing": 2.48,
+          "cotter_diameter": 4.7625,
+          "crown_radius": 17.5,
+          "cotter_head_gap": 0.8,
+          "cotter_exit_gap": 0.8,
+          "cotter_bend_radius": 4,
+          "cotter_bend_angle": 35,
+          "cotter_length": 50.8,
+          "cotter_eye_radius": 4,
+          "cotter_eye_rise": 6,
+          "cotter_eye_join_overlap": 0.25
+        }
+      },
+      "shafts": {
+        "Main": {
+          "center_world_mm": [
+            7579.8934082721635,
+            0.0,
+            1300.0
+          ],
+          "nut_seat_station_mm": 288.925,
+          "keeper_station_mm": 305.425,
+          "nut_height_mm": 14,
+          "original_nut_seat_y_mm": 529.2271428571429,
+          "shoulder_station_mm": 282.575
+        },
+        "Swing": {
+          "center_world_mm": [
+            7173.363024144814,
+            0.0,
+            1320.0
+          ],
+          "nut_seat_station_mm": 288.925,
+          "keeper_station_mm": 298.925,
+          "nut_height_mm": 13,
+          "original_nut_seat_y_mm": 323.85,
+          "shoulder_station_mm": 282.575
+        }
+      },
+      "keeper": {
+        "Main": {
+          "straight_length_mm": 29.6,
+          "bend_arc_length_mm": 2.443460952792061,
+          "tail_length_mm": 6.056539047207939,
+          "total_leg_centerline_mm": 38.1,
+          "tail_endpoints": [
+            [
+              0.0,
+              22.05553208724067,
+              -5.437279906162522
+            ],
+            [
+              0.0,
+              22.05553208724067,
+              5.437279906162522
+            ]
+          ],
+          "wire_radius_mm": 1.14125,
+          "under_eye_y_mm": -14.8,
+          "bend_start_y_mm": 14.8,
+          "exact_stock_volume_conserved": false,
+          "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+        },
+        "Swing": {
+          "straight_length_mm": 36.6,
+          "bend_arc_length_mm": 2.443460952792061,
+          "tail_length_mm": 11.756539047207934,
+          "total_leg_centerline_mm": 50.8,
+          "tail_endpoints": [
+            [
+              0.0,
+              30.22469873968792,
+              -8.706665593363482
+            ],
+            [
+              0.0,
+              30.22469873968792,
+              8.706665593363482
+            ]
+          ],
+          "wire_radius_mm": 1.14125,
+          "under_eye_y_mm": -18.3,
+          "bend_start_y_mm": 18.3,
+          "exact_stock_volume_conserved": false,
+          "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+        }
+      },
+      "mounts": [
+        {
+          "stem": "DriverPortSupportMount1",
+          "plate": "DriverPortSupportPlate",
+          "floor": "hull_floor_2",
+          "floor_contact_world_mm": [
+            7133.363024144814,
+            316.425,
+            848.3198776984534
+          ],
+          "head_seat_world_mm": [
+            7131.256294547375,
+            316.425,
+            854.3102191247223
+          ],
+          "lock_seat_world_mm": [
+            7135.353634788064,
+            316.425,
+            842.6597125712702
+          ],
+          "nut_seat_world_mm": [
+            7136.406999586783,
+            316.425,
+            839.6645418581357
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverPortSupportMount2",
+          "plate": "DriverPortSupportPlate",
+          "floor": "hull_floor_2",
+          "floor_contact_world_mm": [
+            7163.363024144814,
+            316.425,
+            858.8705096951584
+          ],
+          "head_seat_world_mm": [
+            7161.256294547375,
+            316.425,
+            864.8608511214272
+          ],
+          "lock_seat_world_mm": [
+            7165.353634788064,
+            316.425,
+            853.2103445679752
+          ],
+          "nut_seat_world_mm": [
+            7166.406999586783,
+            316.425,
+            850.2151738548407
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverPortSupportMount3",
+          "plate": "DriverPortSupportPlate",
+          "floor": "hull_floor_1",
+          "floor_contact_world_mm": [
+            7499.8934082721635,
+            316.425,
+            977.2241176497399
+          ],
+          "head_seat_world_mm": [
+            7497.7866786747245,
+            316.425,
+            983.2144590760088
+          ],
+          "lock_seat_world_mm": [
+            7501.884018915413,
+            316.425,
+            971.5639525225567
+          ],
+          "nut_seat_world_mm": [
+            7502.937383714133,
+            316.425,
+            968.5687818094223
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverPortSupportMount4",
+          "plate": "DriverPortSupportPlate",
+          "floor": "hull_floor_1",
+          "floor_contact_world_mm": [
+            7529.8934082721635,
+            316.425,
+            987.774749646445
+          ],
+          "head_seat_world_mm": [
+            7527.7866786747245,
+            316.425,
+            993.7650910727139
+          ],
+          "lock_seat_world_mm": [
+            7531.884018915413,
+            316.425,
+            982.1145845192618
+          ],
+          "nut_seat_world_mm": [
+            7532.937383714133,
+            316.425,
+            979.1194138061273
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverStarboardSupportMount1",
+          "plate": "DriverStarboardSupportPlate",
+          "floor": "hull_floor_2",
+          "floor_contact_world_mm": [
+            7133.363024144814,
+            -316.425,
+            848.3198776984534
+          ],
+          "head_seat_world_mm": [
+            7131.256294547375,
+            -316.425,
+            854.3102191247223
+          ],
+          "lock_seat_world_mm": [
+            7135.353634788064,
+            -316.425,
+            842.6597125712702
+          ],
+          "nut_seat_world_mm": [
+            7136.406999586783,
+            -316.425,
+            839.6645418581357
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverStarboardSupportMount2",
+          "plate": "DriverStarboardSupportPlate",
+          "floor": "hull_floor_2",
+          "floor_contact_world_mm": [
+            7163.363024144814,
+            -316.425,
+            858.8705096951584
+          ],
+          "head_seat_world_mm": [
+            7161.256294547375,
+            -316.425,
+            864.8608511214272
+          ],
+          "lock_seat_world_mm": [
+            7165.353634788064,
+            -316.425,
+            853.2103445679752
+          ],
+          "nut_seat_world_mm": [
+            7166.406999586783,
+            -316.425,
+            850.2151738548407
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverStarboardSupportMount3",
+          "plate": "DriverStarboardSupportPlate",
+          "floor": "hull_floor_1",
+          "floor_contact_world_mm": [
+            7499.8934082721635,
+            -316.425,
+            977.2241176497399
+          ],
+          "head_seat_world_mm": [
+            7497.7866786747245,
+            -316.425,
+            983.2144590760088
+          ],
+          "lock_seat_world_mm": [
+            7501.884018915413,
+            -316.425,
+            971.5639525225567
+          ],
+          "nut_seat_world_mm": [
+            7502.937383714133,
+            -316.425,
+            968.5687818094223
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        },
+        {
+          "stem": "DriverStarboardSupportMount4",
+          "plate": "DriverStarboardSupportPlate",
+          "floor": "hull_floor_1",
+          "floor_contact_world_mm": [
+            7529.8934082721635,
+            -316.425,
+            987.774749646445
+          ],
+          "head_seat_world_mm": [
+            7527.7866786747245,
+            -316.425,
+            993.7650910727139
+          ],
+          "lock_seat_world_mm": [
+            7531.884018915413,
+            -316.425,
+            982.1145845192618
+          ],
+          "nut_seat_world_mm": [
+            7532.937383714133,
+            -316.425,
+            979.1194138061273
+          ],
+          "axis_world": [
+            0.33176844054162746,
+            1e-16,
+            -0.9433608545305326
+          ]
+        }
+      ],
+      "floor_normal": [
+        -0.33176844054162746,
+        -1e-16,
+        0.9433608545305326
+      ],
+      "plate_origin_world_mm": [
+        7173.363024144814,
+        0.0,
+        862.3873870273934
+      ],
+      "shaft_separation_mm": 406.53038412735026,
+      "future_low_pin_world_mm": [
+        7193.363024144814,
+        180.0,
+        1025.0
+      ],
+      "future_low_pin_status": "Unmodeled provisional target; no front rod or rocker counted.",
+      "scope": "Partial seat-support plates, two shaft interfaces and real floor attachment; seat mount extensions, lever fulcrums, controls and front rods remain pending."
+    },
+    "low_speed": {
+      "Port": {
+        "base_world_mm": [
+          7173.363024144814,
+          180.0,
+          1320.0
+        ],
+        "knee_world_mm": [
+          7190.363024144814,
+          180.0,
+          1152.0
+        ],
+        "rod_pin_world_mm": [
+          7193.363024144814,
+          180.0,
+          1025.0
+        ],
+        "stock_start_world_mm": [
+          5957.39246919493,
+          180.0,
+          681.9313810665924
+        ],
+        "axis_world": [
+          0.9635694667107539,
+          0.0,
+          0.26745818892446227
+        ],
+        "stock_length_mm": 1257.3,
+        "pin_span_mm": 1308.0999999999997,
+        "endpoints": [
+          {
+            "stem": "PortDriverLowRearJoint",
+            "pin_world_mm": [
+              5932.917804740477,
+              180.0,
+              675.137943067911
+            ],
+            "rod_axis_world": [
+              0.9635694667107539,
+              0.0,
+              0.26745818892446227
+            ],
+            "receiver": "PortLowIntermediateRocker"
+          },
+          {
+            "stem": "PortDriverLowForwardJoint",
+            "pin_world_mm": [
+              7193.363024144814,
+              180.0,
+              1025.0
+            ],
+            "rod_axis_world": [
+              -0.9635694667107539,
+              -0.0,
+              -0.26745818892446227
+            ],
+            "receiver": "PortDriverLowBrake"
+          }
+        ],
+        "selector_connection_world_mm": [
+          7489.8934082721635,
+          163.65,
+          1392.0
+        ]
+      },
+      "Starboard": {
+        "base_world_mm": [
+          7173.363024144814,
+          -180.0,
+          1320.0
+        ],
+        "knee_world_mm": [
+          7190.363024144814,
+          -180.0,
+          1152.0
+        ],
+        "rod_pin_world_mm": [
+          7193.363024144814,
+          -180.0,
+          1025.0
+        ],
+        "stock_start_world_mm": [
+          5957.39246919493,
+          -180.0,
+          681.9313810665924
+        ],
+        "axis_world": [
+          0.9635694667107539,
+          0.0,
+          0.26745818892446227
+        ],
+        "stock_length_mm": 1257.3,
+        "pin_span_mm": 1308.0999999999997,
+        "endpoints": [
+          {
+            "stem": "StarboardDriverLowRearJoint",
+            "pin_world_mm": [
+              5932.917804740477,
+              -180.0,
+              675.137943067911
+            ],
+            "rod_axis_world": [
+              0.9635694667107539,
+              0.0,
+              0.26745818892446227
+            ],
+            "receiver": "StarboardLowIntermediateRocker"
+          },
+          {
+            "stem": "StarboardDriverLowForwardJoint",
+            "pin_world_mm": [
+              7193.363024144814,
+              -180.0,
+              1025.0
+            ],
+            "rod_axis_world": [
+              -0.9635694667107539,
+              -0.0,
+              -0.26745818892446227
+            ],
+            "receiver": "StarboardDriverLowBrake"
+          }
+        ],
+        "selector_connection_world_mm": [
+          7489.8934082721635,
+          -196.35,
+          1392.0
+        ]
+      }
+    },
+    "low_parts": {
+      "knee": [
+        17.0,
+        0.0,
+        -168.0
+      ],
+      "rod": [
+        20.0,
+        0.0,
+        -295.0
+      ],
+      "connecting_front": [
+        316.53038412734986,
+        -16.35,
+        72.0
+      ],
+      "connecting_rear": [
+        17.0,
+        -16.35,
+        -168.0
+      ],
+      "brake_upper": [
+        17.0,
+        14.55,
+        -168.0
+      ],
+      "keeper": {
+        "straight_length_mm": 20.650000000000002,
+        "bend_arc_length_mm": 1.832595714594046,
+        "tail_length_mm": 9.267404285405952,
+        "total_leg_centerline_mm": 31.75,
+        "tail_endpoints": [
+          [
+            0.0,
+            19.637142474695988,
+            -7.098108591380583
+          ],
+          [
+            0.0,
+            19.637142474695988,
+            7.098108591380583
+          ]
+        ],
+        "wire_radius_mm": 1.14125,
+        "under_eye_y_mm": -10.325000000000001,
+        "bend_start_y_mm": 10.325000000000001,
+        "exact_stock_volume_conserved": false,
+        "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+      }
+    },
+    "swings": {
+      "StarboardReverse": {
+        "occurrence": "StarboardReverseDriverSwingLink",
+        "pivot_world_mm": [
+          7173.363024144814,
+          -235.0,
+          1320.0
+        ],
+        "front_pin_world_mm": [
+          7218.363024144814,
+          -235.0,
+          1102.0
+        ],
+        "rear_pin_world_mm": [
+          7234.363024144814,
+          -235.0,
+          1025.0
+        ]
+      },
+      "StarboardHigh": {
+        "occurrence": "StarboardHighDriverSwingLink",
+        "pivot_world_mm": [
+          7173.363024144814,
+          -125.0,
+          1320.0
+        ],
+        "front_pin_world_mm": [
+          7218.363024144814,
+          -125.0,
+          1102.0
+        ],
+        "rear_pin_world_mm": [
+          7234.363024144814,
+          -125.0,
+          1025.0
+        ]
+      },
+      "PortHigh": {
+        "occurrence": "PortHighDriverSwingLink",
+        "pivot_world_mm": [
+          7173.363024144814,
+          125.0,
+          1320.0
+        ],
+        "front_pin_world_mm": [
+          7218.363024144814,
+          125.0,
+          1102.0
+        ],
+        "rear_pin_world_mm": [
+          7234.363024144814,
+          125.0,
+          1025.0
+        ]
+      },
+      "PortClutch": {
+        "occurrence": "PortClutchDriverSwingLink",
+        "pivot_world_mm": [
+          7173.363024144814,
+          235.0,
+          1320.0
+        ],
+        "front_pin_world_mm": [
+          7218.363024144814,
+          235.0,
+          1102.0
+        ],
+        "rear_pin_world_mm": [
+          7234.363024144814,
+          235.0,
+          1025.0
+        ]
+      }
+    },
+    "clutch_hand_angle_degrees": 47.393760121370505,
+    "clutch_pivot_world_mm": [
+      7579.8934082721635,
+      235.0,
+      1300.0
+    ],
+    "clutch_bell_pin_world_mm": [
+      7582.982467891676,
+      235.0,
+      1173.0375736264186
+    ],
+    "rods": {
+      "Short": {
+        "mark": "M789B",
+        "stock_length_mm": 320.67499999999995,
+        "pin_span_mm": 371.47499999999997,
+        "stock_start_world_mm": [
+          7243.294268161693,
+          235.0,
+          1106.85726999155
+        ],
+        "axis_world": [
+          0.9815450400346245,
+          0.0,
+          0.19123110202952726
+        ],
+        "endpoints": [
+          {
+            "stem": "DriverClutchShortRearJoint",
+            "pin_world_mm": [
+              7218.363024144814,
+              235.0,
+              1102.0
+            ],
+            "rod_axis_world": [
+              0.9815450400346245,
+              0.0,
+              0.19123110202952726
+            ],
+            "receiver": "PortClutchDriverSwingLink"
+          },
+          {
+            "stem": "DriverClutchShortForwardJoint",
+            "pin_world_mm": [
+              7582.982467891676,
+              235.0,
+              1173.0375736264186
+            ],
+            "rod_axis_world": [
+              -0.9815450400346245,
+              -0.0,
+              -0.19123110202952726
+            ],
+            "receiver": "DriverClutchOperatingLever"
+          }
+        ]
+      },
+      "Front": {
+        "mark": "M576",
+        "stock_length_mm": 1296.8509629689563,
+        "pin_span_mm": 1347.6509629689563,
+        "stock_start_world_mm": [
+          5957.4469368979935,
+          235.0,
+          681.7320067314708
+        ],
+        "axis_world": [
+          0.965713864469161,
+          0.0,
+          0.2596088056519633
+        ],
+        "endpoints": [
+          {
+            "stem": "DriverClutchFrontRearJoint",
+            "pin_world_mm": [
+              5932.917804740477,
+              235.0,
+              675.137943067911
+            ],
+            "rod_axis_world": [
+              0.965713864469161,
+              0.0,
+              0.2596088056519633
+            ],
+            "receiver": "PortClutchIntermediateRocker"
+          },
+          {
+            "stem": "DriverClutchFrontForwardJoint",
+            "pin_world_mm": [
+              7234.363024144814,
+              235.0,
+              1025.0
+            ],
+            "rod_axis_world": [
+              -0.965713864469161,
+              -0.0,
+              -0.2596088056519633
+            ],
+            "receiver": "PortClutchDriverSwingLink"
+          }
+        ]
+      }
+    },
+    "scope": "Only four upper selector jaws revised. No new physical occurrences. Conditional interface pilot; operating handles, fulcrums and hardware unfinished.",
+    "selector_controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low_integrated01",
+      "parent_native_sha256": "8870b1b7524fe3e8a99df52ea16f5b1ddbd7d28775e973f89f4ad899893e2257",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_source_review01.json",
+      "source_review_sha256": "22b562760b1fa077a3a03779cc88ac4d853ed0566a83b53fd7e0c387b20819f4",
+      "context_prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/low02",
+      "front_relative_to_main": [
+        -90,
+        0,
+        92
+      ],
+      "selector_y_relative_to_low": -4.8,
+      "selector_web_stock": 12.7,
+      "selector_journal_width": 24.0,
+      "selector_journal_radius": 19.1619,
+      "selector_hub_radius": 32.0,
+      "selector_gate_direction": [
+        0.66,
+        0,
+        0.751265598839718
+      ],
+      "selector_gate_lower_radius": 215.0,
+      "selector_gate_upper_radius": 285.0,
+      "selector_gate_lip_stock": 12.7,
+      "selector_gate_inward_depth": 45.0,
+      "selector_gate_halfwidth": 16.0,
+      "connecting_stock": 10.0,
+      "connecting_halfwidth": 14.0,
+      "connecting_eye_radius": 25.0,
+      "pin_radius": 9.525,
+      "pin_length": 31.75,
+      "pin_head_seat_y": 1.55,
+      "pin_keeper_y": -24.35,
+      "connecting_y": -16.35
+    },
+    "low_selectors": {
+      "Port": {
+        "pivot_world_mm": [
+          7579.8934082721635,
+          175.2,
+          1300.0
+        ],
+        "pin_world_mm": [
+          7489.8934082721635,
+          180.0,
+          1392.0
+        ],
+        "connecting_eye_world_mm": [
+          7489.8934082721635,
+          163.65,
+          1392.0
+        ],
+        "pin_head_seat_world_mm": [
+          7489.8934082721635,
+          181.55,
+          1392.0
+        ],
+        "pin_keeper_world_mm": [
+          7489.8934082721635,
+          155.65,
+          1392.0
+        ],
+        "mark": "M756"
+      },
+      "Starboard": {
+        "pivot_world_mm": [
+          7579.8934082721635,
+          -184.8,
+          1300.0
+        ],
+        "pin_world_mm": [
+          7489.8934082721635,
+          -180.0,
+          1392.0
+        ],
+        "connecting_eye_world_mm": [
+          7489.8934082721635,
+          -196.35,
+          1392.0
+        ],
+        "pin_head_seat_world_mm": [
+          7489.8934082721635,
+          -178.45,
+          1392.0
+        ],
+        "pin_keeper_world_mm": [
+          7489.8934082721635,
+          -204.35,
+          1392.0
+        ],
+        "mark": "M757"
+      }
+    },
+    "high_selector_controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_integrated01",
+      "parent_native_sha256": "f70c487ced639d193a90b668970e4f3b5760873047afc1782ca00104af45cffc",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_source_review01.json",
+      "source_review_sha256": "7b60299b1b91bdf83f91285099c156abc359fa845e4a441bb3560de1d0190a42",
+      "layout": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_layout01.json",
+      "context_prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector03",
+      "bell_relative_to_main": [
+        -43.07382792849353,
+        0,
+        -160.34528663016187
+      ],
+      "selector_web_stock": 12.7,
+      "selector_journal_width": 24.0,
+      "selector_journal_radius": 19.1619,
+      "selector_hub_radius": 32.0,
+      "selector_gate_direction": [
+        0.66,
+        0,
+        0.751265598839718
+      ],
+      "selector_gate_lower_radius": 140.0,
+      "selector_gate_upper_radius": 210.0,
+      "selector_gate_lip_stock": 12.7,
+      "selector_gate_outward_depth": 41.0,
+      "selector_gate_halfwidth": 16.0,
+      "short_stock_mm": 269.875,
+      "pin_to_stock_offset_mm": 25.4,
+      "rod_radius": 9.525
+    },
+    "high_controls": {
+      "Port": {
+        "pivot_world_mm": [
+          7579.8934082721635,
+          125.0,
+          1300.0
+        ],
+        "bell_pin_world_mm": [
+          7536.81958034367,
+          125.0,
+          1139.6547133698382
+        ],
+        "mark": "M759",
+        "rods": {
+          "Short": {
+            "occurrence": "PortDriverHighShortRod",
+            "definition": "Def_DriverFrontShortRod_M789A",
+            "stock_length_mm": 269.875,
+            "pin_span_mm": 320.67500000000024,
+            "stock_start_world_mm": [
+              7243.587305823931,
+              125.0,
+              1104.9825515540465
+            ],
+            "axis_world": [
+              0.9930819558707611,
+              0.0,
+              0.1174232895293932
+            ],
+            "endpoints": [
+              {
+                "stem": "PortDriverHighShortRearJoint",
+                "pin_world_mm": [
+                  7218.363024144814,
+                  125.0,
+                  1102.0
+                ],
+                "rod_axis_world": [
+                  0.9930819558707611,
+                  0.0,
+                  0.1174232895293932
+                ],
+                "receiver": "PortHighDriverSwingLink"
+              },
+              {
+                "stem": "PortDriverHighShortForwardJoint",
+                "pin_world_mm": [
+                  7536.81958034367,
+                  125.0,
+                  1139.6547133698382
+                ],
+                "rod_axis_world": [
+                  -0.9930819558707611,
+                  -0.0,
+                  -0.1174232895293932
+                ],
+                "receiver": "PortDriverHighSelector"
+              }
+            ]
+          },
+          "Front": {
+            "occurrence": "PortDriverHighFrontRod",
+            "definition": "Def_DriverClutchFrontRod_M576",
+            "stock_length_mm": 1296.8509629689563,
+            "pin_span_mm": 1347.6509629689563,
+            "stock_start_world_mm": [
+              5957.4469368979935,
+              125.0,
+              681.7320067314708
+            ],
+            "axis_world": [
+              0.965713864469161,
+              0.0,
+              0.2596088056519633
+            ],
+            "endpoints": [
+              {
+                "stem": "PortDriverHighFrontRearJoint",
+                "pin_world_mm": [
+                  5932.917804740477,
+                  125.0,
+                  675.137943067911
+                ],
+                "rod_axis_world": [
+                  0.965713864469161,
+                  0.0,
+                  0.2596088056519633
+                ],
+                "receiver": "PortHighIntermediateRocker"
+              },
+              {
+                "stem": "PortDriverHighFrontForwardJoint",
+                "pin_world_mm": [
+                  7234.363024144814,
+                  125.0,
+                  1025.0
+                ],
+                "rod_axis_world": [
+                  -0.965713864469161,
+                  -0.0,
+                  -0.2596088056519633
+                ],
+                "receiver": "PortHighDriverSwingLink"
+              }
+            ]
+          }
+        }
+      },
+      "Starboard": {
+        "pivot_world_mm": [
+          7579.8934082721635,
+          -125.0,
+          1300.0
+        ],
+        "bell_pin_world_mm": [
+          7536.81958034367,
+          -125.0,
+          1139.6547133698382
+        ],
+        "mark": "M758",
+        "rods": {
+          "Short": {
+            "occurrence": "StarboardDriverHighShortRod",
+            "definition": "Def_DriverFrontShortRod_M789A",
+            "stock_length_mm": 269.875,
+            "pin_span_mm": 320.67500000000024,
+            "stock_start_world_mm": [
+              7243.587305823931,
+              -125.0,
+              1104.9825515540465
+            ],
+            "axis_world": [
+              0.9930819558707611,
+              0.0,
+              0.1174232895293932
+            ],
+            "endpoints": [
+              {
+                "stem": "StarboardDriverHighShortRearJoint",
+                "pin_world_mm": [
+                  7218.363024144814,
+                  -125.0,
+                  1102.0
+                ],
+                "rod_axis_world": [
+                  0.9930819558707611,
+                  0.0,
+                  0.1174232895293932
+                ],
+                "receiver": "StarboardHighDriverSwingLink"
+              },
+              {
+                "stem": "StarboardDriverHighShortForwardJoint",
+                "pin_world_mm": [
+                  7536.81958034367,
+                  -125.0,
+                  1139.6547133698382
+                ],
+                "rod_axis_world": [
+                  -0.9930819558707611,
+                  -0.0,
+                  -0.1174232895293932
+                ],
+                "receiver": "StarboardDriverHighSelector"
+              }
+            ]
+          },
+          "Front": {
+            "occurrence": "StarboardDriverHighFrontRod",
+            "definition": "Def_DriverClutchFrontRod_M576",
+            "stock_length_mm": 1296.8509629689563,
+            "pin_span_mm": 1347.6509629689563,
+            "stock_start_world_mm": [
+              5957.4469368979935,
+              -125.0,
+              681.7320067314708
+            ],
+            "axis_world": [
+              0.965713864469161,
+              0.0,
+              0.2596088056519633
+            ],
+            "endpoints": [
+              {
+                "stem": "StarboardDriverHighFrontRearJoint",
+                "pin_world_mm": [
+                  5932.917804740477,
+                  -125.0,
+                  675.137943067911
+                ],
+                "rod_axis_world": [
+                  0.965713864469161,
+                  0.0,
+                  0.2596088056519633
+                ],
+                "receiver": "StarboardHighIntermediateRocker"
+              },
+              {
+                "stem": "StarboardDriverHighFrontForwardJoint",
+                "pin_world_mm": [
+                  7234.363024144814,
+                  -125.0,
+                  1025.0
+                ],
+                "rod_axis_world": [
+                  -0.965713864469161,
+                  -0.0,
+                  -0.2596088056519633
+                ],
+                "receiver": "StarboardHighDriverSwingLink"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "handle_gate_controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01",
+      "parent_native_sha256": "21a1f58f9ca15210ab26452271e263637d261c56036724d9707b02edda7d520f",
+      "context_prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high01",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_source_review01.json",
+      "source_review_sha256": "907ce55bbc35377682a74a9ae1d8a80f2b58f77cdcb73dd5ba4b588334fbeb58",
+      "jaw_radial_halfspan_mm": 16.0,
+      "jaw_tangential_halfspan_mm": 35.0,
+      "jaw_wall_mm": 13.0
+    }
+  },
+  "new_occurrences": [],
+  "new_definitions": [],
+  "changed_definitions": [
+    "Def_DriverHighSelector_M759",
+    "Def_DriverLowSelector_M756",
+    "Def_DriverHighSelector_M758",
+    "Def_DriverLowSelector_M757"
+  ],
+  "new_assembly_specs": {},
+  "prototype_physical_occurrences": 140,
+  "prototype_definition_count": 35,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

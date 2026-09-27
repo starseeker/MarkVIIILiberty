@@ -1,5 +1,10 @@
 # Driver controls — active continuation
 
+Active next-step trial: [operating-handle gate interfaces](handle_gates01/README.md).
+Its four conditional upper-jaw revisions pass local, context and exchange checks,
+but require complete handle/pivot geometry before integration. No new tank parts
+are counted. Full assembly remains the checkpoint below.
+
 Current checkpoint: [high selectors and complete rods](high_integrated01/README.md),
 **3,572 occurrences / 628 definitions / 439 groups**. Both high selectors, their
 source-length M789A rods and shared M576 long rods now have complete physical

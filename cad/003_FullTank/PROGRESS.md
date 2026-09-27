@@ -11,6 +11,20 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — operating-handle interfaces resumed
+
+The [conditional jaw study](experiments/drive_chains/transmission_controls_study/driver_redo01/handle_gates01/README.md)
+exposes a limitation of the provisional selector shapes: their radial lips obstruct
+a through-going stem. Four upper jaws now have a tested tangential-wall alternative;
+every lower interface and frame remains fixed. Nominal/variation each pass 252
+local checks, 20 context pairs and eight STEP comparisons, plus fresh reproduction
+and six inspected views. No new tank part is counted or integrated yet.
+
+Next build the complete operating handles, fulcrums and actual pivot hardware to
+confirm or revise that alternative. The M776 1-inch versus generic 1-1/2-inch cotter
+conflict is recorded from the source. Full development remains high_integrated01,
+3,572 occurrences / 628 definitions / 439 groups, with 302 progression images.
+
 ## 27 September 2026 — high selectors and complete rod connections integrated
 
 The [checkpoint](experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/README.md)
