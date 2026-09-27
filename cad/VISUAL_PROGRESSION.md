@@ -1,5 +1,18 @@
 # Mark VIII visual progression
 
+## Complete operating handles and pivot joints — 27 September 2026
+
+Six inspected views bring progression to **308 images**. Both handles and complete
+pivot joints now engage revised upper selectors. Source overlays deliberately
+retain the 47–49 px grip discrepancies; historical placement is not qualified.
+
+- [Isometric](intermediate_snapshot_iso_driver_operating_handles_001.png)
+- [Driver detail](intermediate_snapshot_detail_driver_operating_handles_001.png)
+- [Pivot section](intermediate_snapshot_joint_driver_operating_handles_001.png)
+- [High-control section](intermediate_snapshot_section_driver_operating_handles_001.png)
+- [Source plan](intermediate_snapshot_source_plan_driver_operating_handles_001.png)
+- [Source side](intermediate_snapshot_source_side_driver_operating_handles_001.png)
+
 ## High selectors and complete short/long rods — 27 September 2026
 
 Five inspected views bring accepted progression to **302 images**. Both high

@@ -1,0 +1,68 @@
+{
+  "native_sha256": "c8adadcb73bf9de0153cceb7e85e686bd63d5c6f1b198054e23811fdba8fede1",
+  "renderer_receipt_sha256": "6258c0ff2bd00faa1a35be828e441dcfd2738243be1dc41c9b6e9b89087fe007",
+  "landmark_sha256": "d26563e42f192c34dae409ae6c09bb41dcebdbee248791fc9d406c61e0c53e14",
+  "standard_manifest_sha256": "58fb0a1b010c314dd8fc69758e9aeada05ce97f325c21d6801d7288cd6be753b",
+  "worker_sha256": "c6e553cf7754c66e50a937dbc8273fd2ec8da49b9d867025efd58ed5e410ebcf",
+  "source_camera_refitted": false,
+  "geometry_modified": false,
+  "records": {
+    "Port": {
+      "source_plan_relative_xy_mm": [
+        684.5171080862845,
+        280.4740575614258
+      ],
+      "source_side_relative_xz_mm": [
+        649.3399028603235,
+        680.8908016678973
+      ],
+      "source_view_x_disagreement_mm": 35.17720522596096,
+      "inferred_point_using_side_xz_and_plan_y_mm": [
+        8229.233311132488,
+        280.4740575614258,
+        1980.8908016678974
+      ],
+      "actual_cap_to_current_pivot_mm": 922.4912194704076,
+      "source_cap_to_current_pivot_mm": 1013.6204210134969,
+      "actual_cap_radius_from_main_in_side_plane_mm": 844.582698447151,
+      "source_cap_radius_from_main_in_side_plane_mm": 940.8796911628002,
+      "actual_side_elevation_degrees": 50.057037214063044,
+      "source_side_elevation_degrees": 46.35870752573093,
+      "adopted_overall_radial_part_length_mm": 939.8,
+      "native_cap_signed_interior_distance_to_front_plane_mm": 34.202980641495,
+      "source_cap_signed_interior_distance_to_front_plane_mm": -44.59430272581628,
+      "complete_handle_to_front_hull_minimum_mm": 14.08218422404258
+    },
+    "Starboard": {
+      "source_plan_relative_xy_mm": [
+        688.0704418041297,
+        -290.5974328065521
+      ],
+      "source_side_relative_xz_mm": [
+        649.3399028603235,
+        680.8908016678973
+      ],
+      "source_view_x_disagreement_mm": 38.73053894380621,
+      "inferred_point_using_side_xz_and_plan_y_mm": [
+        8229.233311132488,
+        -290.5974328065521,
+        1980.8908016678974
+      ],
+      "actual_cap_to_current_pivot_mm": 922.491219470408,
+      "source_cap_to_current_pivot_mm": 1015.8205993690524,
+      "actual_cap_radius_from_main_in_side_plane_mm": 844.5826984471513,
+      "source_cap_radius_from_main_in_side_plane_mm": 940.8796911628002,
+      "actual_side_elevation_degrees": 50.057037214063065,
+      "source_side_elevation_degrees": 46.35870752573093,
+      "adopted_overall_radial_part_length_mm": 939.8,
+      "native_cap_signed_interior_distance_to_front_plane_mm": 34.2029806414952,
+      "source_cap_signed_interior_distance_to_front_plane_mm": -44.59430272581625,
+      "complete_handle_to_front_hull_minimum_mm": 14.082184224042793
+    }
+  },
+  "conclusion": "The cap discrepancy cannot be removed by rotating the unchanged handle about its current second pivot: the inferred source cap has a substantially greater radius from that pivot. The views also disagree in fore/aft coordinate. Transferring the source cap literally to the current assembly puts it beyond the front hull plane. Diagnose the ambiguous37-inch datum, drawing scale/feature picks, source configuration and absolute driver/hull placement before any refit or global movement. The current full-stock model is a mechanically checked approximation, not a historical position qualification.",
+  "prototype_native_sha256": "5417f1182aeb3ad6ba9c3831cabfe22fc809ad02165e0af3a6c45bf1210d3dee",
+  "prototype_source_diagnosis_sha256": "58a721e540b3ff821ff0e462030e45675d46f10abde8ee33b6cbb74c838ee5b4",
+  "strict_installation_receipt_sha256": "19a8690ca4f91ab67a3df7638d0018e14b714eba5cae4bfc39f863dd04128b6f",
+  "transfer_note": "Reused through strict complete prototype shape/frame preservation."
+}

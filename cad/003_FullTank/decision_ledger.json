@@ -1466,6 +1466,91 @@
           "sha256": "9cad2e720a6ddf4a92d1997604c5fcb27c18f0bea28bebf6bceb1eaed991a5c8"
         }
       ]
+    },
+    {
+      "id": "driver_operating_handles_static_interfaces",
+      "status": "reviewed_approximation",
+      "scope": "Complete operating handles, fulcrums, pivot joints and four upper selector revisions.",
+      "reason": "Actual saved bores, complete stock, bearing/contact areas, retention negatives, broad context, variation, STEP and fresh rebuilding pass.",
+      "uncertainty": "Printed length datum, source cap positions, forged/cast profiles, selected control state and motion remain unqualified.",
+      "limits": [
+        "No historical-placement, hand-space or motion qualification.",
+        "Full operating fittings, brake/reverse mechanisms and seat support remain incomplete."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Bound source rows, six inspected images and independent prototype/full checks."
+      },
+      "reopen_when": [
+        "Length/station evidence changes the geometry",
+        "Actual trigger/pawl or other control interfaces contradict stock or pose"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_source_review02.json",
+          "sha256": "e9cf382cef4d468c4a8cdd37a6490eeb4a31dc178b9e655b4fea0fff9104d008"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_controls02.json",
+          "sha256": "231925c40413b3dd1700207685193628dd23b01924bd0079afef0d6b69f8323d"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json",
+          "sha256": "f7e6fef263abb1209d7fcebc4115af949f636cae24dfcf15038f66cd73148099"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/visual_review.json",
+          "sha256": "b0ab52250899820f4e3fd0c3acc7c436c30eefe42e52a5d5f6f4f542bc6ed173"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/source_comparison_diagnosis.json",
+          "sha256": "3a0f57c97ed578110045f14d3171c14e8318725466d0a0727b60d22c362f7f3e"
+        }
+      ]
+    },
+    {
+      "id": "driver_operating_handle_length_and_position",
+      "status": "open_evidence",
+      "scope": "47-49px source grip discrepancies and ambiguous 37-inch datum.",
+      "reason": "Source cap-to-current-pivot radius exceeds the actual handle reach; plan/side X differ 35\u201339mm. Literal source cap lies beyond the current hull front plane. A simple pivot rotation cannot settle the difference.",
+      "uncertainty": "Overall versus functional length datum, drawing scale/feature identities, source configuration and absolute driver/hull placement.",
+      "limits": [
+        "Do not refit the camera or move the driver station solely to hide the discrepancy.",
+        "Review this evidence before fixing trigger/grip fittings to the current upper blade."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Original source picks under unchanged registrations, actual saved cap/pivot geometry and retained hull plane."
+      },
+      "reopen_when": [
+        "Original wording/drawing dimensional evidence resolves the 37-inch datum",
+        "Shaft-anchor identity review supports a justified scale correction",
+        "Whole-driver/hull evidence supports a station revision"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_source_review02.json",
+          "sha256": "e9cf382cef4d468c4a8cdd37a6490eeb4a31dc178b9e655b4fea0fff9104d008"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_controls02.json",
+          "sha256": "231925c40413b3dd1700207685193628dd23b01924bd0079afef0d6b69f8323d"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json",
+          "sha256": "f7e6fef263abb1209d7fcebc4115af949f636cae24dfcf15038f66cd73148099"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/visual_review.json",
+          "sha256": "b0ab52250899820f4e3fd0c3acc7c436c30eefe42e52a5d5f6f4f542bc6ed173"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/source_comparison_diagnosis.json",
+          "sha256": "3a0f57c97ed578110045f14d3171c14e8318725466d0a0727b60d22c362f7f3e"
+        }
+      ]
     }
   ]
 }

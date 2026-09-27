@@ -11,6 +11,22 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — complete operating handles and pivot joints
+
+The [checkpoint](experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/README.md)
+contains **3,582 occurrences / 635 definitions / 442 groups**. Ten additions
+represent both handles, fulcrums and complete bolt/nut/cotter joints. Four upper
+selector arms/jaws are refined for actual engagement; all protected lower geometry
+and prior frames remain fixed. Nominal/variation each pass 419 local checks,
+53 context pairs and 25 STEP comparisons. Full integration, preservation and
+fresh reproduction pass; six inspected views bring progression to **308 images**.
+
+Fixed comparisons expose 47–49 px grip discrepancies, versus a 4.92 px pivot
+residual. The printed 37-inch datum, source scale/configuration and absolute
+station require review before the upper fittings are fixed. This is a mechanically
+checked approximation, not historical-placement validation. Standard tank011 is
+unchanged; remaining controls and full tank completion stay open.
+
 ## 27 September 2026 — operating-handle interfaces resumed
 
 The [conditional jaw study](experiments/drive_chains/transmission_controls_study/driver_redo01/handle_gates01/README.md)

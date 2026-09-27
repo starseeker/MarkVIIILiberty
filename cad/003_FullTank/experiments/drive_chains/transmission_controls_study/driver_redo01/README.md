@@ -1,5 +1,13 @@
 # Driver controls — active continuation
 
+Current full checkpoint: [complete operating handles and pivot joints](operating_integrated01/README.md),
+**3,582 occurrences / 635 definitions / 442 groups**. Both complete handles,
+fulcrums and source-sized pivot joints now engage the refined upper selector arms.
+Fixed source comparisons retain 47–49 px grip discrepancies and an ambiguous
+37-inch datum, requiring evidence review before the upper fittings are attached.
+
+The following entries are historical checkpoints and include superseded assumptions.
+
 Active next-step trial: [operating-handle gate interfaces](handle_gates01/README.md).
 Its four conditional upper-jaw revisions pass local, context and exchange checks,
 but require complete handle/pivot geometry before integration. No new tank parts

@@ -4,16 +4,17 @@
   "goal_status": "active",
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
-  "accepted_development_parent": "High selectors and complete short/long rods, 27 September 2026",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01",
-  "latest_native_sha256": "21a1f58f9ca15210ab26452271e263637d261c56036724d9707b02edda7d520f",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/qualification.json",
+  "accepted_development_parent": "Complete operating handles and pivot joints, 27 September 2026",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
+  "latest_native_sha256": "c8adadcb73bf9de0153cceb7e85e686bd63d5c6f1b198054e23811fdba8fede1",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json",
   "current_pipeline_run": null,
   "pipeline_receipt": null,
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_handle_gate_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/selector_integrated01",
@@ -35,7 +36,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Build actual M746/M747 fulcrums, M738A/M738B 37-inch handles and complete M776/M768 pivot joints. Use handle_gates01 as a conditional tangential-jaw hypothesis; actual handle engagement, clearance from the other jaw/shaft/hull, source shape and physical hardware must confirm or revise it before integration. Source SNL23 M776 assembly specifies a 3/16 x 1-inch cotter, conflicting with the generic SNL141 1-1/2-inch row; preserve full stock and diagnose actual nut/bolt/eye reach. Retain the 13.53px high-eye discrepancy and fixed source registrations. Then continue remaining operator controls, brake/foot/reverse rods and full seat support.",
+  "next_action": "Reconcile the operating-handle 37-inch length datum and 47\u201349px fixed-source grip discrepancies before attaching trigger/grip fittings. Review original HB/SNL length wording, shaft-anchor feature identities, source configuration and absolute driver/hull placement; preserve prior camera fits and refit only for justified evidence. The current complete-stock handles/pivots and four upper-selector revisions are mechanically checked approximations. Then finish triggers/pawls/guides, separate gates/stops, brake interconnection and remaining M576 foot rods, springs/spacing, reverse M777/M789A/M571 controls and full seat support.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -126,35 +127,41 @@
     "Both high long rods reuse the exact clutch M576 definition at 1296.850963mm stock. Three of five M576 and two of three M789A applications are populated; remaining foot and reverse connections must reconcile the families.",
     "High jaws are estimated at radii 140..210 mm with 41 mm outward lips. Current paired jaws clear statically; actual operating handle engagement, fulcrums and pivot hardware remain unbuilt.",
     "Handle-interface study exposes radial-lip obstruction in selector_integrated01/high_integrated01 upper jaws. Conditional tangential-wall replacement handle_gates01 passes through-stem diagnostics, context and STEP, preserving all lower geometry. Complete handles must validate engagement before integrating; witnesses are not tank parts.",
-    "M776 pivot hardware: original SNL23 specifies M768 7/8-inch nut and 3/16 x 1-inch split pin; original SNL129 specifies 1/2-inch nut thickness. Generic SNL141 1-1/2-inch pin row also names M776. Resolve actual fit and document source selection; do not silently alter stock."
+    "M776 pivot hardware: original SNL23 specifies M768 7/8-inch nut and 3/16 x 1-inch split pin; original SNL129 specifies 1/2-inch nut thickness. Generic SNL141 1-1/2-inch pin row also names M776. Resolve actual fit and document source selection; do not silently alter stock.",
+    "Operating handles: specific M776 source 1-inch cotters selected over generic 1-1/2-inch conflict; actual 25.4mm leg centerlines, full M768 1/2-inch nut stock, seating and retention checked. Eye form, nominal thread envelopes, exterior profiles and bolt dimensions remain inferred.",
+    "Upper low-selector arms now have 45 mm outward offset and actual tangential drive walls matched to handle stock plus 0.45mm face clearance. The earlier radial-lip shapes and handle_gates01 dimensions are superseded; journals, oilways, lower links and frames are preserved.",
+    "M738 37-inch datum is provisionally overall canonical radial part extent, not an established pivot-to-tip dimension. Source grip residuals 47.16/48.59px plan and 49.41px side exceed 5 px picks. Source cap-to-current-pivot reach 1014\u20131016mm differs from actual 922.49mm; fixed source views differ 35\u201339mm in X and inferred cap lies 44.59mm beyond current front plane. Review evidence before fixing upper fittings."
   ],
-  "visual_progression_count": 302,
+  "visual_progression_count": 308,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
   "latest_locally_qualified_checkpoint": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01",
-    "native_sha256": "21a1f58f9ca15210ab26452271e263637d261c56036724d9707b02edda7d520f",
-    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
+    "native_sha256": "c8adadcb73bf9de0153cceb7e85e686bd63d5c6f1b198054e23811fdba8fede1",
+    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json"
   },
-  "qualification_scope": "38 additions: two handed high selectors, two complete printed269.875mm M789A rods, two shared M576 front rods and all eight complete clevis joints. Every inherited definition and world frame is preserved. Actual source high-eye discrepancy13.53px remains explicit; gate form, stock, static pose, hand engagement and remaining driver/standard-tank geometry stay open",
-  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_source_review01.json",
+  "qualification_scope": "Ten additions: complete M738 handles, M746/M747 fulcrums and M776/M768/one-inch cotter joints. Four upper selector arms/jaws revised for actual handle engagement. All lower linkage material and inherited frames preserved. Fixed source cap discrepancies47-49px, ambiguous37-inch datum and13.53px high-eye discrepancy remain open. No historical position, control-state or motion qualification; remaining fittings unfinished",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/source_comparison_diagnosis.json",
   "active_development_candidate": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_gates01",
-    "native_sha256": "be359b871edcf2f2b86c5a8cb49d19fc28cf3fe3e0f190f9b19461124f54d4c7",
-    "geometry_integrated": false,
-    "status": "Isolated 140-occurrence pilot with four changed upper jaws and no new tank parts. Full qualified development checkpoint remains high_integrated01."
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
+    "native_sha256": "c8adadcb73bf9de0153cceb7e85e686bd63d5c6f1b198054e23811fdba8fede1",
+    "geometry_integrated": true,
+    "status": "Ten handle/fulcrum/pivot additions and four upper-selector revisions integrated: 3582 occurrences/635 definitions/442 groups. All protected lower geometry and inherited frames preserved. Source grip discrepancies and remaining mechanisms remain open."
   },
-  "qualification_note": "Withheld-control redo remains complete. Driver foundation, front clutch, low receiving chain/selectors and high selectors with complete short/long rods are locally checked development geometry. All prior shapes/frames survive high_integrated01. Three M576 applications share one exact definition. The13.525px high-eye source disagreement and all remaining operator/seat geometry remain open; standard tank011 is unchanged.",
+  "qualification_note": "Withheld-control redo remains complete. Driver foundation, clutch/low/high receiving chains and full operating handles/pivots are mechanically checked development geometry. Four provisional upper selector shapes are revised for real handle engagement. Grip-tip source discrepancies 47\u201349px and the 13.53px high-eye discrepancy remain unqualified; 37-inch length datum, source scale/configuration and absolute driver/hull placement need review. Standard tank011 remains unchanged.",
   "parent_pipeline_run": "high_brake_support01",
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
   "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_gates01",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_gates01/study_receipt.json",
-    "geometry_integrated": false,
-    "status": "Conditional four-jaw orientation revision: 252 local/20 context/8 STEP checks per nominal and 13 mm variant; fresh rebuild and six inspected views. Full handles and hardware remain required.",
-    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/high_integrated01/qualification.json",
-    "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_source_review01.json",
-    "next_action": "Build actual M746/M747 fulcrums, M738A/M738B 37-inch handles and complete M776/M768 pivot joints. Use handle_gates01 as a conditional tangential-jaw hypothesis; actual handle engagement, clearance from the other jaw/shaft/hull, source shape and physical hardware must confirm or revise it before integration. Source SNL23 M776 assembly specifies a 3/16 x 1-inch cotter, conflicting with the generic SNL141 1-1/2-inch row; preserve full stock and diagnose actual nut/bolt/eye reach. Retain the 13.53px high-eye discrepancy and fixed source registrations. Then continue remaining operator controls, brake/foot/reverse rods and full seat support."
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating02",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/qualification.json",
+    "geometry_integrated": true,
+    "status": "Ten additions: complete M738 handles, M746/M747 fulcrums and M776/M768/one-inch cotter joints. Four upper selector arms/jaws revised for actual handle engagement. All lower linkage material and inherited frames preserved. Fixed source cap discrepancies47-49px, ambiguous37-inch datum and13.53px high-eye discrepancy remain open. No historical position, control-state or motion qualification; remaining fittings unfinished",
+    "nominal_and_stock_variation": "419 local checks, 53 context pairs, 25 native/STEP comparisons each; fresh prototype/full reproduction; 624 undeclared inherited definitions preserved; six inspected views.",
+    "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_source_review02.json",
+    "source_comparison_diagnosis": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/source_comparison_diagnosis.json",
+    "source_landmarks": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_landmarks01.json",
+    "next_action": "Reconcile the operating-handle 37-inch length datum and 47\u201349px fixed-source grip discrepancies before attaching trigger/grip fittings. Review original HB/SNL length wording, shaft-anchor feature identities, source configuration and absolute driver/hull placement; preserve prior camera fits and refit only for justified evidence. The current complete-stock handles/pivots and four upper-selector revisions are mechanically checked approximations. Then finish triggers/pawls/guides, separate gates/stops, brake interconnection and remaining M576 foot rods, springs/spacing, reverse M777/M789A/M571 controls and full seat support.",
+    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handle_gates01/study_receipt.json"
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
@@ -185,5 +192,5 @@
     "withheld_redo_status": "Corrected local static reconstruction complete; original branch remains preserved."
   },
   "driver_part_verifier": "cad/003_FullTank/experiments/drive_chains/verify_driver_fulcrum_shaft.py",
-  "open_limits_note": "Cumulative historical limits include superseded assumptions. Current high-control geometry is in high_integrated01/qualification.json and high_controls01.json; diagonal low-link topology is in selector_integrated01, with unchanged low_integrated01 shaft/rod datums. Prior checkpoint files stay immutable."
+  "open_limits_note": "Cumulative limits include superseded geometry. operating_integrated01 is authoritative for current handles/pivots and four upper selector arms; its protected lower linkage and all preceding world frames match high_integrated01. Historical source comparisons remain explicitly open. Older checkpoint files stay immutable."
 }
