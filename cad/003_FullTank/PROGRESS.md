@@ -11,6 +11,31 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — identify shaft landmarks before revising placement
+
+The [station review](experiments/drive_chains/driver_station_review/README.md)
+corrects the earlier unqualified shaft-height comparison. Callout 56 names the
+horizontal tool box behind the seat; its text location does not identify the
+whole sloping outline below it. HB2 shows the controls disappearing behind a
+side plate. Two exposed ends in that plate are a plausible shaft pair, with
+0.664 px separation/height consistency under the unchanged calibration. Their
+identity remains conditional.
+
+The resulting hypothesis moves the driver mechanism 165.893 mm aft and 15.022 mm
+up relative to the Z975 trial. Four saved 150-part clearance probes retain the
+complete 72-part driver unit, 38 fixed seat parts and 40 bow plates. All **804
+nearby pairs** clear without exemptions; even the functional-source handles now
+clear the bow by **37.24mm**. Source comparisons were inspected. These probes
+omit long rods/supports/full tank and do not qualify an installation.
+
+Complete M574 rods expose the next dependency: they are 165.433 mm too long for
+the currently fixed intermediate receivers. At retained receiver Y/Z, full-stock
+closure requires a 165.521 mm aft receiver shift. Next propagate that change
+through the actual intermediate mechanism, front/rear rods, floor mounts and
+seat supports. No shortened stock, isolated-eye move or camera refit. The old
+connected seat-support native remains the last qualified local support model;
+accepted development, standard tank011 and image progression 308 remain unchanged.
+
 ## 27 September 2026 — complete static seat support connections
 
 The [connected support study](experiments/drive_chains/driver_seat_support_study/BUILD.md)
