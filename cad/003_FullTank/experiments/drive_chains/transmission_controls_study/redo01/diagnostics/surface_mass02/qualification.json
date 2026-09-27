@@ -1,0 +1,853 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "name": "inflected_sweep_stock_loss_detected",
+      "passed": true,
+      "independent_centerline_reference": {
+        "converged": true,
+        "estimates": [
+          {
+            "length_mm": 52.48983771504032,
+            "volume_mm3": 278.683853655738,
+            "centroid_mm": [
+              19.999999999999982,
+              14.999999999999988,
+              0.0
+            ],
+            "order": 96
+          },
+          {
+            "length_mm": 52.48983771504039,
+            "volume_mm3": 278.68385365573835,
+            "centroid_mm": [
+              19.999999999999996,
+              14.999999999999991,
+              0.0
+            ],
+            "order": 192
+          }
+        ],
+        "length_mm": 52.48983771504039,
+        "volume_mm3": 278.68385365573835,
+        "centroid_mm": [
+          19.999999999999996,
+          14.999999999999991,
+          0.0
+        ],
+        "order": 192,
+        "method": "Independent knot-span Gauss centerline integral; exact constant circular tube moment formula."
+      },
+      "independent_gauss_measurement": {
+        "occ": "7.8.0",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.5824294331314124e-15,
+            "volume": 268.35943000674916,
+            "centroid": [
+              20.00000000004255,
+              15.000000000032184,
+              -7.343029139728588e-16
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.5105008225345299e-15,
+            "volume": 268.3594300067492,
+            "centroid": [
+              20.00000000004255,
+              15.000000000032184,
+              -7.025694467403764e-16
+            ]
+          }
+        ],
+        "brep_sha256": "ace830c7e98621787fb296f010404cee4dfe29f2120ff068c7e49dcae15dac10",
+        "volume_convergence_mm3": 5.684341886080802e-14,
+        "centroid_convergence_mm": 3.173346723248237e-17,
+        "converged": true,
+        "volume_mm3": 268.3594300067492,
+        "centroid_mm": [
+          20.00000000004255,
+          15.000000000032184,
+          -7.025694467403764e-16
+        ],
+        "method": "BRepGProp::VolumeProperties adaptive Gauss"
+      }
+    },
+    {
+      "name": "box",
+      "moved": false,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 6,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 5.758541791559919e-16,
+            "volume": 5999.999999999997,
+            "centroid": [
+              5,
+              10,
+              15
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 3.3785937011051226e-16,
+            "volume": 5999.999999999999,
+            "centroid": [
+              5,
+              10,
+              15
+            ]
+          }
+        ],
+        "brep_sha256": "2a62c8a3e022f718ccb4b7c66c2e96923e689b942607d22a4f34759f273e8f7b",
+        "volume_convergence_mm3": 1.8189894035458565e-12,
+        "centroid_convergence_mm": 0.0,
+        "converged": true,
+        "volume_mm3": 5999.999999999999,
+        "centroid_mm": [
+          5,
+          10,
+          15
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 9.094947017729282e-13,
+      "centroid_error_mm": 0.0,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "box",
+      "moved": true,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 6,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 5.758541791559919e-16,
+            "volume": 5999.999999999997,
+            "centroid": [
+              131,
+              53.00000000000001,
+              -42.00000000000001
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 3.378686219690508e-16,
+            "volume": 5999.999999999999,
+            "centroid": [
+              131,
+              53.00000000000001,
+              -42.00000000000001
+            ]
+          }
+        ],
+        "brep_sha256": "449a3b4764e63d7dea78630cdf71532f383dda2dcc1b8d55c1e6c3be18436e77",
+        "volume_convergence_mm3": 1.8189894035458565e-12,
+        "centroid_convergence_mm": 0.0,
+        "converged": true,
+        "volume_mm3": 5999.999999999999,
+        "centroid_mm": [
+          131,
+          53.00000000000001,
+          -42.00000000000001
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 9.094947017729282e-13,
+      "centroid_error_mm": 1.0048591735576161e-14,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "cylinder",
+      "moved": false,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 3,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 8.541417336578097e-16,
+            "volume": 376.9911184307751,
+            "centroid": [
+              -6.29135961175484e-17,
+              -1.2853619595592812e-16,
+              15
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 4.446518518217339e-16,
+            "volume": 376.99111843077526,
+            "centroid": [
+              9.815098067382862e-16,
+              -1.5065888910061734e-17,
+              15
+            ]
+          }
+        ],
+        "brep_sha256": "277a035d9e408105a2bbd9616066c421f01feeea428854da398e2b6f066b9475",
+        "volume_convergence_mm3": 1.7053025658242404e-13,
+        "centroid_convergence_mm": 1.050569252840594e-15,
+        "converged": true,
+        "volume_mm3": 376.99111843077526,
+        "centroid_mm": [
+          9.815098067382862e-16,
+          -1.5065888910061734e-17,
+          15
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 1.1368683772161603e-13,
+      "centroid_error_mm": 9.816254284257708e-16,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "cylinder",
+      "moved": true,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 3,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 8.782969229749779e-16,
+            "volume": 376.9911184307749,
+            "centroid": [
+              132.33165781985744,
+              41.99293598777438,
+              -43.43917659846873
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 5.036614485160167e-16,
+            "volume": 376.99111843077515,
+            "centroid": [
+              132.33165781985744,
+              41.99293598777438,
+              -43.439176598468734
+            ]
+          }
+        ],
+        "brep_sha256": "e67b513d47aef3ae7a038311f5d2f00993ccc0ec2859f9ef152859781023e4e7",
+        "volume_convergence_mm3": 2.2737367544323206e-13,
+        "centroid_convergence_mm": 7.105427357601002e-15,
+        "converged": true,
+        "volume_mm3": 376.99111843077515,
+        "centroid_mm": [
+          132.33165781985744,
+          41.99293598777438,
+          -43.439176598468734
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 0.0,
+      "centroid_error_mm": 1.0048591735576161e-14,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "torus",
+      "moved": false,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 1,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 7.380526832909889e-15,
+            "volume": 177.6528792196086,
+            "centroid": [
+              1.8129669552782665e-16,
+              6.818339157420877e-16,
+              -4.802677247789247e-18
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 3.693783063776398e-15,
+            "volume": 177.65287921960925,
+            "centroid": [
+              7.419518892701866e-15,
+              1.472921449275762e-15,
+              5.1748567250535227e-17
+            ]
+          }
+        ],
+        "brep_sha256": "17a10497517286af20e32f9023a22b80f29e57bb8ad619162361de5384692729",
+        "volume_convergence_mm3": 6.536993168992922e-13,
+        "centroid_convergence_mm": 7.281543662207188e-15,
+        "converged": true,
+        "volume_mm3": 177.65287921960925,
+        "centroid_mm": [
+          7.419518892701866e-15,
+          1.472921449275762e-15,
+          5.1748567250535227e-17
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 7.958078640513122e-13,
+      "centroid_error_mm": 7.56448518467113e-15,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "torus",
+      "moved": true,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 1,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 5.748113973731024e-15,
+            "volume": 177.6528792196085,
+            "centroid": [
+              126,
+              43,
+              -57
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 3.963835047523359e-15,
+            "volume": 177.65287921960922,
+            "centroid": [
+              126,
+              43,
+              -57
+            ]
+          }
+        ],
+        "brep_sha256": "0727e901bff05284ead51185c6ea5826a1f3e205502faffb30a1953dc8198054",
+        "volume_convergence_mm3": 7.105427357601002e-13,
+        "centroid_convergence_mm": 0.0,
+        "converged": true,
+        "volume_mm3": 177.65287921960922,
+        "centroid_mm": [
+          126,
+          43,
+          -57
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 7.673861546209082e-13,
+      "centroid_error_mm": 0.0,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "sphere",
+      "moved": false,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 1,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.701273387436894e-15,
+            "volume": 523.598775598299,
+            "centroid": [
+              -3.027887713943627e-17,
+              -2.7039523101947373e-16,
+              -3.1824021530468286e-17
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 2.8552805953521605e-16,
+            "volume": 523.5987755982991,
+            "centroid": [
+              2.2710657959440827e-15,
+              2.700775296040144e-17,
+              -3.195712109095752e-17
+            ]
+          }
+        ],
+        "brep_sha256": "91b402b3e1e0dc27fed156122ea2396cae798a3fad310c44f1b0d72ee1fa483d",
+        "volume_convergence_mm3": 1.1368683772161603e-13,
+        "centroid_convergence_mm": 2.320481815685164e-15,
+        "converged": true,
+        "volume_mm3": 523.5987755982991,
+        "centroid_mm": [
+          2.2710657959440827e-15,
+          2.700775296040144e-17,
+          -3.195712109095752e-17
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 2.2737367544323206e-13,
+      "centroid_error_mm": 2.2714511938000168e-15,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "sphere",
+      "moved": true,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 1,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 1.3496845984831079e-15,
+            "volume": 523.5987755982987,
+            "centroid": [
+              126,
+              43,
+              -57
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.9592216837815265e-16,
+            "volume": 523.5987755982987,
+            "centroid": [
+              126,
+              43,
+              -57
+            ]
+          }
+        ],
+        "brep_sha256": "797ed12dcbc885a34638c3172167861804aad8ea86be17913882b7df416aafcd",
+        "volume_convergence_mm3": 0.0,
+        "centroid_convergence_mm": 0.0,
+        "converged": true,
+        "volume_mm3": 523.5987755982987,
+        "centroid_mm": [
+          126,
+          43,
+          -57
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 1.1368683772161603e-13,
+      "centroid_error_mm": 0.0,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "planar_holed_caps",
+      "moved": false,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 4,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 2.763791508120389e-15,
+            "volume": 301.5928947446201,
+            "centroid": [
+              8.824150442280919e-17,
+              -9.748287197070643e-17,
+              4
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.0271691533126348e-15,
+            "volume": 301.5928947446203,
+            "centroid": [
+              2.524797425603111e-15,
+              1.6509565208227962e-16,
+              4
+            ]
+          }
+        ],
+        "brep_sha256": "9e83ef2db0ec6771268a1f6d33c52c2b3dc0a34705b9505194725173047794f9",
+        "volume_convergence_mm3": 2.2737367544323206e-13,
+        "centroid_convergence_mm": 2.450663632229571e-15,
+        "converged": true,
+        "volume_mm3": 301.5928947446203,
+        "centroid_mm": [
+          2.524797425603111e-15,
+          1.6509565208227962e-16,
+          4
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 1.7053025658242404e-13,
+      "centroid_error_mm": 2.530189442446666e-15,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "planar_holed_caps",
+      "moved": true,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 4,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 6.778239721518016e-13,
+            "volume": 301.5928947446201,
+            "centroid": [
+              127.68844208529532,
+              42.731449596739836,
+              -53.383780426258326
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.0080499335477608e-15,
+            "volume": 301.5928947446203,
+            "centroid": [
+              127.68844208529532,
+              42.731449596739836,
+              -53.383780426258326
+            ]
+          }
+        ],
+        "brep_sha256": "b8fc35db8fd93219cd1c527ab12a8d4ce1df457de104197a64aa4e1039900642",
+        "volume_convergence_mm3": 2.2737367544323206e-13,
+        "centroid_convergence_mm": 0.0,
+        "converged": true,
+        "volume_mm3": 301.5928947446203,
+        "centroid_mm": [
+          127.68844208529532,
+          42.731449596739836,
+          -53.383780426258326
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 1.7053025658242404e-13,
+      "centroid_error_mm": 0.0,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "offset_planar_hole",
+      "moved": false,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 7,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 5.624163017048429e-16,
+            "volume": 2937.168146928203,
+            "centroid": [
+              15.17113586945986,
+              10.08556793472993,
+              2.5
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 3.3358411466436294e-16,
+            "volume": 2937.168146928204,
+            "centroid": [
+              15.17113586945986,
+              10.08556793472993,
+              2.5
+            ]
+          }
+        ],
+        "brep_sha256": "f351fa2a7c69749183eaa9d830ccdc3e08b2f8369df01ebe1145e06b2b9080f7",
+        "volume_convergence_mm3": 9.094947017729282e-13,
+        "centroid_convergence_mm": 0.0,
+        "converged": true,
+        "volume_mm3": 2937.168146928204,
+        "centroid_mm": [
+          15.17113586945986,
+          10.08556793472993,
+          2.5
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 4.547473508864641e-13,
+      "centroid_error_mm": 1.831026719408895e-15,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "offset_planar_hole",
+      "moved": true,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 7,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 2.542495054810884e-15,
+            "volume": 2937.1681469282016,
+            "centroid": [
+              133.3139845779236,
+              59.86044813471632,
+              -56.39753636947885
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 3.337565730425172e-16,
+            "volume": 2937.1681469282025,
+            "centroid": [
+              133.3139845779236,
+              59.86044813471632,
+              -56.39753636947885
+            ]
+          }
+        ],
+        "brep_sha256": "7b1e7445f5bea683335c22e0c3b94a0c5f63498480aa18ed16330ec8cad6c92b",
+        "volume_convergence_mm3": 9.094947017729282e-13,
+        "centroid_convergence_mm": 0.0,
+        "converged": true,
+        "volume_mm3": 2937.1681469282025,
+        "centroid_mm": [
+          133.3139845779236,
+          59.86044813471632,
+          -56.39753636947885
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 1.8189894035458565e-12,
+      "centroid_error_mm": 7.105427357601002e-15,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "analytic_helix",
+      "moved": false,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 3,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 6.268429648837873e-13,
+            "volume": 8248.502630738392,
+            "centroid": [
+              -1.1346783167637264e-06,
+              -1.1399931934705614e-06,
+              49.99999498263227
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 3.9996193382733883e-16,
+            "volume": 8248.502630738389,
+            "centroid": [
+              -1.134678315944937e-06,
+              -1.1399931930003844e-06,
+              49.999994982632266
+            ]
+          }
+        ],
+        "brep_sha256": "ac8a7d1d9739ff49e3717bcc42ecaf2dc8d3644767643e2cf203821c4b32be98",
+        "volume_convergence_mm3": 3.637978807091713e-12,
+        "centroid_convergence_mm": 7.167885360274954e-15,
+        "converged": true,
+        "volume_mm3": 8248.502630738389,
+        "centroid_mm": [
+          -1.134678315944937e-06,
+          -1.1399931930003844e-06,
+          49.999994982632266
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 0.000305668971122941,
+      "centroid_error_mm": 5.268876382704549e-06,
+      "stock_tolerance_mm3": 0.001
+    },
+    {
+      "name": "analytic_helix",
+      "moved": true,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 3,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 6.268739760134829e-13,
+            "volume": 8248.502630738387,
+            "centroid": [
+              147.10552367629793,
+              39.643118710856264,
+              -11.797259854926226
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 2.556328267260903e-16,
+            "volume": 8248.502630738385,
+            "centroid": [
+              147.10552367629793,
+              39.643118710856264,
+              -11.79725985492623
+            ]
+          }
+        ],
+        "brep_sha256": "f3898c1750f786ca5d71ddfa0b4302770b52f13de50c6f5a463a24f050ed3f71",
+        "volume_convergence_mm3": 1.8189894035458565e-12,
+        "centroid_convergence_mm": 3.552713678800501e-15,
+        "converged": true,
+        "volume_mm3": 8248.502630738385,
+        "centroid_mm": [
+          147.10552367629793,
+          39.643118710856264,
+          -11.79725985492623
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 0.0003056689747609198,
+      "centroid_error_mm": 5.268876528965742e-06,
+      "stock_tolerance_mm3": 0.001
+    },
+    {
+      "name": "retained_inflected_sweep",
+      "moved": false,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 3,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 2.583863421937775e-12,
+            "volume": 268.35943000674956,
+            "centroid": [
+              19.999999999948198,
+              15.000000000106306,
+              -8.63278988361075e-16
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.4995701195151965e-15,
+            "volume": 268.3594300067495,
+            "centroid": [
+              19.999999999948198,
+              15.000000000106311,
+              -8.732234569473113e-16
+            ]
+          }
+        ],
+        "brep_sha256": "7913b07606b3b3dbe46b3a89fe8beade6140a6d0e580d986c9b1500773b7324a",
+        "volume_convergence_mm3": 5.684341886080802e-14,
+        "centroid_convergence_mm": 5.32907979677654e-15,
+        "converged": true,
+        "volume_mm3": 268.3594300067495,
+        "centroid_mm": [
+          19.999999999948198,
+          15.000000000106311,
+          -8.732234569473113e-16
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 2.8421709430404007e-13,
+      "centroid_error_mm": 1.199889580055679e-10,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "retained_inflected_sweep",
+      "moved": true,
+      "passed": true,
+      "measurement": {
+        "occ": "7.8.0",
+        "certified_faces": 3,
+        "algorithm": "divergence theorem; rectangular curved UV patches and planar Green boundary integrals; knot-span Gauss 16/32/64",
+        "results": [
+          {
+            "requested_error": 1e-10,
+            "reported_error": 8.221311120117728e-12,
+            "volume": 268.3594300067494,
+            "centroid": [
+              133.38429730684973,
+              66.82551137728628,
+              -58.67844002037541
+            ]
+          },
+          {
+            "requested_error": 1e-12,
+            "reported_error": 1.3612294494110934e-15,
+            "volume": 268.35943000674934,
+            "centroid": [
+              133.38429730684973,
+              66.82551137728628,
+              -58.67844002037541
+            ]
+          }
+        ],
+        "brep_sha256": "c12f8f1cf2a55dbcbe4514c50c7fcf314f7f7b2d029bab70fe783dc7b7a6b69d",
+        "volume_convergence_mm3": 5.684341886080802e-14,
+        "centroid_convergence_mm": 0.0,
+        "converged": true,
+        "volume_mm3": 268.35943000674934,
+        "centroid_mm": [
+          133.38429730684973,
+          66.82551137728628,
+          -58.67844002037541
+        ],
+        "method": "Restricted tube surface quadrature; independent divergence theorem integration"
+      },
+      "volume_error_mm3": 1.1368683772161603e-13,
+      "centroid_error_mm": 1.083014981096623e-10,
+      "stock_tolerance_mm3": 1e-05
+    },
+    {
+      "name": "nonrectangular_curved_trim_rejected",
+      "passed": true
+    },
+    {
+      "name": "negative_oriented_mass_rejected",
+      "passed": true
+    }
+  ],
+  "provenance": {
+    "adapter_sha256": "576b0853f4a426b3f2ca3e1d4c31920989482760b65ff2d217be7b2587888a5e",
+    "source_sha256": "785b3660da7fc6ce22e873e7f8505fe8b235747195b81b12ad500589a4d45a25",
+    "convergence_adapter_sha256": "8f92c1d73aafda1f53d5c130e783d0939a8688964b97b8814bcace080ab8d7d7",
+    "binary_sha256": "63acfe22ec7c74ecf3dd94b14023b7935ff3fae1dbc2bb2741e230ef9f4e2bf5",
+    "runtime_root": "/snap/freecad/2741",
+    "compile_command": [
+      "g++",
+      "-std=c++17",
+      "-O2",
+      "-I/snap/freecad/2741/usr/include/opencascade",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/control_rebuild_surface_mass.cpp",
+      "-L/snap/freecad/2741/usr/lib",
+      "-lTKTopAlgo",
+      "-lTKBRep",
+      "-lTKG3d",
+      "-lTKG2d",
+      "-lTKGeomBase",
+      "-lTKMath",
+      "-lTKernel",
+      "-o",
+      "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/diagnostics/surface_mass02/runtime/tube_surface_mass"
+    ],
+    "algorithm": "Independent divergence integration; rectangular curved UV domains; planar Green boundary integrals; knot-span Gauss 16/32/64.",
+    "acceptance": "Original reported-error, absolute volume and centroid convergence predicates unchanged."
+  },
+  "checker_sha256": "66f400595076a85c86bf50313e38929a582ef51862c9e491d1625657bbbea538",
+  "wire_reference_sha256": "9520530f72f15f8951c805b404674bb52154063fb0d1eacff19becb62271f4b6",
+  "method_scope": "Closed single solids; rectangular UV domains on curved surfaces, general planar boundaries. Refuses unsupported curved trims.",
+  "warning": "Surface quadrature is a restricted measurement alternative, not general CAD validation. Separate topology, material and interface checks remain required."
+}

@@ -1,0 +1,35 @@
+{
+  "source_hashes": {
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p087.jpg": "a7a3af6c7859fad419d59df5437210047d8c5a3ad5ca237d862c3a782fd720c3",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p136.jpg": "4371fd4dd49419ad34693f9f11f9c3bf051dbf835e3f78f1ddfb8f6d9f421c2e",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p195.jpg": "a4716d9388da51a44f8403e33db3f05198b992e0ad4dc516afe51f385961b014",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p220.jpg": "6b9609ad8ef9b0b3159a17e5818ac250f1333591837d56fab6247ff97fec74bf",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p267.jpg": "961c2d7b6e76bb6fb735f86eb08275a231a9246e8e17b278c8e264181d581491",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate104.png": "dd631db969b4de5d83996434fc26af8d672f8e6ae247fef074f771957ccd77ff",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json": "8a4816e18595d639ef7ff3c771475d27ddcde8faf01d88dcdde87aa7cc963156"
+  },
+  "source_supported": [
+    "SNL267:009 lists eight M567 small brake-gear spring washers. No dimensions or free spring shape printed.",
+    "SNL220:023 lists five M564 tension springs: four control-rod applications and one fan jockey pulley. Only four control applications are modeled here.",
+    "SNL6 depicts return springs at the short foot/low-speed connections and raised bracket ears. HB104 shows the supporting rear-channel arrangement with transmission removed. Neither image resolves complete hook geometry."
+  ],
+  "approximations": [
+    "M567 is modeled as a compressed annular spring washer, not a proved free flat washer. The eight selected short-connection pin positions are inferred from the SNL6 callouts; handbook quantity differs and is retained in the earlier source packet.",
+    "M564 front hook: a 300-degree eye around the fork socket, retained behind the existing jam nut. Chosen as a physically capturable control-rod attachment without changing established pin/receiver geometry. It is an explicit mounting hypothesis, not a recovered source detail.",
+    "M564 rear hook passes through the measured M4136 6.65 mm hole and contacts its -X wall; tip bends outside the cheek.",
+    "Wire diameter, coil diameter/count, lead shapes and static installed extension are estimates. Four geometry definitions represent installed states of one source part family, not four different catalogue parts. No inferred free-length, spring rate, material stress or motion qualification."
+  ],
+  "rejected": [
+    "The Gemini spring front tips were not checked against any actual capture/seating interface; absence of collision is insufficient.",
+    "A 2.6 mm wire hook cannot fit in the 1.538 mm fork-to-cotter gap already occupied by a 1.5 mm washer. Do not silently increase the qualified pin grip."
+  ],
+  "validation_requirements": [
+    "Actual seating/capture on jam-nut face and bracket bore; withdrawal/shift negatives.",
+    "No mating-pair exemptions in surrounding-material checks.",
+    "Full wire stock versus centerline; curvature/self-separation; native and installed STEP roundtrip.",
+    "Independent measured washer seat, complete bore passage and retention."
+  ],
+  "historical_geometry_qualified": false
+}

@@ -1,0 +1,1581 @@
+{
+  "native_file": "ControlRebuildTrial.FCStd",
+  "native_sha256": "3c66b161562c13fb164ea1824c80a40d6435f60b1a0916cac3c35dea8be8d790",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/PowertrainWithRearLowRods.FCStd",
+  "parent_native_sha256": "9b36e8ca2124d0314825c66b905080f770a3d709a9503eb76a882147cd4e1f04",
+  "parent_manifest_sha256": "b00bd0f6ad04675da327ee430572d97c0a4618bdea2a71c07a319f6a50518a87",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/trial_control_rebuild_springs_v3.py": "b9c15dad669abc3758c796c9ec53e7c8ef0c738665710e761b65ff73301160f0",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io.py": "03a5a258c1fdc5deb62ae3b0f0fcddb5d062bb2ccd3bf41508b3f0535f816fd9",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_spring_parts_v3.py": "655f124c7fddd0adc140f85b512c9f60f063a7a876ea0d87d3d646213ba19bc0",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/spring_controls01.json": "80494224c4aa0bc06f48738c414f7be405b2eabae8e7e6e222734db272937bc0",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/spring_source_review.json": "92a4794ce8916ed060a0096871cb02e9d1d380b89e796983dfafbdb5e2856330",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/qualification.json": "5bc389c74a10260eebf75ea4e743835ca010748a1f43ded7dbfdf6ee0efab2f4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/isolated/manifest.json": "b00bd0f6ad04675da327ee430572d97c0a4618bdea2a71c07a319f6a50518a87",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/report.json": "4776498b8d35820ae8cb272a644cf33f4d21bf2c258b2aa55b523903bfd1df0c"
+  },
+  "specs": {
+    "PortLowSpeedBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2175.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        830.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowSpeedBrakeFrontMechanism",
+      "role": "receiver"
+    },
+    "PortLowHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_low_left",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        450.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowControlFulcrum",
+      "role": "receiver"
+    },
+    "PortLowConnectingRod": {
+      "definition": "Def_RearLowRod",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2178.750880850343,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowShortConnection",
+      "role": "receiver"
+    },
+    "PortLowSpringBracket": {
+      "definition": "Def_RearSupport_low_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        1.0,
+        0.0,
+        650.875,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowSpringSupport",
+      "role": "receiver"
+    },
+    "PortLowBrakeJointFork": {
+      "definition": "Def_LowJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowBrakeJoint",
+      "role": "receiver"
+    },
+    "PortLowBrakeJointPin": {
+      "definition": "Def_ControlJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowBrakeJoint",
+      "role": "receiver"
+    },
+    "PortLowBrakeJointCotter": {
+      "definition": "Def_ControlJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        555.4082142857143,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowBrakeJoint",
+      "role": "receiver"
+    },
+    "PortLowBrakeJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2199.388380850343,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowBrakeJoint",
+      "role": "receiver"
+    },
+    "PortLowBrakeJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        553.1082142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowBrakeJoint",
+      "role": "washer"
+    },
+    "PortLowFulcrumJointFork": {
+      "definition": "Def_LowJoint_fork",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2338.0875,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        535.3957142857142,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowFulcrumJoint",
+      "role": "receiver"
+    },
+    "PortLowFulcrumJointPin": {
+      "definition": "Def_ControlJoint_pin",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2338.0875,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        535.3957142857142,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowFulcrumJoint",
+      "role": "receiver"
+    },
+    "PortLowFulcrumJointCotter": {
+      "definition": "Def_ControlJoint_cotter",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2338.0875,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        535.3957142857142,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        645.1375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowFulcrumJoint",
+      "role": "receiver"
+    },
+    "PortLowFulcrumJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        -1.0,
+        2288.8750000000005,
+        -1.0,
+        0.0,
+        -2.220446049250313e-16,
+        535.3957142857142,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowFulcrumJoint",
+      "role": "receiver"
+    },
+    "PortLowFulcrumJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2338.0875,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        535.3957142857142,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        642.8375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowFulcrumJoint",
+      "role": "washer"
+    },
+    "PortLowReturnSpring": {
+      "definition": "Def_ControlReturnSpring_PortLow_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortLowShortConnection",
+      "role": "spring"
+    },
+    "PortTrackBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2181.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        830.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackBrakeFrontMechanism",
+      "role": "receiver"
+    },
+    "PortTrackHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_track",
+      "frame": [
+        -0.9281613938075559,
+        -0.37217795077787086,
+        0.0,
+        2476.2,
+        0.37217795077787086,
+        -0.9281613938075559,
+        0.0,
+        710.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackControlFulcrum",
+      "role": "receiver"
+    },
+    "PortTrackConnectingRod": {
+      "definition": "Def_RearTrackRod",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2180.4663667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackShortConnection",
+      "role": "receiver"
+    },
+    "PortTrackBrakeJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackBrakeJoint",
+      "role": "receiver"
+    },
+    "PortTrackBrakeJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackBrakeJoint",
+      "role": "receiver"
+    },
+    "PortTrackBrakeJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        788.5892857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackBrakeJoint",
+      "role": "receiver"
+    },
+    "PortTrackBrakeJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2201.10386676539,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackBrakeJoint",
+      "role": "receiver"
+    },
+    "PortTrackBrakeJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        786.2892857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackBrakeJoint",
+      "role": "washer"
+    },
+    "PortTrackFulcrumJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2500.3249212869114,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        770.1642857142859,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackFulcrumJoint",
+      "role": "receiver"
+    },
+    "PortTrackFulcrumJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2500.3249212869114,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        770.1642857142859,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackFulcrumJoint",
+      "role": "receiver"
+    },
+    "PortTrackFulcrumJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2500.3249212869114,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        770.1642857142859,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        643.55,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackFulcrumJoint",
+      "role": "receiver"
+    },
+    "PortTrackFulcrumJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        5.551115123125783e-17,
+        -1.0,
+        2455.8749212869116,
+        -1.0,
+        1.1102230246251565e-16,
+        -2.220446049250313e-16,
+        770.1642857142859,
+        5.551115123125783e-17,
+        1.0,
+        1.1102230246251565e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackFulcrumJoint",
+      "role": "receiver"
+    },
+    "PortTrackFulcrumJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2500.3249212869114,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        770.1642857142859,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        641.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackFulcrumJoint",
+      "role": "washer"
+    },
+    "PortTrackReturnSpring": {
+      "definition": "Def_ControlReturnSpring_PortTrack_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "PortTrackShortConnection",
+      "role": "spring"
+    },
+    "StarboardLowSpeedBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2175.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        830.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowSpeedBrakeFrontMechanism",
+      "role": "receiver"
+    },
+    "StarboardLowHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_low_right",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2298.4,
+        0.0,
+        1.0,
+        0.0,
+        -450.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowControlFulcrum",
+      "role": "receiver"
+    },
+    "StarboardLowConnectingRod": {
+      "definition": "Def_RearLowRod",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2178.750880850343,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowShortConnection",
+      "role": "receiver"
+    },
+    "StarboardLowSpringBracket": {
+      "definition": "Def_RearSupport_low_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2368.0,
+        0.0,
+        1.0,
+        0.0,
+        -650.875,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowSpringSupport",
+      "role": "receiver"
+    },
+    "StarboardLowBrakeJointFork": {
+      "definition": "Def_LowJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -535.3957142857142,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowBrakeJoint",
+      "role": "receiver"
+    },
+    "StarboardLowBrakeJointPin": {
+      "definition": "Def_ControlJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -535.3957142857142,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowBrakeJoint",
+      "role": "receiver"
+    },
+    "StarboardLowBrakeJointCotter": {
+      "definition": "Def_ControlJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -555.4082142857143,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowBrakeJoint",
+      "role": "receiver"
+    },
+    "StarboardLowBrakeJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2199.388380850343,
+        1.2246467991473532e-16,
+        -1.0,
+        -2.465190328815662e-32,
+        -535.3957142857142,
+        1.0,
+        1.2246467991473532e-16,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowBrakeJoint",
+      "role": "receiver"
+    },
+    "StarboardLowBrakeJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        -1.0,
+        0.0,
+        -553.1082142857142,
+        0.0,
+        0.0,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowBrakeJoint",
+      "role": "washer"
+    },
+    "StarboardLowFulcrumJointFork": {
+      "definition": "Def_LowJoint_fork",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2338.0875,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        -535.3957142857142,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowFulcrumJoint",
+      "role": "receiver"
+    },
+    "StarboardLowFulcrumJointPin": {
+      "definition": "Def_ControlJoint_pin",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2338.0875,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        -535.3957142857142,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowFulcrumJoint",
+      "role": "receiver"
+    },
+    "StarboardLowFulcrumJointCotter": {
+      "definition": "Def_ControlJoint_cotter",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2338.0875,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        -535.3957142857142,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        645.1375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowFulcrumJoint",
+      "role": "receiver"
+    },
+    "StarboardLowFulcrumJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        -1.0,
+        2288.8750000000005,
+        -1.0,
+        2.220446049250313e-16,
+        -2.220446049250313e-16,
+        -535.3957142857142,
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowFulcrumJoint",
+      "role": "receiver"
+    },
+    "StarboardLowFulcrumJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2338.0875,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -535.3957142857142,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        642.8375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowFulcrumJoint",
+      "role": "washer"
+    },
+    "StarboardLowReturnSpring": {
+      "definition": "Def_ControlReturnSpring_StarboardLow_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardLowShortConnection",
+      "role": "spring"
+    },
+    "StarboardTrackBrakeLever": {
+      "definition": "Def_BrakeFront_lever",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2181.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        830.6029411764705,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackBrakeFrontMechanism",
+      "role": "receiver"
+    },
+    "StarboardTrackHorizontalLever": {
+      "definition": "Def_RearControlFulcrum_lever_track",
+      "frame": [
+        0.9281613938075554,
+        -0.3721779507778719,
+        0.0,
+        2476.2,
+        0.3721779507778719,
+        0.9281613938075554,
+        0.0,
+        -710.0,
+        0.0,
+        0.0,
+        1.0,
+        593.375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackControlFulcrum",
+      "role": "receiver"
+    },
+    "StarboardTrackConnectingRod": {
+      "definition": "Def_RearTrackRod",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2180.4663667653904,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackShortConnection",
+      "role": "receiver"
+    },
+    "StarboardTrackBrakeJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -770.1642857142859,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackBrakeJoint",
+      "role": "receiver"
+    },
+    "StarboardTrackBrakeJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -770.1642857142859,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackBrakeJoint",
+      "role": "receiver"
+    },
+    "StarboardTrackBrakeJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        -788.5892857142859,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackBrakeJoint",
+      "role": "receiver"
+    },
+    "StarboardTrackBrakeJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2201.10386676539,
+        1.2246467991473532e-16,
+        -1.0,
+        -2.465190328815662e-32,
+        -770.1642857142859,
+        1.0,
+        1.2246467991473532e-16,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackBrakeJoint",
+      "role": "receiver"
+    },
+    "StarboardTrackBrakeJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        -1.0,
+        0.0,
+        -786.2892857142859,
+        0.0,
+        0.0,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackBrakeJoint",
+      "role": "washer"
+    },
+    "StarboardTrackFulcrumJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2500.3249212869114,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        -770.1642857142859,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackFulcrumJoint",
+      "role": "receiver"
+    },
+    "StarboardTrackFulcrumJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2500.3249212869114,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        -770.1642857142859,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackFulcrumJoint",
+      "role": "receiver"
+    },
+    "StarboardTrackFulcrumJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -1.0,
+        -8.659560562354932e-17,
+        8.659560562354934e-17,
+        2500.3249212869114,
+        8.659560562354932e-17,
+        2.220446049250313e-16,
+        1.0,
+        -770.1642857142859,
+        -8.659560562354934e-17,
+        1.0,
+        -2.220446049250313e-16,
+        643.55,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackFulcrumJoint",
+      "role": "receiver"
+    },
+    "StarboardTrackFulcrumJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        5.551115123125783e-17,
+        -1.0,
+        2455.8749212869116,
+        -1.0,
+        1.1102230246251565e-16,
+        -2.220446049250313e-16,
+        -770.1642857142859,
+        5.551115123125783e-17,
+        1.0,
+        1.1102230246251565e-16,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackFulcrumJoint",
+      "role": "receiver"
+    },
+    "StarboardTrackFulcrumJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2500.3249212869114,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -770.1642857142859,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        641.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackFulcrumJoint",
+      "role": "washer"
+    },
+    "StarboardTrackReturnSpring": {
+      "definition": "Def_ControlReturnSpring_StarboardTrack_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "StarboardTrackShortConnection",
+      "role": "spring"
+    }
+  },
+  "details": {
+    "PortLowReturnSpring": {
+      "wire_diameter_mm": 2.6,
+      "coil_outer_diameter_mm": 19.05,
+      "turns": 30,
+      "pitch_mm": 3.076663530697385,
+      "coil_height_mm": 92.29990592092155,
+      "centerline_length_mm": 1768.1934816298467,
+      "wire_stock_volume_mm3": 9387.854771903128,
+      "front_eye_center_world_mm": [
+        2198.0883808503427,
+        535.3957142857142,
+        625.125
+      ],
+      "front_socket_center_world_mm": [
+        2150.1758808503428,
+        535.3957142857142,
+        625.125
+      ],
+      "front_seat_x_mm": 2199.388380850343,
+      "front_hook_mean_radius_mm": 14.1,
+      "rear_anchor_world_mm": [
+        2368.0,
+        495.3,
+        694.975
+      ],
+      "rear_crosswire_center_world_mm": [
+        2365.975,
+        495.3,
+        694.975
+      ],
+      "rear_crosswire_endpoints_world_mm": [
+        [
+          2365.975,
+          500.86875000000003,
+          694.975
+        ],
+        [
+          2365.975,
+          489.73125,
+          694.975
+        ]
+      ],
+      "source_family": "M564",
+      "configuration": "estimated installed extension state",
+      "hook_hypothesis": "Socket-wrapping eye retained behind existing jam nut; crosswire through M4136 hole."
+    },
+    "PortTrackReturnSpring": {
+      "wire_diameter_mm": 2.6,
+      "coil_outer_diameter_mm": 19.05,
+      "turns": 30,
+      "pitch_mm": 2.9944710096866034,
+      "coil_height_mm": 89.8341302905981,
+      "centerline_length_mm": 1771.439583329071,
+      "wire_stock_volume_mm3": 9405.089272337467,
+      "front_eye_center_world_mm": [
+        2199.80386676539,
+        770.1642857142859,
+        625.125
+      ],
+      "front_socket_center_world_mm": [
+        2156.6538667653904,
+        770.1642857142859,
+        625.125
+      ],
+      "front_seat_x_mm": 2201.10386676539,
+      "front_hook_mean_radius_mm": 14.1,
+      "rear_anchor_world_mm": [
+        2368.0,
+        806.45,
+        694.975
+      ],
+      "rear_crosswire_center_world_mm": [
+        2365.975,
+        806.45,
+        694.975
+      ],
+      "rear_crosswire_endpoints_world_mm": [
+        [
+          2365.975,
+          800.88125,
+          694.975
+        ],
+        [
+          2365.975,
+          812.0187500000001,
+          694.975
+        ]
+      ],
+      "source_family": "M564",
+      "configuration": "estimated installed extension state",
+      "hook_hypothesis": "Socket-wrapping eye retained behind existing jam nut; crosswire through M4136 hole."
+    },
+    "StarboardLowReturnSpring": {
+      "wire_diameter_mm": 2.6,
+      "coil_outer_diameter_mm": 19.05,
+      "turns": 30,
+      "pitch_mm": 3.076663530697385,
+      "coil_height_mm": 92.29990592092155,
+      "centerline_length_mm": 1771.4282641945836,
+      "wire_stock_volume_mm3": 9405.029175751988,
+      "front_eye_center_world_mm": [
+        2198.0883808503427,
+        -535.3957142857142,
+        625.125
+      ],
+      "front_socket_center_world_mm": [
+        2150.1758808503428,
+        -535.3957142857142,
+        625.125
+      ],
+      "front_seat_x_mm": 2199.388380850343,
+      "front_hook_mean_radius_mm": 14.1,
+      "rear_anchor_world_mm": [
+        2368.0,
+        -495.3,
+        694.975
+      ],
+      "rear_crosswire_center_world_mm": [
+        2365.975,
+        -495.3,
+        694.975
+      ],
+      "rear_crosswire_endpoints_world_mm": [
+        [
+          2365.975,
+          -500.86875000000003,
+          694.975
+        ],
+        [
+          2365.975,
+          -489.73125,
+          694.975
+        ]
+      ],
+      "source_family": "M564",
+      "configuration": "estimated installed extension state",
+      "hook_hypothesis": "Socket-wrapping eye retained behind existing jam nut; crosswire through M4136 hole."
+    },
+    "StarboardTrackReturnSpring": {
+      "wire_diameter_mm": 2.6,
+      "coil_outer_diameter_mm": 19.05,
+      "turns": 30,
+      "pitch_mm": 2.9944710096866034,
+      "coil_height_mm": 89.8341302905981,
+      "centerline_length_mm": 1767.889661579951,
+      "wire_stock_volume_mm3": 9386.241702668995,
+      "front_eye_center_world_mm": [
+        2199.80386676539,
+        -770.1642857142859,
+        625.125
+      ],
+      "front_socket_center_world_mm": [
+        2156.6538667653904,
+        -770.1642857142859,
+        625.125
+      ],
+      "front_seat_x_mm": 2201.10386676539,
+      "front_hook_mean_radius_mm": 14.1,
+      "rear_anchor_world_mm": [
+        2368.0,
+        -806.45,
+        694.975
+      ],
+      "rear_crosswire_center_world_mm": [
+        2365.975,
+        -806.45,
+        694.975
+      ],
+      "rear_crosswire_endpoints_world_mm": [
+        [
+          2365.975,
+          -800.88125,
+          694.975
+        ],
+        [
+          2365.975,
+          -812.0187500000001,
+          694.975
+        ]
+      ],
+      "source_family": "M564",
+      "configuration": "estimated installed extension state",
+      "hook_hypothesis": "Socket-wrapping eye retained behind existing jam nut; crosswire through M4136 hole."
+    },
+    "controls": {
+      "parent_native_sha256": "9b36e8ca2124d0314825c66b905080f770a3d709a9503eb76a882147cd4e1f04",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/spring_source_review.json",
+      "source_review_sha256": "92a4794ce8916ed060a0096871cb02e9d1d380b89e796983dfafbdb5e2856330",
+      "washer": {
+        "bore": 13.0,
+        "diameter": 22.225,
+        "thickness": 1.5
+      },
+      "spring": {
+        "wire_diameter": 2.6,
+        "turns": 30,
+        "outer_diameter": 19.05
+      }
+    }
+  },
+  "new_occurrences": [
+    "PortLowBrakeJointWasher",
+    "PortLowFulcrumJointWasher",
+    "PortLowReturnSpring",
+    "PortTrackBrakeJointWasher",
+    "PortTrackFulcrumJointWasher",
+    "PortTrackReturnSpring",
+    "StarboardLowBrakeJointWasher",
+    "StarboardLowFulcrumJointWasher",
+    "StarboardLowReturnSpring",
+    "StarboardTrackBrakeJointWasher",
+    "StarboardTrackFulcrumJointWasher",
+    "StarboardTrackReturnSpring"
+  ],
+  "new_definitions": [
+    "Def_ControlReturnSpring_PortLow_Redo",
+    "Def_ControlReturnSpring_PortTrack_Redo",
+    "Def_ControlReturnSpring_StarboardLow_Redo",
+    "Def_ControlReturnSpring_StarboardTrack_Redo",
+    "Def_ControlSpringWasher_Redo"
+  ],
+  "changed_definitions": [],
+  "prototype_physical_occurrences": 58,
+  "prototype_definition_count": 19,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

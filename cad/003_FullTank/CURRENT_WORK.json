@@ -4,16 +4,17 @@
   "goal_status": "active",
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
-  "accepted_development_parent": "rear low-speed straight-rod checkpoint fcbca8ed (Gemini prefix reviewed and merged 2026-09-26)",
-  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01",
-  "latest_native_sha256": "9b36e8ca2124d0314825c66b905080f770a3d709a9503eb76a882147cd4e1f04",
-  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/qualification.json",
+  "accepted_development_parent": "Rebuilt M564/M567 static checkpoint, 26 September 2026",
+  "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01",
+  "latest_native_sha256": "e62ab97d8c480a780a87768816ec0140da2f7c363e369b519a1c2d7a8ab59f31",
+  "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/qualification.json",
   "current_pipeline_run": null,
   "pipeline_receipt": null,
   "camera_controls": "benchmarks/source_camera/20260924/README.md",
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_low_rod_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_low_joint_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_pin_family_checkpoint.py",
@@ -27,7 +28,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Resume from low_rods_integrated01. Review and recover M567 washers/M564 springs from gemini:b19e16e5 first; then reconcile rod identities and rebuild failed clutch/forward interfaces in small validated increments. Consult reviews/gemini-20260926/README.md before using withheld geometry or the front-controls draft.",
+  "next_action": "Continue the b19e16e5 redo from redo01/springs_integrated01. Rebuild M641/M640 center foot controls with actual floor-6 receiving holes and full mounting grip; constrain the intermediate shaft from printed M574 length before routing complete source-identified rear rods. Then finish clutch/forward controls and resume the preserved front-controls draft.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -44,7 +45,7 @@
     "Classic U.S. Standard nut exterior is provisional because catalogue wording may specify thread series without finish. Older smaller3/4inch clutch nuts require separate source/finish review.",
     "Rear channel section, stock, span and station remain inferred. Four M4130 mounts and four retained fulcrum units are installed; M4135/M4136 and estimated M4129 attachments are now installed; physical rods/springs remain pending.",
     "HB190 left-cleat/fulcrum counts2/5 differ from SNL4/4; original scans confirmed. HB189 center M4131 versus diagram M1431 also remains unresolved.",
-    "Fixed local SNL6 registration gives21.867px high-speed control-bore discrepancy versus correlated outer-drum checks1.8–2.8px. Diagnose lever/rod/source before refitting.",
+    "Fixed local SNL6 registration gives21.867px high-speed control-bore discrepancy versus correlated outer-drum checks1.8\u20132.8px. Diagnose lever/rod/source before refitting.",
     "Chosen channel upper envelope is approximately0.57mm below the current left clutch-support lower bound. Bracket/rivet material must be checked against real surfaces before integrating.",
     "M4130 cleat profile, same-hand orientation and transverse stations are approximate. Larger upset heads conserve interpreted source rivet stock; stock datum/thicker-cleat alternatives remain open.",
     "Inherited M4130 mounting prototype controls02 is authoritative despite its generic ParameterUpdate metadata naming controls01. Integrated definitions carry the correct regeneration instruction.",
@@ -60,35 +61,36 @@
     "All four M330 distal eyes and both M4132 pairs of rod eyes use track_rods_integrated01/operating_interfaces.json, unchanged by the pin-family correction. Do not reuse their superseded coordinate values from earlier checkpoints.",
     "12.7mm common shank and13mm bores remain estimates. Specific SNL136 physical-pin length1 5/8in selected over conflicting SNL71 assembly1 7/8in; under-head datum inferred.",
     "M569A printed 1in length datum interpreted under throat_to_rod_seat (25.4mm socket, 49.2125mm pin-center-to-face). Estimated throat 23.8125mm clears starboard fulcrum lever with 1.14mm margin.",
-    "Two SH946E straight rods installed with one shared definition (solid 19.05mm section, 130.7616mm length inferred). Horizontal fulcrum levers M4134 and M4133 reconciled symmetrically to xb = 39.6875mm (1-9/16 in), closing coaxial straight rods at Y = ±535.3957mm, Z = 625.125mm with zero collisions. M567 washers, M564 springs and long rear rods remain open."
+    "Two SH946E straight rods installed with one shared definition (solid 19.05mm section, 130.7616mm length inferred). Horizontal fulcrum levers M4134 and M4133 reconciled symmetrically to xb = 39.6875mm (1-9/16 in), closing coaxial straight rods at Y = \u00b1535.3957mm, Z = 625.125mm with zero collisions. M567 washers, M564 springs and long rear rods remain open.",
+    "M564 mounting hypotheses and installed extension states are now modeled and statically checked; exact hooks, free shape and spring properties remain unknown. The complete long-control layout must be rebuilt: printed 49\u00bd-inch M574 length contradicts Gemini X3700 intermediate-shaft placement against X7280 driver controls."
   ],
-  "visual_progression_count": 254,
+  "visual_progression_count": 258,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
   "latest_locally_qualified_checkpoint": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01",
-    "native_sha256": "9b36e8ca2124d0314825c66b905080f770a3d709a9503eb76a882147cd4e1f04",
-    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01",
+    "native_sha256": "e62ab97d8c480a780a87768816ec0140da2f7c363e369b519a1c2d7a8ab59f31",
+    "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/qualification.json"
   },
-  "qualification_scope": "Two SH946E straight rods installed with one shared definition (Def_RearLowRod). Horizontal fulcrum levers M4134 (Starboard) and M4133 (Port) brake arm profiles reconciled symmetrically to [39.6875, ±85.395714] mm for straight-rod closure; all other lever geometry, front brake levers, upper bearing interfaces, and all unrelated geometry preserved. Static thread engagement (>= 19.05 mm), context, and 567 inherited definitions preserved. Complete controls, springs, and standard integration remain open.",
-  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rod_source_review01.json",
+  "qualification_scope": "Four M564 return-spring installed states and eight compressed M567 washers. Explicit estimated attachment to fork sockets/jam nuts and M4136 bracket holes; complete wire stock, capture, nominal/variation material context, strict STEP exchange and additive full-native preservation checked. Historical shape and operating motion remain unqualified.",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_controls_sources/README.md",
   "active_development_candidate": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01",
-    "status": "Two SH946E straight rods installed: 2 added parts, one new shared definition (Def_RearLowRod). M4133/M4134 fulcrum lever brake arms reconciled to xb = 39.6875 mm for straight-rod closure. All 3,280 inherited occurrences and 567 definitions preserved (549 exact/18 strict). Progression 254; standard tank011 unchanged. M567 washers, M564 springs, and long rods remain open.",
-    "native_sha256": "9b36e8ca2124d0314825c66b905080f770a3d709a9503eb76a882147cd4e1f04"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01",
+    "native_sha256": "e62ab97d8c480a780a87768816ec0140da2f7c363e369b519a1c2d7a8ab59f31",
+    "status": "Four M564 installed spring states and eight M567 washers added; 3294 occurrences, 575 definitions, 365 groups. All 570 inherited definitions preserved (551 byte-identical, 19 strict material checks). Full redo still underway."
   },
-  "qualification_note": "Two SH946E straight rods transfer strictly from tested prototype low_rods01; all inherited shapes, frames, owners and properties are preserved. M567 washers, M564 springs, M575/M573 long rods and complete controls remain unfinished.",
+  "qualification_note": "First increment of withheld b19e16e5 redone; the remaining commit and front-controls continuation are unfinished.",
   "parent_pipeline_run": "high_brake_support01",
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
-  "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_rear_low_rod_checkpoint.py",
+  "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods01",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/qualification.json",
-    "status": "Two SH946E straight rods installed: 2 added parts, one new shared definition (Def_RearLowRod). M4133/M4134 fulcrum lever brake arms reconciled to xb = 39.6875 mm for straight-rod closure. All 3,280 inherited occurrences and 567 definitions preserved (549 exact/18 strict). Progression 254; standard tank011 unchanged. M567 washers, M564 springs, and long rods remain open.",
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs03",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/qualification.json",
     "geometry_integrated": true,
-    "nominal_and_clearance_variation": "Nominal low_rod_controls01.json (nominal insertion 20.6375 mm, rod length 130.7616 mm) and variation low_rod_variation_controls01.json (insertion 19.55 mm, rod length 128.5866 mm). Each 81 native, 127 context and 30 STEP checks.",
-    "source_camera": "SNL6 local camera reused without refit; existing silhouette/station disagreement retained.",
-    "next_action": "Resume from low_rods_integrated01. Review and recover M567 washers/M564 springs from gemini:b19e16e5 first; then reconcile rod identities and rebuild failed clutch/forward interfaces in small validated increments. Consult reviews/gemini-20260926/README.md before using withheld geometry or the front-controls draft.",
-    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01/qualification.json"
+    "status": "Four M564 installed spring states and eight M567 washers added; 3294 occurrences, 575 definitions, 365 groups. All 570 inherited definitions preserved (551 byte-identical, 19 strict material checks). Full redo still underway.",
+    "nominal_and_clearance_variation": "2.6/2.4 mm spring wire and 1.5/1.4 mm washer stock; each 186 local, 68 context and 17 STEP checks.",
+    "source_camera": "Fixed SNL6 registration reused; inherited profile/spring-height mismatches remain.",
+    "next_action": "Continue the b19e16e5 redo from redo01/springs_integrated01. Rebuild M641/M640 center foot controls with actual floor-6 receiving holes and full mounting grip; constrain the intermediate shaft from printed M574 length before routing complete source-identified rear rods. Then finish clutch/forward controls and resume the preserved front-controls draft.",
+    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/qualification.json"
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",

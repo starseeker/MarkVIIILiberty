@@ -11,6 +11,24 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 26 September 2026 — return springs and washers rebuilt
+
+The [new static development checkpoint](experiments/drive_chains/transmission_controls_study/redo01/springs_integrated01/README.md)
+adds four M564 installed spring states and eight M567 washers: **3,294 occurrences /
+575 definitions / 365 groups**. Both ends of every spring now have checked physical
+capture/seating. Wire stock, washer grip, full neighboring material and native/STEP
+exchange pass at two parameter settings. Every inherited definition and placement
+is preserved; fresh builds reproduce all geometry and persistent properties.
+Four inspected progression images bring the accepted sequence to **258**.
+
+This completes only the first increment of the withheld `b19e16e5` redo. Source
+reconciliation also identified excess M576 segments, misassigned M574 rods, missing
+clutch rocker, inadequate mounting fastener grip, and an intermediate shaft station
+inconsistent with the printed M574 front-rod length. Rebuild the center foot-control
+supports and real floor receivers next, then resolve complete routes and supports.
+Exact spring hooks remain a documented static hypothesis, and the fixed source
+camera retains inherited silhouette discrepancies. Standard tank011 is unchanged.
+
 ## 26 September 2026 — Gemini branch reviewed; qualified prefix merged
 
 Merged `116707ca` and `fcbca8ed` into main: four low-speed fork joints and two

@@ -1,0 +1,12 @@
+AssertionError 
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/.work/control-redo-20260926/probe_wire_partition.py", line 10, in <module>
+    result=M.measure(s,f);write(R/'.work/control-redo-20260926/partition-wire-results.json',result);print(result['converged'],result['volume_mm3'],flush=True)
+           ^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/partitioned_mass.py", line 60, in measure
+    for i in range(4):leaves+=interval(box.ZMin+box.ZLength*i/4,box.ZMin+box.ZLength*(i+1)/4,0)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/lib/partitioned_mass.py", line 51, in interval
+    assert piece.isValid() and len(piece.Solids)==1 and piece.getTolerance(1)<=1e-4
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

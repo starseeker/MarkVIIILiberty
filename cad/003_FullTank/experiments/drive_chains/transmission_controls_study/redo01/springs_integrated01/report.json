@@ -1,0 +1,628 @@
+{
+  "native_file": "PowertrainControlRebuild.FCStd",
+  "native_sha256": "e62ab97d8c480a780a87768816ec0140da2f7c363e369b519a1c2d7a8ab59f31",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/PowertrainWithRearLowRods.FCStd",
+  "source_native_sha256": "9b36e8ca2124d0314825c66b905080f770a3d709a9503eb76a882147cd4e1f04",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/PowertrainWithRearLowRods.FCStd",
+  "parent_native_sha256": "9b36e8ca2124d0314825c66b905080f770a3d709a9503eb76a882147cd4e1f04",
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs03",
+  "prototype_native_sha256": "3c66b161562c13fb164ea1824c80a40d6435f60b1a0916cac3c35dea8be8d790",
+  "variation": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_variation03",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_control_rebuild_additions.py": "bc0aa273a3516f474d8b2cba941d36ac73cdea56728e09d6b8582deca6828217",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io.py": "03a5a258c1fdc5deb62ae3b0f0fcddb5d062bb2ccd3bf41508b3f0535f816fd9",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs03/report.json": "5b9a4b6a416b993c06360160e273d02b1d51aba35440311ab81f00367c35a415",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs03/isolated/manifest.json": "f48e40296fa591797292b717db3f9ac11a08aeec0dc4615d3d73430b9a5eb696",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs03/ControlRebuildTrial.FCStd": "3c66b161562c13fb164ea1824c80a40d6435f60b1a0916cac3c35dea8be8d790",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_variation03/report.json": "455b4754292dc2c4a458579ff882607e652df8e3c5d3b1b193af5bd3e83b78ec",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/qualification.json": "5bc389c74a10260eebf75ea4e743835ca010748a1f43ded7dbfdf6ee0efab2f4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/isolated/manifest.json": "b00bd0f6ad04675da327ee430572d97c0a4618bdea2a71c07a319f6a50518a87",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs03/visual_review.json": "367e1553d7eefec025db2b9071c7a774c9c4e00f0bf93b604bf85a972f337854",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs03/render_receipt.json": "ee2f3f5389c594ef7e4cabaf3be3b81bc6468bc35d9d7b86a7a36e837b8717d7",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs03/reproduction_checks.json": "c4f9bbcea7fd3bf05e87bd6ac63e7af2a85a137a8e627024a11698a051fea0ab",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs03/checks02/independent_checks.json": "81ec31e300f7d9d509987228262832adefa6fe1ca795ae00113acf799e08c267",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs03/context_audit/report.json": "b1f529a5b857dac1b96054178a5ac848bfc12fd3c332010d21e6de22c4557cb9",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs03/exchange05/exchange_checks.json": "7816b6054d3da028a55bca280c55feda2d6a53d5e4e369a39db832d7cdc8ff36",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_variation03/checks02/independent_checks.json": "58565903ba087eda00bfd449c2c3e8c3b9cdde2da68c63d7ef607bec7288fa54",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_variation03/context_audit/report.json": "5841adcf77734631f4a51dd1970ca02cbbb387e0e8549edffa40fa3831aaab4e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/springs_variation03/exchange05/exchange_checks.json": "9fe8c7a91a5c567e6c6726d30addb19a23cdf17303aca3bcb0d065a17b531af1"
+  },
+  "details": {
+    "PortLowReturnSpring": {
+      "wire_diameter_mm": 2.6,
+      "coil_outer_diameter_mm": 19.05,
+      "turns": 30,
+      "pitch_mm": 3.076663530697385,
+      "coil_height_mm": 92.29990592092155,
+      "centerline_length_mm": 1768.1934816298467,
+      "wire_stock_volume_mm3": 9387.854771903128,
+      "front_eye_center_world_mm": [
+        2198.0883808503427,
+        535.3957142857142,
+        625.125
+      ],
+      "front_socket_center_world_mm": [
+        2150.1758808503428,
+        535.3957142857142,
+        625.125
+      ],
+      "front_seat_x_mm": 2199.388380850343,
+      "front_hook_mean_radius_mm": 14.1,
+      "rear_anchor_world_mm": [
+        2368.0,
+        495.3,
+        694.975
+      ],
+      "rear_crosswire_center_world_mm": [
+        2365.975,
+        495.3,
+        694.975
+      ],
+      "rear_crosswire_endpoints_world_mm": [
+        [
+          2365.975,
+          500.86875000000003,
+          694.975
+        ],
+        [
+          2365.975,
+          489.73125,
+          694.975
+        ]
+      ],
+      "source_family": "M564",
+      "configuration": "estimated installed extension state",
+      "hook_hypothesis": "Socket-wrapping eye retained behind existing jam nut; crosswire through M4136 hole."
+    },
+    "PortTrackReturnSpring": {
+      "wire_diameter_mm": 2.6,
+      "coil_outer_diameter_mm": 19.05,
+      "turns": 30,
+      "pitch_mm": 2.9944710096866034,
+      "coil_height_mm": 89.8341302905981,
+      "centerline_length_mm": 1771.439583329071,
+      "wire_stock_volume_mm3": 9405.089272337467,
+      "front_eye_center_world_mm": [
+        2199.80386676539,
+        770.1642857142859,
+        625.125
+      ],
+      "front_socket_center_world_mm": [
+        2156.6538667653904,
+        770.1642857142859,
+        625.125
+      ],
+      "front_seat_x_mm": 2201.10386676539,
+      "front_hook_mean_radius_mm": 14.1,
+      "rear_anchor_world_mm": [
+        2368.0,
+        806.45,
+        694.975
+      ],
+      "rear_crosswire_center_world_mm": [
+        2365.975,
+        806.45,
+        694.975
+      ],
+      "rear_crosswire_endpoints_world_mm": [
+        [
+          2365.975,
+          800.88125,
+          694.975
+        ],
+        [
+          2365.975,
+          812.0187500000001,
+          694.975
+        ]
+      ],
+      "source_family": "M564",
+      "configuration": "estimated installed extension state",
+      "hook_hypothesis": "Socket-wrapping eye retained behind existing jam nut; crosswire through M4136 hole."
+    },
+    "StarboardLowReturnSpring": {
+      "wire_diameter_mm": 2.6,
+      "coil_outer_diameter_mm": 19.05,
+      "turns": 30,
+      "pitch_mm": 3.076663530697385,
+      "coil_height_mm": 92.29990592092155,
+      "centerline_length_mm": 1771.4282641945836,
+      "wire_stock_volume_mm3": 9405.029175751988,
+      "front_eye_center_world_mm": [
+        2198.0883808503427,
+        -535.3957142857142,
+        625.125
+      ],
+      "front_socket_center_world_mm": [
+        2150.1758808503428,
+        -535.3957142857142,
+        625.125
+      ],
+      "front_seat_x_mm": 2199.388380850343,
+      "front_hook_mean_radius_mm": 14.1,
+      "rear_anchor_world_mm": [
+        2368.0,
+        -495.3,
+        694.975
+      ],
+      "rear_crosswire_center_world_mm": [
+        2365.975,
+        -495.3,
+        694.975
+      ],
+      "rear_crosswire_endpoints_world_mm": [
+        [
+          2365.975,
+          -500.86875000000003,
+          694.975
+        ],
+        [
+          2365.975,
+          -489.73125,
+          694.975
+        ]
+      ],
+      "source_family": "M564",
+      "configuration": "estimated installed extension state",
+      "hook_hypothesis": "Socket-wrapping eye retained behind existing jam nut; crosswire through M4136 hole."
+    },
+    "StarboardTrackReturnSpring": {
+      "wire_diameter_mm": 2.6,
+      "coil_outer_diameter_mm": 19.05,
+      "turns": 30,
+      "pitch_mm": 2.9944710096866034,
+      "coil_height_mm": 89.8341302905981,
+      "centerline_length_mm": 1767.889661579951,
+      "wire_stock_volume_mm3": 9386.241702668995,
+      "front_eye_center_world_mm": [
+        2199.80386676539,
+        -770.1642857142859,
+        625.125
+      ],
+      "front_socket_center_world_mm": [
+        2156.6538667653904,
+        -770.1642857142859,
+        625.125
+      ],
+      "front_seat_x_mm": 2201.10386676539,
+      "front_hook_mean_radius_mm": 14.1,
+      "rear_anchor_world_mm": [
+        2368.0,
+        -806.45,
+        694.975
+      ],
+      "rear_crosswire_center_world_mm": [
+        2365.975,
+        -806.45,
+        694.975
+      ],
+      "rear_crosswire_endpoints_world_mm": [
+        [
+          2365.975,
+          -800.88125,
+          694.975
+        ],
+        [
+          2365.975,
+          -812.0187500000001,
+          694.975
+        ]
+      ],
+      "source_family": "M564",
+      "configuration": "estimated installed extension state",
+      "hook_hypothesis": "Socket-wrapping eye retained behind existing jam nut; crosswire through M4136 hole."
+    },
+    "controls": {
+      "parent_native_sha256": "9b36e8ca2124d0314825c66b905080f770a3d709a9503eb76a882147cd4e1f04",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/spring_source_review.json",
+      "source_review_sha256": "92a4794ce8916ed060a0096871cb02e9d1d380b89e796983dfafbdb5e2856330",
+      "washer": {
+        "bore": 13.0,
+        "diameter": 22.225,
+        "thickness": 1.5
+      },
+      "spring": {
+        "wire_diameter": 2.6,
+        "turns": 30,
+        "outer_diameter": 19.05
+      }
+    }
+  },
+  "expected_new_occurrences": {
+    "PortLowBrakeJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        553.1082142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowShortConnection",
+        "PortLowBrakeJoint"
+      ]
+    },
+    "PortLowFulcrumJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2338.0875,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        535.3957142857142,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        642.8375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowShortConnection",
+        "PortLowFulcrumJoint"
+      ]
+    },
+    "PortLowReturnSpring": {
+      "definition": "Def_ControlReturnSpring_PortLow_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortLowShortConnection"
+      ]
+    },
+    "PortTrackBrakeJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        786.2892857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackBrakeJoint"
+      ]
+    },
+    "PortTrackFulcrumJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2500.3249212869114,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        770.1642857142859,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        641.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection",
+        "PortTrackFulcrumJoint"
+      ]
+    },
+    "PortTrackReturnSpring": {
+      "definition": "Def_ControlReturnSpring_PortTrack_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortTrackShortConnection"
+      ]
+    },
+    "StarboardLowBrakeJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        -1.0,
+        0.0,
+        -553.1082142857142,
+        0.0,
+        0.0,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowShortConnection",
+        "StarboardLowBrakeJoint"
+      ]
+    },
+    "StarboardLowFulcrumJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2338.0875,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -535.3957142857142,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        642.8375,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowShortConnection",
+        "StarboardLowFulcrumJoint"
+      ]
+    },
+    "StarboardLowReturnSpring": {
+      "definition": "Def_ControlReturnSpring_StarboardLow_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2150.1758808503428,
+        0.0,
+        1.0,
+        0.0,
+        -535.3957142857142,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardLowShortConnection"
+      ]
+    },
+    "StarboardTrackBrakeJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        -1.0,
+        0.0,
+        -786.2892857142859,
+        0.0,
+        0.0,
+        -1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackBrakeJoint"
+      ]
+    },
+    "StarboardTrackFulcrumJointWasher": {
+      "definition": "Def_ControlSpringWasher_Redo",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        2500.3249212869114,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        -770.1642857142859,
+        0.0,
+        1.0,
+        -2.220446049250313e-16,
+        641.25,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection",
+        "StarboardTrackFulcrumJoint"
+      ]
+    },
+    "StarboardTrackReturnSpring": {
+      "definition": "Def_ControlReturnSpring_StarboardTrack_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2156.6538667653904,
+        0.0,
+        1.0,
+        0.0,
+        -770.1642857142859,
+        0.0,
+        0.0,
+        1.0,
+        625.125,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "StarboardTrackShortConnection"
+      ]
+    }
+  },
+  "new_occurrences": [
+    "PortLowBrakeJointWasher",
+    "PortLowFulcrumJointWasher",
+    "PortLowReturnSpring",
+    "PortTrackBrakeJointWasher",
+    "PortTrackFulcrumJointWasher",
+    "PortTrackReturnSpring",
+    "StarboardLowBrakeJointWasher",
+    "StarboardLowFulcrumJointWasher",
+    "StarboardLowReturnSpring",
+    "StarboardTrackBrakeJointWasher",
+    "StarboardTrackFulcrumJointWasher",
+    "StarboardTrackReturnSpring"
+  ],
+  "new_definitions": [
+    "Def_ControlReturnSpring_PortLow_Redo",
+    "Def_ControlReturnSpring_PortTrack_Redo",
+    "Def_ControlReturnSpring_StarboardLow_Redo",
+    "Def_ControlReturnSpring_StarboardTrack_Redo",
+    "Def_ControlSpringWasher_Redo"
+  ],
+  "changed_definitions": [],
+  "added_children": {
+    "Definitions": [
+      "Def_ControlReturnSpring_PortLow_Redo",
+      "Def_ControlReturnSpring_PortTrack_Redo",
+      "Def_ControlReturnSpring_StarboardLow_Redo",
+      "Def_ControlReturnSpring_StarboardTrack_Redo",
+      "Def_ControlSpringWasher_Redo"
+    ],
+    "PortLowBrakeJoint": [
+      "PortLowBrakeJointWasher"
+    ],
+    "PortLowFulcrumJoint": [
+      "PortLowFulcrumJointWasher"
+    ],
+    "PortLowShortConnection": [
+      "PortLowReturnSpring"
+    ],
+    "PortTrackBrakeJoint": [
+      "PortTrackBrakeJointWasher"
+    ],
+    "PortTrackFulcrumJoint": [
+      "PortTrackFulcrumJointWasher"
+    ],
+    "PortTrackShortConnection": [
+      "PortTrackReturnSpring"
+    ],
+    "StarboardLowBrakeJoint": [
+      "StarboardLowBrakeJointWasher"
+    ],
+    "StarboardLowFulcrumJoint": [
+      "StarboardLowFulcrumJointWasher"
+    ],
+    "StarboardLowShortConnection": [
+      "StarboardLowReturnSpring"
+    ],
+    "StarboardTrackBrakeJoint": [
+      "StarboardTrackBrakeJointWasher"
+    ],
+    "StarboardTrackFulcrumJoint": [
+      "StarboardTrackFulcrumJointWasher"
+    ],
+    "StarboardTrackShortConnection": [
+      "StarboardTrackReturnSpring"
+    ]
+  },
+  "expected_physical_occurrences": 3294,
+  "expected_definition_count": 575,
+  "expected_assembly_count": 365,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "packet_complete": false
+}

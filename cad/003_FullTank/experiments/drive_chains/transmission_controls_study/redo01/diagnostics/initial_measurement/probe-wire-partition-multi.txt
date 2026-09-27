@@ -1,0 +1,22 @@
+ValueError Partition did not reach the unchanged integration tolerances
+Traceback (most recent call last):
+  File "/home/cyapp/MarkVIIILiberty/.work/control-redo-20260926/probe_wire_partition_multi.py", line 10, in <module>
+    result=M.measure(s,f);write(R/'.work/control-redo-20260926/partition-wire-multi-results.json',result);print(result['converged'],result['volume_mm3'],flush=True)
+           ^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/control_rebuild_partitioned_mass.py", line 66, in measure
+    for i in range(4):leaves+=interval(box.ZMin+box.ZLength*i/4,box.ZMin+box.ZLength*(i+1)/4,0)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/control_rebuild_partitioned_mass.py", line 64, in interval
+    return interval(lo,mid,depth+1)+interval(mid,hi,depth+1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/control_rebuild_partitioned_mass.py", line 64, in interval
+    return interval(lo,mid,depth+1)+interval(mid,hi,depth+1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/control_rebuild_partitioned_mass.py", line 64, in interval
+    return interval(lo,mid,depth+1)+interval(mid,hi,depth+1)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  [Previous line repeated 5 more times]
+  File "/home/cyapp/MarkVIIILiberty/cad/003_FullTank/experiments/drive_chains/control_rebuild_partitioned_mass.py", line 62, in interval
+    if depth>=8:raise ValueError('Partition did not reach the unchanged integration tolerances')
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Partition did not reach the unchanged integration tolerances

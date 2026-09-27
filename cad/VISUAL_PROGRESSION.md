@@ -1303,3 +1303,19 @@ all 245 earlier images and the fixed source camera.
 |---|---|
 | [intermediate_snapshot_iso_control_pin_family_001.png](intermediate_snapshot_iso_control_pin_family_001.png) | `c9bcc10c763c4b59eb895a639d217fe3e55c4664d96fd895bc5708595cec0b36` |
 | [intermediate_snapshot_section_control_pin_family_001.png](intermediate_snapshot_section_control_pin_family_001.png) | `d837b5b89d4c2da7700d159110c9cb88709e14d3fc42a82c19d3be837f3e2f59` |
+
+
+## Rebuilt M564 return springs and M567 washers — 26 September 2026
+
+Four inspected subsystem views are transferred through strict prototype-to-full-native
+material and frame checks. They show four estimated installed spring states and eight
+washers in the 3,294-part development assembly. The source camera is unchanged and
+its profile/height discrepancies remain open. Accepted progression now totals **258**;
+Gemini experimental images 255–286 retain separate provenance.
+
+| View | SHA-256 |
+|---|---|
+| [intermediate_snapshot_iso_control_rebuild_springs_001.png](intermediate_snapshot_iso_control_rebuild_springs_001.png) | `81c95cbc53481a86330f4f4311a721e1b81dccc63f567ed30313717f529bffc2` |
+| [intermediate_snapshot_detail_control_rebuild_springs_001.png](intermediate_snapshot_detail_control_rebuild_springs_001.png) | `1ffad1b5adabdb8c1d9a5553bdff66f5ea2ee7f3e7d1ccaaa0ee7af003f7db59` |
+| [intermediate_snapshot_plan_control_rebuild_springs_001.png](intermediate_snapshot_plan_control_rebuild_springs_001.png) | `d018dd10d6ea07ac46e079a68b77ff80e72c16fedfac45f471dab4ff149dd258` |
+| [intermediate_snapshot_source_control_rebuild_springs_001.png](intermediate_snapshot_source_control_rebuild_springs_001.png) | `cff1ec054837c7575ad1845d5d510b94a69a0e1e673773c0e137474d7436bcda` |
