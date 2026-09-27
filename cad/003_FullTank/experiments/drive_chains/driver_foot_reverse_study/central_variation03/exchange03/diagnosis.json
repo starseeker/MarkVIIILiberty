@@ -1,0 +1,9 @@
+{
+  "native_sha256": "23e5c4b0c3f4fd123a2cd1e0f9c8f81a0659e7e22d067eca026ecb4afc6fe7e6",
+  "same_step_bytes": true,
+  "reason": "V6 surface integration returned a different bridle volume/centroid for native and STEP despite zero material differences. Its reported convergence is insufficient on this shape. Independent standard adaptive Gauss converges for native/STEP and both coordinate frames; retained Gauss-Kronrod also fails its convergence predicate. Use the standard Gauss result for this study. Numerical acceptance is unchanged.",
+  "new_method": "BRepGProp::VolumeProperties adaptive Gauss",
+  "source_geometry_changed": false,
+  "tolerance_relaxed": false,
+  "diagnostic_sha256": "6f6fa9e2be7dbe540e39a638ef5402c26731eafd91ed71cc4874fed9b3e978b2"
+}

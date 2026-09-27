@@ -1,0 +1,372 @@
+{
+  "passed": false,
+  "native_sha256": "d23d0e919653d5ef05f65d57f62671a322b7bec9d54e77d4fae38e9d8f355a82",
+  "parent_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+  "manifest_sha256": "6f821e55d9347c146a8b3c64e0914e385c0da4600a576858a37c61850ff9a3fe",
+  "standard_manifest_sha256": "58fb0a1b010c314dd8fc69758e9aeada05ce97f325c21d6801d7288cd6be753b",
+  "checker_sha256": "19c7c52ea5298d7a4d582df0f8e35fbee66e29879118df1306e6df2b9b4ca151",
+  "targets": [
+    "DriverBrakeBridle",
+    "DriverBrakeBridleBolt",
+    "DriverBrakeBridleCotter",
+    "DriverBrakeBridleNut",
+    "DriverBrakeDistance",
+    "DriverBrakePedal",
+    "DriverBrakePedalJointCotter",
+    "DriverBrakePedalJointPin",
+    "DriverBrakeSuspension",
+    "DriverBrakeSuspensionSleeve"
+  ],
+  "context_occurrences": 8997,
+  "pairs": [
+    {
+      "first": "DriverBrakeBridle",
+      "second": "DriverBrakePedal",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeBridle",
+      "second": "DriverBrakeSuspension",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeBridle",
+      "second": "DriverBrakeDistance",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeBridle",
+      "second": "DriverBrakeBridleBolt",
+      "origin": "candidate",
+      "common_mm3": 228.248695960757,
+      "common_valid": true,
+      "overlap_above_1e5": true,
+      "intersection_bounds_mm": [
+        7074.8884598032855,
+        43.65,
+        706.2059794543478,
+        7321.418843930635,
+        83.33545128346016,
+        906.3716318785578
+      ]
+    },
+    {
+      "first": "DriverBrakeBridle",
+      "second": "DriverBrakeBridleCotter",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeBridle",
+      "second": "DriverBrakeBridleNut",
+      "origin": "candidate",
+      "common_mm3": 228.24869420970373,
+      "common_valid": true,
+      "overlap_above_1e5": true,
+      "intersection_bounds_mm": [
+        7074.8884598032855,
+        -83.33545128346016,
+        706.2059794543478,
+        7321.418843930635,
+        -43.65,
+        906.3716318785578
+      ]
+    },
+    {
+      "first": "DriverBrakeBridle",
+      "second": "DriverBrakePedalJointPin",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeBridle",
+      "second": "DriverBrakePedalJointCotter",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeBridle",
+      "second": "hull_floor_1",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeBridleBolt",
+      "second": "DriverBrakeSuspension",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeBridleBolt",
+      "second": "DriverBrakeDistance",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeBridleBolt",
+      "second": "DriverBrakeBridleCotter",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeBridleBolt",
+      "second": "DriverBrakeBridleNut",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeBridleCotter",
+      "second": "DriverBrakeBridleNut",
+      "origin": "candidate",
+      "common_mm3": 1.5728704270828195,
+      "common_valid": true,
+      "overlap_above_1e5": true,
+      "intersection_bounds_mm": [
+        7093.116464169004,
+        -64.77001874326604,
+        778.9379579895353,
+        7096.217564187854,
+        -63.04876434674591,
+        781.1053057673797
+      ]
+    },
+    {
+      "first": "DriverBrakeDistance",
+      "second": "DriverBrakeSuspension",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "DriverBrakePedalJointPin",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "DriverBrakePedalJointCotter",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "DriverMainShaft",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "hull_floor_1",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "PortDriverOperatingFulcrum",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "PortDriverOperatingHandle",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "PortDriverOperatingBolt",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "PortDriverOperatingNut",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "StarboardDriverOperatingFulcrum",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "StarboardDriverOperatingHandle",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "StarboardDriverOperatingBolt",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "StarboardDriverOperatingNut",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedal",
+      "second": "hull_front_slope",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedalJointCotter",
+      "second": "DriverBrakePedalJointPin",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedalJointCotter",
+      "second": "hull_floor_1",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakePedalJointPin",
+      "second": "hull_floor_1",
+      "origin": "retained_development",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeSuspension",
+      "second": "DriverBrakeSuspensionSleeve",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeSuspension",
+      "second": "DriverSwingShaft",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    },
+    {
+      "first": "DriverBrakeSuspensionSleeve",
+      "second": "DriverSwingShaft",
+      "origin": "candidate",
+      "common_mm3": 0,
+      "common_valid": true,
+      "overlap_above_1e5": false
+    }
+  ],
+  "findings": [
+    {
+      "first": "DriverBrakeBridle",
+      "second": "DriverBrakeBridleBolt",
+      "origin": "candidate",
+      "common_mm3": 228.248695960757,
+      "common_valid": true,
+      "overlap_above_1e5": true,
+      "intersection_bounds_mm": [
+        7074.8884598032855,
+        43.65,
+        706.2059794543478,
+        7321.418843930635,
+        83.33545128346016,
+        906.3716318785578
+      ]
+    },
+    {
+      "first": "DriverBrakeBridle",
+      "second": "DriverBrakeBridleNut",
+      "origin": "candidate",
+      "common_mm3": 228.24869420970373,
+      "common_valid": true,
+      "overlap_above_1e5": true,
+      "intersection_bounds_mm": [
+        7074.8884598032855,
+        -83.33545128346016,
+        706.2059794543478,
+        7321.418843930635,
+        -43.65,
+        906.3716318785578
+      ]
+    },
+    {
+      "first": "DriverBrakeBridleCotter",
+      "second": "DriverBrakeBridleNut",
+      "origin": "candidate",
+      "common_mm3": 1.5728704270828195,
+      "common_valid": true,
+      "overlap_above_1e5": true,
+      "intersection_bounds_mm": [
+        7093.116464169004,
+        -64.77001874326604,
+        778.9379579895353,
+        7096.217564187854,
+        -63.04876434674591,
+        781.1053057673797
+      ]
+    }
+  ],
+  "no_mating_pair_exemptions": true,
+  "retained_development_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+  "scope": "Seat additions versus each other, saved coupled bow/driver prototype, full operating-controls development and physical standard context. No mating exemptions."
+}

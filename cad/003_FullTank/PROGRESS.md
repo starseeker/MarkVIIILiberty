@@ -11,6 +11,24 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — central pedal group checked; combined-link conflict exposed
+
+The [central pedal study](experiments/drive_chains/driver_foot_reverse_study/CENTRAL_PEDAL_STUDY.md)
+adds ten physical parts in an isolated native, with seven new definitions and two
+exact retained shafts. Nominal and +1 mm stock/fork-throat variants each pass 63
+material/joint/property checks, 34 nearby pairs in an 8,997-part context and 17
+strict STEP comparisons. A fresh build reproduces 40 archive BReps and 1,501
+persistent properties exactly. Pedal surfaces remain analytic; rotation belongs
+to the assembly occurrence. Full interpreted pedal and cotter dimensions survive.
+
+Five source/native views and a combined-study view were inspected. Each earlier
+M769 profile intersects the new bridle by about 4,678.809 mm³, preventing promotion
+of the combined hypotheses. The source outlines, eight M771 members, rear link
+connection and pedal pose need reconciliation. New experimental isometric
+snapshots preserve this progress and conflict; accepted progression remains 314.
+Standard Gauss qualifies the unchanged STEP files after a retained specialized
+integration discrepancy. The authoritative coupled station and tank011 are unchanged.
+
 ## 27 September 2026 — checked foot-link profile study; connections remain open
 
 The [M769 study](experiments/drive_chains/driver_foot_reverse_study/PROFILE_STUDY.md)

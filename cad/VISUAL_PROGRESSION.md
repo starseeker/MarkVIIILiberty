@@ -1,5 +1,19 @@
 # Mark VIII visual progression
 
+## Experimental central pedal group — 27 September 2026
+
+The [checked central study](003_FullTank/experiments/drive_chains/driver_foot_reverse_study/CENTRAL_PEDAL_STUDY.md)
+adds a complete pedal, U-bridle and rear journal stack in an isolated document.
+Accepted assembly progression remains **314 images**.
+
+- [Central-group isometric](intermediate_snapshot_iso_central_pedal_study_001.png)
+- [Retained controls outlined](intermediate_snapshot_context_central_pedal_study_001.png)
+- [M769/bridle conflict exposed](intermediate_snapshot_iso_foot_control_conflict_001.png)
+
+The combined blue M769/brown central geometry has two real intersections; it is
+not an accepted assembly. [Snapshot hashes](003_FullTank/experiments/drive_chains/driver_foot_reverse_study/central_progression_receipt.json)
+retain the experimental provenance.
+
 ## Experimental foot-link profiles — 27 September 2026
 
 Four study views retain the bowed M769 construction and its unresolved connections.
