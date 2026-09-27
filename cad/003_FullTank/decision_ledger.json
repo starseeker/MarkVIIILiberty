@@ -1055,7 +1055,7 @@
       "id": "rear_low_control_end_joints",
       "status": "reviewed_approximation",
       "scope": "Four M569A control rod forks, four M568A pins, four 1/8 x 1 inch split pins and four 3/4 inch U.S. Standard plain nuts installed at the four low-speed brake control eyes.",
-      "reason": "Literal 1 inch length from SNL87:002 interpreted under throat_to_rod_seat datum (providing 25.4mm threaded socket >= 19.05mm engagement). Estimated throat depth of 23.8125mm (15/16″) clears the starboard fulcrum lever entering at -56.89° with 1.14mm clean margin, giving 49.2125mm pin-center to rod-seat distance. Shared 12.7mm M568A pin, cotter and nut match parent pin_family_integrated01 definitions.",
+      "reason": "Literal 1 inch length from SNL87:002 interpreted under throat_to_rod_seat datum (providing 25.4mm threaded socket >= 19.05mm engagement). Estimated throat depth of 23.8125mm (15/16\u2033) clears the starboard fulcrum lever entering at -56.89\u00b0 with 1.14mm clean margin, giving 49.2125mm pin-center to rod-seat distance. Shared 12.7mm M568A pin, cotter and nut match parent pin_family_integrated01 definitions.",
       "uncertainty": "Fork throat depth, ear profile, pin diameter and nut exterior finish remain documented approximations; literal source length datum is inferred.",
       "limits": [
         "Does not close the two SH946E connecting rods; rod closure pending.",
@@ -1102,12 +1102,12 @@
     {
       "id": "rear_low_straight_rods_and_receiver_closure",
       "status": "reviewed_approximation",
-      "scope": "Two SH946E straight rods connecting front low-speed brake levers and rear fulcrum horizontal levers; symmetric reconciliation of M4134 and M4133 brake arm profiles to [39.6875, ∓85.395714] mm.",
-      "reason": "Straight-rod coaxial alignment between front brake distal eye [2150.17588, ±535.395714, 625.125] and rear fulcrum pivot [2298.4, ±450.0, 583.85] requires transverse rod offset 85.395714 mm. Longitudinal arm offset xb = 39.6875 mm (1-9/16 in) is the exact midpoint between prior provisional Starboard (47.625 mm) and Port (31.75 mm) plan picks, adjusting each symmetrically by ±7.9375 mm (5/16 in). Preserves all other lever geometry, front brake levers, upper bearing interfaces, and all surrounding context with zero collisions (> 7.68 mm clearance to M4136).",
+      "scope": "Two SH946E straight rods connecting front low-speed brake levers and rear fulcrum horizontal levers; symmetric reconciliation of M4134 and M4133 brake arm profiles to [39.6875, \u221385.395714] mm.",
+      "reason": "Straight-rod coaxial alignment between front brake distal eye [2150.17588, \u00b1535.395714, 625.125] and rear fulcrum pivot [2298.4, \u00b1450.0, 583.85] requires transverse rod offset 85.395714 mm. Longitudinal arm offset xb = 39.6875 mm (1-9/16 in) is the exact midpoint between prior provisional Starboard (47.625 mm) and Port (31.75 mm) plan picks, adjusting each symmetrically by \u00b17.9375 mm (5/16 in). Preserves all other lever geometry, front brake levers, upper bearing interfaces, and all surrounding context with zero collisions (> 7.68 mm clearance to M4136).",
       "uncertainty": "Rod length (130.761619 mm) and solid 19.05 mm section remain inferred. HB M-572 tube wording remains an alternative requiring internal section evidence. Receiver arm profiles are estimated.",
       "limits": [
         "SH946E solid 19.05 mm section and 130.761619 mm length are inferred. HB M-572 tube wording does not establish the selected 1928 rod internal section. Threads remain nominal envelopes.",
-        "M4134/M4133 fulcrum lever brake arms reconciled to xb = 39.6875 mm (1-9/16 in), symmetrically adjusting prior provisional picks by ±7.9375 mm (5/16 in). Full routes, mechanical advantage, and motion remain unqualified.",
+        "M4134/M4133 fulcrum lever brake arms reconciled to xb = 39.6875 mm (1-9/16 in), symmetrically adjusting prior provisional picks by \u00b17.9375 mm (5/16 in). Full routes, mechanical advantage, and motion remain unqualified.",
         "Low-speed brake receiver eyes use the updated operating_interfaces.json. Do not reuse superseded coordinate values from earlier checkpoints.",
         "M567 washers, M564 springs, M575 and long rear rods, center/front controls, remaining interiors, and standard integration are unfinished.",
         "Fixed SNL6 camera retains inherited lever/profile and spring-height discrepancies; no new edge is promoted to fitting evidence and HB photographs remain uncalibrated."
@@ -1149,6 +1149,55 @@
         {
           "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json",
           "sha256": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe"
+        }
+      ]
+    },
+    {
+      "id": "driver_foundation_support_interfaces",
+      "status": "reviewed_approximation",
+      "scope": "Partial M786/M787 seat-support plates, M782/M783 shaft interfaces and actual floor1/2 attachments in the development assembly.",
+      "reason": "Original SNL31/147/213 and HB12/93 separate seat-support plates from operating-lever fulcrums. Source-counted shafts/retainers and eight mounting sets now have real bores, seating and full source-sized stock with no collision exemptions.",
+      "uncertainty": "Side plate profile/stock, complete seat attachments, M783 dimensions, shaft elevations and floor mounting interpretation remain estimated. Local plan registration uses ambiguous shaft endpoints, not independent landmarks.",
+      "limits": [
+        "Two side plates and their outward feet support both shaft ends. Four bolts per plate are source-counted; allocation to the sloping floor, pattern, 6.35mm stock, profile and all seat attachment extensions remain unproven. This models support interfaces, not complete seat-support plate detail.",
+        "Local SNL6 registration estimates shaft spacing. Absolute X is constrained provisionally by source49-1/2in M574 stock, existing intermediate receiver and an unmodeled low receiver130mm below/35mm aft of M783. Actual driver links must confirm or reopen this placement.",
+        "M783 center Z1130 and M782 Z1110 are packaging estimates. Driver shaft01 [7280,0,1020] was an uninstalled datum and is superseded by this two-shaft hypothesis.",
+        "M783 estimated diameter25.4mm/total628.65mm;24mm reduced ends fit unchanged M314 nut geometry. M782 reduced28mm ends and shoulders adapt to6.35mm side-plate stock; main printed total length unchanged.",
+        "M313/M314 and half-inch nut/lock exteriors reused unchanged. Nominal thread envelopes only. M782 short keepers remain outside M313 front face, not castle-slot engagement; M783 long keepers cross actual M314 castle slots. Retention form is not independently historically established.",
+        "Plate outlines are approximate analytic BReps. Source price column12.34 is a price, not mass. No mass inference is made."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01/visual_review.json",
+        "sha256": "0c646ef4743ae8adf96329dba6fc5d67f69b0903bd6764d89da5b9439d575867"
+      },
+      "reopen_when": [
+        "Actual M784/M760/selector interfaces cannot close source-length M789/M574 rods.",
+        "Source evidence changes the side-plate identity, mounting surface, shaft dimensions or seat attachment.",
+        "Better shaft-end picks or independent source landmarks exceed10pixel residual; diagnose geometry before camera refit.",
+        "New installed geometry conflicts with a saved mount or shaft."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01/qualification.json",
+          "sha256": "e08d48c6760445b4d10d6ff06bacc69f8f33ac025f083cb55c8a386fc1d76683"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01/visual_review.json",
+          "sha256": "0c646ef4743ae8adf96329dba6fc5d67f69b0903bd6764d89da5b9439d575867"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_source_review03.json",
+          "sha256": "b42ec5885b43cc70441ac5bb75598eb9ad67e90a0d8d9966b80eac25a70c2984"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_registration01.json",
+          "sha256": "fe730cf90ecfa0dbfea6559bcb40f4b53a4fd9869dec00e78fc590f053abe701"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_controls03.json",
+          "sha256": "4f87f2439177580fd06dc201b4e64a81a8156b1ee81a278b999e72dd2c18be2b"
         }
       ]
     }

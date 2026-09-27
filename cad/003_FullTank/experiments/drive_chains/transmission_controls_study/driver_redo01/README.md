@@ -1,43 +1,49 @@
-# Driver controls resumed after the withheld control redo
+# Driver controls — active continuation
 
-The accepted full assembly remains [clutch_swing_integrated02](../redo01/clutch_swing_integrated02/README.md):
-3,437 physical occurrences,602 definitions,409 groups. Its six corrected increments
-close the functional scope of withheld `b19e16e5`. The driver controls are a separate
-continuation of the preserved draft on `review/gemini-front-controls-20260926`.
+Current checkpoint: [driver support foundation](mount_integrated01/README.md),
+**3,475 occurrences / 611 definitions / 414 groups**. The preceding
+[completed withheld-control redo](../redo01/clutch_swing_integrated02/README.md)
+remains intact. The original driver draft is preserved on
+`review/gemini-front-controls-20260926`.
 
-The first [native part study](shaft01/ControlRebuildTrial.FCStd) contains M782,
-two shared M313 nuts and two 3/16 × 1½-inch split pins. HB148 specifies a24¾-inch
-shaft length and1.497-inch diameter; SNL213 supplies identity and retainer counts.
-[Source review](source_review02.json) distinguishes these from estimated end forms.
-The existing M313 definition is reused unchanged. The19.05mm space between each
-shoulder and nut is a future receiver interface, not a physical part.
+The foundation adds 36 driver components: two transverse shafts, four reused
+nuts, four source-length split pins, two partial seat-support plates and eight
+three-part floor mounting sets. Two existing standard floors are imported with
+four receiving bores each. Nominal/variation each pass144 local checks,
+123 context pairs and47 STEP comparisons. Full reproduction and inherited
+material preservation pass; four inspected views extend the visual progression.
 
-Both nominal and receiver-grip/bend variants pass28 saved-stock checks,9 neighboring
-material pairs and7 strict STEP comparisons. A fresh nominal build reproduces the
-saved geometry and persistent properties. [Isometric](shaft01/isometric.png) and
-[end detail](shaft01/end_detail.png) were inspected. The63-dependency
-[part qualification](shaft01/part_qualification.json) explicitly excludes mounting,
-full assembly integration and final historical end-retainer interpretation.
+[Source review](mount_source_review03.json) corrects the initial assignment:
+M746/M747 are operating-lever fulcrums, while M786/M787 are paired seat-support
+plates. HB148 also distinguishes the two37-inch operating levers from the four
+shorter selector bodies. Do not copy the preserved draft's four full-length
+selector handles or invented floor blocks.
 
-The short keeper is outside the nut face; no castle-slot engagement is claimed.
-Final M746/M747 grip, real floor contacts and M783 second-shaft layout must be
-resolved together before this study can enter the full model. The source controls
-show two long operating handles and four separate shorter selector forms; the
-preserved draft's four37-inch selectors must not be copied.
+The [local SNL6 registration](mount_registration01.json) is reused for driver
+plan comparisons. Its three construction picks determine local scale, orientation
+and shaft separation; they are not validation holdouts. Broken long rods prohibit
+whole-layout scaling. Heights, floor mounting, full plate profiles and actual
+seat attachment remain estimates/open interfaces.
 
-Next: reconstruct M746/M747 and M783 supports from HB12/HB92/SNL6, establish actual
-front rod receiving axes, then retain printed M574 stock length while closing the
-forward controls. Floor1/2 slope toward the driver; the draft Z940 feet and Z890
-low-rod target do not establish physical mounting or clearance. Threads remain
-nominal smooth envelopes. No full-tank or progression checkpoint is changed by
-this uninstalled study.
+The earlier [M782 part study](shaft01/part_qualification.json) remains a valid
+**uninstalled** five-part experiment with28 checks,9 context pairs and7 STEP
+comparisons per setting. Its X7280/Z1020 station and19.05mm future support grip
+are superseded by the installed foundation hypothesis. Its frozen source notes
+are retained as history, including the subsequently corrected M746/M747 assignment.
+
+Next: reconstruct actual M784 swing-link and M760 low-speed suspension receivers,
+then M789A/B connections and the driver lever/selector/brake interconnection.
+Use the retained printed M574 length and actual receiving geometry to confirm or
+reopen the provisional driver station. M775 is a spring-link distance piece;
+HB12 oil points do not establish separate grease nipples. Complete seat support,
+M785 spring anchor, remaining controls and front rods are still required.
 
 Read-only recovery:
 
 ```sh
-python3 cad/003_FullTank/experiments/drive_chains/verify_driver_fulcrum_shaft.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/shaft01
+python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01
 ```
 
-Builder `trial_driver_fulcrum_shaft.py`, controls `shaft_controls01.json`, variation
-`shaft_variation01.json`. Run with the established FreeCAD headless launcher and
-new output directories; saved evidence refuses overwrites.
+Standard tank011 and the original Gemini files remain preserved. This checkpoint
+qualifies local static geometry and reproducibility; it does not establish
+historical exactness, complete driver controls or finished tank geometry.

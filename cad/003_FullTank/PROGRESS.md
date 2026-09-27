@@ -11,6 +11,26 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — driver support foundation integrated
+
+The [new checkpoint](experiments/drive_chains/transmission_controls_study/driver_redo01/mount_integrated01/README.md)
+contains **3,475 occurrences / 611 definitions / 414 groups**. It adds36 driver
+components and two scoped imports of existing floor panels: two shafts and
+retainers, partial M786/M787 seat-support plates, and eight complete source-length
+floor mounting sets. M746/M747 are operating-lever fulcrums, correcting the
+initial shaft-study assignment below. Full seat attachments remain open.
+
+Nominal and thicker-stock variants each pass144 local checks,123 context pairs
+without exemptions and47 STEP comparisons. All602 inherited definitions are
+preserved; fresh full reproduction matches1,865 BReps and169,337 persistent
+properties. Four inspected images bring progression to **282**.
+
+A local SNL6 plan registration estimates the two-shaft spacing; its source picks
+are construction anchors, not validation holdouts. Absolute station, heights,
+plate outlines and attachment remain approximate. Next are the real swing links,
+low-speed suspension receivers and short connecting rods, which must confirm or
+reopen these assumptions. Standard tank011 remains unchanged.
+
 ## 27 September2026 — driver continuation resumed
 
 The [driver study](experiments/drive_chains/transmission_controls_study/driver_redo01/README.md)

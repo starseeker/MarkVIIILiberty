@@ -1,0 +1,44 @@
+{
+  "source_image": "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png",
+  "source_image_sha256": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+  "projection": "local_orthographic_plan_similarity",
+  "classification": "Schematic plan; broken long rods excluded. No perspective-camera solution or full-vehicle scaling claimed.",
+  "construction_picks": {
+    "main_shaft_starboard_tip_px": [
+      300.0,
+      230.0
+    ],
+    "main_shaft_port_tip_px": [
+      291.0,
+      438.0
+    ],
+    "swing_shaft_center_px": [
+      430.0,
+      340.0
+    ]
+  },
+  "pick_uncertainty_px": 5.0,
+  "printed_main_shaft_length_mm": 628.65,
+  "world_plus_x_image_unit": [
+    -0.9990651992486536,
+    -0.04322878265979751
+  ],
+  "world_plus_y_image_unit": [
+    -0.04322878265979751,
+    0.9990651992486536
+  ],
+  "image_center_px": [
+    295.5,
+    334.0
+  ],
+  "pixels_per_mm": 0.33117731724752747,
+  "shaft_separation_mm": 406.53038412735026,
+  "diagnostic_swing_axis_offset_px": 0.18011992774915697,
+  "independent_validation": false,
+  "reuse_rule": "Reuse on later driver renders. Reopen only for contradictory source, stronger shaft-end picks, changed topology, or persistent independent landmark residual above 10 pixels; do not refit to hide a model discrepancy.",
+  "open_limits": [
+    "Shaft end pixels are ambiguous among nut/shaft outlines. Five-pixel endpoint uncertainty gives roughly 20-35mm separation uncertainty.",
+    "M783 span is provisionally shared with M782; not printed.",
+    "Only planar spacing is inferred here. Heights, plate section, floor and seat mount details are not derived from this registration."
+  ]
+}

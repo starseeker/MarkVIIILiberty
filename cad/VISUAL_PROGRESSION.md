@@ -1,5 +1,17 @@
 # Mark VIII visual progression
 
+## Driver support foundation — 27 September 2026
+
+Four inspected views bring accepted progression to **282 images**. Two shafts,
+source-counted retainers, partial seat-support plates and eight real floor mounts
+are shown. The source overlay reuses a local plan registration; its shaft picks
+are construction constraints. Complete controls and seat attachments remain open.
+
+- [Isometric](intermediate_snapshot_iso_driver_foundation_001.png)
+- [Plan](intermediate_snapshot_plan_driver_foundation_001.png)
+- [Source plan comparison](intermediate_snapshot_source_driver_foundation_001.png)
+- [Sloping-floor mount section](intermediate_snapshot_section_driver_foundation_001.png)
+
 ## Complete rear and center clutch routes — 27 September2026
 
 Four inspected views bring accepted progression to **278 images**. Source-length

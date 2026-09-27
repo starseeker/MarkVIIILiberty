@@ -1,0 +1,1636 @@
+{
+  "native_file": "PowertrainControlRebuild.FCStd",
+  "native_sha256": "bd3425eb03c6f7eb979fdffa2dd26f82d2b9311413489f3b71968865444f8b6a",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/PowertrainControlRebuild.FCStd",
+  "source_native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/PowertrainControlRebuild.FCStd",
+  "parent_native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03",
+  "prototype_native_sha256": "70e5ff1ea65b820e06017527e9cfffd90b93ab785d315308565c98b005907ca0",
+  "variation": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_variation03",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_driver_control_mounts.py": "a46d815402e605e613093f735e48e24f7c293bbca2a6ae5b98d0a10d909d7b2c",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io_v2.py": "84ab9a61290fbdbf32da469c0acab4582a6e6e7a0761583b6425263bc96f6465",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03/report.json": "05c87637aa8c03a778eebc729db8d87469d42879b1ca8539c75de7ab8ee05677",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03/isolated/manifest.json": "0100da812e6c9df54168c4a7b60e286a100dcee6ff71b5f57b7ed63d26ca62d4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03/ControlRebuildTrial.FCStd": "70e5ff1ea65b820e06017527e9cfffd90b93ab785d315308565c98b005907ca0",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_variation03/report.json": "8d69a74882e60cfacd26123f8144bd9af39bfd32521dd266a23ccfa69b7ddd87",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/qualification.json": "9d0a0fac60b4f66545430793a952bd8223238988c7cd62ed24f3ed0b9cf52996",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/isolated/manifest.json": "0a501f128b8477cc0f839ef1ef4845c246db4e35f416ef27e5d2263c9764e0da",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03/visual_review.json": "260a2801f88f8f1960f62cbd6dd5528b655fd8bc7b680d65c115ae6cbee767ea",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03/render_receipt.json": "92f3d7958afed163d9b676fd8a6e05e1810cb7375b597725cf3103f6d81eac04",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03/reproduction_checks.json": "419ed3207c2c6318376a5d7d2ac55f25d29cc3d2ca9e49f2b666d754fdbdbc4b",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03/checks03/independent_checks.json": "eb21736a77efd9280041d1f3e422013b7b136fc71437033b139bed15f8527666",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03/context_audit/report.json": "2eda7310c5a2d0d2933fc966b09ddbdfc662aa53db23a109be2dba0697eae3d8",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount03/exchange01/exchange_checks.json": "49fbeb9b890398cf73618543d55ab06a5438b98a8c28263e17029f2464dffa56",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_variation03/checks03/independent_checks.json": "8038fb5cad8f46fad643eada23dbf835ddbbf82b722d55f4a70fa9095e09cee4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_variation03/context_audit/report.json": "f0003b077c89d4954b786a253135287dc67368c613996292c49acd24128a07a2",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_variation03/exchange01/exchange_checks.json": "be81ab758274cc0f4c021cf0621e0790f3b46cc3a63a9e537a6ab4eef7caa74c"
+  },
+  "details": {
+    "controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02",
+      "parent_native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_source_review03.json",
+      "source_review_sha256": "b42ec5885b43cc70441ac5bb75598eb9ad67e90a0d8d9966b80eac25a70c2984",
+      "registration": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_registration01.json",
+      "floor_probe": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_sources01/context_probe.json",
+      "receiver_report": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/report.json",
+      "plate_stock": 6.35,
+      "nut_seat_y": 288.925,
+      "swing_length": 628.65,
+      "main_shaft_z": 1110.0,
+      "future_low_pin_z": 1000.0,
+      "future_low_pin_relative_to_swing": [
+        -35,
+        180,
+        -130
+      ],
+      "main_keeper": {
+        "cotter_center_spacing": 2.48,
+        "cotter_diameter": 4.7625,
+        "crown_radius": 14,
+        "cotter_head_gap": 0.8,
+        "cotter_exit_gap": 0.8,
+        "cotter_bend_radius": 4,
+        "cotter_bend_angle": 35,
+        "cotter_length": 38.1,
+        "cotter_eye_radius": 4,
+        "cotter_eye_rise": 6,
+        "cotter_eye_join_overlap": 0.25
+      },
+      "swing_keeper": {
+        "cotter_center_spacing": 2.48,
+        "cotter_diameter": 4.7625,
+        "crown_radius": 17.5,
+        "cotter_head_gap": 0.8,
+        "cotter_exit_gap": 0.8,
+        "cotter_bend_radius": 4,
+        "cotter_bend_angle": 35,
+        "cotter_length": 50.8,
+        "cotter_eye_radius": 4,
+        "cotter_eye_rise": 6,
+        "cotter_eye_join_overlap": 0.25
+      }
+    },
+    "shafts": {
+      "Main": {
+        "center_world_mm": [
+          7641.567068044462,
+          0.0,
+          1110.0
+        ],
+        "nut_seat_station_mm": 288.925,
+        "keeper_station_mm": 305.425,
+        "nut_height_mm": 14,
+        "original_nut_seat_y_mm": 529.2271428571429,
+        "shoulder_station_mm": 282.575
+      },
+      "Swing": {
+        "center_world_mm": [
+          7235.036683917112,
+          0.0,
+          1130.0
+        ],
+        "nut_seat_station_mm": 288.925,
+        "keeper_station_mm": 298.925,
+        "nut_height_mm": 13,
+        "original_nut_seat_y_mm": 323.85,
+        "shoulder_station_mm": 282.575
+      }
+    },
+    "keeper": {
+      "Main": {
+        "straight_length_mm": 29.6,
+        "bend_arc_length_mm": 2.443460952792061,
+        "tail_length_mm": 6.056539047207939,
+        "total_leg_centerline_mm": 38.1,
+        "tail_endpoints": [
+          [
+            0.0,
+            22.05553208724067,
+            -5.437279906162522
+          ],
+          [
+            0.0,
+            22.05553208724067,
+            5.437279906162522
+          ]
+        ],
+        "wire_radius_mm": 1.14125,
+        "under_eye_y_mm": -14.8,
+        "bend_start_y_mm": 14.8,
+        "exact_stock_volume_conserved": false,
+        "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+      },
+      "Swing": {
+        "straight_length_mm": 36.6,
+        "bend_arc_length_mm": 2.443460952792061,
+        "tail_length_mm": 11.756539047207934,
+        "total_leg_centerline_mm": 50.8,
+        "tail_endpoints": [
+          [
+            0.0,
+            30.22469873968792,
+            -8.706665593363482
+          ],
+          [
+            0.0,
+            30.22469873968792,
+            8.706665593363482
+          ]
+        ],
+        "wire_radius_mm": 1.14125,
+        "under_eye_y_mm": -18.3,
+        "bend_start_y_mm": 18.3,
+        "exact_stock_volume_conserved": false,
+        "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+      }
+    },
+    "mounts": [
+      {
+        "stem": "DriverPortSupportMount1",
+        "plate": "DriverPortSupportPlate",
+        "floor": "hull_floor_2",
+        "floor_contact_world_mm": [
+          7195.036683917112,
+          316.425,
+          870.0097473033704
+        ],
+        "head_seat_world_mm": [
+          7192.929954319673,
+          316.425,
+          876.0000887296393
+        ],
+        "lock_seat_world_mm": [
+          7197.027294560362,
+          316.425,
+          864.3495821761873
+        ],
+        "nut_seat_world_mm": [
+          7198.080659359081,
+          316.425,
+          861.3544114630528
+        ],
+        "axis_world": [
+          0.33176844054162746,
+          1e-16,
+          -0.9433608545305326
+        ]
+      },
+      {
+        "stem": "DriverPortSupportMount2",
+        "plate": "DriverPortSupportPlate",
+        "floor": "hull_floor_2",
+        "floor_contact_world_mm": [
+          7225.036683917112,
+          316.425,
+          880.5603793000754
+        ],
+        "head_seat_world_mm": [
+          7222.929954319673,
+          316.425,
+          886.5507207263443
+        ],
+        "lock_seat_world_mm": [
+          7227.027294560362,
+          316.425,
+          874.9002141728922
+        ],
+        "nut_seat_world_mm": [
+          7228.080659359081,
+          316.425,
+          871.9050434597577
+        ],
+        "axis_world": [
+          0.33176844054162746,
+          1e-16,
+          -0.9433608545305326
+        ]
+      },
+      {
+        "stem": "DriverPortSupportMount3",
+        "plate": "DriverPortSupportPlate",
+        "floor": "hull_floor_1",
+        "floor_contact_world_mm": [
+          7561.567068044462,
+          316.425,
+          998.913987254657
+        ],
+        "head_seat_world_mm": [
+          7559.460338447023,
+          316.425,
+          1004.9043286809258
+        ],
+        "lock_seat_world_mm": [
+          7563.557678687712,
+          316.425,
+          993.2538221274738
+        ],
+        "nut_seat_world_mm": [
+          7564.611043486431,
+          316.425,
+          990.2586514143393
+        ],
+        "axis_world": [
+          0.33176844054162746,
+          1e-16,
+          -0.9433608545305326
+        ]
+      },
+      {
+        "stem": "DriverPortSupportMount4",
+        "plate": "DriverPortSupportPlate",
+        "floor": "hull_floor_1",
+        "floor_contact_world_mm": [
+          7591.567068044462,
+          316.425,
+          1009.464619251362
+        ],
+        "head_seat_world_mm": [
+          7589.460338447023,
+          316.425,
+          1015.4549606776309
+        ],
+        "lock_seat_world_mm": [
+          7593.557678687712,
+          316.425,
+          1003.8044541241788
+        ],
+        "nut_seat_world_mm": [
+          7594.611043486431,
+          316.425,
+          1000.8092834110444
+        ],
+        "axis_world": [
+          0.33176844054162746,
+          1e-16,
+          -0.9433608545305326
+        ]
+      },
+      {
+        "stem": "DriverStarboardSupportMount1",
+        "plate": "DriverStarboardSupportPlate",
+        "floor": "hull_floor_2",
+        "floor_contact_world_mm": [
+          7195.036683917112,
+          -316.425,
+          870.0097473033704
+        ],
+        "head_seat_world_mm": [
+          7192.929954319673,
+          -316.425,
+          876.0000887296393
+        ],
+        "lock_seat_world_mm": [
+          7197.027294560362,
+          -316.425,
+          864.3495821761873
+        ],
+        "nut_seat_world_mm": [
+          7198.080659359081,
+          -316.425,
+          861.3544114630528
+        ],
+        "axis_world": [
+          0.33176844054162746,
+          1e-16,
+          -0.9433608545305326
+        ]
+      },
+      {
+        "stem": "DriverStarboardSupportMount2",
+        "plate": "DriverStarboardSupportPlate",
+        "floor": "hull_floor_2",
+        "floor_contact_world_mm": [
+          7225.036683917112,
+          -316.425,
+          880.5603793000754
+        ],
+        "head_seat_world_mm": [
+          7222.929954319673,
+          -316.425,
+          886.5507207263443
+        ],
+        "lock_seat_world_mm": [
+          7227.027294560362,
+          -316.425,
+          874.9002141728922
+        ],
+        "nut_seat_world_mm": [
+          7228.080659359081,
+          -316.425,
+          871.9050434597577
+        ],
+        "axis_world": [
+          0.33176844054162746,
+          1e-16,
+          -0.9433608545305326
+        ]
+      },
+      {
+        "stem": "DriverStarboardSupportMount3",
+        "plate": "DriverStarboardSupportPlate",
+        "floor": "hull_floor_1",
+        "floor_contact_world_mm": [
+          7561.567068044462,
+          -316.425,
+          998.913987254657
+        ],
+        "head_seat_world_mm": [
+          7559.460338447023,
+          -316.425,
+          1004.9043286809258
+        ],
+        "lock_seat_world_mm": [
+          7563.557678687712,
+          -316.425,
+          993.2538221274738
+        ],
+        "nut_seat_world_mm": [
+          7564.611043486431,
+          -316.425,
+          990.2586514143393
+        ],
+        "axis_world": [
+          0.33176844054162746,
+          1e-16,
+          -0.9433608545305326
+        ]
+      },
+      {
+        "stem": "DriverStarboardSupportMount4",
+        "plate": "DriverStarboardSupportPlate",
+        "floor": "hull_floor_1",
+        "floor_contact_world_mm": [
+          7591.567068044462,
+          -316.425,
+          1009.464619251362
+        ],
+        "head_seat_world_mm": [
+          7589.460338447023,
+          -316.425,
+          1015.4549606776309
+        ],
+        "lock_seat_world_mm": [
+          7593.557678687712,
+          -316.425,
+          1003.8044541241788
+        ],
+        "nut_seat_world_mm": [
+          7594.611043486431,
+          -316.425,
+          1000.8092834110444
+        ],
+        "axis_world": [
+          0.33176844054162746,
+          1e-16,
+          -0.9433608545305326
+        ]
+      }
+    ],
+    "floor_normal": [
+      -0.33176844054162746,
+      -1e-16,
+      0.9433608545305326
+    ],
+    "plate_origin_world_mm": [
+      7235.036683917112,
+      0.0,
+      884.0772566323104
+    ],
+    "shaft_separation_mm": 406.53038412735026,
+    "future_low_pin_world_mm": [
+      7200.036683917112,
+      180.0,
+      1000.0
+    ],
+    "future_low_pin_status": "Unmodeled provisional target; no front rod or rocker counted.",
+    "scope": "Partial seat-support plates, two shaft interfaces and real floor attachment; seat mount extensions, lever fulcrums, controls and front rods remain pending."
+  },
+  "expected_new_occurrences": {
+    "DriverMainShaft": {
+      "definition": "Def_DriverMainShaft_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7641.567068044462,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1110.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverMainFulcrum"
+      ]
+    },
+    "DriverMainPortNut": {
+      "definition": "Def_TransmissionPin_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7641.567068044462,
+        0.0,
+        1.0,
+        0.0,
+        -240.30214285714288,
+        0.0,
+        0.0,
+        1.0,
+        1110.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverMainFulcrum"
+      ]
+    },
+    "DriverMainPortKeeper": {
+      "definition": "Def_DriverMainKeeper_MountStudy",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7641.567068044462,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        305.425,
+        -0.0,
+        0.0,
+        1.0,
+        1110.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverMainFulcrum"
+      ]
+    },
+    "DriverMainStarboardNut": {
+      "definition": "Def_TransmissionPin_nut",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        7641.567068044462,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        240.30214285714288,
+        0.0,
+        0.0,
+        1.0,
+        1110.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverMainFulcrum"
+      ]
+    },
+    "DriverMainStarboardKeeper": {
+      "definition": "Def_DriverMainKeeper_MountStudy",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7641.567068044462,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        -305.425,
+        -0.0,
+        0.0,
+        1.0,
+        1110.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverMainFulcrum"
+      ]
+    },
+    "DriverSwingShaft": {
+      "definition": "Def_DriverSwingShaft_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7235.036683917112,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1130.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverRearSwing"
+      ]
+    },
+    "DriverSwingPortNut": {
+      "definition": "Def_TransmissionSmallSupport_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7235.036683917112,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        612.7750000000001,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        1130.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverRearSwing"
+      ]
+    },
+    "DriverSwingPortKeeper": {
+      "definition": "Def_DriverSwingKeeper_MountStudy",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7235.036683917112,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        298.925,
+        -0.0,
+        0.0,
+        1.0,
+        1130.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverRearSwing"
+      ]
+    },
+    "DriverSwingStarboardNut": {
+      "definition": "Def_TransmissionSmallSupport_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7235.036683917112,
+        0.0,
+        1.0,
+        0.0,
+        -612.7750000000001,
+        0.0,
+        0.0,
+        1.0,
+        1130.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverRearSwing"
+      ]
+    },
+    "DriverSwingStarboardKeeper": {
+      "definition": "Def_DriverSwingKeeper_MountStudy",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7235.036683917112,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        -298.925,
+        -0.0,
+        0.0,
+        1.0,
+        1130.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverRearSwing"
+      ]
+    },
+    "DriverPortSupportPlate": {
+      "definition": "Def_DriverPortSupportPlate_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7235.036683917112,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        884.0772566323104,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverPortSupportMount1Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7192.929954319673,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        876.0000887296393,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverPortSupportMount1Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7197.027294560362,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        864.3495821761873,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverPortSupportMount1Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7198.080659359081,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        861.3544114630528,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverPortSupportMount2Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7222.929954319673,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        886.5507207263443,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverPortSupportMount2Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7227.027294560362,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        874.9002141728922,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverPortSupportMount2Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7228.080659359081,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        871.9050434597577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverPortSupportMount3Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7559.460338447023,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        1004.9043286809258,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverPortSupportMount3Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7563.557678687712,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        993.2538221274738,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverPortSupportMount3Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7564.611043486431,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        990.2586514143393,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverPortSupportMount4Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7589.460338447023,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        1015.4549606776309,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverPortSupportMount4Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7593.557678687712,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        1003.8044541241788,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverPortSupportMount4Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7594.611043486431,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        1000.8092834110444,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportPlate": {
+      "definition": "Def_DriverStarboardSupportPlate_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7235.036683917112,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        884.0772566323104,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportMount1Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7192.929954319673,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        -316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        876.0000887296393,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportMount1Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7197.027294560362,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        -316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        864.3495821761873,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportMount1Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7198.080659359081,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        -316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        861.3544114630528,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportMount2Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7222.929954319673,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        -316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        886.5507207263443,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportMount2Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7227.027294560362,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        -316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        874.9002141728922,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportMount2Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7228.080659359081,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        -316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        871.9050434597577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportMount3Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7559.460338447023,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        -316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        1004.9043286809258,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportMount3Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7563.557678687712,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        -316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        993.2538221274738,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportMount3Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7564.611043486431,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        -316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        990.2586514143393,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportMount4Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7589.460338447023,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        -316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        1015.4549606776309,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportMount4Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7593.557678687712,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        -316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        1003.8044541241788,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "DriverStarboardSupportMount4Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9433608545305325,
+        -5.857582027265478e-16,
+        0.33176844054162735,
+        7594.611043486431,
+        -5.857582027265478e-16,
+        1.0,
+        9.999999999999996e-17,
+        -316.425,
+        -0.33176844054162735,
+        -9.999999999999996e-17,
+        -0.9433608545305325,
+        1000.8092834110444,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverSupportPlates"
+      ]
+    },
+    "hull_floor_1": {
+      "definition": "Def_DriverContext_hull_floor_1",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverFloorContext"
+      ]
+    },
+    "hull_floor_2": {
+      "definition": "Def_DriverContext_hull_floor_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "DriverControlFoundation",
+        "DriverFloorContext"
+      ]
+    }
+  },
+  "new_occurrences": [
+    "DriverMainShaft",
+    "DriverMainPortNut",
+    "DriverMainPortKeeper",
+    "DriverMainStarboardNut",
+    "DriverMainStarboardKeeper",
+    "DriverSwingShaft",
+    "DriverSwingPortNut",
+    "DriverSwingPortKeeper",
+    "DriverSwingStarboardNut",
+    "DriverSwingStarboardKeeper",
+    "DriverPortSupportPlate",
+    "DriverPortSupportMount1Bolt",
+    "DriverPortSupportMount1Lock",
+    "DriverPortSupportMount1Nut",
+    "DriverPortSupportMount2Bolt",
+    "DriverPortSupportMount2Lock",
+    "DriverPortSupportMount2Nut",
+    "DriverPortSupportMount3Bolt",
+    "DriverPortSupportMount3Lock",
+    "DriverPortSupportMount3Nut",
+    "DriverPortSupportMount4Bolt",
+    "DriverPortSupportMount4Lock",
+    "DriverPortSupportMount4Nut",
+    "DriverStarboardSupportPlate",
+    "DriverStarboardSupportMount1Bolt",
+    "DriverStarboardSupportMount1Lock",
+    "DriverStarboardSupportMount1Nut",
+    "DriverStarboardSupportMount2Bolt",
+    "DriverStarboardSupportMount2Lock",
+    "DriverStarboardSupportMount2Nut",
+    "DriverStarboardSupportMount3Bolt",
+    "DriverStarboardSupportMount3Lock",
+    "DriverStarboardSupportMount3Nut",
+    "DriverStarboardSupportMount4Bolt",
+    "DriverStarboardSupportMount4Lock",
+    "DriverStarboardSupportMount4Nut",
+    "hull_floor_1",
+    "hull_floor_2"
+  ],
+  "new_definitions": [
+    "Def_DriverContext_hull_floor_1",
+    "Def_DriverContext_hull_floor_2",
+    "Def_DriverMainKeeper_MountStudy",
+    "Def_DriverMainShaft_MountStudy",
+    "Def_DriverPortSupportPlate_MountStudy",
+    "Def_DriverStarboardSupportPlate_MountStudy",
+    "Def_DriverSupportBolt_MountStudy",
+    "Def_DriverSwingKeeper_MountStudy",
+    "Def_DriverSwingShaft_MountStudy"
+  ],
+  "changed_definitions": [],
+  "added_children": {
+    "Definitions": [
+      "Def_DriverContext_hull_floor_1",
+      "Def_DriverContext_hull_floor_2",
+      "Def_DriverMainKeeper_MountStudy",
+      "Def_DriverMainShaft_MountStudy",
+      "Def_DriverPortSupportPlate_MountStudy",
+      "Def_DriverStarboardSupportPlate_MountStudy",
+      "Def_DriverSupportBolt_MountStudy",
+      "Def_DriverSwingKeeper_MountStudy",
+      "Def_DriverSwingShaft_MountStudy"
+    ],
+    "Root": [
+      "DriverControlFoundation"
+    ],
+    "DriverControlFoundation": [
+      "DriverMainFulcrum",
+      "DriverRearSwing",
+      "DriverSupportPlates",
+      "DriverFloorContext"
+    ],
+    "DriverMainFulcrum": [
+      "DriverMainShaft",
+      "DriverMainPortNut",
+      "DriverMainPortKeeper",
+      "DriverMainStarboardNut",
+      "DriverMainStarboardKeeper"
+    ],
+    "DriverRearSwing": [
+      "DriverSwingShaft",
+      "DriverSwingPortNut",
+      "DriverSwingPortKeeper",
+      "DriverSwingStarboardNut",
+      "DriverSwingStarboardKeeper"
+    ],
+    "DriverSupportPlates": [
+      "DriverPortSupportPlate",
+      "DriverPortSupportMount1Bolt",
+      "DriverPortSupportMount1Lock",
+      "DriverPortSupportMount1Nut",
+      "DriverPortSupportMount2Bolt",
+      "DriverPortSupportMount2Lock",
+      "DriverPortSupportMount2Nut",
+      "DriverPortSupportMount3Bolt",
+      "DriverPortSupportMount3Lock",
+      "DriverPortSupportMount3Nut",
+      "DriverPortSupportMount4Bolt",
+      "DriverPortSupportMount4Lock",
+      "DriverPortSupportMount4Nut",
+      "DriverStarboardSupportPlate",
+      "DriverStarboardSupportMount1Bolt",
+      "DriverStarboardSupportMount1Lock",
+      "DriverStarboardSupportMount1Nut",
+      "DriverStarboardSupportMount2Bolt",
+      "DriverStarboardSupportMount2Lock",
+      "DriverStarboardSupportMount2Nut",
+      "DriverStarboardSupportMount3Bolt",
+      "DriverStarboardSupportMount3Lock",
+      "DriverStarboardSupportMount3Nut",
+      "DriverStarboardSupportMount4Bolt",
+      "DriverStarboardSupportMount4Lock",
+      "DriverStarboardSupportMount4Nut"
+    ],
+    "DriverFloorContext": [
+      "hull_floor_1",
+      "hull_floor_2"
+    ]
+  },
+  "new_assembly_specs": {
+    "DriverControlFoundation": {
+      "owner": "Root",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "DriverMainFulcrum": {
+      "owner": "DriverControlFoundation",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "DriverRearSwing": {
+      "owner": "DriverControlFoundation",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "DriverSupportPlates": {
+      "owner": "DriverControlFoundation",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "DriverFloorContext": {
+      "owner": "DriverControlFoundation",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "expected_physical_occurrences": 3475,
+  "expected_definition_count": 611,
+  "expected_assembly_count": 414,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "packet_complete": false
+}

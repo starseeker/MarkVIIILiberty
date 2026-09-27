@@ -1,0 +1,42 @@
+{
+  "source_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_source_rows01.json": "f2be5486ccd944646a45f2a18847891dc6ac80f1287b313fb70890851245293a",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/source_review02.json": "83926e64c5ec0efd35413e7808a58c9feade630a11fb449628bddd6629eda3f5",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_registration01.json": "fe730cf90ecfa0dbfea6559bcb40f4b53a4fd9869dec00e78fc590f053abe701",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/mount_sources01/context_probe.json": "152cbdebc6646cd003da6b53ea96c72ac36960f5d28de889f0f22b7f40738628",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p031.jpg": "e32f53707dc163a5f5e509cddb6c91350a0317fd9083c9036d73006b8e2bb739",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p147.jpg": "465864df6761ed85a6a8d53551ec071deef19ae862d7fad72a6cc7f9b0c571b5",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p213.jpg": "4be12d938e3f6fe7c608a4484e7bf74b2363e12be964df9fa6f3fc3537644847",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate12.png": "a2b3c37ec6546677a331933f9c48793787a515f622687b9d70e717f6517c9892",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate06.png": "69398f328ce9ec22bc1996893fb71b1547f16285f16640e9e03a23a87b1c26ea",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate93.png": "65a46c3dfdf7ba25adaadf772ca627e67b003335355d4fd440064abbeaf48036",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_025_044.py": "f6278d1a5aea425d3f7aa6e6be5b0dc9577151d067e5b899ab18cd4530ec83d5",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_145_164.py": "70948477c692efc5233842b8f0e63e4f59e4908d1d8970cb2c3dc36274ba0099",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_205_224.py": "4d1fc980e443a864a08b7bae1c517a03350e55401073ec40808b2bc5046d739f",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_085_104.py": "42da624c65338b480ff77429245bd882b3d904d22f4299f38e065d3cebd71720",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_125_144.py": "41e1a2d5db10fae57f5e380d80423dba8ddc8036ce0bd500631b9239bf309fb2"
+  },
+  "reviewed": [
+    "Directly reviewed SNL31/147/213 original scans, SNL6 plan/side, HB12/06/93. M786 left and M787 right are seat-support plates, each four half-inch by1-1/4in bolts with plain nuts and lock washers.",
+    "M746/M747 are operating-lever fulcrums in HB93; do not assign these identities to invented floor bearing blocks. This corrects earlier driver source_review02 grip commentary without changing that frozen part study.",
+    "M782 main fulcrum and M783 rear swing shaft have distinct nuts and split-pin stock, printed in SNL213. Main M782 source total24-3/4in/diameter1.497in retained.",
+    "M783 split-pin catalogue conflict: SNL136:016 lists1/8x1in; selected SNL213:0133/16x2in directly reviewed, also transcribed SNL141:012.",
+    "Driver photo HB6 places seat between principal controls; current standard seat is only a packaging reference. No perspective overlay is claimed."
+  ],
+  "approximations": [
+    "Two side plates and their outward feet support both shaft ends. Four bolts per plate are source-counted; allocation to the sloping floor, pattern, 6.35mm stock, profile and all seat attachment extensions remain unproven. This models support interfaces, not complete seat-support plate detail.",
+    "Local SNL6 registration estimates shaft spacing. Absolute X is constrained provisionally by source49-1/2in M574 stock, existing intermediate receiver and an unmodeled low receiver130mm below/35mm aft of M783. Actual driver links must confirm or reopen this placement.",
+    "M783 center Z1130 and M782 Z1110 are packaging estimates. Driver shaft01 [7280,0,1020] was an uninstalled datum and is superseded by this two-shaft hypothesis.",
+    "M783 estimated diameter25.4mm/total628.65mm;24mm reduced ends fit unchanged M314 nut geometry. M782 reduced28mm ends and shoulders adapt to6.35mm side-plate stock; main printed total length unchanged.",
+    "M313/M314 and half-inch nut/lock exteriors reused unchanged. Nominal thread envelopes only. M782 short keepers remain outside M313 front face, not castle-slot engagement; M783 long keepers cross actual M314 castle slots. Retention form is not independently historically established.",
+    "Plate outlines are approximate analytic BReps. Source price column12.34 is a price, not mass. No mass inference is made."
+  ],
+  "constraints": [
+    "Drill both actual standard floors normal to their common slope; retain all other floor material. Eight bolt/nut/lock sets fully seated with source31.75mm underhead stock.",
+    "No pair exemptions or deleted interfering stock. Check real saved materials, complete support bores, bearing areas, negative seating/keeper controls, source stock, STEP, variation and fresh reproduction.",
+    "Seat support attachments, M785 spring angle and link/selector receivers must be completed later before claiming complete driver support or driver assembly.",
+    "Local source registration uses construction points only. Similarity matches those by construction; it is not independent dimensional validation."
+  ],
+  "status": "Source reviewed; bounded mounting-interface trial authorized by ongoing workflow. Historical geometry and complete installation remain unqualified."
+}
