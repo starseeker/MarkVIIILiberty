@@ -11,6 +11,28 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 26 September 2026 — Gemini branch reviewed; qualified prefix merged
+
+Merged `116707ca` and `fcbca8ed` into main: four low-speed fork joints and two
+SH946E connecting rods, for **3,282 occurrences / 570 definitions / 365 groups**.
+The accepted checkpoint recovery verifier passes. A fresh saved-material audit
+checked 87 nearby pairs involving the 18 additions and two revised levers, with
+no intersections and no mating-pair exemptions. Historical profile/datum
+uncertainties remain documented; standard tank011 is unchanged.
+
+The later `b19e16e5` commit stays on `gemini`: an independent audit found 31
+positive intersections in 549 pairs, including fork/bracket and rod/pin/nut
+collisions hidden by its checkers' exclusions. The 121 uncommitted front-controls
+files were preserved unchanged on `review/gemini-front-controls-20260926`
+(`9bb60922`). Their nominal geometry has 39 positive intersections in 396 pairs,
+including filled shaft bores and floor collisions. Reuse the inventory and route
+exploration, but rebuild affected geometry, placement and validation.
+
+The [review and evidence](reviews/gemini-20260926/README.md) give repair priorities.
+Resume from `low_rods_integrated01`, recovering the washer/spring increment first
+after interface/source review. Accepted progression ends at 254; experimental
+255–286 remain on Gemini and must retain their provenance.
+
 ## 25 September 2026 — rear low-speed straight connecting rods installed
 
 The [new development checkpoint](experiments/drive_chains/transmission_controls_study/low_rods_integrated01/README.md)

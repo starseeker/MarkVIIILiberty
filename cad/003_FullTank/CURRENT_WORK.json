@@ -1,10 +1,10 @@
 {
   "version": 1,
-  "updated": "2026-09-25",
+  "updated": "2026-09-26",
   "goal_status": "active",
   "scope": "Complete standard tank geometry, identifiable interiors and documented approximations; selected poses later.",
   "standard_checkpoint_note": "Standard tank011 remains unchanged; its durable paths are recorded in work_queue.json and PROGRESS.md.",
-  "accepted_development_parent": "straight rear track-rod checkpoint 5b4358b",
+  "accepted_development_parent": "rear low-speed straight-rod checkpoint fcbca8ed (Gemini prefix reviewed and merged 2026-09-26)",
   "latest_candidate": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01",
   "latest_native_sha256": "9b36e8ca2124d0314825c66b905080f770a3d709a9503eb76a882147cd4e1f04",
   "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/qualification.json",
@@ -27,7 +27,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Continue M567 washers, M564 springs, M575/M573 long rear rods and center/front controls; standard geometry before poses.",
+  "next_action": "Resume from low_rods_integrated01. Review and recover M567 washers/M564 springs from gemini:b19e16e5 first; then reconcile rod identities and rebuild failed clutch/forward interfaces in small validated increments. Consult reviews/gemini-20260926/README.md before using withheld geometry or the front-controls draft.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -87,7 +87,7 @@
     "geometry_integrated": true,
     "nominal_and_clearance_variation": "Nominal low_rod_controls01.json (nominal insertion 20.6375 mm, rod length 130.7616 mm) and variation low_rod_variation_controls01.json (insertion 19.55 mm, rod length 128.5866 mm). Each 81 native, 127 context and 30 STEP checks.",
     "source_camera": "SNL6 local camera reused without refit; existing silhouette/station disagreement retained.",
-    "next_action": "Continue M567 washers, M564 springs, M575/M573 long rear rods and center/front controls; standard geometry before poses.",
+    "next_action": "Resume from low_rods_integrated01. Review and recover M567 washers/M564 springs from gemini:b19e16e5 first; then reconcile rod identities and rebuild failed clutch/forward interfaces in small validated increments. Consult reviews/gemini-20260926/README.md before using withheld geometry or the front-controls draft.",
     "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_joints_integrated01/qualification.json"
   },
   "source_identity_correction": {
@@ -99,5 +99,21 @@
   "active_mounting_hypothesis": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/right_cleat_source_review01.json",
   "revised_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/track_rods_integrated01/operating_interfaces.json",
   "pin_family_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/pin_family_integrated01/operating_interfaces.json",
-  "revised_low_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/operating_interfaces.json"
+  "revised_low_operating_interfaces": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/low_rods_integrated01/operating_interfaces.json",
+  "branch_review": {
+    "report": "cad/003_FullTank/reviews/gemini-20260926/README.md",
+    "receipt": "cad/003_FullTank/reviews/gemini-20260926/review_receipt.json",
+    "accepted_commits": [
+      "116707ca",
+      "fcbca8ed"
+    ],
+    "withheld_branch": "gemini",
+    "withheld_commit": "b19e16e5",
+    "withheld_reason": "Independent saved-material audit found 31 positive intersections in 549 pairs; checker mating exemptions hide significant overlaps. Source/part identity also needs reconciliation.",
+    "front_controls_recovery_branch": "review/gemini-front-controls-20260926",
+    "front_controls_recovery_commit": "9bb60922",
+    "front_controls_disposition": "All 121 original files preserved unchanged. Useful parts/layout draft; rebuild joint geometry, placement, source binding and validation before acceptance. Nominal audit found 39 positive intersections in 396 pairs.",
+    "restart_from": "low_rods_integrated01",
+    "retained_progression_note": "Main has accepted progression through 254. Gemini retains experimental images 255-286; retain their provenance and avoid silently reusing those numbers when salvaging the withheld work."
+  }
 }
