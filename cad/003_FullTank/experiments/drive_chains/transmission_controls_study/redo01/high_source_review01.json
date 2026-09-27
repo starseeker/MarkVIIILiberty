@@ -1,0 +1,29 @@
+{
+  "status": "reviewed reconstruction constraints; exact profiles and routing approximate",
+  "source_hashes": {
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_controls_sources/selected_rows.json": "187e8642e3ecbcb0340116eb5324cd197f3be9d548ffb5ed2c39e24cf9c88896"
+  },
+  "identities": {
+    "M575": "Two complete rear high-speed rods, SNL195:007; two3/4 inch jam nuts per assembly SNL195:008. No extra M576 segment.",
+    "M563": "Two high-speed rod springs, SNL220; SNL6 plan shows coil between rear fork nut and fixed guide. Compression-spring ends/stock/turns unprinted.",
+    "M569B": "Two wider rear forks, SNL87:003 prints1.5 inch without length datum. Socket-length interpretation selected to agree with the family; throat23.8125 is estimated.",
+    "M569C/M568C": "Forward rod joints use existing narrower fork/pin/keeper at actual M640 receiving bore.",
+    "M4135": "Shared guide identity/quantity retained. Offset return profile is a clearance-based estimate, not recovered manufacturing geometry."
+  },
+  "construction": [
+    "Reuse the original local SNL6 drum registration without refitting. Rear high-control pin pixel1490,908 is now a construction constraint, NOT a holdout. Dotted upper silhouette remains discrepant and may show another pose; it is not claimed validated.",
+    "Revise only distal M355A/B profile and lower two joining-rivet stations. Upper pivots, brake adjustment, spring/saddle and first two rivets remain unchanged.",
+    "Restore actual clutch floor attachment. Saved floor is527.05..533.05, while prior feet began584.4194307. Preserve main and auxiliary journal centers and all functional upper clutch connections.",
+    "SH953A lower casting uses two floor pads and a raised bridge around the existing rear channel. Move its rear screw pair12.45mm aft, preserving four source-sized screws. Upper anchor lugs retained above the bridge. This is an unproven mounting/profile hypothesis.",
+    "M4135 bored tab sits38.1mm aft of unchanged riveted foot on a raised return. This leaves room for a smooth rod bend before the clutch auxiliary lever. Both guides share one definition.",
+    "Complete M575 travels from the real rear fork socket through the guide to the high intermediate rocker. Gentle end transitions and a dip under the clutch shaft are estimates constrained by retained solids. Static only; no motion or force validation.",
+    "Nominal cylindrical thread envelopes; real thread helices and spring free rate/preload unknown."
+  ],
+  "limits": [
+    "No whole-length scaling across broken SNL6/HB92 rods.",
+    "No historical accuracy inferred from absence of collisions.",
+    "Intermediate shaft and driver station remain conditional on provisional driver datum."
+  ]
+}

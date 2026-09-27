@@ -11,6 +11,24 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — complete rear high-speed controls rebuilt
+
+The [new checkpoint](experiments/drive_chains/transmission_controls_study/redo01/high_integrated01/README.md)
+contains **3,359 occurrences / 589 definitions / 390 groups**. Complete M575 rods
+join the rear and intermediate receivers; M563 coils bear on the actual fork nuts
+and fixed guides. Revised guide returns and clutch floor mounts clear the routes.
+All source-dependent casting profiles, rod bends and spring dimensions remain
+explicit estimates. The existing SNL registration is reused; the rear brake pin
+is now a construction input, not independent validation.
+
+Both settings pass 156 local checks, 349 context pairs and 55 strict STEP
+comparisons. All 578 unchanged definitions are preserved; a fresh rebuild matches
+1,799 BRep entries and 162,877 persistent properties. Four inspected views bring
+accepted progression to **270**. Standard tank011 remains unchanged.
+
+The withheld-commit redo continues with M573/M579, then clutch and forward
+connections, followed by the preserved driver-controls continuation.
+
 ## 26 September 2026 — intermediate shaft and eight receivers rebuilt
 
 The [new checkpoint](experiments/drive_chains/transmission_controls_study/redo01/intermediate_integrated01/README.md)

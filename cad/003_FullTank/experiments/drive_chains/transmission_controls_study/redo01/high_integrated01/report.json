@@ -1,0 +1,1664 @@
+{
+  "native_file": "PowertrainControlRebuild.FCStd",
+  "native_sha256": "8ab504fa6f8587448f04915b59e89a0f3ba1e46f1060c11546859c5172d8d31f",
+  "source_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/intermediate_integrated01/PowertrainControlRebuild.FCStd",
+  "source_native_sha256": "6ea0cdc50a55cd8e86b8ab6bd49a54094b103d5bf17c7c7156f8125f8601d821",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/intermediate_integrated01/PowertrainControlRebuild.FCStd",
+  "parent_native_sha256": "6ea0cdc50a55cd8e86b8ab6bd49a54094b103d5bf17c7c7156f8125f8601d821",
+  "prototype": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high02",
+  "prototype_native_sha256": "e5613f753eb49d6e3245340bdf95e7a6aa4d622e73ccf968e62acd92ba57e835",
+  "variation": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high_variation_trial02",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_control_rebuild_high.py": "1101d0c541bace454680f885b035d4cf11d50f67313107e1fe380a06978eb447",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io_v2.py": "84ab9a61290fbdbf32da469c0acab4582a6e6e7a0761583b6425263bc96f6465",
+    "cad/003_FullTank/lib/cad_build.py": "e95196ddee25afe446c8f9c8c56baa1946373972b1adcaa608b12d4bcfca7fe1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high02/report.json": "83b0bf9574877da89d2b7e2a999ab7312d1a37a7c834ab0da8d27d6366858e75",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high02/isolated/manifest.json": "1c5e6d2d130a10426a9188fa3fffc88ec739775e8e968e0ae34bdd514cef3e36",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high02/ControlRebuildTrial.FCStd": "e5613f753eb49d6e3245340bdf95e7a6aa4d622e73ccf968e62acd92ba57e835",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high_variation_trial02/report.json": "d24b9b7ac79d1f82f4602d00fa9ddf3300590911e3d9357e704318083631b420",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/intermediate_integrated01/qualification.json": "9030d725e7da94acc2896252f589b9240775cbc40d824f9236fd5b01567d7f6a",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/intermediate_integrated01/isolated/manifest.json": "e2e9ada68cf803abb4270bfe8345b84a147467e13258c1b7d16f63e638d1f823",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high02/visual_review.json": "2453f18b12ccfd99ab6515c10fde9ffcc1397e6539738f9292da106734d88d94",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high02/render_receipt.json": "8d5d36c678d31e982e1e177f9bb08a1648430a0dd7012af75632fadc255be771",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high02/reproduction_checks.json": "556ee8e0be688ea61a742adaf3597ffca8b243bc3e517bab32f9d270d5aa7518",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high02/checks02/independent_checks.json": "d01189d2067c0d2622fe1af48d23317dd24b0394ef714ca9b3f247742aa9a70a",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high02/context_audit/report.json": "1f01c514477a3f2651aea9770105e5f7f180d503c6909fcb6c5ac7c13cf3e657",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high02/exchange04/exchange_checks.json": "7fa4b325346b768dc4a1bbf9f199590c9824dd4294cca46ddad9d3d2ff78a8e3",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high_variation_trial02/checks02/independent_checks.json": "68ea5d7d316235bbed44f8c3c3cbf79213a8bd98d741223034bd93c6bbdcd8cf",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high_variation_trial02/context_audit/report.json": "9b36679462ca82d4d5a37046be51bd90c7439fc4f4ded86b407c74bf27c21c5d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high_variation_trial02/exchange03/exchange_checks.json": "8a3743e7065f76db22320a16696b62985da46f419ab8156611817ebc5e956b66"
+  },
+  "details": {
+    "floor_correction_mm": 51.369430740704615,
+    "Starboard": {
+      "fork_frame": [
+        1.0,
+        0.0,
+        0.0,
+        2012.3584552753357,
+        0.0,
+        -1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        -1.0,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nut_frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2074.270955275336,
+        0.0,
+        -1.0,
+        0.0,
+        -222.25000000000006,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spring_rear_seat_world_mm": [
+        2093.3209552753356,
+        -222.25000000000006,
+        636.7196726939802
+      ],
+      "spring_length_mm": 186.02904472466435,
+      "spring_controls": {
+        "spring_turns": 14,
+        "spring_end_turns": 1,
+        "spring_wire_radius": 1.75,
+        "spring_inside_radius": 12.5,
+        "spring_rear_seat": 0,
+        "spring_length": 186.02904472466435,
+        "spring_transition_turns": 1,
+        "spring_end_pitch": 3.65,
+        "spring_end_grind_fraction": 0.6,
+        "spring_samples_per_turn": 64
+      },
+      "spring_details": {
+        "turns": 14,
+        "free_turns": 12,
+        "end_turns_each": 1,
+        "selected_inside_radius": 12.5,
+        "mean_radius": 14.25,
+        "wire_radius": 1.75,
+        "end_pitch": 3.65,
+        "free_pitch": 15.789004065878578,
+        "centerline_rise": 184.62904472466434,
+        "seats": [
+          0,
+          186.02904472466435
+        ],
+        "sample_count": 897,
+        "ground_depth": 1.0499999999999998,
+        "inferred_clocking_degrees": -51.78082191780821,
+        "sweep_spans": 14
+      },
+      "rod_points_world_mm": [
+        [
+          2055.2209552753357,
+          -222.25000000000006,
+          636.7196726939802
+        ],
+        [
+          2285.7,
+          -222.25,
+          636.7196726939802
+        ],
+        [
+          2340.0,
+          -201.0,
+          645.0
+        ],
+        [
+          2380.0,
+          -201.0,
+          645.0
+        ],
+        [
+          2465.0,
+          -125.0,
+          619.0
+        ],
+        [
+          2730.0,
+          -125.0,
+          619.0
+        ],
+        [
+          2890.0,
+          -125.0,
+          655.0
+        ],
+        [
+          5770.0,
+          -125.0,
+          655.0
+        ],
+        [
+          5850.0,
+          -125.0,
+          640.7435322939596
+        ],
+        [
+          5901.4531421354595,
+          -125.0,
+          640.7435322939596
+        ]
+      ]
+    },
+    "Port": {
+      "fork_frame": [
+        1.0,
+        0.0,
+        0.0,
+        2012.3584552753357,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "nut_frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2074.270955275336,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "spring_rear_seat_world_mm": [
+        2093.3209552753356,
+        222.25,
+        636.7196726939802
+      ],
+      "spring_length_mm": 186.02904472466435,
+      "spring_controls": {
+        "spring_turns": 14,
+        "spring_end_turns": 1,
+        "spring_wire_radius": 1.75,
+        "spring_inside_radius": 12.5,
+        "spring_rear_seat": 0,
+        "spring_length": 186.02904472466435,
+        "spring_transition_turns": 1,
+        "spring_end_pitch": 3.65,
+        "spring_end_grind_fraction": 0.6,
+        "spring_samples_per_turn": 64
+      },
+      "spring_details": {
+        "turns": 14,
+        "free_turns": 12,
+        "end_turns_each": 1,
+        "selected_inside_radius": 12.5,
+        "mean_radius": 14.25,
+        "wire_radius": 1.75,
+        "end_pitch": 3.65,
+        "free_pitch": 15.789004065878578,
+        "centerline_rise": 184.62904472466434,
+        "seats": [
+          0,
+          186.02904472466435
+        ],
+        "sample_count": 897,
+        "ground_depth": 1.0499999999999998,
+        "inferred_clocking_degrees": -51.78082191780821,
+        "sweep_spans": 14
+      },
+      "rod_points_world_mm": [
+        [
+          2055.2209552753357,
+          222.25,
+          636.7196726939802
+        ],
+        [
+          2285.7,
+          222.25,
+          636.7196726939802
+        ],
+        [
+          2340.0,
+          201.0,
+          645.0
+        ],
+        [
+          2380.0,
+          201.0,
+          645.0
+        ],
+        [
+          2465.0,
+          125.0,
+          619.0
+        ],
+        [
+          2730.0,
+          125.0,
+          619.0
+        ],
+        [
+          2890.0,
+          125.0,
+          655.0
+        ],
+        [
+          5770.0,
+          125.0,
+          655.0
+        ],
+        [
+          5850.0,
+          125.0,
+          640.7435322939596
+        ],
+        [
+          5901.4531421354595,
+          125.0,
+          640.7435322939596
+        ]
+      ]
+    },
+    "scope": "Complete rear high controls, ground spring seats and coupled receiver corrections; qualification pending.",
+    "controls": {
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/high_source_review01.json",
+      "source_review_sha256": "fdedb07ea2e0f9b181d39dc6a740e7cfc1a1366a75ab0bd39d4305844cfeb458",
+      "spring_wire_radius": 1.75,
+      "guide_diameter": 20.0
+    },
+    "source_review": {
+      "status": "reviewed reconstruction constraints; exact profiles and routing approximate",
+      "source_hashes": {
+        "references/1928-03-30_SNL_G13/SNL_G13_Project/assets/p280-geometry.png": "0d0299a87186a39f9315cd27ae6306647a3a646287557b9cd3789b8c2f6b79ea",
+        "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/channel_local_registration01.json": "5f64c5d57591598071158b0c01523999a7681182eccfabd71d656d45066d0cfe",
+        "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_controls_sources/selected_rows.json": "187e8642e3ecbcb0340116eb5324cd197f3be9d548ffb5ed2c39e24cf9c88896"
+      },
+      "identities": {
+        "M575": "Two complete rear high-speed rods, SNL195:007; two3/4 inch jam nuts per assembly SNL195:008. No extra M576 segment.",
+        "M563": "Two high-speed rod springs, SNL220; SNL6 plan shows coil between rear fork nut and fixed guide. Compression-spring ends/stock/turns unprinted.",
+        "M569B": "Two wider rear forks, SNL87:003 prints1.5 inch without length datum. Socket-length interpretation selected to agree with the family; throat23.8125 is estimated.",
+        "M569C/M568C": "Forward rod joints use existing narrower fork/pin/keeper at actual M640 receiving bore.",
+        "M4135": "Shared guide identity/quantity retained. Offset return profile is a clearance-based estimate, not recovered manufacturing geometry."
+      },
+      "construction": [
+        "Reuse the original local SNL6 drum registration without refitting. Rear high-control pin pixel1490,908 is now a construction constraint, NOT a holdout. Dotted upper silhouette remains discrepant and may show another pose; it is not claimed validated.",
+        "Revise only distal M355A/B profile and lower two joining-rivet stations. Upper pivots, brake adjustment, spring/saddle and first two rivets remain unchanged.",
+        "Restore actual clutch floor attachment. Saved floor is527.05..533.05, while prior feet began584.4194307. Preserve main and auxiliary journal centers and all functional upper clutch connections.",
+        "SH953A lower casting uses two floor pads and a raised bridge around the existing rear channel. Move its rear screw pair12.45mm aft, preserving four source-sized screws. Upper anchor lugs retained above the bridge. This is an unproven mounting/profile hypothesis.",
+        "M4135 bored tab sits38.1mm aft of unchanged riveted foot on a raised return. This leaves room for a smooth rod bend before the clutch auxiliary lever. Both guides share one definition.",
+        "Complete M575 travels from the real rear fork socket through the guide to the high intermediate rocker. Gentle end transitions and a dip under the clutch shaft are estimates constrained by retained solids. Static only; no motion or force validation.",
+        "Nominal cylindrical thread envelopes; real thread helices and spring free rate/preload unknown."
+      ],
+      "limits": [
+        "No whole-length scaling across broken SNL6/HB92 rods.",
+        "No historical accuracy inferred from absence of collisions.",
+        "Intermediate shaft and driver station remain conditional on provisional driver datum."
+      ]
+    },
+    "rear_pin_local_mm": [
+      180.863813229572,
+      0.0,
+      -263.8832684824903
+    ],
+    "lever_controls": {
+      "pin_diameter": 15.875,
+      "pin_bore_clearance": 0.15,
+      "pin_head_radius": 11.1125,
+      "pin_head_stock": 3.96875,
+      "pin_axial_clearance": 0.25,
+      "cotter_station_overhang": 1.4,
+      "pin_end_beyond_cotter": 3.96875,
+      "cotter_diameter": 4.7625,
+      "cotter_length": 31.75,
+      "cotter_hole_clearance": 0.15,
+      "cotter_center_spacing": 2.4765,
+      "crown_radius": 7.9375,
+      "cotter_head_gap": 0.8,
+      "cotter_exit_gap": 0.8,
+      "cotter_bend_radius": 2.38125,
+      "cotter_bend_angle": 35,
+      "cotter_eye_radius": 3.175,
+      "cotter_eye_rise": 2.38125,
+      "cotter_eye_join_overlap": 0.03,
+      "lever_width": 25.4,
+      "lever_eye_radius": 14.2875,
+      "lever_end_center": [
+        180.863813229572,
+        0.0,
+        -263.8832684824903
+      ],
+      "lever_end_radius": 14.2875,
+      "lever_end_bore_radius": 8.0875,
+      "lever_outer_curve_xz": [
+        [
+          213.0,
+          63.2875
+        ],
+        [
+          245,
+          63.5
+        ],
+        [
+          263,
+          63.5
+        ],
+        [
+          287,
+          52
+        ],
+        [
+          309,
+          33
+        ],
+        [
+          320,
+          10
+        ],
+        [
+          322,
+          -10
+        ]
+      ],
+      "lever_inner_curve_xz": [
+        [
+          287,
+          -5
+        ],
+        [
+          283,
+          1
+        ],
+        [
+          271,
+          8
+        ],
+        [
+          251,
+          18
+        ],
+        [
+          234,
+          26
+        ],
+        [
+          213,
+          34.7125
+        ]
+      ],
+      "lever_rivet_centers_xz": [
+        [
+          237.35,
+          47.625
+        ],
+        [
+          292.1,
+          22.225
+        ],
+        [
+          269.94511461722254,
+          -77.86597489223725
+        ],
+        [
+          192.31691627187934,
+          -239.71645213824223
+        ]
+      ],
+      "rivet_diameter": 9.525,
+      "rivet_stock_length": 34.925,
+      "rivet_hole_clearance": 0.15,
+      "rivet_head_radius": 9.525,
+      "rivet_head_height": 4.7625,
+      "rivet_tail_radius": 9.525,
+      "screw_axis_angle_deg": 31.0,
+      "screw_radius": 7.9375,
+      "screw_guide_radius": 9.525,
+      "screw_length": 177.8,
+      "screw_eye_radius": 14.2875,
+      "screw_shoulder_radius": 14.2875,
+      "screw_shoulder_distance": 25.4,
+      "screw_shoulder_stock": 3.175,
+      "screw_guide_above_lower_washer": 6.35,
+      "washer_a_bore_diameter": 17.4625,
+      "washer_b_bore_diameter": 20.6375,
+      "washer_outer_radius": 15.875,
+      "washer_stock": 3.175,
+      "spring_installed_height": 50.8,
+      "spring_wire_radius": 1.5875,
+      "spring_mean_radius": 12.7,
+      "spring_turns": 6,
+      "lever_upper_seat_distance": 133.35,
+      "lever_screw_bore_radius": 8.2375,
+      "nut_neck_radius": 12.7,
+      "nut_neck_length": 19.05,
+      "nut_wing_length": 76.2,
+      "nut_wing_width": 15.875,
+      "nut_wing_stock": 9.525,
+      "nut_hex_af": 22.225,
+      "nut_hex_stock": 9.525,
+      "thread_bore_clearance": 0.15,
+      "lever_seat_half_width": 12.7
+    },
+    "fork_controls": {
+      "fork_length": 61.9125,
+      "fork_length_datum": "pin_center_to_rod_seat",
+      "ear_radius": 14.2875,
+      "ear_stock": 4.7625,
+      "lever_width": 25.4,
+      "side_clearance": 0.25,
+      "throat_end": 23.8125,
+      "ear_shoulder": 32,
+      "socket_radius": 12.7,
+      "pin_diameter": 15.875,
+      "pin_bore_radial_gap": 0.15,
+      "pin_length": 41.275,
+      "pin_head_radius": 11.1125,
+      "pin_head_stock": 3.175,
+      "cotter_station_beyond_fork": 2.3,
+      "cotter_diameter": 3.175,
+      "cotter_hole_radial_gap": 0.1,
+      "cotter_length": 25.4,
+      "cotter_center_spacing": 1.651,
+      "crown_radius": 7.9375,
+      "cotter_head_gap": 0.8,
+      "cotter_exit_gap": 0.8,
+      "cotter_bend_radius": 2.0,
+      "cotter_bend_angle": 35.0,
+      "cotter_eye_radius": 3.0,
+      "cotter_eye_rise": 2.0,
+      "cotter_eye_join_overlap": 0.03,
+      "rod_diameter": 19.05,
+      "thread_envelope_radial_gap": 0.1,
+      "minimum_thread_engagement": 19.05,
+      "fork_pitch_deg": -12.0,
+      "shared_nut_definition": "Def_ClutchBrake_rod_nut",
+      "shared_nut_height": 12.7,
+      "shared_nut_af": 28.575
+    },
+    "guide_controls": {
+      "parent": "fulcrum_integrated01",
+      "channel_stock": 6.35,
+      "bracket": {
+        "stock": 6.35,
+        "guide_height": 103.66967269398026,
+        "tab_radius": 19.05,
+        "guide_diameter": 20.0,
+        "foot_width": 63.5,
+        "bottom": 9.525,
+        "shoulder_bottom": 35.0,
+        "shoulder_top": 50.8,
+        "rivet_height": 25.4,
+        "rivet_y": [
+          -19.05,
+          19.05
+        ]
+      },
+      "rivet": {
+        "diameter": 12.7,
+        "stock_length": 19.05,
+        "hole_diameter": 13.0,
+        "factory_ratio": 1.75,
+        "factory_height_ratio": 0.7,
+        "upset_ratio": 1.75
+      },
+      "stations": {
+        "Starboard": [
+          2317.4500000000003,
+          -222.25,
+          533.05
+        ],
+        "Port": [
+          2317.4500000000003,
+          273.05,
+          533.05
+        ]
+      },
+      "mount_face": "rear_flange"
+    }
+  },
+  "expected_new_occurrences": {
+    "StarboardRearHighRod": {
+      "definition": "Def_StarboardHighRod_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2055.2209552753357,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearHighControls",
+        "StarboardRearHighControl"
+      ]
+    },
+    "StarboardHighRodSpring": {
+      "definition": "Def_HighRodSpring_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2093.3209552753356,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearHighControls",
+        "StarboardRearHighControl"
+      ]
+    },
+    "PortRearHighRod": {
+      "definition": "Def_PortHighRod_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2055.2209552753357,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearHighControls",
+        "PortRearHighControl"
+      ]
+    },
+    "PortHighRodSpring": {
+      "definition": "Def_HighRodSpring_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2093.3209552753356,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearHighControls",
+        "PortRearHighControl"
+      ]
+    },
+    "StarboardHighIntermediateJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearHighControls",
+        "StarboardRearHighControl",
+        "StarboardHighIntermediateJoint"
+      ]
+    },
+    "StarboardHighIntermediateJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearHighControls",
+        "StarboardRearHighControl",
+        "StarboardHighIntermediateJoint"
+      ]
+    },
+    "StarboardHighIntermediateJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        -106.57500000000005,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearHighControls",
+        "StarboardRearHighControl",
+        "StarboardHighIntermediateJoint"
+      ]
+    },
+    "StarboardHighIntermediateJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        5882.403142135459,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearHighControls",
+        "StarboardRearHighControl",
+        "StarboardHighIntermediateJoint"
+      ]
+    },
+    "PortHighIntermediateJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearHighControls",
+        "PortRearHighControl",
+        "PortHighIntermediateJoint"
+      ]
+    },
+    "PortHighIntermediateJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearHighControls",
+        "PortRearHighControl",
+        "PortHighIntermediateJoint"
+      ]
+    },
+    "PortHighIntermediateJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        143.42499999999995,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearHighControls",
+        "PortRearHighControl",
+        "PortHighIntermediateJoint"
+      ]
+    },
+    "PortHighIntermediateJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -2.220446049250313e-16,
+        0.0,
+        -1.0,
+        5882.403142135459,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearHighControls",
+        "PortRearHighControl",
+        "PortHighIntermediateJoint"
+      ]
+    }
+  },
+  "expected_changed_occurrences": {
+    "ClutchSupport_LeftMount1": {
+      "definition": "Def_ClutchSupport_left_cap",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2669.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        153.0,
+        0.0,
+        0.0,
+        1.0,
+        527.0499999999997,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionCore",
+        "ClutchThrowout",
+        "ClutchSupports"
+      ]
+    },
+    "ClutchSupport_LeftMount2": {
+      "definition": "Def_ClutchSupport_left_cap",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2669.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        217.0,
+        0.0,
+        0.0,
+        1.0,
+        527.0499999999997,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionCore",
+        "ClutchThrowout",
+        "ClutchSupports"
+      ]
+    },
+    "ClutchSupport_LeftMount3": {
+      "definition": "Def_ClutchSupport_left_cap",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2287.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        153.0,
+        0.0,
+        0.0,
+        1.0,
+        527.0499999999997,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionCore",
+        "ClutchThrowout",
+        "ClutchSupports"
+      ]
+    },
+    "ClutchSupport_LeftMount4": {
+      "definition": "Def_ClutchSupport_left_cap",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2287.4946420457636,
+        0.0,
+        1.0,
+        0.0,
+        217.0,
+        0.0,
+        0.0,
+        1.0,
+        527.0499999999997,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionCore",
+        "ClutchThrowout",
+        "ClutchSupports"
+      ]
+    },
+    "ClutchSupport_RightMount1": {
+      "definition": "Def_ClutchSupport_right_cap",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2559.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        -217.0,
+        0.0,
+        0.0,
+        1.0,
+        527.0499999999997,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionCore",
+        "ClutchThrowout",
+        "ClutchSupports"
+      ]
+    },
+    "ClutchSupport_RightMount2": {
+      "definition": "Def_ClutchSupport_right_cap",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2559.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        -153.0,
+        0.0,
+        0.0,
+        1.0,
+        527.0499999999997,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionCore",
+        "ClutchThrowout",
+        "ClutchSupports"
+      ]
+    },
+    "ClutchSupport_RightMount3": {
+      "definition": "Def_ClutchSupport_right_cap",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2669.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        -217.0,
+        0.0,
+        0.0,
+        1.0,
+        527.0499999999997,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionCore",
+        "ClutchThrowout",
+        "ClutchSupports"
+      ]
+    },
+    "ClutchSupport_RightMount4": {
+      "definition": "Def_ClutchSupport_right_cap",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2669.9446420457634,
+        0.0,
+        1.0,
+        0.0,
+        -153.0,
+        0.0,
+        0.0,
+        1.0,
+        527.0499999999997,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionCore",
+        "ClutchThrowout",
+        "ClutchSupports"
+      ]
+    },
+    "StarboardHighSpeedBrakeLeverRivet3": {
+      "definition": "Def_HighBrakeMechanism_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2101.439756662986,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        822.7369662842333,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeLeverRivet4": {
+      "definition": "Def_HighBrakeMechanism_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2023.811558317643,
+        0.0,
+        1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        1.0,
+        660.8864890382283,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeLeverRivet3": {
+      "definition": "Def_HighBrakeMechanism_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2101.439756662986,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        822.7369662842333,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "PortHighSpeedBrakeLeverRivet4": {
+      "definition": "Def_HighBrakeMechanism_rivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2023.811558317643,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        660.8864890382283,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeOperatingLeverAssembly"
+      ]
+    },
+    "StarboardHighSpeedBrakeControlFork": {
+      "definition": "Def_ControlJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2012.3584552753357,
+        0.0,
+        -1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        -1.0,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeControlJoint"
+      ]
+    },
+    "StarboardHighSpeedBrakeControlPin": {
+      "definition": "Def_ControlJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2012.3584552753357,
+        0.0,
+        -1.0,
+        0.0,
+        -222.25000000000006,
+        0.0,
+        0.0,
+        -1.0,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeControlJoint"
+      ]
+    },
+    "StarboardHighSpeedBrakeControlCotter": {
+      "definition": "Def_ControlJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2012.3584552753357,
+        0.0,
+        -1.0,
+        0.0,
+        -242.26250000000005,
+        0.0,
+        0.0,
+        -1.0,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeControlJoint"
+      ]
+    },
+    "StarboardHighSpeedBrakeControlNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2074.270955275336,
+        0.0,
+        -1.0,
+        0.0,
+        -222.25000000000006,
+        1.0,
+        0.0,
+        -2.220446049250313e-16,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "StarboardHighSpeedBrake",
+        "StarboardHighSpeedBrakeControlJoint"
+      ]
+    },
+    "PortHighSpeedBrakeControlFork": {
+      "definition": "Def_ControlJoint_fork",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2012.3584552753357,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeControlJoint"
+      ]
+    },
+    "PortHighSpeedBrakeControlPin": {
+      "definition": "Def_ControlJoint_pin",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2012.3584552753357,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeControlJoint"
+      ]
+    },
+    "PortHighSpeedBrakeControlCotter": {
+      "definition": "Def_ControlJoint_cotter",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2012.3584552753357,
+        0.0,
+        1.0,
+        0.0,
+        242.2625,
+        0.0,
+        0.0,
+        1.0,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeControlJoint"
+      ]
+    },
+    "PortHighSpeedBrakeControlNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2074.270955275336,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        636.7196726939802,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "TransmissionHighSpeedBrakes",
+        "PortHighSpeedBrake",
+        "PortHighSpeedBrakeControlJoint"
+      ]
+    },
+    "PortHighSpringBracket": {
+      "definition": "Def_RearSupport_high_bracket",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        2317.4500000000003,
+        0.0,
+        1.0,
+        0.0,
+        222.25,
+        0.0,
+        0.0,
+        1.0,
+        533.05,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortHighSpringSupport"
+      ]
+    },
+    "PortHighSpringRivet1": {
+      "definition": "Def_RearSupport_high_rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2317.4500000000003,
+        0.0,
+        1.0,
+        0.0,
+        203.2,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortHighSpringSupport"
+      ]
+    },
+    "PortHighSpringRivet2": {
+      "definition": "Def_RearSupport_high_rivet",
+      "frame": [
+        2.220446049250313e-16,
+        0.0,
+        1.0,
+        2317.4500000000003,
+        0.0,
+        1.0,
+        0.0,
+        241.3,
+        -1.0,
+        0.0,
+        2.220446049250313e-16,
+        558.4499999999999,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owners": [
+        "Root",
+        "RearControlChannel",
+        "PortHighSpringSupport"
+      ]
+    }
+  },
+  "new_occurrences": [
+    "StarboardRearHighRod",
+    "StarboardHighRodSpring",
+    "PortRearHighRod",
+    "PortHighRodSpring",
+    "StarboardHighIntermediateJointFork",
+    "StarboardHighIntermediateJointPin",
+    "StarboardHighIntermediateJointCotter",
+    "StarboardHighIntermediateJointNut",
+    "PortHighIntermediateJointFork",
+    "PortHighIntermediateJointPin",
+    "PortHighIntermediateJointCotter",
+    "PortHighIntermediateJointNut"
+  ],
+  "new_definitions": [
+    "Def_HighRodSpring_Redo",
+    "Def_PortHighRod_Redo",
+    "Def_StarboardHighRod_Redo"
+  ],
+  "changed_definitions": [
+    "Def_ClutchSupport_floor_revision",
+    "Def_ClutchSupport_left_bracket",
+    "Def_ClutchSupport_right_bracket",
+    "Def_ControlJoint_fork",
+    "Def_HighBrakeMechanism_lever_left",
+    "Def_HighBrakeMechanism_lever_right",
+    "Def_RearControlMount_channel",
+    "Def_RearSupport_high_bracket"
+  ],
+  "added_children": {
+    "Definitions": [
+      "Def_HighRodSpring_Redo",
+      "Def_PortHighRod_Redo",
+      "Def_StarboardHighRod_Redo"
+    ],
+    "Root": [
+      "RearHighControls"
+    ],
+    "RearHighControls": [
+      "StarboardRearHighControl",
+      "PortRearHighControl"
+    ],
+    "StarboardRearHighControl": [
+      "StarboardHighIntermediateJoint",
+      "StarboardRearHighRod",
+      "StarboardHighRodSpring"
+    ],
+    "PortRearHighControl": [
+      "PortHighIntermediateJoint",
+      "PortRearHighRod",
+      "PortHighRodSpring"
+    ],
+    "StarboardHighIntermediateJoint": [
+      "StarboardHighIntermediateJointFork",
+      "StarboardHighIntermediateJointPin",
+      "StarboardHighIntermediateJointCotter",
+      "StarboardHighIntermediateJointNut"
+    ],
+    "PortHighIntermediateJoint": [
+      "PortHighIntermediateJointFork",
+      "PortHighIntermediateJointPin",
+      "PortHighIntermediateJointCotter",
+      "PortHighIntermediateJointNut"
+    ]
+  },
+  "new_assembly_specs": {
+    "RearHighControls": {
+      "owner": "Root",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardRearHighControl": {
+      "owner": "RearHighControls",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "StarboardHighIntermediateJoint": {
+      "owner": "StarboardRearHighControl",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortRearHighControl": {
+      "owner": "RearHighControls",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "PortHighIntermediateJoint": {
+      "owner": "PortRearHighControl",
+      "frame": [
+        -1.0,
+        0.0,
+        0.0,
+        5926.853142135459,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        0.0,
+        0.0,
+        -1.0,
+        640.7435322939596,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "expected_physical_occurrences": 3359,
+  "expected_definition_count": 589,
+  "expected_assembly_count": 390,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false,
+  "standard_assembly_modified": false,
+  "packet_complete": false
+}

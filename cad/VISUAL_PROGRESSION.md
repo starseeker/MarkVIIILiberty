@@ -1,5 +1,17 @@
 # Mark VIII visual progression
 
+## Complete rear high-speed controls — 27 September 2026
+
+Four inspected subsystem views bring accepted progression to **270 images**.
+Full M575 rods, seated M563 coils and corrected floor mounts are now visible.
+The source overlay reuses the existing registration; its rear pin was used for
+construction. Remaining historical profile disagreement is retained.
+
+- [iso](intermediate_snapshot_iso_control_rebuild_high_001.png)
+- [side](intermediate_snapshot_side_control_rebuild_high_001.png)
+- [plan](intermediate_snapshot_plan_control_rebuild_high_001.png)
+- [source](intermediate_snapshot_source_control_rebuild_high_001.png)
+
 ## Straight rear track-brake connections — 24 September 2026
 
 Two SH946D rods share one definition. Revised M330 distal arms and M4132 short
