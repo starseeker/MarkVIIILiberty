@@ -2224,6 +2224,42 @@
         "date": "2026-09-27",
         "basis": "Full source figures, traced leaders, saved-native profile probes and fixed-calibration comparisons; no camera fitting."
       }
+    },
+    {
+      "id": "coupled_driver_station_20260927",
+      "status": "open_evidence",
+      "scope": "Complete coupled driver/intermediate/clutch-swing station, printed rods, real mounts and seat support; static construction hypothesis.",
+      "reason": "Source-based station needs aft propagation through complete rods and receivers. Full context exposes the old clutch splay crossing the front stay bolt/support; a later outward set preserves all printed reaches and lower/grip material.",
+      "uncertainty": "Tentative shaft identities,37in handle datum, M772 bend, side-plate outline and unprinted rear paths remain estimates.",
+      "limits": [
+        "394 local occurrences/125 definitions;113 retained context additions are not new tank inventory.",
+        "Nominal/+5mm:1075+31 checks,1168/1166 clear context pairs,329 STEP each;391-BRep fresh rebuild.",
+        "M772 max60mm setback gives7.124mm bolt clearance but19.871px plan departure; no source camera refit or historical shape acceptance.",
+        "Full integration and remaining seat adjustment/foot/reverse components remain open; accepted progression308 unchanged."
+      ],
+      "reopen_when": [
+        "Seat adjusting interfaces or better source identities contradict the chosen plate/blade outlines.",
+        "Remaining foot/reverse routes contradict the coupled station."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/coupled_driver_station_study/study_receipt.json",
+          "sha256": "8900d98c5323d6301923ed3f45a76b5e4b584563285340afc40d9fca5a3c63a7"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/coupled_driver_station_study/README.md",
+          "sha256": "c944f008249ff1053679dbdaebcd5263e5d1ca6d7375c4d58be2e5c31ad7d658"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/coupled_driver_station_study/trial02/visual01/visual_review.json",
+          "sha256": "7bec10b4bfc5819312bdecad23346d5c6c3bc31bfa02fcdac86c4f84cd94d980"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Saved-native stock/joints, full context, strict STEP, variation/reproduction and six inspected views; differences retained."
+      }
     }
   ]
 }

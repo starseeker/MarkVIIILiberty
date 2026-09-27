@@ -11,6 +11,32 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — complete coupled driver/control station trial
+
+The [coupled study](experiments/drive_chains/coupled_driver_station_study/README.md)
+propagates the proposed driver position through all existing connected rods,
+22 intermediate parts,37 clutch-swing/center-rod parts and actual floor mounts.
+The full1257.3mm M574 cores and2362.2mm SH229A stock are preserved. The local
+native contains394 occurrences/125 definitions;113 additions relative to the
+seat-support prototype are retained context, not new tank inventory.
+
+Nominal and+5mm main-X variants pass1,075 saved-material/joint checks,31 additional
+contact/floor checks and329 strict STEP comparisons each. All1,168/1,166 nearby
+pairs clear full retained context without exemptions. Fresh construction reproduces
+391 BReps and20,529 persistent properties. Four local/source views and two
+complete-route views were inspected; a
+[new diagnostic isometric](../intermediate_snapshot_iso_coupled_station_study_20260927.png)
+is retained.
+
+The first coupled trial had three clutch/seat-support intersections. A documented
+later outward set of the complete M772 middle blade clears them while retaining
+printed reach, hub, bell and grip. It departs from the schematic plan; the support
+fore-edge also remains visibly approximate. Source registrations are unchanged.
+Next reconcile the remaining seat-adjustment identities, including newly found
+SH291D/SH291F rivet applications, and revisit the support outline before completing
+foot/reverse controls and full integration. Accepted development remains3,582/635/442,
+standard tank011 and accepted progression308 unchanged.
+
 ## 27 September 2026 — identify shaft landmarks before revising placement
 
 The [station review](experiments/drive_chains/driver_station_review/README.md)

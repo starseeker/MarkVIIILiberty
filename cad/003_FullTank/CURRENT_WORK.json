@@ -14,6 +14,7 @@
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_coupled_driver_station_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_station_review.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_seat_support_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_seat_study.py",
@@ -42,7 +43,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Build a coupled driver/intermediate layout from driver_station_review/visibility01: tentative main X7461.419/Z990.022, swing separation406.530mm retained. Full M574 stock requires intermediate receiver X shift-165.521mm at retained Y/Z. Propagate through complete front/rear rods, actual intermediate and driver floor mounts, and connected seat supports; do not move isolated eyes or shorten printed stock. Functional-source handles are a candidate (37.24mm bow clearance in the bounded probe), not accepted geometry. Recheck full context and source before integration, then finish SH291C/adjustment fittings.",
+  "next_action": "Reconcile remaining seat adjustment/locking fittings: separate SH291C clip and newly found SH291D handle/SH291F cleat rivet references. Inspect original source context before assigning them. Revisit source-visible support fore-edge with those interfaces, then populate remaining driver foot/reverse controls on the complete coupled trial02 station. Preserve full M574/SH229A stock, rigid receivers, actual floor mounts, fixed source registrations and explicit M772 bend uncertainty. Qualify full coupled integration after those source/interface decisions.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -147,7 +148,10 @@
     "Seat support discovery: initial packet omitted two front SH289B/two rear SH289D stays and their eight bolt/nut/lock stacks. Original SNL33 upper bolts are19.05x60.325mm, incompatible with the trial06 estimated16.3mm bores; revision required before connection. Lower bolts are12.7x34.925mm. Upper row names A/B; stay and lower-bolt rows B/D. This is a printed-source conflict, not a transcription correction. M788 angle/folded-foot allocation also needs reconstruction.",
     "Seat support trial01 supersedes the seat-side16.3mm bore estimate with19.3mm clearance for full19.05mm bolts. Four B/D stays, their complete upper/lower fasteners, two separate M788 angles and full floor mounts are built. Existing plate bolts relocate to vertical angle leaves. Part-boundary allocation, dogleg/projected stock, head/nut exteriors, source A/B versus B/D identity conflict and historical position remain explicit estimates. SH291C and full adjustment/locking remain unfinished.",
     "SNL2 source visibility: callout56 is a left6-pdr tool box per original SNL35:032. Previously assumed driver joint circles/edges need positive identity and foreground occlusion review. This questions the strength of the earlier shaft-height comparison but does not itself prove any shaft location or resolve SNL6 grip discrepancies.",
-    "Driver station review: tentative SNL2 side-plate end pair (477,428)/(545,425) gives main X7461.419/Z990.022. Shaft spacing consistency0.664px does not prove feature identity. Complete M574 rods require coupled receiver relocation; four bounded clearance probes omit long rods/supports/full tank. No automatic camera refit or integration."
+    "Driver station review: tentative SNL2 side-plate end pair (477,428)/(545,425) gives main X7461.419/Z990.022. Shaft spacing consistency0.664px does not prove feature identity. Complete M574 rods require coupled receiver relocation; four bounded clearance probes omit long rods/supports/full tank. No automatic camera refit or integration.",
+    "Coupled station trial02 preserves complete printed rod stock and real floor attachments, but remains a construction hypothesis at tentative mainX7461.419/Z990.022. Accepted operating_integrated01 remains unchanged.",
+    "M772 delayed outward set retains printed hand/bell reach and actual grip/hub;60mm maximum middle-blade shift clears the front stay bolt by7.124mm but departs from schematic plan by19.871px. Ruled profile and transverse stock remain estimates.",
+    "Current M786/M787 fore-edge is more diagonal than source section; complete adjustment fittings may affect this outline. SH291D/SH291F are newly discovered functional rivet references, not yet established seat-adjuster geometry."
   ],
   "visual_progression_count": 308,
   "next_packet": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/README.md",
@@ -215,6 +219,14 @@
     "receipt": "cad/003_FullTank/experiments/drive_chains/driver_station_review/study_receipt.json",
     "status": "Source identity review and four150-part saved clearance probes complete.804 pairs clear, no exemptions; no installation or historical acceptance. New conditional shaft pair suggests aft translation rather than a large height change. Existing supports and long rods require coupled reconstruction.",
     "supersedes": "Earlier unqualified assertion that a positively identified main-shaft landmark disproved Z975. Tool-box identity does not establish the whole sloping outline as the box.",
+    "geometry_integrated": false
+  },
+  "active_coupled_station_study": {
+    "path": "cad/003_FullTank/experiments/drive_chains/coupled_driver_station_study",
+    "native": "cad/003_FullTank/experiments/drive_chains/coupled_driver_station_study/trial02/ControlRebuildTrial.FCStd",
+    "native_sha256": "54faa2a94046df78cc1a58e53c4d2a433b6e281624fc8c73e1b8fb4266c084a4",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/coupled_driver_station_study/study_receipt.json",
+    "status": "Nominal/+5mm main-X builds mechanically checked:1075+31 checks,1168/1166 context pairs,329 STEP each,391-BRep fresh reproduction. Source discrepancies and remaining controls explicit; not integrated.",
     "geometry_integrated": false
   }
 }

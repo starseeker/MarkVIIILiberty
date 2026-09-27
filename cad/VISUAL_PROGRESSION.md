@@ -1473,3 +1473,11 @@ separate support angles seated on the actual floor. The full local assembly is
 mechanically checked; source placement and remaining adjusting fittings are
 unresolved. Accepted tank progression remains **308**. See
 [snapshot provenance](003_FullTank/experiments/drive_chains/driver_seat_support_study/snapshot_provenance.json).
+## 27 September 2026 — coupled driver/control station (diagnostic)
+
+[Coupled driver/seat isometric](intermediate_snapshot_iso_coupled_station_study_20260927.png)
+shows the revised station, complete support hardware and conditional clutch bend
+inside a wireframe bow. [Complete rod overview](003_FullTank/experiments/drive_chains/coupled_driver_station_study/trial02/routes_visual01/isometric.png)
+shows the connected existing routes. Nominal and variation pass mechanical checks;
+source-profile differences and missing controls remain explicit. Accepted
+progression remains308. See [provenance](003_FullTank/experiments/drive_chains/coupled_driver_station_study/snapshot_provenance.json).
