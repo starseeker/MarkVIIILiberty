@@ -11,6 +11,28 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — complete static seat support connections
+
+The [connected support study](experiments/drive_chains/driver_seat_support_study/BUILD.md)
+adds **54 parts**, giving **281 local occurrences / 97 definitions**. Four stays
+now connect the seat to the side plates with full source-sized upper/lower
+bolts. Bearing bores are corrected to 19.3 mm. Separate M788 angles attach to the
+actual floor; the eight existing plate bolt sets move to vertical plate/angle
+joints, and eight longer bolt sets fasten the angles to the floor.
+
+Nominal and +5 mm lower-joint variation each pass **607 material/interface checks
+and 96 strict STEP comparisons**. Collision audits find no intersections in
+**269 / 267 nearby pairs**, with no exemptions. A fresh build reproduces 291
+archived BReps and 15,059 stable properties. Inspected isometric, connection and
+fixed source-section views are retained with a
+[new diagnostic snapshot](../intermediate_snapshot_iso_seat_supports_study_20260927.png).
+
+Source placement, adjusting/locking details and plate/angle part boundaries
+remain conditional. Original SNL35 identifies Plate 2 callout56 as a gun-tool
+box; next verify the identities and visibility of the earlier assumed shaft
+landmarks against SNL6/HB6 before further height conclusions or coupled
+integration. Accepted development stays **3,582 / 635 / 442**, progression **308**.
+
 ## 27 September 2026 — missing seat stays recovered from catalogue
 
 The [support packet](experiments/drive_chains/driver_seat_support_study/README.md)

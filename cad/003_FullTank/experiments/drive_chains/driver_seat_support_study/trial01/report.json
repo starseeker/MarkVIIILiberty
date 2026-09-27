@@ -1,0 +1,7709 @@
+{
+  "native_file": "ControlRebuildTrial.FCStd",
+  "native_sha256": "06dac4aba207e8ef4bc856c2c08ecb29ee85a715ecc63cdfe0d800df21e6005f",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/driver_seat_study/trial06/ControlRebuildTrial.FCStd",
+  "parent_native_sha256": "b44b9acf37f1a72326d8e42780b13229f73e9513f9cb193106f253eecf8a51a3",
+  "parent_manifest_sha256": "fa6bb8e02e1515172c7e53d9348620abc5b2770d0102e7e911b90081b381dd45",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_driver_seat_supports.py": "acacfd60d26603d34b016d599e7ba1ab234f9b8e1ad56aafa1384709aa01827d",
+    "cad/003_FullTank/experiments/drive_chains/driver_seat_support_parts.py": "33290558a3a17d779fc6a78767580b1d2b176f522daeebed79d85d4865a20bec",
+    "cad/003_FullTank/experiments/drive_chains/bow_reconstruction_parts.py": "4f004ab7e8e42aa27321453a560b3b4ce35b921131e3701c4ef8901454afdb67",
+    "cad/003_FullTank/experiments/drive_chains/engine_suspension_parts.py": "b3ae8ddce916bddc684d2abe97819aa1b07e4e090439b4dbf2a83c4a861f3026",
+    "cad/003_FullTank/experiments/drive_chains/driver_seat_support_study/evidence_receipt.json": "1ea2bdfd80833d590b3fcec9b6fb9f167072777182fdb1bc01bfa36eade76be0",
+    "cad/003_FullTank/experiments/drive_chains/driver_seat_support_study/evidence01/interface_constraints.json": "cb2e37149afe21edb0a67faf7660e12d0536779b6b663207217e2e91ba82cd43",
+    "cad/003_FullTank/experiments/drive_chains/driver_seat_study/trial06/report.json": "142352c0077918ec353448ac50ac0c6d1796c9612bbdbdf9ac4cb479f8e49276",
+    "cad/003_FullTank/experiments/drive_chains/driver_seat_study/trial06/isolated/manifest.json": "fa6bb8e02e1515172c7e53d9348620abc5b2770d0102e7e911b90081b381dd45",
+    "cad/003_FullTank/experiments/drive_chains/driver_seat_study/study_receipt.json": "9028c88d1673318b3256cf74494d0937b0f13eae3960551962a58a8614989070",
+    "cad/003_FullTank/experiments/drive_chains/driver_layout_study/trial01/report.json": "0caf614301de1fb5700c34b8796cc14dc2916863d472c7a62870e4db7325e6a4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/report.json": "37df533c9c5883b0bef0d1c521210c18250aa1d20cc36ed0b0b55529b30ad5b0"
+  },
+  "specs": {
+    "DriverMainShaft": {
+      "definition": "Def_DriverMainShaft_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7627.311900469729,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        975.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverMainPortNut": {
+      "definition": "Def_TransmissionPin_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7627.311900469729,
+        0.0,
+        1.0,
+        0.0,
+        -240.30214285714288,
+        0.0,
+        0.0,
+        1.0,
+        975.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverMainPortKeeper": {
+      "definition": "Def_DriverMainKeeper_MountStudy",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7627.311900469729,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        305.425,
+        -0.0,
+        0.0,
+        1.0,
+        975.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverMainStarboardNut": {
+      "definition": "Def_TransmissionPin_nut",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        7627.311900469729,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        240.30214285714288,
+        0.0,
+        0.0,
+        1.0,
+        975.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverMainStarboardKeeper": {
+      "definition": "Def_DriverMainKeeper_MountStudy",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7627.311900469729,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        -305.425,
+        -0.0,
+        0.0,
+        1.0,
+        975.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSwingShaft": {
+      "definition": "Def_DriverSwingShaft_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSwingPortNut": {
+      "definition": "Def_TransmissionSmallSupport_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        -1.0,
+        -1.2246467991473532e-16,
+        612.7750000000001,
+        0.0,
+        1.2246467991473532e-16,
+        -1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSwingPortKeeper": {
+      "definition": "Def_DriverSwingKeeper_MountStudy",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7220.781516342379,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        298.925,
+        -0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSwingStarboardNut": {
+      "definition": "Def_TransmissionSmallSupport_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -612.7750000000001,
+        0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSwingStarboardKeeper": {
+      "definition": "Def_DriverSwingKeeper_MountStudy",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7220.781516342379,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        -298.925,
+        -0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardReverseDriverSwingLink": {
+      "definition": "Def_DriverSwingLink_M784",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -235.0,
+        0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardHighDriverSwingLink": {
+      "definition": "Def_DriverSwingLink_M784",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortHighDriverSwingLink": {
+      "definition": "Def_DriverSwingLink_M784",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortClutchDriverSwingLink": {
+      "definition": "Def_DriverSwingLink_M784",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchShortRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9815450400346221,
+        -0.0,
+        -0.19123110202953966,
+        7265.781516342379,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.19123110202953966,
+        0.0,
+        0.9815450400346221,
+        777.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchShortRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9815450400346221,
+        -0.0,
+        -0.19123110202953966,
+        7265.781516342379,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.19123110202953966,
+        0.0,
+        0.9815450400346221,
+        777.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchShortRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9815450400346221,
+        -0.0,
+        -0.19123110202953966,
+        7265.781516342379,
+        0.0,
+        1.0,
+        -0.0,
+        253.42499999999995,
+        0.19123110202953966,
+        0.0,
+        0.9815450400346221,
+        777.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchShortRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.1912311020295272,
+        0.0,
+        0.9815450400346244,
+        7309.411193371919,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.9815450400346244,
+        0.0,
+        0.1912311020295272,
+        785.5002224852124,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchShortForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9815450400346246,
+        0.0,
+        0.1912311020295261,
+        7630.400960089241,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.1912311020295261,
+        0.0,
+        -0.9815450400346246,
+        848.0375736264186,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchShortForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9815450400346246,
+        0.0,
+        0.1912311020295261,
+        7630.400960089241,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.1912311020295261,
+        0.0,
+        -0.9815450400346246,
+        848.0375736264186,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchShortForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9815450400346246,
+        0.0,
+        0.1912311020295261,
+        7630.400960089241,
+        0.0,
+        1.0,
+        0.0,
+        253.42499999999995,
+        -0.1912311020295261,
+        0.0,
+        -0.9815450400346246,
+        848.0375736264186,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchShortForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.19123110202952742,
+        -0.0,
+        -0.9815450400346244,
+        7586.771283059703,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.9815450400346244,
+        0.0,
+        -0.19123110202952742,
+        839.5373511412063,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchOperatingLever": {
+      "definition": "Def_DriverClutchLever_M772",
+      "frame": [
+        0.7360233666112133,
+        0.0,
+        0.6769561313721115,
+        7627.311900469729,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.6769561313721115,
+        0.0,
+        0.7360233666112133,
+        975.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchShortRod": {
+      "definition": "Def_DriverClutchShortRod_M789B",
+      "frame": [
+        0.9815450400346247,
+        -0.0,
+        -0.19123110202952598,
+        7290.712760359259,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.19123110202952598,
+        0.0,
+        0.9815450400346247,
+        781.8572699915501,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchFrontRod": {
+      "definition": "Def_DriverClutchFrontRod_M576",
+      "frame": [
+        0.9998301766770323,
+        -0.0,
+        -0.018428722309869684,
+        5958.313491228073,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.018428722309869684,
+        0.0,
+        0.9998301766770323,
+        675.6060326145815,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowSuspension": {
+      "definition": "Def_DriverLowSuspension_M760",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowConnecting": {
+      "definition": "Def_DriverLowConnecting_M762",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowBrake": {
+      "definition": "Def_DriverLowBrake_M763",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowPin": {
+      "definition": "Def_DriverLowSuspensionPin_M761",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7237.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        827.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowWasher": {
+      "definition": "Def_DriverLowLinkWasher_SH220A",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7237.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        168.65,
+        0.0,
+        0.0,
+        1.0,
+        827.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowKeeper": {
+      "definition": "Def_DriverLowSuspensionKeeper",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7237.781516342379,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        205.65,
+        -0.0,
+        0.0,
+        1.0,
+        827.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowSelector": {
+      "definition": "Def_DriverLowSelector_M756",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7627.311900469729,
+        0.0,
+        1.0,
+        0.0,
+        175.2,
+        0.0,
+        0.0,
+        1.0,
+        975.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowRod": {
+      "definition": "Def_DriverLowFrontRod_M574",
+      "frame": [
+        0.9998193651876026,
+        -0.0,
+        -0.01900623570987199,
+        5958.313216616241,
+        0.0,
+        1.0,
+        -0.0,
+        180.0,
+        0.01900623570987199,
+        0.0,
+        0.9998193651876026,
+        675.6207014549418,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowSelectorPin": {
+      "definition": "Def_DriverLowSelectorJointPin_M790",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7537.311900469729,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        1067.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowSelectorKeeper": {
+      "definition": "Def_DriverLowSuspensionKeeper",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7537.311900469729,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        155.65,
+        -0.0,
+        0.0,
+        1.0,
+        1067.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowSuspension": {
+      "definition": "Def_DriverLowSuspension_M760",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowConnecting": {
+      "definition": "Def_DriverLowConnecting_M762",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowBrake": {
+      "definition": "Def_DriverLowBrake_M763",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        995.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowPin": {
+      "definition": "Def_DriverLowSuspensionPin_M761",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7237.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        827.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowWasher": {
+      "definition": "Def_DriverLowLinkWasher_SH220A",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7237.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -191.35,
+        0.0,
+        0.0,
+        1.0,
+        827.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowKeeper": {
+      "definition": "Def_DriverLowSuspensionKeeper",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7237.781516342379,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        -154.35,
+        -0.0,
+        0.0,
+        1.0,
+        827.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowSelector": {
+      "definition": "Def_DriverLowSelector_M757",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7627.311900469729,
+        0.0,
+        1.0,
+        0.0,
+        -184.8,
+        0.0,
+        0.0,
+        1.0,
+        975.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowRod": {
+      "definition": "Def_DriverLowFrontRod_M574",
+      "frame": [
+        0.9998193651876026,
+        -0.0,
+        -0.01900623570987199,
+        5958.313216616241,
+        0.0,
+        1.0,
+        -0.0,
+        -180.0,
+        0.01900623570987199,
+        0.0,
+        0.9998193651876026,
+        675.6207014549418,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowSelectorPin": {
+      "definition": "Def_DriverLowSelectorJointPin_M790",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7537.311900469729,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        1067.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowSelectorKeeper": {
+      "definition": "Def_DriverLowSuspensionKeeper",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7537.311900469729,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        -204.35,
+        -0.0,
+        0.0,
+        1.0,
+        1067.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighShortRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7265.781516342379,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        777.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighShortRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7265.781516342379,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        777.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighShortRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7265.781516342379,
+        0.0,
+        1.0,
+        -0.0,
+        143.42499999999995,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        777.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighShortRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.1174232895293923,
+        0.0,
+        0.9930819558707612,
+        7309.924009280833,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        -0.9930819558707612,
+        0.0,
+        0.1174232895293923,
+        782.2194652195815,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighShortForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9930819558707611,
+        0.0,
+        0.11742328952939345,
+        7584.238072541236,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        -0.11742328952939345,
+        0.0,
+        -0.9930819558707611,
+        814.6547133698382,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighShortForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9930819558707611,
+        0.0,
+        0.11742328952939345,
+        7584.238072541236,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        -0.11742328952939345,
+        0.0,
+        -0.9930819558707611,
+        814.6547133698382,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighShortForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9930819558707611,
+        0.0,
+        0.11742328952939345,
+        7584.238072541236,
+        0.0,
+        1.0,
+        0.0,
+        143.42499999999995,
+        -0.11742328952939345,
+        0.0,
+        -0.9930819558707611,
+        814.6547133698382,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighShortForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.1174232895293934,
+        -0.0,
+        -0.9930819558707612,
+        7540.095579602782,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.9930819558707612,
+        0.0,
+        -0.1174232895293934,
+        809.4352481502569,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighSelector": {
+      "definition": "Def_DriverHighSelector_M759",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7627.311900469729,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        0.0,
+        0.0,
+        1.0,
+        975.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighShortRod": {
+      "definition": "Def_DriverFrontShortRod_M789A",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7291.005798021497,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        779.9825515540465,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighFrontRod": {
+      "definition": "Def_DriverClutchFrontRod_M576",
+      "frame": [
+        0.9998301766770323,
+        -0.0,
+        -0.018428722309869684,
+        5958.313491228073,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.018428722309869684,
+        0.0,
+        0.9998301766770323,
+        675.6060326145815,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighShortRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7265.781516342379,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        777.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighShortRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7265.781516342379,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        777.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighShortRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7265.781516342379,
+        0.0,
+        1.0,
+        -0.0,
+        -106.57500000000005,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        777.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighShortRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.1174232895293923,
+        0.0,
+        0.9930819558707612,
+        7309.924009280833,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        -0.9930819558707612,
+        0.0,
+        0.1174232895293923,
+        782.2194652195815,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighShortForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9930819558707611,
+        0.0,
+        0.11742328952939345,
+        7584.238072541236,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        -0.11742328952939345,
+        0.0,
+        -0.9930819558707611,
+        814.6547133698382,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighShortForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9930819558707611,
+        0.0,
+        0.11742328952939345,
+        7584.238072541236,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        -0.11742328952939345,
+        0.0,
+        -0.9930819558707611,
+        814.6547133698382,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighShortForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9930819558707611,
+        0.0,
+        0.11742328952939345,
+        7584.238072541236,
+        0.0,
+        1.0,
+        0.0,
+        -106.57500000000005,
+        -0.11742328952939345,
+        0.0,
+        -0.9930819558707611,
+        814.6547133698382,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighShortForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.1174232895293934,
+        -0.0,
+        -0.9930819558707612,
+        7540.095579602782,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.9930819558707612,
+        0.0,
+        -0.1174232895293934,
+        809.4352481502569,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighSelector": {
+      "definition": "Def_DriverHighSelector_M758",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7627.311900469729,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        0.0,
+        0.0,
+        1.0,
+        975.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighShortRod": {
+      "definition": "Def_DriverFrontShortRod_M789A",
+      "frame": [
+        0.9930819558707612,
+        -0.0,
+        -0.11742328952939257,
+        7291.005798021497,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.11742328952939257,
+        0.0,
+        0.9930819558707612,
+        779.9825515540465,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighFrontRod": {
+      "definition": "Def_DriverClutchFrontRod_M576",
+      "frame": [
+        0.9998301766770323,
+        -0.0,
+        -0.018428722309869684,
+        5958.313491228073,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.018428722309869684,
+        0.0,
+        0.9998301766770323,
+        675.6060326145815,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverOperatingFulcrum": {
+      "definition": "Def_DriverOperatingFulcrum_M747",
+      "frame": [
+        0.6600000000000001,
+        -0.0,
+        -0.7512655988397179,
+        7627.311900469729,
+        0.0,
+        1.0,
+        -0.0,
+        65.0,
+        0.7512655988397179,
+        0.0,
+        0.6600000000000001,
+        975.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverOperatingHandle": {
+      "definition": "Def_DriverOperatingHandle_M738B",
+      "frame": [
+        0.6535769253694366,
+        -0.09185424663364335,
+        -0.7512655988397178,
+        7643.219290954195,
+        0.13917310096006558,
+        0.9902680687415703,
+        -3.469446951953614e-17,
+        65.0,
+        0.7439543336749866,
+        -0.10455596303514414,
+        0.6600000000000003,
+        894.4707200580142,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverOperatingBolt": {
+      "definition": "Def_DriverOperatingBolt",
+      "frame": [
+        0.6600000000000001,
+        -0.0,
+        -0.7512655988397179,
+        7657.681153731859,
+        0.0,
+        1.0,
+        -0.0,
+        65.0,
+        0.7512655988397179,
+        0.0,
+        0.6600000000000001,
+        881.765720058014,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverOperatingNut": {
+      "definition": "Def_DriverOperatingNut",
+      "frame": [
+        0.6600000000000001,
+        -0.0,
+        -0.7512655988397179,
+        7638.448754401562,
+        0.0,
+        1.0,
+        -0.0,
+        65.0,
+        0.7512655988397179,
+        0.0,
+        0.6600000000000001,
+        898.661720058014,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverOperatingCotter": {
+      "definition": "Def_DriverOperatingCotter",
+      "frame": [
+        0.6600000000000001,
+        -0.0,
+        -0.7512655988397179,
+        7629.020371136124,
+        0.0,
+        1.0,
+        -0.0,
+        65.0,
+        0.7512655988397179,
+        0.0,
+        0.6600000000000001,
+        906.9447200580141,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverOperatingFulcrum": {
+      "definition": "Def_DriverOperatingFulcrum_M746",
+      "frame": [
+        0.6600000000000001,
+        -0.0,
+        -0.7512655988397179,
+        7627.311900469729,
+        0.0,
+        1.0,
+        -0.0,
+        -65.0,
+        0.7512655988397179,
+        0.0,
+        0.6600000000000001,
+        975.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverOperatingHandle": {
+      "definition": "Def_DriverOperatingHandle_M738A",
+      "frame": [
+        0.6535769253694367,
+        0.0918542466336435,
+        -0.7512655988397177,
+        7643.219290954195,
+        -0.13917310096006588,
+        0.9902680687415703,
+        -1.3877787807814457e-17,
+        -65.0,
+        0.7439543336749865,
+        0.10455596303514439,
+        0.6600000000000004,
+        894.4707200580142,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverOperatingBolt": {
+      "definition": "Def_DriverOperatingBolt",
+      "frame": [
+        0.6600000000000001,
+        -0.0,
+        -0.7512655988397179,
+        7657.681153731859,
+        0.0,
+        1.0,
+        -0.0,
+        -65.0,
+        0.7512655988397179,
+        0.0,
+        0.6600000000000001,
+        881.765720058014,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverOperatingNut": {
+      "definition": "Def_DriverOperatingNut",
+      "frame": [
+        0.6600000000000001,
+        -0.0,
+        -0.7512655988397179,
+        7638.448754401562,
+        0.0,
+        1.0,
+        -0.0,
+        -65.0,
+        0.7512655988397179,
+        0.0,
+        0.6600000000000001,
+        898.661720058014,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverOperatingCotter": {
+      "definition": "Def_DriverOperatingCotter",
+      "frame": [
+        0.6600000000000001,
+        -0.0,
+        -0.7512655988397179,
+        7629.020371136124,
+        0.0,
+        1.0,
+        -0.0,
+        -65.0,
+        0.7512655988397179,
+        0.0,
+        0.6600000000000001,
+        906.9447200580141,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9998193651876022,
+        -0.0,
+        -0.019006235709895385,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        180.0,
+        0.019006235709895385,
+        0.0,
+        0.9998193651876022,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9998193651876022,
+        -0.0,
+        -0.019006235709895385,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        180.0,
+        0.019006235709895385,
+        0.0,
+        0.9998193651876022,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9998193651876022,
+        -0.0,
+        -0.019006235709895385,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        198.42499999999995,
+        0.019006235709895385,
+        0.0,
+        0.9998193651876022,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.01900623570987603,
+        0.0,
+        0.9998193651876025,
+        5977.359775523068,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        -0.9998193651876025,
+        0.0,
+        0.01900623570987603,
+        675.9827702452153,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9998193651876026,
+        0.0,
+        0.019006235709876237,
+        7240.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        -0.019006235709876237,
+        0.0,
+        -0.9998193651876026,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9998193651876026,
+        0.0,
+        0.019006235709876237,
+        7240.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        -0.019006235709876237,
+        0.0,
+        -0.9998193651876026,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9998193651876026,
+        0.0,
+        0.019006235709876237,
+        7240.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        198.42499999999995,
+        -0.019006235709876237,
+        0.0,
+        -0.9998193651876026,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverLowForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.019006235709875918,
+        -0.0,
+        -0.9998193651876026,
+        7196.33954555979,
+        0.0,
+        1.0,
+        -0.0,
+        180.0,
+        0.9998193651876026,
+        0.0,
+        -0.019006235709875918,
+        699.155172822696,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighFrontRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9998301766770323,
+        -0.0,
+        -0.018428722309869684,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.018428722309869684,
+        0.0,
+        0.9998301766770323,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighFrontRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9998301766770323,
+        -0.0,
+        -0.018428722309869684,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.018428722309869684,
+        0.0,
+        0.9998301766770323,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighFrontRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9998301766770323,
+        -0.0,
+        -0.018428722309869684,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        143.42499999999995,
+        0.018428722309869684,
+        0.0,
+        0.9998301766770323,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighFrontRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.018428722309864365,
+        0.0,
+        0.9998301766770326,
+        5977.360256093769,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        -0.9998301766770326,
+        0.0,
+        0.018428722309864365,
+        675.9570997745848,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighFrontForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9998301766770323,
+        0.0,
+        0.018428722309864365,
+        7281.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        -0.018428722309864365,
+        0.0,
+        -0.9998301766770323,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighFrontForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9998301766770323,
+        0.0,
+        0.018428722309864365,
+        7281.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        -0.018428722309864365,
+        0.0,
+        -0.9998301766770323,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighFrontForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9998301766770323,
+        0.0,
+        0.018428722309864365,
+        7281.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        143.42499999999995,
+        -0.018428722309864365,
+        0.0,
+        -0.9998301766770323,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortDriverHighFrontForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.018428722309864254,
+        -0.0,
+        -0.9998301766770326,
+        7237.339064989085,
+        0.0,
+        1.0,
+        -0.0,
+        125.0,
+        0.9998301766770326,
+        0.0,
+        -0.018428722309864254,
+        699.1808432933261,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9998193651876022,
+        -0.0,
+        -0.019006235709895385,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        -180.0,
+        0.019006235709895385,
+        0.0,
+        0.9998193651876022,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9998193651876022,
+        -0.0,
+        -0.019006235709895385,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        -180.0,
+        0.019006235709895385,
+        0.0,
+        0.9998193651876022,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9998193651876022,
+        -0.0,
+        -0.019006235709895385,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        -161.57500000000005,
+        0.019006235709895385,
+        0.0,
+        0.9998193651876022,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.01900623570987603,
+        0.0,
+        0.9998193651876025,
+        5977.359775523068,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        -0.9998193651876025,
+        0.0,
+        0.01900623570987603,
+        675.9827702452153,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9998193651876026,
+        0.0,
+        0.019006235709876237,
+        7240.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        -0.019006235709876237,
+        0.0,
+        -0.9998193651876026,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9998193651876026,
+        0.0,
+        0.019006235709876237,
+        7240.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        -0.019006235709876237,
+        0.0,
+        -0.9998193651876026,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9998193651876026,
+        0.0,
+        0.019006235709876237,
+        7240.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -161.57500000000005,
+        -0.019006235709876237,
+        0.0,
+        -0.9998193651876026,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverLowForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.019006235709875918,
+        -0.0,
+        -0.9998193651876026,
+        7196.33954555979,
+        0.0,
+        1.0,
+        -0.0,
+        -180.0,
+        0.9998193651876026,
+        0.0,
+        -0.019006235709875918,
+        699.155172822696,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighFrontRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9998301766770323,
+        -0.0,
+        -0.018428722309869684,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.018428722309869684,
+        0.0,
+        0.9998301766770323,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighFrontRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9998301766770323,
+        -0.0,
+        -0.018428722309869684,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.018428722309869684,
+        0.0,
+        0.9998301766770323,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighFrontRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9998301766770323,
+        -0.0,
+        -0.018428722309869684,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        -106.57500000000005,
+        0.018428722309869684,
+        0.0,
+        0.9998301766770323,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighFrontRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.018428722309864365,
+        0.0,
+        0.9998301766770326,
+        5977.360256093769,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        -0.9998301766770326,
+        0.0,
+        0.018428722309864365,
+        675.9570997745848,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighFrontForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9998301766770323,
+        0.0,
+        0.018428722309864365,
+        7281.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        -0.018428722309864365,
+        0.0,
+        -0.9998301766770323,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighFrontForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9998301766770323,
+        0.0,
+        0.018428722309864365,
+        7281.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        -0.018428722309864365,
+        0.0,
+        -0.9998301766770323,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighFrontForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9998301766770323,
+        0.0,
+        0.018428722309864365,
+        7281.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        -106.57500000000005,
+        -0.018428722309864365,
+        0.0,
+        -0.9998301766770323,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardDriverHighFrontForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.018428722309864254,
+        -0.0,
+        -0.9998301766770326,
+        7237.339064989085,
+        0.0,
+        1.0,
+        -0.0,
+        -125.0,
+        0.9998301766770326,
+        0.0,
+        -0.018428722309864254,
+        699.1808432933261,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchFrontRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9998301766770328,
+        -0.0,
+        -0.01842872230984559,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.01842872230984559,
+        0.0,
+        0.9998301766770328,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchFrontRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9998301766770328,
+        -0.0,
+        -0.01842872230984559,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.01842872230984559,
+        0.0,
+        0.9998301766770328,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchFrontRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9998301766770328,
+        -0.0,
+        -0.01842872230984559,
+        5932.917804740477,
+        0.0,
+        1.0,
+        -0.0,
+        253.42499999999995,
+        0.01842872230984559,
+        0.0,
+        0.9998301766770328,
+        675.137943067911,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchFrontRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.01842872230986503,
+        0.0,
+        0.9998301766770327,
+        5977.36025609377,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.9998301766770327,
+        0.0,
+        0.01842872230986503,
+        675.9570997745848,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchFrontForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9998301766770323,
+        0.0,
+        0.01842872230987191,
+        7281.78151634238,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.01842872230987191,
+        0.0,
+        -0.9998301766770323,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchFrontForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9998301766770323,
+        0.0,
+        0.01842872230987191,
+        7281.78151634238,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        -0.01842872230987191,
+        0.0,
+        -0.9998301766770323,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchFrontForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9998301766770323,
+        0.0,
+        0.01842872230987191,
+        7281.78151634238,
+        0.0,
+        1.0,
+        0.0,
+        253.42499999999995,
+        -0.01842872230987191,
+        0.0,
+        -0.9998301766770323,
+        700.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverClutchFrontForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.018428722309865808,
+        -0.0,
+        -0.9998301766770326,
+        7237.339064989086,
+        0.0,
+        1.0,
+        -0.0,
+        235.0,
+        0.9998301766770326,
+        0.0,
+        -0.018428722309865808,
+        699.1808432933263,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_port_main_side_front": {
+      "definition": "Def_BowLayout_upper_port_main_side_front",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_port_main_side_rear": {
+      "definition": "Def_BowLayout_upper_port_main_side_rear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_port_main_roof": {
+      "definition": "Def_BowLayout_upper_port_main_roof",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_port_main_rear": {
+      "definition": "Def_BowLayout_upper_port_main_rear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_port_main_junction": {
+      "definition": "Def_BowLayout_upper_port_main_junction",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_port_main_flap": {
+      "definition": "Def_BowLayout_upper_port_main_flap",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_port_main_wing": {
+      "definition": "Def_BowLayout_upper_port_main_wing",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_port_roof_door": {
+      "definition": "Def_BowLayout_upper_port_roof_door",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_port_driver_side": {
+      "definition": "Def_BowLayout_upper_port_driver_side",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7225.4227456647395,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_port_lookout_side": {
+      "definition": "Def_BowLayout_upper_port_lookout_side",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        6281.168292223444,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2693.8218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_starboard_main_side_front": {
+      "definition": "Def_BowLayout_upper_starboard_main_side_front",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_starboard_main_side_rear": {
+      "definition": "Def_BowLayout_upper_starboard_main_side_rear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_starboard_main_roof": {
+      "definition": "Def_BowLayout_upper_starboard_main_roof",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_starboard_main_rear": {
+      "definition": "Def_BowLayout_upper_starboard_main_rear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_starboard_main_junction": {
+      "definition": "Def_BowLayout_upper_starboard_main_junction",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_starboard_main_flap": {
+      "definition": "Def_BowLayout_upper_starboard_main_flap",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_starboard_main_wing": {
+      "definition": "Def_BowLayout_upper_starboard_main_wing",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_starboard_roof_door": {
+      "definition": "Def_BowLayout_upper_starboard_roof_door",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_starboard_driver_side": {
+      "definition": "Def_BowLayout_upper_starboard_driver_side",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7225.4227456647395,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_starboard_lookout_side": {
+      "definition": "Def_BowLayout_upper_starboard_lookout_side",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        6281.168292223444,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2693.8218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_front_center": {
+      "definition": "Def_BowLayout_upper_front_center",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        5999.872745664739,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_driver_front": {
+      "definition": "Def_BowLayout_upper_driver_front",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7225.4227456647395,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_driver_roof": {
+      "definition": "Def_BowLayout_upper_driver_roof",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7225.4227456647395,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2122.3218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_lookout_roof": {
+      "definition": "Def_BowLayout_upper_lookout_roof",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        6281.168292223444,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2693.8218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_lookout_front": {
+      "definition": "Def_BowLayout_upper_lookout_front",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        6281.168292223444,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2693.8218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "upper_lookout_rear": {
+      "definition": "Def_BowLayout_upper_lookout_rear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        6281.168292223444,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        2693.8218216318783,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_port_inner_front_upper": {
+      "definition": "Def_BowLayout_hull_port_inner_front_upper",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_port_inner_front_sponson": {
+      "definition": "Def_BowLayout_hull_port_inner_front_sponson",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_port_roof_front": {
+      "definition": "Def_BowLayout_hull_port_roof_front",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_port_roof_driver": {
+      "definition": "Def_BowLayout_hull_port_roof_driver",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_port_roof_track_rear": {
+      "definition": "Def_BowLayout_hull_port_roof_track_rear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_starboard_inner_front_upper": {
+      "definition": "Def_BowLayout_hull_starboard_inner_front_upper",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_starboard_inner_front_sponson": {
+      "definition": "Def_BowLayout_hull_starboard_inner_front_sponson",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_starboard_roof_front": {
+      "definition": "Def_BowLayout_hull_starboard_roof_front",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_starboard_roof_driver": {
+      "definition": "Def_BowLayout_hull_starboard_roof_driver",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_starboard_roof_track_rear": {
+      "definition": "Def_BowLayout_hull_starboard_roof_track_rear",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_floor_1": {
+      "definition": "Def_DriverContext_hull_floor_1",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_floor_2": {
+      "definition": "Def_DriverContext_hull_floor_2",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_front_slope": {
+      "definition": "Def_BowLayout_hull_front_slope",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_roof_aft_upper": {
+      "definition": "Def_BowLayout_hull_roof_aft_upper",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverPortSupportPlate": {
+      "definition": "Def_DriverPortSupportPlate_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        641.6775841870467,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlates",
+      "role": "seat_support"
+    },
+    "DriverPortSupportMount1Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7180.781516342379,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        282.575,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        671.6467548737852,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverPortSupportMount1Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7180.781516342379,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        295.275,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        671.6467548737852,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverPortSupportMount1Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7180.781516342379,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        298.45,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        671.6467548737852,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverPortSupportMount2Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7210.781516342379,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        282.575,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        674.9613573686532,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverPortSupportMount2Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7210.781516342379,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        295.275,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        674.9613573686532,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverPortSupportMount2Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7210.781516342379,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        298.45,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        674.9613573686532,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverPortSupportMount3Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7547.311900469729,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        282.575,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        801.1086870568646,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverPortSupportMount3Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7547.311900469729,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        295.275,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        801.1086870568646,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverPortSupportMount3Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7547.311900469729,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        298.45,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        801.1086870568646,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverPortSupportMount4Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7577.311900469729,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        282.575,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        813.6932395839473,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverPortSupportMount4Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7577.311900469729,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        295.275,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        813.6932395839473,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverPortSupportMount4Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7577.311900469729,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        298.45,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        813.6932395839473,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverStarboardSupportPlate": {
+      "definition": "Def_DriverStarboardSupportPlate_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        641.6775841870467,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlates",
+      "role": "seat_support"
+    },
+    "DriverStarboardSupportMount1Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7180.781516342379,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -282.575,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        671.6467548737852,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverStarboardSupportMount1Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7180.781516342379,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -295.275,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        671.6467548737852,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverStarboardSupportMount1Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7180.781516342379,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -298.45,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        671.6467548737852,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverStarboardSupportMount2Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7210.781516342379,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -282.575,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        674.9613573686532,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverStarboardSupportMount2Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7210.781516342379,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -295.275,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        674.9613573686532,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverStarboardSupportMount2Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7210.781516342379,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -298.45,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        674.9613573686532,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverStarboardSupportMount3Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7547.311900469729,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -282.575,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        801.1086870568646,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverStarboardSupportMount3Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7547.311900469729,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -295.275,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        801.1086870568646,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverStarboardSupportMount3Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7547.311900469729,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -298.45,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        801.1086870568646,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverStarboardSupportMount4Bolt": {
+      "definition": "Def_DriverSupportBolt_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7577.311900469729,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -282.575,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        813.6932395839473,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverStarboardSupportMount4Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7577.311900469729,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -295.275,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        813.6932395839473,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "DriverStarboardSupportMount4Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7577.311900469729,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -298.45,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        813.6932395839473,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatSupportPlateFasteners",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:004"
+      ]
+    },
+    "PortClutchIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        235.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortHighIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        125.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "PortLowIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardHighIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -125.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "StarboardLowIntermediateRocker": {
+      "definition": "Def_ControlRocker_Redo",
+      "frame": [
+        -0.9848077530122081,
+        0.0,
+        -0.17364817766693047,
+        5944.495796986419,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.17364817766693047,
+        0.0,
+        -0.9848077530122081,
+        740.8,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "hull_floor_3": {
+      "definition": "Def_IntermediateContext_hull_floor_3",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatPortFrontBearing": {
+      "definition": "Def_DriverSeat_Bearing_SH289E",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7630.174682080924,
+        0.0,
+        1.0,
+        0.0,
+        220.0,
+        0.0,
+        0.0,
+        1.0,
+        1517.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatPortFrontBearingRivet1": {
+      "definition": "Def_DriverSeat_BearingRivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7606.174682080924,
+        0.0,
+        1.0,
+        0.0,
+        220.0,
+        0.0,
+        0.0,
+        1.0,
+        1520.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatPortFrontBearingRivet2": {
+      "definition": "Def_DriverSeat_BearingRivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7654.174682080924,
+        0.0,
+        1.0,
+        0.0,
+        220.0,
+        0.0,
+        0.0,
+        1.0,
+        1520.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatStarboardFrontBearing": {
+      "definition": "Def_DriverSeat_Bearing_SH289E",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7630.174682080924,
+        0.0,
+        1.0,
+        0.0,
+        -220.0,
+        0.0,
+        0.0,
+        1.0,
+        1517.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatStarboardFrontBearingRivet1": {
+      "definition": "Def_DriverSeat_BearingRivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7606.174682080924,
+        0.0,
+        1.0,
+        0.0,
+        -220.0,
+        0.0,
+        0.0,
+        1.0,
+        1520.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatStarboardFrontBearingRivet2": {
+      "definition": "Def_DriverSeat_BearingRivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7654.174682080924,
+        0.0,
+        1.0,
+        0.0,
+        -220.0,
+        0.0,
+        0.0,
+        1.0,
+        1520.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatPortRearBearing": {
+      "definition": "Def_DriverSeat_Bearing_SH289E",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7383.067919075143,
+        0.0,
+        1.0,
+        0.0,
+        220.0,
+        0.0,
+        0.0,
+        1.0,
+        1517.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatPortRearBearingRivet1": {
+      "definition": "Def_DriverSeat_BearingRivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7359.067919075143,
+        0.0,
+        1.0,
+        0.0,
+        220.0,
+        0.0,
+        0.0,
+        1.0,
+        1520.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatPortRearBearingRivet2": {
+      "definition": "Def_DriverSeat_BearingRivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7407.067919075143,
+        0.0,
+        1.0,
+        0.0,
+        220.0,
+        0.0,
+        0.0,
+        1.0,
+        1520.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatStarboardRearBearing": {
+      "definition": "Def_DriverSeat_Bearing_SH289E",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7383.067919075143,
+        0.0,
+        1.0,
+        0.0,
+        -220.0,
+        0.0,
+        0.0,
+        1.0,
+        1517.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatStarboardRearBearingRivet1": {
+      "definition": "Def_DriverSeat_BearingRivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7359.067919075143,
+        0.0,
+        1.0,
+        0.0,
+        -220.0,
+        0.0,
+        0.0,
+        1.0,
+        1520.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatStarboardRearBearingRivet2": {
+      "definition": "Def_DriverSeat_BearingRivet",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7407.067919075143,
+        0.0,
+        1.0,
+        0.0,
+        -220.0,
+        0.0,
+        0.0,
+        1.0,
+        1520.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatPortClip": {
+      "definition": "Def_DriverSeat_Clip_SH291X",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7516.553815028901,
+        0.0,
+        1.0,
+        0.0,
+        240.0,
+        0.0,
+        0.0,
+        1.0,
+        1517.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatStarboardClip": {
+      "definition": "Def_DriverSeat_Clip_SH291X",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        7516.553815028901,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        -240.0,
+        0.0,
+        0.0,
+        1.0,
+        1517.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail01": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7648.444624277456,
+        0.0,
+        1.0,
+        0.0,
+        -140.0,
+        0.0,
+        0.0,
+        1.0,
+        1574.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail02": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7648.444624277456,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1574.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail03": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7648.444624277456,
+        0.0,
+        1.0,
+        0.0,
+        140.0,
+        0.0,
+        0.0,
+        1.0,
+        1574.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail04": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7506.553815028901,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        1574.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail05": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7561.553815028901,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        1574.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail06": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7616.553815028901,
+        0.0,
+        1.0,
+        0.0,
+        -180.0,
+        0.0,
+        0.0,
+        1.0,
+        1574.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail07": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7506.553815028901,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        1574.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail08": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7561.553815028901,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        1574.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail09": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7616.553815028901,
+        0.0,
+        1.0,
+        0.0,
+        180.0,
+        0.0,
+        0.0,
+        1.0,
+        1574.8129506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail10": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7441.960580275469,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -190.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1557.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail11": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7441.960580275469,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        190.0,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1557.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail12": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7424.076475321536,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -190.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1597.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail13": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7424.076475321536,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        190.0,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1597.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail14": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7402.931917944702,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -190.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1637.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail15": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7402.931917944702,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        190.0,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1637.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail16": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7378.4904289470005,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -190.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1677.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail17": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7378.4904289470005,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        190.0,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1677.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail18": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7350.690165212565,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -190.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1717.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail19": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7350.690165212565,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        190.0,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1717.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail20": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7319.450853546838,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -190.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1757.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatUpholsteryNail21": {
+      "definition": "Def_DriverSeat_UpholsteryNail",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7319.450853546838,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        190.0,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1757.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatFrame": {
+      "definition": "Def_DriverSeat_Frame",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7491.553815028901,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1517.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatCushion": {
+      "definition": "Def_DriverSeat_Cushion",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7491.553815028901,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1517.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatBackPadding": {
+      "definition": "Def_DriverSeat_BackPadding",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7491.553815028901,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1517.6379506641365,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatDriverBowContext",
+      "role": "receiver"
+    },
+    "DriverSeatPortAngleFloor1Bolt": {
+      "definition": "Def_SeatSupport_AngleFloorBolt",
+      "frame": [
+        -0.9939516586028418,
+        0.0,
+        0.1098184882461065,
+        7180.084168942017,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.1098184882461065,
+        0.0,
+        -0.9939516586028418,
+        643.5697072260173,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatPortAngleFloor1Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9939516586028418,
+        0.0,
+        0.1098184882461065,
+        7181.440427271856,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.1098184882461065,
+        0.0,
+        -0.9939516586028418,
+        631.2944042422723,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatPortAngleFloor1Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9939516586028418,
+        0.0,
+        0.1098184882461065,
+        7181.789100972037,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.1098184882461065,
+        0.0,
+        -0.9939516586028418,
+        628.1386077262083,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatPortAngleFloor2Bolt": {
+      "definition": "Def_SeatSupport_AngleFloorBolt",
+      "frame": [
+        -0.9939516586028418,
+        0.0,
+        0.1098184882461065,
+        7210.084168942017,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.1098184882461065,
+        0.0,
+        -0.9939516586028418,
+        646.8843097208853,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatPortAngleFloor2Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9939516586028418,
+        0.0,
+        0.1098184882461065,
+        7211.440427271856,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.1098184882461065,
+        0.0,
+        -0.9939516586028418,
+        634.6090067371404,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatPortAngleFloor2Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9939516586028418,
+        0.0,
+        0.1098184882461065,
+        7211.789100972037,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.1098184882461065,
+        0.0,
+        -0.9939516586028418,
+        631.4532102210763,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatPortAngleFloor3Bolt": {
+      "definition": "Def_SeatSupport_AngleFloorBolt",
+      "frame": [
+        -0.922151541867755,
+        0.0,
+        0.38682881721883366,
+        7544.85553748039,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.38682881721883366,
+        0.0,
+        -0.922151541867755,
+        772.0782794213669,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatPortAngleFloor3Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.922151541867755,
+        0.0,
+        0.38682881721883366,
+        7549.6328733730425,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.38682881721883366,
+        0.0,
+        -0.922151541867755,
+        760.6897078793002,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatPortAngleFloor3Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.922151541867755,
+        0.0,
+        0.38682881721883366,
+        7550.861054867712,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.38682881721883366,
+        0.0,
+        -0.922151541867755,
+        757.76187673387,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatPortAngleFloor4Bolt": {
+      "definition": "Def_SeatSupport_AngleFloorBolt",
+      "frame": [
+        -0.922151541867755,
+        0.0,
+        0.38682881721883366,
+        7574.85553748039,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.38682881721883366,
+        0.0,
+        -0.922151541867755,
+        784.6628319484496,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatPortAngleFloor4Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.922151541867755,
+        0.0,
+        0.38682881721883366,
+        7579.6328733730425,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.38682881721883366,
+        0.0,
+        -0.922151541867755,
+        773.2742604063828,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatPortAngleFloor4Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.922151541867755,
+        0.0,
+        0.38682881721883366,
+        7580.861054867712,
+        0.0,
+        1.0,
+        0.0,
+        316.425,
+        -0.38682881721883366,
+        0.0,
+        -0.922151541867755,
+        770.3464292609527,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatPortSupportAngle": {
+      "definition": "Def_SeatSupport_PortAngle_M788",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        641.6775841870467,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support"
+    },
+    "DriverSeatStarboardAngleFloor1Bolt": {
+      "definition": "Def_SeatSupport_AngleFloorBolt",
+      "frame": [
+        -0.9939516586028418,
+        0.0,
+        0.1098184882461065,
+        7180.084168942017,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.1098184882461065,
+        0.0,
+        -0.9939516586028418,
+        643.5697072260173,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatStarboardAngleFloor1Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9939516586028418,
+        0.0,
+        0.1098184882461065,
+        7181.440427271856,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.1098184882461065,
+        0.0,
+        -0.9939516586028418,
+        631.2944042422723,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatStarboardAngleFloor1Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9939516586028418,
+        0.0,
+        0.1098184882461065,
+        7181.789100972037,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.1098184882461065,
+        0.0,
+        -0.9939516586028418,
+        628.1386077262083,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatStarboardAngleFloor2Bolt": {
+      "definition": "Def_SeatSupport_AngleFloorBolt",
+      "frame": [
+        -0.9939516586028418,
+        0.0,
+        0.1098184882461065,
+        7210.084168942017,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.1098184882461065,
+        0.0,
+        -0.9939516586028418,
+        646.8843097208853,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatStarboardAngleFloor2Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.9939516586028418,
+        0.0,
+        0.1098184882461065,
+        7211.440427271856,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.1098184882461065,
+        0.0,
+        -0.9939516586028418,
+        634.6090067371404,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatStarboardAngleFloor2Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.9939516586028418,
+        0.0,
+        0.1098184882461065,
+        7211.789100972037,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.1098184882461065,
+        0.0,
+        -0.9939516586028418,
+        631.4532102210763,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatStarboardAngleFloor3Bolt": {
+      "definition": "Def_SeatSupport_AngleFloorBolt",
+      "frame": [
+        -0.922151541867755,
+        0.0,
+        0.38682881721883366,
+        7544.85553748039,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.38682881721883366,
+        0.0,
+        -0.922151541867755,
+        772.0782794213669,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatStarboardAngleFloor3Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.922151541867755,
+        0.0,
+        0.38682881721883366,
+        7549.6328733730425,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.38682881721883366,
+        0.0,
+        -0.922151541867755,
+        760.6897078793002,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatStarboardAngleFloor3Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.922151541867755,
+        0.0,
+        0.38682881721883366,
+        7550.861054867712,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.38682881721883366,
+        0.0,
+        -0.922151541867755,
+        757.76187673387,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatStarboardAngleFloor4Bolt": {
+      "definition": "Def_SeatSupport_AngleFloorBolt",
+      "frame": [
+        -0.922151541867755,
+        0.0,
+        0.38682881721883366,
+        7574.85553748039,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.38682881721883366,
+        0.0,
+        -0.922151541867755,
+        784.6628319484496,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatStarboardAngleFloor4Lock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        -0.922151541867755,
+        0.0,
+        0.38682881721883366,
+        7579.6328733730425,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.38682881721883366,
+        0.0,
+        -0.922151541867755,
+        773.2742604063828,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatStarboardAngleFloor4Nut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        -0.922151541867755,
+        0.0,
+        0.38682881721883366,
+        7580.861054867712,
+        0.0,
+        1.0,
+        0.0,
+        -316.425,
+        -0.38682881721883366,
+        0.0,
+        -0.922151541867755,
+        770.3464292609527,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:008"
+      ]
+    },
+    "DriverSeatStarboardSupportAngle": {
+      "definition": "Def_SeatSupport_StarboardAngle_M788",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7220.781516342379,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        641.6775841870467,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFloorAngles",
+      "role": "seat_support"
+    },
+    "DriverSeatPortFrontStay": {
+      "definition": "Def_SeatSupport_FrontStay_SH289B",
+      "frame": [
+        0.9871712149022972,
+        0.0,
+        -0.15966525128631648,
+        7672.363641618496,
+        0.0,
+        1.0,
+        0.0,
+        276.22499999999997,
+        0.15966525128631648,
+        0.0,
+        0.9871712149022972,
+        1221.2242884250472,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support"
+    },
+    "DriverSeatPortFrontStayLowerBolt": {
+      "definition": "Def_SeatSupport_LowerStayBolt",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7672.363641618496,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        276.22499999999997,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1221.2242884250472,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:005"
+      ]
+    },
+    "DriverSeatPortFrontStayLowerLock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7672.363641618496,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        288.92499999999995,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1221.2242884250472,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:005"
+      ]
+    },
+    "DriverSeatPortFrontStayLowerNut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7672.363641618496,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        292.09999999999997,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1221.2242884250472,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:005"
+      ]
+    },
+    "DriverSeatPortFrontStayUpperBolt": {
+      "definition": "Def_SeatSupport_UpperStayBolt",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7630.174682080924,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        205.0,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1482.0683111954459,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:033:009"
+      ]
+    },
+    "DriverSeatPortFrontStayUpperLock": {
+      "definition": "Def_SeatSupport_UpperStayLock",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7630.174682080924,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        241.35,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1482.0683111954459,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:033:009"
+      ]
+    },
+    "DriverSeatPortFrontStayUpperNut": {
+      "definition": "Def_SeatSupport_UpperStayNut",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7630.174682080924,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        244.525,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1482.0683111954459,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:033:009"
+      ]
+    },
+    "DriverSeatStarboardFrontStay": {
+      "definition": "Def_SeatSupport_FrontStay_SH289B",
+      "frame": [
+        -0.9871712149022973,
+        -1.2089360685405022e-16,
+        -0.15966525128631648,
+        7672.363641618496,
+        1.2246467991473532e-16,
+        -1.0,
+        1.5407439555097887e-33,
+        -276.22499999999997,
+        -0.15966525128631648,
+        -1.955335389228453e-17,
+        0.9871712149022972,
+        1221.2242884250472,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support"
+    },
+    "DriverSeatStarboardFrontStayLowerBolt": {
+      "definition": "Def_SeatSupport_LowerStayBolt",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7672.363641618496,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -276.22499999999997,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1221.2242884250472,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:005"
+      ]
+    },
+    "DriverSeatStarboardFrontStayLowerLock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7672.363641618496,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -288.92499999999995,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1221.2242884250472,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:005"
+      ]
+    },
+    "DriverSeatStarboardFrontStayLowerNut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7672.363641618496,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -292.09999999999997,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1221.2242884250472,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:005"
+      ]
+    },
+    "DriverSeatStarboardFrontStayUpperBolt": {
+      "definition": "Def_SeatSupport_UpperStayBolt",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7630.174682080924,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -205.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1482.0683111954459,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:033:009"
+      ]
+    },
+    "DriverSeatStarboardFrontStayUpperLock": {
+      "definition": "Def_SeatSupport_UpperStayLock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7630.174682080924,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -241.35,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1482.0683111954459,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:033:009"
+      ]
+    },
+    "DriverSeatStarboardFrontStayUpperNut": {
+      "definition": "Def_SeatSupport_UpperStayNut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7630.174682080924,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -244.525,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1482.0683111954459,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatFrontStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:033:009"
+      ]
+    },
+    "DriverSeatPortRearStay": {
+      "definition": "Def_SeatSupport_RearStay_SH289D",
+      "frame": [
+        0.9930849517667244,
+        0.0,
+        0.11739794961788196,
+        7352.932947976878,
+        0.0,
+        1.0,
+        0.0,
+        276.22499999999997,
+        -0.11739794961788196,
+        0.0,
+        0.9930849517667244,
+        1227.152561669829,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support"
+    },
+    "DriverSeatPortRearStayLowerBolt": {
+      "definition": "Def_SeatSupport_LowerStayBolt",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7352.932947976878,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        276.22499999999997,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1227.152561669829,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:005"
+      ]
+    },
+    "DriverSeatPortRearStayLowerLock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7352.932947976878,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        288.92499999999995,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1227.152561669829,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:005"
+      ]
+    },
+    "DriverSeatPortRearStayLowerNut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7352.932947976878,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        292.09999999999997,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1227.152561669829,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:005"
+      ]
+    },
+    "DriverSeatPortRearStayUpperBolt": {
+      "definition": "Def_SeatSupport_UpperStayBolt",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7383.067919075143,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        205.0,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1482.0683111954459,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:033:009"
+      ]
+    },
+    "DriverSeatPortRearStayUpperLock": {
+      "definition": "Def_SeatSupport_UpperStayLock",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7383.067919075143,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        241.35,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1482.0683111954459,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:033:009"
+      ]
+    },
+    "DriverSeatPortRearStayUpperNut": {
+      "definition": "Def_SeatSupport_UpperStayNut",
+      "frame": [
+        1.0,
+        -0.0,
+        0.0,
+        7383.067919075143,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        244.525,
+        -0.0,
+        -1.0,
+        2.220446049250313e-16,
+        1482.0683111954459,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:033:009"
+      ]
+    },
+    "DriverSeatStarboardRearStay": {
+      "definition": "Def_SeatSupport_RearStay_SH289D",
+      "frame": [
+        -0.9930849517667244,
+        -1.2161783074625225e-16,
+        0.11739794961788196,
+        7352.932947976878,
+        1.224646799147353e-16,
+        -1.0,
+        1.5407439555097887e-33,
+        -276.22499999999997,
+        0.11739794961788196,
+        1.4377102322600137e-17,
+        0.9930849517667244,
+        1227.152561669829,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support"
+    },
+    "DriverSeatStarboardRearStayLowerBolt": {
+      "definition": "Def_SeatSupport_LowerStayBolt",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7352.932947976878,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -276.22499999999997,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1227.152561669829,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:005"
+      ]
+    },
+    "DriverSeatStarboardRearStayLowerLock": {
+      "definition": "Def_EngineSuspension_half_lock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7352.932947976878,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -288.92499999999995,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1227.152561669829,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:005"
+      ]
+    },
+    "DriverSeatStarboardRearStayLowerNut": {
+      "definition": "Def_EngineSuspension_half_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7352.932947976878,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -292.09999999999997,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1227.152561669829,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:031:005"
+      ]
+    },
+    "DriverSeatStarboardRearStayUpperBolt": {
+      "definition": "Def_SeatSupport_UpperStayBolt",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7383.067919075143,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -205.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1482.0683111954459,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:033:009"
+      ]
+    },
+    "DriverSeatStarboardRearStayUpperLock": {
+      "definition": "Def_SeatSupport_UpperStayLock",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7383.067919075143,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -241.35,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1482.0683111954459,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:033:009"
+      ]
+    },
+    "DriverSeatStarboardRearStayUpperNut": {
+      "definition": "Def_SeatSupport_UpperStayNut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7383.067919075143,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        -244.525,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        1482.0683111954459,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "SeatRearStays",
+      "role": "seat_support",
+      "source_records": [
+        "SNL:033:009"
+      ]
+    }
+  },
+  "details": {
+    "lower_z_offset_mm": 0.0,
+    "supports": {
+      "Port": {
+        "plate": "DriverPortSupportPlate",
+        "angle": "DriverSeatPortSupportAngle",
+        "plate_stock_mm": 6.35,
+        "angle_stock_mm": 6.35,
+        "base_world_mm": [
+          7220.781516342379,
+          0.0,
+          641.6775841870467
+        ],
+        "plate_inner_y_mm": 282.575,
+        "plate_outer_y_mm": 288.925,
+        "original_floor_mounts": [
+          {
+            "stem": "DriverPortSupportMount1",
+            "plate": "DriverPortSupportPlate",
+            "contact_world_mm": [
+              7180.781516342379,
+              316.425,
+              637.2581141938894
+            ],
+            "normal_world": [
+              -0.10981848824610611,
+              0.0,
+              0.9939516586028416
+            ],
+            "floor": "hull_floor_2"
+          },
+          {
+            "stem": "DriverPortSupportMount2",
+            "plate": "DriverPortSupportPlate",
+            "contact_world_mm": [
+              7210.781516342379,
+              316.425,
+              640.5727166887574
+            ],
+            "normal_world": [
+              -0.10981848824610611,
+              0.0,
+              0.9939516586028416
+            ],
+            "floor": "hull_floor_2"
+          },
+          {
+            "stem": "DriverPortSupportMount3",
+            "plate": "DriverPortSupportPlate",
+            "contact_world_mm": [
+              7547.311900469729,
+              316.425,
+              766.2226171305067
+            ],
+            "normal_world": [
+              -0.38682881721883516,
+              0.0,
+              0.9221515418677545
+            ],
+            "floor": "hull_floor_1"
+          },
+          {
+            "stem": "DriverPortSupportMount4",
+            "plate": "DriverPortSupportPlate",
+            "contact_world_mm": [
+              7577.311900469729,
+              316.425,
+              778.8071696575894
+            ],
+            "normal_world": [
+              -0.38682881721883516,
+              0.0,
+              0.9221515418677545
+            ],
+            "floor": "hull_floor_1"
+          }
+        ],
+        "original_floor_profile": {
+          "floor_contact_section_world": [
+            [
+              7150.781516342379,
+              633.9435116990214
+            ],
+            [
+              7261.006952416951,
+              646.1219618793777
+            ],
+            [
+              7602.311900469729,
+              789.2942967634916
+            ]
+          ],
+          "upper_foot_section_world": [
+            [
+              7150.781516342379,
+              640.3321523789172
+            ],
+            [
+              7259.397140353023,
+              652.3327396564947
+            ],
+            [
+              7602.311900469729,
+              796.1803666898495
+            ]
+          ],
+          "stock_mm": 6.35,
+          "canonical_origin_world_mm": [
+            7220.781516342379,
+            0.0,
+            641.6775841870467
+          ],
+          "main_shaft_local_mm": [
+            406.53038412734986,
+            0,
+            333.3224158129533
+          ],
+          "swing_shaft_local_mm": [
+            0,
+            0,
+            353.3224158129533
+          ],
+          "approximation": "Folded foot and vertical side web on the inferred floor. Sharp bends and unprinted outline remain provisional."
+        }
+      },
+      "Starboard": {
+        "plate": "DriverStarboardSupportPlate",
+        "angle": "DriverSeatStarboardSupportAngle",
+        "plate_stock_mm": 6.35,
+        "angle_stock_mm": 6.35,
+        "base_world_mm": [
+          7220.781516342379,
+          0.0,
+          641.6775841870467
+        ],
+        "plate_inner_y_mm": -282.575,
+        "plate_outer_y_mm": -288.925,
+        "original_floor_mounts": [
+          {
+            "stem": "DriverStarboardSupportMount1",
+            "plate": "DriverStarboardSupportPlate",
+            "contact_world_mm": [
+              7180.781516342379,
+              -316.425,
+              637.2581141938894
+            ],
+            "normal_world": [
+              -0.10981848824610611,
+              0.0,
+              0.9939516586028416
+            ],
+            "floor": "hull_floor_2"
+          },
+          {
+            "stem": "DriverStarboardSupportMount2",
+            "plate": "DriverStarboardSupportPlate",
+            "contact_world_mm": [
+              7210.781516342379,
+              -316.425,
+              640.5727166887574
+            ],
+            "normal_world": [
+              -0.10981848824610611,
+              0.0,
+              0.9939516586028416
+            ],
+            "floor": "hull_floor_2"
+          },
+          {
+            "stem": "DriverStarboardSupportMount3",
+            "plate": "DriverStarboardSupportPlate",
+            "contact_world_mm": [
+              7547.311900469729,
+              -316.425,
+              766.2226171305067
+            ],
+            "normal_world": [
+              -0.38682881721883516,
+              0.0,
+              0.9221515418677545
+            ],
+            "floor": "hull_floor_1"
+          },
+          {
+            "stem": "DriverStarboardSupportMount4",
+            "plate": "DriverStarboardSupportPlate",
+            "contact_world_mm": [
+              7577.311900469729,
+              -316.425,
+              778.8071696575894
+            ],
+            "normal_world": [
+              -0.38682881721883516,
+              0.0,
+              0.9221515418677545
+            ],
+            "floor": "hull_floor_1"
+          }
+        ],
+        "original_floor_profile": {
+          "floor_contact_section_world": [
+            [
+              7150.781516342379,
+              633.9435116990214
+            ],
+            [
+              7261.006952416951,
+              646.1219618793777
+            ],
+            [
+              7602.311900469729,
+              789.2942967634916
+            ]
+          ],
+          "upper_foot_section_world": [
+            [
+              7150.781516342379,
+              640.3321523789172
+            ],
+            [
+              7259.397140353023,
+              652.3327396564947
+            ],
+            [
+              7602.311900469729,
+              796.1803666898495
+            ]
+          ],
+          "stock_mm": 6.35,
+          "canonical_origin_world_mm": [
+            7220.781516342379,
+            0.0,
+            641.6775841870467
+          ],
+          "main_shaft_local_mm": [
+            406.53038412734986,
+            0,
+            333.3224158129533
+          ],
+          "swing_shaft_local_mm": [
+            0,
+            0,
+            353.3224158129533
+          ],
+          "approximation": "Folded foot and vertical side web on the inferred floor. Sharp bends and unprinted outline remain provisional."
+        }
+      }
+    },
+    "stays": [
+      {
+        "name": "DriverSeatPortFrontStay",
+        "mark": "SH289B",
+        "lower_receiver": "DriverPortSupportPlate",
+        "upper_receiver": "DriverSeatPortFrontBearing",
+        "lower_center_world_mm": [
+          7672.363641618496,
+          276.22499999999997,
+          1221.2242884250472
+        ],
+        "upper_center_world_mm": [
+          7630.174682080924,
+          235.0,
+          1482.0683111954459
+        ],
+        "projected_length_mm": 264.2338216843316,
+        "actual_center_distance_mm": 267.4303893481576,
+        "side": "Port",
+        "stock_projected_y_mm": 6.35
+      },
+      {
+        "name": "DriverSeatStarboardFrontStay",
+        "mark": "SH289B",
+        "lower_receiver": "DriverStarboardSupportPlate",
+        "upper_receiver": "DriverSeatStarboardFrontBearing",
+        "lower_center_world_mm": [
+          7672.363641618496,
+          -276.22499999999997,
+          1221.2242884250472
+        ],
+        "upper_center_world_mm": [
+          7630.174682080924,
+          -235.0,
+          1482.0683111954459
+        ],
+        "projected_length_mm": 264.2338216843316,
+        "actual_center_distance_mm": 267.4303893481576,
+        "side": "Starboard",
+        "stock_projected_y_mm": 6.35
+      },
+      {
+        "name": "DriverSeatPortRearStay",
+        "mark": "SH289D",
+        "lower_receiver": "DriverPortSupportPlate",
+        "upper_receiver": "DriverSeatPortRearBearing",
+        "lower_center_world_mm": [
+          7352.932947976878,
+          276.22499999999997,
+          1227.152561669829
+        ],
+        "upper_center_world_mm": [
+          7383.067919075143,
+          235.0,
+          1482.0683111954459
+        ],
+        "projected_length_mm": 256.69077864095607,
+        "actual_center_distance_mm": 259.9801078242339,
+        "side": "Port",
+        "stock_projected_y_mm": 6.35
+      },
+      {
+        "name": "DriverSeatStarboardRearStay",
+        "mark": "SH289D",
+        "lower_receiver": "DriverStarboardSupportPlate",
+        "upper_receiver": "DriverSeatStarboardRearBearing",
+        "lower_center_world_mm": [
+          7352.932947976878,
+          -276.22499999999997,
+          1227.152561669829
+        ],
+        "upper_center_world_mm": [
+          7383.067919075143,
+          -235.0,
+          1482.0683111954459
+        ],
+        "projected_length_mm": 256.69077864095607,
+        "actual_center_distance_mm": 259.9801078242339,
+        "side": "Starboard",
+        "stock_projected_y_mm": 6.35
+      }
+    ],
+    "joints": [
+      {
+        "stem": "DriverSeatPortAngleFloor1",
+        "point_world_mm": [
+          7180.084168942017,
+          316.425,
+          643.5697072260173
+        ],
+        "axis_world": [
+          0.10981848824610611,
+          -0.0,
+          -0.9939516586028416
+        ],
+        "grip_mm": 12.349999999999808,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatPortSupportAngle",
+          "hull_floor_2"
+        ],
+        "source_id": "SNL:031:008",
+        "bolt_length_mm": 41.275,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 14.63750000000019
+      },
+      {
+        "stem": "DriverPortSupportMount1",
+        "point_world_mm": [
+          7180.781516342379,
+          282.575,
+          671.6467548737852
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "grip_mm": 12.7,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverPortSupportPlate",
+          "DriverSeatPortSupportAngle"
+        ],
+        "source_id": "SNL:031:004",
+        "bolt_length_mm": 31.75,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 4.762500000000001
+      },
+      {
+        "stem": "DriverSeatPortAngleFloor2",
+        "point_world_mm": [
+          7210.084168942017,
+          316.425,
+          646.8843097208853
+        ],
+        "axis_world": [
+          0.10981848824610611,
+          -0.0,
+          -0.9939516586028416
+        ],
+        "grip_mm": 12.349999999999808,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatPortSupportAngle",
+          "hull_floor_2"
+        ],
+        "source_id": "SNL:031:008",
+        "bolt_length_mm": 41.275,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 14.63750000000019
+      },
+      {
+        "stem": "DriverPortSupportMount2",
+        "point_world_mm": [
+          7210.781516342379,
+          282.575,
+          674.9613573686532
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "grip_mm": 12.7,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverPortSupportPlate",
+          "DriverSeatPortSupportAngle"
+        ],
+        "source_id": "SNL:031:004",
+        "bolt_length_mm": 31.75,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 4.762500000000001
+      },
+      {
+        "stem": "DriverSeatPortAngleFloor3",
+        "point_world_mm": [
+          7544.85553748039,
+          316.425,
+          772.0782794213669
+        ],
+        "axis_world": [
+          0.38682881721883516,
+          -0.0,
+          -0.9221515418677545
+        ],
+        "grip_mm": 12.349999999999923,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatPortSupportAngle",
+          "hull_floor_1"
+        ],
+        "source_id": "SNL:031:008",
+        "bolt_length_mm": 41.275,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 14.637500000000076
+      },
+      {
+        "stem": "DriverPortSupportMount3",
+        "point_world_mm": [
+          7547.311900469729,
+          282.575,
+          801.1086870568646
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "grip_mm": 12.7,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverPortSupportPlate",
+          "DriverSeatPortSupportAngle"
+        ],
+        "source_id": "SNL:031:004",
+        "bolt_length_mm": 31.75,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 4.762500000000001
+      },
+      {
+        "stem": "DriverSeatPortAngleFloor4",
+        "point_world_mm": [
+          7574.85553748039,
+          316.425,
+          784.6628319484496
+        ],
+        "axis_world": [
+          0.38682881721883516,
+          -0.0,
+          -0.9221515418677545
+        ],
+        "grip_mm": 12.349999999999923,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatPortSupportAngle",
+          "hull_floor_1"
+        ],
+        "source_id": "SNL:031:008",
+        "bolt_length_mm": 41.275,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 14.637500000000076
+      },
+      {
+        "stem": "DriverPortSupportMount4",
+        "point_world_mm": [
+          7577.311900469729,
+          282.575,
+          813.6932395839473
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "grip_mm": 12.7,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverPortSupportPlate",
+          "DriverSeatPortSupportAngle"
+        ],
+        "source_id": "SNL:031:004",
+        "bolt_length_mm": 31.75,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 4.762500000000001
+      },
+      {
+        "stem": "DriverSeatStarboardAngleFloor1",
+        "point_world_mm": [
+          7180.084168942017,
+          -316.425,
+          643.5697072260173
+        ],
+        "axis_world": [
+          0.10981848824610611,
+          -0.0,
+          -0.9939516586028416
+        ],
+        "grip_mm": 12.349999999999808,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatStarboardSupportAngle",
+          "hull_floor_2"
+        ],
+        "source_id": "SNL:031:008",
+        "bolt_length_mm": 41.275,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 14.63750000000019
+      },
+      {
+        "stem": "DriverStarboardSupportMount1",
+        "point_world_mm": [
+          7180.781516342379,
+          -282.575,
+          671.6467548737852
+        ],
+        "axis_world": [
+          -0.0,
+          -1.0,
+          -0.0
+        ],
+        "grip_mm": 12.7,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverStarboardSupportPlate",
+          "DriverSeatStarboardSupportAngle"
+        ],
+        "source_id": "SNL:031:004",
+        "bolt_length_mm": 31.75,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 4.762500000000001
+      },
+      {
+        "stem": "DriverSeatStarboardAngleFloor2",
+        "point_world_mm": [
+          7210.084168942017,
+          -316.425,
+          646.8843097208853
+        ],
+        "axis_world": [
+          0.10981848824610611,
+          -0.0,
+          -0.9939516586028416
+        ],
+        "grip_mm": 12.349999999999808,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatStarboardSupportAngle",
+          "hull_floor_2"
+        ],
+        "source_id": "SNL:031:008",
+        "bolt_length_mm": 41.275,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 14.63750000000019
+      },
+      {
+        "stem": "DriverStarboardSupportMount2",
+        "point_world_mm": [
+          7210.781516342379,
+          -282.575,
+          674.9613573686532
+        ],
+        "axis_world": [
+          -0.0,
+          -1.0,
+          -0.0
+        ],
+        "grip_mm": 12.7,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverStarboardSupportPlate",
+          "DriverSeatStarboardSupportAngle"
+        ],
+        "source_id": "SNL:031:004",
+        "bolt_length_mm": 31.75,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 4.762500000000001
+      },
+      {
+        "stem": "DriverSeatStarboardAngleFloor3",
+        "point_world_mm": [
+          7544.85553748039,
+          -316.425,
+          772.0782794213669
+        ],
+        "axis_world": [
+          0.38682881721883516,
+          -0.0,
+          -0.9221515418677545
+        ],
+        "grip_mm": 12.349999999999923,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatStarboardSupportAngle",
+          "hull_floor_1"
+        ],
+        "source_id": "SNL:031:008",
+        "bolt_length_mm": 41.275,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 14.637500000000076
+      },
+      {
+        "stem": "DriverStarboardSupportMount3",
+        "point_world_mm": [
+          7547.311900469729,
+          -282.575,
+          801.1086870568646
+        ],
+        "axis_world": [
+          -0.0,
+          -1.0,
+          -0.0
+        ],
+        "grip_mm": 12.7,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverStarboardSupportPlate",
+          "DriverSeatStarboardSupportAngle"
+        ],
+        "source_id": "SNL:031:004",
+        "bolt_length_mm": 31.75,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 4.762500000000001
+      },
+      {
+        "stem": "DriverSeatStarboardAngleFloor4",
+        "point_world_mm": [
+          7574.85553748039,
+          -316.425,
+          784.6628319484496
+        ],
+        "axis_world": [
+          0.38682881721883516,
+          -0.0,
+          -0.9221515418677545
+        ],
+        "grip_mm": 12.349999999999923,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatStarboardSupportAngle",
+          "hull_floor_1"
+        ],
+        "source_id": "SNL:031:008",
+        "bolt_length_mm": 41.275,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 14.637500000000076
+      },
+      {
+        "stem": "DriverStarboardSupportMount4",
+        "point_world_mm": [
+          7577.311900469729,
+          -282.575,
+          813.6932395839473
+        ],
+        "axis_world": [
+          -0.0,
+          -1.0,
+          -0.0
+        ],
+        "grip_mm": 12.7,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverStarboardSupportPlate",
+          "DriverSeatStarboardSupportAngle"
+        ],
+        "source_id": "SNL:031:004",
+        "bolt_length_mm": 31.75,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 4.762500000000001
+      },
+      {
+        "stem": "DriverSeatPortFrontStayLower",
+        "point_world_mm": [
+          7672.363641618496,
+          276.22499999999997,
+          1221.2242884250472
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "grip_mm": 12.7,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatPortFrontStay",
+          "DriverPortSupportPlate"
+        ],
+        "source_id": "SNL:031:005",
+        "bolt_length_mm": 34.925,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 7.937499999999998
+      },
+      {
+        "stem": "DriverSeatPortFrontStayUpper",
+        "point_world_mm": [
+          7630.174682080924,
+          205.0,
+          1482.0683111954459
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "grip_mm": 36.35,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatPortFrontBearing",
+          "DriverSeatPortFrontStay"
+        ],
+        "source_id": "SNL:033:009",
+        "bolt_length_mm": 60.325,
+        "bolt_diameter_mm": 19.05,
+        "bolt_protrusion_mm": 1.75
+      },
+      {
+        "stem": "DriverSeatStarboardFrontStayLower",
+        "point_world_mm": [
+          7672.363641618496,
+          -276.22499999999997,
+          1221.2242884250472
+        ],
+        "axis_world": [
+          -0.0,
+          -1.0,
+          -0.0
+        ],
+        "grip_mm": 12.7,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatStarboardFrontStay",
+          "DriverStarboardSupportPlate"
+        ],
+        "source_id": "SNL:031:005",
+        "bolt_length_mm": 34.925,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 7.937499999999998
+      },
+      {
+        "stem": "DriverSeatStarboardFrontStayUpper",
+        "point_world_mm": [
+          7630.174682080924,
+          -205.0,
+          1482.0683111954459
+        ],
+        "axis_world": [
+          -0.0,
+          -1.0,
+          -0.0
+        ],
+        "grip_mm": 36.35,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatStarboardFrontBearing",
+          "DriverSeatStarboardFrontStay"
+        ],
+        "source_id": "SNL:033:009",
+        "bolt_length_mm": 60.325,
+        "bolt_diameter_mm": 19.05,
+        "bolt_protrusion_mm": 1.75
+      },
+      {
+        "stem": "DriverSeatPortRearStayLower",
+        "point_world_mm": [
+          7352.932947976878,
+          276.22499999999997,
+          1227.152561669829
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "grip_mm": 12.7,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatPortRearStay",
+          "DriverPortSupportPlate"
+        ],
+        "source_id": "SNL:031:005",
+        "bolt_length_mm": 34.925,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 7.937499999999998
+      },
+      {
+        "stem": "DriverSeatPortRearStayUpper",
+        "point_world_mm": [
+          7383.067919075143,
+          205.0,
+          1482.0683111954459
+        ],
+        "axis_world": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "grip_mm": 36.35,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatPortRearBearing",
+          "DriverSeatPortRearStay"
+        ],
+        "source_id": "SNL:033:009",
+        "bolt_length_mm": 60.325,
+        "bolt_diameter_mm": 19.05,
+        "bolt_protrusion_mm": 1.75
+      },
+      {
+        "stem": "DriverSeatStarboardRearStayLower",
+        "point_world_mm": [
+          7352.932947976878,
+          -276.22499999999997,
+          1227.152561669829
+        ],
+        "axis_world": [
+          -0.0,
+          -1.0,
+          -0.0
+        ],
+        "grip_mm": 12.7,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatStarboardRearStay",
+          "DriverStarboardSupportPlate"
+        ],
+        "source_id": "SNL:031:005",
+        "bolt_length_mm": 34.925,
+        "bolt_diameter_mm": 12.7,
+        "bolt_protrusion_mm": 7.937499999999998
+      },
+      {
+        "stem": "DriverSeatStarboardRearStayUpper",
+        "point_world_mm": [
+          7383.067919075143,
+          -205.0,
+          1482.0683111954459
+        ],
+        "axis_world": [
+          -0.0,
+          -1.0,
+          -0.0
+        ],
+        "grip_mm": 36.35,
+        "lock_stock_mm": 3.175,
+        "hosts": [
+          "DriverSeatStarboardRearBearing",
+          "DriverSeatStarboardRearStay"
+        ],
+        "source_id": "SNL:033:009",
+        "bolt_length_mm": 60.325,
+        "bolt_diameter_mm": 19.05,
+        "bolt_protrusion_mm": 1.75
+      }
+    ],
+    "relocated_existing_hardware": [
+      "DriverPortSupportMount1Bolt",
+      "DriverPortSupportMount1Lock",
+      "DriverPortSupportMount1Nut",
+      "DriverPortSupportMount2Bolt",
+      "DriverPortSupportMount2Lock",
+      "DriverPortSupportMount2Nut",
+      "DriverPortSupportMount3Bolt",
+      "DriverPortSupportMount3Lock",
+      "DriverPortSupportMount3Nut",
+      "DriverPortSupportMount4Bolt",
+      "DriverPortSupportMount4Lock",
+      "DriverPortSupportMount4Nut",
+      "DriverStarboardSupportMount1Bolt",
+      "DriverStarboardSupportMount1Lock",
+      "DriverStarboardSupportMount1Nut",
+      "DriverStarboardSupportMount2Bolt",
+      "DriverStarboardSupportMount2Lock",
+      "DriverStarboardSupportMount2Nut",
+      "DriverStarboardSupportMount3Bolt",
+      "DriverStarboardSupportMount3Lock",
+      "DriverStarboardSupportMount3Nut",
+      "DriverStarboardSupportMount4Bolt",
+      "DriverStarboardSupportMount4Lock",
+      "DriverStarboardSupportMount4Nut"
+    ],
+    "source_camera_refitted": false,
+    "geometry_connection_built": true,
+    "installation_qualified": false,
+    "seat_parent_native_sha256": "b44b9acf37f1a72326d8e42780b13229f73e9513f9cb193106f253eecf8a51a3",
+    "retained_development_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01/PowertrainControlRebuild.FCStd",
+    "retained_development_native_sha256": "c8adadcb73bf9de0153cceb7e85e686bd63d5c6f1b198054e23811fdba8fede1",
+    "unchanged_source_seat_origin_world_mm": [
+      7491.553815028901,
+      0.0,
+      1517.6379506641365
+    ],
+    "scope": "Four full stays,24 upper/lower fastener pieces,two separate floor angles and24 floor fastener pieces.24 previous plate fasteners relocated to real plate-angle joints. Bore, side plate and angle ownership revisions explicit.",
+    "limits": [
+      "A/B upper bolt versus B/D stay identities unresolved.",
+      "M788 angle allocation, sharp two-plane bend, stay doglegs, stock and support outlines estimated.",
+      "Conditional lower-joint picks and shaft/seat historical position remain unresolved.",
+      "Static assembly only; adjusting/locking mechanism and SH291C application not qualified.",
+      "No source camera refit or full tank integration."
+    ]
+  },
+  "new_occurrences": [
+    "DriverSeatPortAngleFloor1Bolt",
+    "DriverSeatPortAngleFloor1Lock",
+    "DriverSeatPortAngleFloor1Nut",
+    "DriverSeatPortAngleFloor2Bolt",
+    "DriverSeatPortAngleFloor2Lock",
+    "DriverSeatPortAngleFloor2Nut",
+    "DriverSeatPortAngleFloor3Bolt",
+    "DriverSeatPortAngleFloor3Lock",
+    "DriverSeatPortAngleFloor3Nut",
+    "DriverSeatPortAngleFloor4Bolt",
+    "DriverSeatPortAngleFloor4Lock",
+    "DriverSeatPortAngleFloor4Nut",
+    "DriverSeatPortSupportAngle",
+    "DriverSeatStarboardAngleFloor1Bolt",
+    "DriverSeatStarboardAngleFloor1Lock",
+    "DriverSeatStarboardAngleFloor1Nut",
+    "DriverSeatStarboardAngleFloor2Bolt",
+    "DriverSeatStarboardAngleFloor2Lock",
+    "DriverSeatStarboardAngleFloor2Nut",
+    "DriverSeatStarboardAngleFloor3Bolt",
+    "DriverSeatStarboardAngleFloor3Lock",
+    "DriverSeatStarboardAngleFloor3Nut",
+    "DriverSeatStarboardAngleFloor4Bolt",
+    "DriverSeatStarboardAngleFloor4Lock",
+    "DriverSeatStarboardAngleFloor4Nut",
+    "DriverSeatStarboardSupportAngle",
+    "DriverSeatPortFrontStay",
+    "DriverSeatPortFrontStayLowerBolt",
+    "DriverSeatPortFrontStayLowerLock",
+    "DriverSeatPortFrontStayLowerNut",
+    "DriverSeatPortFrontStayUpperBolt",
+    "DriverSeatPortFrontStayUpperLock",
+    "DriverSeatPortFrontStayUpperNut",
+    "DriverSeatStarboardFrontStay",
+    "DriverSeatStarboardFrontStayLowerBolt",
+    "DriverSeatStarboardFrontStayLowerLock",
+    "DriverSeatStarboardFrontStayLowerNut",
+    "DriverSeatStarboardFrontStayUpperBolt",
+    "DriverSeatStarboardFrontStayUpperLock",
+    "DriverSeatStarboardFrontStayUpperNut",
+    "DriverSeatPortRearStay",
+    "DriverSeatPortRearStayLowerBolt",
+    "DriverSeatPortRearStayLowerLock",
+    "DriverSeatPortRearStayLowerNut",
+    "DriverSeatPortRearStayUpperBolt",
+    "DriverSeatPortRearStayUpperLock",
+    "DriverSeatPortRearStayUpperNut",
+    "DriverSeatStarboardRearStay",
+    "DriverSeatStarboardRearStayLowerBolt",
+    "DriverSeatStarboardRearStayLowerLock",
+    "DriverSeatStarboardRearStayLowerNut",
+    "DriverSeatStarboardRearStayUpperBolt",
+    "DriverSeatStarboardRearStayUpperLock",
+    "DriverSeatStarboardRearStayUpperNut"
+  ],
+  "new_definitions": [
+    "Def_SeatSupport_AngleFloorBolt",
+    "Def_SeatSupport_FrontStay_SH289B",
+    "Def_SeatSupport_LowerStayBolt",
+    "Def_SeatSupport_PortAngle_M788",
+    "Def_SeatSupport_RearStay_SH289D",
+    "Def_SeatSupport_StarboardAngle_M788",
+    "Def_SeatSupport_UpperStayBolt",
+    "Def_SeatSupport_UpperStayLock",
+    "Def_SeatSupport_UpperStayNut"
+  ],
+  "changed_definitions": [
+    "Def_DriverSeat_Bearing_SH289E",
+    "Def_DriverPortSupportPlate_MountStudy",
+    "Def_DriverStarboardSupportPlate_MountStudy"
+  ],
+  "new_assembly_specs": {},
+  "prototype_physical_occurrences": 281,
+  "prototype_definition_count": 97,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

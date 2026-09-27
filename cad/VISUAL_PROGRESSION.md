@@ -1464,3 +1464,12 @@ eight rivets, two clips and 21 nails. Source-derived placement remains condition
 full support connections are unfinished. This study is separate from the
 accepted standard progression, which remains **308**. Provenance and image hashes
 are saved in [the study receipt](003_FullTank/experiments/drive_chains/driver_seat_study/snapshot_provenance.json).
+
+## 27 September 2026 — connected seat supports (diagnostic)
+
+[Connected seat isometric](intermediate_snapshot_iso_seat_supports_study_20260927.png)
+shows four physical stays, revised bearings, complete mounting hardware and
+separate support angles seated on the actual floor. The full local assembly is
+mechanically checked; source placement and remaining adjusting fittings are
+unresolved. Accepted tank progression remains **308**. See
+[snapshot provenance](003_FullTank/experiments/drive_chains/driver_seat_support_study/snapshot_provenance.json).
