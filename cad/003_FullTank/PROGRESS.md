@@ -11,6 +11,18 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — begin foot/reverse-control source packet
+
+The [next packet](experiments/drive_chains/driver_foot_reverse_study/README.md)
+retains44 selected rows,31 source views and9 exact native interfaces;10 controlling
+images were directly inspected. Original HB148 requires neutral-selective braking
+through the selector linkage. SNL86 distinguishes twoSH946F ends from the M569C
+applications; the opposite foot-rod connection still needs tracing. Original
+SNL118 printsM177 for the reverse lever, so the figure-familyM777 discrepancy
+is preserved rather than silently corrected. Bridle cotter and pin-length details
+are recorded before construction. Its95-dependency evidence verifier passes;
+no new foot/reverse geometry is claimed. The integrated station remains authoritative.
+
 ## 27 September 2026 — integrate the complete coupled driver station
 
 The [new development checkpoint](experiments/drive_chains/coupled_driver_integration/README.md)

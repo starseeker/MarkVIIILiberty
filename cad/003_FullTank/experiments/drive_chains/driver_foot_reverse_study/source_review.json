@@ -1,0 +1,85 @@
+{
+  "status": "source_review_in_progress",
+  "geometry_created": false,
+  "parent_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+  "evidence_report_sha256": "85642dd5966f0d4e8fb5c94dd18915c5e7340b2083fdecf7826cb0de48e3ebe9",
+  "inspected_images": {
+    "hb148_original.png": "9d125413f45c6b486f103f71a0f4c05293fd746e0b8da8bef894fae3b75c5963",
+    "hb150_original.png": "8a0731baf453b0b97a3a027e188ded06b5c94f8d69d74e0a41e13e0a05cdc92c",
+    "snl071.png": "cfbf8df19d05fa25f1c86aa56d9defac7e34aeaaedf8d102481b5d6116774a0f",
+    "snl023.png": "34e7c0282bef4d076a0ad9f375e840303ad4f6c6c4356616bc8cf10661a08ff6",
+    "snl086.png": "1dd6227d47f7227413d20a03b3a556e2e4a3b6d51324619082e3feded024b97f",
+    "snl118.png": "5ac989df15323bf43b704017aaddca126e4693bf8ec987bbabb57f8c6a6cd96f",
+    "snl136.png": "0ad7d9c8120419fdf4ae5e066752a4d3a7366ba0fede57e7539debb04caa10b1",
+    "snl193.png": "ce994a67ac1ede022955ae412739453dc5d52a0225d35967d72bb8cb23c16112",
+    "hb_plate113.png": "283595eca057ac9776455a32a00efd589d84046c20c9dd4f0429766c9b6fbf11",
+    "snl_plate6.png": "f4b2d6fdcf7ea8617127e20cc5bd980e2c2a85ac59e869e3b8f4e698993f653f"
+  },
+  "uninspected_collected_images": [
+    "snl030.png",
+    "snl042.png",
+    "snl065.png",
+    "snl066.png",
+    "snl072.png",
+    "snl087.png",
+    "snl119.png",
+    "snl126.png",
+    "snl127.png",
+    "snl129.png",
+    "snl132.png",
+    "snl133.png",
+    "snl134.png",
+    "snl141.png",
+    "snl161.png",
+    "snl195.png",
+    "snl217.png",
+    "snl219.png",
+    "hb_plate92.png",
+    "hb_plate94.png",
+    "hb146_original.png"
+  ],
+  "confirmed_observations": [
+    "Original HB148 describes selector-dependent neutral-only track braking through straight/folded links. Kinematic topology constrains the static reconstruction even though no motion qualification is requested yet.",
+    "Original SNL71 lists8M771,1M764A,1M765,1M766,2M769,1M770,1M795 andSH98B/C/D. Exact grouping of the8members and their shared pins remains to be traced.",
+    "Original SNL193 identifies fiveM576 applications: high2,foot2,clutch1. Parent currently contains3. The two missing foot applications must preserve the shared definition or require a documented whole-family revision.",
+    "Original SNL86 gives twoSH946F, one on each of twoM576 rods, while its M569C application covers only threeM576 rods with twoC ends each. Foot assignment is an inventory-based inference, not explicit wording in the F row. Other foot-end topology remains open.",
+    "Original SNL23 gives M767/M7687/8in nut/3/16x1-1/2in cotter versus M776 one-inch cotter; no M767 bolt length there.",
+    "Original SNL136 prints M568A1-5/8in for applications including M771; SNL71 says1-7/8in. Retain the specific physical-part row and the discrepancy.",
+    "Original HB150 prints27.968in hand reach,6in bell arm and52in reverse rod of extra-strong3/4in nominal wrought-iron pipe. The length datum and applicable rod section are not independently established.",
+    "Original SNL118 clearly prints M177 reverse operating lever, drawing214. Record against the existing figure-family M777 interpretation; do not call this a transcription correction.",
+    "SNL6 and HB113 are broken-length schematic assembled views. Reuse local registrations; no whole-vehicle perspective or length inference across breaks."
+  ],
+  "dimensions_mm": {
+    "reverse_hand_reach": 710.3872,
+    "reverse_bell_arm": 152.39999999999998,
+    "reverse_rod_stated_length": 1320.8,
+    "bridle_cotter_diameter": 4.762499999999999,
+    "bridle_cotter_length": 38.099999999999994,
+    "bridle_nut_nominal": 22.224999999999998
+  },
+  "source_identity_conflicts": [
+    {
+      "source": "SNL:118:008",
+      "original_printed_mark": "M177",
+      "figure_family_candidate": "M777",
+      "disposition": "Keep both locators; functional reverse-lever identity clear, mark discrepancy unresolved."
+    },
+    {
+      "source": "SNL:136:007",
+      "selected_physical_pin_length_in": 1.625,
+      "conflicting_source": "SNL:071:031",
+      "conflicting_length_in": 1.875
+    }
+  ],
+  "open_questions": [
+    "M771 eight-member topology and common pin axes with selectors.",
+    "SH946F actual form/end assignment and opposite foot-rod connection.",
+    "M767 bolt grip, M766 spacer length, bridle and pedal stock.",
+    "M770/M795 journal stack and attachment to the rear driver swing shaft.",
+    "M57152in length datum and nominal pipe section; reverse lever M177/M777 mark discrepancy.",
+    "Spring/clip interfaces and unprinted section/angle/mount dimensions."
+  ],
+  "source_camera_refitted": false,
+  "geometry_qualified": false,
+  "interpretation": "Evidence and retained interfaces prepared; no claim that31 collected views are all inspected or that next geometry is complete."
+}

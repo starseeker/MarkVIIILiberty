@@ -14,6 +14,7 @@
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_foot_reverse_evidence.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_support_outline_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_seat_adjustment_evidence.py",
@@ -46,7 +47,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Continue driver_foot_reverse_study from coupled_driver_integration/integrated01. Review the extracted original sources and retained interfaces, then build the foot-brake bridle/pedal/suspension and eight M771 interconnections with existing speed selectors, two remaining shared M576 rods and their SH946F ends. Reconcile the reverse lever/quadrant and M571 pipe using HB150 dimensions and actual intermediate receiver. Preserve complete printed M574/SH229A stock and full inherited hierarchy; qualify each connected static addition before integration.",
+  "next_action": "Build the driver foot-control topology from coupled_driver_integration/integrated01 and driver_foot_reverse_study/evidence02. Trace M765/M769/M770/M795 and8M771 connectivity against SNL6/HB113 using existing local registrations and actual selector/shaft interfaces. Then construct complete connected stock, M767/M768 with1.5in cotter, M568A1.625in pin interpretation, and the two remaining shared M576 rods. Resolve SH946F end/other-end assignment before adding forks. Preserve complete M574/SH229A stock and inherited hierarchy. Follow with reverse lever/quadrant/M571, retaining original SNL118 M177 versus figure-family M777 identity discrepancy and HB150 length-datum uncertainty. No source-camera refit justified yet.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -248,5 +249,11 @@
     "receipt": "cad/003_FullTank/experiments/drive_chains/seat_adjustment_study/evidence_receipt.json",
     "status": "SH291C confirmed separate from SH291X. SH291D handle and SH291F cleat confirmed only as rivet applications; D/F quantities and all three mounts unresolved. No speculative geometry added."
   },
-  "active_driver_foot_reverse_packet": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study"
+  "active_driver_foot_reverse_packet": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study",
+  "active_driver_foot_reverse_review": {
+    "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence_receipt.json",
+    "status": "44 selected rows,31 collected source views/10 directly inspected,9 saved native interfaces;95 bound dependencies. Foot-brake neutral-selective topology and M177/M777 reverse identity discrepancy retained. Geometry not yet built.",
+    "geometry_created": false
+  }
 }
