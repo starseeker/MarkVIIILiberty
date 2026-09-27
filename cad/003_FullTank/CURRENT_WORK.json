@@ -15,6 +15,7 @@
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02",
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_fulcrum_shaft.py --candidate cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/shaft01",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_low_rod_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_rear_low_joint_checkpoint.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_control_pin_family_checkpoint.py",
@@ -28,7 +29,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Resume preserved driver/front-controls draft from verified source identities and actual interfaces. Start M782 fulcrum shaft/retainers and M746/M747 support geometry; reconstruct selector/toggle topology before connecting M574/M576 front rods.",
+  "next_action": "Complete M746/M747 side fulcrums, real mounting on sloping floor and M783 swing-shaft layout. Use driver_redo01/shaft01 only as a checked uninstalled M782/retainer hypothesis; establish actual selector/toggle receivers before closing M574/M576 front rods.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -106,25 +107,25 @@
     "qualification": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/qualification.json"
   },
   "qualification_scope": "SH944 short/long links, shaft, axial Woodruff keys, complete source-sized clamp/mount hardware, real floor receivers and M581 rear rod with distinct SH953E/M569C joint families, and complete93in SH229A center rod with M569C joints. Source center-rod stock length determines swing-bracket X. Nominal/variation, context, strict STEP and full-native preservation checks pass. Cast forms, mounting, key-size height and routing remain estimates.",
-  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/source_review01.json",
+  "active_evidence_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/source_review02.json",
   "active_development_candidate": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02",
     "native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
     "status": "Withheld b19e16e5 functions rebuilt across six qualified increments:3437 occurrences/602 definitions/409 groups. CompleteM581/SH229A clutch routes and keyed SH944 assembly accepted. Driver-controls continuation now active."
   },
-  "qualification_note": "All140 original withheld additions have functional dispositions across six corrected increments,155 net physical additions. Source/casting/routing approximations remain explicit. Driver continuation remains open.",
+  "qualification_note": "All140 original withheld additions have functional dispositions across six corrected increments,155 net physical additions. Source/casting/routing approximations remain explicit. Driver continuation remains open. Driver continuation has a separate checked five-part uninstalled M782 study; it is not promoted to the full model.",
   "parent_pipeline_run": "high_brake_support01",
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
   "current_verifier": "cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing08",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/qualification.json",
-    "geometry_integrated": true,
-    "status": "Withheld b19e16e5 functions rebuilt across six qualified increments:3437 occurrences/602 definitions/409 groups. CompleteM581/SH229A clutch routes and keyed SH944 assembly accepted. Driver-controls continuation now active.",
-    "nominal_and_clearance_variation": "142 local checks and53 strict STEP comparisons each;215 nominal/214 variation context pairs, no exemptions.",
-    "source_camera": "SNL192 scan confirmsSH229A93in center rod. Broken-length drawing used qualitatively; no camera refit.",
-    "next_action": "Resume preserved driver/front-controls draft from verified source identities and actual interfaces. Start M782 fulcrum shaft/retainers and M746/M747 support geometry; reconstruct selector/toggle topology before connecting M574/M576 front rods.",
-    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/long_rods_integrated01/qualification.json"
+    "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/shaft01",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/shaft01/part_qualification.json",
+    "geometry_integrated": false,
+    "status": "Driver continuation resumed: M782 shaft and four source-sized retainers built and checked as uninstalled parts. Actual support grip, floor attachment and final keeper/nut interpretation remain open.",
+    "nominal_and_clearance_variation": "28 local checks,9 context pairs,7 strict STEP comparisons each; fresh nominal reproduction and two inspected views.",
+    "source_camera": "HB148/149 original scan and SNL213 original scan reviewed. HB12/HB92 arrangement reviewed; no source-camera refit.",
+    "next_action": "Complete M746/M747 side fulcrums, real mounting on sloping floor and M783 swing-shaft layout. Use driver_redo01/shaft01 only as a checked uninstalled M782/retainer hypothesis; establish actual selector/toggle receivers before closing M574/M576 front rods.",
+    "preceding_study": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/qualification.json"
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
@@ -153,5 +154,6 @@
     "retained_progression_note": "Main has accepted progression through 254. Gemini retains experimental images 255-286; retain their provenance and avoid silently reusing those numbers when salvaging the withheld work.",
     "withheld_redo_completion": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/withheld_redo_completion.json",
     "withheld_redo_status": "Corrected local static reconstruction complete; original branch remains preserved."
-  }
+  },
+  "driver_part_verifier": "cad/003_FullTank/experiments/drive_chains/verify_driver_fulcrum_shaft.py"
 }

@@ -1,0 +1,35 @@
+{
+  "source_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/source_rows01.json": "5e9f52e3388b754f88557ca10464930dcdcd4cfb00347092f697a341abeb7e7e",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/handbook_text01.json": "407d5b883aef4edda37a81946aef5eeff13423673c6373af6ff1cf5bf73af846",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/original_scans/MarkVIII075.jpg": "b3405cf3ed8e4fe7771b4d0eb282b5e389bfea75fcac3011dd9f3eb6b625691b",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate12.png": "a2b3c37ec6546677a331933f9c48793787a515f622687b9d70e717f6517c9892",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate92.png": "50c33f9ae0e099f8bcf852742b69a10c4199e9a6375ea40b55032f87e4b07509",
+    "references/1925-03-06_Preliminary_Handbook_Mark_VIII_Tank/Handbook_Project/assets/plate93.png": "65a46c3dfdf7ba25adaadf772ca627e67b003335355d4fd440064abbeaf48036",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p213.jpg": "4be12d938e3f6fe7c608a4484e7bf74b2363e12be964df9fa6f3fc3537644847",
+    "cad/003_FullTank/experiments/drive_chains/transmission_pin_sources.json": "5fa355162f6717e0be1ef38ee0a9c8f42e468b3b009b51792bd216a5dcc9d80d",
+    "cad/003_FullTank/experiments/drive_chains/transmission_pin_controls.json": "609c2139c86aaa383f064d1c733dcd4cfff52af0b48a6c7bb6a71afa875d5379"
+  },
+  "reviewed": [
+    "Original HB148/149 scan directly viewed. Fulcrum shaft: carbon steel,24-3/4in long,1.497in diameter. HB37in operating levers engage separate selectors; do not apply37in to allfour selector bodies.",
+    "SNL213 original scan directly viewed. M782 fulcrum shaft assembly has twoM313 nuts and two3/16 x1-1/2in split pins. M783 swing shaft is separate and has twoM314 nuts/two3/16 x2in pins.",
+    "HB12 and92 directly inspected: two shafts, two operating handles, separate selector/toggle/brake linkages. Gemini draft omits significant linkage and does not establish correct bearing/rod receiving topology."
+  ],
+  "approximations": [
+    "Reuse driver X7280/Z1020 only as provisional study placement. Supports, actual mounting and functional rod receiving bores must be reconstructed before assembly acceptance.",
+    "HBshaft628.65mm interpreted as total end-to-end stock, nominal38.0238mm central journal. Reduced end geometry and M313 engagement dimensions require reconciliation against source-approved existing nut definition.",
+    "Existing M313 nut is a shared reconstruction with estimated44mm AF,14mm height and28.3mm nominal bore. Do not change all eight applications just to accommodate an unsupported local shaft-end choice.",
+    "Source3/16 x1.5in cotters must not be replaced by retained2.5in planet-pin cotters. The existing nut interpretation may require review at this new application.",
+    "First part trial is M782 and its two existing shared M313 nuts plus two source-length3/16 x1.5in cotters. Fulcrum brackets and floor attachment are deliberately pending: this is NOT an installed or integrated driver assembly.",
+    "Reduced shaft ends are inferred28mm diameter and44.45mm long. A19.05mm axial receiver space lies between shaft shoulder and nut seat, reserved for future real M746/M747 stock; no physical placeholder is counted.",
+    "The short M782 cotters cross the shaft outside the nut front face with2.5mm axial center offset; their legs spread in the plane normal to the shaft. This explicit retention hypothesis does not claim engagement with the existing estimated M313 castle slots. Reconcile final support grip and source end detail before integration."
+  ],
+  "constraints": [
+    "Four selectors are shorter gate forms;37in hand dimension applies to two operating levers.",
+    "Cut journal bores after all unions; no shaft/lever or floor mating exemptions.",
+    "M5741257.3mm stock must meet actual measured front receiver, not the draft [7220,+/-135,890] target. Accepted intermediate receivers allow a revised front-end pose within that fixed length.",
+    "Standardfloor1/2 rise toward the driver. A shaft at1020 with bracket feet at940 is not automatically supported; derive real floor contacts.",
+    "Preserved draft files stay immutable at review/gemini-front-controls-20260926."
+  ],
+  "status": "Reviewed source supports a bounded uninstalled shaft/retainer trial; bracket installation and final end arrangement remain open."
+}

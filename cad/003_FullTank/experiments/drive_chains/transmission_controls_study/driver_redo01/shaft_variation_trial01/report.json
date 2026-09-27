@@ -1,0 +1,270 @@
+{
+  "native_file": "ControlRebuildTrial.FCStd",
+  "native_sha256": "0746e4d585c82c47be9acc6a81c46cf992afc38635b3d41fe558eecaf2dae80c",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/PowertrainControlRebuild.FCStd",
+  "parent_native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
+  "parent_manifest_sha256": "0a501f128b8477cc0f839ef1ef4845c246db4e35f416ef27e5d2263c9764e0da",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/trial_driver_fulcrum_shaft.py": "b52d49d59527b78bef332afc9ae6701d2518bffa657117dba2ce383bcf358ff6",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/shaft_variation01.json": "072b61628ce57d3f7619d8879ac7bc35711f12d945ca2ba3ee4648c78de9ee45",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/source_review02.json": "83926e64c5ec0efd35413e7808a58c9feade630a11fb449628bddd6629eda3f5",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/report.json": "225cea8b61be044f99ed93439bbdf60d5345b399833eda2046f6051bd19658a4",
+    "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/isolated/manifest.json": "0a501f128b8477cc0f839ef1ef4845c246db4e35f416ef27e5d2263c9764e0da",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io_v2.py": "84ab9a61290fbdbf32da469c0acab4582a6e6e7a0761583b6425263bc96f6465",
+    "cad/003_FullTank/experiments/drive_chains/transmission_core_parts.py": "b7b3150e42529535f842871e81c4c580a15b25ce123e997da3ef5437041d7ff1",
+    "cad/003_FullTank/experiments/drive_chains/transmission_frame_parts.py": "a0ef001b84b6593093fa1ffe1aff650a2253646e0facba5610a7d4600a0da228",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_installation_parts.py": "3aa0f82af289688b8453ac25dbe1c53bf84924880a0e03adb51328431a3eef7f",
+    "cad/003_FullTank/experiments/drive_chains/transmission_input_parts.py": "35c677472dad5a90701bedbd6c06b3fb01f2b0fda494efc00be48a64db35d3a6",
+    "cad/003_FullTank/experiments/drive_chains/transmission_output_parts.py": "f5733f343308c7a7179cc6273b0c62162ba2b84ee09eeb6f68a31e31ebc2ed20",
+    "cad/003_FullTank/experiments/drive_chains/transmission_stud_parts.py": "cdeda621c79bf68a95f3cb03f173e60c75a66f2d63331c0e334418840f6fd3bb",
+    "cad/003_FullTank/experiments/drive_chains/transmission_support_parts.py": "378d460b581c26154940ced9b9f4a8d8ca514fb97b05f24a2ac13c8c8b595405"
+  },
+  "specs": {
+    "DriverFulcrumShaft": {
+      "definition": "Def_DriverFulcrumShaft_Redo",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7280.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1020.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverFulcrumShaftStudy",
+      "role": "shaft",
+      "source_records": [
+        "HB:148",
+        "SNL:213:016"
+      ]
+    },
+    "DriverFulcrumPortNut": {
+      "definition": "Def_TransmissionPin_nut",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7280.0,
+        0.0,
+        1.0,
+        0.0,
+        -240.30214285714288,
+        0.0,
+        0.0,
+        1.0,
+        1020.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverFulcrumShaftStudy",
+      "role": "nut",
+      "source_records": [
+        "SNL:213:017"
+      ]
+    },
+    "DriverFulcrumPortKeeper": {
+      "definition": "Def_DriverFulcrumKeeper_Redo",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7280.0,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        305.425,
+        -0.0,
+        0.0,
+        1.0,
+        1020.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverFulcrumShaftStudy",
+      "role": "keeper",
+      "source_records": [
+        "SNL:213:018"
+      ]
+    },
+    "DriverFulcrumStarboardNut": {
+      "definition": "Def_TransmissionPin_nut",
+      "frame": [
+        -1.0,
+        -1.2246467991473532e-16,
+        0.0,
+        7280.0,
+        1.2246467991473532e-16,
+        -1.0,
+        0.0,
+        240.30214285714288,
+        0.0,
+        0.0,
+        1.0,
+        1020.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverFulcrumShaftStudy",
+      "role": "nut",
+      "source_records": [
+        "SNL:213:017"
+      ]
+    },
+    "DriverFulcrumStarboardKeeper": {
+      "definition": "Def_DriverFulcrumKeeper_Redo",
+      "frame": [
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        7280.0,
+        -1.0,
+        2.220446049250313e-16,
+        -0.0,
+        -305.425,
+        -0.0,
+        0.0,
+        1.0,
+        1020.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverFulcrumShaftStudy",
+      "role": "keeper",
+      "source_records": [
+        "SNL:213:018"
+      ]
+    }
+  },
+  "details": {
+    "controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02",
+      "parent_native_sha256": "4fb23038e66070ff47f8c6813c64cd46f8972846237adfd67a0f991e24809ddc",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/source_review02.json",
+      "source_review_sha256": "83926e64c5ec0efd35413e7808a58c9feade630a11fb449628bddd6629eda3f5",
+      "shaft_length": 628.65,
+      "shaft_diameter": 38.0238,
+      "center": [
+        7280,
+        0,
+        1020
+      ],
+      "reduced_end_length": 46.45,
+      "reduced_end_radius": 14,
+      "receiver_grip": 21.05,
+      "keeper_front_offset": 2.5,
+      "keeper_hole_diameter": 5.0,
+      "keeper": {
+        "cotter_center_spacing": 2.48,
+        "cotter_diameter": 4.7625,
+        "crown_radius": 14,
+        "cotter_head_gap": 0.8,
+        "cotter_exit_gap": 0.8,
+        "cotter_bend_radius": 4,
+        "cotter_bend_angle": 40,
+        "cotter_length": 38.1,
+        "cotter_eye_radius": 4,
+        "cotter_eye_rise": 6,
+        "cotter_eye_join_overlap": 0.25
+      }
+    },
+    "shaft_half_length_mm": 314.325,
+    "shoulder_station_mm": 267.875,
+    "nut_seat_station_mm": 288.925,
+    "keeper_station_mm": 305.425,
+    "existing_nut_base_y_mm": 529.2271428571429,
+    "keeper": {
+      "straight_length_mm": 29.6,
+      "bend_arc_length_mm": 2.792526803190927,
+      "tail_length_mm": 5.707473196809072,
+      "total_leg_centerline_mm": 38.099999999999994,
+      "tail_endpoints": [
+        [
+          0.0,
+          21.743328565412256,
+          -5.844515281050982
+        ],
+        [
+          0.0,
+          21.743328565412256,
+          5.844515281050982
+        ]
+      ],
+      "wire_radius_mm": 1.14125,
+      "under_eye_y_mm": -14.8,
+      "bend_start_y_mm": 14.8,
+      "exact_stock_volume_conserved": false,
+      "construction": "Analytic cylinder/torus legs and semicircular eye; eye leads overlap the leg junctions by the stated construction allowance."
+    },
+    "receiving_interface": {
+      "future_support_grip_mm": 21.05,
+      "support_axis": "Y",
+      "journal_radius_mm": 14,
+      "positive_side_limits_mm": [
+        267.875,
+        288.925
+      ],
+      "negative_side_limits_mm": [
+        -288.925,
+        -267.875
+      ]
+    },
+    "scope": "Uninstalled five-part study; brackets, floor attachment and final shaft-end interpretation remain open. No part of the accepted full model changes."
+  },
+  "new_occurrences": [
+    "DriverFulcrumShaft",
+    "DriverFulcrumPortNut",
+    "DriverFulcrumPortKeeper",
+    "DriverFulcrumStarboardNut",
+    "DriverFulcrumStarboardKeeper"
+  ],
+  "new_definitions": [
+    "Def_DriverFulcrumKeeper_Redo",
+    "Def_DriverFulcrumShaft_Redo"
+  ],
+  "changed_definitions": [],
+  "new_assembly_specs": {
+    "DriverFulcrumShaftStudy": {
+      "owner": "Root",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "prototype_physical_occurrences": 5,
+  "prototype_definition_count": 3,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

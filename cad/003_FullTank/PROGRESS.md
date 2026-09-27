@@ -11,6 +11,19 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September2026 — driver continuation resumed
+
+The [driver study](experiments/drive_chains/transmission_controls_study/driver_redo01/README.md)
+now contains a source-sized M782 shaft, two shared M313 nuts and two shorter split
+pins. Nominal and variation pass28 local checks,9 context pairs and7 STEP
+comparisons each; fresh reproduction and two inspected views pass. These five
+parts remain **uninstalled**, pending M746/M747 support grip, actual floor
+mounting and M783 shaft layout. The accepted full assembly remains3,437 parts.
+
+HB148 distinguishes two37-inch operating levers from their separate selectors;
+the draft's four full-length selector handles are rejected. The source-bound
+shaft provides the next mounting datum without accepting that draft topology.
+
 ## 27 September2026 — withheld control redo completed
 
 The [corrected checkpoint](experiments/drive_chains/transmission_controls_study/redo01/clutch_swing_integrated02/README.md)
