@@ -2518,6 +2518,56 @@
           "sha256": "2f8038066fc4e5b872c45a7ba0439de31044eaf7b66df8355c8fbee11079ddc2"
         }
       ]
+    },
+    {
+      "id": "driver_reverse_quadrant_mounts",
+      "status": "reviewed_approximation",
+      "scope": "Retain reverse_quadrant03 as an isolated mounted-quadrant study with real support bores and complete bolt stock.",
+      "reason": "Original inventory fixes two bolts and two M781 distances. Complete seats and full-context checks reject two initial placements; the bounded complete-profile probe finds clearance without changing neighboring geometry or shortening stock.",
+      "uncertainty": "Quadrant radii, arc, detents, hidden forward mount, supporting-part identity and axial stack are inferred.15.31875mm bolt projection and earlier25.23px source hand-end discrepancy remain unresolved.",
+      "limits": [
+        "Latch and long reverse route unfinished; no mechanism integration or motion qualification.",
+        "Construction picks and fixed source overlays do not independently validate historical mounting.",
+        "Only two support bores and their metadata change; all prior reverse geometry survives.",
+        "Accepted coupled station, tank011 and progression314 unchanged."
+      ],
+      "reopen_when": [
+        "Actual latch/guide/rod interfaces constrain the quadrant or lever profile.",
+        "Clearer source views or dimensions resolve mounting, threaded length or detents.",
+        "Receiving support, seat stays or driver lever changes.",
+        "Dependent material, context or exchange checks fail."
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "92 saved checks,116 context pairs and27 strict STEP comparisons per nominal/+1mm case; fresh45-BRep/2074-property build; seven inspected views including corrected axial section."
+      },
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant_study_receipt.json",
+          "sha256": "27bd099cb6bc5848a8ee97e3c2b5892fdfc888335b193869a506088933b608fe"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/REVERSE_QUADRANT_STUDY.md",
+          "sha256": "4760f90b4877692f475693e3651e77969b4e230f98daadc7790f4a335c13febc"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant_source_review03.json",
+          "sha256": "3f42e5c8bd1432f4f4039d190c2a30684243c4fd7f03a99ccdcf30b85c966678"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant03/visual01/visual_review.json",
+          "sha256": "88e6af3c933a2125943d6bde88e44f747d13b6d2f64bf04a99fe36c368e15f9b"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant_lane_probe01/report.json",
+          "sha256": "508cd0ed56c698d310f9b3bd4ddde42c43ed216c7b88091f06f309f54e24ce7c"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_latch_source_review01.json",
+          "sha256": "c8ef3f5cb114fa73ebeec81a35b38d7bad4fffd21964b33041a3817b136ef381"
+        }
+      ]
     }
   ]
 }

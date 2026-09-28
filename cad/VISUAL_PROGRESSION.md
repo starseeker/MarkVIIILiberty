@@ -1538,3 +1538,14 @@ Trigger, quadrant and full reverse mechanism remain unfinished; the fixed source
 comparison retains a visible hand-position discrepancy. These are local study
 views, separate from accepted progression314. See
 [provenance](003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_progression_receipt.json).
+
+## 27 September 2026 — mounted reverse quadrant (diagnostic)
+
+[Quadrant isometric](intermediate_snapshot_iso_reverse_quadrant_study_001.png),
+[retained station context](intermediate_snapshot_context_reverse_quadrant_study_001.png)
+and [actual bolt section](intermediate_snapshot_section_reverse_quadrant_study_001.png)
+show the checked notched band, two complete mounting stacks and real receiving
+bores. Trigger, pawl and long reverse route remain unfinished. Historical mounting
+and the bolt projection are explicit uncertainties. These local study views are
+separate from accepted progression314. See
+[provenance](003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant_progression_receipt.json).

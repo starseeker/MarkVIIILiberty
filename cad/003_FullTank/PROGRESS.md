@@ -11,6 +11,25 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — mounted reverse quadrant checked
+
+The [quadrant study](experiments/drive_chains/driver_foot_reverse_study/REVERSE_QUADRANT_STUDY.md)
+adds nine mounting/quadrant parts to the retained reverse connection and two real
+bores to the starboard support. Nominal and +1 mm quadrant-stock cases each pass
+92 saved-part checks, 116 nearby pairs in a 9,006-part context, and 27 strict STEP
+comparisons. A fresh build reproduces 45 BReps and 2,074 persistent properties;
+the frozen verifier binds 1,011 dependencies. Complete source-length bolts and
+all inherited reverse material/frames/metadata survive.
+
+Two earlier placements fail actual seats or neighboring material and are retained.
+Seven native/source views were inspected; a corrected axial section exposes the
+whole fastener stack. Three diagnostic snapshots preserve this stage. Mounting
+identity/profile/spacing remain inferred, with 15.31875 mm bolt projection beyond
+each nut and the prior source hand-end discrepancy still open. The latch source
+packet now constrains trigger, pins/cotters, rod, spring, pawl, guide and full
+rivets; connected geometry is next. The coupled station remains authoritative,
+with tank011 and accepted progression314 unchanged.
+
 ## 27 September 2026 — reverse body and third short rod checked
 
 The [reverse short-connection study](experiments/drive_chains/driver_foot_reverse_study/REVERSE_SHORT_STUDY.md)

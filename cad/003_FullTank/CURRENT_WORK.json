@@ -14,6 +14,7 @@
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_reverse_quadrant_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_reverse_short_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_central_pedal_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_foot_profile_study.py",
@@ -50,7 +51,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Continue the checked reverse_short03 body/third M789A study with M779 quadrant, M781 distances, M780 pawl, M778 trigger rod and SNL118 trigger/guide/spring hardware, including actual receiving holes and complete fasteners. Reassess the25.23px apparent source hand-end discrepancy as these constraints firm up; keep source cameras fixed. Then reconcile the52in pipe/M571 long route. Foot M765/M769/M771 topology remains unresolved: retain incompatible studies without integrating their union or moving parts merely to hide conflicts. Full standard geometry remains the priority.",
+  "next_action": "Continue reverse_quadrant03 with the M739 trigger, two M740 pins and full cotters, M778 rod, M744 spring/M745 seat pin, M780 pawl, M742 guide and full guide rivets. Resolve actual receiving features and detent engagement from reverse_latch_source_review01.json; preserve printed stock and recheck the entire station. Historical quadrant stack and25.23px apparent source hand-end discrepancy remain open; keep source cameras fixed. Then reconcile the52in pipe/M571 long route. Foot M765/M769/M771 topology remains unresolved: retain incompatible studies without integrating their union or moving parts merely to hide conflicts. Full standard geometry remains the priority.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -166,7 +167,7 @@
     "External photograph/film preview does not reveal hidden foot joints. Front-unit8M568C covers3M789A+1M789B short rods; long front rods are a separate inventory level."
   ],
   "visual_progression_count": 314,
-  "next_packet": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/REVERSE_SHORT_STUDY.md",
+  "next_packet": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/REVERSE_QUADRANT_STUDY.md",
   "latest_locally_qualified_checkpoint": {
     "path": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01",
     "native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
@@ -185,14 +186,17 @@
   "parent_pipeline_receipt": "cad/003_FullTank/experiments/drive_chains/transmission_high_brake_support_study/integrated_upper01/pipeline_evidence",
   "current_verifier": "python3 cad/003_FullTank/experiments/drive_chains/verify_control_rebuild_checkpoint.py --candidate cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01",
   "active_geometry_study": {
-    "path": "cad/003_FullTank/experiments/drive_chains/driver_seat_support_study/trial01",
-    "receipt": "cad/003_FullTank/experiments/drive_chains/driver_seat_support_study/study_receipt.json",
-    "native_sha256": "06dac4aba207e8ef4bc856c2c08ecb29ee85a715ecc63cdfe0d800df21e6005f",
+    "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study",
+    "packet": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/REVERSE_QUADRANT_STUDY.md",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant_study_receipt.json",
+    "native": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant03/ControlRebuildTrial.FCStd",
+    "native_sha256": "91b0731b6cc64e4043991f7f5e2d17ff6d324926a130e9fe42a41a69c839ef0d",
     "geometry_integrated": false,
-    "status": "Connected static seat support prototype:281 local occurrences/97definitions.54 additions,3 revised definitions,24 relocated plate fasteners. Nominal/+5mm lower-joint variation each pass607 interface/material checks and96 strict STEP comparisons;269/267 context pairs clear; fresh reproduction passes. Historical placement/part boundaries and adjusting details remain unresolved.",
-    "source_review": "cad/003_FullTank/experiments/drive_chains/driver_seat_support_study/BUILD.md",
-    "preceding_accepted_geometry": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/driver_redo01/operating_integrated01",
-    "next_action": "Build a coupled driver/intermediate layout from driver_station_review/visibility01: tentative main X7461.419/Z990.022, swing separation406.530mm retained. Full M574 stock requires intermediate receiver X shift-165.521mm at retained Y/Z. Propagate through complete front/rear rods, actual intermediate and driver floor mounts, and connected seat supports; do not move isolated eyes or shorten printed stock. Functional-source handles are a candidate (37.24mm bow clearance in the bounded probe), not accepted geometry. Recheck full context and source before integration, then finish SH291C/adjustment fittings."
+    "integration_ready": false,
+    "status": "Mounted quadrant and two real support bores; nine additions beyond reverse_short03. Nominal/+1mm stock:92 saved checks,116 context pairs,27 strict STEP comparisons; fresh45-BRep/2074-property rebuild.1011 dependencies. Historical mounting and complete latch/long route unresolved.",
+    "source_review": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant_source_review03.json",
+    "preceding_accepted_geometry": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01",
+    "next_action": "Continue reverse_quadrant03 with the M739 trigger, two M740 pins and full cotters, M778 rod, M744 spring/M745 seat pin, M780 pawl, M742 guide and full guide rivets. Resolve actual receiving features and detent engagement from reverse_latch_source_review01.json; preserve printed stock and recheck the entire station. Historical quadrant stack and25.23px apparent source hand-end discrepancy remain open; keep source cameras fixed. Then reconcile the52in pipe/M571 long route. Foot M765/M769/M771 topology remains unresolved: retain incompatible studies without integrating their union or moving parts merely to hide conflicts. Full standard geometry remains the priority."
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
@@ -260,7 +264,7 @@
   "active_driver_foot_reverse_review": {
     "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study",
     "receipt": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence_receipt.json",
-    "status": "44 selected rows,31 collected source views/10 directly inspected,9 saved native interfaces;95 bound dependencies. Foot-brake neutral-selective topology and M177/M777 reverse identity discrepancy retained. Geometry not yet built.",
+    "status": "Initial44-row source review is frozen. Subsequent isolated foot-profile, central-pedal, reverse-short and mounted-quadrant geometry have separate receipts; their unresolved topology/source discrepancies prevent complete mechanism integration.",
     "geometry_created": false
   },
   "active_profile_study": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/PROFILE_STUDY.md",
@@ -284,5 +288,15 @@
     "geometry_integrated": false,
     "integration_ready": false,
     "status": "Ten physical additions;75 checks,53 context pairs and11 strict STEP comparisons per nominal/-1mm stock case; exact27-BRep/1291-property fresh rebuild. Complete reverse fittings and source profile unresolved."
+  },
+  "active_reverse_quadrant_study": {
+    "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study",
+    "packet": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/REVERSE_QUADRANT_STUDY.md",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant_study_receipt.json",
+    "native": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant03/ControlRebuildTrial.FCStd",
+    "native_sha256": "91b0731b6cc64e4043991f7f5e2d17ff6d324926a130e9fe42a41a69c839ef0d",
+    "geometry_integrated": false,
+    "integration_ready": false,
+    "status": "Mounted quadrant and two real support bores; nine additions beyond reverse_short03. Nominal/+1mm stock:92 saved checks,116 context pairs,27 strict STEP comparisons; fresh45-BRep/2074-property rebuild.1011 dependencies. Historical mounting and complete latch/long route unresolved."
   }
 }

@@ -1,0 +1,52 @@
+{
+  "status": "candidate_latch_graph_for_next_construction",
+  "crop": {
+    "source": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/topology02/hb113_driver_side_detail.png",
+    "source_sha256": "3d4502864df692b11faf783735092608e08e54f35b8f142d08281bd8f51bb507",
+    "crop_px": [
+      0,
+      0,
+      530,
+      360
+    ],
+    "output_size_px": [
+      1325,
+      900
+    ],
+    "image": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_fittings_sources01/hb113_trigger_detail.png",
+    "image_sha256": "26d42eeb3b0f6e95d50e047e3e8d0f226797404b929244808bb6839c10a451a9",
+    "method": "Unmodified source crop and2.5x display enlargement; no new image detail or inferred lettering."
+  },
+  "source_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_fittings_sources01/report.json": "ef0362edc6f6c100afa4815b1f7a5c82d23af8064b1691e1a85dd68d5a2a1140",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/topology02/hb113_driver_side_detail.png": "3d4502864df692b11faf783735092608e08e54f35b8f142d08281bd8f51bb507",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_fittings_sources01/hb113_trigger_detail.png": "26d42eeb3b0f6e95d50e047e3e8d0f226797404b929244808bb6839c10a451a9",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_fittings_sources01/snl118.png": "5ac989df15323bf43b704017aaddca126e4693bf8ec987bbabb57f8c6a6cd96f",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_fittings_sources01/snl135.png": "679e29f7325c4b73343e1699b1ad37f59bf9a6d64d6ccce4172736bd6b3019d9",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_fittings_sources01/snl167.png": "9ac52fbebb27d0a458d27743b6bc2d7e40c5577847422e52a8ac80566629113d",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_fittings_sources01/snl195.png": "321a044b2710f183bb161aef0e4a06c3f56b9ad83a2a761c785d0bbc0e2319a8"
+  },
+  "observed": [
+    "SNL118 enumerates two trigger-pin assemblies, one trigger, one spring, guide, pawl, spring pin, trigger rod assembly and two guide rivets.",
+    "SNL135 pins are M740 with one1/16x3/8in split pin each; SNL195 gives M778 with onequarter-inch USS nut.",
+    "HB113 speed-control detail visibly has two upper pin centers, a finger trigger, a long rod and a nearby coil spring. Sharing M739/M740/M742/M744/M745 among both speed handles and reverse is explicit in the specific catalogue rows.",
+    "The figure upper trigger leader appears M737, while specific SNL inventory identifies M739. Preserve this discrepancy; do not silently rename the source."
+  ],
+  "proposed_graph": [
+    "First M740 joins M739 trigger to an integral lever pivot.",
+    "Second M740 joins the trigger output to the upper eye of M778.",
+    "M778 passes along the lever to sliding M780; its threaded connection is secured by thequarter-inch nut.",
+    "M742 guides the pawl and is fastened by two complete5/16x1-3/4in rivets through actual lever material.",
+    "M744 biases the rod/pawl toward the quadrant; M745 likely provides a spring seat on the rod. Fixed spring-seat ownership and exact upper-pin assignment remain hypotheses requiring source/geometry review."
+  ],
+  "constraints": [
+    "Preserve HB150 hand/bell reaches, complete M789A and all receiving axes.",
+    "Actual guide bore and rivet stock must fit the full receiving body; no clipping or unrecorded body removal.",
+    "Retain full cotter9.525mm source stock under a stated formed-length interpretation.",
+    "Derive M780 nose from the actual saved detent; leave useful running clearance and test static engagement rather than only adjacency.",
+    "Document M778 bends and spring form. A static assembled rod does not prove free sliding, force action or moving linkage clearance.",
+    "Recheck all new parts against the entire retained driver/seat context."
+  ],
+  "geometry_created": false,
+  "source_camera_refitted": false
+}
