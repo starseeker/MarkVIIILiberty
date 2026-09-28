@@ -14,6 +14,7 @@
   "camera_workflow": "tools/source_camera/README.md",
   "decision_ledger": "cad/003_FullTank/decision_ledger.json",
   "recovery_commands": [
+    "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_reverse_latch_routes.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_reverse_quadrant_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_reverse_short_study.py",
     "python3 cad/003_FullTank/experiments/drive_chains/verify_driver_central_pedal_study.py",
@@ -51,7 +52,7 @@
     "python3 tools/cad_pipeline/pipeline.py verify high_brake_support01"
   ],
   "active_worker_note": "No worker is asserted live by this file; inspect the actual lock before restarting.",
-  "next_action": "Continue reverse_quadrant03 with the M739 trigger, two M740 pins and full cotters, M778 rod, M744 spring/M745 seat pin, M780 pawl, M742 guide and full guide rivets. Resolve actual receiving features and detent engagement from reverse_latch_source_review01.json; preserve printed stock and recheck the entire station. Historical quadrant stack and25.23px apparent source hand-end discrepancy remain open; keep source cameras fixed. Then reconcile the52in pipe/M571 long route. Foot M765/M769/M771 topology remains unresolved: retain incompatible studies without integrating their union or moving parts merely to hide conflicts. Full standard geometry remains the priority.",
+  "next_action": "Build actual M780 pawl and M742 guide together from reverse_latch_routes01 local-X+20mm candidate. Rod and lower-path witnesses clear9006-part context; centered and negative-X routes fail. The witnesses are not finished parts: real guide walls, actual receiving holes and full5/16x1-3/4in rivet stock must fit near the front seat stay and quadrant. Explicitly resolve rivet length/formed-tail interpretation and commonM742 applicability to speed handles. Then add M778 thread/nut, M739 trigger, twoM740 pins/fullcotters, M744 spring andM745 seat pin. Preserve printed reaches, complete short rod, source cameras and all retained geometry except documented receiving features. Historical mounting and25.23px apparent source hand-end discrepancy remain open. LongM571 reverse route and conflictingM765/M769/M771 foot graph follow; standard geometry remains the priority.",
   "open_limits": [
     "M341/M342 versus MX95/MX96 identity",
     "Shared crossbar transverse hypothesis",
@@ -167,7 +168,7 @@
     "External photograph/film preview does not reveal hidden foot joints. Front-unit8M568C covers3M789A+1M789B short rods; long front rods are a separate inventory level."
   ],
   "visual_progression_count": 314,
-  "next_packet": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/REVERSE_QUADRANT_STUDY.md",
+  "next_packet": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/REVERSE_LATCH_ROUTES.md",
   "latest_locally_qualified_checkpoint": {
     "path": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01",
     "native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
@@ -196,7 +197,7 @@
     "status": "Mounted quadrant and two real support bores; nine additions beyond reverse_short03. Nominal/+1mm stock:92 saved checks,116 context pairs,27 strict STEP comparisons; fresh45-BRep/2074-property rebuild.1011 dependencies. Historical mounting and complete latch/long route unresolved.",
     "source_review": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant_source_review03.json",
     "preceding_accepted_geometry": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01",
-    "next_action": "Continue reverse_quadrant03 with the M739 trigger, two M740 pins and full cotters, M778 rod, M744 spring/M745 seat pin, M780 pawl, M742 guide and full guide rivets. Resolve actual receiving features and detent engagement from reverse_latch_source_review01.json; preserve printed stock and recheck the entire station. Historical quadrant stack and25.23px apparent source hand-end discrepancy remain open; keep source cameras fixed. Then reconcile the52in pipe/M571 long route. Foot M765/M769/M771 topology remains unresolved: retain incompatible studies without integrating their union or moving parts merely to hide conflicts. Full standard geometry remains the priority."
+    "next_action": "Build actual M780 pawl and M742 guide together from reverse_latch_routes01 local-X+20mm candidate. Rod and lower-path witnesses clear9006-part context; centered and negative-X routes fail. The witnesses are not finished parts: real guide walls, actual receiving holes and full5/16x1-3/4in rivet stock must fit near the front seat stay and quadrant. Explicitly resolve rivet length/formed-tail interpretation and commonM742 applicability to speed handles. Then add M778 thread/nut, M739 trigger, twoM740 pins/fullcotters, M744 spring andM745 seat pin. Preserve printed reaches, complete short rod, source cameras and all retained geometry except documented receiving features. Historical mounting and25.23px apparent source hand-end discrepancy remain open. LongM571 reverse route and conflictingM765/M769/M771 foot graph follow; standard geometry remains the priority."
   },
   "source_identity_correction": {
     "path": "cad/003_FullTank/experiments/drive_chains/transmission_controls_study/spring_sources01/sources.json",
@@ -298,5 +299,14 @@
     "geometry_integrated": false,
     "integration_ready": false,
     "status": "Mounted quadrant and two real support bores; nine additions beyond reverse_short03. Nominal/+1mm stock:92 saved checks,116 context pairs,27 strict STEP comparisons; fresh45-BRep/2074-property rebuild.1011 dependencies. Historical mounting and complete latch/long route unresolved."
+  },
+  "active_reverse_latch_route_probe": {
+    "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_latch_routes01",
+    "packet": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/REVERSE_LATCH_ROUTES.md",
+    "receipt": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_latch_routes_receipt.json",
+    "physical_parts_created": false,
+    "geometry_integrated": false,
+    "latch_qualified": false,
+    "status": "Three straight-rod/offset witnesses checked against9006 saved occurrences; only local-X+20mm case clears. Tooth witness fits actual notch, two penetrating negatives fail. Six views inspected. Actual pawl/guide, trigger/rod joints, spring and full hardware remain to build."
   }
 }

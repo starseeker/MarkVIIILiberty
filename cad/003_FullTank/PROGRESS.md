@@ -11,6 +11,21 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — begin actual latch layout from saved receivers
+
+The [latch-route probe](experiments/drive_chains/driver_foot_reverse_study/REVERSE_LATCH_ROUTES.md)
+checks three nonphysical rod/offset paths against the 9,006-part saved context.
+The center path hits the blade and front stay bolt; the negative-side path hits
+the stay. A positive-side path clears and reaches a tooth witness in the actual
+notch; below-floor and across-wall controls correctly penetrate. Six views were
+inspected, including opposite-side views that expose the initially hidden route.
+
+No physical latch parts or accepted progression images are added by this probe.
+Construct the real pawl and shared guide together next, including receiving holes
+and complete rivets, before committing upper trigger dimensions. The guide needs
+more room than these witnesses; nearby stay/quad clearances may force revision.
+The frozen quadrant and authoritative coupled station remain unchanged.
+
 ## 27 September 2026 — mounted reverse quadrant checked
 
 The [quadrant study](experiments/drive_chains/driver_foot_reverse_study/REVERSE_QUADRANT_STUDY.md)

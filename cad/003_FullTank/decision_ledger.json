@@ -2568,6 +2568,44 @@
           "sha256": "c8ef3f5cb114fa73ebeec81a35b38d7bad4fffd21964b33041a3817b136ef381"
         }
       ]
+    },
+    {
+      "id": "driver_reverse_latch_route_candidate",
+      "status": "open_evidence",
+      "scope": "Use the local-X+20mm route as a construction candidate for actual M780/M742; do not count witnesses as parts.",
+      "reason": "The centered route hits the saved blade and seat bolt; the negative-side route hits the stay. The positive-side route and detent tooth clear the saved context, with penetrating tooth negative controls.",
+      "uncertainty": "Rod endpoint/slope/diameter envelope and pawl offset are inferred. Shared guide geometry, real rivet stack, trigger pivots, threaded interfaces and spring seats are unfinished.",
+      "limits": [
+        "No physical latch parts, STEP qualification, motion or historical acceptance.",
+        "Small lower-route/quad margin may not admit actual pawl/guide material.",
+        "Rivet source length and any formed-tail interpretation must be explicit and retain stock.",
+        "No change to accepted geometry or source cameras."
+      ],
+      "reopen_when": [
+        "Actual guide walls or fasteners do not fit the fixed receiving material.",
+        "Shared M742 application conflicts with the existing speed handles.",
+        "New source dimensions clarify rod/pawl arrangement or spring seating.",
+        "Changed blade, quadrant or front seat stay invalidates saved clearances."
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_latch_routes_receipt.json",
+          "sha256": "852708be94f2ffe263026645894d65ad62524fe47ba40066675c59ad92ae2c8e"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/REVERSE_LATCH_ROUTES.md",
+          "sha256": "9ebeac7631246d5a12a614a24a9a5b581f3beb768572bbf24ee2908d9489f395"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_latch_routes01/visual_review.json",
+          "sha256": "d0bd6917757cea48fa13da27d0b5a87e6c059fe885cb6dcffdf0c38a99175190"
+        }
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "Saved geometry intersection probes, two notch negatives and six directly inspected route/detail views."
+      }
     }
   ]
 }

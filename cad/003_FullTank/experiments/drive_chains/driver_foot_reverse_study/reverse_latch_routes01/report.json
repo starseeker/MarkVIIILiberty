@@ -1,0 +1,564 @@
+{
+  "worker_sha256": "9f85e427dc0fad88fdf7f081eefe6eefb6a23ca326474d3b759a3c6bfd1719f3",
+  "native_sha256": "91b0731b6cc64e4043991f7f5e2d17ff6d324926a130e9fe42a41a69c839ef0d",
+  "parent_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_latch_routes_controls01.json": "e644e10d50fbb11392ad5df6b17a290b76ff8af6668e9ba8a39519c01daef5a8",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_latch_source_review01.json": "c8ef3f5cb114fa73ebeec81a35b38d7bad4fffd21964b33041a3817b136ef381",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant03/report.json": "e9743bc240690e473384b190d243dcf3a451dbe48edea51d44625e87c67d57b1",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant03/isolated/manifest.json": "cf1c82455b7edf093fa2680a7206ed21ad498a7ba5619b59a2fef56965c04590",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant_study_receipt.json": "27bd099cb6bc5848a8ee97e3c2b5892fdfc888335b193869a506088933b608fe",
+    "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/report.json": "60ac3a28e8de35ea179b208c0c4147e33c99d6d03ce9572ac85e06d77aa99bfb",
+    "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/isolated/manifest.json": "027f1aada1571473173d0631ec011cffcf81c2dd21335ed6060985a920f6b295",
+    "cad/003_FullTank/experiments/drive_chains/transmission_brake_front_study/trial01/standard_context_manifest.json": "58fb0a1b010c314dd8fc69758e9aeada05ce97f325c21d6801d7288cd6be753b"
+  },
+  "controls": {
+    "seed": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_quadrant03",
+    "native_sha256": "91b0731b6cc64e4043991f7f5e2d17ff6d324926a130e9fe42a41a69c839ef0d",
+    "source_review": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_latch_source_review01.json",
+    "source_review_sha256": "c8ef3f5cb114fa73ebeec81a35b38d7bad4fffd21964b33041a3817b136ef381",
+    "rod_radius_mm": 3.175,
+    "rod_start_z_mm": 310,
+    "rod_end_z_mm": 560,
+    "lateral_x_candidates_mm": [
+      0,
+      20,
+      -20
+    ],
+    "rod_axis_convention": "Parallel to the original upper-hand outward inclination; axis crosses the saved selected detent Y at the detent outer-radius station. X offset is the candidate construction variable.",
+    "nose_width_mm": 5.85,
+    "nose_thickness_mm": 5.85,
+    "nose_bottom_clearance_mm": 1.5,
+    "nose_radial_height_mm": 11.0,
+    "route_radius_mm": 3.175,
+    "scope": "Nonphysical route and detent witnesses only. No trigger, guide, spring, actual pawl, fastener or rod part is accepted by this probe."
+  },
+  "lever_frame": [
+    0.7360970871197341,
+    0.0,
+    0.676875969682661,
+    7461.418843930635,
+    0.0,
+    1.0,
+    0.0,
+    -235.0,
+    -0.676875969682661,
+    0.0,
+    0.7360970871197341,
+    990.0216318785577,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "context_occurrences": 9006,
+  "no_mating_pair_exemptions": true,
+  "rod_y_slope_per_local_z": -0.14944821670272365,
+  "quadrant_origin_in_lever_mm": [
+    0.0,
+    -27.17500000000001,
+    0.0
+  ],
+  "detent_tooth": {
+    "brep": "nonphysical_detent_tooth.brep",
+    "sha256": "32e26d2817b6da3007359132913c2e267203e9aa023617542721de8e47a645f8",
+    "audit": {
+      "passed": true,
+      "pairs": [
+        {
+          "other": "DriverReverseOperatingLever",
+          "common_mm3": 0,
+          "common_valid": true,
+          "passed": true,
+          "minimum_distance_mm": 2.7521032154768363
+        },
+        {
+          "other": "DriverReverseQuadrant",
+          "common_mm3": 0,
+          "common_valid": true,
+          "passed": true,
+          "minimum_distance_mm": 0.24999999999962313
+        },
+        {
+          "other": "hull_floor_1",
+          "common_mm3": 0,
+          "common_valid": true,
+          "passed": true,
+          "minimum_distance_mm": 337.89502280101635
+        },
+        {
+          "other": "StarboardDriverOperatingHandle",
+          "common_mm3": 0,
+          "common_valid": true,
+          "passed": true,
+          "minimum_distance_mm": 57.36499760233466
+        }
+      ],
+      "findings": []
+    },
+    "negative_controls": [
+      {
+        "name": "BelowFloor",
+        "delta_local_mm": [
+          0.0,
+          0.0,
+          -2.0
+        ],
+        "common_mm3": 17.11124999997604,
+        "rejected": true
+      },
+      {
+        "name": "AcrossNotchWall",
+        "delta_local_mm": [
+          0.6,
+          0.0,
+          0.0
+        ],
+        "common_mm3": 16.3893696318418,
+        "rejected": true
+      }
+    ]
+  },
+  "cases": [
+    {
+      "x_offset_mm": 0,
+      "rod_start_local_mm": [
+        0.0,
+        -32.40568758459534,
+        310.0
+      ],
+      "rod_end_local_mm": [
+        0.0,
+        -69.76774176027625,
+        560.0
+      ],
+      "rod_start_world_mm": [
+        7671.2503945322605,
+        -267.40568758459534,
+        1218.2117288856753
+      ],
+      "rod_end_world_mm": [
+        7840.469386952926,
+        -304.76774176027624,
+        1402.2360006656088
+      ],
+      "rod_length_mm": 252.7764290677169,
+      "rod_audit": {
+        "passed": false,
+        "pairs": [
+          {
+            "other": "DriverReverseOperatingLever",
+            "common_mm3": 2339.4725133667685,
+            "common_valid": true,
+            "passed": false,
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "other": "DriverStarboardSupportPlate",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 7.780157668063077
+          },
+          {
+            "other": "DriverReverseQuadrant",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 34.96143889167652
+          },
+          {
+            "other": "StarboardDriverOperatingHandle",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 57.819801752897426
+          },
+          {
+            "other": "DriverSeatStarboardFrontStay",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 2.453622676139749
+          },
+          {
+            "other": "DriverSeatStarboardFrontStayLowerBolt",
+            "common_mm3": 213.70773679267518,
+            "common_valid": true,
+            "passed": false,
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "other": "DriverSeatStarboardFrontStayLowerLock",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 16.08130505280492
+          },
+          {
+            "other": "DriverSeatStarboardFrontStayLowerNut",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 19.3658884518021
+          }
+        ],
+        "findings": [
+          {
+            "other": "DriverReverseOperatingLever",
+            "common_mm3": 2339.4725133667685,
+            "common_valid": true,
+            "passed": false,
+            "minimum_distance_mm": 0.0
+          },
+          {
+            "other": "DriverSeatStarboardFrontStayLowerBolt",
+            "common_mm3": 213.70773679267518,
+            "common_valid": true,
+            "passed": false,
+            "minimum_distance_mm": 0.0
+          }
+        ]
+      },
+      "offset_audit": {
+        "passed": false,
+        "pairs": [
+          {
+            "other": "DriverReverseOperatingLever",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 2.558646457623316
+          },
+          {
+            "other": "DriverReverseQuadrant",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 1.795724223229779
+          },
+          {
+            "other": "hull_floor_1",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 341.0987469420113
+          },
+          {
+            "other": "StarboardDriverOperatingHandle",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 57.235391067794495
+          },
+          {
+            "other": "DriverSeatStarboardFrontStay",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 6.064312441129851
+          },
+          {
+            "other": "DriverSeatStarboardFrontStayLowerBolt",
+            "common_mm3": 51.580537325502235,
+            "common_valid": true,
+            "passed": false,
+            "minimum_distance_mm": 0.0
+          }
+        ],
+        "findings": [
+          {
+            "other": "DriverSeatStarboardFrontStayLowerBolt",
+            "common_mm3": 51.580537325502235,
+            "common_valid": true,
+            "passed": false,
+            "minimum_distance_mm": 0.0
+          }
+        ]
+      },
+      "rod_brep": "nonphysical_rod_0.brep",
+      "rod_brep_sha256": "2b50093b7436fe2e3a09c9f4ddc1ef41ff096bb7cdc4a830f3b7b8b188dc9b91",
+      "offset_brep": "nonphysical_pawl_route_0.brep",
+      "offset_brep_sha256": "bc841453d2e9ed36c159545de33c52ef110d0f6be5b286e3ef453f319a8c3603",
+      "lower_offset_vector_mm": [
+        0.0,
+        -5.23068758459533,
+        33.02499999999998
+      ],
+      "corridor_clear": false
+    },
+    {
+      "x_offset_mm": 20,
+      "rod_start_local_mm": [
+        20.0,
+        -32.40568758459534,
+        310.0
+      ],
+      "rod_end_local_mm": [
+        20.0,
+        -69.76774176027625,
+        560.0
+      ],
+      "rod_start_world_mm": [
+        7685.972336274655,
+        -267.40568758459534,
+        1204.674209492022
+      ],
+      "rod_end_world_mm": [
+        7855.19132869532,
+        -304.76774176027624,
+        1388.6984812719556
+      ],
+      "rod_length_mm": 252.7764290677169,
+      "rod_audit": {
+        "passed": true,
+        "pairs": [
+          {
+            "other": "DriverReverseOperatingLever",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 3.457551531474635
+          },
+          {
+            "other": "DriverStarboardSupportPlate",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 9.629804551364938
+          },
+          {
+            "other": "DriverReverseQuadrant",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 35.42969108095594
+          },
+          {
+            "other": "hull_floor_1",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 333.6939511266729
+          },
+          {
+            "other": "StarboardDriverOperatingHandle",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 60.441502670084205
+          },
+          {
+            "other": "DriverSeatStarboardFrontStay",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 5.330547629382431
+          }
+        ],
+        "findings": []
+      },
+      "offset_audit": {
+        "passed": true,
+        "pairs": [
+          {
+            "other": "DriverReverseOperatingLever",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 2.552344588951991
+          },
+          {
+            "other": "DriverReverseQuadrant",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 0.5762586810925092
+          },
+          {
+            "other": "hull_floor_1",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 333.56204458789085
+          },
+          {
+            "other": "StarboardDriverOperatingHandle",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 57.23534453000251
+          },
+          {
+            "other": "DriverSeatStarboardFrontStay",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 6.28232750849607
+          }
+        ],
+        "findings": []
+      },
+      "rod_brep": "nonphysical_rod_1.brep",
+      "rod_brep_sha256": "88562395f1e02e02c77b0c152b521e66b11aa8f5b6013a111bff171e919930fd",
+      "offset_brep": "nonphysical_pawl_route_1.brep",
+      "offset_brep_sha256": "40d0d8bf0abe0e62a3bf36423ebdcce76791f3ab293fbc4b855c880ef855cf1b",
+      "lower_offset_vector_mm": [
+        20.0,
+        -5.23068758459533,
+        33.02499999999998
+      ],
+      "corridor_clear": true
+    },
+    {
+      "x_offset_mm": -20,
+      "rod_start_local_mm": [
+        -20.0,
+        -32.40568758459534,
+        310.0
+      ],
+      "rod_end_local_mm": [
+        -20.0,
+        -69.76774176027625,
+        560.0
+      ],
+      "rod_start_world_mm": [
+        7656.528452789866,
+        -267.40568758459534,
+        1231.7492482793286
+      ],
+      "rod_end_world_mm": [
+        7825.747445210531,
+        -304.76774176027624,
+        1415.773520059262
+      ],
+      "rod_length_mm": 252.7764290677169,
+      "rod_audit": {
+        "passed": false,
+        "pairs": [
+          {
+            "other": "DriverReverseOperatingLever",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 3.45755153147505
+          },
+          {
+            "other": "DriverStarboardSupportPlate",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 8.761096650319137
+          },
+          {
+            "other": "DriverReverseQuadrant",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 35.42969108095591
+          },
+          {
+            "other": "StarboardDriverOperatingHandle",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 58.19399913856406
+          },
+          {
+            "other": "DriverSeatStarboardFrontStay",
+            "common_mm3": 3.435868722346842,
+            "common_valid": true,
+            "passed": false,
+            "minimum_distance_mm": 9.094947017729282e-13
+          },
+          {
+            "other": "DriverSeatStarboardFrontStayLowerBolt",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 5.110094932187809
+          },
+          {
+            "other": "DriverSeatStarboardFrontStayLowerLock",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 18.883567120085736
+          },
+          {
+            "other": "DriverSeatStarboardFrontStayLowerNut",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 21.740641739639322
+          }
+        ],
+        "findings": [
+          {
+            "other": "DriverSeatStarboardFrontStay",
+            "common_mm3": 3.435868722346842,
+            "common_valid": true,
+            "passed": false,
+            "minimum_distance_mm": 9.094947017729282e-13
+          }
+        ]
+      },
+      "offset_audit": {
+        "passed": true,
+        "pairs": [
+          {
+            "other": "DriverReverseOperatingLever",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 2.552344588951991
+          },
+          {
+            "other": "DriverReverseQuadrant",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 0.5762586810931458
+          },
+          {
+            "other": "hull_floor_1",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 342.07335301228363
+          },
+          {
+            "other": "StarboardDriverOperatingHandle",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 57.23519002304635
+          },
+          {
+            "other": "DriverSeatStarboardFrontStay",
+            "common_mm3": 0,
+            "common_valid": true,
+            "passed": true,
+            "minimum_distance_mm": 5.673661867238339
+          }
+        ],
+        "findings": []
+      },
+      "rod_brep": "nonphysical_rod_2.brep",
+      "rod_brep_sha256": "4ff41d5e8612593d562e56097d082bc4a16567c29b0216ced65f544065fe1ee4",
+      "offset_brep": "nonphysical_pawl_route_2.brep",
+      "offset_brep_sha256": "bd6be5ff9853d4afed18ef20cc3365e20ebffe30ff7d0764c0ad9dcf417252d7",
+      "lower_offset_vector_mm": [
+        -20.0,
+        -5.23068758459533,
+        33.02499999999998
+      ],
+      "corridor_clear": false
+    }
+  ],
+  "geometry_integrated": false,
+  "physical_parts_created": false,
+  "latch_qualified": false,
+  "source_camera_refitted": false,
+  "scope": "Saved-material route witnesses only. Clear cylinders do not qualify the pawl, guide, threaded connections, upper eye/trigger, spring or hardware. No moving mechanism is validated."
+}
