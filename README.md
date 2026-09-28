@@ -4,6 +4,11 @@ This repository is a research and reconstruction project devoted to the First Wo
 
 The goal is not merely to produce a visually convincing model. Wherever possible, the project will record the source behind each feature, distinguish documented dimensions from estimates, and preserve uncertainty where the surviving evidence does not support a single answer.
 
+Current state:
+
+![MarkVIII_exterior](cad/intermediate_snapshot_iso_011.png)
+![MarkVIII_interior](cad/intermediate_snapshot_integrated_drive_chains_01.png)
+
 ## What the Mark VIII was
 
 The Mark VIII was a late-World War I heavy tank designed through a joint British-American program, with France also involved in the intended manufacturing arrangement. The design was meant for the anticipated 1919 Allied offensive and represented an attempt to combine British experience with American industrial capacity. Its collaborative origin is why it is often called the **International** tank.
