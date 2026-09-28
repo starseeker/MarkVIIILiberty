@@ -1528,3 +1528,13 @@ source overlay now follows the near-vertical fore-edge more closely. Nominal and
 fore-edge variation pass full-context and changed-part STEP checks; this remains
 a local approximation awaiting full-hierarchy integration. Accepted progression
 stays 308. [Snapshot provenance](003_FullTank/experiments/drive_chains/driver_support_outline_study/snapshot_provenance.json).
+
+## 27 September 2026 — reverse body and third short connection (diagnostic)
+
+[Reverse isometric](intermediate_snapshot_iso_reverse_short_study_001.png) and
+[retained station context](intermediate_snapshot_context_reverse_short_study_001.png)
+show the checked body and full shared short rod with two complete clevis joints.
+Trigger, quadrant and full reverse mechanism remain unfinished; the fixed source
+comparison retains a visible hand-position discrepancy. These are local study
+views, separate from accepted progression314. See
+[provenance](003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_progression_receipt.json).

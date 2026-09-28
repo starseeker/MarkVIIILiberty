@@ -11,6 +11,24 @@ stacks; 006 records the separate idler-wheel internals, 007 the shafts and adjus
 008 the lower support runs, 009 the driving wheels, 010 their shafts and bearings,
 and 011 the roller pinions. Transparent-hull companion views start at 011.
 
+## 27 September 2026 — reverse body and third short rod checked
+
+The [reverse short-connection study](experiments/drive_chains/driver_foot_reverse_study/REVERSE_SHORT_STUDY.md)
+adds ten physical occurrences and one new definition, retaining full handbook
+arm reaches and the third shared M789A rod with complete clevis hardware.
+Nominal and −1 mm blade-stock cases each pass75 saved checks,53 context pairs
+and11 strict STEP comparisons; a fresh build reproduces27 BReps and1,291
+persistent properties exactly. No inherited geometry or frames change.
+
+The initial blade and straight alternative clash with different station parts;
+a smaller documented bend clears them. The +1 mm variation exposes the unchanged
+clevis throat limit and is retained as a failure. Four native/source views were
+inspected and two diagnostic isometric snapshots saved. An apparent25.23px plan
+hand-end discrepancy remains; no source camera was refitted. Quadrant, trigger,
+pawl, receiving features and long reverse route follow. External film/photo
+screening did not resolve the separate foot-link conflict. The authoritative
+coupled station, tank011 and accepted progression314 remain unchanged.
+
 ## 27 September 2026 — central pedal group checked; combined-link conflict exposed
 
 The [central pedal study](experiments/drive_chains/driver_foot_reverse_study/CENTRAL_PEDAL_STUDY.md)

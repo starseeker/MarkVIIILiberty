@@ -1,0 +1,113 @@
+{
+  "source_record": "https://film.iwmcollections.org.uk/record/4178",
+  "public_preview": true,
+  "attribution": "Copyright IWM (IWM 1194)",
+  "method": "Unmodified ffmpeg frame extraction from public preview; times are preview playback seconds. Frame-index selection avoids nonzero MPEG-TS start-time seeking.",
+  "frames": [
+    {
+      "file": "iwm1194_frame_1025.png",
+      "preview_seconds": 1025,
+      "sha256": "09f2980a1dfc8b991d3f5551afe918f178cc1e39810af8944abd7c09b25792ad",
+      "segment_sha256": "34c98f167318154b672fce8330e16776d812e610be192c70c8468b65dd5b5d0b",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "/tmp/markviii_iwm1194/segment_1020.ts",
+        "-vf",
+        "select=eq(n\\,120)",
+        "-frames:v",
+        "1",
+        "-update",
+        "1",
+        "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/external_controls01/iwm1194_frame_1025.png"
+      ]
+    },
+    {
+      "file": "iwm1194_frame_1030.png",
+      "preview_seconds": 1030,
+      "sha256": "04f02f6ffe713f8243fbff2d317d20bb96725c878d4678b2b5b92d5f9681ba5e",
+      "segment_sha256": "f622bd0296be149cf3b6144955a6a5b453a5eb33c393be98630b87f2aa830551",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "/tmp/markviii_iwm1194/segment_1030.ts",
+        "-vf",
+        "select=eq(n\\,0)",
+        "-frames:v",
+        "1",
+        "-update",
+        "1",
+        "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/external_controls01/iwm1194_frame_1030.png"
+      ]
+    },
+    {
+      "file": "iwm1194_frame_1033.png",
+      "preview_seconds": 1033,
+      "sha256": "5a2f6fde8db258bccc35b9f11d468082435e22e02947bb3dd2e14cb291efe90c",
+      "segment_sha256": "f622bd0296be149cf3b6144955a6a5b453a5eb33c393be98630b87f2aa830551",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "/tmp/markviii_iwm1194/segment_1030.ts",
+        "-vf",
+        "select=eq(n\\,72)",
+        "-frames:v",
+        "1",
+        "-update",
+        "1",
+        "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/external_controls01/iwm1194_frame_1033.png"
+      ]
+    },
+    {
+      "file": "iwm1194_frame_1036.png",
+      "preview_seconds": 1036,
+      "sha256": "f882886da89912cf129698d0a4ffcb15c6ba6794a69ebdf1caf7e9bfd1860366",
+      "segment_sha256": "f622bd0296be149cf3b6144955a6a5b453a5eb33c393be98630b87f2aa830551",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "/tmp/markviii_iwm1194/segment_1030.ts",
+        "-vf",
+        "select=eq(n\\,144)",
+        "-frames:v",
+        "1",
+        "-update",
+        "1",
+        "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/external_controls01/iwm1194_frame_1036.png"
+      ]
+    },
+    {
+      "file": "iwm1194_frame_1040.png",
+      "preview_seconds": 1040,
+      "sha256": "817d5d73fc9c4196e0f40c8bce9884bb1d113fccf543005b378a8d496f00b9e3",
+      "segment_sha256": "7294bc5fb6fad85b7de1789f10a932600b45e6b7e80316050304bac17aa90bb7",
+      "command": [
+        "ffmpeg",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-i",
+        "/tmp/markviii_iwm1194/segment_1040.ts",
+        "-vf",
+        "select=eq(n\\,0)",
+        "-frames:v",
+        "1",
+        "-update",
+        "1",
+        "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/external_controls01/iwm1194_frame_1040.png"
+      ]
+    }
+  ]
+}

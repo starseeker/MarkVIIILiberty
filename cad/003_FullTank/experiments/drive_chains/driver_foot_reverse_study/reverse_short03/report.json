@@ -1,0 +1,821 @@
+{
+  "native_file": "ControlRebuildTrial.FCStd",
+  "native_sha256": "f304b4a787e5b29216d4f0ff24ce4f34c974c20f1055115ba98d12da0abd8ec5",
+  "parent_native": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/PowertrainControlRebuild.FCStd",
+  "parent_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+  "parent_manifest_sha256": "027f1aada1571473173d0631ec011cffcf81c2dd21335ed6060985a920f6b295",
+  "input_hashes": {
+    "cad/003_FullTank/experiments/drive_chains/build_driver_reverse_short_v2.py": "7c84b55121a196723123f98cb90dedd1b11c6d8fab3089d541d9ea2273035b4a",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_controls03.json": "40c2fe02514cf5351c2d33983313f733cf01ecd8daaeea7e1c4276508116f4aa",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_source_review03.json": "cf331b605cc637922993c975da0a1e82d764007990fb378331f258002c9d0079",
+    "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/report.json": "60ac3a28e8de35ea179b208c0c4147e33c99d6d03ce9572ac85e06d77aa99bfb",
+    "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/isolated/manifest.json": "027f1aada1571473173d0631ec011cffcf81c2dd21335ed6060985a920f6b295",
+    "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/qualification.json": "059811b34d2ece0b9147039cd916fa1406d8fb82160879fdca8c2888a680f094",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence02/hb150_original.png": "8a0731baf453b0b97a3a027e188ded06b5c94f8d69d74e0a41e13e0a05cdc92c",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence02/snl118.png": "5ac989df15323bf43b704017aaddca126e4693bf8ec987bbabb57f8c6a6cd96f",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence02/hb_plate94.png": "ee1a57cbfd9433cf8c42c54c8479b8aadfca36cee6cf6f50e161dea741443086",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/evidence02/snl_plate6.png": "f4b2d6fdcf7ea8617127e20cc5bd980e2c2a85ac59e869e3b8f4e698993f653f",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_105_124.py": "c83ba4707e5582a0c6cc0d367130761347953a72e6c6a6b9b1f6d7a6bd7127ca",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/data/tables_185_204.py": "a92096e7622a26377ea3669752921441c602e30bdd6beb297d02a4ade4b5ddee",
+    "references/1928-03-30_SNL_G13/SNL_G13_Project/sources/p194.jpg": "3b3603f9fff0b172b1392a8c43b1c048cfd1c4e68d75e58365228288f3d45e5c",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/external_controls01/source_screening.json": "886c105d8b526e758e274b0afb4c5b9fc59b371806862b53065c3a3166b4b880",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_set_probe01/report.json": "0138b8e310695c06a0be26db1bfbbf7c685ead5c9f03417f4a0f17c4c33f6403",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_short01/diagnostics01/report.json": "646e4bad64f40f21d958d4d274d2051ff1e071cb032d8ac766543ae54a7e5396",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_short01/visual01/render_receipt.json": "f60d889ba9c0c36f728cc8d95f873f2a3195357163610dd8ec7389b6c05189c4",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_set_probe02/report.json": "2779d5670459269744c74889cf72c3c2eef36bb4014c9f89a90d8fe6a22e224f",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_short02/context_audit/report.json": "4556d1b97723a05fdf2f9a812eee652f0e6ea413c8ace6c6a7961f63dece89df",
+    "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_short_variation02/context_audit/report.json": "32e11eb869547eb0ad07480f994ee0d53c25ed5bee6341684b05ec0e7f7fd967",
+    "cad/003_FullTank/experiments/drive_chains/control_rebuild_io_v2.py": "84ab9a61290fbdbf32da469c0acab4582a6e6e7a0761583b6425263bc96f6465",
+    "cad/003_FullTank/experiments/drive_chains/driver_control_linkage_parts_v3.py": "35ccd619023fd76276c116c9177d4331b3cc83d794af6e808f9c48c886ce2d90",
+    "cad/003_FullTank/experiments/drive_chains/driver_reverse_lever_parts_v2.py": "5c71f7faa08e9acd9d9d29cd32c11d6d3da3289f173255c92e3796fcd7b2b5e7"
+  },
+  "specs": {
+    "DriverReverseOperatingLever": {
+      "definition": "Def_DriverReverseLever_M177",
+      "frame": [
+        0.7360970871197343,
+        0.0,
+        0.676875969682661,
+        7461.418843930635,
+        0.0,
+        1.0,
+        0.0,
+        -235.0,
+        -0.676875969682661,
+        0.0,
+        0.7360970871197343,
+        990.0216318785577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverReverseShortConnection",
+      "role": "lever"
+    },
+    "DriverReverseShortRod": {
+      "definition": "Def_DriverFrontShortRod_M789A",
+      "frame": [
+        0.9865337079043001,
+        -0.0,
+        -0.16355807277109,
+        7124.9464159840545,
+        0.0,
+        1.0,
+        -0.0,
+        -235.0,
+        0.16355807277109,
+        0.0,
+        0.9865337079043001,
+        796.1760069269434,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverReverseShortConnection",
+      "role": "rod"
+    },
+    "DriverReverseShortRearJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        0.9865337079043001,
+        -0.0,
+        -0.16355807277109025,
+        7099.8884598032855,
+        0.0,
+        1.0,
+        -0.0,
+        -235.0,
+        0.16355807277109025,
+        0.0,
+        0.9865337079043001,
+        792.0216318785577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverReverseShortConnection",
+      "role": "fork"
+    },
+    "DriverReverseShortRearJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        0.9865337079043001,
+        -0.0,
+        -0.16355807277109025,
+        7099.8884598032855,
+        0.0,
+        1.0,
+        -0.0,
+        -235.0,
+        0.16355807277109025,
+        0.0,
+        0.9865337079043001,
+        792.0216318785577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverReverseShortConnection",
+      "role": "pin"
+    },
+    "DriverReverseShortRearJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        0.9865337079043001,
+        -0.0,
+        -0.16355807277109025,
+        7099.8884598032855,
+        0.0,
+        1.0,
+        -0.0,
+        -216.57500000000005,
+        0.16355807277109025,
+        0.0,
+        0.9865337079043001,
+        792.0216318785577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverReverseShortConnection",
+      "role": "cotter"
+    },
+    "DriverReverseShortRearJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        0.16355807277109036,
+        0.0,
+        0.9865337079043002,
+        7143.7398831196315,
+        0.0,
+        1.0,
+        0.0,
+        -235.0,
+        -0.9865337079043002,
+        0.0,
+        0.16355807277109036,
+        799.2917882132326,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverReverseShortConnection",
+      "role": "nut"
+    },
+    "DriverReverseShortForwardJointFork": {
+      "definition": "Def_TrackJoint_fork",
+      "frame": [
+        -0.9865337079043002,
+        0.0,
+        0.16355807277109025,
+        7416.245156585497,
+        0.0,
+        1.0,
+        0.0,
+        -235.0,
+        -0.16355807277109025,
+        0.0,
+        -0.9865337079043002,
+        844.4706168644271,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverReverseShortConnection",
+      "role": "fork"
+    },
+    "DriverReverseShortForwardJointPin": {
+      "definition": "Def_TrackJoint_pin",
+      "frame": [
+        -0.9865337079043002,
+        0.0,
+        0.16355807277109025,
+        7416.245156585497,
+        0.0,
+        1.0,
+        0.0,
+        -235.0,
+        -0.16355807277109025,
+        0.0,
+        -0.9865337079043002,
+        844.4706168644271,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverReverseShortConnection",
+      "role": "pin"
+    },
+    "DriverReverseShortForwardJointCotter": {
+      "definition": "Def_TrackJoint_cotter",
+      "frame": [
+        -0.9865337079043002,
+        0.0,
+        0.16355807277109025,
+        7416.245156585497,
+        0.0,
+        1.0,
+        0.0,
+        -216.57500000000005,
+        -0.16355807277109025,
+        0.0,
+        -0.9865337079043002,
+        844.4706168644271,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverReverseShortConnection",
+      "role": "cotter"
+    },
+    "DriverReverseShortForwardJointNut": {
+      "definition": "Def_USStdControlNut",
+      "frame": [
+        -0.1635580727710908,
+        0.0,
+        -0.9865337079043002,
+        7372.393733269151,
+        0.0,
+        1.0,
+        0.0,
+        -235.0,
+        0.9865337079043002,
+        0.0,
+        -0.1635580727710908,
+        837.2004605297523,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "DriverReverseShortConnection",
+      "role": "nut"
+    },
+    "DriverMainShaft": {
+      "definition": "Def_DriverMainShaft_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7461.418843930635,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        990.0216318785577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "Receivers",
+      "role": "receiver"
+    },
+    "DriverSwingShaft": {
+      "definition": "Def_DriverSwingShaft_MountStudy",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7054.8884598032855,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1010.0216318785577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "Receivers",
+      "role": "receiver"
+    },
+    "StarboardReverseDriverSwingLink": {
+      "definition": "Def_DriverSwingLink_M784",
+      "frame": [
+        1.0,
+        0.0,
+        0.0,
+        7054.8884598032855,
+        0.0,
+        1.0,
+        0.0,
+        -235.0,
+        0.0,
+        0.0,
+        1.0,
+        1010.0216318785577,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "owner": "Receivers",
+      "role": "receiver"
+    }
+  },
+  "details": {
+    "controls": {
+      "parent": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01",
+      "parent_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+      "source_review": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_source_review03.json",
+      "source_review_sha256": "cf331b605cc637922993c975da0a1e82d764007990fb378331f258002c9d0079",
+      "blade_stock_mm": 12.7,
+      "hub_width_mm": 24.0,
+      "hand_elevation_degrees": 47.4,
+      "hand_reach_mm": 710.3872,
+      "bell_radius_mm": 152.39999999999998,
+      "outward_set_mm": 105.0,
+      "delayed_set_mm": 30.0,
+      "lane_mm": -235.0
+    },
+    "stock_offset_mm": 0,
+    "pivot_world_mm": [
+      7461.418843930635,
+      -235.0,
+      990.0216318785577
+    ],
+    "front_pin_world_mm": [
+      7416.245156585497,
+      -235.0,
+      844.4706168644271
+    ],
+    "rear_pin_world_mm": [
+      7099.8884598032855,
+      -235.0,
+      792.0216318785577
+    ],
+    "main_world_mm": [
+      7461.418843930635,
+      0.0,
+      990.0216318785577
+    ],
+    "lever": {
+      "canonical_bell_mm": [
+        65.26776475677116,
+        0.0,
+        -137.71666160510418
+      ],
+      "included_angle_degrees": 154.64242265106935,
+      "source_hand_reach_mm": 710.3872,
+      "source_bell_radius_mm": 152.39999999999998,
+      "blade_profile": {
+        "section_records": [
+          {
+            "z_mm": 40.0,
+            "setback_y_mm": -0.0,
+            "original_points": [
+              [
+                -16.68159057825464,
+                -12.398449966428942,
+                40.0
+              ],
+              [
+                16.68159057825464,
+                -12.398449966428956,
+                40.0
+              ],
+              [
+                16.696190519424828,
+                0.44259263021106143,
+                40.0
+              ],
+              [
+                -16.696190519424828,
+                0.44259263021105255,
+                40.0
+              ]
+            ],
+            "points": [
+              [
+                -16.68159057825464,
+                -12.398449966428942,
+                40.0
+              ],
+              [
+                16.68159057825464,
+                -12.398449966428956,
+                40.0
+              ],
+              [
+                16.696190519424828,
+                0.44259263021106143,
+                40.0
+              ],
+              [
+                -16.696190519424828,
+                0.44259263021105255,
+                40.0
+              ]
+            ]
+          },
+          {
+            "z_mm": 100.0,
+            "setback_y_mm": -6.0,
+            "original_points": [
+              [
+                -16.214926401514237,
+                -21.365342968592373,
+                100.0
+              ],
+              [
+                16.214926401514237,
+                -21.36534296859238,
+                100.0
+              ],
+              [
+                16.229526342684427,
+                -8.524300371952359,
+                100.0
+              ],
+              [
+                -16.229526342684427,
+                -8.52430037195235,
+                100.0
+              ]
+            ],
+            "points": [
+              [
+                -16.214926401514237,
+                -15.365342968592373,
+                100.0
+              ],
+              [
+                16.214926401514237,
+                -15.36534296859238,
+                100.0
+              ],
+              [
+                16.229526342684427,
+                -2.524300371952359,
+                100.0
+              ],
+              [
+                -16.229526342684427,
+                -2.52430037195235,
+                100.0
+              ]
+            ]
+          },
+          {
+            "z_mm": 300.0,
+            "setback_y_mm": -29.0,
+            "original_points": [
+              [
+                -14.659379145712903,
+                -51.25498630913711,
+                300.0
+              ],
+              [
+                14.659379145712903,
+                -51.25498630913711,
+                300.0
+              ],
+              [
+                14.673979086883092,
+                -38.413943712497094,
+                300.0
+              ],
+              [
+                -14.673979086883092,
+                -38.413943712497094,
+                300.0
+              ]
+            ],
+            "points": [
+              [
+                -14.659379145712903,
+                -22.25498630913711,
+                300.0
+              ],
+              [
+                14.659379145712903,
+                -22.25498630913711,
+                300.0
+              ],
+              [
+                14.673979086883092,
+                -9.413943712497094,
+                300.0
+              ],
+              [
+                -14.673979086883092,
+                -9.413943712497094,
+                300.0
+              ]
+            ]
+          },
+          {
+            "z_mm": 360.0,
+            "setback_y_mm": -30.0,
+            "original_points": [
+              [
+                -14.192714968972503,
+                -60.22187931130053,
+                360.0
+              ],
+              [
+                14.192714968972503,
+                -60.22187931130053,
+                360.0
+              ],
+              [
+                14.207314910142692,
+                -47.38083671466052,
+                360.0
+              ],
+              [
+                -14.207314910142692,
+                -47.38083671466051,
+                360.0
+              ]
+            ],
+            "points": [
+              [
+                -14.192714968972503,
+                -30.221879311300533,
+                360.0
+              ],
+              [
+                14.192714968972503,
+                -30.221879311300533,
+                360.0
+              ],
+              [
+                14.207314910142692,
+                -17.380836714660518,
+                360.0
+              ],
+              [
+                -14.207314910142692,
+                -17.38083671466051,
+                360.0
+              ]
+            ]
+          },
+          {
+            "z_mm": 430.0,
+            "setback_y_mm": -27.5,
+            "original_points": [
+              [
+                -13.648273429442035,
+                -70.68325448049119,
+                430.0
+              ],
+              [
+                13.648273429442035,
+                -70.68325448049119,
+                430.0
+              ],
+              [
+                13.662873370612225,
+                -57.84221188385118,
+                430.0
+              ],
+              [
+                -13.662873370612225,
+                -57.84221188385118,
+                430.0
+              ]
+            ],
+            "points": [
+              [
+                -13.648273429442035,
+                -43.183254480491186,
+                430.0
+              ],
+              [
+                13.648273429442035,
+                -43.183254480491186,
+                430.0
+              ],
+              [
+                13.662873370612225,
+                -30.342211883851178,
+                430.0
+              ],
+              [
+                -13.662873370612225,
+                -30.342211883851178,
+                430.0
+              ]
+            ]
+          },
+          {
+            "z_mm": 520.0,
+            "setback_y_mm": -10.0,
+            "original_points": [
+              [
+                -12.948277164331435,
+                -84.13359398373632,
+                520.0
+              ],
+              [
+                12.948277164331433,
+                -84.13359398373633,
+                520.0
+              ],
+              [
+                12.962877105501624,
+                -71.2925513870963,
+                520.0
+              ],
+              [
+                -12.962877105501624,
+                -71.2925513870963,
+                520.0
+              ]
+            ],
+            "points": [
+              [
+                -12.948277164331435,
+                -74.13359398373632,
+                520.0
+              ],
+              [
+                12.948277164331433,
+                -74.13359398373633,
+                520.0
+              ],
+              [
+                12.962877105501624,
+                -61.292551387096296,
+                520.0
+              ],
+              [
+                -12.962877105501624,
+                -61.292551387096296,
+                520.0
+              ]
+            ]
+          },
+          {
+            "z_mm": 600.0,
+            "setback_y_mm": -0.0,
+            "original_points": [
+              [
+                -12.326058262010902,
+                -96.08945131995421,
+                600.0
+              ],
+              [
+                12.3260582620109,
+                -96.08945131995424,
+                600.0
+              ],
+              [
+                12.34065820318109,
+                -83.2484087233142,
+                600.0
+              ],
+              [
+                -12.34065820318109,
+                -83.24840872331418,
+                600.0
+              ]
+            ],
+            "points": [
+              [
+                -12.326058262010902,
+                -96.08945131995421,
+                600.0
+              ],
+              [
+                12.3260582620109,
+                -96.08945131995424,
+                600.0
+              ],
+              [
+                12.34065820318109,
+                -83.2484087233142,
+                600.0
+              ],
+              [
+                -12.34065820318109,
+                -83.24840872331418,
+                600.0
+              ]
+            ]
+          }
+        ],
+        "maximum_setback_mm": -30.0,
+        "unchanged_below_z_mm": 40.0,
+        "unchanged_above_z_mm": 600.0,
+        "section_law": "Ruled segments; original X/Z section vertices and projected-Y stock preserved. Transverse section translation only.",
+        "limit": "Estimated delayed outward set differs from the schematic plan blade; full source comparison and mechanical checks required. No independent historical profile validation."
+      },
+      "helper_controls": {
+        "lever_stock": 12.7,
+        "lever_boss_width": 24.0,
+        "lever_included_angle_degrees": 154.64242265106935,
+        "clutch_bell_radius": 152.39999999999998,
+        "clutch_hand_length": 710.3872,
+        "lever_hand_outward_offset": -105.0,
+        "lever_bore_diameter": 38.3238
+      },
+      "interpretation": "Hub-center-to-grip-extreme hand reach and hub-to-eye bell radius. These datums and unprinted blade sections, grip, outward set and included angle are interpretations, not recovered manufacturing dimensions."
+    },
+    "closure_alternatives_relative_main": [
+      [
+        -45.17368734513844,
+        0.0,
+        -145.55101501413063
+      ],
+      [
+        -146.96972140485616,
+        0.0,
+        40.31948648208418
+      ]
+    ],
+    "stock_length_mm": 269.875,
+    "pin_span_mm": 320.675,
+    "stock_start_world_mm": [
+      7124.9464159840545,
+      -235.0,
+      796.1760069269434
+    ],
+    "rod_axis_world": [
+      0.9865337079043001,
+      0.0,
+      0.16355807277109025
+    ],
+    "joints": [
+      {
+        "stem": "DriverReverseShortRearJoint",
+        "pin_world_mm": [
+          7099.8884598032855,
+          -235.0,
+          792.0216318785577
+        ],
+        "rod_axis_world": [
+          0.9865337079043001,
+          0.0,
+          0.16355807277109025
+        ],
+        "receiver": "StarboardReverseDriverSwingLink"
+      },
+      {
+        "stem": "DriverReverseShortForwardJoint",
+        "pin_world_mm": [
+          7416.245156585497,
+          -235.0,
+          844.4706168644271
+        ],
+        "rod_axis_world": [
+          -0.9865337079043001,
+          -0.0,
+          -0.16355807277109025
+        ],
+        "receiver": "DriverReverseOperatingLever"
+      }
+    ],
+    "metadata_revisions": {
+      "Def_DriverFrontShortRod_M789A": [
+        "ReconstructionStatus"
+      ]
+    },
+    "retained_development_native": "cad/003_FullTank/experiments/drive_chains/coupled_driver_integration/integrated01/PowertrainControlRebuild.FCStd",
+    "retained_development_native_sha256": "f9efcc8fc324dca0b50889fb1af39a2019e112c219ae0fa36368a3672a487776",
+    "source_camera_refitted": false,
+    "mechanism_complete": false,
+    "scope": "Complete reverse lever body and third full sharedM789A with two complete clevis joints. Quadrant/trigger and full rearward reverse linkage remain unfinished."
+  },
+  "new_occurrences": [
+    "DriverReverseOperatingLever",
+    "DriverReverseShortRod",
+    "DriverReverseShortRearJointFork",
+    "DriverReverseShortRearJointPin",
+    "DriverReverseShortRearJointCotter",
+    "DriverReverseShortRearJointNut",
+    "DriverReverseShortForwardJointFork",
+    "DriverReverseShortForwardJointPin",
+    "DriverReverseShortForwardJointCotter",
+    "DriverReverseShortForwardJointNut"
+  ],
+  "new_definitions": [
+    "Def_DriverReverseLever_M177"
+  ],
+  "changed_definitions": [],
+  "new_assembly_specs": {},
+  "prototype_physical_occurrences": 13,
+  "prototype_definition_count": 9,
+  "geometry_integrated": false,
+  "historical_geometry_qualified": false,
+  "installation_qualified": false
+}

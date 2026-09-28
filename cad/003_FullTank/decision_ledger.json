@@ -2476,6 +2476,48 @@
         "date": "2026-09-27",
         "basis": "Five saved-source/native views and combined-study conflict view directly inspected; complete saved checks and original joint-pin inventory reviewed."
       }
+    },
+    {
+      "id": "driver_reverse_body_short_connection",
+      "status": "reviewed_approximation",
+      "scope": "Retain reverse_short03 as a CAD-checked isolated body/third short-rod study.",
+      "reason": "Printed hand/bell reaches close the complete sharedM789A against retained receiver geometry. Full-context checks reject borrowed/straight blade alternatives; smaller estimated bend clears both selector and seat.",
+      "uncertainty": "Reach datums, included angle, blade profile, static pose and M177/M777 identity are interpretations. Apparent plan hand-end discrepancy25.23px remains.",
+      "limits": [
+        "No complete reverse mechanism or integration",
+        "Trigger/pawl/quadrant/receiving features and long rod pending",
+        "+1mm blade/eye stock fails unchanged clevis; only nominal/-1mm cases qualify",
+        "Foot-link topology conflict remains unresolved"
+      ],
+      "review": {
+        "reviewer": "Codex",
+        "date": "2026-09-27",
+        "basis": "75 saved checks,53 context pairs,11 STEP comparisons per case; fresh27-BRep/1291-property build and four inspected views."
+      },
+      "reopen_when": [
+        "Quadrant or trigger attachment constrains blade form",
+        "New source dimensions or clear production views",
+        "Changed retained shafts, selector or seat supports",
+        "Failed dependent fit or exchange check"
+      ],
+      "dependencies": [
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_source_review03.json",
+          "sha256": "cf331b605cc637922993c975da0a1e82d764007990fb378331f258002c9d0079"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_short03/visual01/visual_review.json",
+          "sha256": "0b68bbc21bc4e6b9320618ce148566334da7c81146a2ffcebcd0b8a17080f1bc"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_short03/source_measurement01/report.json",
+          "sha256": "0b277c4afaa7227c4f041914019793787c4e0c408b172a41e8e74c872456a917"
+        },
+        {
+          "path": "cad/003_FullTank/experiments/drive_chains/driver_foot_reverse_study/reverse_short03/context_audit/report.json",
+          "sha256": "2f8038066fc4e5b872c45a7ba0439de31044eaf7b66df8355c8fbee11079ddc2"
+        }
+      ]
     }
   ]
 }
